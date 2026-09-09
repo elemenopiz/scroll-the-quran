@@ -36,6 +36,8 @@ Simulator: iPhone 17 Pro, iOS 26. Prefer the desktop app's iOS Simulator tools (
 - Reader pages per **surah** (never the whole Quran): `ScrollView + LazyVStack + .scrollTargetBehavior(.paging) + .scrollPosition(id:) + .containerRelativeFrame`. Long ayat are split by `VersePaginator` into continuation pages.
 - Study JSON per surah shard (`Content/study/surah_NNN.json`), sections in fixed order: meaning, historicalContext, keyTerms, lifeInProphetsTime, didYouKnow, theologicalSignificance, crossReferences, applyIt, exploreFurther.
 - Arabic text: `Content/quran/arabic-uthmani.json` (Tanzil Uthmani, CC BY, attribute Tanzil) via `TranslationStore.arabic(for:)`.
+- Basmala rule: Tanzil's Uthmani text (kept verbatim per its terms) prefixes ayah 1 of every surah except 1 and 9 with the Bismillah (a fixed 39-char prefix). Never show that prefix inside the verse-1 line; strip it at render time (`ArabicText.stripBasmala`) and show the Bismillah as the muted line on the surah's page 0.
+- Attribution: `Tools/content-gen/ATTRIBUTION.md` is the licence ledger (Tanzil CC BY, Itani CC BY-ND, QuranEnc terms for Saheeh/Ruwwad, Pickthall PD, KFGQPC no-modify EULA so the Hafs font must stay unsubsetted).
 - Translations: default `itani` (ClearQuran, CC BY-ND, attribute "Translation by Talal Itani, ClearQuran.com"); alternates `saheeh`, `ruwwad`, `pickthall`. Copyright strings shown verbatim in the Translation sheet.
 
 ## Screen ids
