@@ -5,8 +5,8 @@ import XCTest
 /// The app does not route `--screenshot discover` / `--screenshot deepstudy#…` into
 /// `FeatureDiscover` yet — that wiring is Phase 3e's, and `AppShell` is not this task's
 /// to edit. Until it lands, `TabRoot` renders the Phase 1 placeholder for the Discover
-/// tab, so every test here starts by looking for the `discover` container and skips
-/// with a clear message when it is not there. Once 3e wires
+/// tab, so every test here starts by looking for an element only the real screen has
+/// and skips with a clear message when it is not there. Once 3e wires
 /// `DiscoverScreens.screen(id:anchor:…)` in, these become real assertions with no edit.
 ///
 /// The recorded layout specs are parked beside them as
@@ -29,6 +29,10 @@ final class DiscoverTests: XCTestCase {
     }
 
     /// Skips the test when the route still lands on the Phase 1 placeholder.
+    ///
+    /// The sentinel has to be an element only the real screen has: XCUITest matches an
+    /// identifier against an element's *label* too, and the placeholder prints its own
+    /// screen id ("discover") as a label.
     private func requireRouted(_ app: XCUIApplication, _ identifier: String) throws {
         let screen = app.descendants(matching: .any).matching(identifier: identifier).firstMatch
         guard screen.waitForExistence(timeout: 5) else {
@@ -43,7 +47,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDiscoverCardShowsItsParts() throws {
         let app = launch("discover")
-        try requireRouted(app, "discover")
+        try requireRouted(app, "discover.card")
 
         for identifier in [
             "discover.card", "discover.themeChip", "discover.reference",
@@ -64,7 +68,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyOpensFromTheCardAndCloses() throws {
         let app = launch("discover")
-        try requireRouted(app, "discover")
+        try requireRouted(app, "discover.card")
 
         app.buttons["discover.deepStudy"].tap()
         let page = app.descendants(matching: .any).matching(identifier: "deepstudy").firstMatch
@@ -73,7 +77,7 @@ final class DiscoverTests: XCTestCase {
 
         app.buttons["deepstudy.close"].tap()
         XCTAssertTrue(
-            app.descendants(matching: .any).matching(identifier: "discover").firstMatch
+            app.descendants(matching: .any).matching(identifier: "discover.card").firstMatch
                 .waitForExistence(timeout: 5),
             "closing Deep Study did not return to the feed"
         )
@@ -81,7 +85,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyRendersEverySectionInOrder() throws {
         let app = launch("deepstudy")
-        try requireRouted(app, "deepstudy")
+        try requireRouted(app, "deepstudy.quote")
 
         XCTAssertTrue(app.staticTexts["MEANING"].waitForExistence(timeout: 3))
         // The three list-shaped sections are further down; scroll to the foot of the page.
@@ -100,7 +104,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyAnchorScrollsToTheSection() throws {
         let app = launch("deepstudy#apply-it")
-        try requireRouted(app, "deepstudy")
+        try requireRouted(app, "deepstudy.quote")
         XCTAssertTrue(
             app.staticTexts["APPLY IT"].waitForExistence(timeout: 5),
             "deepstudy#apply-it did not scroll APPLY IT into view"
@@ -111,7 +115,7 @@ final class DiscoverTests: XCTestCase {
     /// `deepstudy-mid`; ours has to land on KEY ARABIC TERMS, the same slot in the order.
     func testManifestAnchorAliasResolves() throws {
         let app = launch("deepstudy#original-language")
-        try requireRouted(app, "deepstudy")
+        try requireRouted(app, "deepstudy.quote")
         XCTAssertTrue(
             app.staticTexts["KEY ARABIC TERMS"].waitForExistence(timeout: 5),
             "the manifest's original-language anchor did not land on KEY ARABIC TERMS"

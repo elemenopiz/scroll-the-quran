@@ -92,9 +92,9 @@ public enum Pasteboard {
 /// through this one seam so the `#if` lives in a single place.
 public extension View {
     @ViewBuilder
-    func fullCover<Item: Identifiable, Content: View>(
+    func fullCover<Item: Identifiable>(
         item: Binding<Item?>,
-        @ViewBuilder content: @escaping (Item) -> Content
+        @ViewBuilder content: @escaping (Item) -> some View
     ) -> some View {
         #if os(iOS)
             fullScreenCover(item: item, content: content)

@@ -106,7 +106,7 @@ public struct DiscoverView: View {
                     study: study,
                     crossRefs: chips(for: study),
                     isSaved: user?.isSaved(presentation.passage) ?? false,
-                    isRead: false,
+                    isRead: isRead(presentation.passage),
                     onDeepStudy: { openStudy = study },
                     onOpenReference: { openPassage($0) },
                     onSave: { user?.toggleSaved(presentation.passage) },
@@ -174,6 +174,15 @@ public struct DiscoverView: View {
             }
         }
     }
+
+    /// A card counts as read once every ayah of its passage does.
+    private func isRead(_ passage: PassageRef) -> Bool {
+        guard let user, let translations else { return false }
+        return passage.verses.allSatisfy { verse in
+            guard let index = translations.index.globalIndex(of: verse) else { return false }
+            return user.progress.isRead(globalIndex: index)
+        }
+    }
 }
 
 /// The sheet raised when a free reader runs out of cards.
@@ -195,7 +204,10 @@ struct DiscoverLimitSheet: View {
                 .foregroundStyle(Color.textPrimary)
                 .multilineTextAlignment(.center)
             Text(
-                "You have read \(used) of \(DiscoverGate.freeCardsPerDay) free cards today. Subscribe to keep scrolling, or come back tomorrow."
+                """
+                You have read \(used) of \(DiscoverGate.freeCardsPerDay) free cards today. \
+                Subscribe to keep scrolling, or come back tomorrow.
+                """
             )
             .font(.body(15))
             .foregroundStyle(Color.textSecondary)

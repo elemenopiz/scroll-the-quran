@@ -39,7 +39,9 @@ struct ReferenceChip: Identifiable, Hashable {
     let passage: PassageRef
     let title: String
 
-    var id: String { passage.key }
+    var id: String {
+        passage.key
+    }
 }
 
 /// One full-height Discover card.

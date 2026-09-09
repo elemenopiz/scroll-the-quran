@@ -30,7 +30,6 @@ public struct DeepStudyView: View {
     @Environment(\.openNote) private var openNote
     @Environment(\.dismiss) private var dismiss
 
-    @State private var isDone = false
 
     public init(
         study: Study,
@@ -86,7 +85,6 @@ public struct DeepStudyView: View {
                 systemImage: isDone ? "checkmark.circle.fill" : "checkmark.circle",
                 label: "Mark as read"
             ) {
-                isDone.toggle()
                 markRead()
             }
             .accessibilityIdentifier("deepstudy.markDone")
@@ -141,9 +139,11 @@ public struct DeepStudyView: View {
     private var sections: some View {
         VStack(alignment: .leading, spacing: DeepStudyMetrics.sectionGap) {
             ForEach(study.populatedSections) { section in
-                StudySectionBox(section: section, onCopy: { copy(section) }) {
-                    body(for: section)
-                }
+                StudySectionBox(
+                    section: section,
+                    onCopy: { copy(section) },
+                    content: { body(for: section) }
+                )
                 .id(StudyAnchor.id(for: section))
             }
         }
@@ -225,6 +225,16 @@ public struct DeepStudyView: View {
 
     private var isSaved: Bool {
         user?.isSaved(study.passage) ?? false
+    }
+
+    /// Done once every ayah of the passage is marked read; the button is the mark, not
+    /// a toggle, because `UserState` records progress and never un-records it.
+    private var isDone: Bool {
+        guard let user, let translations else { return false }
+        return study.verses.allSatisfy { verse in
+            guard let index = translations.index.globalIndex(of: verse) else { return false }
+            return user.progress.isRead(globalIndex: index)
+        }
     }
 
     private var copyAllText: String {
