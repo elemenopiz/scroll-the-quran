@@ -78,13 +78,30 @@ final class OnboardingFlowTests: XCTestCase {
                 .waitForExistence(timeout: 5),
             "the sign-in sheet never appeared"
         )
-        XCTAssertTrue(app.textFields["onboarding.signin.email"].waitForExistence(timeout: 5))
+        assertSignInSheetContents(app)
     }
 
     func testSignInRouteOpensStraightOntoTheSheet() throws {
         let app = launch("onboarding-signin")
         _ = try funnel(app, screen: "onboarding-signin")
-        XCTAssertTrue(app.textFields["onboarding.signin.email"].waitForExistence(timeout: 5))
+        assertSignInSheetContents(app)
+    }
+
+    /// Both routes onto the sheet must offer the real `SignInWithAppleButton` and the
+    /// local email field. The Apple button is the only account path that exists — there
+    /// is no code flow behind the email field — so its absence is a shipping defect,
+    /// not a cosmetic one.
+    private func assertSignInSheetContents(_ app: XCUIApplication) {
+        XCTAssertTrue(
+            app.textFields["onboarding.signin.email"].waitForExistence(timeout: 5),
+            "the sign-in sheet has no email field"
+        )
+        XCTAssertTrue(
+            app.descendants(matching: .any)
+                .matching(identifier: "onboarding.signin.apple").firstMatch
+                .waitForExistence(timeout: 5),
+            "the sign-in sheet has no Sign in with Apple button"
+        )
     }
 
     // MARK: - Layout
