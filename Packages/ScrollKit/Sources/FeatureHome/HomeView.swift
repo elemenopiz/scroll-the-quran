@@ -182,6 +182,11 @@ public struct HomeView: View {
             .padding(.trailing, Spacing.sm)
             .padding(.top, Spacing.sm)
         }
+        // The overlay puts a second child beside `StatCard`, so the identifier below lands on a
+        // plain container and SwiftUI pushes it down onto both — `home.streakCard` then resolved
+        // to whichever came first, and the card's frame read as the share glyph's. Marking the
+        // pair a container keeps the identifier on the card.
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("home.streakCard")
     }
 

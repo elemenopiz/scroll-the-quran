@@ -107,6 +107,12 @@ fi
 # 5. XCUITests ---------------------------------------------------------------
 if [ "$RUN_UI" -eq 1 ] && [ "$SKIP_SIM" -eq 0 ]; then
   step "xcodebuild test (XCUITest layout specs)"
+  # A UI run has to start from a clean data container. The reader flows switch translation
+  # and save a note, the community flow casts a vote, and all of that lands in the App Group
+  # JSON `UserStore` persists to; leave it behind and the *next* run starts with PICKTHALL
+  # selected and a note already in the editor, which fails tests that are correct.
+  # `xcodebuild test` installs over the app without clearing its container, so clear it here.
+  xcrun simctl uninstall "$SIM" "$BUNDLE_ID" >/dev/null 2>&1 || true
   set -o pipefail
   if xcodebuild test -scheme "$SCHEME" -destination "$DESTINATION" -derivedDataPath "$DERIVED" 2>&1 | beautify | tail -20; then
     ok "UI tests passed"
