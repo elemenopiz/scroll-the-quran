@@ -1,7 +1,7 @@
 {
   "surah": 33,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:45:38.204Z",
+  "generatedAt": "2026-09-09T08:55:43.614Z",
   "studies": [
     {
       "key": "33:21-22",
@@ -348,6 +348,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:45:02.208Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:72",
+      "surah": 33,
+      "start": 72,
+      "end": 72,
+      "theme": "Adam and the Human Story",
+      "themeId": "adam-and-the-human-story",
+      "title": "The Trust Nobody Else Took",
+      "tier": "discover",
+      "meaning": "An offer is made to the heavens, the earth and the mountains, and they decline. The verb used is not refusal out of defiance but apprehension: they saw what it involved. Then a human being takes it up. The two words that close the ayah are intensive forms, and the commentators split over their tone. Some read them as an indictment of the recklessness in accepting; others as the explanation of why only a creature capable of failing could carry something that has to be freely kept. Both readings are recorded.",
+      "historicalContext": "Medinan, near the close of a surah that has dealt throughout with people who kept their word and people who did not: those who held the ditch, those who found reasons to leave, those who spread rumour about a household. Placing this ayah at the end generalises the whole surah into one image. The commentators report no specific occasion for it and read it as a statement about the human condition.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَمَانَةَ",
+          "gloss": "the trust, the deposit",
+          "note": "The ordinary word for goods left in someone's keeping. It comes from the root meaning safety, the same root that gives the word for faith, so trustworthiness and belief share an origin."
+        },
+        {
+          "arabic": "أَشْفَقْنَ",
+          "gloss": "they were apprehensive",
+          "note": "A fear mixed with care rather than with cowardice, used of someone anxious about a responsibility they might mishandle. It describes weighing a burden accurately, not shrinking from it."
+        },
+        {
+          "arabic": "ظَلُومًا",
+          "gloss": "much given to wronging",
+          "note": "An intensive form. It names a disposition rather than an act, and paired with a matching form for ignorance it describes the standing tendencies of the creature that agreed to carry the deposit."
+        }
+      ],
+      "lifeInProphetsTime": "Deposits were everyday practice and there was no court to enforce them. A traveller leaving on a season-long journey left money, goods or documents with someone in the city and collected them on return, and the whole arrangement rested on the keeper's reputation. Mecca's trade could not have run otherwise. A man known to have returned what was left with him could borrow anything.",
+      "didYouKnow": "The word for the trust in this ayah and the word for faith come from the same root, whose basic sense is safety and freedom from fear. In Arabic, being trustworthy and being a believer are built out of the same three letters, which is why the classical discussions of this ayah move between the two ideas without changing vocabulary.",
+      "theologicalSignificance": "Human distinctiveness is located in a liability rather than in a capacity. What separates a person from a mountain here is not intelligence but the fact that something can be handed to them and lost. The two closing words then keep the account from becoming flattery: the creature that accepted is described in the same breath as prone to wrong and to ignorance, so the dignity and the risk are stated together.",
+      "crossReferences": [
+        {
+          "ref": "2:30",
+          "why": "Shows the angels raising the same objection in advance, given what they expect of the one being appointed."
+        },
+        {
+          "ref": "4:58",
+          "why": "Brings the word down to daily practice, deposits returned to the people they belong to."
+        },
+        {
+          "ref": "7:172",
+          "why": "Describes the original acknowledgement taken from the descendants of Adam, which the trust is often read alongside."
+        }
+      ],
+      "applyIt": "Find one thing currently sitting in your keeping that belongs to someone else: a message not answered, a tool borrowed, a task handed to you that has gone quiet. Deal with it this week. The ayah is about a deposit accepted, and deposits are lost by drift far more often than by decision.",
+      "exploreFurther": [
+        "2:30-33",
+        "4:58",
+        "7:172-174"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T08:55:36.770Z",
         "reviewed": false
       }
     }
