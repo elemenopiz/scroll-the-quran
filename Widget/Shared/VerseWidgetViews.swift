@@ -26,9 +26,9 @@ public struct VerseWidgetView: View {
             case .accessoryRectangular:
                 rectangular
             case .systemMedium:
-                system(lineLimit: 4, size: .widget)
+                system(lineLimit: 4)
             default:
-                system(lineLimit: 5, size: .widget)
+                system(lineLimit: 3)
             }
         }
         .widgetURL(content.url)
@@ -37,7 +37,7 @@ public struct VerseWidgetView: View {
 
     // MARK: - Families
 
-    private func system(lineLimit: Int, size: VerseText.Size) -> some View {
+    private func system(lineLimit: Int) -> some View {
         VStack(alignment: .leading, spacing: Spacing.sm) {
             Text(content.reference)
                 .capsLabelStyle()
@@ -46,7 +46,7 @@ public struct VerseWidgetView: View {
             VerseText(
                 arabic: content.arabic,
                 english: content.english,
-                size: size,
+                size: .widget,
                 style: .roman,
                 alignment: .leading
             )
@@ -94,8 +94,14 @@ public struct VerseWidgetView: View {
 public struct WidgetGalleryScreen: View {
     private let content: VerseWidgetContent
 
-    public init(content: VerseWidgetContent? = nil) {
-        self.content = content ?? VerseWidgetSource.content(on: Date())
+    public init(content: VerseWidgetContent) {
+        self.content = content
+    }
+
+    /// The gallery for a day — `SCROLL_FIXED_DATE` during a capture, so the ayah on screen
+    /// is the same one every time.
+    public init(today: Date = Date()) {
+        content = VerseWidgetSource.content(on: today)
     }
 
     /// Canvas sizes on a 393 pt-wide screen (iPhone 15 Pro class).
@@ -103,7 +109,7 @@ public struct WidgetGalleryScreen: View {
         (.systemSmall, "systemSmall", CGSize(width: 158, height: 158)),
         (.systemMedium, "systemMedium", CGSize(width: 338, height: 158)),
         (.accessoryRectangular, "accessoryRectangular", CGSize(width: 172, height: 76)),
-        (.accessoryInline, "accessoryInline", CGSize(width: 250, height: 22)),
+        (.accessoryInline, "accessoryInline", CGSize(width: 250, height: 46)),
     ]
 
     public var body: some View {
@@ -120,6 +126,10 @@ public struct WidgetGalleryScreen: View {
                                 .padding(Spacing.md)
                                 .frame(width: canvas.size.width, height: canvas.size.height, alignment: .topLeading)
                                 .background(Color.cardBackground, in: RoundedRectangle(cornerRadius: Radius.cardSmall))
+                                // WidgetKit clips to the family's canvas; so does the gallery,
+                                // or an overflowing small widget would look fine here and be
+                                // cut off on the Home Screen.
+                                .clipShape(RoundedRectangle(cornerRadius: Radius.cardSmall))
                         }
                         .accessibilityIdentifier("widgetGallery.\(canvas.name)")
                     }

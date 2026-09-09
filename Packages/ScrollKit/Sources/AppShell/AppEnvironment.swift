@@ -1,5 +1,6 @@
 import Commerce
 import FeatureDiscover
+import FeatureReader
 import Foundation
 import QuranData
 import StudyContent
@@ -56,6 +57,29 @@ public final class AppEnvironment {
     /// Content files that could not be read, for diagnostics. Empty in a healthy build.
     public private(set) var loadFailures: [String] = []
 
+    /// The Quran tab's reader, built once and kept for the life of the process.
+    ///
+    /// It has to live here rather than in `TabRoot`: a SwiftUI view's `init` runs on every
+    /// parent update, and this model restores `Prefs.lastReaderPosition` — which writes the
+    /// position straight back to `UserStore`. Built inside a view initialiser that is a
+    /// mutation of observed state *during* body evaluation, which invalidates the body that
+    /// is being evaluated: the render never settles and the screen stays blank.
+    public private(set) lazy var reader: ReaderModel = ReaderModel(
+        index: index,
+        translations: translations,
+        user: user,
+        surah: 1,
+        restoringSavedPosition: true
+    )
+
+    /// The unit a bare `deepstudy` route opens. Resolving it walks the day's feed and loads a
+    /// shard, so it is answered once rather than on every render.
+    public private(set) lazy var defaultStudyKey: String? = DiscoverScreens.defaultStudyKey(
+        feed: feed,
+        studies: studies,
+        today: today
+    )
+
     public init(
         launch: LaunchOptions,
         index: SurahIndex,
@@ -82,7 +106,26 @@ public final class AppEnvironment {
         discoverEntitlements = DiscoverEntitlementBridge(entitlements)
     }
 
-    /// Builds everything the running app needs. Called once, from `RootView.init`.
+    /// The process's one environment.
+    ///
+    /// `RootView.init` runs on every update, so it cannot afford to build this: a second
+    /// `StoreKitEntitlementStore` would start a second `Transaction.updates` listener, and
+    /// the content would be parsed again. Resolved once, on first use.
+    public static func shared(launch: LaunchOptions = .live) -> AppEnvironment {
+        if let existing = cached { return existing }
+        let environment = live(launch: launch)
+        cached = environment
+        return environment
+    }
+
+    private static var cached: AppEnvironment?
+
+    /// Test hook: forget the shared environment.
+    public static func resetShared() {
+        cached = nil
+    }
+
+    /// Builds everything the running app needs.
     public static func live(launch: LaunchOptions = .live) -> AppEnvironment {
         var failures: [String] = []
 

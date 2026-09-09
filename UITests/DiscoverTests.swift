@@ -70,7 +70,10 @@ final class DiscoverTests: XCTestCase {
         let app = launch("discover")
         try requireRouted(app, "discover.card")
 
-        app.buttons["discover.deepStudy"].tap()
+        // The feed is a lazy pager: the neighbouring cards are realised too, so there is more
+        // than one "Deep study" button in the tree and an unqualified tap is ambiguous. The
+        // first match is the card on screen.
+        app.buttons["discover.deepStudy"].firstMatch.tap()
         let page = app.descendants(matching: .any).matching(identifier: "deepstudy").firstMatch
         XCTAssertTrue(page.waitForExistence(timeout: 5), "Deep Study never appeared")
         XCTAssertTrue(app.buttons["deepstudy.close"].exists)

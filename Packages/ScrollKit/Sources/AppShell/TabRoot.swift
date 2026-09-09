@@ -93,21 +93,17 @@ public struct TabRoot: View {
     private let env: AppEnvironment
     private let route: ScreenRoute?
     @State private var model: TabRootModel
-    @State private var reader: ReaderModel
 
     public init(env: AppEnvironment, model: TabRootModel? = nil, route: ScreenRoute? = nil) {
         self.env = env
         self.route = route
         _model = State(initialValue: model ?? TabRootModel(selection: route?.tab ?? .home))
-        _reader = State(
-            initialValue: ReaderModel(
-                index: env.index,
-                translations: env.translations,
-                user: env.user,
-                surah: 1,
-                restoringSavedPosition: true
-            )
-        )
+    }
+
+    /// The Quran tab's model, owned by the environment so it survives — and is built by —
+    /// something other than a view initialiser that re-runs on every update.
+    private var reader: ReaderModel {
+        env.reader
     }
 
     public var body: some View {

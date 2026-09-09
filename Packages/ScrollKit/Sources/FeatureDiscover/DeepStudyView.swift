@@ -70,6 +70,10 @@ public struct DeepStudyView: View {
             }
         }
         .overlay(alignment: .top) { pinnedButtons }
+        // Same reason as `DiscoverCard`: without the container element, the identifier
+        // below overwrites the two pinned buttons' own ids (the scroll view's contents keep
+        // theirs, because a scroll view is already a container).
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("deepstudy")
     }
 

@@ -45,6 +45,18 @@ func deepLinksResolve() throws {
         start: 5,
         end: 6
     )))
+    // `study/<key>` is the form the widget and a shared link use.
+    #expect(try DeepLink(url: #require(URL(string: "scrollthequran://study/94:5-6"))) == .study(PassageRef(
+        surah: 94,
+        start: 5,
+        end: 6
+    )))
+    #expect(try DeepLink(url: #require(URL(string: "scrollthequran://study/2:255"))) == .study(PassageRef(
+        surah: 2,
+        start: 255,
+        end: 255
+    )))
+    #expect(try DeepLink(url: #require(URL(string: "scrollthequran://study/not-a-key"))) == nil)
     #expect(try DeepLink(url: #require(URL(string: "scrollthequran://tab/discover"))) == .tab(.discover))
     #expect(try DeepLink(url: #require(URL(string: "https://example.com/verse/2/255"))) == nil)
     #expect(try DeepLink(url: #require(URL(string: "scrollthequran://verse/2"))) == nil)
@@ -83,4 +95,96 @@ func routerSelectsTabs() throws {
     try model.openDeepStudy(passage: #require(PassageRef(key: "94:5-6")))
     #expect(model.selection == .discover)
     #expect(model.consumePendingStudy()?.key == "94:5-6")
+}
+
+@Test("--ui-test and --open-url are parsed, and both start the app on the tabs")
+func launchOptionsParseTheTestFlags() throws {
+    let options = LaunchOptions(
+        arguments: ["ScrollTheQuran", "--ui-test", "--open-url", "scrollthequran://verse/2/255"],
+        environment: [:]
+    )
+    #expect(options.isUITest)
+    #expect(options.openURL?.absoluteString == "scrollthequran://verse/2/255")
+    #expect(options.startsOnTabs)
+    // A UI test must not talk to StoreKit: the prices on screen have to be the fixture's.
+    #expect(options.usesFixtureCommerce)
+
+    let plain = LaunchOptions(arguments: ["ScrollTheQuran"], environment: [:])
+    #expect(!plain.isUITest)
+    #expect(plain.openURL == nil)
+    #expect(!plain.startsOnTabs)
+    #expect(!plain.usesFixtureCommerce)
+
+    // A trailing flag with no value must not crash or half-parse.
+    let dangling = LaunchOptions(arguments: ["ScrollTheQuran", "--screenshot"], environment: [:])
+    #expect(dangling.screenshot == nil)
+}
+
+@Test("A screenshot run uses fixture commerce")
+func screenshotRunsUseFixtureCommerce() {
+    let options = LaunchOptions(arguments: ["ScrollTheQuran", "--screenshot", "paywall-trial"], environment: [:])
+    #expect(options.usesFixtureCommerce)
+    #expect(options.isSnapshotRun)
+}
+
+@MainActor
+@Test("openDeepStudy(key:) parks the unit key, the passage and the Discover tab")
+func routerOpensDeepStudyByKey() {
+    let model = TabRootModel()
+    model.openDeepStudy(key: "94:5-6")
+    #expect(model.selection == .discover)
+    #expect(model.deepStudyKey == "94:5-6")
+    #expect(model.consumePendingStudy()?.key == "94:5-6")
+
+    // Opening a verse dismisses a Deep Study that is still up: the two are different places.
+    model.deepStudyKey = "94:5-6"
+    model.open(verse: VerseRef(surah: 2, ayah: 255))
+    #expect(model.deepStudyKey == nil)
+    #expect(model.selection == .quran)
+}
+
+@MainActor
+@Test("A widget link resolves through handle(_:) the way onOpenURL does")
+func widgetLinkRoutesToTheReader() throws {
+    let model = TabRootModel()
+    let url = try #require(URL(string: "scrollthequran://verse/2/255"))
+    let link = try #require(DeepLink(url: url))
+    model.handle(link)
+    #expect(model.selection == .quran)
+    #expect(model.consumePendingVerse() == VerseRef(surah: 2, ayah: 255))
+}
+
+@MainActor
+@Test("A deep link on a cold launch skips the first-run funnel")
+func deepLinkEntersTheTabs() {
+    let flow = RootFlowModel(launch: LaunchOptions())
+    #expect(flow.phase == .onboarding)
+    flow.enterTabs()
+    #expect(flow.phase == .tabs)
+
+    let launched = RootFlowModel(
+        launch: LaunchOptions(openURL: URL(string: "scrollthequran://verse/2/255"))
+    )
+    #expect(launched.phase == .tabs)
+}
+
+@Test("Every screen id the registry knows is a manifest id, a gallery or the tab bar")
+func everyScreenIDIsRoutable() {
+    // The registry switches on `ScreenID`, so "resolves to a screen" is a compile-time
+    // property; what this guards is the *list* — a new manifest id has to be added here
+    // and in `UITests/RoutingTests.swift`, which launches each one for real.
+    let ids = Set(ScreenRegistry.allIDs)
+    let manifest = [
+        "onboarding-hook", "onboarding-signin", "onboarding-slide1", "onboarding-slide2",
+        "onboarding-slide3", "onboarding-slide4", "onboarding-reviews",
+        "paywall-trial", "paywall-plans", "gift-closed", "gift-open",
+        "community", "discover", "deepstudy", "reader", "translation-sheet", "notes-sheet",
+        "home", "plans-sheet", "plan-detail", "verse-search",
+    ]
+    for id in manifest {
+        #expect(ids.contains(id), "\(id) is not in the screenshot registry")
+    }
+    #expect(ids.contains("gallery"))
+    #expect(ids.contains("widget-gallery"))
+    #expect(ids.contains("tabbar"))
 }

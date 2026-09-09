@@ -22,7 +22,7 @@ struct RootView: View {
 
     init(launch: LaunchOptions = .live) {
         self.launch = launch
-        let environment = AppEnvironment.live(launch: launch)
+        let environment = AppEnvironment.shared(launch: launch)
         _env = State(initialValue: environment)
         _flow = State(
             initialValue: RootFlowModel(

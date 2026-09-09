@@ -18,7 +18,7 @@ import SwiftUI
 @MainActor
 public enum ScreenRegistry {
     /// Every id the registry answers to, for the "no route is unroutable" test.
-    public static let allIDs: [String] = ScreenID.allCases.map(\.rawValue)
+    public nonisolated static var allIDs: [String] { ScreenID.allCases.map(\.rawValue) }
 
     /// The screen behind a route.
     ///
@@ -37,7 +37,7 @@ public enum ScreenRegistry {
         case .gallery:
             GalleryScreen()
         case .widgetGallery:
-            WidgetGalleryProvider.screen()
+            WidgetGalleryProvider.screen(today: env.today)
         case .onboardingHook, .onboardingSignIn, .onboardingSlide1, .onboardingSlide2,
              .onboardingSlide3, .onboardingSlide4, .onboardingReviews:
             OnboardingScreenProvider.screen(id: route.screen.rawValue, env: env, onFinished: onFinished)
@@ -60,8 +60,7 @@ public enum ScreenRegistry {
     /// reference capture shows and the path a reader actually takes. The `#anchor` half of
     /// the route scrolls it to a section.
     private static func deepStudyModel(route: ScreenRoute, env: AppEnvironment) -> TabRootModel {
-        let key = DiscoverScreens.defaultStudyKey(feed: env.feed, studies: env.studies, today: env.today)
-        return TabRootModel(selection: .discover, deepStudyKey: key, deepStudyAnchor: route.anchor)
+        TabRootModel(selection: .discover, deepStudyKey: env.defaultStudyKey, deepStudyAnchor: route.anchor)
     }
 }
 
@@ -74,13 +73,14 @@ public enum ScreenRegistry {
 /// labelled placeholder rather than failing.
 @MainActor
 public enum WidgetGalleryProvider {
-    /// Set by the app target in `ScrollTheQuranApp.init`.
-    public static var make: (() -> AnyView)?
+    /// Set by the app target in `ScrollTheQuranApp.init`. The date is `env.today`, so a
+    /// capture pinned by `SCROLL_FIXED_DATE` always shows the same ayah.
+    public static var make: ((Date) -> AnyView)?
 
     @ViewBuilder
-    public static func screen() -> some View {
+    public static func screen(today: Date = Date()) -> some View {
         if let make {
-            make()
+            make(today)
         } else {
             PlaceholderScreen(screenID: "widget-gallery", title: "Widgets", systemImage: "rectangle.on.rectangle")
         }

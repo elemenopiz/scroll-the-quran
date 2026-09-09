@@ -120,6 +120,13 @@ struct DiscoverCard: View {
             .frame(maxWidth: .infinity, alignment: .leading)
         }
         .shadow(color: .black.opacity(0.45), radius: 22, y: 6)
+        // `.accessibilityIdentifier` on a view that is not itself an accessibility element
+        // propagates down and *overwrites* the identifiers its descendants set: without
+        // this, every button in the card answers to "discover.card" and none of
+        // `discover.deepStudy`, `discover.actions.save`, `discover.themeChip` … exists.
+        // Making the card a container element stops the propagation and leaves the
+        // children their own ids, the same shape `ReaderView` uses.
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("discover.card")
     }
 
