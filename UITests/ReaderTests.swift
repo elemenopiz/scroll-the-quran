@@ -13,6 +13,13 @@ final class ReaderTests: XCTestCase {
     private let surah = 2
     private let ayahCount = 286
 
+    /// Set `SCROLL_RECORD_SPECS=1` in the test runner's environment (or pass
+    /// `TEST_RUNNER_SCROLL_RECORD_SPECS=1` to `xcodebuild test`) to print the observed frames
+    /// instead of asserting them, which is how `UITests/Specs/reader-*.json` gets its numbers.
+    private var isRecording: Bool {
+        ProcessInfo.processInfo.environment["SCROLL_RECORD_SPECS"] == "1"
+    }
+
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
@@ -72,7 +79,7 @@ final class ReaderTests: XCTestCase {
                     found.waitForExistence(timeout: 5),
                     "\(spec.id): \(element.query.rawValue) '\(element.name)' never appeared"
                 )
-                guard found.exists, element.existenceOnly != true else { continue }
+                guard found.exists, element.existenceOnly != true || isRecording else { continue }
 
                 let observed = CGRect(
                     x: found.frame.minX * scaleX,
@@ -80,6 +87,14 @@ final class ReaderTests: XCTestCase {
                     width: found.frame.width * scaleX,
                     height: found.frame.height * scaleY
                 )
+                if isRecording {
+                    print(String(
+                        format: "SPEC %@ %@ { \"x\": %.1f, \"y\": %.1f, \"width\": %.1f, \"height\": %.1f }",
+                        spec.id, element.name,
+                        observed.minX, observed.minY, observed.width, observed.height
+                    ))
+                    continue
+                }
                 let tolerance = element.tolerance ?? spec.tolerance
                 let expected = element.frame.rect
                 assertClose(observed.minX, expected.minX, tolerance, "\(spec.id) \(element.name) x")
@@ -196,7 +211,14 @@ final class ReaderTests: XCTestCase {
     // MARK: - Performance
 
     /// Al-Baqarah — 286 ayat, several of them split into continuation pages — has to be on
-    /// screen quickly. The host-side twin of this budget is `ReaderPerformanceTests`.
+    /// screen quickly.
+    ///
+    /// The brief's budget is 400 ms to open surah 2, and that is asserted where it can be:
+    /// `ReaderPerformanceTests.openingAlBaqarahIsFast` on the host, which times building the
+    /// model and its 287 pages. From here the clock also contains a cold process launch of a
+    /// debug build, several seconds of it, so the number recorded by `XCTClockMetric` is a
+    /// regression baseline rather than a budget. What this test does assert is the part that
+    /// is the reader's: once the process is up, the first verse is on screen promptly.
     func testOpeningAlBaqarahIsFast() throws {
         _ = try launchReader()
         XCUIApplication().terminate()
@@ -210,6 +232,27 @@ final class ReaderTests: XCTestCase {
                 .waitForExistence(timeout: 10)
             app.terminate()
         }
+
+        let app = XCUIApplication()
+        app.launchArguments = ["--screenshot", "reader"]
+        app.launchEnvironment["SCROLL_FIXED_DATE"] = "2026-09-14"
+        app.launch()
+        defer { app.terminate() }
+        let started = Date()
+        XCTAssertTrue(
+            app.descendants(matching: .any).matching(identifier: "reader.verse").firstMatch
+                .waitForExistence(timeout: 10),
+            "the reader never drew a verse"
+        )
+        let elapsed = Date().timeIntervalSince(started)
+        // A smoke ceiling, not the budget: most of this second is XCUITest taking its first
+        // accessibility snapshot of the process, which the reader does not control. It is here
+        // to catch a catastrophic regression — a reader that paginates per page change, say —
+        // while `ReaderPerformanceTests` holds the 400 ms line on the work that is ours.
+        XCTAssertLessThan(
+            elapsed, 2.5,
+            "the first verse of Al-Baqarah took \(Int(elapsed * 1000)) ms to appear after launch"
+        )
     }
 
     // MARK: - Helpers
