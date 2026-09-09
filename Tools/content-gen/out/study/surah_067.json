@@ -1,7 +1,7 @@
 {
   "surah": 67,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:11:01.329Z",
+  "generatedAt": "2026-09-09T15:27:40.066Z",
   "studies": [
     {
       "key": "67:1-5",
@@ -63,6 +63,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:42.485Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "67:6-7",
+      "surah": 67,
+      "start": 6,
+      "end": 7,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "A Sound Before A Sight",
+      "tier": "standard",
+      "meaning": "Two ayat move from a verdict to a sensation. The first states the outcome for those who reject their Lord and calls the destination evil, which is a judgement on the place rather than on the people standing in it. The second drops the listener into hearing. What registers is not heat or light but a noise, an indrawn braying, and beneath it a boiling. The fire is given a voice several lines before it is given any description.",
+      "historicalContext": "Meccan, from a surah addressed to people who treated the warning as theatre. The preceding ayat have just called the sky flawless and described the stars; the argument now turns to what rejection arrives at. No specific occasion is reported for these two lines. The commentators read them inside the surah's sequence rather than against an event, as the hinge where description of the heavens gives way to description of the destination.",
+      "keyTerms": [
+        {
+          "arabic": "شَهِيقًا",
+          "gloss": "a drawn-in braying",
+          "note": "Names the inhaling half of a donkey's cry, the harsh pull of breath rather than the bellow that follows it. Applied to the fire, it makes the place sound alive and straining."
+        },
+        {
+          "arabic": "تَفُورُ",
+          "gloss": "it boils over",
+          "note": "A verb used of a pot at full boil and of water bursting up from the ground. It carries agitation and overflow at once, so the fire is not merely hot but unable to stay still."
+        },
+        {
+          "arabic": "ٱلْمَصِيرُ",
+          "gloss": "the place of arrival",
+          "note": "From a verb meaning to become or to end up. It names a destination as the outcome of a process rather than as a chosen address, which is what the plain English word loses."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca sat in a bare valley where sound carried. A caravan was heard before it was seen, and so was a raiding party. Herders knew the braying of a donkey at distance, an ugly noise nobody slept through, and every household knew the moment a pot went from simmer to a boil that could not be left alone. The imagery here is built from things a listener identified with their ears.",
+      "didYouKnow": "The word used for the fire's sound occurs only twice in the whole Quran: here, and in a passage of Hud where it is paired with its opposite, the outward bellow. Between them the two words cover a complete breath, in and out. The surah otherwise works on sight, having already told the reader twice to look at the sky.",
+      "theologicalSignificance": "The consequence is attached to rejecting a Lord rather than to ignorance, which keeps the category narrow. The place is then made to react. Classical commentators are careful here: they report the fire's fury as real without settling whether the language names an emotion or renders a state in terms a hearer can feel. Either reading leaves punishment as something other than an indifferent mechanism running on its own.",
+      "crossReferences": [
+        {
+          "ref": "11:106",
+          "why": "Pairs the same indrawn sound with its outward counterpart, the only other place that word appears."
+        },
+        {
+          "ref": "25:12",
+          "why": "Has the fire heard raging from a distance before anything about it is described."
+        },
+        {
+          "ref": "50:30",
+          "why": "Continues the motif of a fire addressed directly, and given an answer of its own."
+        }
+      ],
+      "applyIt": "Listen today to one thing you normally only look at. A kettle, the traffic outside, a room after everyone has gone. Give it half a minute with your eyes shut. This passage works on hearing because hearing is harder to switch off than sight, and noticing that in an ordinary moment is what makes these two lines land later.",
+      "exploreFurther": [
+        "25:11-14",
+        "39:71",
+        "50:30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:27:36.103Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "67:8",
+      "surah": 67,
+      "start": 8,
+      "end": 8,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "The Keepers Ask One Question",
+      "tier": "standard",
+      "meaning": "The fire is described as near to splitting apart from rage, and then the scene becomes procedural. Arrivals come in batches, not individually, and each batch is met by keepers who put a single question. The question is not about belief or about deeds. It asks whether anybody ever came with a warning. Everything about the exchange is administrative in tone, and the classical commentators note that this is what makes it severe: the case turns on one point of fact.",
+      "historicalContext": "Meccan, in a surah whose audience had heard the message repeatedly and was refusing it. The scene answers an objection the Quran records elsewhere from people who imagined they could plead ignorance. Nothing more specific is attested for this ayah. The commentators read the keepers' question as the surah's way of settling, in advance, what will and will not be arguable, at a point when arguing was still possible for the listeners.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْغَيْظِ",
+          "gloss": "swallowed rage",
+          "note": "Anger held inside rather than expressed, the kind that strains a person from within. The Quran uses it elsewhere of people who choke down fury, which is why the fire here is described as nearly bursting."
+        },
+        {
+          "arabic": "فَوْجٌ",
+          "gloss": "a batch, a company",
+          "note": "A group moving together, used of troops and of crowds entering somewhere. It makes arrival collective and repetitive, and the word every time in the same clause turns the scene into a sequence rather than a single event."
+        },
+        {
+          "arabic": "خَزَنَتُهَآ",
+          "gloss": "its keepers, its guards",
+          "note": "From the root for storing and safekeeping, the same root behind a treasury and a storehouse keeper. The guards are custodians of a place, not its owners, and they question rather than sentence."
+        }
+      ],
+      "lifeInProphetsTime": "A walled town had gatekeepers, and everyone entering a settlement or a market expected to be stopped and asked something brief. Caravans were admitted in groups. A storehouse in a trading town had a keeper who held the keys and answered for what was inside without owning any of it. The listeners knew the exact social position being described: a man with authority over a door, and one standard question.",
+      "didYouKnow": "The keepers put almost this same question in one other place in the Quran, a passage of Az-Zumar, where the wording is fuller and the answer given is different. Here the answer is a flat admission; there it ends with a sentence already fallen due. Reading the two together shows the Quran using one scene twice with different pressure.",
+      "theologicalSignificance": "The question establishes that accountability rests on having been warned, and it places the burden of that warning on God rather than on the person. It also shows angels as functionaries with a limited role. They ask, they do not judge, and no interest of their own is served by the answer. That combination keeps the scene from being about anyone's appetite for punishment.",
+      "crossReferences": [
+        {
+          "ref": "39:71",
+          "why": "Gives the same question at the gate in fuller form, with a different reply from those questioned."
+        },
+        {
+          "ref": "17:15",
+          "why": "States the principle behind the question: no punishment until a messenger has been sent."
+        },
+        {
+          "ref": "66:6",
+          "why": "Describes the keepers of the fire as carrying out exactly what they are ordered, nothing further."
+        }
+      ],
+      "applyIt": "Think of one thing you have been told clearly and repeatedly, and have decided not to act on. A medical warning, a friend's concern, a debt. Say to yourself, plainly, that you were told. Not to punish yourself with it, but because this ayah is about the difference between not knowing and knowing while behaving as though you do not.",
+      "exploreFurther": [
+        "39:71-72",
+        "17:15",
+        "40:49-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:27:36.105Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "67:9",
+      "surah": 67,
+      "start": 9,
+      "end": 9,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Yes, A Warner Came",
+      "tier": "standard",
+      "meaning": "The answer opens with a particle that contradicts a negative question, so it means not merely yes but on the contrary, one did come. Then they quote themselves. The words they repeat are not a denial of God but a denial that anything was ever sent down, followed by an accusation aimed at the messenger rather than at the message. What is preserved here is the sentence they used to say, given back to them in their own voice.",
+      "historicalContext": "Meccan. The charge quoted, that God had sent nothing down to any human being, was in circulation in Mecca and appears in similar wording elsewhere in the Quran. It was an argument about the possibility of revelation as such, not about the content of this one. The commentators treat the speech here as representative of that objection rather than as a report of one named exchange.",
+      "keyTerms": [
+        {
+          "arabic": "بَلَىٰ",
+          "gloss": "yes, on the contrary",
+          "note": "A particle used only to overturn a negative. English needs a whole clause for it. It concedes the questioner's point and cancels the denial buried in the question at the same time."
+        },
+        {
+          "arabic": "فَكَذَّبْنَا",
+          "gloss": "so we called it a lie",
+          "note": "An intensive verb meaning to declare something false, not merely to doubt it. The Quran uses it throughout for active, public rejection, and the sequence here is that a warner arrived and only then were they active."
+        },
+        {
+          "arabic": "ضَلَـٰلٍ",
+          "gloss": "straying, being lost",
+          "note": "The image is of losing the road, not of error in an argument. They aim the word at the messengers, and the surah returns it to them near its close, in almost identical phrasing."
+        }
+      ],
+      "lifeInProphetsTime": "In a society without written contracts for most business, a person's word carried their credit. To call someone a liar in public was to attack their standing in the market and the assembly, not just to disagree. Mecca's leadership used exactly that instrument against the new message, and the surah records its wording. The insult quoted here belongs to that world of reputation held or destroyed by speech.",
+      "didYouKnow": "The word for a warner appears four times in this surah: twice in this exchange, once when God says the listeners will learn what His warning is like, and once at the end when the Prophet Muhammad (peace be upon him) is told to say that he is only a clear warner. The scene of regret and the job description sit in the same short chapter.",
+      "theologicalSignificance": "The passage settles that rejection is a decision rather than an accident of information. The regret it records changes nothing, which is a claim about the structure of accountability, not about God's willingness to forgive. It also shows that denying revelation and insulting its carrier tend to arrive together: the argument about whether God speaks becomes, very quickly, an argument about the person speaking.",
+      "crossReferences": [
+        {
+          "ref": "6:91",
+          "why": "Quotes the same objection, that God sent nothing down to any human being, and answers it directly."
+        },
+        {
+          "ref": "67:26",
+          "why": "Ends the surah with the messenger accepting exactly the title used in this exchange."
+        },
+        {
+          "ref": "36:30",
+          "why": "Notes the pattern that no messenger came to a people without being mocked."
+        }
+      ],
+      "applyIt": "Recall an occasion when you dismissed advice by attacking the person giving it rather than testing what they said. Most people can find one within a week. You do not need to reopen the argument. Just name to yourself which of the two you actually did, because this ayah turns on the difference between refuting a claim and discrediting a speaker.",
+      "exploreFurther": [
+        "6:91",
+        "36:13-19",
+        "35:37"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:27:36.106Z",
         "reviewed": false
       }
     },
