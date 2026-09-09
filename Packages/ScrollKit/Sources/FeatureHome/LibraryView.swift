@@ -11,7 +11,8 @@ import UserState
 public struct LibraryView: View {
     @Environment(\.dismiss) private var dismiss
 
-    @Bindable private var store: UserStore
+    // `@Observable`: reading `store` in `body` is enough to track it; no binding is needed.
+    private let store: UserStore
     private let surahs: SurahIndex?
     private let translations: TranslationStore?
     private let navigation: (any HomeNavigation)?

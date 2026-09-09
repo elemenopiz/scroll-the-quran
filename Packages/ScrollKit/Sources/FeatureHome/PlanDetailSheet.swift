@@ -9,7 +9,8 @@ public struct PlanDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
 
     private let plan: ReadingPlan
-    @Bindable private var store: UserStore
+    // `@Observable`: reading `store` in `body` is enough to track it; no binding is needed.
+    private let store: UserStore
     private let surahs: SurahIndex?
     private let today: Date
     private let navigation: (any HomeNavigation)?

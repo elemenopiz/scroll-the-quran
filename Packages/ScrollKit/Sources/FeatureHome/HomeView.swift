@@ -15,7 +15,8 @@ public enum HomeScrollPosition: String, Sendable {
 /// and the settings pill. Everything it needs is handed in, so a snapshot run and a preview build
 /// exactly the same view as the app does.
 public struct HomeView: View {
-    @Bindable private var store: UserStore
+    // `@Observable`: reading `store` in `body` is enough to track it; no binding is needed.
+    private let store: UserStore
     private let surahs: SurahIndex
     private let translations: TranslationStore?
     private let catalog: ReadingPlanCatalog

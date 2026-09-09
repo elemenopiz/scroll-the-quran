@@ -8,7 +8,8 @@ import UserState
 public struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
 
-    @Bindable private var store: UserStore
+    // `@Observable`: reading `store` in `body` is enough to track it; no binding is needed.
+    private let store: UserStore
     private let translations: TranslationStore?
     private let restorePurchases: (() async -> Void)?
     private let versionString: String
