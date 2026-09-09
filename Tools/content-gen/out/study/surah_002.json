@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:01:03.009Z",
+  "generatedAt": "2026-09-09T09:35:57.871Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -62,6 +62,528 @@
       }
     },
     {
+      "key": "2:6-7",
+      "surah": 2,
+      "start": 6,
+      "end": 7,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "The Seal And The Veil",
+      "tier": "standard",
+      "meaning": "The passage does not say that warning is pointless in general. It says that for a particular group whose rejection has settled, warning and silence produce the same result. The sealing is then described as God's act, and the classical commentators read it as the consequence of a refusal already chosen rather than something imposed on the unwilling. Notice the division of faculties. Heart and hearing are sealed shut, while sight is covered from outside. Two different failures, named separately.",
+      "historicalContext": "Medinan, in the opening movement of the longest surah. The first twenty ayat sort the audience into three groups, and this is the second: those settled in rejection, placed between the believers described just before and the larger group described at length afterwards. The commentators do not report a specific occasion here, reading the passage instead as the frame the rest of the surah is hung on.",
+      "keyTerms": [
+        {
+          "arabic": "خَتَمَ",
+          "gloss": "He sealed, He stamped",
+          "note": "The verb used for pressing a signet into wax or clay to close a letter or a storeroom. A sealed thing is not merely shut. Nothing can be added to it and nothing taken out."
+        },
+        {
+          "arabic": "غِشَـٰوَةٌ",
+          "gloss": "a covering, a film",
+          "note": "A cloth or membrane laid over something. Unlike the seal, it is not attributed here to any agent, and it sits on the outside of the eye rather than closing it."
+        },
+        {
+          "arabic": "سَوَآءٌ",
+          "gloss": "level, the same",
+          "note": "From a root meaning to make even. It describes two things brought to the same height, so the sentence says warning and no warning stand at exactly equal value for these listeners."
+        }
+      ],
+      "lifeInProphetsTime": "Seals were ordinary equipment. A merchant closed a consignment with clay pressed by his ring so that a broken seal proved tampering along the route. Letters between tribes went out sealed, and a storehouse of dates or grain was sealed against the household. Everyone handling goods understood that a seal was not a lock to be picked. It was a statement that the contents were finished with, settled, and no longer open for exchange.",
+      "didYouKnow": "In the Arabic, hearts and eyes are plural but hearing is singular, and grammarians have discussed the asymmetry for centuries. The usual explanation is that the word for hearing is a verbal noun naming the act rather than the organ, so it does not take a plural. The observation is old enough to appear in the earliest grammatical commentaries on the surah.",
+      "theologicalSignificance": "Two things are held together here without being resolved into each other. God is the one who seals, and the people are held responsible for what the seal encloses. The tradition reads the order as moral rather than arbitrary: the closing follows the choosing. That keeps the passage from teaching either that human beings settle their own hearts unaided, or that anyone is condemned for a state they never had a hand in.",
+      "crossReferences": [
+        {
+          "ref": "4:155",
+          "why": "States the sequence directly, saying the sealing came upon them because of their own breaking of the covenant."
+        },
+        {
+          "ref": "83:14",
+          "why": "Gives the same idea a different image: what they earned has settled over their hearts like rust."
+        },
+        {
+          "ref": "47:24",
+          "why": "Asks whether there are locks upon hearts, and points to unread revelation as the way through them."
+        }
+      ],
+      "applyIt": "Pick one question you have already closed. Not a belief you hold, but a case you stopped hearing arguments about, perhaps about a person, perhaps about yourself. Spend ten minutes today letting the other side of it be stated properly, in its strongest form, without answering. You are not deciding anything. You are checking that the door still opens.",
+      "exploreFurther": [
+        "4:155",
+        "83:14",
+        "6:25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.028Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:8-9",
+      "surah": 2,
+      "start": 8,
+      "end": 9,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "The Deception That Turns Inward",
+      "tier": "standard",
+      "meaning": "A third group is introduced, defined not by what they deny but by the gap between their speech and their state. The passage does not accuse them of a wrong opinion. It reports a sentence they say and then denies the thing the sentence claims. The second ayah closes the account: an attempt to deceive God is not merely futile, it lands on the one attempting it. The final clause adds that they cannot feel this happening.",
+      "historicalContext": "Medinan, after the community had a city, a treasury and a defensive obligation. In Mecca there had been nothing to gain by professing belief and a great deal to lose, so this posture had no reason to exist. In Medina belonging carried advantages, and a group formed who joined outwardly without conviction. The commentators read these ayat as the introduction to that group rather than as a report on named individuals.",
+      "keyTerms": [
+        {
+          "arabic": "يُخَـٰدِعُونَ",
+          "gloss": "they try to deceive",
+          "note": "A form of the verb that implies an exchange between two sides, an attempt met by a response. The plain form appears in the next clause, and the shift between the two carries the whole argument."
+        },
+        {
+          "arabic": "يَشْعُرُونَ",
+          "gloss": "they sense, they feel",
+          "note": "From a root for fine perception, the same root behind the word for poetry. It names the awareness that notices a small thing, so its denial says the damage is happening below their notice."
+        },
+        {
+          "arabic": "بِمُؤْمِنِينَ",
+          "gloss": "believers, ones secure",
+          "note": "The root joins belief to safety and to giving safety. The denial is therefore not only about what they hold to be true, but about whether anyone is actually made safe by them."
+        }
+      ],
+      "lifeInProphetsTime": "Medina ran on public word. Alliances between clans were spoken aloud before witnesses, debts were acknowledged in front of a gathering, and a man's standing was the sum of what people had heard him say and seen him do. There were no written registers to check him against. In such a place a declaration was a real instrument, which is exactly why a hollow one was worth making and hard to expose.",
+      "didYouKnow": "The surah gives the three groups very uneven space. The believers are described in three ayat and those settled in rejection in two, while this third group runs from here to the end of the second parable, thirteen ayat in all. More opening attention goes to the divided heart than to either of the settled positions combined.",
+      "theologicalSignificance": "The passage locates a category of failure that lies outside the usual pairing of belief and denial, and it makes that category the more dangerous of the two. What it establishes about God is a matter of scope: there is no audience God is outside of, so a performance aimed at Him has no one to land on but the performer. The last clause adds that self-deception is not felt while it works.",
+      "crossReferences": [
+        {
+          "ref": "63:1",
+          "why": "Opens a whole surah on the same declaration, and says plainly that God knows it does not match."
+        },
+        {
+          "ref": "4:142",
+          "why": "Continues the picture into worship, showing people standing to pray while their attention is elsewhere."
+        },
+        {
+          "ref": "2:204",
+          "why": "Draws the portrait later in this surah of speech that impresses while the intent behind it does not."
+        }
+      ],
+      "applyIt": "Listen to yourself once today at the moment you describe your own motives to someone else. Not to catch yourself out. Just notice whether the account you gave is the one you would have given if nobody were listening. If the two versions differ, you have found the seam this passage is about, and finding it is the whole exercise.",
+      "exploreFurther": [
+        "63:1-4",
+        "4:142",
+        "9:107"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.029Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:10-12",
+      "surah": 2,
+      "start": 10,
+      "end": 12,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Calling The Damage Repair",
+      "tier": "standard",
+      "meaning": "Three ayat move from a diagnosis to a demonstration. The condition is named as sickness rather than as error, which places it in the body of a person rather than in an argument. The increase is then attributed to God, and commentators read it either as the ordinary progression of a disease left untreated or as the effect of continued denial hardening the sufferer. The demonstration follows: told to stop damaging things, they answer that they are the ones repairing them.",
+      "historicalContext": "Medinan, in the years after the migration when the city held recent emigrants, their hosts, older Arab clans and Jewish tribes under a single agreement. Medina had come out of a long internal war shortly before, and its truce was young. The commentators read the charge of spreading damage in that setting, where a rumour carried between clans could reopen a feud that a whole generation had bled for.",
+      "keyTerms": [
+        {
+          "arabic": "مَّرَضٌ",
+          "gloss": "sickness, disease",
+          "note": "Physical illness in ordinary Arabic. Applied to the heart it says the fault is a condition to be treated rather than a position to be argued with, and that it worsens if left alone."
+        },
+        {
+          "arabic": "تُفْسِدُوا۟",
+          "gloss": "to spoil, to ruin",
+          "note": "The verb for food going bad or a joint rotting. Used of society it means the working order of a place breaking down, which in a treaty city meant the collapse of trust between clans."
+        },
+        {
+          "arabic": "مُصْلِحُونَ",
+          "gloss": "reformers, menders",
+          "note": "From the root for setting something right, also used for making peace between two parties. It is the exact opposite of the previous word, which is why the claim is so precisely wrong."
+        }
+      ],
+      "lifeInProphetsTime": "Ruin on the land had a plain meaning in an oasis. A poisoned well, a felled date palm, a cut irrigation channel or a stolen boundary marker could end a family's year. Medina's wealth stood in palm groves that took a decade to bear and a morning to destroy. When people were told not to spread ruin, nobody had to be told what the word covered. Everyone had seen it done.",
+      "didYouKnow": "The closing word of the first of these ayat is read in two ways in the recognised recitation traditions, one meaning that they lie and the other that they call the truth false. The two readings sit side by side in the standard works on recitation, and commentators treat both as illuminating rather than choosing between them.",
+      "theologicalSignificance": "The passage makes self-knowledge a separate faculty that can fail on its own. A person can be wrong about the world and know it, or be wrong and not know it, and the second is treated here as the deeper injury. It also refuses to let sincerity settle the question. These speakers may well believe their own description of themselves, and the passage answers the description rather than the sincerity.",
+      "crossReferences": [
+        {
+          "ref": "2:205",
+          "why": "Shows the same figure in action later in this surah, ruining crops and livestock while turning away."
+        },
+        {
+          "ref": "7:56",
+          "why": "Puts the instruction positively, warning against damaging the earth after it has been set in order."
+        },
+        {
+          "ref": "26:151-152",
+          "why": "Names those who ruin and do not mend as the ones whose command should not be followed."
+        }
+      ],
+      "applyIt": "Think of a situation you have recently described as fixing, sorting out or clearing up. Ask one person who was on the other side of it what they would call it. Do not argue with the answer, and do not concede it either. The point is only to hear your own action named by someone who is not you.",
+      "exploreFurther": [
+        "2:205",
+        "7:56",
+        "5:64"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.009Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:13",
+      "surah": 2,
+      "start": 13,
+      "end": 13,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "Who Gets Called Foolish",
+      "tier": "standard",
+      "meaning": "The invitation is to believe as the people have believed, and the refusal is not an argument about doctrine. It is a judgement about company. The word they use for the early believers means light in judgement, unfit to be trusted with anything weighty, and it is a social insult before it is a theological one. The answer given does not defend those insulted. It returns the word to the speakers and adds that they cannot see this.",
+      "historicalContext": "Medinan, in the surah's opening portrait of those who joined the community outwardly. Classical commentators read the people invoked in the invitation as the believers of Medina and the emigrants among them. Many of the earliest Muslims came from the poorer end of Meccan society, some of them formerly enslaved, and their social standing was a standing objection long before the migration. No specific occasion is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلسُّفَهَآءُ",
+          "gloss": "the foolish, the light-minded",
+          "note": "Not stupidity. The root describes lightness, a garment flapping loose, and names a person whose judgement cannot be relied on. The same word marks those not trusted to manage their own property."
+        },
+        {
+          "arabic": "ٱلنَّاسُ",
+          "gloss": "the people",
+          "note": "The ordinary word for humanity, used here without qualification for the believers. Set against the insult that follows, it quietly makes them the standard case and the speakers the deviation."
+        },
+        {
+          "arabic": "يَعْلَمُونَ",
+          "gloss": "they know",
+          "note": "Knowledge as settled information, distinct from the sensing named in the two preceding ayat. The passage moves from what they cannot feel to what they do not know, tightening the account at each step."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian society ranked people finely and openly. Descent, the standing of your clan, whether you had ever been owned, whether your father was known, whether you owned palms or worked another man's: all of it was public and none of it changed. To be asked to take your religion from a group that included freed slaves and men of small tribes was to be asked to accept a reversal of the only ranking anyone used.",
+      "didYouKnow": "Three consecutive ayat end with almost the same construction, each denying a different faculty: they do not sense, they do not sense again, they do not know. The repetition builds a small ladder in the Arabic, and commentators note that the last rung is the harshest, since not knowing is closer to the mind than not feeling.",
+      "theologicalSignificance": "The passage treats contempt as an epistemic problem rather than a manners problem. Deciding in advance which people are worth learning from filters what can reach you, and the filter is invisible from the inside. By turning the insult around without arguing about the merits of those insulted, the text says the judgement was never about them. It was a report on the person making it.",
+      "crossReferences": [
+        {
+          "ref": "11:27",
+          "why": "Records the identical complaint against Noah, that only the lowest people follow him."
+        },
+        {
+          "ref": "18:28",
+          "why": "Tells the Prophet to stay with those who call on their Lord, and not to look past them for better company."
+        },
+        {
+          "ref": "4:5",
+          "why": "Uses the same word for those whose judgement is unsound, in a setting of property rather than belief."
+        }
+      ],
+      "applyIt": "Notice the next time you dismiss an idea partly because of who is holding it. Do not force yourself to agree. Just separate the two judgements, one about the claim and one about the person, and see whether the claim survives on its own. Most of us discover we had merged them without ever deciding to.",
+      "exploreFurther": [
+        "11:27",
+        "6:52-53",
+        "80:1-10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.023Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:14",
+      "surah": 2,
+      "start": 14,
+      "end": 14,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Two Rooms, Two Sentences",
+      "tier": "standard",
+      "meaning": "The ayah is built as a pair of scenes with the same speaker. In the first, a declaration of belief. In the second, in private, a reassurance to the other side and an explanation of the first scene as a joke. The word for their private company can mean rebellious leaders as easily as unseen powers, and commentators record both readings. What the structure fixes is not their opinion but their method: they intend to be counted by everyone.",
+      "historicalContext": "Medinan, during the years when the community was consolidating and its opponents inside the city were numerous enough to have a settled circle of their own. The commentators describe a general pattern rather than reporting a single occasion, and they are careful to read the ayah as a description of a stance rather than as an accusation against named households that would outlive the moment.",
+      "keyTerms": [
+        {
+          "arabic": "خَلَوْا۟",
+          "gloss": "they were alone with",
+          "note": "The verb for emptying a space of everyone else. It names privacy as a condition, so the ayah turns on the difference a closed door makes rather than on anything either group is said to hold."
+        },
+        {
+          "arabic": "شَيَـٰطِينِهِمْ",
+          "gloss": "their satans, their instigators",
+          "note": "The root carries distance and rebellion. In Arabic usage it could name an unseen tempter or simply a defiant ringleader, and classical commentators allow both here without insisting on one."
+        },
+        {
+          "arabic": "مُسْتَهْزِءُونَ",
+          "gloss": "mockers, ones jesting",
+          "note": "A form that suggests seeking out the mockery, making a project of it. It is also the word they use to reclassify their own declaration, turning a statement into a performance after the fact."
+        }
+      ],
+      "lifeInProphetsTime": "Medina was not one settlement but a scatter of fortified compounds, each clan with its own quarter, wells and palm ground. A man could walk from the mosque courtyard to his own clan's enclosure in the time it takes to cool down, and the two audiences would never meet. The geography made a divided life practical. It also made it fragile, because in a small city everything said in a courtyard eventually travelled.",
+      "didYouKnow": "The word rendered as their devils is a plural with a possessive attached, an unusual pairing that appears only a handful of times in the Quran. Attaching such a word to human owners is part of why classical lexicographers list a second, ordinary sense for it, meaning any leader who has broken loose from restraint.",
+      "theologicalSignificance": "The passage takes the idea of an audience seriously. A person can hold two positions at once if the two rooms never open onto each other, and the moral question becomes which room is real. By reporting both sentences without comment, the text lets the contradiction stand as the verdict. It also establishes that God is not one audience among several, but the one in front of whom both rooms are a single room.",
+      "crossReferences": [
+        {
+          "ref": "3:119",
+          "why": "Shows the same doubled behaviour from the other side, professing belief and then privately biting fingertips in rage."
+        },
+        {
+          "ref": "63:4",
+          "why": "Describes the impression such speakers make in public, and the emptiness the surah says lies behind it."
+        },
+        {
+          "ref": "4:108",
+          "why": "Says they hide from people what they cannot hide from God, who is with them while they plan by night."
+        }
+      ],
+      "applyIt": "Think about how you talk about one particular person when they are in the room, and how you talk about them when they are not. Pick one thing you say only in their absence, and either stop saying it or find a way to say it to them. One item is enough. The aim is to shrink the gap by a single sentence.",
+      "exploreFurther": [
+        "3:119",
+        "4:108",
+        "58:7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.023Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:15-16",
+      "surah": 2,
+      "start": 15,
+      "end": 16,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "A Trade That Did Not Profit",
+      "tier": "standard",
+      "meaning": "God's response is named with the same word used for their mockery a line earlier. Commentators are unanimous that this is a figure of speech, the Arabic habit of naming a requital by the name of the offence, and they differ only on what the requital consists of. Then the register changes completely. Their whole position is priced as a transaction: guidance handed over, error received, and the ledger closed with the observation that the deal returned nothing.",
+      "historicalContext": "Medinan, closing the surah's account of those whose commitment was outward. The passage sits at the hinge between the description of their behaviour and the two parables that follow. The commercial vocabulary was not chosen at random. Both Mecca and Medina lived by trade, and the audience for this surah included men whose reputations rested on the deals they had judged well.",
+      "keyTerms": [
+        {
+          "arabic": "ٱشْتَرَوُا۟",
+          "gloss": "they bought, they purchased",
+          "note": "The verb for taking on a purchase, with what is paid introduced by a small particle. Read closely, guidance is the price and error the goods, which is what makes the transaction so badly judged."
+        },
+        {
+          "arabic": "تِّجَـٰرَتُهُمْ",
+          "gloss": "their trade, their commerce",
+          "note": "Ordinary business, the word a merchant would use for his season's dealing. It carries the expectation of return, so a trade that does not profit is not neutral. It is a season lost."
+        },
+        {
+          "arabic": "يَعْمَهُونَ",
+          "gloss": "wandering, blundering about",
+          "note": "A verb for moving without direction, distinct from the word for physical blindness. It describes the confusion of someone still walking and still active, but with nothing to steer by."
+        }
+      ],
+      "lifeInProphetsTime": "A Meccan caravan was financed by shares. Investors put in capital, the goods went north to Syria or south to Yemen, and months later the accounts were settled and profit divided. Everyone knew families ruined by one bad season and everyone could name a trader whose judgement was trusted. To say a man's trade brought no profit was not an abstraction. It was the worst thing that could be said about his competence.",
+      "didYouKnow": "The image of buying error at the price of guidance returns later in this same surah, applied to a different group, so the phrase functions almost as a refrain within Al-Baqara. The Quran uses commercial vocabulary for the relationship between a person and God more than once, including the striking reversal where God is the buyer.",
+      "theologicalSignificance": "Pricing a spiritual position as a purchase does something specific: it insists that a choice was made and something real was given up. Nobody drifts into a trade. It also introduces a category of loss that is invisible while it is happening, since the wandering described in the previous line means these are people who feel active and busy. The passage measures a life by return rather than by motion.",
+      "crossReferences": [
+        {
+          "ref": "61:10-11",
+          "why": "Offers the opposite trade in the same vocabulary, a commerce that rescues from a painful punishment."
+        },
+        {
+          "ref": "9:111",
+          "why": "Reverses the direction entirely, presenting God as the purchaser of the believers' lives and property."
+        },
+        {
+          "ref": "35:29",
+          "why": "Names recitation, prayer and quiet spending as a trade that will never come to nothing."
+        }
+      ],
+      "applyIt": "Take one commitment of the last year and price it honestly. Not in money, but in what it cost you in hours, attention and the things you did not do instead. Then ask what it returned. Doing this once, on paper, for something ordinary is a useful habit, and it is easier to learn on a small case than on a large one.",
+      "exploreFurther": [
+        "61:10-11",
+        "35:29",
+        "2:175"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.024Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:17-18",
+      "surah": 2,
+      "start": 17,
+      "end": 18,
+      "theme": "Light",
+      "themeId": "light",
+      "title": "The Fire That Went Out",
+      "tier": "standard",
+      "meaning": "The first of two parables. Someone kindles a fire, the ground around him becomes visible, and then the light is taken and he is left in layered darkness. Two details carry the weight. The fire was lit successfully, so this is not a picture of failure to begin; and the darkness afterwards is worse than the darkness before, because the eye has already adjusted to seeing. The three faculties denied in the next line are the three by which anything could be recovered.",
+      "historicalContext": "Medinan, at the close of the surah's long opening portrait. Parables of this kind belong to a style the Quran uses throughout, and commentators differ over who exactly is pictured here. Most read it of those whose commitment was outward only, while some apply it to anyone who received light and let it go. The surah gives no occasion, and the parable is left general enough to hold both readings.",
+      "keyTerms": [
+        {
+          "arabic": "ٱسْتَوْقَدَ",
+          "gloss": "he kindled, he sought fire",
+          "note": "A form of the verb that suggests effort and seeking, not a fire that simply appeared. The person in the parable worked for the light, which is why its removal reads as a loss rather than an absence."
+        },
+        {
+          "arabic": "ظُلُمَـٰتٍ",
+          "gloss": "darknesses, layered dark",
+          "note": "A plural. Throughout the Quran the word for light stays singular while darkness is nearly always plural, a pattern commentators note as a claim about how each behaves."
+        },
+        {
+          "arabic": "بُكْمٌ",
+          "gloss": "mute, dumb",
+          "note": "Unable to speak. These are people whom the surah has quoted talking at length, so the word cannot mean a physical defect. It names an organ intact and unused for what matters."
+        }
+      ],
+      "lifeInProphetsTime": "A fire at night in open country was survival equipment. It kept animals off, marked your camp for anyone looking for you, and let you see the ground before you put a foot down among thorns and stones. Travellers gathered brushwood before dark for exactly this reason. To have that fire go out at the moment it was working, with your night vision already spent on it, was a specific and familiar dread.",
+      "didYouKnow": "The Arabic slips from singular to plural inside one sentence. It begins with one person who kindled a fire and ends by saying God took away their light and left them, in the plural. Classical grammarians treat the shift as deliberate rather than as a lapse, reading the single figure as a type standing for a group.",
+      "theologicalSignificance": "Light in this parable is given and can be withdrawn, which places it outside the person who kindled it even though he did the kindling. That is the difficulty the image is built to hold: real effort, real illumination, and no ownership. The passage also suggests that clarity once had and then lost leaves a worse position than never having had it, since the faculties that might find the way back are the ones described as gone.",
+      "crossReferences": [
+        {
+          "ref": "24:40",
+          "why": "Extends the same picture into layered darkness at sea, ending with the one God gives no light."
+        },
+        {
+          "ref": "57:13",
+          "why": "Places the withdrawal of light on the Day of Judgement, with a wall raised between two groups."
+        },
+        {
+          "ref": "2:171",
+          "why": "Repeats the same three denied faculties later in this surah, applied to those who will not reason."
+        }
+      ],
+      "applyIt": "Think of a practice you once kept and quietly dropped, something small that used to steady you. Do not restart the whole thing tonight. Do the smallest version of it once, at the hour you used to do it. Relighting is a different task from lighting, and the difference is mostly in expecting less of the first attempt.",
+      "exploreFurther": [
+        "24:35",
+        "24:40",
+        "57:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.025Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:19",
+      "surah": 2,
+      "start": 19,
+      "end": 19,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Fingers Pressed Into Ears",
+      "tier": "standard",
+      "meaning": "The second parable answers the first. Where the fire was a light lost, this is a downpour that arrives all at once, carrying darkness, thunder and lightning together. The response described is not flight but a gesture: fingers jammed into the ears against the crash, in dread of dying. Commentators read the rain as the revelation itself, life-giving in substance and terrifying in delivery, and the gesture as the attempt to shut out a warning that will not be argued with.",
+      "historicalContext": "Medinan, following immediately on the parable of the extinguished fire. The pairing of a fire image with a water image is the surah's own arrangement rather than a report of two separate occasions. Commentators note that the second parable is the longer of the two and that it moves the picture outdoors and upward, from something a person makes to something that comes down on him from the sky.",
+      "keyTerms": [
+        {
+          "arabic": "كَصَيِّبٍ",
+          "gloss": "like a downpour",
+          "note": "From a root meaning to come down and to hit the mark. The word names rain by its descent and its force rather than by its wetness, which is why the picture is violent rather than gentle."
+        },
+        {
+          "arabic": "حَذَرَ",
+          "gloss": "in wariness of, dreading",
+          "note": "Caution taken against a specific expected harm, not general anxiety. It names the alert state of someone who knows exactly what he is guarding against and has decided how to guard against it."
+        },
+        {
+          "arabic": "مُحِيطٌۢ",
+          "gloss": "encompassing, surrounding",
+          "note": "The word used for a wall around a garden. Applied to God it says there is no direction the storm can be escaped in, which quietly answers the gesture described a moment earlier."
+        }
+      ],
+      "lifeInProphetsTime": "Rain in Arabia was the year in a single event. A good season filled the wells and greened the grazing; the same water running off hard ground could fill a wadi in minutes and take a camped party with it. Travellers chose their ground with this in mind. Nobody in that audience had to be told that the thing you wait all year for and the thing that kills you can arrive in the same cloud.",
+      "didYouKnow": "The gesture of pressing fingers into the ears appears in one other place in the Quran, in Noah's account of his people, who put their fingers in their ears and pulled their garments over themselves when he called them. The same physical refusal turns up separated by many centuries of narrative, described in almost the same words.",
+      "theologicalSignificance": "The parable puts a warning and a mercy inside one event, and insists they are not two things. Rain is unambiguously good and unambiguously dangerous, and which face it shows depends on where you are standing when it arrives. Applied to revelation, that makes the reaction of fear neither irrational nor sufficient. The closing clause removes the option the gesture assumes, since blocking a sound does not change what surrounds you.",
+      "crossReferences": [
+        {
+          "ref": "71:7",
+          "why": "Records the identical gesture, fingers in ears and garments drawn over heads, in Noah's report to God."
+        },
+        {
+          "ref": "13:12-13",
+          "why": "Presents lightning as fear and hope together, with thunder itself declaring God's praise."
+        },
+        {
+          "ref": "30:24",
+          "why": "Names the same sky as a sign, sending water that revives the earth after its death."
+        }
+      ],
+      "applyIt": "Notice what you do with your hands and your attention when something you would rather not hear starts being said. Most people have one reliable move: reaching for a phone, changing the subject, going quiet. Name yours today. You do not have to stop doing it. Knowing which gesture is yours is enough for one day.",
+      "exploreFurther": [
+        "71:5-9",
+        "13:12-13",
+        "24:43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.025Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:20",
+      "surah": 2,
+      "start": 20,
+      "end": 20,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Walking Only In The Flashes",
+      "tier": "standard",
+      "meaning": "The parable ends with a picture of movement tied entirely to intermittent light. When the lightning shows the ground they walk; when it goes dark they stop. Commentators read this as a stance rather than a belief, an arrangement in which commitment tracks visible advantage and halts the moment the road stops being lit. The closing sentence then steps back from the scene altogether. The faculties they are using so selectively could be removed, and are not.",
+      "historicalContext": "Medinan, the final line of the surah's opening section before it turns to address all humanity. The community in Medina was in a period where belonging to it brought both cost and benefit at different times, and the classical commentators read the alternation in the parable against that: seasons of security when association was easy, and seasons of pressure when it was not.",
+      "keyTerms": [
+        {
+          "arabic": "يَخْطَفُ",
+          "gloss": "snatches away, seizes",
+          "note": "A verb for a swift grab, used of a bird taking prey off the ground. It gives the lightning an agency of its own and makes the threat to sight sudden rather than gradual."
+        },
+        {
+          "arabic": "قَامُوا۟",
+          "gloss": "they stood still",
+          "note": "The plain verb for standing up or standing in place. Set against the verb for walking in the previous clause, it turns the whole ayah into an alternation of two postures and nothing else."
+        },
+        {
+          "arabic": "قَدِيرٌ",
+          "gloss": "fully capable, all-powerful",
+          "note": "An intensive form from a root that also gives the words for measure and proportion. Power here is exact rather than merely large, which is why the sentence about what God could have done is not a threat."
+        }
+      ],
+      "lifeInProphetsTime": "Long journeys were often made at night, when the heat had gone and the stars gave direction. In a storm that navigation collapses. The flash shows the whole plain for an instant, and then leaves the eye worse off than before. Anyone who had crossed open ground in bad weather knew the rhythm exactly: a few quick steps taken while you can see, then a halt with your feet where they are.",
+      "didYouKnow": "This ayah completes the second parable and is the last word the surah says about the third group before it turns, in the very next line, to address all people directly. The whole opening portrait, twenty ayat of it, functions as a sorting of the audience before the surah begins its argument in earnest.",
+      "theologicalSignificance": "The closing clause changes the subject from human behaviour to divine restraint. Hearing and sight are presented as held rather than owned, and the sentence notes that they could be withdrawn precisely in order to say that they have not been. That reframes the whole parable: the intermittent light was never the constraint. What looks from inside like the limit of what is available is in fact a reprieve still running.",
+      "crossReferences": [
+        {
+          "ref": "22:11",
+          "why": "Describes worship offered from an edge, content while good comes and turning away at the first trial."
+        },
+        {
+          "ref": "24:43",
+          "why": "Uses nearly the same phrase about lightning almost taking sight, inside a description of clouds and rain."
+        },
+        {
+          "ref": "4:143",
+          "why": "Names the state of wavering between two sides, belonging fully to neither of them."
+        }
+      ],
+      "applyIt": "Look at one thing you do only when conditions are easy, and shrink it until it survives a bad week. A page instead of a chapter, two minutes instead of twenty. The point is not discipline for its own sake. It is to have one practice whose size does not depend on how well things are going.",
+      "exploreFurther": [
+        "22:11",
+        "24:43",
+        "4:142-143"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.026Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:21-22",
       "surah": 2,
       "start": 21,
@@ -116,6 +638,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.575Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:23-24",
+      "surah": 2,
+      "start": 23,
+      "end": 24,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Produce One Chapter Like It",
+      "tier": "standard",
+      "meaning": "A challenge rather than an argument. Doubt is met not with proof but with an invitation to compete, at the smallest scale the text can be measured in: one chapter. The Arabic phrase allows two readings, and commentators record both, that the rival chapter should be like the revelation or like the unlettered man who delivered it. The second ayah adds a prediction inside the challenge itself, saying the attempt will not succeed before anyone has tried.",
+      "historicalContext": "Medinan, though the challenge itself had already been issued repeatedly during the Meccan years to audiences who prized eloquence above almost everything. Here it is restated to a different city with different objectors. The commentators do not tie it to a single occasion, treating it instead as a standing invitation the text keeps open, and they note that the sequence of challenges narrows in scale across the Quran.",
+      "keyTerms": [
+        {
+          "arabic": "رَيْبٍ",
+          "gloss": "unsettling doubt, disquiet",
+          "note": "Not neutral uncertainty. The root carries suspicion and unease, the state of someone who cannot rest with a question. The surah opened by saying there is none of this in the Book, and the word returns here."
+        },
+        {
+          "arabic": "عَبْدِنَا",
+          "gloss": "Our servant",
+          "note": "The Prophet is identified here by servanthood rather than by name, at the exact point where his message is being challenged. The title places him on the receiving side of the revelation, not its author."
+        },
+        {
+          "arabic": "شُهَدَآءَكُم",
+          "gloss": "your witnesses, your helpers",
+          "note": "Those called to testify or to stand behind a claim. Inviting them makes the challenge a public procedure rather than a private judgement, which is how disputes were normally settled."
+        }
+      ],
+      "lifeInProphetsTime": "Poetry was the public technology of the Arabs. Tribes kept poets the way later states kept diplomats, verses were memorised and carried between markets, and a single line could raise a clan's standing or ruin a rival's. Competitions at seasonal fairs drew judges and crowds. A challenge to produce a matching text was therefore not an unusual gesture. It was addressed to people who ran exactly this contest for sport.",
+      "didYouKnow": "The challenge appears at several scales across the Quran. Elsewhere it asks for a discourse like it, for ten chapters, and it declares that humans and jinn together could not produce its like. Here and in one other place the demand is reduced to a single chapter, which is the shortest form the challenge takes anywhere in the text.",
+      "theologicalSignificance": "Staking a claim on a reproducible test is unusual for a scripture. It makes the text its own evidence and puts that evidence in public hands, where anyone may attempt it in any century. The added prediction raises the stakes further, since a challenge that forecasts its own outcome fails twice over if the outcome is different. What is being asserted is not that the Quran is beautiful, but that its source is not human.",
+      "crossReferences": [
+        {
+          "ref": "10:38",
+          "why": "Issues the same single-chapter challenge, with the same invitation to summon whoever can help."
+        },
+        {
+          "ref": "11:13",
+          "why": "Raises the demand to ten chapters, forged if need be, and again invites all available support."
+        },
+        {
+          "ref": "17:88",
+          "why": "States the outcome at full scale, humans and jinn combined unable to produce the like of it."
+        }
+      ],
+      "applyIt": "Read one short chapter aloud today, slowly, in whatever language you have it in, and pay attention to how it is put together rather than to what it tells you. Where does it change direction. Where does it repeat. You are not testing anything. You are simply looking at the construction, which most of us never do.",
+      "exploreFurther": [
+        "10:37-38",
+        "11:13",
+        "17:88"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.026Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:25",
+      "surah": 2,
+      "start": 25,
+      "end": 25,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "Fruit They Have Tasted Before",
+      "tier": "standard",
+      "meaning": "Good news is announced with a condition attached to it, belief joined to action, and then the reward is described through a single strange detail. Those given fruit say it is what they were given before, and are given something alike. Commentators differ on the recognition: some read it as resemblance to the fruit of this world, others as resemblance to what was given earlier in the Garden itself. Either way the point is continuity rather than novelty.",
+      "historicalContext": "Medinan, placed immediately after the warning that closes the challenge to the doubters. The surah's habit of pairing is visible here: a fire described in one breath and a garden in the next. Classical commentators note the arrangement rather than reporting an occasion, and read the pairing as the standard Quranic method of holding fear and hope at the same distance from the reader.",
+      "keyTerms": [
+        {
+          "arabic": "وَبَشِّرِ",
+          "gloss": "give good news",
+          "note": "The root also gives the word for skin. Lexicographers connect the two, since this is news that shows in the face before it is answered, which is why it cannot be used for ordinary information."
+        },
+        {
+          "arabic": "مُتَشَـٰبِهًا",
+          "gloss": "resembling one another",
+          "note": "Alike in appearance. The common gloss holds that what is brought looks like what came before while differing in taste, so recognition and surprise arrive in the same moment."
+        },
+        {
+          "arabic": "مُّطَهَّرَةٌ",
+          "gloss": "purified, made pure",
+          "note": "A passive form: not simply pure, but made so by another. The grammar quietly attributes the condition to God rather than to any quality the described possess on their own."
+        }
+      ],
+      "lifeInProphetsTime": "In an oasis economy, a walled garden with water running through it was the top of the material scale. Palms took years to bear and had to be watered by hand or by channel from a well, and ownership of a producing grove was the difference between a family that lent and one that borrowed. Rivers that ran underneath without anyone drawing them described a wealth nobody in Medina had ever seen.",
+      "didYouKnow": "This is the first appearance in the Quran's order of the phrase about gardens with rivers running beneath them, a formula that then recurs throughout the text in almost identical wording. Its debut here, in the second chapter and near its beginning, sets the standard vocabulary for every later description of the reward.",
+      "theologicalSignificance": "The described reward is deliberately made of familiar things. Fruit, water, shade and company are all available in this world, and the passage presents the next one as these continued rather than replaced. That does two things at once: it keeps the promise imaginable, and it dignifies ordinary created goods by making them a genuine foretaste. Permanence, not novelty, is what the closing word adds to the picture.",
+      "crossReferences": [
+        {
+          "ref": "13:35",
+          "why": "Describes the same garden with its food and shade unceasing, in contrast to a fire."
+        },
+        {
+          "ref": "47:15",
+          "why": "Fills in the picture with rivers of several kinds and fruit of every sort within it."
+        },
+        {
+          "ref": "56:27-33",
+          "why": "Gives the fullest version of the imagery, thornless trees, spreading shade and fruit neither cut off nor forbidden."
+        }
+      ],
+      "applyIt": "Eat one piece of fruit today without doing anything else while you eat it. No screen, no conversation, no walking. It takes about two minutes. This passage describes a reward you are meant to be able to picture, and picturing it works better if you have recently paid attention to the version you already have.",
+      "exploreFurther": [
+        "13:35",
+        "47:15",
+        "76:12-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.027Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:26",
+      "surah": 2,
+      "start": 26,
+      "end": 26,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "No Shame In A Gnat",
+      "tier": "standard",
+      "meaning": "The objection being answered is about scale, not truth: that so small an image is beneath the subject. The answer concedes the smallness and denies that it matters. Commentators differ on the phrase that follows, some reading it as anything larger than a gnat and others as anything smaller still, and the ambiguity works either way. Then the same example is said to guide many and mislead many, with the final clause restricting the second effect to those already stepping outside.",
+      "historicalContext": "Medinan, directly after two parables built from a fire and a rainstorm. Classical commentators connect the ayah to objections raised about the smallness of the Quran's comparisons, noting that elsewhere the text draws on a spider and a fly as well. They present this as the general setting rather than as a single reported incident, and read the answer as addressed to a style of objection rather than to particular objectors.",
+      "keyTerms": [
+        {
+          "arabic": "يَسْتَحْىِۦٓ",
+          "gloss": "feels shame, shrinks back",
+          "note": "The verb for the modesty that stops a person from doing something undignified. Denying it of God addresses the objection on its own terms, since the complaint was about dignity rather than accuracy."
+        },
+        {
+          "arabic": "بَعُوضَةً",
+          "gloss": "a gnat, a mosquito",
+          "note": "The smallest creature the audience would think of naming. Choosing it makes the example itself an example, since the point being argued is precisely that size has nothing to do with force."
+        },
+        {
+          "arabic": "ٱلْفَـٰسِقِينَ",
+          "gloss": "those who break out",
+          "note": "From a root used for a date stone bursting out of its skin. It pictures stepping outside a boundary rather than failing a standard, which is a different accusation from ignorance or error."
+        }
+      ],
+      "lifeInProphetsTime": "Insects were not a minor feature of that life. Gnats and mosquitoes bred wherever water stood, and the oasis of Medina, with its wells and irrigated groves, had standing water all year. Fever was common there and newcomers from Mecca suffered from it badly. An audience in that city would not have heard the gnat as a whimsical choice. It was the small thing that could flatten a household.",
+      "didYouKnow": "The Quran's smallest comparisons are used for its largest arguments. A spider's house stands for the fragility of what people rely on instead of God, and a fly appears in a challenge about what other objects of worship cannot create or recover. This ayah is where the method itself is defended, and it defends it by naming the smallest example of all.",
+      "theologicalSignificance": "The same thing can produce opposite effects in different receivers, and the passage attributes both effects to God while restricting the harmful one by a condition. That structure is repeated elsewhere about revelation as a whole. It establishes that a message is not a neutral object landing on passive people. What a person brings to it participates in what it does, and the final clause makes clear which direction the responsibility runs in.",
+      "crossReferences": [
+        {
+          "ref": "29:41",
+          "why": "Builds a whole argument on the spider's house, the frailest of dwellings, exactly the method defended here."
+        },
+        {
+          "ref": "22:73",
+          "why": "Uses the fly in a challenge, another deliberately small creature carrying a large claim."
+        },
+        {
+          "ref": "17:82",
+          "why": "Says revelation is healing for some and increases loss for others, the same double effect in different words."
+        }
+      ],
+      "applyIt": "Pick the smallest object within reach and spend one minute on how it was made and what had to exist for it to reach you. A pen, a seed, a coin. The exercise this ayah defends is exactly that, and it works best on something you would never otherwise have looked at twice.",
+      "exploreFurther": [
+        "29:41-43",
+        "22:73",
+        "17:82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:35:52.028Z",
         "reviewed": false
       }
     },
