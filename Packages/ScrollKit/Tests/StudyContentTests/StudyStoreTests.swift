@@ -67,7 +67,9 @@ func unitKeysAndStudyKeysDiffer() throws {
         #expect(keys.isSubset(of: store.unitKeys), "surah \(surah) has a study outside the segmentation")
         #expect(keys == Set(authored.filter { PassageRef(key: $0)?.surah == surah }))
     }
-    #expect(store.studyKeys(inSurah: 114).isEmpty)
+    if let shardless = (1...114).first(where: { !(try! syncedSurahs()).contains($0) }) {
+        #expect(store.studyKeys(inSurah: shardless).isEmpty)
+    }
     #expect(store.unitKeys.count > authored.count)
 }
 
@@ -83,7 +85,9 @@ func studiesInSurahAreOrdered() throws {
             next = unit.end
         }
     }
-    #expect(store.studies(inSurah: 114).isEmpty)
+    if let shardless = (1...114).first(where: { !(try! syncedSurahs()).contains($0) }) {
+        #expect(store.studies(inSurah: shardless).isEmpty)
+    }
 }
 
 @Test("An ayah mapped to a unit whose shard file is missing still resolves to nil")
