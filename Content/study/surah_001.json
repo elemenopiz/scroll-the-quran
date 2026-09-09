@@ -1,182 +1,64 @@
 {
-  "version": 1,
   "surah": 1,
-  "note": "Hand-written Phase 1 fixture. Real shards are produced by Tools/content-gen and replace this file wholesale.",
-  "units": [
+  "promptVersion": "p1",
+  "generatedAt": "2026-09-09T08:01:03.008Z",
+  "studies": [
     {
-      "key": "1:1",
+      "key": "1:1-7",
       "surah": 1,
       "start": 1,
-      "end": 1,
-      "theme": "The names of God",
-      "themeId": "names-of-god",
-      "title": "In the name of God",
-      "tier": 1,
-      "meaning": "The Quran opens by naming the one it comes from. The line is not a title on a cover; it is a way of beginning, and Muslims say it before eating, writing, travelling and almost anything else that matters. Two of the names appear together here, and both are built on the same three-letter root for mercy. The first describes mercy as something God is, vast and impartial and reaching everything alive. The second describes mercy as something God does, directed and particular, arriving where it is needed. Starting this way sets the terms for everything that follows: whatever the Quran goes on to command or warn about is spoken by the Merciful.",
-      "historicalContext": "Al-Fatiha is generally held to be among the earliest complete surahs revealed in Mecca, in the years when the Prophet Muhammad, peace be upon him, and a small community were praying quietly and under pressure. Scholars differ on whether this opening line counts as the first ayah of the surah, which is why some printed copies number it and others do not; the difference is old, well documented, and has no bearing on the meaning.",
-      "keyTerms": [
-        {
-          "arabic": "بِسْمِ اللَّهِ",
-          "gloss": "in the name of God",
-          "note": "One contracted phrase in the original. It marks an action as done for God rather than merely announced to Him."
-        },
-        {
-          "arabic": "الرَّحْمَٰن",
-          "gloss": "the Most Gracious",
-          "note": "A name of God, not an adjective anyone else takes. Classical commentators read it as mercy so wide it covers everyone, believer or not."
-        },
-        {
-          "arabic": "الرَّحِيم",
-          "gloss": "the Most Merciful",
-          "note": "Same root as the name before it, different form: mercy as continuing, deliberate action toward particular people."
-        }
-      ],
-      "lifeInProphetsTime": "Meccan trade documents and letters of the period often opened with the name of a tribal deity or a patron. Beginning with the name of the one God was a small phrase with a large claim, and it was heard as one.",
-      "didYouKnow": "The phrase opens all but one of the 114 surahs. Surah 9, At-Tawbah, begins without it, and early commentators offered several explanations without settling on one.",
-      "theologicalSignificance": "Mercy is placed first, before law, before judgment, before any demand. The order matters: the Quran's own framing of God begins with what He gives rather than what He requires.",
-      "crossReferences": [
-        {
-          "ref": "7:156",
-          "why": "God describes His mercy as encompassing all things."
-        },
-        {
-          "ref": "27:30",
-          "why": "Sulayman opens his letter to the Queen of Sheba with the same words."
-        },
-        {
-          "ref": "39:53",
-          "why": "The mercy named here is extended explicitly to those who have wronged themselves."
-        }
-      ],
-      "applyIt": "Pick one ordinary thing you do today without thinking about it — opening your laptop, starting the car — and say this line first. Notice whether naming God before an ordinary act changes how you do it.",
-      "exploreFurther": [
-        "1:2-4",
-        "7:156",
-        "39:53"
-      ],
-      "meta": {
-        "model": "hand-written",
-        "promptVersion": "fixture-1",
-        "generatedAt": "2026-09-09",
-        "reviewed": true
-      }
-    },
-    {
-      "key": "1:2-4",
-      "surah": 1,
-      "start": 2,
-      "end": 4,
-      "theme": "Praise and lordship",
-      "themeId": "praise",
-      "title": "Lord of the worlds",
-      "tier": 1,
-      "meaning": "Three short lines describe who is being addressed. He is Lord of the worlds — not of one tribe or one people, but of everything there is, seen and unseen. He is Gracious and Merciful, the two names repeated from the opening line so that they frame what comes next. And He is Master of the Day of Judgment, which places a horizon on the whole thing: this life is not the last word. Praise, lordship, mercy, accountability. The four together are the Quran's compressed answer to the question of what God is like.",
-      "historicalContext": "The phrase rendered 'Lord of the worlds' would have landed sharply in a city whose economy ran on a sanctuary full of tribal gods, each with its own territory and clientele. A Lord with no boundary was a direct challenge to how Mecca was organised.",
-      "keyTerms": [
-        {
-          "arabic": "الْحَمْد",
-          "gloss": "praise",
-          "note": "Praise that is both gratitude and recognition of worth, owed whether or not the speaker has benefited."
-        },
-        {
-          "arabic": "رَبّ",
-          "gloss": "Lord, sustainer",
-          "note": "Carries ownership, but also the sense of raising and nurturing something to completion — closer to a guardian than a ruler."
-        },
-        {
-          "arabic": "الْعَالَمِين",
-          "gloss": "the worlds",
-          "note": "Plural and deliberately open: commentators read it as every category of created being, human and otherwise."
-        },
-        {
-          "arabic": "الدِّين",
-          "gloss": "judgment, recompense",
-          "note": "Here it names the settling of accounts rather than religion in general, though the same word carries that sense elsewhere."
-        }
-      ],
-      "lifeInProphetsTime": "Pilgrims arriving in Mecca praised the god who governed their own affairs. To praise a Lord of all the worlds was to say that the local arrangements were not the real ones.",
-      "didYouKnow": "These lines are recited in every unit of the five daily prayers, which means a practising Muslim says them more than a dozen times a day.",
-      "theologicalSignificance": "Mercy and judgment are named in the same breath, one line apart. The Quran does not treat them as opposites to be balanced but as two aspects of the same sovereignty.",
-      "crossReferences": [
-        {
-          "ref": "6:45",
-          "why": "Praise to the Lord of the worlds closes a passage about the end of wrongdoing."
-        },
-        {
-          "ref": "82:17-19",
-          "why": "The Day of Judgment described as the day when no soul can help another."
-        }
-      ],
-      "applyIt": "Say the second line — praise to the Lord of the worlds — at a moment today when nothing in particular has gone well. Praise that only shows up after good news is a narrower thing than what this asks for.",
-      "exploreFurther": [
-        "1:5-7",
-        "6:45",
-        "82:17-19"
-      ],
-      "meta": {
-        "model": "hand-written",
-        "promptVersion": "fixture-1",
-        "generatedAt": "2026-09-09",
-        "reviewed": true
-      }
-    },
-    {
-      "key": "1:5-7",
-      "surah": 1,
-      "start": 5,
       "end": 7,
       "theme": "Guidance",
       "themeId": "guidance",
-      "title": "Guide us on the straight path",
-      "tier": 1,
-      "duaa": true,
-      "meaning": "The surah turns from description to address. Having said who God is, it now speaks to Him directly: You alone we worship, You alone we ask for help. Then comes the request the whole surah has been building toward, and it is not for wealth or safety or victory. It is for guidance. The path asked for is described three ways: straight, walked already by those God favoured, and not the path of those who earned anger or lost their way. The plural matters — 'guide us', not 'guide me'. Even said alone, the prayer is made on behalf of everyone walking the same road.",
-      "historicalContext": "The early Meccan community was small and often frightened. That the prayer they were given asks first for direction rather than relief says something about what the Quran treats as the deeper need.",
+      "title": "The Prayer That Opens Everything",
+      "tier": "discover",
+      "meaning": "These seven lines are a prayer God teaches so that a person knows how to address Him. Praise comes first, then two names of mercy, then ownership of the day accounts are settled. Only halfway through does the speech turn from talking about God to talking to Him, and only then does it ask. The one request is for direction rather than for relief or wealth, and the commentators read the rest of the Quran as its answer.",
+      "historicalContext": "Meccan, and among the earliest complete surahs given to the Prophet Muhammad (peace be upon him), from the years when a small and pressured community was learning to pray at all. A minority of classical reports place a second revelation of it in Medina, and the commentators note the difference without resolving it. From the first written collections it stood at the head of the codex rather than in order of revelation.",
       "keyTerms": [
         {
-          "arabic": "اهْدِنَا",
-          "gloss": "guide us",
-          "note": "The root covers both showing the way and carrying someone along it; the request is for both."
+          "arabic": "ٱلْحَمْدُ",
+          "gloss": "praise, all praise",
+          "note": "The definite article makes it total. Not an act of praise that someone chooses to offer, but praise as such, all of it, belonging to God whether or not anyone gives it."
         },
         {
-          "arabic": "الصِّرَاطَ الْمُسْتَقِيم",
-          "gloss": "the straight path",
-          "note": "A road wide enough to be public and straight enough to have a direction. Classical commentary reads it as the whole of right practice, not one narrow rule."
+          "arabic": "ٱلرَّحْمَـٰنِ",
+          "gloss": "the Most Gracious",
+          "note": "Built on a root shared with the word for womb. It names a mercy that is vast, prior, and unearned, spread over everything created, and the Quran uses it almost as a second name."
         },
         {
-          "arabic": "نَسْتَعِين",
-          "gloss": "we seek help",
-          "note": "Paired with worship in the same line, so that asking God for help is framed as part of worshipping Him."
+          "arabic": "ٱلصِّرَٰطَ",
+          "gloss": "the road, the way",
+          "note": "Not a narrow footpath but a wide public road, the kind a caravan travels. The word carries openness and ease of passage, so the request is for a road wide enough to walk without stumbling."
         }
       ],
-      "lifeInProphetsTime": "Caravan routes across the Hijaz were marked by cairns and known waypoints, and losing the track in open desert was a real danger rather than a metaphor. The image of a straight path had weight for people who travelled.",
-      "didYouKnow": "A well-known hadith describes this surah as a conversation: God answers each line as it is recited, and when the servant reaches this request, the reply is that it is granted.",
-      "theologicalSignificance": "Guidance is asked for in the present tense by people already praying. The Quran treats being guided as something continuous rather than a state you arrive at and keep.",
+      "lifeInProphetsTime": "Mecca lived by the road. Merchants left for Syria in summer and Yemen in winter, and a caravan's survival turned on whether the guide knew the route across country where a wrong turn meant days without water. Asking to be shown a straight road was not first a metaphor. It was the most practical request a traveller could make, and this prayer puts it in the mouth of everyone who says it.",
+      "didYouKnow": "This is the only surah spoken entirely from the human side to God rather than from God to humanity, which is why the commentators describe it as a prayer taught rather than a message sent. The classical tradition records more than twenty names for it, including the Mother of the Book, the Cure, and the Seven Oft-Repeated named in surah fifteen.",
+      "theologicalSignificance": "Putting praise, mercy and judgement ahead of the request sets an order the whole Quran keeps: God is known before He is asked. The plural voice leaves no room for a purely private religion, since even someone praying alone speaks as part of a community. And the request itself concedes that guidance is not something a person manufactures and keeps. It is asked for daily by people who already have it.",
       "crossReferences": [
         {
-          "ref": "2:2",
-          "why": "The next surah opens by answering this request: guidance for those mindful of God."
-        },
-        {
-          "ref": "4:69",
-          "why": "Names those God has favoured, whose path is asked for here."
+          "ref": "15:87",
+          "why": "Names this surah the seven oft-repeated verses, given alongside the whole of the Quran."
         },
         {
           "ref": "6:153",
-          "why": "The straight path set against the many roads that lead away from it."
+          "why": "Calls the straight path God's own and warns against the side roads that scatter travellers."
+        },
+        {
+          "ref": "20:14",
+          "why": "Ties worship to remembrance, the movement this prayer makes from acknowledging God to standing before Him."
         }
       ],
-      "applyIt": "You have probably already decided what you want today. Ask instead to be shown what is right, and mean it enough that the answer could change the plan.",
+      "applyIt": "You probably say these lines several times a day, faster than you can think them. Tomorrow, slow down at the sixth line, the request for a straight road, and hold it for one extra breath before moving on. Notice what you were about to ask for instead. The order of this prayer was given before the asking, and it is worth arriving at the request unhurried.",
       "exploreFurther": [
-        "2:2",
-        "4:69",
-        "6:153"
+        "15:87",
+        "6:153",
+        "17:9"
       ],
       "meta": {
-        "model": "hand-written",
-        "promptVersion": "fixture-1",
-        "generatedAt": "2026-09-09",
-        "reviewed": true
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T08:00:56.561Z",
+        "reviewed": false
       }
     }
   ]

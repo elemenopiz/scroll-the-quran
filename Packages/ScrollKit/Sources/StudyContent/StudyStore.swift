@@ -4,10 +4,16 @@ import QuranData
 
 /// Reads Deep Study commentary out of `Content/study`.
 ///
-/// `passages.json` is small and loads once at init; the per-surah shards are large and load
-/// lazily, with at most `shardCacheLimit` of them resident at a time (least-recently-used first
-/// out). A surah with no shard on disk resolves to `nil` and is remembered so the miss is not
-/// re-read on every scroll tick.
+/// `passages.json` is the segmentation, not the content: it maps all 6,236 ayat onto 3,293 unit
+/// keys, while only the units actually authored appear in a shard. So "which unit covers this
+/// ayah?" (`unitKey(for:)`) is answered from `passages.json`, and "does this ayah have a study?"
+/// (`hasStudy(for:)`) is answered from the shard.
+///
+/// `passages.json` loads once at init; the per-surah shards are large and load lazily, with at
+/// most `shardCacheLimit` of them resident at a time (least-recently-used first out). Each load
+/// also records that surah's unit keys in a permanent, lightweight index, so the existence
+/// questions stay cheap after the shard itself is evicted. A surah with no shard on disk
+/// resolves to `nil` and is remembered so the miss is not re-read on every scroll tick.
 @Observable
 public final class StudyStore {
     /// How many surah shards stay resident. Four covers a reader paging between neighbours
@@ -20,6 +26,10 @@ public final class StudyStore {
 
     /// Loaded shards, keyed by surah.
     @ObservationIgnored private var shards: [Int: [String: Study]] = [:]
+    /// The unit keys each surah's shard carries. Filled when a shard is read (empty when there
+    /// is none) and never evicted: a `Set<String>` per surah is a few kilobytes at full content,
+    /// and it is what `hasStudy(for:)` consults on every scroll tick.
+    @ObservationIgnored private var keyIndex: [Int: Set<String>] = [:]
     /// Surah numbers, least recently used first.
     @ObservationIgnored private var recency: [Int] = []
     /// Surahs whose shard is missing or unreadable — never retried.
@@ -45,21 +55,38 @@ public final class StudyStore {
 
     // MARK: - Lookup
 
-    /// The key of the unit covering an ayah, without touching a shard.
+    /// The key of the unit covering an ayah — the reader's lookup, answered from the
+    /// segmentation, without touching a shard. Every ayah in the Quran has one; most of those
+    /// units have no study yet, so this is not the question to ask before offering Deep Study.
     public func unitKey(for verse: VerseRef) -> String? {
         index.unitKey(for: verse)
     }
 
-    /// Whether an ayah has commentary. Answered from `passages.json`, so no shard is loaded.
+    /// Whether an ayah has commentary that can actually be opened. The unit must exist in the
+    /// segmentation *and* be present in its surah's shard, so the first call for a surah reads
+    /// that shard (and caches its key set for every later call, eviction or not).
     public func hasStudy(for verse: VerseRef) -> Bool {
-        index.unitKey(for: verse) != nil
+        guard let key = index.unitKey(for: verse) else { return false }
+        return studyKeys(inSurah: verse.surah).contains(key)
     }
 
-    /// Whether a unit key is one the content set knows about. No shard is loaded.
+    /// Whether a unit key resolves to an authored study. Same rule as `hasStudy(for:)`.
     public func containsUnit(_ key: String) -> Bool {
-        index.unitKeys.contains(key)
+        guard let passage = PassageRef(key: key) else { return false }
+        return studyKeys(inSurah: passage.surah).contains(key)
     }
 
+    /// The keys of every authored unit in a surah. Empty when the surah has no shard yet.
+    public func studyKeys(inSurah surah: Int) -> Set<String> {
+        if let known = keyIndex[surah] {
+            return known
+        }
+        _ = shard(surah: surah)
+        return keyIndex[surah] ?? []
+    }
+
+    /// Every unit the segmentation defines, authored or not. `containsUnit(_:)` is the test for
+    /// "is there a study", not membership of this set.
     public var unitKeys: Set<String> {
         index.unitKeys
     }
@@ -125,11 +152,13 @@ public final class StudyStore {
               let decoded = try? JSONDecoder().decode(StudyShard.self, from: data)
         else {
             unavailable.insert(surah)
+            keyIndex[surah] = []
             return nil
         }
         shardLoadCount += 1
         let byKey = decoded.byKey
         shards[surah] = byKey
+        keyIndex[surah] = decoded.keys
         touch(surah)
         evictIfNeeded()
         return byKey

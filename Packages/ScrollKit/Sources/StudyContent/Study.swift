@@ -1,6 +1,23 @@
 import Foundation
 import QuranData
 
+/// How a unit was selected for generation. `Tools/content-gen/schema/study.schema.json`
+/// declares this as a string enum, and the pipeline writes it on every assembled unit.
+public enum StudyTier: String, Codable, Hashable, Sendable, CaseIterable {
+    /// A curated Discover-feed unit.
+    case discover
+    /// A named or landmark passage.
+    case core
+    /// Everything else.
+    case standard
+
+    /// Unknown or absent tiers read as `standard` rather than failing the whole shard.
+    public init(from decoder: Decoder) throws {
+        let raw = try decoder.singleValueContainer().decode(String.self)
+        self = StudyTier(rawValue: raw) ?? .standard
+    }
+}
+
 /// One Deep Study unit: the commentary for a passage such as `"1:5-7"` or `"2:255"`.
 ///
 /// The wire format is what `Tools/content-gen/schema/study.schema.json` emits, one shard per
@@ -84,7 +101,7 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
     public let theme: String
     public let themeId: String
     public let title: String
-    public let tier: Int
+    public let tier: StudyTier
     public let meaning: String
     public let historicalContext: String
     public let keyTerms: [KeyTerm]
@@ -116,7 +133,7 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         theme: String = "",
         themeId: String = "",
         title: String,
-        tier: Int = 1,
+        tier: StudyTier = .standard,
         meaning: String = "",
         historicalContext: String = "",
         keyTerms: [KeyTerm] = [],
@@ -160,7 +177,7 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         theme = try container.decodeIfPresent(String.self, forKey: .theme) ?? ""
         themeId = try container.decodeIfPresent(String.self, forKey: .themeId) ?? ""
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
-        tier = try container.decodeIfPresent(Int.self, forKey: .tier) ?? 1
+        tier = try container.decodeIfPresent(StudyTier.self, forKey: .tier) ?? .standard
         meaning = try container.decodeIfPresent(String.self, forKey: .meaning) ?? ""
         historicalContext = try container.decodeIfPresent(String.self, forKey: .historicalContext) ?? ""
         keyTerms = try container.decodeIfPresent([KeyTerm].self, forKey: .keyTerms) ?? []

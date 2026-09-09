@@ -7,6 +7,7 @@
 # The app is launched with `--screenshot <route>` and SCROLL_FIXED_DATE so the capture
 # is deterministic, and the simulator appearance is set from the screen's `appearance`.
 set -euo pipefail
+SIM="${SCROLL_SIM:-booted}"   # UDID or name; defaults to "booted" (ambiguous with several sims up)
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 THRESHOLDS="$ROOT/Tools/snapshot/thresholds.json"
@@ -28,7 +29,7 @@ entry="$(jq -r --arg id "$ID" '.screens[$id] // empty' "$THRESHOLDS")"
 route="$(printf '%s' "$entry" | jq -r '.route')"
 appearance="$(printf '%s' "$entry" | jq -r '.appearance')"
 
-xcrun simctl list devices booted | grep -q '(Booted)' || {
+{ [ "$SIM" != booted ] || xcrun simctl list devices booted | grep -q '(Booted)'; } || {
   echo "capture.sh: no booted simulator. Boot one, e.g. 'xcrun simctl boot \"iPhone 17\"'." >&2
   exit 1
 }
@@ -36,13 +37,13 @@ xcrun simctl list devices booted | grep -q '(Booted)' || {
 mkdir -p "$OUTDIR"
 
 if [ "$LAUNCH" -eq 1 ]; then
-  xcrun simctl ui booted appearance "$appearance" >/dev/null 2>&1 || true
-  xcrun simctl terminate booted "$BUNDLE_ID" >/dev/null 2>&1 || true
+  xcrun simctl ui "$SIM" appearance "$appearance" >/dev/null 2>&1 || true
+  xcrun simctl terminate "$SIM" "$BUNDLE_ID" >/dev/null 2>&1 || true
   SIMCTL_CHILD_SCROLL_FIXED_DATE="$FIXED_DATE" \
-    xcrun simctl launch booted "$BUNDLE_ID" --screenshot "$route" >/dev/null
+    xcrun simctl launch "$SIM" "$BUNDLE_ID" --screenshot "$route" >/dev/null
   # Give SwiftUI a beat to lay out and any animation to settle.
   sleep "$SETTLE"
 fi
 
-xcrun simctl io booted screenshot --type=png "$OUTDIR/$ID.png" >/dev/null 2>&1
+xcrun simctl io "$SIM" screenshot --type=png "$OUTDIR/$ID.png" >/dev/null 2>&1
 echo "$OUTDIR/$ID.png"
