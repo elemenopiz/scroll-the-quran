@@ -1,7 +1,7 @@
 {
   "surah": 40,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T16:09:29.537Z",
+  "generatedAt": "2026-09-09T16:12:37.310Z",
   "studies": [
     {
       "key": "40:1-4",
@@ -2842,6 +2842,412 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T16:09:28.593Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:75-76",
+      "surah": 40,
+      "start": 75,
+      "end": 76,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Exulting And Swaggering On Earth",
+      "tier": "standard",
+      "meaning": "A reason is given for what has just been described, and it names two things that sound too small for it: you used to exult on the earth without right, and you used to swagger. Commentators note that neither word describes a crime. The first is delight taken in something that was not yours to be delighted about, and the second is a manner of carrying yourself. What follows is the sentence, phrased exactly as it is in the surah before this one, and the class named is the arrogant.",
+      "historicalContext": "Meccan. The city ran on standing, and standing was performed in the street: how a man walked, whom he greeted, where he sat. The two words used here belong to that world of visible bearing rather than to law or belief. The commentators connect the passage to the leading families of Mecca specifically, since exulting without right presupposes something worth exulting about. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "تَفْرَحُونَ",
+          "gloss": "you used to exult",
+          "note": "A verb for delight and elation, which the Quran uses approvingly elsewhere. Here it is qualified as being without right, so what is condemned is the object of the joy rather than the joy itself."
+        },
+        {
+          "arabic": "تَمْرَحُونَ",
+          "gloss": "you used to swagger",
+          "note": "A verb for going about with an exaggerated, pleased bearing. It occurs once in the Quran, and its root appears twice more in warnings against walking on the earth with a strut."
+        },
+        {
+          "arabic": "ٱلْمُتَكَبِّرِينَ",
+          "gloss": "the arrogant, self-magnifying",
+          "note": "Those who make themselves great, from the root for bigness. It names an assertion being made rather than an emotion felt, which is what links it to a way of walking."
+        }
+      ],
+      "lifeInProphetsTime": "Bearing was information in a town where everyone knew everyone. A man's gait, the width of his path through a crowd, the way he acknowledged a greeting: all of it announced his standing before a word was spoken, and it was read accurately by everybody. What the Quran calls swaggering was not a private vanity. It was a public statement that other people were expected to receive.",
+      "didYouKnow": "The word for swaggering occurs once in the Quran, and its root appears twice more, at 17:37 and 31:18, both times in a prohibition against walking on the earth in that manner. The sentence in the second of these two ayat is word for word the same as one at 39:72, so the two surahs close their parallel scenes identically.",
+      "theologicalSignificance": "The reason given for a severe outcome is a style of being pleased with yourself, which sits oddly until the qualification is noticed. Exulting without right means taking credit, and taking credit is what the whole surah has been arguing against, from the man who said he was given his wealth for his knowledge to the ruler who could not imagine anything above him. Bearing is treated here as belief made visible.",
+      "crossReferences": [
+        {
+          "ref": "31:18",
+          "why": "Prohibits walking on the earth with the same strut, adding that God does not love the boastful."
+        },
+        {
+          "ref": "39:72",
+          "why": "Uses word for word the same sentence in the parallel scene at the end of the previous surah."
+        },
+        {
+          "ref": "28:76",
+          "why": "Shows the same warning given to a wealthy man: do not exult, for God does not love the exultant."
+        }
+      ],
+      "applyIt": "Watch how you walk into a room today where you have some standing, and how you walk into one where you have none. Most people carry themselves differently and have never noticed. You are not being asked to change anything. This passage treats bearing as information, and the first step is simply reading your own.",
+      "exploreFurther": [
+        "31:18",
+        "17:37",
+        "28:76-78"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.209Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:77",
+      "surah": 40,
+      "start": 77,
+      "end": 77,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Whether We Show You Or Not",
+      "tier": "standard",
+      "meaning": "An instruction and then a pair of alternatives that make it necessary. Be patient, God's promise is true; whether We show you some of what We promise them, or take you before that, it is to Us they are returned. Commentators note the two possibilities are offered without preference and without an indication of which will happen. The messenger is being told that he may not live to see the outcome, and that this changes nothing about the promise, only about whether he witnesses its keeping.",
+      "historicalContext": "Meccan. The community had been waiting years for something visible to change and had been told repeatedly to endure. This particular assurance, which allows for the messenger dying first, appears three times in the Quran, always in the Meccan period, and the commentators read it as addressing a specific anxiety about outcomes rather than about faith. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱصْبِرْ",
+          "gloss": "so be patient",
+          "note": "From a root meaning to confine or hold something in place. It is a command about conduct rather than about feeling, which is why it can be given to someone in genuine distress."
+        },
+        {
+          "arabic": "نُرِيَنَّكَ",
+          "gloss": "We show you",
+          "note": "An emphatic form of the verb to make someone see. The emphasis falls on the showing rather than on the event, so what is uncertain is his witnessing it, not its happening."
+        },
+        {
+          "arabic": "نَتَوَفَّيَنَّكَ",
+          "gloss": "We take you fully",
+          "note": "The Quran's usual verb for death, from a root meaning to receive something complete. Set beside the other possibility, it treats dying before an outcome as one ordinary alternative among two."
+        }
+      ],
+      "lifeInProphetsTime": "Long undertakings routinely outlived the people who began them. A well took a season to dig and generations to matter; a feud could pass to sons; a plantation of palms was planted by men who would not eat from it. Nobody in that world expected to see the end of what they started. The assurance here uses an experience the audience already had of work that outlasts a worker.",
+      "didYouKnow": "This assurance, offered as two alternatives with the messenger's death as one of them, appears three times in the Quran: here, at 10:46 and at 13:40. In all three the sentence ends the same way, by saying that the return is to God, so the outcome is placed beyond the question of who is present to see it.",
+      "theologicalSignificance": "The passage separates the truth of a promise from the timing of its visibility, and it does so in the plainest way possible, by naming the messenger's own death as a live option. That removes a hidden condition many people attach to faith, that they will be shown they were right. What is guaranteed is the return, not the witnessing, and the instruction to be patient is given on that basis rather than despite it.",
+      "crossReferences": [
+        {
+          "ref": "10:46",
+          "why": "Gives the same pair of alternatives and ends with God being witness to what they do."
+        },
+        {
+          "ref": "13:40",
+          "why": "Repeats the same assurance, adding that his duty is to convey and the reckoning is God's."
+        },
+        {
+          "ref": "40:55",
+          "why": "Gives the same command to be patient earlier in this surah, on the same grounds."
+        }
+      ],
+      "applyIt": "Think of something you are working at that will probably not resolve in your lifetime: raising someone, a change in an institution, a habit in your family. Say out loud that you may not see it. Then carry on with today's part of it. The passage puts those two sentences side by side deliberately.",
+      "exploreFurther": [
+        "10:46",
+        "13:40",
+        "40:55"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.210Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:78",
+      "surah": 40,
+      "start": 78,
+      "end": 78,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Some We Have Not Told You",
+      "tier": "standard",
+      "meaning": "Three statements in one ayah, and the first is an unusual admission. Messengers were sent before you; some of them We have related to you and some We have not. Then: no messenger could bring a sign except by God's leave. Then: when God's command comes, judgement is given in truth and the peddlers of falsehood lose. Commentators read the second statement as the answer to demands for a miracle, and the first as a limit set on how much of the history has been disclosed.",
+      "historicalContext": "Meccan. The city had repeatedly demanded a sign of the kind earlier peoples were said to have received, and several passages of these years answer that demand rather than satisfy it. The statement that some messengers have not been named appears in only one other place in the Quran. The commentators do not attempt lists, and treat the silence as deliberate.",
+      "keyTerms": [
+        {
+          "arabic": "قَصَصْنَا",
+          "gloss": "We have related to you",
+          "note": "The verb for following a track and for telling a story, the two senses joined in one root. Narration in Arabic is pictured as following a trail, so what is not related is a trail not followed."
+        },
+        {
+          "arabic": "بِإِذْنِ",
+          "gloss": "by God's leave",
+          "note": "The noun for permission, from a root also connected with hearing and attention. Placed against a demand for signs, it makes a miracle a grant rather than a credential a messenger carries."
+        },
+        {
+          "arabic": "ٱلْمُبْطِلُونَ",
+          "gloss": "the peddlers of falsehood",
+          "note": "Those who deal in what is empty and void, from the root for a thing being null. It occurs four times in the Quran, always of people whose position turns out to have nothing in it."
+        }
+      ],
+      "lifeInProphetsTime": "Genealogy and report were the two forms of knowledge that mattered, and both were held in memory by specialists. A tribe could name its ancestors for many generations and would readily admit where the line went dark. An audience trained that way understood an incomplete list without suspicion. Saying that some names had not been passed on was an ordinary and honest thing to say.",
+      "didYouKnow": "The statement that some messengers have been related and others have not appears twice in the Quran, here and at 4:164, where it is followed by the note that God spoke directly to Moses. The word for the peddlers of falsehood at the end of this ayah occurs four times in the Book, always of a position that turns out to be empty.",
+      "theologicalSignificance": "Two limits are set in one sentence and both are protective. The record is declared incomplete, which stops anyone from treating the named prophets as the whole of what God has done in history. And signs are placed under permission, which stops a messenger from being assessed by his ability to produce them. Between them, the ayah removes two ways of measuring revelation that its audience was actively trying to apply.",
+      "crossReferences": [
+        {
+          "ref": "4:164",
+          "why": "The only other place the Quran says some messengers have been named to him and others have not."
+        },
+        {
+          "ref": "13:38",
+          "why": "States the same limit on signs, that none comes except by God's permission, with a term for everything."
+        },
+        {
+          "ref": "23:44",
+          "why": "Describes the same succession of messengers, each called a liar by the community that received him."
+        }
+      ],
+      "applyIt": "Notice how you react to being told that a body of knowledge you rely on is incomplete. Most people either dismiss the gap or let it undermine the whole. This ayah does neither; it names the gap and then carries on making claims. Try holding one thing you believe in that posture today, without resolving the tension.",
+      "exploreFurther": [
+        "4:164",
+        "13:38",
+        "21:25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.210Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:79-81",
+      "surah": 40,
+      "start": 79,
+      "end": 81,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "Which Sign Will You Deny",
+      "tier": "standard",
+      "meaning": "A list, and then a question that turns the list into an argument. God made the herds for you, some to ride and some to eat; you have other uses in them; you reach on them a need that was in your chests; and on them and on ships you are carried. Then: He shows you His signs, so which of God's signs will you deny? Commentators note that nothing exotic is named. The list is entirely of things the audience owned, used and travelled on every week of their lives.",
+      "historicalContext": "Meccan, closing the surah's argument from provision. The economy of the city rested on exactly two of the things named here, pack animals overland and ships on the sea route, and the wealth of the leading families came from moving goods on both. The question at the end is put to people whose livelihood was assembled out of the items in the list. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَنْعَـٰمَ",
+          "gloss": "the grazing livestock",
+          "note": "The collective word for camels, cattle, sheep and goats together, from a root meaning softness and ease. The same root gives the word for a favour, so the name of the animals is already a word for blessing."
+        },
+        {
+          "arabic": "حَاجَةً",
+          "gloss": "a need, a want",
+          "note": "Something required and reached for. Locating the need in their chests rather than in their circumstances makes the journey answer a felt want, not merely a practical one."
+        },
+        {
+          "arabic": "تُنكِرُونَ",
+          "gloss": "will you deny, reject",
+          "note": "A verb for refusing to acknowledge something you recognise, the opposite of admitting it. It occurs once in the Quran in this form, and it asks about acknowledgement rather than about belief."
+        }
+      ],
+      "lifeInProphetsTime": "A camel was transport, milk, meat, hair for tents, hide for containers and a stored asset that could be sold in a bad year. It was the single most useful object a family could own, and its worth was reckoned in every transaction. The phrase about reaching a need in your chests would have landed exactly: the camel was how anyone in that country got anywhere they wanted to be.",
+      "didYouKnow": "The Arabic name for these animals comes from the same root as the word for a favour or a blessing, so the noun already carries what the passage is arguing. The verb in the closing question occurs once in the Quran in this form, and the question itself is one of several places where the Quran ends a list of ordinary provisions by asking which item is being disputed.",
+      "theologicalSignificance": "The argument works by exhaustion rather than by demonstration. Each item is small and undeniable, and the question at the end asks the listener to pick one and deny it, which nobody can do. That places the burden precisely where the surah has kept it: not on believing something new, but on acknowledging what is already in daily use. Denial is presented as a refusal to admit rather than as a failure to see.",
+      "crossReferences": [
+        {
+          "ref": "16:5",
+          "why": "Opens a similar list of the same animals, naming warmth and benefits and food among them."
+        },
+        {
+          "ref": "43:13",
+          "why": "Attaches the same provision to a remembrance said while sitting on the animal's back."
+        },
+        {
+          "ref": "23:21",
+          "why": "Calls the same livestock a lesson, listing drink, many benefits and food from them."
+        }
+      ],
+      "applyIt": "Pick the single object you rely on most in an ordinary week and say out loud what your life would be without it. Not gratitude in the abstract; one object, one sentence. This passage argues by naming things too useful to be argued about, and the exercise only works if the item you choose is genuinely load-bearing.",
+      "exploreFurther": [
+        "16:5-8",
+        "23:21-22",
+        "43:12-14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.211Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:82",
+      "surah": 40,
+      "start": 82,
+      "end": 82,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "What They Earned Availed Nothing",
+      "tier": "standard",
+      "meaning": "The question about travelling and looking is asked a second time in this surah, with the comparison enlarged. They were more numerous, greater in strength and left more traces in the land, and what they earned did not avail them. Commentators note the change from the earlier version. There the closing clause said they had no protector; here it says their earnings did not help, so the second asking shifts from the absence of a defender to the uselessness of an accumulation.",
+      "historicalContext": "Meccan, and the same argument was made sixty ayat earlier in this surah in almost the same words. Repetition of this kind is deliberate in the Quran's Meccan style, and the commentators note that the two versions are placed at either end of a long section. The audience travelled the routes in question twice a year and could verify the physical claim without leaving their normal business.",
+      "keyTerms": [
+        {
+          "arabic": "أَكْثَرَ",
+          "gloss": "more numerous",
+          "note": "A comparative of quantity, added here to the comparison of strength given earlier in the surah. Numbers mattered in a society where a clan's safety was a function of how many men it could field."
+        },
+        {
+          "arabic": "وَءَاثَارًا",
+          "gloss": "and traces, remains",
+          "note": "The marks left by something that has passed, used of footprints and of ruins. It grants the earlier peoples what any builder wants, evidence on the ground that they were here."
+        },
+        {
+          "arabic": "أَغْنَىٰ",
+          "gloss": "it availed, sufficed",
+          "note": "A verb for making someone independent of a need. Denying it of their earnings says the accumulation did not remove any requirement, which is exactly what accumulation is meant to do."
+        }
+      ],
+      "lifeInProphetsTime": "The point of wealth in that world was independence. A man with stored grain, camels and credit did not have to ask anyone for anything, and that freedom from asking was what people were actually accumulating. The verb used here names precisely that function and denies it. What is being said is not that their wealth was lost but that it never did the one job it was for.",
+      "didYouKnow": "The exact clause about what they earned availing them nothing occurs three times in the Quran: at 15:84, at 39:50 in the surah immediately before this one, and here. In two of the three it closes a description of an earlier people, and in the third it is applied to a boast made by someone still living.",
+      "theologicalSignificance": "Asking the same question twice with a different ending does something a single asking could not. The first version removed an external defender; this one removes an internal resource. Between them they close both directions in which a person looks for security, outward to a protector and inward to a store. The argument remains entirely factual, and the evidence stays where it was, out on the ground and available.",
+      "crossReferences": [
+        {
+          "ref": "40:21",
+          "why": "Asks the same question earlier in this surah, closing instead with their having no protector."
+        },
+        {
+          "ref": "39:50",
+          "why": "Uses the identical closing clause of earlier peoples, in the surah immediately before this one."
+        },
+        {
+          "ref": "30:9",
+          "why": "Repeats the same instruction to travel and look, noting that they cultivated the land more."
+        }
+      ],
+      "applyIt": "Work out what your savings are actually for, in one sentence, using the word independence or the word security if that is honest. Then ask which specific need they would remove and which they would not. Most people find the second list longer than expected. That is the whole of this ayah's argument, applied at your own scale.",
+      "exploreFurther": [
+        "40:21",
+        "39:50",
+        "30:9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.211Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:83-84",
+      "surah": 40,
+      "start": 83,
+      "end": 84,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "They Rejoiced In Their Knowledge",
+      "tier": "standard",
+      "meaning": "The messengers arrive with clear proofs and the response is not argument but satisfaction: they rejoiced in the knowledge they already had, and what they used to ridicule closed in around them. Then, on seeing the force, they said we believe in God alone and reject what we associated with Him. Commentators note that the rejoicing is the crux. What blocked the proofs was not ignorance but a settled pleasure in what they already knew, which left nothing for new evidence to attach to.",
+      "historicalContext": "Meccan. The city was proud of its learning: its genealogy, its poetry, its accumulated judgement about how the world worked, and its leaders regarded the message as beneath what they already possessed. Passages of these years repeatedly describe rejection as a form of confidence rather than of confusion. The clause about ridicule closing in occurs six times in the Quran, once here.",
+      "keyTerms": [
+        {
+          "arabic": "فَرِحُوا۟",
+          "gloss": "they rejoiced, were pleased",
+          "note": "The same verb the surah uses a few ayat earlier for exulting on the earth. Applied here to knowledge, it describes a satisfaction taken in what one already holds rather than a wish to know more."
+        },
+        {
+          "arabic": "وَحَاقَ",
+          "gloss": "and it closed in",
+          "note": "A verb for surrounding something from every side. The Quran uses it almost only of a thing a person set in motion coming back around them, which makes the outcome a return."
+        },
+        {
+          "arabic": "بَأْسَنَا",
+          "gloss": "Our force, Our might",
+          "note": "The word for severity and fighting strength used earlier in this surah by the believer at Pharaoh's court. What he warned about in a question arrives here as a fact."
+        }
+      ],
+      "lifeInProphetsTime": "Knowledge in that society was inherited and held as property. A family's lore about lineage, weather, routes and precedent was its working capital, transmitted in verse and guarded. A new claim did not arrive to fill a gap; it arrived as a competitor to something already owned and valued. That is the situation this ayah describes, and it explains why proofs made no difference.",
+      "didYouKnow": "The clause about what they used to ridicule closing in around them occurs six times in the Quran, at 11:8, 16:34, 39:48, 45:33, 46:26 and here. The verb for their rejoicing is the same one used at 40:75 for exulting on the earth without right, so the surah applies one word to pride in possessions and to pride in knowing.",
+      "theologicalSignificance": "The passage identifies the specific obstacle that evidence cannot pass, and it is not stupidity or malice. A person satisfied with what they already understand has no unfilled place for a proof to occupy. The belated declaration that follows then completes the diagnosis: they were fully capable of saying the right words, and the capacity was never what was missing. What was missing was any reason to use it in time.",
+      "crossReferences": [
+        {
+          "ref": "39:48",
+          "why": "Uses the identical clause about being surrounded by what they used to ridicule."
+        },
+        {
+          "ref": "18:104",
+          "why": "Describes people whose efforts go astray while they suppose they are doing well."
+        },
+        {
+          "ref": "40:85",
+          "why": "The next ayah gives the verdict on the declaration made here at the sight of the force."
+        }
+      ],
+      "applyIt": "Think of a subject where you are confident and have not learned anything new in years. Confidence there may be entirely earned. Ask one question about it this week that you do not already know the answer to, and follow it far enough to be surprised. This passage is about satisfaction rather than error, and satisfaction is easier to test.",
+      "exploreFurther": [
+        "39:48",
+        "18:103-105",
+        "2:212"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.211Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:85",
+      "surah": 40,
+      "start": 85,
+      "end": 85,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Their Faith Did Not Help",
+      "tier": "standard",
+      "meaning": "The surah ends with a verdict rather than a scene. Their faith did not benefit them once they had seen the force; this is God's way, which has already run its course among His servants; and there and then the deniers lost. Commentators note that the ayah does not say the declaration was insincere. It says it came at a moment when belief is no longer the kind of act it needs to be, since at that point nothing is being trusted and everything is being seen.",
+      "historicalContext": "Meccan, closing a surah that has spent eighty-five ayat arguing with a city. The phrase calling this an established way appears in a small number of places in the Quran, always about a pattern that does not vary. The commentators connect this ayah to the drowning at 10:90, where a declaration of belief is made and refused in almost the same terms. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "سُنَّتَ ٱللَّهِ",
+          "gloss": "the way of God",
+          "note": "A word for a road worn by use and for an established custom. Applied to God's dealings it names a regularity rather than a decision, which is why the ayah adds that it has already run its course."
+        },
+        {
+          "arabic": "خَلَتْ",
+          "gloss": "has passed, has run",
+          "note": "A verb for something having gone by and become past. It makes the pattern historical rather than announced, so what is described is observable in the record rather than promised for the future."
+        },
+        {
+          "arabic": "وَخَسِرَ",
+          "gloss": "and they lost",
+          "note": "A commercial verb for a trade coming out short. It occurs twice in this surah's closing section, at 40:78 and here, and it ends the surah on the vocabulary of a failed transaction."
+        }
+      ],
+      "lifeInProphetsTime": "A caravan route was called a way because feet had made it. Nobody decreed where a road went; it was worn by repetition until it was the road, and travellers trusted it precisely because so many had gone before. The word this ayah uses for God's dealings is that word. It describes a pattern with tracks already in it, not an announcement made in advance.",
+      "didYouKnow": "The verb for coming out short in a transaction occurs twice in this surah's final section, at 40:78 and in this closing ayah, both times in the same phrase, and there and then they lost. The surah therefore ends on the same word it used seven ayat earlier, and on the vocabulary of trade that runs through it from beginning to end.",
+      "theologicalSignificance": "What is refused here is not repentance but a particular timing of it, and the ayah is careful about why. Faith is a relation to what is not yet visible; once the force is seen, the declaration describes something else, and the passage says so without calling anyone a liar. Naming this a way that has already run also removes any suggestion of an individual judgement made harshly. It is a pattern with a record.",
+      "crossReferences": [
+        {
+          "ref": "10:90-91",
+          "why": "Records the same belated declaration at the moment of drowning, and the same refusal of it."
+        },
+        {
+          "ref": "4:18",
+          "why": "States the same limit, that turning back is not accepted once death is already arriving."
+        },
+        {
+          "ref": "35:43",
+          "why": "Uses the same phrase about God's established way, saying no change will be found in it."
+        }
+      ],
+      "applyIt": "Ask yourself what you would do differently if you knew, rather than believed, that all of this is true. Write one item. Then do that item this week. This ayah is about the gap between believing and seeing, and the only part of that gap you can act in is the one you are standing in now.",
+      "exploreFurther": [
+        "10:90-92",
+        "4:17-18",
+        "35:42-43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:12:37.211Z",
         "reviewed": false
       }
     }
