@@ -1,7 +1,7 @@
 {
   "surah": 5,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T10:25:21.041Z",
+  "generatedAt": "2026-09-09T10:36:48.297Z",
   "studies": [
     {
       "key": "5:1",
@@ -4524,6 +4524,702 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T10:25:12.246Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:93",
+      "surah": 5,
+      "start": 93,
+      "end": 93,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "No Blame For What They Ate",
+      "tier": "standard",
+      "meaning": "A question left open by the previous passage is answered. Those who believed and did good are not blamed for what they had already consumed before the instruction came. Then the condition is stated three times in an ascending sequence: conscious and believing and doing good, then conscious and believing, then conscious and doing beautifully. The repetition is the ayah's structure, and the commentators read the stages as one continuing state seen from three angles rather than as three separate demands.",
+      "historicalContext": "Medinan, immediately after the passage about intoxicants and games of chance. The commentators report that a question arose within the community about people who had died before the final instruction was given, and that this ayah answers it; reports about the particular occasion vary. The general point is one any community faces when a practice changes: what becomes of what was done beforehand.",
+      "keyTerms": [
+        {
+          "arabic": "جُنَاحٌ",
+          "gloss": "blame, fault incurred",
+          "note": "From a root meaning to lean or tilt to one side. Blame is pictured as a departure from upright, which is why the Quran uses this particular word for what is not held against a person."
+        },
+        {
+          "arabic": "طَعِمُوٓا۟",
+          "gloss": "they tasted, they consumed",
+          "note": "The verb of eating and drinking together, wider than either alone. Its generality keeps the answer from being tied to one substance, and the commentators note that the ayah answers a category rather than an instance."
+        },
+        {
+          "arabic": "أَحْسَنُوا۟",
+          "gloss": "they did what is beautiful",
+          "note": "From the root for good and beautiful at once. It arrives at the end of the ascending sequence, so the passage closes on doing well rather than on merely believing or merely avoiding."
+        }
+      ],
+      "lifeInProphetsTime": "Practice changed in stages in that community, and people died in between. A man who had fallen at one of the early battles had lived under different guidance from someone alive ten years later, and families asked what that meant for their dead. The question was not academic; it was asked by people naming a brother or a father, which is why the answer is so direct.",
+      "didYouKnow": "The ayah states its condition three times in a rising sequence, and the classical commentators counted the elements carefully and disagreed about how the three stages map onto one another. What they generally agreed on is that the repetition is deliberate and that the final term, doing beautifully, stands highest among them.",
+      "theologicalSignificance": "The passage settles the past without loosening the present. Nothing done before the instruction is charged, and the condition attached is stated three times to make clear that the exemption is not a general one. It also says something about how change works: what matters is the direction a person is facing when an instruction reaches them, not the record from before it arrived.",
+      "crossReferences": [
+        {
+          "ref": "5:90",
+          "why": "Gives the instruction that this ayah answers a lingering question about."
+        },
+        {
+          "ref": "2:143",
+          "why": "Answers a similar question about prayer performed before a change of direction."
+        },
+        {
+          "ref": "4:22",
+          "why": "States that what has already passed is excepted from a newly given instruction."
+        }
+      ],
+      "applyIt": "There is a standard you hold now that you did not hold five years ago, and someone in your life is still being judged by you against it retroactively. Stop, once, deliberately. This ayah is careful to separate what was done before an instruction arrived from what is done after it, and most of us are not.",
+      "exploreFurther": [
+        "5:90-92",
+        "2:143",
+        "4:22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.255Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:94",
+      "surah": 5,
+      "start": 94,
+      "end": 94,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Game Within Reach",
+      "tier": "standard",
+      "meaning": "A test is announced in advance, which is unusual. God will test you with something of the game your hands and your spears can reach. The specification matters: not distant game but game close enough to take easily. The stated purpose is that God may know who fears Him unseen, and that phrase means fear when nobody is watching. Announcing a test does not weaken it. It moves the whole difficulty inside the person being tested.",
+      "historicalContext": "Medinan, addressed to a community travelling toward the sanctuary. The commentators describe conditions in which game came unusually close to the encampments while the pilgrims were in a state where hunting was set aside, so the temptation was continuous and physical rather than hypothetical. Reports about the particular journey differ. The setting is a company on the road with limited food and animals within arm's reach.",
+      "keyTerms": [
+        {
+          "arabic": "لَيَبْلُوَنَّكُمُ",
+          "gloss": "He will surely test you",
+          "note": "The verb of testing by trial, from a root meaning to wear something out through use. A test in this sense reveals what is already there rather than adding anything, which is why announcing it changes nothing."
+        },
+        {
+          "arabic": "تَنَالُهُۥٓ أَيْدِيكُمْ",
+          "gloss": "your hands can reach it",
+          "note": "The clause specifies proximity. Something within arm's length is a different test from something requiring effort, and the ayah is precise about which of the two kinds is meant here."
+        },
+        {
+          "arabic": "بِٱلْغَيْبِ",
+          "gloss": "in the unseen",
+          "note": "A phrase covering both what is hidden from a person and what a person is hidden from. Here it means fearing God where nobody is looking, which is the only condition under which such fear can be measured."
+        }
+      ],
+      "lifeInProphetsTime": "A caravan lived close to hunger. Provisions were counted for a fixed number of days, and a gazelle standing within a spear's throw was several days of food for a family. Passing it up was not a matter of principle held at a distance; it was a decision made with an empty pot and children watching. The passage names a temptation that had a taste and a weight.",
+      "didYouKnow": "The phrase about fearing God in the unseen appears in a dozen places across the Quran, always attached to what a person does when nothing external constrains them. It is one of the text's standard formulas for sincerity, and it works by naming the absence of witnesses rather than the presence of good intention.",
+      "theologicalSignificance": "Announcing a test is the passage's most striking move. Once a person knows they are being tested, external motives become useless: nothing is proved by passing a test you know you are taking, unless you would have passed it anyway. That is exactly what the clause about the unseen measures. The test is designed to be transparent, and the transparency is part of its mechanism.",
+      "crossReferences": [
+        {
+          "ref": "5:95",
+          "why": "Continues with what follows if the boundary named here is crossed deliberately."
+        },
+        {
+          "ref": "2:155",
+          "why": "Announces testing with fear, hunger and loss, also stated openly in advance."
+        },
+        {
+          "ref": "67:12",
+          "why": "Names those who fear their Lord in the unseen as having forgiveness and a great reward."
+        }
+      ],
+      "applyIt": "Notice one thing this week that would be easy to take and that nobody would ever count: an extra minute, a small overclaim, a corner cut. Leave it, deliberately, once, and do not tell anyone that you did. The whole subject of this ayah is what a person does in the absence of an audience.",
+      "exploreFurther": [
+        "5:95-96",
+        "2:155-157",
+        "67:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.259Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:95",
+      "surah": 5,
+      "start": 95,
+      "end": 95,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Its Equal In Livestock",
+      "tier": "standard",
+      "meaning": "The boundary announced in the previous ayah is stated, and then what follows a deliberate crossing is set out. A comparable animal from the herds, assessed by two people of integrity from among you, brought as an offering to the sanctuary; or feeding those in need; or an equivalent in fasting. Three routes, and the stated purpose is that the person taste the consequence of what they did. Then a clause that changes the register entirely: God has pardoned what is past.",
+      "historicalContext": "Medinan, addressed to a community in the state of pilgrimage. The commentators discuss the assessment procedure in detail and record differing views about how equivalence was determined. The setting is a sanctuary system that had operated in Arabia long before the mission, in which certain months and a certain territory were held inviolable and hunting within them was suspended by custom as well as by instruction.",
+      "keyTerms": [
+        {
+          "arabic": "ذَوَا عَدْلٍ",
+          "gloss": "two of integrity",
+          "note": "Literally two possessors of justice. The assessment is handed to people rather than to a table of values, so equivalence becomes a judgement made by named individuals who can be held responsible for it."
+        },
+        {
+          "arabic": "وَبَالَ",
+          "gloss": "the ill consequence, the burden",
+          "note": "From a root meaning heavy or indigestible, used of food that sits badly. The word describes an outcome that has to be carried and digested rather than a penalty imposed from outside the person."
+        },
+        {
+          "arabic": "عَفَا",
+          "gloss": "He pardoned, He passed over",
+          "note": "The verb of effacing a trace, as wind erases footprints in sand. Its placement here is deliberate: the past is described as wiped away rather than as counted up and then forgiven."
+        }
+      ],
+      "lifeInProphetsTime": "The sanctuary was the one place in Arabia where a man could stand next to someone whose brother he had killed and not be attacked. That truce was the basis of the pilgrimage economy and of the great fairs. Extending the peace to animals was not sentimentality; it was the logic of the sanctuary carried to its edge, and everyone who traded at those fairs knew what that peace was worth.",
+      "didYouKnow": "The assessment is given to two people rather than to a fixed schedule, and the classical commentaries record extensive discussion of what counts as comparable between a wild animal and a domestic one. It is one of the places where the Quran deliberately leaves a judgement to human beings while naming the qualification those human beings must have.",
+      "theologicalSignificance": "The stated purpose is that the person taste the consequence, which is a specific claim about what such a response is for: not the restoration of a balance, and not the protection of a population, but an experience the person actually has. The pardon clause that follows keeps the whole thing forward-looking, and the surah's characteristic movement appears again, from severity to an opening in one breath.",
+      "crossReferences": [
+        {
+          "ref": "5:94",
+          "why": "Announces the test whose failure this ayah then sets out the consequence of."
+        },
+        {
+          "ref": "5:1",
+          "why": "Names the same boundary in the surah's opening ayah, within a single clause."
+        },
+        {
+          "ref": "2:194",
+          "why": "Describes the sanctity of the sacred month and equivalence in any response to a breach."
+        }
+      ],
+      "applyIt": "Think about how you make amends when you have broken something small. Most of us apologise and move on. This passage builds in something that costs a little and is felt. Next time, add one concrete thing to the apology, chosen so that you notice it. Not as punishment, but so the repair is something you have actually done.",
+      "exploreFurther": [
+        "5:94",
+        "5:96-97",
+        "2:194"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.260Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:96",
+      "surah": 5,
+      "start": 96,
+      "end": 96,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "The Catch Of The Sea",
+      "tier": "standard",
+      "meaning": "A permission and a restriction are set side by side in one sentence. What the sea yields is open, described as provision for you and for travellers; what the land yields by hunting is set aside while a person is in the state of pilgrimage. The distinction is not about the animals but about the setting: the sanctuary's peace covers ground and not water. The ayah closes by naming God as the one you will be gathered to.",
+      "historicalContext": "Medinan, within the passage on the state of pilgrimage. The commentators discuss at length what counts as the catch of the sea and record differing views. The mention of travellers reflects a practical fact: preserved fish was among the few foods that survived a long journey, and pilgrims crossing to the sanctuary from coastal regions carried it. The permission had a specific logistical use.",
+      "keyTerms": [
+        {
+          "arabic": "صَيْدُ ٱلْبَحْرِ",
+          "gloss": "the catch of the sea",
+          "note": "The same noun is used for hunting on land two clauses later, so the sentence turns on one word with two different fields. The commentators build their whole discussion on that deliberate symmetry."
+        },
+        {
+          "arabic": "مَتَـٰعًا",
+          "gloss": "provision, enjoyment for a time",
+          "note": "A word for goods and for temporary benefit at once. It names something to be used up on a journey rather than possessed, which suits a permission framed around people on the move."
+        },
+        {
+          "arabic": "لِّلسَّيَّارَةِ",
+          "gloss": "for the travelling party",
+          "note": "A caravan or a group on the move, from the verb to travel. Naming them separately from you indicates that the provision was understood to serve people passing through as well as those already settled."
+        }
+      ],
+      "lifeInProphetsTime": "Fish reached inland Arabia dried and salted, carried from the Red Sea coast and from the Gulf. It kept for months and weighed little, which made it caravan food in a way that fresh meat never could be. A pilgrim travelling for weeks with hunting set aside still had to eat, and the sea supplied the one protein that could make the journey with him.",
+      "didYouKnow": "The same Arabic noun serves for the catch of the sea and the game of the land within this single ayah, with only the following word distinguishing them. The Quran often builds a distinction this way, repeating a word and changing one element beside it, so the difference between two cases becomes audible in the sentence itself.",
+      "theologicalSignificance": "The passage draws a boundary and makes it precise rather than expansive. Something is set aside and something adjacent is explicitly opened, which prevents the restriction from spreading by analogy into everything nearby. That precision is itself a mercy, and this surah has already warned against the opposite instinct, the one that declares more off limits than was ever asked.",
+      "crossReferences": [
+        {
+          "ref": "5:87",
+          "why": "Warns against declaring off limits what God has made lawful, earlier in this same surah."
+        },
+        {
+          "ref": "5:1",
+          "why": "Opens the surah with the same restriction stated inside a single short clause."
+        },
+        {
+          "ref": "16:14",
+          "why": "Describes the sea as subjected so that fresh flesh may be eaten from it."
+        }
+      ],
+      "applyIt": "Find a rule you follow that you have quietly widened past what it says. Most of us have one, applied to a whole category when it was written for a case. Read the actual wording once this week. This ayah takes the trouble to open the thing next door, which suggests the widening is not a safe error.",
+      "exploreFurther": [
+        "5:87-88",
+        "16:14",
+        "5:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.266Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:97",
+      "surah": 5,
+      "start": 97,
+      "end": 97,
+      "theme": "Pilgrimage",
+      "themeId": "pilgrimage",
+      "title": "A Standing For The People",
+      "tier": "standard",
+      "meaning": "Four things are named as appointed: the Sacred House, the sacred month, the offerings, and the garlanded animals. The word used for what they were appointed as means an upright support, something that holds a structure standing. Then the purpose given is not about worship but about knowledge, that you may know God knows what is in the heavens and the earth. The connection is left for the reader to draw, and the commentators offer more than one way of drawing it.",
+      "historicalContext": "Medinan, near the close of the surah's material on the sanctuary. The four items named were already established in Arabian practice long before the mission, which is part of the point: the passage describes them as appointed by God rather than as innovations. The commentators note that the surah's opening named the same elements, so the chapter returns at the end to where it began.",
+      "keyTerms": [
+        {
+          "arabic": "قِيَـٰمًا",
+          "gloss": "a support, a standing",
+          "note": "From the verb to stand, so what is named is a prop that keeps something else upright. The commentators read it as covering both the economy the sanctuary supported and the wider order it made possible."
+        },
+        {
+          "arabic": "ٱلْبَيْتَ ٱلْحَرَامَ",
+          "gloss": "the inviolable House",
+          "note": "The adjective means forbidden in the sense of protected, from the same root as the state of pilgrimage. What is described is not a prohibition but a sphere within which certain things are suspended."
+        },
+        {
+          "arabic": "ٱلْقَلَـٰٓئِدَ",
+          "gloss": "the garlanded animals",
+          "note": "Beasts marked with a collar to show they were destined for offering. The garland made an animal untouchable on the road, so a mark of cloth functioned as protection across otherwise hostile territory."
+        }
+      ],
+      "lifeInProphetsTime": "The sanctuary made the Arabian economy possible. During the sacred months weapons were laid aside, the great fairs opened, poetry was judged, debts were settled and marriages arranged. Tribes that would fight in any other season traded side by side. Remove that arrangement and the peninsula loses its markets, its news network and its only reliable venue for peace.",
+      "didYouKnow": "The sacred month, the offerings and the garlanded animals are named together here and again near the opening of this surah, in the same order both times. The chapter closes its material on the sanctuary by returning to a list it started from, which the classical commentators note as deliberate framing rather than repetition.",
+      "theologicalSignificance": "The purpose clause is the ayah's difficulty. Why should the existence of a sanctuary teach that God knows everything? The commentators read it in more than one way: that an arrangement of this precision implies a knowledge behind it, or that a place where nothing may be taken teaches that everything is already seen. The ayah does not choose, and the commentaries preserve the range.",
+      "crossReferences": [
+        {
+          "ref": "5:2",
+          "why": "Names the same elements near the opening of this surah, framing the section that ends here."
+        },
+        {
+          "ref": "2:125",
+          "why": "Describes the House as a place of return and of security for the people."
+        },
+        {
+          "ref": "3:96",
+          "why": "Names the first house appointed for people, and describes the guidance in it."
+        }
+      ],
+      "applyIt": "Think of an arrangement in your life that holds everything else up and that you never notice: a standing agreement with a relative, a fixed evening, a rota someone maintains. Name it this week and thank whoever keeps it running. This ayah's word for the sanctuary is simply the thing that keeps the rest standing.",
+      "exploreFurther": [
+        "5:2",
+        "2:125-127",
+        "3:96-97"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.267Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:98-99",
+      "surah": 5,
+      "start": 98,
+      "end": 99,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Severe, And Also Forgiving",
+      "tier": "standard",
+      "meaning": "Two statements about God are put in one sentence with nothing between them but a conjunction. Know that God is severe in consequence, and that God is forgiving and merciful. Neither qualifies the other and neither is given precedence; the grammar holds them level. Then the next ayah turns to the Messenger and says his charge is delivery alone, adding that God knows what you show and what you keep back.",
+      "historicalContext": "Medinan, closing the surah's long instructional section. The commentators note that the pairing of these two descriptions is a recurring formula in the Quran and that it usually appears where a stretch of instruction ends. No occasion is reported for either ayah. The placement after the material on the sanctuary and on oath-keeping gives the pair a summarising function rather than a fresh argument.",
+      "keyTerms": [
+        {
+          "arabic": "شَدِيدُ ٱلْعِقَابِ",
+          "gloss": "severe in consequence",
+          "note": "The second word comes from a root meaning to follow behind, so the consequence trails the act. Severity is described as the closeness of that following rather than as the intensity of anything inflicted."
+        },
+        {
+          "arabic": "ٱلْبَلَـٰغُ",
+          "gloss": "the delivery, the conveying",
+          "note": "The same noun used a few ayat earlier for what rests on the Messenger. Its repetition within one surah at short distance is among the ways this chapter marks the limits of the office."
+        },
+        {
+          "arabic": "تُبْدُونَ وَمَا تَكْتُمُونَ",
+          "gloss": "what you show and hide",
+          "note": "A pair of opposites covering the whole of a person's conduct. The construction leaves no third category available, which is how the Quran usually closes a sentence about the reach of God's knowledge."
+        }
+      ],
+      "lifeInProphetsTime": "A ruler in that world was known by which of the two he was. Some chiefs were remembered for never letting an offence pass and some for forgiving everything, and a tribe knew which kind it had. Holding both descriptions of one authority at equal weight in a single sentence cut against how that society thought about power, where consistency of temperament was the mark of a leader.",
+      "didYouKnow": "This pairing of severity and forgiveness occurs several times in the Quran, and the order varies between passages. Neither is fixed as the closing term, which the classical commentators discuss: reading a pair of divine descriptions requires holding both at once rather than treating whichever comes last as the final word.",
+      "theologicalSignificance": "The two statements are placed at equal weight and the reader is left to hold them. That refuses the two shortcuts most people take with God: assuming the severity is decorative, and assuming the mercy is a technicality. The following ayah then removes the Messenger from the equation entirely, so nothing stands between the reader and the pair except what they show and hide.",
+      "crossReferences": [
+        {
+          "ref": "15:49",
+          "why": "Puts the same pair in the reverse order, announcing mercy first and the punishment after."
+        },
+        {
+          "ref": "40:3",
+          "why": "Names God as forgiving of sin and severe in consequence within one sequence of names."
+        },
+        {
+          "ref": "5:92",
+          "why": "States the same principle about the Messenger's charge a few ayat earlier."
+        }
+      ],
+      "applyIt": "Take whichever of the two you habitually forget. Some of us live as though only severity were real and some as though only mercy were. Say the half you neglect out loud once a day this week, in a plain sentence. It is a small correction and it usually shifts something within a few days.",
+      "exploreFurther": [
+        "15:49-50",
+        "40:1-3",
+        "5:92"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.272Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:100",
+      "surah": 5,
+      "start": 100,
+      "end": 100,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "Abundance Is Not A Measure",
+      "tier": "standard",
+      "meaning": "A short statement with a concession built into it. The foul and the wholesome are not equal, even if the abundance of the foul impresses you. The concession is what makes the ayah useful: it admits that quantity is genuinely impressive rather than pretending nobody feels it. Then the address changes to people of understanding, which suggests that seeing past a large number is a matter of reasoning rather than of managing to feel differently about it.",
+      "historicalContext": "Medinan, near the close of the surah's instructional material. No occasion is reported for it. The commentators read it as a general principle summarising much of what precedes, since the chapter has repeatedly described majorities behaving badly and has just as repeatedly qualified those descriptions with the phrase many of them. This ayah supplies the reasoning behind that habit of qualification.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْخَبِيثُ",
+          "gloss": "the foul, the corrupt",
+          "note": "A word for what is spoiled or noxious, used of bad soil, bad speech and bad earnings alike. It names something that has gone wrong in itself rather than something merely disapproved of."
+        },
+        {
+          "arabic": "أَعْجَبَكَ",
+          "gloss": "it impresses you, it pleases you",
+          "note": "The verb of causing wonder or admiration, and in another form the root yields the word for self-satisfaction. The ayah concedes the reaction rather than criticising the person who has it."
+        },
+        {
+          "arabic": "أُو۟لِى ٱلْأَلْبَـٰبِ",
+          "gloss": "those with kernels of understanding",
+          "note": "Literally possessors of the inner core, from the word for the kernel inside a shell. Understanding is named as what lies beneath a surface, which suits an ayah about looking past appearance."
+        }
+      ],
+      "lifeInProphetsTime": "Quantity was the measure of everything. A tribe's strength was counted in men, a man's in camels, and poets recited numbers as praise. Standing in a market and seeing which stall had the larger heap told you which trader was winning. In a society without written accounts, visible abundance was the only accounting anyone had, and it was very hard to argue against.",
+      "didYouKnow": "The phrase used here for people of understanding occurs sixteen times across the Quran, and nearly always in contexts asking for a judgement that runs against appearance. It is the text's standard address to a reader being asked to think rather than to look, and it is built on the word for a kernel.",
+      "theologicalSignificance": "The ayah separates two things people habitually merge: how common something is, and whether it is good. That distinction is simple to state and very hard to hold, which is why the passage names the impression before denying its authority. It also puts the correction in the register of intelligence rather than of piety, which makes it something anyone can check.",
+      "crossReferences": [
+        {
+          "ref": "5:66",
+          "why": "Names a balanced community among a majority described otherwise, in this same surah."
+        },
+        {
+          "ref": "6:116",
+          "why": "Says that following most of those on earth will lead you away from God's path."
+        },
+        {
+          "ref": "2:269",
+          "why": "Says only people of understanding take heed, using the identical phrase for them."
+        }
+      ],
+      "applyIt": "Find one thing you are doing mainly because a lot of people do it. Not a bad thing necessarily; just something whose only real argument is the crowd around it. Write down the actual reason, if there is one, in a sentence. If you cannot, that is this ayah's whole content, delivered by you rather than to you.",
+      "exploreFurther": [
+        "6:116",
+        "2:269",
+        "5:66"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.138Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:101-102",
+      "surah": 5,
+      "start": 101,
+      "end": 102,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Do Not Ask About Things",
+      "tier": "standard",
+      "meaning": "An instruction that runs against the usual encouragement to enquire. Do not ask about things which, if disclosed to you, would trouble you. The reason given is not that the answers are hidden but that they would land badly. Then a note about timing: asking while the Quran is being sent down will get them disclosed. The next ayah supplies a precedent, a people before who asked and then rejected what they were given.",
+      "historicalContext": "Medinan. The commentators report a setting in which people pressed the Prophet Muhammad (peace be upon him) with questions, some about matters that had deliberately been left unspecified and some designed to test him. Reports of the particular occasion differ. The general situation is a community receiving revelation in real time, where a single question could produce an answer that then bound everyone.",
+      "keyTerms": [
+        {
+          "arabic": "تَسُؤْكُمْ",
+          "gloss": "it would trouble you",
+          "note": "The verb of causing distress or displeasure. What is warned against is not an unanswerable question but an answer that would sit badly, which locates the problem in the asker rather than in the subject."
+        },
+        {
+          "arabic": "عَفَا ٱللَّهُ عَنْهَا",
+          "gloss": "God has passed over them",
+          "note": "The verb of effacing a trace. Silence is described here as a deliberate omission rather than an oversight, so what has not been specified is presented as an act of mercy."
+        },
+        {
+          "arabic": "حَلِيمٌ",
+          "gloss": "forbearing, slow to react",
+          "note": "A name for one who does not respond immediately to provocation. Pairing it with forgiving at the end of this ayah suits a passage about people pressing for answers they should not want."
+        }
+      ],
+      "lifeInProphetsTime": "Questions were a competitive form in that culture. Poets and orators tested one another publicly, and a question designed to trap was a recognised move with its own prestige. Delegations arrived carrying prepared difficulties. In a society where a public answer could not be retracted, asking was an exercise of power, and this passage addresses that use of it directly.",
+      "didYouKnow": "The Quran contains a series of ayat beginning with the phrase they ask you, and each of them supplies an answer. This passage stands against that pattern, and the classical commentaries read the two together: some questions are answered at length, and some are described as better left unasked in the first place.",
+      "theologicalSignificance": "The passage treats revelation as having deliberate silences and calls them mercy. That is a significant claim about scripture, because it means an absence in the text is not a gap waiting to be filled. It also treats the questioner's motive as relevant to whether a question should be asked at all, which shifts the ethics of enquiry from the subject onto the person asking.",
+      "crossReferences": [
+        {
+          "ref": "2:189",
+          "why": "Answers one of the questions the community did ask, about the phases of the moon."
+        },
+        {
+          "ref": "5:15",
+          "why": "Describes a messenger who clarifies much and deliberately passes over much else."
+        },
+        {
+          "ref": "7:187",
+          "why": "Describes a question about the Hour and the answer that its knowledge rests with God."
+        }
+      ],
+      "applyIt": "Think of a question you keep wanting to ask someone, where you already suspect the answer and know it would not help. Leave it unasked this week. That is difficult and it is exactly what this passage describes. Some knowledge changes nothing except your ability to be at ease with a person.",
+      "exploreFurther": [
+        "2:189",
+        "7:187",
+        "5:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.226Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:103",
+      "surah": 5,
+      "start": 103,
+      "end": 103,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "God Did Not Appoint These",
+      "tier": "standard",
+      "meaning": "Four practices are named and denied in a single clause. God did not appoint any of them. Each was a category of livestock set aside from ordinary use by custom, marked and released, and each carried an assumed religious sanction. The ayah does not argue about whether the animals should be released; it denies the attribution. What is being corrected is a false ascription to God, and the closing clause names most of those who do it as not reasoning.",
+      "historicalContext": "Medinan, though the practices described belong to pre-Islamic Arabian religion and are addressed for what they were, an inherited system with no source anyone could name. The commentators describe the four categories in detail and differ over the specifics, since the customs were already fading. The point being made does not depend on those details, and the ayah states it as a matter of attribution.",
+      "keyTerms": [
+        {
+          "arabic": "بَحِيرَةٍ",
+          "gloss": "a she-camel with slit ear",
+          "note": "One of four categories of livestock set aside by custom and marked so that nobody would use it. The commentators describe each one differently, which suggests the practices were already receding when this ayah was given."
+        },
+        {
+          "arabic": "يَفْتَرُونَ",
+          "gloss": "they fabricate, they invent",
+          "note": "From a root meaning to cut or split, so inventing is pictured as cutting cloth to shape. The verb is used across the Quran specifically for attributing to God something that He did not say."
+        },
+        {
+          "arabic": "لَا يَعْقِلُونَ",
+          "gloss": "they do not reason",
+          "note": "The same phrase used earlier in this surah of those who mocked the call to prayer. In both places the failure named is a joining of things together rather than a shortage of information."
+        }
+      ],
+      "lifeInProphetsTime": "The four categories were visible in every herd. An animal with a slit ear or a particular mark was known to be untouchable, and the rules about which offspring triggered which status were passed down without anyone remembering why. Real wealth was tied up in these releases, sometimes considerably. Nobody could name a source for the system, and nobody questioned it either.",
+      "didYouKnow": "This ayah names four pre-Islamic livestock customs, and three of the four terms occur nowhere else in the Quran. The classical commentators had to reconstruct the practices from reports, and their descriptions of each differ from one another, which is itself evidence of how quickly the customs disappeared.",
+      "theologicalSignificance": "The correction is aimed at attribution rather than at the practice, and that focus is the passage's substance. Something can be harmless in itself and become a serious matter once God is named as its author. Inventing a rule and ascribing it upward is treated across the Quran as a distinct category of wrong, and this ayah supplies the clearest ordinary example of it.",
+      "crossReferences": [
+        {
+          "ref": "6:138",
+          "why": "Describes similar practices with livestock and the claims that were attached to them."
+        },
+        {
+          "ref": "10:59",
+          "why": "Asks who gave permission for declaring some provision off limits and some lawful."
+        },
+        {
+          "ref": "16:116",
+          "why": "Warns against the tongue describing falsely, saying this is lawful and this is not."
+        }
+      ],
+      "applyIt": "Notice where you attach religious weight to something that is really a family habit or a local custom. There is nothing wrong with the habit. The question is whether you present it as more than it is, to yourself or to children. Separate the two once this week, out loud, and see what changes.",
+      "exploreFurther": [
+        "6:136-140",
+        "10:59",
+        "16:116"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.235Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:104",
+      "surah": 5,
+      "start": 104,
+      "end": 104,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "What We Found Our Fathers On",
+      "tier": "standard",
+      "meaning": "An invitation and a refusal, quoted exactly. Come to what God has sent down and to the Messenger; and the answer given is that what we found our fathers upon is enough for us. The refusal is not an argument against the content, because the content was never examined. Then the ayah asks a single question that does all the work: even if their fathers knew nothing and were not guided. The precedent is not disputed. Its authority is.",
+      "historicalContext": "Medinan, following the denial of the inherited livestock customs in the previous ayah. The commentators read the two together: the practices are denied, and this ayah quotes the defence that was actually offered for them. The setting is a society in which inherited practice carried more authority than argument, and in which the phrase quoted here was a complete and respectable answer.",
+      "keyTerms": [
+        {
+          "arabic": "حَسْبُنَا",
+          "gloss": "it is enough for us",
+          "note": "From the verb to reckon or to count, so what is claimed is sufficiency in an accounting sense. The word appears elsewhere in the Quran with God as its object, which sharpens its use here for inherited custom."
+        },
+        {
+          "arabic": "وَجَدْنَا",
+          "gloss": "we found",
+          "note": "The verb of coming upon something, with no implication of having chosen it. The refusal is honest about its own basis: what is defended is not what was concluded but what was simply already there."
+        },
+        {
+          "arabic": "أَوَلَوْ",
+          "gloss": "even if, and what if",
+          "note": "A particle combining a question with a concession. It grants the premise entirely and then attaches a condition that empties it, which is why the ayah needs no further argument after asking."
+        }
+      ],
+      "lifeInProphetsTime": "Precedent was the legal system. With no written law, a dispute was settled by what had been done before, recited by whoever remembered furthest back. Genealogy carried authority for the same reason. In that world, saying we found our fathers doing this was not obstinacy; it was the strongest available citation, and appealing past it to anything else was the unusual move.",
+      "didYouKnow": "The phrase quoted here, that we found our fathers upon this, recurs in several places across the Quran, in the mouths of different communities addressing different prophets. The Quran presents it as the standard reply rather than as one people's particular failing, which is part of why it appears so often.",
+      "theologicalSignificance": "The passage does not attack inheritance as such; it asks what the inheritance is worth. The question raised is whether the people being followed had access to anything the follower does not, and if they did not, the chain has no starting point. That test is available to anyone and applies in every direction, including to a person who inherited something true and never examined why.",
+      "crossReferences": [
+        {
+          "ref": "2:170",
+          "why": "Quotes the same reply in the earlier Medinan surah, with a different verb for finding."
+        },
+        {
+          "ref": "31:21",
+          "why": "Gives the same refusal and adds that they follow even a caller inviting to the fire."
+        },
+        {
+          "ref": "43:23",
+          "why": "Presents the reply as the standard answer given to every warner sent to a town."
+        }
+      ],
+      "applyIt": "Take one practice you inherited and have never examined, and find out this week why it is done. Not in order to abandon it. Most of what you find will be worth keeping, and you will hold it differently once you know. The ayah's question is only whether the people you got it from knew.",
+      "exploreFurther": [
+        "2:170",
+        "31:21",
+        "43:22-24"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.245Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:105",
+      "surah": 5,
+      "start": 105,
+      "end": 105,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "You Are Responsible For Yourselves",
+      "tier": "standard",
+      "meaning": "An instruction that is easy to misread, and the commentators say so. Take care of your own souls; whoever has gone astray cannot harm you if you are guided. Read alone it sounds like withdrawal, but the classical commentaries treat the condition as the key: being guided includes what this surah has already required, restraining wrongdoing among those around you. The last clause moves everything to a shared return, which keeps the instruction from becoming isolation.",
+      "historicalContext": "Medinan. The commentators record that this ayah was sometimes quoted to justify staying out of a community's affairs, and the classical commentaries answer that reading directly, setting it against the passages in this same surah about failing to restrain one another. Reports of a specific occasion vary. The instruction arrives at a point where the surah has been describing other communities at length.",
+      "keyTerms": [
+        {
+          "arabic": "عَلَيْكُمْ أَنفُسَكُمْ",
+          "gloss": "take care of your own selves",
+          "note": "A construction of obligation with no verb in it, an idiom meaning attend to this. It marks something as being on you, so what is assigned is a responsibility rather than a boundary around your concern."
+        },
+        {
+          "arabic": "ٱهْتَدَيْتُمْ",
+          "gloss": "you are rightly guided",
+          "note": "A reflexive form, so accepting guidance rather than merely receiving it. The commentators read the whole conditional through this word, since what counts as being guided determines what the ayah permits."
+        },
+        {
+          "arabic": "مَرْجِعُكُمْ",
+          "gloss": "your place of return",
+          "note": "A noun of place from the verb to return. Its plural possessive matters: everyone returns to the same place, which is why the ayah cannot be read as separating one person's fate from another's."
+        }
+      ],
+      "lifeInProphetsTime": "Collective responsibility was total in that society. A tribe answered for its members' debts and offences, and a man's wrongdoing could bring a raid down on his cousins. Against that background, an instruction to attend to one's own soul was genuinely novel and easy to hear wrongly, since nothing in the surrounding culture treated a person as separately accountable for anything at all.",
+      "didYouKnow": "The classical commentaries on this ayah spend more space arguing against a misreading of it than explaining it, which is unusual. They record that it was quoted early on to justify staying out of communal affairs, and they answer by pointing to the condition attached and to what this surah has already said about mutual restraint.",
+      "theologicalSignificance": "The ayah locates accountability in the individual without permitting withdrawal from the community, and it does this through a single conditional. Nobody carries another's record, and nobody is guided while ignoring what happens around them. Holding those together is the passage's whole difficulty, and the tradition has generally read it as guarding against despair rather than licensing detachment.",
+      "crossReferences": [
+        {
+          "ref": "5:79",
+          "why": "Condemns a community that did not restrain one another, within this same surah."
+        },
+        {
+          "ref": "6:164",
+          "why": "States that no bearer of burdens carries the burden of anyone other than itself."
+        },
+        {
+          "ref": "66:6",
+          "why": "Instructs guarding yourselves and your families, joining the two responsibilities together."
+        }
+      ],
+      "applyIt": "There is a situation you cannot fix and are still carrying. Name the part of it that is genuinely yours, in one sentence, and set the rest down for a week. Not permanently and not with indifference. This ayah is a relief for people who overreach, and it is not addressed to people who have stopped caring.",
+      "exploreFurther": [
+        "5:78-79",
+        "6:164",
+        "66:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.249Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:106",
+      "surah": 5,
+      "start": 106,
+      "end": 106,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Two Witnesses At The End",
+      "tier": "standard",
+      "meaning": "A procedure is described for a specific and difficult moment: a person dying away from home, on a journey, with a bequest to make and nobody from their own community present. Two people of integrity, or two from outside the community if that is all there is. They are held back after the prayer and asked to swear that they will not sell their testimony for any price, even for a relative, and will not conceal what they saw. The oath's wording is quoted in full.",
+      "historicalContext": "Medinan. The commentators report an incident in which a man died on a journey among people not of his community and part of his estate went missing, and they connect this ayah and the two that follow to it; the reports differ in their details. Travel deaths were common and the practical problem was real: a bequest witnessed by strangers in a place with no record and no recourse.",
+      "keyTerms": [
+        {
+          "arabic": "ضَرَبْتُمْ فِى ٱلْأَرْضِ",
+          "gloss": "you travelled in the land",
+          "note": "An idiom built on the verb to strike, used across the Quran for journeying. The image is of feet striking the ground, and it carries the sense of a hard trip rather than a pleasant outing."
+        },
+        {
+          "arabic": "مِنْ غَيْرِكُمْ",
+          "gloss": "from other than you",
+          "note": "The commentators differ over whether this means outside the family or outside the community. Both readings are recorded, and both point to the same practical situation: no ideal witness is available at all."
+        },
+        {
+          "arabic": "لَا نَشْتَرِى بِهِۦ ثَمَنًا",
+          "gloss": "we will not sell testimony",
+          "note": "Testimony is described as something that could be sold, which names the temptation exactly. The same commercial image is used earlier in this surah for selling the signs of God cheaply."
+        }
+      ],
+      "lifeInProphetsTime": "Dying on the road was ordinary. Caravans buried people where they fell, and whatever a man carried, his goods, his money, his instructions for his family, passed through the hands of whoever happened to be travelling beside him. There was no way to verify anything afterwards. The oath in this passage was the only mechanism available, which is why its wording is so specific.",
+      "didYouKnow": "This is one of the longest procedural passages in the surah, and the oath it sets out is quoted in the first person rather than summarised. The Quran gives the exact words to be said, which it does only rarely for a procedure, and the classical commentaries remark on the precision of the wording.",
+      "theologicalSignificance": "The passage builds a safeguard for a moment when no safeguard is possible, and it does so by placing the whole weight on an oath sworn before God after prayer. That is a statement about what holds a person when nothing external can. It also anticipates failure honestly: the ayat that follow set out what to do if the oath turns out to have been false.",
+      "crossReferences": [
+        {
+          "ref": "5:107",
+          "why": "Sets out what happens if the first testimony is afterwards found to be false."
+        },
+        {
+          "ref": "2:282",
+          "why": "Gives the longest passage in the Quran on recording and witnessing a debt."
+        },
+        {
+          "ref": "4:135",
+          "why": "Requires standing firmly in witness for God even against oneself or near relatives."
+        }
+      ],
+      "applyIt": "Write down what you would want done with the things you leave behind, and tell one person where the note is. It takes twenty minutes and almost nobody does it. This passage exists because a man died on a road with his instructions in his head, and the people who loved him had no way of finding out what they were.",
+      "exploreFurther": [
+        "5:107-108",
+        "2:282",
+        "4:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:36:03.250Z",
         "reviewed": false
       }
     }
