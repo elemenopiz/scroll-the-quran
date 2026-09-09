@@ -1,0 +1,916 @@
+{
+  "version": 1,
+  "generatedBy": "Tools/content-gen/build-plans.mjs",
+  "sections": [
+    {
+      "title": "Read it through",
+      "planIDs": [
+        "juz-a-day",
+        "juz-amma"
+      ]
+    },
+    {
+      "title": "Weekly rhythm",
+      "planIDs": [
+        "al-kahf-fridays",
+        "protection-verses"
+      ]
+    },
+    {
+      "title": "By theme",
+      "planIDs": [
+        "patience",
+        "gratitude",
+        "mercy"
+      ]
+    }
+  ],
+  "plans": [
+    {
+      "id": "juz-a-day",
+      "title": "The whole Quran in 30 days",
+      "subtitle": "One juz every day",
+      "section": "Read it through",
+      "bestFor": "Ramadan, or anyone who wants the whole book once",
+      "lengthDays": 30,
+      "dailyMinutes": 45,
+      "about": "The thirtieth of the Quran that Muslims call a juz has been the unit of daily reading for centuries. This plan walks the mushaf in order, one juz a day, from Al-Fatiha to An-Nas.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "Juz 1",
+          "refs": [
+            "1:1-7",
+            "2:1-141"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Juz 2",
+          "refs": [
+            "2:142-252"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Juz 3",
+          "refs": [
+            "2:253-286",
+            "3:1-92"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Juz 4",
+          "refs": [
+            "3:93-200",
+            "4:1-23"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Juz 5",
+          "refs": [
+            "4:24-147"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Juz 6",
+          "refs": [
+            "4:148-176",
+            "5:1-81"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Juz 7",
+          "refs": [
+            "5:82-120",
+            "6:1-110"
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Juz 8",
+          "refs": [
+            "6:111-165",
+            "7:1-87"
+          ]
+        },
+        {
+          "day": 9,
+          "title": "Juz 9",
+          "refs": [
+            "7:88-206",
+            "8:1-40"
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Juz 10",
+          "refs": [
+            "8:41-75",
+            "9:1-92"
+          ]
+        },
+        {
+          "day": 11,
+          "title": "Juz 11",
+          "refs": [
+            "9:93-129",
+            "10:1-109",
+            "11:1-5"
+          ]
+        },
+        {
+          "day": 12,
+          "title": "Juz 12",
+          "refs": [
+            "11:6-123",
+            "12:1-52"
+          ]
+        },
+        {
+          "day": 13,
+          "title": "Juz 13",
+          "refs": [
+            "12:53-111",
+            "13:1-43",
+            "14:1-52"
+          ]
+        },
+        {
+          "day": 14,
+          "title": "Juz 14",
+          "refs": [
+            "15:1-99",
+            "16:1-128"
+          ]
+        },
+        {
+          "day": 15,
+          "title": "Juz 15",
+          "refs": [
+            "17:1-111",
+            "18:1-74"
+          ]
+        },
+        {
+          "day": 16,
+          "title": "Juz 16",
+          "refs": [
+            "18:75-110",
+            "19:1-98",
+            "20:1-135"
+          ]
+        },
+        {
+          "day": 17,
+          "title": "Juz 17",
+          "refs": [
+            "21:1-112",
+            "22:1-78"
+          ]
+        },
+        {
+          "day": 18,
+          "title": "Juz 18",
+          "refs": [
+            "23:1-118",
+            "24:1-64",
+            "25:1-20"
+          ]
+        },
+        {
+          "day": 19,
+          "title": "Juz 19",
+          "refs": [
+            "25:21-77",
+            "26:1-227",
+            "27:1-55"
+          ]
+        },
+        {
+          "day": 20,
+          "title": "Juz 20",
+          "refs": [
+            "27:56-93",
+            "28:1-88",
+            "29:1-45"
+          ]
+        },
+        {
+          "day": 21,
+          "title": "Juz 21",
+          "refs": [
+            "29:46-69",
+            "30:1-60",
+            "31:1-34",
+            "32:1-30",
+            "33:1-30"
+          ]
+        },
+        {
+          "day": 22,
+          "title": "Juz 22",
+          "refs": [
+            "33:31-73",
+            "34:1-54",
+            "35:1-45",
+            "36:1-27"
+          ]
+        },
+        {
+          "day": 23,
+          "title": "Juz 23",
+          "refs": [
+            "36:28-83",
+            "37:1-182",
+            "38:1-88",
+            "39:1-31"
+          ]
+        },
+        {
+          "day": 24,
+          "title": "Juz 24",
+          "refs": [
+            "39:32-75",
+            "40:1-85",
+            "41:1-46"
+          ]
+        },
+        {
+          "day": 25,
+          "title": "Juz 25",
+          "refs": [
+            "41:47-54",
+            "42:1-53",
+            "43:1-89",
+            "44:1-59",
+            "45:1-37"
+          ]
+        },
+        {
+          "day": 26,
+          "title": "Juz 26",
+          "refs": [
+            "46:1-35",
+            "47:1-38",
+            "48:1-29",
+            "49:1-18",
+            "50:1-45",
+            "51:1-30"
+          ]
+        },
+        {
+          "day": 27,
+          "title": "Juz 27",
+          "refs": [
+            "51:31-60",
+            "52:1-49",
+            "53:1-62",
+            "54:1-55",
+            "55:1-78",
+            "56:1-96",
+            "57:1-29"
+          ]
+        },
+        {
+          "day": 28,
+          "title": "Juz 28",
+          "refs": [
+            "58:1-22",
+            "59:1-24",
+            "60:1-13",
+            "61:1-14",
+            "62:1-11",
+            "63:1-11",
+            "64:1-18",
+            "65:1-12",
+            "66:1-12"
+          ]
+        },
+        {
+          "day": 29,
+          "title": "Juz 29",
+          "refs": [
+            "67:1-30",
+            "68:1-52",
+            "69:1-52",
+            "70:1-44",
+            "71:1-28",
+            "72:1-28",
+            "73:1-20",
+            "74:1-56",
+            "75:1-40",
+            "76:1-31",
+            "77:1-50"
+          ]
+        },
+        {
+          "day": 30,
+          "title": "Juz 30",
+          "refs": [
+            "78:1-40",
+            "79:1-46",
+            "80:1-42",
+            "81:1-29",
+            "82:1-19",
+            "83:1-36",
+            "84:1-25",
+            "85:1-22",
+            "86:1-17",
+            "87:1-19",
+            "88:1-26",
+            "89:1-30",
+            "90:1-20",
+            "91:1-15",
+            "92:1-21",
+            "93:1-11",
+            "94:1-8",
+            "95:1-8",
+            "96:1-19",
+            "97:1-5",
+            "98:1-8",
+            "99:1-8",
+            "100:1-11",
+            "101:1-11",
+            "102:1-8",
+            "103:1-3",
+            "104:1-9",
+            "105:1-5",
+            "106:1-4",
+            "107:1-7",
+            "108:1-3",
+            "109:1-6",
+            "110:1-3",
+            "111:1-5",
+            "112:1-4",
+            "113:1-5",
+            "114:1-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "juz-amma",
+      "title": "Juz Amma",
+      "subtitle": "The last thirtieth, one surah a day",
+      "section": "Read it through",
+      "bestFor": "Short sittings and the surahs you hear most in prayer",
+      "lengthDays": 37,
+      "dailyMinutes": 8,
+      "about": "The final juz holds the short Meccan surahs most Muslims memorise first. One surah a day, from An-Naba to An-Nas.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "An-Naba — The Announcement",
+          "refs": [
+            "78:1-40"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "An-Nazi'at — Those who drag forth",
+          "refs": [
+            "79:1-46"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Abasa — He frowned",
+          "refs": [
+            "80:1-42"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "At-Takwir — The Overthrowing",
+          "refs": [
+            "81:1-29"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Al-Infitar — The Cleaving",
+          "refs": [
+            "82:1-19"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Al-Mutaffifin — Defrauding",
+          "refs": [
+            "83:1-36"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Al-Inshiqaq — The Splitting Open",
+          "refs": [
+            "84:1-25"
+          ]
+        },
+        {
+          "day": 8,
+          "title": "Al-Buruj — The Constellations",
+          "refs": [
+            "85:1-22"
+          ]
+        },
+        {
+          "day": 9,
+          "title": "At-Tariq — The Morning Star",
+          "refs": [
+            "86:1-17"
+          ]
+        },
+        {
+          "day": 10,
+          "title": "Al-A'la — The Most High",
+          "refs": [
+            "87:1-19"
+          ]
+        },
+        {
+          "day": 11,
+          "title": "Al-Ghashiyah — The Overwhelming",
+          "refs": [
+            "88:1-26"
+          ]
+        },
+        {
+          "day": 12,
+          "title": "Al-Fajr — The Dawn",
+          "refs": [
+            "89:1-30"
+          ]
+        },
+        {
+          "day": 13,
+          "title": "Al-Balad — The City",
+          "refs": [
+            "90:1-20"
+          ]
+        },
+        {
+          "day": 14,
+          "title": "Ash-Shams — The Sun",
+          "refs": [
+            "91:1-15"
+          ]
+        },
+        {
+          "day": 15,
+          "title": "Al-Layl — The Night",
+          "refs": [
+            "92:1-21"
+          ]
+        },
+        {
+          "day": 16,
+          "title": "Ad-Duha — The Morning Hours",
+          "refs": [
+            "93:1-11"
+          ]
+        },
+        {
+          "day": 17,
+          "title": "Ash-Sharh — The Consolation",
+          "refs": [
+            "94:1-8"
+          ]
+        },
+        {
+          "day": 18,
+          "title": "At-Tin — The Fig",
+          "refs": [
+            "95:1-8"
+          ]
+        },
+        {
+          "day": 19,
+          "title": "Al-Alaq — The Clot",
+          "refs": [
+            "96:1-19"
+          ]
+        },
+        {
+          "day": 20,
+          "title": "Al-Qadr — The Power, Fate",
+          "refs": [
+            "97:1-5"
+          ]
+        },
+        {
+          "day": 21,
+          "title": "Al-Bayyinah — The Evidence",
+          "refs": [
+            "98:1-8"
+          ]
+        },
+        {
+          "day": 22,
+          "title": "Az-Zalzalah — The Earthquake",
+          "refs": [
+            "99:1-8"
+          ]
+        },
+        {
+          "day": 23,
+          "title": "Al-Adiyat — The Chargers",
+          "refs": [
+            "100:1-11"
+          ]
+        },
+        {
+          "day": 24,
+          "title": "Al-Qari'ah — The Calamity",
+          "refs": [
+            "101:1-11"
+          ]
+        },
+        {
+          "day": 25,
+          "title": "At-Takathur — Competition",
+          "refs": [
+            "102:1-8"
+          ]
+        },
+        {
+          "day": 26,
+          "title": "Al-Asr — The Declining Day, Epoch",
+          "refs": [
+            "103:1-3"
+          ]
+        },
+        {
+          "day": 27,
+          "title": "Al-Humazah — The Traducer",
+          "refs": [
+            "104:1-9"
+          ]
+        },
+        {
+          "day": 28,
+          "title": "Al-Fil — The Elephant",
+          "refs": [
+            "105:1-5"
+          ]
+        },
+        {
+          "day": 29,
+          "title": "Quraysh — Quraysh",
+          "refs": [
+            "106:1-4"
+          ]
+        },
+        {
+          "day": 30,
+          "title": "Al-Ma'un — Almsgiving",
+          "refs": [
+            "107:1-7"
+          ]
+        },
+        {
+          "day": 31,
+          "title": "Al-Kawthar — Abundance",
+          "refs": [
+            "108:1-3"
+          ]
+        },
+        {
+          "day": 32,
+          "title": "Al-Kafirun — The Disbelievers",
+          "refs": [
+            "109:1-6"
+          ]
+        },
+        {
+          "day": 33,
+          "title": "An-Nasr — Divine Support",
+          "refs": [
+            "110:1-3"
+          ]
+        },
+        {
+          "day": 34,
+          "title": "Al-Masad — The Palm Fibre",
+          "refs": [
+            "111:1-5"
+          ]
+        },
+        {
+          "day": 35,
+          "title": "Al-Ikhlas — Sincerity",
+          "refs": [
+            "112:1-4"
+          ]
+        },
+        {
+          "day": 36,
+          "title": "Al-Falaq — The Dawn",
+          "refs": [
+            "113:1-5"
+          ]
+        },
+        {
+          "day": 37,
+          "title": "An-Nas — Mankind",
+          "refs": [
+            "114:1-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "al-kahf-fridays",
+      "title": "Al-Kahf on Fridays",
+      "subtitle": "The Cave, in four sittings",
+      "section": "Weekly rhythm",
+      "bestFor": "Keeping the Friday habit",
+      "lengthDays": 4,
+      "dailyMinutes": 15,
+      "about": "Reading Surah Al-Kahf on Friday is a long-standing practice. Its four narratives — the sleepers, the two gardens, Musa and al-Khidr, Dhul-Qarnayn — split naturally across four weeks.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "The People of the Cave",
+          "refs": [
+            "18:1-31"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "The Two Gardens",
+          "refs": [
+            "18:32-59"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Musa and al-Khidr",
+          "refs": [
+            "18:60-82"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Dhul-Qarnayn and the Return",
+          "refs": [
+            "18:83-110"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protection-verses",
+      "title": "Ayat al-Kursi and the close of Al-Baqarah",
+      "subtitle": "The verses recited for protection",
+      "section": "Weekly rhythm",
+      "bestFor": "Before sleep, and after prayer",
+      "lengthDays": 7,
+      "dailyMinutes": 6,
+      "about": "A week with the passages Muslims return to nightly: the Throne Verse, the two verses that follow it, the closing verses of Al-Baqarah, and the three surahs of refuge.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "Ayat al-Kursi",
+          "refs": [
+            "2:255"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "The verses that follow it",
+          "refs": [
+            "2:256-257"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "The close of Al-Baqarah",
+          "refs": [
+            "2:284-286"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Al-Ikhlas",
+          "refs": [
+            "112:1-4"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Al-Falaq",
+          "refs": [
+            "113:1-5"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "An-Nas",
+          "refs": [
+            "114:1-6"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "All of them together",
+          "refs": [
+            "2:255",
+            "2:285-286",
+            "112:1-4",
+            "113:1-5",
+            "114:1-6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patience",
+      "title": "Patience",
+      "subtitle": "Sabr, a week at a time",
+      "section": "By theme",
+      "bestFor": "A hard stretch",
+      "lengthDays": 7,
+      "dailyMinutes": 10,
+      "about": "Sabr in the Quran is not passivity. It is holding steady while you keep acting — in loss, in fear, in waiting.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "Seek help through patience",
+          "refs": [
+            "2:153"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "A test of fear and hunger",
+          "refs": [
+            "2:155-157"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Hardship comes with ease",
+          "refs": [
+            "94:1-8"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "The patience of Yaqub",
+          "refs": [
+            "12:83-87"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Ayyub calls on his Lord",
+          "refs": [
+            "21:83-84"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Reward without measure",
+          "refs": [
+            "39:10"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Patience and prayer together",
+          "refs": [
+            "3:200"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gratitude",
+      "title": "Gratitude",
+      "subtitle": "Shukr, a week at a time",
+      "section": "By theme",
+      "bestFor": "Resetting how the day feels",
+      "lengthDays": 7,
+      "dailyMinutes": 10,
+      "about": "Shukr in the Quran is recognition that turns into action: noticing what was given, saying so, and using it well.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "If you are grateful",
+          "refs": [
+            "14:7"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Remember Me and I will remember you",
+          "refs": [
+            "2:152"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Countless favours",
+          "refs": [
+            "16:18"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "The gratitude of Sulayman",
+          "refs": [
+            "27:19"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Eat of the good things",
+          "refs": [
+            "2:172"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Few of My servants are grateful",
+          "refs": [
+            "34:13"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Praise belongs to God",
+          "refs": [
+            "1:1-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercy",
+      "title": "Mercy",
+      "subtitle": "Rahmah, a week at a time",
+      "section": "By theme",
+      "bestFor": "When you need the door open",
+      "lengthDays": 7,
+      "dailyMinutes": 10,
+      "about": "Rahmah is the attribute the Quran opens with and returns to most. This week follows it from God's mercy toward creation to the mercy asked of us.",
+      "schedule": [
+        {
+          "day": 1,
+          "title": "My mercy encompasses all things",
+          "refs": [
+            "7:156"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Do not despair of God's mercy",
+          "refs": [
+            "39:53"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "A mercy to the worlds",
+          "refs": [
+            "21:107"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "He prescribed mercy for Himself",
+          "refs": [
+            "6:12"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Kindness to parents",
+          "refs": [
+            "17:23-24"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "The Most Gracious",
+          "refs": [
+            "55:1-13"
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Forgiveness before punishment",
+          "refs": [
+            "15:49-50"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "note": "Themes are reference lists only — no prose. Each entry points at ayah ranges; Deep Study copy lives in Content/study/. Ranges will be replaced wholesale by the QUL Ayah Themes ingest in Phase 2.",
+  "themes": [
+    { "id": "tawhid",       "title": "Oneness of God",        "refs": ["112:1-4", "2:255", "42:11", "6:101", "16:74", "3:18"] },
+    { "id": "names-of-god", "title": "The names of God",      "refs": ["1:1", "7:180", "17:110", "20:8", "59:22-24"] },
+    { "id": "guidance",     "title": "Guidance",              "refs": ["1:5-7", "2:2", "2:185", "6:153", "4:69", "17:9"] },
+    { "id": "praise",       "title": "Praise and lordship",   "refs": ["1:2-4", "6:45", "17:111", "34:1", "64:1"] },
+    { "id": "mercy",        "title": "Mercy",                 "refs": ["7:156", "39:53", "21:107", "6:12", "15:49-50"] },
+    { "id": "patience",     "title": "Patience",              "refs": ["2:153", "2:155-157", "3:200", "39:10", "94:1-8"] },
+    { "id": "gratitude",    "title": "Gratitude",             "refs": ["14:7", "2:152", "16:18", "27:19", "34:13"] },
+    { "id": "prayer",       "title": "Prayer",                "refs": ["2:238", "4:103", "17:78", "20:14", "29:45"] },
+    { "id": "charity",      "title": "Giving",                "refs": ["2:261", "2:271", "9:60", "57:18", "63:10"] },
+    { "id": "justice",      "title": "Justice",               "refs": ["4:135", "5:8", "16:90", "49:9", "57:25"] },
+    { "id": "prophets",     "title": "The prophets",          "refs": ["12:1-6", "19:41-50", "21:83-84", "18:60-82", "37:100-111"] },
+    { "id": "hereafter",    "title": "The hereafter",         "refs": ["82:17-19", "99:1-8", "56:1-12", "75:1-15", "3:185"] },
+    { "id": "creation",     "title": "Signs in creation",     "refs": ["2:164", "3:190-191", "30:22", "55:1-13", "88:17-20"] },
+    { "id": "family",       "title": "Parents and family",    "refs": ["17:23-24", "31:14", "46:15", "25:74", "4:1"] },
+    { "id": "hardship",     "title": "Hardship and relief",   "refs": ["94:1-8", "65:2-3", "2:286", "12:83-87", "93:1-11"] }
+  ]
+}

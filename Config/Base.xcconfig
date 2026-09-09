@@ -1,0 +1,19 @@
+// Base build settings shared by every target and configuration.
+// Real signing identity lives in Config/Local.xcconfig (gitignored, see Local.xcconfig.example).
+
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+SWIFT_VERSION = 5
+SWIFT_STRICT_CONCURRENCY = minimal
+COMPILER_INDEX_STORE_ENABLE = NO
+
+SWIFT_EMIT_LOC_STRINGS = YES
+ENABLE_USER_SCRIPT_SANDBOXING = YES
+DEAD_CODE_STRIPPING = YES
+CLANG_ENABLE_MODULES = YES
+ALWAYS_SEARCH_USER_PATHS = NO
+
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = Apple Development
+CODE_SIGN_IDENTITY[sdk=iphonesimulator*] = -
+
+#include? "Local.xcconfig"

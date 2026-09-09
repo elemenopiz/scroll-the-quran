@@ -1,0 +1,104 @@
+name: ScrollTheQuran
+
+options:
+  bundleIdPrefix: com.scrollthequran
+  minimumXcodeGenVersion: "2.46.0"
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+configs:
+  Debug: debug
+  Release: release
+
+configFiles:
+  Debug: Config/Base.xcconfig
+  Release: Config/Base.xcconfig
+
+packages:
+  ScrollKit:
+    path: Packages/ScrollKit
+
+targets:
+  ScrollTheQuran:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Content
+        type: folder
+        buildPhase: resources
+      # Bundled OFL faces, flat at the app bundle root so UIAppFonts resolves them.
+      # They live once in the repo, inside the DesignSystem target that owns them.
+      - path: Packages/ScrollKit/Sources/DesignSystem/Resources/Fonts
+        buildPhase: resources
+        includes: ["*.ttf"]
+        createIntermediateGroups: false
+    dependencies:
+      - package: ScrollKit
+        product: AppShell
+      - target: ScrollTheQuranWidget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app
+        PRODUCT_NAME: ScrollTheQuran
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/ScrollTheQuran.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "0.1"
+        TARGETED_DEVICE_FAMILY: "1"
+        ENABLE_PREVIEWS: YES
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+    scheme:
+      testTargets:
+        - ScrollTheQuranUITests
+      gatherCoverageData: false
+      environmentVariables:
+        - variable: SCROLL_FIXED_DATE
+          value: "2026-09-14"
+          isEnabled: false
+      storeKitConfiguration: Config/ScrollTheQuran.storekit
+
+  ScrollTheQuranWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widget
+      - path: Content
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: ScrollKit
+        product: QuranData
+      - package: ScrollKit
+        product: DesignSystem
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app.widget
+        PRODUCT_NAME: ScrollTheQuranWidget
+        INFOPLIST_FILE: Widget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Widget/ScrollTheQuranWidget.entitlements
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "0.1"
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: YES
+
+  ScrollTheQuranUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: UITests
+    dependencies:
+      - target: ScrollTheQuran
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app.uitests
+        TEST_TARGET_NAME: ScrollTheQuran
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1"

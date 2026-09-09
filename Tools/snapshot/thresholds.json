@@ -1,0 +1,162 @@
+{
+  "note": "Per-screen RMSE ceilings for Tools/snapshot/compare.sh. `file` is the reference PNG in Reference/, `threshold` the normalised RMSE the capture must stay under. Both images are normalised to 393x852 pt before comparing. By default the status bar (top 54 pt) and home indicator (bottom 34 pt) are masked; a `crop` (WxH+X+Y in pt on the normalised image) compares only that region instead. Thresholds come from Reference/manifest.json.",
+  "defaults": {
+    "width": 393,
+    "height": 852,
+    "maskTopPT": 54,
+    "maskBottomPT": 34,
+    "blurSigma": 6
+  },
+  "screens": {
+    "onboarding-hook": {
+      "file": "onboarding-hook.png",
+      "appearance": "light",
+      "route": "onboarding-hook",
+      "threshold": 0.08
+    },
+    "onboarding-signin": {
+      "file": "onboarding-signin.png",
+      "appearance": "light",
+      "route": "onboarding-signin",
+      "threshold": 0.08,
+      "notes": "bottom sheet over dimmed hook"
+    },
+    "onboarding-slide1": {
+      "file": "onboarding-slide1-feed.png",
+      "appearance": "light",
+      "route": "onboarding-slide1",
+      "threshold": 0.12,
+      "notes": "phone-frame mockup of reader + verse action sheet; alt state onboarding-slide1-deepstudy.png"
+    },
+    "onboarding-slide2": {
+      "file": "onboarding-slide2-plans.png",
+      "appearance": "light",
+      "route": "onboarding-slide2",
+      "threshold": 0.12,
+      "notes": "alt state onboarding-slide2-plan-detail.png"
+    },
+    "onboarding-slide3": {
+      "file": "onboarding-slide3-discover.png",
+      "appearance": "light",
+      "route": "onboarding-slide3",
+      "threshold": 0.12
+    },
+    "onboarding-slide4": {
+      "file": "onboarding-slide4-search.png",
+      "appearance": "light",
+      "route": "onboarding-slide4",
+      "threshold": 0.12
+    },
+    "onboarding-reviews": {
+      "file": "onboarding-reviews.png",
+      "appearance": "light",
+      "route": "onboarding-reviews",
+      "threshold": 0.1
+    },
+    "paywall-trial": {
+      "file": "paywall-trial.png",
+      "appearance": "light",
+      "route": "paywall-trial",
+      "threshold": 0.06
+    },
+    "paywall-plans": {
+      "file": "paywall-plans.png",
+      "appearance": "light",
+      "route": "paywall-plans",
+      "threshold": 0.08,
+      "notes": "half sheet over dimmed paywall"
+    },
+    "gift-closed": {
+      "file": "gift-closed.png",
+      "appearance": "light",
+      "route": "gift-closed",
+      "threshold": 0.1,
+      "notes": "raster envelope art; ours will differ in detail"
+    },
+    "gift-open": {
+      "file": "gift-open.png",
+      "appearance": "light",
+      "route": "gift-open",
+      "threshold": 0.1
+    },
+    "community-dark": {
+      "file": "community-dark.png",
+      "appearance": "dark",
+      "route": "community",
+      "threshold": 0.1
+    },
+    "discover-dark": {
+      "file": "discover-dark.png",
+      "appearance": "dark",
+      "route": "discover",
+      "threshold": 0.14
+    },
+    "deepstudy-top": {
+      "file": "deepstudy-top.png",
+      "appearance": "dark",
+      "route": "deepstudy",
+      "threshold": 0.14
+    },
+    "deepstudy-mid": {
+      "file": "deepstudy-mid.png",
+      "appearance": "dark",
+      "route": "deepstudy#original-language",
+      "threshold": 0.14
+    },
+    "deepstudy-crossrefs": {
+      "file": "deepstudy-crossrefs.png",
+      "appearance": "dark",
+      "route": "deepstudy#cross-references",
+      "threshold": 0.14
+    },
+    "deepstudy-bottom": {
+      "file": "deepstudy-bottom.png",
+      "appearance": "dark",
+      "route": "deepstudy#apply-it",
+      "threshold": 0.14
+    },
+    "reader-dark": {
+      "file": "reader-dark.png",
+      "appearance": "dark",
+      "route": "reader",
+      "threshold": 0.1,
+      "notes": "surah start: logo card above verse 1, hint toast visible"
+    },
+    "translation-sheet": {
+      "file": "translation-sheet.png",
+      "appearance": "dark",
+      "route": "translation-sheet",
+      "threshold": 0.1
+    },
+    "notes-sheet": {
+      "file": "notes-sheet.png",
+      "appearance": "dark",
+      "route": "notes-sheet",
+      "threshold": 0.12,
+      "notes": "keyboard visible; the bottom 45% is masked instead of the usual 34 pt",
+      "maskBottomPT": 383
+    },
+    "home-dark": {
+      "file": "home-dark.png",
+      "appearance": "dark",
+      "route": "home#scrolled",
+      "threshold": 0.1,
+      "notes": "scrolled past hero card"
+    },
+    "home-light": {
+      "file": "onboarding-slide4-search.png",
+      "appearance": "light",
+      "route": "home",
+      "threshold": 0.16,
+      "notes": "only available inside a phone-frame mockup; crop the frame before comparing"
+    },
+    "tabbar-dark": {
+      "file": "home-dark.png",
+      "appearance": "dark",
+      "route": "home",
+      "threshold": 0.12,
+      "crop": "393x66+0+752",
+      "notes": "Not a manifest screen: the tab bar strip only, cropped out of the bottom of home-dark.png. Phase 1's shape gate."
+    }
+  }
+}

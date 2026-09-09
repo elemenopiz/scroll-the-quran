@@ -1,0 +1,28 @@
+excluded:
+  - .build
+  - DerivedData
+  - Packages/ScrollKit/.build
+  - Tools
+  - Reference
+
+line_length:
+  warning: 130
+  error: 200
+  ignores_comments: true
+
+identifier_name:
+  min_length: 1
+  excluded: [x, y, id]
+
+disabled_rules:
+  - trailing_comma
+
+nesting:
+  type_level: 3
+
+large_tuple:
+  warning: 3
+
+function_body_length:
+  warning: 70
+  error: 120
