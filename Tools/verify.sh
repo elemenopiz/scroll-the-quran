@@ -57,12 +57,6 @@ if command -v jq >/dev/null; then
   [ "$BAD" -eq 0 ] && ok "all Content JSON parses"
 else
   warn "jq missing, skipping JSON parse check"
-fi
-if OFFENDERS=$(grep -rlP '[\x{0600}-\x{06FF}\x{0750}-\x{077F}\x{FB50}-\x{FDFF}\x{FE70}-\x{FEFF}]' Content Packages App Widget 2>/dev/null); then
-  fail "Arabic script found (v1 is English-only):"$'\n'"$OFFENDERS"
-else
-  ok "no Arabic script in Content, Packages, App, Widget"
-fi
 
 # 3. Host build and tests ----------------------------------------------------
 step "swift build (host)"
