@@ -1,7 +1,7 @@
 {
   "surah": 60,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T16:06:36.799Z",
+  "generatedAt": "2026-09-09T16:13:14.661Z",
   "studies": [
     {
       "key": "60:1",
@@ -348,6 +348,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T16:06:36.702Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:8",
+      "surah": 60,
+      "start": 8,
+      "end": 8,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Kindness Is Not Withdrawn",
+      "tier": "standard",
+      "meaning": "The ayah is framed as a negative, which changes its force. It does not command kindness; it removes any supposition that kindness had been ruled out. Two conditions define who it covers: those who did not fight over religion and did not take part in an expulsion. For everyone in that description, two things are named, dutiful kindness and equity, and the second is the one God is said to love. The love clause makes the equity the point.",
+      "historicalContext": "Medinan, arriving seven ayat after a warning about loyalty and drawing its boundary. The commentators report that the ayah answered real uncertainty: believers had relatives and old associates in Mecca and elsewhere who had taken no part in the fighting, and people were unsure how to treat them. Reports name different individuals as the occasion, and the Quran states the category rather than the case.",
+      "keyTerms": [
+        {
+          "arabic": "تَبَرُّوهُمْ",
+          "gloss": "you treat them well",
+          "note": "From the root behind the word for dutiful goodness, the same one used of how a person treats parents. Choosing it here sets the standard at family conduct rather than at mere civility."
+        },
+        {
+          "arabic": "تُقْسِطُوٓا۟",
+          "gloss": "you deal equitably",
+          "note": "A verb for giving each side its due share, from a root that also yields the word for a portion. It occurs only here in this form, and it names fairness in dealings rather than a feeling towards someone."
+        },
+        {
+          "arabic": "ٱلْمُقْسِطِينَ",
+          "gloss": "those who act equitably",
+          "note": "The Quran names only a small number of groups as loved by God, and this is one of them. The phrase occurs three times, each closing a passage about dealing fairly with people on the other side of a conflict."
+        }
+      ],
+      "lifeInProphetsTime": "Conflict in Arabia was rarely total. A tribe at war with another still traded with its allies, still married across the line where old ties held, and still honoured guests from the wrong side. Neutral parties were common and their neutrality was respected because everyone needed it eventually. The distinction this ayah draws, between people who fought and people who did not, was a familiar one in practice.",
+      "didYouKnow": "The closing phrase, that God loves those who act equitably, occurs three times in the Quran, at 5:42, 49:9 and here. In the other two it follows an instruction about judging between disputing parties. Here it follows an instruction about people on the other side of a war, which is the widest of the three settings.",
+      "theologicalSignificance": "Two criteria are named and both are about conduct: fighting and expelling. Belief is not one of them. That means the boundary in this passage runs along what people did rather than what they hold, which is a narrower line than a reader arriving at the surah might expect. And by attaching God's love to equity specifically, the ayah makes fairness towards an opponent a matter of relationship with God rather than of policy.",
+      "crossReferences": [
+        {
+          "ref": "60:9",
+          "why": "States the other half of the boundary in the next ayah, naming exactly who is excluded and why."
+        },
+        {
+          "ref": "5:8",
+          "why": "Instructs that hatred of a people not prevent anyone from acting justly, the same principle put positively."
+        },
+        {
+          "ref": "49:9",
+          "why": "Ends with the same declaration about God loving the equitable, after an instruction on reconciling."
+        }
+      ],
+      "applyIt": "Take a group you have opinions about and pick one person in it you actually know. Ask yourself whether you have ever treated them worse than you would treat a stranger, on account of the group. If so, correct one small thing this week. This ayah draws its line around conduct, not around categories.",
+      "exploreFurther": [
+        "60:9",
+        "5:8",
+        "49:9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.566Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:9",
+      "surah": 60,
+      "start": 9,
+      "end": 9,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "The Line Drawn Precisely",
+      "tier": "standard",
+      "meaning": "The restriction is stated with a particle meaning only this and nothing more, and then three conditions are listed: they fought over religion, they expelled you, and they backed the expulsion. The third clause is the careful one, because it reaches people who never lifted a weapon but lent their weight. Even then, what is named is taking such people as patrons, not every kind of dealing with them. The verdict falls on whoever does it.",
+      "historicalContext": "Medinan, paired with the ayah before it so that the two together define a boundary from both sides. The Meccan opposition had included people who never fought but funded, sheltered or agitated, and the community knew exactly who they were. The commentators treat the two ayat as one provision, and note that the restrictive particle at the head of this one is what keeps the previous ayah's permission in force.",
+      "keyTerms": [
+        {
+          "arabic": "إِنَّمَا",
+          "gloss": "only, nothing but",
+          "note": "A restrictive particle that fences a statement to exactly what follows. Its position at the head of the ayah is what prevents the restriction from spreading beyond the three conditions listed after it."
+        },
+        {
+          "arabic": "وَظَـٰهَرُوا۟",
+          "gloss": "and they lent support",
+          "note": "Built on the word for a back, so it means putting one's back behind an effort. It occurs only here in the Quran, and its root also supplies the estranging formula addressed two surahs earlier."
+        },
+        {
+          "arabic": "تَوَلَّوْهُمْ",
+          "gloss": "you take them as patrons",
+          "note": "From the root for closeness and for the relation between a patron and a client. The verb names an alliance with obligations attached, which is narrower than friendship and much narrower than courtesy."
+        }
+      ],
+      "lifeInProphetsTime": "Patronage in Arabia was a formal status, not a warm feeling. A client attached himself to a patron and gained protection; the patron gained a follower and answered for him. Everyone knew who was whose, and the arrangement was announced publicly. What this ayah names is that arrangement, which is why it does not touch ordinary trade, hospitality or family contact happening at the same time.",
+      "didYouKnow": "The verb for lending support in this ayah occurs nowhere else in the Quran. It is built on the word for a back, and the same root produced the estranging formula addressed two surahs earlier, at 58:2. One root therefore supplies both a man turning his back on a marriage and a group putting its back behind an expulsion.",
+      "theologicalSignificance": "The passage refuses to work by group. It lists acts, and it lists three of them rather than one, which means someone can fall outside the restriction by not having done any of them. That precision does real moral work, because a rule stated by category would have been easier to apply and would have caught people who had done nothing. The cost of the precision is that it has to be read carefully.",
+      "crossReferences": [
+        {
+          "ref": "60:8",
+          "why": "States the other half of the boundary, covering everyone who did not fight or take part in an expulsion."
+        },
+        {
+          "ref": "48:25",
+          "why": "Notes believing men and women in Mecca whom the community did not know, which is why a blanket rule would have failed."
+        },
+        {
+          "ref": "4:90",
+          "why": "Distinguishes those who withdraw and offer peace, resting the difference on conduct rather than on a name."
+        }
+      ],
+      "applyIt": "When you next find yourself explaining why you cannot deal with someone, count the specific things they have actually done. If the list is short and the feeling is large, that gap is worth sitting with. This ayah takes the trouble to name three separate acts rather than settling for a name.",
+      "exploreFurther": [
+        "60:8",
+        "48:25",
+        "4:90"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.566Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:10",
+      "surah": 60,
+      "start": 10,
+      "end": 10,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "Not Sent Back",
+      "tier": "standard",
+      "meaning": "A situation is addressed in which women arrived in Medina alone, having left households in Mecca. The passage directs that their claim be examined and, if it holds, that they not be returned. What follows is a settlement of accounts in both directions: what husbands had paid is repaid to them, and the same claim runs the other way. The commentators read the examination as verbal rather than intrusive, and the ayah closes by calling the whole arrangement God's ruling.",
+      "historicalContext": "Medinan, after the treaty of Hudaybiyyah, which included a clause returning to Mecca anyone who came over to Medina. The commentators agree that women began arriving under that arrangement and that this passage addressed their case. It is among the better attested occasions in the surah. Reports differ on individuals and on how the examination was conducted, and the Quran describes neither.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱمْتَحِنُوهُنَّ",
+          "gloss": "so examine them",
+          "note": "From a root for testing metal or sifting grain, occurring only here in the Quran. The surah takes its name from this word, in the passive form: the woman who is examined."
+        },
+        {
+          "arabic": "مُهَـٰجِرَٰتٍ",
+          "gloss": "as women who have emigrated",
+          "note": "The feminine plural of the participle for one who cuts ties and departs, occurring only here in the Quran. Applying it to women in their own right makes the departure their act rather than a household's."
+        },
+        {
+          "arabic": "عِصَمِ",
+          "gloss": "bonds, holds",
+          "note": "The plural of a word for something one grips for safety, from the root for protection. Using it of a marriage tie pictures the relationship as a handhold, which is why the verb beside it is holding on."
+        }
+      ],
+      "lifeInProphetsTime": "A woman who left Mecca alone travelled a route of several days without an escort and arrived where she had no kin to answer for her. In that society she had no standing of her own anywhere. Marriage payments were real property, often a herd or its value, and a household that lost both a wife and the payment had suffered a loss the community recognised. Both facts had to be handled at once.",
+      "didYouKnow": "Four words in this single ayah occur nowhere else in the Quran, including the verb for examining, from which the surah takes its name, and the feminine plural for women who have emigrated. The phrase calling something God's ruling appears twice in the Book, here and at 5:43.",
+      "theologicalSignificance": "The passage settles a conflict between a treaty and a person, and it settles it in the person's favour while compensating the other side. That combination is the interesting part: nothing is confiscated and nobody is simply overruled. A woman's own account of what she believes is treated as the decisive evidence, examined but not overridden, and the clause noting that God knows her faith better than anyone limits how far the examination can reach.",
+      "crossReferences": [
+        {
+          "ref": "48:25",
+          "why": "Mentions believing men and women in Mecca unknown to the community, the situation these arrivals came out of."
+        },
+        {
+          "ref": "4:19",
+          "why": "Addresses the treatment of women within marriage, insisting on kindness and on not coercing them over property."
+        },
+        {
+          "ref": "33:49",
+          "why": "Handles another case where a marriage ends and a payment has to be settled graciously."
+        }
+      ],
+      "applyIt": "Think of a rule you follow that would produce an unjust result for one particular person you know. Notice that you can usually see it clearly when it is a face rather than a category. This passage does the same work: it holds an agreement and a person together and looks for the arrangement that damages neither.",
+      "exploreFurther": [
+        "48:25",
+        "4:19",
+        "33:49"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.548Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:11",
+      "surah": 60,
+      "start": 11,
+      "end": 11,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Making The Other Side Whole",
+      "tier": "standard",
+      "meaning": "The reverse case is addressed. Where the movement went the other way and a marriage payment was lost with it, the passage directs that the man be compensated from what came in. Nothing is said about pursuing anyone or about blame. It is an accounting instruction, and it closes on mindfulness of God, which is the note that keeps a financial remedy from becoming an occasion for grievance. Commentators differ over the exact mechanism.",
+      "historicalContext": "Medinan, completing the provision of the previous ayah by handling the case running in the opposite direction. Under the treaty, movement happened both ways and the other side did not always return what had been paid. The commentators describe a practical impasse rather than a grievance about loyalty, and read this ayah as a remedy internal to the community, drawn from what was already in its hands.",
+      "keyTerms": [
+        {
+          "arabic": "فَاتَكُمْ",
+          "gloss": "escapes you, slips away",
+          "note": "A verb for something getting past someone and being gone, used of a missed opportunity as much as a lost object. It carries no accusation, which is consistent with an ayah that assigns no blame."
+        },
+        {
+          "arabic": "فَعَاقَبْتُمْ",
+          "gloss": "and your turn came",
+          "note": "From the root for what follows behind, and it occurs only here in the Quran. Commentators differ over whether it means taking a turn, exacting a penalty, or a later gain arriving, and translations preserve the range."
+        },
+        {
+          "arabic": "مِّثْلَ",
+          "gloss": "the like of, an equivalent",
+          "note": "A word for exact correspondence rather than approximate fairness. It sets the compensation at the same amount rather than at a punitive one, which is what keeps the provision a repair rather than a reprisal."
+        }
+      ],
+      "lifeInProphetsTime": "A marriage payment was often the largest single transfer a young man made in his life, sometimes years of savings or a substantial part of a family's herd. Losing it was not a symbolic injury. In ordinary circumstances a man in that position would have gone to his wife's kin and pressed the claim, and if they refused, the matter escalated through the tribe. Here neither route was open.",
+      "didYouKnow": "The verb at the centre of this ayah occurs only once in the whole Quran, and its meaning was contested from the earliest period. Classical readings include taking one's turn, exacting a penalty, and receiving something afterwards, and the major translations still divide along the same three lines today.",
+      "theologicalSignificance": "A grievance is answered by a transfer rather than by a licence to retaliate, which is the shape of the whole passage. The man who lost something is made whole from a common pool, so the cost of an unreachable wrong is spread across the community instead of pursued against a person. Closing on mindfulness of God addresses the temptation the remedy creates, since a claim to be repaid is easy to inflate.",
+      "crossReferences": [
+        {
+          "ref": "60:10",
+          "why": "Handles the case running the other way, with the same insistence that both sides be repaid what they spent."
+        },
+        {
+          "ref": "2:194",
+          "why": "Sets a response at the measure of the injury, the same principle of an equivalent rather than an excess."
+        },
+        {
+          "ref": "42:40",
+          "why": "Keeps a repayment equal to the harm and then prefers pardon, which is the register this ayah shares."
+        }
+      ],
+      "applyIt": "If you are owed something by someone you will never realistically recover it from, try naming the exact amount once, out loud or on paper, and then deciding what you will do with the fact. Vagueness keeps a grievance alive longer than a number does. This ayah answers a loss by fixing its size first.",
+      "exploreFurther": [
+        "60:10",
+        "2:194",
+        "42:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.556Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:12",
+      "surah": 60,
+      "start": 12,
+      "end": 12,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "The Pledge And Its Terms",
+      "tier": "standard",
+      "meaning": "A pledge is described with its content set out in full: no associating anything with God, no theft, no unlawful sex, no killing of children, no fabrication about parentage, and no disobedience in what is right. The list is notable for what it contains and for its last clause, which limits the obligation to what is good. The instruction that follows is twofold: accept the pledge, and ask forgiveness for those making it.",
+      "historicalContext": "Medinan. The commentators connect this ayah with the pledges taken from women at various points, including at the conquest of Mecca, and they report that the pledge was verbal rather than by hand. Reports differ on the occasions and the individuals. What is agreed is that women gave their allegiance directly and in their own names, which the ayah records without comment as ordinary.",
+      "keyTerms": [
+        {
+          "arabic": "يُبَايِعْنَكَ",
+          "gloss": "they pledge allegiance to you",
+          "note": "From the root for a sale, since a pledge of allegiance was struck like a bargain with a clasp of hands. This feminine form occurs only here in the Quran, and the transaction language is the ordinary one."
+        },
+        {
+          "arabic": "بِبُهْتَـٰنٍ",
+          "gloss": "a stunning falsehood",
+          "note": "From a root meaning to leave someone dumbfounded. The word names a lie so brazen it stops the hearer, and it occurs in this indefinite form only here, describing a claim made about a child's parentage."
+        },
+        {
+          "arabic": "مَعْرُوفٍ",
+          "gloss": "what is recognised as right",
+          "note": "Literally the known, meaning what a decent society already recognises as good. Placing it at the end of the pledge attaches a limit to the obedience promised, since the pledge covers only that."
+        }
+      ],
+      "lifeInProphetsTime": "The killing of infant daughters is attested in pre-Islamic Arabia and is condemned elsewhere in the Quran in plain terms. A household under famine pressure, or facing the cost of a daughter's future marriage negotiations, sometimes made that choice. Naming it inside a pledge, alongside theft, addressed something the people taking the pledge would have known about in families near their own.",
+      "didYouKnow": "The verb for women giving a pledge occurs only here in the Quran. Its list of terms overlaps with the one at 6:151, which is addressed to everyone: both begin with associating nothing with God, and both name the killing of one's children and the avoidance of indecency among the things renounced.",
+      "theologicalSignificance": "The pledge is taken from women directly, without a male relative standing between them and the commitment, and the Quran presents this as unremarkable. That matters more than any argument about it would. The closing limit on obedience is equally consequential: allegiance is promised only in what is recognised as good, so the pledge builds its own boundary into itself. And the response commanded is not congratulation but a request for forgiveness.",
+      "crossReferences": [
+        {
+          "ref": "6:151",
+          "why": "Sets out an overlapping list addressed to everyone, opening with the same term about associating nothing with God."
+        },
+        {
+          "ref": "81:8-9",
+          "why": "Asks the buried infant girl for what offence she was killed, addressing the practice named in this pledge."
+        },
+        {
+          "ref": "48:10",
+          "why": "Describes a pledge given to the messenger as a pledge given to God, in the same commercial vocabulary."
+        }
+      ],
+      "applyIt": "Notice that the pledge ends by limiting itself, and that the person receiving it is told to ask forgiveness for those who give it. If you lead anything, borrow both halves this week: name what your authority does not cover, and think well of the people under it. Neither takes long, and together they change the room.",
+      "exploreFurther": [
+        "6:151",
+        "81:8-9",
+        "48:10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.566Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "60:13",
+      "surah": 60,
+      "start": 13,
+      "end": 13,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Despairing Of Both Ends",
+      "tier": "standard",
+      "meaning": "The surah closes by returning to its opening subject and adding a reason. The people warned against are described by a state rather than an act: they have given up on the Hereafter. Then a comparison arrives whose sense the commentators divide over. It may mean they despair as the faithless despair of the dead ever returning, or as those already in the graves despair of any good. Both readings make despair the description rather than hostility.",
+      "historicalContext": "Medinan, closing the surah with the same address it opened with and the same instruction. Between the two stand the example of Abraham, the boundary drawn around conduct, and the provisions about women who had arrived. The commentators do not attach a fresh occasion to this ayah; they read it as the seal on the whole surah, restating the instruction and supplying a diagnosis that had not yet been given.",
+      "keyTerms": [
+        {
+          "arabic": "يَئِسُوا۟",
+          "gloss": "they have despaired",
+          "note": "A verb for giving up on something as no longer possible. The Quran elsewhere treats despair of God's mercy as the serious failing, and this ayah applies the same verb to despair of the Hereafter itself."
+        },
+        {
+          "arabic": "أَصْحَـٰبِ ٱلْقُبُورِ",
+          "gloss": "the occupants of the graves",
+          "note": "A phrase occurring only here in the Quran. The word for occupants usually names companions or people belonging to something, so the buried are described as belonging to their graves rather than merely lying in them."
+        },
+        {
+          "arabic": "غَضِبَ",
+          "gloss": "became angry",
+          "note": "The plain verb for anger, stated of God in the past tense so that it names a settled condition rather than a flaring. The same four-word phrase appeared two surahs earlier, at 58:14."
+        }
+      ],
+      "lifeInProphetsTime": "Graves in Arabia were shallow and close by. A settlement buried its dead at the edge of the palms, and people walked past them daily going out to work. Burial was quick and the ground was left plain. The dead were near enough to be part of the landscape and absent enough that nobody expected anything of them. That ordinary assumption is what the comparison in this ayah reaches for.",
+      "didYouKnow": "The phrase naming the occupants of the graves occurs only here in the Quran. The surah's final ayah opens with the same address to believers as its first, and describes the people in question with a four-word phrase used earlier at 58:14, so the closing line ties the surah to itself and to an earlier one at once.",
+      "theologicalSignificance": "Despair is treated as the underlying condition rather than as a consequence, which reorders the whole surah. Hostility, broken promises and shifting loyalty have all been described, and here the root of them is named as having stopped expecting anything beyond this life. That is a generous diagnosis in one sense, since it treats the conduct as following from a belief. It is also the bleakest description in the surah.",
+      "crossReferences": [
+        {
+          "ref": "58:14",
+          "why": "Describes the same group with the identical phrase, in a passage about oaths sworn to a falsehood."
+        },
+        {
+          "ref": "39:53",
+          "why": "Answers despair directly, telling those who have wronged themselves not to give up on God's mercy."
+        },
+        {
+          "ref": "60:1",
+          "why": "Opens the surah with the same address and the same instruction, which this ayah closes by repeating."
+        }
+      ],
+      "applyIt": "Notice where you have quietly stopped expecting anything to change, and how your behaviour has adjusted around that. Despair rarely announces itself; it shows up as no longer bothering. Pick one thing you have stopped bothering about and do the smallest version of it today. That is the reverse of what this ayah describes.",
+      "exploreFurther": [
+        "58:14",
+        "39:53",
+        "60:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:13:14.566Z",
         "reviewed": false
       }
     }
