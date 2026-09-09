@@ -1,0 +1,67 @@
+{
+  "note": "Two LayoutSpecs for the Home tab, deliberately wrapped under `specs` rather than written as two top-level spec files. `LayoutSpecTests` sweeps every .json in the UI test bundle and asserts it, and until Phase 3e routes the `home` screen id to `FeatureHome.HomeView` the app still renders `PlaceholderScreen` there — a top-level spec would fail the sweep for a reason that has nothing to do with layout. Wrapped, `LayoutSpec.loadAll` skips it (its `try?` decode fails) and `HomeTests` reads it here instead, skipping when Home is not wired. When 3e lands, split this into `home-top.json` and `home-scrolled.json` at the top level and delete the wrapper; the frames need no change.",
+  "frameSource": "Measured off Reference/home-dark.png (1179x2556 px for 393x852 pt, so pt = px/3) by scanning rows for runs of the card colour #1E1E23, and off the phone-frame window of Reference/onboarding-slide4-search.png (x 256..920, y 754..2170 px) for the two cards above the fold. The tolerance is wider than the Phase 1 tabbar spec because the light numbers carry the mockup's ~2 % vertical stretch.",
+  "specs": [
+    {
+      "id": "home-top",
+      "route": "home",
+      "appearance": "dark",
+      "reference": { "width": 393, "height": 852 },
+      "tolerance": 16,
+      "elements": [
+        {
+          "name": "home.verseSearchCard",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 73.4, "width": 361.0, "height": 486.0 }
+        },
+        {
+          "name": "home.studyThisVerse",
+          "query": "identifier",
+          "frame": { "x": 34.0, "y": 413.3, "width": 325.0, "height": 50.0 }
+        },
+        {
+          "name": "home.todaysReading",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 589.6, "width": 361.0, "height": 184.0 }
+        },
+        { "name": "home.verseSearch.basic", "query": "identifier", "existenceOnly": true, "frame": { "x": 0, "y": 0, "width": 0, "height": 0 } },
+        { "name": "home.verseSearch.advanced", "query": "identifier", "existenceOnly": true, "frame": { "x": 0, "y": 0, "width": 0, "height": 0 } }
+      ]
+    },
+    {
+      "id": "home-scrolled",
+      "route": "home#scrolled",
+      "appearance": "dark",
+      "reference": { "width": 393, "height": 852 },
+      "tolerance": 16,
+      "elements": [
+        {
+          "name": "home.streakCard",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 124.7, "width": 361.0, "height": 184.0 }
+        },
+        {
+          "name": "home.progressCard",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 334.3, "width": 361.0, "height": 149.4 }
+        },
+        {
+          "name": "home.savedRow",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 504.0, "width": 361.0, "height": 71.7 }
+        },
+        {
+          "name": "home.widgetRow",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 596.0, "width": 361.0, "height": 71.7 }
+        },
+        {
+          "name": "home.settingsPill",
+          "query": "identifier",
+          "frame": { "x": 16.0, "y": 688.0, "width": 361.0, "height": 51.7 }
+        },
+        { "name": "home.streakWeek", "query": "identifier", "existenceOnly": true, "frame": { "x": 0, "y": 0, "width": 0, "height": 0 } }
+      ]
+    }
+  ]
+}
