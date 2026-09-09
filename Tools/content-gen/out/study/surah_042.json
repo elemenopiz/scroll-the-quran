@@ -1,8 +1,356 @@
 {
   "surah": 42,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:12:57.298Z",
+  "generatedAt": "2026-09-09T15:29:54.070Z",
   "studies": [
+    {
+      "key": "42:1-4",
+      "surah": 42,
+      "start": 1,
+      "end": 4,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Thus He Inspires You",
+      "tier": "standard",
+      "meaning": "The surah opens with two sets of disconnected letters and then a sentence that does not explain them. What it explains instead is the process the reader is inside: this is how He inspires you, and how He inspired those before you. Revelation is presented as ongoing practice rather than a new event. Four names follow across two lines, two of power and wisdom, two of height and greatness, and between them sits a statement of ownership that leaves nothing outside.",
+      "historicalContext": "Meccan, from a surah addressed to a small community whose claim to a revelation was being ridiculed by people who controlled the city. Opening by placing this revelation in a line with earlier ones answers that ridicule without argument. Commentators report no particular occasion for these lines. The surah takes its name from a single word much later in it, about deciding matters by consultation.",
+      "keyTerms": [
+        {
+          "arabic": "يُوحِىٓ",
+          "gloss": "He inspires, He reveals",
+          "note": "The verb is in the present tense, which in Arabic covers action still going on. Revelation is described as something happening rather than as a completed deposit handed over once."
+        },
+        {
+          "arabic": "ٱلْعَلِىُّ",
+          "gloss": "the Sublime, the High",
+          "note": "From the root for height. Classical readers take it as elevation in rank and worth rather than in place, since the previous line has just said everything is already His."
+        },
+        {
+          "arabic": "ٱلْحَكِيمُ",
+          "gloss": "the Wise",
+          "note": "From a root that also gives the words for judgement and for the bit that steers an animal. Wisdom here carries restraint and direction, not just knowledge of how things work."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca was a town of specialists in speech. Poets, orators and soothsayers all claimed some access to words that came from elsewhere, and audiences were practised at telling one kind from another. A recitation that opened with detached letters and refused to explain them would have registered immediately as unlike all three. Its first listeners knew the categories well enough to notice that this did not fit them.",
+      "didYouKnow": "This is the only surah in the Quran whose opening letters are split across two separate ayat, one set and then another. It is also one of seven consecutive surahs, from the fortieth to the forty-sixth, that all begin with the same two letters, so this surah carries the group's shared opening and one additional set found nowhere else.",
+      "theologicalSignificance": "The passage grounds the Prophet's experience in a pattern rather than in a singular event, which changes what is being claimed. If the same verb describes what happened to those before him, then the question for a listener is not whether such a thing can occur but whether it has occurred again. And the unexplained letters make a point of their own: a revelation that begins with something withheld is not offering itself as fully transparent.",
+      "crossReferences": [
+        {
+          "ref": "4:163",
+          "why": "Lists the earlier recipients this line gestures at, naming prophets from Noah onwards as inspired in the same way."
+        },
+        {
+          "ref": "53:4-5",
+          "why": "Describes the same inspiration from the receiving end, as something taught rather than composed."
+        },
+        {
+          "ref": "3:7",
+          "why": "Addresses passages whose meaning is not made plain, and describes two ways of responding to what is withheld."
+        }
+      ],
+      "applyIt": "Read the first two lines of this surah aloud and let yourself not understand them. Do not look up an explanation today. Sit with the fact that the text opens by handing you something you cannot use, and notice how quickly you want that resolved. The discomfort is worth more than the answer for one sitting.",
+      "exploreFurther": [
+        "4:163",
+        "53:1-5",
+        "3:7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.926Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:5-6",
+      "surah": 42,
+      "start": 5,
+      "end": 6,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "The Angels Ask For Us",
+      "tier": "standard",
+      "meaning": "The heavens are described as nearly splitting from above, and then the sentence moves without pause to what the angels are doing. They praise, and they ask forgiveness for whoever is on earth. Commentators connect the strain in the first clause to the claims being made about God below, and read the angels' asking as the counterweight. The next line then tells the Prophet what is not his: the people who take other protectors are God's business, and he is not their overseer.",
+      "historicalContext": "Meccan, early in a surah addressed to a Prophet whose position in the city was worsening and who had begun to feel responsible for people refusing him. Commentators read the relief offered here as specific to that pressure. No occasion is reported for the ayat. The reference to those taking other masters fits a setting where the sanctuary itself housed the alternatives.",
+      "keyTerms": [
+        {
+          "arabic": "يَتَفَطَّرْنَ",
+          "gloss": "they nearly split apart",
+          "note": "An intensive verb for cracking open along a seam. The same form appears in only one other place, describing the heavens straining at a claim made about God having a child."
+        },
+        {
+          "arabic": "وَيَسْتَغْفِرُونَ",
+          "gloss": "and they seek forgiveness",
+          "note": "A verb of asking on behalf of another. The object here is everyone on earth without qualification, which classical commentators noted as broader than the wording used in some parallel passages."
+        },
+        {
+          "arabic": "بِوَكِيلٍ",
+          "gloss": "an overseer, one in charge",
+          "note": "A word for an agent entrusted with someone else's affairs and answerable for them. Denying the role to the Prophet removes a burden rather than a privilege."
+        }
+      ],
+      "lifeInProphetsTime": "Intercession was a working part of Arabian life. A man in trouble found someone with standing to speak for him, and much of tribal politics ran on who would carry whose case. The idols at the sanctuary were valued largely for this: they were thought to put in a word. Against that background, being told that angels ask forgiveness for everyone on earth rearranged who the effective advocates were.",
+      "didYouKnow": "The intensive verb for the heavens nearly splitting occurs twice in the Quran and nowhere else. Its other appearance is in a surah where the strain is caused by the claim that the Merciful has taken a child. Here the same near-rupture is set beside angels asking forgiveness for everyone below, so the identical image serves opposite ends.",
+      "theologicalSignificance": "The passage puts a cosmic reaction and a routine act of intercession in the same sentence, which keeps the scale of the offence and the scale of the mercy in view together. It also draws a boundary around a messenger's responsibility. He delivers; he does not own the outcome. That distinction protects both the Prophet and anyone who has ever felt accountable for another person's belief.",
+      "crossReferences": [
+        {
+          "ref": "40:7",
+          "why": "Describes those who carry the Throne asking forgiveness for the believers, a narrower version of the same intercession."
+        },
+        {
+          "ref": "19:88-91",
+          "why": "Supplies the other occurrence of the heavens nearly splitting, and names the claim that causes it."
+        },
+        {
+          "ref": "88:21-22",
+          "why": "States the same limit on the Prophet's role, that he is a reminder and not a controller over people."
+        }
+      ],
+      "applyIt": "Name one person whose choices you have been quietly carrying: a sibling, a friend who has drifted, someone you keep arguing with in your head. Say for them the kind of thing the angels are described as saying, once, and then deliberately put the outcome down. The second half of that is the harder half and the one this passage is about.",
+      "exploreFurther": [
+        "40:7-9",
+        "19:88-92",
+        "88:21-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.935Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:7",
+      "surah": 42,
+      "start": 7,
+      "end": 7,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "The Mother Of Cities",
+      "tier": "standard",
+      "meaning": "The revelation is described by its language and by its first audience: an Arabic recitation, sent so that you may warn the mother of cities and those around it. Commentators identify the mother of cities as Mecca and read the phrase as naming a centre from which something spreads. The second half names what the warning is about. Not a raid or a famine, but a day of gathering that carries no doubt, at the end of which the assembly divides in two and the sentence simply stops there.",
+      "historicalContext": "Meccan. The audience is the town itself and the settlements and tribes in its orbit, which is how the earliest reach of the message is described elsewhere too. Commentators note that the Quran being in Arabic is raised repeatedly in this period as an argument, since the objection that it was unclear could not be made against speech in the hearers' own tongue. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "أُمَّ ٱلْقُرَىٰ",
+          "gloss": "the mother of settlements",
+          "note": "A phrase for a place other places grow around and depend on. Arabic uses mother for the origin or main body of a thing, so the image is of a source rather than a capital."
+        },
+        {
+          "arabic": "يَوْمَ ٱلْجَمْعِ",
+          "gloss": "the Day of Gathering",
+          "note": "From the ordinary verb for collecting people together. It names the Day by its most social feature, everyone in one place, before saying anything at all about judgement."
+        },
+        {
+          "arabic": "فَرِيقٌ",
+          "gloss": "a party, a group",
+          "note": "A word for a section separated off from a larger body, used twice here. It keeps the division collective rather than individual, which is unusual in descriptions of that Day."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca sat where trade routes met and drew its importance from the sanctuary and the markets around it. Tribes camped in its orbit, pilgrims came in season, and news travelled outward with the caravans that left for Syria and Yemen. Calling it the mother of settlements described a real dependency: what was said in Mecca was carried to places that had never sent anyone there.",
+      "didYouKnow": "The phrase for the mother of settlements occurs twice in the Quran, and the other instance uses almost the same wording about warning it and whoever is around it. The name for the Day of Gathering used here occurs only in this ayah, though a related phrase appears once elsewhere. The surah names the Day by its assembly rather than by its reckoning.",
+      "theologicalSignificance": "The passage ties a universal warning to a specific address. The message goes out in one language, from one town, to people who could hear it without translation, and the Day it warns of belongs to everyone. Holding both together is the Quran's usual position: revelation arrives in a particular place and speech, and what it announces is not particular at all. The final division is stated without any softening.",
+      "crossReferences": [
+        {
+          "ref": "6:92",
+          "why": "Uses nearly the identical phrase about warning the mother of settlements and those around it, describing another Book."
+        },
+        {
+          "ref": "64:9",
+          "why": "Names the same Day of Gathering with a related phrase, and describes what happens to those who believe."
+        },
+        {
+          "ref": "12:2",
+          "why": "Gives the same reason for the recitation being in Arabic, that its hearers might understand it."
+        }
+      ],
+      "applyIt": "Read a passage today in a translation you do not usually use, alongside your normal one. Notice a place where the two disagree about a word. This ayah makes a point of the message arriving in a language its first hearers already had. Yours arrives through someone's choices, and it is worth seeing where those choices sit.",
+      "exploreFurther": [
+        "6:92",
+        "64:9",
+        "12:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.935Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:8",
+      "surah": 42,
+      "start": 8,
+      "end": 8,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "He Could Have Made One Community",
+      "tier": "standard",
+      "meaning": "The line concedes something before anyone asks. Uniformity was available and was not chosen. Commentators take this as an answer to the question that follows any failed argument: if the truth is clear, why is anyone still outside it. The reply does not explain the reason; it states that the arrangement is deliberate. Then admission into mercy is described as an act of will rather than an entitlement, and the last clause says what the wrongdoers lack, naming two roles at once, a protector and a helper.",
+      "historicalContext": "Meccan, in a stretch of the surah dealing with the Prophet's responsibility for a city that would not respond. The preceding line has already told him he is not their overseer, and this one supplies the reason: the diversity of belief in front of him is not a failure of the message. Commentators report no occasion. The same statement recurs across several Meccan surahs in nearly identical wording.",
+      "keyTerms": [
+        {
+          "arabic": "أُمَّةً وَٰحِدَةً",
+          "gloss": "one single community",
+          "note": "The word covers a people, a generation and a way of life together. Making them one would mean not merely agreement but a single shape of living, which is what the sentence says was not done."
+        },
+        {
+          "arabic": "وَلِىٍّ",
+          "gloss": "a protector, a patron",
+          "note": "The one who stands close enough to act for you. In Arabian society this was a legal position with obligations attached, not a feeling of goodwill toward someone."
+        },
+        {
+          "arabic": "نَصِيرٍ",
+          "gloss": "a helper, a supporter",
+          "note": "One who comes to your aid at the moment of need. Pairing it with the previous word covers both standing relationship and emergency assistance, so the denial leaves nothing open."
+        }
+      ],
+      "lifeInProphetsTime": "A man alone in Arabia was in danger. Protection came from a patron with standing and from allies who would answer a call, and losing both was a practical catastrophe rather than a metaphor. Men who converted in Mecca sometimes found exactly this happening to them as their families withdrew cover. The two words denied at the end of this ayah named the two things everybody had and everybody needed.",
+      "didYouKnow": "The phrase for one single community occurs nine times in the Quran. In several of those places it appears in exactly this construction, saying that God could have made people one and did not, and in others it describes humanity as having once been one before differing. The same two words carry both the road not taken and the starting point departed from.",
+      "theologicalSignificance": "The passage treats disagreement as permitted rather than accidental, which removes a particular kind of anxiety without offering an explanation. It also separates being brought into mercy from being able to claim it. And by naming what the wrongdoers lack rather than what they will suffer, the ayah defines loss as being without anyone, which is a different and more recognisable thing than punishment.",
+      "crossReferences": [
+        {
+          "ref": "11:118",
+          "why": "States the same thing and adds that they will not cease to differ, making the situation permanent rather than temporary."
+        },
+        {
+          "ref": "16:93",
+          "why": "Repeats the identical concession and follows it with the promise that everyone will be asked about what they did."
+        },
+        {
+          "ref": "5:48",
+          "why": "Gives the reason more fully, that the different ways are a test in doing good rather than a defect."
+        }
+      ],
+      "applyIt": "Think of one person whose refusal to see something obvious has been bothering you for months. Try saying, once, that their being outside your agreement is not a problem you were assigned. You may still talk to them tomorrow. But notice how much of the weight came from believing the gap was yours to close.",
+      "exploreFurther": [
+        "11:118-119",
+        "16:93",
+        "5:48"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.935Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:9",
+      "surah": 42,
+      "start": 9,
+      "end": 9,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "Or Have They Taken Protectors",
+      "tier": "standard",
+      "meaning": "A question that is really an objection: have they gone and taken patrons other than Him. The answer does not argue against the alternatives. It states the position and moves on, then adds two capacities as evidence rather than as praise. He gives life to the dead, and He has power over everything. Commentators note the choice of proof: reviving the dead is the one thing no patron in Arabia could offer, which quietly settles what a protector is worth by naming the limit of every other one.",
+      "historicalContext": "Meccan. The surah has just told the Prophet that those who take other masters are not his responsibility, and this line turns from him to them. Patronage in Mecca was the framework everything ran on, and the objects at the sanctuary were understood partly in those terms. No occasion is reported for the ayah; commentators read it as part of the surah's opening argument about who is actually in charge.",
+      "keyTerms": [
+        {
+          "arabic": "أَمِ",
+          "gloss": "or is it that",
+          "note": "A particle introducing an alternative that the speaker finds unlikely. Arabic uses it to raise a possibility in order to dismiss it, so the question arrives already carrying its own answer."
+        },
+        {
+          "arabic": "ٱلْوَلِىُّ",
+          "gloss": "the Protector, the Patron",
+          "note": "The same word used in the plural a clause earlier, now singular and definite. The sentence does not deny that people have patrons; it says only one of them holds the title properly."
+        },
+        {
+          "arabic": "يُحْىِ ٱلْمَوْتَىٰ",
+          "gloss": "He gives the dead life",
+          "note": "Placed as proof rather than as doctrine. Reviving is offered here as the test a protector must pass, and it is the point at which every human patron stops being useful."
+        }
+      ],
+      "lifeInProphetsTime": "Patronage was the load-bearing structure of Meccan life. A weaker clan attached itself to a stronger one, freed slaves stayed tied to the household that released them, and traders travelled under the protection of names that meant something on the road. Everyone could say who their patron was. Asking whether people had taken protectors was not an abstract question; it was asking them to name someone.",
+      "didYouKnow": "The Quran uses the word for protector both in the plural for what people take up and in the singular for God, often within a line or two of each other, as here. The same term covers the freed slave's tie to a household, the ally's obligation in war, and the relationship this surah is describing, so the vocabulary of belonging is doing all three jobs at once.",
+      "theologicalSignificance": "The passage does not deny that people need patrons; it competes for the position. That is a different move from dismissing the impulse, and it takes seriously why anyone attaches themselves to a power in the first place. The evidence offered is also chosen carefully. Ability over everything is a claim about scope, but reviving the dead is a claim about the one situation in which every other protection has already failed.",
+      "crossReferences": [
+        {
+          "ref": "2:257",
+          "why": "Names God as the protector of those who believe and describes what that protection actually does for them."
+        },
+        {
+          "ref": "29:41",
+          "why": "Compares taking protectors besides God to a spider's house, the frailest of dwellings, if they only knew."
+        },
+        {
+          "ref": "30:50",
+          "why": "Uses the reviving of dead earth as evidence for the same capacity being offered here as proof."
+        }
+      ],
+      "applyIt": "Write down, honestly, the three things you would contact first if something went badly wrong tonight. A person, an account, an institution. Do not judge the list. Just look at where it stops, and notice that this ayah picks its evidence at exactly the point where every entry on your list runs out.",
+      "exploreFurther": [
+        "2:257",
+        "29:41-43",
+        "30:50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.935Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:10",
+      "surah": 42,
+      "start": 10,
+      "end": 10,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Whatever You Differ About",
+      "tier": "standard",
+      "meaning": "A general principle and then a personal sentence, and the shift between them is the point. Any matter you disagree about goes back to God for decision; the scope is unrestricted. Then the voice changes and becomes first person. Such is God, my Lord, in Him I have put my trust, and to Him I turn. Commentators read the second half as the speech the Prophet is given to say, so a rule about arbitration is immediately shown being lived by someone rather than merely stated.",
+      "historicalContext": "Meccan, from a surah preoccupied with division: between the Prophet and his city, and among the communities given scripture before. The principle here is stated before any of that is described in detail. Commentators report no occasion. The first-person declaration that follows belongs to a pattern in Meccan surahs where the Prophet is instructed to state his own position rather than to argue with anyone.",
+      "keyTerms": [
+        {
+          "arabic": "فَحُكْمُهُۥٓ",
+          "gloss": "its decision, its judgement",
+          "note": "The noun from the verb to decide between parties. The suffix refers back to the disputed matter itself, so what is handed over is the case rather than the people arguing over it."
+        },
+        {
+          "arabic": "تَوَكَّلْتُ",
+          "gloss": "I have placed my trust",
+          "note": "From the same root as the word for an agent entrusted with your affairs. It means appointing someone to act for you, which is a decision made once rather than a feeling maintained."
+        },
+        {
+          "arabic": "أُنِيبُ",
+          "gloss": "I turn back to Him",
+          "note": "A verb of returning repeatedly to a place, used for a person who keeps coming back after going off. It carries habit, so the turning is not described as a single dramatic moment."
+        }
+      ],
+      "lifeInProphetsTime": "Disputes in Arabia went to arbitration. Two parties agreed on a judge, often a man from a neutral clan known for fairness, and both bound themselves in advance to accept what he said. Choosing the arbitrator was half the quarrel, and a bad choice was worse than none. The vocabulary of this ayah is that vocabulary, addressed to people who knew exactly what agreeing on a judge cost.",
+      "didYouKnow": "The verb for turning back used at the end of this ayah reappears three lines later, where God is said to guide to Himself whoever turns to Him in this way. The surah puts the human movement and the divine response into the same word within a few ayat, so the answer to the turning is described using the turning's own vocabulary.",
+      "theologicalSignificance": "The passage does not promise that disagreements will be resolved now. It says where the decision sits, which is a claim about jurisdiction rather than about timing. That distinction lets a person hold a position without needing to win, since the case has already been filed elsewhere. And the personal declaration attached to it shows that the doctrine is only usable in the first person; stated about someone else it does nothing at all.",
+      "crossReferences": [
+        {
+          "ref": "4:59",
+          "why": "Gives the same instruction for a community, referring disputed matters back to God and His Messenger."
+        },
+        {
+          "ref": "39:46",
+          "why": "Puts the same referral in a supplication, asking God to judge between servants in what they differed over."
+        },
+        {
+          "ref": "11:88",
+          "why": "Pairs the same two verbs, trusting and turning back, in the mouth of a prophet facing a town that refused him."
+        }
+      ],
+      "applyIt": "Take one argument you are currently losing and have kept alive in your head. Write the sentence from this ayah at the top of a page, then write the argument underneath in three lines. Leave it there for a week without adding to it. The point is not to give up your position but to stop carrying the verdict.",
+      "exploreFurther": [
+        "4:59",
+        "39:46",
+        "11:88"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.934Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "42:11",
       "surah": 42,
@@ -58,6 +406,296 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:12:18.238Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:12",
+      "surah": 42,
+      "start": 12,
+      "end": 12,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "The Keys Of The Heavens",
+      "tier": "standard",
+      "meaning": "One image and one mechanism. The keys of the heavens and the earth are His, and then the mechanism is described in two directions at once: He spreads provision wide for whom He wills, and He narrows it. Commentators are careful with the second verb, which means to measure out rather than to withhold, so the narrowing is portioning and not refusal. The closing clause supplies what the whole sentence rests on. He knows everything, which is what makes a measured portion different from an arbitrary one.",
+      "historicalContext": "Meccan, in a run of ayat establishing ownership and control before the surah turns to its main argument about religion and division. Provision was a live subject for a community losing trade and social support in the city. Commentators report no occasion. The pairing of spreading and measuring recurs in several Meccan surahs, always attached to a statement about knowledge.",
+      "keyTerms": [
+        {
+          "arabic": "مَقَالِيدُ",
+          "gloss": "the keys, the reins",
+          "note": "A plural for keys or for what fastens and unfastens. It appears in only one other place in the Quran, and in both it is followed immediately by a statement about what is done with them."
+        },
+        {
+          "arabic": "يَبْسُطُ",
+          "gloss": "He spreads out wide",
+          "note": "The verb for laying something flat and open, used of spreading a cloth or an arm. It pictures provision as extended surface rather than as quantity, so more means further reach."
+        },
+        {
+          "arabic": "وَيَقْدِرُ",
+          "gloss": "and He measures out",
+          "note": "From the root for measure and capacity, the same root behind the word for divine determining. It means fixing an exact amount, which is why commentators resist reading it simply as withholding."
+        }
+      ],
+      "lifeInProphetsTime": "Grain and dates were measured, not weighed, and the measure itself was a physical object people trusted or argued about. A household's year was a series of portions: this much per person, this much held back for seed, this much owed. Nobody had a continuous supply. The verb this ayah uses for narrowing is the ordinary language of that arithmetic, not the language of a door being shut.",
+      "didYouKnow": "The word for keys used here occurs twice in the whole Quran, both times in the same phrase about the heavens and the earth, and both times in Meccan surahs that then say something different about what follows. Here it leads to provision being portioned out; in the other place it leads straight to a statement about those who reject the signs.",
+      "theologicalSignificance": "The passage describes both abundance and constraint as active decisions by the same one, which removes the idea that hardship is a gap in supervision. Attaching knowledge at the end is what keeps this from being a doctrine of raw power. A portion measured by someone who knows everything about the recipient is a different object from a portion that simply happened to arrive, even when the amount is identical.",
+      "crossReferences": [
+        {
+          "ref": "17:30",
+          "why": "Repeats the same pair of verbs about provision and adds that He is aware and seeing of His servants."
+        },
+        {
+          "ref": "29:62",
+          "why": "Uses the same spreading and measuring, attaching it to those He wills among His servants."
+        },
+        {
+          "ref": "39:63",
+          "why": "Gives the other occurrence of the keys of the heavens and the earth, in nearly identical wording."
+        }
+      ],
+      "applyIt": "Think of one thing you currently have less of than you want: money, time, health, company. Instead of asking why, ask what the exact amount is. Write the number or the shape of it down. The verb in this ayah is about measuring, and a measured shortage behaves differently in the mind from a vague one.",
+      "exploreFurther": [
+        "17:30",
+        "29:62",
+        "39:63"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.934Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:13",
+      "surah": 42,
+      "start": 13,
+      "end": 13,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "The Same Road Laid Out",
+      "tier": "standard",
+      "meaning": "A single religion is traced through five names, with the Prophet Muhammad (peace be upon him) placed inside the list rather than at its end. What was enjoined on Noah, what was inspired here, what was enjoined on Abraham, Moses and Jesus is described as one thing, and then summarised in two commands: hold the religion upright and do not split over it. Commentators read the common content as the core, not the particulars of practice. The ayah then concedes how heavy this sounds to those it is addressed to.",
+      "historicalContext": "Meccan. Naming Noah, Abraham, Moses and Jesus together answered an audience that knew of scriptural communities and regarded them as separate peoples with separate gods and books. The Quran's claim of a single line running through all of them was unfamiliar and, as the ayah says plainly, unwelcome. Commentators report no specific occasion. The word for laying down a way here is the root behind later terms for revealed law.",
+      "keyTerms": [
+        {
+          "arabic": "شَرَعَ",
+          "gloss": "He laid open a way",
+          "note": "The verb occurs only here in the Quran. Its root names the path down a bank to water, so a way opened toward what people need rather than a set of rules imposed."
+        },
+        {
+          "arabic": "أَقِيمُوا۟",
+          "gloss": "hold it upright",
+          "note": "The verb for standing something up and keeping it standing, used of prayer and of scales. It asks for maintenance rather than for founding, which assumes the thing already exists."
+        },
+        {
+          "arabic": "يَجْتَبِىٓ",
+          "gloss": "He selects, He gathers to Himself",
+          "note": "A verb for collecting something choice out of a larger quantity, used of picking fruit. It occurs twice in the Quran, and both times the selecting is done by God."
+        }
+      ],
+      "lifeInProphetsTime": "The Quraysh traced their standing to Abraham and the sanctuary he was said to have raised, and they knew the names of Noah and Moses from traders and from the scriptural communities on their routes. What they did not have was a way of connecting those figures into one line. Their own religious world was made of separate patrons for separate needs, which is exactly the arrangement this ayah cuts against.",
+      "didYouKnow": "The verb used for laying open a way occurs only in this ayah in the entire Quran, though two related nouns from the same root appear elsewhere. The root's basic meaning is the sloped path leading down to a watering place, so the vocabulary later used for revealed law begins as a word about access to water in a dry country.",
+      "theologicalSignificance": "The passage makes unity a matter of continuity rather than of agreement reached later. If the same thing was enjoined across that span, then division is a departure from something older than any of the parties dividing. It also puts the instruction in two halves that need each other. Holding a religion upright without avoiding division produces rigidity; avoiding division without holding anything upright produces nothing at all.",
+      "crossReferences": [
+        {
+          "ref": "3:103",
+          "why": "Gives the same instruction against splitting, using the image of holding fast to a rope together."
+        },
+        {
+          "ref": "21:92",
+          "why": "States that this community of yours is one community, addressed after a long list of the same prophets."
+        },
+        {
+          "ref": "45:18",
+          "why": "Uses a noun from the same root for the way laid out, telling the Prophet to follow it and not the desires of others."
+        }
+      ],
+      "applyIt": "Pick one practice you keep because it is what your family or community does, and find out what a person in a very different setting does for the same purpose. Not to change yours. Just to locate which part of it is the thing itself and which part is the shape your particular place gave it.",
+      "exploreFurther": [
+        "3:103-105",
+        "21:92",
+        "45:18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.934Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:14",
+      "surah": 42,
+      "start": 14,
+      "end": 14,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "They Split After The Knowledge Came",
+      "tier": "standard",
+      "meaning": "The sequence is the argument. Division did not come from ignorance, and it did not come first; it came after knowledge arrived, and the cause named is rivalry among themselves. Commentators stress that the word covers envy and overreach rather than honest misunderstanding, which changes what kind of problem division is. A prior decision from the Lord, set to a named term, is the only reason the matter has not already been closed. The line ends with the heirs of the Book left in unsettling doubt.",
+      "historicalContext": "Meccan. The previous ayah has just traced one religion through Noah, Abraham, Moses and Jesus, and this one explains what happened to it. Commentators read the heirs of the Book as later generations who received scripture from their predecessors without the circumstances that produced it. No occasion is reported. The setting is a city where the Prophet's own community was small enough for division to be an urgent risk.",
+      "keyTerms": [
+        {
+          "arabic": "بَغْيًۢا",
+          "gloss": "out of rivalry, overreaching",
+          "note": "A noun for wanting more than one's share and pressing past a limit. Naming it as the cause makes division a moral event rather than an intellectual one, which is the ayah's main claim."
+        },
+        {
+          "arabic": "أَجَلٍ مُّسَمًّى",
+          "gloss": "a term already named",
+          "note": "A fixed period with an appointed end. The phrase recurs across the Quran for spans that are set in advance, so the delay described here is scheduled rather than merely unexplained."
+        },
+        {
+          "arabic": "أُورِثُوا۟",
+          "gloss": "they were made to inherit",
+          "note": "A passive verb from the vocabulary of estates. Scripture arrives to them the way property does, without their having been present for the events that produced it."
+        }
+      ],
+      "lifeInProphetsTime": "Inheritance disputes were among the most bitter quarrels in Arabian society, and a division of property could set cousins against each other for a generation. Everyone understood that receiving something you did not earn changes your relationship to it. Describing a community as having inherited a book placed scripture inside that familiar and complicated experience, where the thing received is genuinely yours and genuinely not.",
+      "didYouKnow": "The phrase for a term already named occurs sixteen times in the Quran in this exact form. It covers the due date of a written debt, the span appointed for the heavens and the earth, and here the delay before a communal dispute is settled. The same two words carry a loan's deadline and the end of a world.",
+      "theologicalSignificance": "The passage identifies knowledge as the trigger for division rather than its cure, which is an uncomfortable claim and a realistic one. Groups that share a text have more to fight over, not less. Naming rivalry as the cause also refuses to let disputants describe themselves as simply following the evidence. And the delay before judgement is presented as mercy in the form of time, which is the only form it can take here.",
+      "crossReferences": [
+        {
+          "ref": "98:4",
+          "why": "Says those given the Book divided only after the clear evidence reached them, in almost the same order."
+        },
+        {
+          "ref": "2:213",
+          "why": "Traces the same movement from one community to division after the Book came, naming rivalry as the cause."
+        },
+        {
+          "ref": "45:17",
+          "why": "Repeats the pattern for a people given clear commands who differed out of rivalry once knowledge had come."
+        }
+      ],
+      "applyIt": "Recall a falling-out you have watched inside a community you belong to. Ask what each side actually wanted that was not part of the stated disagreement: standing, credit, a hearing. You do not need to raise it with anyone. Naming it once for yourself is what this ayah does, and it makes the next such argument easier to see early.",
+      "exploreFurther": [
+        "98:1-5",
+        "2:213",
+        "45:17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.934Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:15",
+      "surah": 42,
+      "start": 15,
+      "end": 15,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "We Have Our Deeds And You Have Yours",
+      "tier": "standard",
+      "meaning": "The Prophet is told to keep calling, to stay straight, and not to take his direction from what others want. Then he is given words to say, and the words are unusually generous. I believe in whatever Book God sent down. God is our Lord and your Lord. Our deeds are ours and yours are yours. No argument between us. Commentators read the last phrase as declining a quarrel rather than conceding a point, and note that the sentence ends by handing the whole disagreement to a future gathering.",
+      "historicalContext": "Meccan, addressed to a Prophet who was under pressure to trim his message to what his audience would accept. The declaration he is given acknowledges earlier scripture in general terms, which fits an audience that included people aware of Jewish and Christian communities. Commentators report no specific occasion. The instruction to remain upright appears in similar wording at several points in this period.",
+      "keyTerms": [
+        {
+          "arabic": "وَٱسْتَقِمْ",
+          "gloss": "and stand straight",
+          "note": "A verb for holding a straight line, used of a road and of a standing pillar. It asks for direction maintained over time rather than for a single act of resolve."
+        },
+        {
+          "arabic": "أَهْوَآءَهُمْ",
+          "gloss": "their inclinations, their whims",
+          "note": "The plural of a word whose root means falling. It names wanting that pulls downward and shifts, which is why it is set against the straight line in the previous clause."
+        },
+        {
+          "arabic": "حُجَّةَ",
+          "gloss": "argument, disputation",
+          "note": "A word for the case one party presses against another. Denying that there is any between us refuses the contest itself, not the possibility that one side is right."
+        }
+      ],
+      "lifeInProphetsTime": "Public argument was entertainment and politics at once. Men gathered to hear a case pressed, judged the performance, and remembered who had been left without an answer. Refusing to enter such a contest was a visible act with a cost, easily read as weakness. What this ayah gives the Prophet to say would have sounded, in that setting, like a man declining a fight he was expected to want.",
+      "didYouKnow": "The word given here for the argument that is refused is the same word the very next ayah applies to those who dispute about God, saying their case has no footing. Two consecutive ayat use it, once for a quarrel declined and once for a quarrel pressed and found empty, setting the two responses directly beside each other.",
+      "theologicalSignificance": "The passage separates conviction from combativeness, which is harder than it sounds because the two usually travel together. The speaker states his belief without qualification and declines the contest in the same breath. It also relocates the settlement: God will bring us together. That makes coexistence now possible without either side pretending the difference does not matter, since the difference is being kept rather than dissolved.",
+      "crossReferences": [
+        {
+          "ref": "109:6",
+          "why": "Ends a whole surah with the same separation of ways, stated even more briefly and without any argument attached."
+        },
+        {
+          "ref": "11:112",
+          "why": "Gives the same instruction to stand straight as commanded, with a warning against overstepping in the process."
+        },
+        {
+          "ref": "29:46",
+          "why": "Tells believers how to speak with people of earlier scripture, using nearly the same phrase about one God for both."
+        }
+      ],
+      "applyIt": "In your next disagreement about something that matters, say your own position once, clearly, and then say nothing further to win it. Notice the pull to add one more line. That pull is the thing this ayah is addressing, and it usually has more to do with the audience than with the truth of what you said.",
+      "exploreFurther": [
+        "109:1-6",
+        "11:112",
+        "29:46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.934Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "42:16",
+      "surah": 42,
+      "start": 16,
+      "end": 16,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "An Argument With No Footing",
+      "tier": "standard",
+      "meaning": "The people described are not those who never heard. They are arguing about God after His call has already been answered, which commentators read either as after the message was accepted by others or after they themselves had responded once. Their case is described with a word for a foot slipping on wet ground: it has no purchase. Three consequences follow in a compressed line, the void argument, anger, and a severe punishment, and nothing is said about the content of what they were arguing.",
+      "historicalContext": "Meccan. Opposition in the city hardened as the message gained a hearing, and some of those disputing had watched people they knew respond to it. Commentators note that the ayah addresses argument that begins after a matter has already moved, rather than initial objection. No specific occasion is reported. The surah has just given the Prophet words that decline a quarrel, and this line describes the quarrel he is declining.",
+      "keyTerms": [
+        {
+          "arabic": "يُحَآجُّونَ",
+          "gloss": "they dispute, they press a case",
+          "note": "A reciprocal form, so both sides are pushing. The verb belongs to formal argument between parties rather than to private doubt, which is why a public setting is assumed."
+        },
+        {
+          "arabic": "دَاحِضَةٌ",
+          "gloss": "slipping, without footing",
+          "note": "From a root for a foot sliding on slick ground. The word occurs only here, and it describes an argument that cannot stand rather than one that has been refuted."
+        },
+        {
+          "arabic": "غَضَبٌ",
+          "gloss": "anger, displeasure",
+          "note": "Given without the definite article, so a portion of anger rather than the whole of it. Arabic uses the indefinite here to weigh rather than to soften, leaving the quantity unstated."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan disputes were settled in the open, and the loser lost standing as well as the point. A man who kept arguing after the room had moved on was a recognisable figure, and there were poems mocking him. The image of a foot slipping would have been felt physically by people who walked wadis after rain, where wet rock gives way without warning under someone who was sure of his step.",
+      "didYouKnow": "The word describing the argument as having no footing occurs only in this ayah. Related forms of its root appear three times elsewhere, twice for false argument aimed at knocking the truth off its feet and once for a man who lost a drawing of lots. The root's ordinary sense is a foot sliding on smooth ground.",
+      "theologicalSignificance": "The passage evaluates an argument by its footing rather than its content, which is a claim about the arguer's position and not about logic. Someone disputing after they have seen the matter answered is doing something different from someone honestly unconvinced, and the Quran treats the two very differently elsewhere. The severity here belongs to the first case, and it is worth noticing how narrowly the ayah draws it.",
+      "crossReferences": [
+        {
+          "ref": "40:56",
+          "why": "Describes those who dispute about God's signs without any warrant, and names pride as what is really moving them."
+        },
+        {
+          "ref": "18:56",
+          "why": "Says disbelievers argue with falsehood to drive back the truth, using a related form of the same root."
+        },
+        {
+          "ref": "22:8",
+          "why": "Pictures a person disputing about God with no knowledge, no guidance and no illuminating book."
+        }
+      ],
+      "applyIt": "Think of a position you defend that you first took for reasons you no longer use. Say the current reasons out loud and hear whether they hold. You are not obliged to change anything. But this ayah is about arguing from a place your own feet left some time ago, and that is worth checking once.",
+      "exploreFurther": [
+        "40:56",
+        "18:54-56",
+        "22:8-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:29:53.935Z",
         "reviewed": false
       }
     },
