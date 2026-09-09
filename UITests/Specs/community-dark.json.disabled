@@ -1,0 +1,21 @@
+{
+  "note": "Parked until AppShell routes --screenshot community into FeatureCommunity; TabRoot still renders the Phase 1 placeholder, so LayoutSpecTests would fail on every element. Drop the .disabled suffix to enrol it. The frames below are the reference geometry read off Reference/community-dark.png (1179x2556 px = 393x852 pt, pt = px/3) and are the same numbers CommunityTests asserts; every element is existenceOnly until they are re-recorded on the simulator with SCROLL_RECORD_SPECS=1.",
+  "id": "community",
+  "route": "community",
+  "appearance": "dark",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "elements": [
+    { "name": "community.givenCard",             "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 102.0, "width": 353.0, "height": 176.0 } },
+    { "name": "community.given.label",           "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 126.0, "width": 309.0, "height": 13.0 } },
+    { "name": "community.given.amount",          "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 142.0, "width": 309.0, "height": 59.0 } },
+    { "name": "community.given.subline",         "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 228.0, "width": 309.0, "height": 32.0 } },
+    { "name": "community.title",                 "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 301.4, "width": 353.0, "height": 40.0 } },
+    { "name": "community.body",                  "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 348.9, "width": 353.0, "height": 53.0 } },
+    { "name": "community.card.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 414.3, "width": 353.0, "height": 353.0 } },
+    { "name": "community.name.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 590.4, "width": 245.0, "height": 18.0 } },
+    { "name": "community.focus.islamic-relief",  "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 610.9, "width": 245.0, "height": 15.0 } },
+    { "name": "community.vote.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 298.3, "y": 590.3, "width": 58.7, "height": 29.3 } },
+    { "name": "Community", "query": "tabBarButton", "existenceOnly": true, "frame": { "x": 6.8, "y": 772.1, "width": 93.9, "height": 46.8 } }
+  ]
+}

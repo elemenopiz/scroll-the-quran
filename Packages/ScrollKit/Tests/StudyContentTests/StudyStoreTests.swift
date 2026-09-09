@@ -3,79 +3,133 @@ import QuranData
 @testable import StudyContent
 import Testing
 
-@Test("Every ayah of every fixture surah resolves to a study")
-func everyFixtureAyahResolves() throws {
+@Test("Every ayah an authored unit covers resolves to that unit")
+func everyAuthoredAyahResolves() throws {
     let store = try bundledStore()
-    let surahs = try bundledSurahs()
-    for number in fixtureSurahs {
-        let count = surahs[number - 1].ayahCount
-        for ayah in 1 ... count {
-            let verse = VerseRef(surah: number, ayah: ayah)
-            #expect(store.hasStudy(for: verse), "\(verse.key) has no unit in passages.json")
-            let study = try #require(store.study(for: verse), "\(verse.key) resolves to no study")
-            #expect(study.surah == number)
-            #expect(study.start <= ayah && ayah <= study.end, "\(verse.key) is outside \(study.key)")
-            #expect(!study.title.isEmpty)
-            #expect(!study.keyTerms.isEmpty)
+    for shard in try syncedShards() {
+        for unit in shard.units {
+            for verse in unit.verses {
+                #expect(store.hasStudy(for: verse), "\(verse.key) has no study although \(unit.key) covers it")
+                let study = try #require(store.study(for: verse), "\(verse.key) resolves to no study")
+                #expect(study.key == unit.key)
+                #expect(study.surah == shard.surah)
+                #expect(!study.title.isEmpty)
+                #expect(!study.keyTerms.isEmpty)
+            }
         }
     }
 }
 
-@Test("The fixture units tile their surah exactly, with no gap and no overlap")
-func fixtureUnitsTileTheirSurah() throws {
+@Test("hasStudy means a study exists, not merely that passages.json maps the ayah")
+func hasStudyMeansTheStudyExists() throws {
     let store = try bundledStore()
-    let surahs = try bundledSurahs()
-    for number in fixtureSurahs {
-        let units = store.studies(inSurah: number)
-        #expect(!units.isEmpty)
-        var next = 1
-        for unit in units {
-            #expect(unit.start == next, "surah \(number) jumps at \(unit.key)")
-            next = unit.end + 1
+    // Authoring progresses wave by wave, so find a segmented-but-unauthored unit dynamically:
+    // the first surah with a shard whose segmentation has a unit no study covers yet.
+    var found: (VerseRef, String)?
+    outer: for surah in 1...114 where !store.studyKeys(inSurah: surah).isEmpty {
+        let authored = store.studyKeys(inSurah: surah)
+        for ayah in 1...300 {
+            let verse = VerseRef(surah: surah, ayah: ayah)
+            guard let key = store.unitKey(for: verse) else { break }
+            if !authored.contains(key) { found = (verse, key); break outer }
         }
-        #expect(next - 1 == surahs[number - 1].ayahCount, "surah \(number) stops short")
     }
-}
+    if let (unauthored, key) = found {
+        #expect(store.unitKey(for: unauthored) == key, "the reader's segmentation lookup is unchanged")
+        #expect(!store.hasStudy(for: unauthored))
+        #expect(store.study(for: unauthored) == nil)
+        #expect(!store.containsUnit(key))
+    }
 
-@Test("A surah with no shard resolves to nil instead of crashing, and is not retried")
-func missingSurahsResolveToNil() throws {
-    let store = try bundledStore()
-    for verse in [VerseRef(surah: 2, ayah: 255), VerseRef(surah: 18, ayah: 10), VerseRef(surah: 114, ayah: 1)] {
+    // Surahs with no shard at all are still fully segmented, and still have no study.
+    let shardless = (1...114).filter { store.studyKeys(inSurah: $0).isEmpty }.prefix(3)
+    for verse in shardless.map({ VerseRef(surah: $0, ayah: 1) }) {
+        #expect(store.unitKey(for: verse) != nil, "\(verse.key) should still belong to a unit")
         #expect(!store.hasStudy(for: verse))
         #expect(store.study(for: verse) == nil)
     }
-    #expect(store.study(forKey: "2:255") == nil)
     #expect(store.study(forKey: "not a key") == nil)
-    // Nothing above should have pulled a shard off disk.
-    #expect(store.shardLoadCount == 0)
-    #expect(store.cachedSurahs.isEmpty)
+    #expect(!store.containsUnit("not a key"))
+
+    // And an authored one is true both ways.
+    #expect(store.hasStudy(for: VerseRef(surah: 2, ayah: 255)))
+    #expect(store.containsUnit("2:255"))
+}
+
+@Test("unitKeys stays the segmentation; studyKeys is what has been authored")
+func unitKeysAndStudyKeysDiffer() throws {
+    let store = try bundledStore()
+    #expect(store.unitKeys.count >= 3000, "passages.json defines every unit, authored or not")
+    let authored = try syncedStudies().map(\.key)
+    for surah in try syncedSurahs() {
+        let keys = store.studyKeys(inSurah: surah)
+        #expect(!keys.isEmpty)
+        #expect(keys.isSubset(of: store.unitKeys), "surah \(surah) has a study outside the segmentation")
+        #expect(keys == Set(authored.filter { PassageRef(key: $0)?.surah == surah }))
+    }
+    if let shardless = (1...114).first(where: { !(try! syncedSurahs()).contains($0) }) {
+        #expect(store.studyKeys(inSurah: shardless).isEmpty)
+    }
+    #expect(store.unitKeys.count > authored.count)
+}
+
+@Test("The authored units of a surah come back in ayah order")
+func studiesInSurahAreOrdered() throws {
+    let store = try bundledStore()
+    for shard in try syncedShards() {
+        let units = store.studies(inSurah: shard.surah)
+        #expect(units.map(\.key) == shard.units.map(\.key), "surah \(shard.surah) came back out of order")
+        var next = 0
+        for unit in units {
+            #expect(unit.start > next, "surah \(shard.surah) overlaps at \(unit.key)")
+            next = unit.end
+        }
+    }
+    if let shardless = (1...114).first(where: { !(try! syncedSurahs()).contains($0) }) {
+        #expect(store.studies(inSurah: shardless).isEmpty)
+    }
 }
 
 @Test("An ayah mapped to a unit whose shard file is missing still resolves to nil")
 func missingShardFileIsSurvivable() throws {
     let loader = InMemoryContentLoader(json: [
-        "study/passages.json": #"{ "shards": { "2": "study/surah_002.json" }, "units": { "2:255": "2:255" } }"#,
+        "study/passages.json": #"{ "2:255": "2:255" }"#,
     ])
     let store = try StudyStore(loader: loader)
-    #expect(store.hasStudy(for: VerseRef(surah: 2, ayah: 255)))
+    #expect(store.unitKey(for: VerseRef(surah: 2, ayah: 255)) == "2:255")
+    #expect(!store.hasStudy(for: VerseRef(surah: 2, ayah: 255)))
     #expect(store.study(for: VerseRef(surah: 2, ayah: 255)) == nil)
     #expect(store.study(for: VerseRef(surah: 2, ayah: 255)) == nil)
     #expect(store.shardLoadCount == 0)
-    // The missing shard is remembered, so the second lookup did not read again.
+    // The missing shard is remembered, so only the first question read anything.
     #expect(loader.readLog.filter { $0 == "study/surah_002.json" }.count == 1)
 }
 
-@Test("hasStudy answers from passages.json without loading any shard")
-func hasStudyDoesNotLoadShards() throws {
-    let loader = syntheticLoader(surahs: [1, 2, 3])
+@Test("hasStudy reads a surah's shard once and remembers its keys past eviction")
+func hasStudyCachesTheKeyIndex() throws {
+    let loader = syntheticLoader(surahs: [1, 2, 3], unauthored: ["4:1"])
     let store = try StudyStore(loader: loader)
     loader.resetReadLog()
-    for surah in 1 ... 3 {
-        #expect(store.hasStudy(for: VerseRef(surah: surah, ayah: 1)))
-        #expect(store.containsUnit("\(surah):1"))
+
+    for _ in 0 ..< 3 {
+        for surah in 1 ... 3 {
+            #expect(store.hasStudy(for: VerseRef(surah: surah, ayah: 1)))
+            #expect(store.containsUnit("\(surah):1"))
+        }
+        // Segmented but never authored: no shard exists for surah 4.
+        #expect(store.unitKey(for: VerseRef(surah: 4, ayah: 1)) == "4:1")
+        #expect(!store.hasStudy(for: VerseRef(surah: 4, ayah: 1)))
     }
+    #expect(store.shardLoadCount == 3)
+    #expect(loader.readLog.count == 4, "each of the four surahs should have been read exactly once")
+
+    // Dropping the shards keeps the key index, so the existence questions stay free.
+    store.evictAll()
+    loader.resetReadLog()
+    #expect(store.hasStudy(for: VerseRef(surah: 1, ayah: 1)))
+    #expect(!store.hasStudy(for: VerseRef(surah: 4, ayah: 1)))
     #expect(loader.readLog.isEmpty)
-    #expect(store.shardLoadCount == 0)
+    #expect(store.shardLoadCount == 3)
 }
 
 @Test("Shards load lazily and only once while they stay cached")
@@ -111,7 +165,7 @@ func shardCacheEvictsLeastRecentlyUsed() throws {
     #expect(store.cachedSurahs == [4, 5, 3, 6])
 
     #expect(store.shardLoadCount == 6)
-    // Surah 1 was evicted, so asking again re-reads it.
+    // Surah 1 was evicted, so asking for its content again re-reads it.
     #expect(store.study(for: VerseRef(surah: 1, ayah: 1))?.key == "1:1")
     #expect(store.shardLoadCount == 7)
     #expect(store.cachedSurahs == [5, 3, 6, 1])
@@ -131,13 +185,12 @@ func shardCacheLimitIsConfigurable() throws {
 @Test("study(forKey:) takes unit keys and single ayat inside a unit alike")
 func lookupByKeyAcceptsBothShapes() throws {
     let store = try bundledStore()
-    #expect(store.study(forKey: "1:5-7")?.title == "Guide us on the straight path")
-    #expect(store.study(forKey: "1:6")?.key == "1:5-7")
-    #expect(store.study(forKey: "112:1-4")?.themeId == "tawhid")
-    #expect(store.study(forKey: "103:1-3")?.surah == 103)
-    #expect(store.study(for: PassageRef(surah: 1, start: 2, end: 4))?.key == "1:2-4")
-    #expect(store.unitKey(for: VerseRef(surah: 103, ayah: 2)) == "103:1-3")
-    // An ayah number past the end of a real shard is a miss, not a crash.
+    #expect(store.study(forKey: "1:1-7")?.title == "The Prayer That Opens Everything")
+    #expect(store.study(forKey: "1:6")?.key == "1:1-7")
+    #expect(store.study(forKey: "2:255")?.themeId == "protection-and-refuge")
+    #expect(store.study(for: PassageRef(surah: 2, start: 1, end: 5))?.key == "2:1-5")
+    #expect(store.unitKey(for: VerseRef(surah: 2, ayah: 3)) == "2:1-5")
+    // An ayah number past the end of a real surah is a miss, not a crash.
     #expect(store.study(forKey: "1:99") == nil)
 }
 
@@ -150,15 +203,33 @@ func passageIndexAcceptsBothShapes() throws {
     #expect(index.shardPath(surah: 1) == "study/surah_001.json")
     #expect(index.shardPath(surah: 103) == "study/surah_103.json")
     #expect(index.coveredSurahs == [1])
+
+    let wrapped = #"{ "shards": { "1": "study/one.json" }, "units": { "1:1": "1:1" } }"#
+    let mapped = try JSONDecoder().decode(PassageIndex.self, from: Data(wrapped.utf8))
+    #expect(mapped.shardPath(surah: 1) == "study/one.json")
+    #expect(mapped.unitKeys == ["1:1"])
 }
 
-@Test("A shard decodes from a bare array of units as well as the wrapped object")
-func shardAcceptsBothShapes() throws {
+@Test("A shard decodes from the assembler's studies key, a units key, and a bare array")
+func shardAcceptsEveryShape() throws {
+    let assembled = try JSONDecoder().decode(
+        StudyShard.self,
+        from: Data(syntheticShard(surah: 5, keys: ["5:1", "5:2"]).utf8)
+    )
+    #expect(assembled.surah == 5)
+    #expect(assembled.promptVersion == "t1")
+    #expect(assembled.generatedAt == "2026-09-09T00:00:00.000Z")
+    #expect(assembled.keys == ["5:1", "5:2"])
+
+    let wrapped = "{ \"surah\": 5, \"units\": [\(syntheticUnit(key: "5:1"))] }"
+    #expect(try JSONDecoder().decode(StudyShard.self, from: Data(wrapped.utf8)).units.count == 1)
+
     let bare = "[\(syntheticUnit(key: "5:1")), \(syntheticUnit(key: "5:2-3"))]"
     let shard = try JSONDecoder().decode(StudyShard.self, from: Data(bare.utf8))
     #expect(shard.surah == 5)
     #expect(shard.units.count == 2)
     #expect(shard.byKey["5:2-3"]?.end == 3)
+    #expect(shard.promptVersion.isEmpty)
 }
 
 @Test("An empty store answers nil for everything without throwing")
@@ -167,5 +238,6 @@ func emptyStoreIsUsable() {
     #expect(!store.hasStudy(for: VerseRef(surah: 1, ayah: 1)))
     #expect(store.study(for: VerseRef(surah: 1, ayah: 1)) == nil)
     #expect(store.studies(inSurah: 1).isEmpty)
+    #expect(store.studyKeys(inSurah: 1).isEmpty)
     #expect(store.unitKeys.isEmpty)
 }

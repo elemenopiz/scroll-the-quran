@@ -1,12 +1,14 @@
 import Foundation
 import QuranData
 
-/// `Content/study/passages.json`: every ayah that has commentary, mapped to the key of the unit
-/// that covers it, plus where each surah's shard lives.
+/// `Content/study/passages.json`: the segmentation. Every one of the 6,236 ayat is mapped to the
+/// key of the unit that covers it, whether or not that unit has been authored yet, so this file
+/// answers "which unit does this ayah belong to?" and never "does this ayah have a study?" —
+/// that one belongs to `StudyStore`, which asks the shards.
 ///
-/// Two shapes decode: the wrapped one the app ships
-/// (`{"shards": {"1": "study/surah_001.json"}, "units": {"1:1": "1:1"}}`) and a bare
-/// `{"1:1": "1:1"}` map, in which case shard paths fall back to `study/surah_NNN.json`.
+/// Two shapes decode: the bare `{"1:1": "1:1-7"}` map the pipeline writes, in which case shard
+/// paths fall back to `study/surah_NNN.json`, and a wrapped
+/// `{"shards": {"1": "study/surah_001.json"}, "units": {"1:1": "1:1"}}` used by fixtures.
 public struct PassageIndex: Hashable, Sendable {
     /// Ayah key -> unit key.
     public let units: [String: String]
@@ -31,6 +33,8 @@ public struct PassageIndex: Hashable, Sendable {
         units[verse.key]
     }
 
+    /// Every unit the segmentation defines — 3,293 of them for the shipped file. Most have no
+    /// study yet; ask `StudyStore.containsUnit(_:)` for the ones that do.
     public var unitKeys: Set<String> {
         Set(units.values)
     }
