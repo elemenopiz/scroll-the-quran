@@ -5,6 +5,9 @@
   "units": [
     {
       "key": "1:1",
+      "surah": 1,
+      "start": 1,
+      "end": 1,
       "theme": "The names of God",
       "themeId": "names-of-god",
       "title": "In the name of God",
@@ -13,34 +16,44 @@
       "historicalContext": "Al-Fatiha is generally held to be among the earliest complete surahs revealed in Mecca, in the years when the Prophet Muhammad, peace be upon him, and a small community were praying quietly and under pressure. Scholars differ on whether this opening line counts as the first ayah of the surah, which is why some printed copies number it and others do not; the difference is old, well documented, and has no bearing on the meaning.",
       "keyTerms": [
         {
-          "term": "bismillah",
-          "root": "s-m-w",
+          "arabic": "بِسْمِ اللَّهِ",
           "gloss": "in the name of God",
           "note": "One contracted phrase in the original. It marks an action as done for God rather than merely announced to Him."
         },
         {
-          "term": "ar-Rahman",
-          "root": "r-h-m",
+          "arabic": "الرَّحْمَٰن",
           "gloss": "the Most Gracious",
           "note": "A name of God, not an adjective anyone else takes. Classical commentators read it as mercy so wide it covers everyone, believer or not."
         },
         {
-          "term": "ar-Rahim",
-          "root": "r-h-m",
+          "arabic": "الرَّحِيم",
           "gloss": "the Most Merciful",
-          "note": "Same root as ar-Rahman, different form: mercy as continuing, deliberate action toward particular people."
+          "note": "Same root as the name before it, different form: mercy as continuing, deliberate action toward particular people."
         }
       ],
       "lifeInProphetsTime": "Meccan trade documents and letters of the period often opened with the name of a tribal deity or a patron. Beginning with the name of the one God was a small phrase with a large claim, and it was heard as one.",
       "didYouKnow": "The phrase opens all but one of the 114 surahs. Surah 9, At-Tawbah, begins without it, and early commentators offered several explanations without settling on one.",
       "theologicalSignificance": "Mercy is placed first, before law, before judgment, before any demand. The order matters: the Quran's own framing of God begins with what He gives rather than what He requires.",
       "crossReferences": [
-        { "ref": "7:156", "why": "God describes His mercy as encompassing all things." },
-        { "ref": "27:30", "why": "Sulayman opens his letter to the Queen of Sheba with the same words." },
-        { "ref": "39:53", "why": "The mercy named here is extended explicitly to those who have wronged themselves." }
+        {
+          "ref": "7:156",
+          "why": "God describes His mercy as encompassing all things."
+        },
+        {
+          "ref": "27:30",
+          "why": "Sulayman opens his letter to the Queen of Sheba with the same words."
+        },
+        {
+          "ref": "39:53",
+          "why": "The mercy named here is extended explicitly to those who have wronged themselves."
+        }
       ],
       "applyIt": "Pick one ordinary thing you do today without thinking about it — opening your laptop, starting the car — and say this line first. Notice whether naming God before an ordinary act changes how you do it.",
-      "exploreFurther": ["1:2-4", "7:156", "39:53"],
+      "exploreFurther": [
+        "1:2-4",
+        "7:156",
+        "39:53"
+      ],
       "meta": {
         "model": "hand-written",
         "promptVersion": "fixture-1",
@@ -50,6 +63,9 @@
     },
     {
       "key": "1:2-4",
+      "surah": 1,
+      "start": 2,
+      "end": 4,
       "theme": "Praise and lordship",
       "themeId": "praise",
       "title": "Lord of the worlds",
@@ -58,26 +74,22 @@
       "historicalContext": "The phrase rendered 'Lord of the worlds' would have landed sharply in a city whose economy ran on a sanctuary full of tribal gods, each with its own territory and clientele. A Lord with no boundary was a direct challenge to how Mecca was organised.",
       "keyTerms": [
         {
-          "term": "hamd",
-          "root": "h-m-d",
+          "arabic": "الْحَمْد",
           "gloss": "praise",
           "note": "Praise that is both gratitude and recognition of worth, owed whether or not the speaker has benefited."
         },
         {
-          "term": "rabb",
-          "root": "r-b-b",
+          "arabic": "رَبّ",
           "gloss": "Lord, sustainer",
           "note": "Carries ownership, but also the sense of raising and nurturing something to completion — closer to a guardian than a ruler."
         },
         {
-          "term": "alamin",
-          "root": "a-l-m",
+          "arabic": "الْعَالَمِين",
           "gloss": "the worlds",
           "note": "Plural and deliberately open: commentators read it as every category of created being, human and otherwise."
         },
         {
-          "term": "din",
-          "root": "d-y-n",
+          "arabic": "الدِّين",
           "gloss": "judgment, recompense",
           "note": "Here it names the settling of accounts rather than religion in general, though the same word carries that sense elsewhere."
         }
@@ -86,11 +98,21 @@
       "didYouKnow": "These lines are recited in every unit of the five daily prayers, which means a practising Muslim says them more than a dozen times a day.",
       "theologicalSignificance": "Mercy and judgment are named in the same breath, one line apart. The Quran does not treat them as opposites to be balanced but as two aspects of the same sovereignty.",
       "crossReferences": [
-        { "ref": "6:45", "why": "Praise to the Lord of the worlds closes a passage about the end of wrongdoing." },
-        { "ref": "82:17-19", "why": "The Day of Judgment described as the day when no soul can help another." }
+        {
+          "ref": "6:45",
+          "why": "Praise to the Lord of the worlds closes a passage about the end of wrongdoing."
+        },
+        {
+          "ref": "82:17-19",
+          "why": "The Day of Judgment described as the day when no soul can help another."
+        }
       ],
       "applyIt": "Say the second line — praise to the Lord of the worlds — at a moment today when nothing in particular has gone well. Praise that only shows up after good news is a narrower thing than what this asks for.",
-      "exploreFurther": ["1:5-7", "6:45", "82:17-19"],
+      "exploreFurther": [
+        "1:5-7",
+        "6:45",
+        "82:17-19"
+      ],
       "meta": {
         "model": "hand-written",
         "promptVersion": "fixture-1",
@@ -100,6 +122,9 @@
     },
     {
       "key": "1:5-7",
+      "surah": 1,
+      "start": 5,
+      "end": 7,
       "theme": "Guidance",
       "themeId": "guidance",
       "title": "Guide us on the straight path",
@@ -109,20 +134,17 @@
       "historicalContext": "The early Meccan community was small and often frightened. That the prayer they were given asks first for direction rather than relief says something about what the Quran treats as the deeper need.",
       "keyTerms": [
         {
-          "term": "ihdina",
-          "root": "h-d-y",
+          "arabic": "اهْدِنَا",
           "gloss": "guide us",
           "note": "The root covers both showing the way and carrying someone along it; the request is for both."
         },
         {
-          "term": "sirat mustaqim",
-          "root": "q-w-m",
+          "arabic": "الصِّرَاطَ الْمُسْتَقِيم",
           "gloss": "the straight path",
           "note": "A road wide enough to be public and straight enough to have a direction. Classical commentary reads it as the whole of right practice, not one narrow rule."
         },
         {
-          "term": "nasta'in",
-          "root": "a-w-n",
+          "arabic": "نَسْتَعِين",
           "gloss": "we seek help",
           "note": "Paired with worship in the same line, so that asking God for help is framed as part of worshipping Him."
         }
@@ -131,12 +153,25 @@
       "didYouKnow": "A well-known hadith describes this surah as a conversation: God answers each line as it is recited, and when the servant reaches this request, the reply is that it is granted.",
       "theologicalSignificance": "Guidance is asked for in the present tense by people already praying. The Quran treats being guided as something continuous rather than a state you arrive at and keep.",
       "crossReferences": [
-        { "ref": "2:2", "why": "The next surah opens by answering this request: guidance for those mindful of God." },
-        { "ref": "4:69", "why": "Names those God has favoured, whose path is asked for here." },
-        { "ref": "6:153", "why": "The straight path set against the many roads that lead away from it." }
+        {
+          "ref": "2:2",
+          "why": "The next surah opens by answering this request: guidance for those mindful of God."
+        },
+        {
+          "ref": "4:69",
+          "why": "Names those God has favoured, whose path is asked for here."
+        },
+        {
+          "ref": "6:153",
+          "why": "The straight path set against the many roads that lead away from it."
+        }
       ],
       "applyIt": "You have probably already decided what you want today. Ask instead to be shown what is right, and mean it enough that the answer could change the plan.",
-      "exploreFurther": ["2:2", "4:69", "6:153"],
+      "exploreFurther": [
+        "2:2",
+        "4:69",
+        "6:153"
+      ],
       "meta": {
         "model": "hand-written",
         "promptVersion": "fixture-1",

@@ -69,6 +69,14 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         }
     }
 
+    /// Spelled out (rather than synthesised) so the field list is inspectable: the tests check
+    /// it against `Tools/content-gen/schema/study.schema.json`.
+    public enum CodingKeys: String, CodingKey, CaseIterable {
+        case key, surah, start, end, theme, themeId, title, tier
+        case meaning, historicalContext, keyTerms, lifeInProphetsTime, didYouKnow
+        case theologicalSignificance, crossReferences, applyIt, exploreFurther, meta
+    }
+
     public let key: String
     public let surah: Int
     public let start: Int

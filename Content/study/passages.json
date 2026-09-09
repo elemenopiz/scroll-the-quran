@@ -1,8 +1,9 @@
 {
   "version": 1,
-  "note": "Every ayah that has a study unit, mapped to the key of the unit that covers it. Phase 1 ships fixtures for surahs 1 and 112 only; Tools/content-gen regenerates this file when real shards land.",
+  "note": "Every ayah that has a study unit, mapped to the key of the unit that covers it. Phase 2b ships fixtures for surahs 1, 103 and 112 only; Tools/content-gen regenerates this file when real shards land.",
   "shards": {
     "1": "study/surah_001.json",
+    "103": "study/surah_103.json",
     "112": "study/surah_112.json"
   },
   "units": {
@@ -13,6 +14,9 @@
     "1:5": "1:5-7",
     "1:6": "1:5-7",
     "1:7": "1:5-7",
+    "103:1": "103:1-3",
+    "103:2": "103:1-3",
+    "103:3": "103:1-3",
     "112:1": "112:1-4",
     "112:2": "112:1-4",
     "112:3": "112:1-4",
