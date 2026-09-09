@@ -1,5 +1,6 @@
 import Commerce
 import FeatureDiscover
+import FeatureHome
 import FeatureReader
 import Foundation
 import QuranData
@@ -45,6 +46,8 @@ public final class AppEnvironment {
     public let studies: StudyStore
     public let feed: DiscoverFeed
     public let themes: ThemeIndex
+    /// `Content/plans.json` — the reading plans the Home tab lists.
+    public let plans: ReadingPlanCatalog
     public let user: UserStore
 
     /// The one long-lived commerce store. Live StoreKit in the app, mock under snapshots.
@@ -87,6 +90,7 @@ public final class AppEnvironment {
         studies: StudyStore,
         feed: DiscoverFeed,
         themes: ThemeIndex,
+        plans: ReadingPlanCatalog = ReadingPlanCatalog(),
         user: UserStore,
         entitlements: any Commerce.EntitlementProviding,
         offers: any OneTimeOfferStoring,
@@ -99,6 +103,7 @@ public final class AppEnvironment {
         self.studies = studies
         self.feed = feed
         self.themes = themes
+        self.plans = plans
         self.user = user
         self.entitlements = entitlements
         self.offers = offers
@@ -168,6 +173,11 @@ public final class AppEnvironment {
             failures.append("themes.json")
         }
 
+        let plans = (try? ReadingPlanCatalog.bundled()) ?? ReadingPlanCatalog()
+        if plans.isEmpty {
+            failures.append("plans.json")
+        }
+
         // One store for the life of the process. `StoreKitEntitlementStore.init` starts the
         // `Transaction.updates` listener, so it has to be created at launch — not when the
         // paywall is first shown — or a renewal that lands early is missed.
@@ -181,6 +191,7 @@ public final class AppEnvironment {
             studies: studies,
             feed: feed,
             themes: themes,
+            plans: plans,
             user: user,
             entitlements: entitlements,
             offers: UserOneTimeOfferStore(user),
@@ -191,6 +202,24 @@ public final class AppEnvironment {
     /// Kicks the store into loading its catalogue. Idempotent.
     public func start() async {
         await entitlements.load()
+    }
+
+    /// Everything `FeatureHome` needs, gathered in the one place that owns the stores.
+    ///
+    /// `navigation` is the shell's `TabRootModel`; a snapshot route that renders Home outside
+    /// the tab bar passes `nil`, which makes Home's buttons inert — exactly what a capture
+    /// wants. `restorePurchases` is handed over as a closure rather than the store itself so
+    /// `FeatureHome` keeps no dependency on `Commerce`.
+    func homeEnvironment(navigation: (any HomeNavigation)? = nil) -> HomeEnvironment {
+        HomeEnvironment(
+            store: user,
+            surahs: index,
+            translations: translations,
+            plans: plans,
+            navigation: navigation,
+            today: today,
+            restorePurchases: { [entitlements] in try? await entitlements.restore() }
+        )
     }
 
     // MARK: - Degraded fallbacks

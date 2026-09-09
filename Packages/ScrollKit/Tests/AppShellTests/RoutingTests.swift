@@ -17,6 +17,7 @@ func screenRoutesSplitAnchors() {
     #expect(anchored?.anchor == "apply-it")
     #expect(anchored?.rawValue == "deepstudy#apply-it")
     #expect(ScreenRoute(rawValue: "home#scrolled")?.tab == .home)
+    #expect(ScreenRoute(rawValue: "widget-gallery")?.tab == .home)
     #expect(ScreenRoute(rawValue: "reader")?.tab == .quran)
     #expect(ScreenRoute(rawValue: "not-a-screen") == nil)
 }
@@ -187,4 +188,26 @@ func everyScreenIDIsRoutable() {
     #expect(ids.contains("gallery"))
     #expect(ids.contains("widget-gallery"))
     #expect(ids.contains("tabbar"))
+}
+
+@MainActor
+@Test("A plan day opens the reader on the first ayah of its first passage")
+func routerOpensAPlanDay() {
+    let model = TabRootModel()
+    model.openReader(refs: ["18:1-10", "36:1-12"])
+    #expect(model.selection == .quran)
+    #expect(model.consumePendingVerse() == VerseRef(surah: 18, ayah: 1))
+
+    // Nothing parseable in the list is not a reason to move the app anywhere.
+    model.selectTab(.home)
+    model.openReader(refs: ["not-a-key"])
+    #expect(model.selection == .home)
+    #expect(model.consumePendingVerse() == nil)
+}
+
+@MainActor
+@Test("FeatureHome is wired, so the home routes no longer answer with a placeholder")
+func homeSeamIsWired() {
+    #expect(HomeScreenProvider.isWired)
+    #expect(HomeScreenProvider.screenIDs == ["home", "plans-sheet", "plan-detail", "verse-search"])
 }

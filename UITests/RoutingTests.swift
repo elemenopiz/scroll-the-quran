@@ -28,10 +28,15 @@ final class RoutingTests: XCTestCase {
     ]
 
     /// Routes that still render the Phase 1 placeholder, and why.
+    ///
+    /// `FeatureHome` landed in 3e, so the five `home*` routes are gone from this list and
+    /// are asserted like every other feature route. What is left is `FeatureOnboarding`,
+    /// which is finishing on its own branch, and `tabbar`, which has no feature behind it —
+    /// it is the Phase 1 spec's bare shell.
     private static let placeholderRoutes: Set<String> = [
         "onboarding-hook", "onboarding-signin", "onboarding-slide1", "onboarding-slide2",
         "onboarding-slide3", "onboarding-slide4", "onboarding-reviews",
-        "home", "home#scrolled", "plans-sheet", "plan-detail", "verse-search", "tabbar",
+        "tabbar",
     ]
 
     override func setUp() {

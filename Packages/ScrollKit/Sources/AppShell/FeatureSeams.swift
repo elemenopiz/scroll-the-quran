@@ -3,46 +3,37 @@ import FeatureHome
 import FeatureOnboarding
 import SwiftUI
 
-/// The seam onto `FeatureHome`, which is still being built on another branch.
+/// The seam onto `FeatureHome`.
 ///
 /// The Home tab and the `home`, `home#scrolled`, `plans-sheet`, `plan-detail` and
-/// `verse-search` screenshot routes all come through here. Until `FeatureHome` exports a
-/// view the shell renders the Phase 1 placeholder, which is what the parked UI tests skip
-/// on; nothing else in `AppShell` has to change when it lands.
-///
-/// **When `FeatureHome` merges**, replace the body of `screen(anchor:env:)` with:
-///
-/// ```swift
-/// HomeScreens.screen(
-///     id: id, anchor: anchor, index: env.index, translations: env.translations,
-///     studies: env.studies, user: env.user, today: env.today
-/// )
-/// ```
-///
-/// — one call, the same shape `DiscoverScreens.screen(id:anchor:…)` already has.
+/// `verse-search` screenshot routes all come through here. `FeatureHome` cannot name
+/// `AppShell.ScreenRoute` — the dependency runs the other way — so the route crosses the
+/// seam as the string `ScreenRoute.rawValue` already produces.
 @MainActor
 public enum HomeScreenProvider {
     /// The screen ids this seam answers to, in `Reference/manifest.json` order.
     public static let screenIDs = ["home", "plans-sheet", "plan-detail", "verse-search"]
 
     /// True once `FeatureHome` exports a real screen. Drives the UI tests' skip.
-    public static let isWired = false
+    public static let isWired = true
 
-    public static func screen(id: String = "home", anchor: String? = nil, env _: AppEnvironment) -> some View {
-        PlaceholderScreen(
-            screenID: anchor.map { "\(id)#\($0)" } ?? id,
-            title: title(for: id),
-            systemImage: "house"
-        )
-    }
-
-    private static func title(for id: String) -> String {
-        switch id {
-        case "plans-sheet": "Plans"
-        case "plan-detail": "Plan"
-        case "verse-search": "Search"
-        default: "Home"
-        }
+    /// - Parameters:
+    ///   - id: the `ScreenID` half of the route (`"home"`, `"plans-sheet"`).
+    ///   - anchor: the `#anchor` half (`"scrolled"`), which `HomeRoute` reads as part of its
+    ///     raw value.
+    ///   - env: the composition root.
+    ///   - navigation: the shell's router. `nil` outside the tab bar, which makes Home's
+    ///     buttons inert — what a headless capture wants.
+    public static func screen(
+        id: String = "home",
+        anchor: String? = nil,
+        env: AppEnvironment,
+        navigation: (any HomeNavigation)? = nil
+    ) -> some View {
+        let raw = anchor.map { "\(id)#\($0)" } ?? id
+        // An unknown anchor is not a reason to show nothing: fall back to the plain screen.
+        let route = HomeRoute(rawValue: raw) ?? HomeRoute(rawValue: id) ?? .home
+        return HomeFeature.screen(for: route, env.homeEnvironment(navigation: navigation))
     }
 }
 

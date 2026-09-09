@@ -1,6 +1,7 @@
 import DesignSystem
 import FeatureCommunity
 import FeatureDiscover
+import FeatureHome
 import FeatureReader
 import Observation
 import QuranData
@@ -12,7 +13,7 @@ import UserState
 /// can navigate without knowing what is on the other side.
 @MainActor
 @Observable
-public final class TabRootModel: Router {
+public final class TabRootModel: Router, HomeNavigation {
     public var selection: AppTab
     public private(set) var pendingVerse: VerseRef?
     public private(set) var pendingStudy: PassageRef?
@@ -52,6 +53,14 @@ public final class TabRootModel: Router {
 
     public func openNote(key: String) {
         noteKey = key
+    }
+
+    /// `HomeNavigation`: a plan day is a list of passage keys in reading order. The reader
+    /// pages a surah at a time, so it opens on the first ayah of the first passage — where a
+    /// reader would start — rather than trying to stitch the whole day into one scroll.
+    public func openReader(refs: [String]) {
+        guard let first = refs.lazy.compactMap(PassageRef.init(key:)).first else { return }
+        open(verse: VerseRef(surah: first.surah, ayah: first.start))
     }
 
     public func handle(_ link: DeepLink) {
@@ -122,7 +131,7 @@ public struct TabRoot: View {
             .tabItem { Label(AppTab.discover.title, systemImage: AppTab.discover.systemImage) }
             .tag(AppTab.discover)
 
-            HomeScreenProvider.screen(id: homeRouteID, anchor: homeAnchor, env: env)
+            HomeScreenProvider.screen(id: homeRouteID, anchor: homeAnchor, env: env, navigation: model)
                 .tabItem { Label(AppTab.home.title, systemImage: AppTab.home.systemImage) }
                 .tag(AppTab.home)
 

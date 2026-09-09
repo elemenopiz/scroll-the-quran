@@ -58,7 +58,7 @@ public struct ScreenRoute: Equatable, Sendable {
         switch screen {
         case .community: .community
         case .discover: .discover
-        case .home, .plansSheet, .planDetail, .verseSearch: .home
+        case .home, .plansSheet, .planDetail, .verseSearch, .widgetGallery: .home
         case .reader, .translationSheet, .notesSheet: .quran
         default: nil
         }
