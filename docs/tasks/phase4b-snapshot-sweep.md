@@ -1,0 +1,5 @@
+# Phase 4b — Full snapshot sweep + polish
+Owns: any feature package for visual fixes (list every file you touch), `Reference/scores.md`, `Tools/snapshot/thresholds.json`. Simulator: ONLY `ScrollSim-3e`.
+Prereq: 3e + 4a merged (every `--screenshot` id resolves in the real app).
+Deliver: run `Tools/verify.sh --snap all` for every id in `Reference/manifest.json` in BOTH appearances (`xcrun simctl ui <udid> appearance dark|light`), inspect every diff PNG with Read, fix the highest-impact visual deltas (spacing, weights, tints, radii, icon choices such as outline vs filled tab icons) up to 5 rounds per screen, and write `Reference/scores.md` (table: id, appearance, RMSE, threshold, pass/fail, notes). Light-mode contrast pass for cards on `#FAFAFC` (raise card contrast via a subtle border or slightly darker card token, keeping measured dark values untouched). Dynamic Type sanity at XL on reader/discover/deep study (no clipped text; verse text may cap).
+DoD: every screen below its threshold or an explicit accepted-deviation note; `Tools/verify.sh --ui --snap all` PASS; scores.md committed.
