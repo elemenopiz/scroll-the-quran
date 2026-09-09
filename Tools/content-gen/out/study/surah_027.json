@@ -1,7 +1,7 @@
 {
   "surah": 27,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:41:24.116Z",
+  "generatedAt": "2026-09-09T14:25:33.905Z",
   "studies": [
     {
       "key": "27:1-4",
@@ -754,6 +754,296 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:25",
+      "surah": 27,
+      "start": 25,
+      "end": 25,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "The One Who Brings Out What Is Hidden",
+      "tier": "standard",
+      "meaning": "The report ends not with a rebuke but with a reason. God is described by one continuous act and one capacity: He brings out what lies hidden in the heavens and the earth, and He knows what you keep back and what you announce. Commentators record two readings of the small particle that opens the line. On one it continues the account of a people who do not prostrate; on the other it becomes a direct call to prostrate. The description itself is the same either way.",
+      "historicalContext": "Meccan. The argument arrives in an unexpected voice: it is a bird speaking to a king, and the theology is embedded in a field report about a foreign court. The commentators offer no occasion and note the placement, since the surah has just described a people worshipping the most visible object in the sky and now answers with a God defined by what He draws out of concealment.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْخَبْءَ",
+          "gloss": "the hidden thing",
+          "note": "A noun for whatever is stored out of sight: buried water, seed under soil, goods held back from a market. It occurs exactly once in the whole Quran, in this line."
+        },
+        {
+          "arabic": "يُخْرِجُ",
+          "gloss": "He brings out",
+          "note": "Present tense and continuous, so the bringing out is not a single past act. It covers rain drawn from cloud, plants from dry ground, and anything else held back until its season arrives."
+        },
+        {
+          "arabic": "تُخْفُونَ",
+          "gloss": "you conceal",
+          "note": "The verb for hiding something on purpose. Set immediately against its opposite in the same clause, it puts the concealed and the announced on identical footing, with no advantage to either."
+        }
+      ],
+      "lifeInProphetsTime": "Survival in Arabia turned on knowing where things were hidden. Wells were covered against evaporation and against strangers, cisterns were cut into rock and disguised, and grain was stored underground. A guide who knew a buried water source held the lives of a whole caravan. To speak of God as the one who brings out what is stored away was to name the most valuable skill anyone in that world could imagine.",
+      "didYouKnow": "The noun for the hidden thing occurs once in the entire Quran, here, and it is spoken by a bird rather than by a prophet or by God. The ayah immediately after it is one of the fifteen places marked in the copies of the Quran where readers pause to prostrate, so the surah's central argument for worship sits in the mouth of its smallest character.",
+      "theologicalSignificance": "The passage grounds worship in a single divine capability rather than in a demand. What makes God worth prostrating to, on this account, is that nothing is stored beyond His reach, neither in the physical world nor inside a person. The two halves of the sentence match: hidden things in the heavens and the earth, and hidden things in you. One God covers both, which is precisely what a visible object of worship cannot do.",
+      "crossReferences": [
+        {
+          "ref": "6:59",
+          "why": "Expands the same idea, with the keys of the unseen held by God alone and every falling leaf recorded."
+        },
+        {
+          "ref": "13:10",
+          "why": "States the matching principle, that hidden speech and open speech are equal before God."
+        },
+        {
+          "ref": "20:7",
+          "why": "Goes one step further, saying God knows the secret and whatever is more hidden than the secret."
+        }
+      ],
+      "applyIt": "Name one thing you are currently keeping out of view. Not to confess it to anyone; simply to say it to yourself in plain words rather than in the softened version you usually use. The passage does not ask you to expose it. It asks you to stop maintaining the fiction that it is hidden from every direction at once.",
+      "exploreFurther": [
+        "6:59",
+        "13:8-11",
+        "20:5-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:25:33.741Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:26-29",
+      "surah": 27,
+      "start": 26,
+      "end": 29,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Lord Of The Mighty Throne",
+      "tier": "standard",
+      "meaning": "The bird's speech closes on a formula: no god but He, Lord of the mighty Throne. Solomon's answer is neither belief nor punishment. He says he will look into it, and the checking he orders is precise: deliver the letter, then withdraw and watch what comes back. The scene cuts straight to the other court, where the queen calls the letter noble before quoting a single word of it. Four short lines, and every one of them is about testing a report rather than reacting to it.",
+      "historicalContext": "Meccan. The surah is building an extended contrast between two ways of holding power, and this is the hinge. The commentators supply no occasion for these ayat and read them as narrative. What a Meccan audience heard was a king who had just threatened a subject with death now suspending judgement on the strength of the subject's answer, and then testing a foreign kingdom by letter rather than by force.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْعَرْشِ",
+          "gloss": "the Throne",
+          "note": "The ordinary word for a ruler's raised seat. It is used of the queen's throne three ayat earlier and of God's here, with the same adjective attached, which forces a comparison the story then works out at length."
+        },
+        {
+          "arabic": "سَنَنظُرُ",
+          "gloss": "we shall look into it",
+          "note": "A verb of looking that Arabic also uses for examining a case. The future prefix postpones the verdict by a deliberate act rather than by hesitation, which is exactly what had been demanded."
+        },
+        {
+          "arabic": "كَرِيمٌ",
+          "gloss": "noble, gracious",
+          "note": "Applied to a letter it can mean sealed and honourable, or valuable in what it carries, and the commentators record both senses. Either way the queen grades the message before she reads any of it out."
+        }
+      ],
+      "lifeInProphetsTime": "A letter crossing between courts was a physical object with a status of its own. It arrived sealed, was handled by named men, and was read aloud in council rather than in private. How it was carried and how it looked said as much as the words inside, which is why the queen can call it noble before quoting it. Mecca sat on the road such letters travelled, and traders knew the protocol well.",
+      "didYouKnow": "The phrase used for the queen's throne at 27:23 and the phrase used for God's Throne here are built from the same two words, great and throne, three ayat apart. The definite form appears three times in the whole Quran, at 9:129, 23:86 and here, so the surah places its one indefinite use and one definite use within a few lines of each other.",
+      "theologicalSignificance": "A declaration of God's oneness is placed inside a piece of reportage, without a break in the narrative, and then immediately followed by ordinary administrative caution. The passage does not treat conviction and verification as opposites. The same king who accepts the formula about the Throne insists on checking whether the messenger who spoke it was telling the truth, and the surah records both as praiseworthy in the same breath.",
+      "crossReferences": [
+        {
+          "ref": "23:86",
+          "why": "Puts the identical phrase as a question to those who deny, asking who is Lord of the seven heavens and the mighty Throne."
+        },
+        {
+          "ref": "9:129",
+          "why": "Closes its surah with the same phrase, attaching it to reliance on God when others turn away."
+        },
+        {
+          "ref": "49:6",
+          "why": "Turns Solomon's practice into a general rule: check a report before you act on it."
+        }
+      ],
+      "applyIt": "Choose something you were told this week and simply believed, or simply dismissed, on the spot. Give it Solomon's treatment instead: decide on one specific thing that would settle it, and go and find that one thing out. Then stop. The point is not thoroughness. It is the short interval between hearing and concluding that this passage keeps insisting on.",
+      "exploreFurther": [
+        "23:84-90",
+        "49:6",
+        "27:30-32"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:25:33.751Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:30-32",
+      "surah": 27,
+      "start": 30,
+      "end": 32,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "A Letter Opening With Mercy",
+      "tier": "standard",
+      "meaning": "The letter is read out and it is very short. It names its sender, it opens with the formula of mercy, and it makes one demand: do not exalt yourselves over me, and come in submission. There is nothing about tribute, borders or terms. Then the queen turns to her council with a question rather than a verdict, and states her own practice: she decides nothing until they are present. Two ways of holding authority are now on the page together.",
+      "historicalContext": "Meccan. Letters between courts were ordinary business along the incense road, and Arab traders knew the forms. What is not ordinary is the heading. The name of mercy used here was disputed in Mecca at the time; opponents asked openly who this Gracious One was supposed to be. The commentators note that placing it at the head of a demand is what makes the demand something other than a threat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرَّحْمَـٰنِ",
+          "gloss": "the Gracious",
+          "note": "A name of immediate, overwhelming mercy that Meccan opponents objected to by asking who it referred to. At the head of a king's letter it changes the register of everything that follows it."
+        },
+        {
+          "arabic": "تَعْلُوا۟",
+          "gloss": "exalt yourselves",
+          "note": "From the root for height, the same word used earlier in this surah for the self-elevation of Pharaoh's court. What the letter forbids is a posture, not a policy, and it asks for no payment."
+        },
+        {
+          "arabic": "أَفْتُونِى",
+          "gloss": "give me your considered opinion",
+          "note": "A verb for asking a reasoned answer from those qualified to give one. It occurs twice in the Quran, and both times it is a monarch putting a question to a council, here and at 12:43."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian decision-making was collective in form even where it was not in fact. Mecca's own affairs were settled in an assembly of clan heads, and a leader who acted without consulting them lost standing rather than gained it. Envoys waited outside while the council spoke. The queen's line about never cutting a matter until her counsellors are present would have sounded to that audience like the correct and expected thing for a ruler to say.",
+      "didYouKnow": "The opening formula appears 114 times in the Quran: once at the head of 113 surahs, and once inside the body of a passage. This is that one occurrence. Surah 9 is the only surah with no heading of its own, and this letter, quoted inside a story about a foreign kingdom, supplies the missing hundred and fourteenth.",
+      "theologicalSignificance": "The demand and the mercy arrive in the same three lines, and the mercy comes first. That order says something about how the passage understands submission: it is asked for by a sender who has already named himself by compassion, and what he asks to be surrendered is height rather than property. The council scene that follows adds a second point, that the invitation is heard, weighed and answered rather than simply obeyed.",
+      "crossReferences": [
+        {
+          "ref": "12:43",
+          "why": "Holds the only other use of the queen's verb, another ruler putting a hard question to his counsellors."
+        },
+        {
+          "ref": "42:38",
+          "why": "Names mutual consultation as a mark of a believing community, which is what the queen practises here."
+        },
+        {
+          "ref": "25:60",
+          "why": "Records the Meccan objection to the very name of mercy that heads this letter."
+        }
+      ],
+      "applyIt": "Send one message this week that begins with the warm part instead of ending with it. A request to a colleague, a correction to a child, a difficult note to a relative: put the kindness in the first line, where it frames everything after it, rather than in the last, where it reads as an apology. Then send the request unchanged.",
+      "exploreFurther": [
+        "12:43-49",
+        "42:36-40",
+        "25:59-63"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:25:33.751Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:33-35",
+      "surah": 27,
+      "start": 33,
+      "end": 35,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "When Kings Enter A City",
+      "tier": "standard",
+      "meaning": "The council answers with an inventory of force and then hands the decision straight back to her. Her reply is not about this letter at all. It is a general observation about how kings behave: they ruin what they enter and bring down whoever had standing there, and she adds flatly that this is simply what they do. Then she acts on her own analysis, sending a gift and waiting to see what the envoys carry home. The Quran lets her statement stand without correcting it.",
+      "historicalContext": "Meccan. Arabia remembered what armies did to towns. Yemen had been taken by Abyssinia and then by Persia within living memory of the generation before the Prophet Muhammad (peace be upon him), and the sacking of settlements was recent history rather than legend. The commentators offer no occasion for these lines. They read the queen's remark as sound worldly judgement, correct about kings in general and wrong only about this particular one.",
+      "keyTerms": [
+        {
+          "arabic": "أَفْسَدُوهَا",
+          "gloss": "they ruin it",
+          "note": "A verb for spoiling something that was sound, used of food turning and of order breaking down. It describes damage to the working fabric of a place rather than to its walls."
+        },
+        {
+          "arabic": "أَعِزَّةَ",
+          "gloss": "the honoured, the strong",
+          "note": "The plural of a word for those hard to reach or overcome, sharing its root with one of the divine names. Set against its opposite in the same clause, it describes a reversal of standing, not a defeat."
+        },
+        {
+          "arabic": "بِهَدِيَّةٍ",
+          "gloss": "with a gift",
+          "note": "From a root meaning to guide or send ahead, so the word already implies something sent in front of you. In Arabian dealing a gift opened a negotiation and quietly tested the receiver's intent."
+        }
+      ],
+      "lifeInProphetsTime": "Gift-giving was a technical business. What you sent, who carried it, and how long the bearer was kept waiting all conveyed meaning, and a refused gift was a message in itself. Tribes probed each other this way before committing to alliance or to war, because a gift could be withdrawn from in a way an army could not. The queen is using a recognised instrument, and her council would have understood exactly what she was doing.",
+      "didYouKnow": "The verb she said introduces six separate speeches in this surah. One of the six belongs to the ant in the valley at 27:18. The remaining five all belong to this queen, at 27:29, 27:32, 27:34, 27:42 and 27:44. Neither of the two female speakers is given a name anywhere in the text.",
+      "theologicalSignificance": "Prudence is treated here as a real virtue rather than as a substitute for faith. The queen reasons carefully from experience, reaches a conclusion that is true of almost every king who ever lived, and takes a measured step instead of a violent one. That care is what eventually brings her to the truth, several scenes later. The passage does not set worldly wisdom against guidance; it shows one leading to the other.",
+      "crossReferences": [
+        {
+          "ref": "42:38",
+          "why": "Names consultation as a mark of the community, which is what her council scene is enacting."
+        },
+        {
+          "ref": "3:159",
+          "why": "Instructs a prophet to consult those around him in the matter, and to be gentle rather than harsh."
+        },
+        {
+          "ref": "27:36",
+          "why": "Gives Solomon's answer to the gift, which shows her reading of kings was accurate about kings and wrong about him."
+        }
+      ],
+      "applyIt": "Think of a rule you have learned about people that is nearly always right. Perhaps that nobody helps without wanting something. Hold it up today and ask which specific person in your life it is wrong about. The queen's principle was sound and her exception was the whole story. You will not find the exception unless you go looking for it.",
+      "exploreFurther": [
+        "3:159",
+        "42:36-40",
+        "27:36-37"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:25:33.751Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:36",
+      "surah": 27,
+      "start": 36,
+      "end": 36,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "What God Gave Is Better",
+      "tier": "standard",
+      "meaning": "The gift arrives and is refused in a single sentence, with no ceremony at all. Solomon does not say the present is too small; he says the currency is wrong. What God gave him is better than what God gave them, which removes property from the negotiation entirely. Then the last clause turns the refusal into a description of the senders: it is you who take delight in your gifts. The commentators read it as a diagnosis of what the gift had assumed about him.",
+      "historicalContext": "Meccan, delivered in a city where standing was measured in caravans and clients. The Quraysh leadership had a documented habit of trying to buy the problem in front of them; the classical sources describe offers of wealth and position being made to the Prophet Muhammad (peace be upon him) in exchange for silence. The commentators note the resemblance without turning this ayah into a report about it, since the story stands on its own.",
+      "keyTerms": [
+        {
+          "arabic": "أَتُمِدُّونَنِ",
+          "gloss": "would you supply me",
+          "note": "A verb for extending a supply line, used of reinforcements reaching an army and of a river fed by its spring. It occurs once in the Quran, and it reframes the gift as provisioning a man in need."
+        },
+        {
+          "arabic": "بِمَالٍ",
+          "gloss": "with property, with wealth",
+          "note": "The ordinary word for owned goods, originally for livestock, since that was the shape wealth mostly took. It is left indefinite, so the size of the gift never enters the sentence at all."
+        },
+        {
+          "arabic": "تَفْرَحُونَ",
+          "gloss": "you exult, you delight",
+          "note": "A verb for pleasure that the Quran often colours with self-satisfaction. It moves the enjoyment of the gift from the receiver back to the giver, which is the sharpest part of the reply."
+        }
+      ],
+      "lifeInProphetsTime": "In Mecca almost every dispute had a price. Blood money settled killings, a debt could be assumed by a wealthier relative, and clan protection was bought and repaid in obligations. Men who could not be moved by payment were rare enough to be remembered by name. Sending goods to soften an opponent was not cynicism there; it was the normal first move, and it usually worked.",
+      "didYouKnow": "The verb Solomon uses for what the envoys are doing occurs exactly once in the Quran, in this ayah. Its root elsewhere describes God extending help to the believers with ranks of angels, and the sea extended by seven more seas of ink without exhausting God's words. Here it is aimed at envoys offering to resupply a king who already has enough.",
+      "theologicalSignificance": "Everything in the sentence is credited to a giver. What Solomon has is what God gave him, and what the envoys have is what God gave them, so the comparison never becomes a boast about merit. That framing is what allows the refusal to be firm without being contemptuous. The passage locates the flaw in the transaction rather than in the people, and the flaw is the assumption that anything here belongs to the parties negotiating.",
+      "crossReferences": [
+        {
+          "ref": "34:37",
+          "why": "Denies that wealth and children are what bring anyone nearer to God, which is the assumption behind the gift."
+        },
+        {
+          "ref": "31:27",
+          "why": "Uses the same root for extending, with seven seas of ink still not exhausting the words of God."
+        },
+        {
+          "ref": "28:76",
+          "why": "Shows the opposite response to great wealth, in a man who claimed his treasure as his own achievement."
+        }
+      ],
+      "applyIt": "Notice the next time you try to settle something uncomfortable by spending. A gift instead of an apology, a takeaway instead of an evening, a bonus instead of a conversation. The spending is not wrong. Just ask, before you do it, whether it is the thing the situation actually needs, or the thing that is easiest for you to give.",
+      "exploreFurther": [
+        "34:34-39",
+        "28:76-78",
+        "31:27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:25:33.751Z",
         "reviewed": false
       }
     },
