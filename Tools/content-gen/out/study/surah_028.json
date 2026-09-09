@@ -1,8 +1,588 @@
 {
   "surah": 28,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:26:04.315Z",
+  "generatedAt": "2026-09-09T14:57:23.779Z",
   "studies": [
+    {
+      "key": "28:1-3",
+      "surah": 28,
+      "start": 1,
+      "end": 3,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "We Narrate To You",
+      "tier": "standard",
+      "meaning": "Three letters, then a claim about the book, then a statement of method. We recite to you part of the report of Moses and Pharaoh, in truth, for people who believe. Two things in that sentence repay attention. It says part, not all, so the narrative that follows is selected rather than complete. And it names its audience before the story starts, which makes the telling conditional on someone willing to take it as more than history.",
+      "historicalContext": "Meccan, late in the period before the emigration. Commentators report no specific occasion for these ayat. What matters for the surah's argument is who was listening: a small community under pressure in a city they did not control, about to be told at length how a comparable situation once developed. The surah never draws the parallel out loud. It sets the account down and leaves it there.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُبِينِ",
+          "gloss": "clear, making clear",
+          "note": "The Arabic form is open between clear in itself and making other things clear, and the commentators note both readings. Either way the claim concerns the book's function rather than its style."
+        },
+        {
+          "arabic": "نَبَإِ",
+          "gloss": "report, weighty news",
+          "note": "Not any news, but news of consequence arriving from elsewhere. The word implies the account was carried to the hearer rather than worked out by him or recalled from his own memory."
+        },
+        {
+          "arabic": "بِٱلْحَقِّ",
+          "gloss": "in truth",
+          "note": "The phrase attaches to the manner of the telling. It claims accuracy, and commentators also read it as telling for a purpose, since the same word covers what is right as well as what is real."
+        }
+      ],
+      "lifeInProphetsTime": "Stories about earlier peoples were currency in Mecca. Traders brought them back from Syria and Yemen, and rival storytellers competed with tales of Persian kings for the same audiences the recitation was addressing. Claiming to give a true report of Moses in that market was not a neutral act. It was entering a contest the listeners already knew how to judge.",
+      "didYouKnow": "The three letters opening this surah begin only one other surah in the Quran, the one immediately before it. Those two sit side by side and both retell the Moses narrative at length, from different angles. The phrase about the clear book that follows the letters appears at the head of five surahs in all, and nowhere else.",
+      "theologicalSignificance": "Narrative is presented as revelation rather than as illustration. The account is recited, using the same verb employed for reciting the signs, which places the story on the same footing as any other part of the message. And the closing qualification concedes something openly: the account will do its work for people who believe, and will function as one more old tale for everybody else.",
+      "crossReferences": [
+        {
+          "ref": "26:1-9",
+          "why": "Opens with the same three letters and begins its own version of the Moses account."
+        },
+        {
+          "ref": "20:9",
+          "why": "Introduces the same narrative with a question, asking whether the report has reached you."
+        },
+        {
+          "ref": "12:3",
+          "why": "Calls its narrative the best of accounts, and says the hearer was unaware of it."
+        }
+      ],
+      "applyIt": "Read a story you know well from scripture as though you had never heard it. Take one paragraph and ask what you would notice if it arrived today with no ending attached. This ayah says the account is given for people who believe, which is not a boast. It describes a way of listening you can choose before you start.",
+      "exploreFurther": [
+        "26:1-9",
+        "20:9-16",
+        "12:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.674Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:4",
+      "surah": 28,
+      "start": 4,
+      "end": 4,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Divided Into Factions",
+      "tier": "standard",
+      "meaning": "Pharaoh's rule is described in four verbs and the order is deliberate. He raised himself above the land, then split its people into factions, then singled out one faction to weaken, then killed their sons and kept their daughters alive. The division comes before the persecution. Commentators note that this is stated as a method rather than as a list of crimes, and the closing verdict calls him a corrupter rather than a tyrant.",
+      "historicalContext": "Meccan. The surah opens its narrative not with Moses but with the system he was born into, which is unusual. No occasion of revelation is reported. The Meccan audience included a small group being squeezed by a leadership that controlled the city's trade, its shrine and its alliances, and a description of a divided population under one exalted figure needed no explaining.",
+      "keyTerms": [
+        {
+          "arabic": "عَلَا",
+          "gloss": "he rose high, exalted himself",
+          "note": "A verb of elevation used of a person raising himself over others. It is the first thing said about him, so everything after it is presented as following from that self elevation."
+        },
+        {
+          "arabic": "شِيَعًا",
+          "gloss": "factions, parties",
+          "note": "Groups formed by attachment to a leader or a cause. The word appears four times in the Quran and the others describe communities that fractured, so dividing a population is being named here as an act."
+        },
+        {
+          "arabic": "ٱلْمُفْسِدِينَ",
+          "gloss": "those who corrupt",
+          "note": "From the root for spoiling something sound. The verdict is not that he was cruel but that he ruined a working arrangement, which is a claim about the whole order he was running."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian politics ran on alliances between clans, and the reliable way to control a confederation was to keep its parts from combining. A leader who could set two clans against each other did not need an army. The audience for this ayah understood the mechanism from the inside, since their own city's hierarchy was maintained by exactly that kind of managed division.",
+      "didYouKnow": "The killing of the sons is described in several places across the Quran, and this is the only one where it is preceded by the splitting of the population into factions. Everywhere else the persecution is reported on its own terms. This surah alone supplies the political method that made it workable, and it puts that first.",
+      "theologicalSignificance": "Oppression is analysed rather than merely condemned. The passage identifies self-exaltation as the root and division as the instrument, which locates the wrong inside a structure rather than only in a personality. And the summary verdict uses the language of corruption, so the charge is not that he broke a rule but that he damaged something, which is how this Book generally assesses power.",
+      "crossReferences": [
+        {
+          "ref": "2:49",
+          "why": "Recalls the same persecution to the Children of Israel as the trial they were delivered from."
+        },
+        {
+          "ref": "40:25",
+          "why": "Shows the same order given again later, after Moses arrives with the message."
+        },
+        {
+          "ref": "6:65",
+          "why": "Uses the same word for factions, as one of the calamities a community can be given."
+        }
+      ],
+      "applyIt": "Watch for the moment a group you are in gets sorted into camps, and notice who benefits from the sorting. It is rarely the people in either camp. You do not have to name it out loud. Just be able to say to yourself who gains when a room divides, and decline to help it along.",
+      "exploreFurther": [
+        "2:49-50",
+        "40:23-29",
+        "7:127-129"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:5-6",
+      "surah": 28,
+      "start": 5,
+      "end": 6,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "We Intended To Favour Them",
+      "tier": "standard",
+      "meaning": "The counter-statement is placed immediately after the description of the system, and it is in the present tense: We intend. The ones being made weak are the ones to be favoured, made leaders, made inheritors, established in the land. And Pharaoh and his minister are to be shown, from among those same people, the very thing they feared. Commentators note that the whole reversal is announced before the story begins, so nothing that follows is suspense. It is an outcome already stated, arriving.",
+      "historicalContext": "Meccan, and the timing matters. The community hearing this had no land, no power and no near prospect of either, and would not emigrate for some time yet. No occasion of revelation is reported for these ayat. What they offered was a description of a comparable situation whose ending was already known, given to people whose own ending was not.",
+      "keyTerms": [
+        {
+          "arabic": "نَّمُنَّ",
+          "gloss": "we bestow a favour",
+          "note": "A verb for conferring something unearned. Its noun also covers a favour held over someone's head, so the Quran is careful about who may use it, and here the subject is God alone."
+        },
+        {
+          "arabic": "ٱسْتُضْعِفُوا۟",
+          "gloss": "were made weak",
+          "note": "A passive form of a verb meaning to treat someone as weak. It names weakness as something done to them rather than as a quality they had, which the previous ayah described in detail."
+        },
+        {
+          "arabic": "ٱلْوَٰرِثِينَ",
+          "gloss": "the inheritors",
+          "note": "Those who receive what someone else leaves behind. Using the word here means the land does not change hands by conquest in this account; it passes to them the way an estate passes."
+        }
+      ],
+      "lifeInProphetsTime": "Inheritance was the most litigated matter in Arabian life. Who received a man's camels, his wells and his debts was decided by lineage and argued over for generations, and the vocabulary was familiar to everyone. Promising a persecuted group they would be the inheritors used the one legal category that transferred property without a fight, and every listener knew it.",
+      "didYouKnow": "The name of Pharaoh's minister appears six times in the Quran, and all six belong to this narrative, two of them in these opening ayat alone. He is named beside Pharaoh as though the pairing were standard, yet he is given no title, no lineage and no words of his own until much later in this same surah.",
+      "theologicalSignificance": "The announcement comes before the events and in a tense that keeps it open, which changes what the story is for. It is not evidence that God rescues, offered after the fact, but a stated intention the reader then watches being carried out through a chain of ordinary decisions. What follows is a mother's fear, a sister's errand and a household's whim, and none of them look like the fulfilment of anything.",
+      "crossReferences": [
+        {
+          "ref": "7:137",
+          "why": "Records the same inheritance completed, the weakened people given the land's east and west."
+        },
+        {
+          "ref": "21:105",
+          "why": "States the general principle, that the earth is inherited by God's righteous servants."
+        },
+        {
+          "ref": "28:83",
+          "why": "Gives the final home to those who seek neither height nor corruption in the land."
+        }
+      ],
+      "applyIt": "Think of something you are waiting on that shows no visible movement. Now notice that in this passage the outcome is announced first, and the story is then made entirely of small ordinary events that do not look like progress. Pick one small ordinary thing in your own situation this week and do it well, without checking whether it counts.",
+      "exploreFurther": [
+        "7:136-137",
+        "21:105-107",
+        "28:81-83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:7-8",
+      "surah": 28,
+      "start": 7,
+      "end": 8,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Cast Him Into The River",
+      "tier": "standard",
+      "meaning": "An instruction is given to a woman who is not a prophet, and it is close to unbearable. Nurse him, and when you fear for him, put him in the water. Then two prohibitions and two promises: do not fear, do not grieve, We will return him to you, and We will make him one of the messengers. The next line reports the pickup in words that read like an accident. The household that took him in did not know what it was carrying home.",
+      "historicalContext": "Meccan. Commentators discuss the verb used for the communication to Moses' mother and generally take it as inspiration placed in the heart rather than prophethood, since the Quran uses the same verb for what is conveyed to a bee and to the disciples. No occasion of revelation is reported. The narrative belongs to the surah's opening movement, which turns entirely on a decision made under threat.",
+      "keyTerms": [
+        {
+          "arabic": "أَوْحَيْنَآ",
+          "gloss": "We inspired, We conveyed",
+          "note": "The verb usually rendered as revelation, though this Book also uses it of what is placed in a bee and in the earth. Commentators here read a communication to the heart rather than prophethood."
+        },
+        {
+          "arabic": "ٱلْيَمِّ",
+          "gloss": "the water, the river",
+          "note": "A word for a large body of water, used in the Quran almost only within this narrative. It leaves open whether a river or a sea is meant, and the classical accounts differ on the point."
+        },
+        {
+          "arabic": "فَٱلْتَقَطَهُۥٓ",
+          "gloss": "and they picked him up",
+          "note": "A verb for retrieving something found by chance, occurring once in the Quran. The same root gives the ordinary word for a foundling, so the wording preserves the household's own view of the event."
+        }
+      ],
+      "lifeInProphetsTime": "A newborn was not a private matter. Wet nurses were hired, births were announced, and a household's infants were known to its neighbours. Concealing a baby for any length of time meant concealing sound, and anyone who has kept a secret in a crowded house knows the cost of it. The instruction here is addressed to a woman who had already been managing that for months.",
+      "didYouKnow": "The verb for picking him up occurs once in the Quran, and its root gives the ordinary Arabic word for a foundling, a child retrieved without anyone knowing whose it is. The clause that follows says he was picked up in order to become their enemy and their sorrow, which states as purpose what the finders experienced as chance.",
+      "theologicalSignificance": "The passage sets a promise and an unbearable instruction in the same sentence, in that order, and softens neither. The two prohibitions come after the command rather than before it, which suggests fear and grief were expected and were being addressed rather than forbidden. And the outcome is tied to the finders' action by a clause of purpose, so what looked to them like luck is described as an errand.",
+      "crossReferences": [
+        {
+          "ref": "20:38-40",
+          "why": "Gives the same episode in the parallel account, including the sister and the return."
+        },
+        {
+          "ref": "16:68",
+          "why": "Uses the same verb of inspiration for what is conveyed to the bee."
+        },
+        {
+          "ref": "66:11",
+          "why": "Names the woman of Pharaoh's household as an example, for the prayer she made."
+        }
+      ],
+      "applyIt": "Think of the last time you had to let something out of your hands: a child at a gate, a decision passed to someone else, an application sent. Recall the physical moment of release. The instruction here arrives with two prohibitions attached, which means the fear and the grief were expected. You are not doing it wrong when they turn up.",
+      "exploreFurther": [
+        "20:37-41",
+        "66:11",
+        "16:68-69"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:9",
+      "surah": 28,
+      "start": 9,
+      "end": 9,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "A Delight To The Eye",
+      "tier": "standard",
+      "meaning": "One sentence from Pharaoh's wife changes the outcome. She calls the child a coolness of the eye for the two of them, forbids the killing, and gives two reasons calculated to appeal to her husband: he may be useful, or we might take him as a son. Then the narrator adds four words. They did not perceive. Commentators note that her stated argument is entirely practical, while the phrase she opens with is the language of love.",
+      "historicalContext": "Meccan. The Quran gives this woman no name here and returns to her once, near the end of the Book, as an example held up for everyone. Commentators say little beyond what the text supplies. No occasion of revelation is reported. What the passage records is a decision taken inside the household that had ordered the killing, by someone with standing enough to be heard.",
+      "keyTerms": [
+        {
+          "arabic": "قُرَّتُ عَيْنٍ",
+          "gloss": "a coolness of the eye",
+          "note": "An idiom for deep contentment, drawn from tears of joy running cool rather than hot. This exact phrase occurs once in the Quran, and a related plural appears twice in prayers about family."
+        },
+        {
+          "arabic": "عَسَىٰٓ",
+          "gloss": "perhaps, it may be",
+          "note": "A particle of hope and possibility. She offers two speculative reasons rather than one certainty, which is how a person argues when the real reason is not the one being placed on the table."
+        },
+        {
+          "arabic": "نَتَّخِذَهُۥ",
+          "gloss": "we take him as",
+          "note": "A verb of adopting or taking something for a purpose. It appears in this Book for taking gods, taking friends and taking a child, and it always implies a deliberate choosing."
+        }
+      ],
+      "lifeInProphetsTime": "Taking a foundling into a household was ordinary and legally consequential in Arabia. A child raised in a family shared its protection and its enemies, and the arrangement was announced rather than hidden. Her second suggestion was therefore not sentimental. It named a recognised standing that would place the boy inside the very house which had ordered his death.",
+      "didYouKnow": "The phrase she uses occurs in exactly this form only here in the Quran. Four ayat later the same image returns in a different form, when the child is given back to his mother so that her eye may be cooled. The wording ties the two women together, and it is the only thing in the account that does.",
+      "theologicalSignificance": "The reversal announced at the surah's opening is carried forward by a woman's affection for an infant she had no reason to spare. Nothing miraculous occurs. The passage insists twice within a few lines on the absence of foresight, which makes its point about how such outcomes are actually produced: not by anyone in the story understanding what they are doing, but by ordinary motives arriving at the right moment.",
+      "crossReferences": [
+        {
+          "ref": "66:11",
+          "why": "Returns to this woman near the end of the Quran, quoting her prayer as an example."
+        },
+        {
+          "ref": "28:13-14",
+          "why": "Repeats her image of the cooled eye, transferred to the mother who had lost him."
+        },
+        {
+          "ref": "12:21",
+          "why": "Shows another household taking in a boy for his usefulness, in similar words of adoption."
+        }
+      ],
+      "applyIt": "Notice the reason you give out loud for a kindness you are about to do, and how often it is a practical one when the real reason is affection. There is nothing wrong with that translation; it is how most kindness gets past a room. But be honest with yourself about which of the two actually moved you.",
+      "exploreFurther": [
+        "66:11-12",
+        "28:12",
+        "12:19-21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:10-11",
+      "surah": 28,
+      "start": 10,
+      "end": 11,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Her Heart Went Empty",
+      "tier": "standard",
+      "meaning": "One word describes what happened to the mother: her heart became empty. Commentators offer several readings, that it emptied of everything except him, or of patience, or of the promise she had been given, and they set the range down without choosing. She was close to saying it aloud, and the ayah states plainly that she was steadied so she would remain among the believers. Then the practical response: she sends her daughter after him, and the girl watches from a distance.",
+      "historicalContext": "Meccan. The account is unusual in giving this much interior detail about a woman who is never named, and the parallel version in surah 20 compresses the same events into a few lines. No occasion of revelation is reported. Commentators treat the sequence as an instance of what the surah has already announced, an outcome arriving through people who do not know they are producing it.",
+      "keyTerms": [
+        {
+          "arabic": "فَـٰرِغًا",
+          "gloss": "empty, void",
+          "note": "Occurs once in the Quran. The root covers being emptied out and being free of occupation, which is why the classical readings differ over what exactly her heart was emptied of."
+        },
+        {
+          "arabic": "رَّبَطْنَا",
+          "gloss": "We bound firmly, We steadied",
+          "note": "A verb for tying something so that it holds. It appears twice in the Quran with the heart as its object, and the other place describes the young men who took refuge in the cave."
+        },
+        {
+          "arabic": "قُصِّيهِ",
+          "gloss": "follow his track",
+          "note": "An imperative from the root that gives this surah its name. It means tracing something by following its trail, so the sister is told to track him rather than simply to look."
+        }
+      ],
+      "lifeInProphetsTime": "A girl following something along a riverbank would have drawn no attention. Children ran errands, carried water and moved between households all day, and their invisibility was practical rather than accidental. The narrative uses that: the one person in the family who could go anywhere without being questioned is the one who is sent, and she keeps her distance and says nothing.",
+      "didYouKnow": "The verb used for steadying her heart appears twice in the Quran with the heart as its object. The other place describes the youths who hid in the cave, in an entirely different surah and setting. Both times it is applied to people holding a secret under pressure, and both times God is the one said to do the steadying.",
+      "theologicalSignificance": "The passage does not treat her near collapse as a failure. It reports that she was about to give him away and that she was held, and it supplies a reason: so that she would remain among the believers. Faith appears here as something maintained from outside at the exact point where a person's own capacity runs out, which is a considerable claim to make inside a narrative.",
+      "crossReferences": [
+        {
+          "ref": "18:14",
+          "why": "Uses the same phrase about hearts being steadied, of young men standing before a ruler."
+        },
+        {
+          "ref": "20:40",
+          "why": "Gives the sister's part in the parallel account, with the return to the mother."
+        },
+        {
+          "ref": "8:11",
+          "why": "Uses the same verb for steadying hearts, of a community about to face a battle."
+        }
+      ],
+      "applyIt": "Recall a time you nearly said the thing that would have ruined it, and did not. You probably credited yourself with self-control. Try reading it once the way this ayah reads it: as being held rather than as holding on. It changes what you do with the memory, and it changes what you expect of yourself next time.",
+      "exploreFurther": [
+        "20:38-41",
+        "18:13-16",
+        "8:10-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.675Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:12",
+      "surah": 28,
+      "start": 12,
+      "end": 12,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "A Household That Will Nurse Him",
+      "tier": "standard",
+      "meaning": "The refusal comes first: he would take no wet nurse at all, and the ayah says this had been arranged beforehand. Then the sister steps forward with a sentence built to give nothing away. Shall I point you to a household who will look after him for you, and who will be sincere toward him. Commentators note the wording. She offers a solution to a practical problem, she says for you, and she vouches for the family's goodwill without saying how she knows it.",
+      "historicalContext": "Meccan. The wet nurse arrangement was a normal part of ancient household life, so the premise would have been immediately clear to the first hearers. No occasion of revelation is reported. The parallel account in surah 20 gives the same sequence in a single line, which is one of several places where this surah slows a familiar narrative down to show the mechanics.",
+      "keyTerms": [
+        {
+          "arabic": "وَحَرَّمْنَا",
+          "gloss": "and We barred him",
+          "note": "The verb of prohibiting, used here of an infant refusing the breast. Commentators read it as an arranged aversion rather than as a rule, since a baby is not addressed by rules."
+        },
+        {
+          "arabic": "ٱلْمَرَاضِعَ",
+          "gloss": "the wet nurses",
+          "note": "Occurs once in the Quran. It is a plural covering both the women and the act of suckling, so the refusal described is total: not one nurse but every arrangement that was offered."
+        },
+        {
+          "arabic": "نَـٰصِحُونَ",
+          "gloss": "sincere well wishers",
+          "note": "From a root meaning pure and unmixed, used of advice given without self interest. She is guaranteeing the household's motive, which is the one thing she had no way to prove."
+        }
+      ],
+      "lifeInProphetsTime": "Hiring a wet nurse was routine and often took a child out of the city for years; the Prophet himself was nursed among a desert clan as an infant. Families kept track of the women available, and a healthy baby refusing every one of them would have been an urgent domestic crisis rather than a curiosity. The sister arrives with an answer to a problem the household already had.",
+      "didYouKnow": "The word for the wet nurses occurs once in the Quran. The sentence the sister speaks is built entirely out of the household's own interest: she offers a family who will look after him for you, and vouches for their sincerity toward him. She never says that she knows them, and nobody in the scene thinks to ask.",
+      "theologicalSignificance": "The arrangement runs entirely through ordinary means. An infant's refusal, a household's inconvenience, a girl's well judged offer. Nothing is suspended and nobody is compelled, and yet the ayah says openly that the refusal had been set up in advance. That combination is the surah's method: an announced outcome delivered through decisions each of which could be explained without reference to God at all.",
+      "crossReferences": [
+        {
+          "ref": "20:40",
+          "why": "Compresses this whole exchange into a single line in the parallel account."
+        },
+        {
+          "ref": "28:7-8",
+          "why": "Holds the promise this scene begins to deliver, that he would be returned to her."
+        },
+        {
+          "ref": "12:21",
+          "why": "Shows another child placed in a household, with the outcome stated before the story turns."
+        }
+      ],
+      "applyIt": "Notice how you ask for something you badly want. Most people either overexplain or lead with their own need. The sister does neither: she names the other person's problem, offers a solution, and stops talking. Try that shape once this week on a small request, and watch how differently it lands in the room.",
+      "exploreFurther": [
+        "20:38-41",
+        "28:13-14",
+        "12:19-21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.675Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:13-14",
+      "surah": 28,
+      "start": 13,
+      "end": 14,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Returned So Her Eye Would Cool",
+      "tier": "standard",
+      "meaning": "The promise is kept, and the ayah gives three reasons for it in order: so that her eye would be cooled, so that she would not grieve, and so that she would know God's promise is true. The third is the one the passage cares about, and it comes last. Then years pass in half a line. He reaches full strength and settles, and is given judgement and knowledge, with a closing comment that this is how those who do well are answered.",
+      "historicalContext": "Meccan. The compression is striking: an infancy, a childhood and a young adulthood inside a single ayah, in a surah that spent five ayat on a basket. No occasion of revelation is reported. The narrative is selecting, exactly as the third ayah of the surah said it would, and what it selects are the moments where somebody learns something.",
+      "keyTerms": [
+        {
+          "arabic": "تَقَرَّ",
+          "gloss": "may be cooled, may settle",
+          "note": "From the idiom about tears of joy running cool. The same phrase appears in the parallel account in surah 20, and it takes up the words of the woman who saved him four ayat earlier."
+        },
+        {
+          "arabic": "أَشُدَّهُۥ",
+          "gloss": "his full strength",
+          "note": "A plural form with no singular in ordinary use, describing the years when a person's powers are complete. The Quran applies it to Joseph and to Moses at the same turning point in each life."
+        },
+        {
+          "arabic": "حُكْمًا",
+          "gloss": "judgement, sound discernment",
+          "note": "The capacity to decide rightly, named separately here from knowledge. Commentators note that the pairing describes a formation over years rather than a single moment of appointment."
+        }
+      ],
+      "lifeInProphetsTime": "Nursing a foster child for pay was a recognised trade and the arrangement was public. A woman nursing her own son under contract to the household that had taken him would have been an entirely ordinary sight, invisible to anyone who did not know. That ordinariness is the point of the scene, and the ayah passes over it in a clause and moves to what he became.",
+      "didYouKnow": "The phrase about her eye being cooled appears twice in the Quran, here and in the parallel telling in surah 20. It also answers the phrase used four ayat earlier by the woman in Pharaoh's household, who called the infant a coolness of the eye for herself and her husband. The same image lands on both women.",
+      "theologicalSignificance": "The reunion is granted for a reason the ayah states itself, and the reason is knowledge rather than comfort. She is given her son back so that she will know the promise was true, which makes the episode instruction as much as relief. And the closing clause, that most of them do not know, keeps the lesson particular. What she learned was available only to someone who had first been asked to give something up.",
+      "crossReferences": [
+        {
+          "ref": "20:40",
+          "why": "Gives the same return in the parallel account, with the identical phrase about her eye."
+        },
+        {
+          "ref": "12:22",
+          "why": "Uses the same wording for Joseph reaching full strength and being given judgement and knowledge."
+        },
+        {
+          "ref": "28:7-8",
+          "why": "States the promise this ayah reports as kept, given at the moment of greatest risk."
+        }
+      ],
+      "applyIt": "Think of something you gave up and later received back in an unexpected form. Not everything comes back, and the ayah is not promising that it does. But where it has happened to you, notice what you actually learned from it, and whether you have ever put that into words. Do that today, in one sentence.",
+      "exploreFurther": [
+        "20:37-41",
+        "12:21-22",
+        "46:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.675Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:15",
+      "surah": 28,
+      "start": 15,
+      "end": 15,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "A Blow He Did Not Mean",
+      "tier": "standard",
+      "meaning": "He enters the city at an hour when nobody is paying attention, finds two men fighting, and one of them, from his own people, calls him in. He strikes the other and the man dies. The Arabic verb describes a punch, not a weapon, and his own reaction is immediate: this is from the work of the enemy who misleads. Commentators are careful here, reading the death as an outcome he did not aim at, and noting that his verdict on it arrives before anyone else's.",
+      "historicalContext": "Meccan. The episode is told in more detail here than anywhere else in the Quran, and the surah has been building toward it since it described the divided population in its fourth ayah. No occasion of revelation is reported. The word used for the man's own group is the same word used earlier for the factions Pharaoh created, which ties the street fight to the policy.",
+      "keyTerms": [
+        {
+          "arabic": "غَفْلَةٍ",
+          "gloss": "inattention, an unwatched hour",
+          "note": "The state of attention having drifted elsewhere. The phrase describing the city occurs once in the Quran, and it places the whole episode in a moment when nobody happened to be looking."
+        },
+        {
+          "arabic": "فَوَكَزَهُۥ",
+          "gloss": "so he struck him",
+          "note": "Occurs once in the Quran. Lexicographers gloss it as a blow with the closed hand or the elbow, so the word itself rules out a weapon and makes the death an outcome rather than an aim."
+        },
+        {
+          "arabic": "شِيعَتِهِۦ",
+          "gloss": "his own party",
+          "note": "From the same root used earlier in this surah for the factions the population had been divided into. The street quarrel is described in the exact vocabulary of the policy that produced it."
+        }
+      ],
+      "lifeInProphetsTime": "A death by a blow was the hardest kind of case in a society without police. There was no forum for settling intent; there was a body, a claimant, and a family owed an answer. Leaving town was the standard response, and it is what happens in the ayat that follow. Everyone hearing this understood the position he was in by the end of the sentence.",
+      "didYouKnow": "Two expressions in this ayah occur nowhere else in the Quran: the phrase for the city at an unwatched hour, and the verb for the blow itself. The word for the man's own party, by contrast, is the same one used in the surah's fourth ayah for the factions the population had been split into.",
+      "theologicalSignificance": "The narrative gives a future prophet an act he immediately assigns to the enemy of humanity, and does not soften it. What follows in the next ayah is not an excuse but a request. The passage is unusual in showing how a wrong actually gets produced: a real grievance, a genuine appeal for help, a moment of anger, and a result nobody intended and nobody can undo.",
+      "crossReferences": [
+        {
+          "ref": "26:19-21",
+          "why": "Has Pharaoh raise this same act against him years later, along with Moses' reply."
+        },
+        {
+          "ref": "20:40",
+          "why": "Refers to the same killing in the parallel account, in a single compressed clause."
+        },
+        {
+          "ref": "28:33-34",
+          "why": "Shows Moses citing this death as the reason he fears going back to Egypt."
+        }
+      ],
+      "applyIt": "Think of a time you stepped into someone else's fight because they asked you to. It is not a bad instinct. But notice how fast the appeal for help removed your own judgement from the situation. Next time somebody pulls you in, take the single second Moses did not take, and ask what you are actually about to do.",
+      "exploreFurther": [
+        "26:18-22",
+        "28:16-17",
+        "20:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "28:16-17",
+      "surah": 28,
+      "start": 16,
+      "end": 17,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "Never A Support For Wrongdoers",
+      "tier": "standard",
+      "meaning": "Two sentences, both beginning the same way. He says he has wronged himself and asks to be forgiven, and the answer arrives inside the same ayah, with no interval and no condition attached. Then a second prayer that is not about the past at all: given what You have favoured me with, I will never be a backer of the guilty. Commentators note the shape. The request concerns what he did; the promise concerns a role he will not take again.",
+      "historicalContext": "Meccan. The surah is addressing people who had to decide, repeatedly, whose side to stand on in a city where the powerful were watching closely. No occasion of revelation is reported for these ayat. The second sentence, a refusal to be anybody's backing, would have carried a specific weight for a small group being asked, quietly and often, to stay useful to the leadership.",
+      "keyTerms": [
+        {
+          "arabic": "ظَلَمْتُ",
+          "gloss": "I have wronged",
+          "note": "The standard formula for admitting a fault in this Book, completed by the word for oneself. The wrong is described as landing on the wrongdoer first, which is a claim about damage rather than a way of minimising it."
+        },
+        {
+          "arabic": "فَغَفَرَ",
+          "gloss": "so He forgave",
+          "note": "The reply comes in the narrative voice and in the past tense, inside the same sentence as the request. Nothing is placed between the asking and the answer, and no condition is attached to it."
+        },
+        {
+          "arabic": "ظَهِيرًا",
+          "gloss": "a backer, a supporter",
+          "note": "From the word for the back. It means the one standing behind another and lending strength. The word occurs four times in the Quran, and twice within this surah alone."
+        }
+      ],
+      "lifeInProphetsTime": "Backing was the currency of Arabian politics. A man's safety depended on who stood behind him, and withholding or switching that support was the most consequential thing an individual could do. To promise never again to be anyone's backing was not a private resolution. It named a public position, and everyone listening knew what refusing that role would cost.",
+      "didYouKnow": "The word Moses uses for a backer occurs four times in the Quran and twice in this surah. The other use here comes near the very end, where the Prophet is told not to be a backer of those who reject. The surah opens its Moses narrative and closes its own argument with the same word, in the same refusal.",
+      "theologicalSignificance": "Forgiveness is granted in the same breath as it is requested, and the narrative does not pause to weigh the asking. What follows is the more interesting part. He does not promise to be better in general; he identifies the specific position that produced the act, standing behind someone because they were his, and closes it off. Repentance appears here as a change of allegiance rather than a change of feeling.",
+      "crossReferences": [
+        {
+          "ref": "27:44",
+          "why": "Uses the identical words of self-wronging at the moment another figure submits."
+        },
+        {
+          "ref": "28:86",
+          "why": "Repeats the same word for a backer at the close of this surah's argument."
+        },
+        {
+          "ref": "4:135",
+          "why": "Describes standing up for justice even against yourself and your own near relatives."
+        }
+      ],
+      "applyIt": "Think of a group you back automatically: a family, a team, a side in an argument you stopped examining years ago. You do not have to leave it. Just find one instance where being their support would mean helping something you know is wrong, and decide in advance, today, what you will do when it comes.",
+      "exploreFurther": [
+        "28:33-35",
+        "27:44",
+        "4:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:23.676Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "28:55-56",
       "surah": 28,
