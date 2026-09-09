@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:44:27.126Z",
+  "generatedAt": "2026-09-09T09:53:22.308Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -1570,6 +1570,64 @@
       }
     },
     {
+      "key": "2:42-44",
+      "surah": 2,
+      "start": 42,
+      "end": 44,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Reading It And Forgetting Yourself",
+      "tier": "standard",
+      "meaning": "The Arabic for mixing truth with falsehood is actually a verb for dressing, so the picture is a disguise rather than a dilution: truth put into borrowed clothing until nobody can identify it. Concealment is named beside it, with the aggravating clause attached, that they know. Three practices are then named, the third of them shared rather than private. The closing question is the famous one, and commentators are careful about it. It faults forgetting oneself, not the instructing.",
+      "historicalContext": "Medinan, in the surah's address to those who already possessed scripture and the learning that went with it. Medina's older communities included men whose authority rested on reading and explaining texts, and the passage speaks to that position. Classical commentators read the last of these ayat as directed at scholars in particular, and they add that abandoning the teaching would double the fault rather than remove it.",
+      "keyTerms": [
+        {
+          "arabic": "تَلْبِسُوا۟",
+          "gloss": "clothe, dress up",
+          "note": "From the root that gives the ordinary word for a garment. The instruction is not about blending two substances but about putting the wrong covering on something so that it passes for what it is not."
+        },
+        {
+          "arabic": "ٱلْبِرِّ",
+          "gloss": "goodness, dutiful right",
+          "note": "A wide word for goodness done to others, used in the Quran of kindness to parents and of righteousness generally. It names a whole disposition rather than a particular act."
+        },
+        {
+          "arabic": "تَنسَوْنَ",
+          "gloss": "you forget, you neglect",
+          "note": "Ordinary forgetting, and also deliberate setting aside. The choice is exact, since the failing described is not hypocrisy in the sense of pretending but of genuinely leaving oneself out of the account."
+        }
+      ],
+      "lifeInProphetsTime": "Cloth announced who you were. A man's dress marked his tribe, his means and often his trade, and disguise was a known device: an unrecognised figure at night was simply someone wearing a cloak that was not his. Traders also knew the practice of dressing poor goods in good wrapping. An audience hearing about truth being clothed in falsehood would have seen the operation, not a metaphor.",
+      "didYouKnow": "Nearly the same sentence appears again later in the Quran, in another surah, addressed to the same audience and using the same verb for clothing truth in falsehood. The repetition across two surahs is close enough that commentators regularly treat the two passages together and explain them with the same examples.",
+      "theologicalSignificance": "The passage separates two failures that usually get merged. Concealing is one thing; disguising is another and worse, because it leaves something in circulation that looks like the truth. The closing question then turns the whole reproach inward and makes reading the text a form of exposure rather than of safety. Knowledge is presented here as raising the standard a person is measured against, never as satisfying it.",
+      "crossReferences": [
+        {
+          "ref": "3:71",
+          "why": "Repeats the charge almost word for word, clothing truth with falsehood while knowing what is being done."
+        },
+        {
+          "ref": "61:2-3",
+          "why": "States the same reproach in general terms, asking why people say what they do not do."
+        },
+        {
+          "ref": "2:159",
+          "why": "Returns later in this surah to those who conceal what was sent down after it was made clear."
+        }
+      ],
+      "applyIt": "Take one thing you have said recently that was technically accurate and designed to leave a false impression. Everybody has one. You do not need to correct it publicly. Just identify it, name what the true version would have sounded like, and notice how small the distance between them was.",
+      "exploreFurther": [
+        "3:71-72",
+        "61:1-4",
+        "2:159-160"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.179Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:45-47",
       "surah": 2,
       "start": 45,
@@ -1624,6 +1682,644 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.577Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:48",
+      "surah": 2,
+      "start": 48,
+      "end": 48,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Four Exits, All Closed",
+      "tier": "standard",
+      "meaning": "Four denials in one sentence, and each names an institution the audience actually used. Nobody discharges another's account, no pleading is accepted from a soul, no compensating equivalent is taken, and no group comes to the rescue. On the third clause, the word usually rendered ransom is a term of balance and exchange. On the second, commentators read the denial alongside passages elsewhere describing pleading that takes place by God's leave, and understand what is refused here as any claim made as of right.",
+      "historicalContext": "Medinan, in the surah's address to those who possessed earlier scripture, following two ayat that recall a history of favour. Classical commentators note that the ayah is repeated almost exactly later in the same surah, and treat both occurrences as closing off an assumption widespread in that world: that standing, lineage or connection would count for something when the account was finally settled.",
+      "keyTerms": [
+        {
+          "arabic": "تَجْزِى",
+          "gloss": "suffices for, discharges",
+          "note": "The verb for settling a debt or standing in for an obligation. It names the specific act of one party covering what another owes, which is exactly what is being ruled out."
+        },
+        {
+          "arabic": "شَفَـٰعَةٌ",
+          "gloss": "intercession, pleading for",
+          "note": "From a root meaning even or paired. The one who intercedes joins himself to the one pleaded for, so where there was a single petitioner there are now two. The image is of company, not influence."
+        },
+        {
+          "arabic": "عَدْلٌ",
+          "gloss": "an equivalent, a ransom",
+          "note": "From the root for balance and justice. Here it names a compensating weight offered to level a scale, which is why the word for fairness and the word for a payoff are the same word."
+        }
+      ],
+      "lifeInProphetsTime": "Every one of these was a working part of Arabian life. A killing was settled by a payment in camels agreed between clans. Captives taken in a raid were released for a price. A weak man in trouble was spoken for by someone stronger, and if all else failed his tribe rode out to help him. A person's security was the sum of these four things. The ayah takes them away one at a time.",
+      "didYouKnow": "This ayah returns later in the same surah with two of its clauses swapped, so that what is refused second here is refused third there. Commentators noticed the switch early and discuss it, and both occurrences fall inside the same long address, which is one reason the pair is usually read together.",
+      "theologicalSignificance": "By listing four mechanisms rather than making a general statement, the passage establishes that responsibility is not merely undelegated but undelegatable. What can be shared in this life cannot be shared there. That does not present God as unwilling to relent, since the surah says a great deal elsewhere about mercy and pardon. It establishes instead that mercy comes from one direction only, and cannot be arranged sideways between creatures.",
+      "crossReferences": [
+        {
+          "ref": "31:33",
+          "why": "Puts the same point in family terms, saying no father will discharge anything on behalf of his child."
+        },
+        {
+          "ref": "82:19",
+          "why": "States it as bare fact, a day on which no soul possesses anything at all for another."
+        },
+        {
+          "ref": "2:255",
+          "why": "Supplies the other half, describing intercession that occurs only by God's own permission."
+        }
+      ],
+      "applyIt": "Notice one thing you are relying on someone else to carry for you: a decision, an apology, an awkward conversation you have quietly handed to a family member. Take the smallest part of it back today and do that part yourself. This ayah is about a limit that already exists, and it is easier to meet it early.",
+      "exploreFurther": [
+        "31:33",
+        "82:17-19",
+        "2:254"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.227Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:49",
+      "surah": 2,
+      "start": 49,
+      "end": 49,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "Sons Killed, Daughters Spared",
+      "tier": "standard",
+      "meaning": "The recollection is deliberately unsoftened. The verb for what was inflicted originally describes driving animals out to pasture, so the persecution is pictured as relentless herding rather than as episodes of cruelty. The policy itself is named exactly: sons killed, women left alive, which is how a people is ended without ending its usefulness. The closing word carries two established senses. Commentators read it as naming the ordeal a trial, or as naming the deliverance a signal favour, and they record both without choosing.",
+      "historicalContext": "Medinan, opening the surah's sequence of recollections addressed to the Children of Israel. Each begins with the same formula, and remember, and each takes up a single episode. This first one goes back before the exodus to the condition the deliverance was from, which classical commentators note is the necessary starting point: the favour cannot be weighed without the state it interrupted.",
+      "keyTerms": [
+        {
+          "arabic": "يَسُومُونَكُمْ",
+          "gloss": "they imposed on you",
+          "note": "The verb is used of driving livestock out to graze. Applied to people it carries relentlessness and direction, a condition imposed continuously rather than a set of separate cruelties."
+        },
+        {
+          "arabic": "وَيَسْتَحْيُونَ",
+          "gloss": "and they spared alive",
+          "note": "Built on the root for life, so the word is literally about letting live. In the same surah a different form of this root carries the sense of shame, which is one root serving two distant meanings."
+        },
+        {
+          "arabic": "بَلَآءٌ",
+          "gloss": "trial, or signal favour",
+          "note": "The word covers testing and also a conspicuous benefit conferred. Commentators divide over which is meant here, and the ambiguity leaves the sentence pointing at both the ordeal and the rescue."
+        }
+      ],
+      "lifeInProphetsTime": "Slavery was ordinary in seventh-century Arabia and its logic was familiar. Captives taken in raids became household labour, status passed to children born into it, and adult men were the security problem while women and children were absorbed into the household. An Arabian audience did not need the policy in this ayah explained. They understood immediately what it was designed to accomplish and how long it would take.",
+      "didYouKnow": "The word for sparing the women here and the word for feeling shame used earlier in this same surah come from the same three letters. Arabic lexicographers list both senses under one root, connecting them through the idea of holding back: holding back from killing in the one case, holding back out of modesty in the other.",
+      "theologicalSignificance": "Deliverance is presented here as something to be recalled rather than merely believed, and the recollection is made to include the injury. A rescue described without its danger becomes a pleasant fact instead of a debt. The passage also refuses to leave suffering unnamed or spiritualised. What happened is stated in plain words first, and only then is the word for trial placed over it, in an order that keeps the trial from explaining the pain away.",
+      "crossReferences": [
+        {
+          "ref": "28:4",
+          "why": "Gives the same policy with its motive, describing a ruler who divided the population and weakened one part."
+        },
+        {
+          "ref": "14:6",
+          "why": "Has Moses himself recall this deliverance to his people in almost identical terms."
+        },
+        {
+          "ref": "7:141",
+          "why": "Repeats the recollection in another surah, again closing on the word for a great trial."
+        }
+      ],
+      "applyIt": "Think of one hard stretch you came out of, and describe it to yourself in the order this ayah uses: the difficulty first, in accurate detail, and only then the way out. Most of us tell it the other way round or skip the first half entirely, and the relief goes thin because there is nothing behind it.",
+      "exploreFurther": [
+        "28:1-6",
+        "14:5-8",
+        "20:47-53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.228Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:50",
+      "surah": 2,
+      "start": 50,
+      "end": 50,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "A Road Through The Water",
+      "tier": "standard",
+      "meaning": "One short ayah holds a rescue and a drowning and puts the same people in front of both. The Arabic construction is unusual: the sea is parted by you or for you, and commentators note the wording, reading the deliverance as happening on their account rather than merely in their vicinity. The closing clause is the point. They were watching. Nothing here was inferred, reported or taken on trust, which is what makes the episodes that follow in this surah so difficult to explain.",
+      "historicalContext": "Medinan, the second in the surah's sequence of recollections. The account is compressed to a single line here while other surahs give it at length with dialogue and pursuit. Classical commentators treat the brevity as deliberate, since the audience knew the story thoroughly; what the surah is doing is not narrating but recalling, item by item, a list of things already granted.",
+      "keyTerms": [
+        {
+          "arabic": "فَرَقْنَا",
+          "gloss": "We split, We separated",
+          "note": "The plain verb for dividing one thing into two. Three ayat later the same root names the criterion given to Moses, so a single set of letters covers both the parting of water and the separating of truth from falsehood."
+        },
+        {
+          "arabic": "فَأَنجَيْنَـٰكُمْ",
+          "gloss": "so We delivered you",
+          "note": "From a root suggesting raising to high ground out of danger. It is the word used across the Quran for prophets brought out of destruction, and it implies extraction rather than escape."
+        },
+        {
+          "arabic": "تَنظُرُونَ",
+          "gloss": "you were looking on",
+          "note": "Simple watching, in the present tense, so the clause places them inside the moment rather than remembering it. The grammar makes them witnesses in real time rather than inheritors of an account."
+        }
+      ],
+      "lifeInProphetsTime": "The Arabs of the Hijaz were not a seafaring people. The Red Sea was the edge of the world they moved in, and the crossing to Abyssinia, which some of the earliest Muslims made to escape persecution, was a genuine undertaking. Water at that scale was the definitive barrier, the thing that ended a route rather than continuing it. A sea that opens into a road was the image of an exit where there was demonstrably none.",
+      "didYouKnow": "The verb for parting the sea shares its root with the word for the criterion, which appears a few ayat later in this same passage as one of the things given to Moses. The Quran's name for a book that distinguishes true from false is built on the same three letters as an act of physically dividing water.",
+      "theologicalSignificance": "Placing rescue and destruction in one sentence keeps them from being two separate lessons. The same event that saved one group ended another, which is how the Quran generally describes deliverance: not as harm avoided but as a division made. The witnessing clause carries the weight for what follows. If seeing were sufficient to settle a person, the rest of this section of the surah would have nothing to report.",
+      "crossReferences": [
+        {
+          "ref": "26:60-66",
+          "why": "Tells the crossing at length, including the moment the people believed they had been overtaken."
+        },
+        {
+          "ref": "20:77-78",
+          "why": "Gives the instruction to strike out a dry path and describes what then covered the pursuers."
+        },
+        {
+          "ref": "10:90",
+          "why": "Records what Pharaoh said as the water closed, and the answer he was given."
+        }
+      ],
+      "applyIt": "Recall something you personally witnessed that ought to have changed you and did not, or not for long. Not a failure of belief, just of retention. Write one sentence about it and keep the sentence somewhere you will see it. This whole section of the surah turns on how quickly seeing wears off, and noticing your own version is the honest way in.",
+      "exploreFurther": [
+        "26:52-68",
+        "20:77-79",
+        "10:90-92"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.231Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:51-53",
+      "surah": 2,
+      "start": 51,
+      "end": 53,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Forty Nights And A Calf",
+      "tier": "standard",
+      "meaning": "An absence of forty nights, a substitute made in the meantime, and then a pardon. The verb for that pardon has a striking background. Its root describes wind blowing over tracks in sand until nothing can be followed, so the word does not mean overlooking but erasing. The stated purpose of the pardon is gratitude rather than mere relief. Commentators then differ over the last ayah, reading the Book and the Criterion as two names for one thing or as two distinct gifts.",
+      "historicalContext": "Medinan, continuing the surah's recollections. The appointment of forty nights is described in another surah as thirty completed by ten, and classical commentators read the two accounts together rather than as alternatives. The calf episode is given at length elsewhere in the Quran, including the detail that the image was made from ornaments the people were carrying. Here it is compressed to a clause.",
+      "keyTerms": [
+        {
+          "arabic": "لَيْلَةً",
+          "gloss": "a night",
+          "note": "The period is counted in nights rather than days, which was the ordinary Arabian reckoning. Months began with the sighting of a crescent after sunset, so a span of time was naturally measured from dark to dark."
+        },
+        {
+          "arabic": "عَفَوْنَا",
+          "gloss": "We effaced, We pardoned",
+          "note": "The root is used of wind wiping out footprints and of a ruin returning to bare ground. Pardon in this word is not a decision to ignore something but the removal of the trace itself."
+        },
+        {
+          "arabic": "ٱلْفُرْقَانَ",
+          "gloss": "the criterion, the separator",
+          "note": "From the verb for dividing one thing from another. It names whatever draws the line between truth and falsehood, which is why commentators can read it as the scripture itself or as something given alongside it."
+        }
+      ],
+      "lifeInProphetsTime": "Tracking was a genuine skill in that world. A man could read from prints in sand who had passed, how many, how heavily loaded and how long ago, and disputes over stolen camels were settled by people who could follow a trail for days. The one thing that defeated them was wind. When the sand had shifted, the trace was not faint but gone, and that is the word this passage uses for pardon.",
+      "didYouKnow": "The two things given to Moses in the last of these ayat are named with a word for scripture and a word built on the root for splitting. That second root has already appeared in the surah two ayat earlier, describing the parting of the sea, so the same letters carry a physical separation and a moral one within a few lines of each other.",
+      "theologicalSignificance": "The order of events in these three ayat is the argument. Failure comes after an appointment, pardon comes after failure, and the giving of scripture comes after pardon. Nothing is withheld pending improvement. That establishes something about how the relationship is understood to work, and the stated aim of the pardon confirms it: gratitude is presented as the intended result of mercy rather than as its price.",
+      "crossReferences": [
+        {
+          "ref": "7:142",
+          "why": "Describes the same appointment as thirty nights completed with ten, making the count forty."
+        },
+        {
+          "ref": "20:83-98",
+          "why": "Gives the calf episode in full, including the confrontation when Moses returns to find it."
+        },
+        {
+          "ref": "7:152-153",
+          "why": "States the consequence for those who made the calf, and what followed for those who turned back afterwards."
+        }
+      ],
+      "applyIt": "Think of something you were forgiven that you have kept in your own records anyway, still filed, still consulted. The word used in this passage is about a trace that is genuinely gone. Try, once today, extending that standard to something someone did to you and you have officially let go of but not actually erased.",
+      "exploreFurther": [
+        "7:142-147",
+        "20:83-98",
+        "4:153"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.232Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:54",
+      "surah": 2,
+      "start": 54,
+      "end": 54,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Turn Back To Your Maker",
+      "tier": "standard",
+      "meaning": "Moses addresses them as his own people first, then names the wrong exactly and locates the injury in themselves rather than in God. The name he uses for God twice is unusual and pointed: the Originator, the one who brings a thing into being distinct and without flaw, set against an image they had shaped with their hands. The instruction that follows belonged to that community in that moment, and the classical works record more than one account of what it involved and how far it reached. The ayah's own resolution is the turning that God then makes toward them.",
+      "historicalContext": "Medinan, continuing the surah's recollections. The episode of the calf and its aftermath are told across several surahs, and the accounts of what happened next differ in the classical commentaries, which set the reports side by side rather than harmonising them. What all of them share is the ending given here, that the turning was accepted, and commentators concentrate their comment on the two divine names that close the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "بَارِئِكُمْ",
+          "gloss": "your Originator, your Maker",
+          "note": "From a root meaning to be free of defect and clear of something. It names the maker who brings a thing into existence distinct and whole, which is a pointed choice in a passage about a shaped image."
+        },
+        {
+          "arabic": "فَتُوبُوٓا۟",
+          "gloss": "so turn back",
+          "note": "The verb is simply to return. Repentance in Arabic is not primarily an emotion or a confession but a change of direction, which is why the same word can be used of God turning toward a person."
+        },
+        {
+          "arabic": "ٱلرَّحِيمُ",
+          "gloss": "the Merciful",
+          "note": "From the root that also gives the word for a womb. Classical lexicographers connect the two, reading the divine name as naming a mercy that is sustaining and continuous rather than occasional."
+        }
+      ],
+      "lifeInProphetsTime": "Responsibility ran through the group in that society, not around individuals. An offence by one member exposed his whole clan to claim, and clans regularly disciplined their own to prevent a wider reckoning. An instruction addressed to an entire people, requiring the people themselves to act on the matter, fitted a world where a wrong was never merely private and a settlement was never merely personal.",
+      "didYouKnow": "The name for God used twice in this ayah is rare in the Quran. It appears again in a sequence of divine names near the end of another surah, and almost nowhere else, so a reader working through the text will meet it here in a passage about a manufactured image and then hardly again.",
+      "theologicalSignificance": "Two things are established by the wording rather than stated. The wrong is described as done to themselves, which locates the damage of turning to a made object in the one who turns rather than in the one turned away from. And the ayah closes with mercy in the strongest form the language has, immediately after its hardest sentence. The tradition reads that placement as the point, since the passage ends where it does deliberately.",
+      "crossReferences": [
+        {
+          "ref": "59:24",
+          "why": "Places the same rare name for God among the Creator and the Fashioner in a list of divine names."
+        },
+        {
+          "ref": "20:90-91",
+          "why": "Records Aaron's warning during the episode and the answer his people gave him."
+        },
+        {
+          "ref": "7:152-153",
+          "why": "Describes what followed for those who made the calf and for those who turned back afterwards."
+        }
+      ],
+      "applyIt": "Notice how you name your own wrongs to yourself. Most of us describe them by their effect on other people, or by how they looked. This passage names one by what it was and says who it damaged, in that order and without softening. Try writing one sentence about something in that shape, and stop before adding the explanation.",
+      "exploreFurther": [
+        "59:22-24",
+        "20:83-98",
+        "7:148-155"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.233Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:55-56",
+      "surah": 2,
+      "start": 55,
+      "end": 56,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Until We See Him Plainly",
+      "tier": "standard",
+      "meaning": "The demand is not for evidence but for one particular form of it. The word used means openly, to the eye, in the way an object in front of you is seen, and the condition attached makes belief in the messenger depend on it. What follows is a blast and then a revival, and commentators divide over whether the word for their death is literal or describes a stunning that emptied them of awareness. The second ayah names the purpose of the reversal, and it is the same purpose given for the pardon a few lines earlier.",
+      "historicalContext": "Medinan, continuing the sequence of recollections. Another surah connects the demand with a group chosen from among the people to accompany Moses for an appointed meeting, and the classical commentaries read the two passages together. The episode is also recalled elsewhere in almost the same words, which is one reason commentators treat the wording here as fixed rather than as a loose summary.",
+      "keyTerms": [
+        {
+          "arabic": "جَهْرَةً",
+          "gloss": "openly, plainly seen",
+          "note": "From a root for what is out in the open, used of a voice raised aloud as well as of something visible. It specifies a mode of perception, which is what makes the demand a demand about method."
+        },
+        {
+          "arabic": "ٱلصَّـٰعِقَةُ",
+          "gloss": "the thunderbolt, stunning blast",
+          "note": "The same word used earlier in this surah for what the people in the storm parable put their fingers in their ears against. It covers both a lightning strike and any blast that empties a person of sense."
+        },
+        {
+          "arabic": "بَعَثْنَـٰكُم",
+          "gloss": "We raised you up",
+          "note": "The Quran uses this one verb for raising the dead and for dispatching a messenger to a people. Both are a sending out, which is why the language of resurrection and the language of prophecy overlap."
+        }
+      ],
+      "lifeInProphetsTime": "Direct sight was the gold standard of proof in Arabian dispute. A man who had seen a thing himself outranked any number who had heard about it, and testimony in an assembly was weighed by how close the witness had stood. Applying that standard was not obtuse; it was correct procedure everywhere else in their lives. The passage does not fault them for wanting evidence. It answers a demand for the wrong kind.",
+      "didYouKnow": "The verb used for reviving them is the one the Quran uses for raising the dead on the last day and also for sending a prophet to a community. Arabic makes no distinction between the two dispatches, so a reader meets the same word describing a messenger being sent and a body being brought back.",
+      "theologicalSignificance": "Whether and how God may be seen has been discussed at great length in the tradition, and the discussion is not settled here. What this passage does establish is narrower and firmer: making belief conditional on a chosen form of proof puts the condition where it does not belong. The rest of the sentence answers that on its own terms, since the reversal of death that follows was itself witnessed and still did not function as the guarantee they had asked for.",
+      "crossReferences": [
+        {
+          "ref": "4:153",
+          "why": "Recalls the same demand in nearly identical words, calling it a request for something greater still."
+        },
+        {
+          "ref": "7:143",
+          "why": "Records Moses asking to see, and what happened to the mountain when it was shown."
+        },
+        {
+          "ref": "7:155",
+          "why": "Names the group chosen for the appointed meeting and describes what overtook them."
+        }
+      ],
+      "applyIt": "Identify one condition you have quietly attached to trusting something: a sign you are waiting for, a proof you have decided would settle it. Say it out loud in full, as a sentence beginning with the word until. Hearing your own condition stated completely is usually enough to show you what you have actually been doing.",
+      "exploreFurther": [
+        "4:153-155",
+        "7:142-147",
+        "6:111"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.236Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:57",
+      "surah": 2,
+      "start": 57,
+      "end": 57,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Cloud, Manna And Quail",
+      "tier": "standard",
+      "meaning": "Three provisions arrive without labour: shade that travels with them, and food of two kinds sent down. Commentators differ over what exactly the first food was, some describing a sweet substance found in the morning, others treating the word as a general term for whatever came as a gift rather than as a crop. Then the sentence turns. Halfway through, the address changes from you to they, so that the naming of the wrong is spoken about them rather than to them.",
+      "historicalContext": "Medinan, continuing the surah's recollections of what was given during the years in the wilderness. Another surah pairs the same two foods with the twelve springs and the tribal divisions, and classical commentators assemble the accounts into a single period rather than treating them as separate incidents. No occasion of revelation is reported for the ayah, which belongs to the sequence rather than to an event.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْغَمَامَ",
+          "gloss": "the cloud, the cloud cover",
+          "note": "From a root meaning to cover over. The same three letters give the ordinary Arabic word for grief, understood by lexicographers as what covers the heart, so covering is the shared idea."
+        },
+        {
+          "arabic": "ٱلْمَنَّ",
+          "gloss": "manna, the gift",
+          "note": "Shares a root with the words for a favour bestowed and for reminding someone of a favour given. Commentators split between a particular substance and a general term for what arrives unearned."
+        },
+        {
+          "arabic": "طَيِّبَـٰتِ",
+          "gloss": "good things, wholesome things",
+          "note": "The plural of a word meaning pleasant, clean and agreeable. It describes food by its quality rather than by its category, and the same root is used of good speech and good land."
+        }
+      ],
+      "lifeInProphetsTime": "Shade was the scarce commodity, more than food. A day's travel was planned around where cover would be at midday, and a single acacia or a rock overhang on a route was known by name and argued over. Caravans halted through the worst hours and moved at the edges of the day. To describe a cloud that stayed above a moving people was to describe something more extravagant to that audience than any meal.",
+      "didYouKnow": "The ayah begins by addressing the audience directly and ends by speaking about them in the third person. The switch happens in the middle of a sentence, at exactly the point where the wrong is named. Arabic rhetoricians have a term for this kind of pivot and treat it as a deliberate device, and commentators note this ayah as an instance of it.",
+      "theologicalSignificance": "The closing clause corrects a natural assumption about what is at stake when a gift is treated badly. Nothing is added to God by gratitude and nothing taken from Him by its absence, so the damage of ingratitude falls entirely on the one who is ungrateful. That makes thankfulness a matter of accuracy rather than of politeness. The passage also presents provision arriving before it is deserved, which is the pattern this whole section keeps repeating.",
+      "crossReferences": [
+        {
+          "ref": "7:160",
+          "why": "Pairs the same two foods with the springs given for the tribes, in a fuller telling."
+        },
+        {
+          "ref": "20:80-81",
+          "why": "Repeats the provision with a warning attached about going too far in what has been given."
+        },
+        {
+          "ref": "16:114",
+          "why": "Puts the same instruction generally, to eat of good provision and be thankful for the favour."
+        }
+      ],
+      "applyIt": "Eat one meal today that you did not choose, cook or pay for, if such a meal comes your way, and say something specific about it to whoever provided it. If no such meal appears, name the last one that did. The passage is about noticing provision that arrives without your arrangement, and most of it goes past unremarked.",
+      "exploreFurther": [
+        "7:160-162",
+        "20:80-82",
+        "16:112-114"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.237Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:58",
+      "surah": 2,
+      "start": 58,
+      "end": 58,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "One Word At The Gate",
+      "tier": "standard",
+      "meaning": "Entry, food without limit, and two conditions attached to the manner of arriving rather than to anything else. The word they were given to say is remarkable. It comes from the verb for lifting a load down off a camel's back at the end of a stage, so what they were asked to pronounce was a request to be unburdened. Commentators do not name the town, and neither does the Quran; they record several suggestions and leave it. The final clause adds something not asked for, an increase for those who do well.",
+      "historicalContext": "Medinan, continuing the recollections. The episode appears again in another surah in nearly the same words, and classical commentators read the two together. They differ on the identity of the settlement and on whether the instruction about the gate describes a posture or an attitude, generally settling on lowered bearing rather than any particular physical form, and they do not press beyond what the text says.",
+      "keyTerms": [
+        {
+          "arabic": "حِطَّةٌ",
+          "gloss": "unburdening, put it down",
+          "note": "A single word from the verb for setting a load on the ground. Given as something to say, it makes the request itself the act: asking that a weight be taken off rather than describing one."
+        },
+        {
+          "arabic": "سُجَّدًا",
+          "gloss": "bowing low, humbled",
+          "note": "A plural form describing how they were to enter. Commentators read it as lowered bearing rather than a specific posture, since the instruction concerns the manner of arriving at a place."
+        },
+        {
+          "arabic": "ٱلْمُحْسِنِينَ",
+          "gloss": "those who do good beautifully",
+          "note": "From a root meaning both good and beautiful. It names doing a thing well beyond what was asked, which is why the increase promised to them is placed outside the terms already stated."
+        }
+      ],
+      "lifeInProphetsTime": "At the end of a day's march the camels were couched and the loads lifted off, and the word for that unloading is the word this passage puts in their mouths. Anyone who had travelled with goods knew the specific relief of that moment, when the animals stopped shifting and the weight was on the ground. It is the plainest possible image for asking that something be taken off you.",
+      "didYouKnow": "The phrase about eating plentifully wherever you wish appears in this surah once before, in the instruction given to the first human being in the Garden. The same wording is used at the gate of a town, so a reader working through the surah meets an unmistakable echo, with a spoken word required in the second case where a tree was withheld in the first.",
+      "theologicalSignificance": "What is asked at the gate costs nothing material. The conditions are a bearing and a single word, and against them stand an open town and unlimited provision. That ratio makes the terms of pardon a matter of posture rather than of payment, which is consistent with how the surah has described forgiveness elsewhere. The addition at the end goes further, promising increase to those who do well, so the arrangement is not merely a settling of accounts.",
+      "crossReferences": [
+        {
+          "ref": "7:161",
+          "why": "Repeats the same instruction about the gate and the word, in nearly identical wording."
+        },
+        {
+          "ref": "2:35",
+          "why": "Uses the same phrase about eating plentifully wherever you wish, in the Garden rather than at a gate."
+        },
+        {
+          "ref": "4:154",
+          "why": "Recalls the covenant and the instruction to enter the gate bowing, among other undertakings."
+        }
+      ],
+      "applyIt": "Find the shortest true sentence for something you have been carrying and say it once, out loud, when nobody is in the room. Not an explanation and not a full account. One short line. The passage puts a single word at the gate, and there is something in the brevity that longer versions of the same thing keep losing.",
+      "exploreFurther": [
+        "7:161-162",
+        "4:153-155",
+        "2:35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.238Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:59",
+      "surah": 2,
+      "start": 59,
+      "end": 59,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "A Different Word Entirely",
+      "tier": "standard",
+      "meaning": "One word was given and another was said in its place. That is the whole of the offence, and the Arabic keeps it precise: a saying other than the one that was said to them. Notice what the sentence does next. Instead of using a pronoun the second time, it repeats the phrase for those who did wrong, so the consequence is attached to that group again by name. Commentators point out that this repetition narrows the scope rather than widening it.",
+      "historicalContext": "Medinan, following directly on the instruction at the gate. The same pair of ayat appears in another surah, again with the substitution named and the consequence following. Classical commentators report various accounts of what was said instead and of what the scourge consisted of, and they are cautious here, generally noting that the Quran specifies neither and declining to fill in more than the text does.",
+      "keyTerms": [
+        {
+          "arabic": "فَبَدَّلَ",
+          "gloss": "so they substituted",
+          "note": "A form of the verb meaning to put one thing in the place of another. It is not about mishearing or forgetting. The word describes a swap made, which requires knowing what was there to begin with."
+        },
+        {
+          "arabic": "قَوْلًا",
+          "gloss": "a saying, an utterance",
+          "note": "Indefinite in the Arabic, so the offence is not a specific alternative formula but any saying that was not the one given. The vagueness is the point, since only one thing had been asked for."
+        },
+        {
+          "arabic": "رِجْزًا",
+          "gloss": "a scourge, a punishment",
+          "note": "A word used in the Quran for various visitations sent upon a people. Commentators pass on several accounts of what it was here and generally leave the question where the text leaves it."
+        }
+      ],
+      "lifeInProphetsTime": "In a mostly unwritten society, exactness in transmission was a trained skill and a serious responsibility. Messages between clans were carried by men chosen for accurate memory, poems were passed on line by line, and genealogies were recited without variation. Everybody also knew the person who improved a message in the retelling. Changing a word entrusted to you was a recognised failure with consequences that people could name.",
+      "didYouKnow": "Arabic would ordinarily use a pronoun for the second mention of a group already named in the same sentence. This ayah does not, repeating the full phrase instead. Commentators from early on treat the repetition as deliberate and read it as confining the consequence strictly to those who made the substitution, rather than to everyone who was present at the gate.",
+      "theologicalSignificance": "The passage treats a word as a thing that can be held in trust, which makes accuracy in transmission a moral matter and not merely a technical one. What was asked for at the gate cost nothing, so the substitution cannot be explained by difficulty. That leaves it as a small act of reassertion, changing what you were given in order to remain the author of it, and the surah locates a great deal of trouble in exactly that impulse.",
+      "crossReferences": [
+        {
+          "ref": "7:162",
+          "why": "Gives the same substitution and consequence in another surah, in almost identical wording."
+        },
+        {
+          "ref": "4:46",
+          "why": "Describes words being displaced from their proper places, and speech twisted with the tongue."
+        },
+        {
+          "ref": "5:13",
+          "why": "Speaks of hearts hardening and words being moved from their positions after a covenant was broken."
+        }
+      ],
+      "applyIt": "Repeat one thing today exactly as it was said to you, rather than in your own words. A message from one person to another, an instruction, a piece of news. Notice how strong the pull is to adjust it slightly, and let the adjustment go unmade. The pull is the thing worth observing here.",
+      "exploreFurther": [
+        "7:161-163",
+        "4:46",
+        "5:12-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.239Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:60",
+      "surah": 2,
+      "start": 60,
+      "end": 60,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Twelve Springs From One Rock",
+      "tier": "standard",
+      "meaning": "Moses asks for water on behalf of others, and the Arabic form of the verb carries exactly that, seeking something for someone else. What comes is more specific than what was asked for. Not water, but twelve outlets, one for each group, so that every party knew where to drink without dispute. Commentators note that a different verb is used in the parallel account elsewhere, a gentler word for water welling up, and they read the two as describing different moments of the same event.",
+      "historicalContext": "Medinan, continuing the recollections of the wilderness years. The tribal division into twelve is stated elsewhere in the Quran and assumed here, which is why the number of springs matches without explanation. Classical commentators treat the assignment of a drinking place to each group as the significant detail, since a large camped population sharing one source was the standard occasion for conflict.",
+      "keyTerms": [
+        {
+          "arabic": "ٱسْتَسْقَىٰ",
+          "gloss": "he sought water",
+          "note": "A form of the verb meaning to ask for water, and the construction that follows makes clear he asked on behalf of his people rather than for himself. The request is representative from the start."
+        },
+        {
+          "arabic": "فَٱنفَجَرَتْ",
+          "gloss": "then it burst forth",
+          "note": "A verb of sudden splitting open under pressure. Another surah uses a milder word for the same event, and commentators read the pair as a first welling followed by full flow."
+        },
+        {
+          "arabic": "مَّشْرَبَهُمْ",
+          "gloss": "their drinking place",
+          "note": "A noun of place from the verb to drink. It names not the water but the spot at which each group drank, which is what the provision actually settled between them."
+        }
+      ],
+      "lifeInProphetsTime": "Water was the thing people fought over. Wells were owned, inherited and defended, a clan's range was defined by which sources it could reach, and the order in which herds were watered was a standing occasion for dispute. Feuds that lasted generations began at a watering place. Assigning each group its own outlet was not decoration on a miracle. It removed the most reliable cause of bloodshed in that world.",
+      "didYouKnow": "The parallel account of this event in another surah uses a different verb for the water appearing, one that means to well up gently rather than to burst out. Commentators noticed the difference early and generally read the two words as capturing successive moments, the first seepage and then the full flow, rather than as two versions of one description.",
+      "theologicalSignificance": "The answer given exceeds the request in a particular direction. What was asked was water; what came was water plus an arrangement that prevented the fight the water would otherwise have caused. That suggests something about how petitions are met, namely that the granting can address a need the petitioner had not named. The closing instruction confirms it, since a provision arriving with a warning about ruin attached assumes the recipients know what they are capable of.",
+      "crossReferences": [
+        {
+          "ref": "7:160",
+          "why": "Tells the same episode with the tribes named as twelve and a gentler verb for the water."
+        },
+        {
+          "ref": "2:186",
+          "why": "States the general principle behind this scene, that God is near and answers the one who calls."
+        },
+        {
+          "ref": "21:30",
+          "why": "Grounds the whole matter, making every living thing from water as a sign for those who deny."
+        }
+      ],
+      "applyIt": "Ask for something today on behalf of someone else, by name, without mentioning yourself in it. That is the shape of the request in this ayah and it is a different exercise from praying for yourself. Notice whether you can hold the other person clearly in mind for the length of the asking.",
+      "exploreFurther": [
+        "7:159-160",
+        "2:186",
+        "20:80-82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.240Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:61",
+      "surah": 2,
+      "start": 61,
+      "end": 61,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "Cucumbers, Lentils And Onions",
+      "tier": "standard",
+      "meaning": "A complaint about monotony, itemised. The reply turns on one word: would you exchange what is lower for what is better. That word for lower also means nearer at hand, so the sentence names the trade precisely as the immediate against the excellent. Commentators divide on details in this ayah, on whether one of the vegetables is garlic or wheat, and on whether the place named is Egypt specifically or any settled town. The closing clauses attach a consequence to particular acts, which the ayah then names.",
+      "historicalContext": "Medinan, closing the surah's sequence of wilderness recollections. Classical commentators read the closing statements as describing what followed for the generation whose actions are named in the ayah itself, rather than as a permanent description, and they note that the surah goes on almost immediately to say that reward belongs to whoever believes and does good, from whatever community.",
+      "keyTerms": [
+        {
+          "arabic": "أَدْنَىٰ",
+          "gloss": "lower, nearer at hand",
+          "note": "From a root meaning nearness. The word carries both senses at once, so the exchange being questioned is not simply bad for good but the close and available for the genuinely better."
+        },
+        {
+          "arabic": "فُومِهَا",
+          "gloss": "its garlic, or its wheat",
+          "note": "One of the few words in the Quran where the classical lexicographers record two settled readings. Translations still divide between them, and the commentaries pass on both without forcing a choice."
+        },
+        {
+          "arabic": "ٱلذِّلَّةُ",
+          "gloss": "lowness, humiliation",
+          "note": "From a root meaning to be brought low or made tractable, used of an animal broken to the yoke. It names a condition of reduced standing rather than an emotion felt about it."
+        }
+      ],
+      "lifeInProphetsTime": "The list is farm produce. Cucumbers, lentils and onions grow on irrigated ground that someone tends through a season, and none of it travels with a moving camp. Life away from cultivation meant a narrow diet of dates, milk, bread when grain could be got, and meat occasionally. Families in Arabia moved between settled and nomadic living often enough that this particular longing, for the food of the fields, was entirely familiar.",
+      "didYouKnow": "One of the vegetables in the list has never been settled. The classical lexicographers record it as garlic and also as wheat, tracing the word to different origins, and English translations still divide between the two readings today. It is a small, honest instance of the commentary tradition preserving a disagreement instead of resolving it.",
+      "theologicalSignificance": "The exchange being questioned is not between something good and something evil, which would be easy to see, but between the better and the merely nearer. That is the harder judgement and the one people get wrong constantly, since availability feels like an argument. The passage also ties its consequence to named actions rather than to identity, which is how the surah handles such statements generally and how the commentaries read this one.",
+      "crossReferences": [
+        {
+          "ref": "16:112",
+          "why": "Describes a town secure and provided for that denied the favours, and what was then laid on it."
+        },
+        {
+          "ref": "20:81",
+          "why": "Attaches a warning about going too far to the same wilderness provision described just before."
+        },
+        {
+          "ref": "2:62",
+          "why": "Follows shortly after in this surah and states that reward turns on belief and action, not on community."
+        }
+      ],
+      "applyIt": "Notice one choice today where you take the nearer option over the better one, knowing the difference. The coffee instead of the sleep, the message instead of the call. Do not fix it. Just say the trade out loud in the terms this ayah uses, naming both sides, and see whether you still make it.",
+      "exploreFurther": [
+        "16:112-114",
+        "20:80-82",
+        "2:62"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:14.241Z",
         "reviewed": false
       }
     },
