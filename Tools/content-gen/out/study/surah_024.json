@@ -1,8 +1,704 @@
 {
   "surah": 24,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:23:06.931Z",
+  "generatedAt": "2026-09-09T15:00:00.753Z",
   "studies": [
+    {
+      "key": "24:1",
+      "surah": 24,
+      "start": 1,
+      "end": 1,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "A Surah Sent Down",
+      "tier": "standard",
+      "meaning": "The surah opens by naming itself, which no other surah does. Three things are said about it before any of its content arrives: it was sent down, its contents were made binding, and clear signs were sent down inside it. The build is deliberate. Something is introduced as weighty before the listener knows what it holds, and the closing clause gives the purpose, that people may keep it in mind.",
+      "historicalContext": "Medinan, and the surah belongs to a period when the community in Medina was working out how it would live together at close quarters. Commentators note that this opening announcement is unusual, and read it as preparing an audience for material touching private life and reputation. No specific occasion is reported for the first ayah on its own.",
+      "keyTerms": [
+        {
+          "arabic": "سُورَةٌ",
+          "gloss": "a chapter, a section",
+          "note": "The word for a division of the Quran, appearing here inside the text it names. Its root connects to a wall or an enclosing course of building, so the sense is a bounded stretch."
+        },
+        {
+          "arabic": "فَرَضْنَـٰهَا",
+          "gloss": "We made it binding",
+          "note": "From a root for cutting a notch and so fixing an amount precisely. The verb occurs in this form once in the Quran, and it makes what follows definite rather than advisory."
+        },
+        {
+          "arabic": "بَيِّنَـٰتٍ",
+          "gloss": "clear, self-evident",
+          "note": "A plural describing signs that make themselves plain. Applied to what follows, it says the material will not be obscure, which matters for passages people would rather read around."
+        }
+      ],
+      "lifeInProphetsTime": "Revelation reached the community in pieces and was carried by memory long before it was written down. People learned passages as units and recited them to one another, and a section announcing itself at the opening was easier to hold together as a single piece. Medina at this point was a town where private matters travelled fast, and this surah concerns exactly that.",
+      "didYouKnow": "This is the only place in the Quran where a surah opens by calling itself a surah. The verb saying its contents were made binding occurs in this form nowhere else in the text. Both of those firsts sit in the same short sentence, before a single item of the surah's actual content has been given.",
+      "theologicalSignificance": "The opening separates the authority of a text from the appeal of its content. The listener is told the material is settled before being told what it is, which forecloses the option of weighing each item and keeping the agreeable ones. And the stated purpose is remembrance rather than compliance, so the sentence ends by pointing at what happens inside a person.",
+      "crossReferences": [
+        {
+          "ref": "9:64",
+          "why": "Uses the same word for a surah, there in the mouths of those fearing what it might expose."
+        },
+        {
+          "ref": "47:20",
+          "why": "Describes believers asking why a surah has not come down, and the reaction when one does."
+        },
+        {
+          "ref": "2:2",
+          "why": "Opens another surah with a claim about the book itself before any content arrives."
+        }
+      ],
+      "applyIt": "Notice which parts of a text you skip. The next time you read a page of the Quran, mark the passage your eye slides past and go back to it once, slowly. This surah opens by announcing itself precisely because what follows is the kind of material people prefer to read around.",
+      "exploreFurther": [
+        "9:64",
+        "47:20",
+        "2:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.649Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:2",
+      "surah": 24,
+      "start": 2,
+      "end": 2,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "A Penalty Set In Public",
+      "tier": "standard",
+      "meaning": "A fixed penalty is set out for a named offence, and the commentators dwell on three features of how it is stated. The number is exact, so nobody administering it can enlarge it. The clause about pity is addressed to those carrying it out rather than to anyone accused. And it is to be witnessed by a group of believers rather than done behind a wall. Together these establish a public, limited and non-negotiable procedure in place of private handling.",
+      "historicalContext": "Medinan, opening a surah largely concerned with reputation and the boundaries of private life. Commentators place these ayat in a period when the community was replacing tribal handling of such matters with a stated procedure. What strikes the classical readers most is the number of conditions the surrounding ayat attach, which together make the penalty extremely difficult to reach at all.",
+      "keyTerms": [
+        {
+          "arabic": "رَأْفَةٌ",
+          "gloss": "pity, tenderness",
+          "note": "A word for soft-heartedness, used positively of God elsewhere in the Quran. Here it names what could bend a stated measure, so the sentence guards the fixed amount rather than criticising the feeling."
+        },
+        {
+          "arabic": "طَآئِفَةٌ",
+          "gloss": "a group, a party",
+          "note": "An indefinite noun of unspecified size. Its vagueness is deliberate, so what the sentence secures is witnesses rather than a crowd, and public record rather than spectacle."
+        },
+        {
+          "arabic": "ٱلْيَوْمِ ٱلْـَٔاخِرِ",
+          "gloss": "the Last Day",
+          "note": "Naming the final day inside a sentence about a present procedure ties the two together. It places those carrying something out under a judgement of their own, at a later date."
+        }
+      ],
+      "lifeInProphetsTime": "Before any of this, matters of the kind were settled inside the clan, and how they were settled depended entirely on who the parties were. A powerful family could bury an accusation; a weak one could be destroyed by a rumour alone. Killing was not an unusual response. Fixing a stated measure, applied the same way regardless of standing, took the outcome out of a family's hands.",
+      "didYouKnow": "The word for a lash occurs twice in the Quran, both times in this surah, and the second occurrence is the penalty for making an accusation that cannot be supported. The two sit within three ayat of each other, so the text sets the risk of accusing directly beside the offence being accused of.",
+      "theologicalSignificance": "The passage does two things that usually pull apart. It treats the offence as serious enough to carry a public consequence, and it fences that consequence so tightly that the surrounding ayat make it nearly unreachable. What is protected is not only a community's boundaries but the reputation of anyone who might be accused, since the very next ayat turn back on the accuser. Seriousness and restraint are held together.",
+      "crossReferences": [
+        {
+          "ref": "24:4",
+          "why": "Turns a comparable measure back on any accuser who cannot produce four witnesses."
+        },
+        {
+          "ref": "4:15",
+          "why": "Sets out an earlier procedure for the same matter, also turning on four witnesses."
+        },
+        {
+          "ref": "17:32",
+          "why": "States the underlying concern in a single line, before any procedure is described."
+        }
+      ],
+      "applyIt": "Notice the next time you hear something about a person's private conduct and feel the small pull to pass it on. This passage surrounds a serious matter with so many conditions that almost nothing survives them. The instinct it works against is not judgement in a courtroom. It is the certainty people feel on very little.",
+      "exploreFurther": [
+        "24:4-5",
+        "4:15",
+        "17:32"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:3",
+      "surah": 24,
+      "start": 3,
+      "end": 3,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Like Seeks Out Like",
+      "tier": "standard",
+      "meaning": "The ayah pairs people by conduct rather than by preference, and the classical commentators differ over it more than over almost anything nearby. Some read it as a statement of fact about inclination, that such a person is drawn to a similar one. Some read it as concerning particular individuals in Medina at the time. Some read it as qualified by other passages. What survives every reading is that conduct and company are being treated as connected.",
+      "historicalContext": "Medinan, immediately after the penalty ayah. Commentators report a background of specific arrangements in Medina involving people publicly known for such conduct, and they record the disagreement about how far the statement extends. This is one of the passages where the classical tradition explicitly holds several readings side by side rather than settling on one of them.",
+      "keyTerms": [
+        {
+          "arabic": "يَنكِحُ",
+          "gloss": "marries, takes in marriage",
+          "note": "The verb for entering a marriage contract. Its use here rather than a word for attraction is part of why the readings diverge, since a contract is a public act made before witnesses."
+        },
+        {
+          "arabic": "حُرِّمَ",
+          "gloss": "has been set off limits",
+          "note": "A passive from the root for what is set apart and inviolable. The passive leaves the agent unnamed, which is how the Quran often marks a boundary without addressing an instruction to anyone."
+        },
+        {
+          "arabic": "ٱلْمُؤْمِنِينَ",
+          "gloss": "the believers",
+          "note": "The final word narrows the address. Whatever the ayah describes about the wider world, its closing clause speaks only to the community, which is one reason the readings differ over scope."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage in Arabia was an alliance between families rather than a private arrangement, negotiated for standing, property and protection. Who married whom was public information and stayed public for a generation. Reputation was therefore not an abstraction. It was the currency in which these negotiations were conducted, and a household's standing could rise or fall on a single match.",
+      "didYouKnow": "This is one of a small number of ayat where the classical commentaries record several readings without resolving them, and the disagreement reaches the sentence's basic grammar as well as its scope. The commentators name the divergence openly, which is itself a feature of how the tradition handled passages touching directly on people's private lives.",
+      "theologicalSignificance": "The ayah connects what a person does to whom they end up beside, without making that connection a mechanism. Read as description, it says character sorts people; read as a boundary, it keeps a community from absorbing what has just been named as serious. Either way the passage refuses to treat conduct as private in its effects, which is the assumption running through this whole surah.",
+      "crossReferences": [
+        {
+          "ref": "24:26",
+          "why": "States the same pairing far more broadly, the good for the good and the bad for the bad."
+        },
+        {
+          "ref": "24:5",
+          "why": "Opens the door this ayah appears to close, for anyone who repents and puts things right."
+        },
+        {
+          "ref": "25:70",
+          "why": "Describes bad deeds exchanged for good ones, which is why the classical readings vary."
+        }
+      ],
+      "applyIt": "Look at the five people you speak to most and ask what each of them makes easier in you. Not who they are, but what they make easy. This ayah has been read several ways for centuries, and every reading agrees that company and character move together, which is something you can check inside a week.",
+      "exploreFurther": [
+        "24:26",
+        "25:68-70",
+        "24:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:4-5",
+      "surah": 24,
+      "start": 4,
+      "end": 5,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "The Accusation That Fails",
+      "tier": "standard",
+      "meaning": "An accusation that cannot be supported by four witnesses carries a penalty of its own, and two further consequences follow: the accuser's testimony is set aside from then on, and they are named among those who break bounds. Then the second ayah opens an exception. Those who repent afterwards and put things right are excepted, and God is named forgiving and merciful. How far that exception reaches is the question the commentators argue over at length.",
+      "historicalContext": "Medinan, in the surah's opening block on reputation. Commentators read the evidentiary threshold as making an accusation nearly impossible to sustain, and understand that as its purpose rather than an accident of drafting. The classical discussion of whether the exception reaches the setting aside of testimony as well as the accuser's standing is long and unresolved, and the sources record both positions.",
+      "keyTerms": [
+        {
+          "arabic": "يَرْمُونَ",
+          "gloss": "they throw at, they accuse",
+          "note": "The ordinary verb for throwing a stone or a spear. Using it of an accusation turns speech into a projectile, which fits a society where a word about someone's household did lasting damage."
+        },
+        {
+          "arabic": "ٱلْمُحْصَنَـٰتِ",
+          "gloss": "women of protected honour",
+          "note": "From a root meaning to fortify, used of a walled place. The word pictures reputation as a fortification, so an accusation is described as an assault on a defended structure."
+        },
+        {
+          "arabic": "أَصْلَحُوا",
+          "gloss": "they put things right",
+          "note": "A verb for repairing what has broken, used of relationships and of land alike. Placed after repentance, it says the turning has to reach the damage outside the person, not only inside."
+        }
+      ],
+      "lifeInProphetsTime": "A woman's reputation in that world was not hers alone. It carried her father's household, her brothers' standing and her children's prospects, and it could not be repaired by denial. Slander was therefore a recognised weapon in feuds, cheap to deploy and almost impossible to answer. Attaching a heavy consequence to an unsupported accusation changed the whole arithmetic of using one.",
+      "didYouKnow": "The threshold of four witnesses appears twice in the Quran, both times in this surah, and the second occurrence is used to convict a group of rumour-spreaders rather than anyone accused. The word for a lash likewise occurs only twice, and both fall within three ayat, one for an act and one for an accusation about it.",
+      "theologicalSignificance": "The passage takes a class of speech and gives it a consequence heavier than many physical offences carry. That establishes reputation as something with real weight rather than as a social nicety. Then the exception arrives, and its wording is unqualified. What the two ayat hold together is that something can be treated as extremely serious and still be forgiven, and that those two facts are not in tension.",
+      "crossReferences": [
+        {
+          "ref": "24:23",
+          "why": "Restates the gravity of the same accusation, with consequences in this world and the next."
+        },
+        {
+          "ref": "49:12",
+          "why": "Traces the same damage back to its source in suspicion and in speaking behind people."
+        },
+        {
+          "ref": "39:53",
+          "why": "States the widest form of the exception, that God forgives all sins for those who turn."
+        }
+      ],
+      "applyIt": "Think of one accusation you have made in your head about someone and never tested. Ask what evidence you actually hold, at the standard you would want applied to yourself. Most private verdicts collapse at that question. This passage sets a threshold so high that almost nothing crosses it, and the reason is the person at the other end.",
+      "exploreFurther": [
+        "24:23-24",
+        "49:12",
+        "39:53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:6",
+      "surah": 24,
+      "start": 6,
+      "end": 6,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "When There Are No Witnesses",
+      "tier": "standard",
+      "meaning": "The case now narrowed is the one where a husband makes the accusation and no witness exists except himself. Rather than leaving the matter to his word, the passage sets out a procedure of sworn statements. His testimony is counted as four oaths by God that he is telling the truth. A substitution has taken place: a standard of evidence that cannot be met is replaced by an oath repeated to the same number, and God becomes the only witness available.",
+      "historicalContext": "Medinan, and the classical sources report that these ayat followed a case brought to the Prophet Muhammad (peace be upon him), in which a man accused his wife and could produce no witnesses, having just heard what an unsupported accusation would cost him. The reports differ over the details and over which man it was, and the commentators record the difference without resolving it.",
+      "keyTerms": [
+        {
+          "arabic": "شَهَـٰدَٰتٍ",
+          "gloss": "testimonies, sworn statements",
+          "note": "The plural of a word covering both witnessing an event and declaring it publicly. Repeating it to four holds the procedure to the same number the ordinary standard had required."
+        },
+        {
+          "arabic": "بِٱللَّهِ",
+          "gloss": "by God",
+          "note": "The oath particle attaches each statement directly to God rather than to any court. It turns a matter with no available evidence into one where the only remaining witness cannot be deceived."
+        },
+        {
+          "arabic": "ٱلصَّـٰدِقِينَ",
+          "gloss": "the truthful ones",
+          "note": "A plural noun rather than an adjective, so the speaker places himself inside a category of people rather than asserting a fact about one particular statement."
+        }
+      ],
+      "lifeInProphetsTime": "Oaths were the backbone of dispute resolution where nothing was written down. A man swearing by what he held sacred was accepted as evidence, and the fear behind that acceptance was real: people believed a false oath brought consequences on a household and not only on the swearer. Oath procedures were therefore the ordinary machinery for cases no other evidence could reach.",
+      "didYouKnow": "The threshold of four witnesses is stated twice in this surah, and this ayah answers it a third way, not by producing witnesses but by repeating an oath four times over. The number four is held constant across all three places while the kind of evidence changes completely, so the standard stays and only what can satisfy it is replaced.",
+      "theologicalSignificance": "The procedure removes the case from human adjudication without dismissing it. Neither party is believed and neither is condemned; both are placed under an oath whose consequences lie outside anything a community can administer. What that establishes is a limit on what people can decide, and a refusal to let a marriage be ended by one person's assertion, however sincerely it is made.",
+      "crossReferences": [
+        {
+          "ref": "24:4",
+          "why": "Sets the standard this passage answers, four witnesses or a penalty falling on the accuser."
+        },
+        {
+          "ref": "3:61",
+          "why": "Uses a mutual invocation as a last resort once argument between two sides has run out."
+        },
+        {
+          "ref": "5:106",
+          "why": "Sets out another oath procedure for a case where ordinary witnesses could not be found."
+        }
+      ],
+      "applyIt": "Think of a disagreement where it is your word against someone else's and neither of you can prove anything. Notice how much energy goes into being believed. This passage does not decide such a case; it hands it upward and then stops. Try treating one of yours that way for a month and see what it costs you.",
+      "exploreFurther": [
+        "24:4-5",
+        "3:61",
+        "5:106-107"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.652Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:7-9",
+      "surah": 24,
+      "start": 7,
+      "end": 9,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "The Fifth Oath",
+      "tier": "standard",
+      "meaning": "Each side's sequence of oaths ends the same way and differs in a single word. His fifth invokes God's curse upon himself if he is lying. Hers turns the consequence away from her, and her fifth invokes God's anger upon herself if he is telling the truth. The symmetry is exact and deliberate. Two people are placed in identical positions before God, and the passage stops there without declaring which of them has spoken truly.",
+      "historicalContext": "Medinan, continuing the procedure begun in the ayah before. Classical commentators note that a wife's sworn denial is given the same weight as her husband's sworn accusation, which was not how such disputes had previously been settled. The reports connecting these ayat to a specific case differ in their details, and the sources record the variation rather than choosing among them.",
+      "keyTerms": [
+        {
+          "arabic": "لَعْنَتَ",
+          "gloss": "curse, exclusion from mercy",
+          "note": "The root means being driven off and kept at a distance. What is invoked is separation rather than punishment, which is why the word carries more weight than it seems to in translation."
+        },
+        {
+          "arabic": "غَضَبَ",
+          "gloss": "anger, wrath",
+          "note": "A different word from the one in the husband's oath, and the change is deliberate. The commentators discuss why each side is given its own term and record more than one explanation."
+        },
+        {
+          "arabic": "يَدْرَؤُا",
+          "gloss": "it wards off, it repels",
+          "note": "A verb for pushing something away before it lands. Its subject here is her own testimony, so the sentence describes her oath as an act of defence rather than as a plea."
+        }
+      ],
+      "lifeInProphetsTime": "A wife in that setting had almost no independent standing in a dispute with her husband. Her family might intervene on her behalf, or might not. What this procedure did was set her sworn word beside his and give it the same effect, in a society where a woman's denial ordinarily carried no formal weight at all. Onlookers would have registered the equivalence at once.",
+      "didYouKnow": "The word for the fifth statement occurs twice in the Quran, both here, once in the husband's sequence and once in the wife's. In the standard text the two carry different case endings, a small grammatical difference the classical readers discuss at length. This is also the one place in the Quran where two parties answer each other directly under oath.",
+      "theologicalSignificance": "The passage refuses the outcome a community under pressure most wants, which is a verdict. It builds an exact symmetry and then lets it stand, so the truth of the matter is placed with God and the human process simply ends. That establishes something about justice: where evidence genuinely runs out, the honest result is not a guess dressed up as a finding, but a matter handed over.",
+      "crossReferences": [
+        {
+          "ref": "24:6",
+          "why": "Begins the procedure these ayat complete, setting out the husband's four sworn statements."
+        },
+        {
+          "ref": "22:69",
+          "why": "States the same principle at the largest scale, God judging what people differ over."
+        },
+        {
+          "ref": "4:135",
+          "why": "Asks for testimony held straight even against oneself, which these oaths make literal."
+        }
+      ],
+      "applyIt": "Notice how uncomfortable an unresolved accusation is, and how quickly you reach for a conclusion just to end the discomfort. This passage builds a perfect symmetry and then refuses to break it. The next time you cannot know something, try saying so out loud instead of settling on the version that lets you stop thinking.",
+      "exploreFurther": [
+        "24:6",
+        "4:135",
+        "22:68-69"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.652Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:10",
+      "surah": 24,
+      "start": 10,
+      "end": 10,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Ever Relenting And Wise",
+      "tier": "standard",
+      "meaning": "The sentence is deliberately unfinished. It opens with a condition, were it not for God's favour upon you and His mercy, then names two of His attributes, and then stops. What would otherwise have happened is never stated. Arabic allows this, and the commentators treat the silence as the point: the consequence is left for the listener to supply, which makes it larger than any wording could have made it.",
+      "historicalContext": "Medinan, closing the passage of sworn oaths before the surah turns to the episode of slander. Commentators read the ayah as marking a transition, since the same construction opens again a few ayat later. The two names ending it, one for accepting a return and one for wisdom, connect the material behind it to the account of a community's failure ahead.",
+      "keyTerms": [
+        {
+          "arabic": "لَوْلَا",
+          "gloss": "were it not for",
+          "note": "A particle introducing a condition contrary to fact. Arabic permits the answering clause to be dropped when it is obvious, and what is dropped here is the entire disaster being described."
+        },
+        {
+          "arabic": "فَضْلُ",
+          "gloss": "favour beyond what is due",
+          "note": "From a root meaning surplus, what remains past the necessary. It names generosity exceeding any claim, which is why it stands ahead of mercy in the pair rather than after it."
+        },
+        {
+          "arabic": "تَوَّابٌ",
+          "gloss": "ever-relenting, ever-turning",
+          "note": "An intensive form of a verb meaning to turn. The same verb describes a person repenting, so the word says God turns back toward whoever turns, using the identical motion."
+        }
+      ],
+      "lifeInProphetsTime": "Speech was the medium of everything in Medina: reputation, alliance, marriage and the standing of a whole household. There was no way to correct a story once it had moved, no record to appeal to and nowhere to publish a retraction. A community whose members shared a mosque and a market several times a day could be damaged permanently by a rumour that took an afternoon.",
+      "didYouKnow": "The phrase about God's favour and mercy upon you occurs six times in the Quran, and four of those are inside this one surah, arriving at the close of each stage of the passage on slander. The pairing of the two names at the end of this ayah, one for relenting and one for wisdom, occurs nowhere else in the text.",
+      "theologicalSignificance": "A sentence with no consequence stated is a particular kind of move. It asserts that something was averted without describing it, so the listener knows they were spared without knowing from what. That produces gratitude of an unusual sort, unattached to any specific escape. The two names then locate the sparing in God's character rather than in anything the community managed to do.",
+      "crossReferences": [
+        {
+          "ref": "24:14",
+          "why": "Repeats the same opening a few ayat later, and there completes the unfinished sentence."
+        },
+        {
+          "ref": "4:83",
+          "why": "Uses the identical phrase about news passed on without being referred to those who could weigh it."
+        },
+        {
+          "ref": "2:64",
+          "why": "Uses the same construction of a community that turned away and was not destroyed for it."
+        }
+      ],
+      "applyIt": "Think of a time something you said could have caused far more damage than it did, and simply did not, for reasons that had nothing to do with you. Name one specifically. This ayah is built around a consequence it never describes, and the exercise is to feel the size of what did not happen.",
+      "exploreFurther": [
+        "24:14",
+        "4:83",
+        "2:64"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.650Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:11",
+      "surah": 24,
+      "start": 11,
+      "end": 11,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "A Band From Among You",
+      "tier": "standard",
+      "meaning": "The surah turns to an actual episode. A false report was circulated about a member of the community, and the ayah identifies its authors as a group from within rather than as outsiders. Then a reversal arrives: do not reckon it bad for you, it is good for you. Responsibility is distributed by degree, each person carrying what he earned, and the one who took the greater part carrying the greater weight. Nothing is averaged and nobody is lumped together.",
+      "historicalContext": "Medinan. The classical sources report an episode in which a woman of the Prophet's own household was falsely accused, and the accusation circulated in Medina for weeks before these ayat came. The sources name the individuals involved. This note does not, because the passage's own concern is the mechanism and the community's response rather than the persons caught in it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْإِفْكِ",
+          "gloss": "the fabrication, the slander",
+          "note": "From a root meaning to overturn or invert. A fabrication in this sense turns a matter upside down, presenting the reverse of what occurred, which is stronger than an ordinary untruth."
+        },
+        {
+          "arabic": "عُصْبَةٌ",
+          "gloss": "a band, a tight group",
+          "note": "From a root for binding together. The same word is used by Joseph's brothers of themselves, and it carries the sense of a group whose strength lies in acting as one."
+        },
+        {
+          "arabic": "كِبْرَهُۥ",
+          "gloss": "the greater part of it",
+          "note": "From the root for large. The word singles out one person's share without naming him, which lets the ayah assign the heaviest weight while leaving identification to those who knew."
+        }
+      ],
+      "lifeInProphetsTime": "Medina was small enough that everyone would have known who was meant by every clause of this ayah. News travelled through the mosque, the market and the wells, and a household's honour was public property in a way that has no modern equivalent. Weeks passed while the story circulated, and the passage arrived into a community that had already taken sides.",
+      "didYouKnow": "The word for this fabrication occurs with the definite article only once in the Quran, here, so the phrase functions almost as a name for the episode. The word for the tight band that spread it is used elsewhere of Joseph's brothers describing their own strength, which places this group in company the first audience would have recognised.",
+      "theologicalSignificance": "Calling the harm good for the community is the passage's hardest claim, and it is made before any consolation is offered. What follows explains it: the episode produced a standard that outlived it. The ayah also refuses collective guilt in both directions. It neither absolves the group nor flattens it, assigning weight person by person, which is a costly way to describe a scandal.",
+      "crossReferences": [
+        {
+          "ref": "24:12",
+          "why": "Names the response that was missing, believers thinking well of one another."
+        },
+        {
+          "ref": "49:6",
+          "why": "Sets out the general rule this episode illustrates, verifying news from an unreliable source."
+        },
+        {
+          "ref": "2:216",
+          "why": "Carries the same reversal, that you may dislike a thing which is good for you."
+        }
+      ],
+      "applyIt": "Recall a story about someone that you passed on and later found was untrue. Notice whether you ever corrected it with the same energy you used to tell it. This ayah distributes weight person by person rather than blaming a crowd, and your own share is usually smaller than you fear and larger than you admit.",
+      "exploreFurther": [
+        "24:12-16",
+        "49:6",
+        "2:216"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.650Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:12",
+      "surah": 24,
+      "start": 12,
+      "end": 12,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Why Did They Not Think Well",
+      "tier": "standard",
+      "meaning": "The question is put in a form that carries reproach. Why, when you heard it, did the believing men and women not think well of their own and say that this is plainly a fabrication. Two things are being asked for and only one of them is speech. The first is an internal movement, an assumption made in someone's favour before any evidence arrives. And the phrase is not think well of them but of themselves, which treats the community as one body.",
+      "historicalContext": "Medinan, inside the passage on the episode of slander. Commentators note that the reproach falls on people who did not spread the story as much as on those who did, since failing to reject it was itself a failure. The classical readings dwell on the phrase about believers thinking well of their own selves, and treat it as a definition of what a community is.",
+      "keyTerms": [
+        {
+          "arabic": "ظَنَّ",
+          "gloss": "supposed, assumed",
+          "note": "A verb for holding something probable without proof. The passage asks for it to run in a particular direction, conceding that people form views on incomplete information and addressing only which way they lean."
+        },
+        {
+          "arabic": "بِأَنفُسِهِمْ",
+          "gloss": "of their own selves",
+          "note": "The pronoun refers to fellow believers rather than to the ones doing the thinking. Saying it this way treats an accusation against one member as an accusation against the person hearing it."
+        },
+        {
+          "arabic": "إِفْكٌ مُّبِينٌ",
+          "gloss": "an obvious fabrication",
+          "note": "The words the community failed to say, given here in full. The passage supplies not only the missing disposition but the exact sentence, which the Quran rarely does anywhere."
+        }
+      ],
+      "lifeInProphetsTime": "In a face-to-face society, silence was a position. Not repeating a story was not the same as rejecting it, because everyone present could see who spoke up and who did not. A person who said nothing was read as reserving judgement, and in a matter of honour that was itself a kind of verdict. This ayah addresses exactly that silence.",
+      "didYouKnow": "The ayah is phrased as a question opening with a particle meaning roughly why not, and the same particle opens the ayah after it as well. Two consecutive rhetorical reproaches of that kind are rare. The surah had also used the identical particle two ayat earlier in a completely different sense, as a condition contrary to fact.",
+      "theologicalSignificance": "The passage places an internal act under the same reproach as a spoken one, which is a strong claim about where responsibility begins. Thinking well of someone is treated as something a person does rather than something they happen to feel. And by describing fellow believers as the hearer's own self, it defines a community not by shared belief but by whose damage counts as yours.",
+      "crossReferences": [
+        {
+          "ref": "49:12",
+          "why": "Asks that much suspicion be avoided and joins it to speaking behind people's backs."
+        },
+        {
+          "ref": "24:16",
+          "why": "Gives the words again that were not said, when the story was first heard and passed on."
+        },
+        {
+          "ref": "4:83",
+          "why": "Describes news circulated without ever being taken to those competent to weigh it."
+        }
+      ],
+      "applyIt": "The next time you hear something about someone you know, notice the split second before you decide anything. That instant is where this ayah is aimed. Try leaning the other way once, deliberately, and see whether the story survives it. Most of them do not last the afternoon.",
+      "exploreFurther": [
+        "24:16",
+        "49:12",
+        "4:83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:13",
+      "surah": 24,
+      "start": 13,
+      "end": 13,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Four Witnesses They Never Brought",
+      "tier": "standard",
+      "meaning": "The standard set out earlier in the surah is now turned on the accusers themselves. Why did they not bring four witnesses. And since they did not, then in God's sight it is they who are the liars. The logic runs in one direction only: failing to prove an accusation does not leave the matter open, it establishes that the accusers spoke falsely. The burden never shifts across to the person being spoken about.",
+      "historicalContext": "Medinan, inside the passage on the episode of slander. The threshold invoked here was set out nine ayat earlier in the same surah, so the passage is applying its own standard to a live case. Commentators note the phrase in God's sight, reading it as distinguishing the verdict of the record from whatever the community had already concluded among itself.",
+      "keyTerms": [
+        {
+          "arabic": "شُهَدَآءَ",
+          "gloss": "witnesses",
+          "note": "A plural covering both those who saw an event and those who declare it. Four is a number the ordinary circumstances of such a matter make nearly impossible to reach, which is understood as the intention."
+        },
+        {
+          "arabic": "عِندَ ٱللَّهِ",
+          "gloss": "in God's sight",
+          "note": "A phrase locating a judgement where it stands regardless of what people concluded. It does not describe a future verdict but a present fact about how the matter is registered."
+        },
+        {
+          "arabic": "ٱلْكَـٰذِبُونَ",
+          "gloss": "the liars",
+          "note": "A definite plural with an emphatic pronoun in front of it, so the sentence says they are the liars rather than that they lied. It assigns an identity rather than an act."
+        }
+      ],
+      "lifeInProphetsTime": "Proof in that world meant people. There were no documents to produce and no way to verify a claim except by finding others who had seen the same thing, and a person's reliability as a witness was itself public knowledge, discussed and ranked. Requiring four for a matter that happens in private was understood by everyone as setting the bar past reach.",
+      "didYouKnow": "The threshold of four witnesses appears exactly twice in the Quran, and both occurrences fall in this surah, nine ayat apart. The first states the standard and the second applies it, so this is one of the few places in the text where a standard is set out and then visibly used on a live case inside the same passage.",
+      "theologicalSignificance": "The passage establishes that an unproved accusation is not neutral. It does not leave the accused under a cloud and the accuser merely unsuccessful; it names the accuser. That is a strong protection, and it rests on a specific principle. Where a standard of proof exists to protect people, failing it has to cost something, or the standard merely delays the damage rather than preventing it.",
+      "crossReferences": [
+        {
+          "ref": "24:4",
+          "why": "Sets out the standard this ayah applies, along with what follows from failing to meet it."
+        },
+        {
+          "ref": "24:11",
+          "why": "Identifies the group whose accusation is being measured against that standard here."
+        },
+        {
+          "ref": "4:112",
+          "why": "Describes throwing a fault onto an innocent person as carrying slander and clear sin."
+        }
+      ],
+      "applyIt": "Take one thing you believe about a person that reached you second hand. Ask who would have had to see it for you to be sure, and whether any of them told you. Almost nothing survives that question. This ayah does not ask you to think better of people. It asks you to notice that you do not know.",
+      "exploreFurther": [
+        "24:4-5",
+        "4:112",
+        "49:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:14",
+      "surah": 24,
+      "start": 14,
+      "end": 14,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "What You Poured Into",
+      "tier": "standard",
+      "meaning": "The construction left unfinished four ayat earlier is completed here. Were it not for God's favour and mercy in this world and the next, a great punishment would have touched you for what you poured into. The verb chosen is the one used of a crowd surging forward together, and it describes the community's part in the episode as momentum rather than as decision. Nobody is charged with malice. They are charged with joining a current.",
+      "historicalContext": "Medinan, inside the passage on the episode of slander. Commentators note the shift in address: the ayah speaks to the whole community rather than to the small group who began the story, which widens the charge to everyone who repeated it or entertained it privately. The sources describe weeks in which the town discussed very little else.",
+      "keyTerms": [
+        {
+          "arabic": "أَفَضْتُمْ",
+          "gloss": "you poured into it",
+          "note": "A verb for a crowd surging forward together, used elsewhere in the Quran of pilgrims moving from one station to another. Applied to talk, it describes people carried by a current rather than choosing."
+        },
+        {
+          "arabic": "مَسَّكُمْ",
+          "gloss": "would have touched you",
+          "note": "A verb for light contact rather than impact. Pairing it with a great punishment produces a deliberate mismatch, so even the averted consequence is described in understated terms."
+        },
+        {
+          "arabic": "فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ",
+          "gloss": "in this world and the next",
+          "note": "The phrase is placed inside the condition rather than the consequence, so it is God's favour that is described as reaching both, not the punishment. The word order carries the meaning."
+        }
+      ],
+      "lifeInProphetsTime": "There was no private conversation in a town of that size. Talk happened at the well, in doorways, at the market and in the mosque courtyard, and everybody knew who had been standing where. A story moved through the settlement in a day and could not be recalled afterwards. What the ayah calls pouring in was, practically speaking, the ordinary way information moved.",
+      "didYouKnow": "The verb describing the community's part in the rumour occurs twice in the Quran. Its other use appears in a passage about pilgrims pouring out from the plain of Arafat, a movement of crowds during the pilgrimage season. The same word therefore describes both a sacred procession and the spread of a slander.",
+      "theologicalSignificance": "The passage locates the fault in participation rather than in invention. Most people involved neither began the story nor fully believed it; they carried it, and the ayah treats that as enough for a punishment averted only by favour. That establishes a form of responsibility with no author, which is exactly the kind ordinary people incur constantly and almost never recognise in themselves.",
+      "crossReferences": [
+        {
+          "ref": "24:10",
+          "why": "Opens the same construction and leaves the consequence unstated, which this ayah supplies."
+        },
+        {
+          "ref": "24:15",
+          "why": "Describes precisely how the pouring worked, tongue by tongue and mouth by mouth."
+        },
+        {
+          "ref": "33:58",
+          "why": "Names the harm done to believing men and women who had done nothing to deserve it."
+        }
+      ],
+      "applyIt": "Notice the next thing you forward, repeat or half-endorse without having checked it. Not a lie you told, just a current you joined. This ayah addresses people who mostly did nothing more than that, and it treats the matter as serious. Stopping once, in the moment, is the whole of the practice.",
+      "exploreFurther": [
+        "24:15-18",
+        "33:58",
+        "49:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:15",
+      "surah": 24,
+      "start": 15,
+      "end": 15,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "You Thought It Slight",
+      "tier": "standard",
+      "meaning": "The mechanics are described in unusual detail. You took it up on your tongues, you said with your mouths what you had no knowledge of, and you reckoned it a light thing while with God it was enormous. Tongue and mouth are named separately, and that is not redundancy: one names the passing on, the other the saying. The last clause sets two valuations against each other, yours and God's, and the gap between them is the subject.",
+      "historicalContext": "Medinan, in the account of the episode of slander. Commentators single this ayah out as the sharpest in the passage, because it addresses not the story's authors but everyone who repeated it lightly along the way. No further occasion is reported beyond the episode itself, which the surrounding ayat have already established in detail.",
+      "keyTerms": [
+        {
+          "arabic": "تَلَقَّوْنَهُۥ",
+          "gloss": "you passed it between you",
+          "note": "A verb of receiving and handing on, used of things taken up quickly. It occurs in this form once in the Quran, and it pictures a story moving hand to hand rather than being told."
+        },
+        {
+          "arabic": "بِأَفْوَاهِكُم",
+          "gloss": "with your mouths",
+          "note": "Naming the mouth after the tongue separates two acts. The Quran uses this phrase elsewhere for speech with nothing behind it, said with the mouth while the heart holds otherwise."
+        },
+        {
+          "arabic": "هَيِّنًا",
+          "gloss": "slight, easy, trivial",
+          "note": "A word for what costs nothing. Its use here names the exact miscalculation, which is not malice but a judgement about weight, made instantly and without any attention."
+        }
+      ],
+      "lifeInProphetsTime": "Repeating news was ordinary social currency, the way a person contributed to a gathering. Arriving with something nobody had heard gave a speaker standing for as long as the story lasted. That small incentive is what this ayah is describing, and it operated at every well and doorway in the town, mostly without anyone intending harm to anybody at all.",
+      "didYouKnow": "The verb for passing the story between one another occurs in this form only once in the Quran. The ayah names three stages of the act in sequence, tongues, then mouths, then the reckoning that judged it slight, moving from the physical to the mental, and the final contrast is carried by a single pair of words, slight against enormous.",
+      "theologicalSignificance": "The passage identifies the failure as one of scale rather than of intent. People are not charged with wanting harm; they are charged with getting the weight of an act wrong. That is a more uncomfortable accusation, because it cannot be answered by examining one's motives. It also asserts that the true weight of an act exists independently of how it felt to the person doing it.",
+      "crossReferences": [
+        {
+          "ref": "24:14",
+          "why": "Names the same behaviour as pouring in, and describes what was averted by God's favour."
+        },
+        {
+          "ref": "50:18",
+          "why": "States that nothing is uttered without a watcher present and ready beside it."
+        },
+        {
+          "ref": "17:36",
+          "why": "Says not to pursue what you have no knowledge of, since hearing and sight are answerable."
+        }
+      ],
+      "applyIt": "Count today how many things you say that you could not source if somebody asked. Not lies, just claims. The number is usually startling. This ayah's charge is not dishonesty but misjudging the weight of ordinary talk, and counting is the only way to see the real size of the habit.",
+      "exploreFurther": [
+        "17:36",
+        "50:16-18",
+        "49:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:00:00.651Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "24:22",
       "surah": 24,
