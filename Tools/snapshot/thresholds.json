@@ -119,14 +119,14 @@
       "file": "reader-dark.png",
       "appearance": "dark",
       "route": "reader",
-      "threshold": 0.1,
+      "threshold": 0.05,
       "notes": "surah start: logo card above verse 1, hint toast visible"
     },
     "reader-light": {
       "file": "reader-dark.png",
       "appearance": "light",
       "route": "reader",
-      "threshold": 0.1,
+      "threshold": 0.08,
       "negate": true,
       "notes": "no light reference of the reader exists; the light appearance is the same layout with the tokens mirrored, so the capture is negated before comparing"
     },
