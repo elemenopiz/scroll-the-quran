@@ -4,6 +4,8 @@
   "sections": [
     {
       "title": "Read it through",
+      "eyebrow": "Start to finish",
+      "blurb": "The whole mushaf, or the last thirtieth that most people meet first. Both go in order, so you always know where you are.",
       "planIDs": [
         "juz-a-day",
         "juz-amma"
@@ -11,6 +13,8 @@
     },
     {
       "title": "Weekly rhythm",
+      "eyebrow": "Every week",
+      "blurb": "Short plans built on passages Muslims already return to on a schedule — Friday, and before sleep.",
       "planIDs": [
         "al-kahf-fridays",
         "protection-verses"
@@ -18,6 +22,8 @@
     },
     {
       "title": "By theme",
+      "eyebrow": "One idea at a time",
+      "blurb": "A week with a single theme, followed through the Quran verse by verse.",
       "planIDs": [
         "patience",
         "gratitude",
@@ -30,6 +36,8 @@
       "id": "juz-a-day",
       "title": "The whole Quran in 30 days",
       "subtitle": "One juz every day",
+      "image": "mushaf-page",
+      "startHere": true,
       "section": "Read it through",
       "bestFor": "Ramadan, or anyone who wants the whole book once",
       "lengthDays": 30,
@@ -357,6 +365,8 @@
       "id": "juz-amma",
       "title": "Juz Amma",
       "subtitle": "The last thirtieth, one surah a day",
+      "image": "lantern",
+      "startHere": true,
       "section": "Read it through",
       "bestFor": "Short sittings and the surahs you hear most in prayer",
       "lengthDays": 37,
@@ -628,6 +638,7 @@
       "id": "al-kahf-fridays",
       "title": "Al-Kahf on Fridays",
       "subtitle": "The Cave, in four sittings",
+      "image": "ink-wash",
       "section": "Weekly rhythm",
       "bestFor": "Keeping the Friday habit",
       "lengthDays": 4,
@@ -668,6 +679,7 @@
       "id": "protection-verses",
       "title": "Ayat al-Kursi and the close of Al-Baqarah",
       "subtitle": "The verses recited for protection",
+      "image": "geometric-tile",
       "section": "Weekly rhythm",
       "bestFor": "Before sleep, and after prayer",
       "lengthDays": 7,
@@ -733,6 +745,7 @@
       "id": "patience",
       "title": "Patience",
       "subtitle": "Sabr, a week at a time",
+      "image": "desert-dune",
       "section": "By theme",
       "bestFor": "A hard stretch",
       "lengthDays": 7,
@@ -794,6 +807,7 @@
       "id": "gratitude",
       "title": "Gratitude",
       "subtitle": "Shukr, a week at a time",
+      "image": "olive-branch",
       "section": "By theme",
       "bestFor": "Resetting how the day feels",
       "lengthDays": 7,
@@ -855,6 +869,7 @@
       "id": "mercy",
       "title": "Mercy",
       "subtitle": "Rahmah, a week at a time",
+      "image": "dawn-light",
       "section": "By theme",
       "bestFor": "When you need the door open",
       "lengthDays": 7,
