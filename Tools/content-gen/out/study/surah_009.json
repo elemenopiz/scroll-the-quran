@@ -1,7 +1,7 @@
 {
   "surah": 9,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T11:57:08.437Z",
+  "generatedAt": "2026-09-09T12:05:40.884Z",
   "studies": [
     {
       "key": "9:1-2",
@@ -2904,6 +2904,644 @@
       }
     },
     {
+      "key": "9:59",
+      "surah": 9,
+      "start": 59,
+      "end": 59,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "God Is Enough For Us",
+      "tier": "standard",
+      "meaning": "The sentence is a wish rather than a statement, and it is deliberately left unfinished. If only they had been content with what God and His Messenger gave them, and had said: God is enough for us, God will give us of His bounty, and so will His Messenger. A whole reply is scripted for them, words they might have spoken. What would have followed is never stated.",
+      "historicalContext": "Medinan, ninth year, immediately after the complaint about how collected charity was distributed. The commentators read this ayah as supplying what the complainers could have said instead. Distribution was made in public at a moment when contributions had been called for repeatedly, so dissatisfaction with a share was a live and audible matter throughout the town.",
+      "keyTerms": [
+        {
+          "arabic": "حَسْبُنَا ٱللَّهُ",
+          "gloss": "God is enough for us",
+          "note": "The phrase occurs twice in the Quran. The other place is 3:173, where it is spoken by people warned that a large force had gathered, so the same words serve a battlefield and a disappointing share."
+        },
+        {
+          "arabic": "رَٰغِبُونَ",
+          "gloss": "eagerly turning, desiring",
+          "note": "An active participle from a verb meaning to want something keenly. The construction directs the wanting toward God rather than removing it, so what is offered here is not the absence of desire."
+        },
+        {
+          "arabic": "مِن فَضْلِهِۦ",
+          "gloss": "of His bounty, His surplus",
+          "note": "The word means overflow beyond what is owed. Putting it in the future tense makes the sentence an expectation rather than a resignation, which is what separates it from simply giving up."
+        }
+      ],
+      "lifeInProphetsTime": "Shares were allotted publicly and remembered exactly. In a society where a man's portion from a distribution was seen by everyone standing there, receiving less than expected was a matter of standing as much as of goods. Poetry from the period is full of complaints about allotment. The sentence supplied here would have been spoken in front of the same crowd.",
+      "didYouKnow": "The phrase this ayah wishes they had spoken, that God is enough for us, appears in only one other place in the Quran, at 3:173, where it is said by people told that a large force had gathered against them. The same four words answer a battlefield in one place and a disappointing share in the other.",
+      "theologicalSignificance": "The passage does not ask for indifference. The sentence it supplies contains an expectation of more, stated openly, alongside a declaration that what has already arrived is sufficient. Holding both at once is the exact posture being described. Contentment in this sense is not the end of wanting but a wanting that has been given a direction.",
+      "crossReferences": [
+        {
+          "ref": "3:173",
+          "why": "Contains the same declaration, spoken by people facing a gathered force rather than a small share."
+        },
+        {
+          "ref": "9:58",
+          "why": "Describes the complaint about distribution that this ayah answers with a different sentence."
+        },
+        {
+          "ref": "20:131",
+          "why": "Warns against straining the eyes toward what others have been given to enjoy."
+        }
+      ],
+      "applyIt": "Write the sentence this ayah supplies, in your own words, about the specific thing you feel short-changed on. It has two halves: this is enough, and more may come. Say both. Most disappointment is that sentence with one half missing, and which half is missing tells you something.",
+      "exploreFurther": [
+        "3:173",
+        "20:131",
+        "65:2-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.054Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:60",
+      "surah": 9,
+      "start": 60,
+      "end": 60,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "Eight Named Categories",
+      "tier": "standard",
+      "meaning": "Eight categories are listed and the list is closed by a restrictive particle at its head: the charities are only for these. The poor, the destitute, those employed to collect them, those whose hearts are to be reconciled, the freeing of necks, the indebted, the path of God, and the traveller cut off. It is then called an obligation from God, which puts the list beyond anyone's discretion.",
+      "historicalContext": "Medinan, ninth year, two ayat after the complaints about distribution. The commentators read the list as the answer to those complaints: a fixed set replaces discretion entirely. They discuss each category at length and differ over the scope of several, particularly the reconciling of hearts and the path of God, recording the range of readings without settling them.",
+      "keyTerms": [
+        {
+          "arabic": "فَرِيضَةً",
+          "gloss": "an obligation, a fixed share",
+          "note": "A word for something apportioned and settled. It occurs five times in the Quran, four of them about marriage payments and inheritance shares, and only here of charity, which places it among fixed entitlements."
+        },
+        {
+          "arabic": "وَفِى ٱلرِّقَابِ",
+          "gloss": "and for the necks",
+          "note": "The preposition changes for this category and two others, reading in rather than for. Commentators note the shift and read those three as purposes to be spent on rather than people to be handed money."
+        },
+        {
+          "arabic": "ٱلْغَـٰرِمِينَ",
+          "gloss": "those weighed down by debt",
+          "note": "From a verb meaning to be liable for a loss. It occurs only once in the Quran, and commentators discuss whether it covers debts taken on for oneself and debts assumed to settle disputes."
+        }
+      ],
+      "lifeInProphetsTime": "Debt in that economy could take a household apart. A bad season, a lost caravan, or compensation owed after an accident could put a man into obligations he would never clear, and his family into service to clear them. Naming the indebted as a category meant the collection was expected to reach people who did not look poor and would never have asked.",
+      "didYouKnow": "The word calling this an obligation occurs five times in the Quran. Four of those concern marriage payments and inheritance shares, fixed amounts that cannot be adjusted by whoever is handling them, and this is the only place it is applied to charity, which sets the eight categories in that same class of settled entitlement.",
+      "theologicalSignificance": "The passage converts a discretionary generosity into a set of entitlements. Once the categories are fixed, whoever distributes has no standing to be thanked, and whoever receives is not accepting a favour. That changes the relation between the two, which the complaint two ayat earlier had made necessary. It also names purposes alongside people, so the collection is repair as well as relief.",
+      "crossReferences": [
+        {
+          "ref": "9:58",
+          "why": "Records the complaints about distribution that this fixed list answers directly."
+        },
+        {
+          "ref": "2:177",
+          "why": "Names several of the same recipients as the substance of righteousness rather than its direction."
+        },
+        {
+          "ref": "59:7",
+          "why": "Explains that wealth should not circulate only among the rich among you."
+        }
+      ],
+      "applyIt": "Give something this week to a category rather than to a person you know. Pick one of the eight with an equivalent where you live: a debtor, a stranded traveller, someone doing the work of collection. The point is the shift from choosing a face to answering a need that was named before you arrived.",
+      "exploreFurther": [
+        "2:177",
+        "2:271",
+        "59:7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.079Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:61",
+      "surah": 9,
+      "start": 61,
+      "end": 61,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "An Ear Of Good For You",
+      "tier": "standard",
+      "meaning": "An insult is quoted and then reversed by being accepted. They say he is all ears, meaning he believes whatever he is told. The reply keeps the word and adds one thing to it: an ear of good for you. Listening is not denied, it is reclassified. Then the sentence unfolds what the listening consists of: he trusts God, he trusts the believers, and he is a mercy to those among you who believe.",
+      "historicalContext": "Medinan, ninth year, among the ayat describing those who stayed behind from the march north. The commentators explain the taunt as mockery of a leader who heard everyone out, including people whose excuses were not sincere. The reply is addressed to the mockers rather than to the community, and it defends the practice rather than denying that it happened.",
+      "keyTerms": [
+        {
+          "arabic": "أُذُنٌ",
+          "gloss": "an ear, all ears",
+          "note": "The word for the organ, applied to a person. The reply repeats it immediately and attaches good to it, so the same term stands twice in one sentence, first as an insult and then as a description."
+        },
+        {
+          "arabic": "يُؤْمِنُ لِلْمُؤْمِنِينَ",
+          "gloss": "he trusts the believers",
+          "note": "The verb of believing takes an unusual preposition here, shifting its sense from believing in to believing for, meaning trusting. Commentators note the construction as deliberate rather than incidental."
+        },
+        {
+          "arabic": "وَرَحْمَةٌ",
+          "gloss": "and a mercy",
+          "note": "A noun rather than an adjective, so the sentence says he is mercy rather than merciful. The Quran uses the same construction of him at 21:107, addressed there to all the worlds."
+        }
+      ],
+      "lifeInProphetsTime": "A chief who listened to everyone was making a costly choice. In a society of competing claims, hearing every petitioner meant hours lost, and it meant liars got their hearing too. The alternative was a leader surrounded by intermediaries, which is what most powerful men in that world had. Being called all ears was a comment on a policy anyone could observe.",
+      "didYouKnow": "The reply keeps the insulting word instead of replacing it, using it twice in a single sentence and adding one genitive that turns it around. The classical commentaries treat this reversal, rather than any counter-argument, as the answer the ayah is giving to the taunt it quotes.",
+      "theologicalSignificance": "The passage treats openness to being deceived as a cost worth paying. It never claims the listening was discerning; it claims it was good for the people being listened to, including the ones abusing it. That locates the value of an attentive ear in what it does for others rather than in its accuracy, which is an unusual way to defend a practice.",
+      "crossReferences": [
+        {
+          "ref": "21:107",
+          "why": "Names him a mercy for all the worlds, using the same noun rather than an adjective."
+        },
+        {
+          "ref": "3:159",
+          "why": "Says that had he been harsh they would have scattered from around him."
+        },
+        {
+          "ref": "9:128",
+          "why": "Describes his concern for the people and his gentleness toward the believers."
+        }
+      ],
+      "applyIt": "Think of the trait people tease you for that is actually a decision: too soft, too slow, too willing to hear people out. Do not defend it this week. Just check whether it is doing the good you intended, for the people you intended it for. That is the only question the reply here actually answers.",
+      "exploreFurther": [
+        "21:107",
+        "3:159",
+        "9:128"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.080Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:62",
+      "surah": 9,
+      "start": 62,
+      "end": 62,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Sworn To Please You",
+      "tier": "standard",
+      "meaning": "The observation is about direction rather than about truthfulness. They swear to you by God in order to please you. The oath is aimed at an audience, and the audience is the wrong one. The correction is then framed as a comparison of claims: God and His Messenger have more right to be pleased, if they are believers. The conditional at the end is where the sentence puts its weight.",
+      "historicalContext": "Medinan, ninth year, among the excuses offered after the march north. The commentators note that oaths sworn to the community were being used to settle a social matter rather than a religious one, and that the ayah does not dispute the content of any particular oath. The surrounding ayat describe the same group in similar terms, repeatedly by who they are addressing.",
+      "keyTerms": [
+        {
+          "arabic": "لِيُرْضُوكُمْ",
+          "gloss": "in order to please you",
+          "note": "The purpose clause is the whole point of the sentence. It names the target of the act rather than its truth, which is why the correction that follows concerns direction and not honesty."
+        },
+        {
+          "arabic": "أَحَقُّ",
+          "gloss": "has more right, is worthier",
+          "note": "A comparative built on the word for truth and right. The Quran uses it to rank two claims rather than to cancel one, so the community's claim is not denied here, only placed second."
+        },
+        {
+          "arabic": "إِن كَانُوا۟ مُؤْمِنِينَ",
+          "gloss": "if they are believers",
+          "note": "A conditional closing the sentence rather than opening it. It leaves the ranking resting on something the listener holds, so the correction only reaches a person who already accepts the premise."
+        }
+      ],
+      "lifeInProphetsTime": "An oath sworn by God was the strongest instrument a person had, and it was used constantly in ordinary business: to close a sale, to end a dispute, to settle a doubt about where someone had been the night before. That everyday use is what the passage is describing. The oath was doing social work and doing it well, which is precisely the difficulty.",
+      "didYouKnow": "The verb for pleasing occurs twice in this short ayah, once with the community as its object and once with God, setting the two side by side inside one sentence. The same root runs through this whole passage: at 9:58 and 9:59 of people pleased with a share, and at 9:72 of acceptance from God.",
+      "theologicalSignificance": "The passage evaluates an act by its intended audience rather than by its content. An oath can be entirely true and still be misdirected, which means sincerity here is not only a matter of matching words to facts. It concerns who the words are for. The closing conditional then makes the correction internal, reaching only someone who already grants what it assumes.",
+      "crossReferences": [
+        {
+          "ref": "9:59",
+          "why": "Uses the same root for being pleased, there about a share received rather than a person addressed."
+        },
+        {
+          "ref": "33:37",
+          "why": "Concerns fearing people when God has more right to be feared, in the same comparative form."
+        },
+        {
+          "ref": "2:264",
+          "why": "Describes giving done to be seen by people, the same misdirection appearing in another act."
+        }
+      ],
+      "applyIt": "Take something you did well this week and ask who you were doing it for. Not whether it was good, it may have been excellent. Just the audience. If you can name the person whose approval you were tracking, you have found what this ayah points at, and you can leave it there for now.",
+      "exploreFurther": [
+        "2:264",
+        "33:37",
+        "9:72"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.080Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:63",
+      "surah": 9,
+      "start": 63,
+      "end": 63,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Do They Not Already Know",
+      "tier": "standard",
+      "meaning": "The sentence opens as a question about knowledge rather than about conduct. Do they not know. What follows is presented as already available rather than newly disclosed: whoever sets himself against God and His Messenger has the fire. The verb for that opposition is built on the word for a boundary, so it pictures a person standing deliberately on the far side of a line. The outcome is then named as disgrace.",
+      "historicalContext": "Medinan, ninth year, in the section on those who swore oaths to the community after staying behind. The commentators read the question as rhetorical: the information was public and had been repeated many times. The ayah sits among descriptions of behaviour rather than of doctrine, which is how the surah joins what people know to what they nevertheless do.",
+      "keyTerms": [
+        {
+          "arabic": "أَلَمْ يَعْلَمُوٓا۟",
+          "gloss": "do they not know",
+          "note": "A question expecting the answer yes. The Quran uses this construction where information is not what is lacking, which places the failure between knowing something and letting it govern anything."
+        },
+        {
+          "arabic": "يُحَادِدِ",
+          "gloss": "sets himself in opposition",
+          "note": "Built on the word for a limit or boundary. It pictures taking up a position on the far side of a line rather than fighting across it, and this form occurs only once in the Quran."
+        },
+        {
+          "arabic": "ٱلْخِزْىُ ٱلْعَظِيمُ",
+          "gloss": "the great disgrace",
+          "note": "The noun names public humiliation rather than pain. Choosing it as the summary word makes exposure the central feature, which suits a surah preoccupied with things being brought into the open."
+        }
+      ],
+      "lifeInProphetsTime": "Disgrace was the most feared social outcome in that world, and it was administered by memory. A man shamed publicly carried it into every negotiation for the rest of his life, and his sons carried it after him. Poets built reputations by inflicting it. Naming disgrace rather than pain as the summary uses the vocabulary the audience feared most.",
+      "didYouKnow": "The verb for opposition here occurs in this form only once in the Quran, and it is built on the ordinary word for a boundary or limit. The image is spatial rather than martial: someone who has placed himself on the other side of a line, which is a different picture from fighting across one.",
+      "theologicalSignificance": "The passage separates knowing something from being governed by it, and treats the gap as the actual problem. That is a claim about how people go wrong: not usually through ignorance but through information held at a distance from action. Framing it as a question rather than an accusation also leaves the listener to close the gap themselves instead of being told they have failed.",
+      "crossReferences": [
+        {
+          "ref": "58:20",
+          "why": "Uses the same verb for those who oppose God and His Messenger, describing where they rank."
+        },
+        {
+          "ref": "2:44",
+          "why": "Asks whether people who teach righteousness forget themselves while reciting the Book."
+        },
+        {
+          "ref": "62:5",
+          "why": "Compares those given knowledge who do not carry it to a donkey loaded with books."
+        }
+      ],
+      "applyIt": "Name one thing you know perfectly well and act against anyway. Do not resolve to change it. Just write the sentence out: I know this, and I do that. Reading the two clauses next to each other in your own handwriting does something that deciding to do better does not.",
+      "exploreFurther": [
+        "58:20-22",
+        "2:44",
+        "62:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.082Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:64",
+      "surah": 9,
+      "start": 64,
+      "end": 64,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Afraid Of A Surah",
+      "tier": "standard",
+      "meaning": "The fear described is very specific: that a surah might be sent down informing them of what is in their hearts. Not exposing what they did, which was already visible, but reporting the interior. The reply neither reassures nor denies. It says go on mocking, God will bring out the very thing you are afraid of. The fear and the answer are built from the same word.",
+      "historicalContext": "Medinan, ninth year, within the long section describing those who stayed behind. The commentators report that this part of the surah acquired a name among the early community reflecting exactly this, a surah that exposed. The passage is unusual in describing its own effect while producing it, which is why the commentaries treat these ayat as self-referential.",
+      "keyTerms": [
+        {
+          "arabic": "يَحْذَرُ",
+          "gloss": "they are wary, they fear",
+          "note": "A verb for caution rather than terror, naming the alertness of someone expecting trouble. It appears twice in this ayah, once of them and once inside the reply, which turns their own word back on them."
+        },
+        {
+          "arabic": "تُنَبِّئُهُم",
+          "gloss": "informing them, telling them",
+          "note": "The verb for conveying news of consequence. Its object here is themselves: the surah they fear would tell them what is in their own hearts, which is a strange and specific thing to dread."
+        },
+        {
+          "arabic": "مُخْرِجٌ",
+          "gloss": "bringing out, drawing forth",
+          "note": "An active participle from the verb to bring out. The reply uses a form describing something already under way rather than a future threat, so the bringing out is presented as in progress."
+        }
+      ],
+      "lifeInProphetsTime": "Revelation arrived in public and unpredictably. A passage could come down naming a situation everyone in the town recognised, and it would then be recited aloud, memorised, and repeated in the prayer for the rest of time. For anyone with something to conceal that was a different kind of exposure from gossip, because gossip fades and this did not.",
+      "didYouKnow": "The early tradition preserves more than one name for this surah, and one of them, reported from among the earliest commentators, means the exposer, given precisely because of passages like this one. A surah that describes people fearing a surah about themselves ended up named for that very effect.",
+      "theologicalSignificance": "The passage describes a fear of being known rather than of being punished, and it treats that fear as itself revealing. Someone worried about a report of their interior has already conceded that there is something in it. The reply then declines to argue, which is characteristic: it does not prove the charge, it says the matter will come out, and leaves the timing unstated.",
+      "crossReferences": [
+        {
+          "ref": "47:29",
+          "why": "Says those with sickness in their hearts assumed God would not bring out their rancour."
+        },
+        {
+          "ref": "3:154",
+          "why": "Describes people concealing in themselves what they would not disclose to the Prophet."
+        },
+        {
+          "ref": "9:101",
+          "why": "States that some near them were not known to them, but were known to God."
+        }
+      ],
+      "applyIt": "Notice what you would least want written down about your motives this week. Not your actions, your motives. You do not have to tell anyone at all. But the discomfort of naming it privately is exactly what this ayah describes, and it is easier to sit with once than to keep at bay indefinitely.",
+      "exploreFurther": [
+        "47:29-30",
+        "3:154",
+        "9:101"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.083Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:65-66",
+      "surah": 9,
+      "start": 65,
+      "end": 66,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "We Were Only Talking",
+      "tier": "standard",
+      "meaning": "The excuse is quoted exactly: we were only talking and playing. The reply does not dispute that they were joking. It asks what the joking was about, and names three objects: God, His signs, His Messenger. The second ayah then refuses the apology and, in the same breath, divides the group. If We pardon one party of you, We will punish another. The pardon is named as possible without being handed out.",
+      "historicalContext": "Medinan, ninth year, following the ayah about fearing exposure. The commentators connect the exchange to talk during the march north that was afterwards explained as jest. They note that the passage does not deny the jesting, and that the division named in the second ayah leaves both outcomes open without assigning any particular person to either.",
+      "keyTerms": [
+        {
+          "arabic": "نَخُوضُ",
+          "gloss": "we were talking idly",
+          "note": "A verb for wading into water, used of talk entered without care. It occurs here and at 74:45, once as a casual excuse and once among the reasons given by those in the fire."
+        },
+        {
+          "arabic": "لَا تَعْتَذِرُوا۟",
+          "gloss": "do not make excuses",
+          "note": "The verb of offering an apology. It is refused rather than called false, which is a different act: the passage declines the transaction rather than disputing the account being given."
+        },
+        {
+          "arabic": "إِن نَّعْفُ",
+          "gloss": "if We pardon",
+          "note": "A conditional, with the pardon left unassigned. It stands in the same sentence as the punishment and neither is attached to anyone named, which commentators note as leaving the outcome genuinely open."
+        }
+      ],
+      "lifeInProphetsTime": "Talk on a long march filled the hours, and men said things at the back of a column they would never have said standing still. Everyone knew the difference and everyone relied on it. The claim that something was only banter was the ordinary defence in that world, and it usually worked, because there was rarely anybody in a position to say otherwise.",
+      "didYouKnow": "The word the speakers use for their idle talk appears again at 74:45, where it turns up among the reasons the people of the fire give for being there. The same verb, of speech waded into without care, serves in one place as a casual excuse and in the other as an explanation offered far too late.",
+      "theologicalSignificance": "The passage refuses an apology and offers a pardon in consecutive sentences, which looks contradictory until the difference is noticed. An apology would have settled the matter on the speaker's terms; a pardon leaves it with God. That distinction is the whole point. Forgiveness here is not withheld, it is simply not something a wrongdoer can produce by explaining himself.",
+      "crossReferences": [
+        {
+          "ref": "9:64",
+          "why": "Describes the fear of exposure that this exchange follows on from immediately."
+        },
+        {
+          "ref": "74:45",
+          "why": "Uses the same verb for idle talk, listed there among reasons given by those in the fire."
+        },
+        {
+          "ref": "66:7",
+          "why": "Tells a group not to make excuses, using the same refusal of an apology."
+        }
+      ],
+      "applyIt": "Think of the last time you said you were only joking. Ask what the joke was about, in one plain sentence, without the framing around it. The reply here does not argue about whether it was a joke. It asks for the object, which is usually the part that was doing the actual work.",
+      "exploreFurther": [
+        "9:64",
+        "74:41-47",
+        "66:6-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.083Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:67",
+      "surah": 9,
+      "start": 67,
+      "end": 67,
+      "theme": "Greed and Generosity",
+      "themeId": "greed-and-generosity",
+      "title": "They Close Their Hands",
+      "tier": "standard",
+      "meaning": "A group is described as being of one another, and then four things are named. They call for what is wrong, warn against what is right, and hold their hands closed. Then a sentence with a symmetry inside it: they forgot God, so He forgot them. The closed hand sits in the same list as the moral inversion, which is how the passage links a habit with money to a habit with truth.",
+      "historicalContext": "Medinan, ninth year, describing the group the surah has followed since the section on the march north. The commentators read the closing clause as a matching of form rather than a statement that God forgets, explaining it as God treating them as one treats what is forgotten. That reading is standard across the classical commentaries on the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "وَيَقْبِضُونَ أَيْدِيَهُمْ",
+          "gloss": "and they close their hands",
+          "note": "A physical image of a fist closing. Arabic used the open and the closed hand as the standard picture of giving and withholding, so the phrase names stinginess without any abstract word for it."
+        },
+        {
+          "arabic": "بَعْضُهُم مِّنۢ بَعْضٍ",
+          "gloss": "some of them from others",
+          "note": "The same construction appears four ayat later of believers, where it describes their being allies of one another. One phrase covers two groups, so the parallel between the passages is deliberate."
+        },
+        {
+          "arabic": "نَسُوا۟ ٱللَّهَ فَنَسِيَهُمْ",
+          "gloss": "they forgot God, He forgot",
+          "note": "Commentators read the second verb as matching the first in form rather than in sense, since forgetting is not attributed to God. The phrase occurs only once in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "The closed hand needed no explaining. Wealth moved by hand in that society: coins counted out, dates measured into a cloth, an animal led over and handed across. Generosity and its opposite were both physical acts performed in front of other people, which is why a description of a fist carried the entire meaning without a word of commentary.",
+      "didYouKnow": "This ayah and 9:71 are built as mirrors of each other. Both open with the same phrase about a group being part of one another, both list what the group calls for and warns against, and the two lists are exactly reversed. A few lines apart, the surah supplies its own contrast without remarking on it.",
+      "theologicalSignificance": "The passage puts moral inversion and withheld generosity in a single list, which suggests they are one disposition seen from two sides. It then describes the consequence as a matching: what was done is what is met. That form of consequence recurs throughout the Quran, and it keeps a punishment from looking arbitrary, since the outcome is shaped by the act rather than added onto it.",
+      "crossReferences": [
+        {
+          "ref": "9:71",
+          "why": "Mirrors this ayah exactly, listing the reverse for believing men and women."
+        },
+        {
+          "ref": "59:19",
+          "why": "Describes those who forgot God, and says He made them forget their own selves."
+        },
+        {
+          "ref": "17:29",
+          "why": "Uses the image of a hand held closed and a hand stretched out entirely."
+        }
+      ],
+      "applyIt": "Watch your hands this week, literally. Notice the moment you decide not to give something small: a tip, a lift, ten minutes of help. You are not obliged to change the decision. Just catch the physical instant of closing, which is what this ayah names, and see how fast the reason arrives afterwards.",
+      "exploreFurther": [
+        "9:71",
+        "17:29",
+        "59:19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.084Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:68",
+      "surah": 9,
+      "start": 68,
+      "end": 68,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "It Is Enough For Them",
+      "tier": "standard",
+      "meaning": "The outcome is stated with the verb of promising, which Arabic ordinarily keeps for something good. Then a short clause: it is enough for them. The word for enough is the one used nine ayat earlier in the sentence about God being sufficient. The passage closes on a punishment described as resident rather than arriving, using the adjective the surah applied to the bliss of the gardens.",
+      "historicalContext": "Medinan, ninth year, following the description of the group in the previous ayah. The commentators read this ayah as the counterpart of 9:72, which uses the same verb of promising for believers four ayat later. The pairing runs through this whole section, where each description of one group is answered by its opposite within a few lines of text.",
+      "keyTerms": [
+        {
+          "arabic": "وَعَدَ",
+          "gloss": "has promised",
+          "note": "The verb of promising, which Arabic normally reserves for something hoped for. The Quran uses it here of a punishment, a usage commentators note as making the outcome certain rather than merely threatened."
+        },
+        {
+          "arabic": "هِىَ حَسْبُهُمْ",
+          "gloss": "it is enough for them",
+          "note": "The same word used at 9:59 in the sentence about God being sufficient. Placing it here creates a bleak symmetry, since what a person settles for is described as what suffices them."
+        },
+        {
+          "arabic": "عَذَابٌ مُّقِيمٌ",
+          "gloss": "a lasting, resident punishment",
+          "note": "The second word means residing or staying put, the same term used at 9:21 of the bliss in the gardens. One adjective covers both outcomes, differing only in what it is attached to."
+        }
+      ],
+      "lifeInProphetsTime": "A promise in that society was a public instrument. Men made them before witnesses and were held to them for years, and the whole vocabulary of obligation ran through the word. Using it for something feared rather than hoped for would have registered at once, because it moved the outcome out of the category of a threat, which can be avoided, into that of a commitment.",
+      "didYouKnow": "The word for a lasting punishment here uses the same adjective the surah applies at 9:21 to the bliss of the gardens, and the verb of promising reappears at 9:72 for the believers. Within a few dozen ayat the surah builds both destinations from one vocabulary, changing only what it attaches to.",
+      "theologicalSignificance": "The passage uses the language of promise rather than of threat, and that changes its character. A threat invites calculation about whether it will actually be carried out; a promise does not. The symmetry with the corresponding ayat about believers also means neither description can be read alone, since the surah has deliberately made them from the same words.",
+      "crossReferences": [
+        {
+          "ref": "9:72",
+          "why": "Uses the same verb of promising for believing men and women, four ayat later."
+        },
+        {
+          "ref": "9:21",
+          "why": "Applies the same adjective for lasting to the bliss of the gardens instead."
+        },
+        {
+          "ref": "4:145",
+          "why": "Describes the same group's position and the absence of any helper for them."
+        }
+      ],
+      "applyIt": "Notice the phrase it is enough for them. Ask what you have quietly settled for and called sufficient: a level of attention, a quality of relationship, a way of spending an evening. Naming one honestly this week is uncomfortable and useful, because sufficiency is a decision people make without ever noticing.",
+      "exploreFurther": [
+        "9:72",
+        "4:142-145",
+        "9:21-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.085Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:69",
+      "surah": 9,
+      "start": 69,
+      "end": 69,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "You Enjoyed Your Portion",
+      "tier": "standard",
+      "meaning": "The comparison is made and then made again, and the repetition is the argument. Those before you were stronger, richer, with more children. They enjoyed their portion, and you have enjoyed your portion as those before you enjoyed theirs, and you waded in as they waded. The same two words return three times each. Then the verdict: their works came to nothing in both worlds.",
+      "historicalContext": "Medinan, ninth year, addressing the group described through this section. The commentators read the ayah as placing its audience inside a sequence rather than singling them out, and they note the shift midway from speaking about those before to addressing the listener directly. Appealing to the pattern of earlier communities is the surah's usual way of widening a local situation.",
+      "keyTerms": [
+        {
+          "arabic": "بِخَلَـٰقِهِمْ",
+          "gloss": "their portion, their share",
+          "note": "A word for an allotted share of this world's goods. The ayah uses it three times in one sentence, naming the same allotment for each generation in turn without any of them receiving more."
+        },
+        {
+          "arabic": "فَٱسْتَمْتَعُوا۟",
+          "gloss": "so they enjoyed, took their use",
+          "note": "A form of the verb meaning to take one's use out of something. The word is not a criticism in itself, since the Quran uses it of legitimate enjoyment, and the fault named is where it stopped."
+        },
+        {
+          "arabic": "وَخُضْتُمْ",
+          "gloss": "and you waded in",
+          "note": "The same verb used four ayat earlier by the men who said they had only been talking. Its reappearance here places their excuse inside a much older and larger pattern."
+        }
+      ],
+      "lifeInProphetsTime": "Ruins were visible. Trade routes north and south passed abandoned settlements, rock-cut tombs and dead wells belonging to peoples whose names survived in poetry and nowhere else. Caravans camped beside them. An audience told that earlier communities had been stronger and richer was not being asked to imagine anything; they had walked past the evidence.",
+      "didYouKnow": "One word for an allotted share appears three times inside this single ayah, and the verb for taking enjoyment appears three times alongside it. The Quran rarely repeats vocabulary at that density, and here the repetition performs the point, since each generation is described in exactly the words used for the last.",
+      "theologicalSignificance": "The passage denies its audience the assumption of being a special case. By describing them in precisely the words used for earlier peoples, it makes a local situation an instance rather than an event. That is deflating and also clarifying: what happened before is what is happening, and the outcome named for them is available on the same terms.",
+      "crossReferences": [
+        {
+          "ref": "9:70",
+          "why": "Names the specific earlier communities this ayah has been referring to in general terms."
+        },
+        {
+          "ref": "3:196",
+          "why": "Warns against being impressed by the movement of those who disbelieve through the land."
+        },
+        {
+          "ref": "30:9",
+          "why": "Points to earlier peoples who were stronger and cultivated the earth more than these."
+        }
+      ],
+      "applyIt": "Take the situation you feel is uniquely yours and find one person, from another decade or another country, who has been in it. Read about them for ten minutes. The method here is to remove the sense of being a special case, and it usually turns out to be a relief rather than a diminishment.",
+      "exploreFurther": [
+        "9:70",
+        "30:9",
+        "40:82-83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.087Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:70",
+      "surah": 9,
+      "start": 70,
+      "end": 70,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Six Peoples In One Line",
+      "tier": "standard",
+      "meaning": "A question is asked and answered by a list. Has the account of those before them not reached them: the people of Noah, Aad, Thamud, the people of Abraham, the companions of Midian, and the overturned cities. Six entries, then a single clause covering all of them, that their messengers came with clear signs. The passage ends by placing the fault precisely, on them rather than on God.",
+      "historicalContext": "Medinan, ninth year. The commentators identify the peoples named as a sequence the Quran uses repeatedly, some Arabian and some further afield, and note that the last entry refers to the settlements associated with Lot. The list is offered to an audience for whom several of these places lay on known trade routes rather than in a distant and unvisited past.",
+      "keyTerms": [
+        {
+          "arabic": "نَبَأُ",
+          "gloss": "the account, news of consequence",
+          "note": "A word for weighty news rather than a story. The Quran uses it of reports carrying an implication for the hearer, which is why the sentence asks whether it reached them rather than whether they enjoyed it."
+        },
+        {
+          "arabic": "ٱلْمُؤْتَفِكَـٰتِ",
+          "gloss": "the overturned cities",
+          "note": "A participle meaning turned upside down. It occurs twice in the Quran, here and at 69:9, and the commentators identify it with the settlements associated with Lot."
+        },
+        {
+          "arabic": "بِٱلْبَيِّنَـٰتِ",
+          "gloss": "with the clear signs",
+          "note": "From a root meaning to be distinct or evident. The word covers proofs and wonders alike, and its use here says the failure was never one of insufficient evidence being supplied."
+        }
+      ],
+      "lifeInProphetsTime": "Two of the peoples named left ruins on routes that Meccan traders used. Rock-cut facades in the north stood beside the road to Syria, and stories about who had carved them were common currency at the fairs. When this list was recited, part of it referred to places in the audience's own working geography rather than to legend.",
+      "didYouKnow": "Six peoples are named in one sentence here and then covered by a single clause: their messengers came to them with clear signs. The Quran usually gives each of these accounts a whole passage of its own, and this ayah compresses all of them into one line, among the tightest forms the sequence ever takes.",
+      "theologicalSignificance": "The passage locates the fault carefully. It does not say these peoples were destroyed for their opinions; it says messengers came with clear signs and that God did not wrong them. Putting the wrong on their own account keeps the sequence from becoming a story about divine temper, and it implies that the pattern concerns response rather than identity.",
+      "crossReferences": [
+        {
+          "ref": "9:69",
+          "why": "Makes the same comparison in general terms, which this ayah fills in with names."
+        },
+        {
+          "ref": "22:42",
+          "why": "Lists an overlapping sequence of communities that rejected the messengers sent to them."
+        },
+        {
+          "ref": "53:53",
+          "why": "Names the overturned city, using the singular of the word that appears here."
+        }
+      ],
+      "applyIt": "Read one of the accounts this list compresses, in full, this week: the people of Noah, or of Midian. Ten minutes with a whole story rather than a name inside a list. The ayah assumes its audience already knows them, and that assumption is worth earning rather than passing over.",
+      "exploreFurther": [
+        "11:25-49",
+        "11:84-95",
+        "22:42-44"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.095Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "9:71",
       "surah": 9,
       "start": 71,
@@ -2958,6 +3596,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:03:22.733Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "9:72-73",
+      "surah": 9,
+      "start": 72,
+      "end": 73,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "Greater Than The Gardens",
+      "tier": "standard",
+      "meaning": "A promise is made at length and then something is declared greater than it. Gardens with rivers running beneath, good dwellings, gardens of lasting residence, and then four words: acceptance from God is greater. The next ayah gives an instruction of an entirely different temperature. The two stand side by side and the surah does not soften the join between them at all.",
+      "historicalContext": "Medinan, ninth year. The commentators pair this promise with the corresponding warning at 9:68, which uses the same verb of promising four ayat earlier. The instruction that follows belongs to the section on the march north and its aftermath. This part of the surah routinely places its warmest and its hardest material adjacent, which the commentaries note as a feature of it.",
+      "keyTerms": [
+        {
+          "arabic": "وَمَسَـٰكِنَ طَيِّبَةً",
+          "gloss": "and good dwellings",
+          "note": "The first word names a place of rest and settling, from the same root as the calm sent down at 9:26. The promise therefore includes somewhere to live rather than only a landscape to be in."
+        },
+        {
+          "arabic": "جَنَّـٰتِ عَدْنٍ",
+          "gloss": "gardens of lasting residence",
+          "note": "The second word names permanence of dwelling, and the same root gives the Arabic word for a mine, something fixed in place. The phrase occurs eleven times across the Quran."
+        },
+        {
+          "arabic": "وَرِضْوَٰنٌ مِّنَ ٱللَّهِ",
+          "gloss": "and acceptance from God",
+          "note": "The clause is short and stands alone after a long description. It ranks a relation above a place without withdrawing the place, which is why the description comes first and is not shortened."
+        }
+      ],
+      "lifeInProphetsTime": "A dwelling that stayed was the rarer half of the promise. Many people in that world moved with water and pasture, striking a camp and rebuilding it somewhere else several times a year. Permanent housing belonged to the settled towns and to the wealthier families in them. A garden and a house that never had to be left were two promises, not one.",
+      "didYouKnow": "The clause saying that acceptance from God is greater is four words long in Arabic and follows a description of the gardens several lines long. The surah had already implied the ordering at 9:21, where the same three elements appear in the same sequence, and here it states the comparison outright.",
+      "theologicalSignificance": "The passage puts a relation above a place, and then the following ayah moves straight into an instruction that shares none of its warmth. Read together they deny the reader any settled emotional register. That is characteristic of this surah, which keeps promise and demand in contact rather than separating them into different parts of the text.",
+      "crossReferences": [
+        {
+          "ref": "9:21",
+          "why": "Lists the same three elements in the same order, without stating the comparison outright."
+        },
+        {
+          "ref": "98:8",
+          "why": "Ends on God being pleased with them and they with Him, in the same order."
+        },
+        {
+          "ref": "9:68",
+          "why": "Uses the same verb of promising four ayat earlier, of the opposite outcome."
+        }
+      ],
+      "applyIt": "Read the four-word clause on its own: acceptance from God is greater. Then notice that the surah moves immediately into something hard. Try holding both in one sitting this week rather than picking a mood. Most people read scripture for one register at a time, and this passage is arranged to prevent that.",
+      "exploreFurther": [
+        "9:21-22",
+        "98:7-8",
+        "3:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:05:40.095Z",
         "reviewed": false
       }
     },
