@@ -1,0 +1,15 @@
+{
+  "name": "scroll-the-quran-content-gen",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline content-generation pipeline for Scroll the Quran (segmentation, Deep Study generation via the Claude Message Batches API, validation, assembly).",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.72.0",
+    "ajv": "^8.17.1"
+  }
+}
