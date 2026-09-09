@@ -1,3 +1,4 @@
+import DesignSystem
 import Observation
 import QuranData
 import SwiftUI
@@ -72,7 +73,7 @@ public struct TabRoot: View {
                 .accessibilityIdentifier(tab.accessibilityIdentifier)
             }
         }
-        .tint(Color.primary)
+        .tint(Color.textPrimary)
         .environment(\.router, model)
         .accessibilityIdentifier("tabroot")
     }

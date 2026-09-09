@@ -30,6 +30,12 @@ targets:
       - path: Content
         type: folder
         buildPhase: resources
+      # Bundled OFL faces, flat at the app bundle root so UIAppFonts resolves them.
+      # They live once in the repo, inside the DesignSystem target that owns them.
+      - path: Packages/ScrollKit/Sources/DesignSystem/Resources/Fonts
+        buildPhase: resources
+        includes: ["*.ttf"]
+        createIntermediateGroups: false
     dependencies:
       - package: ScrollKit
         product: AppShell

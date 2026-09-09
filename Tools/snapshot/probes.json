@@ -1,0 +1,98 @@
+{
+  "note": "Named probe points on the 1179x2556 px reference captures (393x852 pt @3x). Tools/snapshot/sample-colors.sh prints the hex at each point; the values it printed are the ones hard-coded in Packages/ScrollKit/Sources/DesignSystem/Tokens.swift. Never guess a token colour: move the probe and re-run.",
+  "geometry": { "width": 1179, "height": 2556, "scale": 3 },
+  "screens": [
+    {
+      "file": "home-dark.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "bg.dark",            "x": 18,   "y": 1200, "of": "page background in the left margin between cards" },
+        { "name": "card.dark",          "x": 900,  "y": 900,  "of": "streak card fill" },
+        { "name": "progressTrack.dark", "x": 1000, "y": 1290, "of": "unfilled read-progress bar" },
+        { "name": "pill.light",         "x": 591,  "y": 2139, "of": "white Settings / Manage Accounts pill" },
+        { "name": "flame.top",          "x": 156,  "y": 440,  "of": "top of the streak flame gradient" },
+        { "name": "flame.bottom",       "x": 156,  "y": 555,  "of": "bottom of the streak flame gradient" },
+        { "name": "tabBar.dark",        "x": 590,  "y": 2350, "of": "tab bar fill" }
+      ]
+    },
+    {
+      "file": "discover-dark.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "chip.dark",         "x": 590, "y": 440,  "of": "theme chip fill behind 'Joy in Trials'" },
+        { "name": "dykBox.dark",       "x": 590, "y": 1440, "of": "DID YOU KNOW box fill" },
+        { "name": "crossRefChip.dark", "x": 300, "y": 1689, "of": "cross-reference chip fill" },
+        { "name": "textSecondary.dark","x": 700, "y": 455,  "of": "chip label glyph" }
+      ]
+    },
+    {
+      "file": "deepstudy-top.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "quoteBox.dark",   "x": 590, "y": 760,  "of": "warm quote box behind the italic verse" },
+        { "name": "sectionBlue.dark","x": 590, "y": 2300, "of": "HISTORICAL CONTEXT tinted box" },
+        { "name": "bgSheet.dark",    "x": 590, "y": 1233, "of": "full-screen cover background" }
+      ]
+    },
+    {
+      "file": "deepstudy-mid.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "sectionBrown.dark", "x": 590, "y": 1500, "of": "LIFE IN BIBLICAL TIMES tinted box (ours: LIFE IN THE PROPHET'S TIME)" },
+        { "name": "sectionGray.dark",  "x": 200, "y": 1950, "of": "DID YOU KNOW tinted box in Deep Study" }
+      ]
+    },
+    {
+      "file": "deepstudy-bottom.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "sectionWine.dark",  "x": 590, "y": 700,  "of": "APPLY IT tinted box" },
+        { "name": "row.dark",          "x": 900, "y": 1420, "of": "EXPLORE IN SCRIPTURE row fill" },
+        { "name": "textTertiary.dark", "x": 250, "y": 2232, "of": "disclaimer glyph" }
+      ]
+    },
+    {
+      "file": "translation-sheet.png",
+      "appearance": "dark",
+      "probes": [
+        { "name": "offlineBadge.green", "x": 190, "y": 477,  "of": "green Offline badge fill, left of the glyphs" },
+        { "name": "sheet.dark",         "x": 20,  "y": 1000, "of": "translation sheet background" },
+        { "name": "divider.dark",       "x": 590, "y": 620,  "of": "hairline under the sheet header" }
+      ]
+    },
+    {
+      "file": "onboarding-hook.png",
+      "appearance": "light",
+      "probes": [
+        { "name": "bg.light",          "x": 30,  "y": 900,  "of": "page background" },
+        { "name": "textPrimary.light", "x": 590, "y": 2300, "of": "black Continue pill fill" }
+      ]
+    },
+    {
+      "file": "onboarding-reviews.png",
+      "appearance": "light",
+      "probes": [
+        { "name": "card.light",          "x": 590, "y": 900,  "of": "review card fill above the body text" },
+        { "name": "star.yellow",         "x": 430, "y": 580,  "of": "rating star fill" },
+        { "name": "textSecondary.light", "x": 590, "y": 415,  "of": "gray subtitle glyph" }
+      ]
+    },
+    {
+      "file": "paywall-trial.png",
+      "appearance": "light",
+      "probes": [
+        { "name": "bgWhite.light",      "x": 30,  "y": 1500, "of": "paywall background" },
+        { "name": "pill.dark",          "x": 200, "y": 2140, "of": "black Redeem pill fill" },
+        { "name": "textTertiary.light", "x": 300, "y": 940,  "of": "timeline body glyph" }
+      ]
+    },
+    {
+      "file": "paywall-plans.png",
+      "appearance": "light",
+      "probes": [
+        { "name": "row.light",     "x": 590, "y": 1700, "of": "plan row fill in the half sheet" },
+        { "name": "divider.light", "x": 590, "y": 1850, "of": "hairline between plan rows" }
+      ]
+    }
+  ]
+}
