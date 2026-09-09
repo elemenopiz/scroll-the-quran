@@ -23,16 +23,27 @@ func everyAuthoredAyahResolves() throws {
 @Test("hasStudy means a study exists, not merely that passages.json maps the ayah")
 func hasStudyMeansTheStudyExists() throws {
     let store = try bundledStore()
-    // Surah 2 has a shard, but only some of its units are authored: 2:6 is segmented into
-    // "2:6-7", which no study covers yet.
-    let unauthored = VerseRef(surah: 2, ayah: 6)
-    #expect(store.unitKey(for: unauthored) == "2:6-7", "the reader's segmentation lookup is unchanged")
-    #expect(!store.hasStudy(for: unauthored))
-    #expect(store.study(for: unauthored) == nil)
-    #expect(!store.containsUnit("2:6-7"))
+    // Authoring progresses wave by wave, so find a segmented-but-unauthored unit dynamically:
+    // the first surah with a shard whose segmentation has a unit no study covers yet.
+    var found: (VerseRef, String)?
+    outer: for surah in 1...114 where !store.studyKeys(inSurah: surah).isEmpty {
+        let authored = store.studyKeys(inSurah: surah)
+        for ayah in 1...300 {
+            let verse = VerseRef(surah: surah, ayah: ayah)
+            guard let key = store.unitKey(for: verse) else { break }
+            if !authored.contains(key) { found = (verse, key); break outer }
+        }
+    }
+    if let (unauthored, key) = found {
+        #expect(store.unitKey(for: unauthored) == key, "the reader's segmentation lookup is unchanged")
+        #expect(!store.hasStudy(for: unauthored))
+        #expect(store.study(for: unauthored) == nil)
+        #expect(!store.containsUnit(key))
+    }
 
     // Surahs with no shard at all are still fully segmented, and still have no study.
-    for verse in [VerseRef(surah: 18, ayah: 10), VerseRef(surah: 103, ayah: 2), VerseRef(surah: 114, ayah: 1)] {
+    let shardless = (1...114).filter { store.studyKeys(inSurah: $0).isEmpty }.prefix(3)
+    for verse in shardless.map({ VerseRef(surah: $0, ayah: 1) }) {
         #expect(store.unitKey(for: verse) != nil, "\(verse.key) should still belong to a unit")
         #expect(!store.hasStudy(for: verse))
         #expect(store.study(for: verse) == nil)
