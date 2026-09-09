@@ -2,12 +2,28 @@ import DesignSystem
 import SwiftUI
 
 /// **Placeholder screen art.** Stand-in for real captures of our own Reader, Plans,
-/// Discover and Deep Study screens, which do not exist yet (Phases 2e-2g).
+/// Discover and Deep Study screens.
 ///
 /// It reproduces the *geometry and tone distribution* of the reference mockups so the
-/// slide snapshots are meaningful, not the content. Replace with real renders — via
-/// `ImageRenderer` at first launch or a `Tools/snapshot/render-mockups.sh` — once those
-/// screens land; nothing outside this file needs to change.
+/// slide snapshots are meaningful, not the content. The remaining slide RMSE lives
+/// here: `.build/snapshots/onboarding-slide2-diff.png` shows the headline, the frame
+/// and the call to action landing on the reference, with the residue entirely inside
+/// the phone window.
+///
+/// **Why it is still a placeholder.** Those screens now exist — `FeatureReader`,
+/// `FeatureHome` and `FeatureDiscover` all shipped, and `--screenshot reader` /
+/// `home` / `discover` / `plans-sheet` are live routes. Both ways of using them are
+/// blocked on the same frozen file:
+///
+/// - Rendering them directly needs `FeatureOnboarding` to depend on those targets.
+///   `Package.swift` gives it `DesignSystem` and `UserState` only.
+/// - Shipping PNGs from a `Tools/snapshot/render-mockups.sh` needs a
+///   `resources: [.process("Resources")]` rule on this target, which that same file
+///   does not declare — SwiftPM leaves an undeclared PNG unbundled.
+///
+/// `Package.swift` is frozen after Phase 1 and outside this task's ownership, so this
+/// is a note rather than an edit. Unfreeze either line and the swap is local to this
+/// file: `blocks` becomes an `Image`, and nothing else in the module changes.
 struct MockupArt: View {
     let mockup: OnboardingContent.Mockup
     let scale: ReferenceScale
