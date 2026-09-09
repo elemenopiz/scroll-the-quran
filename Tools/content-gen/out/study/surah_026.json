@@ -1,8 +1,356 @@
 {
   "surah": 26,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:17:10.804Z",
+  "generatedAt": "2026-09-09T14:57:05.357Z",
   "studies": [
+    {
+      "key": "26:1-4",
+      "surah": 26,
+      "start": 1,
+      "end": 4,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "A Sign That Would End It",
+      "tier": "standard",
+      "meaning": "Three openings in four lines. Letters that stand alone and are not explained; a book called clarifying; and then, abruptly, an address to the messenger about his own state. He is described as close to killing himself over people who will not believe, which is grief and not anger. The answer is not consolation. It is a statement of what God could do and is not doing: send something from the sky that would bend every neck. Belief is being left at the point where it can still be refused.",
+      "historicalContext": "Meccan, from the middle period, when the Prophet Muhammad (peace be upon him) had been preaching for years to a city that would not move. The commentators read the third ayah as describing genuine distress rather than a figure of speech, and note that a nearly identical line appears in another Meccan surah. No specific occasion is reported. The surah then turns immediately to seven earlier messengers who faced the same refusal.",
+      "keyTerms": [
+        {
+          "arabic": "بَـٰخِعٌ",
+          "gloss": "destroying, killing yourself",
+          "note": "A participle for slaughtering an animal by cutting right through to the spinal marrow. It names complete destruction, not sadness, and the Quran uses it twice, both times of the same grief."
+        },
+        {
+          "arabic": "خَـٰضِعِينَ",
+          "gloss": "bent low, submitting",
+          "note": "A word for a neck lowered under a yoke or a hand. It occurs once in the Quran, describing a submission that would be produced by force rather than chosen, which is why it stays hypothetical."
+        },
+        {
+          "arabic": "ٱلْمُبِينِ",
+          "gloss": "clarifying, making plain",
+          "note": "An active participle, so the book does not merely appear clear; it makes other things clear. The form points outward at what is explained rather than inward at the text's own style."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca was a small place. A man who had spent a decade calling his own relatives, his neighbours and the men he traded with, and had been answered with ridicule, met those same people every day at the well and in the assembly. There was no crowd to disappear into and no other city to try. The grief this ayah names was the grief of someone who knew each person who had refused him by name.",
+      "didYouKnow": "The word for bent necks occurs once in the whole Quran, and the participle for self-destroying grief occurs twice, both times about the same thing. The three letters that open this surah open only one other, and the two are separated by a surah that begins with two of the same letters. None of the openings is explained anywhere in the text.",
+      "theologicalSignificance": "The fourth line concedes that compulsion is available and rules it out by not using it. That places a limit on what revelation is for: it is not an instrument for producing belief but an offer that has to be able to fail. The third line is stranger. It records that the failure hurt, and that the hurt was not corrected but simply named, which makes grief over other people a thing prophecy contains rather than a flaw in it.",
+      "crossReferences": [
+        {
+          "ref": "18:6",
+          "why": "Uses almost the identical sentence about grief for people who will not believe a report."
+        },
+        {
+          "ref": "10:99",
+          "why": "States plainly that God could have made everyone on earth believe, and asks whether people can be compelled."
+        },
+        {
+          "ref": "2:256",
+          "why": "Says there is no compulsion in religion, which is the settled form of what is left open here."
+        }
+      ],
+      "applyIt": "Think of the person whose choices you are carrying: a child, a sibling, a friend who is not listening. Say the thing you have been saying once, plainly, and then stop. Not permanently, just for a week. This passage puts grief over someone else's refusal in the mouth of a prophet, and then declines to remove the refusal. Try holding both.",
+      "exploreFurther": [
+        "18:6",
+        "10:99",
+        "16:82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.243Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:5-7",
+      "surah": 26,
+      "start": 5,
+      "end": 7,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Every Noble Kind In Pairs",
+      "tier": "standard",
+      "meaning": "A habit is described rather than an event: no fresh reminder arrives without their turning from it. The word for the reminder means newly given, which the commentators take as newly revealed rather than newly invented. Then the sentence stops arguing and points at the ground. How many noble kinds have been made to grow there, each in pairs. The shift is deliberate. An argument about a message is dropped and a question about vegetation is put in its place.",
+      "historicalContext": "Meccan. The surah opens by naming the pattern it will then illustrate seven times over: a message arrives, and it is turned away from. The reminder is attributed to the Merciful, the name Mecca contested most sharply. No occasion is reported for these ayat. The threat in the second line is left unspecified, and the commentators note that unspecified warnings are characteristic of the Meccan material.",
+      "keyTerms": [
+        {
+          "arabic": "مُّحْدَثٍ",
+          "gloss": "newly given, fresh",
+          "note": "A passive participle meaning brought about anew. It describes the reminder as arriving in instalments, each one recent, and it occurs in only one other ayah of the Quran."
+        },
+        {
+          "arabic": "زَوْجٍ",
+          "gloss": "a pair, a kind",
+          "note": "The word covers one of a pair and the pair together, which is why translations divide between kinds and pairs. Applied to plants the commentators read it as species, each kind distinct from the others and reproducing as itself."
+        },
+        {
+          "arabic": "كَرِيمٍ",
+          "gloss": "noble, generous",
+          "note": "The word used of a generous host and a well-born man, applied here to plants. It carries usefulness and worth together, so a noble growth is one that gives freely of what it has."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca grew nothing. The valley was stone and the city lived on trade and on food carried in, which made cultivated land something Meccans saw at the other end of a journey and priced accordingly. Dates came from oases days away, grain from the north. To be asked to look at the earth and count the kinds growing in it was, for this audience, to be asked about somebody else's ground and their own dependence on it.",
+      "didYouKnow": "The word describing the reminder as newly given occurs in only one other ayah of the Quran, where it is used in the same complaint about people turning away. The line about the earth is followed by two sentences that then repeat, unchanged, seven more times in this surah, once at the close of each prophet's story.",
+      "theologicalSignificance": "Two claims sit together. Revelation is described as continuous rather than finished, arriving in fresh instalments, which makes turning away a repeated decision instead of a single verdict. And the argument then leaves language behind entirely. A growing thing is offered as evidence, which relocates the case from what a person is told to what a person can walk out and look at. Refusal after that is a refusal of the ground as much as of the message.",
+      "crossReferences": [
+        {
+          "ref": "21:2",
+          "why": "Uses the same word for a reminder newly given, in the same report of people turning away."
+        },
+        {
+          "ref": "36:33-36",
+          "why": "Draws the same argument from grain and paired growth, ending on pairs people do not know."
+        },
+        {
+          "ref": "13:3-4",
+          "why": "Names pairs of fruit growing from one water on one land, and calls the difference a sign."
+        }
+      ],
+      "applyIt": "Go and look at one growing thing today with more attention than it deserves. A weed in a pavement crack, the herb dying on your windowsill, a street tree. Sixty seconds. Notice that it is a specific kind and not a general green. This passage answers an argument by pointing at the ground, and the pointing only works if somebody looks.",
+      "exploreFurther": [
+        "21:2-3",
+        "36:33-36",
+        "13:3-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:8-12",
+      "surah": 26,
+      "start": 8,
+      "end": 12,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "I Fear They Will Deny Me",
+      "tier": "standard",
+      "meaning": "The refrain arrives for the first time and will return seven more times: a sign is in this, and most of them did not believe; and your Lord is the Mighty, the Merciful. Then the surah begins its long sequence without preamble. God calls Moses and tells him to go to a wrongdoing people, naming them only in the following line. Moses answers with fear, not with objection, and the first thing he says is that he expects to be called a liar.",
+      "historicalContext": "Meccan. The Moses account in this surah is the longest of the seven and is told almost entirely in dialogue, which the commentators connect to the surah's purpose: a man in Mecca facing a hostile city is being shown a man who faced a king. The story begins at the call, skipping the birth, the river and the years in Midian that other surahs supply. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "نَادَىٰ",
+          "gloss": "he called out",
+          "note": "A call made across a distance, loud enough to carry. The verb places the caller apart from the one called, which is how the encounter is described throughout: a voice, and no form given."
+        },
+        {
+          "arabic": "أَلَا يَتَّقُونَ",
+          "gloss": "will they not be wary",
+          "note": "A question put by God about Pharaoh's people, using the verb for guarding oneself against harm. Phrasing the mission as a question rather than a verdict leaves their situation open at the moment Moses is sent."
+        },
+        {
+          "arabic": "ٱلْعَزِيزُ ٱلرَّحِيمُ",
+          "gloss": "the Mighty, the Merciful",
+          "note": "Two names that pull in different directions, power and tenderness, held in one phrase. The pairing closes each of the eight sections in this surah, so every account of destruction ends on mercy."
+        }
+      ],
+      "lifeInProphetsTime": "Being called a liar was not an insult in that society; it was a legal position. A man's word was the instrument by which sales, debts, marriages and killings were established, so being publicly held a liar removed him from ordinary dealings. When the Quraysh answered the Prophet Muhammad (peace be upon him) with that charge, they were not describing his character. They were putting him outside the system by which anything could be settled.",
+      "didYouKnow": "The second sentence of the refrain here occurs eight times in the Quran, and all eight are in this surah, closing the opening and then each of the seven prophet accounts. It is the surah's spine. The Quran contains other repeated refrains, but this one is built to mark the seams of a sequence rather than to punctuate a list.",
+      "theologicalSignificance": "A prophet is shown afraid before he is shown obedient, and the fear is not rebuked in this line. That establishes something about what being sent involves: the capacity is supplied, the temperament is not replaced. And the errand itself is put as a question about whether the people will be wary, which keeps the outcome open at the moment of sending. Nobody is described as already condemned when the messenger sets out.",
+      "crossReferences": [
+        {
+          "ref": "20:9-24",
+          "why": "Tells the same call at greater length, with the fire, the staff and the hand."
+        },
+        {
+          "ref": "28:29-35",
+          "why": "Gives the same commission with Moses' fear and the granting of Aaron in reply."
+        },
+        {
+          "ref": "79:17-19",
+          "why": "Compresses the whole errand into three short lines addressed directly to Pharaoh."
+        }
+      ],
+      "applyIt": "Say out loud the thing you are afraid will happen if you do the difficult task in front of you. Not the task, the fear. That they will laugh, that you will freeze, that it will not work. Moses names his fear first and is sent anyway. Naming it does not remove it; it just stops it from operating unexamined.",
+      "exploreFurther": [
+        "20:9-24",
+        "28:29-35",
+        "79:15-26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:13-16",
+      "surah": 26,
+      "start": 13,
+      "end": 16,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "We Are With You, Listening",
+      "tier": "standard",
+      "meaning": "Moses lists three obstacles and asks for one thing. His chest tightens, his tongue will not run free, and there is a killing on his record in Egypt that could cost him his life. He does not ask for these to be removed. He asks for his brother. The answer is a single word of refusal to the fear, then an instruction to go, and then the assurance: We are with you both, listening. Nothing is fixed. Company is given instead.",
+      "historicalContext": "Meccan. The killing Moses refers to is the one recounted at length in another surah, where he strikes an Egyptian who was beating a man of his own people and then flees. Here it is compressed to a phrase, on the assumption that the audience knows it. The commentators note that the reply does not deny the danger; it supplies a companion and a promise of presence and sends them anyway.",
+      "keyTerms": [
+        {
+          "arabic": "يَضِيقُ صَدْرِى",
+          "gloss": "my chest becomes tight",
+          "note": "The Arabic for distress is physical: the chest narrowing. Moses reports a symptom rather than an emotion, which is how the Quran usually describes being overwhelmed."
+        },
+        {
+          "arabic": "كَلَّا",
+          "gloss": "no, not so",
+          "note": "A particle of flat refusal, used to shut down what was just said. Here it answers the fear rather than the request, so the brother is granted and the worry is simply refused."
+        },
+        {
+          "arabic": "رَسُولُ",
+          "gloss": "a messenger",
+          "note": "Singular, although two men are speaking. The classical commentators explain that the word can name a message or an errand borne jointly, so one word covers both of them without error."
+        }
+      ],
+      "lifeInProphetsTime": "Speaking to power in that world was a performance skill. An envoy stood in a court, held a room of hostile men and delivered his message without stumbling, and a man who could not get his words out was finished before he started. Delegations chose their speaker carefully for exactly this reason. Moses asking for a brother who could speak was asking for the standard equipment of anyone sent to a king.",
+      "didYouKnow": "The word for messenger in the last line of this passage is singular, though two men are told to say it. Arabic grammarians and commentators have discussed the form since the earliest period, reading it either as a noun that can stand for a message or as a form that covers one and many alike. The Quran keeps the singular and does not explain it.",
+      "theologicalSignificance": "What is given is not competence but company. The stammer stays, the danger stays, the past stays; what changes is that two go instead of one and that the sending includes a claim of presence. The promise is phrased as listening rather than watching, which puts God inside the conversation about to happen rather than above it. Support is described as attention here, and attention is what the frightened person actually lacks.",
+      "crossReferences": [
+        {
+          "ref": "20:25-36",
+          "why": "Records the same request as a prayer, asking for an opened chest and an untied tongue."
+        },
+        {
+          "ref": "28:34-35",
+          "why": "Grants Aaron as a support and promises that they will not be reached."
+        },
+        {
+          "ref": "9:40",
+          "why": "Uses the same assurance of presence to a frightened companion in a cave."
+        }
+      ],
+      "applyIt": "Ask one person to come with you to the thing you are dreading. The appointment, the difficult conversation, the first session. Not to speak for you, just to be in the room. Moses is not given fluency or safety; he is given his brother. Sending the message and asking someone to stand beside you are two separate acts, and the second is available today.",
+      "exploreFurther": [
+        "20:25-36",
+        "28:33-35",
+        "9:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.251Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:17-20",
+      "surah": 26,
+      "start": 17,
+      "end": 20,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "I Did It Then",
+      "tier": "standard",
+      "meaning": "Pharaoh does not answer the demand. He answers the man, reaching back to a childhood in his own household and a killing that followed it. The move is to make the messenger's biography the subject. What is remarkable is the reply. Moses does not deny it, explain it or plead the circumstances. He says he did it and that he was among those who had lost their way, and then goes straight on to the next thing without defending himself.",
+      "historicalContext": "Meccan. The upbringing Pharaoh cites is the one told in full elsewhere, where the infant is drawn from the river and raised in the palace of the man who had ordered the killing of boys. The killing Moses admits is likewise given at length in another surah. Here both are reduced to a taunt and an answer, and the commentators note that the surah assumes the audience already has the story.",
+      "keyTerms": [
+        {
+          "arabic": "نُرَبِّكَ",
+          "gloss": "we raised you, reared you",
+          "note": "The verb for bringing a child up, which the commentators connect with the word for Lord. Pharaoh uses the language of lordship over Moses in the sentence right after Moses names the Lord of the worlds."
+        },
+        {
+          "arabic": "فَعْلَتَكَ",
+          "gloss": "your deed, that act",
+          "note": "A noun form naming a single occurrence of an action. Pharaoh does not name the killing; he uses a word that points at it, which is how an accusation is made without stating the charge."
+        },
+        {
+          "arabic": "ٱلضَّآلِّينَ",
+          "gloss": "those who have lost the way",
+          "note": "The word for a traveller off the road or a camel gone missing. It admits error without admitting malice, and the commentators read it as ignorance of what would follow rather than a confession of murder."
+        }
+      ],
+      "lifeInProphetsTime": "Bringing up a child not your own created a debt in Arabian society that lasted a lifetime. A foster relationship was a real relationship, counted alongside blood, and reminding a man that you had fed and housed him was a recognised way of asserting a claim over him in public. Pharaoh's opening is therefore not sentimental. It is a legal move, made in front of a court, and everyone listening in Mecca knew the manoeuvre.",
+      "didYouKnow": "The verb Pharaoh uses for having raised Moses is built from the root the commentators connect with the word for Lord, which Moses had used of God two lines earlier. The exchange therefore sets one claim of lordship against another in the same vocabulary. Neither speaker remarks on it, and the Arabic makes the collision audible without a word of comment.",
+      "theologicalSignificance": "A prophet is shown admitting a wrong without losing his standing to speak. The admission is placed in the middle of the mission, in front of the person it most damages him with, and the surah does not treat it as a disqualification. That separates the authority of a message from the record of the person carrying it. It also models an answer to accusation that concedes the fact and refuses the inference drawn from it.",
+      "crossReferences": [
+        {
+          "ref": "28:15-21",
+          "why": "Gives the killing in full, with Moses' immediate regret and his flight from the city."
+        },
+        {
+          "ref": "28:7-13",
+          "why": "Tells how the child came to be raised in the household Pharaoh is now invoking."
+        },
+        {
+          "ref": "20:49-52",
+          "why": "Continues the same confrontation, with Pharaoh questioning and Moses answering about earlier generations."
+        }
+      ],
+      "applyIt": "The next time someone brings up something you did, try answering in one sentence without the explanation attached. Yes, I did that. Then stop, and let the silence be theirs. The explanation can come later if it is wanted. Most of the energy in these exchanges goes into the defence, and Moses spends none of it.",
+      "exploreFurther": [
+        "28:14-21",
+        "20:49-56",
+        "28:7-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.251Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:21-23",
+      "surah": 26,
+      "start": 21,
+      "end": 23,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "A Favour You Count Against Me",
+      "tier": "standard",
+      "meaning": "Moses finishes the admission and turns the account around. He fled, he was given judgement, he was made a messenger; the sequence answers the taunt about his past by not disputing it. Then the sentence that changes the subject of the trial. Is this the favour you hold over me, that you enslaved the Children of Israel? A childhood in the palace is set against a nation in bondage, and the private debt is cancelled by the public one. Pharaoh's reply avoids all of it.",
+      "historicalContext": "Meccan. The Israelites in Egypt are described in the Quran as held in servitude and subjected to the killing of their sons, and this line is the surah's only direct statement of the charge. Reports about the period vary in the Israelite traditions the early commentators sometimes cite, and those are not part of the Quranic account. Pharaoh's counter-question then opens the next exchange. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "حُكْمًا",
+          "gloss": "judgement, sound discernment",
+          "note": "The capacity to decide rightly between things, given as a gift before prophethood is mentioned. The commentators read it as understanding and right judgement rather than as legal authority."
+        },
+        {
+          "arabic": "تَمُنُّهَا",
+          "gloss": "you hold it over me",
+          "note": "To give something and then keep raising it. The verb names a favour turned into leverage, which is why the Quran elsewhere warns against following charity with it."
+        },
+        {
+          "arabic": "عَبَّدتَّ",
+          "gloss": "you enslaved, made servants",
+          "note": "An intensive verb built from the word for a servant, meaning to reduce people to that condition. This form occurs nowhere else in the Quran, and it names an action rather than a state."
+        }
+      ],
+      "lifeInProphetsTime": "Slavery was ordinary in Mecca and its moral weight was not. Men owned people, and some of the earliest Muslims were among the owned, tortured in the open by masters who faced no consequence. A community hearing this exchange contained both sides of it. Setting a favour done to one man against the bondage of a whole people was, in that city, an argument aimed at people who could do the arithmetic themselves.",
+      "didYouKnow": "The verb naming what Pharaoh did to the Israelites occurs in this form nowhere else in the Quran. Pharaoh's answer in the third line is a question about what the Lord of the worlds even is, which has the same shape as the objection the previous surah reports being made in Mecca about the name of the Merciful.",
+      "theologicalSignificance": "A private kindness is weighed against a public wrong and found not to cancel it. That is a claim about how obligation works: personal generosity does not buy immunity from what you have done at scale, and the beneficiary is not silenced by having benefited. The passage also puts the accusation in the mouth of the accused, which is where it carries least advantage and most force. Justice is argued from inside the debt.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Warns against cancelling charity by holding it over the person who received it, the move named here."
+        },
+        {
+          "ref": "28:4-6",
+          "why": "Describes the same oppression of the Children of Israel and the promise made to them."
+        },
+        {
+          "ref": "7:127-129",
+          "why": "Continues the confrontation, with the same charge and the promise of inheritance to come."
+        }
+      ],
+      "applyIt": "Think of a favour you have done that you have mentioned more than once. Then decide not to mention it again, starting now. If it was given, it is gone. This exchange shows what a favour becomes once it is used as leverage, and the person on the other side of yours can almost certainly count the times.",
+      "exploreFurther": [
+        "2:262-264",
+        "28:3-6",
+        "7:127-137"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:05.252Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "26:79-83",
       "surah": 26,
