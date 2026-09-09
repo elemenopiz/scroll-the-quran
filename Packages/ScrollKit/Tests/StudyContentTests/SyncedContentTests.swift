@@ -64,7 +64,7 @@ func syncedUnitsAreComplete() throws {
 @Test("Every Discover key is authored at Discover tier, and the tier is the schema's string")
 func syncedUnitsAreDiscoverTier() throws {
     let studies = try syncedStudies()
-    let discoverKeys = Set(try syncedDiscoverKeys())
+    let discoverKeys = Set(try bundledDiscoverFile().items.map(\.key))
     #expect(studies.filter { discoverKeys.contains($0.key) }.allSatisfy { $0.tier == .discover }, "Discover units carry the discover tier")
     #expect(studies.allSatisfy { StudyTier.allCases.contains($0.tier) })
     // The tier really is read from the string rather than defaulted, and an unrecognised one
