@@ -23,6 +23,7 @@ struct GivingCard: View {
                 .foregroundStyle(CommunityPalette.onGiving)
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
+                .padding(.top, CommunityMetrics.givingLabelToAmount)
                 .accessibilityIdentifier("community.given.amount")
 
             RoundedRectangle(cornerRadius: CommunityMetrics.givingDividerHeight / 2, style: .continuous)
@@ -31,7 +32,8 @@ struct GivingCard: View {
                     width: CommunityMetrics.givingDividerWidth,
                     height: CommunityMetrics.givingDividerHeight
                 )
-                .padding(.vertical, Spacing.md)
+                .padding(.top, CommunityMetrics.givingAmountToRule)
+                .padding(.bottom, CommunityMetrics.givingRuleToSubline)
                 .accessibilityHidden(true)
 
             Text(subline)
@@ -43,7 +45,9 @@ struct GivingCard: View {
                 .accessibilityIdentifier("community.given.subline")
         }
         .frame(maxWidth: .infinity)
-        .padding(CommunityMetrics.givingCardPadding)
+        .padding(.top, CommunityMetrics.givingCardPaddingTop)
+        .padding(.bottom, CommunityMetrics.givingCardPaddingBottom)
+        .padding(.horizontal, CommunityMetrics.givingCardPaddingSide)
         .frame(minHeight: CommunityMetrics.givingCardHeight)
         .background(
             CommunityPalette.giving,

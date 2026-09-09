@@ -8,13 +8,18 @@ enum CommunityMetrics {
     /// Community insets its cards 60 px, not the 48 px (16 pt) the Home rows use.
     /// Row y=560: the green card runs x=60..1113.
     static let pageMargin: CGFloat = 20
-    /// 1053 px wide at that margin — `pageMargin` on both sides of a 393 pt screen.
-    static let cardWidth: CGFloat = 353
-
     /// Col x=70: the green card runs y=306..832 → 176 pt tall.
     static let givingCardHeight: CGFloat = 176
-    /// Card top 306 px → caps-label line top ≈ 376 px, and the same gap under the last subline.
-    static let givingCardPadding: CGFloat = 22
+    /// Card top 306 px → caps-label cap top 385 px, and the subline's line box ends 25 pt above
+    /// the card's bottom edge. Top and bottom differ by a couple of points; the sides are 22.
+    static let givingCardPaddingTop: CGFloat = 24
+    static let givingCardPaddingBottom: CGFloat = 25
+    static let givingCardPaddingSide: CGFloat = 22
+    /// Caps-label line box bottom → the amount's line box top.
+    static let givingLabelToAmount: CGFloat = 3
+    /// Amount line box bottom → the rule (divider centre at 216.7 pt), and rule → subline.
+    static let givingAmountToRule: CGFloat = 5
+    static let givingRuleToSubline: CGFloat = 11
     /// The hairline between the amount and the subline: 83x6 px of white at 25 %.
     static let givingDividerWidth: CGFloat = 28
     static let givingDividerHeight: CGFloat = 2
@@ -45,10 +50,11 @@ enum CommunityMetrics {
 
     // MARK: Type sizes (cap heights measured off the capture, divided by the font's cap ratio)
 
-    /// "GIVEN TO MINISTRIES": cap 22 px = 7.33 pt / 0.714 ≈ 10.3 → the 11 pt `CapsLabel`.
-    static let capsSize: CGFloat = 11
-    /// "$59,185": figure height 97 px = 32.3 pt / 0.67 (Source Serif capHeight) ≈ 48.
-    static let amountSize: CGFloat = 48
+    /// "GIVEN TO MINISTRIES": cap 22 px = 7.33 pt / 0.714 (SF Pro capHeight) ≈ 10.3.
+    static let capsSize: CGFloat = 10
+    /// "$59,185": figure height 97 px = 32.3 pt / 0.67 (Source Serif capHeight) ≈ 48; the "$"
+    /// spans 123 px = 41 pt, which pins it at 49.
+    static let amountSize: CGFloat = 49
     /// "Every dollar from JCBSN apps": cap 26 px = 8.67 pt / 0.714 ≈ 12.1.
     static let sublineSize: CGFloat = 12
     /// Line pitch 52 px = 17.33 pt against a 14.3 pt line box.
@@ -60,8 +66,8 @@ enum CommunityMetrics {
     static let bodyLineSpacing: CGFloat = 3
     /// Organisation name: cap 31 px = 10.33 pt / 0.714 ≈ 14.5.
     static let charityNameSize: CGFloat = 15
-    /// Tagline: cap 25 px = 8.33 pt / 0.714 ≈ 11.7.
-    static let charityFocusSize: CGFloat = 13
+    /// Tagline: ascender 27 px = 9 pt / 0.75 ≈ 12.
+    static let charityFocusSize: CGFloat = 12
     /// Description: cap 27 px = 9 pt / 0.714 ≈ 12.6; pitch 59 px = 19.67 pt.
     static let charityBlurbSize: CGFloat = 13
     static let charityBlurbLineSpacing: CGFloat = 4
