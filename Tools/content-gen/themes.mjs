@@ -58,7 +58,7 @@ export const THEMES = [
     refs: ["55:46-61", "56:10-26", "13:23-24", "18:31", "47:15", "76:12-22"] },
   { id: "divine-attributes", title: "The Attributes of God",
     blurb: "Transcendence, knowledge, power, and the names by which God describes Himself.",
-    refs: ["42:11", "2:255", "59:22-24", "112:1-4", "6:103", "20:110"] },
+    refs: ["42:11", "2:255", "59:22-24", "6:103", "20:110", "57:3"] },
   { id: "revelation-and-its-rejection", title: "Revelation and Its Rejection",
     blurb: "Why revelation is sent, how it is received, and the arguments of those who turn from it.",
     refs: ["6:7-10", "2:23-24", "17:88", "41:26", "25:32", "6:157"] },
