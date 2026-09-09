@@ -1,0 +1,48 @@
+# Scroll the Quran
+
+Native SwiftUI iOS app: a feature-for-feature, pixel-close clone of "Scroll the Bible" with Quran content in **English only**. Reference screenshots of the original are in `Reference/` (see `Reference/manifest.json` for screen ids, appearance, routes, and RMSE thresholds). The approved build plan is `~/.claude/plans/we-are-cloning-the-deep-boot.md`; task briefs live in `docs/tasks/`.
+
+## Golden rules
+1. **Never edit `*.xcodeproj` / `project.pbxproj`.** The project is generated: edit `project.yml`, then run `xcodegen generate`. A hook blocks pbxproj edits.
+2. **All UI and logic lives in `Packages/ScrollKit`** (one local SwiftPM package, 12 targets). `App/` is a thin shell and is frozen after Phase 1, as are `Package.swift` and `project.yml`.
+3. **Add files by dropping them into the right folder.** Sources are folder-globbed; `Content/` is a folder reference. No project edits needed.
+4. **`Content/` JSON is generated.** Edit the generator in `Tools/content-gen/`, not the output (fixtures in `Content/study/` for surah 1 and 112 are the exception until real content lands).
+5. **No Arabic script anywhere** in `Content`, `Packages`, `App`, `Widget` (v1 decision; a Stop hook greps for U+0600–U+06FF). Transliterate Arabic terms instead.
+6. **Stay inside your task's owned directories** (listed in your brief). Anything out of scope becomes a note in your report, not an edit.
+7. **Design tokens only.** Colors, radii, spacing, tracking, and fonts come from `DesignSystem` (`Tokens.swift`, `Typography.*`). Never `.font(.system(...))` or literal hex in feature code.
+8. **Modern SwiftUI only:** iOS 17+, `@Observable` (never `ObservableObject`), `NavigationStack`, `@MainActor` view models, Swift Testing (`import Testing`) for unit tests. Every tappable element gets an `accessibilityIdentifier`.
+9. **No network calls in the app.** Everything is bundled.
+
+## Commands
+```bash
+xcodegen generate                       # after editing project.yml
+Tools/verify.sh                         # xcodegen → swift build/test (host) → xcodebuild sim build. THE gate.
+Tools/verify.sh --ui                    # + XCUITests (layout specs, flows)
+Tools/verify.sh --snap reader-dark …    # + capture screens by id and compare against Reference/
+cd Packages/ScrollKit && swift test --filter QuranDataTests
+Tools/snapshot/compare.sh <screen-id>   # prints RMSE and writes .build/snapshots/<id>-diff.png
+```
+Simulator: iPhone 17 Pro, iOS 26. Prefer the desktop app's iOS Simulator tools (`build`, then `control` launch/screenshot/tap); fallback `xcrun simctl`. Build output through `xcbeautify`.
+
+## Verification before claiming done
+- Run `Tools/verify.sh` (plus `--ui`/`--snap` per your brief) and paste the tail of its output in your report.
+- For every screen you touched: capture, compare, look at the diff PNG next to the reference, iterate up to 5 rounds, and **report the RMSE number**. Do not stop at "looks close".
+- Unit tests for any logic (paginator, streaks, feed determinism, parsers) before the UI that uses them.
+
+## Architecture
+- `RootView` state machine: onboarding → paywall → gift (if paywall closed) → `TabRoot` (Community, Discover, Home, The Quran).
+- Stores injected via `.environment`: `TranslationStore`, `StudyStore`, `UserStore` (App Group JSON), `EntitlementStore` (StoreKit 2). `Router` protocol in `AppShell` handles tab selection and deep links (`scrollthequran://verse/2/255`).
+- Keys: verse `"2:255"`, passage `"94:5-6"`; global index = `surah.startIndex + ayah - 1` (6,236 verses).
+- Reader pages per **surah** (never the whole Quran): `ScrollView + LazyVStack + .scrollTargetBehavior(.paging) + .scrollPosition(id:) + .containerRelativeFrame`. Long ayat are split by `VersePaginator` into continuation pages.
+- Study JSON per surah shard (`Content/study/surah_NNN.json`), sections in fixed order: meaning, historicalContext, keyTerms, lifeInProphetsTime, didYouKnow, theologicalSignificance, crossReferences, applyIt, exploreFurther.
+- Translations: default `itani` (ClearQuran, CC BY-ND, attribute "Translation by Talal Itani, ClearQuran.com"); alternates `saheeh`, `ruwwad`, `pickthall`. Copyright strings shown verbatim in the Translation sheet.
+
+## Screen ids
+`onboarding-hook, onboarding-signin, onboarding-slide1..4, onboarding-reviews, paywall-trial, paywall-plans, gift-closed, gift-open, community, discover, deepstudy(#section), reader, translation-sheet, notes-sheet, home(#scrolled)`. Launch argument `--screenshot <id>` routes straight there with fixture data and `SCROLL_FIXED_DATE=2026-09-14`.
+
+## Content pipeline
+`Tools/content-gen/` (Node 24, `@anthropic-ai/sdk`): ingest → segment → build-requests → submit-batch → poll → validate → assemble → judge. Always run with `--dry-run` first to see token/$ estimates. Never commit `Tools/content-gen/work/`. Load the `claude-api` skill before touching these scripts.
+
+## Workflow
+- Orchestrator (Fable 5.1) writes briefs and gates merges; implementers are Opus agents in worktrees on `phaseN/<task>` branches. Merge order and ownership are in the plan.
+- Commit messages end with `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`.

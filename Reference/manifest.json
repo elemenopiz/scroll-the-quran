@@ -1,0 +1,29 @@
+{
+  "device": "iPhone 15 Pro class, 1179x2556 px, 393x852 pt @3x",
+  "note": "Reference captures of Scroll the Bible (JCBSN). Compare via Tools/snapshot/compare.sh <id>; thresholds in Tools/snapshot/thresholds.json. 'route' is the --screenshot launch argument that renders the equivalent screen in our app.",
+  "screens": [
+    { "id": "onboarding-hook",          "file": "onboarding-hook.png",          "appearance": "light", "route": "onboarding-hook",   "threshold": 0.08 },
+    { "id": "onboarding-signin",        "file": "onboarding-signin.png",        "appearance": "light", "route": "onboarding-signin", "threshold": 0.08, "notes": "bottom sheet over dimmed hook" },
+    { "id": "onboarding-slide1",        "file": "onboarding-slide1-feed.png",   "appearance": "light", "route": "onboarding-slide1", "threshold": 0.12, "notes": "phone-frame mockup of reader + verse action sheet; alt state onboarding-slide1-deepstudy.png" },
+    { "id": "onboarding-slide2",        "file": "onboarding-slide2-plans.png",  "appearance": "light", "route": "onboarding-slide2", "threshold": 0.12, "notes": "alt state onboarding-slide2-plan-detail.png" },
+    { "id": "onboarding-slide3",        "file": "onboarding-slide3-discover.png","appearance": "light", "route": "onboarding-slide3", "threshold": 0.12 },
+    { "id": "onboarding-slide4",        "file": "onboarding-slide4-search.png", "appearance": "light", "route": "onboarding-slide4", "threshold": 0.12 },
+    { "id": "onboarding-reviews",       "file": "onboarding-reviews.png",       "appearance": "light", "route": "onboarding-reviews","threshold": 0.10 },
+    { "id": "paywall-trial",            "file": "paywall-trial.png",            "appearance": "light", "route": "paywall-trial",     "threshold": 0.06 },
+    { "id": "paywall-plans",            "file": "paywall-plans.png",            "appearance": "light", "route": "paywall-plans",     "threshold": 0.08, "notes": "half sheet over dimmed paywall" },
+    { "id": "gift-closed",              "file": "gift-closed.png",              "appearance": "light", "route": "gift-closed",       "threshold": 0.10, "notes": "raster envelope art; ours will differ in detail" },
+    { "id": "gift-open",                "file": "gift-open.png",                "appearance": "light", "route": "gift-open",         "threshold": 0.10 },
+    { "id": "community-dark",           "file": "community-dark.png",           "appearance": "dark",  "route": "community",         "threshold": 0.10 },
+    { "id": "discover-dark",            "file": "discover-dark.png",            "appearance": "dark",  "route": "discover",          "threshold": 0.14 },
+    { "id": "deepstudy-top",            "file": "deepstudy-top.png",            "appearance": "dark",  "route": "deepstudy",         "threshold": 0.14 },
+    { "id": "deepstudy-mid",            "file": "deepstudy-mid.png",            "appearance": "dark",  "route": "deepstudy#original-language", "threshold": 0.14 },
+    { "id": "deepstudy-crossrefs",      "file": "deepstudy-crossrefs.png",      "appearance": "dark",  "route": "deepstudy#cross-references",  "threshold": 0.14 },
+    { "id": "deepstudy-bottom",         "file": "deepstudy-bottom.png",         "appearance": "dark",  "route": "deepstudy#apply-it","threshold": 0.14 },
+    { "id": "reader-dark",              "file": "reader-dark.png",              "appearance": "dark",  "route": "reader",            "threshold": 0.10, "notes": "surah start: logo card above verse 1, hint toast visible" },
+    { "id": "translation-sheet",        "file": "translation-sheet.png",        "appearance": "dark",  "route": "translation-sheet", "threshold": 0.10 },
+    { "id": "notes-sheet",              "file": "notes-sheet.png",              "appearance": "dark",  "route": "notes-sheet",       "threshold": 0.12, "notes": "keyboard visible; mask bottom 45% when comparing" },
+    { "id": "home-dark",                "file": "home-dark.png",                "appearance": "dark",  "route": "home#scrolled",     "threshold": 0.10, "notes": "scrolled past hero card" },
+    { "id": "home-light",               "file": "onboarding-slide4-search.png", "appearance": "light", "route": "home",              "threshold": 0.16, "notes": "only available inside a phone-frame mockup; crop the frame before comparing" }
+  ],
+  "excluded": [ { "file": "paywall-appstore-system-sheet.png", "why": "iOS system purchase sheet, not ours to render" } ]
+}
