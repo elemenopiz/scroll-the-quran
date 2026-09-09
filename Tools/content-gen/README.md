@@ -162,6 +162,78 @@ hash, so the same sample is picked each run). Writes `work/judge/<key>.json`
 and lists everything scoring below 4/5 for regeneration at higher effort.
 Live calls, no batch discount — `--dry-run` first.
 
+## Authoring mode (no API key)
+
+There is no Anthropic credential for this project, so the batch path
+(`build-requests` → `submit-batch` → `poll-batch`) cannot run. Deep Study notes
+are written instead by Claude Opus agents inside Claude Code sessions. The agent
+*is* the model: it reads the same system prompt and user turn the batch would
+have sent, writes the same JSON body, and stores it in `work/cache/` in exactly
+the record shape `poll-batch.mjs` produces. Everything downstream — `validate`,
+`assemble`, the committed shards — is unchanged.
+
+`author.mjs` is the whole interface. **An author never edits
+`out/study/surah_NNN.json` by hand**; shards are only ever produced by
+`assemble`.
+
+```bash
+node author.mjs todo --only discover --limit 40   # claim a slice
+node author.mjs prompt 2:255                      # system + user turn
+node author.mjs write 2:255 body.json             # validate, then cache
+node author.mjs write-dir bodies/                 # …or a whole directory
+node author.mjs assemble                          # cache -> out/study shards
+node validate.mjs out/study                       # the gate
+node author.mjs status                            # where the wave stands
+```
+
+### `node author.mjs todo [--only discover|all|surah:N|keys:a,b] [--limit N] [--json]`
+
+Unit keys that have **no** `work/cache` record and **no** entry in the committed
+`out/study` shards, so successive waves never redo work. Prints ayah and word
+counts per unit. `--only keys:2:255,1:1-7` claims an explicit list.
+
+### `node author.mjs prompt <key> [--no-system]`
+
+The exact system prompt (`prompts/system.md` plus the theme list, identical to
+what `build-requests` builds) followed by the rendered user turn for that unit.
+Templating is reused from `lib/prompt.mjs`, never re-implemented.
+
+### `node author.mjs write <key> <body.json> [--author NAME] [--model NAME] [--force]`
+
+Runs the full `validate.mjs` rule set over the body — schema, word bounds from
+`x-wordBounds`, Arabic confined to `keyTerms[].arabic`, reference bounds, banned
+phrasing, the honorific, `themeId`, key agreement, and near-duplicate `meaning`
+against everything already written — and only then writes
+`work/cache/p1--<model>--<key>.json`. Exits non-zero with the messages
+otherwise. Bodies may still carry the assemble-stamped fields
+(`key`/`surah`/`start`/`end`/`tier`/`meta`); they are dropped, and a `key` that
+contradicts the target is an error. `--force` allows rewriting a unit that is
+already assembled.
+
+`write-dir <dir>` does the same for a directory of `<key>.json` bodies (use `_`
+for the `:`, e.g. `2_255.json`). It is all-or-nothing: if any body fails, none
+are written.
+
+### `node author.mjs assemble [--only …] [--model …]`
+
+`assemble.mjs`, plus a full per-surah count table and every remaining Discover
+gap.
+
+### `node author.mjs status [--model NAME]`
+
+Units total / cached / assembled / Discover remaining, and a per-surah table of
+the surahs that have any content.
+
+> **`work/units.jsonl` is gitignored.** `author.mjs` rebuilds it from the
+> committed `out/study/passages.json` when it is missing, which is byte-identical
+> to what the segmenter produces. Do **not** "fix" a missing unit list by running
+> `node segment-passages.mjs` with no flags: its `DEFAULTS.minOwnWords` is 12,
+> while the committed `passages.json` was segmented at 24, so a bare re-run
+> silently replaces committed content with a different 4,766-unit segmentation.
+> If you must regenerate it, pass `--min-own-words 24 --max-words 60`.
+
+The brief future author agents follow is `docs/tasks/content-author.md`.
+
 ## Layout
 
 ```
@@ -174,9 +246,11 @@ discover-seed.txt           337 curated refs → 329 Discover units, all 30 juz
 lib/data.mjs                Quran text + surah metadata, key/ref helpers
 lib/units.mjs               unit selection (discover / all / surah:N) + tiers
 lib/prompt.mjs              prompt assembly, output schema, custom_id codec
+lib/author.mjs              authoring mode: todo/prompt/validate/write/status
 lib/pricing.mjs             model prices and the cost estimator
 out/                        committed pipeline output
 work/                       gitignored: raw downloads, requests, cache, judge
+author.mjs                  authoring-mode CLI (see "Authoring mode" above)
 test/                       node --test suite
 ```
 
