@@ -3,8 +3,8 @@
 Read first: `CLAUDE.md`, `Reference/manifest.json`, and the "Architecture" + "Phase 1" sections of `~/.claude/plans/we-are-cloning-the-deep-boot.md`.
 
 ## Situation
-- **Xcode is NOT installed yet** (only Command Line Tools, Swift 6.2.3). `xcodebuild` and the simulator are unavailable until the user installs Xcode 26.x. `swift build` / `swift test` for macOS-hostable targets DO work. `xcodegen generate` works (it only writes files).
-- Therefore: build everything so it compiles and tests on the host now, and make `Tools/verify.sh` skip the `xcodebuild` stage with a loud `WARN: Xcode not installed, simulator build skipped` when `xcodebuild -version` fails. The simulator/snapshot DoD items become "Phase 1b" and will be re-run by the orchestrator once Xcode lands.
+- **Xcode 26.6 (17F113) IS installed** at /Applications/Xcode.app and selected. iOS 26.5 simulator runtime present. A booted **iPhone 17** simulator (402x874 pt, UDID 9756462F-E09B-4F3A-932B-15E5A2E23046) is attached to the Claude desktop pane; use it as the build destination (`-destination 'platform=iOS Simulator,name=iPhone 17'`). Reference PNGs are 393x852 pt, so `compare.sh` must normalize both images to 393x852 before diffing.
+- `Tools/verify.sh` still degrades gracefully (WARN + skip) if `xcodebuild -version` ever fails, but for this task the full xcodebuild + simulator DoD applies.
 
 ## Owns
 Everything in the repo (this is the only Phase 1 agent). Do not touch `.claude/settings.json`, `.claude/hooks/`, or `Reference/*.png`.
@@ -22,7 +22,7 @@ Everything in the repo (this is the only Phase 1 agent). Do not touch `.claude/s
 ## Definition of done (report the verbatim output)
 - `xcodegen generate` exits 0.
 - `cd Packages/ScrollKit && swift build && swift test` exit 0 with ≥ 12 tests passed.
-- `Tools/verify.sh` exits 0 (with the Xcode WARN line).
+- `Tools/verify.sh` exits 0 including the `xcodebuild build` stage against iPhone 17; the app installs and launches on the booted simulator (`xcrun simctl install booted <path>.app && xcrun simctl launch booted com.scrollthequran.app`) and shows the 4-tab placeholder; `Tools/snapshot/capture.sh tabbar-dark` produces a PNG and `compare.sh tabbar-dark` (against a bottom crop of Reference/home-dark.png) prints a number < 0.12.
 - `Tools/snapshot/compare.sh` self-test numbers as above.
 - `node -e` check (or `jq`) that `itani.json` has 6,236 entries and `surahs.json` startIndex values are monotone and sum correctly (`2:255` → global index 261).
 - No Arabic script anywhere (`.claude/hooks/no-arabic.sh` exits 0).
