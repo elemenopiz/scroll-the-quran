@@ -35,6 +35,32 @@ public struct VerseText: View {
         public var arabic: CGFloat {
             english * VerseText.arabicRatio
         }
+
+        /// The size the Arabic is actually drawn at.
+        ///
+        /// The 58 % ratio is the design intent, but on the small surfaces it lands
+        /// below the point where Uthmani script is still readable: the Discover card
+        /// asks for 9.3 pt and Deep Study for 11.6 pt, which is where the Phase 4b
+        /// sweep found the accent line collapsing into a grey smear on long passages.
+        /// `arabicFloor` is a legibility minimum, not a new ratio — `arabic` (and the
+        /// 55–60 % band it satisfies) is left alone. The widget keeps the raw ratio:
+        /// its canvas has no room for a 13 pt accent above a 15 pt verse.
+        public var renderedArabic: CGFloat {
+            self == .widget ? arabic : max(arabic, VerseText.arabicFloor)
+        }
+
+        /// How many lines the accent may take before it is allowed to elide. The card
+        /// surfaces are fixed-height, so a five-line Arabic passage would push the
+        /// English off the bottom; the reader page has the whole screen and is
+        /// deliberately unbounded.
+        public var arabicLineLimit: Int? {
+            switch self {
+            case .reader: nil
+            case .discover: 3
+            case .deepStudy: 3
+            case .widget: 2
+            }
+        }
     }
 
     /// Roman for the reader page, italic for the quoted ayah on Discover and Deep Study.
@@ -46,8 +72,13 @@ public struct VerseText: View {
     /// CLAUDE.md rule 5: the Arabic layer is 55–60% of the English point size.
     public static let arabicRatio: CGFloat = 0.58
 
+    /// The smallest the muted Arabic is ever drawn. Below this the Uthmani
+    /// diacritics stop resolving at @3x and the line reads as noise.
+    public static let arabicFloor: CGFloat = 13
+
     private let arabic: String?
-    private let english: String
+    private let segments: [VerseSegment]
+    private let quoted: Bool
     private let size: Size
     private let style: Style
     private let alignment: TextAlignment
@@ -59,8 +90,37 @@ public struct VerseText: View {
         style: Style = .roman,
         alignment: TextAlignment = .center
     ) {
+        self.init(
+            arabic: arabic,
+            segments: [VerseSegment(ayah: 0, text: english)],
+            size: size,
+            style: style,
+            alignment: alignment
+        )
+    }
+
+    /// A passage spanning several ayat.
+    ///
+    /// Joining the ayat with a bare space runs two sentences together
+    /// ("…call for help Guide us…"), and appending punctuation the translator did not
+    /// write is not ours to do — Itani's ClearQuran is CC BY-**ND**. So the boundary is
+    /// marked instead of edited: a small muted ⟨n⟩ in `Tokens.textTertiary` opens each
+    /// ayah after the first, the same mushaf convention the Arabic line uses. The marker
+    /// is decorative — VoiceOver reads the ayat joined, without it.
+    ///
+    /// - Parameter quoted: wrap the whole passage in straight quotes (the Discover and
+    ///   Deep Study treatment), applied outside the markers.
+    public init(
+        arabic: String?,
+        segments: [VerseSegment],
+        size: Size = .reader,
+        style: Style = .roman,
+        alignment: TextAlignment = .center,
+        quoted: Bool = false
+    ) {
         self.arabic = arabic
-        self.english = english
+        self.segments = segments
+        self.quoted = quoted
         self.size = size
         self.style = style
         self.alignment = alignment
@@ -69,9 +129,9 @@ public struct VerseText: View {
     public var body: some View {
         VStack(spacing: size.english * 0.5) {
             if let arabic, !arabic.isEmpty {
-                ArabicAccentText(arabic, size: size.arabic)
+                ArabicAccentText(arabic, size: size.renderedArabic, lineLimit: size.arabicLineLimit)
             }
-            Text(english)
+            Text(attributedEnglish)
                 .font(englishFont)
                 .foregroundStyle(Color.textPrimary)
                 .multilineTextAlignment(alignment)
@@ -82,6 +142,40 @@ public struct VerseText: View {
         .frame(maxWidth: .infinity, alignment: frameAlignment)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(english)
+    }
+
+    /// The passage as one string, markers and quotes stripped — what VoiceOver reads.
+    private var english: String {
+        segments.map(\.text).joined(separator: " ")
+    }
+
+    /// The rendered passage: the ayat verbatim, with a muted ⟨n⟩ opening each one
+    /// after the first. A single-ayah verse produces exactly the plain string.
+    private var attributedEnglish: AttributedString {
+        var out = AttributedString()
+        let quoted = quoted && !english.isEmpty
+        if quoted {
+            out += AttributedString("\"")
+        }
+        for (offset, segment) in segments.enumerated() {
+            if offset > 0 {
+                out += AttributedString(" ")
+                out += marker(for: segment.ayah)
+                out += AttributedString(" ")
+            }
+            out += AttributedString(segment.text)
+        }
+        if quoted {
+            out += AttributedString("\"")
+        }
+        return out
+    }
+
+    private func marker(for ayah: Int) -> AttributedString {
+        var marker = AttributedString("\u{2329}\(ayah)\u{232A}")
+        marker.font = .body(size.english * 0.62, weight: .semibold)
+        marker.foregroundColor = .textTertiary
+        return marker
     }
 
     private var englishFont: Font {
@@ -105,10 +199,12 @@ public struct VerseText: View {
 public struct ArabicAccentText: View {
     private let text: String
     private let size: CGFloat
+    private let lineLimit: Int?
 
-    public init(_ text: String, size: CGFloat) {
+    public init(_ text: String, size: CGFloat, lineLimit: Int? = nil) {
         self.text = text
         self.size = size
+        self.lineLimit = lineLimit
     }
 
     public var body: some View {
@@ -120,8 +216,26 @@ public struct ArabicAccentText: View {
             .foregroundStyle(Color.textTertiary)
             .multilineTextAlignment(.center)
             .environment(\.layoutDirection, .rightToLeft)
-            .fixedSize(horizontal: false, vertical: true)
+            // A bounded accent keeps a long passage's decorative layer from pushing
+            // the English — the reading text — off a fixed-height card.
+            .lineLimit(lineLimit)
+            .fixedSize(horizontal: false, vertical: lineLimit == nil)
             .accessibilityHidden(true)
+    }
+}
+
+/// One ayah of a passage: its number and the translator's text, verbatim.
+public struct VerseSegment: Equatable, Sendable, Identifiable {
+    public let ayah: Int
+    public let text: String
+
+    public init(ayah: Int, text: String) {
+        self.ayah = ayah
+        self.text = text
+    }
+
+    public var id: Int {
+        ayah
     }
 }
 

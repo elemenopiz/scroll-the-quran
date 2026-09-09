@@ -72,6 +72,16 @@ public enum Metrics {
     public static let actionIcon: CGFloat = 24
     /// Reader hint toast: 182 px tall, 642 px wide.
     public static let toastHeight: CGFloat = 61
+    public static let toastWidth: CGFloat = 214
+    /// Inside the toast (reader-dark, y 2014..2195): the arrow glyph starts 46 px in
+    /// (15.3 pt), the text column at 370 px (41 pt) and the close glyph is centred on
+    /// 1745 px (194 pt), 20 pt from the right edge. Those four numbers are what make
+    /// the box 214 pt wide instead of the 262 pt the component sized itself to.
+    public static let toastLeadingPadding: CGFloat = 15
+    public static let toastTrailingPadding: CGFloat = 4
+    public static let toastIconGlyph: CGFloat = 15
+    public static let toastCloseGlyph: CGFloat = 14
+    public static let toastCloseButton: CGFloat = 32
 
     // MARK: Device mockup
 

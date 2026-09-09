@@ -129,9 +129,10 @@ public struct DeepStudyView: View {
         TintedSectionBox(kind: .quote) {
             VerseText(
                 arabic: presentation.arabic,
-                english: presentation.quoted,
+                segments: presentation.segments,
                 size: .deepStudy,
-                style: .italic
+                style: .italic,
+                quoted: true
             )
         }
         .padding(.horizontal, DeepStudyMetrics.inset)

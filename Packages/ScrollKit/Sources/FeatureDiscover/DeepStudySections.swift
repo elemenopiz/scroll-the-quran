@@ -37,66 +37,45 @@ enum DeepStudyMetrics {
     static let headerTopPadding: CGFloat = 16
 }
 
-/// A caps label with the little copy button the reference draws beside it.
-struct StudySectionHeader: View {
+/// The little copy button the reference draws beside a section's caps label.
+/// It rides `TintedSectionBox`'s header slot.
+struct StudyCopyButton: View {
     let section: StudySection
     let onCopy: () -> Void
 
     var body: some View {
-        HStack(spacing: Spacing.sm) {
-            CapsLabel(
-                icon: section.headerSymbol,
-                text: section.displayTitle,
-                size: DeepStudyMetrics.labelSize,
-                tint: section.headerSymbolTint
-            )
-            Button(action: onCopy) {
-                Image(systemName: "doc.on.doc")
-                    .font(.system(size: DeepStudyMetrics.copyGlyph, weight: .regular))
-                    .foregroundStyle(Color.textSecondary)
-                    .frame(width: 28, height: 28)
-                    .contentShape(.rect)
-            }
-            .buttonStyle(.pressable)
-            .accessibilityLabel("Copy \(section.displayTitle.lowercased())")
-            .accessibilityIdentifier("deepstudy.copy.\(StudyAnchor.id(for: section))")
-            Spacer(minLength: 0)
+        Button(action: onCopy) {
+            Image(systemName: "doc.on.doc")
+                .font(.system(size: DeepStudyMetrics.copyGlyph, weight: .regular))
+                .foregroundStyle(Color.textSecondary)
+                .frame(width: 28, height: 28)
+                .contentShape(.rect)
         }
+        .buttonStyle(.pressable)
+        .accessibilityLabel("Copy \(section.displayTitle.lowercased())")
+        .accessibilityIdentifier("deepstudy.copy.\(StudyAnchor.id(for: section))")
     }
 }
 
-/// One section's box. Tinted sections get their measured fill and a 24 pt corner;
-/// the rest sit flat on the page. Composed here rather than with
-/// `DesignSystem.TintedSectionBox` because the reference puts the copy button on the
-/// same line as the caps label, which that component's fixed header does not allow.
+/// One section's box: `DesignSystem.TintedSectionBox` with the copy button in its
+/// header slot. Tinted sections get their measured fill and a 24 pt corner (`kind`),
+/// the rest sit flat on the page (`kind: nil`).
 struct StudySectionBox<Content: View>: View {
     let section: StudySection
     let onCopy: () -> Void
     @ViewBuilder let content: Content
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.md) {
-            StudySectionHeader(section: section, onCopy: onCopy)
-            content
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .modifier(TintBackground(kind: section.tintedKind))
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("deepstudy.section.\(StudyAnchor.id(for: section))")
-    }
-}
-
-private struct TintBackground: ViewModifier {
-    let kind: TintedSectionKind?
-
-    func body(content: Content) -> some View {
-        if let kind {
-            content
-                .padding(Metrics.sectionBoxPadding)
-                .background(kind.tint, in: .rect(cornerRadius: Radius.cardSmall, style: .continuous))
-        } else {
-            content
-        }
+        TintedSectionBox(
+            kind: section.tintedKind,
+            title: section.displayTitle,
+            icon: section.headerSymbol,
+            iconTint: section.headerSymbolTint,
+            labelSize: DeepStudyMetrics.labelSize,
+            identifier: "deepstudy.section.\(StudyAnchor.id(for: section))",
+            accessory: { StudyCopyButton(section: section, onCopy: onCopy) },
+            content: { content }
+        )
     }
 }
 

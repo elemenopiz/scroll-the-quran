@@ -24,6 +24,26 @@ public extension Color {
         #endif
     }
 
+    /// A colour that resolves differently in light and dark appearance, each with its
+    /// own opacity. `darkOpacity: 0` is how a light-only accent stays absent on dark.
+    init(light: UInt32, lightOpacity: Double, dark: UInt32, darkOpacity: Double) {
+        #if canImport(UIKit)
+            self = Color(UIColor { traits in
+                let isDark = traits.userInterfaceStyle == .dark
+                return UIColor(rgb: isDark ? dark : light)
+                    .withAlphaComponent(isDark ? darkOpacity : lightOpacity)
+            })
+        #elseif canImport(AppKit)
+            self = Color(NSColor(name: nil) { appearance in
+                let isDark = appearance.bestMatch(from: [.aqua, .darkAqua]) == .darkAqua
+                return NSColor(rgb: isDark ? dark : light)
+                    .withAlphaComponent(isDark ? darkOpacity : lightOpacity)
+            })
+        #else
+            self = Color(rgb: light).opacity(lightOpacity)
+        #endif
+    }
+
     /// A single 0xRRGGBB value, same in both appearances.
     init(rgb: UInt32) {
         self.init(
@@ -94,6 +114,15 @@ public extension Color {
     static let progressTrack = Color(light: 0xE6E6E6, dark: 0x303035)
     /// divider.light `#E6E6E6` (paywall-plans) / divider.dark `#38383B` (translation-sheet)
     static let divider = Color(light: 0xE6E6E6, dark: 0x38383B)
+    /// The hairline that separates a card from the page **in light appearance only**.
+    ///
+    /// Dark mode needs nothing: `#1E1E23` on `#0F0F11` is a 15-step separation. Light
+    /// mode has none — `#FFFFFF` card on `#FAFAFC` page is a 2-step difference, and the
+    /// reference relies on a soft ambient shadow our flat fills do not have, so on a
+    /// real screen the Home cards dissolve into the page. `#E8E8ED` is the lightest
+    /// stroke that survives the sweep's sigma-6 blur without reading as a drawn border,
+    /// and it is `.clear` on dark so **no measured dark value changes**.
+    static let cardBorder = Color(light: 0xE8E8ED, lightOpacity: 1, dark: 0x000000, darkOpacity: 0)
 
     /// Text
     /// textPrimary.light `#000000` (onboarding-hook pill) / white on dark
