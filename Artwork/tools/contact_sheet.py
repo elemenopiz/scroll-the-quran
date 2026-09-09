@@ -194,7 +194,8 @@ def main():
         "All assets generated procedurally with ImageMagick + hand-written SVG. "
         "No photographs, no traced artwork, no baked-in text.", title)
     run("magick", title, body, "-background", SHEET_BG, "-append",
-        "-bordercolor", SHEET_BG, "-border", "18", "-resize", "1500x", "-depth", "8",
+        "-bordercolor", SHEET_BG, "-border", "18", "-resize", "1500x",
+        "-background", SHEET_BG, "-alpha", "remove", "-alpha", "off", "-depth", "8",
         "-strip", "-define", "png:compression-level=9", ART / "contact-sheet.png")
     print("  contact-sheet.png", size(ART / "contact-sheet.png"))
 

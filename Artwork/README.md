@@ -164,5 +164,5 @@ cloud sky, the frame over a stand-in screenshot, a cover with the scrim applied.
 ## Totals
 
 64 image files (PNG deliverables + SVG sources) and 8 generator scripts,
-**17.7 MB** on disk (limit 25 MB). The heaviest single file is
+**15.8 MB** on disk (limit 25 MB). The heaviest single file is
 `Gift/gift-clouds-1179x2556.png` at 2.7 MB.
