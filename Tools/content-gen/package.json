@@ -6,7 +6,7 @@
   "description": "Offline content-generation pipeline for Scroll the Quran (segmentation, Deep Study generation via the Claude Message Batches API, validation, assembly).",
   "engines": { "node": ">=24" },
   "scripts": {
-    "test": "node --test test/"
+    "test": "node --test \"test/*.test.mjs\""
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.72.0",
