@@ -1,8 +1,530 @@
 {
   "surah": 13,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:18:49.097Z",
+  "generatedAt": "2026-09-09T12:21:10.359Z",
   "studies": [
+    {
+      "key": "13:1",
+      "surah": 13,
+      "start": 1,
+      "end": 1,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "These Are The Signs",
+      "tier": "standard",
+      "meaning": "Three statements in one line, and the last is the unexpected one. Detached letters open the surah, then the ayat are pointed at as the signs of the Book, then what has been sent down is called the truth. The closing clause does not defend that claim. It reports the response to it: most people do not believe. Placing the count at the outset takes the weight of numbers off everything that follows, and the surah never treats the fact as a difficulty afterwards.",
+      "historicalContext": "The surah carries the classification of a Medinan revelation, and the classical commentators record disagreement about it, with some placing it in Mecca. Its subject matter belongs to a long argument about signs, revelation and denial rather than to any single incident. The commentators report no occasion for this opening ayah and read it as setting the terms for everything the surah goes on to say.",
+      "keyTerms": [
+        {
+          "arabic": "تِلْكَ",
+          "gloss": "those, these",
+          "note": "A demonstrative for something at a distance rather than close at hand. Pointing at the ayat with the far form gives them a standing above the speaker, which is why translators reach for a formal these."
+        },
+        {
+          "arabic": "ٱلْحَقُّ",
+          "gloss": "the truth, what is real",
+          "note": "The word covers truth in speech and reality in fact together. Calling revelation this says it corresponds to how things are, not merely that its statements are accurate about them."
+        },
+        {
+          "arabic": "أَكْثَرَ",
+          "gloss": "most, the majority",
+          "note": "A comparative used as a plain quantity. Its presence turns the closing clause into a count rather than a complaint, which is why the sentence reports the response instead of protesting against it."
+        }
+      ],
+      "lifeInProphetsTime": "Arabia measured a claim by who accepted it. A poet's standing, a lineage, a treaty all rested on general assent, and a position held by a minority was for practical purposes wrong. Opening a text by conceding that most people would not accept it ran directly against the way the culture settled questions, and the first listeners would have felt that at once.",
+      "didYouKnow": "The phrase pointing at the signs of the Book opens seven surahs of the Quran, and all seven of them stand immediately after a set of disconnected letters. The formula never appears in the middle of an argument, only at the head of a chapter, which makes it function rather like a title line placed above what follows.",
+      "theologicalSignificance": "The ayah separates the truth of a message from its reception, and it does so before any argument has begun. That has a practical effect on a reader, since nothing later in the surah has to explain away the number of people who disagree. It also makes the Book itself the thing being pointed at, so what follows is offered as evidence rather than as assertion.",
+      "crossReferences": [
+        {
+          "ref": "12:103",
+          "why": "Repeats the same observation about numbers, in the surah immediately before this one."
+        },
+        {
+          "ref": "13:19",
+          "why": "Returns to the same division later in the surah, between one who knows and one who is blind."
+        },
+        {
+          "ref": "10:1",
+          "why": "Opens another surah with the identical phrase pointing at the signs of the Book."
+        }
+      ],
+      "applyIt": "Notice how much weight you give to how many people agree with you. It is usually more than you would admit if asked. Pick one thing you believe and hold it this week without checking whether it is popular. The ayah puts the count in its opening line precisely so that it stops working as an argument.",
+      "exploreFurther": [
+        "12:103",
+        "13:19",
+        "10:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.630Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:2",
+      "surah": 13,
+      "start": 2,
+      "end": 2,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Pillars You Cannot See",
+      "tier": "standard",
+      "meaning": "A sequence of acts, and most of them are still going on. The heavens are raised without pillars you can see, which the commentators read two ways: either there are none, or there are supports that are not visible. Sun and moon are set running to a fixed term. Then two verbs describe continuing work, directing the affair and setting out the signs, and the stated purpose of the whole line is certainty about a meeting. Cosmology is being used to make a point about an appointment.",
+      "historicalContext": "This surah is classified as Medinan, though the classical commentators record disagreement about it. Its opening section belongs to the Quran's long argument from natural order, addressed to people who accepted a creator while denying that the dead would be raised. That gap is what the ayah works on, and the surah quotes the denial directly three ayat later.",
+      "keyTerms": [
+        {
+          "arabic": "عَمَدٍ",
+          "gloss": "pillars, supports",
+          "note": "The ordinary word for the poles of a tent or a building. Commentators read the phrase either as meaning there are none at all or that the supports are not visible, and they preserve both readings."
+        },
+        {
+          "arabic": "وَسَخَّرَ",
+          "gloss": "and He set to work",
+          "note": "The verb for putting something under command so that it serves a purpose, used of animals and of labourers. Applied to the sun and moon it describes them as employed rather than merely existing."
+        },
+        {
+          "arabic": "يُدَبِّرُ",
+          "gloss": "He directs, manages",
+          "note": "From a root meaning the back or the end of a thing. To direct an affair in Arabic is to consider what comes after it, so the word carries the sense of arranging with an outcome already in view."
+        }
+      ],
+      "lifeInProphetsTime": "A tent was the most familiar structure in Arabia and its entire logic was visible poles. Take out the centre pole and the roof comes down; everyone had raised one and struck one. Saying that the sky stands without any pole you can see borrowed the most ordinary building knowledge in the culture and then removed its central assumption in five words.",
+      "didYouKnow": "This description of the heavens raised without visible pillars occurs twice in the Quran, here and at 31:10, in identical wording. Both occurrences are followed immediately by a list of things placed in the earth, and both belong to passages arguing from what a person can see towards something they cannot.",
+      "theologicalSignificance": "The ayah gives a reason for describing the cosmos, and the reason is not wonder. The stated purpose is certainty about meeting your Lord, so the whole description aims at one conclusion about the future. That makes the argument tighter than it first appears: a thing running to a fixed term is a thing that ends, and the ordering of the sky is offered as evidence that endings are arranged rather than accidental.",
+      "crossReferences": [
+        {
+          "ref": "31:10",
+          "why": "Repeats the same description of the heavens in identical wording, in another argument from creation."
+        },
+        {
+          "ref": "39:5",
+          "why": "Uses the same phrase about the sun and moon each running to an appointed limit."
+        },
+        {
+          "ref": "13:8-9",
+          "why": "Extends the same idea of measure and appointment from the sky to the womb, later in the surah."
+        }
+      ],
+      "applyIt": "Go outside tonight and find the moon, then hold it against the fact that it is running to a term. Not as a poetic thought, but as a piece of information about a body you can actually see. The argument in this ayah only works if you look up, which takes about forty seconds.",
+      "exploreFurther": [
+        "31:10",
+        "39:5",
+        "13:8-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.633Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:3",
+      "surah": 13,
+      "start": 3,
+      "end": 3,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Two Of Every Kind",
+      "tier": "standard",
+      "meaning": "The scale drops from the sky to the ground and the verbs change with it. The earth is spread out, mountains and rivers are placed in it, and then something more precise arrives: two of every kind of fruit. Commentators read the pairing as varieties, or as male and female in plants, and note that the second reading matches what date growers already knew. The closing image is night drawing over day, and the sign is addressed to people who reflect.",
+      "historicalContext": "The surah is classified as Medinan and the commentators record disagreement about that. This section moves through a sequence of natural descriptions, each closing by naming a different faculty: reflection here, reasoning in the ayah after it. The audience assumed is one that already accepted a creator, so the argument is not about who made these things but about what follows from the way they are arranged.",
+      "keyTerms": [
+        {
+          "arabic": "مَدَّ",
+          "gloss": "He spread out, extended",
+          "note": "The verb for stretching something flat, used of a cloth laid out and of a shadow lengthening. It describes an action still visible in its result rather than a single completed event in the past."
+        },
+        {
+          "arabic": "رَوَٰسِىَ",
+          "gloss": "firm anchors, mountains",
+          "note": "From the verb for a ship dropping anchor and holding its position. Mountains are named by their function of holding rather than by their height, which is how the Quran refers to them throughout."
+        },
+        {
+          "arabic": "يَتَفَكَّرُونَ",
+          "gloss": "they reflect, they turn over",
+          "note": "A form of the verb to think that implies turning something repeatedly in the mind. It is slower than reasoning, and the surah asks for a different faculty in each of these consecutive ayat."
+        }
+      ],
+      "lifeInProphetsTime": "Date growers in Arabia had known for centuries that palms come as male and female, and that a crop depends on carrying pollen from one to the other by hand. It was skilled seasonal work that everyone in an oasis understood. Naming pairs in fruit spoke straight into that knowledge, in a culture where the survival of a settlement rested on getting it right.",
+      "didYouKnow": "The phrase for two of a kind used here occurs three times in the Quran. Once of the pairs taken aboard the ark at 11:40, once in the retelling of the same event at 23:27, and once here of fruit. One expression covers animals preserved from a flood and the varieties growing in an orchard.",
+      "theologicalSignificance": "The ayah asks for reflection rather than assent, and reflection is a slower thing than agreement. What is put in front of it is not a marvel but an arrangement: things placed, held, paired and alternated. That suggests a particular kind of argument, one working by accumulation rather than by a single decisive proof, and it explains why the surah keeps to ordinary features of the world.",
+      "crossReferences": [
+        {
+          "ref": "13:4",
+          "why": "Continues the same list and asks for a different faculty at its close, reasoning rather than reflection."
+        },
+        {
+          "ref": "51:49",
+          "why": "States the pairing of created things as a general principle rather than only about fruit."
+        },
+        {
+          "ref": "36:37-40",
+          "why": "Follows the same movement from night drawing over day to the sun and moon running their courses."
+        }
+      ],
+      "applyIt": "Eat one piece of fruit slowly this week and stay with it for the whole of it. Where it grew, who moved the pollen, how the water reached it. The faculty this ayah asks for is not admiration. It is the turning over of something you already have in your hand, and it takes about two minutes.",
+      "exploreFurther": [
+        "13:4",
+        "51:49",
+        "36:37-40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:4",
+      "surah": 13,
+      "start": 4,
+      "end": 4,
+      "theme": "Rain and the Living Earth",
+      "themeId": "rain-and-the-earth",
+      "title": "Watered By The Same Water",
+      "tier": "standard",
+      "meaning": "The argument narrows to a single field. Neighbouring plots, vines, crops and palms, some growing from one root and some from separate roots, all fed by one water, and the yields differ. The interest lies entirely in the constant: the water is the same. Commentators read the ayah as an argument about different outcomes from identical inputs, and note that it is addressed to people who reason, since the point has to be extracted rather than simply looked at.",
+      "historicalContext": "This surah is classified as Medinan and the commentators record disagreement about it. Agriculture in the oases and around Medina was intensely local, with plots of different quality lying side by side and drawing from the same channel. The ayah describes a scene any listener could walk out and check, and it closes a run of natural descriptions with the most ordinary of them.",
+      "keyTerms": [
+        {
+          "arabic": "مُّتَجَٰوِرَٰتٌ",
+          "gloss": "neighbouring, adjoining",
+          "note": "From the word for a neighbour, used elsewhere in the Quran of people. Applying it to plots of ground makes them neighbours to one another, which keeps the whole comparison close and physical."
+        },
+        {
+          "arabic": "صِنْوَانٌ",
+          "gloss": "growing from one root",
+          "note": "A technical term from date farming for palms sharing a single root, occurring only in this ayah. Its opposite follows immediately, so both cases are named inside four words."
+        },
+        {
+          "arabic": "ٱلْأُكُلِ",
+          "gloss": "the yield, what is eaten",
+          "note": "The noun for what a tree produces to be eaten, rather than for the tree itself. Preferring one over another in yield is therefore a statement about the crop and not about the plant's worth."
+        }
+      ],
+      "lifeInProphetsTime": "Irrigation in an oasis was shared and timed. Water ran through channels and each holder took a turn measured by the sun or by a marked stone, and disputes over turns were common enough to need arbitration. Everyone therefore knew with certainty that the water in their plot and their neighbour's was the same water. This ayah is built on that certainty.",
+      "didYouKnow": "The word for palms sharing a single root occurs only in this ayah in the whole Quran, and its own opposite follows in the next three words. It is a term from the working vocabulary of date farming, used without any explanation, which assumes a listener who has handled the trees themselves.",
+      "theologicalSignificance": "The ayah sets up a controlled comparison and leaves the conclusion to the reader. Identical input, adjacent ground, different results, and the difference attributed directly to God. The application to people is obvious and is not spelled out here; the surah returns to it later with the image of a flood filling riverbeds of different capacity. Difference is presented as designed rather than as accident or as merit.",
+      "crossReferences": [
+        {
+          "ref": "13:17",
+          "why": "Draws the same conclusion about differing capacities, using water and a flood as its image."
+        },
+        {
+          "ref": "6:99",
+          "why": "Lists similar produce and makes the same point about likeness and difference in one clause."
+        },
+        {
+          "ref": "35:27-28",
+          "why": "Extends the same observation about variety from crops to rock and to living creatures."
+        }
+      ],
+      "applyIt": "Think of two people you know who were given much the same start and turned out differently. Resist the ranking your mind will immediately offer. This ayah names the difference and attributes it without ever saying which crop was the better plant. Try holding one such comparison for a day with no verdict attached.",
+      "exploreFurther": [
+        "13:17",
+        "6:99",
+        "35:27-28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:5",
+      "surah": 13,
+      "start": 5,
+      "end": 5,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "The Real Astonishment",
+      "tier": "standard",
+      "meaning": "A response to a reaction. If anything is going to strike you as strange, the passage says, the strange thing is the sentence they keep saying: when we have become dust, will we be a new creation? What is called astonishing is not the raising but the objection to it, and that reversal is the whole argument. Three parallel clauses follow, each opening the same way, and the middle one gives an image of collars at the neck that commentators read as present and as coming.",
+      "historicalContext": "The surah is classified as Medinan, with disagreement recorded among the commentators. The denial quoted here appears many times across the Quran and nearly always in the same words, which suggests a standard objection rather than a single occasion. The argument around it in this surah rests on the natural order just described, so being raised is presented as continuous with what a person can already see.",
+      "keyTerms": [
+        {
+          "arabic": "تَعْجَبْ",
+          "gloss": "you wonder, are astonished",
+          "note": "The verb for finding something outside expectation. The ayah uses the root twice in one clause, once conditionally of the listener and once of the objection itself, which is what performs the reversal."
+        },
+        {
+          "arabic": "تُرَٰبًا",
+          "gloss": "dust, soil",
+          "note": "The ordinary word for the earth underfoot. The objection depends on it being the least promising material imaginable, and the Quran elsewhere makes the same word the origin of the first human being."
+        },
+        {
+          "arabic": "ٱلْأَغْلَٰلُ",
+          "gloss": "the collars, the yokes",
+          "note": "Iron rings fastened at the neck, used on prisoners and on animals. Commentators divide over the tense, reading them as a coming condition or as a present restriction on how a person can turn."
+        }
+      ],
+      "lifeInProphetsTime": "Burial in Arabia was quick and shallow, and in that heat and soil a body returned to the ground within a season. People did not meet death at a distance. They carried it, washed it and covered it themselves, often within a day. The objection quoted here was not abstract philosophy. It came from people who had recently handled what they were describing.",
+      "didYouKnow": "The exact phrase about collars on their necks occurs only in this ayah, although the image of a collar returns elsewhere in the Quran. Commentators divide over its tense, some reading it as a description of what is coming and others as a statement about how such a person already moves, unable to turn the head.",
+      "theologicalSignificance": "The ayah relocates the burden of strangeness. Anyone meeting a claim about the dead being raised will treat that as the extraordinary item, and the passage answers that the extraordinary item is the denial, given what has just been said about the arrangement of the world. That is an argument about consistency rather than about evidence, and it rests entirely on the four ayat before it.",
+      "crossReferences": [
+        {
+          "ref": "13:2-4",
+          "why": "Supplies the description of ordered creation on which this ayah's reversal depends."
+        },
+        {
+          "ref": "36:77-79",
+          "why": "Answers the same objection about bones and dust with an argument from first creation."
+        },
+        {
+          "ref": "50:2-4",
+          "why": "Quotes the same objection in almost the same words, and calls the distance imagined a mistake."
+        }
+      ],
+      "applyIt": "Notice which claims strike you as obviously strange and which pass without any comment at all. The sorting is mostly habit rather than judgement. Take one thing you find hard to believe and one thing you accept without thinking, and set them honestly beside each other for five minutes. That comparison is the whole move this ayah makes.",
+      "exploreFurther": [
+        "13:2-4",
+        "36:77-79",
+        "50:2-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:6",
+      "surah": 13,
+      "start": 6,
+      "end": 6,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Hurrying The Wrong Thing",
+      "tier": "standard",
+      "meaning": "A strange request is reported: they want the bad brought forward ahead of the good. Commentators read it as a demand for the punishment they had been warned about, made as a way of testing the warning. The reply notes that examples of exactly that have already passed by. Then two statements about God are set side by side without being reconciled, one about forgiveness extended to people despite their wrongdoing and one about severity, and the surah leaves them both standing.",
+      "historicalContext": "The surah is classified as Medinan, with the commentators recording disagreement. The demand described here appears in several places in the Quran, always from people confident that nothing would happen, and always answered by pointing at earlier cases rather than by producing what was asked for. The examples referred to are ruined communities whose sites travellers passed on the trade routes.",
+      "keyTerms": [
+        {
+          "arabic": "وَيَسْتَعْجِلُونَكَ",
+          "gloss": "and they ask you to hurry",
+          "note": "A form of the verb to hasten meaning to ask somebody else to bring a thing forward. The request is addressed to a man who could not have granted it, which is part of what makes it a taunt."
+        },
+        {
+          "arabic": "ٱلْمَثُلَٰتُ",
+          "gloss": "exemplary punishments",
+          "note": "A rare plural from the root for a likeness or a parable, occurring only here. It names punishments that became examples, so the word holds both the event and its later use as a lesson."
+        },
+        {
+          "arabic": "عَلَىٰ ظُلْمِهِمْ",
+          "gloss": "despite their wrongdoing",
+          "note": "The preposition here means in spite of rather than because of. That small word is what makes the clause remarkable, since forgiveness is described as extended over the wrongdoing rather than after it stops."
+        }
+      ],
+      "lifeInProphetsTime": "The caravan routes north from Mecca passed the remains of settlements that had been abandoned or destroyed, and the stories attached to them were common property. Travellers pointed them out to each other on the road. When this ayah says examples have already passed, it means places its first listeners had ridden past, not a literature they would have had to consult.",
+      "didYouKnow": "The word used here for exemplary punishments occurs only in this ayah in the whole Quran. It is a plural from the same root that gives the ordinary word for a parable or a likeness, so the Arabic treats a destroyed community and a spoken comparison as two forms of one thing: something set up in order to be looked at.",
+      "theologicalSignificance": "The ayah places two divine attributes in a single sentence without ranking them, and it puts forgiveness first. What makes the phrasing striking is that forgiveness is described as extended in spite of ongoing wrongdoing rather than after repentance, which is not the usual order. The severity that follows is not withdrawn either. A reader is left holding both, which is where the surah wants them.",
+      "crossReferences": [
+        {
+          "ref": "13:32",
+          "why": "Returns to the same subject later in the surah: respite given, and then a seizure."
+        },
+        {
+          "ref": "22:47-48",
+          "why": "Reports the same demand and answers it by naming communities given respite before them."
+        },
+        {
+          "ref": "15:49-50",
+          "why": "Sets the same two statements side by side, in the same order, without resolving them either."
+        }
+      ],
+      "applyIt": "Notice the times you would rather have the bad news now than wait. It usually feels like courage and is often impatience with uncertainty. Before you force a difficult thing forward this week, ask what the waiting is actually for. This ayah puts forgiveness inside exactly that interval, before anything has been settled.",
+      "exploreFurther": [
+        "13:32",
+        "22:47-48",
+        "15:49-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:7",
+      "surah": 13,
+      "start": 7,
+      "end": 7,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "To Every People A Guide",
+      "tier": "standard",
+      "meaning": "A demand for a sign is quoted and answered in two short clauses, and neither of them is a defence. The first defines the office: you are only a warner. The second widens the frame considerably, saying that every community has a guide. Commentators divide over that second clause, reading the guide as God, or as a messenger sent to each people, or as anyone who calls to the truth. The demand for a miracle is left unanswered on its own terms.",
+      "historicalContext": "The surah is classified as Medinan, with disagreement recorded. The demand quoted here is repeated word for word later in the same surah at 13:27 and answered differently there, which the commentators note. The Quran reports this request in several places and consistently declines to meet it, redirecting instead to the message itself or to signs already available in the ordinary world.",
+      "keyTerms": [
+        {
+          "arabic": "لَوْلَآ",
+          "gloss": "why not, if only",
+          "note": "A particle of urging that can carry either a complaint or a wish. Used with a passive verb it makes the objection sound like a reasonable request, which is exactly how it works in the mouths quoted here."
+        },
+        {
+          "arabic": "مُنذِرٌ",
+          "gloss": "a warner",
+          "note": "An agent noun from the verb to warn of something coming. The restriction placed in front of it narrows the office deliberately: not a producer of signs and not a judge, but somebody who tells you what is ahead."
+        },
+        {
+          "arabic": "هَادٍ",
+          "gloss": "a guide",
+          "note": "From the verb to lead along a road. The indefinite form leaves the identity open, which is why the classical readings differ over whether it names God, a messenger, or anyone who points the way."
+        }
+      ],
+      "lifeInProphetsTime": "A guide was a paid professional in Arabia. Crossing open desert without one was reckless, and a good guide could read stars, stones and wind-shaped sand to hold a party on a route with no visible track. Communities knew who theirs was. Saying that every people has a guide borrowed a word from the working economy of travel rather than from religious vocabulary.",
+      "didYouKnow": "The closing clause of this ayah, saying that every people has a guide, occurs only here in the Quran. The classical commentators record at least three readings of it and the grammar does not settle between them. Twenty ayat later the same demand for a sign is quoted again, and answered with an entirely different sentence.",
+      "theologicalSignificance": "The passage narrows one office and widens another in a single breath. Prophecy is described modestly, as warning rather than as the production of proof, and guidance is then extended past the person being addressed to every community there has ever been. That combination keeps the message from resting on spectacle and, at the same time, refuses to describe any people as simply abandoned.",
+      "crossReferences": [
+        {
+          "ref": "13:27",
+          "why": "Quotes the identical demand later in the same surah and gives it a different answer."
+        },
+        {
+          "ref": "35:24",
+          "why": "States the same universality from the other side, that every people received a warner."
+        },
+        {
+          "ref": "6:37",
+          "why": "Answers the same demand by granting the ability and then declining the request."
+        }
+      ],
+      "applyIt": "Think of what you are actually responsible for in someone else's life. Usually it is telling them the truth once, clearly, and then being there. The office named here is narrow on purpose. Say the difficult sentence to the person who needs it this week, and then stop, rather than managing the outcome.",
+      "exploreFurther": [
+        "13:27",
+        "35:24",
+        "6:37"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:8-9",
+      "surah": 13,
+      "start": 8,
+      "end": 9,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Everything By Measure",
+      "tier": "standard",
+      "meaning": "Knowledge is described at the point where it is least accessible: what a womb carries, and what it falls short of or gains. Commentators explain the two verbs as covering shortfall and excess in every sense, in term and number and size. Then a general principle closes the first ayah, that everything with Him has a measure. The second ayah adds four names in quick succession, one pair covering the hidden and the visible, the other pair concerning height.",
+      "historicalContext": "The surah is classified as Medinan and the classical commentators record disagreement about it. Pregnancy was the standard example of hidden knowledge in that world, since nothing about its outcome could be established in advance. The ayah belongs to a passage arguing from the ordered world towards a claim about knowledge, and it follows a description of the sun and moon running to fixed terms.",
+      "keyTerms": [
+        {
+          "arabic": "تَغِيضُ",
+          "gloss": "it decreases, falls short",
+          "note": "The verb for water sinking away or a level dropping, and it occurs only here in the Quran. Using a word from wells and floods of a womb makes a hidden process physical without making it visible."
+        },
+        {
+          "arabic": "بِمِقْدَارٍ",
+          "gloss": "by a measure",
+          "note": "From the root for capacity and for determining an amount. It names a quantity fixed in advance rather than a limit imposed afterwards, which is why the phrase closes a sentence about what nobody can see."
+        },
+        {
+          "arabic": "ٱلْمُتَعَالِ",
+          "gloss": "the Supreme, the exalted",
+          "note": "A name occurring only in this ayah. Its form implies rising above something rather than simply being high, which places it deliberately at the end of a sentence about knowing the hidden and the seen."
+        }
+      ],
+      "lifeInProphetsTime": "Nothing about a pregnancy could be established in advance. Whether the child lived, whether the mother lived, whether it was one or two, how long it would take: all of it was waiting. In a society where a household's future turned on sons and on survival, this was the sharpest available example of something entirely outside anyone's knowledge, and everyone had lived through the waiting.",
+      "didYouKnow": "Both the verb for decrease in the first ayah and the divine name at the end of the second occur only here in the whole Quran. The passage sets a word borrowed from wells and falling water levels beside a name found nowhere else, and it does so inside two short ayat about what cannot be seen.",
+      "theologicalSignificance": "The passage moves from a specific unknown to a general claim and then to names, and that order matters. It grounds an abstract statement about knowledge in the one uncertainty everybody has actually lived through, and only afterwards generalises it. The phrase about measure does something quiet as well: what is hidden from people is not indeterminate in itself, only unavailable to them.",
+      "crossReferences": [
+        {
+          "ref": "31:34",
+          "why": "Lists the same item among the things reserved to God's knowledge, in a similar closing formula."
+        },
+        {
+          "ref": "6:59",
+          "why": "States the same reservation of hidden knowledge and extends it down to a falling leaf."
+        },
+        {
+          "ref": "13:2",
+          "why": "Uses the same idea of a fixed term, applied there to the sun and to the moon."
+        }
+      ],
+      "applyIt": "Pick the thing you are currently waiting on with no way to hurry it: a diagnosis, a decision, a birth. Say to yourself once, plainly, that it already has a measure even though you do not have it. That is not resignation. It is the difference between an unknown quantity and no quantity at all.",
+      "exploreFurther": [
+        "31:34",
+        "6:59",
+        "13:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:10",
+      "surah": 13,
+      "start": 10,
+      "end": 10,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Alike, Whispered Or Shouted",
+      "tier": "standard",
+      "meaning": "Four conditions are named and then flattened into one. Concealing your speech or announcing it, hiding by night or moving about by day: the ayah says they are the same. What is being described is not surveillance but the absence of a difference. Commentators note that the four cases are chosen to cover the two resources a person actually uses to hide, sound and darkness, and that the sentence removes both at once without saying anything about consequences.",
+      "historicalContext": "The surah carries a Medinan classification, with disagreement recorded by the commentators. The ayah follows immediately on a description of God knowing what a womb carries, and continues the same argument from what cannot be seen. The commentators report no occasion for it and read it as belonging to the surah's running case about knowledge rather than to any particular incident.",
+      "keyTerms": [
+        {
+          "arabic": "أَسَرَّ",
+          "gloss": "he concealed, kept secret",
+          "note": "The verb for keeping something inside, from a root that also gives the word for a secret. It covers whispering and thinking without speaking, so the first pair reaches below anything audible."
+        },
+        {
+          "arabic": "مُسْتَخْفٍۭ",
+          "gloss": "hiding himself",
+          "note": "A participle meaning one who seeks concealment, with the effort built into the form. It names the act of hiding rather than the state of being hidden, which is what makes it comparable to the openness beside it."
+        },
+        {
+          "arabic": "وَسَارِبٌۢ",
+          "gloss": "and going about openly",
+          "note": "A rare word occurring only here, for moving freely along a road. Its root connects with water running loose, so the picture is of somebody flowing along in the open with no thought of being watched."
+        }
+      ],
+      "lifeInProphetsTime": "Night was genuine cover in a world with no lamps outside the house. Anyone with something to arrange did it after dark, and a man moving at night was assumed to be hiding something. The two halves of this ayah, sound and darkness, were the only two resources a person had. Removing both left nothing anyone in that world would have called private.",
+      "didYouKnow": "The word for moving about openly by day occurs only in this ayah in the whole Quran, and its root is connected with water flowing free of any channel. The line pairs it against a word for actively hiding, so the two halves describe the extremes of a range and then declare the entire range equal.",
+      "theologicalSignificance": "The claim is about equivalence rather than about exposure. Nothing here says that hidden things will be revealed to other people. What is denied is that hiding makes any difference to the one being spoken about. That is a gentler statement than it first sounds, and it is also more thorough, since it removes the distinction rather than threatening a disclosure at some later point.",
+      "crossReferences": [
+        {
+          "ref": "13:8-9",
+          "why": "Establishes the knowledge of what is hidden that this ayah then applies to human conduct."
+        },
+        {
+          "ref": "20:7",
+          "why": "Makes the same point about speech and adds a level lying below the secret itself."
+        },
+        {
+          "ref": "67:13",
+          "why": "Uses the same pairing of concealed and open speech and arrives at the same conclusion."
+        }
+      ],
+      "applyIt": "Notice the difference between how you speak about someone to their face and behind them. Not to feel guilty about it; just measure the gap once, honestly, this week. Then close it by a single degree in one conversation. The ayah says the two versions are already one. You are only catching up with that.",
+      "exploreFurther": [
+        "13:8-9",
+        "20:7",
+        "67:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.632Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "13:11",
       "surah": 13,
@@ -58,6 +580,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:18:43.585Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:12-13",
+      "surah": 13,
+      "start": 12,
+      "end": 13,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "The Thunder Praises Him",
+      "tier": "standard",
+      "meaning": "Lightning is described by the two responses it produces at once, fear and hope, which in a dry country are one event seen twice. Then heavy clouds are raised up. The second ayah gives the surah its name: thunder glorifies with praise, and the angels do so out of awe of Him. Commentators divide over whether the thunder's praise is meant literally or names a creature doing what it was made for. The ayah ends by noting that people argue throughout.",
+      "historicalContext": "The surah is classified as Medinan and the commentators record disagreement about it. This is the ayah the chapter is named after. The classical sources report questions being put about thunder and lightning and preserve more than one account of the occasion. They agree on what the passage does: it answers a question about natural phenomena by describing them as acts of praise rather than by explaining any mechanism.",
+      "keyTerms": [
+        {
+          "arabic": "خَوْفًا وَطَمَعًا",
+          "gloss": "in fear and in hope",
+          "note": "Two accusatives describing the state of the person watching. The same flash carries both, because a storm in that country meant grazing and full cisterns, and also a valley filling faster than a person can walk."
+        },
+        {
+          "arabic": "ٱلثِّقَالَ",
+          "gloss": "the heavy ones",
+          "note": "An adjective of weight applied to clouds. It describes what they are carrying rather than how they look, which is how a farmer rather than a poet picks a cloud out of the sky."
+        },
+        {
+          "arabic": "ٱلْمِحَالِ",
+          "gloss": "might, strength in contriving",
+          "note": "A rare word whose sense the commentators discuss at length, ranging from sheer power to devising and stratagem. They record the range rather than settling it, and the word appears only in this ayah."
+        }
+      ],
+      "lifeInProphetsTime": "A storm in Arabia was watched with complete attention. Rain meant grazing and full cisterns for a season, and the same storm could send a wall of water down a dry valley and take a camp with it. People read cloud weight and wind direction the way a sailor reads a sea. The two words for fear and hope here describe standing outside and watching.",
+      "didYouKnow": "The word for thunder occurs twice in the Quran, at 2:19 and here, and this surah is named after the second of them. So the chapter carries the name of something mentioned once inside it. That is not unusual: several surahs take their names from a detail in a single ayah rather than from their subject.",
+      "theologicalSignificance": "The passage answers a question about weather by reassigning it. Thunder is not explained; it is described as an act of praise, and the angels are placed in the same clause doing the same thing out of awe. That puts a natural process and a class of creatures inside one activity. The final clause then sets human argument against the whole scene, and offers no comment on it.",
+      "crossReferences": [
+        {
+          "ref": "2:19-20",
+          "why": "Uses thunder and lightning as an extended image, in the only other place thunder is named."
+        },
+        {
+          "ref": "30:24",
+          "why": "Repeats the same phrase about fear and hope, and continues into rain reviving dead earth."
+        },
+        {
+          "ref": "17:44",
+          "why": "States as a general principle what this ayah says here about thunder in particular."
+        }
+      ],
+      "applyIt": "Next time there is a storm, go and stand where you can watch it for two minutes rather than checking the forecast. Notice that you feel two things at once, and that the ayah names both without asking you to choose. Then notice what the noise is being described as doing.",
+      "exploreFurther": [
+        "2:19-20",
+        "30:24",
+        "17:44"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.632Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:14",
+      "surah": 13,
+      "start": 14,
+      "end": 14,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Hands Held Out To Water",
+      "tier": "standard",
+      "meaning": "A comparison that turns on one physical detail. The call that is true belongs to God, and what else is called upon answers nothing at all. Then the image arrives: a man stretching his open hands out towards water so that it will reach his mouth, and it never does. Commentators explain the picture as somebody at the edge of a well reaching for water he cannot lift, or as somebody holding out cupped hands and waiting. Either way the failure is built into the posture.",
+      "historicalContext": "The surah is classified as Medinan and the commentators record disagreement about it. The image assumes a listener who has drawn water from a deep well with rope and bucket, which was the ordinary experience of the entire audience. The passage belongs to the surah's central argument about what can and cannot respond, and it follows the description of thunder and lightning under order.",
+      "keyTerms": [
+        {
+          "arabic": "دَعْوَةُ ٱلْحَقِّ",
+          "gloss": "the true call",
+          "note": "The phrase can mean the call that is rightly directed, or the calling of the One who is real. Commentators record both, and the ambiguity is productive rather than confusing, since either reading fits the image that follows."
+        },
+        {
+          "arabic": "كَبَٰسِطِ",
+          "gloss": "like one stretching out",
+          "note": "From the verb to spread something open, used of a hand laid flat. The participle keeps the man frozen mid-gesture, which is why the comparison reads like a picture rather than a story."
+        },
+        {
+          "arabic": "ضَلَٰلٍ",
+          "gloss": "straying, going astray",
+          "note": "The word for losing a road, so a prayer described this way is not refused but misdirected. The failure lies in where it is aimed rather than in whether the person meant it."
+        }
+      ],
+      "lifeInProphetsTime": "Wells in Arabia were deep and drawing from them was work: a rope, a leather bucket, sometimes an animal walking to raise the load. Everyone had stood at the lip of one and looked down at water they could see and could not reach. The gesture in this ayah, hands out towards water that will not climb, is not an image anyone needed to have explained.",
+      "didYouKnow": "The comparison in this ayah is unusual in the Quran for having no movement in it. Most of its images run through a small sequence: rain falling and plants growing, a spider building a house, a flood raising froth. This one holds a single posture, hands extended and water below and nothing happening. The stillness is the point.",
+      "theologicalSignificance": "The passage locates the fault in direction rather than in effort. The man in the image is trying, and the trying is described sympathetically. What is wrong is where his hands are pointed. That has a particular consequence for how prayer is understood here: sincerity is not what makes a call effective, and a genuine appeal to something that cannot answer stays genuine and stays unanswered.",
+      "crossReferences": [
+        {
+          "ref": "35:13-14",
+          "why": "Makes the same point about what cannot respond, with a different image for the smallness involved."
+        },
+        {
+          "ref": "40:60",
+          "why": "States the positive form of the same relation, that a call rightly directed is answered."
+        },
+        {
+          "ref": "22:73",
+          "why": "Uses another concrete comparison to make the same argument about sheer capacity."
+        }
+      ],
+      "applyIt": "Think of one thing you keep hoping will fix something, and ask honestly whether it can. A promotion, a move, a person changing. The ayah does not say stop wanting it. It says notice where your hands are pointed, and then point some of that effort somewhere that can actually reach back.",
+      "exploreFurther": [
+        "35:13-14",
+        "40:60",
+        "22:73"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.633Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "13:15",
+      "surah": 13,
+      "start": 15,
+      "end": 15,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "Even Their Shadows Bow",
+      "tier": "standard",
+      "meaning": "One sentence covers everything existing in two realms, and then adds something nobody would have listed. Whoever is in the heavens and the earth prostrates, willingly or unwillingly, and so do their shadows, morning and late afternoon. Commentators explain the unwilling prostration as the submission of every created thing to the order it runs under, whatever its owner intends. The shadows are the surprise: a person may refuse, and the shape they cast still moves exactly as the sun requires.",
+      "historicalContext": "The surah carries a Medinan classification, with the commentators recording disagreement about it. This is one of the places in the Quran at which a prostration is traditionally made by the reciter, which the classical sources record and which printed copies mark in the margin. The ayah closes the surah's first long argument from the natural world, before the address turns to direct questions.",
+      "keyTerms": [
+        {
+          "arabic": "يَسْجُدُ",
+          "gloss": "prostrates, bows down",
+          "note": "The verb for lowering the face to the ground. Applied to everything in existence it must cover more than the human posture, and commentators read it as submission expressed in whatever way a given thing is capable of."
+        },
+        {
+          "arabic": "طَوْعًا وَكَرْهًا",
+          "gloss": "willingly and unwillingly",
+          "note": "Two states named together, which is what makes the claim total. The second word is the one used elsewhere in the Quran for something genuinely hated, so nobody's reluctance is being denied here."
+        },
+        {
+          "arabic": "وَٱلْـَٔاصَالِ",
+          "gloss": "and the late afternoons",
+          "note": "A plural for the stretch between the sun's decline and sunset. Pairing it with early morning names the two times of day when shadows are longest and their movement is easiest to see."
+        }
+      ],
+      "lifeInProphetsTime": "Time in Arabia was told by shadow. The length of a man's shadow set the hours for prayer, for travel and for rest, and children learned to read it long before they learned anything written. Watching a shadow lengthen and swing round was the ordinary way of knowing where you stood in the day. This ayah takes that daily observation and calls it worship.",
+      "didYouKnow": "This is one of the places in the Quran where a prostration is traditionally made by the reciter, and printed copies carry a mark in the margin to show it. The ayah describes prostration and then occasions one, so a reader who follows the practice performs the very act that the sentence is in the middle of describing.",
+      "theologicalSignificance": "The ayah makes submission a fact about the world before it is a choice made by a person. That does not collapse the difference between willing and unwilling, since both are named in the same breath. What it removes is the option of standing outside the arrangement altogether. Adding the shadows makes it physical: even the part of you that follows no decision of yours is already doing this.",
+      "crossReferences": [
+        {
+          "ref": "16:48-49",
+          "why": "Develops the same observation about shadows at greater length and reaches the same conclusion."
+        },
+        {
+          "ref": "3:83",
+          "why": "Uses the identical pairing of willing and unwilling submission for the same total claim."
+        },
+        {
+          "ref": "55:6",
+          "why": "Extends prostration to things that cannot choose, in a shorter and starker form."
+        }
+      ],
+      "applyIt": "Go out in the late afternoon and look at your own shadow for a moment, and let the ayah's claim sit on it. Whatever you have decided today, that has been moving all afternoon without consulting you. It is a small thing to notice and it puts the rest of the day in a different proportion.",
+      "exploreFurther": [
+        "16:48-49",
+        "3:83",
+        "55:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:21:03.633Z",
         "reviewed": false
       }
     },
