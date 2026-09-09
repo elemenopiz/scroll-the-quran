@@ -1,5 +1,5 @@
 # Phase 2b — Study content pipeline + StudyContent package
-Owns: `Tools/content-gen/*` (except ingest-translations), `Packages/ScrollKit/Sources/StudyContent`, `Tests/StudyContentTests`, `Content/study/*`, `Content/discover.json`, `Content/themes.json`.
+Owns (Swift side; the Node scripts are delivered by `phase2b-pipeline-scripts.md`):  `Packages/ScrollKit/Sources/StudyContent`, `Tests/StudyContentTests`, `Content/study/*`, `Content/discover.json`, `Content/themes.json`.
 
 Load the `claude-api` skill first (model ids, Message Batches, structured outputs, prompt caching). Do not spend money without a `--dry-run` estimate printed and a `--confirm` flag.
 
@@ -7,7 +7,7 @@ Deliver:
 1. `segment-passages.mjs` (deterministic): ayah ≥ 12 words = own unit; shorter ayat merge with neighbours up to 5 ayat / 60 words; never across a surah; `named-passages.json` protected (1:1-7, 2:255, 2:285-286, 59:22-24, 112, 113, 114 …). Output `Content/study/passages.json` (ayah → unit key) + `work/units.jsonl`. Expect ≈3,000–3,400 units; print the count.
 2. `themes.mjs`: build `Content/themes.json` (≥ 40 themes with title, id, refs) — source from QUL Ayah Themes (https://qul.tarteel.ai/resources/ayah-theme/62, download SQLite/JSON; check its terms and record them in ATTRIBUTION.md) or, if not downloadable, a hand-curated list of ≥ 40 well-known thematic verse groups.
 3. `build-requests.mjs`: system prompt (cached) per the plan's rules; user turn = surah meta + unit text (Itani) + ±3 ayat + theme hint; structured JSON output matching `Study` schema (`schema/study.schema.json`); `custom_id = p1:<model>:<key>`; cache dir `work/cache/`; `--model claude-opus-5` default; `--dry-run` prints request count and token/$ estimate.
-4. `submit-batch.mjs`, `poll-batch.mjs`, `validate.mjs` (ajv: schema, word bounds, no Arabic, refs in bounds, banned phrases, honorific present, near-dup), `assemble.mjs` (→ `Content/study/surah_NNN.json` sorted keys; `discover.json` from `discover-seed.txt` of ≈300 keys), `judge-sample.mjs`.
+4. `submit-batch.mjs`, `poll-batch.mjs`, `validate.mjs` (ajv: schema, word bounds, keyTerms.arabic contains Arabic script while prose fields do not, refs in bounds, banned phrases, honorific present, near-dup), `assemble.mjs` (→ `Content/study/surah_NNN.json` sorted keys; `discover.json` from `discover-seed.txt` of ≈300 keys), `judge-sample.mjs`.
 5. `StudyContent` Swift: `Study` model (Codable, sections in fixed order), `StudyStore` (passages map + lazy shard load + LRU 4), `ThemeIndex`, `DiscoverFeed.items(seed:)` deterministic shuffle. Tests ≥ 15 incl. fixture resolution for every ayah of surah 1 and 112, empty state for a surah without a shard, feed determinism.
 6. Run the pipeline for real ONLY for the ≈300 Discover units first (`--only discover`, Opus 5, batch) after printing the estimate; the full 3,200-unit run is a follow-up the orchestrator triggers. Requires `ANTHROPIC_API_KEY` in env — if absent, stop after `--dry-run` and report.
 DoD: `swift test --filter StudyContentTests` green; `node validate.mjs Content/study` exits 0 on fixtures; `--dry-run` output pasted in the report; `Tools/verify.sh` exits 0.
