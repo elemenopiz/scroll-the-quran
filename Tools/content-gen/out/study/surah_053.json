@@ -1,8 +1,414 @@
 {
   "surah": 53,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:30:49.310Z",
+  "generatedAt": "2026-09-09T16:03:01.078Z",
   "studies": [
+    {
+      "key": "53:1-5",
+      "surah": 53,
+      "start": 1,
+      "end": 5,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "By The Star When It Falls",
+      "tier": "standard",
+      "meaning": "One oath, and then a defence phrased as three denials. He has not strayed, he is not deceived, and he does not speak from his own inclination. The word used for him is companion, which points at the audience's own long acquaintance with the man: they knew him before any of this. Then the positive statement, that what he says is revelation being sent, and the teacher is named by an attribute rather than a name.",
+      "historicalContext": "Meccan, and the sources place this surah early, in the years when the Prophet Muhammad (peace be upon him) was still being argued with by people who had known him all their lives. The commentators note the choice of the word companion: the objection was not that a stranger had appeared but that a familiar man was saying something new. The oath by the falling star has several readings and no reported occasion.",
+      "keyTerms": [
+        {
+          "arabic": "هَوَىٰ",
+          "gloss": "it fell, it set",
+          "note": "A verb for downward motion, used of a star setting, a thing dropping, and a bird stooping. It shares its letters with the word for inclination that appears two lines later."
+        },
+        {
+          "arabic": "صَاحِبُكُمْ",
+          "gloss": "your companion",
+          "note": "Someone you keep company with, not a title of rank. Using it here appeals to what the audience already knows about his character over decades, rather than to any claim about him."
+        },
+        {
+          "arabic": "ٱلْهَوَىٰٓ",
+          "gloss": "desire, inclination",
+          "note": "The pull of what a person wants, from the same root as the falling in the opening oath. Arabic hears wanting as a downward movement, and the surah puts both uses within three lines."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca was small enough that reputation was a matter of record. A man's honesty was known from his trading, his marriages and his handling of disputes, and there was nowhere to go to escape a bad name. The audience being addressed had watched this particular man from childhood, and the sources report that his reliability was not in dispute even among those who rejected what he said.",
+      "didYouKnow": "The verb in the opening oath and the noun for desire three lines later come from the same three letters. One describes a star going down and the other describes what a person leans toward, so the surah's first argument turns on a root that means falling. Arabic writes both words with the same skeleton, and only the vowels and context separate them.",
+      "theologicalSignificance": "The passage defends the message by first defending the man, and it does so on grounds anyone could check: not miracles, but a life the audience had observed. Then it separates the two things that could make speech unreliable, error and self-interest, and denies each. What remains is a claim about origin. The teacher is identified only by strength, which leaves the description open and prepares the account that follows.",
+      "crossReferences": [
+        {
+          "ref": "10:16",
+          "why": "Makes the same appeal to a lifetime spent among them before any revelation came."
+        },
+        {
+          "ref": "81:19-21",
+          "why": "Describes the bearer of the message in similar terms, strong and trusted at the throne."
+        },
+        {
+          "ref": "69:38-43",
+          "why": "Denies the same two alternatives, poet and soothsayer, and affirms a sending down."
+        }
+      ],
+      "applyIt": "Think of someone whose word you take without checking, and ask what actually earned that. It is almost never an argument. It is years of small consistencies you were not recording at the time. Then ask which people take your word that way, and what you have been doing lately that either adds to that account or quietly spends it.",
+      "exploreFurther": [
+        "10:15-17",
+        "81:19-25",
+        "69:38-43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.968Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:6-10",
+      "surah": 53,
+      "start": 6,
+      "end": 10,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Two Bows' Length Away",
+      "tier": "standard",
+      "meaning": "The classical commentators read this passage in two ways and both are transmitted from the earliest generation. On one reading the one who drew near is the angel who brought the revelation, seen in his own form at the horizon; on the other it is a nearness to God described without any physical sense. Neither reading was abandoned, and the wording supports both because it never supplies a name. The measurement given is the length of two bows, or nearer.",
+      "historicalContext": "Meccan. The sources report an early experience in which the Prophet Muhammad (peace be upon him) saw the bearer of revelation filling the horizon, and the commentators connect these lines to it. They also record a second reading, in which the passage describes the night journey and what was disclosed then. Both readings are old, both are mainstream, and the classical works set them out beside one another.",
+      "keyTerms": [
+        {
+          "arabic": "مِرَّةٍ",
+          "gloss": "strength, soundness",
+          "note": "A noun for firmness and well-made constitution, from a root for twisting a rope tight. Paired with the phrase before it, the description is of power that is stable rather than sudden."
+        },
+        {
+          "arabic": "فَتَدَلَّىٰ",
+          "gloss": "then he drew down",
+          "note": "A verb for lowering oneself, used of a bucket let down a well and of fruit hanging within reach. Placed after a verb for approaching, it makes the nearness a deliberate descent."
+        },
+        {
+          "arabic": "قَابَ",
+          "gloss": "the measure, the span",
+          "note": "The distance between two points, used of the span of a bow from grip to tip. The measurement is given in the most familiar object an Arab carried, and then made smaller."
+        }
+      ],
+      "lifeInProphetsTime": "A bow was standard equipment and its length was a shared unit. Men measured distances by it the way later people used a pace or a rod, and two bows laid end to end was a specific, ordinary span that anyone could picture without being told. The commentators also record a custom in which two allies laid their bows together and drew as one, so the phrase carried a sense of closeness as well as distance.",
+      "didYouKnow": "The line describing what was communicated says only that He revealed to His servant what He revealed. The content is withheld, and the same construction is used twice in the surah: what covered the tree is described as what covered it. Both times the sentence names an event and refuses to say what happened inside it.",
+      "theologicalSignificance": "The passage records an encounter and withholds its content, which is unusual for a text that argues so much. What it establishes is that revelation came through a real event with a location, a distance and a witness, rather than through an inward impression that could not be described at all. And by leaving the identity of the one who drew near unstated, it keeps the account within the limits of what the Prophet reported, which is why the tradition preserved two readings instead of settling on one.",
+      "crossReferences": [
+        {
+          "ref": "81:22-24",
+          "why": "Describes the same encounter from another angle, seen at the clear horizon and not withheld."
+        },
+        {
+          "ref": "17:1",
+          "why": "Records the night journey that one classical reading connects to the second sighting here."
+        },
+        {
+          "ref": "42:51",
+          "why": "Sets out the ways God speaks to a human being, including from behind a veil and by a messenger."
+        }
+      ],
+      "applyIt": "Notice how much of this passage is measurement and how little is content. Someone came near, at a stated distance, and what was said is not reported. Try telling one story from your own life that way this week: where it happened, how close you were, and nothing about what it meant. You will find out how much of your usual telling is interpretation.",
+      "exploreFurther": [
+        "81:19-25",
+        "17:1",
+        "42:51-52"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:11-15",
+      "surah": 53,
+      "start": 11,
+      "end": 15,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "The Heart Did Not Lie",
+      "tier": "standard",
+      "meaning": "The verification is placed in an organ, not in the eyes. What is denied is that the heart misreported what was seen, which means the seeing and the understanding of it are treated as one act. The commentators divide over whether the sight was with the eye or with the heart, and they record both. Then a second occasion is stated, at a named place, and the tree marks a boundary: the point past which nothing goes.",
+      "historicalContext": "Meccan. The dispute the ayah refers to was live: the sighting was being contested in Mecca, and the question form assumes an ongoing argument rather than a settled report. The classical works record two positions among the earliest authorities on what exactly was seen, one holding it was the angel and one that it was a vision of the Lord, and the major commentaries present both without resolving the question.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْفُؤَادُ",
+          "gloss": "the heart",
+          "note": "One of several Quranic words for the heart, from a root for glowing or burning. It names the seat of perception and recognition rather than of emotion, which is why it can be said to see."
+        },
+        {
+          "arabic": "أَفَتُمَـٰرُونَهُۥ",
+          "gloss": "will you dispute with him",
+          "note": "A verb form for contending back and forth, from a root for milking, which pictures an argument drawn out until nothing is left. It implies persistence rather than a single objection."
+        },
+        {
+          "arabic": "سِدْرَةِ ٱلْمُنتَهَىٰ",
+          "gloss": "the lote tree of the boundary",
+          "note": "A named tree at a limit, from a verb meaning to come to an end. Commentators describe it as the point beyond which created knowledge does not pass, and they do not describe it further."
+        }
+      ],
+      "lifeInProphetsTime": "The lote tree was an ordinary sight in Arabia. It grew where there was water, it gave dense shade in a country with very little, its leaves were used for washing the dead, and travellers used particular trees as landmarks on a route. Naming a tree as the marker of an outer boundary used the most familiar possible object for the most remote possible place.",
+      "didYouKnow": "The first fifty-six ayat of this surah all end on the same long vowel, an unbroken rhyme running from the opening oath onward. The last six lines break it and never return. The shift is audible to a listener who understands no Arabic at all, and it falls exactly where the surah stops arguing and starts issuing its final warning.",
+      "theologicalSignificance": "The passage makes an experience testable in the only way an experience can be: by the character of the person reporting it. It does not describe what was seen, and it does not offer the audience a way to see it. What it insists on is that the report is accurate, and the accuracy is located in the heart rather than in the eye, which is a claim about perception itself. Some things, it implies, are received rather than observed.",
+      "crossReferences": [
+        {
+          "ref": "6:103",
+          "why": "States that vision does not grasp Him while He grasps vision, which frames the whole discussion."
+        },
+        {
+          "ref": "22:46",
+          "why": "Locates blindness in the hearts inside the chests rather than in the eyes."
+        },
+        {
+          "ref": "7:143",
+          "why": "Records Moses asking to see and the answer he was given, the classical parallel here."
+        }
+      ],
+      "applyIt": "There is something you know that you cannot demonstrate to anyone — about a person, a decision, a moment you were alone for. Notice how you carry it: usually either by insisting, or by quietly dropping it. This passage does neither. It states the thing once, names the place, and lets the dispute continue. Try that with yours.",
+      "exploreFurther": [
+        "6:103",
+        "7:143",
+        "81:22-25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:16-20",
+      "surah": 53,
+      "start": 16,
+      "end": 20,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "The Sight Did Not Swerve",
+      "tier": "standard",
+      "meaning": "Two verbs describe what the eye did not do. It did not slide off to one side and it did not go past what was there, so the report is bracketed on both sides: nothing missed and nothing added. Then the passage says he saw some of the greatest signs, not all of them, and stops. The next line turns to three names the audience used, and asks them to look at those the same way.",
+      "historicalContext": "Meccan. The three names in the last two lines belonged to shrines the region actually visited: one at Taif, one on the road to Iraq, one on the coast near Yathrib, each with custodians, offerings and pilgrim traffic. Naming them in a public recitation was not an abstract theological point. It named three functioning institutions with income and reputations attached.",
+      "keyTerms": [
+        {
+          "arabic": "زَاغَ",
+          "gloss": "it swerved, it deviated",
+          "note": "A verb for turning aside from a straight line, used of a gaze sliding away and of a heart going crooked. Denying it says the looking stayed fixed on what was in front of it."
+        },
+        {
+          "arabic": "طَغَىٰ",
+          "gloss": "it exceeded, it overstepped",
+          "note": "The verb used elsewhere of tyrants and of floodwater rising past its channel. Applied to eyesight it means seeing more than was there, so the denial rules out embellishment as well as error."
+        },
+        {
+          "arabic": "مِنْ ءَايَـٰتِ",
+          "gloss": "some of the signs",
+          "note": "The preposition here is partitive, so the phrase says some of them rather than all. The limit is deliberate, and the commentators note that the passage never claims a complete disclosure."
+        }
+      ],
+      "lifeInProphetsTime": "A shrine was an economy. Pilgrims arrived with animals and goods, custodian families collected and redistributed offerings, truces were declared around the visiting seasons, and whole clans took their standing from the site they kept. Attacking the standing of three of the best-known shrines in western Arabia touched the livelihoods of people the audience knew by name, which is part of why the surah's later ayat expect anger.",
+      "didYouKnow": "The two denials about the eyesight are the same pair of verbs the Quran uses elsewhere for moral failure: one for a heart that turns crooked and one for a person who oversteps every limit. Applied to a gaze, they turn accurate seeing into a kind of integrity, and inaccurate seeing into a kind of wrongdoing.",
+      "theologicalSignificance": "Accuracy is treated as a moral quality here, not merely a cognitive one. The two things denied of the eyesight are the same two things the Quran denies of a sound character, so seeing rightly and being upright are described with one vocabulary. The partitive phrase then keeps the claim modest: some of the signs, not the whole. A report that stops where the experience stopped is offered as the mark of its truthfulness.",
+      "crossReferences": [
+        {
+          "ref": "3:7",
+          "why": "Uses the same verb for swerving of hearts that go after what is ambiguous in the Book."
+        },
+        {
+          "ref": "69:11",
+          "why": "Uses the other verb of floodwater rising past its limit, the image behind overstepping."
+        },
+        {
+          "ref": "20:23",
+          "why": "Uses the same phrase about the greatest signs, spoken to Moses before he was sent."
+        }
+      ],
+      "applyIt": "Take one story you tell often and cut it back to what you can actually vouch for. Most retellings drift in the same two directions this passage rules out: leaving out the part that spoils it, and adding the part that improves it. Tell it once this week without either, and notice how much shorter and how much better it is.",
+      "exploreFurther": [
+        "20:22-24",
+        "3:7",
+        "69:11-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:21-23",
+      "surah": 53,
+      "start": 21,
+      "end": 23,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Names You Gave Them",
+      "tier": "standard",
+      "meaning": "The argument is made from the audience's own valuations rather than from doctrine. In their society sons were an asset and daughters were a burden; the passage takes that as given and points out what they have done with it. Then the description of the three shrines is reduced to a single claim: they are names. Nothing was sent down about them, and what is followed instead is conjecture together with what people want, which the passage names as two separate things.",
+      "historicalContext": "Meccan. The practice of assigning daughters to God while regarding the birth of a daughter as a misfortune is documented across the Quran and in the pre-Islamic poetry, and this ayah is the sharpest statement of the inconsistency. The commentators note that the argument does not endorse the valuation it borrows; it uses the audience's own accounting to show what the arrangement implies.",
+      "keyTerms": [
+        {
+          "arabic": "ضِيزَىٰٓ",
+          "gloss": "unjust, lopsided",
+          "note": "A rare adjective for a share that shortchanges one side, from a verb for defrauding in a division. It occurs nowhere else in the Quran and its unusual form drew comment from the early grammarians."
+        },
+        {
+          "arabic": "سُلْطَـٰنٍ",
+          "gloss": "authority, warrant",
+          "note": "From a root for power and dominance, used in the Quran for the backing that makes a claim binding. Saying none was sent down for these names denies them a licence rather than an existence."
+        },
+        {
+          "arabic": "تَهْوَى",
+          "gloss": "the souls incline toward",
+          "note": "The same root as the falling star in the surah's opening line and the inclination denied in its third. By this point the chapter has used those three letters three times."
+        }
+      ],
+      "lifeInProphetsTime": "Division was a constant practical problem. Inheritance, spoils, water rights and grazing were split between claimants, and a bad division started feuds that lasted generations. Arbitrators were called in for exactly this, and a man's reputation could rest on having divided something fairly. The word used for the arrangement in this passage is the word for a share that cheats, and everybody listening had seen one.",
+      "didYouKnow": "The word for a cheating division in this passage occurs nowhere else in the Quran, and its vowel pattern is unusual enough that the early grammarians wrote about it specifically. They record that the form is rare in Arabic generally, which is part of why the line lands: the wrongness of the arrangement is matched by the strangeness of the word chosen for it.",
+      "theologicalSignificance": "The passage separates a name from a reality and puts the whole weight on the difference. What is denied is not that people worship these figures but that anything corresponds to the names. The two things followed instead are listed as distinct: conjecture, which is a failure of knowledge, and what the self wants, which is not. That pairing appears throughout the Quran, and it treats belief as governed by desire at least as much as by evidence.",
+      "crossReferences": [
+        {
+          "ref": "12:40",
+          "why": "Uses almost the same sentence about names inherited from fathers with no authority sent down."
+        },
+        {
+          "ref": "16:58-59",
+          "why": "Describes the face darkening at the news of a daughter, the valuation this argument borrows."
+        },
+        {
+          "ref": "45:23",
+          "why": "Describes a person who takes his own desire as his god, the second thing followed here."
+        }
+      ],
+      "applyIt": "Find one arrangement in your life where you have quietly kept the better half. The chores, the credit at work, the good chair, who gets the last word. You do not need to announce anything. Just swap it once this week and see whether it was as reasonable as it felt. The passage works by pointing at a split, not at a belief.",
+      "exploreFurther": [
+        "12:39-40",
+        "16:57-59",
+        "45:23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:24-26",
+      "surah": 53,
+      "start": 24,
+      "end": 26,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "How Many An Angel",
+      "tier": "standard",
+      "meaning": "A short question closes the previous argument: does wanting something make it so. The answer is a statement about ownership that covers both ends of time, so the whole span is accounted for and nothing is left over for a wish to work on. Then the subject turns to angels, and the point is made by counting: however many there are, their intercession does nothing on its own. Permission comes first, and approval after it.",
+      "historicalContext": "Meccan. The practical function of the shrines named a few lines earlier was intercession: offerings were made so that a figure closer to God would speak for the giver. The commentators read this passage as addressing that transaction directly rather than the question of whether angels exist, which nobody in the audience denied. No specific occasion is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "تَمَنَّىٰ",
+          "gloss": "he wished, he longed for",
+          "note": "A verb for wanting something that is not in your hands, distinct from the words for asking or intending. It names the appetite itself, without any implication that action follows."
+        },
+        {
+          "arabic": "شَفَـٰعَتُهُمْ",
+          "gloss": "their intercession",
+          "note": "From a root meaning to make something even by adding a second, so an intercessor is a person who joins himself to your case. The image is of pairing rather than of pleading."
+        },
+        {
+          "arabic": "وَيَرْضَىٰٓ",
+          "gloss": "and He approves",
+          "note": "A second condition added after permission, from a root for being pleased and satisfied. Two separate approvals are required, one for the intercessor to speak and one for the case being made."
+        }
+      ],
+      "lifeInProphetsTime": "Getting anything done in Arabia meant finding someone to speak for you. A stranger needed a protector to enter a town safely, a debtor needed a respected man to negotiate terms, a killer's family needed a mediator. The whole social order ran on people joining themselves to other people's cases. Religion worked the same way, which is why the passage does not argue against the practice but places a condition in front of it.",
+      "didYouKnow": "The root behind the word for intercession is the same one that gives Arabic its word for even numbers, as opposed to odd. An intercessor makes a single petitioner into a pair. The Quran uses both senses, and the connection means that intercession is described not as influence but as accompaniment.",
+      "theologicalSignificance": "Intercession is affirmed and then placed entirely under permission, which preserves two things at once: that help is real, and that it is never independent. The double condition is the load-bearing part. Permission decides who may speak and approval decides whether the case stands, so no relationship with an intermediary can produce an outcome by itself. What is removed is not hope but leverage.",
+      "crossReferences": [
+        {
+          "ref": "21:28",
+          "why": "Says the angels do not intercede except for whom God approves, and stand in awe."
+        },
+        {
+          "ref": "20:109",
+          "why": "States the same double condition, permission to speak and acceptance of the word."
+        },
+        {
+          "ref": "89:3",
+          "why": "Swears by the even and the odd, using the same root that gives the word for intercession."
+        }
+      ],
+      "applyIt": "Think about who you would ask to speak for you if you were in serious trouble, and notice how quickly a name arrives. Everyone has a mental list of people whose word carries. Then ask whether you are on anyone else's list, and whether you have used that standing lately for someone who could not ask you directly.",
+      "exploreFurther": [
+        "21:26-29",
+        "20:105-112",
+        "2:255"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "53:27-29",
+      "surah": 53,
+      "start": 27,
+      "end": 29,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Conjecture Against The Truth",
+      "tier": "standard",
+      "meaning": "A diagnosis and then an instruction. The naming of angels is traced to a specific absence: no knowledge, so conjecture fills the gap, and the passage adds a general rule about what conjecture is worth when truth is the question. Then the instruction, which is not to argue harder but to turn away, and the person to turn from is described by two things: he has turned from the reminder, and he wants only the present life.",
+      "historicalContext": "Meccan. The commentators connect this passage to the same practice addressed a few lines earlier and note the causal claim it makes: the naming is traced to disbelief in the hereafter rather than to ignorance about angels. The instruction to turn away belongs to the Meccan period, when the community was small and argument with the leadership had reached its limit. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلظَّنَّ",
+          "gloss": "conjecture, supposition",
+          "note": "A word covering everything between doubt and near-certainty, so it is not the opposite of knowledge but a weaker grade of it. What the passage rejects is using that grade where certainty is needed."
+        },
+        {
+          "arabic": "فَأَعْرِضْ",
+          "gloss": "so turn away",
+          "note": "To present your side rather than your face, a physical image of withdrawal without hostility. The word for what the other person did is different, a full turning of the back, so the two withdrawals are not described identically."
+        },
+        {
+          "arabic": "ذِكْرِنَا",
+          "gloss": "Our remembrance",
+          "note": "A noun that covers both the act of remembering and the thing remembered, so it names the Quran and the practice of reciting it at once. The English needs two words to keep both."
+        }
+      ],
+      "lifeInProphetsTime": "Withdrawing from an argument had a recognised social form. In a society where disputes were public and settled by standing, a man who stopped engaging was making a statement everyone could read, and it was not the same as conceding. Turning the shoulder was a gesture with meaning. The instruction here uses that vocabulary, and it assumes an audience who understood exactly what it looked like.",
+      "didYouKnow": "The word for conjecture appears three times in the space of six lines here, first as what the shrine names rest on and then twice in a single ayah, once as what is followed and once as what cannot substitute for truth. The repetition is the argument: the same word is put on both sides of the ledger.",
+      "theologicalSignificance": "Two things are established. The first is that a religious claim can be assessed by its evidential grade, and that a strong feeling about something is not a reason to hold it. The second is more surprising: the passage does not ask for more argument. It gives an instruction to withdraw, which means the Quran does not treat persuasion as unlimited. There is a point at which a person's own preference has become the whole of the matter.",
+      "crossReferences": [
+        {
+          "ref": "10:36",
+          "why": "States the same rule that conjecture is no substitute for the truth, in almost identical wording."
+        },
+        {
+          "ref": "43:19",
+          "why": "Describes the same naming of angels and asks whether the namers witnessed their creation."
+        },
+        {
+          "ref": "18:28",
+          "why": "Gives a related instruction, not to let the eyes pass beyond those who call on their Lord."
+        }
+      ],
+      "applyIt": "There is probably one conversation you keep restarting with someone who has made up their mind. Count how many times you have had it. This passage does not tell you to win it or to concede; it tells you to stop having it. Let the next opening go by unanswered once, and notice what you do with the energy you get back.",
+      "exploreFurther": [
+        "10:36",
+        "43:15-20",
+        "18:28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:00.976Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "53:38-42",
       "surah": 53,
