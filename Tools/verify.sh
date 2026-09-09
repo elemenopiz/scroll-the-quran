@@ -57,6 +57,7 @@ if command -v jq >/dev/null; then
   [ "$BAD" -eq 0 ] && ok "all Content JSON parses"
 else
   warn "jq missing, skipping JSON parse check"
+fi
 
 # 3. Host build and tests ----------------------------------------------------
 step "swift build (host)"
