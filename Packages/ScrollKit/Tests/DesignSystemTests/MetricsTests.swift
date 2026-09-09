@@ -30,10 +30,17 @@ struct MetricsTests {
         (Metrics.timelineNode, CGFloat(120)),
         (Metrics.rowLinkIcon, CGFloat(120)),
         (Metrics.statIcon, CGFloat(168)),
-        (Metrics.capsuleGroupHeight, CGFloat(108)),
     ])
     func circleSizes(points: CGFloat, pixels: CGFloat) {
         #expect(points * scale == pixels)
+    }
+
+    /// The one constant that is not a whole number of thirds: the reader toolbar
+    /// capsule measures 106 px = 35.3 pt and is rounded up to a 36 pt tap row.
+    @Test("The reader toolbar capsule rounds its measurement up, and only just")
+    func capsuleGroupHeightRounding() {
+        #expect(Metrics.capsuleGroupHeight == 36)
+        #expect(abs(Metrics.capsuleGroupHeight * scale - 106) <= 2)
     }
 
     @Test("Hairlines and bars stay sub-pixel-honest")

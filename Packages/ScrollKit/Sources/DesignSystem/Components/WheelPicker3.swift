@@ -44,6 +44,8 @@ public struct WheelPicker3: View {
         HStack(spacing: 0) {
             ForEach(Array(columns.enumerated()), id: \.element.id) { index, column in
                 Picker(column.title, selection: binding(for: index)) {
+                    // The offset is the option's identity: `selection` stores indices,
+                    // and a column's options are a fixed list for the life of the wheel.
                     ForEach(Array(column.options.enumerated()), id: \.offset) { optionIndex, option in
                         Text(option)
                             .font(.body(18, weight: .medium))

@@ -31,6 +31,8 @@ public struct StarRow: View {
     public var body: some View {
         let symbols = StarRow.symbols(for: rating)
         return HStack(spacing: spacing) {
+            // Position *is* identity here: the row is always exactly five stars, they
+            // never reorder, and nothing animates between them.
             ForEach(symbols.indices, id: \.self) { index in
                 Image(systemName: symbols[index])
                     .font(.system(size: size))

@@ -34,13 +34,13 @@ which are the same in both appearances by design.
 | `PrimaryPillButton` | corner | — | capsule | onboarding-hook | corner inset reaches 0 at dy = h/2 = 84 px |
 | `PrimaryPillButton` | onboarding side inset | 157 | **52** | onboarding-hook | pill x=156..1022 on a 1179 px screen |
 | `PrimaryPillButton` | paywall side inset | 48 | **16** | paywall-trial | pill x=48..1130 |
-| `OutlinePillButton` | height | 172 | **57** | onboarding-hook | bbox y=2038..2209 (border included) |
+| `OutlinePillButton` | height | 172 | **57** (57.3) | onboarding-hook | bbox y=2038..2209 (border included) |
 | `OutlinePillButton` | border | 3 | **1** | onboarding-hook | row y=2093: `#BBBBBD` runs x=160..163 |
 | CTA stack spacing | gap | 29 | **10** | onboarding-hook | outline bottom 2209 → pill top 2238 |
 | `Chip` (`.theme`) | height | 79 | **26** | discover-dark | `#303035` bbox y=420..498 |
 | `Chip` (`.theme`) | width ("Joy in Trials") | 308 | 103 | discover-dark | x=436..743 |
 | `Chip` (`.crossReference`) | height | 90 | **30** | discover-dark | col x=200 across the chip |
-| `CapsuleIconGroup` | height | 106 | **36** | reader-dark | col x=80: `#1E1E23` y=199..304 |
+| `CapsuleIconGroup` | height | 106 | **36** (35.3, rounded up) | reader-dark | col x=80: `#1E1E23` y=199..304 |
 | `CapsuleIconGroup` | glyph | 40 | **14** | reader-dark | dice glyph x=64..103 |
 | `CapsuleIconGroup` | left margin | 30 | **10** | reader-dark | capsule starts x=30 |
 | `OfflineBadge` | height | 47 | **16** | translation-sheet | `#30D158` bbox y=451..497 |
@@ -61,7 +61,7 @@ which are the same in both appearances by design.
 | --- | --- | --- | --- | --- | --- |
 | `StatCard` (streak) | height | 529 | 176 | home-dark | col x=70: card y=394..922 |
 | `StatCard` (progress) | height | 409 | 136 | home-dark | col x=70: card y=1023..1431 |
-| `RowLink` | height | 200 | **67** | home-dark | col x=70: card y=1520..1719 and y=1796..1995 |
+| `RowLink` | height | 200 | **67** (66.7, rounded up) | home-dark | col x=70: card y=1520..1719 and y=1796..1995 |
 | Card vertical gap | between rows | 77 | 26 | home-dark | 1719 → 1796 |
 | Card vertical gap | between stat cards | 101 | 34 | home-dark | 922 → 1023 |
 | `ProgressBar` | height | 30 | **10** | home-dark | col x=600: `#303035` y=1273..1302 |
@@ -70,7 +70,7 @@ which are the same in both appearances by design.
 | `TintedSectionBox` (quote) | height | 425 | 142 | deepstudy-top | `#231E19` y=726..1150 |
 | `TintedSectionBox` (historical) | height | 355 | 118 | deepstudy-top | `#0F2130` y=2045..2399 |
 | DYK box on Discover | inset inside card | 60 | **20** | discover-dark | card x=48 → box x=108 |
-| `ToastHint` | height | 182 | **61** | reader-dark | bbox y=2014..2195 |
+| `ToastHint` | height | 182 | **61** (60.7, rounded up) | reader-dark | bbox y=2014..2195 |
 | `ToastHint` | width | 642 | 214 | reader-dark | bbox x=150..791 |
 | `ActionIconRow` | glyph | ~72 | **24** | discover-dark | four icons centred at x≈265/478/700/914 |
 | Sheet divider | thickness | 3 | **1** | translation-sheet | col x=600: `#38383B` y=387..389 |
