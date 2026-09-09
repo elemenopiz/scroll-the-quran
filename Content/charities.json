@@ -1,9 +1,14 @@
 {
-  "version": 1,
-  "note": "Community tab. The running total is a config constant that starts at zero — the app makes no claim about money given until money has been given. Votes are stored locally; there is no server. Text only, no logos bundled.",
+  "version": 2,
+  "note": "Community tab. `givenTotalUSD` is a config constant that starts at zero — the app makes no claim about money given until money has been given, and the card shows it honestly as $0. `totalGivenUSD` is the Phase-1 spelling of the same number, kept as an alias so Tests/StudyContentTests/BundledJSONTests.swift still decodes; the two must stay equal and FeatureCommunityTests asserts that. Votes are stored locally in prefs.json; there is no server. `image` is the artwork slug in App/Assets.xcassets (`Charity-<image>`); no real logos are bundled.",
+  "givenTotalUSD": 0,
   "totalGivenUSD": 0,
   "currency": "USD",
   "votingOpensOn": null,
+  "headline": "Given to charities",
+  "subline": "Every subscription gives a share back to the Ummah.",
+  "voteTitle": "Vote Who We Give To",
+  "voteBody": "A portion of all proceeds across the entire app goes to one of these charities each month. Subscribers get one vote to choose who receives it.",
   "organisations": [
     {
       "id": "islamic-relief",
@@ -11,6 +16,7 @@
       "blurb": "Emergency response and long-term development in more than 40 countries, working through local offices rather than parachuting in.",
       "focus": "Emergency relief and development",
       "founded": 1984,
+      "image": "giving-hands",
       "url": "https://islamic-relief.org"
     },
     {
@@ -19,6 +25,7 @@
       "blurb": "Small, regular giving pooled into water, orphan care and food programmes, built around the idea that consistency beats size.",
       "focus": "Water, orphan care, food",
       "founded": 2009,
+      "image": "clean-water",
       "url": "https://pennyappeal.org"
     },
     {
@@ -27,6 +34,7 @@
       "blurb": "Health, education and livelihood programmes alongside emergency response, with published country-level reporting.",
       "focus": "Health, education, livelihoods",
       "founded": 1991,
+      "image": "harvest-wheat",
       "url": "https://humanappeal.org.uk"
     }
   ]
