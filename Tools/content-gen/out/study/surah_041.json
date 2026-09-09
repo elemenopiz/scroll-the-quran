@@ -1,7 +1,7 @@
 {
   "surah": 41,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:04:05.538Z",
+  "generatedAt": "2026-09-09T09:12:57.255Z",
   "studies": [
     {
       "key": "41:30",
@@ -116,6 +116,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:03:57.746Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "41:44",
+      "surah": 41,
+      "start": 44,
+      "end": 44,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Guidance And Healing Or Deafness",
+      "tier": "discover",
+      "meaning": "A hypothetical is used to show that an objection could never have been satisfied. Had the revelation arrived in a language they did not know, they would have complained that it was not made clear; as it is, in their own tongue, they complain anyway. The Arabic word for foreign also covers speech that is hard to follow, so both the objection and its answer turn on clarity. The second half then divides listeners by what happens inside them rather than by what they say.",
+      "historicalContext": "Meccan. The surah's name comes from the claim in its opening ayat that the signs of this Book are set out in detail, and this passage defends that claim against a particular charge. Objectors in Mecca disputed the message's source, its language and the standing of the man delivering it. The reply here takes the language complaint and tests it by imagining the alternative they say they wanted.",
+      "keyTerms": [
+        {
+          "arabic": "أَعْجَمِيًّا",
+          "gloss": "foreign, unclear in speech",
+          "note": "One word covering both a non-Arabic language and speech that cannot be followed. The two senses are not separated in Arabic, which is exactly what makes the objection in this ayah collapse."
+        },
+        {
+          "arabic": "شِفَآءٌ",
+          "gloss": "healing, cure",
+          "note": "The word for recovery from illness, not for comfort. Applied to a text, it describes something that repairs a condition rather than something that explains a situation or improves a mood."
+        },
+        {
+          "arabic": "وَقْرٌ",
+          "gloss": "heaviness, deafness",
+          "note": "A weight in the ear rather than an absence of hearing. The same root gives words for a heavy load, so what is described is obstruction by something present rather than a faculty missing."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca heard many languages during the trading season, and Arabs used a single word for anyone whose speech they could not follow, whether foreign or simply unclear. Poetry contests judged clarity as a virtue and obscurity as failure, and audiences were expert listeners. A message arriving in the poets' own idiom removed in advance the excuse a foreign one would have handed them.",
+      "didYouKnow": "The surah's name comes from a verb in its third ayah, describing a Book whose signs are set out in detail. That same verb reappears here inside the objectors' imagined complaint, where they would have asked why its signs were not set out in detail. The surah is named after a word it also places in the mouth of its opponents.",
+      "theologicalSignificance": "One text is said to do two opposite things depending on who receives it, which locates the difference in the hearing rather than in the message, and does not treat that as a defect in either. The closing image is worded with care. They are being called from a distant place, so the calling has not stopped and is not withdrawn; what has changed is the distance across which it has to travel.",
+      "crossReferences": [
+        {
+          "ref": "17:82",
+          "why": "States the same double effect: healing and mercy for some, and an increase only in loss for others."
+        },
+        {
+          "ref": "10:57",
+          "why": "Names the same word for healing, and locates what is being healed in the chests rather than the mind."
+        },
+        {
+          "ref": "41:3",
+          "why": "Contains the phrase this ayah echoes, a Book whose signs are set out in detail in Arabic."
+        }
+      ],
+      "applyIt": "Think of one objection you have raised recently to something you did not want to do. Ask yourself, honestly, what you would have said if that objection had been fully answered. If another one arrives immediately, you have learned something about the first. This ayah runs exactly that test and lets the answer stand on its own.",
+      "exploreFurther": [
+        "41:1-5",
+        "17:82",
+        "10:57-58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:12:18.133Z",
         "reviewed": false
       }
     }
