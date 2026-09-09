@@ -1,17 +1,83 @@
 {
-  "note": "Parked until Phase 3e routes --screenshot deepstudy into FeatureDiscover. Same rules as discover-dark.json.disabled: the frames are the reference geometry off Reference/deepstudy-top.png (pt = px/3) and every element is existenceOnly until they are re-recorded with SCROLL_RECORD_SPECS=1.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it.",
   "id": "deepstudy",
   "route": "deepstudy",
   "appearance": "dark",
-  "reference": { "width": 393, "height": 852 },
+  "reference": {
+    "width": 393,
+    "height": 852
+  },
   "tolerance": 6,
   "elements": [
-    { "name": "deepstudy",              "query": "identifier", "existenceOnly": true, "frame": { "x": 0.0,   "y": 0.0,   "width": 393.0, "height": 852.0 } },
-    { "name": "deepstudy.markDone",     "query": "identifier", "existenceOnly": true, "frame": { "x": 16.0,  "y": 59.0,  "width": 44.0,  "height": 44.0 } },
-    { "name": "deepstudy.close",        "query": "identifier", "existenceOnly": true, "frame": { "x": 333.0, "y": 59.0,  "width": 44.0,  "height": 44.0 } },
-    { "name": "deepstudy.themeChip",    "query": "identifier", "existenceOnly": true, "frame": { "x": 145.3, "y": 121.0, "width": 102.7, "height": 24.0 } },
-    { "name": "deepstudy.reference",    "query": "identifier", "existenceOnly": true, "frame": { "x": 24.0,  "y": 173.0, "width": 345.0, "height": 47.0 } },
-    { "name": "deepstudy.quote",        "query": "identifier", "existenceOnly": true, "frame": { "x": 24.0,  "y": 242.0, "width": 345.0, "height": 141.3 } },
-    { "name": "deepstudy.copy.meaning", "query": "identifier", "existenceOnly": true, "frame": { "x": 128.0, "y": 341.0, "width": 28.0,  "height": 28.0 } }
+    {
+      "name": "deepstudy",
+      "query": "identifier",
+      "frame": {
+        "x": -0.3,
+        "y": 0.0,
+        "width": 393.7,
+        "height": 896.8
+      }
+    },
+    {
+      "name": "deepstudy.markDone",
+      "query": "identifier",
+      "frame": {
+        "x": 15.3,
+        "y": 60.4,
+        "width": 43.0,
+        "height": 42.9
+      }
+    },
+    {
+      "name": "deepstudy.close",
+      "query": "identifier",
+      "frame": {
+        "x": 334.6,
+        "y": 60.4,
+        "width": 43.0,
+        "height": 42.9
+      }
+    },
+    {
+      "name": "deepstudy.themeChip",
+      "query": "identifier",
+      "frame": {
+        "x": 147.8,
+        "y": 120.9,
+        "width": 97.5,
+        "height": 25.3
+      }
+    },
+    {
+      "name": "deepstudy.reference",
+      "query": "identifier",
+      "frame": {
+        "x": 16.1,
+        "y": 154.0,
+        "width": 360.7,
+        "height": 55.6
+      }
+    },
+    {
+      "name": "deepstudy.quote",
+      "query": "identifier",
+      "frame": {
+        "x": 23.0,
+        "y": 246.3,
+        "width": 347.1,
+        "height": 279.8
+      }
+    },
+    {
+      "name": "deepstudy.copy.meaning",
+      "query": "identifier",
+      "frame": {
+        "x": 92.7,
+        "y": 573.9,
+        "width": 27.4,
+        "height": 27.3
+      }
+    }
   ]
 }

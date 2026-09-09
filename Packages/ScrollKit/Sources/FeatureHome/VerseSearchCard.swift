@@ -70,6 +70,12 @@ struct VerseSearchCard: View {
             }
             .frame(maxWidth: .infinity)
         }
+        // `.accessibilityElement(children: .contain)` first: an identifier on a plain container
+        // is pushed down onto every descendant, which overwrote `home.studyThisVerse` and
+        // `home.verseSearch.basic`/`.advanced` with `home.verseSearchCard` and left the card's
+        // own frame reading as its first child's. Marking the card a container keeps the
+        // identifier on the card and the children's own identifiers on the children.
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("home.verseSearchCard")
     }
 

@@ -1,20 +1,113 @@
 {
-  "note": "Parked until Phase 3e routes --screenshot discover into FeatureDiscover; TabRoot still renders the Phase 1 placeholder, so LayoutSpecTests would fail on every element. Drop the .disabled suffix to enrol it. The frames below are the reference geometry read off Reference/discover-dark.png (1179x2556 px = 393x852 pt, pt = px/3), kept as documentation: every element is existenceOnly until the numbers are re-recorded on the simulator with SCROLL_RECORD_SPECS=1.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it.",
   "id": "discover",
   "route": "discover",
   "appearance": "dark",
-  "reference": { "width": 393, "height": 852 },
+  "reference": {
+    "width": 393,
+    "height": 852
+  },
   "tolerance": 6,
   "elements": [
-    { "name": "discover.card",        "query": "identifier", "existenceOnly": true, "frame": { "x": 16.0,  "y": 120.0, "width": 361.0, "height": 593.7 } },
-    { "name": "discover.themeChip",   "query": "identifier", "existenceOnly": true, "frame": { "x": 145.3, "y": 140.0, "width": 102.7, "height": 26.0 } },
-    { "name": "discover.reference",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 173.0, "width": 321.0, "height": 47.0 } },
-    { "name": "discover.quote",       "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 239.0, "width": 321.0, "height": 52.0 } },
-    { "name": "discover.meaning",     "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 333.7, "width": 321.0, "height": 82.0 } },
-    { "name": "discover.didYouKnow",  "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 427.7, "width": 321.0, "height": 109.7 } },
-    { "name": "discover.deepStudy",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 578.0, "width": 321.0, "height": 44.0 } },
-    { "name": "discover.actions.save", "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0, "y": 645.7, "width": 80.3, "height": 44.0 } },
-    { "name": "discover.actions.read", "query": "identifier", "existenceOnly": true, "frame": { "x": 276.7, "y": 645.7, "width": 80.3, "height": 44.0 } },
-    { "name": "Discover", "query": "tabBarButton", "existenceOnly": true, "frame": { "x": 100.7, "y": 772.1, "width": 93.9, "height": 46.8 } }
+    {
+      "name": "discover.card",
+      "query": "identifier",
+      "frame": {
+        "x": 15.6,
+        "y": 58.2,
+        "width": 361.7,
+        "height": 715.2
+      }
+    },
+    {
+      "name": "discover.themeChip",
+      "query": "identifier",
+      "frame": {
+        "x": 147.9,
+        "y": 77.7,
+        "width": 97.5,
+        "height": 25.3
+      }
+    },
+    {
+      "name": "discover.reference",
+      "query": "identifier",
+      "frame": {
+        "x": 100.9,
+        "y": 106.9,
+        "width": 191.3,
+        "height": 29.5
+      }
+    },
+    {
+      "name": "discover.quote",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 169.3,
+        "width": 322.6,
+        "height": 171.3
+      }
+    },
+    {
+      "name": "discover.meaning",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 360.0,
+        "width": 61.6,
+        "height": 13.0
+      }
+    },
+    {
+      "name": "discover.didYouKnow",
+      "query": "identifier",
+      "frame": {
+        "x": 52.5,
+        "y": 500.1,
+        "width": 125.4,
+        "height": 14.9
+      }
+    },
+    {
+      "name": "discover.deepStudy",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 652.5,
+        "width": 322.6,
+        "height": 42.9
+      }
+    },
+    {
+      "name": "discover.actions.save",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 710.9,
+        "width": 80.8,
+        "height": 42.9
+      }
+    },
+    {
+      "name": "discover.actions.read",
+      "query": "identifier",
+      "frame": {
+        "x": 277.3,
+        "y": 710.9,
+        "width": 80.5,
+        "height": 42.9
+      }
+    },
+    {
+      "name": "Discover",
+      "query": "tabBarButton",
+      "frame": {
+        "x": 100.7,
+        "y": 772.1,
+        "width": 93.9,
+        "height": 46.8
+      }
+    }
   ]
 }

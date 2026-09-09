@@ -1,21 +1,123 @@
 {
-  "note": "Parked until AppShell routes --screenshot community into FeatureCommunity; TabRoot still renders the Phase 1 placeholder, so LayoutSpecTests would fail on every element. Drop the .disabled suffix to enrol it. The frames below are the reference geometry read off Reference/community-dark.png (1179x2556 px = 393x852 pt, pt = px/3) and are the same numbers CommunityTests asserts; every element is existenceOnly until they are re-recorded on the simulator with SCROLL_RECORD_SPECS=1.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it.",
   "id": "community",
   "route": "community",
   "appearance": "dark",
-  "reference": { "width": 393, "height": 852 },
+  "reference": {
+    "width": 393,
+    "height": 852
+  },
   "tolerance": 6,
   "elements": [
-    { "name": "community.givenCard",             "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 102.0, "width": 353.0, "height": 176.0 } },
-    { "name": "community.given.label",           "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 126.0, "width": 309.0, "height": 13.0 } },
-    { "name": "community.given.amount",          "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 142.0, "width": 309.0, "height": 59.0 } },
-    { "name": "community.given.subline",         "query": "identifier", "existenceOnly": true, "frame": { "x": 42.0,  "y": 228.0, "width": 309.0, "height": 32.0 } },
-    { "name": "community.title",                 "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 301.4, "width": 353.0, "height": 40.0 } },
-    { "name": "community.body",                  "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 348.9, "width": 353.0, "height": 53.0 } },
-    { "name": "community.card.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 20.0,  "y": 414.3, "width": 353.0, "height": 353.0 } },
-    { "name": "community.name.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 590.4, "width": 245.0, "height": 18.0 } },
-    { "name": "community.focus.islamic-relief",  "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 610.9, "width": 245.0, "height": 15.0 } },
-    { "name": "community.vote.islamic-relief",   "query": "identifier", "existenceOnly": true, "frame": { "x": 298.3, "y": 590.3, "width": 58.7, "height": 29.3 } },
-    { "name": "Community", "query": "tabBarButton", "existenceOnly": true, "frame": { "x": 6.8, "y": 772.1, "width": 93.9, "height": 46.8 } }
+    {
+      "name": "community.givenCard",
+      "query": "identifier",
+      "frame": {
+        "x": 19.6,
+        "y": 102.4,
+        "width": 353.9,
+        "height": 176.4
+      }
+    },
+    {
+      "name": "community.given.label",
+      "query": "identifier",
+      "frame": {
+        "x": 131.8,
+        "y": 125.8,
+        "width": 129.3,
+        "height": 11.7
+      }
+    },
+    {
+      "name": "community.given.amount",
+      "query": "identifier",
+      "frame": {
+        "x": 172.5,
+        "y": 140.4,
+        "width": 47.9,
+        "height": 65.6
+      }
+    },
+    {
+      "name": "community.given.subline",
+      "query": "identifier",
+      "frame": {
+        "x": 76.4,
+        "y": 223.5,
+        "width": 240.2,
+        "height": 30.9
+      }
+    },
+    {
+      "name": "community.title",
+      "query": "identifier",
+      "frame": {
+        "x": 63.3,
+        "y": 302.2,
+        "width": 266.2,
+        "height": 39.0
+      }
+    },
+    {
+      "name": "community.body",
+      "query": "identifier",
+      "frame": {
+        "x": 21.2,
+        "y": 349.0,
+        "width": 350.7,
+        "height": 51.4
+      }
+    },
+    {
+      "name": "community.card.islamic-relief",
+      "query": "identifier",
+      "frame": {
+        "x": 19.6,
+        "y": 413.6,
+        "width": 353.9,
+        "height": 388.0
+      }
+    },
+    {
+      "name": "community.name.islamic-relief",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 595.3,
+        "width": 175.0,
+        "height": 17.5
+      }
+    },
+    {
+      "name": "community.focus.islamic-relief",
+      "query": "identifier",
+      "frame": {
+        "x": 35.2,
+        "y": 614.8,
+        "width": 191.9,
+        "height": 13.9
+      }
+    },
+    {
+      "name": "community.vote.islamic-relief",
+      "query": "identifier",
+      "frame": {
+        "x": 298.2,
+        "y": 595.3,
+        "width": 59.6,
+        "height": 28.3
+      }
+    },
+    {
+      "name": "Community",
+      "query": "tabBarButton",
+      "frame": {
+        "x": 2.0,
+        "y": 772.1,
+        "width": 94.8,
+        "height": 46.8
+      }
+    }
   ]
 }

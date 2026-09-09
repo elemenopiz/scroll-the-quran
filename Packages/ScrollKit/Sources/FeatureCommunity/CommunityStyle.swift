@@ -31,7 +31,13 @@ enum CommunityMetrics {
     /// Headline line bottom 341 pt → body line top 348.9 pt.
     static let bodyTopGap: CGFloat = 8
     /// Body block bottom 401.7 pt → first organisation card top 414.3 pt.
-    static let cardsTopGap: CGFloat = 13
+    ///
+    /// The 12.6 pt that measures is the gap below the last *glyph*; SwiftUI applies the padding
+    /// below the text's *layout* box, whose bottom sits ~11 pt above the visual one (the trailing
+    /// line's leading). 13 put the first card at 402.9 pt in reference space instead of 414.3 —
+    /// the gap `CommunityTests.testGivingCardAndVoteButtonMatchTheReferenceGeometry` measures,
+    /// which only started running when Phase 3e wired the tab in.
+    static let cardsTopGap: CGFloat = 24
     /// Only one organisation card is visible in the reference; the gap follows the Home stack.
     static let cardSpacing: CGFloat = 20
 
