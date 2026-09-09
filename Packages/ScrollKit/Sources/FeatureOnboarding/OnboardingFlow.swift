@@ -59,7 +59,16 @@ public struct OnboardingFlow: View {
                 }
         }
         .background(Color.appBackground.ignoresSafeArea())
-        .accessibilityIdentifier("onboarding.flow")
+        // The screen id lives here, not only on the step view. Each step marks itself
+        // `.accessibilityElement(children: .contain)` with `screen.<id>`, but that
+        // container fills the window exactly like this one, and SwiftUI collapses the
+        // pair into a single `Other` node carrying the OUTER identifier — so an id set
+        // only here (it used to read "onboarding.flow") is the one XCUITest sees, and
+        // `screen.onboarding-hook` was unreachable. Deriving it from the current step
+        // keeps whichever node survives labelled with the screen actually on display.
+        // The sign-in sheet is its own presentation, so `screen.onboarding-signin`
+        // is unaffected.
+        .accessibilityIdentifier("screen.\(model.step.rawValue)")
     }
 
     private func signInSheet(_ scale: ReferenceScale) -> some View {
