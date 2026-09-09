@@ -1,8 +1,66 @@
 {
   "surah": 19,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:01:21.484Z",
+  "generatedAt": "2026-09-09T15:03:38.187Z",
   "studies": [
+    {
+      "key": "19:1-3",
+      "surah": 19,
+      "start": 1,
+      "end": 3,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "A Call Made Quietly",
+      "tier": "standard",
+      "meaning": "The surah opens with five disconnected letters, and the classical commentators record that their meaning is not known with certainty, most preferring to say God knows best rather than to choose among the proposals. What follows names the subject of the whole chapter: a mention of your Lord's mercy toward His servant Zechariah. Then a single detail is given about how he prayed. The call was hidden, made where nobody could hear it, and that quietness is the first thing the surah tells you about him.",
+      "historicalContext": "Meccan, from the middle years, and the classical sources connect this surah with the emigration to Abyssinia, reporting that passages from it were recited before the Christian ruler there. Whether or not that account fixes its date, the surah's content fits a moment when the small Muslim community needed the stories of earlier prophets and the common ground with people of the earlier scriptures.",
+      "keyTerms": [
+        {
+          "arabic": "ذِكْرُ",
+          "gloss": "a mention, a recital",
+          "note": "The word covers both remembering and speaking aloud. Placing it at the head makes the whole chapter an act of recalling, which is why the surah keeps repeating the instruction to mention this or that figure in the Book."
+        },
+        {
+          "arabic": "نِدَآءً",
+          "gloss": "a call, a hail",
+          "note": "The noun for calling out to someone at a distance, usually loudly. Pairing it with the word for hidden makes a deliberate tension: the reach of a shout with the volume of a whisper."
+        },
+        {
+          "arabic": "خَفِيًّا",
+          "gloss": "hidden, unheard",
+          "note": "Concealed from others rather than merely quiet. The commentators read it as prayer made where no one could observe it, which they treat as the reason it is singled out for mention here."
+        }
+      ],
+      "lifeInProphetsTime": "Privacy was scarce in the seventh century. Houses were shared, courtyards were open, and worship in Mecca happened in view of the sanctuary and everyone circling it. To pray unobserved took effort: a corner of a house at night, a walk out past the last dwellings. The early Muslims in Mecca knew this exactly, since for a period they prayed in ravines outside the city to avoid being seen.",
+      "didYouKnow": "Twenty-nine surahs open with disconnected letters, and only two of them use five. This is one, and the other appears near the start of a surah later in the Book. The classical tradition preserved the letters exactly as recited without settling what they mean, which is itself notable in a tradition that comments on almost everything.",
+      "theologicalSignificance": "Opening a chapter of mercy with letters nobody claims to understand sets a tone the surah keeps. Something is given, it is genuine, and it is not fully available. The detail about the hidden call then makes a claim about prayer itself: the value of the asking is not in its being heard by anyone present. A call made where no one could hear it is chosen as the example, and what follows shows it answered.",
+      "crossReferences": [
+        {
+          "ref": "3:38-41",
+          "why": "Gives the same prayer of Zechariah and the same sign, in a different surah's telling."
+        },
+        {
+          "ref": "21:89-90",
+          "why": "Records the same request in two lines and notes that he called on his Lord in longing and awe."
+        },
+        {
+          "ref": "7:55",
+          "why": "Instructs the reader to call on the Lord humbly and in secret, the manner described here."
+        }
+      ],
+      "applyIt": "Make one request this week that nobody else knows about. Not a private version of a public plan, something you have told no one and will not mention afterwards. The surah opens by singling out a call made where nothing could be heard, and there is a particular honesty available in a prayer that has no audience at all.",
+      "exploreFurther": [
+        "3:38-41",
+        "21:89-90",
+        "7:55"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.089Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "19:4",
       "surah": 19,
@@ -58,6 +116,528 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:01:14.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:5-7",
+      "surah": 19,
+      "start": 5,
+      "end": 7,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "A Name Never Given",
+      "tier": "standard",
+      "meaning": "The request is stated with its reasons intact and none of them softened. He fears what his relatives will do after him, his wife has never borne a child, and so he asks for someone from God's own side. What he asks for that heir is not wealth or standing but that he inherit prophethood and be pleasing. The answer comes without preamble, addressing him by name, and adds a detail nobody requested: the boy has a name, and no one before has been given it.",
+      "historicalContext": "Meccan. Zechariah served at the sanctuary in Jerusalem in the generation before Jesus, and the Quran assumes an audience with some knowledge of him. The commentators read the fear about his relatives as concern for what they would do with the religious trust he held rather than with property, since the inheritance he asks for is described in terms of the house of Jacob.",
+      "keyTerms": [
+        {
+          "arabic": "عَاقِرًا",
+          "gloss": "barren",
+          "note": "A form used of both women and men, from a root about cutting off and leaving fruitless. It is stated flatly here, as one of the reasons given, rather than being avoided or worked around."
+        },
+        {
+          "arabic": "وَلِيًّا",
+          "gloss": "an heir, a near one",
+          "note": "The word covers both succession and closeness, since in Arabic the one who inherits is the one nearest. He is asking for a successor and for kin in the same breath."
+        },
+        {
+          "arabic": "سَمِيًّا",
+          "gloss": "a namesake",
+          "note": "One who shares a name with another. It occurs twice in the Quran and both are in this surah, once of a name never given to anyone before and once in a question about God having any namesake."
+        }
+      ],
+      "lifeInProphetsTime": "Names in Arabia ran in families, and a child was usually given a grandfather's name or the name of someone in the clan worth remembering. To be told your son's name is one nobody has carried would have registered as strange before it registered as an honour. Inheritance was equally concrete: who took over a role, a herd, a debt or a trust was settled by kinship, and a childless man watched that pass to cousins.",
+      "didYouKnow": "The word for a namesake occurs exactly twice in the Quran, and both are in this surah. Here it says nobody had been given this child's name before him. Later in the same chapter it appears in a question about God, asking whether you know of any namesake for Him. The same rare word marks a unique human name and an incomparable divine one.",
+      "theologicalSignificance": "The prayer models something the tradition has drawn on since: reasons are given honestly, including the ones that make the request look unreasonable. Nothing is hidden to make the asking easier. What is asked for is also specific about the right thing, since the concern is for what he holds rather than for what he owns. The answer then exceeds the request in a small way, by naming the child, which is the surah's first instance of a pattern it repeats.",
+      "crossReferences": [
+        {
+          "ref": "3:38-39",
+          "why": "Gives the same request and the same answer, with the angels calling out while he stood praying."
+        },
+        {
+          "ref": "21:89-90",
+          "why": "Records the prayer and adds that his wife was made fit for him, and that they hurried in good works."
+        },
+        {
+          "ref": "19:65",
+          "why": "Uses this passage's rare word for a namesake again, there asking whether God has any."
+        }
+      ],
+      "applyIt": "Ask for something this week and give the honest reasons alongside it, including the ones that make it sound unlikely. Say the whole thing to God as it actually stands, without editing it into a more reasonable request. Zechariah names his age, his wife's barrenness and his fear of his own relatives, and the answer arrives anyway.",
+      "exploreFurther": [
+        "3:37-41",
+        "21:89-90",
+        "19:65"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:8-9",
+      "surah": 19,
+      "start": 8,
+      "end": 9,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "When You Were Nothing",
+      "tier": "standard",
+      "meaning": "The answer has come and the question that follows is not doubt but astonishment, and the commentators are careful to distinguish them. He restates the two obstacles, his wife's barrenness and his own body worn down past use. The reply reports God's own words and does not address the obstacles at all. It is easy for Me, and I created you before, when you were not a thing. The argument is from his own existence, which he had never thought of as needing explaining.",
+      "historicalContext": "Meccan. The commentators note that this exchange runs almost word for word alongside the one that comes later in the surah with Mary, and read the pairing as deliberate. Both are told the same thing, that it is easy, and both are answered from the same direction. The surah is establishing a pattern before it reaches its most contested moment.",
+      "keyTerms": [
+        {
+          "arabic": "أَنَّىٰ",
+          "gloss": "how, by what route",
+          "note": "An interrogative asking about the manner or the way of a thing rather than about whether it is so. Arabic grammarians note that it does not carry denial, which is why the commentators read the question as wonder rather than doubt."
+        },
+        {
+          "arabic": "عِتِيًّا",
+          "gloss": "extreme old age, dryness",
+          "note": "From a root about going past a limit, used of bones grown brittle and wood gone dry. It occurs twice in the Quran, both in this surah, and the other use is of stubborn defiance."
+        },
+        {
+          "arabic": "هَيِّنٌ",
+          "gloss": "easy, slight",
+          "note": "Not merely possible but light, of little weight. The word measures the act against the actor rather than against the obstacle, which is why the reply does not engage with the difficulties he listed."
+        }
+      ],
+      "lifeInProphetsTime": "Age was visible and final in the seventh century. There was no way to slow it and no way to conceal it, and a man past a certain point was carried by his sons or he was not carried at all. Childlessness in that world was not a private disappointment but the end of a line, a name and a household. The reasons Zechariah gives are the two most obviously conclusive facts of his life.",
+      "didYouKnow": "The word this passage uses for old age that has passed every limit occurs twice in the Quran, and both are in this surah. Here it describes a body worn out. Later it describes people most stubborn in defiance of the Most Merciful, using the same root. The vocabulary of a limit overshot covers both a man's bones and a person's insolence.",
+      "theologicalSignificance": "The reply establishes a way of arguing that the Quran uses repeatedly: the questioner is sent back to his own existence. Since he was once not a thing at all, the distance from nothing to him is greater than the distance from him to a son. That converts an appeal to power into an appeal to memory. It also treats the question kindly, since nothing in the answer suggests the astonishment was a fault.",
+      "crossReferences": [
+        {
+          "ref": "19:20-21",
+          "why": "Mary asks the same kind of question later in this surah and receives the same phrase in reply."
+        },
+        {
+          "ref": "76:1",
+          "why": "Opens with the same idea, a stretch of time when the human being was not a thing mentioned."
+        },
+        {
+          "ref": "3:40-41",
+          "why": "Tells the same exchange with the reply that God does whatever He wills, and gives the sign."
+        }
+      ],
+      "applyIt": "Think back to the least likely thing in your life that is now ordinary: being born at all, meeting the person you live with, the work you do. Pick one and trace how thin the chain was. The reply here does not argue about the future. It sends a man back to look at what has already happened to him.",
+      "exploreFurther": [
+        "19:19-21",
+        "76:1-3",
+        "3:38-41"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.099Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:10",
+      "surah": 19,
+      "start": 10,
+      "end": 10,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Three Nights Without Speech",
+      "tier": "standard",
+      "meaning": "He asks for a sign and receives one that costs him something. For three nights he will not speak to people, while remaining otherwise sound. Commentators note the last word carefully: nothing is wrong with him, the tongue simply will not move for ordinary speech. Most read the restriction as covering talk with people while leaving remembrance of God open, so what is taken away is exactly the part of speech that is spent on others. The sign is not a display. It is a silence only he would feel.",
+      "historicalContext": "Meccan. Zechariah held a religious office in Jerusalem that involved leading and instructing people, so a sign of this kind fell directly on his working life. The commentators note that a parallel account in another surah gives the period as three days rather than nights, and treat the two as describing the same span from different ends rather than as a discrepancy.",
+      "keyTerms": [
+        {
+          "arabic": "ءَايَةً",
+          "gloss": "a sign, a token",
+          "note": "The same word the Quran uses for its own verses and for the wonders of creation. Asking for one is asking for something that points beyond itself, which is why the answer given is not a demonstration of power."
+        },
+        {
+          "arabic": "تُكَلِّمَ",
+          "gloss": "to speak with",
+          "note": "A form implying exchange with another party rather than mere utterance. The restriction is therefore on conversation specifically, which is how the commentators read the exemption of remembrance from it."
+        },
+        {
+          "arabic": "سَوِيًّا",
+          "gloss": "sound, in good order",
+          "note": "Whole and properly formed, with nothing missing. It occurs four times in the Quran and three of those are in this surah, where it marks bodies and forms that are exactly as they should be."
+        }
+      ],
+      "lifeInProphetsTime": "A man in Zechariah's position lived by speaking. Teaching, judging disputes, leading prayer and answering questions were all done aloud and in person, since almost nothing was written and no one could have read it if it were. Losing conversation for three days meant a household run by gesture, a role suspended, and every explanation deferred. It was a sign that could not be shown to anyone but was impossible to hide.",
+      "didYouKnow": "The word for being sound and whole occurs four times in the Quran, and three of them are in this surah. It appears here of a man whose speech stops while his body stays intact, later of the messenger who comes to Mary in the form of a well-made human being, and later still of a level path, in Abraham's appeal to his father.",
+      "theologicalSignificance": "The sign given is the opposite of a public wonder. It works inward, and it takes away the faculty by which a man in his position exercised his role, so that for three days he could do nothing but receive. That fits the surah's opening, where the prayer singled out for mention was the one nobody heard. Confirmation, in this account, arrives in the same register as the request: privately, and at some cost.",
+      "crossReferences": [
+        {
+          "ref": "3:41",
+          "why": "Gives the same sign as three days, with the instruction to signal rather than speak."
+        },
+        {
+          "ref": "19:26",
+          "why": "Has Mary told to keep a fast of silence later in this surah, in a very different situation."
+        },
+        {
+          "ref": "19:11",
+          "why": "Shows the sign taking effect immediately, as he comes out and can only gesture to his people."
+        }
+      ],
+      "applyIt": "Take a few hours this week without speaking to anyone: no calls, no messages, no comments under things. Keep working, keep walking about, just do not put anything into words for other people. Most of us discover we were talking to fill something. Notice what turns up in the space, and whether you wanted it there.",
+      "exploreFurther": [
+        "3:38-41",
+        "19:26-29",
+        "19:11-15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.097Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:11-14",
+      "surah": 19,
+      "start": 11,
+      "end": 14,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Tenderness From Us",
+      "tier": "standard",
+      "meaning": "The sign takes effect at once: he comes out and can only gesture to his people to praise God morning and evening. Then the child is addressed directly, told to take hold of the Scripture with strength, and given judgement while still a boy. What follows is a list of what he was given, and the first item is unexpected. Tenderness, from God's own side, listed among gifts alongside purity. Commentators note that the qualities named are not achievements but things placed in him, and that the last line rules out two faults by naming them.",
+      "historicalContext": "Meccan. John lived and preached in the region around the Jordan in the years before Jesus began his mission, and the Quran assumes an audience with some awareness of him. The commentators do not give an occasion for these ayat and read them as part of the surah's opening sequence, which sets out one answered prayer in full before turning to Mary.",
+      "keyTerms": [
+        {
+          "arabic": "بِقُوَّةٍ",
+          "gloss": "with strength, firmly",
+          "note": "The phrase for taking hold of something with determination rather than lightly. It is used elsewhere of receiving scripture, and it treats holding a book as a matter of grip rather than of understanding alone."
+        },
+        {
+          "arabic": "وَحَنَانًا",
+          "gloss": "tenderness, deep affection",
+          "note": "From a root about yearning, used of a she-camel calling for her calf. It occurs only here in the entire Quran, and it names a warmth of feeling as something granted rather than developed."
+        },
+        {
+          "arabic": "جَبَّارًا",
+          "gloss": "overbearing, tyrannical",
+          "note": "One who compels others, from a root about forcing something into shape. The Quran uses it for those who dominate people, and its denial here is paired with the denial of disobedience to parents."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian culture praised a certain hardness in men: endurance, pride, readiness to answer an insult. Tenderness was a word for mothers and for camels with young, and a list of a man's virtues would not usually have included it. Placing it second in a prophet's description, before devoutness and before kindness to parents, would have registered as a reordering of what a strong man is.",
+      "didYouKnow": "The word for tenderness in this passage occurs only once in the entire Quran. Arabic lexicographers connect it with the sound a she-camel makes calling for her calf, so the root is drawn from animal affection rather than from human sentiment. Of all the qualities the Quran attributes to a prophet, this one is named a single time and never used again.",
+      "theologicalSignificance": "The passage lists character as gift rather than as attainment, which changes how the reader is meant to hold it. Wisdom, tenderness and purity are described as given from God's side, and what remains for the person is to receive and to hold firmly. The final line then defines goodness partly by absence: not overbearing, not disobedient to parents. A prophet is described by what he was not made into as well as by what he was.",
+      "crossReferences": [
+        {
+          "ref": "3:39",
+          "why": "Describes John with a different set of qualities, confirming the word of God and a chaste prophet."
+        },
+        {
+          "ref": "2:63",
+          "why": "Uses the same phrase for taking hold of what was given with strength, addressed to a whole people."
+        },
+        {
+          "ref": "19:32",
+          "why": "Has Jesus described in the same terms later in this surah, dutiful and not overbearing."
+        }
+      ],
+      "applyIt": "Look at the list in this passage and notice that tenderness sits near the top. Then think about the qualities you would name if someone asked what you were working on in yourself. If softness toward people is not on that list, add it this week, and pick one person to practise it on who does not make it easy.",
+      "exploreFurther": [
+        "3:38-41",
+        "19:30-33",
+        "21:90"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:15-17",
+      "surah": 19,
+      "start": 15,
+      "end": 17,
+      "theme": "Mary",
+      "themeId": "mary",
+      "title": "She Withdrew To The East",
+      "tier": "standard",
+      "meaning": "Peace is pronounced over John at three points, birth, death and being raised, and the account closes. Then the surah turns with an instruction: mention Mary in the Book. What is given first is a movement away. She withdrew from her family to a place to the east and put a screen between herself and them, and only then was the spirit sent to her, appearing as a well-formed human being. Commentators note the sequence. The withdrawal comes first, and the visitation happens inside it.",
+      "historicalContext": "Meccan. The classical sources report that this surah was recited before the Christian ruler of Abyssinia when Muslims sought refuge there, and that its account of Mary and her son formed the common ground on which they were received. Whether or not that fixes the date, the surah devotes more space to Mary than any other passage of the Quran and names her more often than any other woman.",
+      "keyTerms": [
+        {
+          "arabic": "ٱنتَبَذَتْ",
+          "gloss": "she withdrew apart",
+          "note": "From a root about casting something aside, so a deliberate separating rather than a drifting away. The same verb returns later in the surah when she withdraws again, carrying the child, to a distant place."
+        },
+        {
+          "arabic": "حِجَابًا",
+          "gloss": "a screen, a barrier",
+          "note": "Anything placed between two parties to block sight. Here it marks a chosen privacy rather than a requirement, and the Quran uses the same word for barriers between people and things they cannot perceive."
+        },
+        {
+          "arabic": "رُوحَنَا",
+          "gloss": "Our spirit",
+          "note": "The commentators overwhelmingly identify this with the angel who brings revelation, though a minority read it differently. The possessive keeps the sending entirely on God's side, which the following ayat make explicit."
+        }
+      ],
+      "lifeInProphetsTime": "Solitude for a young woman was almost unavailable in that world. Households were extended, work was communal, and water was drawn where everybody gathered. To go apart deliberately, to the east of a settlement and behind a screen, meant leaving the only structure that gave a woman standing and safety. It was an unusual thing to do and would have been noticed, which is part of what the later ayat turn on.",
+      "didYouKnow": "Mary is the only woman named in the Quran. Other women appear as the wife, the mother or the sister of someone, but her personal name is used, and it appears in more than thirty ayat across the text. One surah carries her name, and this one gives her story at greater length than any other passage.",
+      "theologicalSignificance": "The peace pronounced over John at three points is echoed almost exactly later in this surah, where Jesus says it of himself, and the parallel draws the two accounts into one shape. What follows about Mary makes a claim about how encounter with God happens. She is not interrupted in the middle of her life; she has already stepped out of it. The passage does not present that as a condition, but it does place it first.",
+      "crossReferences": [
+        {
+          "ref": "19:33",
+          "why": "Repeats the same threefold peace, there spoken by Jesus about himself, later in this surah."
+        },
+        {
+          "ref": "3:42-43",
+          "why": "Gives the angels' address to Mary, telling her she has been chosen and purified."
+        },
+        {
+          "ref": "66:12",
+          "why": "Describes her guarding her chastity and confirming the words and books of her Lord."
+        }
+      ],
+      "applyIt": "Put a screen of your own up for an hour this week: no phone, one room, door shut, nothing to answer. Do not plan what to do in it. The passage puts the withdrawal before anything else happens, and most of us have arranged our days so that the withdrawal never comes at all.",
+      "exploreFurther": [
+        "3:42-47",
+        "66:12",
+        "19:30-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:18-20",
+      "surah": 19,
+      "start": 18,
+      "end": 20,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "I Take Refuge In The Merciful",
+      "tier": "standard",
+      "meaning": "A stranger has appeared where nobody should be, and her first words are not a question but a taking of refuge. She names the one she is sheltering in and then adds a condition aimed at him: if you are someone who guards against God. Commentators note that she appeals to his own conscience rather than calling for help, which is the response of someone with no other protection available. He answers by stating what he is and what he brings, and her second reply gives the two facts that make the announcement impossible.",
+      "historicalContext": "Meccan. The commentators place Mary in the care of the sanctuary at Jerusalem, set apart for service there, and read her withdrawal as ordinary within that life rather than as flight. Nothing in the classical accounts suggests she expected a visitor. The surah gives her words in full, including the fear, and the sources treat that as part of the point rather than as detail to be smoothed away.",
+      "keyTerms": [
+        {
+          "arabic": "أَعُوذُ",
+          "gloss": "I take refuge",
+          "note": "The verb for running to something that can shelter you, used of a person reaching a stronghold. It is the same word that opens the formula Muslims say before reciting, and it names an act rather than a feeling."
+        },
+        {
+          "arabic": "بِٱلرَّحْمَـٰنِ",
+          "gloss": "in the Most Merciful",
+          "note": "She chooses this name rather than any other. The surah uses it repeatedly, more than most chapters do, and choosing mercy as the name to shelter under is itself part of what she says here."
+        },
+        {
+          "arabic": "بَغِيًّا",
+          "gloss": "unchaste, transgressing",
+          "note": "From a root about exceeding a limit or seeking beyond what is allowed. Her denial covers not only the act but the character, so she is answering a charge nobody has yet made."
+        }
+      ],
+      "lifeInProphetsTime": "A woman alone with an unknown man had one thing to lose and no way to get it back. Reputation was the whole of a woman's security in that world; a doubt could not be argued down once it had started moving through a settlement, and her family bore it with her. Her first sentence is not fear of harm in the moment. It is the reflex of someone who understands precisely what is now at stake.",
+      "didYouKnow": "The name of God that Mary chooses for her refuge appears in more ayat of this surah than of any other chapter in the Quran, thirteen in all, more than double the next highest. The Quran elsewhere records that the name was unfamiliar enough to some in Mecca that they asked what it meant, which makes its concentration here all the more marked.",
+      "theologicalSignificance": "Her appeal establishes something about refuge itself. She is physically alone, with no one to call and no way to escape, and the protection she reaches for is not rescue but a name spoken into the situation. The passage also records fear in a figure the Quran holds in the highest honour, without treating the fear as a lapse. Being chosen does not exempt anyone from the ordinary human response to danger.",
+      "crossReferences": [
+        {
+          "ref": "3:45-47",
+          "why": "Gives the same announcement and the same question in another surah's telling of it."
+        },
+        {
+          "ref": "16:98",
+          "why": "Uses the same verb for taking refuge, there as what precedes the reciting of the Quran."
+        },
+        {
+          "ref": "12:23",
+          "why": "Uses the same root for taking refuge in Joseph's answer, at a moment of exposure of his own."
+        }
+      ],
+      "applyIt": "Learn one short phrase of taking refuge and use it the next time something startles you, before you decide what to do. Not as a charm and not instead of acting. The point is the order: Mary speaks the name first and then deals with the situation, and having a first sentence ready changes what the second one is.",
+      "exploreFurther": [
+        "3:42-47",
+        "12:23-24",
+        "16:98"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:21-22",
+      "surah": 19,
+      "start": 21,
+      "end": 22,
+      "theme": "Jesus, Son of Mary",
+      "themeId": "jesus-son-of-mary",
+      "title": "A Matter Already Decided",
+      "tier": "standard",
+      "meaning": "The answer to her objection is the same one Zechariah received a few ayat earlier, word for word in its central phrase: it is easy for Me. Then two purposes are given, and both point outward. The child will be a sign for people and a mercy from God, so he is not described as a reward to his mother but as something the world will need. The last clause closes the exchange rather than continuing it. The matter has been decided. The next line is one sentence long and she is already gone.",
+      "historicalContext": "Meccan. The commentators note the deliberate parallel with the account of Zechariah just above, where an impossible birth is announced, questioned and confirmed with the same phrase. The surah was revealed to a community that included people familiar with the Christian account, and the sources report it being recited to a Christian court, so its careful wording about the child was heard by both audiences.",
+      "keyTerms": [
+        {
+          "arabic": "هَيِّنٌ",
+          "gloss": "easy, of no weight",
+          "note": "The same word given to Zechariah in this surah when he raised his own impossibility. Repeating it exactly links the two births and treats them as instances of one thing rather than as separate wonders."
+        },
+        {
+          "arabic": "مَّقْضِيًّا",
+          "gloss": "decreed, settled",
+          "note": "A passive form from a root about completing a matter and passing judgement on it. It closes the exchange grammatically as well as in sense, since a settled matter is not one that discussion can reopen."
+        },
+        {
+          "arabic": "قَصِيًّا",
+          "gloss": "far off, remote",
+          "note": "Distant in the sense of removed from where people are. Paired with the verb for withdrawing, it marks a second and deeper separation than the screen she had put up earlier in the surah."
+        }
+      ],
+      "lifeInProphetsTime": "A pregnancy could not be hidden for long in a settlement where women worked and washed together, and there was nowhere private to go for it. Travel alone was dangerous, and a woman without an escort on an open road was exposed to more than gossip. The single line that carries her from the announcement to a remote place covers a journey that would have been frightening at every stage.",
+      "didYouKnow": "The Quran names Jesus as the son of Mary more than twenty times, using the description as a title rather than only as an identification. He is the only figure in the Quran regularly named through his mother. The usage runs through both the Meccan and Medinan passages, and this surah, which carries her name, is where the fullest account of that relation is given.",
+      "theologicalSignificance": "Two things are established at once and the tradition has held them together ever since. The birth is stated to be easy for God, which places it inside His power rather than outside the order of things, and the child is described as a sign and a mercy, which are terms the Quran uses of created things. The Quran holds Jesus in the highest honour among prophets while describing his origin in the same words it used for John's, a few lines earlier.",
+      "crossReferences": [
+        {
+          "ref": "19:9",
+          "why": "Gives the same phrase to Zechariah about the birth of John, earlier in this surah."
+        },
+        {
+          "ref": "3:47",
+          "why": "Answers her question in another surah with God creating what He wills by a word."
+        },
+        {
+          "ref": "21:91",
+          "why": "Describes her and her son together as a sign for all the worlds, in a single line."
+        }
+      ],
+      "applyIt": "Notice how you talk about a hardship you are carrying: whether it is entirely about you, or whether anyone else might be served by how you carry it. The announcement here does not tell Mary what she will gain. It tells her what her son will be for other people, and she is left to hold that on her own for a while.",
+      "exploreFurther": [
+        "3:45-49",
+        "21:91",
+        "66:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:23",
+      "surah": 19,
+      "start": 23,
+      "end": 23,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "I Wish I Had Died",
+      "tier": "standard",
+      "meaning": "The pains drive her to the trunk of a palm, and the verb used says she was forced there rather than that she chose it. Then the Quran records what she said, and it does not soften it. She wished she had died before this and been something forgotten, forgotten completely. Commentators are careful here. They read the wish as arising from what she was about to face among her people rather than from the pain, and they note that the Quran preserves the sentence of a woman it holds in the highest honour at the moment she could bear no more.",
+      "historicalContext": "Meccan, in a surah that gives Mary's account at greater length than any other passage. The commentators describe her situation without embellishing it: alone, in labour, in an unsheltered place, and facing a return to a community that would draw the obvious conclusion. No occasion of revelation is reported for the ayah. It belongs to the narrative and is read within it.",
+      "keyTerms": [
+        {
+          "arabic": "فَأَجَآءَهَا",
+          "gloss": "it drove her, forced her",
+          "note": "A causative built on the verb for coming, so it means she was made to arrive there. The grammar removes her choice from the sentence, which is why the commentators read the palm as shelter reached under compulsion."
+        },
+        {
+          "arabic": "ٱلْمَخَاضُ",
+          "gloss": "the pangs of labour",
+          "note": "From a root about churning and violent movement. It occurs only here in the Quran, and the word carries the physical fact plainly rather than referring to it at a distance."
+        },
+        {
+          "arabic": "مَّنسِيًّا",
+          "gloss": "utterly forgotten",
+          "note": "The passive participle repeats the noun it follows, an Arabic construction for absolute emphasis. She does not wish to be forgotten but to be a forgotten thing, twice over, with no trace left to be remembered."
+        }
+      ],
+      "lifeInProphetsTime": "Birth in seventh-century Arabia happened among women. Mothers, aunts, neighbours and an experienced midwife attended, and their presence was the only medicine available. A woman giving birth alone in the open, without water prepared or hands to help, was in real danger and knew it. The palm trunk she reaches is not a comfort. It is the only thing in an empty place to hold on to.",
+      "didYouKnow": "The word for labour pains in this ayah occurs only once in the whole Quran. The wish that follows it is also unusual: the Quran records people wishing themselves dead in only a few places, and most of them are said by the regretful on the Day of Judgement. This is the rare instance spoken by someone the text honours, in the middle of her life.",
+      "theologicalSignificance": "The passage refuses to make a chosen servant of God into someone who does not suffer. Her words are preserved rather than corrected, and no rebuke follows them. What comes next is relief rather than reproach, which orders the two things clearly: the cry is answered, not judged. For a reader in real distress, the presence of this sentence in scripture, spoken by the woman the Quran honours most, does more than any consolation could.",
+      "crossReferences": [
+        {
+          "ref": "19:24-26",
+          "why": "Answers this cry immediately, with water, dates and an instruction to eat and be comforted."
+        },
+        {
+          "ref": "12:86",
+          "why": "Shows Jacob laying his grief and sorrow before God alone, without concealing its weight."
+        },
+        {
+          "ref": "21:87",
+          "why": "Records Jonah's call from the darkness, and the deliverance that answers it directly."
+        }
+      ],
+      "applyIt": "If you have ever said something like this in the worst hour of a bad week, notice that it is in the Quran, spoken by Mary. You do not have to be composed to be heard. The next time it rises in you, say it as a prayer rather than swallowing it, and then keep listening for what comes after.",
+      "exploreFurther": [
+        "19:24-26",
+        "12:84-87",
+        "21:87-88"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:24-25",
+      "surah": 19,
+      "start": 24,
+      "end": 25,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Shake The Palm Toward You",
+      "tier": "standard",
+      "meaning": "The answer comes from below her, and the commentators differ over the caller, some reading the newborn and others the messenger who had come to her. First the grief is addressed: do not sorrow. Then two provisions, and they are arranged differently from each other. The stream is already there and requires nothing of her. The dates require her to take hold of a trunk and pull. Commentators note the pairing, since one gift is given outright and the other is given through an act she is barely able to perform.",
+      "historicalContext": "Meccan. The commentators place the scene at a palm, and several describe it as dry or long dead, though the reports differ and the text does not say. What is agreed is the sequence: she had reached the end of what she could bear, and relief arrives immediately, in the form of water and food rather than of explanation.",
+      "keyTerms": [
+        {
+          "arabic": "تَحْزَنِى",
+          "gloss": "grieve, be sorrowful",
+          "note": "The verb for sadness over something lost or feared, not for physical pain. What is addressed first is therefore her mind rather than her body, which is the order the passage keeps throughout."
+        },
+        {
+          "arabic": "سَرِيًّا",
+          "gloss": "a small stream",
+          "note": "The commentators record two readings: a rivulet of water running beneath her, or a person of high standing, meaning the child. Both are old, and the sources give the range rather than settling it."
+        },
+        {
+          "arabic": "رُطَبًا",
+          "gloss": "fresh ripe dates",
+          "note": "Dates at the soft stage, before drying, when they are at their most nourishing and cannot be stored. The word occurs only here in the Quran, and it names the one form of the fruit that must be eaten at once."
+        }
+      ],
+      "lifeInProphetsTime": "Fresh dates and water were exactly what a woman needed after birth, and every household in Arabia knew it. Dates were the staple that carried people through journeys and hunger, dense enough to restore someone quickly, and the soft ripe stage was the most prized and the most perishable. The provision here is not extraordinary food. It is the ordinary thing, arriving in a place where none of it should have been.",
+      "didYouKnow": "The word for soft ripe dates occurs only once in the whole Quran, in this ayah. The palm appears often in the text, in lists of what grows and in images of ruin, but the fruit at this particular stage, gathered and eaten fresh, is named a single time, at the moment it is dropped for a woman who has just given birth alone.",
+      "theologicalSignificance": "The instruction to shake the trunk is doing something the tradition has long noticed. A woman at the limit of her strength is asked to make an effort that could not, by itself, bring down fruit. What follows is not proportional to what she does, and yet she is not spared the doing. Provision is arranged here so that it is unmistakably given and still requires a hand, which is how the Quran generally frames sustenance.",
+      "crossReferences": [
+        {
+          "ref": "19:26",
+          "why": "Continues the instruction: eat, drink, and be comforted, before she has to face anyone."
+        },
+        {
+          "ref": "3:37",
+          "why": "Describes provision reaching her before this, found with her whenever Zechariah entered."
+        },
+        {
+          "ref": "65:2-3",
+          "why": "States the principle at work here, provision arriving from where a person did not expect it."
+        }
+      ],
+      "applyIt": "The next time you are stuck, do the smallest available thing rather than the right-sized one. Send the one message, open the one file, walk to the end of the street. The instruction here is to pull at a trunk far too heavy to shake, and what follows is not produced by the pulling. It only begins with it.",
+      "exploreFurther": [
+        "19:26-29",
+        "3:37",
+        "65:2-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:38.098Z",
         "reviewed": false
       }
     },
