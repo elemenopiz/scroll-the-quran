@@ -1,0 +1,45 @@
+{{!-- Handlebars-style template rendered by lib/prompt.mjs (simple {{var}} and
+    {{#if}}/{{/if}} substitution only — no Handlebars dependency). Everything
+    here is per-request and therefore sits AFTER the cached system prompt. --}}
+## Passage
+
+Surah {{surahNumber}} — {{surahName}} ({{surahMeaning}}), revealed in {{revelationPlace}}, {{ayahCount}} ayat, juz {{juz}}.
+This unit is {{key}} ({{ayatInUnit}} {{ayatWord}}), tier: {{tier}}.
+
+### Arabic (Uthmani)
+
+{{arabic}}
+
+### English (Talal Itani, ClearQuran)
+
+{{english}}
+
+{{#if contextBefore}}
+### Preceding context ({{contextBeforeRange}})
+
+{{contextBefore}}
+{{/if}}
+{{#if contextAfter}}
+### Following context ({{contextAfterRange}})
+
+{{contextAfter}}
+{{/if}}
+
+## Theme hint
+
+{{#if themeHint}}
+Themes already indexed against these ayat: {{themeHint}}. Prefer one of them unless the passage clearly fits another better.
+{{/if}}
+Choose exactly one theme from the list in your instructions. Use its id verbatim as `themeId` and its title verbatim as `theme`.
+
+{{#if tafsir}}
+## Reference excerpt
+
+Background from a copyright-free English exegetical summary. Treat it as one source among the classical commentators, not as text to paraphrase:
+
+{{tafsir}}
+{{/if}}
+
+## Task
+
+Write the study note for {{key}} as a single JSON object matching the schema. Every cross-reference must be a passage that exists. Arabic script appears only in `keyTerms[].arabic`.
