@@ -1,0 +1,5 @@
+# Phase 4a — Entitlement gating + first-run funnel
+Owns: `App/RootView.swift`, `Packages/ScrollKit/Sources/AppShell/**`, `UITests/FunnelTests.swift`, `UITests/Specs/funnel-*.json`. Simulator: ONLY `ScrollSim-3e`.
+Prereq: Phase 3e (routing) merged.
+Deliver: `RootView` binds the real flows — `OnboardingFlow` → `PaywallFlow` → `GiftOfferView` (only if paywall dismissed and `seenOneTimeOffer == false`) → `TabRoot`; `EntitlementStore` injected app-wide; free tier = Reader unlimited, Discover 3 cards/day then paywall sheet, Deep Study locked (paywall sheet from "Deep study ›" and from Verse Search), Reading Plans locked; premium unlocks all; `Restore Purchases` in Settings and on the paywall; `StoreKit` transaction listener started at launch; `.storekit` config on the scheme for local testing. Persist funnel state via `UserStore.prefs` so relaunch resumes correctly.
+DoD: XCUITests (StoreKit test session): buy yearly on paywall → tabs unlocked; close paywall → gift → buy gift → unlocked; close paywall → close gift → free mode (Deep Study opens paywall; 4th Discover card opens paywall); relaunch after purchase stays unlocked; `Tools/verify.sh --ui` PASS.

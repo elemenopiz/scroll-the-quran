@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "defaultID": "itani",
   "translations": [
     {
@@ -7,48 +7,69 @@
       "abbrev": "CLEAR",
       "name": "ClearQuran",
       "translator": "Talal Itani",
+      "language": "en",
       "year": 2012,
       "copyright": "Translation by Talal Itani, ClearQuran.com",
+      "attribution": "Translation by Talal Itani, ClearQuran.com",
       "licence": "CC BY-ND 4.0",
       "file": "quran/itani.json",
       "isDefault": true,
-      "bundled": true
+      "bundled": true,
+      "offline": true
     },
     {
       "id": "saheeh",
       "abbrev": "SAHEEH",
       "name": "Saheeh International",
       "translator": "Saheeh International",
+      "language": "en",
       "year": 1997,
       "copyright": "The Qur'an: English Meanings, Saheeh International. Republished with attribution.",
+      "attribution": "Saheeh International, via QuranEnc.com (english_saheeh v1.1.2)",
       "licence": "Verbatim republication with attribution",
       "file": "quran/saheeh.json",
       "isDefault": false,
-      "bundled": false
+      "bundled": true,
+      "offline": true
     },
     {
       "id": "ruwwad",
       "abbrev": "RUWWAD",
       "name": "Ruwwad Translation Center",
       "translator": "Ruwwad Translation Center, with the Islamic University of Madinah",
+      "language": "en",
       "year": 2022,
       "copyright": "Ruwwad Translation Center. Republished with attribution.",
+      "attribution": "Ruwwad Translation Center, via QuranEnc.com (english_rwwad v1.0.19)",
       "licence": "Verbatim republication with attribution",
       "file": "quran/ruwwad.json",
       "isDefault": false,
-      "bundled": false
+      "bundled": true,
+      "offline": true
     },
     {
       "id": "pickthall",
       "abbrev": "PICKTHALL",
       "name": "The Meaning of the Glorious Koran",
       "translator": "Marmaduke Pickthall",
+      "language": "en",
       "year": 1930,
       "copyright": "Public domain.",
+      "attribution": "Marmaduke Pickthall, The Meaning of the Glorious Koran (public domain)",
       "licence": "Public domain",
       "file": "quran/pickthall.json",
       "isDefault": false,
-      "bundled": false
+      "bundled": true,
+      "offline": true
     }
-  ]
+  ],
+  "arabic": {
+    "id": "arabic-uthmani",
+    "name": "Uthmani (Hafs)",
+    "file": "quran/arabic-uthmani.json",
+    "copyright": "Quran text from Tanzil.net",
+    "attribution": "Quran text (Uthmani) from Tanzil.net, licensed CC BY 3.0.",
+    "licence": "CC BY 3.0",
+    "offline": true
+  }
 }

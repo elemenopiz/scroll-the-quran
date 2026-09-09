@@ -1,7 +1,7 @@
 import Foundation
 
-/// Marker for the `FeatureCommunity` module. Real types land in later phases; this keeps the
-/// target non-empty so the package builds and the module has something to test.
+/// Namespace for the `FeatureCommunity` module. The screen itself is `CommunityView`; this stays
+/// as the module's identity, which `FeatureCommunityModuleTests` asserts against.
 public enum FeatureCommunityModule {
     public static let moduleName = "FeatureCommunity"
 }

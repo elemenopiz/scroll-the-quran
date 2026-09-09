@@ -16,10 +16,11 @@ func bundledFontsArePresent() throws {
         "Poppins-Regular.ttf",
         "Poppins-SemiBold.ttf",
         "Poppins-Bold.ttf",
+        "UthmanicHafs1Ver18.ttf",
     ])
     let fonts = Bundle.module.url(forResource: "Fonts", withExtension: nil)
     #expect(fonts != nil)
-    for licence in ["LICENSE-SourceSerif4.md", "LICENSE-Poppins.txt"] {
+    for licence in ["LICENSE-SourceSerif4.md", "LICENSE-Poppins.txt", "LICENSE-UthmanicHafs.txt"] {
         #expect(try FileManager.default.fileExists(atPath: #require(fonts?.appendingPathComponent(licence).path)))
     }
 }
@@ -39,6 +40,7 @@ func typographyUsesPostScriptNames() {
     #expect(FontFamily.geoBold == "Poppins-Bold")
     #expect(FontFamily.geoSemibold == "Poppins-SemiBold")
     #expect(FontFamily.geoRegular == "Poppins-Regular")
+    #expect(FontFamily.quran == "KFGQPCHAFSUthmanicScript-Regula")
 }
 
 @Test("Geometry tokens match the reference measurements")

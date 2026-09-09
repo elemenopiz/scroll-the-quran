@@ -22,15 +22,23 @@ public enum DesignSystem {
             .sorted { $0.lastPathComponent < $1.lastPathComponent }
     }
 
-    private static var didRegister = false
-
-    /// Registers every bundled face with CoreText. Idempotent; safe to call from
-    /// the app, the widget extension and previews.
+    /// Registers every bundled face with CoreText. Idempotent and thread-safe: the
+    /// work hangs off a lazily-initialised `static let`, which Swift runs exactly once
+    /// under `swift_once`. A hand-rolled `didRegister` flag is not enough — Swift
+    /// Testing runs suites in parallel, so a second caller could see the flag set and
+    /// start drawing before the first caller had finished registering.
     @discardableResult
     public static func registerFonts() -> [String] {
+        registeredFontFiles
+    }
+
+    /// File names of the faces CoreText accepted, in bundle order.
+    public static var registeredPostScriptNames: [String] {
+        registeredFontFiles
+    }
+
+    private static let registeredFontFiles: [String] = {
         #if canImport(CoreText)
-            guard !didRegister else { return registeredPostScriptNames }
-            didRegister = true
             var registered: [String] = []
             for url in bundledFontURLs {
                 var error: Unmanaged<CFError>?
@@ -41,12 +49,9 @@ public enum DesignSystem {
                     error?.release()
                 }
             }
-            registeredPostScriptNames = registered
             return registered
         #else
             return []
         #endif
-    }
-
-    public private(set) static var registeredPostScriptNames: [String] = []
+    }()
 }

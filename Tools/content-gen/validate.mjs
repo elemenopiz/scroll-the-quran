@@ -1,0 +1,221 @@
+#!/usr/bin/env node
+// Validates generated study records.
+//
+//   node validate.mjs out/study      # assembled shards (the DoD gate)
+//   node validate.mjs work/cache     # raw batch results, before assembly
+//
+// Exits 0 only when every record passes every rule. Warnings do not fail.
+import fs from "node:fs";
+import path from "node:path";
+import Ajv from "ajv";
+import { ROOT, OUT, loadQuran, hasArabic, parseKey, refInBounds, words } from "./lib/data.mjs";
+import { loadPassages } from "./lib/units.mjs";
+
+const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
+const PROSE_FIELDS = [
+  "title", "theme", "meaning", "historicalContext", "lifeInProphetsTime",
+  "didYouKnow", "theologicalSignificance", "applyIt",
+];
+
+// Legal-ruling and sectarian language the content rules forbid, plus LLM tells.
+const BANNED = [
+  [/\bfatw[aā]\b/i, "legal ruling language"],
+  [/\bit is (obligatory|forbidden|impermissible|permissible|prohibited)\b/i, "legal ruling language"],
+  [/\byou must\b/i, "prescriptive ruling"],
+  [/\b(har[aā]m|hal[aā]l)\b/i, "legal ruling language"],
+  [/\b(sunni|shia|shi'a|shi‘a|wahhabi|salafi|sufi|ash'ari|mu'tazil)/i, "sectarian framing"],
+  [/\b(hanafi|shafi'?i|maliki|hanbali|madhhab|madhab)\b/i, "school-of-law framing"],
+  [/\bas an ai\b/i, "model self-reference"],
+  [/\bthis (verse|passage) reminds us\b/i, "filler opener"],
+  [/\bin conclusion\b/i, "filler"],
+  [/\bAllah\b/, "use \"God\" in English prose"],
+];
+
+const shingles = (text, n = 5) => {
+  const w = text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + n <= w.length; i++) out.add(w.slice(i, i + n).join(" "));
+  return out;
+};
+
+const jaccard = (a, b) => {
+  if (!a.size || !b.size) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return inter / (a.size + b.size - inter);
+};
+
+/** Reads a directory of shards or cache files into { key, study, source }[]. */
+export function loadRecords(dir) {
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && f !== "passages.json")
+    .sort();
+  const records = [];
+  for (const f of files) {
+    const full = path.join(dir, f);
+    const raw = JSON.parse(fs.readFileSync(full, "utf8"));
+    if (raw.body && raw.key) {
+      records.push({ key: raw.key, study: { ...raw.body, key: raw.key }, source: f, partial: true });
+    } else if (Array.isArray(raw)) {
+      for (const s of raw) records.push({ key: s.key, study: s, source: f });
+    } else if (raw.studies) {
+      for (const s of raw.studies) records.push({ key: s.key, study: s, source: f });
+    } else {
+      records.push({ key: raw.key, study: raw, source: f });
+    }
+  }
+  return records;
+}
+
+export function validateRecords(records, { quran, themeIds, passages }) {
+  const ajv = new Ajv({ allErrors: true, strict: false });
+  ajv.addFormat("date-time", (v) => !Number.isNaN(Date.parse(v)));
+  const full = ajv.compile(SCHEMA);
+  const bounds = SCHEMA["x-wordBounds"];
+  const errors = [];
+  const warnings = [];
+  const unitKeys = new Set(Object.values(passages));
+
+  const err = (key, msg) => errors.push(`${key}: ${msg}`);
+  const warn = (key, msg) => warnings.push(`${key}: ${msg}`);
+
+  const checkWords = (key, field, text) => {
+    const b = bounds[field];
+    if (!b) return;
+    const n = words(text);
+    if (n < b[0] || n > b[1]) err(key, `${field} is ${n} words, must be ${b[0]}-${b[1]}`);
+  };
+
+  for (const rec of records) {
+    const s = rec.study;
+    const key = rec.key ?? "<no key>";
+
+    if (!rec.partial && !full(s)) {
+      for (const e of full.errors.slice(0, 6)) err(key, `schema ${e.instancePath || "/"} ${e.message}`);
+    }
+
+    const parsed = parseKey(s.key ?? key);
+    if (!parsed) {
+      err(key, "unparseable key");
+      continue;
+    }
+    if (!unitKeys.has(s.key ?? key)) err(key, "key is not a unit key in out/study/passages.json");
+    if (!rec.partial) {
+      if (s.surah !== parsed.surah || s.start !== parsed.start || s.end !== parsed.end) {
+        err(key, "surah/start/end disagree with key");
+      }
+    }
+
+    // Prose fields: word bounds, no Arabic script, no banned phrasing.
+    for (const f of PROSE_FIELDS) {
+      const text = s[f];
+      if (typeof text !== "string") {
+        err(key, `${f} missing`);
+        continue;
+      }
+      checkWords(key, f, text);
+      if (hasArabic(text)) err(key, `${f} contains Arabic script (only keyTerms[].arabic may)`);
+      for (const [re, why] of BANNED) if (re.test(text)) err(key, `${f}: ${why} (${re})`);
+    }
+    if (typeof s.title === "string" && /[.!?]$/.test(s.title.trim())) {
+      err(key, "title has trailing punctuation");
+    }
+
+    // Nested prose (key-term glosses/notes, cross-reference reasons): banned phrasing applies there too.
+    const nested = [];
+    if (Array.isArray(s.keyTerms)) for (const [i, t] of s.keyTerms.entries()) {
+      for (const f of ["gloss", "note"]) if (typeof t?.[f] === "string") nested.push([`keyTerms[${i}].${f}`, t[f]]);
+    }
+    if (Array.isArray(s.crossReferences)) for (const [i, c] of s.crossReferences.entries()) {
+      if (typeof c?.why === "string") nested.push([`crossReferences[${i}].why`, c.why]);
+    }
+    for (const [f, text] of nested) {
+      for (const [re, why] of BANNED) if (re.test(text)) err(key, `${f}: ${why} (${re})`);
+    }
+
+    // Honorific: if the Prophet Muhammad is named, the first naming carries it.
+    const prose = [...PROSE_FIELDS.map((f) => s[f]), ...nested.map(([, t]) => t)]
+      .filter((t) => typeof t === "string").join(" ");
+    if (/\bMuhammad\b/.test(prose) && !/Muhammad \(peace be upon him\)/.test(prose)) {
+      err(key, 'names Muhammad without the honorific "(peace be upon him)"');
+    }
+    if ((prose.match(/\(peace be upon him\)/g) ?? []).length > 1) {
+      warn(key, "honorific used more than once");
+    }
+
+    // Key terms.
+    if (Array.isArray(s.keyTerms)) {
+      for (const [i, t] of s.keyTerms.entries()) {
+        if (!hasArabic(t.arabic ?? "")) err(key, `keyTerms[${i}].arabic is not Arabic script`);
+        if (/[A-Za-z]/.test(t.arabic ?? "")) err(key, `keyTerms[${i}].arabic contains Latin letters`);
+        for (const f of ["gloss", "note"]) {
+          if (hasArabic(t[f] ?? "")) err(key, `keyTerms[${i}].${f} contains Arabic script`);
+          checkWords(key, `keyTerms[].${f}`, t[f] ?? "");
+        }
+      }
+    }
+
+    // References.
+    const refs = [
+      ...(s.crossReferences ?? []).map((c, i) => [c.ref, `crossReferences[${i}].ref`]),
+      ...(s.exploreFurther ?? []).map((r, i) => [r, `exploreFurther[${i}]`]),
+    ];
+    for (const [ref, where] of refs) {
+      if (!refInBounds(ref, quran.byNumber)) err(key, `${where} out of bounds: ${ref}`);
+      if (ref === s.key) warn(key, `${where} points at the passage itself`);
+    }
+    for (const [i, c] of (s.crossReferences ?? []).entries()) {
+      checkWords(key, "crossReferences[].why", c.why ?? "");
+      if (hasArabic(c.why ?? "")) err(key, `crossReferences[${i}].why contains Arabic script`);
+    }
+
+    if (s.themeId && !themeIds.has(s.themeId)) err(key, `unknown themeId "${s.themeId}"`);
+  }
+
+  // Near-duplicate detection on the meaning section.
+  const sig = records
+    .filter((r) => typeof r.study.meaning === "string")
+    .map((r) => ({ key: r.key, sh: shingles(r.study.meaning) }));
+  for (let i = 0; i < sig.length; i++) {
+    for (let j = i + 1; j < sig.length; j++) {
+      const score = jaccard(sig[i].sh, sig[j].sh);
+      if (score >= 0.5) err(sig[i].key, `meaning is a near-duplicate of ${sig[j].key} (${score.toFixed(2)})`);
+      else if (score >= 0.35) warn(sig[i].key, `meaning overlaps ${sig[j].key} (${score.toFixed(2)})`);
+    }
+  }
+
+  return { errors, warnings };
+}
+
+function main(argv = process.argv.slice(2)) {
+  const dir = argv.find((a) => !a.startsWith("--")) ?? path.join(OUT, "study");
+  if (!fs.existsSync(dir)) {
+    console.error(`no such directory: ${dir}`);
+    process.exit(1);
+  }
+  const records = loadRecords(dir);
+  const quran = loadQuran();
+  const themeIds = new Set(
+    JSON.parse(fs.readFileSync(path.join(OUT, "themes.json"), "utf8")).themes.map((t) => t.id),
+  );
+  const passages = loadPassages();
+
+  if (!records.length) {
+    console.log(`${dir}: 0 study records found — nothing to validate.`);
+    console.log("OK (vacuous): run the pipeline first if you expected content here.");
+    return;
+  }
+
+  const { errors, warnings } = validateRecords(records, { quran, themeIds, passages });
+
+  console.log(`validated ${records.length} record(s) in ${dir}`);
+  for (const w of warnings) console.log(`WARN  ${w}`);
+  for (const e of errors) console.log(`ERROR ${e}`);
+  console.log(`\n${errors.length} error(s), ${warnings.length} warning(s)`);
+  if (errors.length) process.exit(1);
+  console.log("OK");
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) main();
+export { main };

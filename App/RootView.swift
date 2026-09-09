@@ -1,4 +1,6 @@
 import AppShell
+import Commerce
+import FeaturePaywall
 import SwiftUI
 
 /// The app's state machine: onboarding, then the paywall, then the one-time gift
@@ -12,6 +14,8 @@ struct RootView: View {
     private let launch: LaunchOptions
     @State private var flow: RootFlowModel
     @State private var tabs: TabRootModel
+    @State private var entitlements = MockEntitlementStore()
+    @State private var offers = InMemoryOneTimeOfferStore()
 
     init(launch: LaunchOptions = .live) {
         self.launch = launch
@@ -30,19 +34,29 @@ struct RootView: View {
 
     @ViewBuilder
     private var content: some View {
+        if launch.screenshot?.screen == .gallery {
+            GalleryScreen()
+        } else {
+            phaseContent
+        }
+    }
+
+    @ViewBuilder
+    private var phaseContent: some View {
         switch flow.phase {
         case .onboarding:
             stage(id: launch.screenshot?.screen.rawValue ?? "onboarding-hook",
                   title: "Onboarding",
                   systemImage: "sparkle")
-        case .paywall:
-            stage(id: launch.screenshot?.screen.rawValue ?? "paywall-trial",
-                  title: "Paywall",
-                  systemImage: "crown")
-        case .gift:
-            stage(id: launch.screenshot?.screen.rawValue ?? "gift-closed",
-                  title: "One-time offer",
-                  systemImage: "gift")
+        case .paywall, .gift:
+            PaywallScreens.view(
+                forScreenID: launch.screenshot?.screen.rawValue
+                    ?? (flow.phase == .gift ? "gift-closed" : "paywall-trial"),
+                store: entitlements,
+                offers: offers,
+                onDismiss: { flow.advance() },
+                onPurchased: { flow.advance() }
+            )
         case .tabs:
             TabRoot(model: tabs)
         }

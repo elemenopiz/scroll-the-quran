@@ -9,12 +9,19 @@
 # Stages: xcodegen -> content checks -> swift build -> swift test -> xcodebuild build
 #         -> [XCUITests] -> [snapshots]. Non-zero on the first failure.
 set -uo pipefail
+SIM="${SCROLL_SIM:-booted}"   # UDID or name; defaults to "booted" (ambiguous with several sims up)
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 SCHEME="ScrollTheQuran"
-DESTINATION="platform=iOS Simulator,name=iPhone 17"
+# With SCROLL_SIM set, xcodebuild is pinned to that exact device so a parallel task
+# cannot boot a second simulator behind our back; otherwise the default by-name lookup.
+if [ "$SIM" = booted ]; then
+  DESTINATION="platform=iOS Simulator,name=iPhone 17"
+else
+  DESTINATION="platform=iOS Simulator,id=$SIM"
+fi
 DERIVED=".build/DerivedData"
 BUNDLE_ID="com.scrollthequran.app"
 
@@ -113,8 +120,8 @@ fi
 if [ "${#SNAP_IDS[@]}" -gt 0 ] && [ "$SKIP_SIM" -eq 0 ]; then
   step "snapshots: ${SNAP_IDS[*]}"
   APP="$DERIVED/Build/Products/Debug-iphonesimulator/$SCHEME.app"
-  if [ -d "$APP" ] && xcrun simctl list devices booted | grep -q '(Booted)'; then
-    xcrun simctl install booted "$APP" >/dev/null && ok "installed $APP"
+  if [ -d "$APP" ] && { [ "$SIM" != booted ] || xcrun simctl list devices booted | grep -q '(Booted)'; }; then
+    xcrun simctl install "$SIM" "$APP" >/dev/null && ok "installed $APP"
     for id in "${SNAP_IDS[@]}"; do
       if Tools/snapshot/capture.sh "$id" >/dev/null; then
         score="$(Tools/snapshot/compare.sh "$id")"
@@ -127,7 +134,7 @@ if [ "${#SNAP_IDS[@]}" -gt 0 ] && [ "$SKIP_SIM" -eq 0 ]; then
   else
     fail "need a booted simulator and a built $APP for --snap"
   fi
-  xcrun simctl terminate booted "$BUNDLE_ID" >/dev/null 2>&1 || true
+  xcrun simctl terminate "$SIM" "$BUNDLE_ID" >/dev/null 2>&1 || true
 fi
 
 printf '\n'

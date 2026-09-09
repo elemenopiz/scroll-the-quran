@@ -32,6 +32,7 @@ let package = Package(
 
         .target(
             name: "DesignSystem",
+            exclude: ["Components/README.md"],
             resources: [.copy("Resources/Fonts")]
         ),
 

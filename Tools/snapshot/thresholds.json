@@ -1,5 +1,5 @@
 {
-  "note": "Per-screen RMSE ceilings for Tools/snapshot/compare.sh. `file` is the reference PNG in Reference/, `threshold` the normalised RMSE the capture must stay under. Both images are normalised to 393x852 pt before comparing. By default the status bar (top 54 pt) and home indicator (bottom 34 pt) are masked; a `crop` (WxH+X+Y in pt on the normalised image) compares only that region instead. Thresholds come from Reference/manifest.json.",
+  "note": "Per-screen RMSE ceilings for Tools/snapshot/compare.sh. `file` is the reference PNG in Reference/, `threshold` the normalised RMSE the capture must stay under. Both images are normalised to 393x852 pt before comparing. By default the status bar (top 54 pt) and home indicator (bottom 34 pt) are masked; a `crop` (WxH+X+Y in pt on the normalised image) compares only that region instead, and a `refCrop` (WxH+X+Y in the reference's own pixels) cuts a phone-frame mockup down to its screen window before that. Thresholds come from Reference/manifest.json.",
   "defaults": {
     "width": 393,
     "height": 852,
@@ -119,8 +119,16 @@
       "file": "reader-dark.png",
       "appearance": "dark",
       "route": "reader",
-      "threshold": 0.1,
+      "threshold": 0.05,
       "notes": "surah start: logo card above verse 1, hint toast visible"
+    },
+    "reader-light": {
+      "file": "reader-dark.png",
+      "appearance": "light",
+      "route": "reader",
+      "threshold": 0.08,
+      "negate": true,
+      "notes": "no light reference of the reader exists; the light appearance is the same layout with the tokens mirrored, so the capture is negated before comparing"
     },
     "translation-sheet": {
       "file": "translation-sheet.png",
@@ -148,7 +156,32 @@
       "appearance": "light",
       "route": "home",
       "threshold": 0.16,
-      "notes": "only available inside a phone-frame mockup; crop the frame before comparing"
+      "notes": "only available inside a phone-frame mockup; refCrop is that mockup's screen window",
+      "refCrop": "671x1416+254+755"
+    },
+    "verse-search": {
+      "file": "onboarding-slide4-search.png",
+      "appearance": "light",
+      "route": "verse-search",
+      "threshold": 0.16,
+      "refCrop": "671x1416+254+755",
+      "notes": "the hero card on its own, against the same phone-frame window as home-light"
+    },
+    "plans-sheet": {
+      "file": "onboarding-slide2-plans.png",
+      "appearance": "light",
+      "route": "plans-sheet",
+      "threshold": 0.1,
+      "refCrop": "671x1416+254+803",
+      "notes": "phone-frame mockup; Phase 3c measured 0.193 with the layout matched — the residue is cover artwork (our procedural covers against the reference's stock photographs) and iOS dimming the parent black behind the sheet where the reference shows it grey"
+    },
+    "plan-detail": {
+      "file": "onboarding-slide2-plan-detail.png",
+      "appearance": "light",
+      "route": "plan-detail",
+      "threshold": 0.1,
+      "refCrop": "671x1416+254+803",
+      "notes": "phone-frame mockup; Phase 3c measured 0.138 with the layout matched — the residue is the hero cover (ours reads 191 mean luminance against the reference's 143)"
     },
     "tabbar-dark": {
       "file": "home-dark.png",

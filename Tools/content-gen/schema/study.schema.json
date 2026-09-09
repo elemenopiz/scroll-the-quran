@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://scrollthequran.app/schema/study.schema.json",
+  "title": "Study",
+  "description": "One Deep Study unit for a passage of the Quran. Sections appear in the app in the order declared here. Word bounds live in x-wordBounds and are enforced by validate.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "key", "surah", "start", "end", "theme", "themeId", "title", "tier",
+    "meaning", "historicalContext", "keyTerms", "lifeInProphetsTime",
+    "didYouKnow", "theologicalSignificance", "crossReferences", "applyIt",
+    "exploreFurther", "meta"
+  ],
+  "properties": {
+    "key": {
+      "type": "string",
+      "pattern": "^[0-9]{1,3}:[0-9]{1,3}(-[0-9]{1,3})?$",
+      "description": "Passage key, e.g. \"2:255\" or \"94:5-6\"."
+    },
+    "surah": { "type": "integer", "minimum": 1, "maximum": 114 },
+    "start": { "type": "integer", "minimum": 1, "maximum": 286 },
+    "end": { "type": "integer", "minimum": 1, "maximum": 286 },
+    "theme": {
+      "type": "string",
+      "description": "Human-readable theme shown in the pill above the title, e.g. \"Patience in Trials\"."
+    },
+    "themeId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Theme id from out/themes.json."
+    },
+    "title": {
+      "type": "string",
+      "description": "Short evocative title for this passage, 2-8 words, title case, no trailing punctuation."
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["discover", "core", "standard"],
+      "description": "discover = curated Discover feed unit; core = named/landmark passage; standard = everything else."
+    },
+    "meaning": {
+      "type": "string",
+      "description": "What the passage means, in plain accessible English. 45-105 words."
+    },
+    "historicalContext": {
+      "type": "string",
+      "description": "Where and when it was revealed and what was happening. Mention asbab al-nuzul only when it is well attested. 40-90 words."
+    },
+    "keyTerms": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["arabic", "gloss", "note"],
+        "properties": {
+          "arabic": {
+            "type": "string",
+            "description": "The term in Arabic script exactly as it appears in the passage. Arabic script only - never a transliteration."
+          },
+          "gloss": {
+            "type": "string",
+            "description": "English gloss, 1-6 words, no Arabic script."
+          },
+          "note": {
+            "type": "string",
+            "description": "What the word carries that the English translation cannot. 15-45 words, no Arabic script."
+          }
+        }
+      }
+    },
+    "lifeInProphetsTime": {
+      "type": "string",
+      "description": "Everyday life in seventh-century Arabia that makes the passage land. 40-90 words.",
+      "$comment": "Rendered under the heading 'Life in the Prophet's Time'."
+    },
+    "didYouKnow": {
+      "type": "string",
+      "description": "One surprising, verifiable fact about the passage, surah, or its language. 30-80 words."
+    },
+    "theologicalSignificance": {
+      "type": "string",
+      "description": "What the passage establishes about God, revelation, or the human being. 40-95 words."
+    },
+    "crossReferences": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ref", "why"],
+        "properties": {
+          "ref": {
+            "type": "string",
+            "pattern": "^[0-9]{1,3}:[0-9]{1,3}(-[0-9]{1,3})?$",
+            "description": "Another passage of the Quran, e.g. \"39:53\"."
+          },
+          "why": {
+            "type": "string",
+            "description": "One clause saying how it connects. 8-30 words."
+          }
+        }
+      }
+    },
+    "applyIt": {
+      "type": "string",
+      "description": "One concrete thing the reader can do today, in the second person. 30-80 words."
+    },
+    "exploreFurther": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{1,3}:[0-9]{1,3}(-[0-9]{1,3})?$"
+      },
+      "description": "Further passages to read next."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "promptVersion", "generatedAt", "reviewed"],
+      "properties": {
+        "model": { "type": "string" },
+        "promptVersion": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "reviewed": { "type": "boolean" }
+      }
+    }
+  },
+  "x-wordBounds": {
+    "title": [2, 8],
+    "meaning": [45, 105],
+    "historicalContext": [40, 90],
+    "lifeInProphetsTime": [40, 90],
+    "didYouKnow": [30, 80],
+    "theologicalSignificance": [40, 95],
+    "applyIt": [30, 80],
+    "keyTerms[].gloss": [1, 6],
+    "keyTerms[].note": [15, 45],
+    "crossReferences[].why": [8, 30]
+  },
+  "x-modelFields": [
+    "theme", "themeId", "title", "meaning", "historicalContext", "keyTerms",
+    "lifeInProphetsTime", "didYouKnow", "theologicalSignificance",
+    "crossReferences", "applyIt", "exploreFurther"
+  ],
+  "x-sectionOrder": [
+    "meaning", "historicalContext", "keyTerms", "lifeInProphetsTime",
+    "didYouKnow", "theologicalSignificance", "crossReferences", "applyIt",
+    "exploreFurther"
+  ]
+}

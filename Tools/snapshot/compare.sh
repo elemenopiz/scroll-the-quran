@@ -4,9 +4,15 @@
 #   Tools/snapshot/compare.sh tabbar-dark
 #   Tools/snapshot/compare.sh --raw a.png b.png     # self-test two images directly
 #
-# Both images are normalised to 393x852 pt, then either cropped to the screen's `crop`
+# A screen whose reference only exists inside a phone-frame mockup carries a `refCrop`
+# (WxH+X+Y in the reference's own pixels): the reference is cut down to the frame's screen
+# window before anything else, so the two images start from the same picture.
+# Both images are then normalised to 393x852 pt, then either cropped to the screen's `crop`
 # region or masked over the status bar and home indicator, then blurred (sigma 6) so
-# that different words in the same layout do not dominate the score. Exits non-zero
+# that different words in the same layout do not dominate the score. A screen with
+# `"negate": true` has its *capture* inverted first: that is for a light screen whose
+# only reference is the dark one, where the design is the same layout with the colour
+# tokens mirrored, so the score measures layout rather than appearance. Exits non-zero
 # when the score is above the screen's threshold in Tools/snapshot/thresholds.json.
 # Writes a side-by-side reference | capture | difference PNG to
 # .build/snapshots/<id>-diff.png.
@@ -23,10 +29,15 @@ WIDTH=393
 HEIGHT=852
 BLUR=6
 
-# normalise <src> <dst> <crop-or-empty> <maskTop> <maskBottom>
+# normalise <src> <dst> <crop-or-empty> <maskTop> <maskBottom> [negate] [pre-crop-or-empty]
 normalise() {
-  local src="$1" dst="$2" crop="$3" maskTop="$4" maskBottom="$5"
-  local args=(magick "$src" -alpha remove -alpha off -colorspace sRGB -resize "${WIDTH}x${HEIGHT}!")
+  local src="$1" dst="$2" crop="$3" maskTop="$4" maskBottom="$5" negate="${6:-0}" preCrop="${7:-}"
+  local args=(magick "$src" -alpha remove -alpha off -colorspace sRGB)
+  # Cut the phone-frame mockup down to its screen window before the screen-sized resize.
+  [ -n "$preCrop" ] && args+=(-crop "$preCrop" +repage)
+  args+=(-resize "${WIDTH}x${HEIGHT}!")
+  # Before masking, so the masked bands stay black in both images.
+  [ "$negate" = 1 ] && args+=(-negate)
   if [ -n "$crop" ]; then
     args+=(-crop "$crop" +repage)
   else
@@ -48,9 +59,11 @@ if [ "${1:-}" = "--raw" ]; then
   REF="$2"
   SHOT="$3"
   CROP=""
+  REF_CROP=""
   MASK_TOP=54
   MASK_BOTTOM=34
   THRESHOLD=""
+  NEGATE=0
 else
   ID="${1:-}"
   [ -n "$ID" ] || { echo "usage: compare.sh <screen-id>   |   compare.sh --raw <a.png> <b.png>" >&2; exit 2; }
@@ -59,16 +72,18 @@ else
   REF="$ROOT/Reference/$(printf '%s' "$entry" | jq -r '.file')"
   SHOT="${SCROLL_SNAPSHOT:-$OUTDIR/$ID.png}"
   CROP="$(printf '%s' "$entry" | jq -r '.crop // ""')"
+  REF_CROP="$(printf '%s' "$entry" | jq -r '.refCrop // ""')"
   MASK_TOP="$(jq -r '.defaults.maskTopPT' "$THRESHOLDS")"
   MASK_BOTTOM="$(printf '%s' "$entry" | jq -r --argjson d "$(jq '.defaults.maskBottomPT' "$THRESHOLDS")" '.maskBottomPT // $d')"
   THRESHOLD="$(printf '%s' "$entry" | jq -r '.threshold')"
+  NEGATE="$(printf '%s' "$entry" | jq -r 'if .negate then 1 else 0 end')"
 fi
 
 [ -f "$REF" ] || { echo "compare.sh: missing reference $REF" >&2; exit 1; }
 [ -f "$SHOT" ] || { echo "compare.sh: missing capture $SHOT — run Tools/snapshot/capture.sh $ID first" >&2; exit 1; }
 
-normalise "$REF" "$TMP/ref.png" "$CROP" "$MASK_TOP" "$MASK_BOTTOM"
-normalise "$SHOT" "$TMP/shot.png" "$CROP" "$MASK_TOP" "$MASK_BOTTOM"
+normalise "$REF" "$TMP/ref.png" "$CROP" "$MASK_TOP" "$MASK_BOTTOM" 0 "$REF_CROP"
+normalise "$SHOT" "$TMP/shot.png" "$CROP" "$MASK_TOP" "$MASK_BOTTOM" "$NEGATE"
 
 # `compare -metric RMSE` writes "<absolute> (<normalised>)" to stderr and exits 1 when
 # the images differ at all, which is not a failure for us.

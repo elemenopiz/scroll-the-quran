@@ -21,8 +21,14 @@ public enum ScreenID: String, CaseIterable, Sendable {
     case translationSheet = "translation-sheet"
     case notesSheet = "notes-sheet"
     case home
+    case plansSheet = "plans-sheet"
+    case planDetail = "plan-detail"
+    case verseSearch = "verse-search"
+    case widgetGallery = "widget-gallery"
     /// Not in the manifest: the bare tab bar, used by the Phase 1 layout spec.
     case tabBar = "tabbar"
+    /// Not in the manifest: the DesignSystem component gallery.
+    case gallery
 }
 
 /// A screen id plus the optional `#anchor` that scrolls it to a section, e.g. `deepstudy#apply-it`.
@@ -52,7 +58,7 @@ public struct ScreenRoute: Equatable, Sendable {
         switch screen {
         case .community: .community
         case .discover: .discover
-        case .home: .home
+        case .home, .plansSheet, .planDetail, .verseSearch: .home
         case .reader, .translationSheet, .notesSheet: .quran
         default: nil
         }
