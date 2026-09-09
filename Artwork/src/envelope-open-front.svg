@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+<defs>
+  <linearGradient id="gPaper" x1="0.1" y1="0" x2="0.85" y2="1">
+    <stop offset="0" stop-color="#F6EBD5"/><stop offset="0.55" stop-color="#EFE1C2"/>
+    <stop offset="1" stop-color="#E3D2AC"/></linearGradient>
+  <linearGradient id="gFlap" x1="0.2" y1="0" x2="0.7" y2="1">
+    <stop offset="0" stop-color="#F7EDD7"/><stop offset="1" stop-color="#E7D8B6"/></linearGradient>
+  <linearGradient id="gFlapIn" x1="0.25" y1="0" x2="0.75" y2="1">
+    <stop offset="0" stop-color="#F0E2C4"/><stop offset="1" stop-color="#DCC9A0"/></linearGradient>
+  <linearGradient id="gInner" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#C9B489"/><stop offset="1" stop-color="#D9C79F"/></linearGradient>
+  <linearGradient id="gCard" x1="0.2" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#FBF6EA"/><stop offset="1" stop-color="#EFE7D4"/></linearGradient>
+  <radialGradient id="gWax" cx="34%" cy="28%" r="86%">
+    <stop offset="0" stop-color="#F2D394"/><stop offset="0.45" stop-color="#C89A4E"/>
+    <stop offset="0.86" stop-color="#8E6524"/><stop offset="1" stop-color="#5E3F10"/></radialGradient>
+  <radialGradient id="gWell" cx="62%" cy="70%" r="80%">
+    <stop offset="0" stop-color="#D8A85E"/><stop offset="0.6" stop-color="#BE8F45"/>
+    <stop offset="1" stop-color="#9A7030"/></radialGradient>
+  <linearGradient id="gRim" x1="0.2" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#FFE7B8"/><stop offset="1" stop-color="#5E3F10"/></linearGradient>
+  <filter id="sealShadow" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#5C4718" flood-opacity="0.42"/></filter>
+  <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+    <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#6B5C3C" flood-opacity="0.30"/></filter>
+  <filter id="foldShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<g filter="url(#softShadow)"><path d="M108.00 380.00 H1092.00 A18.00 18.00 0 0 1 1110.00 398.00 V812.00 A18.00 18.00 0 0 1 1092.00 830.00 H108.00 A18.00 18.00 0 0 1 90.00 812.00 V398.00 A18.00 18.00 0 0 1 108.00 380.00 Z" fill="url(#gPaper)"/></g>
+<clipPath id="cPocket"><path d="M108.00 380.00 H1092.00 A18.00 18.00 0 0 1 1110.00 398.00 V812.00 A18.00 18.00 0 0 1 1092.00 830.00 H108.00 A18.00 18.00 0 0 1 90.00 812.00 V398.00 A18.00 18.00 0 0 1 108.00 380.00 Z"/></clipPath>
+<g clip-path="url(#cPocket)">
+<path d="M90 380 L600.00 790 L90 830 Z" fill="#E5D5B1"/>
+<path d="M1110 380 L600.00 790 L1110 830 Z" fill="#EADCBC"/>
+<path d="M90 830 L600.00 790 L1110 830 Z" fill="#F2E6CB"/>
+<path d="M90 380 L600.00 790 L1110 380" fill="none" stroke="#C6B084" stroke-opacity="0.5" stroke-width="2"/>
+</g>
+<g filter="url(#sealShadow)"><path d="M703.92 632.00 C704.55 641.80 705.03 652.75 702.06 661.97 C699.08 671.19 691.82 679.30 686.08 687.32 C680.35 695.34 674.62 703.14 667.66 710.08 C660.69 717.02 653.05 724.52 644.28 728.96 C635.51 733.40 624.94 735.45 615.06 736.72 C605.17 737.99 595.05 737.43 584.97 736.57 C574.88 735.70 563.03 736.27 554.55 731.53 C546.06 726.79 540.64 715.60 534.03 708.13 C527.43 700.65 521.52 694.21 514.90 686.69 C508.29 679.17 497.71 672.14 494.34 663.02 C490.97 653.91 494.57 642.30 494.70 632.00 C494.84 621.70 492.78 610.97 495.16 601.22 C497.54 591.47 503.61 582.35 508.97 573.50 C514.33 564.65 519.29 554.02 527.31 548.11 C535.33 542.20 547.44 541.13 557.10 538.06 C566.76 534.99 575.65 531.41 585.29 529.71 C594.94 528.00 605.18 526.87 614.97 527.85 C624.77 528.82 634.39 532.22 644.04 535.56 C653.69 538.90 664.79 541.74 672.87 547.91 C680.94 554.07 688.25 563.35 692.49 572.56 C696.73 581.76 696.39 593.23 698.30 603.14 C700.20 613.04 703.29 622.20 703.92 632.00 Z" fill="url(#gWax)"/></g>
+<path d="M703.92 632.00 C704.55 641.80 705.03 652.75 702.06 661.97 C699.08 671.19 691.82 679.30 686.08 687.32 C680.35 695.34 674.62 703.14 667.66 710.08 C660.69 717.02 653.05 724.52 644.28 728.96 C635.51 733.40 624.94 735.45 615.06 736.72 C605.17 737.99 595.05 737.43 584.97 736.57 C574.88 735.70 563.03 736.27 554.55 731.53 C546.06 726.79 540.64 715.60 534.03 708.13 C527.43 700.65 521.52 694.21 514.90 686.69 C508.29 679.17 497.71 672.14 494.34 663.02 C490.97 653.91 494.57 642.30 494.70 632.00 C494.84 621.70 492.78 610.97 495.16 601.22 C497.54 591.47 503.61 582.35 508.97 573.50 C514.33 564.65 519.29 554.02 527.31 548.11 C535.33 542.20 547.44 541.13 557.10 538.06 C566.76 534.99 575.65 531.41 585.29 529.71 C594.94 528.00 605.18 526.87 614.97 527.85 C624.77 528.82 634.39 532.22 644.04 535.56 C653.69 538.90 664.79 541.74 672.87 547.91 C680.94 554.07 688.25 563.35 692.49 572.56 C696.73 581.76 696.39 593.23 698.30 603.14 C700.20 613.04 703.29 622.20 703.92 632.00 Z" fill="none" stroke="url(#gRim)" stroke-width="3" opacity="0.55"/>
+<circle cx="600.00" cy="632.00" r="74.20" fill="url(#gWell)"/>
+<circle cx="600.00" cy="632.00" r="74.20" fill="none" stroke="#5E3F10" stroke-opacity="0.35" stroke-width="2.5"/>
+<g opacity="0.3" transform="translate(541.85 576.45) scale(0.23)">
+<g transform="translate(256.0000 256.0000) scale(1.1500) translate(-256.0000 -256.0000)">
+<defs>
+<clipPath id="cbo"><circle cx="314.5786" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="314.5786" r="24.0000"/><circle cx="197.4214" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="197.4214" r="24.0000"/></clipPath>
+<clipPath id="cao"><circle cx="197.4214" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="197.4214" r="24.0000"/><circle cx="314.5786" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="314.5786" r="24.0000"/></clipPath>
+<mask id="mA" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cbo)"><path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+<mask id="mB" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cao)"><path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+</defs>
+<g stroke="#FFFFFF" stroke-width="14.0000" stroke-linejoin="miter" stroke-miterlimit="10">
+<path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" mask="url(#mA)"/>
+<path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" mask="url(#mB)"/>
+</g>
+<mask id="mc" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#fff"/><circle cx="287.8973" cy="241.6922" r="79.0000" fill="#000"/></mask><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#FFFFFF" mask="url(#mc)"/>
+</g>
+</g>
+<g opacity="0.88" transform="translate(541.85 573.85) scale(0.23)">
+<g transform="translate(256.0000 256.0000) scale(1.1500) translate(-256.0000 -256.0000)">
+<defs>
+<clipPath id="cbo"><circle cx="314.5786" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="314.5786" r="24.0000"/><circle cx="197.4214" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="197.4214" r="24.0000"/></clipPath>
+<clipPath id="cao"><circle cx="197.4214" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="197.4214" r="24.0000"/><circle cx="314.5786" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="314.5786" r="24.0000"/></clipPath>
+<mask id="mA" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cbo)"><path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+<mask id="mB" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cao)"><path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+</defs>
+<g stroke="#5E3F10" stroke-width="14.0000" stroke-linejoin="miter" stroke-miterlimit="10">
+<path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" mask="url(#mA)"/>
+<path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" mask="url(#mB)"/>
+</g>
+<mask id="mc" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#fff"/><circle cx="287.8973" cy="241.6922" r="79.0000" fill="#000"/></mask><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#5E3F10" mask="url(#mc)"/>
+</g>
+</g>
+<ellipse cx="563.96" cy="583.24" rx="38.16" ry="23.32" fill="#FFFFFF" opacity="0.20" transform="rotate(-24 563.96 583.24)"/>
+</svg>

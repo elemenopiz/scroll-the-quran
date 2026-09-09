@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 512 512" fill="none">
+<defs><radialGradient id="bg" cx="42%" cy="34%" r="78%"><stop offset="0" stop-color="#FFFEFC"/><stop offset="0.62" stop-color="#FAF8F3"/><stop offset="1" stop-color="#EFEBE1"/></radialGradient></defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g transform="translate(256.0000 256.0000) scale(0.7700) translate(-256.0000 -256.0000)">
+<defs>
+<clipPath id="cbo"><circle cx="314.5786" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="314.5786" r="24.0000"/><circle cx="197.4214" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="197.4214" r="24.0000"/></clipPath>
+<clipPath id="cao"><circle cx="197.4214" cy="114.5786" r="24.0000"/><circle cx="397.4214" cy="197.4214" r="24.0000"/><circle cx="314.5786" cy="397.4214" r="24.0000"/><circle cx="114.5786" cy="314.5786" r="24.0000"/></clipPath>
+<mask id="mA" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cbo)"><path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+<mask id="mB" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><g clip-path="url(#cao)"><path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" stroke="#000" stroke-width="24.0000" stroke-linejoin="miter" stroke-miterlimit="10"/></g></mask>
+</defs>
+<g stroke="#0B0B0D" stroke-width="14.0000" stroke-linejoin="miter" stroke-miterlimit="10">
+<path d="M114.5786 114.5786 L397.4214 114.5786 L397.4214 397.4214 L114.5786 397.4214 Z" mask="url(#mA)"/>
+<path d="M256.0000 56.0000 L456.0000 256.0000 L256.0000 456.0000 L56.0000 256.0000 Z" mask="url(#mB)"/>
+</g>
+<mask id="mc" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#fff"/><circle cx="287.8973" cy="241.6922" r="79.0000" fill="#000"/></mask><circle cx="265.0000" cy="256.0000" r="84.0000" fill="#0B0B0D" mask="url(#mc)"/>
+</g>
+</svg>
