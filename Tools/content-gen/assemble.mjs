@@ -115,14 +115,17 @@ function main(argv = process.argv.slice(2)) {
     const s = all.get(k);
     return { key: k, surah: s.surah, start: s.start, end: s.end, themeId: s.themeId, title: s.title };
   });
-  fs.writeFileSync(
-    path.join(OUT, "discover.json"),
-    JSON.stringify(
-      { seed: "discover-seed.txt", promptVersion: PROMPT_VERSION,
-        generatedAt: new Date().toISOString(), count: items.length, items },
+  {
+    const discoverFile = path.join(OUT, "discover.json");
+    const prev = fs.existsSync(discoverFile) ? JSON.parse(fs.readFileSync(discoverFile, "utf8")) : null;
+    const unchanged = prev && JSON.stringify(prev.items) === JSON.stringify(items);
+    const generatedAt = unchanged ? prev.generatedAt : new Date().toISOString();
+    const json = JSON.stringify(
+      { seed: "discover-seed.txt", promptVersion: PROMPT_VERSION, generatedAt, count: items.length, items },
       null, 2,
-    ) + "\n",
-  );
+    ) + "\n";
+    if (!fs.existsSync(discoverFile) || fs.readFileSync(discoverFile, "utf8") !== json) fs.writeFileSync(discoverFile, json);
+  }
 
   console.log(`cached results:   ${cached.length}${model ? ` (model ${model})` : ""}`);
   console.log(`assembled corpus: ${all.size} studies across ${shardFiles.length} shards (${[...touched].length} touched this run)`);
