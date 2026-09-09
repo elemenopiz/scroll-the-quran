@@ -83,6 +83,14 @@ schema). `key`, `surah`, `start`, `end`, `tier` and `meta` are stamped by
 `assemble`; if you leave them in the file they are dropped, but a `key` that
 disagrees with the target is an error.
 
+## Lessons from wave 1 (read these)
+- **Namespace your scratch.** The session scratchpad is shared by sibling authors. Keep key lists and bodies under `Tools/content-gen/work/authoring/<your-branch>/` (gitignored), one fresh directory per batch — `write-dir` is all-or-nothing over a directory and will refuse a batch that contains an already-assembled body.
+- **Run `node author.mjs status` before `npm test`** on a fresh worktree; it rebuilds `work/units.jsonl`. Never run `segment-passages.mjs`.
+- **Word counts split on whitespace**, so a spaced em dash costs a word. `meaning` is now 45–105 words.
+- **Four themes were added** (`divine-attributes`, `revelation-and-its-rejection`, `wealth-and-property`, `love-of-god`); spread themes across a slice, do not lean on one id.
+- **Sectarian-sensitive occasions** (e.g. 28:56, 42:23): describe the setting generally and give classical readings side by side; never name figures whose status divides communities.
+- **`didYouKnow`:** prefer checkable structural or lexical facts (phrase counts, grammatical forms, surah structure) over impressive claims you cannot verify.
+
 ## Quality bar
 
 Structure is enforced by the validator. Truth is not. Take the time.
