@@ -29,7 +29,6 @@ public enum OnboardingMetrics {
     public static let slideHeadlinePitch: CGFloat = 32
     /// Subheadline: ink rows 185-199 / 203-214, pitch 18 pt.
     public static let subheadlineSize: CGFloat = 17
-    public static let subheadlinePitch: CGFloat = 18
     /// Headline/subheadline text column runs x 42...350 -> 22 pt side margins.
     public static let textInset: CGFloat = 22
     /// The hook headline wraps to four lines whose ink is ~300 pt wide (x 45...348).
@@ -66,9 +65,20 @@ public enum OnboardingMetrics {
     /// Safe-area top on the reference device (iPhone 15 Pro class).
     public static let referenceSafeAreaTop: CGFloat = 59
 
-    /// Trim on top of `.leading(.tight)` to reach the reference baseline pitch.
-    public static let hookHeadlineExtraLineSpacing: CGFloat = 0
-    public static let slideHeadlineExtraLineSpacing: CGFloat = 0
+    /// Extra `lineSpacing` needed to reach the reference baseline pitch.
+    ///
+    /// Both are 0 today and cannot be anything else: Source Serif 4 sets a 1.371 em line
+    /// height (43.9 pt at 32 pt, measured with CoreText), which is already wider than the
+    /// reference's 35.5 pt pitch, and SwiftUI has no negative `lineSpacing`. Computed
+    /// rather than written as `0` so swapping the face fixes itself.
+    public static var hookHeadlineExtraLineSpacing: CGFloat {
+        lineSpacing(family: FontFamily.serif, size: hookHeadlineSize, pitch: hookHeadlinePitch)
+    }
+
+    public static var slideHeadlineExtraLineSpacing: CGFloat {
+        lineSpacing(family: FontFamily.serif, size: slideHeadlineSize, pitch: slideHeadlinePitch)
+    }
+
     /// Gap from the headline block to the subheadline (hook 280-409 / 438; slides 166 / 185).
     public static let headlineToSubheadline: CGFloat = 14
 
@@ -107,12 +117,14 @@ public enum OnboardingMetrics {
 
     // MARK: - Sign-in sheet
 
-    /// Sheet spans rows 404...843 at the centre column: 439 pt tall, 9 pt off the bottom.
+    /// Detent height that lands the sheet's top edge on row 404, where the reference puts
+    /// it. Not 439 (the sheet's measured 404...843 span): iOS 26 floats the sheet inside
+    /// its own inset, so the detent it is asked for and the height it draws differ. This
+    /// is the number that reproduced the capture.
     public static let sheetHeight: CGFloat = 415
     /// Content column x 27...365 inside a sheet spanning x 8...385 -> 19 pt of inner padding.
     public static let sheetContentInset: CGFloat = 19
     /// Title ink 467-492, i.e. 63 pt below the sheet top.
-    public static let sheetTitleTop: CGFloat = 46
     public static let sheetTitleSize: CGFloat = 28
     /// Email field rows 574...618.
     public static let fieldHeight: CGFloat = 44

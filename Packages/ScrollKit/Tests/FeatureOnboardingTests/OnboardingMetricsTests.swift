@@ -21,6 +21,24 @@ struct OnboardingMetricsTests {
         #expect(OnboardingMetrics.naturalLineHeight(family: "NotARealFace-Regular", size: 20) > 0)
     }
 
+    @Test("Source Serif 4 already sets wider than the reference pitch, so no extra spacing")
+    func headlineSpacingIsZero() {
+        // 1.371 em: 43.9 pt at the hook's 32 pt, against a reference pitch of 35.5 pt.
+        #expect(OnboardingMetrics.hookHeadlineExtraLineSpacing == 0)
+        #expect(OnboardingMetrics.slideHeadlineExtraLineSpacing == 0)
+    }
+
+    @Test("A slide's phone frame lands on the reference row for its title's line count")
+    func slideGeometryFollowsTitleLines() {
+        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 2) == 240)
+        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 3) == 256)
+        #expect(
+            OnboardingMetrics.slideTextBlockHeight(titleLines: 3)
+                - OnboardingMetrics.slideTextBlockHeight(titleLines: 2) == 16
+        )
+        #expect(OnboardingMetrics.slideHeadlineWidth(titleLines: 3) < OnboardingMetrics.slideHeadlineWidth)
+    }
+
     @Test("The measured reference geometry is intact")
     func referenceGeometry() {
         // Continue spans x 52...340.67 and rows 746...801 on the 393x852 reference grid.
