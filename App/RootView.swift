@@ -30,6 +30,15 @@ struct RootView: View {
 
     @ViewBuilder
     private var content: some View {
+        if launch.screenshot?.screen == .gallery {
+            GalleryScreen()
+        } else {
+            phaseContent
+        }
+    }
+
+    @ViewBuilder
+    private var phaseContent: some View {
         switch flow.phase {
         case .onboarding:
             stage(id: launch.screenshot?.screen.rawValue ?? "onboarding-hook",
