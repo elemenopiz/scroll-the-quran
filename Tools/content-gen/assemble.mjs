@@ -67,37 +67,52 @@ function main(argv = process.argv.slice(2)) {
   const wanted = only === "all" ? null : new Set(selectUnits(only).map((u) => u.key));
 
   const cached = loadCache({ model }).filter((r) => !wanted || wanted.has(r.key));
-  const bySurah = new Map();
+
+  // Merge-aware: start from every shard already committed in out/study, then let
+  // cached results replace or add studies by key. Parallel author waves therefore
+  // never drop each other's work, and shards nobody touched keep their generatedAt.
+  const studyDir = path.join(OUT, "study");
+  fs.mkdirSync(studyDir, { recursive: true });
+  const existing = new Map(); // surah -> { generatedAt, byKey: Map }
+  for (const f of fs.readdirSync(studyDir)) {
+    const m = /^surah_(\d{3})\.json$/.exec(f);
+    if (!m) continue;
+    const shard = JSON.parse(fs.readFileSync(path.join(studyDir, f), "utf8"));
+    const byKey = new Map((shard.studies ?? []).map((st) => [st.key, st]));
+    existing.set(Number(m[1]), { generatedAt: shard.generatedAt, byKey });
+  }
+  const bySurah = new Map([...existing].map(([surah, e]) => [surah, new Map(e.byKey)]));
+  const touched = new Set();
   for (const c of cached) {
     const study = assembleStudy(c, units.get(c.key));
-    const list = bySurah.get(study.surah) ?? [];
-    list.push(study);
-    bySurah.set(study.surah, list);
+    const map = bySurah.get(study.surah) ?? new Map();
+    const before = map.get(study.key);
+    map.set(study.key, study);
+    bySurah.set(study.surah, map);
+    if (JSON.stringify(before) !== JSON.stringify(study)) touched.add(study.surah);
   }
 
-  fs.mkdirSync(path.join(OUT, "study"), { recursive: true });
   const shardFiles = [];
-  for (const [surah, studies] of [...bySurah].sort((a, b) => a[0] - b[0])) {
-    studies.sort((a, b) => a.start - b.start || a.end - b.end);
-    const file = path.join(OUT, "study", `surah_${String(surah).padStart(3, "0")}.json`);
-    fs.writeFileSync(
-      file,
-      JSON.stringify(
-        { surah, promptVersion: PROMPT_VERSION, generatedAt: new Date().toISOString(), studies },
-        null, 2,
-      ) + "\n",
-    );
-    shardFiles.push({ file, count: studies.length });
+  for (const [surah, map] of [...bySurah].sort((a, b) => a[0] - b[0])) {
+    const studies = [...map.values()].sort((a, b) => a.start - b.start || a.end - b.end);
+    const file = path.join(studyDir, `surah_${String(surah).padStart(3, "0")}.json`);
+    const generatedAt = touched.has(surah) || !existing.get(surah)?.generatedAt
+      ? new Date().toISOString()
+      : existing.get(surah).generatedAt;
+    const json = JSON.stringify({ surah, promptVersion: PROMPT_VERSION, generatedAt, studies }, null, 2) + "\n";
+    if (!fs.existsSync(file) || fs.readFileSync(file, "utf8") !== json) fs.writeFileSync(file, json);
+    shardFiles.push({ file, count: studies.length, touched: touched.has(surah) });
   }
 
-  // Discover manifest.
-  const generated = new Set(cached.map((c) => c.key));
+  // Discover manifest, from the merged corpus (not just this run's cache).
+  const all = new Map();
+  for (const map of bySurah.values()) for (const [k, st] of map) all.set(k, st);
+  const generated = new Set(all.keys());
   const keys = discoverKeys();
   const present = keys.filter((k) => generated.has(k));
   const missing = keys.filter((k) => !generated.has(k));
-  const byKey = new Map(cached.map((c) => [c.key, c]));
   const items = present.map((k) => {
-    const s = assembleStudy(byKey.get(k), units.get(k));
+    const s = all.get(k);
     return { key: k, surah: s.surah, start: s.start, end: s.end, themeId: s.themeId, title: s.title };
   });
   fs.writeFileSync(
@@ -110,6 +125,7 @@ function main(argv = process.argv.slice(2)) {
   );
 
   console.log(`cached results:   ${cached.length}${model ? ` (model ${model})` : ""}`);
+  console.log(`assembled corpus: ${all.size} studies across ${shardFiles.length} shards (${[...touched].length} touched this run)`);
   console.log(`surah shards:     ${shardFiles.length}`);
   for (const s of shardFiles.slice(0, 10)) {
     console.log(`  ${path.relative(process.cwd(), s.file)}  (${s.count})`);

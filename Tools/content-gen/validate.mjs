@@ -122,8 +122,21 @@ export function validateRecords(records, { quran, themeIds, passages }) {
       err(key, "title has trailing punctuation");
     }
 
+    // Nested prose (key-term glosses/notes, cross-reference reasons): banned phrasing applies there too.
+    const nested = [];
+    if (Array.isArray(s.keyTerms)) for (const [i, t] of s.keyTerms.entries()) {
+      for (const f of ["gloss", "note"]) if (typeof t?.[f] === "string") nested.push([`keyTerms[${i}].${f}`, t[f]]);
+    }
+    if (Array.isArray(s.crossReferences)) for (const [i, c] of s.crossReferences.entries()) {
+      if (typeof c?.why === "string") nested.push([`crossReferences[${i}].why`, c.why]);
+    }
+    for (const [f, text] of nested) {
+      for (const [re, why] of BANNED) if (re.test(text)) err(key, `${f}: ${why} (${re})`);
+    }
+
     // Honorific: if the Prophet Muhammad is named, the first naming carries it.
-    const prose = PROSE_FIELDS.map((f) => s[f]).filter((t) => typeof t === "string").join(" ");
+    const prose = [...PROSE_FIELDS.map((f) => s[f]), ...nested.map(([, t]) => t)]
+      .filter((t) => typeof t === "string").join(" ");
     if (/\bMuhammad\b/.test(prose) && !/Muhammad \(peace be upon him\)/.test(prose)) {
       err(key, 'names Muhammad without the honorific "(peace be upon him)"');
     }

@@ -15,7 +15,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { ROOT, OUT, WORK, loadQuran, unitKey, parseKey, words } from "./lib/data.mjs";
 
-export const DEFAULTS = { minOwnWords: 12, maxAyat: 5, maxWords: 60 };
+export const DEFAULTS = { minOwnWords: 24, maxAyat: 5, maxWords: 60 };
 
 /** Load and validate named-passages.json into a per-surah map of fixed ranges. */
 export function loadNamedPassages(byNumber, file = path.join(ROOT, "named-passages.json")) {
