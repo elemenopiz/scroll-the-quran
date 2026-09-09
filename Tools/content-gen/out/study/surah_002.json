@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:53:22.308Z",
+  "generatedAt": "2026-09-09T10:01:06.797Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -2378,6 +2378,702 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.577Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:63",
+      "surah": 2,
+      "start": 63,
+      "end": 63,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Take It With Strength",
+      "tier": "standard",
+      "meaning": "A pledge is recalled together with the setting it was made in, a mountain raised above the people who were making it. Two instructions follow and they are not the same. The first concerns grip: take what has been given with strength, a word the commentators gloss as resolve and seriousness rather than physical force. The second concerns retention: remember what is inside it, which they read as continued study rather than a single act of recall. The stated aim is a guarded, mindful life.",
+      "historicalContext": "Medinan, continuing the surah's recollections. Another surah describes the mountain raised as though it were a canopy, and classical commentators read the two accounts together. They report differing details of the scene and are restrained about it, concentrating instead on the two verbs, since the same pair of instructions appears elsewhere in the Quran attached to other scriptures and other recipients.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلطُّورَ",
+          "gloss": "the mount",
+          "note": "The Quran's name for the mountain associated with the revelation to Moses. It is used as a proper name rather than as the ordinary word for a hill, and a whole surah later carries it as a title."
+        },
+        {
+          "arabic": "بِقُوَّةٍ",
+          "gloss": "with strength, with resolve",
+          "note": "Power, but in the sense of a firm hold and settled determination. Commentators gloss it as taking something seriously and holding to it, not as exerting force on anyone else."
+        },
+        {
+          "arabic": "تَتَّقُونَ",
+          "gloss": "you may become mindful",
+          "note": "From a root meaning to shield or guard against. The word describes putting something protective between yourself and harm, so the state it names is watchfulness rather than fright."
+        }
+      ],
+      "lifeInProphetsTime": "Agreements in Arabia were tied to places and to physical acts. Parties clasped hands, dipped them together in perfume or blood, and swore at a named landmark that anyone could point to afterwards. The location did the work that a signature does now, because a pledge with no place attached was hard to hold anyone to. A promise made under a mountain held above the crowd is that practice enlarged past all possibility.",
+      "didYouKnow": "The instruction to take the scripture with strength appears more than once in the Quran and not only here. It is given to Moses when the tablets are handed over, and it is given to John as a boy in a single short line. The same two words attach to three different moments of receiving a revealed text.",
+      "theologicalSignificance": "Two things are asked and they answer different failures. A text can be held without being studied, which produces reverence with no content, and it can be studied without being held, which produces information with no grip. Naming both makes the relationship to scripture an active one on two fronts at once. The setting adds a third point, since a pledge made under an overwhelming sign was still, in the event, a pledge that could be turned away from.",
+      "crossReferences": [
+        {
+          "ref": "7:171",
+          "why": "Describes the mountain raised above them as though it were a canopy, with the same instruction following."
+        },
+        {
+          "ref": "19:12",
+          "why": "Gives the identical phrase to John as a child, told to take the Book with strength."
+        },
+        {
+          "ref": "7:145",
+          "why": "Uses the same words when the tablets are handed to Moses, with an instruction to hold to what is best in them."
+        }
+      ],
+      "applyIt": "Pick one passage you already believe and read it once as though you were checking what is actually in it, with a pen. Underline anything that surprises you. Holding a text and knowing its contents are separate activities, and most of us do the first much more often than the second.",
+      "exploreFurther": [
+        "7:170-171",
+        "19:12-15",
+        "7:143-145"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.097Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:64-66",
+      "surah": 2,
+      "start": 64,
+      "end": 66,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "What Kept You From Loss",
+      "tier": "standard",
+      "meaning": "The turning away is stated in four words and then interrupted by a clause about favour and mercy, so the sentence never reaches the loss it was heading toward. That structure is the point of the first ayah. What follows recalls a group who broke a boundary and what became of them, and commentators divide over the transformation, most reading it as an outward change and some as a description of what their conduct had already made of them. The last of the three ayat names the purpose: a restraint for others and a counsel.",
+      "historicalContext": "Medinan, continuing the surah's recollections. The episode of the boundary broken by a coastal community is told at length in another surah, where the account also records that people among them had spoken against the wrongdoing and were delivered. Classical commentators read the two passages together and note that the Quran itself limits who was affected, both in that fuller telling and in the wording here.",
+      "keyTerms": [
+        {
+          "arabic": "تَوَلَّيْتُم",
+          "gloss": "you turned away",
+          "note": "The verb for turning your back on someone, from the same root that gives the words for an ally and for turning toward. Direction is the whole of its meaning, which is why it can face either way."
+        },
+        {
+          "arabic": "نَكَـٰلًا",
+          "gloss": "a deterrent, a restraint",
+          "note": "From a root naming a hobble or fetter. A punishment called by this word is defined by its effect on those watching rather than by its severity on those it falls upon."
+        },
+        {
+          "arabic": "مَوْعِظَةً",
+          "gloss": "an admonition, a counsel",
+          "note": "Advice that works on the heart rather than on the fear, from a root suggesting softening. Placing it beside the harder word gives the episode two audiences and two different effects."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation was preserved in verse. A tribe's disgrace or a famous settlement was composed into poetry and recited at markets and gatherings for generations, so a single episode could restrain behaviour long after everyone involved was dead. Describing something as a deterrent for what came before it and what came after it named a real mechanism in that world, and everyone present knew a story that was still doing that work.",
+      "didYouKnow": "The fuller account of this episode in another surah records that a group among the same community had objected to the wrongdoing and asked why others bothered warning people who would not listen. That surah states plainly that those who forbade the wrong were delivered, a detail the shorter recollection here leaves out.",
+      "theologicalSignificance": "The first of these ayat establishes something about how consequences are described. A turning away is named, an outcome is named, and between them a clause about mercy prevents the second from following the first. That is the Quran's usual account of why any community continues. The passage also gives a punishment a purpose beyond itself, since a deterrent and a counsel are both directed at people who were not involved.",
+      "crossReferences": [
+        {
+          "ref": "7:163-166",
+          "why": "Tells the episode at length, including the objection raised by some and their deliverance."
+        },
+        {
+          "ref": "16:61",
+          "why": "States the general principle, that immediate reckoning for wrongdoing would leave no creature on earth."
+        },
+        {
+          "ref": "35:45",
+          "why": "Says the same thing again, that God defers rather than taking people to task for what they earn."
+        }
+      ],
+      "applyIt": "Think about something that did not happen to you, a consequence that was available and did not arrive. A near miss, an error nobody noticed, a habit that could have cost far more than it did. Name one, precisely. Gratitude usually attaches to what came, and this passage attaches it to what was withheld.",
+      "exploreFurther": [
+        "7:163-166",
+        "16:61",
+        "35:45"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.109Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:67",
+      "surah": 2,
+      "start": 67,
+      "end": 67,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Do You Take Us Lightly",
+      "tier": "standard",
+      "meaning": "An instruction is delivered and the response is an accusation of mockery. What Moses says back is the striking part. He seeks refuge from being among the ignorant, and the Arabic word he uses does not mainly mean uninformed. In classical usage it stands opposite forbearance as much as opposite knowledge, naming rashness and the readiness to treat people carelessly. Mockery is therefore not classified here as rudeness but as a defect of restraint, and he distances himself from it rather than defending the instruction.",
+      "historicalContext": "Medinan, opening the episode that gives this surah its name. The narrative is set during the years in the wilderness and is told only here in the Quran, unlike most of the recollections in this section, which appear in other surahs too. Classical commentators note that the surah presents the exchange in dialogue, which is unusual for this stretch of recollections.",
+      "keyTerms": [
+        {
+          "arabic": "تَذْبَحُوا۟",
+          "gloss": "you slaughter",
+          "note": "The ordinary verb for slaughtering an animal, used throughout the Quran without special ceremony attached. Nothing in the word itself signals a rite, which is part of why the instruction seemed so unaccountable to them."
+        },
+        {
+          "arabic": "هُزُوًا",
+          "gloss": "an object of mockery",
+          "note": "Not the act of mocking but the thing mocked. The accusation is that they are being made into a joke, which is a charge about their standing rather than about the instruction's content."
+        },
+        {
+          "arabic": "ٱلْجَـٰهِلِينَ",
+          "gloss": "the ignorant, the rash",
+          "note": "In classical Arabic this word stands opposite forbearance as much as opposite knowledge. It names unrestrained, headlong conduct, which is why it fits an accusation of mockery so exactly."
+        }
+      ],
+      "lifeInProphetsTime": "Cattle were not the usual wealth of the Arabian interior, where camels and sheep carried a family's value. Cows belonged to settled agriculture, to the irrigated oases and the farming south, where they pulled ploughs and turned the wheels that lifted water. A cow was therefore a working asset with a known price, not a beast anyone kept casually, and an instruction to destroy one had an obvious cost.",
+      "didYouKnow": "This episode gives the surah its name. The longest chapter of the Quran, running to two hundred and eighty-six ayat and covering law, history, prayer and creed, is called The Cow after an incident that occupies seven of them and is never referred to again. The Quran's surah names are frequently drawn from such incidental details.",
+      "theologicalSignificance": "The response models something specific. Faced with an accusation, Moses neither argues the point nor asserts his authority. He states what he seeks refuge from, which reframes the exchange as a question about character rather than about who is right. The passage also establishes that an instruction can arrive without its reason attached, and that the absence of a stated reason is not itself grounds for treating it as unserious.",
+      "crossReferences": [
+        {
+          "ref": "5:101",
+          "why": "Warns against asking about matters which, if made plain, would trouble those asking."
+        },
+        {
+          "ref": "2:108",
+          "why": "Refers later in this surah to questioning a messenger in the way Moses was questioned before."
+        },
+        {
+          "ref": "7:138",
+          "why": "Records another ill-judged request made to Moses immediately after the sea was crossed."
+        }
+      ],
+      "applyIt": "Notice the next time you meet an instruction whose reason you have not been given, at work or at home, and watch for the impulse to treat it as unserious. You do not have to comply without thinking. Just separate the question of whether it makes sense from the question of whether you are being taken lightly.",
+      "exploreFurther": [
+        "5:101-102",
+        "7:138-141",
+        "2:108"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.111Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:68",
+      "surah": 2,
+      "start": 68,
+      "end": 68,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Neither Old Nor Young",
+      "tier": "standard",
+      "meaning": "The first of three requests for further specification, and the answer narrows the field without explaining anything. Two ages are excluded and a middle range is named, in the vocabulary a livestock buyer would use. Then the reply ends by pointing them back to where they started, telling them to do what they were told. Classical commentators pass on a widely repeated observation about this exchange: that any cow would have satisfied the original instruction, and that each question made the requirement harder to meet.",
+      "historicalContext": "Medinan, inside the surah's only telling of this episode. The Quran gives the exchange as a sequence of questions and answers rather than as a summary, which is unusual for this stretch of recollections. Commentators treat the escalating specification as the point of the narrative and note that the closing clause of this ayah, returning them to the original instruction, is repeated in effect at each stage.",
+      "keyTerms": [
+        {
+          "arabic": "يُبَيِّن",
+          "gloss": "make clear, distinguish",
+          "note": "From a root meaning the space between two things. To make something clear in Arabic is to separate it from what it might be confused with, which is exactly what they are asking for here."
+        },
+        {
+          "arabic": "فَارِضٌ",
+          "gloss": "aged, past bearing",
+          "note": "A specific term for an animal too old to breed. Arabic had precise vocabulary for livestock at every stage, and the words in this ayah come straight from the language of buying and selling."
+        },
+        {
+          "arabic": "عَوَانٌ",
+          "gloss": "middling, in between",
+          "note": "An animal that has bred once and is in its prime. The word marks a stage rather than a number of years, and it names exactly the range left after the two exclusions."
+        }
+      ],
+      "lifeInProphetsTime": "Livestock ages were graded finely in Arabic and the vocabulary was common property. A camel had a different name at each year of its life, and buyers examined teeth and argued over which stage an animal had reached, because the answer set the price. Anyone hearing this ayah recognised the register immediately. The question had been answered in market language, precisely and without a word of explanation.",
+      "didYouKnow": "The exchange in this passage is one of the most cited in the whole commentary tradition for a point about questions. Early authorities are quoted as saying that had the people taken any cow at all, it would have counted, and that the specification tightened only because they kept asking. The remark is repeated across the classical works almost as a formula.",
+      "theologicalSignificance": "The passage distinguishes between two kinds of asking. Seeking to understand something is not what happens here, since none of the answers give a reason and the questioners never ask for one. What is sought is more specification, which functions to delay. The closing clause treats that as the issue by returning them to the instruction unchanged, which establishes that clarity was never what was missing.",
+      "crossReferences": [
+        {
+          "ref": "5:101",
+          "why": "Addresses the same habit directly, warning about questions whose answers would prove burdensome."
+        },
+        {
+          "ref": "2:286",
+          "why": "States the principle that limits any such burden, since no soul is charged beyond its capacity."
+        },
+        {
+          "ref": "7:138",
+          "why": "Shows the same people making another request that Moses answers by naming their ignorance."
+        }
+      ],
+      "applyIt": "Catch yourself once today asking for more information about something you already know enough to begin. The extra detail that will not change what you do is the tell. Notice it, and then do the first small part of the thing instead of asking the next question.",
+      "exploreFurther": [
+        "5:101-102",
+        "2:285-286",
+        "7:138-140"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:69",
+      "surah": 2,
+      "start": 69,
+      "end": 69,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Yellow, And Bright With It",
+      "tier": "standard",
+      "meaning": "The second request asks about colour, and the answer supplies more than a colour. It gives an intensifier, a word Arabic reserves for yellow specifically, and then adds a clause that has nothing to do with identifying an animal at all: she gladdens those who look at her. Nothing in the narrowing so far has been decorative, so the presence of a purely aesthetic detail is worth pausing on. Commentators note the phrase and read it as attributing genuine delight to the sight of a colour.",
+      "historicalContext": "Medinan, the second stage of the specification in the surah's only account of this episode. The narrative is told nowhere else in the Quran, so there is no parallel version to compare the details against. Commentators work from the wording itself, and their comment on this ayah concentrates on the two additions, the intensifier and the clause about the effect on onlookers.",
+      "keyTerms": [
+        {
+          "arabic": "صَفْرَآءُ",
+          "gloss": "yellow",
+          "note": "The feminine form of the ordinary colour word. Arabic colour terms take this shape, and the same root gives words for a coat turning pale and for the season when leaves change."
+        },
+        {
+          "arabic": "فَاقِعٌ",
+          "gloss": "vivid, intense",
+          "note": "An intensifier used only with yellow. Arabic assigns each basic colour its own such word, so a different term would be required for a deep black, a pure white or a strong red."
+        },
+        {
+          "arabic": "تَسُرُّ",
+          "gloss": "it gladdens, delights",
+          "note": "From the root that gives the word for joy and also for something kept secret. Lexicographers connect them through the idea of what is held inside, since gladness of this kind is felt before it is shown."
+        }
+      ],
+      "lifeInProphetsTime": "Colour was expensive. Bright yellow came from saffron and similar dyes that had to be traded in, and cloth of a strong, even shade signalled means. Herders identified animals by their markings, so a beast of one clean colour with no patches was both unusual and easy to describe. The specification was moving, without saying so, toward an animal that would be very hard to find and costly to buy.",
+      "didYouKnow": "Arabic keeps a separate intensifying word for each of the main colours, and they are not interchangeable. The one used in this ayah belongs to yellow alone; black, white and red each have their own. The classical dictionaries list these pairings as fixed, so the ayah is using a term that could not appear with any other colour.",
+      "theologicalSignificance": "A clause about something being pleasant to look at, placed inside a set of technical specifications, treats beauty as a real property of a created thing rather than as a reaction in the viewer. The Quran describes creation this way repeatedly, listing colour and variety among signs alongside function and provision. The detail also complicates the episode, since the animal being described so appealingly is the one about to be slaughtered.",
+      "crossReferences": [
+        {
+          "ref": "35:27-28",
+          "why": "Lists streaks of colour in mountains and the varying colours of people and animals among the signs."
+        },
+        {
+          "ref": "30:22",
+          "why": "Names the variety of human languages and colours as a sign for those who know."
+        },
+        {
+          "ref": "16:13",
+          "why": "Points to what God has produced on earth in differing colours as a reminder for those who reflect."
+        }
+      ],
+      "applyIt": "Find one colour today that you actually enjoy looking at, and look at it for longer than you need to. A wall, a fruit, the sky at a particular hour. This ayah puts pleasure at a colour into a passage that had no other reason to include it, which suggests the noticing is worth doing on purpose.",
+      "exploreFurther": [
+        "35:27-28",
+        "30:20-22",
+        "16:10-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.114Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:70",
+      "surah": 2,
+      "start": 70,
+      "end": 70,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "If God Wills, We Will Find It",
+      "tier": "standard",
+      "meaning": "The third request repeats the first, word for word, with a reason added: the cows all look alike to them. Then something new appears at the end of the sentence. For the first time in this exchange they attach their intention to God's will, and say that with it they will be guided. Commentators note both the lateness of the qualification and the fact that it works. The answer that follows is the last one, and after it the search ends.",
+      "historicalContext": "Medinan, the third and final stage of the questioning in the surah's only telling of this episode. Classical commentators treat the phrase added at the end of this ayah as the turning point of the whole narrative, since everything up to here had been a request for more detail and this is the first sentence in which the questioners refer the outcome to anyone but themselves.",
+      "keyTerms": [
+        {
+          "arabic": "تَشَـٰبَهَ",
+          "gloss": "they resemble one another",
+          "note": "From the root for likeness. The same root appeared earlier in this surah describing the fruit of the Garden brought in resembling forms, where the resemblance was a pleasure rather than a problem."
+        },
+        {
+          "arabic": "إِن شَآءَ ٱللَّهُ",
+          "gloss": "if God wills",
+          "note": "A conditional clause attached to a statement about the future. It has been the ordinary Arabic qualifier for anything not yet done ever since, used in speech far outside religious settings."
+        },
+        {
+          "arabic": "لَمُهْتَدُونَ",
+          "gloss": "surely rightly guided",
+          "note": "A form of the verb meaning to find the way, with an emphatic particle attached. The confidence in the word sits oddly beside the condition preceding it, and the pairing is the sentence's whole shape."
+        }
+      ],
+      "lifeInProphetsTime": "Anyone who kept cattle in an oasis would recognise the complaint. Cows of the same stock look alike at a distance, and herds mixed at the watering places and had to be separated again, which is why owners cut marks into ears or dyed patches of hide. Telling one animal from another was a practical daily skill, and saying they all look the same was, in that setting, an admission as much as an excuse.",
+      "didYouKnow": "The phrase these questioners add is the one the Quran elsewhere instructs a person never to leave off, telling the Prophet Muhammad (peace be upon him) not to say of anything that he will do it tomorrow without adding it. That instruction comes with a reported occasion of its own, and the phrase has been ordinary Arabic speech ever since.",
+      "theologicalSignificance": "Referring an outcome to God's will is presented here as the thing that unblocks a stalled search, and its placement matters. It arrives at the end of a third repeated question, after the requirement has already become expensive, so it is not the confident opening of a person who expects things to go well. The passage suggests that the qualification is available late and still works, which is a modest but genuine consolation.",
+      "crossReferences": [
+        {
+          "ref": "18:23-24",
+          "why": "Instructs directly that nothing be said about tomorrow without attaching this same qualification."
+        },
+        {
+          "ref": "37:102",
+          "why": "Has Abraham's son use the phrase at the hardest possible moment, saying he will be found steadfast."
+        },
+        {
+          "ref": "2:25",
+          "why": "Uses the same root for resemblance earlier in this surah, of fruit given in the Garden."
+        }
+      ],
+      "applyIt": "Attach the qualification to one plan today, out loud, and mean it rather than saying it as a habit. Not a large plan. Something you fully expect to happen this afternoon. Notice what it changes about how tightly you are holding the outcome, which is the whole content of the phrase.",
+      "exploreFurther": [
+        "18:23-24",
+        "37:99-107",
+        "68:17-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.115Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:71-72",
+      "surah": 2,
+      "start": 71,
+      "end": 72,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Now You Have Brought The Truth",
+      "tier": "standard",
+      "meaning": "The last specification rules out an animal that has ever worked, and adds that it must carry no mark at all. Since a cow's value in that world lay in ploughing and drawing water, this describes something rare and expensive. Their reply concedes the point, and the narrative then adds a short clause that reads like an aside: they nearly did not do it. The next ayah supplies what the whole sequence was for, a killing and a dispute over who was responsible.",
+      "historicalContext": "Medinan, closing the questioning and turning to the reason behind the instruction. The Quran withholds the occasion until this point, so a reader meets the demand, the resistance and the escalating cost before learning what any of it was about. Commentators note the ordering and read the concealed motive as the key to the episode, since a slaughtered animal was about to expose something a community was covering.",
+      "keyTerms": [
+        {
+          "arabic": "ذَلُولٌ",
+          "gloss": "broken in, made tractable",
+          "note": "Used of an animal trained to the yoke. Its root also gives the word for lowness used earlier in this surah, so the same letters describe a beast made docile and a condition of reduced standing."
+        },
+        {
+          "arabic": "مُسَلَّمَةٌ",
+          "gloss": "sound, without fault",
+          "note": "From the root that gives the words for peace, safety and submission. Applied to an animal it means delivered whole and unimpaired, with nothing missing and nothing wrong."
+        },
+        {
+          "arabic": "شِيَةَ",
+          "gloss": "a marking, a patch",
+          "note": "A spot of contrasting colour in a coat. Herders used exactly such markings to tell their animals apart, so requiring the absence of one made the beast both unusual and difficult to identify by ownership."
+        }
+      ],
+      "lifeInProphetsTime": "An unsolved killing was the most dangerous situation an Arabian community faced. A body found with no known killer put suspicion on everyone and could open a feud between clans that outlasted the people involved, since blood claims were inherited. Procedures existed for allocating responsibility by sworn oath when evidence ran out, precisely because the alternative was a war nobody had chosen.",
+      "didYouKnow": "The word describing the animal as broken to work shares its three root letters with the word for humiliation used ten ayat earlier in this same surah. Both describe being brought low and made tractable, one of a beast under a yoke and one of a people's condition, and the pairing is visible only in the Arabic.",
+      "theologicalSignificance": "The narrative is arranged so that the cost of delay is felt before the purpose is revealed. What began as a plain instruction became an expensive one entirely through the questioning, and the aside about nearly not doing it records how close the whole thing came to failing. The following ayah then names the real subject, and it is concealment. A community was holding something back, and the elaborate procedure existed to bring it out.",
+      "crossReferences": [
+        {
+          "ref": "5:27-31",
+          "why": "Tells of another killing and a body concealed, with a bird sent to show how to bury it."
+        },
+        {
+          "ref": "2:33",
+          "why": "States earlier in this surah that God knows what is disclosed and what is being held back."
+        },
+        {
+          "ref": "4:108",
+          "why": "Describes people hiding from others what cannot be hidden from God, who is with them as they plan."
+        }
+      ],
+      "applyIt": "Think of a decision you delayed by asking for more information, and price the delay honestly: what it cost in money, time, or in the thing itself getting harder. Do it for one case, in writing. This passage lets the reader feel that cost before explaining anything, which is a good order for reviewing your own.",
+      "exploreFurther": [
+        "5:27-32",
+        "2:33",
+        "4:105-109"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.122Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:73",
+      "surah": 2,
+      "start": 73,
+      "end": 73,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Struck With Part Of It",
+      "tier": "standard",
+      "meaning": "The instruction is brief and the outcome is left unstated: strike him with part of it. What the ayah reports instead is the meaning of what happened, and it gives two. A killing is resolved, and a demonstration is provided of how God gives life to the dead. The instrument is worth noticing. Life is restored by means of a slaughtered animal, so the sign is built out of the very thing that had been so expensive to obtain. The closing clause names reason as the faculty being addressed.",
+      "historicalContext": "Medinan, concluding the episode that gives this surah its name. The Quran does not narrate the moment of revival or report what was said, moving straight to the general statement. Classical commentators pass on various details of what followed, and are aware that the text itself supplies none of them, so they distinguish what the ayah says from what the reports add.",
+      "keyTerms": [
+        {
+          "arabic": "ٱضْرِبُوهُ",
+          "gloss": "strike him",
+          "note": "The plain verb for striking, addressed to the community rather than to an individual. The same verb is used across the Quran for setting forth a parable, which is a separate and much discussed usage."
+        },
+        {
+          "arabic": "يُحْىِ",
+          "gloss": "He gives life",
+          "note": "A form meaning to cause to live, from the root behind the word for life itself. The Quran uses it of reviving dead earth after rain as often as of raising human beings."
+        },
+        {
+          "arabic": "ءَايَـٰتِهِۦ",
+          "gloss": "His signs, His tokens",
+          "note": "One word covers a natural sign, a miracle and a verse of the Quran. A reader meets it here as a token shown, having already been reading the same word as a name for the text itself."
+        }
+      ],
+      "lifeInProphetsTime": "An unidentified killer was the one problem Arabian custom handled worst. Compensation could settle an acknowledged killing, and oaths could apportion responsibility when a body was found among a known group, but a genuine unknown left every family exposed to suspicion. Communities lived for years with such cases unresolved. Something that named the responsible party outright ended the specific danger of the whole situation.",
+      "didYouKnow": "The Quran's word for a sign is the same word it uses for one of its own verses, so a person reading this ayah encounters the term twice over: as the token being described and as the unit of text they are reading it in. The double use is present throughout the Quran and never distinguished by a different word.",
+      "theologicalSignificance": "One event is made to serve two purposes at once, settling a particular dispute and standing as evidence for a general claim. That is how the Quran usually presents signs, as ordinary occurrences carrying more than their occasion. The closing clause is the notable part. Having described something entirely outside experience, the passage asks for reason rather than for awe, which assumes that the argument from a single revival to a general resurrection is one a person can actually follow.",
+      "crossReferences": [
+        {
+          "ref": "2:260",
+          "why": "Shows Abraham asking to see how the dead are given life, and being shown with birds."
+        },
+        {
+          "ref": "30:50",
+          "why": "Points to earth revived after its death as the pattern for how the dead will be raised."
+        },
+        {
+          "ref": "22:6",
+          "why": "States the conclusion directly, that God is the Truth and gives life to the dead."
+        }
+      ],
+      "applyIt": "Look at one thing today that has come back after appearing finished: a plant after cutting, a friendship after silence, energy after illness. Notice that you accept this without difficulty when it happens on a small scale. The argument in this ayah is asking you to follow that acceptance one step further, using reason rather than feeling.",
+      "exploreFurther": [
+        "2:259-260",
+        "30:19-27",
+        "22:5-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.125Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:74",
+      "surah": 2,
+      "start": 74,
+      "end": 74,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Harder Than The Stones",
+      "tier": "standard",
+      "meaning": "The comparison is graded rather than absolute. Hearts became like stone, the ayah says, or harder, and it then proves the qualification by listing three things stone does. Rivers burst from some. Others split and water comes out. Others come down out of awe. Commentators differ over the third item, some reading it plainly and others as a way of speaking, but the structure works either way. Three degrees of yielding are named, and the heart in question is placed beneath all of them.",
+      "historicalContext": "Medinan, immediately after the account of a dead man restored in front of witnesses. The placement is the argument. Classical commentators read the hardening as following directly on a sign of the most unanswerable kind, and note that the surah has by this point recorded several such sequences, in which something extraordinary is seen and the response to it fades within a few lines of text.",
+      "keyTerms": [
+        {
+          "arabic": "قَسَتْ",
+          "gloss": "hardened, grew dry",
+          "note": "The verb used of stone and of ground baked hard. Applied to a heart it describes a physical change of texture rather than a decision, which is why the ayah answers it with more physical description."
+        },
+        {
+          "arabic": "يَشَّقَّقُ",
+          "gloss": "it splits open",
+          "note": "An intensive form of the verb for cleaving, suggesting splitting along a seam rather than shattering. The word allows for a rock that yields under pressure without ceasing to be a rock."
+        },
+        {
+          "arabic": "خَشْيَةِ",
+          "gloss": "awe, reverent fear",
+          "note": "Lexicographers distinguish this from ordinary fright: it is a fear grounded in knowing what is before you. The Quran attaches it to those who know, which is why it can be ascribed to stone here."
+        }
+      ],
+      "lifeInProphetsTime": "All three of these are things people in Arabia actually saw stone do. Springs emerged from rock faces and fed the wells that settlements were built around. Cliffs seeped after rain, and water was collected from the seams. And rockfall down a wadi side, sudden and heavy, was a known hazard of travelling through gorges in the wet season. The list is observation, not invention.",
+      "didYouKnow": "The ayah does not simply call the hearts stony. It says like stones, or harder, and then spends the rest of its length arguing that even the comparison was generous. Three separate ways in which rock yields are set out one after another, so the passage concedes its own image and then withdraws it as insufficient.",
+      "theologicalSignificance": "Hardness is described here as a condition rather than a verdict, which matters for what can be done about it. Something hard has a texture, and texture can change, which is why the Quran speaks elsewhere of hearts being opened and softened. The passage also locates responsiveness in unlikely places. If stone can yield in three distinct ways, then the absence of yielding in a person is not explained by the material they are made of.",
+      "crossReferences": [
+        {
+          "ref": "57:16",
+          "why": "Asks whether the time has not come for hearts to soften, warning against the hardening that followed earlier scripture."
+        },
+        {
+          "ref": "39:22-23",
+          "why": "Contrasts a breast opened to submission with hearts hardened against the remembrance of God."
+        },
+        {
+          "ref": "59:21",
+          "why": "Says a mountain would have split from awe had this Quran been sent down upon it."
+        }
+      ],
+      "applyIt": "Notice something today that used to move you and does not any more: a passage, a piece of news, a person's difficulty. Do not manufacture a feeling about it. Just register the change accurately, and note roughly when it happened. Hardening is gradual and almost always goes unnoticed at the time.",
+      "exploreFurther": [
+        "57:16-17",
+        "39:22-23",
+        "59:21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.127Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:75",
+      "surah": 2,
+      "start": 75,
+      "end": 75,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "After They Had Understood It",
+      "tier": "standard",
+      "meaning": "The address turns to the believers and lowers an expectation. Notice how carefully the sentence is limited: a group of them, not all, and used to, in the past. The verb for what that group did comes from the word for the edge of a thing, so the picture is of turning something so it is no longer seen straight on. Commentators divide on whether this describes altering wording or altering the sense given to it, and both readings are standard. The final clause is the weight of the sentence: they had understood it first.",
+      "historicalContext": "Medinan, in the section addressed to those who possessed earlier scripture, and spoken here about them rather than to them. Classical commentators are careful with the limitations built into the wording and generally repeat them, noting that the Quran elsewhere in this same surah describes a portion of the same community standing through the night in recitation. The passage is about a practice, not a people.",
+      "keyTerms": [
+        {
+          "arabic": "فَرِيقٌ",
+          "gloss": "a group, a party",
+          "note": "A portion separated off from a larger body, from the root meaning to divide. The word itself does the limiting, and commentators lean on it when explaining the scope of what follows."
+        },
+        {
+          "arabic": "يُحَرِّفُونَهُۥ",
+          "gloss": "they twist it, shift it",
+          "note": "From the noun for the edge of something, and also for a letter of the alphabet. To do this to a text is to turn it onto its edge so that it is no longer being looked at squarely."
+        },
+        {
+          "arabic": "عَقَلُوهُ",
+          "gloss": "they understood it",
+          "note": "The root means to tie or tether, as a camel is hobbled to stop it wandering. Understanding in Arabic is what fastens a thing down, which is why the word also gives the ordinary term for the mind."
+        }
+      ],
+      "lifeInProphetsTime": "Where almost nobody could read, whoever could read held a position. A scholar's account of what a passage said settled questions that no listener was able to check, and this was true in every scripture community of the region. The gap between a text and the explanation of it was invisible to the audience by definition. That is not an accusation against anyone in particular. It is a description of how authority worked.",
+      "didYouKnow": "The word this ayah uses for understanding comes from the verb for tethering an animal so it cannot stray. The ordinary Arabic word for the mind is built from the same root. Reason, in the language of the Quran, is named after the act of tying something down so that it stays where you left it.",
+      "theologicalSignificance": "The clause about having understood first is what makes this a serious charge rather than an ordinary one. Misreading is a mistake; shifting something you have grasped is a decision, and the passage adds knowingly at the end to close off any remaining ambiguity. It also sets a warning that applies well beyond its occasion, since understanding a text is exactly the condition required before anyone is able to bend it.",
+      "crossReferences": [
+        {
+          "ref": "4:46",
+          "why": "Describes words being displaced from their positions and speech twisted with the tongue while listening."
+        },
+        {
+          "ref": "5:13",
+          "why": "Connects hardened hearts with words moved from their proper places after a covenant was set aside."
+        },
+        {
+          "ref": "6:91",
+          "why": "Speaks of a revelation made into sheets, some of it shown and much of it kept out of sight."
+        }
+      ],
+      "applyIt": "Take something you know well, a text or a rule or an agreement, and ask whether you have a habitual reading of one part that is convenient for you. Everyone has at least one. Say the plain sense of it out loud once, without your usual gloss attached, and see whether the two versions differ.",
+      "exploreFurther": [
+        "4:44-47",
+        "5:12-14",
+        "3:113-115"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.127Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:76",
+      "surah": 2,
+      "start": 76,
+      "end": 76,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "What Was Opened To You",
+      "tier": "standard",
+      "meaning": "A scene in two halves, and the second half contains a reason that gives everything away. The concern voiced in private is that shared knowledge will be used in argument against them before their Lord. Commentators point out what that concedes: nobody worries about being argued with using something false. The verb for what God has disclosed is the one used for opening a door and for granting a victory, so what they are proposing to withhold is described as something given to them rather than acquired.",
+      "historicalContext": "Medinan, in the surah's account of encounters between the young community and its neighbours in the city. Classical commentators describe a general pattern of exchanges rather than reporting one occasion, and note that the passage records private speech, which by its nature is reported rather than witnessed. The closing question is addressed to those speaking, not to the believers who are the subject of the first clause.",
+      "keyTerms": [
+        {
+          "arabic": "فَتَحَ",
+          "gloss": "opened, disclosed",
+          "note": "The verb for opening a door and, across the Quran, for granting a decisive victory. Applied to knowledge it presents what they hold as something unlocked for them rather than earned."
+        },
+        {
+          "arabic": "لِيُحَآجُّوكُم",
+          "gloss": "so they may argue against you",
+          "note": "From the word for a proof or an argument that stands. The form implies a contest between two parties, so the fear is not of being contradicted but of being out-argued with their own material."
+        },
+        {
+          "arabic": "خَلَا",
+          "gloss": "was alone with",
+          "note": "The verb for a space emptied of everyone else. The surah used it much earlier of another group withdrawing into private company, so the same word marks both scenes of a second conversation."
+        }
+      ],
+      "lifeInProphetsTime": "Knowledge was capital in a society that wrote almost nothing down. A route through country without landmarks, the location of a seasonal well, a genealogy that settled a claim, the wording of an old agreement: each of these was worth something precisely because few people had it. Keeping such things inside a family was ordinary prudence, not meanness. The instinct being described here was the normal management of a scarce asset.",
+      "didYouKnow": "This ayah repeats a construction the surah used some sixty ayat earlier about a different group, down to the same verb for withdrawing into private company and the same reported sentence when meeting believers. The echo is close enough that a reader working through the surah in order meets the earlier scene again in a new setting.",
+      "theologicalSignificance": "The reasoning quoted here contains its own refutation, which is why the passage lets it stand without comment and then asks whether they use reason. Someone who fears that a piece of knowledge will count against him before God has already accepted that it is true and that the reckoning is real. The passage thereby establishes that concealment often runs on belief rather than on doubt, which is a harder position than plain denial.",
+      "crossReferences": [
+        {
+          "ref": "2:14",
+          "why": "Records the same doubled speech earlier in this surah, with the same verb for private company."
+        },
+        {
+          "ref": "6:91",
+          "why": "Describes a scripture put on sheets with parts displayed and much of it kept from view."
+        },
+        {
+          "ref": "4:108",
+          "why": "Says people hide from others what they cannot hide from God, who is present as they plan."
+        }
+      ],
+      "applyIt": "Think of something true that you know and have not passed on because it would be inconvenient for you if the other person had it. A piece of feedback, a fact about a shared decision. You do not have to hand it over today. Just notice that your reason for holding it is that it is true.",
+      "exploreFurther": [
+        "2:8-14",
+        "6:91",
+        "4:105-109"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.128Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:77-78",
+      "surah": 2,
+      "start": 77,
+      "end": 78,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Knowing The Book By Hearsay",
+      "tier": "standard",
+      "meaning": "Two ayat describing two different problems. The first is a question put to those who calculate what to say in public and what in private, and it simply names the scope of what is known. The second turns to a much larger group who cannot read the text at all and hold it only as things heard and hoped. The word for what they have is read by commentators either as wishful notions or as recitations carried without understanding, and both senses are recorded. The closing verb places them in conjecture rather than in denial.",
+      "historicalContext": "Medinan, continuing the surah's account of the communities around the young Muslim city. Literacy in seventh-century Arabia was rare and specialised, so for most people any scripture existed only as somebody else's recitation of it. Classical commentators read the second ayah as describing that ordinary condition rather than as a reproach, and distinguish it sharply from the deliberate reshaping described a few ayat earlier.",
+      "keyTerms": [
+        {
+          "arabic": "أُمِّيُّونَ",
+          "gloss": "unlettered, without writing",
+          "note": "Describing a relation to writing rather than a quality of mind. The Quran applies the same word to the Prophet and to the wider Arab population who had received no scripture of their own."
+        },
+        {
+          "arabic": "أَمَانِىَّ",
+          "gloss": "wishes, or things recited",
+          "note": "The plural of a word covering both a hope entertained and something read aloud. Commentators record both senses here, and the two readings describe different failures that often occur together."
+        },
+        {
+          "arabic": "يَظُنُّونَ",
+          "gloss": "they suppose, they conjecture",
+          "note": "The state between certainty and doubt. Arabic gives it its own verb, and the Quran repeatedly contrasts it with knowledge, treating supposition as a poor foundation rather than as a mild form of knowing."
+        }
+      ],
+      "lifeInProphetsTime": "Writing was a specialist trade. A small number in Mecca could keep trade records, and the scripture communities of Medina had trained readers who handled texts professionally. For everyone else a book existed as a voice: what a learned man had recited, what an uncle had repeated from him, what everybody knew it said. The distance between a text and the general belief about its contents was not a fault. It was the normal condition.",
+      "didYouKnow": "The word used here for those without letters is applied elsewhere in the Quran to the Prophet Muhammad (peace be upon him) himself, and in another passage to the community he was sent among. The same term therefore describes both a limitation being noted and a circumstance treated as significant, which is why commentators are careful with its tone.",
+      "theologicalSignificance": "The two ayat name two ways of being wrong about a text, and only one of them involves any fault. Calculating what to reveal is a choice; inheriting a book as rumour is a circumstance. Placing them side by side makes access to knowledge a matter of justice as well as of effort, since the second group's position was created by others. The passage also treats supposition as a real category, neither knowledge nor lying.",
+      "crossReferences": [
+        {
+          "ref": "53:28",
+          "why": "States the principle behind the closing word, that conjecture avails nothing at all against the truth."
+        },
+        {
+          "ref": "62:2",
+          "why": "Uses the same word for the unlettered, describing the community a messenger was raised among."
+        },
+        {
+          "ref": "7:157",
+          "why": "Applies the same term to the Prophet, describing him as the unlettered messenger foretold before."
+        }
+      ],
+      "applyIt": "Pick one thing you are confident a text says, scripture or otherwise, that you have never actually looked up. Everyone has several. Find the passage today and read it yourself. Most of the time it will say roughly what you thought, and the value is in the small number of times it does not.",
+      "exploreFurther": [
+        "53:23-30",
+        "62:1-4",
+        "17:36"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:00:55.129Z",
         "reviewed": false
       }
     },
