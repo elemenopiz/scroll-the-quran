@@ -1,7 +1,7 @@
 {
   "surah": 33,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:39:01.427Z",
+  "generatedAt": "2026-09-09T15:44:02.431Z",
   "studies": [
     {
       "key": "33:1-3",
@@ -2498,6 +2498,296 @@
       }
     },
     {
+      "key": "33:60",
+      "surah": 33,
+      "start": 60,
+      "end": 60,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "If They Do Not Desist",
+      "tier": "standard",
+      "meaning": "The whole ayah hangs on a condition, and the condition is a chance to stop. Three groups are named, the last of them by a word that occurs nowhere else in the Quran and means those who shake a place with alarming reports. What is threatened is not punishment in the abstract but the end of neighbourhood: they will not remain your neighbours except briefly. The commentators note that nothing follows automatically, since the ayah is built so that desisting closes it.",
+      "historicalContext": "Medinan, in the closing movement of the surah. The city had been through a siege and its aftermath, and the classical sources describe a persistent problem of false reports circulating and of individuals troubling people in the streets. The commentators connect this ayah to that unrest rather than to a single incident, and the three groups it names correspond to the ones the surah has described at length.",
+      "keyTerms": [
+        {
+          "arabic": "يَنتَهِ",
+          "gloss": "he stops, he desists",
+          "note": "A verb for reaching a limit and going no further, from the root that gives the word for a boundary. It makes the whole ayah conditional on a choice that remains available while it is being read."
+        },
+        {
+          "arabic": "ٱلْمُرْجِفُونَ",
+          "gloss": "those who spread alarm",
+          "note": "From a verb for shaking or making tremble, used of the ground quaking. It names people who destabilise by report rather than by act, and it occurs only here in the whole Quran."
+        },
+        {
+          "arabic": "يُجَاوِرُونَكَ",
+          "gloss": "they neighbour you",
+          "note": "A verb for living alongside, from the word for a neighbour, which in Arabia also meant a person under one's protection. Losing that relation meant losing a claim as much as an address."
+        }
+      ],
+      "lifeInProphetsTime": "Neighbourhood in that society was a formal category. A neighbour had claims on you and you on him, and a man who granted protection to someone was said to have made him a neighbour. Poets boasted about how they treated theirs. To be told that a person would no longer be your neighbour was to be told about the withdrawal of a bond, not just about a change of house.",
+      "didYouKnow": "The word for those who spread alarming reports appears only once in the entire Quran, in this ayah. It is built from the verb used elsewhere of the earth quaking, so the image behind it is of ground shaking under people rather than of speech. The classical commentators explain it from that root, since the text gives them no second occurrence.",
+      "theologicalSignificance": "Placing everything under a condition changes what the ayah is doing. A warning that can be closed by stopping is an invitation as much as a threat, and the classical commentators read it that way. Naming the harm as unsettling speech also identifies something that a community can suffer without anyone striking a blow, and treats it as serious in proportion to its actual effect.",
+      "crossReferences": [
+        {
+          "ref": "8:38",
+          "why": "Uses the same verb for desisting and says what is past would then be forgiven them."
+        },
+        {
+          "ref": "4:83",
+          "why": "Describes reports about safety or alarm being broadcast rather than referred to those who could judge."
+        },
+        {
+          "ref": "24:19",
+          "why": "Warns those who like indecency to circulate among the believers, in a similar setting."
+        }
+      ],
+      "applyIt": "Notice how much of what you pass on is not information but atmosphere: a mood about how bad things are getting, shared without any fact attached. This ayah has a word for exactly that. Go one day without contributing to it in a group chat or at a table, and see how much of your usual talk it accounted for.",
+      "exploreFurther": [
+        "8:38-39",
+        "4:83",
+        "24:19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.748Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:61-62",
+      "surah": 33,
+      "start": 61,
+      "end": 62,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "No Change In God's Way",
+      "tier": "standard",
+      "meaning": "A severe consequence is stated for the condition set out in the ayah before, and then the second ayah does something that changes how the first is read. It calls this God's established way with those who went before, and says no substitution will be found for it. The commentators understand the passage as describing what befell people who persisted in armed sedition against a community, in line with earlier precedents, and they treat it as the description of a consequence rather than as a standing instruction.",
+      "historicalContext": "Medinan, in a city that had recently been besieged and was still unsettled. The commentators read these ayat with the previous one, which offers the alternative of desisting, and they discuss them in the context of a state at war rather than as general guidance. The classical literature treats the historical situation as essential to the passage rather than incidental to it.",
+      "keyTerms": [
+        {
+          "arabic": "ثُقِفُوٓا۟",
+          "gloss": "they are come upon",
+          "note": "A verb for encountering or overtaking someone, with a sense of finding after searching. It belongs to the vocabulary of a conflict already under way rather than to any settled procedure."
+        },
+        {
+          "arabic": "سُنَّةَ",
+          "gloss": "an established way",
+          "note": "The word for a path worn by repeated use, so a settled practice. Attributed to God it names consistency across time, and the second ayah cites it as the reason the first should not surprise anyone."
+        },
+        {
+          "arabic": "تَبْدِيلًا",
+          "gloss": "any substitution",
+          "note": "A noun for exchanging one thing for another. Its indefinite form after a negation makes the denial total: not merely that no change has occurred, but that none is to be found at all."
+        }
+      ],
+      "lifeInProphetsTime": "A city under threat had no institutions of the kind a modern reader assumes. There was no standing court, no prison and no police, and a settlement's safety rested on its ability to answer a danger directly. Sedition from inside during a siege was the gravest thing a community faced, because it opened the one approach that could not be defended. That is the situation the classical commentators keep in view.",
+      "didYouKnow": "The phrase for God's established way occurs twice in this surah, here and some twenty ayat earlier, where it was used to say that no difficulty attached to a prophet in what God ordained. The same term is applied in one place to a mercy and in the other to a consequence, which is how the classical commentators describe its neutrality.",
+      "theologicalSignificance": "Anchoring a present event in an old pattern does two things. It removes the sense that anything unprecedented is happening, which is the surah's habit throughout. And it places the outcome outside anyone's discretion by attributing it to a consistency older than the situation. The passage is hard, and the tradition has read it as bound to its circumstances rather than as a general licence, which is how it is presented here.",
+      "crossReferences": [
+        {
+          "ref": "33:60",
+          "why": "Sets the condition this passage answers, and offers desisting as the way it closes."
+        },
+        {
+          "ref": "35:43",
+          "why": "Uses the same phrase and adds that no turning aside will be found in God's way."
+        },
+        {
+          "ref": "48:23",
+          "why": "States the same principle of an unchanging pattern, in a passage about restraint from fighting."
+        }
+      ],
+      "applyIt": "This is among the hardest passages in the surah, and the honest thing is to read it slowly with its circumstances in view rather than to lift a clause out of it. When you next meet a difficult line in any text, resist quoting it before you have read what stands immediately before and after. Here, what stands before is an offer to stop.",
+      "exploreFurther": [
+        "33:60",
+        "35:43",
+        "48:22-23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.749Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:63",
+      "surah": 33,
+      "start": 63,
+      "end": 63,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "Perhaps The Hour Is Near",
+      "tier": "standard",
+      "meaning": "A question is reported, an answer is given, and then the answer turns on the one giving it. The knowledge rests with God, and the next clause asks what the Prophet himself could know about it. The commentators note that the ayah refuses the question twice over, first by locating the knowledge elsewhere and then by including the messenger in the ignorance. What is offered instead is a possibility, phrased with a particle that leaves it genuinely open.",
+      "historicalContext": "Medinan, though the question it reports had been put since the Meccan years. Commentators describe the asking as coming from more than one direction: some pressed it as a challenge and some out of genuine concern. The Quran gives the same answer in every period, which the classical sources treat as significant in itself, since the answer never develops or becomes more specific over twenty years.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلسَّاعَةِ",
+          "gloss": "the Hour",
+          "note": "The ordinary word for a portion of time, made definite. Using so plain a term for the end keeps it from becoming a title, and the article does all the work of identifying which hour is meant."
+        },
+        {
+          "arabic": "يُدْرِيكَ",
+          "gloss": "makes you know",
+          "note": "A verb of coming to know by reaching or catching up with something. In a question of this form the Quran uses it to say that the addressee has no access, and the addressee here is the Prophet."
+        },
+        {
+          "arabic": "لَعَلَّ",
+          "gloss": "perhaps, it may be",
+          "note": "A particle of expectation that never asserts. It leaves the nearness a live possibility rather than a prediction, which is precisely what makes the ayah an answer without being information."
+        }
+      ],
+      "lifeInProphetsTime": "Time in that society was kept by things that recur: the moon, the seasons of the caravan, the date harvest, the years named after events people remembered. There was no calendar of the kind that lets a person mark a distant date and count towards it. A question about when something would happen was normally answered by naming a season, and this question could not be answered at all.",
+      "didYouKnow": "The Quran reports this question being asked repeatedly, in Meccan and Medinan surahs alike, and the answer never varies in substance across all of them: the knowledge is with God. In one place the messenger is told to say it lies with his Lord alone and that its weight is heavy in the heavens and the earth. The refusal is consistent over the whole period of revelation.",
+      "theologicalSignificance": "The ayah establishes a limit inside prophecy itself. A messenger is not described as knowing everything he transmits from, and the text says so plainly rather than leaving the boundary vague. Replacing the date with a possibility also does something practical: a fixed date would let a person plan around it, and an open nearness cannot be planned around at all, which is the effect the passage is after.",
+      "crossReferences": [
+        {
+          "ref": "7:187",
+          "why": "Reports the same question and says its weight is heavy in the heavens and the earth."
+        },
+        {
+          "ref": "79:42-44",
+          "why": "Asks what the messenger has to do with mentioning it, and returns the matter to God."
+        },
+        {
+          "ref": "31:34",
+          "why": "Lists the knowledge of that hour among the things kept with God alone."
+        }
+      ],
+      "applyIt": "Notice that this ayah replaces a date with a possibility, and that the possibility is harder to live with than either certainty would be. Pick one thing you are putting off until you know more about the timing. Do the first small piece of it this week while the timing is still unknown. That is the whole practical content of the answer given here.",
+      "exploreFurther": [
+        "7:187",
+        "31:34",
+        "79:42-46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.749Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:64-66",
+      "surah": 33,
+      "start": 64,
+      "end": 66,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "If Only We Had Obeyed",
+      "tier": "standard",
+      "meaning": "Three short ayat move from a statement to a scene. What is prepared is named, then the duration, then the absence of anyone to turn to, and only after all three does a voice appear. What it says is a wish rather than a plea, and it names two obediences that were not given. The commentators note that no argument is made at this point and no request either. The passage stops at the sentence, and the sentence is regret in its plainest available form.",
+      "historicalContext": "Medinan, in the closing sequence of the surah. The surah has spent much of its length describing people who heard instructions and worked around them, during a siege and afterwards. These ayat give the far end of that behaviour, and the commentators read them as the counterpart to the earlier scenes rather than as a separate subject introduced at the close.",
+      "keyTerms": [
+        {
+          "arabic": "سَعِيرًا",
+          "gloss": "a blaze",
+          "note": "From a verb for kindling and for flames catching hold. The word occurs sixteen times across the Quran, and in this surah it appears only here, at the point where the consequence is first named."
+        },
+        {
+          "arabic": "تُقَلَّبُ",
+          "gloss": "are turned over",
+          "note": "A passive intensive from the verb to turn something around, built on the same root as the word for a heart. It describes faces being turned repeatedly rather than once."
+        },
+        {
+          "arabic": "يَـٰلَيْتَنَآ",
+          "gloss": "if only we had",
+          "note": "A particle of wishing for what cannot be, attached to a pronoun. Arabic reserves it for the impossible, so the grammar of the sentence already contains the answer to what is being wished."
+        }
+      ],
+      "lifeInProphetsTime": "Regret in an oral society had a specific shape. There was no record to consult and no way to revisit what had been said, so a person carried their own account of a decision and could not check it. What was left when something went wrong was the memory of advice given and ignored, often by someone who had said it plainly at the time. The wish in this passage is that memory, spoken aloud.",
+      "didYouKnow": "The phrase used here for finding neither protector nor helper occurs six times in the Quran, and two of those are in this surah. The first came in the middle of the siege, where the same words were used of people looking for someone to shield them in this life. The surah closes the circle by using them again of a place where nobody is looking any more.",
+      "theologicalSignificance": "The order of the three ayat is doing the argument. Consequence, duration and isolation are stated first, and only then is a human voice allowed in, which means the regret is presented as a response to a settled situation rather than as a cause of anything. The wish also names obedience rather than belief, which locates the failure in what was done about what was already known.",
+      "crossReferences": [
+        {
+          "ref": "33:17",
+          "why": "Uses the same phrase about finding neither protector nor helper, in the middle of the siege."
+        },
+        {
+          "ref": "25:27-29",
+          "why": "Gives another wish of the same form, spoken by someone who took the wrong companion."
+        },
+        {
+          "ref": "89:23-24",
+          "why": "Puts a similar wish in a single line, after remembrance arrives too late to help."
+        }
+      ],
+      "applyIt": "Think of one piece of advice you have received more than twice from someone who was not trying to win an argument. You already know what it is. This passage is about the gap between hearing and doing, not between doubting and believing. Take the smallest possible step on that advice today, and notice how small the step actually was.",
+      "exploreFurther": [
+        "25:27-30",
+        "89:21-26",
+        "33:16-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.749Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:67-68",
+      "surah": 33,
+      "start": 67,
+      "end": 68,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "We Obeyed Our Chiefs",
+      "tier": "standard",
+      "meaning": "A second speech follows the first, and it is not a wish this time but an explanation. Two words are used for those who were followed, one for men of rank and one for men of consequence, and the pair occurs nowhere else in the Quran. Then a request is made, that the punishment of those leaders be doubled. The commentators observe what the speech does not contain: no claim to have been forced, and no denial of having obeyed.",
+      "historicalContext": "Medinan, in the surah's closing sequence. The surah has described a community under pressure in which some people took their direction from figures whose commitment lay elsewhere, and it named the quiet persuasion that ran through households during the siege. These ayat give the eventual accounting for that following, spoken by the followers rather than by anyone else.",
+      "keyTerms": [
+        {
+          "arabic": "سَادَتَنَا",
+          "gloss": "our chiefs, our masters",
+          "note": "A plural for those at the head of a group, from a root for eminence and precedence. It names authority held by position, the kind a person is born into or acknowledged as holding."
+        },
+        {
+          "arabic": "كُبَرَآءَنَا",
+          "gloss": "our great ones",
+          "note": "A plural from the adjective for large, so it names those made big by standing rather than by office. Together with the previous word it covers both formal rank and mere prominence."
+        },
+        {
+          "arabic": "فَأَضَلُّونَا",
+          "gloss": "so they misled us",
+          "note": "The causative of the verb for going astray, so it means they caused a losing of the way. Its object is the followers, but the verb reports what happened rather than removing anyone's part in it."
+        }
+      ],
+      "lifeInProphetsTime": "Following was the ordinary shape of Arabian life, not a failing. A man belonged to a clan, the clan had a head, and the head's judgement in a dispute or a treaty bound everyone under him. Standing apart from that meant losing protection, trade and marriage prospects at once. What the speech in this ayah describes was, at the time it happened, simply how a person lived in a tribe.",
+      "didYouKnow": "The two words used here for those who were followed appear together only in this one place in the Quran, and in these exact plural forms neither of them occurs anywhere else in the Book. The classical commentators explain the pairing as covering two distinct kinds of authority, formal position and sheer prominence, so that no version of being led escapes the sentence.",
+      "theologicalSignificance": "The speech is accurate and does not work. Everything in it is true: there were leaders, they were obeyed, and the way was lost. What it never states is that the following was compelled, and the passage lets the omission stand rather than answering it. Responsibility here is not divided between leader and follower so much as doubled, since the request for double punishment is granted its logic without relieving the speakers.",
+      "crossReferences": [
+        {
+          "ref": "14:21",
+          "why": "Stages the same exchange from the other side, with the followed answering the followers."
+        },
+        {
+          "ref": "34:31-33",
+          "why": "Extends the same dispute at length and has each side turn the argument back."
+        },
+        {
+          "ref": "2:166-167",
+          "why": "Describes the followed disowning those who followed them, and the wish for a return."
+        }
+      ],
+      "applyIt": "Name one person whose judgement you have quietly adopted without ever examining it, in politics, in work, in how you raise children. Not a bad person. Just someone whose conclusions you have been carrying as your own. Take one of those conclusions this week and work out whether you actually hold it. Most people have never once checked.",
+      "exploreFurther": [
+        "14:21-22",
+        "34:31-33",
+        "2:165-167"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:02.326Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "33:69-70",
       "surah": 33,
       "start": 69,
@@ -2556,6 +2846,64 @@
       }
     },
     {
+      "key": "33:71",
+      "surah": 33,
+      "start": 71,
+      "end": 71,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "He Will Set Your Deeds Right",
+      "tier": "standard",
+      "meaning": "A promised result is attached to the instruction in the line before, and it arrives in two parts whose order repays attention. Conduct is repaired first, and only then are wrongs forgiven. Then a wider clause reaches past speech to obedience in general and names the outcome with a word meaning both escape and prize. The commentators read the causal link as the passage's real claim: one specific habit is adjusted, and the rest of a person's conduct follows it.",
+      "historicalContext": "Medinan, at the close of a surah that has spent much of its length on what people said. Rumours circulated during a siege, excuses were offered, sharp words followed once the danger lifted, and an accusation was made against innocent people. This ayah gives the promised result of the correction issued immediately before it. Commentators report no particular occasion and read the pair as the surah's practical summary.",
+      "keyTerms": [
+        {
+          "arabic": "يُصْلِحْ",
+          "gloss": "He will set right, repair",
+          "note": "A verb for mending what is broken and for making peace between people. Applied to deeds it implies they already exist and need adjusting, rather than that they must be started over."
+        },
+        {
+          "arabic": "ذُنُوبَكُمْ",
+          "gloss": "your wrongs, your faults",
+          "note": "A plural from a root for a tail, so the underlying image is of what trails along behind. It names consequences that follow a person rather than acts considered on their own."
+        },
+        {
+          "arabic": "فَازَ",
+          "gloss": "he has won, come through",
+          "note": "A verb that carries both coming out safe and winning a prize. Both senses stay live in the Quran's usage, so the ayah ends on escape and gain in one word."
+        }
+      ],
+      "lifeInProphetsTime": "A man's word was his working instrument. Contracts were oral, credit rested entirely on reputation, and a share in a caravan was settled by a handshake in front of witnesses who would be asked about it later. Straight speech was not only a virtue in that economy but the mechanism by which anything at all got done. The connection this ayah draws was visible in daily practice.",
+      "didYouKnow": "The phrase this ayah ends on, a great winning, occurs three times in the Quran, and all three are in Medinan surahs. In each of the three it stands at the very end of its ayah, functioning as a summing-up rather than as a description of anything in particular. The classical commentators treat it as a closing term of that kind.",
+      "theologicalSignificance": "Forgiveness comes second, after repair, which reverses the order most readers expect and changes what is on offer. A wrong is not simply cancelled; the conduct that produced it is adjusted first. Treating speech as the lever is also a claim about how character actually changes. Not by resolving to become a different person, but by altering one observable habit and letting the rest come along behind it.",
+      "crossReferences": [
+        {
+          "ref": "33:70",
+          "why": "Gives in one clause the instruction whose result this ayah then promises."
+        },
+        {
+          "ref": "4:9",
+          "why": "Uses the same word for straight speech, about how the guardians of orphans should talk."
+        },
+        {
+          "ref": "48:5",
+          "why": "Ends with the same phrase for a great winning, after a promise of forgiveness."
+        }
+      ],
+      "applyIt": "Run the experiment this ayah describes. For one week, say only what you actually mean about small things: whether you are free, whether you liked it, whether you will be on time. Take on nothing larger than that. Then look at your conduct at the end of the week. The passage claims the one change pulls the other along.",
+      "exploreFurther": [
+        "33:70",
+        "4:9",
+        "48:4-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.749Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "33:72",
       "surah": 33,
       "start": 72,
@@ -2610,6 +2958,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:55:36.770Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "33:73",
+      "surah": 33,
+      "start": 73,
+      "end": 73,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "And He Turns To The Believers",
+      "tier": "standard",
+      "meaning": "The last ayah of the surah is a purpose clause hanging off the one before it, and it works by an imbalance. Two groups are named for punishment and one for God's turning towards them, and only the second half arrives with no condition attached to it. The commentators observe where the surah has ended up: it opened by telling a man to accommodate nobody, and it closes on two names describing forgiveness and mercy as settled qualities.",
+      "historicalContext": "Medinan, and the surah's final line. It follows the ayah in which a trust is offered to the heavens, the earth and the mountains and taken up instead by the human being. The commentators read this ayah as giving the outcome of that acceptance, so the two halves of this sentence describe what becomes of a trust once somebody is actually carrying it. No separate occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "لِّيُعَذِّبَ",
+          "gloss": "so that He may punish",
+          "note": "A purpose particle fused to the verb, tying this ayah grammatically to the one before it. The whole sentence is a consequence clause and cannot be read standing on its own."
+        },
+        {
+          "arabic": "وَيَتُوبَ",
+          "gloss": "and He may turn towards",
+          "note": "The verb of turning, with God as its subject and the believers as those turned towards. It is the same word used of a person repenting, and only the direction changes its sense."
+        },
+        {
+          "arabic": "غَفُورًا",
+          "gloss": "ever forgiving",
+          "note": "An intensive form describing forgiveness as a settled attribute rather than an occasional act. It is the word the surah closes on, after seventy-two ayat of siege, failure and correction."
+        }
+      ],
+      "lifeInProphetsTime": "The people who first heard this line had lived through everything the surah describes. They had dug a trench and held it through cold weeks on short rations, watched neighbours ask to withdraw, and heard what was said once the danger passed. A closing sentence naming forgiveness landed on an audience who could each identify exactly which of their own weeks it was covering.",
+      "didYouKnow": "Every pairing in this closing ayah names men and women separately, and the surah does the same thing at length some forty ayat earlier, in a list of ten qualities each given in both forms. That list is the most sustained example of the pattern anywhere in the Quran, and the final line repeats its shape, so the pairing frames the whole closing movement.",
+      "theologicalSignificance": "The surah ends with mercy as the unconditional half of its last sentence. Punishment is named for those who set themselves against, and turning is named for the believers with nothing qualifying it, which is the reverse of where a reader expects to arrive after seventy-two ayat of exposure and correction. The two names at the very end describe a character rather than an act, so the surah's last word is about who God is.",
+      "crossReferences": [
+        {
+          "ref": "33:72",
+          "why": "Gives the trust this ayah is the consequence of, refused by everything else before a human took it."
+        },
+        {
+          "ref": "4:26-27",
+          "why": "Also pairs a turning towards the believers with those who would have them swerve away."
+        },
+        {
+          "ref": "9:117-118",
+          "why": "Describes God turning towards those who had wavered, including three who were left waiting."
+        }
+      ],
+      "applyIt": "Read this last line once with the whole surah behind you: a siege, a household, failures named one at a time, a hard passage near the end. Then notice which half of the sentence carries no condition. Most people would have written it the other way round. Sit with that for a minute before you close the page.",
+      "exploreFurther": [
+        "33:72",
+        "4:26-27",
+        "9:117-118"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:43:14.749Z",
         "reviewed": false
       }
     }
