@@ -1,8 +1,182 @@
 {
   "surah": 11,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:14:02.828Z",
+  "generatedAt": "2026-09-09T11:32:49.985Z",
   "studies": [
+    {
+      "key": "11:1-2",
+      "surah": 11,
+      "start": 1,
+      "end": 2,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Made Firm Then Set Out",
+      "tier": "standard",
+      "meaning": "The opening makes two claims about the Book in a single clause: its verses were made firm, then set out in detail. Commentators read the pair as a sequence, an unbreakable core that is afterwards unfolded into commands, histories and arguments, though some take the first verb to mean secured against contradiction and others to mean fixed in wording. The purpose follows at once, that you worship none but God, and the speaker introduces himself twice over, as warner and as bearer of good news.",
+      "historicalContext": "Meccan, from the later years of the mission, in a run of surahs that open with disconnected letters and turn quickly to the histories of earlier prophets. Opposition in the city had hardened past argument into ridicule and pressure on the weakest followers. The surah answers by putting the Book's own credentials first, before it tells a single story.",
+      "keyTerms": [
+        {
+          "arabic": "أُحْكِمَتْ",
+          "gloss": "were made firm",
+          "note": "From a root meaning to restrain, the same root behind the words for wisdom and judgement. It suggests a text held so tightly together that nothing can be worked loose from it, before any explaining begins."
+        },
+        {
+          "arabic": "فُصِّلَتْ",
+          "gloss": "were set out in detail",
+          "note": "The root means to separate joint from joint. The intensive form pictures a book articulated into distinct parts, each one distinguishable, rather than delivered as a single undivided mass."
+        },
+        {
+          "arabic": "نَذِيرٌ وَبَشِيرٌ",
+          "gloss": "a warner and a herald",
+          "note": "The pair is ordered deliberately. Warning comes first because the audience is being addressed about a danger, but the sentence is allowed to finish on the good news rather than the threat."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca ran on the spoken word. Poetry was performed at seasonal fairs and judged line by line, and a strong composition could travel the peninsula within a season. Merchants sealed agreements by oath rather than by paper, and a man's standing rested on whether his speech held up under repetition. A claim that a text had been made firm and then explained was a claim these listeners knew how to test.",
+      "didYouKnow": "Five surahs open with the letters Alif, Lam, Ra: this one, Jonah, Joseph, Abraham and al-Hijr. All five are Meccan and all five carry long prophet narratives. They sit in two runs, chapters ten to twelve and fourteen to fifteen, separated only by the surah that opens with Alif, Lam, Meem, Ra.",
+      "theologicalSignificance": "Revelation is given a structure before it is given a message: firm, then differentiated, from a source named as Wise and Informed. The two names answer two separate doubts, that the Book might be arbitrary and that it might be uninformed about the people it addresses. What follows, worship of God alone, is then not one instruction among many but the thing the whole architecture exists to deliver.",
+      "crossReferences": [
+        {
+          "ref": "41:3",
+          "why": "Describes a scripture with the same verb of detailed exposition, given in Arabic for people who know."
+        },
+        {
+          "ref": "10:1",
+          "why": "Opens the preceding surah with the same letters and a comparable claim about a wise Book."
+        },
+        {
+          "ref": "51:56",
+          "why": "States as a purpose of creation the very thing this opening names as the point of revelation."
+        }
+      ],
+      "applyIt": "Read the first two ayat of this surah slowly, then read its final ayah, and notice that the chapter ends where it began, on worship and reliance. Between them lie six prophets and four ruined towns. Today, when something you are reading gets long, try holding its opening line in mind and see what the middle looks like from there.",
+      "exploreFurther": [
+        "10:1",
+        "41:3",
+        "11:123"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.916Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:3-4",
+      "surah": 11,
+      "start": 3,
+      "end": 4,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Until A Stated Term",
+      "tier": "standard",
+      "meaning": "Two verbs arrive in order: seek forgiveness, then turn back. The classical commentators take the sequence seriously, clearing what lies behind before facing forward, and they read the promised good enjoyment as a decent rather than lavish share of this life, running to a term already fixed. The further grace given to every possessor of merit is understood as a return proportioned to effort. The alternative is put without threat language, only turning away and a day the speaker says he fears for them.",
+      "historicalContext": "Meccan, spoken to a city grown wealthy on the caravan trade and inclined to hear the message as a threat to it. What is promised for repentance here is worldly as well as final, which commentators connect to the standing objection that following this man would cost a family its livelihood. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱسْتَغْفِرُوا۟",
+          "gloss": "seek forgiveness",
+          "note": "The form asks for something rather than performing it. The root covers covering over and shielding, so what is requested is that a fault be covered, not that it be argued away or forgotten."
+        },
+        {
+          "arabic": "تُوبُوٓا۟",
+          "gloss": "turn back",
+          "note": "The verb is physical before it is moral: to return to a place you left. Repentance in this word is a change of direction, not only regret about the direction already taken."
+        },
+        {
+          "arabic": "مَتَـٰعًا حَسَنًا",
+          "gloss": "good provision",
+          "note": "The noun means what you use and then leave behind, like travelling goods. Joining it to the word for good keeps the promise modest, a sufficient and decent enjoyment, explicitly bounded by a stated term."
+        }
+      ],
+      "lifeInProphetsTime": "A Meccan household measured security in stored dates, water rights, and a share in the winter and summer caravans. Debt was ordinary, and one bad season could hand a family's independence to a creditor. A promise of decent provision until a stated term spoke to people who knew that every arrangement they had, a lease, a truce, a loan, ran to a date that somebody had set.",
+      "didYouKnow": "The phrase rendered here as ask your Lord for forgiveness, then repent to Him, occurs three times in this surah and nowhere else in the Quran: in this opening address, then in the mouth of Hud to his people, and again in the mouth of Shuaib. Salih says the same thing a few ayat earlier with the two verbs joined slightly differently.",
+      "theologicalSignificance": "Forgiveness is placed before provision, which reverses the order most people assume. The passage does not say that repenting buys prosperity; it says the two belong to a single generosity, and that both run until a term God has already set. Naming Him Capable of all things at the close removes the last hedge, since the return being described is not a possibility to weigh but a settled fact.",
+      "crossReferences": [
+        {
+          "ref": "71:10-12",
+          "why": "Noah makes his people the same offer: seek forgiveness, and rain, wealth and children follow."
+        },
+        {
+          "ref": "11:52",
+          "why": "Hud repeats this formula to Aad word for word, with rain and added strength as what is promised."
+        },
+        {
+          "ref": "40:3",
+          "why": "Names God as Forgiver of sins and Accepter of repentance in the same breath as severity."
+        }
+      ],
+      "applyIt": "Notice the order. Most of us try to improve first and apologise afterwards, if at all. For one thing you have been meaning to put right, reverse it today: name the fault to God plainly, with no plan attached and nothing promised, and only then start thinking about what would have to change. See whether the second part comes any easier.",
+      "exploreFurther": [
+        "71:10-12",
+        "2:160",
+        "39:53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:5",
+      "surah": 11,
+      "start": 5,
+      "end": 5,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "What The Chest Is Holding",
+      "tier": "standard",
+      "meaning": "A gesture is described and then quietly dismantled. People fold their chests inward and pull cloth over themselves, and the ayah lets that picture stand for a moment before saying that concealment and disclosure arrive equally. Commentators differ on the gesture itself, some reporting it as literal avoidance of the recitation, others reading it as an image for hostility kept private. Either way, the closing clause moves past behaviour altogether to what a chest contains.",
+      "historicalContext": "Meccan. Classical reports connect the ayah to men who turned away and drew their cloaks over their heads when the Quran was recited near the sanctuary, so as not to be seen listening. The reports vary in their details, and the commentators present them as illustrations of the described behaviour rather than as one fixed occasion of revelation.",
+      "keyTerms": [
+        {
+          "arabic": "يَثْنُونَ",
+          "gloss": "they fold, they double over",
+          "note": "The verb means to bend a thing back on itself. Used of a chest it pictures a person curling inward, and the same root supplies the ordinary Arabic words for two and for a fold."
+        },
+        {
+          "arabic": "يَسْتَغْشُونَ",
+          "gloss": "they cover themselves over",
+          "note": "The form carries seeking: they want the covering and go after it. This is the deliberate pulling of a garment up over the head, not the ordinary condition of being clothed."
+        },
+        {
+          "arabic": "بِذَاتِ ٱلصُّدُورِ",
+          "gloss": "what chests contain",
+          "note": "A recurring phrase for the interior of a person. It names not thoughts as such but whatever the chest is holding, including things its owner has never put into words."
+        }
+      ],
+      "lifeInProphetsTime": "The cloak was the most private thing a person owned in Mecca. It served as coat, blanket and screen, and pulling it over the head was how you slept, mourned, or shut out a conversation you did not want. In a city where houses stood close and everyone's business was half public, a garment drawn up was the nearest thing to a door you could close.",
+      "didYouKnow": "The verb rendered they wrap their chests occurs in this form only here in the whole Quran. Its root is otherwise everywhere in Arabic, supplying the words for two, for a pair, and for a bend in a road, but the image of a chest doubled over on itself is used once and never repeated.",
+      "theologicalSignificance": "The ayah locates God's knowledge inside the person rather than around him, which changes what privacy can mean. Concealing and revealing are named together and given the same verb of knowing, so the distinction survives socially and disappears entirely before God. This is stated with no threat attached, which is why commentators read it as description of God rather than as warning about punishment.",
+      "crossReferences": [
+        {
+          "ref": "67:13",
+          "why": "Puts the same point as a choice that makes no difference: keep your speech secret or announce it."
+        },
+        {
+          "ref": "40:19",
+          "why": "Adds the darting of the eyes to what chests conceal, so even the glance is counted."
+        },
+        {
+          "ref": "3:154",
+          "why": "Uses the identical closing phrase about chests after a costly setback, of thoughts men kept to themselves."
+        }
+      ],
+      "applyIt": "Sit with something you have never said out loud to anyone, and say it to God in plain words, as information rather than as confession. Nothing is being disclosed that He did not already have. What changes is on your side: the small distance between what you carry privately and what you are willing to admit that you carry.",
+      "exploreFurther": [
+        "67:13",
+        "40:19",
+        "2:284"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "11:6",
       "surah": 11,
@@ -58,6 +232,528 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:09:02.473Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:7",
+      "surah": 11,
+      "start": 7,
+      "end": 7,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "The Throne Upon The Waters",
+      "tier": "standard",
+      "meaning": "Creation is given a purpose clause, and the purpose turns out to be a test of conduct rather than of belief or of quantity. The wording is best in deed, not most in deed, and the commentators hold to that: quality is what is being measured. Between the six days and the purpose sits a detail, the Throne standing over water, which the classical exegetes report without speculating past it. Then the reaction to resurrection is quoted, and it is not an argument but the word for sorcery.",
+      "historicalContext": "Meccan, from a period when the raising of the dead was the one point on which the city's leadership would not move. Trade, poetry and pilgrimage continued unchanged whether or not a man was raised from dust, and the objection recorded here is not reasoned at all. Calling the claim witchcraft was a way of closing a conversation rather than entering it.",
+      "keyTerms": [
+        {
+          "arabic": "لِيَبْلُوَكُمْ",
+          "gloss": "so that He may test you",
+          "note": "The verb is used of trying a thing to find out its quality, as a garment is worn to see how it wears. What is named is the discovery of what a person is, not information God was lacking."
+        },
+        {
+          "arabic": "أَحْسَنُ عَمَلًا",
+          "gloss": "best in deed",
+          "note": "The comparative is one of excellence, not of amount. Classical commentators gloss it as the most sincere and the most correct action, which is why the phrase resists being turned into a tally."
+        },
+        {
+          "arabic": "عَرْشُهُۥ",
+          "gloss": "His Throne",
+          "note": "The word for a raised seat of authority. Commentators describe the Throne as the greatest created thing and decline to picture it, treating the water beneath it as reported rather than explained."
+        }
+      ],
+      "lifeInProphetsTime": "Water was the measure of everything in Arabia. A well decided where a tribe camped, which land was worth defending, and which routes a caravan could take, and the right to draw from one was inherited and fought over. Hearing that the Throne had stood over water before there was an earth put the most contested resource these listeners knew at the very beginning of the world.",
+      "didYouKnow": "The exact phrase best in deed occurs four times in the Quran, and in three of them it names the purpose of something created: this ayah about the heavens and the earth, the ornaments of the earth at 18:7, and the making of death and life at 67:2. Each time the measure given is quality of action, never quantity.",
+      "theologicalSignificance": "Giving creation a purpose clause turns the universe into an examination room rather than a display. Two things follow. The measure is conduct, which is available to anyone whatever else they were given, and the test is of quality, which cannot be gamed by volume. The mention of the Throne, left deliberately unexplained, marks the limit of what the passage is prepared to say about God's own situation.",
+      "crossReferences": [
+        {
+          "ref": "67:2",
+          "why": "Gives death and life the same stated purpose, testing which of you is better in conduct."
+        },
+        {
+          "ref": "18:7",
+          "why": "Says the earth's ornaments were made precisely as a test of the same quality of action."
+        },
+        {
+          "ref": "7:54",
+          "why": "Pairs the six days with the Throne again, adding night pursuing day in rapid succession."
+        }
+      ],
+      "applyIt": "Choose one thing you will do today that you already do regularly, a meal you cook, a message you answer, a task at work. Do that single one with more care than it strictly needs, and notice how much of your ordinary effort is aimed at getting through rather than at doing well. The gap is small, and it is the entire subject of this ayah.",
+      "exploreFurther": [
+        "67:1-2",
+        "18:7",
+        "7:54"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:8",
+      "surah": 11,
+      "start": 8,
+      "end": 8,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "What Holds It Back",
+      "tier": "standard",
+      "meaning": "A delay is imagined, and the response to it is predicted. Given more time the objection would not be dropped but sharpened into a taunt: what is keeping it. The answer comes as a change of tense and a change of verb. On the day it reaches them nothing turns it aside, and the thing they had made jokes about closes in around them. Commentators notice that the mockery itself is what encircles them, not merely a consequence of it.",
+      "historicalContext": "Meccan. The demand to see the threatened punishment actually arrive is recorded again and again in this period, and the city's leadership treated its non-arrival as proof of nothing to answer. This surah is replying to that argument at length, since every prophet narrative that follows is a case where the delay ran long and the ending came anyway.",
+      "keyTerms": [
+        {
+          "arabic": "أُمَّةٍ مَّعْدُودَةٍ",
+          "gloss": "a counted stretch of time",
+          "note": "The first word usually means a community; here it carries an older sense of a period. Pairing it with counted insists that the delay has a number attached, known to whoever set it."
+        },
+        {
+          "arabic": "يَحْبِسُهُۥ",
+          "gloss": "holds it back",
+          "note": "A verb used of penning livestock and of damming water. The taunt imagines the punishment as something being physically restrained, which concedes rather more than the speakers intend."
+        },
+        {
+          "arabic": "حَاقَ",
+          "gloss": "closed in around",
+          "note": "Used in the Quran of a consequence encircling the people who produced it. It suggests a ring drawn tight from all sides rather than a blow arriving from somewhere outside."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan life ran on obligations with dates attached. A loan was taken against the return of the summer caravan, a blood payment settled by an agreed season, a truce held until a named month. Asking what is holding something back was the ordinary language of a creditor whose term had passed, and everyone listening knew what it meant when an account finally came due.",
+      "didYouKnow": "The verb translated closed in appears about nine times in the Quran, and in every one of them it describes a consequence returning on the people who produced it, usually the very thing they had mocked. It is never used of an ordinary siege or an attack from outside, which is why translators reach for words like encompass and engulf.",
+      "theologicalSignificance": "Delay is presented as a decision rather than an absence, which disposes of the argument that nothing happening means nothing will happen. The passage also makes ridicule consequential in itself. What they treated as a joke is the very thing that surrounds them, so the mockery is not punished by something separate; it becomes the shape the punishment takes.",
+      "crossReferences": [
+        {
+          "ref": "6:10",
+          "why": "Says the same of earlier messengers: what the mockers ridiculed was what closed in on them."
+        },
+        {
+          "ref": "29:53-54",
+          "why": "Records the identical demand to hurry the punishment, and answers that it will arrive suddenly."
+        },
+        {
+          "ref": "22:47",
+          "why": "Meets the request for haste by resetting the scale, a day with your Lord against a thousand years."
+        }
+      ],
+      "applyIt": "Think of a warning you were given long ago that has not yet come true, about your health, your work, or a relationship you have been coasting on. Notice how the passing time has quietly turned itself into your evidence that the warning was wrong. Name that to yourself in one sentence today, without arguing either side of it.",
+      "exploreFurther": [
+        "6:10",
+        "22:47",
+        "46:24-25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:9-10",
+      "surah": 11,
+      "start": 9,
+      "end": 10,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "Troubles Have Gone Away From Me",
+      "tier": "standard",
+      "meaning": "Two symmetrical failures are set out, and neither is the obvious one. Loss produces not sorrow but despair joined to ingratitude, as though the good that had been given was never real. Gain produces not relief but a claim, troubles have gone away from me, said as if they had left of their own accord. Commentators point out that the second state is the more dangerous of the two, because it feels like happiness and arrives with no sense of anything having gone wrong.",
+      "historicalContext": "Meccan, in a surah addressed to a merchant society whose fortunes rose and fell with the caravan seasons. The description is of the human being in general rather than of any group, and the exception granted in the following ayah confirms that reading. No occasion of revelation is reported; the commentators treat the pair as a portrait of character before it has been formed.",
+      "keyTerms": [
+        {
+          "arabic": "أَذَقْنَا",
+          "gloss": "We gave a taste of",
+          "note": "The verb is of tasting rather than eating. It marks both the mercy and the prosperity as samples rather than possessions, which is exactly what the person receiving them fails to register."
+        },
+        {
+          "arabic": "يَـُٔوسٌ",
+          "gloss": "utterly despairing",
+          "note": "An intensive form, considerably stronger than the ordinary word for losing hope. It names despair as a settled disposition rather than a mood that passes once a loss is absorbed."
+        },
+        {
+          "arabic": "فَخُورٌ",
+          "gloss": "boastful",
+          "note": "Also intensive. The root concerns display, so the fault named is not private satisfaction at good fortune but the impulse to hold that fortune up for other people to see."
+        }
+      ],
+      "lifeInProphetsTime": "A trader's whole year could turn on one caravan. Loss meant more than money, since a man who could not meet his obligations lost standing among people who would remember it for a generation, while a single good season put him in a position to lend rather than to borrow. The two states described here were not abstractions in Mecca. The city watched families move between them.",
+      "didYouKnow": "The same swing is described three times in the Quran with almost the same vocabulary, here, at 17:83, and at greater length in 41:49 to 51. Each time it is placed among arguments about revelation rather than among moral instructions, which suggests the portrait is offered as evidence about people rather than as advice to them.",
+      "theologicalSignificance": "The passage makes ingratitude a failure of memory rather than of manners. In both halves the person loses track of where the good came from: in loss he concludes it was never given, and in gain he concludes it arrived by itself. Naming the pair before naming the exception establishes that the steady believer described next is not the natural human state but something worked for.",
+      "crossReferences": [
+        {
+          "ref": "41:49-51",
+          "why": "Draws out the same swing at length, and adds the further claim that this is mine by right."
+        },
+        {
+          "ref": "17:83",
+          "why": "Compresses both halves into one ayah: turning aside in ease, despairing when hardship touches."
+        },
+        {
+          "ref": "30:36",
+          "why": "Notes people rejoicing at mercy yet despairing at what their own hands have sent ahead."
+        }
+      ],
+      "applyIt": "The next time something goes right for you this week, catch the very first sentence you say about it. If it begins with the word I, or with finally, stop and add where you think it came from. You are not correcting a sin. You are checking whether your instinct still knows the difference between receiving and acquiring.",
+      "exploreFurther": [
+        "41:49-51",
+        "17:83",
+        "30:36"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.919Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:11",
+      "surah": 11,
+      "start": 11,
+      "end": 11,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Except Those Who Held Steady",
+      "tier": "standard",
+      "meaning": "One short exception is set against the whole portrait before it. What breaks the pattern of despair and boasting is not temperament but two things done: holding steady, and acting well. Commentators take the order seriously, reading steadfastness as what makes right action possible when circumstances are pushing the other way. The reward is stated in two parts, a covering over of fault and something great whose content is not specified, and both are promised to the same people.",
+      "historicalContext": "Meccan, closing a passage on human instability that begins two ayat earlier. The believers being described were a small group under social pressure in a city where a family could withdraw its protection from a member and leave him exposed. Steadfastness in that setting meant staying visible rather than quietly withdrawing, which is why the ayah joins it at once to deeds.",
+      "keyTerms": [
+        {
+          "arabic": "صَبَرُوا۟",
+          "gloss": "held steady",
+          "note": "The root is used of restraining an animal and of a fortress holding out. It covers waiting, but its centre is keeping a position under pressure rather than accepting whatever happens."
+        },
+        {
+          "arabic": "ٱلصَّـٰلِحَـٰتِ",
+          "gloss": "the good deeds",
+          "note": "The root means to be sound or in working order, and it gives the ordinary word for repair. Good deeds in this vocabulary are actions that put something right, not simply actions that are allowed."
+        },
+        {
+          "arabic": "أَجْرٌ كَبِيرٌ",
+          "gloss": "a great wage",
+          "note": "The first word is a workman's pay, earned and owed rather than given. Attaching an adjective of size instead of a description leaves the amount open while insisting the transaction is real."
+        }
+      ],
+      "lifeInProphetsTime": "Wages in Mecca were often paid in kind and often paid late: a share of a caravan's return, a measure of dates after harvest, water rights for a season. A labourer worked on the strength of a promise from someone whose word he had no choice but to trust. Calling the hereafter a wage rather than a gift placed it in a category every hired man already understood.",
+      "didYouKnow": "The exact exception clause that opens this ayah occurs in only one other place in the Quran, at 41:35, and both times it does the same work: rescuing a group from a sweeping negative statement about people in general. In each case what qualifies them is endurance rather than any advantage they were born with.",
+      "theologicalSignificance": "The exception comes after the diagnosis rather than before it, so the steady person is defined as someone who came out of the same material as everyone else. Forgiveness is named first, which implies that steadfastness is not the same as blamelessness; those who hold on still need covering. The reward's size is asserted while its content is withheld, and the classical commentators leave it there.",
+      "crossReferences": [
+        {
+          "ref": "103:1-3",
+          "why": "Makes a comparable exception against a general statement of loss, adding truth and patience."
+        },
+        {
+          "ref": "41:34-35",
+          "why": "Says that repelling evil with what is better is granted to nobody except those who persevere."
+        },
+        {
+          "ref": "13:22",
+          "why": "Lists the patient who pray, spend and repel evil with good among those given the final home."
+        }
+      ],
+      "applyIt": "Patience here is joined to doing, not to waiting. So take whatever you are currently enduring and find one small action inside it that would count as repair: a message you owe, a room you have stopped tidying, a person you have been short with lately. Do that one thing today without waiting for the situation itself to improve first.",
+      "exploreFurther": [
+        "103:1-3",
+        "13:22",
+        "41:34-35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.917Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:12",
+      "surah": 11,
+      "start": 12,
+      "end": 12,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "You Are Only A Warner",
+      "tier": "standard",
+      "meaning": "The address turns to the Prophet and names a pressure rather than a failure. The opening particle is one of supposition, and commentators are careful with it: what is described is a temptation felt, not an omission committed. What tightens the chest is a demand for spectacle, a treasure or an accompanying angel, and the reply redefines the work. He delivers warning; the outcome belongs somewhere else. The final clause names God as the one entrusted with everything, which is where the weight gets put down.",
+      "historicalContext": "Meccan, from the years when the leadership had moved past argument into setting conditions: bring us a sign of the kind we specify. The demand for a treasure or a visible angel is recorded across several surahs of this period. Classical commentators read this ayah as consolation addressed to the Prophet Muhammad (peace be upon him) rather than as any kind of rebuke.",
+      "keyTerms": [
+        {
+          "arabic": "فَلَعَلَّكَ",
+          "gloss": "perhaps you",
+          "note": "A particle of supposition. It stops the sentence short of asserting that anything was left out, which is why commentators read the ayah as naming a pressure and heading it off rather than recording a fault."
+        },
+        {
+          "arabic": "ضَآئِقٌ",
+          "gloss": "constricted",
+          "note": "From a root meaning narrowness. Arabic locates distress as a tightening of the chest, so the word gives the physical sensation of pressure rather than naming an emotion in the abstract."
+        },
+        {
+          "arabic": "وَكِيلٌ",
+          "gloss": "the one entrusted",
+          "note": "A term from ordinary business: the agent you hand your affairs to and whose management you then rely on. Applied to God, it moves responsibility for results away from the messenger."
+        }
+      ],
+      "lifeInProphetsTime": "In Mecca an agent handled what an owner could not. A merchant travelling north left his affairs with someone empowered to sell, settle and collect, and the arrangement worked only if the owner then stopped second-guessing it. Naming God with that word told a man under sustained pressure that the results of his work were another party's business, contracted and no longer his to carry.",
+      "didYouKnow": "The exact phrase rendered you are only a warner occurs once in the entire Quran, in this ayah. Related constructions appear elsewhere, such as you are only a reminder at 88:21, but the specific wording used to steady the Prophet against a demand for treasure and angels is not repeated anywhere else.",
+      "theologicalSignificance": "The passage draws a line around what prophethood is. A messenger is accountable for delivering and not for persuading, which protects the message from being adjusted to demand and protects the messenger from carrying a burden he was never handed. That the strain is acknowledged at all, and in the second person, is itself part of the point: pressure is not treated as evidence of weak faith.",
+      "crossReferences": [
+        {
+          "ref": "15:97",
+          "why": "Names the same constriction of the chest at what they say, and answers it with praise."
+        },
+        {
+          "ref": "25:7-8",
+          "why": "Records the identical demand for a treasure and an accompanying angel, and gives the same answer."
+        },
+        {
+          "ref": "88:21-22",
+          "why": "States the limit plainly: you are a reminder, and you are not in control over them."
+        }
+      ],
+      "applyIt": "Find the part of a current worry that is genuinely yours to do, and write it down in one line. Then write the part that depends on other people, on timing, or on outcomes you cannot reach. Keep the first line somewhere you will see it tomorrow. The second one you can hand over; that is what this ayah tells someone under far more pressure than you.",
+      "exploreFurther": [
+        "15:94-99",
+        "25:7-8",
+        "6:33-35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.917Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:13",
+      "surah": 11,
+      "start": 13,
+      "end": 13,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Then Bring Ten Chapters",
+      "tier": "standard",
+      "meaning": "The accusation is quoted and met with an invitation rather than a defence. If the Book was composed, composition is a skill the objectors possess, so let them produce ten chapters of the same kind and bring in whatever help they can find. Commentators note the concession folded into the challenge: the ten need not even be true, only invented, which strips away every excuse except inability. The condition attached at the end concerns honesty, not outcome.",
+      "historicalContext": "Meccan. The charge that this was a fabrication is answered in several places with challenges of different sizes, and the commentators read them as a sequence addressed to an audience that took great pride in its eloquence. Mecca judged verse in public and knew exactly what producing a rival composition would involve, and no attempt is recorded from those years.",
+      "keyTerms": [
+        {
+          "arabic": "ٱفْتَرَىٰهُ",
+          "gloss": "he fabricated it",
+          "note": "The root is used of cutting and stitching leather. The accusation is one of manufacture, pieces assembled into something that looks whole, which makes it a claim about craft rather than about sincerity."
+        },
+        {
+          "arabic": "بِعَشْرِ سُوَرٍ",
+          "gloss": "with ten chapters",
+          "note": "The number is specified rather than left open, and the unit named is the chapter. The scale is set large enough to rule out one lucky line and small enough that the attempt is realistic."
+        },
+        {
+          "arabic": "مُفْتَرَيَـٰتٍ",
+          "gloss": "fabricated ones",
+          "note": "The same root as the accusation, turned back on the challengers. It grants them permission to invent freely, narrowing the contest down to whether the thing can be done at all."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's literary culture was competitive and public. Poets performed at seasonal gatherings, tribes kept champions the way they kept horses, and a devastating verse could settle a quarrel that spears had not. Composition was not a private art in that world. Asking such a city for ten chapters was asking it to do in public the one thing it was proudest of.",
+      "didYouKnow": "The Quran issues this challenge at four different scales, and they do not run in order of the Book. The whole of it is demanded at 17:88, ten chapters here, a single chapter at 10:38 and again at 2:23, and merely a discourse like it at 52:34. Commentators discuss the sequence and generally read the smaller demands as concessions.",
+      "theologicalSignificance": "The argument offered is empirical rather than authoritative. Instead of asserting that the Book is from God, the passage names a test the objectors can run for themselves and stakes the claim on the result. That is a particular kind of confidence, and it also tells the reader what sort of thing the Quran takes itself to be: not merely true, but of a kind that cannot be counterfeited.",
+      "crossReferences": [
+        {
+          "ref": "2:23",
+          "why": "Reduces the same challenge to one chapter, with the same invitation to summon whatever helpers they have."
+        },
+        {
+          "ref": "17:88",
+          "why": "Raises it to the whole Book, and says humans and jinn together could not manage the like of it."
+        },
+        {
+          "ref": "10:38",
+          "why": "Places the single-chapter version directly after the identical accusation of invention."
+        }
+      ],
+      "applyIt": "Read a page of the Quran today, then read a page of something you consider very well written: a poem, an essay, a chapter of a novel you love. Do not rank them. Just notice how differently each one behaves, where it repeats, where it turns, what it does with an ending. The challenge in this ayah is asking for exactly that kind of attention.",
+      "exploreFurther": [
+        "2:23-24",
+        "17:88",
+        "52:33-34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.917Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:14",
+      "surah": 11,
+      "start": 14,
+      "end": 14,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "If They Do Not Answer",
+      "tier": "standard",
+      "meaning": "The challenge is followed by its consequence. Failure to answer is not treated as a minor embarrassment but as evidence, and two conclusions are drawn from it: that the Book came down carrying God's own knowledge, and that there is no god but Him. Commentators observe that the addressee shifts inside the ayah, from believers who are told to know, to objectors who are asked a question. That question is left standing unanswered on the page.",
+      "historicalContext": "Meccan, arriving immediately after the demand for ten invented chapters. Commentators read the two ayat as a single argument in two moves. They also note that no serious attempt to meet the challenge is recorded from the Meccan years, although the leadership had every motive to try and the poetic talent available to attempt it.",
+      "keyTerms": [
+        {
+          "arabic": "يَسْتَجِيبُوا۟",
+          "gloss": "they respond",
+          "note": "The form implies answering a call addressed to you. It is the same verb used of God answering prayer, so what is described is a failure to reply rather than only a refusal to compete."
+        },
+        {
+          "arabic": "بِعِلْمِ ٱللَّهِ",
+          "gloss": "with God's knowledge",
+          "note": "The preposition carries accompaniment. Commentators read it as revelation sent down together with knowledge belonging to God, which is what marks it off from anything a person might assemble."
+        },
+        {
+          "arabic": "مُّسْلِمُونَ",
+          "gloss": "ones who submit",
+          "note": "The root joins peace and handing over. The closing question asks whether, having run out of counter-arguments, they will now hand the matter over instead of continuing to hold it."
+        }
+      ],
+      "lifeInProphetsTime": "Arab disputes had a recognised shape. A claim was made, a counter-claim invited, and if nobody answered, the silence itself was the verdict. Poets and orators lost standing in public by having nothing to say, and the loss was remembered. The ayah leans on that convention: in a culture where an unanswered challenge was a settled matter, an absent reply carried real weight.",
+      "didYouKnow": "The word for those who submit that ends this ayah is formed from the root that gives the religion its name, and in the whole of this long surah it appears only here. Across the Quran it is used far more often as a verb describing something a person does than as a label attached to a group.",
+      "theologicalSignificance": "An argument about a book is turned into a statement about God. If the text carries knowledge nobody could have supplied, then its source is singular, and the passage moves directly from that to the denial of any other god. The final question is put rather than pressed, leaving the reader to notice that the conclusion has already been reached and only the response is outstanding.",
+      "crossReferences": [
+        {
+          "ref": "4:166",
+          "why": "Says God Himself bears witness to what He revealed, and that He revealed it with His knowledge."
+        },
+        {
+          "ref": "28:49",
+          "why": "Sets a parallel test: bring a scripture from God with better guidance, if you are truthful."
+        },
+        {
+          "ref": "10:37-39",
+          "why": "Follows the same accusation with the observation that they deny what they never grasped."
+        }
+      ],
+      "applyIt": "Notice how you handle being out of arguments. Most people change the subject, get louder, or leave the room. The next time you are in a conversation where you realise you have nothing left to say and the other person is right, try saying exactly that, once, and see what it costs you. This ayah ends on a smaller version of the same question.",
+      "exploreFurther": [
+        "4:166",
+        "28:49",
+        "10:37-39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:15-16",
+      "surah": 11,
+      "start": 15,
+      "end": 16,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Paid In Full Here",
+      "tier": "standard",
+      "meaning": "The passage concedes a great deal before it withholds anything. Those who want this life and its ornament are paid in full, on time, with no shortfall, and the language used is that of an honest settlement rather than a swindle. What is denied is only what lies beyond it. Commentators generally read this of people whose intention terminates in the world, including those whose acts look religious, and they note that the second ayah cancels the works rather than punishing them.",
+      "historicalContext": "Meccan, addressed to a city whose leading families measured standing in gold, imported cloth and reputation, and whose objection to the message was partly that it valued none of these. Commentators discuss whether the two ayat describe outright rejecters or anyone at all who acts for display, and they record both readings without settling between them.",
+      "keyTerms": [
+        {
+          "arabic": "زِينَتَهَا",
+          "gloss": "its ornament",
+          "note": "The word means decoration added to a thing rather than the thing itself. Applied to worldly life it separates the life from the shine on it, and locates the desire squarely in the shine."
+        },
+        {
+          "arabic": "لَا يُبْخَسُونَ",
+          "gloss": "they are not shortchanged",
+          "note": "The verb is commercial, used of handing over less than the measure agreed. Denying it here insists the arrangement is honest: whatever was worked for is delivered without any deduction."
+        },
+        {
+          "arabic": "حَبِطَ",
+          "gloss": "came to nothing",
+          "note": "Used of an animal that grazes on something harmful and swells until it dies. The picture is not of a small return but of effort that looked like growth and turned out to be fatal."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca kept its wealth visible. Standing was worn and displayed: imported cloth, worked silver, a good mount, the number of guests a household could feed through the pilgrimage season. Nobody buried gold and lived plainly. In that setting the word for ornament was not a metaphor, and full payment in this world meant precisely the thing people had arranged their lives to obtain.",
+      "didYouKnow": "The verb translated here as came to nothing is used in Arabic of livestock bloating fatally after grazing on fresh pasture. Classical lexicographers record that sense plainly, and it explains why the Quran's usual word for wasted deeds carries a suggestion of something that swelled impressively just before it failed.",
+      "theologicalSignificance": "The passage refuses the easy claim that worldly aims do not work. They do work, and they are paid. What is asserted instead is that a life aimed entirely at the visible receives exactly what it aimed at and nothing further, which makes the hereafter a question of intention rather than of accounting. Deeds are described as void rather than as debts, so the loss is of substance and not a sentence.",
+      "crossReferences": [
+        {
+          "ref": "42:20",
+          "why": "Sets the two harvests side by side: one is increased, the other given only in part here."
+        },
+        {
+          "ref": "17:18-19",
+          "why": "Contrasts what is hastened for whoever wants the fleeting life with what is striven for properly."
+        },
+        {
+          "ref": "18:103-105",
+          "why": "Names the greatest losers as people whose effort was wasted while they thought they were doing well."
+        }
+      ],
+      "applyIt": "Take one thing you did this week that you would describe as good, and ask what you expected back from it. Not in order to condemn the answer, since most motives are mixed and mostly ordinary. Just find out whether the return you were quietly hoping for was something that could have arrived by the end of the week, or not.",
+      "exploreFurther": [
+        "42:20",
+        "17:18-19",
+        "18:103-105"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:17",
+      "surah": 11,
+      "start": 17,
+      "end": 17,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "A Witness From Him",
+      "tier": "standard",
+      "meaning": "A question is asked and its second half is left unspoken, so the comparison with the person just described has to be supplied by the listener. Three supports are stacked: clear evidence, a witness who recites it, and the Book of Moses standing behind both. Commentators differ sharply over the identity of that witness, some reading it as the angel of revelation, some as the Quran itself, some as a believing man, and they set the range out without deciding.",
+      "historicalContext": "Meccan, in a surah that keeps returning to earlier scripture. The appeal to the Book of Moses reached an audience that knew the older revelations by report, through Jewish and Christian communities in Arabia and along the trade routes north. The factions are understood by the commentators as any assembled groups set against the message, whatever their own creed happened to be.",
+      "keyTerms": [
+        {
+          "arabic": "بَيِّنَةٍ",
+          "gloss": "clear evidence",
+          "note": "The word means something that makes a matter plain by itself. It is not proof assembled by argument but evidence whose own clarity does the work, which is why witnesses are stacked behind it rather than reasons."
+        },
+        {
+          "arabic": "إِمَامًا",
+          "gloss": "a leader to follow",
+          "note": "Literally that which stands in front, and the word used for the one who leads a prayer. Applied to the Book of Moses it means a precedent placed ahead of what came after it."
+        },
+        {
+          "arabic": "ٱلْأَحْزَابِ",
+          "gloss": "the factions",
+          "note": "A word for parties banded together. The plural keeps the opponents unnamed and various, so the sentence covers any grouping that sets itself against the message rather than one community."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony was how seventh-century Arabia settled anything at all. Land, marriage, debt and blood claims turned on who would stand up and say what they had seen, and a claim without a witness was barely a claim. Stacking evidence, then a reciting witness, then a book that came earlier, was speaking the language of a court that everyone listening had stood in.",
+      "didYouKnow": "The identity of the witness in this ayah is among the most discussed questions in classical commentary on the surah. Al-Tabari and Ibn Kathir both lay several readings side by side without ruling, and the disagreement is not doctrinal but grammatical: it turns on which of the preceding nouns the pronoun is attached to.",
+      "theologicalSignificance": "Guidance is presented here as continuous rather than new. Placing the Book of Moses before the present revelation makes the claim a historical one, that the same message has arrived again, and the earlier scripture is called a leader and a mercy rather than a superseded draft. The instruction that follows, to be in no doubt about it, is addressed to someone who already believes.",
+      "crossReferences": [
+        {
+          "ref": "46:12",
+          "why": "Names the Book of Moses a model and a mercy, with this one confirming it in the Arabic tongue."
+        },
+        {
+          "ref": "6:114",
+          "why": "Says those given the earlier Book know that this is sent down from your Lord in truth."
+        },
+        {
+          "ref": "13:43",
+          "why": "Answers a denial of messengership by citing God and whoever has knowledge of the Scripture."
+        }
+      ],
+      "applyIt": "Notice how much of what you hold true rests on somebody having testified to it: a teacher, a parent, a book you trust. That is not a weakness in your faith; it is how nearly all human knowledge travels. Today, when someone tells you something, register consciously that you are receiving testimony, and ask what kind of witness they are.",
+      "exploreFurther": [
+        "46:12",
+        "6:114",
+        "13:43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:44.918Z",
         "reviewed": false
       }
     },
