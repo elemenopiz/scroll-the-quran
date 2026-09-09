@@ -1,8 +1,245 @@
 {
   "surah": 3,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:19:40.160Z",
+  "generatedAt": "2026-09-09T09:36:41.363Z",
   "studies": [
+    {
+      "key": "3:1-3",
+      "surah": 3,
+      "start": 1,
+      "end": 3,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "One Sender, Many Books",
+      "tier": "standard",
+      "meaning": "The surah opens with three disconnected letters, then a declaration of God's oneness, and only then the claim that grounds everything after it: the God who sent the Torah and the Gospel has now sent this Book. The verb used for the Quran suggests a sending in stages; the verb used for the earlier scriptures suggests one descent. The new Book is described as confirming what came before rather than displacing it, and the long argument of the surah rests on that continuity.",
+      "historicalContext": "Medinan, from the years when the young community shared a city with established scriptural communities and received visitors who came to debate. Much of the surah's opening speaks to people who already held a book, so the argument begins where both sides agree: one God, and revelation sent down by Him. The classical commentaries treat these opening sections as one sustained conversation rather than a series of separate statements.",
+      "keyTerms": [
+        {
+          "arabic": "نَزَّلَ",
+          "gloss": "sent down in stages",
+          "note": "The intensive form of the verb carries repetition. Commentators note the contrast with the simple form used in the same ayah for the earlier scriptures, and read it as pointing to a gradual descent."
+        },
+        {
+          "arabic": "مُصَدِّقًا",
+          "gloss": "confirming, verifying",
+          "note": "From the root for truth. It says the Book testifies that earlier revelation was genuine, rather than merely repeating its contents, which makes it a witness before it is a successor."
+        },
+        {
+          "arabic": "ٱلْكِتَـٰبَ",
+          "gloss": "the Book, the Writing",
+          "note": "The same word covers the Torah and the Gospel two clauses later. Placing all three under one noun puts them in a single category instead of setting the newest apart from the rest."
+        }
+      ],
+      "lifeInProphetsTime": "Writing was rare and costly in Arabia. Most people carried poetry, contracts and genealogy in memory, and a household owning a written text was unusual enough to be remarked on. Communities that possessed scripture were known by that fact, and it gave them standing in any argument. To announce that a book had come down was to claim entry into a category the Arabs had watched from outside for generations.",
+      "didYouKnow": "Six surahs open with the letters Alif, Lam, Meem. In the other five the letters are followed by a reference to the Book or to a human situation. Here alone they are followed directly by the statement that there is no god but God, and the Book is mentioned only after that.",
+      "theologicalSignificance": "Revelation is presented as one continuous act with several moments, not as a set of competing claims. God's self-description comes before any book is named, so the scriptures are introduced as issuing from a living and self-sustaining source rather than standing on their own authority. That order shapes the rest of the surah, where disagreement about books is consistently treated as disagreement about the God who sent them.",
+      "crossReferences": [
+        {
+          "ref": "2:1-2",
+          "why": "Opens the previous surah with the same three letters, turning at once to the Book rather than to God's oneness."
+        },
+        {
+          "ref": "5:48",
+          "why": "Sets out the same relationship at length: this Book confirms and stands guard over what came before."
+        },
+        {
+          "ref": "42:13",
+          "why": "Names the earlier prophets and says one religion was enjoined on every one of them."
+        }
+      ],
+      "applyIt": "Read the three opening ayat slowly and notice the order: letters, then God, then the books. Most arguments about scripture start at the third step. The next time a disagreement about religion comes up, in conversation or online, try naming out loud what you and the other person actually hold in common before you name what divides you.",
+      "exploreFurther": [
+        "2:285",
+        "5:48",
+        "42:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.810Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:4",
+      "surah": 3,
+      "start": 4,
+      "end": 4,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "The Criterion And Its Refusers",
+      "tier": "standard",
+      "meaning": "The sentence begun in the previous ayah finishes here: the earlier scriptures were guidance for all people, and then something further was sent, named the Criterion. Commentators differ over whether that word means the Quran itself, revelation in general, or the distinguishing power that scripture gives a person. The ayah then turns sharply to those who reject the signs, and closes with two descriptions of God that speak of strength and requital rather than of mercy.",
+      "historicalContext": "Medinan. The surah's opening addresses a city in which several scriptural communities lived alongside each other and the Muslim community was newly established and still contested. Guidance is described as having been given widely and repeatedly, which is what makes refusal an act rather than an accident in this passage. The classical commentaries read these opening ayat as setting the terms for the longer discussions that follow.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْفُرْقَانَ",
+          "gloss": "the Criterion, the Separator",
+          "note": "From a root meaning to split apart. It names revelation by its effect rather than its contents: it divides truth from falsehood, and one available course of action from another."
+        },
+        {
+          "arabic": "ذُو ٱنتِقَامٍ",
+          "gloss": "Possessor of retribution",
+          "note": "A possessive construction rather than a description of temperament. Classical commentators stress that it means just requital in measure, not the human passion the English word revenge carries."
+        },
+        {
+          "arabic": "ءَايَـٰتِ",
+          "gloss": "signs, verses",
+          "note": "One word covers a verse of scripture and a sign in the created world. Rejecting the signs therefore names a single act with two faces: refusing what is recited and refusing what is seen."
+        }
+      ],
+      "lifeInProphetsTime": "Arabia knew arbitrators. A dispute between clans went to a judge whose ruling separated the parties and closed the matter, and the whole system depended on both sides accepting the verdict once given. A criterion was not an abstraction to that audience; it was the moment a case ended and a claim could no longer be pressed. Naming revelation with that word placed it in the arbitrator's seat.",
+      "didYouKnow": "The word translated Criterion appears seven times in the Quran and does not point at one thing. Twice it is paired with the Book given to Moses, once it names the day two armies met at Badr, and elsewhere it names revelation or an inner discernment. The shared thread is separation rather than any single object.",
+      "theologicalSignificance": "Two claims that are often held apart are joined here: that guidance was given generously to everyone, and that refusing it carries weight. Because the guidance is described as universal and repeated, the severity at the end reads as a response rather than an arbitrary threat. The closing descriptions balance the mercy invoked at the surah's opening, holding power and compassion within one account of God.",
+      "crossReferences": [
+        {
+          "ref": "25:1",
+          "why": "Opens a whole surah by naming the revelation the Criterion, sent as a warning to all the worlds."
+        },
+        {
+          "ref": "8:29",
+          "why": "Promises that awareness of God gives a person an inner criterion for telling matters apart."
+        },
+        {
+          "ref": "2:185",
+          "why": "Calls the Quran guidance, clear proofs of guidance, and the criterion, in one breath."
+        }
+      ],
+      "applyIt": "Notice one decision this week where you already know which way is right and are shopping for a reason not to take it. That gap between knowing and doing is exactly what a criterion exposes. You do not have to resolve it today. Just name it to yourself in one plain sentence, before the reasons crowd in and cover it over.",
+      "exploreFurther": [
+        "2:185",
+        "8:29",
+        "25:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.814Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:5-6",
+      "surah": 3,
+      "start": 5,
+      "end": 6,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Formed Where No One Watches",
+      "tier": "standard",
+      "meaning": "Two claims are set side by side, and the second gives the first a body. God's knowledge misses nothing anywhere; and the work of shaping described next happens in the one place no human being can see. The wombs are named deliberately. Your own face and frame were settled where no witness stood. The pair of names at the end, one of power and one of wisdom, keeps that shaping from sounding either arbitrary or merely mechanical.",
+      "historicalContext": "Medinan, inside the surah's opening argument about revelation and knowledge. Several commentators connect the mention of forming in the womb to the debates with Christian visitors from Najran over the nature of Jesus, since it places every human being, with no exception, inside the same hidden process of being shaped. That connection is drawn from where the ayat sit in the surah rather than from a reported occasion.",
+      "keyTerms": [
+        {
+          "arabic": "يُصَوِّرُكُمْ",
+          "gloss": "He shapes you",
+          "note": "The verb is about giving form and feature, from the root behind the word for an image. It describes designing an appearance rather than merely making, and the intensive form suggests care taken over each one."
+        },
+        {
+          "arabic": "ٱلْأَرْحَامِ",
+          "gloss": "the wombs",
+          "note": "The plural of a word sharing its root with mercy. Arabic hears kinship, compassion and the womb in the same three letters, so the place of forming is named in the vocabulary of tenderness."
+        },
+        {
+          "arabic": "ٱلْحَكِيمُ",
+          "gloss": "the Wise",
+          "note": "The root covers wisdom and also the restraint of a bridle. It suggests judgement that holds power in check, which is why it so often follows a name of might in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "A pregnancy in seventh-century Arabia was an unlit stretch of months. There was no way to know how many children were coming, whether they were sons or daughters, or whether mother and child would both live. Families waited and midwives worked by touch. A society that decided inheritance, standing and marriage by lineage and by sex had, at exactly that point, no information whatever.",
+      "didYouKnow": "The Arabic word for womb shares its root with the two divine names that open all but one surah of the Quran, the Compassionate and the Merciful. Classical lexicographers treat this as a genuine link in meaning rather than an accident of spelling, and the tradition preserves reports that draw the connection out explicitly.",
+      "theologicalSignificance": "The passage answers a question people rarely ask aloud: whether the details of a particular life are noticed. It states that the least visible process there is stands under full view and deliberate choice. Nothing is said here about merit, so the forming precedes anything a person could earn or forfeit. Ending on wisdom rather than power alone, it presents difference between human beings as considered rather than accidental.",
+      "crossReferences": [
+        {
+          "ref": "23:12-14",
+          "why": "Traces the same forming through stages, from a drop to a clot to bone clothed in flesh."
+        },
+        {
+          "ref": "82:6-8",
+          "why": "Puts the question to the reader directly: who assembled you and shaped you as He willed."
+        },
+        {
+          "ref": "31:34",
+          "why": "Lists what is in the wombs among the things whose knowledge belongs to God alone."
+        }
+      ],
+      "applyIt": "Look at your own hands for a moment. Nothing about their shape was chosen by you, or by anyone who loves you, and no one watched it happen. Let that sit rather than turning it into a lesson. Then think of one feature of yourself you have quietly resented, and consider that it was decided with wisdom, in the dark.",
+      "exploreFurther": [
+        "22:5",
+        "23:12-14",
+        "82:6-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.815Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:7",
+      "surah": 3,
+      "start": 7,
+      "end": 7,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "The Definitive And The Unsettled",
+      "tier": "standard",
+      "meaning": "The Book is described as holding two kinds of ayat: definitive ones that form its foundation, and others whose sense is not fixed by their wording alone. The passage does not fault the second kind. It faults an approach to them. Those with a swerve in the heart chase what is unsettled, hunting discord and readings of their own. Where the sentence stops is itself disputed: scholars differ over whether God alone knows the full interpretation, or whether the firmly rooted in knowledge are included in that knowing.",
+      "historicalContext": "Medinan, in the surah's opening engagement with communities that already held scripture and with live arguments about how passages concerning God and His prophets should be read. The classical commentaries connect the ayah to disputes in which lines were pressed out of shape to support a conclusion already reached. They describe the problem as a disposition the reader brings, rather than a flaw in any part of the text.",
+      "keyTerms": [
+        {
+          "arabic": "مُّحْكَمَـٰتٌ",
+          "gloss": "definitive, firmly fixed",
+          "note": "From a root meaning to make firm or to restrain. These ayat are settled in wording and in sense, and the passage calls them the mother of the Book, the stock everything else is read against."
+        },
+        {
+          "arabic": "مُتَشَـٰبِهَـٰتٌ",
+          "gloss": "resembling one another",
+          "note": "Literally things that look alike. The word covers what admits more than one reading because its parts resemble each other, not what is meaningless or deliberately concealed."
+        },
+        {
+          "arabic": "زَيْغٌ",
+          "gloss": "a swerve, a leaning",
+          "note": "The noun names a tilt away from straightness, the same image as a shadow leaning at the end of the day. It locates the fault in the heart's angle, before any argument has been made."
+        },
+        {
+          "arabic": "ٱلرَّٰسِخُونَ",
+          "gloss": "the firmly rooted",
+          "note": "A word used of mountains and of trees that hold in a storm. It describes knowledge settled deep enough to bear weight, as against learning recently picked up."
+        }
+      ],
+      "lifeInProphetsTime": "Arabia was an oral culture in which a line of poetry could be turned by an emphasis, and public argument was a recognised skill with its own champions. Disputes were won by whoever could quote a phrase and place a reading on it before anyone objected. Listeners knew precisely what it looked like when a text was bent, because they had watched it done for a tribe's advantage.",
+      "didYouKnow": "The phrase rendered mother of the Book occurs three times in the Quran and does not mean the same thing in each place. Here it names the definitive verses. In two later surahs it names a heavenly record from which revelation is drawn. Classical commentators treat the two uses separately rather than harmonising them.",
+      "theologicalSignificance": "A revealed text can be wholly from God and still not be uniformly transparent, and the passage presents this as a feature of how it was sent rather than a defect in it. Reading is tied to character: what a person is looking for shapes what the text yields them. And the response commended is not a claim to have solved everything but a sentence of trust, that all of it comes from one Lord.",
+      "crossReferences": [
+        {
+          "ref": "11:1",
+          "why": "Describes the Book's verses as made firm and then set out in detail, using the same root."
+        },
+        {
+          "ref": "39:23",
+          "why": "Calls the Quran a Book whose parts resemble one another, using the second word approvingly."
+        },
+        {
+          "ref": "4:82",
+          "why": "Invites the reader to search the Book for contradiction, as a test of where it came from."
+        }
+      ],
+      "applyIt": "The next time a verse or a saying puzzles you, resist the pull to settle it quickly. Write the question down and leave it open for a week. Then notice whether you wanted an answer or wanted a particular answer. This ayah suggests those are different appetites, and that the second one is what does the damage.",
+      "exploreFurther": [
+        "4:82",
+        "11:1",
+        "39:23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.815Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "3:8-9",
       "surah": 3,
@@ -62,6 +299,359 @@
       }
     },
     {
+      "key": "3:10",
+      "surah": 3,
+      "start": 10,
+      "end": 10,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "What Cannot Be Spent",
+      "tier": "standard",
+      "meaning": "Two things that reliably protect a person in this world are named and then removed. Wealth buys allies, and grown sons defend a house; in the world of this passage they were the two measures of a man's security. The ayah says neither reaches into the encounter with God. The closing image is harsh on purpose: what was gathered as protection becomes, in the reversal, the material the fire feeds on.",
+      "historicalContext": "Medinan, in the surah's opening section on those who refuse the signs, immediately after the discussion of scripture and the prayer against a wandering heart. The passage speaks of a category rather than of named individuals, and the classical commentaries attach no specific occasion to it. Its placement between an appeal about the Day of gathering and a reference to Pharaoh's people frames it as a statement about a recurring pattern.",
+      "keyTerms": [
+        {
+          "arabic": "لَن تُغْنِىَ",
+          "gloss": "will never suffice",
+          "note": "The verb means to make someone independent of need. It is negated here with the strongest particle available, so the claim is not that wealth helps a little but that it does not reach at all."
+        },
+        {
+          "arabic": "أَمْوَٰلُهُمْ",
+          "gloss": "their properties",
+          "note": "From a root meaning to lean or incline. Arabic names wealth by the way people tilt toward it, and the plural covers livestock, land and coin together, everything a household counted."
+        },
+        {
+          "arabic": "وَقُودُ",
+          "gloss": "fuel",
+          "note": "The word for what a fire consumes to keep burning, used elsewhere of firewood and of stones. Applying it to people is among the Quran's starkest reversals of the language of worth."
+        }
+      ],
+      "lifeInProphetsTime": "Security in Mecca and Medina was counted in two columns. Camels, silver and stored dates were one; grown sons who could ride out beside you were the other. A man with both could absorb a failed season or a blood claim. A man with neither depended on a clan's goodwill. Everyone hearing this could name families that had risen and fallen along exactly those two lines.",
+      "didYouKnow": "This ayah returns almost word for word later in the same surah, at 3:116, with a different closing clause. Repeating a formulation after a long stretch of intervening material is a structural habit of Surah 3, and classical commentators note the surah circling back to its earlier statements as its argument develops.",
+      "theologicalSignificance": "The passage does not condemn wealth or family. It locates their reach. Everything that functions as protection in this life is described as bounded, and the boundary is the point at which a person stands before God. That leaves possessions morally neutral in themselves and makes what they are leaned on for the real question. The final image insists the reversal is complete rather than partial.",
+      "crossReferences": [
+        {
+          "ref": "3:116",
+          "why": "States the same claim again later in this surah, closing on a different image."
+        },
+        {
+          "ref": "26:88-89",
+          "why": "Names the one thing that does avail on that day: a heart that arrives sound."
+        },
+        {
+          "ref": "92:11",
+          "why": "Says plainly that a man's wealth will not save him when he falls."
+        }
+      ],
+      "applyIt": "Think of what you would name first if someone asked what makes your position secure. A job, a savings figure, a family who would take you in. Say it aloud, then say that it is real and that it is bounded. Both are true at once. The ayah is not asking you to give it up. It is asking you to know its edge.",
+      "exploreFurther": [
+        "3:116",
+        "26:88-89",
+        "104:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.812Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:11-12",
+      "surah": 3,
+      "start": 11,
+      "end": 12,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "The Habit Of Pharaoh's People",
+      "tier": "standard",
+      "meaning": "A single word meaning settled habit links the present refusal to Pharaoh's people and to those before them. The claim is that this is a pattern with a track record, not a new situation needing new analysis. Then the address turns direct and predictive: the Prophet is told to say that those refusing will be overcome. Classical commentators generally read the prediction as covering the defeats that followed for the opposition around Medina and in Mecca, without tying it to one day.",
+      "historicalContext": "Medinan, from the period after the community's first major battle, when opponents in and around the city were judging whether it would last. The classical commentaries report an exchange in which its early success was dismissed as luck against inexperienced fighters, and read these ayat as the reply. Reports differ on the details, so the commentators give the setting broadly rather than fixing it to a particular occasion.",
+      "keyTerms": [
+        {
+          "arabic": "كَدَأْبِ",
+          "gloss": "like the habit of",
+          "note": "The noun names a persistent way of going about something, close to a working practice. It says the resemblance lies in the conduct itself, not merely in the outcome that happened to follow."
+        },
+        {
+          "arabic": "كَذَّبُوا۟",
+          "gloss": "they declared it false",
+          "note": "The intensive verb is stronger than disbelief. It means calling something a lie and saying so aloud, an active charge laid against the signs rather than a private failure to be convinced."
+        },
+        {
+          "arabic": "ٱلْمِهَادُ",
+          "gloss": "resting place, cradle",
+          "note": "A word for a bed prepared for comfort, used elsewhere of the earth spread out for people to settle on. Applied here it is bitterly out of place, which is the point of the phrase that follows."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian memory was long and mostly oral. Genealogies, feuds and the fates of vanished peoples were recited from memory, and ruins along the northern trade routes were pointed out to travellers as the remains of communities that had been destroyed. Pharaoh's people were known through the scriptural communities of Medina. Invoking a pattern was not abstract; it was a road people had actually walked past.",
+      "didYouKnow": "The phrase rendered as the habit of Pharaoh's people occurs three times in the Quran, once here and twice in Surah 8, and every occurrence sits in a passage about a battle and what followed it. It appears nowhere else, which makes it a formula bound to one kind of moment rather than a general expression.",
+      "theologicalSignificance": "History is treated as evidence here rather than as background colour. The passage asks the reader to reason from precedent: this stance has been taken before, it has resolved before, and the resolution was not arbitrary. That makes God's dealing with communities intelligible rather than opaque. It also sets a limit on triumphalism, since the same reading of precedent applies to whoever later occupies the same position.",
+      "crossReferences": [
+        {
+          "ref": "8:52-54",
+          "why": "Repeats the phrase about Pharaoh's people twice, drawing the same lesson in the aftermath of a battle."
+        },
+        {
+          "ref": "40:45-46",
+          "why": "Follows Pharaoh's people all the way to their outcome, showing what the pattern ended in."
+        },
+        {
+          "ref": "35:43",
+          "why": "States the principle plainly: you will find no alteration in the way of God."
+        }
+      ],
+      "applyIt": "Think of a habit of yours, not a single act, whose ending you already know because you have watched it play out before, in your life or someone else's. Name the pattern rather than the latest instance. Patterns are easier to interrupt than moments, and this passage is interested in the way of going, not the one occasion.",
+      "exploreFurther": [
+        "8:52-54",
+        "35:43",
+        "40:45-46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.812Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:13",
+      "surah": 3,
+      "start": 13,
+      "end": 13,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Two Parties And One Sign",
+      "tier": "standard",
+      "meaning": "A battle is described in the barest possible terms and then called a sign. Two bodies of men met; one was fighting in God's way, the other was not. The strange detail is visual: one side saw the other as twice its actual number. Scholars differ over which party did the seeing, and the ayah does not settle it. Either reading serves the closing point, that support arrives when God grants it, and that the lesson is available only to those willing to look.",
+      "historicalContext": "Medinan, referring to the encounter at Badr in the second year after the migration, which the classical commentators agree is the battle meant. The Muslim force was small, thinly equipped, and had set out expecting to intercept a caravan rather than to face an army. The outcome overturned every reasonable expectation, and the surah returns to it later as the measure against which the harder day at Uhud is read.",
+      "keyTerms": [
+        {
+          "arabic": "فِئَتَيْنِ",
+          "gloss": "two groups",
+          "note": "A dual noun for a body of people gathered for a purpose, used of a detachment rather than a tribe or a nation. It describes the two sides functionally, by what they had come there to do."
+        },
+        {
+          "arabic": "رَأْىَ ٱلْعَيْنِ",
+          "gloss": "plain eyesight",
+          "note": "The phrase insists the seeing was ordinary and physical, not a vision or a nervous impression. That is what makes the doubled number a sign rather than a case of fear miscounting."
+        },
+        {
+          "arabic": "عِبْرَةً",
+          "gloss": "a lesson crossed to",
+          "note": "From a root meaning to pass over, as one crosses a river. A lesson in this sense is something reached by moving through an event, which is why the ayah ties it to those who see."
+        }
+      ],
+      "lifeInProphetsTime": "Badr sat on the caravan road between Syria and Mecca, beside wells that made it a natural halt. Desert warfare turned on numbers, water and nerve, and a raiding party could break simply on seeing what it faced. Men counted the opposing line from a distance and decided in that moment whether to close or scatter. What the eye reported at first light often settled a fight before a blow landed.",
+      "didYouKnow": "Surah 3 discusses two battles and spends far more of itself on the one that went badly. Badr, the victory, is handled in this ayah and a handful of others. The difficult day at Uhud occupies roughly sixty ayat later in the surah. That proportion is itself a comment on which occasion needed the explaining.",
+      "theologicalSignificance": "The passage places causation carefully. It does not say the smaller party prevailed because it was braver or better led. It says God supports whom He wills. That lifts the outcome out of the ledger of human calculation without pretending that no one fought. And the word chosen for lesson implies a crossing, so the event is offered as something to pass through toward understanding rather than a trophy to keep on a shelf.",
+      "crossReferences": [
+        {
+          "ref": "8:44",
+          "why": "Describes the same battle from inside, each side made to look few in the other's eyes."
+        },
+        {
+          "ref": "3:123",
+          "why": "Recalls Badr again later in this surah, naming how weak the believers were at the time."
+        },
+        {
+          "ref": "2:249",
+          "why": "Tells of a small band overcoming a large one by God's permission, long before this community existed."
+        }
+      ],
+      "applyIt": "Recall something that worked out which you had no business expecting. Most people file these under luck and move on. Spend two minutes today reconstructing what you actually thought would happen beforehand, in detail. The word this ayah uses for lesson means a crossing, and you cannot cross an event you never go back into.",
+      "exploreFurther": [
+        "2:249",
+        "3:123",
+        "8:9-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.812Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:14",
+      "surah": 3,
+      "start": 14,
+      "end": 14,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "The Adorning Of Desire",
+      "tier": "standard",
+      "meaning": "The list is precise and unsentimental: spouses, children, heaped gold and silver, marked horses, livestock, tilled fields. These are what a seventh-century person would name if asked what a good life contained, and the passage calls none of them evil. The verb is the interpretive key. It is passive: something has made these things attractive, and the ayah does not immediately say what. Commentators note that the adorning may be God's own arrangement, a test of what a person does with the pull.",
+      "historicalContext": "Medinan, and placed immediately before an alternative is offered rather than after a condemnation. The community in Medina included emigrants who had left property behind in Mecca and hosts whose land and livestock now supported both groups. Questions about how much of a life could be given over to accumulation were practical and live. The surah raises them here without a ruling, inside a longer argument about what lasts.",
+      "keyTerms": [
+        {
+          "arabic": "زُيِّنَ",
+          "gloss": "was made attractive",
+          "note": "A passive verb with no stated agent. Commentators discuss whether the adorning is God's design or the work of desire and suggestion, and the grammar leaves the question open on purpose."
+        },
+        {
+          "arabic": "ٱلْقَنَـٰطِيرِ ٱلْمُقَنطَرَةِ",
+          "gloss": "heaped-up hoards",
+          "note": "A noun doubled by an adjective built from its own root, so the phrase piles the word for a great weight on top of itself. The sound of it performs the accumulation the sense describes."
+        },
+        {
+          "arabic": "ٱلْمُسَوَّمَةِ",
+          "gloss": "marked, branded",
+          "note": "Used of horses distinguished by a brand or groomed for display. The detail concerns status rather than usefulness, naming the part of ownership that exists in order to be seen by others."
+        },
+        {
+          "arabic": "مَتَـٰعُ",
+          "gloss": "goods for a journey",
+          "note": "The word means what a traveller carries for the road, useful and temporary by definition. It concedes the value of everything just listed while quietly attaching a time limit to it."
+        }
+      ],
+      "lifeInProphetsTime": "A marked horse in Arabia was what a rare car is now: expensive to keep, useless for daily work, visible from a long way off. Tilled fields meant permanent water, which most of the peninsula did not have. Camels were the currency of survival itself. The list moves across the whole range, from what keeps a family alive to what merely announces that the family is thriving.",
+      "didYouKnow": "The word rendered as heaps is one the classical lexicographers never agreed on. Reports define it variously as a particular weight of gold, a fixed number of coins, or simply an unspecified large amount. The commentaries preserve the disagreement rather than resolving it, and the ayah works the same way under every reading.",
+      "theologicalSignificance": "Attraction is treated as a condition of being human rather than a fault to repent of. By using a passive verb the passage declines to make desire itself the enemy, and by listing things that are genuinely good it refuses the easy move of calling the world worthless. What it does instead is rename them: provisions for a journey. That reorders them without denying a single one.",
+      "crossReferences": [
+        {
+          "ref": "3:15",
+          "why": "Answers this list immediately with a better one, using the same comparative language."
+        },
+        {
+          "ref": "18:46",
+          "why": "Calls wealth and children the adornment of this life, then sets lasting good against them."
+        },
+        {
+          "ref": "57:20",
+          "why": "Expands the same point into a full image of growth, drying and crumbling away."
+        }
+      ],
+      "applyIt": "Make your own version of this list. Six things, specific to your life, that you would name if someone asked what a good life holds. Write them down. The ayah does not ask you to cross any of them out. Read them back and ask only which of them you would still want if nobody else could see that you had them.",
+      "exploreFurther": [
+        "18:45-46",
+        "57:20",
+        "102:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.813Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:15",
+      "surah": 3,
+      "start": 15,
+      "end": 15,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "Something Better Than That",
+      "tier": "standard",
+      "meaning": "The answer to the previous list arrives as a question, which lets the reader supply the comparison. Gardens with rivers, permanence, purified companions, and then a fourth item that is not a thing at all: acceptance from God. Classical commentators note the sequence. The material images come first because they are what the mind can hold, and the last is set where the weight falls. The closing description, that God sees the servants, turns a general promise personal.",
+      "historicalContext": "Medinan. The surah is arguing with people who measure by what can be counted, and its method here is comparison rather than rebuke. The ayah belongs to the opening section, before the long treatments of scripture and of battle, where the terms of the whole argument are being set. No specific occasion is reported for it. The commentaries read it simply as the deliberate answer to the ayah before it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱتَّقَوْا۟",
+          "gloss": "who guarded themselves",
+          "note": "From a root meaning to shield or take cover. The English word righteous suggests a score kept; the Arabic suggests a person moving carefully, alert to what they are protecting themselves from."
+        },
+        {
+          "arabic": "رِضْوَٰنٌ",
+          "gloss": "good pleasure, acceptance",
+          "note": "An intensive form of a word for contentment. Commentators read it as the greatest item on the list, since the gardens are gifts given while this is the regard of the giver himself."
+        },
+        {
+          "arabic": "مُّطَهَّرَةٌ",
+          "gloss": "purified",
+          "note": "A passive participle covering purity of body and of character together. The passive form matters: the purity is described as conferred rather than achieved, in keeping with everything else in the list."
+        }
+      ],
+      "lifeInProphetsTime": "Running water was the rarest thing in Arabia. Wells were dug, guarded, fought over and inherited, and a garden with a stream beneath it belonged to kings or to the fortunate few in oases like Taif. To promise gardens with rivers running underneath was to name the most expensive thing the audience could picture, and then to say that it does not run out.",
+      "didYouKnow": "The phrase for gardens beneath which rivers flow occurs more than thirty times in the Quran, which makes it among the most repeated descriptions in the Book. Small variations run through the occurrences, in what follows the phrase and in the clause around it, so the formula is never quite stationary from one place to the next.",
+      "theologicalSignificance": "The comparison is made on the reader's own terms. Rather than declaring worldly goods worthless, the passage offers the same categories with their limits removed: dwelling that does not end, companionship without corruption. Then it adds something that has no worldly equivalent at all. That structure treats human desire as sound in its direction and mistaken mainly in what it agrees to settle for.",
+      "crossReferences": [
+        {
+          "ref": "9:72",
+          "why": "Names acceptance from God as greater than the gardens themselves, in almost this order."
+        },
+        {
+          "ref": "3:14",
+          "why": "Supplies the list of worldly goods this ayah is answering, item by item."
+        },
+        {
+          "ref": "98:8",
+          "why": "Closes with God pleased with them and they with Him, the two directions of one word."
+        }
+      ],
+      "applyIt": "You are asked a question here rather than told a fact, so answer it. Take one thing you are working hard for and ask, honestly, whether you would trade it for lasting acceptance if the choice were laid out plainly in front of you. Most people find the answer is yes in principle and unclear in practice. Notice which yours is.",
+      "exploreFurther": [
+        "9:72",
+        "13:35",
+        "98:7-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.813Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:16-17",
+      "surah": 3,
+      "start": 16,
+      "end": 17,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Those Who Ask Before Dawn",
+      "tier": "standard",
+      "meaning": "The righteous named in the previous ayah are now described, and the description is a run of five participles rather than a list of achievements. Four name a sustained disposition: endurance, truthfulness, devoted attentiveness, spending on others. The fifth adds a time. Seeking forgiveness is placed in the last part of the night, the hours before first light, and the commentators note that everything here is done quietly, none of it visible to anyone who is asleep.",
+      "historicalContext": "Medinan, in the surah's opening portrait of the community it is addressing. Standing in prayer at night had been part of the community's practice since the Meccan years, and the hours before dawn already had a settled place in it by the time this surah came. The passage records what the early community's devotional life actually looked like rather than laying down a new form for it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلصَّـٰبِرِينَ",
+          "gloss": "the steadfast",
+          "note": "The root covers binding, confining and holding fast, and is used of tethering an animal. Patience here is restraint under pressure rather than a mild temperament, and the participle names it as an ongoing state."
+        },
+        {
+          "arabic": "ٱلْقَـٰنِتِينَ",
+          "gloss": "the devoutly attentive",
+          "note": "A word for standing in obedient attention, used of prolonged prayer and of quiet submission. It carries stillness and continuity together, which is why obedient and reverent both fall a little short."
+        },
+        {
+          "arabic": "بِٱلْأَسْحَارِ",
+          "gloss": "in the last hours of night",
+          "note": "The plural of a word for the stretch just before first light, when the sky begins to pale. Arabic marks this hour with its own noun, distinct from both night and dawn."
+        }
+      ],
+      "lifeInProphetsTime": "The hour before dawn was when a caravan broke camp, when raiders moved, and when the desert was at its coldest. It was also the only time a person was reliably alone. A household in Medina slept in one or two rooms, and there was no privacy at any other hour. Rising then meant choosing the single stretch of the day nobody else was awake to notice.",
+      "didYouKnow": "All five descriptions in the second ayah are active participles, a grammatical form that names a person by an action still in progress rather than one completed. Not one of the five is a noun of achievement. The effect is a portrait of practices under way instead of a status somebody has finished acquiring.",
+      "theologicalSignificance": "The sequence repays attention. These people begin by declaring belief and immediately ask for forgiveness, so faith arrives alongside the need for pardon rather than after it has been settled. Their qualities are then given as habits rather than credentials. And the last of them is asking, which means the portrait of a righteous person closes with an open hand rather than a record held up for inspection.",
+      "crossReferences": [
+        {
+          "ref": "51:17-18",
+          "why": "Describes the same hour: sleeping little of the night, and asking forgiveness before dawn."
+        },
+        {
+          "ref": "3:135",
+          "why": "Continues the theme later in this surah, among those who remember God after a wrong."
+        },
+        {
+          "ref": "39:9",
+          "why": "Portrays one standing through the night, then asks whether the knowing and the ignorant are equal."
+        }
+      ],
+      "applyIt": "If you wake before your alarm this week, do not reach for your phone. Stay where you are and say one honest sentence to God about something you would not want written down. That is the whole practice. The passage puts asking at the end of its list, after patience and giving, which suggests it is the part people skip.",
+      "exploreFurther": [
+        "17:79",
+        "39:9",
+        "51:15-19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.813Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "3:18",
       "surah": 3,
       "start": 18,
@@ -116,6 +706,127 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.578Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:19",
+      "surah": 3,
+      "start": 19,
+      "end": 19,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Surrender Is The Religion",
+      "tier": "standard",
+      "meaning": "The word rendered religion means a way of life owed and rendered; the word rendered Islam means surrender to God. Read together the ayah says that what God accepts is submission to Him, which the classical commentators understand as the single message every prophet carried rather than a claim about a later name. The second half then diagnoses division. Those given scripture did not differ out of ignorance but after knowledge reached them, and the cause named is rivalry among themselves.",
+      "historicalContext": "Medinan, within the surah's sustained address to communities holding earlier scriptures, a conversation the classical sources connect with the delegation that travelled to Medina from Najran to debate with the Prophet Muhammad (peace be upon him). These opening sections return repeatedly to shared ground before naming any disagreement. The account of division after knowledge here prepares the invitation to common terms issued a few ayat later.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلدِّينَ",
+          "gloss": "religion, what is owed",
+          "note": "The root carries debt, obligation and judgement together. Religion in this sense is what a person renders and is held to, closer to allegiance than to a set of beliefs held privately."
+        },
+        {
+          "arabic": "ٱلْإِسْلَـٰمُ",
+          "gloss": "surrender to God",
+          "note": "A verbal noun meaning handing something over whole. Commentators read it here as the disposition every prophet taught, and the same root gives Arabic its words for peace and for soundness."
+        },
+        {
+          "arabic": "بَغْيًۢا",
+          "gloss": "out of rivalry",
+          "note": "The noun covers envy, overreaching and crossing a limit. It names the motive for division as social rather than intellectual, a question of standing between people rather than of evidence."
+        }
+      ],
+      "lifeInProphetsTime": "Medina in these years was a city of arguments conducted in the open. Scriptural learning carried real authority there, and being recognised as the community that held knowledge affected alliances, marriages and trade terms. A disagreement about a text was never only about the text; a reading could move where a family stood. The word this ayah uses for rivalry landed on people who had watched exactly that happen.",
+      "didYouKnow": "The Quran uses this noun for religion across a wide range, including for the way followed by those who reject the message, as in the closing line of Surah 109. The word itself carries no verdict. It names whatever a person renders allegiance and obedience to, which is precisely why this ayah has to specify what God accepts.",
+      "theologicalSignificance": "Acceptable religion is defined by a posture rather than by a boundary of membership. Because surrender is a disposition, the definition reaches back through every prophet the surah goes on to name, which is exactly how the following ayat use it. The second half matters as much: it locates religious division in the will rather than in the evidence, making it a moral problem instead of an unfortunate accident.",
+      "crossReferences": [
+        {
+          "ref": "3:85",
+          "why": "States the converse later in this surah: what is sought beyond surrender will not be accepted."
+        },
+        {
+          "ref": "2:213",
+          "why": "Gives the same account of division, saying people differed only after clear proofs came."
+        },
+        {
+          "ref": "42:13",
+          "why": "Says the same religion was enjoined on Noah, Abraham, Moses and Jesus alike."
+        }
+      ],
+      "applyIt": "Think of a disagreement you are in where you have already been shown you are wrong on some detail and have not conceded it. Ask what it would cost you, socially, to say so out loud. This ayah names rivalry rather than ignorance as what splits people who hold the same knowledge. The costly sentence is usually a short one.",
+      "exploreFurther": [
+        "2:213",
+        "3:85",
+        "42:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.813Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:20",
+      "surah": 3,
+      "start": 20,
+      "end": 20,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Your Duty Is To Convey",
+      "tier": "standard",
+      "meaning": "This is an instruction for the moment an argument stops being productive. The Prophet is not told to produce a better proof but to state his own position plainly and put the same question back to the other side. Then the passage sets a limit that has been widely noted: if they turn away, the responsibility is delivery, not result. Classical commentators read the phrase about surrendering the face as meaning the whole self, since the face stands for the person in Arabic idiom.",
+      "historicalContext": "Medinan, from the surah's opening engagement with the scriptural communities of the region and with the Arabs who held no book. The instruction follows a statement about division arising after knowledge, so it addresses what to do once argument has reached its limit. It is one of several places where the Prophet Muhammad (peace be upon him) is given the boundary of his own responsibility in plain terms.",
+      "keyTerms": [
+        {
+          "arabic": "حَآجُّوكَ",
+          "gloss": "they dispute with you",
+          "note": "From a root meaning to advance a proof or plea, behind the word for a decisive argument. The verb form makes it mutual, an exchange of claims rather than one side lecturing the other."
+        },
+        {
+          "arabic": "وَجْهِىَ",
+          "gloss": "my face, my whole self",
+          "note": "Arabic uses the face for the person entire and for the direction one turns. Surrendering the face therefore means orientation and identity together, not assent held quietly in the mind."
+        },
+        {
+          "arabic": "ٱلْبَلَـٰغُ",
+          "gloss": "the conveying",
+          "note": "A noun for delivering a message to its destination, from a root meaning to reach or arrive. It defines the task by transmission alone and says nothing at all about what the hearer then does."
+        },
+        {
+          "arabic": "ٱلْأُمِّيِّـۧنَ",
+          "gloss": "those without scripture",
+          "note": "Often rendered unlettered. In this context the commentators read it as naming those who had received no revealed book, the Arabs of the peninsula, rather than making a claim about literacy."
+        }
+      ],
+      "lifeInProphetsTime": "Public dispute was a recognised form in Arabia, with an audience and an unofficial scorekeeper. A delegation would arrive, sit, and argue for hours, and the result affected reputations far beyond the room. Walking away without a verdict was unusual and could easily look like defeat. The instruction here cuts across that expectation, ending the exchange with a question rather than a claim of victory.",
+      "didYouKnow": "The statement that the messenger's responsibility is only to convey recurs in similar wording more than ten times across the Quran, in both Meccan and Medinan surahs. It is one of the few formulas that runs across the entire period of revelation, and it is always addressed to the messenger rather than to his audience.",
+      "theologicalSignificance": "The passage draws a line between persuasion and outcome, and places only the first on the human side of it. That protects the messenger from measuring himself by results, and equally protects the hearer from coercion, since a duty ending at delivery cannot extend into force. The closing description, that God sees the servants, puts the assessment where responsibility for the response also lies.",
+      "crossReferences": [
+        {
+          "ref": "5:99",
+          "why": "States the limit plainly: the messenger's duty is nothing but to deliver the message."
+        },
+        {
+          "ref": "2:256",
+          "why": "Draws the practical consequence, that there is no compulsion in matters of religion."
+        },
+        {
+          "ref": "88:21-22",
+          "why": "Tells the Prophet he is a reminder and not one set in control over them."
+        }
+      ],
+      "applyIt": "In the next conversation where you are trying to change someone's mind, decide in advance what your last sentence will be. Say your piece clearly, ask them once what they think, then stop. Notice the pull to add one more argument on top. That pull is the whole difference between delivering something and needing to win.",
+      "exploreFurther": [
+        "2:256",
+        "5:99",
+        "88:21-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:34.814Z",
         "reviewed": false
       }
     },
