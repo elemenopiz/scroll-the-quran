@@ -1,8 +1,704 @@
 {
   "surah": 37,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:04:05.538Z",
+  "generatedAt": "2026-09-09T15:44:11.403Z",
   "studies": [
+    {
+      "key": "37:1-5",
+      "surah": 37,
+      "start": 1,
+      "end": 5,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "By Those Drawn Up In Ranks",
+      "tier": "standard",
+      "meaning": "Three oaths in three lines, each a feminine plural participle followed by its own cognate noun, a construction Arabic uses to intensify without adding a word. Those drawn up in ranks, those who drive, those who recite a reminder. The Quran does not say who they are, and the classical commentators mostly read them as angels while recording other proposals. Then the thing sworn to arrives in one clause: your God is one. Everything after it widens that single statement outward.",
+      "historicalContext": "Meccan, opening a surah that will run through a long line of earlier prophets. The city's religion was organised around many deities held to be intermediaries, and some Meccans described angels as daughters of God, a claim this same surah answers near its end. No occasion is reported for these ayat. Beginning with beings who stand in ranks and recite sets the terms of the argument before the argument itself begins.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلصَّـٰٓفَّـٰتِ",
+          "gloss": "those drawn up in ranks",
+          "note": "A feminine plural participle from the verb to form a line. The same root gives the word for the rows of a congregation and for a battle line, and the surah takes its name from it."
+        },
+        {
+          "arabic": "ٱلزَّٰجِرَٰتِ",
+          "gloss": "those who drive on",
+          "note": "From a verb for shouting at an animal to move it, and also for rebuking. It is a word of urgency, and the same root returns later in this surah for the shout that raises the dead."
+        },
+        {
+          "arabic": "ٱلْمَشَـٰرِقِ",
+          "gloss": "the places of sunrise",
+          "note": "A plural rather than a single east. The sun rises at a slightly different point on the horizon each day of the year, and the plural takes in all of them at once."
+        }
+      ],
+      "lifeInProphetsTime": "Ranks were how that world organised anything serious: a battle line, a caravan strung out along a route, men standing shoulder to shoulder to pray. Deliberate order in a place with very little of it was something you could see. And the sunrise moved. Anyone who had watched one horizon across a year knew the point shifted steadily and came back, which is what the plural in the last line names.",
+      "didYouKnow": "The Arabic phrase for the places of sunrise occurs in only two ayat of the whole Quran. The root behind the second oath here, the driving, returns later in this same surah as the single shout that brings everyone out of the graves, so the surah swears by drivers at its opening and then uses that word for what drives the dead out at the end.",
+      "theologicalSignificance": "The oath puts order and recitation before the claim, so unity is presented as something already being enacted rather than merely asserted. The reach of the final line matters too. God is named Lord not only of the heavens and the earth but of everything between them and of every point of sunrise, which leaves no gap where a second authority could sit. That is the shape of the argument the rest of the surah makes in stories.",
+      "crossReferences": [
+        {
+          "ref": "37:164-166",
+          "why": "Gives the ranks their own voice later in this surah, saying not one of them is without an assigned station."
+        },
+        {
+          "ref": "79:1-5",
+          "why": "Opens another surah with a run of unnamed plural participles sworn by in exactly this way."
+        },
+        {
+          "ref": "112:1-4",
+          "why": "States the same conclusion at the shortest possible length, oneness with nothing else attached to it."
+        }
+      ],
+      "applyIt": "Next time you are in a congregation, look along the row instead of straight ahead. Notice that a great many people have arranged themselves into a line without anyone directing it, and that this is happening somewhere at every hour as the sunrise moves west. The surah opens by swearing by exactly that, and seeing it takes about five seconds.",
+      "exploreFurther": [
+        "37:164-166",
+        "79:1-5",
+        "112:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.301Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:6-10",
+      "surah": 37,
+      "start": 6,
+      "end": 10,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "The Lower Heaven Adorned",
+      "tier": "standard",
+      "meaning": "The nearest heaven is described as having been decorated, and the ornament named is the stars. Then the same sky is described as guarded, and the two functions sit side by side: it is beautiful and it is closed. What follows describes beings unable to listen in on a higher assembly, pelted from every direction and driven off, with a piercing flame chasing whatever is snatched. The commentators discuss the imagery at length, and read the passage as being about access to hidden knowledge rather than about the sky itself.",
+      "historicalContext": "Meccan. Soothsayers were a working profession in Arabia, and their authority rested on the claim to receive fragments of hidden knowledge from unseen sources. The Quran's opponents were placing it in exactly that category. No occasion is reported for these ayat. Denying the channel that soothsaying depended on was therefore not an aside; it removed the framework the accusation itself was built on.",
+      "keyTerms": [
+        {
+          "arabic": "زِينَةٍ",
+          "gloss": "an adornment",
+          "note": "Something added for beauty rather than for use. Naming the stars as ornament first, before any mention of guarding, keeps the sky from being described only as a defensive work."
+        },
+        {
+          "arabic": "مَّارِدٍ",
+          "gloss": "unmanageable, rebellious",
+          "note": "From a root about something stripped bare and hard to hold, used of a rock with nothing growing on it. It names an intractable nature rather than a particular act."
+        },
+        {
+          "arabic": "ثَاقِبٌ",
+          "gloss": "piercing, boring through",
+          "note": "A participle for something that bores a hole through what it meets. The Quran uses it in only one other place, of a star described as piercing the darkness."
+        }
+      ],
+      "lifeInProphetsTime": "A meteor was a common sight in a desert sky and everyone had a story about one. Diviners in that world made a living on the claim of overheard secrets, charging for verdicts about lost camels, marriages and journeys, and their clients had no way to test them. The passage describes the roof of that trade being closed, in an image the audience could look up and check on any clear night.",
+      "didYouKnow": "The word used here for the piercing flame occurs in only one other place in the Quran, where it describes a star that pierces the darkness. The passage also gives the sky two jobs in consecutive lines, ornament and guard, and the classical commentators noticed the order of them: it is called beautiful before it is called defended.",
+      "theologicalSignificance": "The passage draws a boundary around knowledge. Some of it is announced and some is guarded, and the guarding is described as active rather than incidental. That undercuts any claim to privileged access obtained by stealth, which was the basis of a whole profession. At the same time the first line refuses to make the sky merely functional, so the same object is named as ornament and as boundary with no tension between the two.",
+      "crossReferences": [
+        {
+          "ref": "72:8-9",
+          "why": "Reports the same closure from the other side, with jinn finding the sky filled with guards and flames."
+        },
+        {
+          "ref": "15:16-18",
+          "why": "Describes the same constellations made beautiful, and the same pursuit of anyone who steals a hearing."
+        },
+        {
+          "ref": "67:5",
+          "why": "Names the lamps of the nearest heaven and their second use as missiles against the devils."
+        }
+      ],
+      "applyIt": "Notice one piece of information you are chasing that is not actually yours to have: the outcome of a decision someone else is making, what a person really thinks of you, how something will end. The passage describes a guarded sky and calls it beautiful in the same breath. Try treating one closed door today as decoration rather than obstruction.",
+      "exploreFurther": [
+        "72:8-9",
+        "15:16-18",
+        "67:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.304Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:11-15",
+      "surah": 37,
+      "start": 11,
+      "end": 15,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Are They Harder To Create",
+      "tier": "standard",
+      "meaning": "The instruction is to put a question to them, and the question is a comparison. Are you the harder creation, or the others We made. The answer is supplied in the same breath by naming what they were made from: clay that clings. Then four short lines report the reception. You marvel while they mock. Reminded, they take no heed. Shown a sign, they work at treating it as a joke. And the verdict they arrive at is that this is plain magic, which is a category rather than an argument.",
+      "historicalContext": "Meccan. The comparison being drawn is with the heavens, the earth and everything named in the surah's opening ayat. No occasion is reported. Calling the recitation magic was a live Meccan position, and the classical sources describe the city's leaders settling on a single description to give the pilgrims arriving for the fairs. Magic explained the effect people plainly felt while conceding nothing about the source.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱسْتَفْتِهِمْ",
+          "gloss": "so put the question to them",
+          "note": "A verb for requesting a considered opinion, from the same root as the word for a formal answer. It asks them to judge the case themselves rather than be handed a conclusion."
+        },
+        {
+          "arabic": "لَّازِبٍۭ",
+          "gloss": "clinging, sticky",
+          "note": "Clay wet enough to hold together and stick to a hand. The word occurs only once in the Quran, and it names a stage between loose dust and a shaped form."
+        },
+        {
+          "arabic": "يَسْتَسْخِرُونَ",
+          "gloss": "they work at mocking",
+          "note": "An intensified form of the verb to mock, suggesting ridicule sought out and sustained rather than a spontaneous laugh. The plain form stands in the previous ayah, so the surah escalates deliberately."
+        }
+      ],
+      "lifeInProphetsTime": "Clay that clings was material anyone had handled. Mud brick was mixed and left to reach exactly that consistency before it could be shaped, and a builder judged it by feel. Comparing the making of a human being to a workable lump of it was not an insult in that setting. It was a description of the earliest and least impressive stage of a process whose result was standing there arguing back.",
+      "didYouKnow": "The word for clinging clay occurs only once in the whole Quran. The Book describes human origin with several different materials across its surahs, dust, clay, sounding clay, an extract of clay, and a drop of fluid, and the classical commentators read them as stages of one process rather than as accounts competing with each other.",
+      "theologicalSignificance": "The argument is one of scale and it asks the audience to accept nothing new. They already grant that the heavens exist and that they did not make them. Setting that next to their own beginning in wet clay is meant to make the objection about being raised look small. The four lines that follow then describe why the argument does not land, and not one of the reasons given is intellectual.",
+      "crossReferences": [
+        {
+          "ref": "79:27",
+          "why": "Puts the same question about which is harder to create, and answers it by describing the sky being built."
+        },
+        {
+          "ref": "40:57",
+          "why": "States the comparison directly, that creating the heavens and earth is greater than creating people."
+        },
+        {
+          "ref": "46:33",
+          "why": "Asks whether the maker of the heavens and the earth is unable to revive the dead, and answers that He is able."
+        }
+      ],
+      "applyIt": "Pick an argument you have lost patience with, and instead of restating your case, ask the other person a question that lets them do the comparing themselves. That is the move this passage makes. It does not hand over the answer. It puts two things they already accept side by side, and then it stops talking.",
+      "exploreFurther": [
+        "79:27-33",
+        "40:57",
+        "46:33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.302Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:16-20",
+      "surah": 37,
+      "start": 16,
+      "end": 20,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "One Shout And They Stare",
+      "tier": "standard",
+      "meaning": "The objection is quoted in full, and its force is in the physical detail: dust and bones, and not only us but our earliest fathers. The reply is a single word of assent followed by a correction of posture, since they expect to be raised as they were and are told they will come low. Then the whole thing happens in one line. A single driving shout, and they are standing there looking. Their first sentence is not an argument but a cry, and it names the day correctly.",
+      "historicalContext": "Meccan, and this objection is recorded across the surahs of that period in almost identical wording. The mention of the earliest ancestors was its sharpest form: a body a generation dead is one thing, a line of forebears reaching past memory is another. No occasion is reported. The surah has just described its audience treating signs as jokes, so the question arrives as a challenge rather than as an inquiry.",
+      "keyTerms": [
+        {
+          "arabic": "دَٰخِرُونَ",
+          "gloss": "brought low, made small",
+          "note": "From a root about being humbled and diminished. It answers a question about capacity with a statement about posture, which is not at all what the questioners had asked."
+        },
+        {
+          "arabic": "زَجْرَةٌ",
+          "gloss": "a single driving shout",
+          "note": "The shout used to move an animal along. The surah swore by those who drive using this same root in its second ayah, so the sound that starts everything has already been named."
+        },
+        {
+          "arabic": "يَنظُرُونَ",
+          "gloss": "they are looking, waiting",
+          "note": "A verb covering both looking at something and waiting for it. Here it catches people who have just arrived and are simply standing, which is why translators reach for staring."
+        }
+      ],
+      "lifeInProphetsTime": "Bones were the strongest part of the objection because everyone had seen what time did to them. Graves were shallow, ground shifted, and old burial places surfaced after rain. Beyond that, a family's earliest ancestors existed only as names in a recited genealogy, with no place left to point at. The question about the fathers of old therefore concerned people who had vanished from the landscape entirely.",
+      "didYouKnow": "The word for the single driving shout occurs in only two ayat of the Quran. Its root appears at the very opening of this surah, in the second of the three oaths, where the ones sworn by are described as driving. The same root therefore begins the surah as an oath and returns here as the sound that ends everything.",
+      "theologicalSignificance": "The reply refuses to argue. A one-word yes is given, and then the passage simply narrates the event, which shifts the register from debate to report. What that implies is a claim about the kind of thing under discussion: not a position to be defended but an occurrence with a date. And the deniers supply the identification themselves, so the passage has them name the day they had spent their lives denying.",
+      "crossReferences": [
+        {
+          "ref": "79:13-14",
+          "why": "Uses the same word for the single shout and then places everyone at once on the open surface."
+        },
+        {
+          "ref": "17:49-51",
+          "why": "Records the same objection about bones and dust, and answers it by naming who originated them first."
+        },
+        {
+          "ref": "36:52",
+          "why": "Puts the same cry of dismay in the mouths of the raised, followed by their own recognition of the promise."
+        }
+      ],
+      "applyIt": "Think of a fact about your own future that you know intellectually and do not act on: that you will get old, that a relationship needs work, that money runs out. Notice the gap between knowing it and moving. The passage does not argue with the deniers. It just describes what happens, and the whole distance in it lies between those two things.",
+      "exploreFurther": [
+        "79:6-14",
+        "17:49-52",
+        "36:51-53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.302Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:21-25",
+      "surah": 37,
+      "start": 21,
+      "end": 25,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Day Of Separation",
+      "tier": "standard",
+      "meaning": "The day is named for what it does. Then an order is given: gather those who wronged, their partners, and what they were worshipping instead of God, and guide them along the road to the blaze. The verb is exactly that, the ordinary word for showing someone the way. Then a second order interrupts the march. Stop them, because they are to be questioned. The commentators note the deliberate irony of a word of kindness being used for a column under escort.",
+      "historicalContext": "Meccan, part of a scene running from the single shout to the questioning. Roundups were familiar in that world: a defeated group was collected, held and marched. No occasion is reported for these ayat. The detail of halting the column for questions belongs to a real procedure the audience knew, since captured parties were stopped and interrogated before anything at all was decided about them.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْفَصْلِ",
+          "gloss": "separating, deciding",
+          "note": "From a verb for cutting one thing apart from another. The same word serves for a judicial decision and for a physical division, so the day is named for what it does to a mixed crowd."
+        },
+        {
+          "arabic": "ٱحْشُرُوا۟",
+          "gloss": "gather them together",
+          "note": "The verb for driving people out of their places into a single assembly, used of rounding up a scattered population. It carries compulsion in it rather than invitation."
+        },
+        {
+          "arabic": "فَٱهْدُوهُمْ",
+          "gloss": "and guide them along",
+          "note": "The ordinary verb for guiding someone on a road. Using it here for the road to the blaze puts a word of kindness on a march under escort, which the commentators read as deliberate."
+        }
+      ],
+      "lifeInProphetsTime": "After a raid, prisoners were collected, roped together and walked. They were halted at intervals and questioned about who they were, whose protection they held, and what might be paid for them. This was ordinary procedure and everyone hearing had either seen it or feared it. The passage borrows the sequence exactly: gathered, marched, stopped, questioned, in that order.",
+      "didYouKnow": "The name used here, the Day of Decision, occurs in six ayat of the Quran, and one short surah alone accounts for three of them. The Book gives the Day of Judgement a large number of distinct names, and the classical commentators collected them, noting that each names a different thing the day does rather than being an alternative label for one idea.",
+      "theologicalSignificance": "Judgement is presented as a sorting and not only as a sentence. The word for the day names separation, and the first act described is a gathering together of things that had been mixed in life: people, their partners, and the objects of their devotion. What is being claimed is that these belong together and were kept apart only by circumstance. The questioning then comes before anything is decided.",
+      "crossReferences": [
+        {
+          "ref": "77:13-14",
+          "why": "Names the same day twice in two lines and asks what could convey to a reader what it is."
+        },
+        {
+          "ref": "36:59",
+          "why": "Gives the order for separation directly, telling the guilty to stand apart from everyone on that day."
+        },
+        {
+          "ref": "30:14",
+          "why": "Says that on the day the Hour arrives people will be divided into separate groups."
+        }
+      ],
+      "applyIt": "Look at one thing you keep with you that you would not want gathered up alongside you: a habit, a grudge, an account you scroll at night. Not a purge, just an honest look at what would be counted as travelling with you. Then set one of them down for a day and notice how much of it was attachment and how much was only habit.",
+      "exploreFurther": [
+        "77:12-15",
+        "36:59-64",
+        "30:12-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.302Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:26-30",
+      "surah": 37,
+      "start": 26,
+      "end": 30,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "You Came At Us From The Right",
+      "tier": "standard",
+      "meaning": "The interrogation collapses into a quarrel. First a note on their condition: today they are giving in, the fight gone out of them. Then they turn on one another with questions, and the accusation is specific. You used to come at us from the right. The commentators read the right side as the direction of good counsel, or of strength, or of sworn assurances, and record the range without choosing. The answer denies power rather than involvement. You were not believers, and we held no authority over you.",
+      "historicalContext": "Meccan. The exchange fits a city whose leadership held its position by influence rather than by force, and where following the notables was ordinary prudence rather than weakness. No occasion is reported for these ayat. The Quran preserves comparable exchanges elsewhere between the followed and the following, and the reply here concedes the persuasion while refusing the responsibility for it.",
+      "keyTerms": [
+        {
+          "arabic": "مُسْتَسْلِمُونَ",
+          "gloss": "giving themselves up",
+          "note": "An active participle from the verb to hand oneself over. The same root gives the words for peace and for submission, and here it names people who have simply stopped resisting."
+        },
+        {
+          "arabic": "ٱلْيَمِينِ",
+          "gloss": "the right, the right side",
+          "note": "Read by the commentators as the side of good fortune and sound counsel, and also as the side of strength, and also as a reference to sworn assurances. They record the readings without settling on one."
+        },
+        {
+          "arabic": "سُلْطَـٰنٍۭ",
+          "gloss": "authority, warrant",
+          "note": "Power that can compel, from a root also used of an argument that overwhelms. The denial is precise: influence there was, but nothing that removed anyone's choice."
+        }
+      ],
+      "lifeInProphetsTime": "A man in Mecca followed his clan's notables in nearly everything, and doing so was the ordinary way of staying safe and solvent. Advice came from the same men who controlled credit, protection and marriages. The complaint recorded here, that they came at us from the right, describes counsel arriving from the direction a person expects good counsel to come from, which is exactly what made it so hard to refuse.",
+      "didYouKnow": "The reply given here, that we had no authority over you, is almost word for word the defence the Quran places in the mouth of the enemy of humankind at the reckoning in another surah, where he adds that he only called and they answered. The same sentence therefore serves the human misleader and the unseen one alike.",
+      "theologicalSignificance": "The passage draws a line between influence and compulsion and puts responsibility on the side of the follower. That is uncomfortable, and it is stated by the misleaders themselves rather than by the Quran, which lets the argument be heard from an interested party. The next ayah then closes the loophole by saying both sides share the outcome, so the distinction never becomes an excuse for anyone.",
+      "crossReferences": [
+        {
+          "ref": "14:22",
+          "why": "Gives the same defence in almost the same words, adding that he only called them and they answered."
+        },
+        {
+          "ref": "34:31-33",
+          "why": "Runs the same quarrel between the followed and the following, each throwing the charge back at the other."
+        },
+        {
+          "ref": "33:67",
+          "why": "Records the followers saying they obeyed their leaders and dignitaries and were led off the path."
+        }
+      ],
+      "applyIt": "Think of one thing you do because people you respect do it. Not a bad thing necessarily. Then ask whether you would still do it if they stopped tomorrow. This passage is about people discovering at the last possible moment that they had a choice all along, and the only way to find out is to test one small item while testing is still cheap.",
+      "exploreFurther": [
+        "14:21-22",
+        "34:31-33",
+        "33:66-68"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.302Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:31-35",
+      "surah": 37,
+      "start": 31,
+      "end": 35,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "They Swelled With Pride",
+      "tier": "standard",
+      "meaning": "The misleaders end their defence with an admission that concedes everything: we led you astray, because we were astray ourselves. No motive is offered and none is needed. The surah then steps outside the dialogue to state the outcome, that both are partners in the punishment, and to say that this is simply how the guilty are dealt with. The last line supplies the root of the whole thing. When told that there is no god but God, they used to swell with pride.",
+      "historicalContext": "Meccan. The sentence identified as the trigger is the plainest form of the surah's opening claim, and the reaction described is not disagreement but affront. The commentators connect this with the Meccan leadership's response to the message, which concerned standing far more than argument. No occasion is reported for the ayat. What follows immediately is their sneer about abandoning gods for a poet.",
+      "keyTerms": [
+        {
+          "arabic": "غَـٰوِينَ",
+          "gloss": "gone astray, deluded",
+          "note": "From a root about losing the way through misjudgement rather than through ignorance. The same word covers the misleaders and what they made of others, so nothing is claimed for their position."
+        },
+        {
+          "arabic": "مُشْتَرِكُونَ",
+          "gloss": "sharing in it together",
+          "note": "From the root for partnership in a venture. Using a commercial word for shared punishment turns the relationship into a joint account, which the passage has just shown them trying to dissolve."
+        },
+        {
+          "arabic": "يَسْتَكْبِرُونَ",
+          "gloss": "they swell with pride",
+          "note": "A form meaning to seek greatness or to count oneself great. It names a reaction to a sentence rather than a considered rejection of it, which is why no counterargument is recorded anywhere."
+        }
+      ],
+      "lifeInProphetsTime": "Status in Mecca was managed daily and in public: seating at a gathering, the order of speaking, who greeted whom first. A statement that placed every man level before one authority did not read as a theological proposal but as a redistribution. The reaction the ayah names, swelling rather than reasoning, is exactly what a challenge to standing produces in a society that ran on it.",
+      "didYouKnow": "The word for being partners together in the punishment occurs in only two ayat of the Quran, and both use the ordinary commercial term for shareholders in a venture. The other passage adds that being partners in it will do them no good on that day, which closes the exit that this scene shows the misleaders and their followers each trying to find.",
+      "theologicalSignificance": "The passage locates unbelief in pride rather than in doubt. Nobody in it produces an argument at any point, and the misleaders' own account of themselves is that they were lost and passed it on. That shapes how the rest of the surah works: the long series of prophets to come is not offered as proof but as a record of what happens when a claim about standing meets a claim about God.",
+      "crossReferences": [
+        {
+          "ref": "43:39",
+          "why": "The only other place with this word for shared punishment, saying that sharing it will not benefit them."
+        },
+        {
+          "ref": "39:45",
+          "why": "Describes the same recoil, hearts shrinking when God alone is mentioned and lifting when others are named."
+        },
+        {
+          "ref": "71:7",
+          "why": "Shows the same posture in an earlier community, fingers in the ears and garments pulled over the head."
+        }
+      ],
+      "applyIt": "Watch for the moment in a disagreement when you stop thinking and start defending your standing. It has a physical feel, usually in the chest or the jaw. When you notice it today, say nothing for ten seconds. This passage records people who never got past that moment, and the whole difference lies in whether you can feel it happening.",
+      "exploreFurther": [
+        "43:36-39",
+        "39:45",
+        "71:5-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:36-40",
+      "surah": 37,
+      "start": 36,
+      "end": 40,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "For A Mad Poet",
+      "tier": "standard",
+      "meaning": "The sneer is quoted exactly: are we to leave our gods for a mad poet. Two accusations in one phrase, and they do not sit together, since a poet is a craftsman in control of his words and a possessed man is not. The reply corrects both in a single line. He came with the truth and confirmed the messengers, which puts him in a line rather than in a category of his own. Then the consequence is stated, limited strictly to what was done, and one group is excepted from it.",
+      "historicalContext": "Meccan. Calling a man possessed and calling him a poet were both explanations for speech that seemed to come from somewhere else, since poets in Arabia were held to draw on an unseen source. No occasion is reported for these ayat. The commentators note the incoherence of the pairing and read it as the mark of people casting about for any description that would keep the recitation inside a familiar category.",
+      "keyTerms": [
+        {
+          "arabic": "مَّجْنُونٍۭ",
+          "gloss": "possessed, out of his senses",
+          "note": "Literally one affected by the jinn. The word assigns the speech to an unseen source while denying the speaker any control over it, which is how it could sit beside the charge of being a poet."
+        },
+        {
+          "arabic": "وَصَدَّقَ",
+          "gloss": "and he confirmed",
+          "note": "The verb for verifying a statement as true. Applying it to the earlier messengers makes this message a corroboration rather than a novelty, which answers the charge of abandoning what came before."
+        },
+        {
+          "arabic": "ٱلْمُخْلَصِينَ",
+          "gloss": "those made pure, singled out",
+          "note": "A passive form, so the purifying is something done to them rather than achieved by them. The surah returns to this description of the excepted group several times over its length."
+        }
+      ],
+      "lifeInProphetsTime": "Leaving your gods was not a change of opinion but a change of address. The deities of Mecca were tied to families, to the sanctuary, to the pilgrimage economy and to the seasonal fairs. Abandoning them meant stepping out of your clan's protection and its income in the same movement. The question quoted here is not really about a poet. It is about what the questioner would have to give up.",
+      "didYouKnow": "The description of the excepted servants at the end of this passage occurs five times in this surah, each time marking off a group from a general judgement. It is in the passive form throughout, so they are described as having been made sincere rather than as having made themselves so, which is unusual in a phrase people often use of themselves.",
+      "theologicalSignificance": "The reply reframes the dispute by naming the relation to earlier messengers. If the message confirms rather than replaces, the charge of abandonment loses its object, and the argument shifts from novelty to continuity. Then the consequence is stated with a strict limit, repaid only for what you did, which keeps the warning from spreading beyond the acts named. The exception that follows opens the passage into a description of the Garden.",
+      "crossReferences": [
+        {
+          "ref": "52:29-30",
+          "why": "Answers the same two charges together, denying that he is a soothsayer or a man out of his senses."
+        },
+        {
+          "ref": "68:2",
+          "why": "Denies the charge of madness directly and immediately at the opening of another surah."
+        },
+        {
+          "ref": "46:9",
+          "why": "States the same continuity from the Prophet's own mouth, that he is no innovation among the messengers."
+        }
+      ],
+      "applyIt": "Notice the next time you dismiss something with two labels that cannot both be true: he is lazy and he is obsessive, she is naive and she is calculating. Contradictory dismissals usually mean the real objection lies elsewhere. Ask yourself what you would have to change if the thing were true. That is the question this passage is actually about.",
+      "exploreFurther": [
+        "52:29-34",
+        "68:1-6",
+        "46:9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:41-45",
+      "surah": 37,
+      "start": 41,
+      "end": 45,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "A Provision Already Known",
+      "tier": "standard",
+      "meaning": "The description begins with an odd phrase: a provision that is known. The commentators take it as fixed and appointed, in contrast with the provision of this world, which arrives without a schedule and can fail. Then fruits, honour, gardens of delight, and a detail that is easy to read past. They are on couches facing one another. The furniture is arranged for conversation. And a cup is being carried round to them, drawn from a spring that runs on the surface.",
+      "historicalContext": "Meccan, immediately after the exception made for God's chosen servants. The audience belonged to a trading city where provision was famously unpredictable: a caravan arrived or it did not, a season was good or it failed entirely. No occasion is reported. Calling sustenance known, and then describing seating that turns everyone inward, answers two specific anxieties of that life, uncertainty and isolation on the road.",
+      "keyTerms": [
+        {
+          "arabic": "مَّعْلُومٌ",
+          "gloss": "known, appointed",
+          "note": "A passive participle for something already determined. The commentators read it as provision whose measure and time are fixed, which is the opposite of how sustenance behaves in this world."
+        },
+        {
+          "arabic": "مُّتَقَـٰبِلِينَ",
+          "gloss": "facing one another",
+          "note": "A form describing a mutual arrangement, each turned toward the other. It describes the seating rather than the seats, so the detail being given here is about company."
+        },
+        {
+          "arabic": "مَّعِينٍۭ",
+          "gloss": "a spring running on the surface",
+          "note": "Water visible where it flows, from a root connected with the eye. It names the source of the cup rather than its contents, so the drink is identified by where it comes from."
+        }
+      ],
+      "lifeInProphetsTime": "A merchant's year was a series of unknowns: whether the caravan would return, at what price, whether the rains had reached the grazing. Wealth in that world did not remove uncertainty, it only postponed it. And travelling meant eating alone or in a line facing outward at a halt. Seating arranged so that everyone faces inward was the shape of a house, not of a journey.",
+      "didYouKnow": "The word used here for the spring the cup is drawn from occurs in only four ayat of the Quran, and it always names water running on the surface where it can be seen, never a well or a hidden source. One of those four uses it to ask who could bring water back if the springs sank out of reach, which is the same worry from the other side.",
+      "theologicalSignificance": "Two anxieties are answered before any pleasure is described. The provision is known, which removes uncertainty, and the seating faces inward, which removes isolation. Only then do the fruits and the cup arrive. That order suggests a condition being described rather than a set of goods, and the honour named alongside the fruit places the reward in the category of standing as much as of enjoyment.",
+      "crossReferences": [
+        {
+          "ref": "56:15-18",
+          "why": "Gives the same scene at greater length, reclining and facing one another with cups carried round from a spring."
+        },
+        {
+          "ref": "15:47",
+          "why": "Describes the same seating facing one another, after rancour has been taken out of their chests."
+        },
+        {
+          "ref": "88:8-16",
+          "why": "Lists a comparable set: a flowing spring, raised couches, cups set ready and cushions arranged in rows."
+        }
+      ],
+      "applyIt": "Arrange one meal this week so that the people at it face each other rather than a screen or a wall. It sounds small. This passage takes the trouble to tell us how the furniture is set before it mentions the fruit or the drink, and it is worth taking seriously that company was thought worth describing at all.",
+      "exploreFurther": [
+        "56:10-21",
+        "15:45-48",
+        "88:8-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:46-50",
+      "surah": 37,
+      "start": 46,
+      "end": 50,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "No Hidden Harm In It",
+      "tier": "standard",
+      "meaning": "The cup is described mostly by what it does not do. White, and a pleasure to those drinking, with no treachery in it and no draining of the senses. The two denials are precise: the first word names an injury that takes a person from a direction they were not watching, and the second covers both the loss of reason and the emptying that follows. Then the companions are described with an image of something kept carefully covered, and the scene turns outward as the people begin questioning one another.",
+      "historicalContext": "Meccan. Wine was ordinary in pre-Islamic Arabia, celebrated in its poetry and central to its hospitality, and its costs were just as well known: quarrels, ruined standing, the morning after. No occasion is reported for these ayat. Describing a drink that carries the pleasure without the price landed on an audience whose finest verse praised wine and whose feuds often began at a drinking session.",
+      "keyTerms": [
+        {
+          "arabic": "غَوْلٌ",
+          "gloss": "a hidden harm",
+          "note": "An injury that takes a person unawares, from a root about being seized from a direction nobody was watching. The word occurs only once in the Quran, and it names treachery rather than pain."
+        },
+        {
+          "arabic": "يُنزَفُونَ",
+          "gloss": "they are drained of sense",
+          "note": "From a root about a well being emptied out. It covers both losing one's reason and running dry, so the denial reaches the drink's effect and its exhaustion in a single word."
+        },
+        {
+          "arabic": "مَّكْنُونٌ",
+          "gloss": "kept carefully covered",
+          "note": "A passive participle for something stored away and shielded from handling. The Quran uses it of a pearl and of an egg in the nest, so it names protection rather than appearance."
+        }
+      ],
+      "lifeInProphetsTime": "An ostrich egg, kept covered in the sand and never handled, was a standing image in Arabic poetry for a surface that nothing has touched or dulled. Poets used it of a face kept out of the sun. The comparison in this passage arrived with that whole literary tradition attached, and in the older poetry its point was always preservation rather than ornament.",
+      "didYouKnow": "The word here for a hidden harm in the cup occurs only once in the entire Quran. The image in the following ayah, of an egg kept covered and never handled, was in use among Arab poets long before this surah, and the classical commentators explain it from that existing usage rather than proposing a new meaning for it.",
+      "theologicalSignificance": "The description works by subtraction, and this is the surah's habit elsewhere too: the Garden is described by what is absent as often as by what is present. That says something about the human situation being addressed. Every good thing available here arrives with a price attached to it, and what is promised is not a larger pleasure but the same pleasure with the attachment removed.",
+      "crossReferences": [
+        {
+          "ref": "56:19",
+          "why": "Denies the same draining of the senses, using the identical word, and pairs it with a headache instead."
+        },
+        {
+          "ref": "52:23",
+          "why": "Says the cup exchanged there brings no idle talk and no sinfulness, adding a social cost to the list."
+        },
+        {
+          "ref": "47:15",
+          "why": "Describes rivers of a drink that gives pleasure to those who drink, beside water, milk and honey."
+        }
+      ],
+      "applyIt": "Name one pleasure in your life that reliably charges you afterwards: the second hour of scrolling, the argument you win, the late snack. You do not have to give it up today. Just name the price out loud when you pay it. The passage describes a joy with the bill removed, and that is hard to want clearly until you know what you are currently paying.",
+      "exploreFurther": [
+        "56:15-21",
+        "52:17-24",
+        "47:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:51-55",
+      "surah": 37,
+      "start": 51,
+      "end": 55,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "I Had A Companion Once",
+      "tier": "standard",
+      "meaning": "The conversation in the Garden turns to the past, and one of them tells a story. I had a companion who used to ask whether I really believed we would be called to account once we were dust and bones. Then he puts a question to the others that sounds almost casual: would you like to look. He looks, and finds the man in the middle of the blaze. The commentators note how ordinary the setup is. This is a man describing a colleague, not an enemy.",
+      "historicalContext": "Meccan. The word used for the companion covers a business partner, a neighbour, an inseparable friend, whoever spends the day at your side. In a city organised around shared ventures, that was the closest relationship most men had outside their own family. No occasion is reported. The objection the companion is quoted as making is the one this surah recorded earlier from the Meccans themselves.",
+      "keyTerms": [
+        {
+          "arabic": "قَرِينٌ",
+          "gloss": "close companion",
+          "note": "One joined to another, from the verb to couple two things together. It covers a friend, a partner in trade and anyone habitually at your side, and the Quran also uses it of an unseen companion."
+        },
+        {
+          "arabic": "مُّطَّلِعُونَ",
+          "gloss": "ones looking over an edge",
+          "note": "From a verb for rising up to look over the rim of something. The form suggests looking down from a height, which is why the next line describes him seeing into the middle of the blaze."
+        },
+        {
+          "arabic": "سَوَآءِ",
+          "gloss": "the middle, the level centre",
+          "note": "A word for the midpoint or the even part of a thing. Naming the centre rather than simply the place makes the location exact in a way a general word would not have done."
+        }
+      ],
+      "lifeInProphetsTime": "Business in Mecca was done in partnerships, and a man's partner knew his affairs better than his cousins did. You travelled together for months, shared the risk and settled accounts on return. Disagreeing with such a person about something as large as the raising of the dead, and then continuing to trade with him anyway, was an entirely ordinary situation. The passage assumes its audience knows how that feels.",
+      "didYouKnow": "The question this companion is quoted as asking is a near repetition of the objection the surah quoted from its own audience earlier, with one word changed: there the question was about being raised, and here it is about being called to account. The commentators treat the second as the sharper of the two, since it concerns consequence rather than mechanism.",
+      "theologicalSignificance": "The scene puts the two men in the same social world and separates them by nothing except what they held. Nothing is said about wealth, tribe or conduct beyond that. It also gives the Garden's conversation a memory, since the speaker still knows who this person was and what he used to say. And the looking is permitted rather than demanded, because what follows is not gloating but a statement about how nearly he went the same way.",
+      "crossReferences": [
+        {
+          "ref": "37:16",
+          "why": "Records the same objection earlier in this surah, differing from the companion's by a single word."
+        },
+        {
+          "ref": "18:32-43",
+          "why": "Tells a longer version of the same relationship, two men in dispute and what became of one of them."
+        },
+        {
+          "ref": "74:42-47",
+          "why": "Has the people of the Fire explain themselves, naming the habit of talking idly with those who talked."
+        }
+      ],
+      "applyIt": "Think of someone you spend real time with whose sense of what matters is the opposite of yours. Not in order to argue. Just notice, once, that you have probably never said plainly what you believe to them. The man in this passage remembers the conversations exactly. Consider whether there is one you would want to have had.",
+      "exploreFurther": [
+        "18:32-44",
+        "74:38-48",
+        "43:36-39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "37:56-60",
+      "surah": 37,
+      "start": 56,
+      "end": 60,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "You Almost Ruined Me",
+      "tier": "standard",
+      "meaning": "The speech to the man in the blaze is not triumphant. By God, he says, you nearly brought me down, and but for the favour of my Lord I would have been among those produced here. Then he turns and asks a question that sounds like wonder at his own situation: so are we not to die, except our first death, and are we not to be punished. The passage answers by naming it. This is the supreme winning through. The commentators read the questions as astonishment rather than doubt.",
+      "historicalContext": "Meccan, closing the scene in the Garden that began with a cup and a conversation. No occasion is reported for these ayat. The particle the speaker uses for his oath is the least common of the three Arabic has, kept in the Quran for moments of strong feeling, and most of its occurrences fall inside a single narrative spoken by men under pressure. Here it opens a speech about a near miss.",
+      "keyTerms": [
+        {
+          "arabic": "تَٱللَّهِ",
+          "gloss": "by God",
+          "note": "One of three particles Arabic uses for swearing, and the least common of them. The Quran keeps it for moments of strong feeling, and most of its occurrences fall inside a single surah."
+        },
+        {
+          "arabic": "لَتُرْدِينِ",
+          "gloss": "you would have brought me down",
+          "note": "From a verb about falling into a pit and perishing there. The word occurs only once in the Quran, and it makes the danger a fall rather than an attack from outside."
+        },
+        {
+          "arabic": "ٱلْفَوْزُ",
+          "gloss": "the winning through",
+          "note": "Success in the sense of escaping danger and reaching safety, from a root about deliverance rather than about profit. Its usual partner in the Quran is the word for great."
+        }
+      ],
+      "lifeInProphetsTime": "A pit was a real hazard. Wells were left open, old cisterns collapsed, and a man walking at night could go into one and not be found for days. The verb this speaker uses carries exactly that picture. Near misses were common enough to be told as stories: the road not taken, the caravan missed, the fever that passed. This whole speech is one of those stories, told at the end of everything.",
+      "didYouKnow": "The particle used for the oath here is the rarest of the three Arabic uses for swearing, occurring in only nine ayat of the Quran, and five of those nine fall inside the surah of Joseph, in the mouths of his brothers and of the people around his father. The verb for being brought to ruin in the same line occurs nowhere else in the Book.",
+      "theologicalSignificance": "The first thing said by a person who has arrived safely is about how nearly he did not. That is a specific claim about how deliverance is experienced from the inside: not as a reward collected but as a near miss survived, and attributed at once to a favour rather than to a decision. The questions that follow are then answered by naming the whole state a triumph, which places winning in the category of escape.",
+      "crossReferences": [
+        {
+          "ref": "44:56-57",
+          "why": "Uses the same phrase for the supreme winning through, after saying they taste no death beyond the first."
+        },
+        {
+          "ref": "3:185",
+          "why": "Names being kept from the Fire and admitted to the Garden as exactly this kind of winning through."
+        },
+        {
+          "ref": "6:16",
+          "why": "Says whoever is spared on that day has been shown mercy, and calls that the clear winning through."
+        }
+      ],
+      "applyIt": "Say out loud one thing that could easily have gone the other way in your life, and name what would have followed if it had. Not in order to frighten yourself. The man in this passage begins his account of paradise with a near miss and a favour, in that order, and most people have at least one such story they have never actually told.",
+      "exploreFurther": [
+        "44:51-57",
+        "3:185",
+        "6:15-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:44:11.304Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "37:96-100",
       "surah": 37,
