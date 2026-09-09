@@ -1,7 +1,7 @@
 {
   "surah": 18,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:34:32.486Z",
+  "generatedAt": "2026-09-09T12:40:50.598Z",
   "studies": [
     {
       "key": "18:1-10",
@@ -874,6 +874,64 @@
       }
     },
     {
+      "key": "18:29",
+      "surah": 18,
+      "start": 29,
+      "end": 29,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Let Whoever Wills Believe",
+      "tier": "standard",
+      "meaning": "The truth is announced as coming from the reader's Lord, and then choice is handed over in a sentence that sounds like permission but is not. The commentators read it as a challenge rather than an allowance, because what immediately follows is the consequence. A fire is described as enclosing its people like a tent wall, and the relief they ask for arrives as scalding water. The passage grants the freedom and refuses to pretend it is costless.",
+      "historicalContext": "Meccan. The city's leadership had reportedly offered terms for cooperation, and the preceding ayat tell the Prophet Muhammad (peace be upon him) to keep the company of the poor believers rather than the influential. This ayah closes that instruction by removing the reason for courting anyone. Nobody's belief is being purchased, so nobody's conditions need to be met.",
+      "keyTerms": [
+        {
+          "arabic": "سُرَادِقُهَا",
+          "gloss": "its enclosing wall",
+          "note": "A word for the cloth wall of a great tent or a courtyard awning, used only here in the Quran. It turns the fire into an enclosure with a perimeter, something pitched around people rather than merely burning near them."
+        },
+        {
+          "arabic": "كَٱلْمُهْلِ",
+          "gloss": "like molten metal",
+          "note": "Commentators describe it as metal dross melted down, or the sediment of oil. Either way the point is a liquid that looks drinkable at a distance and destroys on contact."
+        },
+        {
+          "arabic": "مُرْتَفَقًا",
+          "gloss": "a place to rest",
+          "note": "From the root for the elbow, naming the spot where you lean while resting. The word occurs twice in the Quran, here and two ayat later, once called wretched and once excellent."
+        }
+      ],
+      "lifeInProphetsTime": "Water in Arabia was the difference between a journey completed and a journey ended. Travellers rationed it, wells were owned and defended, and the cry for a drink was the most basic request one person could make of another. A caravan that reached a well and found it bitter or fouled was in real danger. The image here takes that exact moment and turns the relief itself into the harm.",
+      "didYouKnow": "The word closing this ayah, naming a place where you lean and rest, appears only twice in the whole Quran. Both occurrences sit two ayat apart in this surah. Here the sentence says what a wretched resting place, and in the description of the garden that follows it says what an excellent one, using the identical term for both.",
+      "theologicalSignificance": "Freedom of belief is stated in the strongest possible form and immediately paired with accountability, which is the Quran's usual pattern. Nothing here suggests that the choice is unreal or that the outcomes are equivalent. The passage also locates the truth's authority in its source rather than in any pressure applied on its behalf, which is why the messenger is told to state it and stop.",
+      "crossReferences": [
+        {
+          "ref": "2:256",
+          "why": "States directly that there is no compulsion in religion, since right guidance has become distinct from error."
+        },
+        {
+          "ref": "18:31",
+          "why": "The matching description of the garden, ending with the same word for a resting place."
+        },
+        {
+          "ref": "10:99",
+          "why": "Asks whether a messenger would compel people to believe when God did not make them one community."
+        }
+      ],
+      "applyIt": "Think of someone whose beliefs you have been trying to manage. Notice how much of your effort is persuasion and how much is pressure. This ayah models handing the matter over after saying the thing clearly once. Try that this week with one person: say what you think, plainly and briefly, and then genuinely leave it.",
+      "exploreFurther": [
+        "2:256",
+        "10:99",
+        "88:21-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.096Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "18:30",
       "surah": 18,
       "start": 30,
@@ -932,6 +990,586 @@
       }
     },
     {
+      "key": "18:31",
+      "surah": 18,
+      "start": 31,
+      "end": 31,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "Green Silk And Flowing Rivers",
+      "tier": "standard",
+      "meaning": "The description is deliberately concrete: permanent gardens, rivers running beneath, gold bracelets, green garments of fine and heavy silk, couches to recline on. The commentators note that everything named is something a seventh-century listener could want and could not have. The ayah ends by grading the whole scene, calling it an excellent reward and an excellent place to rest, which answers the wretched resting place described two ayat earlier.",
+      "historicalContext": "Meccan, addressed to a community whose believers were largely poor, some of them enslaved, and who were being told that their present standing was not final. The surah has just refused to prefer the wealthy, and it now describes what the unpreferred receive. Silk and gold were markers of Byzantine and Persian court dress, familiar from trade and unavailable in Mecca.",
+      "keyTerms": [
+        {
+          "arabic": "عَدْنٍ",
+          "gloss": "lasting settlement, Eden",
+          "note": "From a root meaning to stay put, related to the word for a mine, a place where something is permanently lodged. The name describes duration rather than location, which is the point being made."
+        },
+        {
+          "arabic": "سُندُسٍ",
+          "gloss": "fine silk",
+          "note": "A loanword for thin, delicate silk. Its pairing with a heavier brocade in the same phrase gives the outfit two weights, an observed detail from real court dress rather than a general word for luxury."
+        },
+        {
+          "arabic": "مُّتَّكِـِٔينَ",
+          "gloss": "reclining",
+          "note": "A posture, not an activity. Arabic reserves it for the ease of someone who has no reason to sit upright, which in a culture of vigilance and travel was itself a form of wealth."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca had no river. Water came from wells and from rain that arrived unpredictably, and a garden was something you heard about from traders returning from Taif or Syria. Silk and worked gold passed through the city as freight, handled by men who could not afford them. Every element in this description was known to the audience by sight and denied to most of them by price.",
+      "didYouKnow": "The phrase naming these gardens of lasting settlement occurs eleven times across the Quran and never once in the singular. The root behind the name is the same one Arabic uses for a mine, a place where a substance sits permanently in the ground rather than passing through.",
+      "theologicalSignificance": "Reward is described in physical terms without apology, which sets the Quran against readings that treat matter as beneath the spiritual. At the same time every item named is a reversal of a specific deprivation the audience was living with. The grading clause at the end matters too: the garden is called excellent by the same measure that called the fire wretched, so both are being scored on one scale.",
+      "crossReferences": [
+        {
+          "ref": "18:29",
+          "why": "Ends with the identical word for a resting place, there called wretched, making the two ayat a deliberate pair."
+        },
+        {
+          "ref": "76:12-14",
+          "why": "Describes the same silk garments and reclining, adding shade and fruit brought within reach."
+        },
+        {
+          "ref": "18:46",
+          "why": "Names what actually lasts, immediately after this description of what will be given."
+        }
+      ],
+      "applyIt": "Pick one ordinary comfort you will have today, a warm drink, a chair, ten minutes of shade, and take it slowly rather than while doing something else. The description here is built entirely from physical ease. Learning to actually receive a small comfort, instead of consuming it distractedly, is practice for the larger one.",
+      "exploreFurther": [
+        "76:12-14",
+        "55:46-54",
+        "18:46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.104Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:32-33",
+      "surah": 18,
+      "start": 32,
+      "end": 33,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Two Gardens And A River",
+      "tier": "standard",
+      "meaning": "The parable opens by describing an estate in careful order: two vineyards, palms planted around their edges, cultivated ground between them, and a river split through the middle. Nothing is missing and nothing fails. The Quran states that both gardens produced in full and fell short by nothing. The commentators note that the perfection is emphasised precisely so that the collapse later in the story cannot be blamed on bad management or poor land.",
+      "historicalContext": "Meccan. The surrounding ayat address a leadership that measured worth by property and standing, and had proposed that the Prophet exclude the poor from his gatherings. This parable answers that measure with a story rather than an argument. The classical commentators treat the two men as illustrative figures and do not attempt to identify them or locate the estate.",
+      "keyTerms": [
+        {
+          "arabic": "وَحَفَفْنَـٰهُمَا",
+          "gloss": "We ringed them around",
+          "note": "To surround something on its edges, as a border encircles a page. The palms are planted as a boundary, which is how date orchards were actually laid out to shelter the vines inside from wind and sun."
+        },
+        {
+          "arabic": "أُكُلَهَا",
+          "gloss": "its yield, its produce",
+          "note": "The word for what is eaten from a plant rather than the plant itself. It keeps the focus on return, which is how the owner in the story thinks about his land throughout."
+        },
+        {
+          "arabic": "وَفَجَّرْنَا",
+          "gloss": "We made gush forth",
+          "note": "An intensive verb for splitting the ground so water bursts out. Used of a river, it presents the water as opened by God rather than dug by the owner, a detail the man later forgets."
+        }
+      ],
+      "lifeInProphetsTime": "A layered garden of this kind was the most valuable thing a family could own. Palms on the perimeter broke the wind and gave shade; vines grew in their shelter; grain filled the ground between. Running water made the whole arrangement possible, and water rights were the most litigated property in Arabia. An audience in Mecca would have priced this estate accurately within a sentence.",
+      "didYouKnow": "The command to set out a parable for them occurs three times in the Quran, and two of those are in this surah, framing this story and the one about rain that follows it. The surah is unusual in the density of its narrative material, carrying four extended stories in a hundred and ten ayat.",
+      "theologicalSignificance": "Every productive element is attributed to God in the grammar: We gave, We surrounded, We placed, We made the river gush. The owner appears only after the inventory is complete. That ordering is the argument of the parable in miniature, since the man's error will be to reverse it and place himself at the origin of what he was handed.",
+      "crossReferences": [
+        {
+          "ref": "18:34-35",
+          "why": "The owner speaks for the first time, and immediately claims the produce as evidence of his own standing."
+        },
+        {
+          "ref": "68:17-20",
+          "why": "Another garden given and then ruined overnight, when its owners plan to harvest without a thought for God."
+        },
+        {
+          "ref": "2:266",
+          "why": "Asks whether anyone would want a garden of palms and vines struck by fire in old age."
+        }
+      ],
+      "applyIt": "Walk through one thing you own or manage and name, item by item, what you did not supply: the rain, the soil, the health that let you work, the person who taught you. Do it for two minutes without drawing a conclusion. The parable begins with that inventory, and the whole story turns on whether the owner ever makes it.",
+      "exploreFurther": [
+        "68:17-20",
+        "2:266",
+        "34:15-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.105Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:34-35",
+      "surah": 18,
+      "start": 34,
+      "end": 35,
+      "theme": "Greed and Generosity",
+      "themeId": "greed-and-generosity",
+      "title": "Wealthier Than You And Stronger",
+      "tier": "standard",
+      "meaning": "The owner speaks, and the two things he claims are money and manpower. Neither is a claim about character. He then walks into his garden and the Quran inserts a verdict mid-sentence: he was wronging himself. What he says inside is a prediction, that this will never perish. The commentators point out that he is not denying God at this stage; he is simply treating what he holds as permanent, which turns out to be the same mistake.",
+      "historicalContext": "Meccan. The men of standing in the city measured each other by exactly these two quantities, property and the number of fighting men a clan could field. Putting the boast into those terms places the parable's owner squarely in the audience's own social world, using their vocabulary of success rather than an abstract one.",
+      "keyTerms": [
+        {
+          "arabic": "نَفَرًا",
+          "gloss": "men, a body of supporters",
+          "note": "A small group who would turn out with you, from a root meaning to set off together. In Arabia this was the practical measure of a man's safety, since standing meant how many would come when called."
+        },
+        {
+          "arabic": "ظَالِمٌ",
+          "gloss": "wronging, doing injustice",
+          "note": "Applied here to himself. The root means putting something where it does not belong, so the wrong is a misplacement: he has set his own permanence in a spot that cannot hold it."
+        },
+        {
+          "arabic": "تَبِيدَ",
+          "gloss": "perish, be wiped out",
+          "note": "A verb for something vanishing completely rather than declining. Choosing the strongest available word makes his confidence total, which is why the story can answer it in a single night."
+        }
+      ],
+      "lifeInProphetsTime": "Wealth in Mecca was mobile and fragile. A caravan could be lost to raiders, a season of drought could empty a valley, and the men who backed you could be reduced by a single feud. Everyone knew a family that had fallen. Saying aloud that something would never perish was, in that setting, not just impious but the kind of remark people remembered afterwards.",
+      "didYouKnow": "The Quran passes its judgement on the man inside the sentence describing his walk, before he has said anything wrong. The clause noting that he was wronging himself is grammatically a state, not an event, so the ruin already exists while the garden is still standing and still producing fully.",
+      "theologicalSignificance": "The parable identifies the fault before any denial of God is spoken, which locates the danger earlier than most people look for it. Treating a gift as a possession, and a possession as permanent, is presented as a wrong done to oneself rather than to anyone else. The self-harm framing matters: no one else is damaged yet, and the man is already in trouble.",
+      "crossReferences": [
+        {
+          "ref": "18:36",
+          "why": "Continues his speech, moving from the garden's permanence to a denial of the Hour itself."
+        },
+        {
+          "ref": "28:78",
+          "why": "A man claims his wealth came from knowledge he possessed, and the earth swallows him and it."
+        },
+        {
+          "ref": "104:2-3",
+          "why": "Describes someone who counts his wealth and supposes it will make him last forever."
+        }
+      ],
+      "applyIt": "Listen for the word never in your own speech this week, especially about arrangements you rely on: this will never change, they will never leave, the work will never dry up. You do not have to argue with the sentence. Just notice how often you say it, and where it came from.",
+      "exploreFurther": [
+        "28:78",
+        "104:1-4",
+        "3:180"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.106Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:36",
+      "surah": 18,
+      "start": 36,
+      "end": 36,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Even If I Am Returned",
+      "tier": "standard",
+      "meaning": "His confidence extends in two directions at once. He doubts the Hour will ever arrive, and then, without noticing the contradiction, plans for what he will receive when it does. The commentators highlight the incoherence as the point. He treats his prosperity as a verdict already delivered, so if there is another life it must confirm the ranking he already enjoys. Denial and entitlement turn out to be the same posture facing two ways.",
+      "historicalContext": "Meccan. The denial of resurrection was the single most persistent objection the early message met, and it usually came from men whose present arrangements were comfortable. The surah has already answered it with sleepers preserved for three centuries. Here it answers differently, by showing what the denial sounds like in the mouth of someone who has done well.",
+      "keyTerms": [
+        {
+          "arabic": "أَظُنُّ",
+          "gloss": "I think, I suppose",
+          "note": "A verb of opinion, not knowledge, and he uses it twice. The Quran lets him state his position in the weakest available terms and then leaves the weakness visible without comment."
+        },
+        {
+          "arabic": "قَآئِمَةً",
+          "gloss": "standing, coming to pass",
+          "note": "Literally standing up. The Hour is regularly described as rising rather than arriving, which suits an event that is already present and merely not yet on its feet."
+        },
+        {
+          "arabic": "مُنقَلَبًا",
+          "gloss": "a place of return",
+          "note": "From a root meaning to be turned over, used only here in the Quran in this form. The word implies reversal, which is exactly what happens to him, though not in the direction he expects."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan society read fortune as a verdict. A prosperous man was assumed to be favoured, a poor one to be marked, and the shrine's economy reinforced the reading by making wealth and religious standing overlap. When early believers included slaves and men of no clan, the assumption itself came under pressure. This ayah shows the assumption speaking in its own voice.",
+      "didYouKnow": "The word he uses for what he will find on returning to his Lord occurs in this exact form only once in the Quran. Its root means to be turned upside down, and it appears again a few ayat later in the phrase describing his garden fallen in on its own trellises.",
+      "theologicalSignificance": "The passage shows that denial of the hereafter is rarely a conclusion reached by reasoning. It arrives as an extension of present comfort, and it survives alongside a quiet expectation of continued favour. The ayah also treats certainty about the unseen as something the man does not actually possess, since he twice describes his position as what he supposes.",
+      "crossReferences": [
+        {
+          "ref": "41:50",
+          "why": "Says almost the same thing: if returned to my Lord, I will surely have the best with Him."
+        },
+        {
+          "ref": "19:77-80",
+          "why": "Someone claims he will be given wealth and children in the hereafter, and the claim is refused."
+        },
+        {
+          "ref": "18:42",
+          "why": "Delivers the reversal, with the same root for turning appearing in his hands and his ruined trellises."
+        }
+      ],
+      "applyIt": "Notice where you assume your current standing will simply carry forward, in your family, at work, or with God. Write one sentence naming that assumption. Not to frighten yourself, but because this man's error was never examining a thought he had never actually said out loud until the day he did.",
+      "exploreFurther": [
+        "41:50",
+        "19:77-80",
+        "23:99-100"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.108Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:37-38",
+      "surah": 18,
+      "start": 37,
+      "end": 38,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "From Dust, Then A Drop",
+      "tier": "standard",
+      "meaning": "The companion answers, and he does not argue about the garden at all. He goes to the man's own body and traces it backwards through three stages: dust, a drop, then shaped into a man. The question he asks is about ingratitude toward the one who did that. Then he states his own position without attacking, simply as a contrast: as for me, He is God, my Lord, and I associate no one with Him. The reply is personal testimony, not a rebuttal.",
+      "historicalContext": "Meccan. The argument from human origins was the Quran's standard response to people who doubted resurrection, because it moved the question from the future, which nobody could inspect, to the past, which everyone had lived through. The parable places that argument between two ordinary men in a garden rather than in the mouth of a prophet.",
+      "keyTerms": [
+        {
+          "arabic": "نُّطْفَةٍ",
+          "gloss": "a drop of fluid",
+          "note": "A small quantity of clear liquid, the word used for what is left in a bucket. It is deliberately unimpressive, naming the origin by its insignificance rather than by its potential."
+        },
+        {
+          "arabic": "سَوَّىٰكَ",
+          "gloss": "proportioned you, formed you",
+          "note": "From a root for making level and even. The verb describes bringing something into correct proportion, so the completed human is presented as a balancing rather than an assembly."
+        },
+        {
+          "arabic": "أَكَفَرْتَ",
+          "gloss": "are you being ungrateful",
+          "note": "The root covers both covering something over and refusing to acknowledge a benefit. Its two senses meet here, since the man has buried the origin of his garden under his own account of it."
+        }
+      ],
+      "lifeInProphetsTime": "Descent settled everything in Arabia. Genealogies were memorised, recited and disputed, and a man's worth began with the names he could list behind him. The companion's reply cuts underneath that entire system by tracing the boaster back past every ancestor to dust and a drop, an origin shared by the slave standing in the market and the chief who owned him.",
+      "didYouKnow": "The word for the drop of fluid appears twelve times in the Quran, almost always in passages arguing for the resurrection. The pattern is consistent: the argument does not begin in the future, it begins by asking the listener to account for the improbable thing that already happened to him.",
+      "theologicalSignificance": "Belief and gratitude are treated as the same disposition here, and their opposite is named with a word that means both denial and ingratitude. The passage also shows a believer stating his position in the first person rather than condemning: as for me, this is who my Lord is. That form of witness makes a claim without requiring the other man to concede first.",
+      "crossReferences": [
+        {
+          "ref": "22:5",
+          "why": "Sets out the same sequence from dust and a drop, arguing directly from it to the raising of the dead."
+        },
+        {
+          "ref": "75:37-40",
+          "why": "Traces a person back to a drop and asks whether that Maker cannot revive the dead."
+        },
+        {
+          "ref": "18:39",
+          "why": "Continues the reply, naming the sentence the owner should have said on entering his garden."
+        }
+      ],
+      "applyIt": "When someone says something you find wrong, try answering the way this man does. Do not open with their error. Say what you actually hold, in the first person, in one sentence, and stop there. It is a smaller move than winning, and in this parable it is the one that gets remembered.",
+      "exploreFurther": [
+        "22:5",
+        "75:37-40",
+        "32:7-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.109Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:39",
+      "surah": 18,
+      "start": 39,
+      "end": 39,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "What God Wills",
+      "tier": "standard",
+      "meaning": "The companion supplies the missing sentence. When you walked into your garden, why did you not say: as God wills, there is no power except through God. It is offered as a correction of speech, not of belief, and the commentators treat the phrase as the whole difference between the two men. He then concedes the comparison openly, admitting he has less wealth and fewer children, which removes any suggestion that he is arguing from envy.",
+      "historicalContext": "Meccan. The surah repeatedly places small verbal habits at the centre of large differences, having already instructed the Prophet to attach the phrase about God's will to his own statements about the future. This ayah shows the same phrase used at a different moment, on entering something good rather than on planning something ahead.",
+      "keyTerms": [
+        {
+          "arabic": "وَلَوْلَآ",
+          "gloss": "why did you not",
+          "note": "A particle of reproach used for something that should have happened and did not. It carries regret on the speaker's part as much as blame, which softens the correction being offered."
+        },
+        {
+          "arabic": "قُوَّةَ",
+          "gloss": "power, strength",
+          "note": "The capacity to act and to hold, used of physical strength, political force and the firmness of a rope. Denying all of it except through God covers every sense at once."
+        },
+        {
+          "arabic": "وَوَلَدًا",
+          "gloss": "and children",
+          "note": "A collective noun covering offspring generally rather than a countable plural. Paired with wealth, it names the two things Arabia counted, and the companion concedes both without argument."
+        }
+      ],
+      "lifeInProphetsTime": "Arabic speech was full of protective formulas. People named the evil eye, praised carefully, and touched wood in their own ways, because open admiration of a thriving flock or a healthy child was thought to invite loss. The phrase offered here fits that grammar of caution exactly, while relocating the protection from a charm to the will of God.",
+      "didYouKnow": "The two clauses quoted here occur together only in this ayah, and the phrase has been said by Muslims for centuries when they see something that pleases them, on entering a garden, a new house, or on looking at a child. Its place in ordinary speech comes from this single line of a parable.",
+      "theologicalSignificance": "The passage locates faith in a habit of attribution rather than in a doctrinal statement. The owner never denied that God existed; he simply never mentioned Him at the moment of enjoying something. Speech is treated here as the place where belief becomes real, which is why the correction is phrased as a missing sentence rather than a missing conviction.",
+      "crossReferences": [
+        {
+          "ref": "18:23-24",
+          "why": "Gives the related instruction about attaching God's will to any statement about tomorrow."
+        },
+        {
+          "ref": "7:188",
+          "why": "A messenger is told to say he holds no power to benefit or harm himself except as God wills."
+        },
+        {
+          "ref": "18:40-41",
+          "why": "Completes the reply, naming what may happen to the garden and to its water."
+        }
+      ],
+      "applyIt": "The next time you look at something of yours and feel the small lift of satisfaction, say this sentence before you say anything else. A car that started, a child asleep, a room you finished. It takes two seconds and it is a different reflex from gratitude after the fact, because it arrives while you are still admiring the thing.",
+      "exploreFurther": [
+        "18:23-24",
+        "7:188",
+        "28:82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.110Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:40-41",
+      "surah": 18,
+      "start": 40,
+      "end": 41,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Perhaps My Lord Will Give",
+      "tier": "standard",
+      "meaning": "The poorer man makes his own prediction, and it is carefully hedged. Perhaps my Lord will give me better than your garden. What follows is not a curse but a description of how easily the estate could end: a reckoning sent from the sky leaving bare slippery ground, or the water simply sinking out of reach. The commentators note that the second possibility needs no dramatic event at all. Nothing has to arrive; something only has to leave.",
+      "historicalContext": "Meccan, addressed to believers who had little and were being told their position was not a verdict. The reply models a way of holding expectation that neither denies the other man's advantage nor treats one's own hope as certain. The classical commentators read the hedged wording as deliberate, since the speaker is refusing to claim knowledge he does not have.",
+      "keyTerms": [
+        {
+          "arabic": "فَعَسَىٰ",
+          "gloss": "perhaps, it may be",
+          "note": "A particle of hope and possibility. It keeps the whole prediction out of the register of prophecy, which is the difference between this speech and the boast it is answering."
+        },
+        {
+          "arabic": "حُسْبَانًا",
+          "gloss": "a reckoning from above",
+          "note": "From the root for counting. Commentators read it as a calculated visitation rather than random weather, whether hail, lightning or fire, so even the disaster arrives as a measured account."
+        },
+        {
+          "arabic": "غَوْرًا",
+          "gloss": "sunk, drained away",
+          "note": "Water that has gone down beyond reach. The word names an absence rather than a force, which is why the second possibility is more unsettling than the first."
+        }
+      ],
+      "lifeInProphetsTime": "Everyone in Arabia had seen a well fail. Water tables dropped, springs shifted after an earthquake or simply stopped, and a settlement that lost its water was abandoned within a season no matter how much had been built. The ruins of such places stood along the trade roads. The threat named here was not imagined; it was the ordinary way that prosperous ground became empty ground.",
+      "didYouKnow": "The word used here for a reckoning sent from the sky occurs twice in the Quran. Its other appearance describes the sun and the moon running by an exact calculation. The same term covers a precise cosmic order and a precisely aimed disaster, which keeps both inside the same idea of measurement.",
+      "theologicalSignificance": "Hope is expressed here in a form that includes the possibility of not receiving. The speaker asks for something better while attributing the outcome entirely to his Lord, and the two clauses of his prediction show that reversal requires no spectacle. A world held in existence continuously can be changed by withdrawal as easily as by intervention, which makes stability itself a gift rather than a default.",
+      "crossReferences": [
+        {
+          "ref": "67:30",
+          "why": "Asks who would bring you flowing water if your water were to sink beyond reach."
+        },
+        {
+          "ref": "2:216",
+          "why": "Uses the same particle of possibility to keep hope and dislike from hardening into knowledge."
+        },
+        {
+          "ref": "18:42",
+          "why": "Reports what actually happened, without saying which of the two possibilities it was."
+        }
+      ],
+      "applyIt": "Notice how you phrase what you want. There is a difference between expecting a thing and saying perhaps my Lord will give it. Try the second form once today, out loud, about something you are hoping for. The hedge is not weakness; it is the sentence staying honest about who decides.",
+      "exploreFurther": [
+        "67:30",
+        "2:216",
+        "65:2-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.111Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:42",
+      "surah": 18,
+      "start": 42,
+      "end": 42,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Wringing His Hands Over It",
+      "tier": "standard",
+      "meaning": "Ruin closes in, and the ayah does not say how. What it gives instead is a posture: the man turning his palms over, the classical Arabic gesture of loss, standing in front of vines collapsed onto the frames built to hold them. His words arrive too late and they are exact. He wishes he had never associated anyone with his Lord. The commentators note that he now names his fault correctly, which he never did while the garden stood.",
+      "historicalContext": "Meccan. The parable answers men who assumed their prosperity confirmed their standing. Nothing in the surah gives the estate a location or a date, and the classical commentators decline to identify the two men, treating the story as an image put before the audience rather than a report of a particular case.",
+      "keyTerms": [
+        {
+          "arabic": "وَأُحِيطَ",
+          "gloss": "it was encompassed",
+          "note": "A passive verb for being surrounded on every side with no exit. The agent is unnamed, which keeps the cause unspecified and makes the ruin feel like a closing rather than a blow."
+        },
+        {
+          "arabic": "يُقَلِّبُ",
+          "gloss": "turning over, wringing",
+          "note": "He turns his palms back and forth. The same root produced the word he used earlier for the place of return he expected, so his hands now perform the reversal he had spoken about confidently."
+        },
+        {
+          "arabic": "خَاوِيَةٌ",
+          "gloss": "fallen in, empty",
+          "note": "Collapsed and hollowed out. The Quran uses this word with the trellises three times, always of something that had structure and now has only the frame it fell onto."
+        }
+      ],
+      "lifeInProphetsTime": "Vines were trained onto wooden frames raised above the ground, which kept the fruit off the soil and let air move underneath. When a vineyard failed, the frames stayed standing while everything they supported fell through them. Anyone in the audience who had walked past a ruined garden knew that particular sight: the structure intact, the crop gone, nothing to salvage.",
+      "didYouKnow": "The phrase describing the garden fallen upon its trellises occurs three times in the Quran, and in every case it describes ruin that arrived at a place people had assumed was secure. One of the other two is the town where a man was kept dead a hundred years and then shown that his food had not spoiled.",
+      "theologicalSignificance": "The man's final sentence is a correct confession offered at the point where it changes nothing about his garden, which raises the question the parable is built around: he could have said it any morning for years. The passage also identifies his fault precisely. He never worshipped an idol; he associated his own permanence with God's, which the Quran counts under the same name.",
+      "crossReferences": [
+        {
+          "ref": "18:43-44",
+          "why": "Completes the scene, noting he had no faction to help him and that authority belongs to God."
+        },
+        {
+          "ref": "2:259",
+          "why": "Uses the same phrase for a town fallen in on its supports, there as a lesson about revival."
+        },
+        {
+          "ref": "10:90-91",
+          "why": "Records a confession made as the water closes in, and the answer that it comes too late."
+        }
+      ],
+      "applyIt": "There is a sentence you would say if you lost something you currently have. Say it now, while you still have the thing. It costs nothing today and it is the entire difference between the two men in this parable, one of whom said it walking in and one of whom said it standing in the wreckage.",
+      "exploreFurther": [
+        "2:259",
+        "10:90-91",
+        "68:17-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:43-44",
+      "surah": 18,
+      "start": 43,
+      "end": 44,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "There Authority Belongs To God",
+      "tier": "standard",
+      "meaning": "The second thing he boasted of fails as completely as the first. He had no body of supporters to help him and could not help himself, which answers his earlier claim about manpower directly. The ayah then makes a general statement: in a moment like that, protection belongs to God, the True. Commentators read the same word in two ways, as protective friendship or as sovereign authority, and note that the sentence works under either reading.",
+      "historicalContext": "Meccan, in a city organised around clan protection. A man without backing had no legal standing, no redress and no safety, and the early believers who had been disowned knew this precisely. The parable's ending speaks to both sides of that arrangement at once: to those who relied on their faction and to those who had lost theirs.",
+      "keyTerms": [
+        {
+          "arabic": "فِئَةٌ",
+          "gloss": "a group, a faction",
+          "note": "A body of men who stand with you, used in the Quran for parties in battle. It names the practical form of protection in Arabia, which is why its absence here is a complete verdict."
+        },
+        {
+          "arabic": "ٱلْوَلَـٰيَةُ",
+          "gloss": "protection, authority",
+          "note": "From a root meaning nearness, giving both a protector who stands close and a ruler who holds power. Early readers vocalised the word two ways and the commentators accept both, since either sense fits."
+        },
+        {
+          "arabic": "عُقْبًا",
+          "gloss": "outcome, final result",
+          "note": "From the root for a heel and for following behind. The word names what comes at the end of a sequence, so it grades the whole story rather than any single moment in it."
+        }
+      ],
+      "lifeInProphetsTime": "Protection in Arabia was a formal thing, publicly declared and publicly withdrawn. A clan announced that a man was under its cover, and that announcement was what kept him alive on the road and solvent in the market. When cover was lifted, everyone knew within days. The parable's owner discovers the limit of an arrangement that ordinarily worked very well.",
+      "didYouKnow": "The word for protection in the second ayah was read with two different vowels by early reciters, giving either the friendship of a protector or the authority of a ruler. Both readings are preserved in the classical tradition, and commentators generally present them side by side rather than choosing, since the ayah supports each.",
+      "theologicalSignificance": "The passage does not say that human help is worthless. It says that at a certain point there is only one source of it, and it names that source with a word carrying both closeness and command. Reward and outcome are then both graded as God's, which closes the parable by moving from the man's ruined estate to a general statement about how anything ends.",
+      "crossReferences": [
+        {
+          "ref": "18:34-35",
+          "why": "Contains the boast about supporters that this ayah answers, word against word."
+        },
+        {
+          "ref": "28:81",
+          "why": "A man swallowed by the earth with no group to help him and no power to help himself."
+        },
+        {
+          "ref": "42:9",
+          "why": "States that God alone is the protecting friend, and that He gives life to the dead."
+        }
+      ],
+      "applyIt": "Make a short list of what you would turn to first if something serious went wrong: a person, a savings account, a professional contact. Do not cross anything off. Just look at the list and notice that you made it without effort, and that this ayah is describing the moment after every item on it has been tried.",
+      "exploreFurther": [
+        "28:81",
+        "42:9",
+        "40:16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.113Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:45",
+      "surah": 18,
+      "start": 45,
+      "end": 45,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "Debris Scattered By The Wind",
+      "tier": "standard",
+      "meaning": "A second parable follows immediately, and it compresses the first one into a single image. Water comes down, plants take it up and mingle with it, and then the whole growth becomes dry fragments that the wind carries off. The commentators note the speed of the sentence, which moves from rain to debris without a pause. The closing clause names God as having complete power over everything, which is what makes both the growth and the scattering His.",
+      "historicalContext": "Meccan. The surah has just shown a wealthy man losing an estate, and this parable generalises that case so it is not read as one unlucky owner. Rain in Arabia was sudden, brief and transformative, so the audience did not need the comparison explained. They had watched a valley turn green and then turn brown inside a few weeks.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱخْتَلَطَ",
+          "gloss": "it mingled with it",
+          "note": "A reciprocal verb for two things becoming intertwined. The plants do not simply receive the water; they mix with it, which is why their drying is a separation as much as a death."
+        },
+        {
+          "arabic": "هَشِيمًا",
+          "gloss": "dry crumbled stubble",
+          "note": "Vegetation broken into brittle fragments, occurring only here in the Quran. The word names the texture rather than the state, so it describes what the growth feels like in the hand once it is over."
+        },
+        {
+          "arabic": "تَذْرُوهُ",
+          "gloss": "the winds scatter it",
+          "note": "To winnow, the verb for tossing threshed grain into the air so chaff blows away. Applying it here makes the wind a sorter, not just a destroyer, which fits a passage about what remains."
+        }
+      ],
+      "lifeInProphetsTime": "Winnowing was ordinary work. After threshing, grain was thrown up in the air on a breezy afternoon so the heavy seed fell back and the light husk blew off. Every farming household did it and every listener had watched it. The parable uses that familiar action to describe the whole of worldly life, with the sorting already built into the picture.",
+      "didYouKnow": "The instruction to set out a parable for them appears three times in the Quran, and two of those occurrences are in this surah, opening the story of the two gardens and opening this one. The two parables are placed thirteen ayat apart and the second is a fifth the length of the first.",
+      "theologicalSignificance": "The comparison is not to death but to a cycle in which growth and dispersal belong to the same process. Nothing in the image is wasted or wrong; the plants did what plants do. What is corrected is only the expectation of permanence. Naming God's complete power at the end keeps the passage from reading as a lament about time, since the sequence is described as governed rather than merely observed.",
+      "crossReferences": [
+        {
+          "ref": "10:24",
+          "why": "Gives the same comparison at greater length, adding the moment people think they have mastered the land."
+        },
+        {
+          "ref": "57:20",
+          "why": "Sets the same image inside a list of what worldly life consists of, ending in withered debris."
+        },
+        {
+          "ref": "18:46",
+          "why": "Follows immediately, naming what lasts once the wind has carried the rest away."
+        }
+      ],
+      "applyIt": "Think of something that filled your attention completely five years ago and that you have not thought about in months. Not a loss, just a thing that mattered enormously and then dispersed. Naming one is enough. The parable is not asking you to care less today; it is asking you to notice that this has already happened, repeatedly, without your permission.",
+      "exploreFurther": [
+        "10:24",
+        "57:20",
+        "18:46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.115Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "18:46",
       "surah": 18,
       "start": 46,
@@ -986,6 +1624,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:01:14.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "18:47",
+      "surah": 18,
+      "start": 47,
+      "end": 47,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "The Earth Laid Bare",
+      "tier": "standard",
+      "meaning": "Three things happen in one sentence. The mountains are set moving, the earth appears stripped and level, and everyone is gathered with no one left out. The commentators read the middle clause as the removal of everything that stood on the surface, so the ground is shown without its features. The final clause is the one that carries the weight: not a single person is passed over, which turns a cosmic scene into a personal one.",
+      "historicalContext": "Meccan. Descriptions of the last day in the early revelations are short, physical and delivered without argument, addressed to people who found the idea of universal gathering implausible. This ayah arrives just after two parables about things that looked permanent, so the dissolution of mountains reads as the same lesson at maximum scale.",
+      "keyTerms": [
+        {
+          "arabic": "نُسَيِّرُ",
+          "gloss": "We set in motion",
+          "note": "The verb for making something travel, used of caravans and of clouds. Applied to mountains it does not say they are destroyed, only that the least movable thing in the landscape is made to go somewhere."
+        },
+        {
+          "arabic": "بَارِزَةً",
+          "gloss": "laid bare, emerged",
+          "note": "Something that has come out into the open with nothing in front of it. Occurring only here in this form, it presents the earth as exposed rather than damaged, a surface with no cover left."
+        },
+        {
+          "arabic": "نُغَادِرْ",
+          "gloss": "We leave behind",
+          "note": "A verb for leaving something out, related to the word for treachery, since to abandon a person is to break faith. Used in the negative it says the gathering has no omissions and no exceptions."
+        }
+      ],
+      "lifeInProphetsTime": "Mountains were the fixed reference of Arabian life. Travellers navigated by peaks, tribal territories were described by them, and a mountain on the horizon was how you knew where you were. Nothing in the visible world was more permanent. A description of them being made to move would have registered as the removal of the last thing anyone could steer by.",
+      "didYouKnow": "The verb saying that no one will be left out appears only once in the Quran, and its root is the same one behind the Arabic word for treachery, the breaking of a trust. The choice quietly frames being overlooked at the gathering as a betrayal that will not occur.",
+      "theologicalSignificance": "The passage answers a specific anxiety about universal judgement, which is that individuals get lost in a large number. Its final clause denies exactly that. It also completes a movement running through the surah, where things assumed to be stable are shown to be held in place rather than fixed by nature: sleepers, gardens, harvests and now mountains.",
+      "crossReferences": [
+        {
+          "ref": "20:105-107",
+          "why": "Describes the mountains scattered as dust and the earth left as a level plain with no crookedness."
+        },
+        {
+          "ref": "81:1-3",
+          "why": "Lists the folding of the sun and the moving of the mountains among the signs of that day."
+        },
+        {
+          "ref": "18:45",
+          "why": "The parable just before, where the same lesson about impermanence is drawn from a season of rain."
+        }
+      ],
+      "applyIt": "Look at the largest fixed thing you can see from where you are, a building, a hill, a road. Hold it for a moment as something that has a duration rather than as background. This ayah is not asking for dread. It is asking you to move one item from the category of permanent to the category of long, which is a change you can actually make.",
+      "exploreFurther": [
+        "20:105-107",
+        "81:1-3",
+        "101:1-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:40:42.115Z",
         "reviewed": false
       }
     },
