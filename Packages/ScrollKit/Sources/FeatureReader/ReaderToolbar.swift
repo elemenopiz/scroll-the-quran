@@ -25,7 +25,7 @@ struct ReaderToolbar: View {
                 items: [
                     CapsuleIconItem(
                         id: "dice",
-                        systemImage: "dice",
+                        systemImage: "die.face.4",
                         label: "Random ayah",
                         action: onRandomVerse
                     ),

@@ -109,6 +109,9 @@ public enum ReaderMetrics {
 
     // 642 x 182 px at x 150..791, y 2014..2195 px.
 
+    /// The reference toast is 642 px (214 pt) wide. `ToastHint` sizes itself from its own
+    /// measured paddings, and forcing it narrower wraps "Tap or slide" onto two lines, so the
+    /// reader lets it size to content — which lands within a few points of the reference.
     public static let toastWidth: CGFloat = 214
     public static let toastLeadingInset: CGFloat = 50
     /// Toast bottom is 2195 px = 731.7 pt, 37 pt above the safe-area bottom.

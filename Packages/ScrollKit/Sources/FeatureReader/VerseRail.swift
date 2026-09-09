@@ -57,13 +57,18 @@ struct VerseRail: View {
     }
 
     /// Every ayah's dash except the current one, which the indicator covers.
+    ///
+    /// `progressTrack` rather than a colour matched exactly to the reference's `#252527`:
+    /// the nearest token by dark value (`crossRefChipBackground`) is `#F3F3F4` in light, which
+    /// disappears against the `#FAFAFC` page. A track is what this is, and the token reads in
+    /// both appearances; on a 3 pt line the dark-side difference is invisible.
     private func track(_ rail: VerseRailGeometry) -> some View {
         Canvas { context, _ in
             let width = ReaderMetrics.railTrackWidth
             let x = ReaderMetrics.railCentreX - width / 2
             for ayah in 1 ... max(1, ayahCount) {
                 let rect = CGRect(x: x, y: rail.origin(ofAyah: ayah), width: width, height: rail.dashLength)
-                context.fill(Path(roundedRect: rect, cornerRadius: width / 2), with: .color(.crossRefChipBackground))
+                context.fill(Path(roundedRect: rect, cornerRadius: width / 2), with: .color(.progressTrack))
             }
         }
         .allowsHitTesting(false)

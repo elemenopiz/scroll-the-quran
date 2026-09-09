@@ -133,7 +133,7 @@ public struct ReaderView: View {
                 message: "to jump to any verse",
                 onDismiss: model.dismissHint
             )
-            .frame(width: ReaderMetrics.toastWidth)
+            .fixedSize()
             .padding(.leading, ReaderMetrics.toastLeadingInset)
             .padding(.bottom, ReaderMetrics.toastBottomInset)
             .transition(.opacity)
