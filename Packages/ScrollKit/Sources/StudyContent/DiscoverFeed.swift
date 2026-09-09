@@ -2,10 +2,17 @@ import Foundation
 import QuranData
 
 /// One card of the Discover feed: a study unit plus the theme it is filed under.
+///
+/// `Tools/content-gen/assemble.mjs` writes `{key, surah, start, end, themeId, title}`. `weight`
+/// is not part of that shape — the pipeline orders the feed by seed, not by weight — so it
+/// defaults, and a file that does carry weights still orders by them.
 public struct DiscoverItem: Codable, Hashable, Sendable, Identifiable {
     public let key: String
     public let themeId: String
     public let surah: Int
+    public let start: Int
+    public let end: Int
+    public let title: String
     public let weight: Int
 
     public var id: String {
@@ -16,30 +23,62 @@ public struct DiscoverItem: Codable, Hashable, Sendable, Identifiable {
         PassageRef(key: key)
     }
 
-    public init(key: String, themeId: String, surah: Int? = nil, weight: Int = 50) {
+    public init(
+        key: String,
+        themeId: String,
+        surah: Int? = nil,
+        weight: Int = 50,
+        title: String = "",
+        start: Int? = nil,
+        end: Int? = nil
+    ) {
+        let parsed = PassageRef(key: key)
         self.key = key
         self.themeId = themeId
-        self.surah = surah ?? PassageRef(key: key)?.surah ?? 0
+        self.surah = surah ?? parsed?.surah ?? 0
+        self.start = start ?? parsed?.start ?? 0
+        self.end = end ?? parsed?.end ?? 0
+        self.title = title
         self.weight = weight
     }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let key = try container.decode(String.self, forKey: .key)
+        let parsed = PassageRef(key: key)
         self.key = key
         themeId = try container.decodeIfPresent(String.self, forKey: .themeId) ?? ""
-        surah = try container.decodeIfPresent(Int.self, forKey: .surah) ?? PassageRef(key: key)?.surah ?? 0
+        surah = try container.decodeIfPresent(Int.self, forKey: .surah) ?? parsed?.surah ?? 0
+        start = try container.decodeIfPresent(Int.self, forKey: .start) ?? parsed?.start ?? 0
+        end = try container.decodeIfPresent(Int.self, forKey: .end) ?? parsed?.end ?? 0
+        title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
         weight = try container.decodeIfPresent(Int.self, forKey: .weight) ?? 50
     }
 }
 
-/// The on-disk wrapper around the curated Discover list.
+/// The on-disk wrapper around the curated Discover list, as `assemble.mjs` writes it:
+/// `{seed, promptVersion, generatedAt, count, items}`. Every field but `items` is provenance.
 public struct DiscoverFile: Codable, Hashable, Sendable {
     public let version: Int?
+    public let seed: String?
+    public let promptVersion: String?
+    public let generatedAt: String?
+    public let count: Int?
     public let items: [DiscoverItem]
 
-    public init(version: Int? = 1, items: [DiscoverItem]) {
+    public init(
+        version: Int? = nil,
+        seed: String? = nil,
+        promptVersion: String? = nil,
+        generatedAt: String? = nil,
+        count: Int? = nil,
+        items: [DiscoverItem]
+    ) {
         self.version = version
+        self.seed = seed
+        self.promptVersion = promptVersion
+        self.generatedAt = generatedAt
+        self.count = count
         self.items = items
     }
 }
@@ -59,7 +98,10 @@ public struct DiscoverFeed: Hashable, Sendable {
         self.items = items
             .filter { seen.insert($0.key).inserted && resolves($0.key) }
             .sorted { lhs, rhs in
-                lhs.weight == rhs.weight ? lhs.key < rhs.key : lhs.weight > rhs.weight
+                // Weight first (the pipeline leaves it uniform), then mushaf order rather than
+                // the string order of the key, so "10:1" does not sort before "2:1".
+                (rhs.weight, lhs.surah, lhs.start, lhs.end, lhs.key)
+                    < (lhs.weight, rhs.surah, rhs.start, rhs.end, rhs.key)
             }
     }
 
@@ -68,8 +110,9 @@ public struct DiscoverFeed: Hashable, Sendable {
         self.init(items: file.items, resolves: resolves)
     }
 
-    /// Builds the feed against a store, keeping only keys that resolve to a unit. Checked
-    /// against `passages.json`, so no shard is loaded to build the feed.
+    /// Builds the feed against a store, keeping only keys the store can actually open. That is
+    /// a question only the shards can answer (`passages.json` maps every ayah in the Quran,
+    /// authored or not), so building the feed does load the shards of the surahs it names.
     public init(loader: StudyContentLoading, path: String = "discover.json", store: StudyStore) throws {
         try self.init(loader: loader, path: path, resolves: { store.containsUnit($0) })
     }

@@ -99,13 +99,17 @@ public struct ThemeIndex: Hashable, Sendable {
     }
 }
 
-/// The on-disk wrapper around the theme list.
+/// The on-disk wrapper around the theme list, as `Tools/content-gen/themes.mjs` writes it:
+/// `{source, themes: [{id, title, blurb, refs}]}`.
 public struct ThemeFile: Codable, Hashable, Sendable {
     public let version: Int?
+    /// Where the list came from — provenance the generator records, shown nowhere.
+    public let source: String?
     public let themes: [Theme]
 
-    public init(version: Int? = 1, themes: [Theme]) {
+    public init(version: Int? = nil, source: String? = nil, themes: [Theme]) {
         self.version = version
+        self.source = source
         self.themes = themes
     }
 }
