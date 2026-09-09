@@ -1,0 +1,17 @@
+excluded:
+  - .build
+  - DerivedData
+  - Packages/ScrollKit/.build
+  - Tools
+  - Reference
+
+line_length:
+  warning: 130
+  error: 200
+  ignores_comments: true
+
+identifier_name:
+  min_length: 2
+
+disabled_rules:
+  - trailing_comma

@@ -1,7 +1,7 @@
-import Testing
 @testable import FeatureCommunity
+import Testing
 
 @Test("FeatureCommunity module is linked and identifies itself")
-func FeatureCommunityModuleIdentifiesItself() {
+func featureCommunityModuleIdentifiesItself() {
     #expect(FeatureCommunityModule.moduleName == "FeatureCommunity")
 }

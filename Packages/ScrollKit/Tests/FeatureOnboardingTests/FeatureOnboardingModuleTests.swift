@@ -1,7 +1,7 @@
-import Testing
 @testable import FeatureOnboarding
+import Testing
 
 @Test("FeatureOnboarding module is linked and identifies itself")
-func FeatureOnboardingModuleIdentifiesItself() {
+func featureOnboardingModuleIdentifiesItself() {
     #expect(FeatureOnboardingModule.moduleName == "FeatureOnboarding")
 }

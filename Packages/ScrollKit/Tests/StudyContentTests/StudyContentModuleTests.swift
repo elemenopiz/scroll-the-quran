@@ -1,7 +1,7 @@
-import Testing
 @testable import StudyContent
+import Testing
 
 @Test("StudyContent module is linked and identifies itself")
-func StudyContentModuleIdentifiesItself() {
+func studyContentModuleIdentifiesItself() {
     #expect(StudyContentModule.moduleName == "StudyContent")
 }

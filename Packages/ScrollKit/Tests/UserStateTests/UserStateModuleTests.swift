@@ -2,6 +2,6 @@ import Testing
 @testable import UserState
 
 @Test("UserState module is linked and identifies itself")
-func UserStateModuleIdentifiesItself() {
+func userStateModuleIdentifiesItself() {
     #expect(UserStateModule.moduleName == "UserState")
 }

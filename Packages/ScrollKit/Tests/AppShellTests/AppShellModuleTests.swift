@@ -1,7 +1,7 @@
-import Testing
 @testable import AppShell
+import Testing
 
 @Test("AppShell module is linked and identifies itself")
-func AppShellModuleIdentifiesItself() {
+func appShellModuleIdentifiesItself() {
     #expect(AppShellModule.moduleName == "AppShell")
 }

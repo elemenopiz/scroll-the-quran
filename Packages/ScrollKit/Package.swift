@@ -1,8 +1,8 @@
 // swift-tools-version: 5.10
 import PackageDescription
 
-// Every target of the app lives here. This manifest is declared once in Phase 1 and
-// then frozen: later phases add files by dropping them into the globbed Sources folders.
+/// Every target of the app lives here. This manifest is declared once in Phase 1 and
+/// then frozen: later phases add files by dropping them into the globbed Sources folders.
 let package = Package(
     name: "ScrollKit",
     platforms: [.iOS(.v17), .macOS(.v14)],

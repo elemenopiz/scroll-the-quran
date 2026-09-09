@@ -33,11 +33,11 @@ targets:
     dependencies:
       - package: ScrollKit
         product: AppShell
-      - target: ScrollTheQuranWidget
+      # The widget extension is embedded in step 7, once Widget/ has sources.
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app
-        PRODUCT_NAME: Scroll the Quran
+        PRODUCT_NAME: ScrollTheQuran
         INFOPLIST_FILE: App/Info.plist
         CODE_SIGN_ENTITLEMENTS: App/ScrollTheQuran.entitlements
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon

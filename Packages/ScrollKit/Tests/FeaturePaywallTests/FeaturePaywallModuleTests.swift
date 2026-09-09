@@ -1,7 +1,7 @@
-import Testing
 @testable import FeaturePaywall
+import Testing
 
 @Test("FeaturePaywall module is linked and identifies itself")
-func FeaturePaywallModuleIdentifiesItself() {
+func featurePaywallModuleIdentifiesItself() {
     #expect(FeaturePaywallModule.moduleName == "FeaturePaywall")
 }

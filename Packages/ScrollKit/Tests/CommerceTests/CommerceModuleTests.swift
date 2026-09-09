@@ -1,7 +1,7 @@
-import Testing
 @testable import Commerce
+import Testing
 
 @Test("Commerce module is linked and identifies itself")
-func CommerceModuleIdentifiesItself() {
+func commerceModuleIdentifiesItself() {
     #expect(CommerceModule.moduleName == "Commerce")
 }
