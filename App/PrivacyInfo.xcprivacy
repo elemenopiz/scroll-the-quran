@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Scroll the Quran privacy manifest.
+
+	  The app makes no network calls (CLAUDE.md rule 9): every verse, translation,
+	  study note and reading plan is bundled. Nothing is transmitted off device, so
+	  nothing is "collected" in Apple's sense and NSPrivacyCollectedDataTypes is empty.
+	  Sign in with Apple is optional and its result never leaves the device; the App
+	  Group container (group.com.scrollthequran) holds the streak, progress, library,
+	  notes, plan and prefs JSON the app and the widget share.
+
+	  Required-reason APIs are declared for what the code actually calls. Verified by
+	  grepping Packages/ScrollKit/Sources, App/ and Widget/ for the five categories:
+	    - UserDefaults        USED  (see below)
+	    - File timestamps     not used (no creationDate / modificationDate /
+	                          contentModificationDateKey / attributesOfItem call sites)
+	    - Disk space          not used (no systemFreeSize / volumeAvailableCapacityKey)
+	    - System boot time    not used (no systemUptime / mach_absolute_time)
+	    - Active keyboards    not used (no activeInputModes)
+	  Re-run that check whenever a package gains a new dependency.
+	-->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<!--
+			  UserDefaults.standard only — never a suite, never the App Group suite.
+			  Call sites (all reads/writes of this app's own small flags):
+			    Commerce/EntitlementProviding.swift          entitlement override flag
+			    FeatureReader/ReaderHintStore.swift          "rail hint seen" flag
+			    FeatureOnboarding/OnboardingStores.swift      onboarding progress, account sink
+			    FeatureDiscover/DiscoverGate.swift            daily Discover gate state
+			  CA92.1 = read and write information that is only accessible to the app
+			  itself. (1C8F.1 — the App Group variant — is deliberately NOT declared:
+			  the app and the widget share state through App Group *files*
+			  (UserState/*.json), never through a shared UserDefaults suite.)
+			-->
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
