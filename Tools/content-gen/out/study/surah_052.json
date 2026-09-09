@@ -1,7 +1,7 @@
 {
   "surah": 52,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:45:19.622Z",
+  "generatedAt": "2026-09-09T15:54:40.393Z",
   "studies": [
     {
       "key": "52:1-5",
@@ -406,6 +406,412 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T15:45:19.522Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:27-30",
+      "surah": 52,
+      "start": 27,
+      "end": 30,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "We Used To Call On Him",
+      "tier": "standard",
+      "meaning": "The speakers finish their account of themselves with one sentence about their past, and it is not about deeds. They used to call on Him. The verb is the ordinary one for asking, and it is placed as the whole explanation of how they arrived. Two names follow, one of them rare. Then the surah turns without a pause to the Prophet Muhammad (peace be upon him) and answers the labels being thrown at him, beginning with the two his opponents used most.",
+      "historicalContext": "Meccan. Soothsayer, madman and poet were the three explanations Mecca offered for the recitation, and the sources report them being tried in turn, since each accounted for unusual speech in a way the audience recognised. This passage answers all three in two lines. The last of them comes with a wish attached: that time would deal with the man and the problem would resolve itself.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلسَّمُومِ",
+          "gloss": "the scorching wind",
+          "note": "A hot wind that enters through the pores, named from the word for a small opening. It is the desert's specific killer, and the Quran uses it for the heat of the punishment."
+        },
+        {
+          "arabic": "ٱلْبَرُّ",
+          "gloss": "the Kind, the Benevolent",
+          "note": "From a root for wide open land and for dutiful goodness, the same root behind the word for kindness to parents. As a divine name it appears here and nowhere else in the Quran."
+        },
+        {
+          "arabic": "ٱلْمَنُونِ",
+          "gloss": "time, or death",
+          "note": "A word the commentators gloss as death and as the turning of the days that wears things out. What the opponents were awaiting was not an event they would cause but one they expected."
+        }
+      ],
+      "lifeInProphetsTime": "A poet was a public institution, not a private artist. Tribes kept them, and a poet's satire could damage a rival tribe's standing for a generation. Poets were also believed to be attended by a familiar spirit, which is why calling someone a poet, a soothsayer and a madman were versions of one accusation: that the speech came from somewhere other than the speaker. All three explained the effect without accepting the source.",
+      "didYouKnow": "The name given to God at the end of this passage, usually rendered the Kind or the Benevolent, is used of God in only this one ayah of the Quran. Its root is the same one that supplies the ordinary word for dutiful kindness shown to a parent, so the name comes from the vocabulary of family obligation rather than of power.",
+      "theologicalSignificance": "What the saved people offer as their record is a habit of asking, not a list of achievements. The Quran lets that stand as sufficient, which places relationship before accomplishment in the account of a life. The divine name that follows explains why: kindness of the kind owed within a family, not the favour of a distant power. Then the instruction to keep reminding is grounded in the same thing, described as a favour rather than a duty.",
+      "crossReferences": [
+        {
+          "ref": "69:41-42",
+          "why": "Denies the same two labels for the recitation, poet and soothsayer, in almost the same order."
+        },
+        {
+          "ref": "40:60",
+          "why": "States that calling on God is answered, which is the practice these people name as their record."
+        },
+        {
+          "ref": "56:42-44",
+          "why": "Uses the same word for the scorching wind in another description of the punishment."
+        }
+      ],
+      "applyIt": "Notice how you talk to God when nothing is wrong. Most people only have a vocabulary for asking under pressure. The people in this passage describe an ordinary, continued habit of calling on Him, and it is the only thing they say about their past. Ask for one small thing today that you would normally not bother mentioning.",
+      "exploreFurther": [
+        "69:38-43",
+        "40:60",
+        "56:41-44"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.297Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:31-34",
+      "surah": 52,
+      "start": 31,
+      "end": 34,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Then Bring One Like It",
+      "tier": "standard",
+      "meaning": "The reply to the wish that time would remove him is one word: wait. He joins them in it, which turns their threat into a shared position. Then the questions begin, and the second one is unusual because it takes the opponents seriously as thinkers before dismissing them. Their minds are asked about. The answer given is not that they reasoned badly but that they did not believe, and the challenge that follows asks for a text rather than an argument.",
+      "historicalContext": "Meccan. Mecca's leadership included men known for judgement and sound counsel, and the word used here for their minds is the one their culture applied to exactly that quality. The challenge to produce something comparable appears several times in the Quran at different scales, from a single surah upward. Here the demand is for a discourse, the broadest form of it, and no occasion is reported for the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "أَحْلَـٰمُهُم",
+          "gloss": "their minds, their forbearance",
+          "note": "A plural whose singular covers both a dream and settled good sense, the quality of a man who does not act rashly. Arabic keeps the two meanings in one word, and commentators note both here."
+        },
+        {
+          "arabic": "تَقَوَّلَهُۥ",
+          "gloss": "he made it up",
+          "note": "A verb form that means to fabricate speech and attribute it to someone else. It is not the ordinary word for saying; the form itself carries the accusation of invention."
+        },
+        {
+          "arabic": "بِحَدِيثٍ",
+          "gloss": "a discourse, an account",
+          "note": "The ordinary word for talk or a report, not a term for scripture. Asking for a discourse like it sets the bar at the level of speech itself rather than at content or claim."
+        }
+      ],
+      "lifeInProphetsTime": "Arabia judged people by speech. Annual gatherings included recitation contests, and a tribe's standing could rise on the strength of one poet. Composition was a competitive public skill with recognised experts and an audience trained to hear a false line. Challenging that audience to match a text was not an abstract dare. It was an invitation into the one arena in which they believed themselves unbeatable.",
+      "didYouKnow": "The surah fires off a run of questions all opening with the same short Arabic particle. It occurs fifteen times between its thirtieth and forty-third ayat, twelve of them at the head of an ayah, and nine of those ayat follow one another without a break. The drumming effect is lost in translation, which has to vary the wording.",
+      "theologicalSignificance": "The passage locates unbelief below the level of reasoning. It asks whether the opponents' judgement requires their position, and answers that it does not; then it asks whether they think the text was invented, and answers that the real state is simply that they do not believe. That order matters. Argument is treated as a report of a prior disposition rather than its cause, which is why the response offered is a test anyone can run rather than a further argument.",
+      "crossReferences": [
+        {
+          "ref": "2:23-24",
+          "why": "Sets the same challenge at the scale of a single surah, and says it will not be met."
+        },
+        {
+          "ref": "17:88",
+          "why": "Widens the challenge to humans and jinn together, and says they could not do it even helping each other."
+        },
+        {
+          "ref": "11:13",
+          "why": "Asks for ten invented surahs like it, a middle step between the two other versions."
+        }
+      ],
+      "applyIt": "Think of a position you hold that you have never actually tested, and design the smallest test you could run this week. Not a debate, a check. The passage answers a claim by proposing something the other side could simply do. Most disagreements never reach that point, and reaching it usually tells you which side is doing the reasoning.",
+      "exploreFurther": [
+        "2:23-24",
+        "17:88",
+        "11:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.299Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:35-37",
+      "surah": 52,
+      "start": 35,
+      "end": 37,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Created From Nothing, Or Creators",
+      "tier": "standard",
+      "meaning": "Three questions with no middle ground offered, and they work by elimination. Either you came from nothing, with no cause at all, or you made yourself, or somebody made you: the third option is left unstated because the first two are unavailable. The same structure is then applied to the heavens and the earth and to the storehouses of provision. The verdict inserted halfway through is not that they are wrong but that they lack certainty.",
+      "historicalContext": "Meccan. A well-attested report describes a leading Meccan, then still opposed to the message, hearing these ayat recited in a prayer some years later and saying afterwards that his heart was close to flying. He had travelled north on unrelated business. The report is transmitted in the major classical collections, and the commentators cite it when discussing the argumentative force of this particular passage.",
+      "keyTerms": [
+        {
+          "arabic": "غَيْرِ شَىْءٍ",
+          "gloss": "without anything",
+          "note": "A phrase read two ways by the commentators: created by no maker at all, or created out of no material. Both readings leave the questioner with the same unusable answer."
+        },
+        {
+          "arabic": "يُوقِنُونَ",
+          "gloss": "they are certain",
+          "note": "From a root for knowledge that has settled and stopped moving, the opposite of doubt rather than of ignorance. The charge is not that they know nothing but that nothing has become firm."
+        },
+        {
+          "arabic": "خَزَآئِنُ",
+          "gloss": "storehouses, treasuries",
+          "note": "The plural of a word for a locked store where grain and valuables were kept against a bad year. Applied to God it names the reserves from which provision is released, not a hoard."
+        }
+      ],
+      "lifeInProphetsTime": "Every settled household had a store. Grain, dates and oil were kept sealed against the season when nothing grew, and the man who held the key held real power over the people who ate from it. In a bad year a storehouse decided who survived. Asking whether the opponents held God's storehouses was asking whether they controlled the rain, the harvest and the caravan, which was a question with an obvious answer.",
+      "didYouKnow": "The word for a controller at the end of this passage is written in the standard Uthmani text with an unusual spelling, and the classical reciters transmit more than one pronunciation of one of its letters. It is one of a small number of words in the Quran where the received readings preserve a recognised variation in a single letter.",
+      "theologicalSignificance": "The argument does not try to prove God exists. It removes the alternatives and leaves the audience holding a conclusion they already have. What it establishes is that the question of origin is not optional: everyone answers it, including by refusing to. The diagnosis inserted in the middle then shifts the ground from knowledge to certainty, which is a claim about the state of a person rather than about the state of an argument.",
+      "crossReferences": [
+        {
+          "ref": "56:57-59",
+          "why": "Asks the same question about the reader's own making, narrowing it to the moment of conception."
+        },
+        {
+          "ref": "6:59",
+          "why": "Names the keys of the unseen as God's alone, the same storehouse image from the other side."
+        },
+        {
+          "ref": "15:21",
+          "why": "States that the storehouses of everything are with God and are released in a known measure."
+        }
+      ],
+      "applyIt": "Sit with the first question for one minute without reaching for an answer you already have. You were not there when you began. Somebody or something started you, and you have no memory of it and no say in it. That is not an argument you need to win. It is a fact about your position that most days you manage never to notice.",
+      "exploreFurther": [
+        "56:57-62",
+        "6:59",
+        "15:19-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.299Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:38-41",
+      "surah": 52,
+      "start": 38,
+      "end": 41,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "A Ladder To The Sky",
+      "tier": "standard",
+      "meaning": "The questioning continues and turns to sources. If they claim knowledge nobody else has, where did it come from: is there a ladder, and did someone climb it and listen? The demand that follows is for evidence anyone could inspect. Then three more possibilities are eliminated in a line each: an arrangement about children that would be insulting if applied to them, a financial motive on the messenger's side, and private access to the future.",
+      "historicalContext": "Meccan. Some Arabian groups described certain of their deities as God's daughters, while the birth of a daughter was treated in the same society as a misfortune, and the Quran repeatedly puts those two facts next to each other. The question about payment reflects the ordinary suspicion of a preacher's motives, and the sources record that no fee was ever asked. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "سُلَّمٌ",
+          "gloss": "a ladder",
+          "note": "An ordinary household object, from a root for safety and for climbing without falling. The question makes access to the unseen a matter of equipment, which is exactly what it cannot be."
+        },
+        {
+          "arabic": "مَّغْرَمٍ",
+          "gloss": "a debt, a fine",
+          "note": "A payment owed that brings no benefit back, used of a penalty and of a loss a person is stuck with. It names the burden rather than the sum, so the question is about resentment."
+        },
+        {
+          "arabic": "ٱلْغَيْبُ",
+          "gloss": "the unseen",
+          "note": "What is absent from perception, not what is mysterious. The following clause makes the test practical: if they had it, they would be writing it down, as any merchant records what he knows."
+        }
+      ],
+      "lifeInProphetsTime": "Writing existed in Mecca and was used for exactly one thing: keeping accounts. Merchants recorded debts, shares and delivery dates because memory was not trusted with numbers, and a written record settled disputes. So the image of people writing down the unseen is a commercial one. It asks whether they have information worth booking, and it treats the absence of any ledger as the answer.",
+      "didYouKnow": "The ladder in this ayah is one of only two places the Quran uses the word, and the other also appears in a challenge about reaching the sky for information. In both cases the object named is deliberately mundane, so the impossibility is expressed through a piece of ordinary equipment rather than through grand language.",
+      "theologicalSignificance": "The passage sets a standard for religious claims and applies it to both sides. Anyone asserting knowledge of what cannot be seen is asked where it came from, and a claim with no traceable source is treated as no claim at all. The demand for a clear authority is not a rhetorical flourish; it is the same standard the Quran repeatedly asks of itself. What is being refused is not disagreement but assertion without account.",
+      "crossReferences": [
+        {
+          "ref": "6:35",
+          "why": "Uses the same ladder image, of seeking a sign by climbing into the sky."
+        },
+        {
+          "ref": "16:57-59",
+          "why": "Sets the attribution of daughters to God beside the shame felt at a daughter's birth."
+        },
+        {
+          "ref": "34:47",
+          "why": "Answers the payment question directly: whatever reward was asked for is returned, since the payment comes from God."
+        }
+      ],
+      "applyIt": "The next time someone tells you something confidently about the future — markets, a relationship, a diagnosis — ask them, kindly, how they know. Not to catch them out. Half the time the answer is a real source and you have learned something. The other half, the question is the most useful thing in the conversation, and it works on your own claims too.",
+      "exploreFurther": [
+        "6:35",
+        "16:57-62",
+        "34:46-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.299Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:42-45",
+      "surah": 52,
+      "start": 42,
+      "end": 45,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "They Would Call It Cloud",
+      "tier": "standard",
+      "meaning": "The last two questions close the sequence and then the passage does something different. It stops asking and describes what would happen if the sign they keep demanding actually arrived: a piece of the sky falling, and an explanation ready immediately. Piled clouds. The commentators read this as the answer to every request for a miracle, since the request was never about evidence. The instruction that follows is to leave them, which is not abandonment but the end of arguing.",
+      "historicalContext": "Meccan. Demands for a visible sign are recorded throughout this period, including a request that a piece of the sky be dropped on the community as proof. The commentators connect this ayah to that demand directly. The plotting mentioned just before is read against the organised opposition in Mecca, which by this stage involved coordination rather than individual hostility.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَكِيدُونَ",
+          "gloss": "the ones plotted against",
+          "note": "A passive participle from the verb for scheming, so the plotters are named as the targets. The line reverses the grammar of the previous clause without changing the word."
+        },
+        {
+          "arabic": "كِسْفًا",
+          "gloss": "a fragment, a piece",
+          "note": "A broken-off portion of something larger, used of a piece of cloth and of a shard. It is the exact word the opponents themselves used when demanding that the sky be dropped on them."
+        },
+        {
+          "arabic": "مَّرْكُومٌ",
+          "gloss": "piled up, heaped",
+          "note": "A passive participle for something stacked in layers, used of clouds banked before rain. The word makes their explanation a technically competent one, which is what makes the scene devastating."
+        }
+      ],
+      "lifeInProphetsTime": "Reading the sky was a survival skill. A herder or a caravan master could tell a rain cloud from a dust haze at distance, name the layers, and judge how long he had. The vocabulary was precise because getting it wrong cost animals or lives. So the answer put in the opponents' mouths is not stupidity. It is expertise, applied confidently to the one thing it does not fit.",
+      "didYouKnow": "The word used here for a fragment of the sky is the same one the Meccan opponents used elsewhere in the Quran when they demanded that the sky be brought down on them in pieces. The surah quotes their own demand back into a hypothetical, and then supplies the explanation they would reach for if it were granted.",
+      "theologicalSignificance": "The passage denies that evidence is the obstacle. A sign large enough to end the argument is imagined and then absorbed by an ordinary explanation, which means the capacity to explain away is unlimited. That reframes belief as something other than a conclusion from data. The instruction to leave them follows logically rather than bitterly: if the problem is not information, then supplying more of it is not the remedy.",
+      "crossReferences": [
+        {
+          "ref": "17:90-93",
+          "why": "Lists the signs the opponents demanded, including bringing down the sky on them in pieces."
+        },
+        {
+          "ref": "15:14-15",
+          "why": "Says that even a gate opened in the sky would be explained as eyes bewitched."
+        },
+        {
+          "ref": "35:43",
+          "why": "States that a scheme recoils on the people who make it, the reversal used here."
+        }
+      ],
+      "applyIt": "Notice the next time you explain away something that does not fit what you already think. Everyone does it, and it feels exactly like reasoning. Give it a name when you catch it — say to yourself, that was a piled cloud — and then sit with the thing you explained away for another minute before deciding. One minute is usually enough to tell the difference.",
+      "exploreFurther": [
+        "17:90-93",
+        "15:14-15",
+        "6:111"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.299Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:46-47",
+      "surah": 52,
+      "start": 46,
+      "end": 47,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "A Punishment Before That",
+      "tier": "standard",
+      "meaning": "Two lines that close the argument by narrowing the timeframe. First the plotting is followed to its end and found empty, with no help arriving from any direction. Then a second punishment is named, and the phrase used places it earlier than the Day. Commentators read it variously as loss in this life, as defeat, or as what comes in the grave, and they record the range. The last clause says the people it applies to are unaware of it.",
+      "historicalContext": "Meccan, and the commentators note that some of them read the nearer punishment as the defeat the Meccan leadership later suffered, which would make the line a prediction. Others keep it general. The surah has just told the Prophet Muhammad (peace be upon him) to leave them until their Day, and these two lines qualify that: leaving them is not the same as nothing happening in the meantime.",
+      "keyTerms": [
+        {
+          "arabic": "يُغْنِى",
+          "gloss": "avails, suffices",
+          "note": "From a root for wealth and for having enough. The verb asks not whether the plotting works but whether it covers anything, which is the language of a bill that falls short."
+        },
+        {
+          "arabic": "دُونَ",
+          "gloss": "short of, before",
+          "note": "A preposition of position that can mean beneath, nearer than, or other than. The commentators split accordingly, and the range of readings about this punishment follows directly from that ambiguity."
+        },
+        {
+          "arabic": "لَا يَعْلَمُونَ",
+          "gloss": "they do not know",
+          "note": "The plain verb for knowing, in the present tense, so the ignorance is ongoing rather than final. It leaves open the possibility that they might come to know, which the surah does not close off."
+        }
+      ],
+      "lifeInProphetsTime": "Protection was the basic unit of security. A man belonged to a clan and the clan answered for him, so the standard threat was not death but exposure: losing the people who would come when you called. Everyone had seen someone put outside that arrangement. Saying that no help would arrive on that Day named the specific terror of the society, which was not pain but being unbacked.",
+      "didYouKnow": "The root for plotting appears three times in five lines of this surah: as what the opponents intend, as a passive naming them the ones plotted against, and as the thing that will not cover their costs on the Day. One root carries the whole reversal, and the English translation needs three different phrasings to follow it.",
+      "theologicalSignificance": "The passage puts a limit on how much of the consequence is postponed. Naming a punishment that comes before the Day answers a specific complaint, that the wicked prosper and nothing happens, without turning every misfortune into a verdict. And the final clause is careful: the people concerned do not know about it, which means the passage is not inviting anyone to identify it in someone else's life. It states that the accounting has already begun.",
+      "crossReferences": [
+        {
+          "ref": "32:21",
+          "why": "Uses the same phrase for a nearer punishment given before the greater one, so that people may return."
+        },
+        {
+          "ref": "40:45",
+          "why": "Shows a nearer punishment falling on Pharaoh's people before the greater one is named."
+        },
+        {
+          "ref": "3:196-197",
+          "why": "Warns against being impressed by the movement of the disbelievers through the land, a brief enjoyment."
+        }
+      ],
+      "applyIt": "If you are carrying a grievance about someone who seems to be getting away with something, notice how much of your energy goes into wanting the timing changed rather than the outcome. This passage says some of the account is already being settled and that you are not in a position to see it. Put the file down for a week and see what you get back.",
+      "exploreFurther": [
+        "32:21",
+        "40:45-46",
+        "3:196-198"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.300Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "52:48-49",
+      "surah": 52,
+      "start": 48,
+      "end": 49,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "You Are Before Our Eyes",
+      "tier": "standard",
+      "meaning": "The surah ends by giving one instruction and one reason. The instruction is to wait, and the reason is a phrase that has no obvious English equivalent: you are in Our eyes. Commentators read it as under God's watch, protection and care at once, and they do not separate the three. Then the waiting is filled. Three times are named — on rising, part of the night, and the hour when the stars fade — so patience is given something to do.",
+      "historicalContext": "Meccan, and these are the surah's closing lines. The commentators differ over what the phrase about rising refers to: standing for prayer, rising from sleep, rising from a gathering, or getting up from any seat. They record the range without settling it, and the breadth is part of why the ayah is quoted so often. No occasion is reported for either line.",
+      "keyTerms": [
+        {
+          "arabic": "بِأَعْيُنِنَا",
+          "gloss": "before Our eyes",
+          "note": "A plural of the word for an eye, with a preposition that means within or in the presence of. Classical commentators read it as care and watchfulness together, and they insist it implies nothing bodily."
+        },
+        {
+          "arabic": "وَسَبِّحْ",
+          "gloss": "and glorify",
+          "note": "From a root for swimming and moving freely through something, so declaring God's perfection is described with a verb of motion. It means removing every defect from the idea, not adding praise to it."
+        },
+        {
+          "arabic": "وَإِدْبَـٰرَ",
+          "gloss": "and at the retreating",
+          "note": "A noun for turning the back and withdrawing, used of an army in retreat. Applied to the stars it names the moment they go out at dawn, the hand-over between night and day."
+        }
+      ],
+      "lifeInProphetsTime": "The night sky was a clock and a map. Travellers moved after dark to avoid the heat and steered by named stars, and the point at which those stars washed out told everyone the night was over and the day's obligations had started. Nobody needed an instrument. The moment the passage names as a time for remembrance is the one moment in the day that every person in that society could identify without being told.",
+      "didYouKnow": "The surah opens by swearing on a mountain, a book, a sanctuary, a sky and a sea, and closes by asking for a few words said at three ordinary moments of a day. Nothing in between narrows the gap. The shape is deliberate: an argument at cosmic scale that ends with an instruction small enough for anyone to carry out.",
+      "theologicalSignificance": "The reason given for patience is not that the wait is short or that the outcome is good. It is that the one waiting is seen. That relocates endurance from a calculation about the future to a fact about the present, which is a different kind of consolation and a more durable one. And the practice attached to it is not petition but glorification, so the waiting is filled with something that asks for nothing.",
+      "crossReferences": [
+        {
+          "ref": "11:37",
+          "why": "Uses the same phrase, telling Noah to build the ark before God's eyes and under instruction."
+        },
+        {
+          "ref": "50:39-40",
+          "why": "Names the same times for glorification, before sunrise and sunset and part of the night."
+        },
+        {
+          "ref": "76:24-26",
+          "why": "Gives the same closing pattern, patience for the decision of your Lord followed by night remembrance."
+        }
+      ],
+      "applyIt": "Take the third of the times this passage names and use it once this week. Set an alarm for the last part of the night, get up, and say a few words of praise before the sky lightens, then go back to sleep. It does not need to be long. The point is to have been awake in the one hour nobody else is watching you.",
+      "exploreFurther": [
+        "11:37",
+        "50:39-40",
+        "76:23-26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:54:40.300Z",
         "reviewed": false
       }
     }
