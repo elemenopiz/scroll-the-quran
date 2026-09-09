@@ -1,8 +1,530 @@
 {
   "surah": 27,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:17:10.804Z",
+  "generatedAt": "2026-09-09T12:41:24.116Z",
   "studies": [
+    {
+      "key": "27:1-4",
+      "surah": 27,
+      "start": 1,
+      "end": 4,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "A Book That Makes Things Clear",
+      "tier": "standard",
+      "meaning": "The opening pairs two descriptions of the same thing: signs, and a book that clarifies. Then the audience narrows. Guidance and good news are said to reach believers, and believers are identified by three marks: prayer kept up, charity given, and certainty about what comes after death. The fourth line turns to those who reject that last item and says their own deeds have been made to look good to them, so they move without bearing. Certainty about the Hereafter is the hinge the whole passage turns on.",
+      "historicalContext": "Meccan, from the years when the Quran was recited publicly and publicly refused. The commentators report no particular occasion for these lines and read them as the surah's frame: a book offered as evidence to a city that filed it under poetry or invention. Three surahs carrying these disjoined letters sit together in the order of the Book, and each opens by defending the revelation before any story begins.",
+      "keyTerms": [
+        {
+          "arabic": "مُّبِينٍ",
+          "gloss": "making clear, clarifying",
+          "note": "The form is active rather than passive: not merely clear in itself but clarifying something else. The same word returns nine lines later in the accusation that Moses brought obvious sorcery."
+        },
+        {
+          "arabic": "يَعْمَهُونَ",
+          "gloss": "they wander without bearing",
+          "note": "The verb describes straying with no sense of direction, used of people whose confusion is inward rather than geographic. It is not stupidity but motion without a fixed point."
+        },
+        {
+          "arabic": "يُوقِنُونَ",
+          "gloss": "they are certain",
+          "note": "From a root for knowledge that has settled and stopped moving. The passage does not describe belief in the Hereafter but certainty about it, which is the stronger of the two words."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca lived by the spoken word. Poetry contests, tribal boasts and long recited genealogies were how reputation was made and kept, and a man's memory was his library. A text that announced itself as signs, and asked to be weighed as evidence rather than admired as verse, cut across that habit. The merchants who heard it in the streets around the Kaaba had a category for poets and a category for soothsayers, and this fitted neither.",
+      "didYouKnow": "An-Naml is the only surah in the Quran that opens with the two letters Ta Sin. The surahs immediately before and after it, numbers 26 and 28, both open with Ta Sin Mim, and in each of those the letters stand as a complete ayah of their own. Here alone they share their ayah with the sentence that follows.",
+      "theologicalSignificance": "Two claims sit side by side. Revelation is described as self-evidencing, a book that clarifies, and yet its effect is said to depend on what the listener already holds. Rejection is explained not as missing information but as a distorted sense of one's own conduct, and that distortion is attributed to God without removing the person's share in it. Certainty about the Hereafter is treated as the condition that makes evidence legible, rather than a conclusion drawn from it.",
+      "crossReferences": [
+        {
+          "ref": "2:2-4",
+          "why": "Marks out believers by the same triad of prayer, giving, and certainty about the Hereafter, using the identical verb for certainty."
+        },
+        {
+          "ref": "35:8",
+          "why": "Asks about the person whose bad conduct has been made attractive to him until he considers it good."
+        },
+        {
+          "ref": "26:1-3",
+          "why": "Opens the neighbouring surah with the same disjoined letters and the same defence of the Book."
+        }
+      ],
+      "applyIt": "Take one thing you did this week that you defended to yourself at the time. Not a large thing. Look at the defence again now, a few days cooler, and ask whether it was reasoning or decoration. The passage describes a mechanism that works quietly and from the inside. You catch it by looking late, not by looking harder in the moment.",
+      "exploreFurther": [
+        "2:2-4",
+        "35:8",
+        "26:1-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.600Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:5-6",
+      "surah": 27,
+      "start": 5,
+      "end": 6,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "From The Presence Of Wisdom",
+      "tier": "standard",
+      "meaning": "The first line closes a sentence begun earlier: those who deny what follows death carry the worst of the punishment, and in the Hereafter they lose most of all. Then the address swings, with no transition, to the one reciting. He is told where the Quran is reaching him from, and the source is named by two attributes rather than by a name. Wisdom answers the charge that the book is disordered. Knowledge answers the charge that it is guesswork.",
+      "historicalContext": "Meccan. The recitation was being explained away in public as invention, as borrowed stories, or as words fed to the reciter by someone else. The commentators attach no single incident to these ayat and read them as part of the surah's opening frame. What comes immediately after is the night scene at the fire, offered as the first demonstration rather than as an argument.",
+      "keyTerms": [
+        {
+          "arabic": "لَتُلَقَّى",
+          "gloss": "you are being given",
+          "note": "A passive form of a verb for meeting and receiving. It places the recipient on the receiving end rather than the composing end, and the tense keeps the giving ongoing rather than finished."
+        },
+        {
+          "arabic": "لَّدُنْ",
+          "gloss": "from the very presence of",
+          "note": "A preposition for immediate proximity to a source, stronger than the ordinary word for from. It leaves no space between the origin of the words and the one receiving them."
+        },
+        {
+          "arabic": "ٱلْأَخْسَرُونَ",
+          "gloss": "the greatest losers",
+          "note": "A superlative from the vocabulary of trade, where loss meant a merchant's capital eaten by a bad season. Applied here, it names a transaction that ended with nothing rather than a punishment."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's standing rested on two long caravans a year, one north to Syria in summer and one south to Yemen in winter. A man's reputation rose or fell on whether he came home in profit, and everyone in the market knew who had lost a season. Loss was not an abstraction there; it was a specific face at a specific stall. The passage borrows that vocabulary and moves the ledger to the next world.",
+      "didYouKnow": "The pairing that ends this passage, the Wise before the Knowing, is rare. In that order it occurs five times in the whole Quran, at 6:83, 6:128, 6:139, 15:25 and here. The reverse order, the Knowing before the Wise, occurs three times as often. Both orders name the same two attributes, and only the emphasis shifts between them.",
+      "theologicalSignificance": "The passage answers a question about origin with a question about character. It does not argue that the Quran came from God; it describes the sender by two qualities and lets the book be judged against them. That shifts the test onto the text itself, since a book from wisdom and knowledge should show both. The loss described a line earlier is defined the same way, as a state rather than a sentence.",
+      "crossReferences": [
+        {
+          "ref": "18:65",
+          "why": "Uses the same preposition of immediate presence for knowledge given directly by God to a servant."
+        },
+        {
+          "ref": "69:40-43",
+          "why": "Answers the same charge directly, denying that the recitation is a poet's or a soothsayer's speech."
+        },
+        {
+          "ref": "39:15",
+          "why": "Names the true losers as those who lose themselves and their families on the Day of Resurrection."
+        }
+      ],
+      "applyIt": "Next time you meet a claim you want to dismiss, notice whether you are testing the claim or the person making it. This passage does the harder thing: it names the source and invites you to check the book against it. Pick one thing you have refused without reading, and read a page of it this week before deciding.",
+      "exploreFurther": [
+        "69:38-43",
+        "39:15",
+        "18:65"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.609Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:7",
+      "surah": 27,
+      "start": 7,
+      "end": 7,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "The Fire On The Road",
+      "tier": "standard",
+      "meaning": "Moses is travelling with his household and sees a fire in the distance. What he says about it is entirely practical. He will go and bring back news, or failing that a burning brand so the family can get warm. Nothing in the sentence expects revelation; he is a man looking for information and firewood. The Quran opens the largest moment of his life on that flat, domestic note, and the abruptness is part of the point.",
+      "historicalContext": "Meccan. The surah has just claimed that the recitation comes from wisdom and knowledge, and it now begins proving the claim by narrating rather than arguing. The scene stands at the end of Moses's years of work in Midian, on a journey back toward Egypt with his family. The commentators place it near Mount Sinai and note that the Quran tells it three times, each version keeping different details.",
+      "keyTerms": [
+        {
+          "arabic": "ءَانَسْتُ",
+          "gloss": "I have glimpsed, perceived",
+          "note": "The root carries companionship and reassurance, and gives Arabic its ordinary word for a human being. It describes noticing something with a sense of relief rather than merely catching sight of it."
+        },
+        {
+          "arabic": "بِشِهَابٍ",
+          "gloss": "with a flaming brand",
+          "note": "A blaze in motion. The same word is used elsewhere in the Quran for a streak of fire crossing the night sky, so it names brightness travelling rather than a fire that sits still."
+        },
+        {
+          "arabic": "تَصْطَلُونَ",
+          "gloss": "you may warm yourselves",
+          "note": "A verb used only of drawing close to a fire for its heat. It occurs twice in the Quran and both times in this scene, fixing the season and the hour without stating either."
+        }
+      ],
+      "lifeInProphetsTime": "Desert nights drop hard. A family travelling between settlements would stop before dark, and a fire meant three things at once: heat, a landmark visible for miles, and people who could give directions. Approaching another party's fire was a normal request, and the customs of hospitality made it safe. Moses is doing what any traveller with children and a cold night ahead would do, which is why the story starts in ordinary life.",
+      "didYouKnow": "Moses's words to his family survive in three versions. At 20:10 he offers a torch or guidance found at the fire. At 28:29 he offers information or an ember for warmth. Here he offers news or a flaming brand for warmth. Only one phrase is identical in all three: I have glimpsed a fire. That verb occurs four times in the entire Quran.",
+      "theologicalSignificance": "Prophethood arrives here without preparation on the human side. Moses is not praying, not fasting, not waiting; he is off the road at night trying to solve a small problem. The passage locates the initiative entirely with God, and it does so by choosing the least spiritual possible moment for the encounter. What follows is not earned by the search, because the search was for something else.",
+      "crossReferences": [
+        {
+          "ref": "20:9-12",
+          "why": "Tells the same night from the other side, opening with a question and naming the valley as sacred."
+        },
+        {
+          "ref": "28:29",
+          "why": "Gives the fullest version, placing the fire by the side of the mountain after Moses completes his term of work."
+        },
+        {
+          "ref": "79:15-16",
+          "why": "Compresses the whole scene into two lines, naming only the call and the sacred valley."
+        }
+      ],
+      "applyIt": "Think about where you were the last time something important arrived unannounced. Probably somewhere unremarkable. This week, when you are doing the dullest task on your list, work with a little more attention than it deserves. The passage suggests that ordinary errands are not a waiting room before real life. They are where the road actually runs.",
+      "exploreFurther": [
+        "20:9-16",
+        "28:29-32",
+        "79:15-19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.609Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:8-9",
+      "surah": 27,
+      "start": 8,
+      "end": 9,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Blessed Is Whoever Is There",
+      "tier": "standard",
+      "meaning": "The call does not open with an instruction. It opens with a blessing pronounced over whoever is at the fire and whoever is around it, and the commentators genuinely differ on who is meant: the light itself, angels present at the place, Moses standing near, or a way of speaking that implies no location for God at all. Immediately after, the glorification arrives and rules out any reading that would put God inside a created thing. Only then does the voice name itself.",
+      "historicalContext": "Meccan, in a surah answering the charge of invention by telling stories instead of arguing. The commentators attach no incident to these lines and read them as the first movement of the narrative sequence. The setting is the valley beside the mountain at the close of Moses's years in Midian. The community hearing this in Mecca was small, watched, and being told that God speaks to those He chooses.",
+      "keyTerms": [
+        {
+          "arabic": "بُورِكَ",
+          "gloss": "blessed is, blessing is placed",
+          "note": "A passive verb from a root meaning to settle and stay. Blessing in Arabic is not a wish sent outward but something made to remain in a place, which is why it attaches to the site here."
+        },
+        {
+          "arabic": "وَسُبْحَـٰنَ",
+          "gloss": "and far removed is",
+          "note": "A declaration that God is beyond a suggestion just raised. Set immediately after speech about someone at the fire, it closes off any sense that God has been located within it."
+        },
+        {
+          "arabic": "ٱلْعَزِيزُ",
+          "gloss": "the Almighty, the Unassailable",
+          "note": "The root joins might with inaccessibility, like ground too hard to break open. Paired with wisdom, it answers a man who is about to be sent to the strongest ruler he has ever heard of."
+        }
+      ],
+      "lifeInProphetsTime": "In seventh-century Arabia a fire on high ground was a message. Tribes lit them to guide guests in, to signal a raid, or to mark a camp for stragglers still on the road. Reading fires at a distance was a practical skill, and a traveller judged from the flame whether to approach or to go around. Moses walks toward one expecting the ordinary meaning and finds the whole category broken.",
+      "didYouKnow": "The self-naming that follows, rendered it is I, God, appears in only three places in the Quran, and each of them is this same night: at 20:14, at 28:30, and here. The words that follow it differ every time. In one place it is there is no god but I, in another Lord of the Worlds, and here the Almighty, the Wise.",
+      "theologicalSignificance": "The order of the sentences carries the doctrine. Blessing comes first, then the removal of God from any suggestion of place, then the name, then the attributes, and only after all of that an instruction. The passage refuses to let a spectacular event settle into a picture of God located somewhere. It also shows commentators recording a range of readings and declining to close it, which is what honest exegesis of a difficult phrase looks like.",
+      "crossReferences": [
+        {
+          "ref": "28:30",
+          "why": "Names the same voice from the right side of the valley at the blessed spot, and identifies God as Lord of the Worlds."
+        },
+        {
+          "ref": "20:12-14",
+          "why": "Gives the parallel commissioning, with the sacred valley named and the instruction to worship following the self-naming."
+        },
+        {
+          "ref": "42:51",
+          "why": "Sets out the ways God speaks to a human being, including from behind a veil, which frames this whole scene."
+        }
+      ],
+      "applyIt": "Notice, this week, how often you give an instruction before you give a reason or a kindness. In this passage the order runs the other way: blessing, then reverence, then identity, then the task. Try that sequence once with someone who works for you or lives with you. Say the good part first, and let the request come last.",
+      "exploreFurther": [
+        "42:51-52",
+        "20:9-16",
+        "28:30-32"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.609Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:10-11",
+      "surah": 27,
+      "start": 10,
+      "end": 11,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "The Messengers Do Not Fear",
+      "tier": "standard",
+      "meaning": "Moses is told to throw down his staff, and when it moves like a snake he turns and runs without looking back. The reassurance that follows is not what the moment seems to call for. It does not say the staff is harmless; it says messengers do not fear in God's presence. Then an exception arrives that appears to undo the rule, and finishes instead with forgiveness for whoever did wrong and then put good in its place. Fear is treated as real and not disqualifying.",
+      "historicalContext": "Meccan. The commentators connect the exception at the end with the killing Moses had been involved in before he fled Egypt, an episode the Quran tells at length in the next surah. Reports differ on how much weight to put on that link, and some read the clause as a general statement rather than a personal one. Either way it stands at the threshold of his commissioning, before he has done anything.",
+      "keyTerms": [
+        {
+          "arabic": "تَهْتَزُّ",
+          "gloss": "quivering, writhing",
+          "note": "A verb for rapid shaking, used elsewhere in the Quran of dry earth stirring back to life after rain. It describes the motion Moses saw, not the creature, which keeps the sentence honest about what was in front of him."
+        },
+        {
+          "arabic": "مُدْبِرًا",
+          "gloss": "turning his back",
+          "note": "A participle for showing one's back in flight. Paired with the clause that he did not look behind, it records a prophet running away in the middle of his own commissioning without softening the description."
+        },
+        {
+          "arabic": "حُسْنًۢا",
+          "gloss": "goodness, a good thing",
+          "note": "Indefinite, so no particular act is specified. The verb before it means substitution, one thing taking the position another held, so the good does not sit beside the wrong but replaces it."
+        }
+      ],
+      "lifeInProphetsTime": "Snakes were a daily hazard rather than a symbol. Arabian households shook out bedding, checked sandals, and told children which stones not to lift. The word used here names a small, fast, sand-coloured snake of exactly the kind that turns up under a tent flap. The image would land on a Meccan audience as a reflex they knew in their own bodies, not as a wonder they had to imagine.",
+      "didYouKnow": "The comparison used for the moving staff appears twice in the Quran, here and at 28:31, in almost identical words. What follows it is different each time. Here Moses is told that messengers do not fear in God's presence. There he is told to come forward, and that he is safe. The two versions supply the reassurance from opposite directions.",
+      "theologicalSignificance": "A general principle is stated and then immediately given an exception that swallows the interesting case. Messengers do not fear, except one who has wronged and then made it good, and that one meets forgiveness rather than exclusion. The passage therefore refuses to build prophethood on an unblemished record. It builds it on the exchange of a wrong for a good, and it says so at the exact moment a prophet is being appointed.",
+      "crossReferences": [
+        {
+          "ref": "25:70",
+          "why": "States the same exchange as a rule, with God replacing evil deeds with good ones for those who turn back."
+        },
+        {
+          "ref": "28:31",
+          "why": "Reports the same instant with the same comparison, but reassures Moses by calling him safe rather than fearless."
+        },
+        {
+          "ref": "20:21",
+          "why": "Adds the detail this account leaves out, that Moses was told to take the staff back and it returned to its first state."
+        }
+      ],
+      "applyIt": "Think of one wrong you keep apologising for internally without ever having put anything in its place. Choose the smallest concrete good that would occupy the same ground: a call to the person, a debt paid, a habit reversed. Do that one thing this week. The passage is describing substitution, not regret, and regret alone leaves the space empty.",
+      "exploreFurther": [
+        "25:68-71",
+        "28:31-32",
+        "20:17-23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.607Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:12-13",
+      "surah": 27,
+      "start": 12,
+      "end": 13,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "White Without Blemish",
+      "tier": "standard",
+      "meaning": "The second sign is a bodily one. The hand drawn out from the neck of the robe comes back shining, and the text is careful to add that nothing is wrong with it, ruling out disease. It is then placed among nine signs directed at Pharaoh and his court. The commentators list the nine in different orders, agreeing that the staff and the hand head the list. When the signs arrive they are called sight-giving, and the answer given to them is a single word: sorcery.",
+      "historicalContext": "Meccan. The same charge was in the air around the reciter of this surah, and it is the reason the story is being told. Sorcery was the standard explanation offered in Mecca for a text nobody could match and nobody would accept, and the passage shows the accusation being made a thousand years earlier by a court that had every reason to know better. The commentators note the parallel without needing a specific occasion.",
+      "keyTerms": [
+        {
+          "arabic": "جَيْبِكَ",
+          "gloss": "the opening of your garment",
+          "note": "Not a pocket in the modern sense but the neck slit of a robe. The gesture is plain and repeatable in front of witnesses, which matters for a sign meant to be shown at court."
+        },
+        {
+          "arabic": "مُبْصِرَةً",
+          "gloss": "sight-giving, plainly visible",
+          "note": "An active form, so the signs either do the seeing or make seeing possible. Arabic permits both readings, and on either one the failure to see is placed on the audience rather than the evidence."
+        },
+        {
+          "arabic": "سِحْرٌ",
+          "gloss": "sorcery, magic",
+          "note": "The root suggests turning something away from its true nature, and by extension deceiving. Calling a sign sorcery concedes that something real happened while relocating the cause somewhere safer."
+        }
+      ],
+      "lifeInProphetsTime": "Arabia had a working vocabulary for the uncanny. Soothsayers were consulted about lost camels and disputed paternity, knot-tying and spoken charms were common, and every tribe knew someone credited with unusual powers. Because the category existed and was familiar, it was always available as an explanation. A Meccan hearing something extraordinary did not have to deny it; he could file it, which is exactly what Pharaoh's court is shown doing.",
+      "didYouKnow": "The phrase describing the hand, white without blemish, is repeated word for word in all three Quranic accounts of Moses's commissioning, at 20:22, 27:12 and 28:32, while the wording around it changes each time. The verdict passed on the signs, obvious sorcery, occurs ten times across nine different surahs, aimed at Moses, at other prophets, and at the Quran itself.",
+      "theologicalSignificance": "Signs are shown here to be insufficient on their own. The passage grants that they were clear, calls them sight-giving, and then reports that they were rejected anyway by people who had watched them closely. Evidence is therefore not the missing ingredient in disbelief. What decides the outcome is whether the viewer is willing to follow the evidence to a conclusion that will cost them something, and the next ayah names that cost as position.",
+      "crossReferences": [
+        {
+          "ref": "17:101",
+          "why": "Names the same nine clear signs and reports Pharaoh's verdict on Moses in a single line."
+        },
+        {
+          "ref": "7:130-133",
+          "why": "Lists the signs sent on Pharaoh's people one by one, including the flood, the locusts and the blood."
+        },
+        {
+          "ref": "10:76",
+          "why": "Gives the identical verdict, obvious sorcery, in the mouths of the same court."
+        }
+      ],
+      "applyIt": "Listen this week for the moment you reach for a label instead of an answer. Someone changes for the better and you call it a phase; a piece of work impresses you and you call it luck. The label ends the thought. When you catch yourself using one, stay with the thing for another minute before you file it.",
+      "exploreFurther": [
+        "17:101-104",
+        "7:130-136",
+        "20:56-59"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.607Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:14-15",
+      "surah": 27,
+      "start": 14,
+      "end": 15,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Certain And Still Denying",
+      "tier": "standard",
+      "meaning": "Two opposite responses to knowledge are set beside each other with no connecting sentence. Pharaoh's court rejected the signs while their own selves were certain of them, and the motive is named twice over: wrongdoing and self-elevation, not doubt. Then the scene changes. David and Solomon are given knowledge, and the first thing recorded of them is praise, thanking God for being favoured over many believing servants. Knowledge held with gratitude stands directly against knowledge suppressed by pride.",
+      "historicalContext": "Meccan. The surah is assembling a sequence of prophets who received something and said so, against courts and cities that received something and buried it. The commentators do not report an occasion for the join between the two scenes, and read the abruptness as deliberate. The audience in Mecca included men who acknowledged the reciter's honesty in private and opposed him in public, which is the situation the first line describes.",
+      "keyTerms": [
+        {
+          "arabic": "وَجَحَدُوا۟",
+          "gloss": "and they denied knowingly",
+          "note": "A verb for rejecting what one knows to be true, distinct from the general word for disbelief. Arabic uses it of a debtor denying a debt he remembers perfectly well."
+        },
+        {
+          "arabic": "وَعُلُوًّا",
+          "gloss": "and self-elevation",
+          "note": "A noun for rising high, used of buildings and of tyrants. Standing beside the word for wrongdoing, it makes the refusal a matter of position to protect rather than evidence to weigh."
+        },
+        {
+          "arabic": "عِلْمًا",
+          "gloss": "knowledge",
+          "note": "Indefinite and unqualified, so the text never says what the knowledge was. Commentators mention judgement between people, the speech of creatures, and craft, and none of them narrows it to a single field."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian commerce ran on memory and oath. Contracts were spoken, witnesses were named, and a man who denied a debt he owed committed a specific and recognised offence with a specific word attached to it. Everyone in the market understood the difference between forgetting and denying. The Quran picks that commercial word for what Pharaoh's court did with the signs, so the charge lands as fraud rather than as error.",
+      "didYouKnow": "The phrase praise belongs to God occurs three times in this surah, and each time it marks a hinge. It opens the Solomon section here, it closes the prophetic narratives at 27:59, and it is the last thing the surah says at 27:93. The demand to look at how things ended for wrongdoers also occurs three times here, at 27:14, 27:51 and 27:69.",
+      "theologicalSignificance": "Certainty is shown to be compatible with refusal. The passage separates what a person knows from what a person will admit, and puts the gap down to what admission would cost. Against that it sets a response in which knowledge is immediately turned outward as thanks, before any use is made of it. Between the two lies the whole question of what knowledge is for, which the surah then answers through Solomon's conduct.",
+      "crossReferences": [
+        {
+          "ref": "2:146",
+          "why": "Describes people who recognise the truth as they recognise their own children and still conceal it."
+        },
+        {
+          "ref": "6:33",
+          "why": "Says plainly that it is not the reciter they deny but the signs of God, which they know."
+        },
+        {
+          "ref": "21:79",
+          "why": "Reports the same pair, David and Solomon, and specifies understanding given to one of them."
+        }
+      ],
+      "applyIt": "Pick something you learned recently that made you feel a little ahead of other people. Before you use it, say thanks for it out loud, once, in your own words. It takes five seconds and it changes what the knowledge is doing. The passage puts gratitude first in the sequence, before any account of what the two kings went on to build.",
+      "exploreFurther": [
+        "2:146-147",
+        "6:33",
+        "21:78-82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:16-17",
+      "surah": 27,
+      "start": 16,
+      "end": 17,
+      "theme": "Solomon and David",
+      "themeId": "solomon-and-david",
+      "title": "Taught The Speech Of Birds",
+      "tier": "standard",
+      "meaning": "Solomon's succession is stated in three words, and what he says next is an announcement to the public rather than a private thanksgiving. He names two gifts: that the speech of birds was taught to him, and that he and his were given something of everything. He calls it unmistakable favour. The following line lists his forces, spirits and humans and birds, and says they were held in rank. The declaration of gift comes before any account of what he did with it.",
+      "historicalContext": "Meccan. Solomon was known in Arabia through Jewish and Christian neighbours and through the trade routes running up from Yemen, and popular story had built him into a magician commanding spirits. The Quran keeps the extraordinary elements and changes their footing: everything he has is described as taught or given. The commentators note that the passage supplies no date and no place, which keeps attention on the kind of power rather than its extent.",
+      "keyTerms": [
+        {
+          "arabic": "مَنطِقَ",
+          "gloss": "speech, articulate utterance",
+          "note": "From the root for speaking, the same root that later gave Arabic its word for logic. Choosing it rather than a word for sound says the birds' calls carried meaning, not merely noise."
+        },
+        {
+          "arabic": "يُوزَعُونَ",
+          "gloss": "held in ranks, marshalled",
+          "note": "A passive verb for holding back the front of a column so the rear can catch up. It occurs three times in the Quran, twice in this surah, and its second appearance is the gathering on the last day."
+        },
+        {
+          "arabic": "ٱلْفَضْلُ",
+          "gloss": "the favour, the overflow",
+          "note": "A word for what exceeds need, an excess rather than a wage. Solomon applies it to a capacity he did not build, which places the achievement outside himself while he is announcing it."
+        }
+      ],
+      "lifeInProphetsTime": "Kingship was not the Arabian norm. Mecca had no king; it had clans, a council, and men whose word carried because of lineage and wealth. Real kings sat at the edges of the Arab world, in Yemen, in Ghassan and Hira, and Arabian traders saw their courts and came home with descriptions of ranked guards and formal audiences. A king who opened by saying what he had been taught was not the figure they expected.",
+      "didYouKnow": "The expression rendered the speech of birds occurs exactly once in the whole Quran, here. The verb describing Solomon's ranked forces is almost as rare: it appears three times, and two of those are in this surah. Its other appearance here, at 27:83, describes the ranks of the resurrected being held in order on the Day of Judgement.",
+      "theologicalSignificance": "The passage separates capability from ownership. Solomon commands unusual forces and understands unusual speech, and both are introduced in the passive, as things done to him. That grammar is the argument. Power that arrives as instruction can be described in public without the speaker becoming its source, which is why the announcement is not boasting. The surah will test this immediately, when a subject of his refuses to appear on parade.",
+      "crossReferences": [
+        {
+          "ref": "38:35-36",
+          "why": "Records Solomon asking for a kingdom that would suit no one after him, and the wind being made subject to him."
+        },
+        {
+          "ref": "34:12-13",
+          "why": "Describes the same reign from the outside, with the wind, the spring of copper, and the work of the spirits."
+        },
+        {
+          "ref": "21:81-82",
+          "why": "Gives the shortest version, with the storm wind running to the land God blessed and the divers among the spirits."
+        }
+      ],
+      "applyIt": "Say one of your own abilities out loud today in the passive: it was taught to me, it was given. Not to a crowd, just to yourself in the car or the kitchen. Notice how differently the same sentence sits. Solomon announces his gifts publicly and stays intact because of the grammar he uses, and the grammar is available to you too.",
+      "exploreFurther": [
+        "38:30-40",
+        "34:12-14",
+        "21:78-82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:18",
+      "surah": 27,
+      "start": 18,
+      "end": 18,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "A Warning In The Valley",
+      "tier": "standard",
+      "meaning": "An ant sees the column coming and speaks to her own kind. What she says is a complete sentence with a reason attached: get inside, or Solomon and his troops will crush you. Then comes the clause that makes the line famous. They will not know they have done it. She does not accuse the army of cruelty; she excuses it before it happens. A creature is given a voice, an assessment of danger, and a charitable reading of the powerful, all in one breath.",
+      "historicalContext": "Meccan. The surah takes its name from this ayah, as most surah names do, from a distinguishing word rather than a summary of the contents. The scene follows directly on Solomon's announcement of his ranked forces, so the reader meets the army first from above, in formation, and then from underneath, at ground level. The commentators supply no occasion and treat the placement itself as the commentary.",
+      "keyTerms": [
+        {
+          "arabic": "مَسَـٰكِنَكُمْ",
+          "gloss": "your dwellings",
+          "note": "From the root for stillness and settling, which also gives Arabic its word for tranquillity. The ants' shelters are named with the ordinary word for human homes rather than with a word for burrows or holes."
+        },
+        {
+          "arabic": "لَا يَحْطِمَنَّكُمْ",
+          "gloss": "lest they crush you",
+          "note": "A verb for smashing something brittle into fragments, used of dry wood and of bone. The heavy ending makes it urgent, and the form leaves the crushing entirely unintended by those doing it."
+        },
+        {
+          "arabic": "لَا يَشْعُرُونَ",
+          "gloss": "they do not notice",
+          "note": "A verb for perceiving through the senses, from a root connected with a single hair. It names the finest grade of awareness, so denying it says the army would register nothing whatever."
+        }
+      ],
+      "lifeInProphetsTime": "Anyone who had crossed a valley floor in Arabia knew what an ant colony looked like from a camel's height: nothing at all. Harvester ants stored seed in chambers under the sand, and a caravan passing over would flatten weeks of work without a rider noticing a thing. The image needed no explaining to the first listeners. They had done it themselves, many times, on every journey they had ever made.",
+      "didYouKnow": "The phrase they do not notice occurs twice in this surah and nowhere else in it. Here it describes an army that would destroy a colony without feeling the ground change. At 27:50 it describes a group of conspirators who do not notice that their own plan has been countered. The same three words hold both the powerful who crush and the clever who are outplanned.",
+      "theologicalSignificance": "The passage places a moral perspective outside the human species. The ant is not a decoration in Solomon's story; she is a speaker with a view of events, and her view is that great power is mostly careless rather than malicious. That judgement stands in the Quran uncorrected. It follows that creation is populated by communities with their own concerns, and that being unaware of the harm you cause does not make the harm unreal.",
+      "crossReferences": [
+        {
+          "ref": "6:38",
+          "why": "States the principle behind this scene, that every creature on earth forms a community like your own."
+        },
+        {
+          "ref": "17:44",
+          "why": "Says that everything glorifies God in a speech human beings do not comprehend."
+        },
+        {
+          "ref": "27:19",
+          "why": "Gives Solomon's reaction to overhearing her, which is neither offence nor amusement but a prayer for gratitude."
+        }
+      ],
+      "applyIt": "Today, think of one situation where you have more weight than the people around you: at work, at home, in a queue. Ask what you might be flattening without registering it. Not out of guilt. The ant's warning assumes good intentions and plans around them anyway. One small adjustment, made because you thought about it in advance, is the whole exercise.",
+      "exploreFurther": [
+        "6:38",
+        "17:44",
+        "27:19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "27:19",
       "surah": 27,
@@ -58,6 +580,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:16:51.572Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:20-21",
+      "surah": 27,
+      "start": 20,
+      "end": 21,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Missing Hoopoe",
+      "tier": "standard",
+      "meaning": "Solomon reviews the birds and finds one absent. His response comes in three parts: severe punishment, or slaughter, or the bird must bring him a clear warrant. Commentators read the third clause as the weight of the sentence rather than an afterthought. A ruler who knows his own ranks well enough to feel a single gap is also a ruler who leaves the accused a route out, and the escape clause is placed last, where in Arabic it governs everything before it.",
+      "historicalContext": "Meccan, addressed to a city where authority was personal and largely unappealable. A Meccan chief could ruin a client or a slave on a suspicion, and there was no forum above him. The commentators offer no occasion for these lines, and read the scene as part of the surah's larger portrait of what power looks like when the one holding it is himself answerable. Nothing in the passage endorses the threat; the narrative simply reports it.",
+      "keyTerms": [
+        {
+          "arabic": "وَتَفَقَّدَ",
+          "gloss": "and he inspected, sought out",
+          "note": "A verb for searching for what is missing, built from the root for loss. It implies the inspector already knows the roll well enough to feel a gap in it before counting."
+        },
+        {
+          "arabic": "بِسُلْطَـٰنٍ",
+          "gloss": "with a clear warrant",
+          "note": "In later Arabic the word came to mean a ruler, but its Quranic sense is an argument with compelling force. Here it names the evidence that would settle the matter, not permission granted in advance."
+        },
+        {
+          "arabic": "لَأُعَذِّبَنَّهُۥ",
+          "gloss": "I will surely punish him",
+          "note": "Doubled emphasis, an oath particle in front and a heavy ending behind, so the threat is voiced at full strength. That force is exactly what makes the alternative offered in the same breath count for something."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian society ran on the muster. Before a raid or a migration the men were counted, the herds were counted, and someone was answerable for every animal. Falconers and pigeon keepers knew their birds individually and noticed one missing from a loft. Absence without leave was a real offence with real consequences, and the excuse a man offered on return decided everything. This scene would have read as an ordinary discipline problem with an extraordinary defendant.",
+      "didYouKnow": "The hoopoe is named once in the entire Quran, in this ayah. It never appears again, not even later in the same story, where it is referred to only as he. The bird that carries the letter to Sheba and delivers a report on a foreign kingdom is identified by species exactly once, at the moment its absence is noticed.",
+      "theologicalSignificance": "Authority is shown here inside a frame. Solomon is at the height of his power, inspecting forces drawn from three orders of creation, and the sentence he pronounces still ends with a condition he does not control. The passage therefore ties the right to punish to the duty to hear. It also shows a prophet-king speaking in anger and being answered, a few lines later, by information he did not have.",
+      "crossReferences": [
+        {
+          "ref": "49:6",
+          "why": "Requires that a report be checked before it is acted on, which is what the hoopoe is about to demand of Solomon."
+        },
+        {
+          "ref": "4:58",
+          "why": "Sets out the pairing this scene dramatises, trusts returned to their owners and judgement given with justice."
+        },
+        {
+          "ref": "38:31-33",
+          "why": "Shows Solomon inspecting again, this time his horses, in a passage the commentators read alongside this one."
+        }
+      ],
+      "applyIt": "The next time someone lets you down, write out the sentence you want to say and then add one clause to the end: unless there is something I do not know. Say the whole thing, including the clause. It costs you nothing, it does not soften the point, and in this passage it is the clause that turns out to matter.",
+      "exploreFurther": [
+        "49:6-8",
+        "4:58",
+        "38:30-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:22-23",
+      "surah": 27,
+      "start": 22,
+      "end": 23,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "News Brought From Sheba",
+      "tier": "standard",
+      "meaning": "The bird returns and speaks first, and its opening claim is audacious: I have encompassed what you have not encompassed. Then it offers what it carries as certain news rather than rumour, which is precisely the warrant that had been demanded. The report has three parts. A woman rules them, she has been given something of everything, and she has a great throne. The wording deliberately echoes what Solomon said about himself a few lines earlier.",
+      "historicalContext": "Meccan. Sheba was a real kingdom in the south of the peninsula, at the head of the incense road that ran up to Mecca and on to Syria, and its ruins were known to Arab traders. The commentators name the queen from reports carried in Israelite tradition; the Quran does not name her, and those reports are not part of the text. The account here stays with what the bird says and what follows from it.",
+      "keyTerms": [
+        {
+          "arabic": "أَحَطتُ",
+          "gloss": "I have encompassed",
+          "note": "A verb for surrounding something completely, used of a wall enclosing a garden. Applied to knowledge it claims full coverage, which makes its use by a bird in front of a king deliberately startling."
+        },
+        {
+          "arabic": "بِنَبَإٍ",
+          "gloss": "with momentous news",
+          "note": "Not ordinary information but a report with consequences, the word that titles a later surah. Joined here to a word for certainty, it claims both weight and reliability in three syllables."
+        },
+        {
+          "arabic": "يَقِينٍ",
+          "gloss": "certain, verified",
+          "note": "From a root for water that has settled until it runs clear. Attached to news it means a report that has stopped shifting, which is exactly the standard Solomon set a moment earlier."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's whole economy depended on news arriving accurately from far away. Which passes were open, which tribe was at war, what frankincense was fetching in the south, whether a caravan had been raided. Men who brought back word were judged on their record, and one exaggerated report could cost a merchant a season. Reliable information had a market value in that city, and the phrase for it here would have sounded like a trader's guarantee.",
+      "didYouKnow": "The phrase rendered given of everything occurs six times in the Quran, and two of them stand in this surah. Solomon uses it of himself at 27:16, and seven ayat later the hoopoe uses it of the queen. No other surah contains the expression twice, and here it is applied first to a prophet's court and then to a court that worships the sun.",
+      "theologicalSignificance": "Testimony is treated as something that can be tested rather than accepted or dismissed by rank. The lowest party in the scene addresses the highest and claims superior knowledge, and the claim is heard. The passage sets a standard for reports about other people and other communities: not merely honest, but checked. What follows in the story turns on Solomon doing exactly that, and on his refusal to act until he has verified it himself.",
+      "crossReferences": [
+        {
+          "ref": "17:36",
+          "why": "Warns against pursuing what you have no knowledge of, since hearing and sight are all questioned."
+        },
+        {
+          "ref": "34:15-16",
+          "why": "Returns to Sheba later in the Quran, describing its gardens and what became of them."
+        },
+        {
+          "ref": "49:6",
+          "why": "Requires verification of a report before acting, the principle the bird's phrasing anticipates."
+        }
+      ],
+      "applyIt": "Before you pass on the next piece of news about someone, ask yourself one question: would you be willing to attach the word certain to it. If not, say so when you repeat it, in those words. It slows the sentence down and it costs you a little social ease. It also stops most of what gets repeated from being repeated.",
+      "exploreFurther": [
+        "17:36",
+        "34:15-19",
+        "49:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "27:24",
+      "surah": 27,
+      "start": 24,
+      "end": 24,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Bowing Toward The Sun",
+      "tier": "standard",
+      "meaning": "The report turns from politics to worship. The queen and her people prostrate to the sun instead of to God, and a cause is supplied at once: their conduct was made attractive to them, they were diverted from the road, and so they are not guided. The striking detail is that the same beautifying was described twenty lines earlier with God named as the one doing it. Here it is Satan. The Quran uses both attributions in one surah without treating them as competing explanations.",
+      "historicalContext": "Meccan. Astral worship was well known in the south of the peninsula and along the trade routes, and Meccan traders had seen its temples. The commentators describe the people of Sheba as sun-worshippers on the basis of this ayah itself and of general report, without attaching a date. For the first audience the interest was not exotic: their own city venerated images beside the House, and the diagnosis offered here was aimed at them.",
+      "keyTerms": [
+        {
+          "arabic": "يَسْجُدُونَ",
+          "gloss": "they prostrate",
+          "note": "The word for the lowest posture of worship, forehead to ground. Its use for a foreign court tells the first audience that the act itself was familiar to them; only the direction of it was wrong."
+        },
+        {
+          "arabic": "وَزَيَّنَ",
+          "gloss": "and he made it look beautiful",
+          "note": "A verb for adorning something so that it attracts. It changes nothing in the thing itself, only its appearance to the viewer, which is why more than one agent can be named for the same act."
+        },
+        {
+          "arabic": "فَصَدَّهُمْ",
+          "gloss": "so he turned them aside",
+          "note": "A verb for blocking or diverting someone from a road. It assumes the road existed and was passable, so what is described is obstruction rather than the absence of any way through."
+        }
+      ],
+      "lifeInProphetsTime": "The sun governed everything in that world. Travel began before dawn and stopped at midday, water was rationed against the heat, and the whole calendar of caravans and pasture was read off the sky. Worshipping the sun was not a strange idea to people who arranged their lives around it. What the passage disputes is not its importance but its rank, and the argument that follows takes exactly that line.",
+      "didYouKnow": "The verb for making deeds look attractive occurs twice in this surah and only twice. At 27:4 the subject is God, speaking of those who deny the Hereafter. Here at 27:24 the subject is Satan, speaking of a people who worship the sun. The two occurrences frame the surah's opening movement and describe the same effect from two different sides.",
+      "theologicalSignificance": "Misdirected worship is diagnosed as a failure of ranking rather than a failure of feeling. The people of Sheba are not described as irreligious; they prostrate, and they prostrate to something genuinely magnificent. The fault named is that the magnificent thing is itself made and governed. The next ayat press exactly this point, moving from the sun to the one who brings hidden things out of the heavens and the earth.",
+      "crossReferences": [
+        {
+          "ref": "41:37",
+          "why": "Names the sun and moon among the signs and says not to prostrate to them but to their Maker."
+        },
+        {
+          "ref": "6:76-78",
+          "why": "Shows Abraham working through star, moon and sun in turn and setting each aside when it disappears."
+        },
+        {
+          "ref": "35:8",
+          "why": "Poses the case of the person whose bad conduct is made attractive until he takes it for good."
+        }
+      ],
+      "applyIt": "Name one good thing in your life that has quietly moved to the centre: a job, a plan, a person's approval. Nothing wrong with any of them. Just notice, once today, that it is holding a position it did not earn. You do not have to remove it. Seeing the ranking clearly is what this passage asks for, and it is usually enough.",
+      "exploreFurther": [
+        "41:37-39",
+        "6:74-79",
+        "35:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:41:19.608Z",
         "reviewed": false
       }
     },
