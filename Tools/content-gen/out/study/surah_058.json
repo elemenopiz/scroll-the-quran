@@ -1,8 +1,124 @@
 {
   "surah": 58,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:50:11.651Z",
+  "generatedAt": "2026-09-09T15:25:49.196Z",
   "studies": [
+    {
+      "key": "58:1",
+      "surah": 58,
+      "start": 1,
+      "end": 1,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "The Complaint That Was Heard",
+      "tier": "standard",
+      "meaning": "The surah opens by reporting that a conversation has already been overheard. A woman pressed her case about her husband and, not satisfied with the answer she was given, turned the matter upward. The ayah does not summarise her argument or name her. It records twice that the hearing happened, and then closes with two names, Hearing and Seeing, so the report of one exchange widens into a statement about every exchange. Only afterwards does the surah address the practice she was protesting.",
+      "historicalContext": "Medinan. The classical sources report with unusual agreement that a woman of Medina came about a spoken formula her husband had used, a pre-Islamic device that cut a wife off without releasing her. She was told that nothing had yet come down on the matter, and she kept pressing while praying aloud about it. The passage that follows was the answer, and the surah takes its name from her.",
+      "keyTerms": [
+        {
+          "arabic": "تُجَـٰدِلُكَ",
+          "gloss": "she argues with you",
+          "note": "A verb of sustained back-and-forth, not a single request. The form implies two sides pressing a case. The Quran uses it of her without a syllable of criticism, which is what makes its placement striking."
+        },
+        {
+          "arabic": "تَشْتَكِىٓ",
+          "gloss": "she lays out her grievance",
+          "note": "From a root for opening up a difficulty before someone else. The form carries the sense of doing it for one's own relief, so the word covers unburdening as much as petitioning for a verdict."
+        },
+        {
+          "arabic": "تَحَاوُرَكُمَآ",
+          "gloss": "the exchange between you two",
+          "note": "A word for speech turned back and forth between two people. It makes the object of the divine hearing a dialogue, both halves of it, rather than only the appeal addressed upward."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage in Arabia was arranged between families, and a woman's standing in a dispute usually ran through her male relatives. If her own household had already settled the matter, she had no court to appeal to and nobody obliged to argue for her. Speaking her own case, at length, to the man leading the community was outside the ordinary shape of things. Anyone watching would have registered how far outside it was.",
+      "didYouKnow": "This is the only surah of the Quran in which the name God appears in every single ayah, all twenty-two of them. It is also named for a woman rather than for a prophet, a people or a natural sign, and the Arabic title is a participle: the woman who argues her case.",
+      "theologicalSignificance": "Hearing is established before any instruction is given, which sets the order of the whole surah: a private grievance is answered first, and the general provision is drawn out of it second. The two names at the close are load-bearing. Setting Hearing beside Seeing covers what is spoken and what is not, so a person with no standing before any human authority is not thereby outside the audience.",
+      "crossReferences": [
+        {
+          "ref": "2:186",
+          "why": "States the nearness this ayah demonstrates, promising an answer to the one who calls, with no intermediary named."
+        },
+        {
+          "ref": "12:86",
+          "why": "Jacob uses the same verb for laying out a grievance, and says he directs it to God alone."
+        },
+        {
+          "ref": "27:62",
+          "why": "Asks who answers the distressed person when he calls, framing it as something only God does."
+        }
+      ],
+      "applyIt": "Think of a complaint you have decided is too small to raise, or one you raised once and got no answer to. Say it out loud, in your own words, the next time you pray. Do not tidy it into something more presentable first. What this ayah records being heard was the untidied version, argued at length by someone nobody expected to argue.",
+      "exploreFurther": [
+        "2:186",
+        "40:60",
+        "58:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:25:49.077Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:2",
+      "surah": 58,
+      "start": 2,
+      "end": 2,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "They Are Not Their Mothers",
+      "tier": "standard",
+      "meaning": "The formula men used is quoted and then contradicted on factual grounds before anything else is said about it. A wife is not a mother, and motherhood is defined narrowly and physically: mothers are the women who gave birth. The saying is then given two labels, something the mind rejects and a distortion, which the commentators read as covering its moral wrongness and its untruth together. The ayah ends on pardon, so the correction and the way back arrive in the same sentence.",
+      "historicalContext": "Medinan, continuing directly from the complaint the surah opens with. The practice belonged to pre-Islamic Arabia: a husband declared his wife like his mother's back and treated the marriage as suspended without dissolving it. She could not remarry and had no claim on him. The commentators name the woman's case as the occasion for these ayat, and describe this as the first passage to address the practice at all.",
+      "keyTerms": [
+        {
+          "arabic": "يُظَـٰهِرُونَ",
+          "gloss": "they pronounce the estranging formula",
+          "note": "Built on the ordinary word for a back, from the phrase men actually used. It names an act of speech rather than a state of feeling, which is why the reply begins by testing whether the speech is true."
+        },
+        {
+          "arabic": "أُمَّهَـٰتِهِمْ",
+          "gloss": "their mothers",
+          "note": "The word appears three times in this one ayah: denied, defined, then denied again by implication. Repetition does the arguing. The claim is dismantled by restating the term rather than by threatening anyone."
+        },
+        {
+          "arabic": "زُورًا",
+          "gloss": "a distortion, a falsehood",
+          "note": "From a root meaning to lean away from something. It is the word standing behind false testimony elsewhere in the Quran, which files the formula under lying rather than under mere bad manners."
+        }
+      ],
+      "lifeInProphetsTime": "Kinship in Arabia was legal architecture rather than sentiment. Who counted as your mother settled inheritance, whom you could marry, who owed blood money on your behalf, and which men were obliged to defend you. A husband declaring his wife a mother was not speaking poetically. He was trying to shift her across a line the whole social order rested on, and the entire cost of the move landed on her.",
+      "didYouKnow": "The Quran returns to this formula once more, at 33:4, where it is set beside two other fictions about kinship: that a man has two hearts inside him, and that an adopted son is a son by blood. All three are answered the same way, by pointing out that saying a thing does not make it so.",
+      "theologicalSignificance": "A speech act is denied the power to reshape reality. Words can bind a speaker and can wrong a listener, but they do not rewrite what a person is, and the ayah settles that before it discusses consequences. Pardon is then named immediately, which keeps the passage from reading as condemnation of the men involved. The wrong is described accurately and the door is left open in the same breath.",
+      "crossReferences": [
+        {
+          "ref": "33:4",
+          "why": "Answers the same formula alongside adoption, denying that any spoken claim can create a blood relationship."
+        },
+        {
+          "ref": "4:1",
+          "why": "Grounds all kinship in a single origin, which is the background this ayah's definition of motherhood assumes."
+        },
+        {
+          "ref": "24:15",
+          "why": "Treats careless speech about others as a serious matter rather than as words that pass harmlessly."
+        }
+      ],
+      "applyIt": "Notice a phrase you use about someone close to you when you are angry, the one that assigns them a category rather than describing what they did. Say the description instead the next time, even if it takes longer. This ayah spends its whole length separating what a person is from what was said about them, and it does that before it discusses any remedy.",
+      "exploreFurther": [
+        "33:4",
+        "58:3",
+        "4:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:25:49.078Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "58:11",
       "surah": 58,
