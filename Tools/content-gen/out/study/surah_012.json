@@ -1,8 +1,66 @@
 {
   "surah": 12,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:14:03.131Z",
+  "generatedAt": "2026-09-09T11:32:45.288Z",
   "studies": [
+    {
+      "key": "12:1-3",
+      "surah": 12,
+      "start": 1,
+      "end": 3,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "The Most Beautiful Of Tellings",
+      "tier": "standard",
+      "meaning": "Three ayat of preface stand before the story begins. The first points to the Book as clear; the second says it was sent in Arabic so its hearers could reason; the third promises the finest of narrations. Commentators read the superlative in two ways: the telling itself is the most beautiful, or what is told is. Either way the last clause is disarming, since the one receiving this had no knowledge of it beforehand.",
+      "historicalContext": "Surah Yusuf belongs to the late Meccan years, when the Prophet Muhammad (peace be upon him) had lost the protection of close family and the community faced steady pressure. Classical sources preserve a report that questioners asked about how the family of Jacob came to Egypt, and that the surah answered; the commentators record it without unanimity. The general setting is not disputed: a small, harassed group hearing a long story about a favoured son thrown away and eventually raised.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُبِينِ",
+          "gloss": "the clear, the clarifying",
+          "note": "The form works in two directions at once: something plainly evident in itself, and something that makes other things plain. Both senses are read here, so the Book is both lucid and clarifying."
+        },
+        {
+          "arabic": "أَحْسَنَ ٱلْقَصَصِ",
+          "gloss": "the finest of narrations",
+          "note": "The noun covers both the act of narrating and the thing narrated, and it comes from a root meaning to follow a trail. A story, in this idiom, is something tracked step by step."
+        },
+        {
+          "arabic": "ٱلْغَـٰفِلِينَ",
+          "gloss": "the unaware",
+          "note": "Not ignorance as a fault but the ordinary state of someone who has simply not been told. The same word returns later in the story, describing brothers careless of a boy in their charge."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca ran on stories. Poets and reciters held audiences at markets and seasonal fairs, and a long narrative told well was the entertainment of a town with no books in circulation. Merchants brought tales along with goods from Syria and Yemen. To announce the finest of narrations to that audience was to enter a competition they knew how to judge, and to be judged by ears trained on it.",
+      "didYouKnow": "The phrase rendered the finest of narrations occurs exactly once in the Quran, here. Its root returns at the surah's closing ayah, where the plural of the same word appears, so the whole of surah 12 is framed between two uses of one term. No other surah is given over to a single continuous story in this way.",
+      "theologicalSignificance": "Revelation is presented as information the recipient could not have had. The claim is not that the story is edifying but that it is accurate, and the ayah stakes the Book's credibility on a narrative its first hearers could weigh against what they had heard elsewhere. Naming the language matters too: being understood is treated as the point of sending a message, not an optional extra for the learned.",
+      "crossReferences": [
+        {
+          "ref": "12:111",
+          "why": "Closes the surah by returning to the same word for narrative and calling it guidance rather than invention."
+        },
+        {
+          "ref": "14:4",
+          "why": "States the same principle about language: every messenger was sent speaking the tongue of his people."
+        },
+        {
+          "ref": "20:113",
+          "why": "Repeats that the revelation was sent down as an Arabic recitation so that people might become mindful."
+        }
+      ],
+      "applyIt": "Read the whole surah in one sitting this week, start to finish, without stopping to look anything up. It runs about twenty minutes aloud. The opening promises a story that works as a story, and that claim is testable only at full length. Notice the first place where you want to know what happens next.",
+      "exploreFurther": [
+        "12:111",
+        "14:4",
+        "39:23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.489Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "12:4",
       "surah": 12,
@@ -58,6 +116,470 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:13:45.391Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:5",
+      "surah": 12,
+      "start": 5,
+      "end": 5,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "Do Not Tell Your Brothers",
+      "tier": "standard",
+      "meaning": "Jacob's first recorded words in the surah are a warning, not a celebration. He has heard something remarkable and his immediate instinct is to keep his son from being envied for it. He does not say the brothers will certainly plot; he says telling them would give plotting somewhere to begin. The closing clause then moves the blame one step further back, naming an enemy who works through resentment instead of naming the brothers.",
+      "historicalContext": "Meccan. The surah arrived while the Prophet Muhammad (peace be upon him) was facing hostility from inside his own extended kin, which is the situation this scene mirrors most closely. The commentators report no specific occasion for this ayah. They do note that Jacob is presented from the outset as a father who reads people accurately, which prepares a reader to trust his later judgements about his sons.",
+      "keyTerms": [
+        {
+          "arabic": "رُءْيَاكَ",
+          "gloss": "your dream, your vision",
+          "note": "The word is for sleeping vision specifically, distinct from waking sight. The tradition treats a true dream as a small share of prophecy, which is why Jacob takes a boy's night vision seriously enough to act on it."
+        },
+        {
+          "arabic": "كَيْدًا",
+          "gloss": "a scheme, a stratagem",
+          "note": "Covert contrivance rather than open hostility. The word and its relatives run through this surah nine times, marking each turn where someone works indirectly, including a moment where devising is attributed to God."
+        },
+        {
+          "arabic": "عَدُوٌّ مُّبِينٌ",
+          "gloss": "a plain, open enemy",
+          "note": "The adjective is the one used of the Book at the surah's opening: plainly evident. The enmity is not concealed, which makes falling for it a lapse of attention rather than a lack of information."
+        }
+      ],
+      "lifeInProphetsTime": "Dreams were public property in Arabia. A striking one would be carried to an elder or a diviner and talked over, and reputations rose and fell on what a person was said to have seen at night. In a household where sons competed for a father's favour and for what he would leave behind, a dream that set one brother above the rest was not a private matter at all.",
+      "didYouKnow": "The word for scheming appears twice in this one ayah, as a verb followed by its own cognate noun, a construction Arabic uses for intensity and English can only approximate as plot a plot. Counted across the Quran, that root falls nine times in surah 12, more than in any other surah.",
+      "theologicalSignificance": "Prophethood does not exempt a family from ordinary jealousy, and the surah says so by its fifth ayah. Jacob is given insight and still cannot prevent what follows, so foresight and control are separated cleanly. Naming a sworn enemy also places evil precisely: what happens to Joseph will be done by human hands, freely chosen, with a prompting behind it that the brothers are still answerable for accepting.",
+      "crossReferences": [
+        {
+          "ref": "12:100",
+          "why": "Joseph names the same enemy at the reunion, closing the frame this early warning opens."
+        },
+        {
+          "ref": "7:200",
+          "why": "Gives the response to such a prompting: turn to God for refuge rather than argue with it."
+        },
+        {
+          "ref": "35:6",
+          "why": "Repeats that this enemy is an enemy, and says plainly what he is calling his followers towards."
+        }
+      ],
+      "applyIt": "There is something going well for you that you have been waiting to mention. Sit on it for a week. Not out of superstition, and not because the people around you are malicious, but because good news lands differently on someone in the middle of a hard stretch. Choose who hears it first with that in mind.",
+      "exploreFurther": [
+        "12:100",
+        "113:1-5",
+        "4:54"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.500Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:6-7",
+      "surah": 12,
+      "start": 6,
+      "end": 7,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "The Unravelling Of Accounts",
+      "tier": "standard",
+      "meaning": "The phrase translated interpretation of events is literally the unravelling of accounts, and the commentators read it broadly: dreams, yes, but also the outcome of affairs and how a matter finally turns out. Jacob answers a dream with a promise that reaches three generations back, placing his son inside an inheritance rather than a private destiny. The second ayah then steps outside the scene to address the listener: in this household there are signs for anyone who asks.",
+      "historicalContext": "Meccan, in a surah addressed to a community that could not yet see how its own difficulty would end. Naming Abraham and Isaac was pointed, since the Meccan audience traced its own descent to Abraham and honoured him, so the line of favour being described was one they claimed. No specific occasion is reported for these ayat. What the commentators emphasise is the placing of Joseph inside a family already promised completion.",
+      "keyTerms": [
+        {
+          "arabic": "يَجْتَبِيكَ",
+          "gloss": "will choose you, will select",
+          "note": "From a root meaning to gather up and collect for oneself. The image is not of a prize awarded but of something drawn together and kept close, which is why the tradition reads election here as nearness rather than rank."
+        },
+        {
+          "arabic": "تَأْوِيلِ ٱلْأَحَادِيثِ",
+          "gloss": "interpretation of events",
+          "note": "The second word means reports or things told, so the skill promised is wider than dream reading. It covers seeing what a sequence of events is finally heading towards, before it arrives."
+        },
+        {
+          "arabic": "لِّلسَّآئِلِينَ",
+          "gloss": "for those who ask",
+          "note": "An active participle: not for people who happen to hear, but for people who put a question. The ayah conditions its own lessons on a reader willing to enquire."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian society kept genealogy the way other societies keep land registers. A man's standing was his line, recited aloud and memorised for many generations, and a claim to inherit anything ran through it. To be told that a blessing completed on your grandfather and great-grandfather would be completed on you was to be handed a place in a chain everyone present could name. Joseph is given lineage before he is given anything else.",
+      "didYouKnow": "The phrase for interpretation of events occurs eight times in surah 12 and marks the arc of the whole story: promised here, repeated when Joseph is settled in Egypt, used by the prisoners and by the king's court, and spoken twice by Joseph at the end. No other surah uses the term more than twice.",
+      "theologicalSignificance": "Election is described as a gift with a curriculum attached. Being chosen here means being taught, which keeps favour from collapsing into mere status. The passage also pairs the naming of God as Knowing and Wise with a promise about the future, so a reader is told in advance that the wreckage of the next thirty ayat is not a breakdown of the plan. Signs are said to lie in the story for those who ask.",
+      "crossReferences": [
+        {
+          "ref": "12:101",
+          "why": "Joseph repeats this promise back to God as thanks, once it has finally been fulfilled."
+        },
+        {
+          "ref": "2:132",
+          "why": "Shows Jacob passing the same inherited commitment on to his own sons as he dies."
+        },
+        {
+          "ref": "6:84",
+          "why": "Lists this line, Abraham through Isaac and Jacob to Joseph, as one guided sequence."
+        }
+      ],
+      "applyIt": "Pick one good thing you inherited rather than earned: a habit of prayer kept in the house, an uncle who kept turning up, a language you were given. Say where it came from, out loud, to someone younger than you. This passage hands Joseph a chain before it hands him anything he has worked for.",
+      "exploreFurther": [
+        "12:101",
+        "2:132",
+        "38:45-47"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.500Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:8-9",
+      "surah": 12,
+      "start": 8,
+      "end": 9,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Afterwards You Will Be Decent",
+      "tier": "standard",
+      "meaning": "The brothers build a case before they build a plan. Their grievance is stated as arithmetic, two sons against a whole band, and it ends by convicting their father of error rather than admitting envy. Then comes the chilling last clause: once this is done, they say, you will be decent people. The commentators note that they schedule their repentance in advance, which is what makes the sentence more disturbing than the murder proposal preceding it.",
+      "historicalContext": "Meccan. The surah was heard by people watching relatives turn against relatives over the new message, where kinship should have guaranteed protection and did not. No occasion is reported for these particular ayat. Classical commentary sets the scene inside a large household of half-brothers, and reads the phrase about a whole band as the language of a working group of grown men who considered themselves the household's real strength.",
+      "keyTerms": [
+        {
+          "arabic": "عُصْبَةٌ",
+          "gloss": "a band, a strong group",
+          "note": "A word for men bound tightly enough to act as one, with a sense of numbers that can get things done. The brothers use it as their argument: usefulness ought to earn affection."
+        },
+        {
+          "arabic": "وَجْهُ أَبِيكُمْ",
+          "gloss": "your father's face",
+          "note": "The idiom means his attention and favour turned towards you. Removing a rival is described as clearing a face, which makes love sound like a space with room for only one."
+        },
+        {
+          "arabic": "صَـٰلِحِينَ",
+          "gloss": "decent, upright people",
+          "note": "The standard Quranic word for those whose deeds are sound. Placing it after a planned crime is deliberate, and commentators read the brothers as intending genuine repentance later rather than mocking the idea."
+        }
+      ],
+      "lifeInProphetsTime": "Households in that world were labour units. Sons pastured the flocks, watered them, moved camp, defended the herd at night, and a father's regard tended to follow the work. Being many mattered: raiding parties counted heads before they chose a target, and a family with grown sons was left alone. The brothers are arguing from a real economy, which is exactly why they cannot see what their father sees.",
+      "didYouKnow": "Not one of Joseph's brothers is named anywhere in the Quran. The youngest, whom later Israelite tradition calls Benjamin, appears throughout the surah only as his brother, and the eldest speaks at a decisive moment identified only as their eldest. In a story this detailed the anonymity is conspicuous, and it keeps attention on conduct rather than persons.",
+      "theologicalSignificance": "The passage exposes a specific self-deception: treating repentance as a cost already budgeted for. Mercy is real, and the brothers eventually receive it, but they receive it after ruin rather than as the discount they assumed. The ayat also show sin arriving dressed as fairness. Nothing they say is a lie about the facts; the distortion is in what they conclude a father owes them for their usefulness.",
+      "crossReferences": [
+        {
+          "ref": "12:97",
+          "why": "The brothers finally ask for forgiveness in earnest, decades after scheduling it here as an afterthought."
+        },
+        {
+          "ref": "4:17-18",
+          "why": "Distinguishes turning back soon after wrong from repentance deferred until the moment of loss."
+        },
+        {
+          "ref": "5:27-30",
+          "why": "The other Quranic account of a brother killed out of envy, told with the same refusal to excuse it."
+        }
+      ],
+      "applyIt": "Notice the next time you catch yourself thinking you will make something right later. That thought is doing work: it is buying permission for the thing you are about to do. Try naming it aloud when it arrives, in plain words, without deciding anything else. Most people find the plan does not survive being said.",
+      "exploreFurther": [
+        "12:97",
+        "5:27-30",
+        "4:17-18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.500Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:10",
+      "surah": 12,
+      "start": 10,
+      "end": 10,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "One Voice In The Council",
+      "tier": "standard",
+      "meaning": "One voice inside the council lowers the sentence from death to abandonment, and the story lets that count for something without calling it good. The proposal is still to leave a boy at the bottom of a cistern on a caravan route and then to hope. Commentators differ over who spoke, most naming the eldest or another of the older brothers, and the surah leaves him anonymous. His last words concede the plan entirely: if you are going to act at all.",
+      "historicalContext": "Meccan. Wells and cisterns along trade routes were shared property, kept up by whoever used them, and a body dropped into one was not necessarily found. The commentators report no occasion for this ayah. They read the speaker's intervention as the first sign that the brothers are not a single mind, a fracture that widens much later when one of them refuses to leave Egypt without the youngest.",
+      "keyTerms": [
+        {
+          "arabic": "غَيَـٰبَتِ ٱلْجُبِّ",
+          "gloss": "the hidden depth of the well",
+          "note": "The first word means the part where a thing is lost to sight. It is not simply the bottom but the place where seeing stops, which is what the brothers actually want."
+        },
+        {
+          "arabic": "ٱلسَّيَّارَةِ",
+          "gloss": "a travelling party",
+          "note": "A group defined by being in motion, from the verb to journey. The word carries no suggestion of trade or ownership, only of people passing through who will not be there tomorrow."
+        },
+        {
+          "arabic": "أَلْقُوهُ",
+          "gloss": "cast him, throw him down",
+          "note": "A verb used of discarding as much as of placing. The same root will describe the shirt laid over an old man's face at the end of the surah, in a gesture that reverses this one."
+        }
+      ],
+      "lifeInProphetsTime": "A disused cistern beside a caravan track was an ordinary feature of the land between Syria and Egypt. Travellers stopped at known water, sent a man down with a bucket, watered the animals and moved on before the heat. Whatever was in the well when they arrived became theirs by finding. The brothers are not gambling wildly; they are using a known feature of the road to make a boy someone else's property.",
+      "didYouKnow": "The phrase for the hidden depth of the well occurs exactly twice in the Quran, here where it is proposed and five ayat later where it is carried out. The repetition is word for word, so the plan and its execution are told in identical language, and nothing at all is added at the moment it happens.",
+      "theologicalSignificance": "A lesser wrong is still a wrong, and the passage records the mitigation without softening the verdict. It is also the first place where the story's machinery becomes visible: the brothers choose the well precisely because a caravan might take him, and that hope of theirs is the road by which Joseph reaches Egypt. What they intend as disposal turns out to be transport, and intention and outcome are shown running on separate tracks.",
+      "crossReferences": [
+        {
+          "ref": "12:15",
+          "why": "Repeats this proposal word for word as it is carried out, with a promise added to it."
+        },
+        {
+          "ref": "12:19-20",
+          "why": "The caravan the speaker hoped for does arrive, and lifts Joseph out towards Egypt."
+        },
+        {
+          "ref": "8:30",
+          "why": "States the pattern directly: they plan, and God plans, and God is the best of planners."
+        }
+      ],
+      "applyIt": "Think of a room where you were the one who softened something that was still wrong: the joke you toned down instead of stopping, the decision you made less bad. Give it its right name today, to yourself, without excusing the room or condemning yourself. Reducing harm is worth doing. It is not the same as refusing.",
+      "exploreFurther": [
+        "12:15",
+        "12:19-20",
+        "8:30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.498Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:11-12",
+      "surah": 12,
+      "start": 11,
+      "end": 12,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Why Do You Not Trust Us",
+      "tier": "standard",
+      "meaning": "Two ayat of pure persuasion, and every move in them is recognisable. They open with a reproach dressed as a question, which puts their father on the defensive before any request is made. They offer a reason a child would want: roaming and play. They close with a guarantee. The commentators note that the word they use for keeping him safe is the one their father will later apply to God alone.",
+      "historicalContext": "Meccan. The audience knew the shape of this conversation, since agreements in that society were made face to face and secured by the standing of the speaker rather than by writing. No occasion is reported for these ayat. The commentators observe that the brothers make no threat and tell no outright lie here; the deception is entirely in what they leave out, which is what makes the exchange hard to refuse.",
+      "keyTerms": [
+        {
+          "arabic": "تَأْمَ۫نَّا",
+          "gloss": "you trust us",
+          "note": "From the root that gives the words for safety and for faith itself. To trust someone with a person is, in this vocabulary, to place them where no harm can reach, which is the claim being made."
+        },
+        {
+          "arabic": "لَنَـٰصِحُونَ",
+          "gloss": "sincere well-wishers",
+          "note": "The root means to be pure and unmixed, as honey is unmixed, and then to give counsel with nothing hidden in it. They choose the one word that most directly contradicts what they are doing."
+        },
+        {
+          "arabic": "لَحَـٰفِظُونَ",
+          "gloss": "guardians, keepers",
+          "note": "A participle for someone actively preserving a thing from loss. It is the vocabulary of a shepherd with a flock, and their father will take the same word away from them later."
+        }
+      ],
+      "lifeInProphetsTime": "Boys went out with the flocks as soon as they could keep up. Grazing meant a full day away from camp, sometimes further, and the older sons carried real responsibility for whoever went with them. Play was part of it: wrestling, footraces, throwing at marks, the way herding families everywhere have passed long hours. Nothing in the request would have sounded unusual to anyone listening, which is precisely the difficulty.",
+      "didYouKnow": "The verb the brothers use when they ask why their father does not trust them carries an unusual reading mark in the standard written text, where a small sign above the letter signals a pronunciation reciters handle in more than one way. It is among the few places where the writing preserves a sound ordinary spelling cannot show.",
+      "theologicalSignificance": "The passage shows how consent is manufactured. Jacob is not overpowered; he is talked round by people using the vocabulary of care, and the Quran holds them fully responsible for that. It also sets up one of the surah's quiet arguments: the guarantees people give each other are worth exactly what the people are worth, which is why the same word for keeping safe is later taken from human hands and given to God.",
+      "crossReferences": [
+        {
+          "ref": "12:64",
+          "why": "Jacob answers a nearly identical request years later by transferring the word guardian to God."
+        },
+        {
+          "ref": "12:63",
+          "why": "The brothers repeat this same guarantee about the youngest, in almost the same words."
+        },
+        {
+          "ref": "49:6",
+          "why": "Asks for verification when news arrives, rather than acting on an account nobody has checked."
+        }
+      ],
+      "applyIt": "Listen for the shape of the request next time someone asks you for something: a small reproach first, then a reason you would like to be true, then a promise at the end. That order is not proof of bad faith. It is worth noticing anyway. When you hear it, ask one plain question about the part nobody has mentioned.",
+      "exploreFurther": [
+        "12:63-64",
+        "12:17",
+        "49:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.498Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:13-14",
+      "surah": 12,
+      "start": 13,
+      "end": 14,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "The Wolf And The Grief",
+      "tier": "standard",
+      "meaning": "Jacob gives two reasons and they are not the same kind. The first is grief at the separation itself, stated as something that happens to him rather than as an argument. The second is a fear he can name: a wolf, and inattention. The brothers seize the second and ignore the first, answering the risk while stepping over the sorrow. In doing so they are handed the story they will tell, and they use it four ayat later.",
+      "historicalContext": "Meccan. Wolves were a live danger to flocks in Palestine and northern Arabia, not a figure of speech, and any listener with animals had lost one. No occasion is reported for these ayat. Read in the setting of the surah's first hearers, a father fearing to lose a son while others looked away carried an edge: the Prophet Muhammad (peace be upon him) was addressing people whose own kin were failing to protect them.",
+      "keyTerms": [
+        {
+          "arabic": "لَيَحْزُنُنِىٓ",
+          "gloss": "it grieves me",
+          "note": "The verb makes the grief the subject and Jacob its object, so sorrow is something done to him rather than something he produces. Arabic can put a feeling in the active voice this way; English usually cannot."
+        },
+        {
+          "arabic": "ٱلذِّئْبُ",
+          "gloss": "the wolf",
+          "note": "Definite, as though a particular known animal. Flocks in that country lost sheep to wolves every season, so the article is the one a shepherd uses for a familiar and recurring threat."
+        },
+        {
+          "arabic": "غَـٰفِلُونَ",
+          "gloss": "heedless, not paying attention",
+          "note": "The same word the surah's opening used of a listener who had simply not been told. Here it names a lapse with consequences, and Jacob places the real danger in it rather than in the animal."
+        }
+      ],
+      "lifeInProphetsTime": "Guarding a flock at night meant staying awake in shifts within earshot of the animals. A wolf takes what is at the edge, and what is at the edge is whatever the guard has stopped watching. Shepherds knew this exactly, and the accusation folded into the word careless would have stung. Jacob is not warning about an animal. He is telling grown sons that the danger enters through their attention.",
+      "didYouKnow": "The word for wolf occurs three times in the entire Quran, all of them in surah 12 and all within five ayat: twice here, and once when the brothers report the death. It appears nowhere else in the Book. The animal exists in the Quran only as the thing Jacob feared and the thing his sons used as cover.",
+      "theologicalSignificance": "Prophets are shown grieving in ordinary ways, and the Quran does not treat this as a deficiency. Jacob's sorrow is reported before his reasoning, which places feeling inside faith rather than beneath it. The passage also makes a point about foreknowledge: he senses what is coming and is not given power to stop it. Knowing and controlling belong to different hands, and the surah keeps them apart from the start.",
+      "crossReferences": [
+        {
+          "ref": "12:17",
+          "why": "The brothers return with exactly the excuse their father has just put into their mouths."
+        },
+        {
+          "ref": "12:84",
+          "why": "Shows where this grief finally goes: eyes whitened with sorrow, and no complaint made to people."
+        },
+        {
+          "ref": "12:86",
+          "why": "Jacob names the only place he takes his sorrow, and it is not to his sons."
+        }
+      ],
+      "applyIt": "Say the harder half of your reason out loud this week. Most people give the reason that can be argued with and keep the real one to themselves: not the risk, but that they will miss someone, or feel left out, or be afraid. Give both, in that order, to one person. Watch which half they answer.",
+      "exploreFurther": [
+        "12:17",
+        "12:84",
+        "12:86"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:15-16",
+      "surah": 12,
+      "start": 15,
+      "end": 16,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Inspired At The Bottom",
+      "tier": "standard",
+      "meaning": "The worst moment of the story is told in half a sentence, and then the account turns away from the brothers. God speaks to the boy in the well, and what He says is not comfort but a fact about the future: you will tell them of this, and they will not know you. The tense matters, since the outcome is settled while Joseph is still down there. The next ayah cuts to the brothers arriving at nightfall, weeping.",
+      "historicalContext": "Meccan, from the years when the community had least reason to expect relief and was being given accounts of prophets whose situations reversed. No occasion is reported for these ayat. The commentators note that the inspiration here is not counted as the start of prophethood; scholars differ on whether Joseph was a boy receiving a message or already carrying the office. The surah does not settle it.",
+      "keyTerms": [
+        {
+          "arabic": "أَجْمَعُوٓا۟",
+          "gloss": "they agreed together",
+          "note": "The verb means to gather a thing into one, and applied to a decision it means to make the intention whole and final. Not a drift into wrongdoing but a settled resolve taken as a group."
+        },
+        {
+          "arabic": "وَأَوْحَيْنَآ",
+          "gloss": "and We inspired",
+          "note": "The root covers any swift, hidden communication. It is used of prophets, but also of bees and of a mother's heart, so its presence does not by itself settle what office Joseph held."
+        },
+        {
+          "arabic": "عِشَآءً",
+          "gloss": "at nightfall",
+          "note": "The hour after sunset when a camp gathers and the day's account is given. Naming it places the brothers' arrival at the exact moment a missing person is noticed by everyone at once."
+        }
+      ],
+      "lifeInProphetsTime": "Evening was when a camp reassembled. Animals came in, fires were lit, and whoever was missing was missed immediately, in front of everyone. Grief in that society was performed aloud and in company; weeping was a public act with its own conventions, and a family that did not wail would have been remarked upon. Arriving at that hour, in tears, put the brothers inside a script their father could not easily interrupt.",
+      "didYouKnow": "The promise made in the well is fulfilled seventy-four ayat later, when Joseph asks his brothers whether they realise what they did, while they are still failing to recognise him. The two moments turn on the same pair of ideas, telling and not knowing, so the sentence spoken into a cistern is answered in a palace.",
+      "theologicalSignificance": "Revelation is shown reaching a person at the point of complete powerlessness, and it does not remove the situation. Joseph stays in the well; he is simply told how it ends. That is a specific account of what divine help often looks like, and the surah repeats it later: the promise arrives long before the rescue. It also establishes early that God is present in the pit, which changes how everything afterwards reads.",
+      "crossReferences": [
+        {
+          "ref": "12:89",
+          "why": "The moment the promise is kept: Joseph names the deed while they still do not know him."
+        },
+        {
+          "ref": "28:7",
+          "why": "Inspiration given to a mother as she loses a child, with his return promised in advance."
+        },
+        {
+          "ref": "94:5-6",
+          "why": "States as a general rule what this scene enacts, and states it twice over."
+        }
+      ],
+      "applyIt": "Think about what you would want to hear at the bottom of something, then notice that this passage does not offer comfort. It offers a fact. If you are in a long difficulty now, try writing one sentence describing how you will speak about it afterwards, in the past tense. Keep it somewhere you will find it later.",
+      "exploreFurther": [
+        "12:89",
+        "28:7",
+        "65:2-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:17",
+      "surah": 12,
+      "start": 17,
+      "end": 17,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Even Though We Are Truthful",
+      "tier": "standard",
+      "meaning": "The lie is well built and it collapses at the last clause. They supply detail nobody can check, a race, belongings left at a mark, a wolf, and then add a sentence no one asked for: you will not believe us, even if we are being truthful. Commentators have long noticed the tell. Guilt anticipates disbelief and defends against it in advance, and the conditional they choose spares them from ever stating plainly that they are honest.",
+      "historicalContext": "Meccan. Oral testimony was the whole of evidence in that world. A claim stood or fell on the standing of the person making it and on whether a group would back him, so several voices telling one account was ordinarily decisive. No occasion is reported for this ayah. The commentators read what follows as showing Jacob unpersuaded not by any counter-evidence but simply by knowing his sons.",
+      "keyTerms": [
+        {
+          "arabic": "نَسْتَبِقُ",
+          "gloss": "we were racing each other",
+          "note": "A form that means competing to get ahead. The same verb describes Joseph and the governor's wife racing for the door much later, which is one of several verbal echoes binding the surah together."
+        },
+        {
+          "arabic": "مَتَـٰعِنَا",
+          "gloss": "our belongings, our gear",
+          "note": "Portable goods, the things a traveller carries and puts down. The word is used across the Quran for the enjoyments of this world, always with the suggestion of something set down and left behind."
+        },
+        {
+          "arabic": "صَـٰدِقِينَ",
+          "gloss": "truthful ones",
+          "note": "The standard word for those whose speech matches reality. The brothers apply it to themselves inside a conditional, which is the weakest possible way to claim it, and the surah gives it to Joseph later in full."
+        }
+      ],
+      "lifeInProphetsTime": "Racing was the ordinary sport of young men, on foot and on horseback, and it was the natural thing to be doing while animals grazed. Belongings piled at a mark were how a party kept camp while it played. Every element the brothers name is unremarkable, which is exactly what makes the account plausible. A convincing false story in an oral culture had to be assembled out of things everyone had done.",
+      "didYouKnow": "The word the brothers apply to themselves here, truthful, returns twice later in the surah and both times it is applied to Joseph: once by a witness in the household who examines a torn shirt, and once by the woman who had accused him. The same term travels from the mouths of liars to a public verdict about the man they lied about.",
+      "theologicalSignificance": "A lie that succeeds is still recorded as a lie, and the surah tracks this one for seventy ayat until the people who told it say so themselves. That is the Quran's usual method with deception: not immediate exposure but eventual exposure, and by the mouths of those who did it. The passage also shows how belief between people actually works. Jacob answers the character behind the account rather than the account.",
+      "crossReferences": [
+        {
+          "ref": "12:18",
+          "why": "Jacob replies without contesting a single detail, naming instead what their own souls have done."
+        },
+        {
+          "ref": "12:26-27",
+          "why": "A torn shirt settles a later dispute the way a bloodied shirt failed to settle this one."
+        },
+        {
+          "ref": "12:91-92",
+          "why": "The brothers finally supply the verdict themselves, admitting under oath that they were wrong."
+        }
+      ],
+      "applyIt": "Notice, this week, the sentence you add at the end. The extra reassurance, the complaint that nobody will believe you anyway, the joke that lets you take it back. Say the plain thing and then stop talking. If the silence feels unfinished, that feeling is worth examining rather than filling.",
+      "exploreFurther": [
+        "12:18",
+        "12:26-27",
+        "12:91-92"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
         "reviewed": false
       }
     },
@@ -120,6 +642,64 @@
       }
     },
     {
+      "key": "12:19-20",
+      "surah": 12,
+      "start": 19,
+      "end": 20,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Sold For A Few Coins",
+      "tier": "standard",
+      "meaning": "Two ayat move Joseph from a well to a market. The water-carrier's shout is delight at a windfall, and the caravan's next act is to hide him as merchandise, which shows the transaction was irregular from the start. Then he is sold cheap. Commentators differ over who the sellers were, the caravan or the brothers returning, and over the worth of the coins. Both readings agree the price was contemptible and that the sellers wanted him gone.",
+      "historicalContext": "Meccan, addressed to a trading city whose own prosperity ran on caravans between Yemen and Syria and which knew the traffic in people that moved alongside goods. No occasion is reported for these ayat. The commentators dwell on the phrase about God being aware of what they did, reading it as the narrative's refusal to let a sale conducted quietly on a trade road pass without a witness.",
+      "keyTerms": [
+        {
+          "arabic": "يَـٰبُشْرَىٰ",
+          "gloss": "good news, what joy",
+          "note": "From the root for glad tidings, and also for the skin, since good news shows in the face. The cry is one of pure profit, and the same root names the messenger who later restores an old man's sight."
+        },
+        {
+          "arabic": "بِضَـٰعَةً",
+          "gloss": "merchandise, trade goods",
+          "note": "Stock carried for sale, a portion cut off from a larger holding. The brothers will come to Egypt years later carrying poor goods described with this very word, asking for charity."
+        },
+        {
+          "arabic": "ٱلزَّٰهِدِينَ",
+          "gloss": "those setting little store",
+          "note": "The root later gave the word for renunciation, treating something as beneath wanting. Applied to sellers of a person it becomes damning: they did not undervalue the price, they undervalued him."
+        }
+      ],
+      "lifeInProphetsTime": "Caravans ran on thin margins and quick decisions. A party watering at a well would send one man down with a bucket while the rest held the animals, and anything gained on the road was divided by custom among those present. Slaves moved along the same routes as incense and hides, sold at the next town by men who had no interest in a story. Concealment kept a find off the accounting.",
+      "didYouKnow": "The word for silver coins occurs exactly once in the whole Quran, in this ayah. It is one of the few places where the Book records a transaction with a currency named rather than a general phrase about a small price, and the sum it names is the price paid for a prophet by people who wanted rid of him.",
+      "theologicalSignificance": "Valuation is exposed as a human act rather than a fact about the thing valued. The market prices Joseph at a few coins on the same day God is described as fully aware of the sale, and the surah lets the two assessments sit side by side without comment. It also introduces a pattern the story will repeat: every step taken to reduce Joseph moves him closer to where he ends up.",
+      "crossReferences": [
+        {
+          "ref": "12:21",
+          "why": "The buyer in Egypt immediately reverses the valuation, telling his household to treat him honourably."
+        },
+        {
+          "ref": "12:88",
+          "why": "The brothers arrive years later with scant goods, the same word used for Joseph when hidden."
+        },
+        {
+          "ref": "3:77",
+          "why": "Names the deeper version of this trade: exchanging a covenant with God for a small price."
+        }
+      ],
+      "applyIt": "Find one thing today that you priced too low: an hour, a skill, a person's time you took for granted, or your own. Say what a fair figure would have been. You do not need to fix it or tell anyone. The point is to notice that a price is something people decide, and that deciding badly leaves a trace.",
+      "exploreFurther": [
+        "12:21",
+        "12:88-89",
+        "3:77"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "12:21",
       "surah": 12,
       "start": 21,
@@ -174,6 +754,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:13:45.390Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:22-23",
+      "surah": 12,
+      "start": 22,
+      "end": 23,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "He Has Given Me A Home",
+      "tier": "standard",
+      "meaning": "Maturity arrives, and with it judgement and knowledge described as given rather than earned. Then the test. Joseph's refusal has three parts: an appeal to God, a reason drawn from gratitude, and a general statement about wrongdoers. The middle clause is famously open, since the word for lord can mean the master of the house or God. Commentators read it both ways, and several allow both together, because the argument holds either way: shelter is not repaid with betrayal.",
+      "historicalContext": "Meccan. The audience knew household servitude at close range; Mecca's own houses ran on it, and a servant's standing depended entirely on the family that held him. No occasion is reported for these ayat. The commentators note that Joseph is at this point a young man with no kin in the country, no legal standing of his own, and nobody to appeal to, which is the situation the refusal is made from.",
+      "keyTerms": [
+        {
+          "arabic": "أَشُدَّهُۥ",
+          "gloss": "his full strength",
+          "note": "The point where growth is complete and a person is at their firmest. The Quran uses it for the age of responsibility rather than a fixed number, and the commentators give a range instead of a figure."
+        },
+        {
+          "arabic": "رَٰوَدَتْهُ",
+          "gloss": "she tried to draw him",
+          "note": "A form built for repeated, gradual effort, from a root about going back and forth in search of water or pasture. It describes persuasion applied over time rather than a single approach."
+        },
+        {
+          "arabic": "مَعَاذَ ٱللَّهِ",
+          "gloss": "I take refuge with God",
+          "note": "Not an exclamation but a declaration of shelter sought. Joseph's first move under pressure is to place himself somewhere, and the phrase is his answer rather than an argument against her."
+        }
+      ],
+      "lifeInProphetsTime": "A servant brought from outside had no tribe within reach, and tribe was the only insurance in that world. An accusation from the household he lived in could not be answered by producing relatives who would swear for him. The doors of a great house shut from the inside. Every listener understood that Joseph's refusal was made by someone with no protection at all, which is what gives the scene its weight.",
+      "didYouKnow": "The phrase Joseph uses to take refuge occurs exactly twice in the Quran and both times it is spoken by him: here, and much later in Egypt when he refuses to detain the wrong man. The same three syllables mark the two moments where he declines to do something he could have done and got away with.",
+      "theologicalSignificance": "Integrity is grounded in gratitude rather than in rules. Joseph does not cite a prohibition; he names a kindness he has received and declines to answer it with harm, and the passage lets that stand as sufficient. The pairing of the two ayat also matters. Judgement and knowledge are given first, and the test follows immediately, so what God grants is shown being spent rather than displayed.",
+      "crossReferences": [
+        {
+          "ref": "12:33",
+          "why": "Joseph names the cost of this refusal and asks for help holding to it."
+        },
+        {
+          "ref": "12:79",
+          "why": "The only other place he takes refuge in this phrase, again refusing an easy injustice."
+        },
+        {
+          "ref": "12:51",
+          "why": "The scene is settled publicly years later, when she states in front of everyone that he resisted."
+        }
+      ],
+      "applyIt": "Think of a place where you are treated well and could take advantage without being caught. A house, a job, a friendship that runs on trust rather than on paperwork. Name it specifically today, and name what you would be repaying if you did. Gratitude is a more durable brake than fear of being found out.",
+      "exploreFurther": [
+        "12:33",
+        "12:51-52",
+        "12:79"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "12:24",
+      "surah": 12,
+      "start": 24,
+      "end": 24,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "The Proof Of His Lord",
+      "tier": "standard",
+      "meaning": "This is the most carefully weighed ayah in the surah, and the sentence is deliberately incomplete. She resolved; and he would have, had he not seen the proof of his Lord. Commentators differ widely on the second verb, from a natural inclination that never became intent, to a movement checked before it formed, to a clause governed entirely by the exception that follows. All agree on the outcome and the verdict. Evil was turned aside from him, and he is named among God's chosen servants.",
+      "historicalContext": "Meccan. Reports about what the proof was circulated early and freely, most of them drawn from Israelite tradition rather than from any sound account, and the major commentators record them while declining to settle the question. The surah itself says only that it came from his Lord. The setting is unchanged: a closed house, a locked door, and a young man with no standing in the country.",
+      "keyTerms": [
+        {
+          "arabic": "هَمَّ",
+          "gloss": "he was moved towards",
+          "note": "The verb covers everything from a passing stir in the chest to a settled resolve. Arabic leaves the strength unspecified, and that width is exactly why the classical readings of this ayah diverge."
+        },
+        {
+          "arabic": "بُرْهَـٰنَ",
+          "gloss": "a decisive proof",
+          "note": "A demonstration that ends argument, used across the Quran for evidence that leaves nothing to answer. The word says the intervention was something shown to him, not a feeling that came over him."
+        },
+        {
+          "arabic": "ٱلْمُخْلَصِينَ",
+          "gloss": "those made pure",
+          "note": "A passive form: not those who purified themselves but those God purified and set apart. It occurs eight times in the Quran and is always about what has been done to a servant."
+        }
+      ],
+      "lifeInProphetsTime": "In a great Egyptian house the private rooms were the one place with no witnesses, and a household servant knew every listener and every door. Arabia's own houses worked the same way, which is why oaths and testimony mattered so much and why accusations behind closed doors were nearly impossible to answer. What protects Joseph here is not a lock or a bystander. It is something seen that nobody else in the room saw.",
+      "didYouKnow": "The exact phrasing of this ayah has been debated since the earliest generations, largely because Arabic marks no full stop and the placement of the pause changes the sense. Reciters differ on where to breathe in it, and that choice is itself an interpretation, which is why the classical commentaries treat recitation and meaning together here.",
+      "theologicalSignificance": "Protection from wrongdoing is described as something God does, not merely something a person achieves. That is the point of the passive form at the end: Joseph is called one who was made pure. The ayah also refuses to flatter him. It concedes that he was a young man in a closed room and leaves the pull real, which makes his standing a matter of grace received rather than temperament.",
+      "crossReferences": [
+        {
+          "ref": "12:53",
+          "why": "Names the same pull directly, and says only mercy keeps a soul from where it leans."
+        },
+        {
+          "ref": "15:39-40",
+          "why": "The enemy concedes he has no power over servants whom God has made pure, using this same term."
+        },
+        {
+          "ref": "24:21",
+          "why": "States generally that without God's favour nobody among us would ever be purified."
+        }
+      ],
+      "applyIt": "Bring to mind the last time you did not do something you wanted to do. Notice that you probably credit yourself for it. Try, once today, thanking God for it instead, in one sentence, without false modesty. The change is small and it alters how you carry the next occasion, which is the point.",
+      "exploreFurther": [
+        "12:53",
+        "15:39-42",
+        "24:21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:32:40.499Z",
         "reviewed": false
       }
     },
