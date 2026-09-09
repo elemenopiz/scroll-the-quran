@@ -72,6 +72,10 @@ public struct OnboardingContent: Equatable, Sendable, Codable {
 
     public struct Slide: Equatable, Sendable, Codable, Identifiable {
         public let id: String
+        /// How many lines the title wraps to on the reference slide. SwiftUI wraps a
+        /// headline narrower than the column it is given, so the count is pinned here
+        /// rather than left to the layout engine.
+        public let titleLines: Int
         public let eyebrow: String
         public let title: String
         public let body: String

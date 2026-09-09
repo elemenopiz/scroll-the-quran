@@ -27,32 +27,33 @@ extension MockBlock {
         return blocks
     }
 
-    /// Reading plans — `Reference/onboarding-slide2-plans.png`.
+    /// Reading plans — `Reference/onboarding-slide2-plans.png`. The reference screen is
+    /// dominated by dark cover photos: rows 523...623 and 695...745 of the capture.
     static var plans: [MockBlock] {
         var blocks: [MockBlock] = [
-            MockBlock(0, 0, 228, 30, 0, .wash),
-            MockBlock(76, 44, 76, 11, 5, .lineStrong),
-            MockBlock(172, 40, 44, 22, 11, .card),
-            MockBlock(14, 68, 62, 5, 2.5, .line),
-            MockBlock(14, 80, 200, 76, 14, .card),
-            MockBlock(22, 88, 52, 52, 8, .dim),
+            MockBlock(0, 0, 228, 32, 0, .wash),
+            MockBlock(76, 46, 76, 11, 5, .lineStrong),
+            MockBlock(172, 42, 44, 22, 11, .card),
+            MockBlock(14, 72, 62, 5, 2.5, .line),
+            MockBlock(14, 84, 200, 92, 14, .card),
+            MockBlock(20, 92, 56, 56, 8, .photo),
         ]
-        blocks += lines(x: 82, y: 92, widths: [104, 122, 118, 96], height: 6, pitch: 11)
+        blocks += lines(x: 84, y: 96, widths: [104, 122, 118, 96], height: 6, pitch: 11)
         blocks += [
-            MockBlock(82, 140, 62, 6, 3, .lineStrong),
-            MockBlock(14, 166, 66, 5, 2.5, .line),
-            MockBlock(14, 178, 128, 11, 5, .lineStrong),
+            MockBlock(84, 152, 62, 6, 3, .lineStrong),
+            MockBlock(14, 186, 66, 5, 2.5, .line),
+            MockBlock(14, 198, 128, 11, 5, .lineStrong),
         ]
-        blocks += lines(x: 14, y: 196, widths: [196, 190, 138], height: 6, pitch: 11)
+        blocks += lines(x: 14, y: 216, widths: [196, 190, 138], height: 6, pitch: 11)
         for column in 0 ..< 2 {
-            for row in 0 ..< 2 {
-                let x = 14 + CGFloat(column) * 104
-                let y = 236 + CGFloat(row) * 124
-                blocks.append(MockBlock(x, y, 96, 118, 12, .card))
-                blocks.append(MockBlock(x, y, 96, 72, 12, .dark))
-                blocks.append(MockBlock(x + 8, y + 82, 62, 8, 4, .lineStrong))
-                blocks.append(MockBlock(x + 8, y + 98, 76, 5, 2.5, .line))
-            }
+            let x = 8 + CGFloat(column) * 108
+            blocks += [
+                MockBlock(x, 257, 100, 100, 10, .photo),
+                MockBlock(x + 6, 366, 66, 8, 4, .lineStrong),
+                MockBlock(x + 6, 382, 86, 5, 2.5, .line),
+                MockBlock(x + 6, 396, 74, 6, 3, .lineStrong),
+                MockBlock(x, 429, 100, 49, 10, .photo),
+            ]
         }
         return blocks
     }

@@ -32,33 +32,55 @@ public struct OnboardingFlow: View {
     }
 
     public var body: some View {
-        step
-            .animation(.easeInOut(duration: 0.25), value: model.step)
-            .sheet(isPresented: $model.isShowingSignIn, onDismiss: model.commitEmail) {
-                SignInSheet(
-                    content: model.content.signIn,
-                    email: $model.email,
-                    onAppleSignIn: { credential in
-                        model.signedInWithApple(
-                            userID: credential.user,
-                            email: credential.email,
-                            fullName: credential.fullName
-                        )
-                    },
-                    onSkip: model.dismissSignIn
+        OnboardingCanvas { scale in
+            step(scale)
+                .animation(.easeInOut(duration: 0.25), value: model.step)
+                .overlay {
+                    // The reference sheet sits on a ~48% black scrim (measured #828283 over
+                    // #FAFAFC). iOS only dims for itself at detents at or above `.medium`,
+                    // and this one is shorter, so the scrim is ours to draw.
+                    Color.black
+                        .opacity(model.isShowingSignIn ? OnboardingMetrics.sheetScrimOpacity : 0)
+                        .ignoresSafeArea()
+                        .allowsHitTesting(false)
+                }
+                .sheet(isPresented: $model.isShowingSignIn, onDismiss: model.commitEmail) {
+                    signInSheet(scale)
+                }
+        }
+        .background(Color.appBackground.ignoresSafeArea())
+        .accessibilityIdentifier("onboarding.flow")
+    }
+
+    private func signInSheet(_ scale: ReferenceScale) -> some View {
+        SignInSheet(
+            content: model.content.signIn,
+            email: $model.email,
+            scale: scale,
+            onAppleSignIn: { credential in
+                model.signedInWithApple(
+                    userID: credential.user,
+                    email: credential.email,
+                    fullName: credential.fullName
                 )
-                .presentationDetents([.height(OnboardingMetrics.sheetHeight)])
-                .presentationDragIndicator(.visible)
-            }
-            .accessibilityIdentifier("onboarding.flow")
+            },
+            onSkip: model.dismissSignIn
+        )
+        .presentationDetents([.height(scale.height(OnboardingMetrics.sheetHeight))])
+        .presentationDragIndicator(.visible)
+        // A detent this short leaves the background undimmed by default; the reference
+        // sheet sits on a ~48% black scrim, and disabling background interaction is what
+        // brings that scrim back.
+        .presentationBackgroundInteraction(.disabled)
     }
 
     @ViewBuilder
-    private var step: some View {
+    private func step(_ scale: ReferenceScale) -> some View {
         switch model.step {
         case .hook:
             HookScreen(
                 content: model.content.hook,
+                scale: scale,
                 onContinue: model.advance,
                 onAlreadySignedUp: model.showSignIn
             )
@@ -67,6 +89,7 @@ public struct OnboardingFlow: View {
                 SlideScreen(
                     slide: model.content.slides[index],
                     primaryCTA: model.content.hook.primaryCTA,
+                    scale: scale,
                     onContinue: model.advance
                 )
             }
@@ -76,6 +99,7 @@ public struct OnboardingFlow: View {
                 subtitle: model.reviewsSubtitle,
                 ratingValue: model.reviewsRatingValue,
                 ratingCount: model.reviewsRatingCount,
+                scale: scale,
                 onContinue: model.advance
             )
         }

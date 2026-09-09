@@ -12,48 +12,53 @@ struct ReviewsScreen: View {
     let subtitle: String
     let ratingValue: String?
     let ratingCount: String?
+    let scale: ReferenceScale
     let onContinue: () -> Void
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            Color.appBackground.ignoresSafeArea()
-
             ScrollView {
                 VStack(spacing: 0) {
                     HeadlineText(
                         plain: content.title,
-                        size: OnboardingMetrics.slideHeadlineSize,
-                        pitch: OnboardingMetrics.slideHeadlinePitch
+                        size: scale.type(OnboardingMetrics.slideHeadlineSize),
+                        extraLineSpacing: scale.height(OnboardingMetrics.slideHeadlineExtraLineSpacing),
+                        columnWidth: scale.width(OnboardingMetrics.slideHeadlineWidth),
+                        lineLimit: OnboardingMetrics.reviewsHeadlineLines
                     )
                     .accessibilityIdentifier("onboarding.reviews.headline")
-                    .padding(.top, OnboardingMetrics.reviewsTopPadding)
+                    .padding(.top, scale.height(OnboardingMetrics.reviewsTopPadding))
 
-                    SubheadlineText(text: subtitle)
-                        .padding(.top, OnboardingMetrics.headlineToSubheadline)
+                    SubheadlineText(text: subtitle, size: scale.type(OnboardingMetrics.subheadlineSize))
+                        .padding(.top, scale.height(OnboardingMetrics.headlineToSubheadline))
+                        .padding(.horizontal, scale.width(OnboardingMetrics.textInset))
                         .accessibilityIdentifier("onboarding.reviews.subtitle")
 
                     if let ratingValue, let ratingCount {
-                        RatingPill(value: ratingValue, count: ratingCount, suffix: content.ratingSuffix)
-                            .padding(.top, Spacing.lg)
+                        RatingPill(
+                            value: ratingValue, count: ratingCount,
+                            suffix: content.ratingSuffix, scale: scale
+                        )
+                        .padding(.top, scale.height(OnboardingMetrics.subtitleToRatingPill))
                     }
 
-                    VStack(spacing: OnboardingMetrics.cardSpacing) {
+                    VStack(spacing: scale.height(OnboardingMetrics.cardSpacing)) {
                         ForEach(content.cards) { card in
-                            ReviewCard(card: card)
+                            ReviewCard(card: card, scale: scale)
                         }
                     }
-                    .padding(.top, Spacing.xl)
-                    .padding(.horizontal, OnboardingMetrics.cardInset - OnboardingMetrics.textInset)
+                    .padding(.top, scale.height(OnboardingMetrics.ratingPillToCards))
+                    .padding(.horizontal, scale.width(OnboardingMetrics.cardInset))
                 }
-                .padding(.horizontal, OnboardingMetrics.textInset)
-                .padding(.bottom, OnboardingMetrics.ctaHeight + Spacing.huge)
+                .padding(.bottom, scale.height(OnboardingMetrics.ctaHeight + 60))
             }
             .scrollIndicators(.hidden)
 
-            CallToActionStack {
+            CallToActionStack(scale: scale) {
                 PrimaryPillButton(
                     title: content.primaryCTA,
                     identifier: "onboarding.reviews.continue",
+                    scale: scale,
                     action: onContinue
                 )
             }
@@ -64,11 +69,15 @@ struct ReviewsScreen: View {
 }
 
 #Preview("Reviews") {
-    ReviewsScreen(
-        content: OnboardingContent.sample.reviews,
-        subtitle: OnboardingContent.sample.reviews.subtitleWithoutCount,
-        ratingValue: nil,
-        ratingCount: nil,
-        onContinue: {}
-    )
+    OnboardingCanvas { scale in
+        ReviewsScreen(
+            content: OnboardingContent.sample.reviews,
+            subtitle: OnboardingContent.sample.reviews.subtitleWithoutCount,
+            ratingValue: nil,
+            ratingCount: nil,
+            scale: scale,
+            onContinue: {}
+        )
+    }
+    .background(Color.appBackground)
 }

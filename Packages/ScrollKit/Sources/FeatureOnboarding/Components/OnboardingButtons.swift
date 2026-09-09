@@ -9,15 +9,16 @@ import SwiftUI
 struct PrimaryPillButton: View {
     let title: String
     let identifier: String
+    let scale: ReferenceScale
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.body(17, weight: .semibold))
+                .font(.body(scale.type(17), weight: .semibold))
                 .foregroundStyle(Color.textOnPill)
                 .frame(maxWidth: .infinity)
-                .frame(height: OnboardingMetrics.ctaHeight)
+                .frame(height: scale.height(OnboardingMetrics.ctaHeight))
                 .background(Color.pillFill, in: Capsule())
         }
         .buttonStyle(.plain)
@@ -29,15 +30,16 @@ struct PrimaryPillButton: View {
 struct SecondaryPillButton: View {
     let title: String
     let identifier: String
+    let scale: ReferenceScale
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.body(17, weight: .semibold))
+                .font(.body(scale.type(17), weight: .semibold))
                 .foregroundStyle(Color.textPrimary)
                 .frame(maxWidth: .infinity)
-                .frame(height: OnboardingMetrics.ctaHeight)
+                .frame(height: scale.height(OnboardingMetrics.ctaHeight))
                 .overlay(
                     Capsule().strokeBorder(Color.divider, lineWidth: OnboardingMetrics.secondaryStroke)
                 )
@@ -49,13 +51,14 @@ struct SecondaryPillButton: View {
 
 /// The bottom call-to-action stack shared by the hook, the slides and the reviews screen.
 struct CallToActionStack<Content: View>: View {
+    let scale: ReferenceScale
     @ViewBuilder var content: Content
 
     var body: some View {
-        VStack(spacing: OnboardingMetrics.ctaSpacing) {
+        VStack(spacing: scale.height(OnboardingMetrics.ctaSpacing)) {
             content
         }
-        .padding(.horizontal, OnboardingMetrics.ctaHorizontalInset)
-        .padding(.bottom, OnboardingMetrics.ctaBottomPadding)
+        .padding(.horizontal, scale.width(OnboardingMetrics.ctaHorizontalInset))
+        .padding(.bottom, scale.height(OnboardingMetrics.ctaBottomPadding))
     }
 }

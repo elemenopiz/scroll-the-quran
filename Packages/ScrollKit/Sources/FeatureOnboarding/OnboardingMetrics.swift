@@ -32,15 +32,43 @@ public enum OnboardingMetrics {
     public static let subheadlinePitch: CGFloat = 18
     /// Headline/subheadline text column runs x 42...350 -> 22 pt side margins.
     public static let textInset: CGFloat = 22
+    /// The hook headline wraps to four lines whose ink is ~300 pt wide (x 45...348).
+    /// Source Serif 4 sets narrower than the reference face, so the headline column is
+    /// pulled in past `textInset` to make the wrap land on the same words.
+    public static let hookHeadlineWidth: CGFloat = 329
+    /// Four lines on the reference (ink rows 280/315/351/386).
+    public static let hookHeadlineLines = 4
+    /// Slide headlines wrap to two lines across the full text column, ink x 42...350.
+    public static let slideHeadlineWidth: CGFloat = 349
+    /// The reviews headline is a single line (ink rows 90...116).
+    public static let reviewsHeadlineLines = 1
+
+    /// The headline column for a slide whose reference title wraps to `lines`.
+    /// A three-line reference title (slide 2) sets in a narrower column: ink x 62...329.
+    public static func slideHeadlineWidth(titleLines: Int) -> CGFloat {
+        titleLines >= 3 ? 289 : slideHeadlineWidth
+    }
+
+    /// Height reserved for a slide's top padding, headline and subheadline together, so
+    /// the phone frame starts where the reference puts it whatever the type does inside:
+    /// frame top 240 on a two-line slide, 256 on slide 2's three-line one, measured from
+    /// a 59 pt safe-area top.
+    public static func slideTextBlockHeight(titleLines: Int) -> CGFloat {
+        (240 - 59) + CGFloat(titleLines - 2) * 16
+    }
+
+    /// Trim on top of `.leading(.tight)` to reach the reference baseline pitch.
+    public static let hookHeadlineExtraLineSpacing: CGFloat = 0
+    public static let slideHeadlineExtraLineSpacing: CGFloat = 0
     /// Gap from the headline block to the subheadline (hook 280-409 / 438; slides 166 / 185).
     public static let headlineToSubheadline: CGFloat = 14
 
     // MARK: - Slides
 
     /// Slide headline first ink row 107; safe-area top on the reference device is 59 pt.
-    public static let slideTopPadding: CGFloat = 44
+    public static let slideTopPadding: CGFloat = 40
     /// Subheadline block bottom 214 -> phone frame top 240.
-    public static let subheadlineToPhone: CGFloat = 26
+    public static let subheadlineToPhone: CGFloat = 8
 
     // MARK: - Phone frame mockup
 
@@ -62,7 +90,7 @@ public enum OnboardingMetrics {
     // MARK: - Sign-in sheet
 
     /// Sheet spans rows 404...843 at the centre column: 439 pt tall, 9 pt off the bottom.
-    public static let sheetHeight: CGFloat = 439
+    public static let sheetHeight: CGFloat = 415
     /// Content column x 27...365 inside a sheet spanning x 8...385 -> 19 pt of inner padding.
     public static let sheetContentInset: CGFloat = 19
     /// Title ink 467-492, i.e. 63 pt below the sheet top.
@@ -73,6 +101,8 @@ public enum OnboardingMetrics {
     public static let fieldCornerRadius: CGFloat = 12
     /// Primary sheet action rows 637...685, capsule radius 24.
     public static let sheetButtonHeight: CGFloat = 48
+    /// The dimmed hook behind the sheet samples #828283 over a #FAFAFC background.
+    public static let sheetScrimOpacity: CGFloat = 0.40
 
     // MARK: - Reviews
 
@@ -80,6 +110,10 @@ public enum OnboardingMetrics {
     public static let reviewsTopPadding: CGFloat = 27
     /// Rating pill rows 177...211, x 65...328.
     public static let ratingPillHeight: CGFloat = 34
+    /// Subtitle block ends 175, pill rows 177...211.
+    public static let subtitleToRatingPill: CGFloat = 8
+    /// Pill ends 211, card 1 starts 232.
+    public static let ratingPillToCards: CGFloat = 21
     /// Cards run x 28...364 and are 17 pt apart (card 1 ends 449, card 2 starts 466).
     public static let cardInset: CGFloat = 28
     public static let cardSpacing: CGFloat = 17

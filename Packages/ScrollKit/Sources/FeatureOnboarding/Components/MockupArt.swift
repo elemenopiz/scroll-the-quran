@@ -10,19 +10,23 @@ import SwiftUI
 /// screens land; nothing outside this file needs to change.
 struct MockupArt: View {
     let mockup: OnboardingContent.Mockup
+    let scale: ReferenceScale
 
     private var size: CGSize {
-        OnboardingMetrics.phoneScreenSize
+        CGSize(
+            width: scale.width(OnboardingMetrics.phoneScreenSize.width),
+            height: scale.height(OnboardingMetrics.phoneScreenSize.height)
+        )
     }
 
     var body: some View {
         ZStack(alignment: .topLeading) {
             base
             ForEach(Array(blocks.enumerated()), id: \.offset) { _, block in
-                RoundedRectangle(cornerRadius: block.radius, style: .continuous)
+                RoundedRectangle(cornerRadius: scale.width(block.radius), style: .continuous)
                     .fill(block.tone.color)
-                    .frame(width: block.rect.width, height: block.rect.height)
-                    .offset(x: block.rect.minX, y: block.rect.minY)
+                    .frame(width: scale.width(block.rect.width), height: scale.height(block.rect.height))
+                    .offset(x: scale.width(block.rect.minX), y: scale.height(block.rect.minY))
             }
         }
         .frame(width: size.width, height: size.height, alignment: .topLeading)
@@ -47,7 +51,7 @@ struct MockupArt: View {
 /// One rounded rectangle of placeholder art, in the 228 x 478 pt mock screen space.
 struct MockBlock {
     enum Tone {
-        case dim, wash, card, line, lineStrong, dark, accent
+        case dim, wash, card, line, lineStrong, dark, photo, accent
 
         var color: Color {
             switch self {
@@ -57,6 +61,7 @@ struct MockBlock {
             case .line: Color.textTertiary.opacity(0.32)
             case .lineStrong: Color.textPrimary.opacity(0.72)
             case .dark: Color.pillFill
+            case .photo: Color.textPrimary.opacity(0.72)
             case .accent: Color.ratingStar
             }
         }

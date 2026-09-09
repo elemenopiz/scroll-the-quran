@@ -12,15 +12,16 @@ import SwiftUI
 struct SignInSheet: View {
     let content: OnboardingContent.SignIn
     @Binding var email: String
+    let scale: ReferenceScale
     let onAppleSignIn: (ASAuthorizationAppleIDCredential) -> Void
     let onSkip: () -> Void
 
     @Environment(\.openURL) private var openURL
 
     private enum Gap {
-        static let title: CGFloat = 46
+        static let title: CGFloat = 54
         static let titleToBody: CGFloat = 18
-        static let bodyToField: CGFloat = 13
+        static let bodyToField: CGFloat = 48
         static let fieldToApple: CGFloat = 19
         static let appleToDivider: CGFloat = 21
         static let dividerToRecover: CGFloat = 25
@@ -31,28 +32,28 @@ struct SignInSheet: View {
     var body: some View {
         VStack(spacing: 0) {
             Text(content.title)
-                .font(.serifDisplay(OnboardingMetrics.sheetTitleSize, relativeTo: .title))
+                .font(.serifDisplay(scale.type(OnboardingMetrics.sheetTitleSize), relativeTo: .title))
                 .foregroundStyle(Color.textPrimary)
-                .padding(.top, Gap.title)
+                .padding(.top, scale.height(Gap.title))
                 .accessibilityIdentifier("onboarding.signin.title")
 
             Text(content.body)
-                .font(.body(15))
+                .font(.body(scale.type(15)))
                 .foregroundStyle(Color.textTertiary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
-                .padding(.top, Gap.titleToBody)
+                .padding(.top, scale.height(Gap.titleToBody))
 
             emailField
-                .padding(.top, Gap.bodyToField)
+                .padding(.top, scale.height(Gap.bodyToField))
 
             appleButton
-                .padding(.top, Gap.fieldToApple)
+                .padding(.top, scale.height(Gap.fieldToApple))
 
             Rectangle()
                 .fill(Color.divider)
                 .frame(height: Stroke.hairline)
-                .padding(.top, Gap.appleToDivider)
+                .padding(.top, scale.height(Gap.appleToDivider))
 
             Button {
                 if let url = content.recoverURL {
@@ -60,31 +61,31 @@ struct SignInSheet: View {
                 }
             } label: {
                 Text(content.recoverCTA)
-                    .font(.body(16, weight: .bold))
+                    .font(.body(scale.type(16), weight: .bold))
                     .foregroundStyle(Color.textPrimary)
                     .underline()
             }
             .buttonStyle(.plain)
-            .padding(.top, Gap.dividerToRecover)
+            .padding(.top, scale.height(Gap.dividerToRecover))
             .accessibilityIdentifier("onboarding.signin.recover")
 
             Text(content.emailFootnote)
-                .font(.body(13))
+                .font(.body(scale.type(13)))
                 .foregroundStyle(Color.textTertiary)
                 .multilineTextAlignment(.center)
-                .padding(.top, Gap.recoverToFootnote)
+                .padding(.top, scale.height(Gap.recoverToFootnote))
 
             Button(content.skipCTA, action: onSkip)
-                .font(.body(16, weight: .semibold))
+                .font(.body(scale.type(16), weight: .semibold))
                 .foregroundStyle(Color.textSecondary)
                 .buttonStyle(.plain)
-                .padding(.top, Gap.footnoteToSkip)
+                .padding(.top, scale.height(Gap.footnoteToSkip))
                 .accessibilityIdentifier("onboarding.signin.skip")
 
             Spacer(minLength: 0)
         }
         .frame(maxWidth: .infinity)
-        .padding(.horizontal, OnboardingMetrics.sheetContentInset)
+        .padding(.horizontal, scale.width(OnboardingMetrics.sheetContentInset))
         .background(Color.sheetBackground)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.onboarding-signin")
@@ -92,7 +93,7 @@ struct SignInSheet: View {
 
     private var emailField: some View {
         TextField(content.emailPlaceholder, text: $email)
-            .font(.body(17))
+            .font(.body(scale.type(17)))
             .foregroundStyle(Color.textPrimary)
             .textContentType(.emailAddress)
             .autocorrectionDisabled()
@@ -100,11 +101,11 @@ struct SignInSheet: View {
             .keyboardType(.emailAddress)
             .textInputAutocapitalization(.never)
         #endif
-            .padding(.horizontal, Spacing.lg)
-            .frame(height: OnboardingMetrics.fieldHeight)
+            .padding(.horizontal, scale.width(Spacing.lg))
+            .frame(height: scale.height(OnboardingMetrics.fieldHeight))
             .frame(maxWidth: .infinity)
             .background(
-                RoundedRectangle(cornerRadius: OnboardingMetrics.fieldCornerRadius, style: .continuous)
+                RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.fieldCornerRadius), style: .continuous)
                     .fill(Color.rowBackground)
             )
             .accessibilityLabel(content.emailLabel)
@@ -120,7 +121,7 @@ struct SignInSheet: View {
             onAppleSignIn(credential)
         }
         .signInWithAppleButtonStyle(.black)
-        .frame(height: OnboardingMetrics.sheetButtonHeight)
+        .frame(height: scale.height(OnboardingMetrics.sheetButtonHeight))
         .frame(maxWidth: .infinity)
         .clipShape(Capsule())
         .accessibilityIdentifier("onboarding.signin.apple")
@@ -131,6 +132,7 @@ struct SignInSheet: View {
     SignInSheet(
         content: OnboardingContent.sample.signIn,
         email: .constant(""),
+        scale: .identity,
         onAppleSignIn: { _ in },
         onSkip: {}
     )

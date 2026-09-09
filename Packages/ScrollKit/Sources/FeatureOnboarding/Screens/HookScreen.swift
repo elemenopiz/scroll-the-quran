@@ -5,43 +5,47 @@ import SwiftUI
 /// Layout traced off `Reference/onboarding-hook.png`.
 struct HookScreen: View {
     let content: OnboardingContent.Hook
+    let scale: ReferenceScale
     let onContinue: () -> Void
     let onAlreadySignedUp: () -> Void
 
     var body: some View {
-        ZStack {
-            Color.appBackground.ignoresSafeArea()
+        VStack(spacing: 0) {
+            Spacer(minLength: 0)
 
-            VStack(spacing: 0) {
-                Spacer(minLength: 0)
+            VStack(spacing: scale.height(OnboardingMetrics.headlineToSubheadline)) {
+                HeadlineText(
+                    spans: content.headline,
+                    size: scale.type(OnboardingMetrics.hookHeadlineSize),
+                    extraLineSpacing: scale.height(OnboardingMetrics.hookHeadlineExtraLineSpacing),
+                    columnWidth: scale.width(OnboardingMetrics.hookHeadlineWidth),
+                    lineLimit: OnboardingMetrics.hookHeadlineLines
+                )
+                .accessibilityIdentifier("onboarding.hook.headline")
 
-                VStack(spacing: OnboardingMetrics.headlineToSubheadline) {
-                    HeadlineText(
-                        spans: content.headline,
-                        size: OnboardingMetrics.hookHeadlineSize,
-                        pitch: OnboardingMetrics.hookHeadlinePitch
-                    )
-                    .accessibilityIdentifier("onboarding.hook.headline")
+                SubheadlineText(
+                    text: content.subheadline,
+                    size: scale.type(OnboardingMetrics.subheadlineSize)
+                )
+                .accessibilityIdentifier("onboarding.hook.subheadline")
+            }
+            .padding(.horizontal, scale.width(OnboardingMetrics.textInset))
 
-                    SubheadlineText(text: content.subheadline)
-                        .accessibilityIdentifier("onboarding.hook.subheadline")
-                }
-                .padding(.horizontal, OnboardingMetrics.textInset)
+            Spacer(minLength: 0)
 
-                Spacer(minLength: 0)
-
-                CallToActionStack {
-                    SecondaryPillButton(
-                        title: content.secondaryCTA,
-                        identifier: "onboarding.hook.alreadySignedUp",
-                        action: onAlreadySignedUp
-                    )
-                    PrimaryPillButton(
-                        title: content.primaryCTA,
-                        identifier: "onboarding.hook.continue",
-                        action: onContinue
-                    )
-                }
+            CallToActionStack(scale: scale) {
+                SecondaryPillButton(
+                    title: content.secondaryCTA,
+                    identifier: "onboarding.hook.alreadySignedUp",
+                    scale: scale,
+                    action: onAlreadySignedUp
+                )
+                PrimaryPillButton(
+                    title: content.primaryCTA,
+                    identifier: "onboarding.hook.continue",
+                    scale: scale,
+                    action: onContinue
+                )
             }
         }
         .accessibilityElement(children: .contain)
@@ -50,5 +54,8 @@ struct HookScreen: View {
 }
 
 #Preview("Hook") {
-    HookScreen(content: OnboardingContent.sample.hook, onContinue: {}, onAlreadySignedUp: {})
+    OnboardingCanvas { scale in
+        HookScreen(content: OnboardingContent.sample.hook, scale: scale, onContinue: {}, onAlreadySignedUp: {})
+    }
+    .background(Color.appBackground)
 }

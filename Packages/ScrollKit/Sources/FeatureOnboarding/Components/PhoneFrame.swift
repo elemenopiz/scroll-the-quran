@@ -6,33 +6,48 @@ import SwiftUI
 /// Geometry is measured off the reference slides: a 244 x 494 pt body, an 8 pt black
 /// bezel, a 228 x 478 pt screen and the Dynamic Island 5 pt below the screen's top edge.
 struct PhoneFrame<Screen: View>: View {
+    let scale: ReferenceScale
     @ViewBuilder var screen: Screen
+
+    private var size: CGSize {
+        CGSize(
+            width: scale.width(OnboardingMetrics.phoneWidth),
+            height: scale.height(OnboardingMetrics.phoneHeight)
+        )
+    }
+
+    private var screenSize: CGSize {
+        CGSize(
+            width: scale.width(OnboardingMetrics.phoneScreenSize.width),
+            height: scale.height(OnboardingMetrics.phoneScreenSize.height)
+        )
+    }
 
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: OnboardingMetrics.phoneCornerRadius, style: .continuous)
+            RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.phoneCornerRadius), style: .continuous)
                 .fill(Color.pillFill)
-                .frame(width: OnboardingMetrics.phoneWidth, height: OnboardingMetrics.phoneHeight)
+                .frame(width: size.width, height: size.height)
 
             screen
-                .frame(
-                    width: OnboardingMetrics.phoneScreenSize.width,
-                    height: OnboardingMetrics.phoneScreenSize.height
-                )
+                .frame(width: screenSize.width, height: screenSize.height)
                 .clipShape(
-                    RoundedRectangle(cornerRadius: OnboardingMetrics.phoneScreenCornerRadius, style: .continuous)
+                    RoundedRectangle(
+                        cornerRadius: scale.width(OnboardingMetrics.phoneScreenCornerRadius),
+                        style: .continuous
+                    )
                 )
                 .overlay(alignment: .top) {
                     Capsule()
                         .fill(Color.pillFill)
                         .frame(
-                            width: OnboardingMetrics.phoneIslandSize.width,
-                            height: OnboardingMetrics.phoneIslandSize.height
+                            width: scale.width(OnboardingMetrics.phoneIslandSize.width),
+                            height: scale.height(OnboardingMetrics.phoneIslandSize.height)
                         )
-                        .padding(.top, OnboardingMetrics.phoneIslandTop)
+                        .padding(.top, scale.height(OnboardingMetrics.phoneIslandTop))
                 }
         }
-        .frame(width: OnboardingMetrics.phoneWidth, height: OnboardingMetrics.phoneHeight)
+        .frame(width: size.width, height: size.height)
         .accessibilityHidden(true)
     }
 }

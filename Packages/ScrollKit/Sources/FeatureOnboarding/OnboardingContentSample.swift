@@ -36,25 +36,25 @@ public extension OnboardingContent {
         ),
         slides: [
             Slide(
-                id: "onboarding-slide1", eyebrow: "Read",
+                id: "onboarding-slide1", titleLines: 2, eyebrow: "Read",
                 title: "What if scrolling actually fed your heart?",
                 body: "The Quran, one ayah to a screen, in clear modern English.",
                 mockup: .reader
             ),
             Slide(
-                id: "onboarding-slide2", eyebrow: "Plans",
-                title: "Reading it all no longer feels impossible.",
+                id: "onboarding-slide2", titleLines: 3, eyebrow: "Plans",
+                title: "Reading the whole Quran feels impossible, until now.",
                 body: "A juz a day through Ramadan, or Juz Amma one surah at a time.",
                 mockup: .plans
             ),
             Slide(
-                id: "onboarding-slide3", eyebrow: "Discover",
+                id: "onboarding-slide3", titleLines: 2, eyebrow: "Discover",
                 title: "Every ayah has a story you have not heard.",
                 body: "A daily feed of ayat with the context that makes them land.",
                 mockup: .discover
             ),
             Slide(
-                id: "onboarding-slide4", eyebrow: "Study",
+                id: "onboarding-slide4", titleLines: 2, eyebrow: "Study",
                 title: "Go deeper into any ayah than ever before.",
                 body: "Meaning, context of revelation, key Arabic terms, and one thing to apply.",
                 mockup: .deepstudy
