@@ -1,7 +1,7 @@
 {
   "surah": 11,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:25:04.689Z",
+  "generatedAt": "2026-09-09T12:27:09.733Z",
   "studies": [
     {
       "key": "11:1-2",
@@ -5124,6 +5124,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T12:25:04.185Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:120-122",
+      "surah": 11,
+      "start": 120,
+      "end": 122,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "To Make Your Heart Firm",
+      "tier": "standard",
+      "meaning": "The surah states its own purpose, and the purpose is emotional rather than informational. All of this narration is here to steady your heart. Three things are then said to have arrived with it, and they are distributed: the truth to the one receiving it, and a lesson and a reminder for the believers. Then the chapter hands him the formula it gave Shuaib earlier, and closes on waiting, which both sides turn out to be doing.",
+      "historicalContext": "Meccan. This is one of the few places where the Quran says directly what a stretch of narrative is for, and commentators treat it as the key to reading the whole chapter. The instruction that follows is given to a man with no power to compel anybody, which is why it ends in mutual waiting rather than in any kind of threat.",
+      "keyTerms": [
+        {
+          "arabic": "نُثَبِّتُ",
+          "gloss": "We make firm",
+          "note": "The verb is of steadying something so it does not shift, used of feet on loose ground and of a heart under strain. It occurs twice in the Quran, both times of strengthening the Prophet through revelation."
+        },
+        {
+          "arabic": "فُؤَادَكَ",
+          "gloss": "your heart",
+          "note": "A word for the heart as the seat of feeling and burning rather than of thought. Choosing it over the commoner term makes the effect of these stories emotional before it is doctrinal."
+        },
+        {
+          "arabic": "مَكَانَتِكُمْ",
+          "gloss": "your standing, your position",
+          "note": "The same phrase Shuaib used to Median earlier in this surah. Handing it now to the Prophet places him where the narratives have been standing, at the end of an argument that talking cannot settle."
+        }
+      ],
+      "lifeInProphetsTime": "A caravan waited out a sandstorm and a besieged settlement waited out a siege, and in both cases the waiting was the work itself. Arabic had a rich vocabulary for it, and everyone understood that outlasting was frequently the only available form of winning. Ending a long chapter with two parties both waiting described a familiar and exhausting condition.",
+      "didYouKnow": "The verb for making the heart firm occurs twice in the Quran, and both concern the Prophet. Here it names the purpose of this surah's entire narrative section, and at 25:32 it explains why the revelation came down in stages rather than all at once. In both places the steadying is the stated reason.",
+      "theologicalSignificance": "Naming the purpose changes how the preceding hundred ayat should be read. They are not primarily historical instruction or a warning aimed at opponents; they are addressed to somebody who needed them, and the surah says so plainly. That makes revelation partly a response to a person's condition, and it makes reading these accounts an activity with an intended effect rather than a source of facts.",
+      "crossReferences": [
+        {
+          "ref": "25:32",
+          "why": "Uses the same verb: the recitation came in stages precisely in order to strengthen your heart."
+        },
+        {
+          "ref": "12:111",
+          "why": "Says the same of another long narrative: in their stories is a lesson for people of understanding."
+        },
+        {
+          "ref": "10:20",
+          "why": "Ends a similar exchange the same way: so wait, and I am waiting here alongside you."
+        }
+      ],
+      "applyIt": "This chapter tells you what it is for. Read one of its prophet narratives, anywhere from the twenty-fifth ayah onward, not to learn something but to see whether it steadies you. That is a different kind of reading and it wants a slower pace. Notice at the end whether anything in you sits differently than it did.",
+      "exploreFurther": [
+        "25:32",
+        "12:111",
+        "10:20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:27:09.524Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:123",
+      "surah": 11,
+      "start": 123,
+      "end": 123,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Worship Him And Rely",
+      "tier": "standard",
+      "meaning": "The chapter closes by placing the unseen and the whole command with God, and then draws two consequences addressed to a person rather than to an argument: worship Him, rely on Him. Commentators note that these are the two things the surah has been asking for since its second ayah. The final clause then quietly changes the subject, from what God holds to what the reader is doing right now.",
+      "historicalContext": "Meccan. Commentators observe that the surah ends where it started. Its second ayah stated that you should worship none but God, and its last says worship Him and rely on Him, so the whole chapter, with its five prophets and its four ruined towns, is enclosed between the same instruction given twice.",
+      "keyTerms": [
+        {
+          "arabic": "غَيْبُ ٱلسَّمَـٰوَٰتِ",
+          "gloss": "the unseen of the heavens",
+          "note": "Whatever is absent from perception across the whole creation. Assigning it to God at the close answers the demands for signs and treasures that this chapter recorded near its opening."
+        },
+        {
+          "arabic": "يُرْجَعُ ٱلْأَمْرُ",
+          "gloss": "the whole matter returns",
+          "note": "A passive with the definite article, so it is the command or the affair as such rather than any particular one. The grammar leaves the returning under way rather than merely promised."
+        },
+        {
+          "arabic": "وَتَوَكَّلْ عَلَيْهِ",
+          "gloss": "and rely upon Him",
+          "note": "From the word for an agent entrusted with your business, the same term applied to God near this surah's opening. The imperative closes the chapter by asking for what Hud had already demonstrated."
+        }
+      ],
+      "lifeInProphetsTime": "Ending an address by naming what the listener owes was standard in Arabic oratory. A speech delivered at a gathering closed on the practical consequence rather than on the argument, and audiences expected the final line to tell them what to do next. This chapter follows that form exactly, giving two imperatives and a single observation as its close.",
+      "didYouKnow": "The exact phrase closing this surah's instruction, worship Him and rely on Him, occurs once in the whole Quran. The chapter's second ayah opens with worship none but God, so its first instruction and its last are the same one, with a hundred and twenty ayat of prophet narratives standing between them.",
+      "theologicalSignificance": "The ending is practical rather than triumphant. Having described four destroyed peoples and a day on which nobody speaks, the chapter closes by asking one person for two things, both ordinary and both available immediately. The final clause about God's awareness is then not a threat in this position but the reason those two instructions are worth acting on at all.",
+      "crossReferences": [
+        {
+          "ref": "6:102",
+          "why": "Closes a comparable argument with the same instruction, so worship Him, He is Guardian of everything."
+        },
+        {
+          "ref": "16:77",
+          "why": "States the same possession of the unseen, and adds how near the coming of the Hour is."
+        },
+        {
+          "ref": "27:93",
+          "why": "Ends another chapter with the same observation, that your Lord is not heedless of what you do."
+        }
+      ],
+      "applyIt": "Read the second ayah of this surah and then this one, back to back, and notice that they say the same thing. Everything in between is the argument for it. If you have been reading this chapter over the past while, let today's response be the small one it actually asks for: one act of worship, and one thing handed over.",
+      "exploreFurther": [
+        "6:102",
+        "16:77",
+        "27:91-93"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:27:09.540Z",
         "reviewed": false
       }
     }
