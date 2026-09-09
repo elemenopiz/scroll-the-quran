@@ -9,23 +9,23 @@ import SwiftUI
 /// 710 pt page. The logo card is pinned 71 pt down, which is 28 pt below the toolbar.
 struct VersePageView: View {
     let page: ReaderPage
+    /// The pager's container size, read once by `ReaderView` rather than by every page.
+    let pageSize: CGSize
 
     var body: some View {
-        GeometryReader { proxy in
-            ZStack(alignment: .top) {
-                if page.showsLogoCard {
-                    ReaderLogoCard()
-                        .padding(.top, Self.logoCardTop)
-                }
-                verseBlock
-                    .frame(width: max(0, proxy.size.width - 2 * ReaderMetrics.versePadding))
-                    .position(
-                        x: proxy.size.width / 2,
-                        y: proxy.size.height * ReaderMetrics.verseCentreFraction
-                    )
+        ZStack(alignment: .top) {
+            if page.showsLogoCard {
+                ReaderLogoCard()
+                    .padding(.top, Self.logoCardTop)
             }
-            .frame(width: proxy.size.width, height: proxy.size.height)
+            verseBlock
+                .frame(width: max(0, pageSize.width - 2 * ReaderMetrics.versePadding))
+                .position(
+                    x: pageSize.width / 2,
+                    y: pageSize.height * ReaderMetrics.verseCentreFraction
+                )
         }
+        .frame(width: pageSize.width, height: pageSize.height)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("reader.page.\(page.id.surah).\(page.id.ayah).\(page.id.part)")
     }
@@ -69,7 +69,8 @@ struct VersePageView: View {
             arabic: VersePreviewFixture.shortArabic,
             english: "With hardship comes ease.",
             reference: "Ash-Sharh 94:5"
-        )
+        ),
+        pageSize: CGSize(width: 393, height: 710)
     )
     .background(Color.appBackground)
     .preferredColorScheme(.dark)

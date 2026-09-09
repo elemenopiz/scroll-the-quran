@@ -39,10 +39,14 @@ public enum ReaderMetrics {
     public static let surahPillHeight: CGFloat = 30
     /// Bookmark: a 107 px circle, the same height as the capsule group.
     public static let bookmarkDiameter = Metrics.capsuleGroupHeight
-    /// Glyph inside the bookmark circle and the surah pill's chevron.
+    /// Glyph inside the bookmark circle.
     public static let toolbarGlyph: CGFloat = 15
+    /// The surah pill's chevron, a step smaller than the bookmark glyph.
+    public static let toolbarChevronGlyph: CGFloat = 11
     /// Label inside the translation and surah pills.
     public static let toolbarLabel: CGFloat = 15
+    /// The pills are drawn at their measured 29-36 pt but take taps over the HIG's 44 pt.
+    public static let hitTarget: CGFloat = 44
 
     // MARK: - Surah opening card
 
@@ -84,6 +88,8 @@ public enum ReaderMetrics {
     public static let railGap: CGFloat = 2
     /// Rail top is 351 px = 117 pt, 15 pt below the toolbar's bottom edge.
     public static let railTopFromToolbar: CGFloat = 15
+    /// The same measurement from the safe-area top: 7 + 36 + 15 = 58 pt (117 − 59).
+    public static let railTopInset = toolbarTopInset + toolbarHeight + railTopFromToolbar
     /// Rail bottom is 2231 px = 743.7 pt, 25 pt above the safe-area bottom (769 pt).
     public static let railBottomInset: CGFloat = 25
     /// The ayah number sits beside the rail: "1" at x 45..55 px, "21" at x 41..68 px.
@@ -109,10 +115,9 @@ public enum ReaderMetrics {
 
     // 642 x 182 px at x 150..791, y 2014..2195 px.
 
-    /// The reference toast is 642 px (214 pt) wide. `ToastHint` sizes itself from its own
-    /// measured paddings, and forcing it narrower wraps "Tap or slide" onto two lines, so the
-    /// reader lets it size to content — which lands within a few points of the reference.
-    public static let toastWidth: CGFloat = 214
+    /// The reference toast is 642 px (214 pt) wide, and `ToastHint` sizes itself from its own
+    /// measured paddings to within a few points of that — forcing the width instead wraps
+    /// "Tap or slide" onto two lines, so the reader lets the component size itself.
     public static let toastLeadingInset: CGFloat = 50
     /// Toast bottom is 2195 px = 731.7 pt, 37 pt above the safe-area bottom.
     public static let toastBottomInset: CGFloat = 37
@@ -134,6 +139,15 @@ public enum ReaderMetrics {
     /// The translation sheet's "Done" pill: 51..279 px wide, 237..348 px tall.
     public static let sheetDoneWidth: CGFloat = 76
     public static let sheetDoneHeight: CGFloat = 37
+    /// The row check mark, and the small glyphs in the surah picker.
+    public static let sheetGlyph: CGFloat = 18
+    public static let sheetSmallGlyph: CGFloat = 15
+    /// Surah picker rows: number column, name, and the "The Cow · 286 verses · Medinan" line.
+    public static let pickerNumberWidth: CGFloat = 28
+    public static let pickerNumberSize: CGFloat = 13
+    public static let pickerNameSize: CGFloat = 17
+    public static let pickerSubtitleSize: CGFloat = 13
+    public static let pickerFieldSize: CGFloat = 16
 
     /// Notes sheet: the editor fill runs x 48..1130, y 850..1466 px.
     public static let notesEditorHeight: CGFloat = 205
@@ -142,4 +156,16 @@ public enum ReaderMetrics {
     public static let notesTitleSize: CGFloat = 19
     /// "Your Notes" / "Auto-saved" have a 31 px (10.3 pt) cap height.
     public static let notesLabelSize: CGFloat = 15
+    /// The note the reader types.
+    public static let notesBodySize: CGFloat = 16
+    /// The muted verse above the editor, dimmed against the sheet.
+    public static let notesVerseOpacity: CGFloat = 0.75
+
+    // MARK: - Share card
+
+    /// Square, so it drops into a story or a message without being re-cropped.
+    public static let shareCardSide: CGFloat = 360
+    public static let shareReferenceSize: CGFloat = 15
+    /// The licence line the translation requires, set small but legible.
+    public static let shareAttributionSize: CGFloat = 10
 }

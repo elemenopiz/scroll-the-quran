@@ -6,7 +6,7 @@ import SwiftUI
 /// and the attribution the translation's licence requires. Square, so it drops straight into
 /// a story or a message without being re-cropped.
 struct ShareCard: View {
-    static let side: CGFloat = 360
+    static let side = ReaderMetrics.shareCardSide
 
     let reference: String
     let arabic: String?
@@ -18,12 +18,12 @@ struct ShareCard: View {
             Spacer(minLength: 0)
             VerseText(arabic: arabic, english: english, size: .deepStudy)
             Text(reference)
-                .font(.body(15, weight: .semibold))
+                .font(.body(ReaderMetrics.shareReferenceSize, weight: .semibold))
                 .tracking(ReaderMetrics.referenceTracking)
                 .foregroundStyle(Color.textSecondary)
             Spacer(minLength: 0)
             Text(attribution)
-                .font(.body(10))
+                .font(.body(ReaderMetrics.shareAttributionSize))
                 .foregroundStyle(Color.textTertiary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
@@ -46,6 +46,7 @@ struct ShareSheetView: View {
     let onDone: () -> Void
 
     @Environment(\.displayScale) private var displayScale
+    @Environment(\.colorScheme) private var colorScheme
     @State private var rendered: Image?
 
     var body: some View {
@@ -77,6 +78,9 @@ struct ShareSheetView: View {
                 }
                 .padding(.horizontal, Spacing.pageMargin)
                 .accessibilityIdentifier("shareSheet.share")
+            } else {
+                ProgressView()
+                    .accessibilityLabel("Preparing the share card")
             }
             Spacer(minLength: 0)
         }
@@ -93,7 +97,9 @@ struct ShareSheetView: View {
 
     @MainActor
     private func render() -> Image? {
-        let renderer = ImageRenderer(content: card.environment(\.colorScheme, .dark))
+        // Rendered in the ambient scheme so the sheet's preview and the image the reader
+        // actually shares are the same picture.
+        let renderer = ImageRenderer(content: card.environment(\.colorScheme, colorScheme))
         renderer.scale = displayScale
         #if canImport(UIKit)
             return renderer.uiImage.map(Image.init(uiImage:))

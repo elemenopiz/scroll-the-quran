@@ -10,7 +10,7 @@
     "elements": [
       { "name": "screen.reader", "query": "identifier", "frame": { "x": 0, "y": 0, "width": 393, "height": 852 }, "existenceOnly": true },
       { "name": "reader.pager", "query": "identifier", "frame": { "x": 0, "y": 0, "width": 393, "height": 852 }, "existenceOnly": true },
-      { "name": "reader.logoCard", "query": "identifier", "frame": { "x": 150.0, "y": 130.0, "width": 94.0, "height": 94.0 } },
+      { "name": "reader.page.2.0.0", "query": "identifier", "frame": { "x": 0, "y": 59, "width": 393, "height": 710 }, "tolerance": 12 },
       { "name": "reader.toolbar.dice", "query": "identifier", "frame": { "x": 14.0, "y": 66.0, "width": 36.0, "height": 36.0 }, "existenceOnly": true },
       { "name": "reader.toolbar.like", "query": "identifier", "frame": { "x": 50.0, "y": 66.0, "width": 36.0, "height": 36.0 }, "existenceOnly": true },
       { "name": "reader.translationPill", "query": "identifier", "frame": { "x": 86.0, "y": 69.5, "width": 67.0, "height": 29.0 } },

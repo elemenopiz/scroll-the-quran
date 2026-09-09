@@ -75,7 +75,7 @@ struct TranslationSheet: View {
                 Spacer(minLength: Spacing.md)
                 if info.id == selectedID {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 18, weight: .semibold))
+                        .font(.system(size: ReaderMetrics.sheetGlyph, weight: .semibold))
                         .foregroundStyle(Color.textPrimary)
                         .accessibilityHidden(true)
                 }

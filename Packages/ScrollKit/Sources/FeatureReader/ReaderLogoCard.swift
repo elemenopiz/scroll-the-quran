@@ -24,8 +24,8 @@ struct ReaderLogoCard: View {
             }
         }
         .frame(width: size, height: size)
+        // Decorative: the page's own reference line already names the surah.
         .accessibilityHidden(true)
-        .accessibilityIdentifier("reader.logoCard")
     }
 
     private var assetName: String {
@@ -52,11 +52,14 @@ struct ReaderLogoCard: View {
                         .frame(width: ReaderMetrics.logoMarkSize, height: ReaderMetrics.logoMarkSize)
                 } else {
                     Image(systemName: "moon.stars")
-                        .font(.system(size: ReaderMetrics.logoMarkSize * 0.6, weight: .light))
+                        .font(.system(size: ReaderMetrics.logoMarkSize * Self.symbolFallbackRatio, weight: .light))
                         .foregroundStyle(Color.textPrimary)
                 }
             }
     }
+
+    /// The SF Symbol stand-in is drawn smaller than the line mark so it sits inside the card.
+    static let symbolFallbackRatio: CGFloat = 0.6
 
     /// `Image(_:)` renders an empty box for a name the catalog does not have, so ask first.
     static func image(named name: String) -> Image? {

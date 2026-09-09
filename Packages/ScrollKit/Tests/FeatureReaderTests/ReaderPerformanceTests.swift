@@ -1,5 +1,5 @@
-import Foundation
 @testable import FeatureReader
+import Foundation
 import QuranData
 import Testing
 import UserState

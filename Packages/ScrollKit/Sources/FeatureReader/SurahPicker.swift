@@ -12,6 +12,9 @@ struct SurahPicker: View {
     let onDone: () -> Void
 
     @State private var query = ""
+    /// Filtering all 114 surahs is cheap, but not cheap enough to redo on every unrelated
+    /// invalidation of the sheet's body, so it happens when the query changes and not before.
+    @State private var sections: [JuzSection] = []
 
     var body: some View {
         VStack(spacing: 0) {
@@ -25,22 +28,28 @@ struct SurahPicker: View {
 
             searchField
 
-            ScrollView {
-                LazyVStack(alignment: .leading, spacing: 0, pinnedViews: .sectionHeaders) {
-                    ForEach(Self.sections(for: query, in: index), id: \.juz) { section in
-                        Section {
-                            ForEach(section.surahs) { surah in
-                                row(surah)
+            if sections.isEmpty {
+                ContentUnavailableView.search(text: query)
+            } else {
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 0, pinnedViews: .sectionHeaders) {
+                        ForEach(sections, id: \.juz) { section in
+                            Section {
+                                ForEach(section.surahs) { surah in
+                                    row(surah)
+                                }
+                            } header: {
+                                sectionHeader(section.juz)
                             }
-                        } header: {
-                            sectionHeader(section.juz)
                         }
                     }
                 }
+                .scrollIndicators(.hidden)
             }
-            .scrollIndicators(.hidden)
         }
         .background(Color.sheetBackground)
+        .onAppear { sections = Self.sections(for: query, in: index) }
+        .onChange(of: query) { _, new in sections = Self.sections(for: new, in: index) }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("surahPicker")
     }
@@ -48,7 +57,7 @@ struct SurahPicker: View {
     private var searchField: some View {
         HStack(spacing: Spacing.sm) {
             Image(systemName: "magnifyingglass")
-                .font(.system(size: 15, weight: .medium))
+                .font(.system(size: ReaderMetrics.sheetSmallGlyph, weight: .medium))
                 .foregroundStyle(Color.textTertiary)
             searchInput
         }
@@ -62,7 +71,7 @@ struct SurahPicker: View {
     /// `textInputAutocapitalization` is iOS-only, and the package also builds for the host.
     private var searchInput: some View {
         let field = TextField("Search surahs", text: $query)
-            .font(.body(16))
+            .font(.body(ReaderMetrics.pickerFieldSize))
             .foregroundStyle(Color.textPrimary)
             .autocorrectionDisabled()
             .accessibilityIdentifier("surahPicker.search")
@@ -89,22 +98,22 @@ struct SurahPicker: View {
         } label: {
             HStack(spacing: Spacing.md) {
                 Text("\(surah.number)")
-                    .font(.body(13, weight: .semibold))
+                    .font(.body(ReaderMetrics.pickerNumberSize, weight: .semibold))
                     .foregroundStyle(Color.textTertiary)
-                    .frame(width: 28, alignment: .trailing)
+                    .frame(width: ReaderMetrics.pickerNumberWidth, alignment: .trailing)
                 VStack(alignment: .leading, spacing: Spacing.xxs) {
                     Text(surah.name)
-                        .font(.body(17, weight: .semibold))
+                        .font(.body(ReaderMetrics.pickerNameSize, weight: .semibold))
                         .foregroundStyle(Color.textPrimary)
                     Text(surah.subtitle)
-                        .font(.body(13))
+                        .font(.body(ReaderMetrics.pickerSubtitleSize))
                         .foregroundStyle(Color.textTertiary)
                         .lineLimit(1)
                 }
                 Spacer(minLength: Spacing.sm)
                 if surah.number == currentSurah {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 15, weight: .semibold))
+                        .font(.system(size: ReaderMetrics.sheetSmallGlyph, weight: .semibold))
                         .foregroundStyle(Color.textPrimary)
                         .accessibilityHidden(true)
                 }
@@ -143,9 +152,10 @@ struct SurahPicker: View {
         if let exact = index.surah(named: trimmed) {
             return [exact]
         }
-        let needle = trimmed.lowercased()
+        // `localizedStandardContains` is the locale- and diacritic-aware comparison user input
+        // deserves: "fatiha" has to match "Al-Fātiḥa".
         return index.surahs.filter {
-            $0.name.lowercased().contains(needle) || $0.meaning.lowercased().contains(needle)
+            $0.name.localizedStandardContains(trimmed) || $0.meaning.localizedStandardContains(trimmed)
         }
     }
 }

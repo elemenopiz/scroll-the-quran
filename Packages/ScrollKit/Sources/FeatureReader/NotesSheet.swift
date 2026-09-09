@@ -13,7 +13,7 @@ struct NotesSheet: View {
     let arabic: String?
     let english: String
     @State private var text: String
-    private let onChange: (String) -> Void
+    private let onTextChange: (String) -> Void
     private let onDone: () -> Void
 
     @FocusState private var isEditing: Bool
@@ -23,14 +23,14 @@ struct NotesSheet: View {
         arabic: String?,
         english: String,
         note: String,
-        onChange: @escaping (String) -> Void,
+        onTextChange: @escaping (String) -> Void,
         onDone: @escaping () -> Void
     ) {
         self.reference = reference
         self.arabic = arabic
         self.english = english
         _text = State(initialValue: note)
-        self.onChange = onChange
+        self.onTextChange = onTextChange
         self.onDone = onDone
     }
 
@@ -48,7 +48,7 @@ struct NotesSheet: View {
             Spacer(minLength: 0)
         }
         .background(Color.sheetBackground)
-        .onChange(of: text) { _, new in onChange(new) }
+        .onChange(of: text) { _, new in onTextChange(new) }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("notesSheet")
     }
@@ -75,7 +75,7 @@ struct NotesSheet: View {
                 .foregroundStyle(Color.textPrimary)
                 .accessibilityIdentifier("notesSheet.reference")
             VerseText(arabic: arabic, english: english, size: .discover)
-                .opacity(0.75)
+                .opacity(ReaderMetrics.notesVerseOpacity)
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, Spacing.xl)
@@ -99,7 +99,7 @@ struct NotesSheet: View {
 
     private var editor: some View {
         TextEditor(text: $text)
-            .font(.body(16))
+            .font(.body(ReaderMetrics.notesBodySize))
             .foregroundStyle(Color.textPrimary)
             .scrollContentBackground(.hidden)
             .padding(Spacing.md)
@@ -113,6 +113,6 @@ struct NotesSheet: View {
             .focused($isEditing)
             .accessibilityLabel("Your notes on \(reference)")
             .accessibilityIdentifier("notesSheet.editor")
-            .onAppear { isEditing = true }
+            .task { isEditing = true }
     }
 }

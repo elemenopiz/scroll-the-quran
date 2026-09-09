@@ -46,6 +46,9 @@ public final class ReaderModel {
     public private(set) var railDragAyah: Int?
 
     @ObservationIgnored private var dwell = DwellTracker()
+    /// `pages` by id. The chrome asks for `currentPage` several times per render and the rail
+    /// asks once per drag tick, so the lookup must not be a scan of 287 pages.
+    @ObservationIgnored private var pageIndex: [ReaderPageID: Int] = [:]
 
     // MARK: Init
 
@@ -55,7 +58,8 @@ public final class ReaderModel {
         user: UserStore,
         hints: (any ReaderHintStore)? = nil,
         surah: Int = 1,
-        startAyah: Int? = nil
+        startAyah: Int? = nil,
+        restoringSavedPosition: Bool = false
     ) {
         self.index = index
         self.translations = translations
@@ -69,6 +73,9 @@ public final class ReaderModel {
         self.surah = resolved
         isHintVisible = !hints.hasSeenRailHint
         rebuildPages(startAyah: startAyah)
+        if restoringSavedPosition, startAyah == nil {
+            restoreSavedPosition()
+        }
     }
 
     // MARK: Pages
@@ -81,35 +88,50 @@ public final class ReaderModel {
             source: .store(translations),
             hasFollowingSurah: surah.number < index.count
         )
+        pageIndex = Dictionary(uniqueKeysWithValues: pages.enumerated().map { ($1.id, $0) })
         currentPageID = pageID(forAyah: startAyah) ?? pages.first?.id
     }
 
     /// Re-paginates without moving: used when the translation changes under the reader.
+    ///
+    /// Only a real ayah is worth returning to. The opening card and the handoff sentinel both
+    /// resolve to no verse page, and following them through `pageID(forAyah:)` would land the
+    /// reader back on page 0 — so they stay where they are instead.
     public func rebuildPagesInPlace() {
-        let ayah = currentPageID.flatMap { $0.ayah >= 1 ? $0.ayah : nil }
+        let previous = currentPageID
+        let ayah = previous.flatMap { id in
+            (1 ... surah.ayahCount).contains(id.ayah) ? id.ayah : nil
+        }
         rebuildPages(startAyah: ayah)
+        // The opening card and the handoff sentinel keep their ids across a re-pagination,
+        // so land back on whichever of them was showing rather than snapping to page 0. A
+        // split ayah does restart at its first slice: another translation splits differently.
+        if ayah == nil, let previous, pageIndex[previous] != nil {
+            currentPageID = previous
+        }
     }
 
     /// The page currently on screen.
     public var currentPage: ReaderPage? {
-        guard let currentPageID else { return pages.first }
-        return pages.first { $0.id == currentPageID } ?? pages.first
+        guard let currentPageID, let offset = pageIndex[currentPageID] else { return pages.first }
+        return pages[offset]
     }
 
-    /// The ayah the chrome acts on: the current verse, or ayah 1 while the opening page shows.
+    /// The ayah the chrome acts on. On a verse page it is that ayah; on the opening card it is
+    /// ayah 1, which is the segment the rail lights and the ayah the reference app's chrome
+    /// acts on there. On the handoff sentinel there is nothing to act on — it is on screen for
+    /// one frame before the next surah opens.
     public var currentVerse: VerseRef? {
-        currentPage?.actionableVerse ?? VerseRef(surah: surah.number, ayah: 1)
+        switch currentPage?.kind {
+        case .verse: currentPage?.actionableVerse
+        case .opening: VerseRef(surah: surah.number, ayah: 1)
+        case .handoff, nil: nil
+        }
     }
 
     /// Which rail segment is lit.
     public var railAyah: Int {
         railDragAyah ?? currentPage?.railAyah ?? 1
-    }
-
-    public var railGeometry: (CGFloat) -> VerseRailGeometry {
-        { [ayahCount = surah.ayahCount] height in
-            VerseRailGeometry(ayahCount: ayahCount, height: height)
-        }
     }
 
     /// The first page of an ayah, which is where a jump always lands.
@@ -184,7 +206,7 @@ public final class ReaderModel {
     public func settleDwell(now: Date = Date()) -> VerseRef? {
         guard let settled = dwell.settle(now: now) else { return nil }
         // Only a real ayah counts: the opening card and the handoff sentinel are not reading.
-        guard let verse = pages.first(where: { $0.id == settled })?.actionableVerse else { return nil }
+        guard let offset = pageIndex[settled], let verse = pages[offset].actionableVerse else { return nil }
         user.markRead(verse, in: span)
         return verse
     }
@@ -212,6 +234,8 @@ public final class ReaderModel {
     public func endRailDrag() {
         if let ayah = railDragAyah {
             jump(toAyah: ayah)
+            // The toast asked the reader to tap or slide; they have, so it has done its job.
+            dismissHint()
         }
         railDragAyah = nil
     }

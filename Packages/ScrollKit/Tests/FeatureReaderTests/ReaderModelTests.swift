@@ -164,6 +164,65 @@ struct ReaderModelTests {
         model.endRailDrag()
         #expect(model.currentPageID?.ayah == 40)
         #expect(model.railDragAyah == nil)
+        // Using the rail is what the toast was asking for, so it retires itself.
+        #expect(!model.isHintVisible)
+    }
+
+    @Test("the handoff page has nothing for the chrome to act on")
+    func handoffHasNoActionableVerse() throws {
+        let model = try TestContent.model(surah: 1)
+        model.currentPageID = model.pages.last?.id
+        #expect(model.currentPage?.kind == .handoff)
+        #expect(model.currentVerse == nil)
+        #expect(!model.isCurrentVerseLiked)
+        #expect(!model.isCurrentVerseSaved)
+    }
+
+    @Test("switching translation on the handoff page does not throw the reader back to page 0")
+    func translationSwitchKeepsTheHandoffPage() throws {
+        let model = try TestContent.model(surah: 1)
+        model.currentPageID = model.pages.last?.id
+        model.selectTranslation("pickthall")
+        #expect(model.currentPage?.kind == .handoff)
+    }
+
+    @Test("restoringSavedPosition resumes where the reader left off, and only when asked")
+    func restoreIsOptIn() throws {
+        let user = TestContent.userStore()
+        user.setReaderPosition(VerseRef(surah: 18, ayah: 60), page: 0)
+
+        let resuming = try ReaderModel(
+            index: TestContent.index(),
+            translations: TestContent.translations(),
+            user: user,
+            hints: EphemeralReaderHintStore(),
+            surah: 1,
+            restoringSavedPosition: true
+        )
+        #expect(resuming.surah.number == 18)
+        #expect(resuming.currentPageID?.ayah == 60)
+
+        let deterministic = try ReaderModel(
+            index: TestContent.index(),
+            translations: TestContent.translations(),
+            user: user,
+            hints: EphemeralReaderHintStore(),
+            surah: 1
+        )
+        #expect(deterministic.surah.number == 1)
+
+        // An explicit ayah always wins over the saved position.
+        let explicit = try ReaderModel(
+            index: TestContent.index(),
+            translations: TestContent.translations(),
+            user: user,
+            hints: EphemeralReaderHintStore(),
+            surah: 1,
+            startAyah: 3,
+            restoringSavedPosition: true
+        )
+        #expect(explicit.surah.number == 1)
+        #expect(explicit.currentPageID?.ayah == 3)
     }
 
     @Test("the dice lands on a real ayah and opens it")

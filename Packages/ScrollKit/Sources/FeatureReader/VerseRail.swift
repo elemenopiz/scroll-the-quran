@@ -34,9 +34,7 @@ struct VerseRail: View {
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
                         isDragging = true
-                        if onScrub(rail.ayah(atY: value.location.y)) {
-                            Haptics.tick()
-                        }
+                        _ = onScrub(rail.ayah(atY: value.location.y))
                     }
                     .onEnded { _ in
                         isDragging = false
@@ -45,6 +43,9 @@ struct VerseRail: View {
             )
         }
         .frame(width: ReaderMetrics.railHitWidth)
+        // One tick per ayah crossed, and only while the finger is down: `sensoryFeedback`
+        // reuses the engine instead of allocating a generator per tick down a 286-ayah rail.
+        .sensoryFeedback(trigger: currentAyah) { _, _ in isDragging ? .selection : nil }
         .accessibilityElement()
         .accessibilityIdentifier("reader.rail")
         .accessibilityLabel("Ayah \(currentAyah) of \(ayahCount)")
@@ -112,16 +113,6 @@ struct VerseRail: View {
 
     private var numberHeight: CGFloat {
         ReaderMetrics.railNumberSize + Spacing.xs
-    }
-}
-
-/// The rail's haptic ticks, in one place so the platform check is not repeated.
-enum Haptics {
-    @MainActor
-    static func tick() {
-        #if canImport(UIKit) && !os(watchOS)
-            UIImpactFeedbackGenerator(style: .light).impactOccurred(intensity: 0.6)
-        #endif
     }
 }
 

@@ -18,13 +18,22 @@ public struct ReaderView: View {
     }
 
     /// The initializer `AppShell` calls: hand it the stores it already holds.
+    ///
+    /// With no explicit `startAyah` the reader resumes from `Prefs.lastReaderPosition`, which
+    /// is what opening the Quran tab should do. Pass `restoringSavedPosition: false` for a
+    /// deterministic entry point (a deep link, a screenshot route).
+    ///
+    /// `AppShell` may also build the `ReaderModel` itself and use ``init(model:)``: SwiftUI
+    /// re-runs a view's `init` on every parent update and discards the extra `State` value, so
+    /// a parent-owned model paginates the surah once rather than once per parent render.
     public init(
         surah: Int = 1,
         startAyah: Int? = nil,
         index: SurahIndex,
         translations: TranslationStore,
         user: UserStore,
-        hints: (any ReaderHintStore)? = nil
+        hints: (any ReaderHintStore)? = nil,
+        restoringSavedPosition: Bool = true
     ) {
         _model = State(
             initialValue: ReaderModel(
@@ -33,7 +42,8 @@ public struct ReaderView: View {
                 user: user,
                 hints: hints,
                 surah: surah,
-                startAyah: startAyah
+                startAyah: startAyah,
+                restoringSavedPosition: restoringSavedPosition
             )
         )
     }
@@ -49,6 +59,7 @@ public struct ReaderView: View {
         .overlay(alignment: .bottomLeading) { hint }
         .sheet(item: $model.sheet) { sheet in
             sheetContent(sheet)
+                .presentationDragIndicator(.visible)
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.reader")
@@ -56,32 +67,39 @@ public struct ReaderView: View {
 
     // MARK: - Pager
 
+    /// One `GeometryReader` for the whole pager, not one per page: a lazy stack of 287 pages
+    /// each opening its own would pay a two-pass layout per realised row for a size that is the
+    /// same on every page and already known here.
     private var pager: some View {
-        ScrollView(.vertical) {
-            LazyVStack(spacing: 0) {
-                ForEach(model.pages) { page in
-                    VersePageView(page: page)
-                        .containerRelativeFrame(.vertical)
-                        .id(page.id)
+        GeometryReader { proxy in
+            ScrollView(.vertical) {
+                LazyVStack(spacing: 0) {
+                    ForEach(model.pages) { page in
+                        VersePageView(page: page, pageSize: proxy.size)
+                            .containerRelativeFrame(.vertical)
+                            .id(page.id)
+                    }
                 }
+                .scrollTargetLayout()
             }
-            .scrollTargetLayout()
-        }
-        .scrollTargetBehavior(.paging)
-        .scrollPosition(id: $model.currentPageID)
-        .scrollIndicators(.hidden)
-        .accessibilityIdentifier("reader.pager")
-        .onChange(of: model.currentPageID) { _, id in
-            model.pageChanged(to: id)
-            model.advanceToNextSurahIfNeeded()
-        }
-        // One dwell task per page: it is cancelled the moment the page changes, so an ayah
-        // that was only scrolled past never gets marked.
-        .task(id: model.currentPageID) {
-            let wait = model.dwellRemaining()
-            try? await Task.sleep(for: .seconds(wait))
-            guard !Task.isCancelled else { return }
-            model.settleDwell()
+            .scrollTargetBehavior(.paging)
+            .scrollPosition(id: $model.currentPageID)
+            .scrollIndicators(.hidden)
+            .accessibilityIdentifier("reader.pager")
+            .onChange(of: model.currentPageID) { _, _ in
+                model.advanceToNextSurahIfNeeded()
+            }
+            // One dwell task per page, and the arrival is recorded inside it rather than in an
+            // `onChange`: `task(id:)` runs for the *first* page too (an `onChange` does not),
+            // and doing both here means the clock can never be read before it has been set.
+            // The task is cancelled the moment the page changes, so an ayah that was only
+            // scrolled past is never marked read.
+            .task(id: model.currentPageID) {
+                model.pageChanged(to: model.currentPageID)
+                try? await Task.sleep(for: .seconds(model.dwellRemaining()))
+                guard !Task.isCancelled else { return }
+                model.settleDwell()
+            }
         }
     }
 
@@ -109,7 +127,7 @@ public struct ReaderView: View {
             onScrub: { model.beginRailDrag(toAyah: $0) },
             onCommit: model.endRailDrag
         )
-        .padding(.top, VersePageView.logoCardTop - ReaderMetrics.logoCardTopFromToolbar + ReaderMetrics.railTopFromToolbar)
+        .padding(.top, ReaderMetrics.railTopInset)
         .padding(.bottom, ReaderMetrics.railBottomInset)
     }
 
@@ -131,7 +149,7 @@ public struct ReaderView: View {
                 systemImage: "arrow.up.left",
                 title: "Tap or slide",
                 message: "to jump to any verse",
-                onDismiss: model.dismissHint
+                onDismiss: { withAnimation(.easeOut(duration: 0.2)) { model.dismissHint() } }
             )
             .fixedSize()
             .padding(.leading, ReaderMetrics.toastLeadingInset)
@@ -154,10 +172,8 @@ public struct ReaderView: View {
                 onSelect: { model.selectTranslation($0) },
                 onDone: model.dismissSheet
             )
-            .presentationDragIndicator(.visible)
         case .notes:
             notesSheet
-                .presentationDragIndicator(.visible)
         case .surahPicker:
             SurahPicker(
                 index: model.index,
@@ -168,10 +184,8 @@ public struct ReaderView: View {
                 },
                 onDone: model.dismissSheet
             )
-            .presentationDragIndicator(.visible)
         case .share:
             shareSheet
-                .presentationDragIndicator(.visible)
         }
     }
 
@@ -183,7 +197,7 @@ public struct ReaderView: View {
                 arabic: model.arabic(for: verse),
                 english: model.english(for: verse),
                 note: model.focusedNote,
-                onChange: { model.saveNote($0) },
+                onTextChange: { model.saveNote($0) },
                 onDone: model.dismissSheet
             )
         }
@@ -241,6 +255,8 @@ public extension ReaderView {
             hints: EphemeralReaderHintStore(),
             surah: surah,
             startAyah: startAyah ?? (screen == .reader ? nil : 1)
+            // Deliberately not restoring the saved position: a screenshot has to be the same
+            // picture every time it is taken.
         )
         switch screen {
         case .translationSheet: model.present(.translation)

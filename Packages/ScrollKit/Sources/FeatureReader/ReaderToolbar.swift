@@ -18,6 +18,8 @@ struct ReaderToolbar: View {
     let onToggleSaved: () -> Void
     let onSurahPicker: () -> Void
 
+    /// The `[dice][heart]` capsule is `DesignSystem`'s and is 36 pt tall by measurement; the
+    /// three controls this file draws are grown to a 44 pt hit target without moving a pixel.
     var body: some View {
         HStack(spacing: 0) {
             CapsuleIconGroup(
@@ -38,14 +40,12 @@ struct ReaderToolbar: View {
                     ),
                 ]
             )
-            Spacer(minLength: ReaderMetrics.toolbarLeadingSpacing)
-                .frame(width: ReaderMetrics.toolbarLeadingSpacing)
             translationPill
+                .padding(.leading, ReaderMetrics.toolbarLeadingSpacing)
             Spacer(minLength: Spacing.sm)
             bookmarkButton
-            Spacer(minLength: ReaderMetrics.toolbarTrailingSpacing)
-                .frame(width: ReaderMetrics.toolbarTrailingSpacing)
             surahPill
+                .padding(.leading, ReaderMetrics.toolbarTrailingSpacing)
         }
         .padding(.horizontal, ReaderMetrics.toolbarSideMargin)
         .frame(height: ReaderMetrics.toolbarHeight)
@@ -61,10 +61,11 @@ struct ReaderToolbar: View {
                 .foregroundStyle(Color.textPrimary)
                 .lineLimit(1)
                 .padding(.horizontal, Spacing.md)
-                .frame(minWidth: ReaderMetrics.translationPillMinWidth)
-                .frame(height: ReaderMetrics.translationPillHeight)
+                .frame(minWidth: ReaderMetrics.translationPillMinWidth, minHeight: ReaderMetrics.translationPillHeight)
                 .background(Color.cardBackground, in: .capsule)
-                .contentShape(.capsule)
+                // Drawn at its measured 29 pt, tappable over the HIG's 44 pt.
+                .frame(height: ReaderMetrics.hitTarget)
+                .contentShape(.rect)
         }
         .buttonStyle(.pressable)
         .accessibilityLabel("Translation: \(translationAbbreviation)")
@@ -78,7 +79,8 @@ struct ReaderToolbar: View {
                 .foregroundStyle(isSaved ? Color.textPrimary : Color.textSecondary)
                 .frame(width: ReaderMetrics.bookmarkDiameter, height: ReaderMetrics.bookmarkDiameter)
                 .background(Color.cardBackground, in: .circle)
-                .contentShape(.circle)
+                .frame(width: ReaderMetrics.hitTarget, height: ReaderMetrics.hitTarget)
+                .contentShape(.rect)
         }
         .buttonStyle(.pressable)
         .accessibilityLabel(isSaved ? "Remove from saved" : "Save this ayah")
@@ -94,13 +96,14 @@ struct ReaderToolbar: View {
                     .foregroundStyle(Color.textPrimary)
                     .lineLimit(1)
                 Image(systemName: "chevron.down")
-                    .font(.system(size: ReaderMetrics.toolbarGlyph * 0.75, weight: .semibold))
+                    .font(.system(size: ReaderMetrics.toolbarChevronGlyph, weight: .semibold))
                     .foregroundStyle(Color.textSecondary)
             }
             .padding(.horizontal, Spacing.md)
             .frame(height: ReaderMetrics.surahPillHeight)
             .background(Color.cardBackground, in: .capsule)
-            .contentShape(.capsule)
+            .frame(height: ReaderMetrics.hitTarget)
+            .contentShape(.rect)
         }
         .buttonStyle(.pressable)
         .accessibilityLabel("Surah \(surahName). Choose a surah")
@@ -122,21 +125,18 @@ struct ReaderActionStack: View {
                 systemImage: isLiked ? "heart.fill" : "heart",
                 label: isLiked ? "Unlike this ayah" : "Like this ayah",
                 identifier: "reader.action.like",
-                isOn: isLiked,
                 action: onLike
             )
             button(
                 systemImage: "bubble.left",
                 label: "Notes",
                 identifier: "reader.action.notes",
-                isOn: false,
                 action: onNotes
             )
             button(
                 systemImage: "paperplane",
                 label: "Share",
                 identifier: "reader.action.share",
-                isOn: false,
                 action: onShare
             )
         }
@@ -148,13 +148,14 @@ struct ReaderActionStack: View {
         systemImage: String,
         label: String,
         identifier: String,
-        isOn: Bool,
         action: @escaping () -> Void
     ) -> some View {
         Button(action: action) {
+            // The reference draws all three in the primary colour; the heart carries its state
+            // by filling, not by tinting.
             Image(systemName: systemImage)
                 .font(.system(size: ReaderMetrics.actionGlyph, weight: .light))
-                .foregroundStyle(isOn ? Color.textPrimary : Color.textPrimary)
+                .foregroundStyle(Color.textPrimary)
                 .frame(width: ReaderMetrics.actionButton, height: ReaderMetrics.actionButton)
                 .contentShape(.rect)
         }
