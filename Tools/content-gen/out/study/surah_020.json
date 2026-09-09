@@ -1,8 +1,182 @@
 {
   "surah": 20,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:11:33.323Z",
+  "generatedAt": "2026-09-09T12:38:17.453Z",
   "studies": [
+    {
+      "key": "20:1-5",
+      "surah": 20,
+      "start": 1,
+      "end": 5,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Not Sent To Weigh You Down",
+      "tier": "standard",
+      "meaning": "Two letters stand alone, unexplained, and then the surah speaks to the strain of the one receiving it. The revelation did not come to make him miserable. Its work is reminding, and it takes hold in someone already capable of awe. The remaining lines name the source: the maker of the earth and the high heavens, the Merciful, established over the Throne. The comfort is grounded in authority before anything at all is asked.",
+      "historicalContext": "Meccan, from the years when opposition had hardened and the Prophet Muhammad (peace be upon him) was standing in prayer through much of the night. Classical commentators read the opening address as consolation for that exhaustion rather than as correction. No single occasion is agreed for the ayat themselves. The surah then turns at once to Moses, whose mission met the same refusal, which is how the early listeners were taught to read their own position.",
+      "keyTerms": [
+        {
+          "arabic": "لِتَشْقَىٰ",
+          "gloss": "to suffer, to toil",
+          "note": "The root covers hard labour and the wretchedness that can follow it. Negating it removes both at once, so revelation is neither a workload added to a life nor a source of misery."
+        },
+        {
+          "arabic": "تَذْكِرَةً",
+          "gloss": "a reminder",
+          "note": "The form names an instrument of recall rather than a body of new information. It frames the whole book as returning the listener to something already known and mislaid, not filling an empty mind."
+        },
+        {
+          "arabic": "ٱلْعُلَى",
+          "gloss": "the high ones",
+          "note": "A plural adjective placed after the heavens rather than before, so the height is given its own weight in the line. It also carries loftiness in rank, not only distance upward."
+        }
+      ],
+      "lifeInProphetsTime": "A man who stood through the night in a Meccan house was heard. Walls were thin, courtyards shared, and neighbours traded news of who did what after dark. Lamp oil cost money, sleep was short, and the morning still held the work of trade and water. Opponents explained the long vigils as the strain of someone unwell. The address to a body worn down by prayer landed in that setting, literally.",
+      "didYouKnow": "Surah 20 runs to 135 ayat, and the account of Moses occupies ayat nine through ninety-eight without a break: ninety ayat, two thirds of the surah, in a single unbroken narrative. Only the story of Joseph in surah 12 is told at greater continuous length anywhere in the Quran.",
+      "theologicalSignificance": "Before the surah asks for anything it says what revelation is for, and the answer is relief rather than burden. That claim is then anchored in creation and sovereignty, so it reads as a fact about the speaker and not as encouragement. The name chosen for the one established over the Throne is the Merciful, which places mercy rather than bare power at the head of everything the surah goes on to say.",
+      "crossReferences": [
+        {
+          "ref": "94:5-6",
+          "why": "Meets the same exhaustion with the promise that ease comes attached to hardship, not after it."
+        },
+        {
+          "ref": "18:6",
+          "why": "Addresses the Prophet's grief over those refusing the message in the same consoling register."
+        },
+        {
+          "ref": "25:59",
+          "why": "Pairs the creation of heavens and earth with the Merciful established over the Throne."
+        }
+      ],
+      "applyIt": "Notice the next time your religion feels like one more weight in an already heavy day. Sit with the second ayah for a minute and ask plainly whether the load is coming from the revelation or from something you have fastened onto it: a standard you set, a comparison, an old guilt. Name it. You do not have to solve it tonight.",
+      "exploreFurther": [
+        "94:1-8",
+        "25:59",
+        "20:114"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.725Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:6-9",
+      "surah": 20,
+      "start": 6,
+      "end": 9,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "The Secret And What Is Hidden",
+      "tier": "standard",
+      "meaning": "Four short lines move outward and then inward. Everything in the heavens, the earth, between them and beneath the damp soil belongs to one owner. Raising your voice adds nothing, since the secret and something more hidden than the secret are already known. Commentators differ over what the more hidden is: unspoken thought, or what a person has not yet discovered about himself. Then, without transition, a question opens the story of Moses.",
+      "historicalContext": "Meccan. Believers at this stage met in small groups and kept their voices low, and some hid their prayer from their own households. The line about speech landing before God whether raised or not reads against that habit. Classical commentators record no specific occasion here. They treat the four ayat as establishing who is speaking before the long narrative of Moses begins in the very next line.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلثَّرَىٰ",
+          "gloss": "moist earth, damp soil",
+          "note": "Not surface dust but the wet layer beneath it, where roots reach and buried things sit. It closes the list downward, so ownership runs from the highest heaven to below the ground."
+        },
+        {
+          "arabic": "أَخْفَى",
+          "gloss": "more hidden",
+          "note": "A comparative from the root for concealment. Commentators read it as thought never voiced, or as what a person conceals even from himself, and the tradition preserves both without deciding between them."
+        },
+        {
+          "arabic": "ٱلْحُسْنَىٰ",
+          "gloss": "the most beautiful",
+          "note": "A superlative applied to the names as a set. It claims not only that the names are true but that no finer description is available, which is why they became a devotional list."
+        }
+      ],
+      "lifeInProphetsTime": "In a town run on clans, a secret was an asset. A word said in a courtyard could cross Mecca by evening, and men were judged by what they could keep quiet. People also buried what they valued: coins, weapons, sealed jars of water under damp earth against theft or a bad year. Naming what lies beneath the soil touched an ordinary and practical habit.",
+      "didYouKnow": "The phrase rendered as the Most Beautiful Names occurs exactly four times in the Quran, at 7:180, 17:110, 20:8 and 59:24. In the other three it sits beside an instruction about calling on God or a list of His acts. Only here does it follow the bare declaration that there is no god but He.",
+      "theologicalSignificance": "Knowledge is presented as the ground of accountability rather than as an abstract perfection. If what is never spoken is already known, the inner life is not a private room but part of the record. At the same time the passage refuses to leave God as pure power: ownership and knowledge are followed immediately by the beautiful names, so what is known about God is meant to be called upon.",
+      "crossReferences": [
+        {
+          "ref": "50:16",
+          "why": "States the same nearness in a different image, closer than the vein of the neck."
+        },
+        {
+          "ref": "17:110",
+          "why": "Uses the Most Beautiful Names alongside an instruction about the pitch of the voice."
+        },
+        {
+          "ref": "2:284",
+          "why": "Extends the point that what is concealed within the self is still brought to account."
+        }
+      ],
+      "applyIt": "Pick one thing you have never said out loud to anyone, not because it is shameful but because it never found words. Sit with it for two minutes tonight, knowing it is already known. Then say it to God in your own language, plainly, without arranging it first. The passage suggests the arranging was never the part that mattered.",
+      "exploreFurther": [
+        "50:16",
+        "59:22-24",
+        "7:180"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.728Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:10",
+      "surah": 20,
+      "start": 10,
+      "end": 10,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "A Fire On The Road",
+      "tier": "standard",
+      "meaning": "The scene opens with a man cold, off the road at night, and responsible for a family. He sees a fire and reads it as any traveller would: warmth, and possibly people who know the way. What he asks for is a burning stick or directions. The narrative gives him no premonition and no sense of significance. Commentators note that an entirely ordinary need brought him to the exact place where he would be addressed.",
+      "historicalContext": "Meccan, at the start of the long Moses narrative that fills the middle of this surah. The account here begins later than the one in surah 28, skipping childhood and the flight from Egypt to open at the moment of return. The classical commentators place the journey after Moses had spent years in Median and was travelling back with his family when he lost the road in the dark.",
+      "keyTerms": [
+        {
+          "arabic": "ءَانَسْتُ",
+          "gloss": "I glimpsed, I made out",
+          "note": "From a root tied to human company and familiarity. It suggests not merely seeing a light but recognising something companionable in it, which is why the sight draws him toward it rather than past it."
+        },
+        {
+          "arabic": "بِقَبَسٍ",
+          "gloss": "a burning brand",
+          "note": "A single ember or lit branch carried from one fire to start another. It was how a household without flint got light, and the word marks how small the thing he asks for is."
+        },
+        {
+          "arabic": "هُدًى",
+          "gloss": "guidance, directions",
+          "note": "The word the Quran uses for religious guidance is used here for directions on a road. The passage lets both senses stand together without comment, and the rest of the story supplies the second."
+        }
+      ],
+      "lifeInProphetsTime": "Fire at night in open country meant people. A traveller who lost the track looked for it, and finding one was a fair claim on hospitality: warmth, a share of food, and someone who knew where the wells were. Carrying an ember home in a clay pot or on a green branch was ordinary work, since striking a new flame took time a cold family did not want to spend.",
+      "didYouKnow": "The fire episode is told three times in the Quran, at 20:10, 27:7 and 28:29. In the other two Moses hopes for news, or a brand so the family can warm themselves. Only here does he mention finding guidance at the fire, which the surah then grants him in a sense he did not intend.",
+      "theologicalSignificance": "Prophethood begins here as the interruption of an errand. Nothing in the passage suggests that Moses was seeking God; he was seeking fire. The Quran stages its great encounters this way more than once, in the middle of ordinary need, which places the initiative entirely on God's side and removes any suggestion that revelation is earned by whatever search happened to precede it.",
+      "crossReferences": [
+        {
+          "ref": "27:7-9",
+          "why": "Tells the same night and the same fire with a different account of what Moses hoped to find."
+        },
+        {
+          "ref": "28:29-30",
+          "why": "Gives a third telling, adding the tree and the blessed spot on the valley's right side."
+        },
+        {
+          "ref": "93:7",
+          "why": "States the same pattern in the Prophet's own life: found wandering, then guided."
+        }
+      ],
+      "applyIt": "Think about the last small errand that turned into something else: a wrong turn, a delayed train, a queue you resented. You were looking for one thing and found another. Tomorrow, when a plan gets interrupted, wait one minute before treating it as loss. Just notice where the interruption has actually put you, and who is standing there.",
+      "exploreFurther": [
+        "27:7-12",
+        "28:29-32",
+        "93:6-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.726Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "20:11-14",
       "surah": 20,
@@ -62,6 +236,180 @@
       }
     },
     {
+      "key": "20:15-17",
+      "surah": 20,
+      "start": 15,
+      "end": 17,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "The Hour Almost Hidden",
+      "tier": "standard",
+      "meaning": "God tells Moses two things before showing him anything. The Hour is coming, and its timing is kept almost concealed, so that every soul is repaid for its own effort. Commentators read the near-concealment as deliberate: a known date would turn striving into scheduling. Then comes a warning not to be pulled off by someone who denies it and follows his appetite. And then, abruptly, a question about the stick in his hand.",
+      "historicalContext": "Meccan, set in the sacred valley at the opening of Moses's commission. The ordering repays attention: God gives His name, then the command to pray, then the certainty of the Hour, and only afterwards the signs. The classical commentators read this as the substance of the message being fixed before any evidence is displayed, which is also how the surah is addressing its own Meccan listeners.",
+      "keyTerms": [
+        {
+          "arabic": "أَكَادُ أُخْفِيهَا",
+          "gloss": "I almost conceal it",
+          "note": "A phrase the commentators discuss at length, since the verb can carry both hiding and bringing out. The dominant reading is that the Hour is hidden so thoroughly that even its concealment is kept from view."
+        },
+        {
+          "arabic": "تَسْعَىٰ",
+          "gloss": "it strives, it hurries",
+          "note": "The root is physical exertion, walking fast, working at something. Recompense is tied to what a soul actually labours at rather than to what it professes or sincerely intends."
+        },
+        {
+          "arabic": "هَوَىٰ",
+          "gloss": "desire, inclination",
+          "note": "Literally what falls or slopes downward. The word for appetite shares a shape with falling, and the ayah ends by warning the listener that following it leads to a fall."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian life ran on unfixed dates. A caravan returned when it returned, rain came in a season nobody could name, and a debt fell due at the next pilgrimage or the next harvest. People were used to arranging their affairs around certainties that had no timetable. A day that is sure but undated was not the puzzle to them that it can be now, and keeping ready was already an ordinary skill.",
+      "didYouKnow": "This is the only place in surah 20 where the word for the Hour appears, and it is spoken to Moses in the sacred valley rather than addressed to the surah's Meccan audience. The whole ninety-ayah account of Moses that follows is therefore introduced by a statement about the end of everything.",
+      "theologicalSignificance": "Hiddenness is given a purpose. If the date were known, effort would concentrate near it and drain away everywhere else, so the concealment is what makes a whole life the unit of account. The passage also identifies the real danger as social rather than intellectual: not doubt itself, but the company of a person who denies and lives by appetite, whose confidence can pull a certain man off course.",
+      "crossReferences": [
+        {
+          "ref": "7:187",
+          "why": "States that the Hour's timing rests with God alone and that pressing the question yields nothing."
+        },
+        {
+          "ref": "79:42-46",
+          "why": "Answers the same question about when, and turns it back on the one asking."
+        },
+        {
+          "ref": "45:23",
+          "why": "Describes the person who takes his own desire as a god, the figure warned of here."
+        }
+      ],
+      "applyIt": "Take one thing you have been postponing until a clearer moment: a call to a relative, a debt, an apology. The passage says the clearer moment is withheld on purpose. Do a small piece of it today rather than the whole thing. Ten minutes, one message. Let the missing deadline be the reason to begin instead of the reason to wait.",
+      "exploreFurther": [
+        "7:187",
+        "79:42-46",
+        "31:34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:18-21",
+      "surah": 20,
+      "start": 18,
+      "end": 21,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "This Is My Staff",
+      "tier": "standard",
+      "meaning": "God asks a question whose answer He knows, and Moses answers it fully, almost conversationally: he leans on it, beats leaves down for his sheep, and has other uses besides. None of that detail was required. Then the object he has just described in domestic terms becomes a moving serpent, and he is told to take hold of it without fear, with a promise that it will go back to what it was.",
+      "historicalContext": "Meccan. The account of Moses in this surah is the longest continuous one in the Quran and unusually full of direct speech, giving his own words where other surahs summarise. Mecca at this point was demanding visible miracles from the Prophet Muhammad (peace be upon him). Setting out how a miracle was actually given to an earlier prophet answers that demand at an angle rather than head on.",
+      "keyTerms": [
+        {
+          "arabic": "عَصَاىَ",
+          "gloss": "my staff",
+          "note": "The shepherd's stick, personal and worn smooth. Moses says it with a possessive, and the reply asks him to throw away the one object in the scene that is entirely his own."
+        },
+        {
+          "arabic": "أَهُشُّ",
+          "gloss": "I beat down leaves",
+          "note": "A specific verb for knocking foliage off a branch so animals can reach it. Nothing in the question required this much detail, and the tradition reads the expansiveness as the ease of the conversation."
+        },
+        {
+          "arabic": "مَـَٔارِبُ",
+          "gloss": "other uses, purposes",
+          "note": "A plural for the ends a thing serves. The list is left open, which is the point: he is describing a tool whose worth is entirely practical, just before its worth stops being practical."
+        }
+      ],
+      "lifeInProphetsTime": "A herdsman's staff was the most-used object he owned. It steadied him on rock, drove animals, knocked acacia leaves down in a dry month, propped a shade cloth, killed a snake, and marked a boundary in an argument. Men were buried with less. The listeners in Mecca needed none of these uses explained, and many had a staff of their own leaning by the door.",
+      "didYouKnow": "The verb Moses uses for beating leaves down from a branch occurs nowhere else in the Quran. Surah 20 is unusually rich in such words: the account of his early life a few ayat later also carries a form for testing that is found in no other passage. The vocabulary of this surah is as distinctive as its length.",
+      "theologicalSignificance": "The first sign is worked on the object closest to hand rather than on something brought in from outside. What will later divide a sea is what he was already carrying to work. That pattern says something about how God deals with people: capacity is added to what a person has rather than substituted for it, and the instruction to take hold again without fear makes the sign his to carry.",
+      "crossReferences": [
+        {
+          "ref": "27:10",
+          "why": "Records the same recoil at the serpent and the same reassurance, in a much shorter telling."
+        },
+        {
+          "ref": "7:107",
+          "why": "Shows the staff used publicly before Pharaoh's court, the purpose this private rehearsal serves."
+        },
+        {
+          "ref": "26:63",
+          "why": "Gives the staff's final use, striking the sea so that it parts into paths."
+        }
+      ],
+      "applyIt": "Look at what is already in your hands this week: a skill you use for money, a habit, a room, a list of contacts. Pick one and ask what it could do that you have never asked it to do. Acquire nothing new. The passage is interested in the ordinary thing already worn smooth by your using it.",
+      "exploreFurther": [
+        "7:106-108",
+        "27:10-12",
+        "26:63"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:22-24",
+      "surah": 20,
+      "start": 22,
+      "end": 24,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Go To Pharaoh",
+      "tier": "standard",
+      "meaning": "A second sign is given without ceremony: press the hand to the side and it comes out shining, with no disease in it. The clause about blemish is deliberate, since a hand turning white would otherwise suggest illness. The two signs are then called some of the greater signs, not the greatest available. The commission arrives in three words, and the reason given for it is that Pharaoh has overstepped.",
+      "historicalContext": "Meccan. A command to confront a ruler was heard in a city where the Prophet Muhammad (peace be upon him) faced the leading families of his own tribe. The classical commentators keep the account historical rather than allegorical, but its placement in a Meccan surah is not accidental: a lone messenger sent against entrenched power was the community's own situation, told at a safe distance.",
+      "keyTerms": [
+        {
+          "arabic": "جَنَاحِكَ",
+          "gloss": "your side, your wing",
+          "note": "The word covers a bird's wing and the side of the body under the arm. The same root gives the phrase about lowering the wing to parents, where it carries gentleness rather than anatomy."
+        },
+        {
+          "arabic": "بَيْضَآءَ",
+          "gloss": "white, shining",
+          "note": "Whiteness here is brightness, not pallor. The clause denying any blemish is what separates the sign from the look of skin disease, which would have carried an entirely different meaning."
+        },
+        {
+          "arabic": "طَغَىٰ",
+          "gloss": "he has overstepped",
+          "note": "From a root for water breaching its banks. It describes power exceeding the limit set for it rather than wickedness in general, which is why the same verb is used of a flood elsewhere."
+        }
+      ],
+      "lifeInProphetsTime": "Skin that lost its colour frightened people in a world with no treatment for it. A man whose hand turned white could be pushed to the edge of a settlement and kept from wells and shared meals. The explicit denial of any blemish is the first thing a seventh-century listener needed to hear, because the image otherwise pointed straight at exclusion rather than at power.",
+      "didYouKnow": "The verb used for Pharaoh's transgression is the same one surah 69 uses of the floodwater that broke its banks in the time of Noah. In both places the root describes something exceeding the boundary set for it, which makes tyranny a kind of overflow rather than simply cruelty, and ties two very different stories to one image.",
+      "theologicalSignificance": "The signs are described as some of the greater ones, a phrase that keeps them inside a larger set and refuses to make them the point. What matters is the errand they authorise. And the reason given for that errand is moral rather than doctrinal: Pharaoh is confronted because he has exceeded his limits over people, which locates the quarrel between prophecy and power on the ground of justice.",
+      "crossReferences": [
+        {
+          "ref": "79:17-19",
+          "why": "Repeats the commission to Pharaoh with the same reason and adds an offer of purification."
+        },
+        {
+          "ref": "28:32",
+          "why": "Describes both signs together and adds pressing the arm to the side against fear."
+        },
+        {
+          "ref": "69:11",
+          "why": "Uses the same verb of overflow for floodwater, which lights up its use for a ruler."
+        }
+      ],
+      "applyIt": "Think of one place where you hold more power than the person across from you: an employee, a child, a supplier, someone waiting on your reply. Notice where your actual limit sits there. Then find one small thing you have been doing simply because you can, and stop doing it this week. Nobody needs to be told you have.",
+      "exploreFurther": [
+        "28:31-35",
+        "79:15-26",
+        "26:10-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "20:25-28",
       "surah": 20,
       "start": 25,
@@ -116,6 +464,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:01:14.253Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:29-33",
+      "surah": 20,
+      "start": 29,
+      "end": 33,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Give Me My Brother",
+      "tier": "standard",
+      "meaning": "The request continues from the previous lines and turns outward. Having asked for calm, ease and clear speech, Moses asks for a person, and names him. His reasons are put in terms of strengthening and sharing rather than of company. And the purpose clause at the end is not success in the mission but that the two of them may glorify God much. The help asked for is framed by what it is for.",
+      "historicalContext": "Meccan. This is one of the longest continuous prayers placed in a prophet's mouth anywhere in the Quran, and it comes at the moment of commission rather than in a crisis. The classical commentators note that Aaron was in Egypt and knew nothing of the request; the answer, granted in the next lines, reaches him without his having asked. No specific occasion is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "وَزِيرًا",
+          "gloss": "a helper who bears weight",
+          "note": "From a root for a burden or a back. The word later became the title of a chief minister, but its sense here is someone who takes weight off, not someone who holds an office."
+        },
+        {
+          "arabic": "أَزْرِى",
+          "gloss": "my back, my strength",
+          "note": "The lower back, where a man's carrying power sits. Strengthening the back is a physical image for being made able to bear more, and not a word for encouragement."
+        },
+        {
+          "arabic": "نُسَبِّحَكَ",
+          "gloss": "that we may glorify You",
+          "note": "The verb declares God free of every defect, and its root carries smooth, sustained movement. The plural form is doing work: the whole request is made so that the praise can become two voices."
+        }
+      ],
+      "lifeInProphetsTime": "Nobody travelled or negotiated alone if he could avoid it. A man going to another tribe took a brother or a cousin, because a lone speaker had no witness and nobody to carry word home if things went badly. Kinship was the only security there was. Asking for a brother by name was not sentiment; it was how any Arabian listener would have equipped a man sent to a hostile court.",
+      "didYouKnow": "Aaron is named twenty times in the Quran, more often than any prophet's brother or companion. This passage is where his role is fixed: he is asked for by Moses before he is called by God, and surah 20 later preserves the only extended account of what he did while Moses was on the mountain.",
+      "theologicalSignificance": "The prayer treats need as legitimate. A prophet commissioned directly by God still asks for a person, and the request is granted with no hint that it revealed weakness. What the passage guards against is a different error: the help is requested for the sake of remembrance, so that the assistance never becomes the point. Companionship is framed here as an instrument of worship rather than as a reward for service.",
+      "crossReferences": [
+        {
+          "ref": "25:35",
+          "why": "Confirms the answer, saying Aaron was appointed alongside Moses as a supporting minister."
+        },
+        {
+          "ref": "28:34",
+          "why": "Gives Moses's reason in another telling: Aaron is clearer in speech than he is."
+        },
+        {
+          "ref": "19:53",
+          "why": "Calls Aaron a prophet, given to Moses out of God's mercy."
+        }
+      ],
+      "applyIt": "Name one thing you are carrying alone that does not have to be carried alone. Then name the person, specifically, the way Moses does. Ask them this week, in plain words, for the particular help you want rather than for general support. If asking feels like an admission of failure, notice that this prayer treats it as the opposite.",
+      "exploreFurther": [
+        "25:35",
+        "28:33-35",
+        "19:51-53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:34-38",
+      "surah": 20,
+      "start": 34,
+      "end": 38,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "You Were Always Watching",
+      "tier": "standard",
+      "meaning": "The prayer ends on two lines of purpose and one of confidence: that we may remember You much, because You have always seen us. Moses grounds the request in a past he can point at. The answer comes back at once and unqualified. Then God adds something Moses had not asked about at all, an earlier favour from before memory, when his mother was given an instruction she could not have reasoned her way to.",
+      "historicalContext": "Meccan. The surah is speaking to a community whose position looked hopeless, and it answers with a granted prayer followed immediately by a rescue that arrived before the person rescued knew anything about it. The classical commentators attach no specific occasion. They read the pivot from the commission back to infancy as showing that the mission rests on a longer history of care than Moses was aware of.",
+      "keyTerms": [
+        {
+          "arabic": "بَصِيرًا",
+          "gloss": "ever-seeing",
+          "note": "An intensive form. Moses uses it of God in the past tense, which turns a divine attribute into a piece of personal evidence: this is what I have found to be true of You so far."
+        },
+        {
+          "arabic": "سُؤْلَكَ",
+          "gloss": "your request",
+          "note": "A noun from the verb to ask, meaning the thing asked for rather than the act of asking. The answer names the request itself as given, without repeating, ranking or amending any part of it."
+        },
+        {
+          "arabic": "مَنَنَّا",
+          "gloss": "We bestowed a favour",
+          "note": "The root covers giving generously and, in another form, reminding someone of a gift afterwards. Here God recalls His own favour, which the tradition carefully distinguishes from a person doing the same."
+        }
+      ],
+      "lifeInProphetsTime": "Patronage in Arabia was remembered out loud. A man who had freed a captive or paid a blood price could expect it mentioned for a generation, and being reminded of a favour by the one who gave it was an insult that could end a friendship. That social edge is what makes the divine reminder here worth noticing: it names the debt in order to explain what follows, not to collect on it.",
+      "didYouKnow": "The prayer runs for nine ayat and the answer takes a single short line. Surah 20 is also unusual in addressing the whole early history of Moses to Moses himself in the second person, beginning with his mother's inspiration, where surah 28 narrates the same events about him in the third person instead.",
+      "theologicalSignificance": "Two things are set side by side. A prayer is answered in full and without negotiation, and then the one who prayed is shown a rescue he never prayed for, because he was an infant when it happened. The passage places asking inside a longer history of unasked-for care, so that an answered prayer reads as continuous with what was already under way rather than as a fresh intervention.",
+      "crossReferences": [
+        {
+          "ref": "28:7",
+          "why": "Tells the same inspiration to Moses's mother from outside, as narrative rather than as reminder."
+        },
+        {
+          "ref": "93:6-8",
+          "why": "Uses the same method with the Prophet: a list of past rescues offered as evidence."
+        },
+        {
+          "ref": "2:186",
+          "why": "States the general principle behind the immediate answer given here."
+        }
+      ],
+      "applyIt": "Before you ask for anything tonight, spend one minute listing things that were arranged for you before you could have asked: where you were born, who fed you, a door that happened to be open. Say them out loud, badly, in whatever order they arrive. Then make your request. The order changes how the asking feels.",
+      "exploreFurther": [
+        "28:7-13",
+        "93:6-8",
+        "2:186"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:39",
+      "surah": 20,
+      "start": 39,
+      "end": 39,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "Love Cast Upon You",
+      "tier": "standard",
+      "meaning": "The instruction given to the mother is stark: put the child in a box and throw it into the water. Two verbs of casting are used one after another for an act any parent would resist. The water is then given a task of its own, to deliver him to a shore where an enemy will pick him up. And the line explaining all of it is about love. God says He placed love from Himself on the child.",
+      "historicalContext": "Meccan. The killing of Israelite boys under Pharaoh is background the surah assumes rather than describes, having set it out at length in surah 28. Classical commentators identify the enemy who takes the child in as Pharaoh himself, so the boy is delivered directly into the household of the man killing children like him. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "ٱقْذِفِيهِ",
+          "gloss": "cast him, hurl him",
+          "note": "A verb of forceful throwing, used elsewhere of flinging something away. Repeating it, first into the box and then into the water, keeps the act from being softened into placing or setting down."
+        },
+        {
+          "arabic": "ٱلْيَمِّ",
+          "gloss": "the great water",
+          "note": "A word for a large body of water rather than the ordinary term for a river. The same word returns later in this surah for the water that closes over Pharaoh and his army."
+        },
+        {
+          "arabic": "مَحَبَّةً",
+          "gloss": "love, belovedness",
+          "note": "The noun is indefinite and carries a preposition meaning from Me. Commentators read it as a quality cast onto him that made those who saw him love him, rather than as a feeling inside him."
+        }
+      ],
+      "lifeInProphetsTime": "Water carried things away in that world, and sometimes brought them back. A wadi in flood took tents, goats and occasionally people. A chest of sealed palm wood was a real object, used to keep grain or cloth dry. Putting a child in one was not a symbol to the first listeners but a recognisable and desperate act, of the kind families made in famine when a child stood a better chance elsewhere.",
+      "didYouKnow": "The word used here for the water is not the ordinary word for a river. It appears eight times in the Quran and never outside the story of Moses, covering both the water that carries him to safety as an infant and the water that closes over Pharaoh's army at the end of the same account.",
+      "theologicalSignificance": "Protection is named here as love rather than force. A child in a box on moving water has no defences at all, and what he is given instead is a quality that works on other people, including his enemies. That makes divine care something operating through human affection rather than around it, and it prepares the surah's later insistence that the one on the Throne is the Merciful.",
+      "crossReferences": [
+        {
+          "ref": "28:7-9",
+          "why": "Tells the same episode from the mother's side and reports Pharaoh's wife defending the child."
+        },
+        {
+          "ref": "19:96",
+          "why": "States the general form of what happens here: God places affection for the faithful in hearts."
+        },
+        {
+          "ref": "20:78",
+          "why": "Uses the same word for water later in this surah, where it closes over the army."
+        }
+      ],
+      "applyIt": "Think of someone who took you in, employed you, or spoke for you when they had no obligation to. That affection came from somewhere. Send them a message this week that names the specific thing they did rather than thanking them in general. Do it before you have finished working out why it mattered.",
+      "exploreFurther": [
+        "28:7-13",
+        "19:96",
+        "20:78-79"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.727Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:40",
+      "surah": 20,
+      "start": 40,
+      "end": 40,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Tested With Every Test",
+      "tier": "standard",
+      "meaning": "A whole life is compressed into one ayah and spoken to the man who lived it. A sister walks along the water and offers a nurse; the child is returned to his mother so that her eye may cool and she may not grieve. Then, with no pause, a killing, a rescue from distress, a thorough testing, years in Median, and a return that arrives exactly on time. The tone never changes across any of it.",
+      "historicalContext": "Meccan. The surah is addressing a community under pressure and folds roughly forty years of a prophet's life into a single sentence, closing with the words that he came upon a decreed measure. Classical commentators read the sequence as a recital of favours, the hard ones included. The killing referred to is the Egyptian struck down in defence of an Israelite, told at length in surah 28.",
+      "keyTerms": [
+        {
+          "arabic": "تَقَرَّ عَيْنُهَا",
+          "gloss": "her eye may cool",
+          "note": "An idiom for settled joy, resting on the old belief that tears of grief run hot and tears of relief run cool. It names the end of anxiety rather than the arrival of happiness."
+        },
+        {
+          "arabic": "فُتُونًا",
+          "gloss": "trials, testings",
+          "note": "An emphatic verbal noun placed after its own verb, a construction Arabic uses to intensify. The root involves smelting metal to separate it from ore, which is the picture behind testing throughout the Quran."
+        },
+        {
+          "arabic": "قَدَرٍ",
+          "gloss": "a measure, an appointed point",
+          "note": "A decreed amount or moment. The line says he arrived upon a measure, meaning the timing was already fixed, so the missing years read as arrangement rather than as delay."
+        }
+      ],
+      "lifeInProphetsTime": "Wet-nursing was an ordinary arrangement, not an emergency one. Meccan families sent infants out to nurse among desert clans for their health and their Arabic, and a woman could make a living at it. A sister approaching a great household to recommend a nurse was doing something socially plausible, which is exactly why the plan works. The first listeners knew how such an offer would be made and received.",
+      "didYouKnow": "The construction rendered as tested you thoroughly sets a verb beside its own verbal noun for emphasis, and this particular noun occurs nowhere else in the Quran. Early commentators borrowed the word as a title for the whole cycle of Moses's early trials, from the water to the flight from Egypt, treating it as the name of a chapter of his life.",
+      "theologicalSignificance": "Rescue and trial are listed together as favours, in one breath and with no change of tone. The passage does not resolve the tension between them; it simply declines to separate them. And it closes by calling the arrival timed, which reframes the missing years. The delay was not a gap in the story but part of the arrangement, disclosed only once it had already worked.",
+      "crossReferences": [
+        {
+          "ref": "28:11-21",
+          "why": "Narrates the same years at length: the sister, the return, the killing, and the flight."
+        },
+        {
+          "ref": "18:65-82",
+          "why": "Shows the same principle at work, with the reasons supplied only after the events."
+        },
+        {
+          "ref": "65:3",
+          "why": "States plainly that God has set a measure for everything, the word used here."
+        }
+      ],
+      "applyIt": "Write down, in one line each, the four or five turns your own life actually hinged on. Do not judge them or rank them. Some will be things you chose, some will be things that happened to you, and a few will be both. Then read the list back in order. The compression is the whole exercise.",
+      "exploreFurther": [
+        "28:7-28",
+        "65:2-3",
+        "12:100"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.728Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:41-45",
+      "surah": 20,
+      "start": 41,
+      "end": 45,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Speak To Him Gently",
+      "tier": "standard",
+      "meaning": "Four commands and one honest reply. Moses is told he was made for God's own purpose, sent with signs, and warned not to go slack in remembrance. Then comes the instruction that has drawn the most comment: say to Pharaoh a soft word, in the hope that he may take heed or feel awe. The two brothers answer that they are afraid he will move first. Their fear is not corrected here.",
+      "historicalContext": "Meccan, during years when the Prophet Muhammad (peace be upon him) was being told to keep addressing men who had shown open hostility. The classical commentators dwell on the instruction to speak gently to the most tyrannical figure in the whole narrative, and record the reasoning that gentleness governs the manner of address rather than the content delivered. No particular occasion is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "لَا تَنِيَا",
+          "gloss": "do not slacken",
+          "note": "A verb for weakening or going slack, used of a rope and of resolve. It is addressed to both brothers together, and what they are told not to slacken in is remembrance rather than effort."
+        },
+        {
+          "arabic": "لَّيِّنًا",
+          "gloss": "soft, pliable",
+          "note": "The ordinary word for something physically soft, applied to speech. It describes manner, and the commentators are careful to note that the message actually delivered afterwards is not softened at all."
+        },
+        {
+          "arabic": "يَتَذَكَّرُ",
+          "gloss": "he may take heed",
+          "note": "Literally that he may recall. The verb assumes something already present in Pharaoh that could be recovered, which is why the gentleness is treated as fitting the aim rather than as a tactic."
+        }
+      ],
+      "lifeInProphetsTime": "Speech before a ruler was a formal art. A delegation approaching a chief chose its opening with care, since a wrong word could end an audience before the case was made, and poets were kept for exactly this skill. Arabian listeners understood that gentleness before power was competence and not weakness. They also knew the risk the brothers name: envoys were sometimes seized, and their tribes could do little about it.",
+      "didYouKnow": "The instruction to speak gently is given to two prophets on their way to confront a man the same surah has just called a transgressor. Classical commentators from al-Tabari onward treat that pairing as deliberate rather than as tension, and the line is regularly cited in the commentaries whenever the manner of delivering a message comes up.",
+      "theologicalSignificance": "The passage separates the content of a message from the tone of its delivery, and refuses to let the second follow from the first. Pharaoh's conduct does not license harshness toward him, because the stated aim is that he might remember or feel awe, and harshness produces neither. The fear the brothers voice in reply is allowed to stand, which presents courage as something done with fear rather than without it.",
+      "crossReferences": [
+        {
+          "ref": "16:125",
+          "why": "Gives the same principle as a general instruction: invite with wisdom and fine argument."
+        },
+        {
+          "ref": "3:159",
+          "why": "Ties the holding of a community to gentleness, saying harshness would have scattered it."
+        },
+        {
+          "ref": "79:17-19",
+          "why": "Records the actual words used with Pharaoh, framed as an offer rather than a threat."
+        }
+      ],
+      "applyIt": "Pick the person you are most certain is in the wrong, and listen to how you sound when you talk about them. Then, next time you speak to them, change only the tone and keep every word of your position. Watch what happens to the conversation. You are conceding nothing; you are removing one thing that was never part of your case.",
+      "exploreFurther": [
+        "16:125",
+        "3:159",
+        "79:15-19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.728Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:46-47",
+      "surah": 20,
+      "start": 46,
+      "end": 47,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "I Hear And I See",
+      "tier": "standard",
+      "meaning": "The answer to their fear is short and oddly specific. Not that nothing will happen to them, and not that Pharaoh is weaker than he looks, but that God is with them, hearing and seeing. Then the errand is given in the very words they are to use. The demand is concrete: release the Children of Israel and stop tormenting them. It closes with peace directed not at Pharaoh but at whoever follows guidance.",
+      "historicalContext": "Meccan. A small community was being harmed and could not prevent it, and this passage puts a demand for the release of an oppressed people in the mouth of a messenger with nothing behind him but words. The classical commentators report no specific occasion for the two ayat. They read the reassurance as the answer to the fear voiced in the previous line, given before the errand is described rather than after it.",
+      "keyTerms": [
+        {
+          "arabic": "مَعَكُمَا",
+          "gloss": "with you two",
+          "note": "The pronoun is dual, addressed to exactly two people. Arabic marks the pair separately from the plural, so the reassurance is cut to fit the two who spoke rather than issued in general."
+        },
+        {
+          "arabic": "رَسُولَا",
+          "gloss": "two messengers",
+          "note": "Dual again. The brothers introduce themselves as a pair, which gives Aaron equal standing in the confrontation even though only one of them received the commission at the valley."
+        },
+        {
+          "arabic": "ٱلسَّلَـٰمُ",
+          "gloss": "peace, wholeness",
+          "note": "The root carries safety and soundness as much as calm. Attaching it to whoever follows guidance turns a greeting into a condition, so it neither insults the ruler nor pretends the matter is settled."
+        }
+      ],
+      "lifeInProphetsTime": "Envoys between tribes and kingdoms worked to a form. You named who sent you, stated the demand, and closed with a greeting whose exact wording signalled the relationship. Getting it wrong was dangerous: a messenger could be held or killed, and his people would then be owed blood. The worry the brothers voice is the standard risk of the job, and the script they are handed here is a diplomatic one.",
+      "didYouKnow": "The closing formula, peace upon whoever follows guidance, is recorded by the biographical tradition as the greeting used in the letters sent from Medina to rulers outside Arabia many years later. The wording lets a message be delivered courteously without extending peace unconditionally to someone who has not accepted it.",
+      "theologicalSignificance": "Presence is offered in place of protection. God does not promise that Pharaoh will hold back, only that the hearing and the seeing are not remote, and that turns out to be enough to send them. The demand itself repays attention: the first thing asked of a tyrant is not belief but that he stop tormenting people. Relief of the oppressed comes before any claim about God in the order of the errand.",
+      "crossReferences": [
+        {
+          "ref": "9:40",
+          "why": "Uses the same assurance in a different crisis: do not grieve, God is with us."
+        },
+        {
+          "ref": "26:15-16",
+          "why": "Repeats the commission with the same guarantee that God is listening alongside them."
+        },
+        {
+          "ref": "7:105",
+          "why": "Gives the same demand to Pharaoh in almost identical words about the Children of Israel."
+        }
+      ],
+      "applyIt": "Find the sentence you have been avoiding saying to someone with more power than you: a landlord, a manager, a relative who sets the mood in a room. Write it in one line, courteous and with the substance intact. You do not have to send it today. Having it written down changes what happens the next time the subject comes up.",
+      "exploreFurther": [
+        "26:10-17",
+        "7:103-105",
+        "9:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:38:13.728Z",
         "reviewed": false
       }
     },
