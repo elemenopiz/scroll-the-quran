@@ -1,5 +1,5 @@
-import Foundation
 @testable import FeatureReader
+import Foundation
 import QuranData
 import Testing
 
@@ -10,7 +10,7 @@ struct RandomVerseTests {
         let index = try TestContent.index()
         var generator = SeededGenerator(seed: 0xC0FF_EE12)
         var bySurah: [Int: Int] = [:]
-        let draws = 60_000
+        let draws = 60000
 
         for _ in 0 ..< draws {
             let verse = try #require(RandomVerse.pick(in: index, using: &generator))
@@ -53,8 +53,12 @@ struct RandomVerseTests {
         var sawLast = false
         for _ in 0 ..< 400_000 where !(sawFirst && sawLast) {
             guard let verse = RandomVerse.pick(in: index, using: &generator) else { continue }
-            if verse == VerseRef(surah: 1, ayah: 1) { sawFirst = true }
-            if verse == VerseRef(surah: 114, ayah: 6) { sawLast = true }
+            if verse == VerseRef(surah: 1, ayah: 1) {
+                sawFirst = true
+            }
+            if verse == VerseRef(surah: 114, ayah: 6) {
+                sawLast = true
+            }
         }
         #expect(sawFirst)
         #expect(sawLast)
