@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:15:44.456Z",
+  "generatedAt": "2026-09-09T12:23:05.703Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -11208,6 +11208,180 @@
       }
     },
     {
+      "key": "2:252",
+      "surah": 2,
+      "start": 252,
+      "end": 252,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Recited To You In Truth",
+      "tier": "standard",
+      "meaning": "Two short clauses close the run of narratives that began several ayat earlier. The first names what has just been recited as signs of God, given in truth, which stops the stories from being read as history for its own sake. The second is addressed directly to one person and states his position among the messengers. The whole ayah is confirmation rather than argument.",
+      "historicalContext": "Medinan, immediately after the account of the king, the river and the encounter that ended it. The commentators read the ayah as a closing seal on that section, and note that the surah uses similar formulas elsewhere to mark where a passage ends. The address in the second half is to the Prophet Muhammad (peace be upon him), at a point when his position was being disputed.",
+      "keyTerms": [
+        {
+          "arabic": "نَتْلُوهَا",
+          "gloss": "We recite it",
+          "note": "The verb for following one thing with another, which is also the word for reciting. Recitation in Arabic is named by sequence, so the word implies a text unrolled in order rather than delivered all at once."
+        },
+        {
+          "arabic": "بِٱلْحَقِّ",
+          "gloss": "in truth, with the truth",
+          "note": "The phrase can mean both truthfully and for a true purpose. Both senses fit at the close of a narrative section: the accounts are accurate, and they were told for a reason rather than as entertainment."
+        },
+        {
+          "arabic": "ٱلْمُرْسَلِينَ",
+          "gloss": "the sent ones, the messengers",
+          "note": "A passive participle: those who have been sent. Naming them by the sending rather than by any quality of their own places the whole emphasis on who did the sending."
+        }
+      ],
+      "lifeInProphetsTime": "Stories were the main medium of the age. Poets and tellers carried the histories of tribes, the deeds of ancestors and the fates of vanished peoples, and a good telling drew a crowd at a market. What separated one account from another was the teller's reliability. Ending a run of narrative by naming its source addresses exactly the question an Arabian audience would have asked.",
+      "didYouKnow": "This is one of the shortest ayat in this part of the surah, and it comes directly after one of the longer narrative sections. The surah uses a similar closing sentence at other points, naming the recitation and its purpose, so a reader following the text can see where one section ends and another begins.",
+      "theologicalSignificance": "Narrative and revelation are joined explicitly. The stories just told are called signs, which means they are being offered as evidence rather than as memory. That places a claim on how they should be read: not as the past but as a pattern still running. And the direct address at the end ties the reliability of the account to the standing of the one reciting it.",
+      "crossReferences": [
+        {
+          "ref": "3:44",
+          "why": "Uses a similar formula, naming an account as news of the unseen revealed to the one reciting."
+        },
+        {
+          "ref": "11:120",
+          "why": "States why the accounts of the messengers are told: to make the heart firm with them."
+        },
+        {
+          "ref": "12:111",
+          "why": "Says there is a lesson in their stories for those with intelligence, closing a long narrative."
+        }
+      ],
+      "applyIt": "Notice which stories you retell about your own life, and what each one is for. Most of us keep a small set and run them without asking. This ayah names a purpose for the stories it has just told. Pick one of yours and ask what you are proving with it, and whether it is still true.",
+      "exploreFurther": [
+        "3:44",
+        "11:120",
+        "12:111"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.574Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:253",
+      "surah": 2,
+      "start": 253,
+      "end": 253,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "An Unfinished Ranking",
+      "tier": "standard",
+      "meaning": "Differences among the messengers are stated plainly, and examples are given without the ranking being completed: some were spoken to directly, some raised in degrees, and one was given clear signs and strengthened. Then the sentence turns to what happened afterwards. Those who came later fought one another, though the evidence had reached them, and the ayah says twice that this was not prevented.",
+      "historicalContext": "Medinan, closing the narrative section and opening onto the surah's later passages. The commentators are careful here, noting that a difference of gift is not a difference of standing in the essentials, and that the ayah does not complete the ranking it begins. The second half addresses something the community could see: peoples divided after receiving the same message.",
+      "keyTerms": [
+        {
+          "arabic": "فَضَّلْنَا",
+          "gloss": "We favoured, We gave advantage",
+          "note": "From the root for what is over and above. It describes something added rather than a hierarchy of worth, which is why the commentators read it as a difference of gift and of role."
+        },
+        {
+          "arabic": "رُوحِ ٱلْقُدُسِ",
+          "gloss": "the Holy Spirit",
+          "note": "The classical commentators most commonly identify this as the angel Gabriel, and the phrase appears elsewhere in this surah in the same connection. Other readings are recorded, and the works do not insist on one."
+        },
+        {
+          "arabic": "ٱقْتَتَلَ",
+          "gloss": "they fought one another",
+          "note": "A reciprocal form, so the fighting is mutual rather than one side attacking. Its subject is those who came after the messengers, not the messengers themselves, which the sentence is careful to separate."
+        }
+      ],
+      "lifeInProphetsTime": "The audience in Medina lived among communities that traced themselves to the same prophets and disagreed sharply. That was not an abstraction: it decided alliances, marriages and who traded with whom. The observation in this ayah, that division followed rather than preceded the arrival of clear evidence, described something the listeners could verify by walking through their own town.",
+      "didYouKnow": "The clause about God's will and the fighting is repeated twice within this one ayah, in almost identical wording, with the human disagreement named in between. The Quran rarely repeats a clause at that distance, and the classical commentaries treat the repetition as framing the human choice between two statements of divine permission.",
+      "theologicalSignificance": "Two things are held together that are hard to hold. Division after clear evidence is attributed to people who disputed, and the sentence still says twice that it was not prevented. Neither half is dropped. The ayah also declines to complete its own ranking of the messengers, which leaves a difference acknowledged without turning into a hierarchy anyone could use.",
+      "crossReferences": [
+        {
+          "ref": "2:213",
+          "why": "Gives the same account of division arriving after knowledge, a few dozen ayat earlier."
+        },
+        {
+          "ref": "17:55",
+          "why": "Repeats that some prophets were given advantage over others, and names one gift specifically."
+        },
+        {
+          "ref": "2:285",
+          "why": "States that no distinction is made between any of His messengers, as part of what believers affirm."
+        }
+      ],
+      "applyIt": "Think of two people you admire who are genuinely different in what they are good at. Notice how quickly the mind wants to rank them, and how little that ranking would actually help you. This ayah names the differences and then stops. Try leaving one comparison unfinished this week.",
+      "exploreFurther": [
+        "2:213",
+        "2:285-286",
+        "17:55"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.583Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:254",
+      "surah": 2,
+      "start": 254,
+      "end": 254,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Neither Trade Nor Friendship",
+      "tier": "standard",
+      "meaning": "An instruction to spend is given a deadline, and the deadline is described by what will not be available. Three things are named, and each is a way people normally get out of a shortfall: buying your way clear, calling on a friend, or having someone speak for you. The ayah closes them one after another. What is left is only what was sent ahead.",
+      "historicalContext": "Medinan, opening the surah's long passage on giving. The commentators note the placement, since the ayat that follow work through the subject at length with parables. The three things named were the actual mechanisms of a merchant society: credit, personal ties and the intercession of a patron, and all three were how difficulties normally got resolved.",
+      "keyTerms": [
+        {
+          "arabic": "بَيْعٌ",
+          "gloss": "trading, buying and selling",
+          "note": "The ordinary commercial word, used across this surah for exchanges of every kind. Naming it first places the day beyond the reach of the mechanism a merchant audience trusted most."
+        },
+        {
+          "arabic": "خُلَّةٌ",
+          "gloss": "close friendship",
+          "note": "From a root meaning to penetrate or run through something, so the word names a friendship that has got inside a person. It is much stronger than acquaintance, and it is the tie a person calls on last."
+        },
+        {
+          "arabic": "شَفَـٰعَةٌ",
+          "gloss": "intercession, speaking for",
+          "note": "From a root meaning to make something even by pairing it, so an intercessor joins himself to the one he speaks for. It is denied here without qualification, and the surah revisits it shortly with a condition attached."
+        }
+      ],
+      "lifeInProphetsTime": "A merchant in Mecca or Medina lived on credit, connections and reputation. A bad season was survived by borrowing, and a legal difficulty by finding someone whose word carried. Everybody had a patron or a relative who could speak on their behalf, and knowing whom to ask was a skill. The ayah names each of those three resources and removes them in sequence.",
+      "didYouKnow": "The three things denied here are named in a rising order of intimacy: a transaction, a friendship, and someone speaking on your behalf. The ayah of the Throne, a few ayat later, returns to intercession and qualifies it rather than denying it, so the surah states the point twice with different precision.",
+      "theologicalSignificance": "The passage is about giving, and it argues for it by describing a moment when nothing can be arranged. That is a specific way of motivating generosity: not by promising a return but by removing the alternatives. The three denials also say something about the social world, since each names a real form of help that works here and will not work there.",
+      "crossReferences": [
+        {
+          "ref": "2:255",
+          "why": "Returns to intercession a few ayat later and places it under permission, rather than denying it."
+        },
+        {
+          "ref": "14:31",
+          "why": "Repeats the instruction to spend before a day comes with neither trading nor friendship in it."
+        },
+        {
+          "ref": "31:33",
+          "why": "Warns that no parent will avail a child on that day, nor a child a parent, in anything."
+        }
+      ],
+      "applyIt": "Ask yourself who you would call if something went badly wrong tomorrow. Most people can name two or three. Now notice how much of your security rests on that list rather than on anything you have done. This ayah does not take the list away. It just points at a place where it does not reach.",
+      "exploreFurther": [
+        "2:255",
+        "14:31",
+        "31:33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.583Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:255",
       "surah": 2,
       "start": 255,
@@ -11382,6 +11556,180 @@
       }
     },
     {
+      "key": "2:258",
+      "surah": 2,
+      "start": 258,
+      "end": 258,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "Bring It From The West",
+      "tier": "standard",
+      "meaning": "An argument is reported, and its structure is what matters. Abraham names God by two continuing acts, giving life and causing death. The opponent answers with a demonstration that meets the words without meeting the claim. Rather than explaining the difference, Abraham moves to something the man cannot imitate at all. The sentence ends with a single word: the one who denied was confounded.",
+      "historicalContext": "Medinan, in a run of three passages about life and death that follow the ayah of the Throne. The opponent is not named in the Quran, and the classical commentators record more than one identification without insisting. The ayah notes that he had been given sovereignty, which the commentators read as the reason he could answer a claim about life and death with a display of power.",
+      "keyTerms": [
+        {
+          "arabic": "حَآجَّ",
+          "gloss": "argued, disputed with",
+          "note": "The verb from which the word for a proof or an argument comes, used earlier in this surah of a case pressed in public. It names formal dispute rather than conversation, so the scene is a contest."
+        },
+        {
+          "arabic": "يُحْىِۦ وَيُمِيتُ",
+          "gloss": "gives life and causes death",
+          "note": "Two verbs in the present tense, describing continuing action rather than single events. That is what the opponent's reply misses: he can produce an instance, but the claim was about what is always happening."
+        },
+        {
+          "arabic": "فَبُهِتَ",
+          "gloss": "he was struck dumb",
+          "note": "A passive verb describing someone stopped in confusion, unable to answer. It is the last word about him in the ayah, and it names the end of an argument rather than a change of mind."
+        }
+      ],
+      "lifeInProphetsTime": "A king who could pardon a condemned man and execute another had, in the plainest terms, the power of life and death. The demonstration reported here was not a trick; it was how authority actually looked to everyone watching. Arabian audiences knew rulers of that kind from the Persian and Byzantine borders, and the exchange would have sounded like a real confrontation.",
+      "didYouKnow": "The second challenge is not an argument but a request, and the ayah reports no reply to it at all. This is one of three consecutive passages in the surah about the giving of life, the others describing a ruined town and a request made by Abraham himself, so the theme is turned over three times in a row.",
+      "theologicalSignificance": "The exchange demonstrates a specific method: when an opponent redefines the terms, the claim is restated in a form that cannot be redefined. Abraham does not accuse the man of cheating. He moves to ground where a demonstration is either possible or it is not. And the closing clause attributes the failure not to bad argument but to a refusal that guidance does not overrule.",
+      "crossReferences": [
+        {
+          "ref": "2:259",
+          "why": "Continues the sequence with another scene about the giving of life, there to a passing traveller."
+        },
+        {
+          "ref": "6:76-79",
+          "why": "Shows Abraham reasoning about a lord that sets, in a very different argument from this one."
+        },
+        {
+          "ref": "21:66-67",
+          "why": "Records another exchange in which Abraham answers with a question his opponents cannot answer."
+        }
+      ],
+      "applyIt": "Notice how often an argument is won by shifting what the words mean rather than by meeting the point. This ayah shows a reply that does not fight over the definition and simply restates the claim somewhere it cannot slide. Try that once this week: ask for the same thing in a form that has only one meaning.",
+      "exploreFurther": [
+        "2:259",
+        "6:74-79",
+        "21:66-67"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.583Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:259",
+      "surah": 2,
+      "start": 259,
+      "end": 259,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "A Hundred Years, Or Part Of A Day",
+      "tier": "standard",
+      "meaning": "A man passing a ruined town asks how it could ever be revived, and the answer is given to him rather than explained. He dies for a century, wakes, and guesses he slept a day. Three things are then shown in order: his food unspoiled, his animal, and bones being assembled and clothed. The ayah ends with his own words, his question turned into a statement.",
+      "historicalContext": "Medinan, the second of three passages on the giving of life. The man is not named in the Quran, and the classical commentators record several identifications without settling on one. The commentaries note that the question he asked was not a denial but a wondering, and read the answer as given to genuine perplexity rather than as a punishment for doubt.",
+      "keyTerms": [
+        {
+          "arabic": "خَاوِيَةٌ عَلَىٰ عُرُوشِهَا",
+          "gloss": "collapsed onto its roofs",
+          "note": "A vivid phrase for a building whose walls have fallen inward onto the roof beams. The image is precise: not a ruin worn down slowly but a structure that came down and stayed where it fell."
+        },
+        {
+          "arabic": "لَمْ يَتَسَنَّهْ",
+          "gloss": "it has not turned or spoiled",
+          "note": "A rare verb connected to the passing of years. What is denied is the change food undergoes with time, so this part of the sign is described by an absence rather than by an event."
+        },
+        {
+          "arabic": "نُنشِزُهَا",
+          "gloss": "We raise and assemble them",
+          "note": "A verb for raising and joining, used here of bones being brought together. Reciters differ over one letter of it, and both readings describe the same picture of a structure being reassembled."
+        }
+      ],
+      "lifeInProphetsTime": "Ruined settlements were a common sight in Arabia. Trade routes moved, wells failed, and a place that had supported hundreds became a scatter of walls within a generation. Travellers passed such sites regularly and named them. The question the man asks is the question anyone would ask standing in one, and the ayah reports it without any tone of denial.",
+      "didYouKnow": "The proofs are shown in a deliberate order: food that should have spoiled and did not, an animal, and then bones being assembled and covered. Each addresses a different span of time, and the classical commentaries note that the man is shown the evidence in ascending difficulty before he says anything at all.",
+      "theologicalSignificance": "A question about how something could happen is answered by making it happen to the questioner. That is the shape of the passage, and it treats the doubt as reasonable enough to deserve an answer rather than a rebuke. What changes at the end is not the information but the position: the man who asked from outside now speaks from inside the thing he was asking about.",
+      "crossReferences": [
+        {
+          "ref": "2:258",
+          "why": "Precedes this with the first of three scenes about the giving of life, there as an argument."
+        },
+        {
+          "ref": "2:260",
+          "why": "Completes the sequence with a request made by Abraham, answered with a demonstration."
+        },
+        {
+          "ref": "22:5-7",
+          "why": "Sets out the same argument from the stages of growth and from the earth reviving after rain."
+        }
+      ],
+      "applyIt": "Think of a question you have carried for years without an answer arriving. This passage does not resolve the man's question by explanation; it puts him inside it. Notice whether the questions that eventually settled for you settled by argument or by something happening. Then hold the current one a little more patiently.",
+      "exploreFurther": [
+        "2:258",
+        "2:260",
+        "22:5-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:260",
+      "surah": 2,
+      "start": 260,
+      "end": 260,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "To Put My Heart At Ease",
+      "tier": "standard",
+      "meaning": "Abraham asks to be shown how the dead are given life, and the reply is a question: have you not believed. His answer is the interesting part. He says yes, and then adds a reason that is not about belief at all but about the state of his heart. The request is granted, and what he is asked to do with four birds is described briefly and without explanation.",
+      "historicalContext": "Medinan, the third of three consecutive passages on the giving of life. The commentators are unanimous that the request was not doubt, and they take the answer at face value: a wish for the settling that comes from seeing. Several classical works record differing accounts of the details of what was done with the birds, and the Quran itself gives only the outline.",
+      "keyTerms": [
+        {
+          "arabic": "لِّيَطْمَئِنَّ",
+          "gloss": "so that it may settle",
+          "note": "A verb for something that has settled and stopped moving, used of a heart and of ground alike. What is asked for is not information but the end of a restlessness, which is a different request entirely."
+        },
+        {
+          "arabic": "بَلَىٰ",
+          "gloss": "yes, indeed I have",
+          "note": "A particle used specifically to answer a negative question in the affirmative. Its force is emphatic: not a simple yes but a contradiction of the doubt the question might have been taken to imply."
+        },
+        {
+          "arabic": "فَصُرْهُنَّ",
+          "gloss": "incline them, draw them to you",
+          "note": "A verb the commentators read in more than one way, some as inclining the birds towards him and others as cutting them up. The classical works record both readings, and the Arabic supports each of them."
+        }
+      ],
+      "lifeInProphetsTime": "Birds were part of daily life and daily observation. People knew the flight paths of pigeons, kept them, and used them to carry messages, and a bird released could be expected to return. Hills stood visible from any settlement in that country. The elements of the demonstration were entirely ordinary things, arranged into something that could not happen by itself.",
+      "didYouKnow": "The exchange contains a question, an emphatic particle answering it, and then a reason, all within a few words. The classical commentaries frequently pair this ayah with the story a few lines earlier, since one man asked how and was made to experience it, while here a prophet asks how and is shown. Both questions receive an answer rather than a reproof.",
+      "theologicalSignificance": "A distinction is drawn between believing something and being settled about it, and the second is treated as a legitimate thing to want. That is unusually generous, and it comes with the highest possible credentials, since the person asking is a prophet. The passage does not suggest the request was a weakness. It records the question, the answer, and the fact that it was granted.",
+      "crossReferences": [
+        {
+          "ref": "2:259",
+          "why": "Precedes this with a man asking a similar question and being answered by experience rather than sight."
+        },
+        {
+          "ref": "5:112-113",
+          "why": "Records another request for a sign made by believers who wanted their hearts reassured."
+        },
+        {
+          "ref": "13:28",
+          "why": "Names what settles hearts, using the same root as the word Abraham uses in his answer here."
+        }
+      ],
+      "applyIt": "Notice the difference between something you believe and something that has settled in you. They are not the same, and this ayah does not treat wanting the second as a failure of the first. Name one thing you hold that has not settled, and stop apologising for the gap. Ask for it instead.",
+      "exploreFurther": [
+        "2:259",
+        "13:28",
+        "5:112-115"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:261-262",
       "surah": 2,
       "start": 261,
@@ -11498,6 +11846,296 @@
       }
     },
     {
+      "key": "2:264",
+      "surah": 2,
+      "start": 264,
+      "end": 264,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Rain On A Bare Rock",
+      "tier": "standard",
+      "meaning": "A warning is given about what can undo a gift after it has been made: a reminder of the favour, and a wounding word. The comparison that follows makes the point physical. A smooth stone with a layer of soil on it looks like ground until rain arrives, and then it is bare again. What is lost is not the reward alone but the appearance that anything was ever there.",
+      "historicalContext": "Medinan, in the long passage on giving that runs through this part of the surah. The commentators read the two failings named as the ordinary temptations of a generous person rather than the faults of an obvious hypocrite, and note that the ayah is addressed to believers. The parable that follows in the next ayah is its exact counterpart.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَنِّ",
+          "gloss": "reminding of a favour",
+          "note": "From a root for conferring a benefit, which in this form means holding it over someone afterwards. Arabic uses the same root for genuine grace, so the word marks the point where giving turns into a claim."
+        },
+        {
+          "arabic": "صَفْوَانٍ",
+          "gloss": "a smooth rock",
+          "note": "A slab of bare stone with nothing to hold water. The word is chosen for its surface: soil sits on it convincingly and nothing can root in it, which is the whole comparison in a single image."
+        },
+        {
+          "arabic": "صَلْدًا",
+          "gloss": "bare, hard, stripped",
+          "note": "An uncommon word for a surface left clean and hard. It is the last word of the image, and it describes not damage but exposure, which is what the parable is actually about."
+        }
+      ],
+      "lifeInProphetsTime": "In that country a sudden downpour was the most testing thing that happened to land. Soil that had blown across rock looked exactly like a field until it rained, and then a farmer discovered what he had. Anyone who had planted in the wrong place knew that discovery. Rain, which everywhere else in the Quran is a mercy, is here the thing that reveals.",
+      "didYouKnow": "The same word for a downpour appears in this ayah and in the next, once stripping a surface bare and once doubling a garden's produce. The surah sets two parables side by side using the identical element, so the difference between them lies entirely in what the rain lands on rather than in what arrives.",
+      "theologicalSignificance": "A completed good deed is described as reversible, which is a demanding idea. What undoes it is not a later sin but words spoken about the deed itself, so the giving and the talking about it are treated as one act extended over time. And the comparison to someone giving to be seen suggests the two failings work the same way: in both, the audience has become the point.",
+      "crossReferences": [
+        {
+          "ref": "2:262",
+          "why": "States the same condition positively: those who do not follow their giving with reminders or hurt."
+        },
+        {
+          "ref": "2:265",
+          "why": "Gives the matching parable, where the same downpour doubles a garden's produce instead."
+        },
+        {
+          "ref": "4:38",
+          "why": "Describes those who spend to be seen by people, and pairs it with not believing."
+        }
+      ],
+      "applyIt": "Think of a favour you have mentioned more than once to the person who received it. Once is a story; twice is a bill. This ayah is unusually specific about how that undoes the thing. Choose one such favour and decide, deliberately, never to mention it again, then notice how quickly the impulse comes back.",
+      "exploreFurther": [
+        "2:262",
+        "2:265",
+        "4:38"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:265",
+      "surah": 2,
+      "start": 265,
+      "end": 265,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "And If Not, Then Dew",
+      "tier": "standard",
+      "meaning": "The counterpart parable arrives, and its terms are the same but the outcome inverted. A garden on high ground receives the same downpour and doubles its yield. Then the sentence adds something the first parable had no need of: if the heavy rain does not come, dew is enough. The comparison is not between success and failure but between soil and stone.",
+      "historicalContext": "Medinan, in the passage on giving. The commentators note that this ayah names two motives together, seeking God's approval and strengthening one's own soul, and read the second as the settling that giving produces in the giver. The pairing with the previous parable is deliberate, since both turn on the same word for the rain that falls.",
+      "keyTerms": [
+        {
+          "arabic": "تَثْبِيتًا مِّنْ أَنفُسِهِمْ",
+          "gloss": "a strengthening from within them",
+          "note": "The noun comes from the verb for making something firm, used in the prayer for steady feet earlier in this surah. Giving is described as producing that firmness rather than only expressing it."
+        },
+        {
+          "arabic": "بِرَبْوَةٍ",
+          "gloss": "on a rise, on high ground",
+          "note": "Elevated land, which drains well and catches both rain and dew. The detail is agricultural: a garden placed there is well sited, so the parable's outcome follows from the ground it stands on."
+        },
+        {
+          "arabic": "طَلٌّ",
+          "gloss": "light rain, dew",
+          "note": "The gentlest form of moisture, what settles overnight without a cloud. Naming it as sufficient changes the parable's claim: good ground does not depend on abundance, only on being what it is."
+        }
+      ],
+      "lifeInProphetsTime": "Gardens in Arabia were built where water could be managed: on terraces, near a spring, above the flood line. Dew mattered more than a traveller might expect, since in some seasons it was all the moisture a crop received, and farmers built low walls to catch it. The parable's detail about high ground would have read as competence rather than luck.",
+      "didYouKnow": "The two parables share the same word for a heavy downpour, and the difference between them lies entirely in what receives it. This one adds a second, lighter form of rain that the other has no use for, so the passage ends with the good ground being productive in abundance and in scarcity alike.",
+      "theologicalSignificance": "The measure of a gift is placed in the giver rather than in the amount. A garden on good ground yields in a downpour and yields in dew, which detaches the outcome from whatever happens to arrive. And by naming an inward strengthening as one of the two motives, the passage treats giving as something that forms the giver rather than only transferring wealth.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Gives the matching parable, where the same downpour leaves bare stone behind it."
+        },
+        {
+          "ref": "2:261-262",
+          "why": "Opens this passage with the image of a grain producing seven ears of a hundred grains each."
+        },
+        {
+          "ref": "14:24-25",
+          "why": "Uses another agricultural image for a good word, a tree yielding its fruit in every season."
+        }
+      ],
+      "applyIt": "Give something small this week in a season when you feel you have nothing to give. Not the large gesture when things are going well. This parable's point is that good ground produces in dew as well as in downpour, and the only way to find out which ground you are is to try it when the weather is poor.",
+      "exploreFurther": [
+        "2:261-262",
+        "2:264",
+        "14:24-27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:266",
+      "surah": 2,
+      "start": 266,
+      "end": 266,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "A Garden Burned In Old Age",
+      "tier": "standard",
+      "meaning": "A question is put rather than a statement made, and it is designed to be answered from inside. Would any of you want this: a garden of palms and vines, every kind of fruit, rivers underneath, and then old age arrives, and weak children, and a fiery whirlwind takes it. The details are stacked so the loss lands at the worst possible moment, when nothing can be rebuilt.",
+      "historicalContext": "Medinan, closing the sequence of parables about giving. The classical commentaries record a report that a companion was asked about this ayah's meaning and connected it to a man whose deeds were undone at the end of his life. The commentators generally read it against the preceding warning about reminders and hurtful words rather than as a separate subject.",
+      "keyTerms": [
+        {
+          "arabic": "أَيَوَدُّ",
+          "gloss": "would anyone wish, desire",
+          "note": "The verb is one of affection and wishing rather than of choosing. Putting the parable as a question in this form invites the listener to answer from feeling before any reasoning arrives."
+        },
+        {
+          "arabic": "ٱلْكِبَرُ",
+          "gloss": "old age",
+          "note": "Literally largeness, used of age as the accumulation of years. Its arrival in the sentence is what makes the loss final, since the same disaster earlier in a life would be a setback rather than an ending."
+        },
+        {
+          "arabic": "إِعْصَارٌ",
+          "gloss": "a whirlwind",
+          "note": "A wind that turns on itself and lifts what it passes over. The word occurs only here in the Quran, and the fire inside it makes the image specific rather than a general storm."
+        }
+      ],
+      "lifeInProphetsTime": "A garden of palms and vines was the work of decades. Palms take years to bear, irrigation channels are dug and maintained by hand, and a man planted for a son as much as for himself. Fire in a dry palm grove moves faster than anyone can run. Everything in this parable would have been familiar, including the particular horror of losing it late.",
+      "didYouKnow": "The word for the whirlwind in this ayah occurs nowhere else in the Quran. The parable is built entirely from good things, a garden, fruit, children, long life, and the disaster arrives only in the last clause, so a listener has fully imagined the possession before losing it.",
+      "theologicalSignificance": "The passage argues by imagination rather than by assertion. Nothing is claimed; a scene is built and the listener is asked whether they would want it. That works because the answer is obvious and the application is not. Placing the parable after the warnings about undoing a gift suggests that a lifetime of good can be arranged so that it is not there at the end.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Names the two things that undo a gift, which this parable then dramatises as total loss."
+        },
+        {
+          "ref": "18:32-44",
+          "why": "Tells a longer version of the same scene, a garden destroyed and its owner left with nothing."
+        },
+        {
+          "ref": "68:17-33",
+          "why": "Describes a garden's owners who planned to withhold its harvest and found it stripped by morning."
+        }
+      ],
+      "applyIt": "Ask what you are building that could still be undone at the end. Not by disaster, by your own hand. This parable is placed immediately after a warning about spoiling a gift by talking about it. Look at one thing you have built and check whether the way you speak about it is quietly burning it down.",
+      "exploreFurther": [
+        "2:264",
+        "18:32-44",
+        "68:17-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:267",
+      "surah": 2,
+      "start": 267,
+      "end": 267,
+      "theme": "Greed and Generosity",
+      "themeId": "greed-and-generosity",
+      "title": "What You Would Not Take Yourself",
+      "tier": "standard",
+      "meaning": "Two sources are named for what is given: what you have earned and what the earth produced for you. Then the instruction narrows to quality. Do not aim at the poor part of it, and the reason given is a test anyone can apply, since you would not accept this yourself except with your eyes shut. The ayah closes with two names of God about sufficiency and praise.",
+      "historicalContext": "Medinan, in the passage on giving. The classical sources report that some brought the poorest of their dates to be distributed, and that this ayah addressed the practice. The commentaries note that the giving referred to covers both trade income and the produce of land, which between them accounted for nearly every household in Medina.",
+      "keyTerms": [
+        {
+          "arabic": "تَيَمَّمُوا۟",
+          "gloss": "aim at, head for deliberately",
+          "note": "The verb means to head for something on purpose. It names a choice rather than an oversight, so what is described is someone selecting the poor portion rather than simply giving carelessly."
+        },
+        {
+          "arabic": "ٱلْخَبِيثَ",
+          "gloss": "the bad, the inferior",
+          "note": "The direct opposite of the word for wholesome used at the start of the same ayah. Placing the two in one sentence sets a scale, and the giving described sits at the wrong end of it."
+        },
+        {
+          "arabic": "تُغْمِضُوا۟",
+          "gloss": "you shut your eyes",
+          "note": "A verb for closing the eyes, used of overlooking a fault in a transaction. It names the exact behaviour of a buyer accepting poor goods to end a negotiation, which is the standard the ayah applies."
+        }
+      ],
+      "lifeInProphetsTime": "Date harvests were sorted carefully. The best fruit was kept or sold, the middling eaten, and the poorest dried hard and fed to animals or held for lean months. Everyone in Medina could grade dates by sight. Bringing the lowest grade to a public distribution was therefore visible to everybody present, and the ayah names something people could watch happening.",
+      "didYouKnow": "The test the ayah proposes is a buyer's test rather than a moral one: would you take this in a trade. The word for shutting the eyes belongs to the language of a market transaction, so the standard for giving is set by what a person would accept in a deal rather than by what they consider generous.",
+      "theologicalSignificance": "The standard is made self-administering. Rather than fixing a quality, the ayah asks a person to apply the judgement they already use when they are on the receiving end, which nobody can be mistaken about. And the closing names remove the obvious objection: the giving is not needed by the one it is offered to, which means its quality is entirely about the giver.",
+      "crossReferences": [
+        {
+          "ref": "3:92",
+          "why": "States that virtuous conduct is not attained until you give from what you cherish."
+        },
+        {
+          "ref": "2:264",
+          "why": "Names another way a gift is spoiled, there by what is said afterwards rather than by what is given."
+        },
+        {
+          "ref": "92:5-7",
+          "why": "Describes the one who gives and is mindful, and the ease that is made for him afterwards."
+        }
+      ],
+      "applyIt": "Look at what you last donated: the clothes, the food, the furniture. Ask honestly whether you would have accepted it. Not whether it was usable, whether you would have taken it. If the answer is no, give one thing this month that you would actually have wanted, and notice how differently it feels.",
+      "exploreFurther": [
+        "3:92",
+        "2:264",
+        "92:1-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.584Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:268-269",
+      "surah": 2,
+      "start": 268,
+      "end": 269,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Two Promises, Two Directions",
+      "tier": "standard",
+      "meaning": "Two voices are set against each other, and each is described as making a promise. One promises poverty and urges indecency; the other promises forgiveness and abundance. The parallel is exact, which is the point, since both work by expectation. Then the second ayah turns to wisdom, given to whom God wills, and calls receiving it much good.",
+      "historicalContext": "Medinan, in the passage on giving, where the fear of running short was the practical obstacle. The commentators read the first ayah as naming that fear precisely and attributing it, and note that the promise on the other side is not of wealth but of forgiveness and favour. The second ayah widens the subject and closes the passage's argument.",
+      "keyTerms": [
+        {
+          "arabic": "يَعِدُكُمُ",
+          "gloss": "promises you",
+          "note": "The same verb is used of both sides, which is the ayah's structure in a single word. Arabic uses it for a promise and, with a different construction, for a threat, so the doubling here is exact and deliberate."
+        },
+        {
+          "arabic": "ٱلْفَقْرَ",
+          "gloss": "poverty, destitution",
+          "note": "From a root connected to a broken spine, so the word names being unable to stand rather than merely having little. What is promised is not modest means but collapse, which is why it works as a deterrent."
+        },
+        {
+          "arabic": "ٱلْحِكْمَةَ",
+          "gloss": "wisdom",
+          "note": "From a root meaning to restrain, as a bridle restrains a horse. Naming it here, straight after a contrast between two promises, suggests wisdom is what lets a person tell one from the other."
+        }
+      ],
+      "lifeInProphetsTime": "Poverty in Arabia was not an abstraction but a specific sequence: the animals go first, then the stored dates, then the land, and then a family becomes dependent on relatives. Everyone had watched it happen to someone. A man deciding whether to give away a portion of his stores was calculating against that sequence, and it was a reasonable calculation.",
+      "didYouKnow": "The same verb is used for both promises in the first ayah, so the sentence is built as a matched pair. The second closes with a phrase about those with insight that recurs across this surah, and the word it uses for wisdom appeared earlier in the description of what a messenger teaches a community.",
+      "theologicalSignificance": "Fear of scarcity is not dismissed as foolish; it is attributed to a source and set beside another expectation. That framing treats the calculation as real and asks which projection you are working from. And what is offered on the other side is not a guarantee of wealth, which would answer fear on its own terms, but forgiveness and favour, which changes the terms instead.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Names another failure in giving, there in what is said afterwards rather than in what is feared."
+        },
+        {
+          "ref": "34:39",
+          "why": "States that whatever you spend, He will replace it, addressing the same fear directly."
+        },
+        {
+          "ref": "17:31",
+          "why": "Names the same fear of poverty in another setting, and answers it with a statement about provision."
+        }
+      ],
+      "applyIt": "Notice the sentence your mind says when you are about to give something away and hesitate. Write it down in the exact words it uses. This ayah says that sentence is a promise being made to you by something. Reading it back in that form is usually enough to see it for what it is.",
+      "exploreFurther": [
+        "2:264",
+        "34:39",
+        "17:31"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.585Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:270-271",
       "surah": 2,
       "start": 270,
@@ -11552,6 +12190,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.577Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:272",
+      "surah": 2,
+      "start": 272,
+      "end": 272,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Their Guidance Is Not On You",
+      "tier": "standard",
+      "meaning": "A burden is lifted before anything else is said. Their guidance is not on you, which the commentators read against a reluctance to give to people outside the community. Then three statements about spending follow, each beginning the same way: what you give is for yourselves, is sought only for the face of God, and will be repaid in full. The reason for giving moves entirely to the giver.",
+      "historicalContext": "Medinan. The classical sources report that some hesitated to give to relatives and neighbours who had not joined the community, hoping that withholding would apply pressure, and report this ayah as the answer. The accounts are widely recorded, though the details differ. The opening clause addresses the Prophet Muhammad (peace be upon him), and through him the practice itself.",
+      "keyTerms": [
+        {
+          "arabic": "لَّيْسَ عَلَيْكَ",
+          "gloss": "it is not upon you",
+          "note": "A phrase of removal: something is being taken off a person rather than added to them. Placing it first means the instruction that follows arrives after the weight has already been lifted."
+        },
+        {
+          "arabic": "وَجْهِ ٱللَّهِ",
+          "gloss": "the face of God",
+          "note": "An idiom for the direction and purpose of an act rather than a description of God. Seeking a person's face in Arabic means seeking them specifically, so the phrase names an undivided aim."
+        },
+        {
+          "arabic": "يُوَفَّ",
+          "gloss": "will be paid in full",
+          "note": "A passive verb from the root for completeness, the same one used of a soul taken in death. It describes a measure filled exactly, and the closing clause rules out any shortfall in it."
+        }
+      ],
+      "lifeInProphetsTime": "Charity in Medina was local and personal. You gave to the family two doors down, to a cousin, to someone you saw every day, and giving was one of the few levers an ordinary person had. Withholding it from a relative who had not joined the community was an obvious use of that lever, and it would have felt principled rather than mean.",
+      "didYouKnow": "Three clauses in this ayah begin with the same construction about whatever you spend, one after another, each ending differently: for yourselves, for the face of God, and repaid in full. The repetition is one of the passage's clearest examples of a structure the surah uses to build an argument by accumulation.",
+      "theologicalSignificance": "Responsibility for another person's guidance is removed, and the effect is to stop generosity being used as an instrument. Once the outcome is not yours, the giving can only be about the giving. That is why the three clauses that follow all turn back towards the giver: what is spent is described as returning to the one who spent it, never as a lever applied to anyone else.",
+      "crossReferences": [
+        {
+          "ref": "2:256",
+          "why": "States that there is no compulsion in religion, which this ayah applies to the use of generosity."
+        },
+        {
+          "ref": "10:99",
+          "why": "Asks whether people would be compelled into belief, and answers that God's will decides it."
+        },
+        {
+          "ref": "76:8-9",
+          "why": "Describes feeding the needy and the captive for God's sake alone, wanting neither payment nor thanks."
+        }
+      ],
+      "applyIt": "Find one place where you are giving something with a condition attached that you have not admitted to: attention, money, time, help. This ayah removes the outcome from the giver's account entirely. Try one act of generosity this week where you deliberately give up any interest in what it produces.",
+      "exploreFurther": [
+        "2:256",
+        "10:99",
+        "76:5-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:23:05.585Z",
         "reviewed": false
       }
     },
