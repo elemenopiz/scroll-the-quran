@@ -1,7 +1,7 @@
 {
   "surah": 5,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T10:36:48.297Z",
+  "generatedAt": "2026-09-09T11:14:01.792Z",
   "studies": [
     {
       "key": "5:1",
@@ -5220,6 +5220,818 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T10:36:03.250Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:107",
+      "surah": 5,
+      "start": 107,
+      "end": 107,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "If The Oath Was False",
+      "tier": "standard",
+      "meaning": "The procedure continues by anticipating its own failure. If it comes to light that the two witnesses had earned a wrong, two others take their place from among those with the stronger claim, and they swear that their testimony is truer and that they have not overstepped. The design is symmetrical: an oath is answered by an oath rather than by an investigation, because in that setting there was nothing available to investigate with.",
+      "historicalContext": "Medinan, continuing directly from the previous ayah's procedure for a death on a journey. The commentators discuss the mechanics at length and record differing views about who exactly the replacement witnesses are. The passage assumes a world without documents, without officials and without any way of examining what happened in a place weeks away, and it builds accordingly.",
+      "keyTerms": [
+        {
+          "arabic": "عُثِرَ",
+          "gloss": "it was stumbled upon",
+          "note": "A passive from the verb to trip over something. Discovery is described as accidental, which is honest about how such things actually came to light in a society with no means of investigation."
+        },
+        {
+          "arabic": "ٱسْتَحَقَّآ إِثْمًا",
+          "gloss": "the two earned a wrong",
+          "note": "The verb means to become deserving of something, so the wrong is described as acquired rather than merely committed. The phrasing keeps attention on what the two now carry with them."
+        },
+        {
+          "arabic": "مَا ٱعْتَدَيْنَآ",
+          "gloss": "we have not overstepped",
+          "note": "The verb of crossing a boundary, used across this surah for aggression and for excess in religion. Its appearance inside a sworn formula makes the oath a promise about limits rather than about facts alone."
+        }
+      ],
+      "lifeInProphetsTime": "Everything in that world was settled by oath because nothing else was available. There were no records, no officials, no way to check a story told about a camp three hundred miles away. An oath sworn by God before a community was not a formality added to evidence; it was the evidence, and a man who swore falsely was gambling his standing and a great deal more.",
+      "didYouKnow": "This passage and the two around it form the longest continuous procedure in the surah, and the classical commentaries record more disagreement about their details than about almost anything else in the chapter. The difficulty lies in the Arabic itself, and the commentators say so rather than smoothing it over.",
+      "theologicalSignificance": "The passage designs for dishonesty rather than assuming honesty, which is a particular kind of realism. It provides a remedy without providing certainty: two oaths set against two oaths, and the matter left there. That implicitly hands the final resolution elsewhere, and the next ayah says as much by naming what the procedure is actually for.",
+      "crossReferences": [
+        {
+          "ref": "5:106",
+          "why": "Sets out the original procedure that this ayah supplies the remedy for."
+        },
+        {
+          "ref": "5:108",
+          "why": "States what the whole arrangement is actually for, immediately afterwards."
+        },
+        {
+          "ref": "24:6",
+          "why": "Gives another procedure in which oaths are answered by oaths where witnesses are lacking."
+        }
+      ],
+      "applyIt": "When you next design something that depends on people behaving well, spend five minutes on what happens if they do not. Not out of suspicion. This passage builds its own failure case into itself, and arrangements that skip that step tend to break on the person least able to absorb the damage.",
+      "exploreFurther": [
+        "5:106",
+        "5:108",
+        "24:6-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.728Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:108",
+      "surah": 5,
+      "start": 108,
+      "end": 108,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "That They Bring The Testimony Straight",
+      "tier": "standard",
+      "meaning": "The purpose of the whole procedure is stated plainly, and it is modest. This is nearer to their bringing the testimony as it should be, or to their fearing that oaths will be turned back after their own. Nearer, not certain. The mechanism named is not conscience but the prospect of contradiction, and the ayah is unembarrassed about that. Then the instruction turns: be conscious of God, and listen.",
+      "historicalContext": "Medinan, closing the procedure for a bequest witnessed on a journey. The commentators read the three ayat as one passage. This one supplies the reasoning behind the design, which is unusual for the Quran's procedural material and is one reason the classical commentaries treat the sequence as a model for how such arrangements should be thought about at all.",
+      "keyTerms": [
+        {
+          "arabic": "أَدْنَىٰٓ",
+          "gloss": "nearer, more likely",
+          "note": "A comparative from the verb to come close. The word concedes that the arrangement improves the odds rather than settling the matter, which is a careful thing for a procedure to say about itself."
+        },
+        {
+          "arabic": "عَلَىٰ وَجْهِهَا",
+          "gloss": "in its proper form",
+          "note": "Literally upon its face, an idiom for something presented as it actually is. Testimony is pictured as having a correct shape that can be distorted without ever being made outright false."
+        },
+        {
+          "arabic": "وَٱسْمَعُوا۟",
+          "gloss": "and listen",
+          "note": "A bare imperative with no object supplied. The commentators read it as listening in the sense of heeding, and its placement after a technical procedure returns the passage to the register of instruction."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation was enforced by the possibility of contradiction. Everyone knew that a story told in one town would be checked against a version told in another, and that a man's account could be answered publicly at a gathering. That was the whole apparatus of accountability, and this passage builds on it deliberately rather than appealing to conscience alone.",
+      "didYouKnow": "The ayah states its own purpose, and states it as a probability. The Quran does this rarely in procedural passages, and the classical commentators note that the wording makes no claim to prevent false testimony, only to make honest testimony more likely, which is an unusually modest description of a rule.",
+      "theologicalSignificance": "A procedure is justified by its effect on human behaviour rather than by an appeal to principle, and the effect claimed is a change in the odds. That is a realistic account of what rules do. Ending on consciousness of God and on listening keeps the realism from turning into cynicism: the arrangement works on fear of exposure, and the instruction that follows works on something else.",
+      "crossReferences": [
+        {
+          "ref": "5:106",
+          "why": "Sets out the procedure whose purpose this ayah finally states in the open."
+        },
+        {
+          "ref": "2:283",
+          "why": "Warns against concealing testimony and names the heart as what would be at fault."
+        },
+        {
+          "ref": "4:135",
+          "why": "Requires witness given for God, even against oneself and one's own family."
+        }
+      ],
+      "applyIt": "Notice which of your honest behaviours depend on someone being able to check. Most of ours do, and that is not shameful; it is how this passage expects people to work. But pick one and keep it this week in a case where nobody could possibly find out. That is the other half the ayah names.",
+      "exploreFurther": [
+        "5:106-107",
+        "2:283",
+        "4:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.729Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:109",
+      "surah": 5,
+      "start": 109,
+      "end": 109,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "What Answer Were You Given",
+      "tier": "standard",
+      "meaning": "A scene is set on the day the messengers are gathered, and God asks them a question with a strange answer. What response were you given? They say: we have no knowledge; You are the one who knows all that is hidden. The commentators read the disclaimer in more than one way, as awe overwhelming them or as an honest statement that they saw the outward response and not what lay behind it. The ayah does not resolve which.",
+      "historicalContext": "Medinan, opening the surah's final movement. The chapter has spent many ayat on how communities responded to what they were sent, and this ayah moves that whole question to its final setting. No occasion is reported. The placement is the point: after all the argument about who received what and did what with it, the ones who delivered say they do not know.",
+      "keyTerms": [
+        {
+          "arabic": "مَاذَآ أُجِبْتُمْ",
+          "gloss": "what were you answered",
+          "note": "A passive construction, so the question is about the response they received rather than about their own performance. Nothing in it asks whether they succeeded, which is consistent with this surah's account of the office."
+        },
+        {
+          "arabic": "لَا عِلْمَ لَنَآ",
+          "gloss": "we have no knowledge",
+          "note": "A total negation rather than a qualification. The commentators read it as awe, or as accuracy about the limits of what a messenger can see, and the commentaries preserve both without ranking them."
+        },
+        {
+          "arabic": "عَلَّـٰمُ ٱلْغُيُوبِ",
+          "gloss": "Knower of all hidden things",
+          "note": "An intensive form with the plural of the hidden. The plural matters: not one unseen realm but every concealed thing, including whatever was inside each person who gave an answer."
+        }
+      ],
+      "lifeInProphetsTime": "A messenger between tribes reported what was said to him, and everyone understood that he could not report what was meant. A delegation might agree publicly and act otherwise, and the herald who carried the words home had no way of knowing which. That gap between the answer given and the answer intended was a familiar hazard of the office.",
+      "didYouKnow": "This is one of a small number of places in the Quran where prophets are shown declining to answer a question put to them by God. The classical commentaries treat such moments as significant precisely because a disclaimer from a prophet establishes a limit that nobody else can claim to have passed.",
+      "theologicalSignificance": "The scene draws a line under the whole surah. Every community's response has been described at length, and now those who delivered the messages say they do not know what those responses really were. That removes assessment from human hands entirely, including the most qualified hands. What is left is a question only God can answer, which is where the chapter has been heading.",
+      "crossReferences": [
+        {
+          "ref": "5:117",
+          "why": "Contains a parallel disclaimer, where Jesus says he witnessed only while among them."
+        },
+        {
+          "ref": "2:32",
+          "why": "Records the angels saying they have no knowledge except what was taught to them."
+        },
+        {
+          "ref": "7:6",
+          "why": "Says that both those sent to and those who were sent will be questioned."
+        }
+      ],
+      "applyIt": "There is something you are sure you know about how you affected someone: that you helped, or that you did damage. Hold it more loosely this week. This ayah puts that uncertainty in the mouths of prophets, which suggests it is not a failure of yours to be corrected but a condition to be accepted.",
+      "exploreFurther": [
+        "5:116-118",
+        "2:30-32",
+        "7:6-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.729Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:110",
+      "surah": 5,
+      "start": 110,
+      "end": 110,
+      "theme": "Jesus, Son of Mary",
+      "themeId": "jesus-son-of-mary",
+      "title": "Recall My Favour Upon You",
+      "tier": "standard",
+      "meaning": "A long recital of favours is put in God's voice and addressed to Jesus directly. Support by the holy spirit, speech in the cradle and in maturity, the teaching of scripture and wisdom, the shaping of a bird from clay that became a bird, healing, the raising of the dead, and restraint placed on those who opposed him. The clause meaning by My permission is attached four times, and its repetition is the passage's structure rather than its decoration.",
+      "historicalContext": "Medinan, in the surah's closing section. The passage is framed as speech on the day of gathering rather than as narrative, so the miracles are recalled rather than recounted. Christian communities in the peninsula held accounts of most of these episodes, and the commentators note that the Quran's version differs mainly in the repeated clause attributing each act to God's permission.",
+      "keyTerms": [
+        {
+          "arabic": "بِإِذْنِى",
+          "gloss": "by My permission",
+          "note": "Repeated four times within this single ayah, attached to each act in turn. The repetition converts a list of powers into a list of things done through a permission, which is the whole grammatical argument of the passage."
+        },
+        {
+          "arabic": "رُوحِ ٱلْقُدُسِ",
+          "gloss": "the holy spirit",
+          "note": "The commentators most commonly identify this with the angel Gabriel, and record other readings alongside it. The phrase occurs several times in the Quran, always in connection with support given to a prophet."
+        },
+        {
+          "arabic": "كَهَيْـَٔةِ ٱلطَّيْرِ",
+          "gloss": "like the form of a bird",
+          "note": "The word means form or shape, so what was made was a likeness. The Arabic is careful: a shape is fashioned, breath is given, and the becoming is attributed separately to God's permission."
+        }
+      ],
+      "lifeInProphetsTime": "Clay figures were ordinary in that world: children made them, and shaped animals appeared as toys and as votive objects. What the passage describes begins with something anyone could do and ends with something nobody could. That progression from the completely ordinary to the impossible, inside one clause, was legible to an audience that had watched children mould birds in a wadi.",
+      "didYouKnow": "The clause meaning by My permission occurs four times within this single ayah, more often than in any other ayah of the Quran. The classical commentators read the repetition as deliberate: each act that might be taken as evidence of independent power is returned to its source before the next one is named.",
+      "theologicalSignificance": "The passage grants the miracles in full and then makes each of them an argument for the opposite of what they might be taken to prove. Nothing is minimised: the dead are raised, and it is said plainly. What the repeated clause establishes is agency, and by placing it inside the list rather than after it, the ayah makes the qualification inseparable from the claim.",
+      "crossReferences": [
+        {
+          "ref": "3:49",
+          "why": "Gives the same miracles in Jesus's own reported speech, carrying the same qualification."
+        },
+        {
+          "ref": "5:116",
+          "why": "Continues the same scene, with a question put directly to Jesus by God."
+        },
+        {
+          "ref": "2:87",
+          "why": "Names the support given by the holy spirit, in the earlier Medinan surah."
+        }
+      ],
+      "applyIt": "Take the thing you are best at and say, once, where it came from: the teacher, the health, the years you happened to have free. Not as false modesty. This ayah attaches the same clause four times to genuinely extraordinary acts, which suggests the attribution is meant to be repeated rather than settled once.",
+      "exploreFurther": [
+        "3:45-51",
+        "5:116-118",
+        "2:87"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.729Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:111",
+      "surah": 5,
+      "start": 111,
+      "end": 111,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Bear Witness That We Submit",
+      "tier": "standard",
+      "meaning": "A short exchange closes the recital. God recalls inspiring the disciples to believe in Him and in His messenger, and their answer is quoted: we have believed, so bear witness that we are submitted. They do not ask for anything and they do not argue. What they request is that their statement be recorded, which is the same request a delegation made earlier in this surah, and the repetition across two very different scenes is deliberate.",
+      "historicalContext": "Medinan, within the closing scene. The word used for the disciples is a distinctive Arabic term that the commentators discuss at length without agreeing on its derivation. The passage assumes the audience knows who they were, which is reasonable for a city in contact with Christian communities, and it gives no narrative at all beyond the exchange itself.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْحَوَارِيِّـۧنَ",
+          "gloss": "the disciples",
+          "note": "A term the commentators derive variously from whiteness, from washing, or from close support. They record the range without deciding, and the word is used in the Quran only for the followers of Jesus."
+        },
+        {
+          "arabic": "أَوْحَيْتُ",
+          "gloss": "I inspired, I revealed to",
+          "note": "The verb used for revelation to prophets, though the Quran also uses it for guidance given to the bee and to Moses's mother. Its breadth is why the commentators discuss what form the inspiration took here."
+        },
+        {
+          "arabic": "مُسْلِمُونَ",
+          "gloss": "ones who have submitted",
+          "note": "An active participle from the verb to surrender oneself. The Quran uses it across communities and eras for anyone in that posture, which is why it appears here in the disciples' own reported speech."
+        }
+      ],
+      "lifeInProphetsTime": "Bearing witness was a public act with consequences. A man asked for witnesses when he freed a slave, made a bequest or entered an alliance, because the witness was the only durable record. Asking someone to bear witness to your own state, rather than to a transaction, borrowed a legal form and applied it to something nobody else could verify.",
+      "didYouKnow": "The word the Quran uses for the disciples occurs only in connection with the followers of Jesus, in four places across the text, and the classical lexicographers offered several competing derivations for it without settling the question. It is one of a handful of terms whose etymology the tradition openly leaves open.",
+      "theologicalSignificance": "The disciples' answer contains no request for a sign, which matters because the very next ayah reports them asking for one. The Quran places the two moments side by side without commenting on the sequence, and the classical commentaries note the contrast. Belief stated and then reassurance sought is presented as an ordinary human pattern rather than as a failure to be condemned.",
+      "crossReferences": [
+        {
+          "ref": "5:112",
+          "why": "Follows immediately with the disciples asking for a sign, after this declaration."
+        },
+        {
+          "ref": "3:52",
+          "why": "Records the same exchange, with the disciples answering a call for helpers."
+        },
+        {
+          "ref": "61:14",
+          "why": "Recalls the disciples as helpers of God, and calls believers to the same role."
+        }
+      ],
+      "applyIt": "Ask someone to hold you to something this week: a plan, a habit, a limit. Say it out loud to them rather than only to yourself. The disciples' request here is not for help but for a witness, and having one person who knows what you said changes the arithmetic of following through.",
+      "exploreFurther": [
+        "5:112-115",
+        "3:52",
+        "61:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:112",
+      "surah": 5,
+      "start": 112,
+      "end": 112,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Is Your Lord Able",
+      "tier": "standard",
+      "meaning": "The request is put in a way the Arabic marks as awkward, and the commentators notice. Is your Lord able to send down a table from heaven? Some read the phrasing as a question about capability, which would be an inappropriate thing to ask, and some read it as a request phrased politely, meaning would He do this for us. The reply does not answer the question at all. It says: be conscious of God, if you are believers.",
+      "historicalContext": "Medinan. The commentators record two readings of the request that differ in one vowel, one making it a question about God's ability and the other about whether Jesus could ask his Lord. Both are preserved in the tradition. The passage is set in the past within a scene on the day of gathering, which is characteristic of how this surah handles the story.",
+      "keyTerms": [
+        {
+          "arabic": "هَلْ يَسْتَطِيعُ",
+          "gloss": "is He able",
+          "note": "The verb of being capable, and the commentators discuss whether the question asks about capacity or is an idiom for requesting a favour. The reading affects how the request should be understood, and both are recorded."
+        },
+        {
+          "arabic": "مَآئِدَةً",
+          "gloss": "a table set with food",
+          "note": "A table only counts as one when food is on it, according to the lexicographers. The word names the whole scene rather than the furniture, which is why it gives this surah its name."
+        },
+        {
+          "arabic": "ٱتَّقُوا۟ ٱللَّهَ",
+          "gloss": "be conscious of God",
+          "note": "The reply reaches for this surah's most frequent instruction instead of answering the question. Its use here as a deflection is noted by the commentators as a form of correction offered gently."
+        }
+      ],
+      "lifeInProphetsTime": "Food arriving unexpectedly was the most powerful image of relief available. A caravan that reached a well before its water ran out, or a family that received grain in a lean season, told the story for years afterwards. The disciples' request was not for a spectacle in the abstract; it was for the one kind of miracle that anyone who had been hungry could immediately picture.",
+      "didYouKnow": "The surah takes its name from the word used here for the table, and that word appears only in this passage, twice within three ayat, and nowhere else in the Quran. Several chapters are named for a term that occurs this rarely, so a title can point to a single scene rather than to a running theme.",
+      "theologicalSignificance": "The reply is the passage's argument. A request for evidence is met not with evidence and not with a refusal but with an instruction about the asker's own state. That reframes the situation: whether a sign will come is set aside, and what the asker is bringing to the encounter is put in its place. The sign does come, later, and the reply still stands.",
+      "crossReferences": [
+        {
+          "ref": "5:113",
+          "why": "Gives their reasons, which the reply here did not ask for and they supply anyway."
+        },
+        {
+          "ref": "2:260",
+          "why": "Records Abraham asking to be shown, and being asked whether he does not believe."
+        },
+        {
+          "ref": "17:90",
+          "why": "Lists demands for signs, answered by saying a messenger is only a human being."
+        }
+      ],
+      "applyIt": "Notice the next time you ask for a sign about a decision you have already been given enough to make. Everyone does this. Before you ask, answer the question the reply here asks instead: what state are you in as you approach it. The answer usually settles the decision without any sign arriving.",
+      "exploreFurther": [
+        "5:113-115",
+        "2:260",
+        "17:90-93"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:113",
+      "surah": 5,
+      "start": 113,
+      "end": 113,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "So Our Hearts May Settle",
+      "tier": "standard",
+      "meaning": "Four reasons are given, and the order is revealing. We want to eat from it; and that our hearts may be settled; and that we may know you told us the truth; and that we may be among those who witness it. Hunger first, then reassurance, then verification, then testimony. The commentators note that the request is honest about the physical motive and does not dress it up, and that the reassurance sought is named as a settling rather than as proof.",
+      "historicalContext": "Medinan, continuing the exchange. The commentators read the four clauses as a single request with layers rather than as four separate aims, and record differing views about whether the request was a lapse or a legitimate asking. Both readings are preserved. The scene belongs to the surah's closing movement, where earlier communities' encounters with signs are recalled at their outcome.",
+      "keyTerms": [
+        {
+          "arabic": "تَطْمَئِنَّ",
+          "gloss": "may become settled, at rest",
+          "note": "The verb of a thing coming to rest after motion, used of land that levels out. Reassurance is described as a settling of something that was moving, which is a physical picture of what a doubt feels like."
+        },
+        {
+          "arabic": "صَدَقْتَنَا",
+          "gloss": "you told us truly",
+          "note": "The verb of speaking truth, with the person addressed as its object. What they want verified is the speaker rather than the claim, which is a specific and personal thing to want confirmed."
+        },
+        {
+          "arabic": "ٱلشَّـٰهِدِينَ",
+          "gloss": "those who bear witness",
+          "note": "The same word used earlier in this surah by a delegation asking to be recorded among witnesses. Its return here connects two very different scenes through one request made in identical terms."
+        }
+      ],
+      "lifeInProphetsTime": "Witnessing was a form of participation. A man who had been present at a treaty or a great occasion carried that fact for life and was called on to recite it. To ask to be among the witnesses was to ask for a place in an event rather than for a benefit from it, and everyone in that society understood the difference between the two.",
+      "didYouKnow": "The verb used here for the heart settling is the same one the Quran uses when it says that hearts find rest in the remembrance of God. Its appearance in a request for a visible sign sets the two sources of settling beside one another, which the classical commentaries note without drawing a conclusion from it.",
+      "theologicalSignificance": "The request names hunger first, and the passage does not correct that. What it shows is a mixed motive stated honestly rather than a pure one claimed falsely, and the tradition's readings of the episode divide precisely over whether that honesty redeems the request. Holding both readings is more useful than choosing, because most requests people actually make have exactly this shape.",
+      "crossReferences": [
+        {
+          "ref": "13:28",
+          "why": "Uses the same verb for hearts settling, with the remembrance of God as the cause."
+        },
+        {
+          "ref": "2:260",
+          "why": "Records a similar request to see, answered by a demonstration rather than a rebuke."
+        },
+        {
+          "ref": "5:83",
+          "why": "Contains another group asking to be written among the witnesses, in this same surah."
+        }
+      ],
+      "applyIt": "The next time you want something, try naming all your reasons in order, starting with the least respectable one. Most of us lead with the noble reason and bury the appetite. This request does the opposite, and the honesty of it is a large part of why the passage is worth reading closely.",
+      "exploreFurther": [
+        "13:28",
+        "2:260",
+        "5:83-84"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:114",
+      "surah": 5,
+      "start": 114,
+      "end": 114,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "A Festival For First And Last",
+      "tier": "standard",
+      "meaning": "The prayer is made and it changes the request. Send down a table from heaven, and then four things are asked of it: that it be a festival for the first of us and the last of us, and a sign from You, and provide for us, and You are the best of providers. What the disciples asked for as reassurance is asked for by Jesus as a shared occasion extending to people not yet born. The request is widened before it is presented.",
+      "historicalContext": "Medinan. The commentators note that the prayer restates the request rather than repeating it, and read the addition about the first and the last as the reason the episode is preserved at all. The scene is set in the past within the surah's closing section. Reports about what followed differ in the classical sources, and the Quran itself does not narrate the table's arrival.",
+      "keyTerms": [
+        {
+          "arabic": "عِيدًا",
+          "gloss": "a festival, a recurring day",
+          "note": "From a root meaning to return, so a festival is an occasion that comes back around. Asking for a sign to become a festival asks for it to be repeated in memory rather than witnessed once and finished."
+        },
+        {
+          "arabic": "لِّأَوَّلِنَا وَءَاخِرِنَا",
+          "gloss": "for our first and last",
+          "note": "The phrase reaches beyond those present to everyone who comes after them. It converts a private request into an inheritance, which is what distinguishes this prayer from the request that prompted it."
+        },
+        {
+          "arabic": "خَيْرُ ٱلرَّٰزِقِينَ",
+          "gloss": "the best of providers",
+          "note": "A superlative closing the prayer with a name of God rather than with a request. The commentators note that ending a supplication by naming the one addressed is a pattern across the Quran's recorded prayers."
+        }
+      ],
+      "lifeInProphetsTime": "A great meal was how a community marked anything that mattered. A birth, a return, a settled feud, a good harvest: an animal was slaughtered and everyone ate, and the day was named and recalled for years. Turning a sign into a festival was not a spiritualising move for that audience. It was the ordinary way any event was made to outlive the people who saw it.",
+      "didYouKnow": "The word used here for a festival appears only once in the Quran, in this prayer. It is the root that later supplied the ordinary Arabic name for the two annual celebrations, so a term occurring a single time in the text became one of the most frequently spoken words in Muslim life.",
+      "theologicalSignificance": "The prayer improves the request it is answering. What was asked for as evidence is asked for as a shared and repeated occasion, and as provision, and the whole thing is closed by naming God rather than by pressing the case. That is a model of how supplication reshapes desire: nothing is refused and nothing is scolded, and the same request comes out pointed somewhere larger.",
+      "crossReferences": [
+        {
+          "ref": "5:113",
+          "why": "Gives the request that this prayer restates and widens before presenting it."
+        },
+        {
+          "ref": "2:128",
+          "why": "Records Abraham's prayer, which likewise extends beyond those praying to their descendants."
+        },
+        {
+          "ref": "14:40",
+          "why": "Records a prayer asking that the one praying and his offspring be kept in prayer."
+        }
+      ],
+      "applyIt": "Take something you have been asking for and ask for it once more with someone else included: your family, your street, the people who come after you. Do not drop your own need from it. Notice how the request changes shape when it has to be good for more than one person.",
+      "exploreFurther": [
+        "5:115",
+        "2:126-129",
+        "14:40-41"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:115",
+      "surah": 5,
+      "start": 115,
+      "end": 115,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "I Will Send It Down",
+      "tier": "standard",
+      "meaning": "The answer is given in two halves that do not sit comfortably together. I am sending it down to you; and whoever among you rejects afterwards, I will punish with a punishment I inflict on no one else in all the worlds. The request is granted completely and the granting raises the stakes. The commentators read the severity as proportionate to the clarity: a sign asked for and given leaves nothing to be uncertain about afterwards.",
+      "historicalContext": "Medinan. The Quran does not narrate whether the table came, and the classical commentators divide: some report that it descended and describe what was on it, and others hold that the condition attached caused the request to be withdrawn. The sources preserve both, and the commentaries generally record the disagreement rather than settling it, which is how the tradition has handled the episode.",
+      "keyTerms": [
+        {
+          "arabic": "مُنَزِّلُهَا",
+          "gloss": "the One sending it down",
+          "note": "An active participle rather than a future verb, so the sending is stated as a present reality rather than as a promise. The grammar leaves no room for the condition that follows to cancel the granting."
+        },
+        {
+          "arabic": "يَكْفُرْ",
+          "gloss": "rejects, covers over",
+          "note": "The verb's root sense is to cover something up, as a farmer covers seed with soil. Rejection after a sign is pictured as burying what has been seen, which is why it is treated more gravely than not having seen."
+        },
+        {
+          "arabic": "ٱلْعَـٰلَمِينَ",
+          "gloss": "the worlds, all that exists",
+          "note": "The plural used at the opening of the Quran for what God is Lord of. Placing the comparison against everything that exists makes the statement absolute rather than a ranking among comparable cases."
+        }
+      ],
+      "lifeInProphetsTime": "A request granted created an obligation in that society. A man who asked for protection and received it was bound to the one who gave it in a way that a man who never asked was not. Everyone understood that receiving what you had specifically asked for placed you differently from receiving what simply came. The condition here follows that logic exactly.",
+      "didYouKnow": "The classical commentaries record two incompatible traditions about what happened next, one describing the table's descent in detail and one holding that the request was withdrawn when the condition was heard. The Quran narrates neither, and the surah moves directly from this ayah to a scene set on the day of gathering.",
+      "theologicalSignificance": "Granting and warning arrive in one sentence, which says something about what a sign is. Evidence does not lighten a burden; it increases one, because it removes the possibility of honest doubt. That is a consistent position in the Quran, and it explains why requests for signs are so often deflected elsewhere rather than refused: the deflection is a mercy, not a withholding.",
+      "crossReferences": [
+        {
+          "ref": "5:112",
+          "why": "Contains the deflection offered before the request was pressed and finally granted."
+        },
+        {
+          "ref": "17:59",
+          "why": "Says signs were withheld because earlier peoples denied them and were destroyed."
+        },
+        {
+          "ref": "6:111",
+          "why": "Says that even if angels came and the dead spoke, they still would not believe."
+        }
+      ],
+      "applyIt": "Think about what you would owe if the thing you have been asking for actually arrived. Most of us ask without pricing that in. Spend ten minutes this week writing what would change and what you would then be accountable for. It is a sobering exercise and it clarifies whether you were really asking.",
+      "exploreFurther": [
+        "5:112-114",
+        "17:59",
+        "6:109-111"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:116",
+      "surah": 5,
+      "start": 116,
+      "end": 116,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "You Know What Is In Me",
+      "tier": "standard",
+      "meaning": "A question is put on the day of gathering and it is asked directly. Did you tell people to take you and your mother as gods besides God? The answer begins with an exclamation of God's transcendence and then makes three moves: it is not for me to say what I have no right to; had I said it You would know it; and You know what is in my self and I do not know what is in Yours. The denial is made through God's knowledge rather than through the speaker's memory.",
+      "historicalContext": "Medinan, in the surah's closing scene. The commentators note that the question is posed in the future, as something God will say, and read the whole passage as set on the day of gathering. The formulation asked about is stated precisely, and the classical commentaries are careful about what is and is not being attributed to any community by the question itself.",
+      "keyTerms": [
+        {
+          "arabic": "سُبْحَـٰنَكَ",
+          "gloss": "glory be to You",
+          "note": "From a root meaning to swim or to move freely away, so declaring transcendence pictures God as beyond and apart. It is the standard response in the Quran to an attribution that would diminish Him."
+        },
+        {
+          "arabic": "مَا لَيْسَ لِى بِحَقٍّ",
+          "gloss": "what is not my right",
+          "note": "The denial is framed as a matter of entitlement rather than of fact. He does not say he did not; he says it was never his to say, which is a stronger and far more complete refusal."
+        },
+        {
+          "arabic": "مَا فِى نَفْسِكَ",
+          "gloss": "what is in Your self",
+          "note": "The commentators are careful here, reading the phrase as a matching of expressions rather than as a claim about God's nature. The sentence works by symmetry, and that symmetry is deliberately left incomplete."
+        }
+      ],
+      "lifeInProphetsTime": "Denying an accusation in that society meant producing witnesses or swearing an oath. The strongest available denial was to invoke someone who would know: a man would say that the one who was present knows the truth of it. This answer takes that familiar form and applies it upward, appealing to the only witness who could not be mistaken.",
+      "didYouKnow": "The answer never actually says that the words did not happen. It says they were not the speaker's to say, that God would know if they had been said, and that God knows what is inside him. The classical commentators note this construction and read it as the most complete form a denial can take.",
+      "theologicalSignificance": "The denial is routed entirely through God's knowledge, which makes it unanswerable in the only way that matters: it appeals to a witness who cannot be deceived. It also establishes an asymmetry as a matter of doctrine. He knows what is in me; I do not know what is in Him. That single clause places the speaker firmly on the created side of the line the question was about.",
+      "crossReferences": [
+        {
+          "ref": "5:117",
+          "why": "Continues the answer, stating what he did in fact tell them while he was there."
+        },
+        {
+          "ref": "5:72",
+          "why": "Names the related claim earlier in this surah and answers it with the same speech."
+        },
+        {
+          "ref": "3:79",
+          "why": "Says it is not for a human being given scripture to tell people to worship him."
+        }
+      ],
+      "applyIt": "When you are accused of something you did not do, notice how much of your defence is about your memory and how much is about who you are. This answer barely touches the facts. It says the thing was never available to the speaker, which is a stronger reply and takes far less energy to hold.",
+      "exploreFurther": [
+        "5:117-118",
+        "5:72-75",
+        "3:79-80"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:117",
+      "surah": 5,
+      "start": 117,
+      "end": 117,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "While I Was Among Them",
+      "tier": "standard",
+      "meaning": "The answer continues into what was actually said. I told them only what You commanded me: worship God, my Lord and your Lord. Then a boundary is drawn in time. I was a witness over them while I was among them; when You took me, You were the watcher over them. The claim being made is about the limits of a messenger's responsibility, and it is stated as a matter of presence rather than of intention or of effort expended.",
+      "historicalContext": "Medinan, continuing the closing scene. The commentators discuss the verb rendered as took me and record more than one reading of what it describes; the classical commentaries preserve the range. The surah has been separating the messenger's charge from the audience's response since its middle section, and this speech gives that separation its final and most personal form.",
+      "keyTerms": [
+        {
+          "arabic": "تَوَفَّيْتَنِى",
+          "gloss": "You took me fully",
+          "note": "From a root meaning to receive something in full, the same used for settling a debt completely. The commentators record more than one understanding of what the verb describes here and preserve the readings side by side."
+        },
+        {
+          "arabic": "ٱلرَّقِيبَ",
+          "gloss": "the Watcher, the Keeper",
+          "note": "One who watches over something continuously, from a root connected with a lookout or a raised place. The word describes vigilance rather than judgement, which suits a handover of responsibility from one party to another."
+        },
+        {
+          "arabic": "شَهِيدًا",
+          "gloss": "a witness",
+          "note": "The same root as the request to be counted among witnesses earlier in this surah. Here it names a role held for a limited time, and the ayah's whole structure turns on when that role began and ended."
+        }
+      ],
+      "lifeInProphetsTime": "A guardian's responsibility ended at a stated point. When a boy came of age or a party reached its destination, the one who had charge said so publicly and the obligation transferred. Nobody was held to account for what happened after their watch had closed. This speech uses that entirely familiar structure and applies it to a prophet's charge over a community.",
+      "didYouKnow": "The verb used in this speech for being taken is one the classical commentators discuss at length, since its root sense is receiving something in full rather than any particular manner of departure. The commentaries record several readings of it and generally set them out together rather than choosing among them.",
+      "theologicalSignificance": "Responsibility is bounded by presence, and the boundary is stated by the messenger himself rather than assigned to him. That protects the office from being blamed for what followed it and, more importantly here, separates a teacher entirely from what was later said in his name. The surah has made this argument about several communities, and it lets the person concerned make it last.",
+      "crossReferences": [
+        {
+          "ref": "5:116",
+          "why": "Contains the question that this speech is answering, put on the day of gathering."
+        },
+        {
+          "ref": "5:72",
+          "why": "Quotes the same instruction, to worship God my Lord and your Lord."
+        },
+        {
+          "ref": "5:99",
+          "why": "States the same limit in general terms: only delivery rests on the Messenger."
+        }
+      ],
+      "applyIt": "Think of something you started and handed on, that then went somewhere you would not have taken it. A project, a role, a piece of advice. Say plainly to yourself when your watch ended. Carrying responsibility past that point is very common, and this speech treats the boundary as simply a fact.",
+      "exploreFurther": [
+        "5:116",
+        "5:118-120",
+        "5:99"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:118",
+      "surah": 5,
+      "start": 118,
+      "end": 118,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "If You Forgive Them",
+      "tier": "standard",
+      "meaning": "The speech ends with a sentence that refuses to ask for anything. If You punish them, they are Your servants; if You forgive them, You are the Mighty, the Wise. Both halves are stated as belonging entirely to God, and neither is preferred. What is striking is the second clause: forgiveness is attached to might and wisdom rather than to mercy, which the commentators note, since it makes pardon an exercise of power rather than a softening of it.",
+      "historicalContext": "Medinan, closing the exchange in the surah's final scene. The commentators record that this ayah was recited repeatedly in prayer by the Prophet Muhammad (peace be upon him) through a night, and reports of that incident are preserved in the classical sources. The wording has been treated in the tradition as a model for how to speak about people whose outcome is not yours to determine.",
+      "keyTerms": [
+        {
+          "arabic": "عِبَادُكَ",
+          "gloss": "Your servants",
+          "note": "The word for a worshipping servant, used of every created being. Naming them as God's servants in the punishing half of the sentence rather than the forgiving half is what makes it so hard to argue with."
+        },
+        {
+          "arabic": "ٱلْعَزِيزُ",
+          "gloss": "the Mighty, the Unassailable",
+          "note": "From a root meaning rare, precious and strong at once. Pairing it with forgiveness rules out any reading in which pardon is a concession made out of weakness or under pressure from anyone."
+        },
+        {
+          "arabic": "ٱلْحَكِيمُ",
+          "gloss": "the Wise",
+          "note": "From the same root as judgement and as a bridle. Wisdom in Arabic carries a sense of restraint that produces the right outcome, so the name suits a clause about withholding a deserved consequence."
+        }
+      ],
+      "lifeInProphetsTime": "Intercession in Arabia was pressure applied by someone with standing. A man of influence spoke for a wrongdoer and expected the matter to be dropped, and refusing him was a public affront. Against that background, a speech that mentions both outcomes and asks for neither would have been immediately recognisable as declining to use an influence that was available.",
+      "didYouKnow": "The classical sources report that the Prophet stood in prayer through a night repeating this single ayah, and the report is among the better known accounts of his private worship. The ayah's form, two conditionals with no request attached to either of them, is what the tradition has generally focused on.",
+      "theologicalSignificance": "The speech models a posture toward other people's outcomes that is neither indifferent nor presumptuous. Both possibilities are named, both are placed with God, and no preference is expressed even by the person who had every reason to hope for one. That restraint is not coldness; the sentence is spoken about a community the speaker taught, which is what makes it costly.",
+      "crossReferences": [
+        {
+          "ref": "14:36",
+          "why": "Records Abraham leaving those who disobeyed him to God's forgiveness and mercy."
+        },
+        {
+          "ref": "71:26",
+          "why": "Records a very different prayer for a community, which asks and does not withhold."
+        },
+        {
+          "ref": "5:117",
+          "why": "Gives the speech that this sentence brings to its conclusion."
+        }
+      ],
+      "applyIt": "There is someone whose outcome you have already decided in your own mind. Try holding both possibilities open for a week, without deciding which you want. This sentence was spoken by a teacher about his own students, and if it was available to him it is probably available to you.",
+      "exploreFurther": [
+        "5:116-117",
+        "14:35-41",
+        "71:26-28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:119",
+      "surah": 5,
+      "start": 119,
+      "end": 119,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "The Day Truthfulness Benefits",
+      "tier": "standard",
+      "meaning": "God's reply is short and its subject is not the question that was asked. This is a day when the truthful benefit from their truthfulness. Then a description of gardens, and then the sentence the whole surah has been building toward: God is pleased with them and they are pleased with Him. Two directions of contentment, stated as a completed exchange, and the passage names that as the great attainment rather than naming the gardens.",
+      "historicalContext": "Medinan, the surah's final scene before its closing ayah. The commentators note that the reply does not answer the plea preceding it but moves past it to a general statement, which is characteristic of how this chapter ends its passages. The description of mutual contentment appears in several places in the Quran and is treated as the highest of its descriptions of the outcome.",
+      "keyTerms": [
+        {
+          "arabic": "صِدْقُهُمْ",
+          "gloss": "their truthfulness",
+          "note": "The noun from the verb to speak truly, though the root covers matching between word and reality generally. What benefits them is not correct belief but a correspondence between what they said and what they were."
+        },
+        {
+          "arabic": "رَّضِىَ ٱللَّهُ عَنْهُمْ",
+          "gloss": "God is pleased with them",
+          "note": "The verb of being content with something, from the root this surah used earlier for God's good pleasure. Stated in the past tense, it presents the contentment as already settled rather than as still pending."
+        },
+        {
+          "arabic": "ٱلْفَوْزُ ٱلْعَظِيمُ",
+          "gloss": "the great attainment",
+          "note": "The first word means winning through and escaping at once, as of someone who has come safely out of something. The phrase attaches in the Quran to outcomes rather than to possessions or to places."
+        }
+      ],
+      "lifeInProphetsTime": "Mutual satisfaction was how a transaction ended in that society. A sale, a marriage settlement or a peace was closed when both parties declared themselves content, and the phrase was spoken aloud before witnesses. A relationship described as both sides being pleased would have read as a completed and unreopenable agreement rather than as a warm feeling.",
+      "didYouKnow": "The phrase describing God pleased with them and them pleased with Him appears four times in the Quran and always at the close of a passage. It is one of the text's terminal formulas, and it is the only one that describes the relation from both sides rather than describing what one party gives the other.",
+      "theologicalSignificance": "The verdict turns on truthfulness rather than on correctness, and the distinction matters: what is rewarded is the match between a person's speech and their reality. The closing description then makes the outcome mutual, which is unusual. Most descriptions of the hereafter name what is given; this one names a relation, and the surah has spent a hundred and twenty ayat on relations that failed.",
+      "crossReferences": [
+        {
+          "ref": "9:100",
+          "why": "Uses the same phrase of mutual contentment for the earliest among the believers."
+        },
+        {
+          "ref": "98:8",
+          "why": "Closes a short surah with the identical description of both sides being pleased."
+        },
+        {
+          "ref": "5:118",
+          "why": "Contains the plea that this reply follows without directly answering it."
+        }
+      ],
+      "applyIt": "Find one place where what you say about yourself and what is true have drifted apart. Not a lie; a rounding. Close the gap this week by changing the description rather than the life, if that is the honest direction. This ayah rewards the match, and a match can be made from either end.",
+      "exploreFurther": [
+        "9:100",
+        "98:7-8",
+        "5:118"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.730Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "5:120",
+      "surah": 5,
+      "start": 120,
+      "end": 120,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "To God Belongs Everything",
+      "tier": "standard",
+      "meaning": "The surah closes with a single sentence containing no instruction, no argument and no address to anyone. To God belongs the dominion of the heavens and the earth and whatever is in them, and He has power over everything. After a hundred and nineteen ayat of covenants, disputes, procedures and scenes, the chapter ends on a statement of ownership. Nothing is applied to it, and the commentators note that the ending is deliberately without a conclusion.",
+      "historicalContext": "Medinan, the final ayah of a surah generally placed among the last long chapters revealed. The commentators observe that the chapter opened with a command about human agreements and closes with a statement about divine ownership, and read the two together as a frame. No occasion is reported for a closing ayah of this kind, and none would be expected.",
+      "keyTerms": [
+        {
+          "arabic": "مُلْكُ",
+          "gloss": "dominion, ownership",
+          "note": "The noun for possession and for rule together, from one root covering both. Arabic does not separate owning a thing from ruling it as sharply as English does, which is why the single word carries the whole claim."
+        },
+        {
+          "arabic": "وَمَا فِيهِنَّ",
+          "gloss": "and whatever is in them",
+          "note": "A plural pronoun referring to the heavens and the earth together. The clause exists to close any gap: not just the containers but everything they hold, named separately so that nothing falls outside."
+        },
+        {
+          "arabic": "قَدِيرٌ",
+          "gloss": "fully able, powerful",
+          "note": "An intensive form from a root that also yields the words for measure and for decree. Power in Arabic connects to determining an amount, so capability and apportioning belong to one family."
+        }
+      ],
+      "lifeInProphetsTime": "Ownership in Arabia was contested constantly. Wells, grazing rights, palm groves and routes were claimed, defended and re-divided, and much of the region's poetry is about who held what. A statement of total ownership over everything, made without qualification, spoke into a world where nobody's title to anything was secure for very long.",
+      "didYouKnow": "This surah opens with an instruction about keeping human agreements and closes with a statement of God's ownership of everything. Several long chapters of the Quran are framed this way, beginning and ending on related terms, and the classical commentators treat such framing as one of the ways a chapter's unity becomes visible.",
+      "theologicalSignificance": "Ending a chapter this long without an instruction is itself a statement. Everything that has been argued, required and described is placed inside a single ownership claim, and nothing is drawn from it. The effect is to relativise the surah's contents without weakening them: the covenants matter, and they matter because of who the sentence names as owning what they are made about.",
+      "crossReferences": [
+        {
+          "ref": "5:1",
+          "why": "Opens the surah with an instruction about human agreements, which this ayah frames."
+        },
+        {
+          "ref": "5:17",
+          "why": "States the same ownership of the heavens and the earth in the middle of an argument."
+        },
+        {
+          "ref": "2:284",
+          "why": "Closes a long passage in the earlier surah with the same claim about ownership."
+        }
+      ],
+      "applyIt": "Look at one thing you think of as yours and say the sentence this ayah ends on about it. Not to give it away and not to feel bad. Just to test what changes when the word yours is held a little more lightly for an afternoon. Most people find that it changes how they lend.",
+      "exploreFurther": [
+        "5:1-2",
+        "5:17-18",
+        "2:284"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:14:01.731Z",
         "reviewed": false
       }
     }
