@@ -1,7 +1,7 @@
 {
   "surah": 48,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:19:43.947Z",
+  "generatedAt": "2026-09-09T16:01:50.711Z",
   "studies": [
     {
       "key": "48:1-3",
@@ -116,6 +116,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:19:34.871Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:5",
+      "surah": 48,
+      "start": 5,
+      "end": 5,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "The Purpose Clause",
+      "tier": "standard",
+      "meaning": "This ayah is not a sentence of its own. It begins with a particle of purpose and completes a thought that started several ayat earlier, so what it supplies is the reason behind everything just described: the opening, the calm sent down, the promise of forgiveness. All of it is said to be for this. The reward is then given in two halves, an entry and a remission, and the second is placed after the first rather than before it. Believing men and believing women are named separately, which is a deliberate feature of this surah.",
+      "historicalContext": "Medinan, from the surah revealed in connection with the agreement made at Hudaybiyyah, when a party travelling toward Mecca was turned back and accepted terms that many at the time found hard. The surah reframes that episode as an opening rather than a setback. This ayah belongs to the opening sequence, where the outcome of the whole affair is stated before any of its details are given.",
+      "keyTerms": [
+        {
+          "arabic": "لِّيُدْخِلَ",
+          "gloss": "so that He may admit",
+          "note": "The opening particle makes the whole ayah a purpose clause attached to what came before, so it reads as the reason for events rather than as a separate promise added after them."
+        },
+        {
+          "arabic": "ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ",
+          "gloss": "believing men and believing women",
+          "note": "Both forms are given rather than the masculine plural standing for everyone, which Arabic would allow. This surah does the same in the following ayah for the other side of the contrast."
+        },
+        {
+          "arabic": "فَوْزًا",
+          "gloss": "a winning, an attainment",
+          "note": "A word for coming through safely and getting what was sought, used of a man who escapes danger and gains his object at once. It is the Quran's usual term for the final outcome."
+        }
+      ],
+      "lifeInProphetsTime": "The party that had set out toward Mecca had gone in a state of pilgrimage, unarmed except for travellers' swords, and expected either to enter the sanctuary or to be prevented. They were prevented. They shaved their heads and turned back at the boundary, having signed terms that included returning anyone who came over to them. Men wept. This ayah, and the surah around it, arrived on the road home.",
+      "didYouKnow": "The phrase closing this ayah, a great attainment, appears three times in the Quran in exactly this form, and each time it is attached to something different: to a share of spoils being envied, to a life whose conduct has been set right, and here to entry and remission together. The same two words do very different work in each place.",
+      "theologicalSignificance": "Making the reward a purpose clause changes how the events around it are read. What happened at the boundary is not presented as a setback later compensated, but as a step in something aimed at this from the start. The order inside the promise matters too. Entry is named before remission, so the pardon is described as arriving inside the destination rather than as the ticket that gets someone through the gate.",
+      "crossReferences": [
+        {
+          "ref": "48:1-3",
+          "why": "Begins the sentence this ayah completes, with the opening granted and the calm sent down."
+        },
+        {
+          "ref": "33:35",
+          "why": "Names believing men and women in parallel through an entire ayah, ten qualities each time."
+        },
+        {
+          "ref": "9:72",
+          "why": "Attaches the same promise of gardens to believing men and women, and adds God's approval as greater."
+        }
+      ],
+      "applyIt": "Think of a disappointment from a few years ago that you can now see the shape of. Not a lesson learned, the actual sequence: this happened, then that became possible. Write the two clauses down. The ayah is doing exactly that for its audience while they were still on the road home, which is much harder than doing it afterward.",
+      "exploreFurther": [
+        "48:1-3",
+        "9:72",
+        "33:35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.522Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:6",
+      "surah": 48,
+      "start": 6,
+      "end": 6,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Thinking Ill Of God",
+      "tier": "standard",
+      "meaning": "The other half of the purpose clause, and it identifies its subject by a thought rather than by a deed. Those described are people who assumed the worst about God, and the phrase names an evil assumption specifically, not doubt or ignorance. Then a turn of phrase that Arabic uses for fortune: the reversal they were waiting for is said to be on them. What follows is a sequence of consequences rather than an argument, and the ayah, like the one before it, names men and women separately in both categories.",
+      "historicalContext": "Medinan. The setting is the expedition toward Mecca and the agreement made at its edge. Some who stayed behind had reasoned that the party would not come back, and the surah addresses that calculation directly a few ayat later. The classical commentators read this ayah as describing the assumption behind the staying rather than the staying itself. No separate occasion is reported for it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلظَّآنِّينَ",
+          "gloss": "those who assume, who suppose",
+          "note": "An active participle from a verb covering both supposition and near-certainty. What is criticised is not uncertainty but a settled assumption, and the ayah specifies which kind by the word that follows."
+        },
+        {
+          "arabic": "دَآئِرَةُ",
+          "gloss": "a turn of fortune",
+          "note": "From the root for a circle: the wheel coming round. The phrase belongs to the vocabulary of expecting a reversal in someone else's affairs, and it appears twice in the Quran, both times of people waiting for one."
+        },
+        {
+          "arabic": "مَصِيرًا",
+          "gloss": "a destination, where one ends",
+          "note": "From a verb meaning to become. It names not merely a place arrived at but what a thing turns into, which makes the destination the outcome of a process rather than a sentence imposed at the end."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian politics ran on reading which way things were going. Neutral clans watched a conflict and committed late, alliances were adjusted after a defeat, and men held back from a risky expedition while keeping their standing with both sides. Waiting for the wheel to turn was ordinary prudence, not treachery, in a world without written guarantees. The ayah takes that entirely reasonable calculation and describes what it assumes about God.",
+      "didYouKnow": "The phrase for waiting on a turn of fortune occurs twice in the Quran, and the other occurrence describes people among the desert Arabs who treated their contributions as a fine and waited for the wheel to come round against the believers. The two passages use the identical expression and hold it up in the same way, as a calculation rather than an accusation.",
+      "theologicalSignificance": "The passage treats an assumption as a moral position, which is a strong claim. What a person quietly expects of God shapes every decision made under uncertainty, and it operates below the level of anything he would state. Naming men and women separately on both sides of this surah's contrast has an effect here too: the assumption being described is not a fault of one part of a community but a way of thinking available to anyone.",
+      "crossReferences": [
+        {
+          "ref": "9:98",
+          "why": "Contains the same phrase about waiting for the wheel to turn, in the same Medinan setting."
+        },
+        {
+          "ref": "3:154",
+          "why": "Describes the same assumption after a reverse: thinking about God what belonged to an older way of thinking."
+        },
+        {
+          "ref": "41:22-23",
+          "why": "Says the assumption people held about their Lord was itself what ruined them, and names it directly."
+        }
+      ],
+      "applyIt": "Catch the assumption you make when something goes wrong. Not the thing you would say if asked, the flicker before that: this always happens to me, it was never going to work. That flicker is a claim about how things are arranged. Name it once today, in words, and notice how little evidence it was carrying.",
+      "exploreFurther": [
+        "3:154",
+        "41:22-23",
+        "9:98"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.522Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:7-9",
+      "surah": 48,
+      "start": 7,
+      "end": 9,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Morning And Evening",
+      "tier": "standard",
+      "meaning": "Three ayat move from the largest scale to the smallest. First a statement about forces belonging to God, repeated from a few ayat earlier, which places every visible strength inside something larger. Then the messenger's role in three words: a witness, a bringer of good news, a warner. Then the purpose, and it narrows to four verbs. Believe, support, honour, and glorify morning and evening. The commentators differ over which of the last three attach to God and which to the messenger, and record the readings without settling the question.",
+      "historicalContext": "Medinan, in the opening section of the surah connected with the agreement at Hudaybiyyah. The party had gone out expecting one thing and come back with terms instead, and the surah's early ayat repeatedly relocate power away from what happened on the ground. Naming the forces of the heavens and the earth twice in four ayat belongs to that pattern. No specific occasion is reported for these three.",
+      "keyTerms": [
+        {
+          "arabic": "جُنُودُ",
+          "gloss": "forces, troops",
+          "note": "The ordinary military word for organised bodies of fighting men. Applying it to the heavens and the earth uses the vocabulary of the situation the audience was in and moves it to a scale they could not survey."
+        },
+        {
+          "arabic": "تُوَقِّرُوهُ",
+          "gloss": "treat with weight, honour",
+          "note": "From the root for heaviness and dignity. It means to accord something its proper gravity rather than to praise it, and the verb occurs once in the Quran, in this ayah."
+        },
+        {
+          "arabic": "بُكْرَةً وَأَصِيلًا",
+          "gloss": "early morning and late afternoon",
+          "note": "A fixed pair naming the two ends of the working day rather than exact hours. The phrase occurs four times in the Quran and marks the outer edges of a period, so it stands for its whole span."
+        }
+      ],
+      "lifeInProphetsTime": "A day in that climate was organised around its two cool ends. Animals were watered and moved at first light, work was done before the heat, and business resumed in the late afternoon until dark. Travellers set out early and made camp before dusk. Naming those two moments named the frame everyone's day already had, so an instruction attached to them did not require a new hour to be found in a full schedule.",
+      "didYouKnow": "Two of the four verbs in the last of these ayat occur nowhere else in the Quran. One is the word for supporting or strengthening; the other is the word for treating something with due weight. They sit together in a single clause, and the commentators have long discussed which of the pronouns attached to them point to God and which to the messenger.",
+      "theologicalSignificance": "The sequence puts remembrance at the end of a chain that begins with cosmic forces, which is an unexpected place to land. Having named armies that cannot be counted, the passage arrives at four things a person does, and the last of them is bounded by ordinary daylight. That implies a specific relation between scale and practice: what is asked of a human being is not proportionate to what is described about God, and is not meant to be.",
+      "crossReferences": [
+        {
+          "ref": "33:45-46",
+          "why": "Uses the same three-word description of the messenger's role, and adds a caller and a lamp."
+        },
+        {
+          "ref": "48:4",
+          "why": "Contains the identical clause about the forces of the heavens and the earth, four ayat earlier."
+        },
+        {
+          "ref": "33:41-42",
+          "why": "Attaches remembrance to the same two ends of the day, and asks that it be much rather than occasional."
+        }
+      ],
+      "applyIt": "Attach one short remembrance to something you already do at both ends of the day. The first time you sit down in the morning, the moment you get home. Do not add a slot to your schedule; the ayah names the edges of the day precisely because everyone already has them. Keep it for a week before deciding whether it works.",
+      "exploreFurther": [
+        "33:41-42",
+        "33:45-46",
+        "24:36-37"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.522Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:10",
+      "surah": 48,
+      "start": 10,
+      "end": 10,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "A Hand Above Their Hands",
+      "tier": "standard",
+      "meaning": "A pledge made by clasping hands is described as reaching past the person whose hand was taken. Then a phrase the classical commentators handle with care, saying that God's hand is above theirs and that no bodily hand is intended, while declining to reduce the expression to a bare metaphor. The rest is symmetry. Breaking the pledge is described as breaking it against oneself, which relocates the damage, and fulfilling it is answered with a reward left unspecified except in size.",
+      "historicalContext": "Medinan, and the sources connect this ayah to the pledge given under a tree at Hudaybiyyah, when a rumour reached the camp that an envoy sent into Mecca had been killed. Those present pledged themselves one by one to the Prophet Muhammad (peace be upon him). The pledge was given before it was known what would be required, and the agreement that followed changed the situation entirely.",
+      "keyTerms": [
+        {
+          "arabic": "يُبَايِعُونَكَ",
+          "gloss": "they pledge themselves to you",
+          "note": "From the root for a sale. Arabic uses the same word for a commercial transaction and for a pledge of loyalty, because both were concluded by striking hands, and the exchange is what the verb names."
+        },
+        {
+          "arabic": "نَّكَثَ",
+          "gloss": "unravelled, broke apart",
+          "note": "To undo something twisted, as a rope is picked back into loose fibre. It names not a refusal to keep a promise but the coming apart of something that had been made whole."
+        },
+        {
+          "arabic": "أَوْفَىٰ",
+          "gloss": "fulfilled, paid in full",
+          "note": "To bring a thing to its full measure. It belongs with the words for completing a weight or discharging a debt, so keeping a covenant is described in the vocabulary of paying what is owed."
+        }
+      ],
+      "lifeInProphetsTime": "Agreements were made with hands, not documents. Two men clasped right hands in front of witnesses, and that gesture concluded a sale, a marriage arrangement or an oath of loyalty. There was no registry to appeal to afterward, so the whole weight rested on memory and on standing. A man who unpicked such a bond was known for it, and the knowledge travelled with him for the rest of his life.",
+      "didYouKnow": "The phrase God's hand appears twice in the Quran. The other occurrence is quoted from opponents as something said in mockery, that His hand is fettered, and the Quran rejects it. Here the same two words are used affirmatively, placed above the hands of people making a pledge, and the classical commentators discuss the difference at length.",
+      "theologicalSignificance": "The ayah changes what a promise is by changing who receives it. If the pledge lands somewhere other than where the hand was placed, then its keeping cannot be adjusted by circumstances between the two human parties, and no later disappointment in the person pledged to releases it. The reversal in the middle then removes the usual motive for breaking one. There is nobody to get the better of, since the loss is described as falling on the one who unravels it.",
+      "crossReferences": [
+        {
+          "ref": "48:18",
+          "why": "Returns to the same pledge a few ayat later and says God was pleased with those who gave it."
+        },
+        {
+          "ref": "16:92",
+          "why": "Uses the same image of unravelling, of a woman undoing thread she had spun into strong yarn."
+        },
+        {
+          "ref": "9:111",
+          "why": "Describes another exchange in the vocabulary of trade, and tells them to rejoice in the bargain struck."
+        }
+      ],
+      "applyIt": "Think of a commitment you made to someone who has since disappointed you, and notice how quickly that felt like a release. Sometimes it is. Often the disappointment is doing work the promise never gave it. Pick one small thing you said you would do and do it this week regardless of how the other person has behaved.",
+      "exploreFurther": [
+        "48:18",
+        "16:91-92",
+        "9:111"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.512Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:11",
+      "surah": 48,
+      "start": 11,
+      "end": 11,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Our Property Kept Us Busy",
+      "tier": "standard",
+      "meaning": "The ayah reports a conversation before it happens, in the future tense, and quotes the excuse word for word. Property and family kept us occupied, so ask forgiveness for us. Nothing in that sentence is false; the excuse is plausible and probably even accurate. What the ayah adds is a gap between the tongue and what lies behind it, and the request for forgiveness is the part it identifies as hollow. The reply given does not argue with the excuse. It asks who could hold anything back from God on their behalf, either way.",
+      "historicalContext": "Medinan. The journey toward Mecca had looked likely to end badly, and groups from the surrounding desert who had been asked to come declined. The surah addresses them directly here and again a few ayat later. The classical sources treat the ayah as anticipating what would be said on the party's return, which is why the verb is in the future, and they report no separate occasion for it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُخَلَّفُونَ",
+          "gloss": "the ones left behind",
+          "note": "A passive participle: those who were left, not those who stayed. The form is faintly ironic, since the people described had made their own choice, and it appears three times in the Quran."
+        },
+        {
+          "arabic": "شَغَلَتْنَآ",
+          "gloss": "kept us occupied",
+          "note": "To be taken up with something, so that attention is used elsewhere. The verb does not claim inability, only that the capacity was in use, which is what makes the excuse hard to disprove."
+        },
+        {
+          "arabic": "بِأَلْسِنَتِهِم",
+          "gloss": "with their tongues",
+          "note": "The physical organ named separately from the heart in the same sentence. Arabic uses the word for language itself, so the phrase sets the mechanism of speech against the place speech is supposed to come from."
+        }
+      ],
+      "lifeInProphetsTime": "For people living outside the towns, an absence of weeks was expensive in a way settled families could not always feel. Herds needed daily movement to water, a household without its men was exposed, and a season missed could not be recovered. The excuse quoted here is the true condition of desert life stated accurately. The ayah does not dispute the facts. It goes to the sentence attached at the end of them.",
+      "didYouKnow": "The word used for those left behind occurs three times in the Quran and every occurrence is in a Medinan surah about an expedition. In each place it takes the same passive form, describing people as having been left rather than as having stayed, which reverses the direction of the decision they had actually made.",
+      "theologicalSignificance": "The passage separates an accurate statement from a truthful one. Everything said is defensible and the request appended to it is not, because the request is for something the speaker does not want. That makes sincerity a matter of what a sentence is for rather than of whether its contents are correct. The reply then removes the transaction entirely: no intermediary can adjust what God intends, so seeking one is answering a question nobody asked.",
+      "crossReferences": [
+        {
+          "ref": "9:81",
+          "why": "Describes the same group in an earlier expedition, glad to have stayed and disliking the effort."
+        },
+        {
+          "ref": "63:5-6",
+          "why": "Shows a similar request for intercession being declined, and says asking would make no difference."
+        },
+        {
+          "ref": "49:14",
+          "why": "Addresses desert Arabs again, distinguishing what they declared from what had actually entered their hearts."
+        }
+      ],
+      "applyIt": "Listen to your next apology as it leaves your mouth. Is it asking for something, or offering something. The excuse in this ayah is true and the request tacked on the end is doing the work. Try one apology this week with nothing attached, no explanation and no request, and notice how much harder it is to say.",
+      "exploreFurther": [
+        "9:81",
+        "63:5-6",
+        "48:15-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.521Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:12-13",
+      "surah": 48,
+      "start": 12,
+      "end": 13,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "You Thought They Would Not Return",
+      "tier": "standard",
+      "meaning": "The real reason is supplied in place of the excuse just quoted, and it is a forecast rather than a fault of character. You calculated that the party would never come back to their families. Then a second clause names what happened to that calculation: it was made to look attractive in the heart, so a piece of prudence became a preference. The word closing the first ayah names something spoiled past use. The second ayah widens from the specific group to a general statement, which is how the surah keeps returning from an episode to a principle.",
+      "historicalContext": "Medinan. Fourteen hundred people had set out toward a city that had been at war with them for years, in a state of pilgrimage and effectively unarmed. Estimating that they would not return was not cowardice but arithmetic, and the groups asked to join them made that estimate. The surah is addressing them after the party came back, having agreed terms at the boundary rather than fighting.",
+      "keyTerms": [
+        {
+          "arabic": "يَنقَلِبَ",
+          "gloss": "turn back, return",
+          "note": "To be turned over or reversed, used of a traveller heading home and of something flipped. It is the ordinary word for coming back from a journey, which is what makes the never in the sentence so flat."
+        },
+        {
+          "arabic": "زُيِّنَ",
+          "gloss": "was made to look good",
+          "note": "The passive with no agent named, the same construction used in the surah before this one. What is described is a forecast that stopped being neutral and started being wanted."
+        },
+        {
+          "arabic": "بُورًا",
+          "gloss": "spoiled, gone to waste",
+          "note": "Used of land that has gone barren and of goods that have perished. As a standalone word it appears twice in the Quran, and both times it describes people rather than things."
+        }
+      ],
+      "lifeInProphetsTime": "Everyone in that world could estimate the odds of a journey. How many men, how far, whose territory, what season, who might be waiting. Caravans were insured in practice by spreading shares among many investors precisely because the arithmetic was known. Declining to join a venture with poor odds was ordinary competence. What the ayah addresses is not the calculation but what the heart did with it once it had been made.",
+      "didYouKnow": "The word this ayah uses for a people gone to waste appears as a standalone word only twice in the Quran. The other occurrence is in a scene on the last day, where things that had been worshipped disown their worshippers and describe them as a people ruined. In both places the word is applied to people rather than to land.",
+      "theologicalSignificance": "The passage identifies a specific movement in the heart: from estimating an outcome to wanting it. The estimate is not criticised, and the ayah does not claim the odds were misread. What it names is the moment a forecast becomes comfortable, after which no further evidence will be examined honestly. That is presented as the point where a thought about probability turns into a thought about God, which the surah has already called the worse kind.",
+      "crossReferences": [
+        {
+          "ref": "48:6",
+          "why": "Names the same assumption a few ayat earlier, and calls it thinking an evil thought about God."
+        },
+        {
+          "ref": "3:154",
+          "why": "Records the same calculation after a reverse at Uhud, with people preoccupied by their own survival."
+        },
+        {
+          "ref": "9:118",
+          "why": "Shows three who stayed behind and were eventually turned back toward mercy, after the earth closed on them."
+        }
+      ],
+      "applyIt": "Notice a prediction you are making about something difficult, and ask whether you would be disappointed to be wrong. That is the whole test in this ayah. Being right is a small comfort, and it is a comfort we start reaching for early. If the answer is yes, hold the prediction more lightly for a week.",
+      "exploreFurther": [
+        "48:6",
+        "3:154",
+        "9:117-118"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:01:50.521Z",
         "reviewed": false
       }
     },
