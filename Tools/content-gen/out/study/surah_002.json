@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:23:05.703Z",
+  "generatedAt": "2026-09-09T12:28:16.102Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -12252,6 +12252,64 @@
       }
     },
     {
+      "key": "2:273",
+      "surah": 2,
+      "start": 273,
+      "end": 273,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "You Would Know Them By Their Look",
+      "tier": "standard",
+      "meaning": "The recipients of the giving described in the previous ayat are identified, and the description is unusual in that it is almost entirely about what they do not do. They cannot travel to earn. Someone who did not know would take them for people of means, because of their restraint. And they do not press people with their asking. The recognition is left to a look.",
+      "historicalContext": "Medinan. The commentators identify these with a group of poor emigrants who had left everything behind, were unable to travel for trade, and remained near the mosque in Medina. The reports differ over the details and agree on the situation. The ayah stands at the end of the long passage on giving, naming who it had been describing all along.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلتَّعَفُّفِ",
+          "gloss": "restraint, refraining from asking",
+          "note": "A reflexive form from the root for chastity and abstaining. It names the effort of holding back rather than a natural reticence, so the dignity described is being achieved rather than simply possessed."
+        },
+        {
+          "arabic": "بِسِيمَـٰهُمْ",
+          "gloss": "by their mark, their look",
+          "note": "The word for a distinguishing sign, used of a mark placed on livestock. Here it names something readable in a face and a bearing, which the ayah says is available to anyone paying attention."
+        },
+        {
+          "arabic": "إِلْحَافًا",
+          "gloss": "insistently, persistently",
+          "note": "From a root for wrapping something around, as a cloak is wrapped. Asking in this manner means clinging to a person until they give, which is exactly what these people are described as not doing."
+        }
+      ],
+      "lifeInProphetsTime": "Trade was how a person without land made a living, and it meant travelling: a season with a caravan, a market in another town, a share in someone's goods. A man who could not travel had almost no way to earn. The emigrants in Medina included men who had been merchants in Mecca and now had neither capital nor mobility, and their poverty was invisible by design.",
+      "didYouKnow": "The ayah identifies its recipients almost entirely by negatives: they cannot travel, they are mistaken for rich, they do not ask insistently. The only positive marker given is something in their appearance. The classical commentaries note that the passage places the burden of recognition on the giver rather than on the person in need.",
+      "theologicalSignificance": "Need is described as something that has to be looked for. The people named are precisely those who will not present themselves, which means the giving asked for requires attention before it requires money. That inverts the usual arrangement, in which help goes to whoever asks loudest. And the restraint of the poor is treated as a quality rather than as an obstacle to be overcome.",
+      "crossReferences": [
+        {
+          "ref": "2:271",
+          "why": "Discusses giving openly and secretly, in the passage that leads directly into this description."
+        },
+        {
+          "ref": "9:60",
+          "why": "Names the categories to whom the obligatory charity belongs, in a later Medinan surah."
+        },
+        {
+          "ref": "59:8",
+          "why": "Describes the poor emigrants driven from their homes and property, seeking favour from God."
+        }
+      ],
+      "applyIt": "Think of someone you know whose situation you have never actually asked about because they never bring it up. This ayah describes people who look fine on purpose. Ask one specific question this week rather than a general one, and notice how much easier a specific question is to answer honestly.",
+      "exploreFurther": [
+        "2:271",
+        "9:60",
+        "59:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.835Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:274",
       "surah": 2,
       "start": 274,
@@ -12306,6 +12364,412 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.577Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:275",
+      "surah": 2,
+      "start": 275,
+      "end": 275,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Commerce Is Not Like That",
+      "tier": "standard",
+      "meaning": "The passage opens with an image of unsteadiness rather than with a rule, and the commentators read it of a condition at the resurrection. Then the objection is quoted: commerce and this are the same. The reply does not argue the case; it separates the two by naming them differently. What follows is about stopping. Whoever stops keeps what has passed, and his matter is left with God.",
+      "historicalContext": "Medinan, in the last legislative section of the surah. Lending at increase was standard practice across Arabia and the wider region, and Mecca's economy ran partly on it. The commentators describe the objection quoted here as a real one that merchants raised, since both arrangements involve money and a return. The ayat that follow address debts already outstanding.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرِّبَوٰا۟",
+          "gloss": "increase on a loan",
+          "note": "From a root meaning to grow and to swell, which also gives the word for a hill. The name describes the mechanism, and the surah then sets it against a word from a root joining cleansing with growth."
+        },
+        {
+          "arabic": "يَتَخَبَّطُهُ",
+          "gloss": "strikes him repeatedly, unsettles him",
+          "note": "An intensive verb for striking blindly and repeatedly, used of a camel trampling ground without looking. It describes a loss of steadiness rather than a single blow, which is what the image depends on."
+        },
+        {
+          "arabic": "مَا سَلَفَ",
+          "gloss": "what has already passed",
+          "note": "A phrase for what went before, used across the Quran when a change is introduced without reaching backwards. It keeps a new arrangement from becoming a retrospective accounting of everything already done."
+        }
+      ],
+      "lifeInProphetsTime": "Credit was the machinery of Arabian trade. A caravan was financed by investors who took a share, farmers borrowed against a harvest, and a bad season meant borrowing again on worse terms. Debts compounded, and a family could lose land, then labour, then freedom, in a sequence everyone had watched. The objection quoted here came from men who financed real journeys and carried real risk.",
+      "didYouKnow": "The objection is quoted in the community's own words before it is answered, which the Quran does at several points in this surah. The passage then uses two words from opposite roots for growth: the one describing increase on a loan comes from a root for swelling, and the word for charity in the next ayah from a root joining cleansing with growth.",
+      "theologicalSignificance": "The reply works by distinction rather than by argument, which is a specific move. Two things that look alike are given different names and different consequences, and the reason is not spelled out. What the passage does spell out is the way back: someone who stops is not made to unpick the past, and his case is placed with God rather than with any human accounting.",
+      "crossReferences": [
+        {
+          "ref": "3:130",
+          "why": "Returns to the same subject in a later Medinan surah, warning against returns compounded repeatedly."
+        },
+        {
+          "ref": "30:39",
+          "why": "Contrasts what is given to multiply people's wealth with what is given seeking God's approval."
+        },
+        {
+          "ref": "2:276-278",
+          "why": "Continues directly, contrasting what is worn away with what is made to grow."
+        }
+      ],
+      "applyIt": "Look at one arrangement in your life where the gain is automatic and requires nothing of you. Not to judge it: to notice how it feels different from money you earned. This passage separates two things that look alike, and the difference it points at is what the arrangement asks of the person inside it.",
+      "exploreFurther": [
+        "3:130",
+        "30:39",
+        "2:276-278"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.839Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:276-278",
+      "surah": 2,
+      "start": 276,
+      "end": 278,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "Worn Away And Made To Grow",
+      "tier": "standard",
+      "meaning": "Two verbs are set against each other, and both are about size. One thing is worn away, the other is made to grow, and the words are chosen so that the outcome reverses the appearance. Then comes a description of those who believe and give, with the refrain about no fear and no grief. The third ayah asks that what remains outstanding be left, with belief named as the condition.",
+      "historicalContext": "Medinan, in the final legislative section of the surah. The commentators report that the instruction to leave what remained outstanding was difficult in practice, since debts had been contracted in good faith under the previous arrangement and families depended on the expected return. The ayat that follow deal with exactly that difficulty, and the sequence is read as one movement.",
+      "keyTerms": [
+        {
+          "arabic": "يَمْحَقُ",
+          "gloss": "wipes out, wears away",
+          "note": "The verb used of the waning of the moon, so it describes something diminishing gradually rather than being destroyed at once. The image is of a thing that looks whole while it is already going."
+        },
+        {
+          "arabic": "وَيُرْبِى",
+          "gloss": "makes grow, increases",
+          "note": "From the same root as the word for increase on a loan, used here of charity. The pairing is deliberate: what was named as growth is worn away, and what looks like loss is what actually grows."
+        },
+        {
+          "arabic": "وَذَرُوا۟",
+          "gloss": "leave it, let it go",
+          "note": "A plain verb for leaving something alone, with no word of condemnation attached to it. It asks that an outstanding claim simply be released rather than pursued, which is practical rather than a verdict."
+        }
+      ],
+      "lifeInProphetsTime": "Outstanding debts in Medina were not abstract entries. A man knew exactly who owed him, how much, and when it was due, and often the debt was secured against a stand of palms or a share in a herd. Releasing what remained meant a real loss to a real household, and it would have been discussed publicly among families who all knew one another's positions.",
+      "didYouKnow": "The two verbs in the first ayah come from roots that both concern size, one taken from the waning of the moon and one shared with the word for increase on a loan. The refrain about no fear and no grief in the second ayah appears several times across this surah, each time closing a description of those who act rightly.",
+      "theologicalSignificance": "The reversal is the argument. What is described as growing is said to be shrinking, and what looks like giving away is said to be increasing, which relocates the accounting entirely. Then the second ayah describes a whole life rather than a transaction, placing prayer and giving side by side. And the third names belief as the condition, so what follows is a consequence of what a person already holds.",
+      "crossReferences": [
+        {
+          "ref": "2:261-262",
+          "why": "Gives the image of increase directly, a grain producing seven ears of a hundred grains each."
+        },
+        {
+          "ref": "30:39",
+          "why": "Sets the same contrast between what increases in people's wealth and what seeks God's approval."
+        },
+        {
+          "ref": "2:279",
+          "why": "Continues directly, describing what follows for those who do not leave what remains."
+        }
+      ],
+      "applyIt": "Pick one number you watch going up: a balance, a follower count, a streak. Then ask what has been quietly going down while it rose. This passage's whole method is to reverse an appearance of growth. You do not have to change anything today. Just do the second sum as carefully as you do the first.",
+      "exploreFurther": [
+        "2:261-262",
+        "30:39",
+        "2:279"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.840Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:279",
+      "surah": 2,
+      "start": 279,
+      "end": 279,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Neither Wronging Nor Wronged",
+      "tier": "standard",
+      "meaning": "The sharpest sentence in the section arrives, and the way out is stated in the same breath. If the outstanding claims are not released, notice is given of a war from God and His Messenger, language the Quran uses nowhere else. Then: if you turn back, the capital is yours. The closing clause states the principle in a few words, symmetrical in both directions at once.",
+      "historicalContext": "Medinan, immediately after the instruction to leave what remained outstanding. The commentators note the severity of the phrasing and read it as reflecting how deeply the practice was embedded rather than as describing an actual campaign. The provision that the principal may be kept is read as protecting lenders from losing what they had genuinely advanced.",
+      "keyTerms": [
+        {
+          "arabic": "فَأْذَنُوا۟",
+          "gloss": "take notice, be informed",
+          "note": "An imperative from the root for permission and announcement. It reads as a formal notification, of the kind made publicly before hostilities began, which is what gives the sentence its weight."
+        },
+        {
+          "arabic": "رُءُوسُ أَمْوَٰلِكُمْ",
+          "gloss": "the principal of your wealth",
+          "note": "Literally the heads of your properties, an idiom for the original sum before any increase. The phrase distinguishes what was actually advanced from whatever was added on top of it."
+        },
+        {
+          "arabic": "لَا تَظْلِمُونَ",
+          "gloss": "you do not wrong",
+          "note": "The first half of a pair, followed immediately by the same verb in the passive. One root states the whole standard in both directions, which is unusual and gives the clause its finality."
+        }
+      ],
+      "lifeInProphetsTime": "A creditor in Medina had a real claim, often secured against land, and losing an expected return could put his own household under strain. Debtors, meanwhile, could be ruined by an accumulating obligation. The clause about keeping the principal addresses both: nobody is asked to forget what they lent, and nobody is pursued for what grew on top of it.",
+      "didYouKnow": "The phrase about a war from God and His Messenger appears nowhere else in the Quran. The closing clause of the ayah is built from a single verb used twice, once active and once passive, so one root states the whole principle in both directions with nothing added to it.",
+      "theologicalSignificance": "The severity and the exit sit in the same sentence, which is the shape this surah keeps returning to. What is being protected is named at the end and it is symmetrical: not the interest of one party but the absence of wrong in either direction. That is a general principle stated at the close of a specific instruction, and it is what the whole section has been building towards.",
+      "crossReferences": [
+        {
+          "ref": "2:280",
+          "why": "Continues immediately with what happens when the debtor cannot pay, asking for deferment."
+        },
+        {
+          "ref": "2:276-278",
+          "why": "Precedes this with the instruction to leave outstanding claims, which this ayah then presses."
+        },
+        {
+          "ref": "4:29",
+          "why": "Sets trade by mutual consent against consuming wealth wrongly, in a matching principle."
+        }
+      ],
+      "applyIt": "Look at an arrangement where you are getting more than you put in, and where the other party had little choice. This ayah's final clause is a standard that runs both ways: not wronging and not being wronged. Test one arrangement against it this week, honestly, and see which side of the sentence you are on.",
+      "exploreFurther": [
+        "2:280",
+        "2:276-278",
+        "4:29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.841Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:280",
+      "surah": 2,
+      "start": 280,
+      "end": 280,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Until A Time Of Ease",
+      "tier": "standard",
+      "meaning": "Two provisions follow, and they are graded. If the debtor is in difficulty, the payment waits until things ease. Then a second option is named as better: release the debt altogether as charity. The comparative form does the work, since nothing here is required. The closing conditional is short and sharp, if you only knew, which leaves the weighing with the reader.",
+      "historicalContext": "Medinan, following the instruction about outstanding claims. The commentators note that the ayah addresses the practical situation directly, since a creditor who could no longer claim an increase still had a principal outstanding, and a debtor who could not pay it. The provision for deferment answers what would otherwise have left both parties stuck.",
+      "keyTerms": [
+        {
+          "arabic": "عُسْرَةٍ",
+          "gloss": "hardship, difficulty",
+          "note": "From the root for what is hard to handle, the same one set against ease in the passage on fasting. Its counterpart appears in this very ayah, so the sentence names both ends of one scale."
+        },
+        {
+          "arabic": "فَنَظِرَةٌ",
+          "gloss": "a waiting, a respite",
+          "note": "A noun from the verb for looking and waiting, used in this surah of a respite denied elsewhere. Here it is granted, so the same vocabulary carries opposite outcomes in two parts of one surah."
+        },
+        {
+          "arabic": "تَصَدَّقُوا۟",
+          "gloss": "you give it as charity",
+          "note": "The verb for giving alms, applied here to cancelling a debt. Naming a release as charity reframes it: what is written off is not lost but counted as something given away."
+        }
+      ],
+      "lifeInProphetsTime": "Debt in Medina was personal and visible. Both parties lived in the same streets, and a defaulting debtor was known to everyone. Pressing a claim against a family in genuine difficulty produced real hostility, and dropping it produced real standing. The two options in this ayah were both socially legible, and the second was the more expensive of them.",
+      "didYouKnow": "The word used here for a respite comes from the same root as the word denied to another group earlier in this surah, where the punishment was not lightened and no respite was given. The same vocabulary appears in the two places with opposite outcomes, which the classical commentaries occasionally note.",
+      "theologicalSignificance": "A hard instruction is followed immediately by relief for the person on the other side of it, which keeps the section from favouring either party. Then the better option is named without being required, using a comparative, which is this passage's characteristic move. And describing a cancelled debt as charity changes the accounting: nothing has been lost, only moved into another column.",
+      "crossReferences": [
+        {
+          "ref": "2:279",
+          "why": "Precedes this with the provision that the principal may be kept, which this ayah then softens."
+        },
+        {
+          "ref": "2:237",
+          "why": "Uses the same pattern, naming an entitlement and then calling foregoing it nearer to piety."
+        },
+        {
+          "ref": "94:5-6",
+          "why": "States the relation between hardship and ease twice over, using the same pair of roots."
+        }
+      ],
+      "applyIt": "Think of someone who owes you something small and cannot easily pay: money, time, a favour returned. This ayah names two options and says which is better without requiring it. Choose one such debt this week and simply tell the person it is finished, then notice how much lighter it makes your own side.",
+      "exploreFurther": [
+        "2:279",
+        "2:237",
+        "94:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.842Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:281",
+      "surah": 2,
+      "start": 281,
+      "end": 281,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Paid In Full For What It Earned",
+      "tier": "standard",
+      "meaning": "One short ayah closes the passage on debt by moving the whole subject somewhere else. A day is named, the return is described, and each soul is paid in full for what it earned. The verb for paying in full is a commercial one, so a section that has been about ledgers ends with the largest ledger of all. The last clause rules out any shortfall.",
+      "historicalContext": "Medinan. Several classical reports name this as among the last ayat revealed, and the commentators discuss its placement here, in the middle of a passage about debt, rather than at the end of the Quran's text. The reports differ over the details. The ayah's brevity and its subject have made it one of the most frequently quoted in the surah.",
+      "keyTerms": [
+        {
+          "arabic": "تُوَفَّىٰ",
+          "gloss": "is paid in full",
+          "note": "From the root for completeness, and the standard word for settling a debt without shortfall. Using a commercial verb at the end of a section about debt turns the whole passage into one extended comparison."
+        },
+        {
+          "arabic": "كَسَبَتْ",
+          "gloss": "it earned, it acquired",
+          "note": "The ordinary verb for earning wages, used across this surah of what a heart acquires as much as of money. It keeps the accounting language running right to the last clause of the passage."
+        },
+        {
+          "arabic": "تُرْجَعُونَ",
+          "gloss": "you will be returned",
+          "note": "A passive verb: the returning is done to people rather than by them. That grammatical detail places the movement outside anyone's arrangement, which is the difference between this settlement and the ones just described."
+        }
+      ],
+      "lifeInProphetsTime": "Every merchant in Medina understood a settled account. Debts were reckoned at fixed terms, and a man who paid in full and on time carried a reputation worth more than the sum itself. The vocabulary of this ayah is the vocabulary of that world, applied to something that could not be negotiated, deferred or written off by agreement.",
+      "didYouKnow": "Several classical reports name this as among the last ayat of the Quran to be revealed, and note that it was placed inside the passage on debt rather than at the end of the text. The commentaries record differing accounts of how long afterwards the Prophet Muhammad (peace be upon him) lived.",
+      "theologicalSignificance": "The passage on lending ends by describing an account that cannot be adjusted. That is not a threat added at the close; it is the frame the whole section has been working inside, made explicit. And the final clause repeats the one used of the principal a few ayat earlier, so a human standard of no wrong in either direction is matched by a divine one.",
+      "crossReferences": [
+        {
+          "ref": "2:279",
+          "why": "Closes with the same clause about not wronging and not being wronged, a few ayat earlier."
+        },
+        {
+          "ref": "3:185",
+          "why": "States that every soul will receive its recompense in full on the Day of Resurrection."
+        },
+        {
+          "ref": "99:6-8",
+          "why": "Describes the same settlement in the smallest possible units, an atom's weight either way."
+        }
+      ],
+      "applyIt": "Take the last thing you did today that nobody saw and nobody will ever mention. This ayah says it is on the account. That is not meant as a threat; it answers the ordinary suspicion that unseen effort simply disappears. Do one more such thing tomorrow, and leave it unmentioned deliberately.",
+      "exploreFurther": [
+        "2:279",
+        "3:185",
+        "99:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.843Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:282",
+      "surah": 2,
+      "start": 282,
+      "end": 282,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Write It Down",
+      "tier": "standard",
+      "meaning": "The longest ayah in the Quran works through a single practical situation in detail: a debt with a fixed term should be written. A scribe writes fairly; the one who owes dictates; a guardian dictates if he cannot; witnesses are called; small sums are not exempt; a transaction settled on the spot is. Reasons are given at the midpoint, and the last instruction protects the scribe and the witness.",
+      "historicalContext": "Medinan, in the final section of the surah. Literacy in Medina was limited and most agreements were spoken before witnesses, so a written record was a real innovation for ordinary transactions. The commentators note the level of detail and read the ayah as establishing a practice rather than as settling a dispute. The reasons it gives are stated openly in the text itself.",
+      "keyTerms": [
+        {
+          "arabic": "أَجَلٍ مُّسَمًّى",
+          "gloss": "a named term, a stated deadline",
+          "note": "A fixed and specified time, the phrase the Quran uses elsewhere for appointed spans. Its presence at the start means the instruction attaches to agreements that run forward in time rather than to immediate exchanges."
+        },
+        {
+          "arabic": "وَلْيُمْلِلِ",
+          "gloss": "and let him dictate",
+          "note": "The verb for dictating to a writer. Placing the dictation with the one who owes is a deliberate arrangement: the person with the obligation states its terms, so he cannot later claim the record was made against him."
+        },
+        {
+          "arabic": "أَقْسَطُ",
+          "gloss": "more equitable, fairer",
+          "note": "A comparative from the root for justice and exact measure. Three comparatives appear together in the middle of the ayah, giving three separate reasons, which is unusual in a passage of instruction."
+        }
+      ],
+      "lifeInProphetsTime": "Most people in Medina could not write, and a professional scribe was a recognised figure who charged for his work. Agreements were normally spoken in front of witnesses whose memory was the record, and disputes years later turned on what people recalled. A written note changed that entirely, and the instruction that a scribe should not refuse addresses the scarcity of the skill.",
+      "didYouKnow": "This is the longest ayah in the Quran, and its subject is not prayer or belief but the recording of a debt. The middle of the ayah gives three reasons for the instruction, each of them a comparative: more equitable, stronger as evidence, and more likely to keep you from doubt.",
+      "theologicalSignificance": "The length is the point. A book that states the nature of God in a few lines spends its longest passage on paperwork, which says something about where the tradition locates religion. The reasons are given openly rather than asserted, and every one of them concerns preventing a future dispute. The closing protection of the scribe and the witness guards the people who make the arrangement work.",
+      "crossReferences": [
+        {
+          "ref": "2:283",
+          "why": "Continues directly with what to do when no scribe is available, on a journey."
+        },
+        {
+          "ref": "2:255",
+          "why": "The surah's other landmark ayah, of comparable weight and an entirely different subject."
+        },
+        {
+          "ref": "4:135",
+          "why": "Asks that testimony be given for God even against oneself, one's parents or one's relatives."
+        }
+      ],
+      "applyIt": "Write down one arrangement this week that you would normally leave verbal: what you agreed to do for someone, or what they agreed to do for you. Not because you distrust them. The longest ayah in the Quran gives its own reason, which is to make a future disagreement less likely, and that is a favour to both of you.",
+      "exploreFurther": [
+        "2:283",
+        "2:255",
+        "4:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.844Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:283",
+      "surah": 2,
+      "start": 283,
+      "end": 283,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "If You Trust One Another",
+      "tier": "standard",
+      "meaning": "The exception to the previous ayah is described: on a journey with no scribe available, something held as security serves instead. Then a further case, and this is where the passage turns. If you trust one another, the arrangement runs on trust, and the one trusted discharges what was entrusted. The ayah closes by naming the concealing of testimony as something that reaches the heart.",
+      "historicalContext": "Medinan, completing the passage on recording debts. Travel made written records impractical, and a pledge held as security was the standard practice on the roads. The commentators read the second half as addressing the case where the parties choose not to formalise anything, and note that the surah moves from a procedure to a matter of character within a single ayah.",
+      "keyTerms": [
+        {
+          "arabic": "فَرِهَـٰنٌ مَّقْبُوضَةٌ",
+          "gloss": "a pledge taken in hand",
+          "note": "A security item together with an adjective meaning received or held. The specificity matters: what stands in for a document is not a promise but an object physically in someone's possession."
+        },
+        {
+          "arabic": "ٱؤْتُمِنَ",
+          "gloss": "was trusted, was entrusted",
+          "note": "A passive from the root for safety and trust, the same root that gives the word for a believer. The person is defined by having been trusted rather than by any quality he claims for himself."
+        },
+        {
+          "arabic": "ءَاثِمٌ قَلْبُهُۥ",
+          "gloss": "his heart is sinful",
+          "note": "An unusual construction placing the wrong in the heart specifically rather than in the person. Concealing testimony is an act of silence, so the ayah locates it where the silence is being kept."
+        }
+      ],
+      "lifeInProphetsTime": "On a journey nobody carried writing materials, and a caravan halted at a well was not the place to find a scribe. Business still had to be done: a share bought, a beast sold, a loan taken to buy provisions. A pledge left in hand, a ring, a cloak, a weapon, was the ordinary substitute, and everyone on the road understood the arrangement.",
+      "didYouKnow": "The passage moves from the longest ayah in the Quran, full of procedure, to this one, which ends by naming a heart. The construction that places the wrong in the heart rather than in the person is uncommon, and the classical commentaries pause on it, noting that concealment is an inward act with no outward evidence.",
+      "theologicalSignificance": "Procedure and character are placed in a sequence rather than in opposition. The written record exists because trust can fail, and the ayah still describes an arrangement in which two people simply trust each other, without treating that as naive. What holds it together is named at the end, and it is not enforcement but the state of a heart that could stay silent and does not.",
+      "crossReferences": [
+        {
+          "ref": "2:282",
+          "why": "Sets out the full procedure that this ayah then provides the exception to."
+        },
+        {
+          "ref": "2:159-160",
+          "why": "Uses the same verb for concealing, there of revelation rather than of testimony."
+        },
+        {
+          "ref": "4:58",
+          "why": "Asks that trusts be returned to their owners and that judgement between people be just."
+        }
+      ],
+      "applyIt": "Think of something someone left with you: a key, a confidence, a task, a piece of information. This ayah calls that person the one who was trusted, and defines him by nothing else at all. Discharge one such thing this week without being reminded, which is the only version of it that counts.",
+      "exploreFurther": [
+        "2:282",
+        "2:159-160",
+        "4:58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:28:15.845Z",
         "reviewed": false
       }
     },
