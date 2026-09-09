@@ -1,7 +1,7 @@
 {
   "surah": 25,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T14:42:35.383Z",
+  "generatedAt": "2026-09-09T14:49:58.906Z",
   "studies": [
     {
       "key": "25:1-2",
@@ -1860,6 +1860,180 @@
       }
     },
     {
+      "key": "25:59",
+      "surah": 25,
+      "start": 59,
+      "end": 59,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Ask One Who Knows",
+      "tier": "standard",
+      "meaning": "Three statements are stacked without connectives. The heavens and the earth and what lies between them were made in six days; then came the settling upon the Throne; then a single name, the Merciful, dropped in as if it were a sentence. The classical commentators affirm the settling as reported and decline to say how, holding that the manner is not disclosed. The line closes by sending the listener to someone who actually knows, which is an odd ending for an ayah about the creation of everything.",
+      "historicalContext": "Meccan. The name the Merciful was contested in Mecca in a way the plain word for God was not, and the next ayah records the objection directly. Placing that name at the centre of an ayah about creating the heavens is deliberate: the surah is establishing that the disputed name belongs to the one whose power nobody denied. No specific occasion is attested for the line.",
+      "keyTerms": [
+        {
+          "arabic": "سِتَّةِ أَيَّامٍ",
+          "gloss": "six days",
+          "note": "The phrase occurs seven times in the Quran. The commentators note that a day is a measure of time by the sun, which did not exist yet, so the word is read as a period rather than a rotation."
+        },
+        {
+          "arabic": "ٱسْتَوَىٰ",
+          "gloss": "he settled, established himself",
+          "note": "A verb of rising to and settling upon. The mainstream classical position affirms the statement as it stands and refuses to specify a manner, since nothing in the text describes one."
+        },
+        {
+          "arabic": "خَبِيرًا",
+          "gloss": "one truly acquainted",
+          "note": "The same word closed the previous ayah, describing God. Here the commentators divide over whether the informed one to be asked is God Himself or a person who knows, and both readings are preserved."
+        }
+      ],
+      "lifeInProphetsTime": "When a Meccan wanted to know something outside his own experience he asked a man who had been there. Route conditions came from a driver who had run the road that season. A dispute over ancestry went to an elder who carried the genealogies. Knowledge moved by testimony from the person who had it, not by consulting a record, and telling a listener to go and ask someone informed was the ordinary shape of settling a question.",
+      "didYouKnow": "This ayah and the one before it end on the same word, the only two places in the surah where it appears. The phrase about six days occurs seven times across the Quran. And the name that sits in the middle of this ayah, alone and without a verb, is the name the very next ayah reports people refusing to recognise.",
+      "theologicalSignificance": "The ayah performs a restraint it does not explain. It reports a settling upon the Throne and then supplies nothing further, and the classical tradition holds that position, affirming the words and leaving the manner alone. Naming the Merciful immediately afterwards attaches mercy to sovereignty rather than balancing it against power. And the closing instruction locates certainty outside the listener's own reasoning, which is a strange place for an argument to end and a deliberate one.",
+      "crossReferences": [
+        {
+          "ref": "7:54",
+          "why": "Gives the same statement about six days and the Throne, with the night and day added."
+        },
+        {
+          "ref": "20:5",
+          "why": "Places the Merciful and the Throne in a single short sentence, the same pairing as here."
+        },
+        {
+          "ref": "16:43",
+          "why": "Directs a question to the people who have knowledge, in the same posture of asking."
+        }
+      ],
+      "applyIt": "Pick one thing you have an opinion about and have never asked anyone qualified. A symptom, a contract clause, a question about your religion you have been quietly assuming an answer to. Find the person who actually knows and ask this week. This ayah ends by sending the listener to someone informed, and it does not treat that as a weakness.",
+      "exploreFurther": [
+        "7:54",
+        "20:5",
+        "41:9-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:49:58.766Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "25:60",
+      "surah": 25,
+      "start": 60,
+      "end": 60,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "And What Is The Merciful",
+      "tier": "standard",
+      "meaning": "The refusal is aimed at a name. Told to bow to the Merciful, they answer with a question about the word itself, and then with an objection to being told what to do by a person. Two things are being refused at once, a name they will not accept and an authority they will not take instruction from. The ayah then reports the result: the invitation did not soften them but pushed them further away, which is stated as an effect rather than an accusation.",
+      "historicalContext": "Meccan. The commentators record that this particular name met resistance in Mecca in a way the general word for God did not, and the treaty document drawn up much later at Hudaybiyyah was objected to on the same grounds by the Quraysh negotiator. Whatever its origin, the surah treats the name as the live point of contention, using it in the ayah before, here, and again three ayat later.",
+      "keyTerms": [
+        {
+          "arabic": "ٱسْجُدُوا۟",
+          "gloss": "bow down, prostrate",
+          "note": "Putting the forehead to the ground, the most complete bodily surrender available. The objection recorded here answers a request for a posture, not for an argument, which is why the refusal reads as physical rather than intellectual."
+        },
+        {
+          "arabic": "ٱلرَّحْمَـٰنُ",
+          "gloss": "the Merciful, the Compassionate",
+          "note": "An intensive form built from the word for a womb, so the mercy it names is comprehensive and welling up rather than granted case by case. The surah uses it four times in its own text."
+        },
+        {
+          "arabic": "نُفُورًا",
+          "gloss": "aversion, running away",
+          "note": "The word for a startled animal bolting. It names flight rather than disagreement, so the reaction described is a body shying away from something rather than a mind rejecting it."
+        }
+      ],
+      "lifeInProphetsTime": "Prostration was not a neutral gesture in Mecca. A free man of standing did not put his face on the ground for anyone; that was what a captive did, or a servant before a foreign king, and the Arabs were known for refusing the bow that Persian and Byzantine courts required. Asking a Quraysh chief to lie flat in front of his own townspeople was asking him to spend the only currency he had.",
+      "didYouKnow": "This ayah carries a prostration mark in the standard printed text, one of fifteen places so marked, and reciters bow at the words. The exact list varies slightly across the tradition, and this one appears on it consistently. So the ayah reporting a refusal to prostrate is itself recited by prostrating.",
+      "theologicalSignificance": "A name is treated as a claim. To call God the Merciful is to say something about what governs the universe, and the objection recorded here is a refusal of that description rather than of God's existence, which nobody in Mecca denied. The second half establishes something harder: an invitation can make a person worse. Being addressed forces a response, and the response can be a hardening, which the Quran states without softening it.",
+      "crossReferences": [
+        {
+          "ref": "17:110",
+          "why": "Addresses the same dispute directly, saying either name may be called upon since the best names belong to Him."
+        },
+        {
+          "ref": "13:30",
+          "why": "Reports the same refusal of this name by people to whom the message was being recited."
+        },
+        {
+          "ref": "9:124-125",
+          "why": "Describes a revelation increasing faith in some and disease in others, the two-way effect named here."
+        }
+      ],
+      "applyIt": "Notice the next time advice makes you dig in. Someone tells you something reasonable and you find yourself arguing harder than the point deserves. Do not fix it in the moment. Just note it happened, and an hour later ask what you were defending. This ayah names the reaction it describes as a moving away, which is a thing you can catch yourself doing.",
+      "exploreFurther": [
+        "17:110",
+        "13:30",
+        "19:88-93"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:49:58.773Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "25:61-62",
+      "surah": 25,
+      "start": 61,
+      "end": 62,
+      "theme": "Light",
+      "themeId": "light",
+      "title": "A Lamp And A Moon",
+      "tier": "standard",
+      "meaning": "Blessed is the one who did this: the formula opens the ayah exactly as the surah itself opened, and it appears once more between the two. Then three things set in the sky. The sun is called a lamp, a domestic object burning oil, and the moon is described by the light it gives rather than by what it is. The next line names the alternation of night and day and attaches it to two purposes, remembering and thanking, both of which require someone who wants them.",
+      "historicalContext": "Meccan. Navigation by star was ordinary competence, not specialist knowledge, and the moon governed the calendar that fixed the sacred months and the fairs. This is the last of the surah's natural signs before it turns to describe the servants of the Merciful. No occasion is reported. The commentators note that the argument has moved from things overhead to the use a person makes of them.",
+      "keyTerms": [
+        {
+          "arabic": "بُرُوجًا",
+          "gloss": "towers, constellations",
+          "note": "The word for a fortified tower, applied to the sky. The commentators read it as the great stations the sun and moon move through, and it occurs in only one other ayah of the Quran in this form."
+        },
+        {
+          "arabic": "سِرَٰجًا",
+          "gloss": "a lamp",
+          "note": "An oil lamp in a house, the small burning thing people lit at dusk. The Quran uses the word four times: three of the sun, and once of a prophet sent to give light."
+        },
+        {
+          "arabic": "خِلْفَةً",
+          "gloss": "succeeding one another",
+          "note": "From the root for coming after. It names each of the two as the replacement of the other, so a missed opportunity in one is recoverable in the next. The word occurs once in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "A caravan crossing open country at night steered by stars, and the men who could read them were paid for it. The month began when someone sighted the new crescent and said so publicly, which set the dates of the fairs, the truce months and the pilgrimage. Getting the moon wrong meant arriving at an empty market. The sky was a working instrument in that world, consulted the way a person now checks a screen.",
+      "didYouKnow": "The word this ayah uses for the alternation of night and day occurs once in the whole Quran. The opening formula, blessed is He, occurs four times in the Book, and three of the four are in this surah: at its first ayah, at ayah ten, and here. And the word for lamp is used of the sun three times and once of a prophet.",
+      "theologicalSignificance": "The purposes are attached to a wanting. Night and day succeed each other for whoever wanted to remember or wanted to give thanks, and the condition is stated twice, which makes the sign inert without a person willing to read it. That is a claim about how signs work: they are placed in the world for everyone and function only for someone who has decided to look. The astronomy is not evidence by itself.",
+      "crossReferences": [
+        {
+          "ref": "10:5",
+          "why": "Names the sun a shining thing and the moon a light, and says the stages were set for reckoning."
+        },
+        {
+          "ref": "71:15-16",
+          "why": "Uses the same word for lamp of the sun, in a passage arguing from the sky in the same way."
+        },
+        {
+          "ref": "3:190-191",
+          "why": "Makes the alternation of night and day a sign for those who think, which this ayah conditions on wanting to."
+        }
+      ],
+      "applyIt": "Pick one of the two, remembering or thanking, and give it to the part of the day you usually waste. The walk from the car, the queue, the four minutes before a meeting starts. Say one thing you are grateful for, or one line you know by heart. This ayah makes day and night replacements for each other, so a missed morning is not a lost day.",
+      "exploreFurther": [
+        "10:5",
+        "3:190-191",
+        "36:37-40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:49:58.773Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "25:63-68",
       "surah": 25,
       "start": 63,
@@ -1976,6 +2150,64 @@
       }
     },
     {
+      "key": "25:71-73",
+      "surah": 25,
+      "start": 71,
+      "end": 73,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "They Pass By With Dignity",
+      "tier": "standard",
+      "meaning": "The list of the Merciful's servants continues, and it is built mostly from things they do not do. One who turns back and does right is said to turn to God with a real turning, the noun repeating the verb to make the return complete rather than nominal. They do not attend falsehood, which the commentators read as false testimony and as being present where lies are told. When they pass empty talk they pass it honourably, without joining and without a scene. And reminders do not land on them deaf and blind.",
+      "historicalContext": "Meccan, from the closing portrait of the surah, which describes the community being formed rather than the opposition being answered. These qualities are given in a city where a man's public conduct was watched constantly and where gatherings for poetry, gossip and drink were the main entertainment. No occasion is reported. The list runs from the previous ayah about repentance through to the prayer for family that closes it.",
+      "keyTerms": [
+        {
+          "arabic": "مَتَابًا",
+          "gloss": "a true returning",
+          "note": "A verbal noun echoing the verb just used, a construction that makes the action emphatic. It turns turning back into something whole, not a gesture toward change but the change itself."
+        },
+        {
+          "arabic": "ٱلزُّورَ",
+          "gloss": "falsehood, false witness",
+          "note": "From a root meaning to lean or deviate, so a lie is a statement bent out of true. The definite form occurs in only one other ayah, where it is paired with speaking falsehood."
+        },
+        {
+          "arabic": "كِرَامًا",
+          "gloss": "with dignity, honourably",
+          "note": "The plural of the word for noble and generous. Applied to walking past, it describes leaving without contempt and without engagement, the manner of someone who does not need to comment."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony was the machinery of Meccan life. There were no registers, so a sale, a loan, a marriage and a killing were all established by men standing up and saying what they saw, and a false witness could move property or end a life. Gatherings were public and mixed: poetry recitals slid into boasting, boasting into insult, insult into feud. Knowing how to leave a circle without giving offence was a practical skill.",
+      "didYouKnow": "The definite word for falsehood in the middle line appears in only one other ayah of the Quran. The final quality in this passage is phrased as a double negative: they do not fall upon the signs deaf and blind. The commentators point out that it does not praise falling upon them at all, only the manner, which leaves hearing and seeing as the whole of the requirement.",
+      "theologicalSignificance": "Character is described in the negative, and the effect is precise. What marks these people is not extra activity but a set of things they decline: to be present for a lie, to join in cheap talk, to receive scripture without attending to it. The last of those makes attention a religious quality in its own right. Hearing something recited and letting it pass unheard is placed on the same list as bearing false witness.",
+      "crossReferences": [
+        {
+          "ref": "28:55",
+          "why": "Gives the same manner of turning away from empty talk, with the same word for passing by."
+        },
+        {
+          "ref": "23:1-3",
+          "why": "Opens a list of the successful with turning away from idle talk, in almost the same order."
+        },
+        {
+          "ref": "22:30",
+          "why": "Contains the only other definite use of the word for falsehood, joined to a warning about speech."
+        }
+      ],
+      "applyIt": "Leave one conversation today that has turned into talk about someone who is not there. Not with a speech about it. Just go quiet, then get up for water, or change the subject to something ordinary. The word this passage uses is dignity, which means nobody in the room should be able to tell they were being corrected.",
+      "exploreFurther": [
+        "28:55",
+        "23:1-11",
+        "25:63-68"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:49:58.773Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "25:74",
       "surah": 25,
       "start": 74,
@@ -2030,6 +2262,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:16:51.572Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "25:75-77",
+      "surah": 25,
+      "start": 75,
+      "end": 77,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Were It Not For Your Calling",
+      "tier": "standard",
+      "meaning": "The reward is named for a specific cause: they are given the high chamber because they held out. Patience, not the individual acts just listed, is what the passage credits. Then the surah ends on a sentence the commentators read two ways. Either God has no regard for people were it not for their calling upon Him, or were it not for His calling them to faith. Both readings make the whole worth of a human being turn on an address between them and God.",
+      "historicalContext": "Meccan, the final three ayat of the surah. The portrait of the servants of the Merciful has run for twelve ayat, and it closes by naming what the whole list amounted to. The last line turns back to the opponents addressed at the start, which returns the surah to where it began. No occasion is reported for these ayat, and the commentators treat the ending as a deliberate frame.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْغُرْفَةَ",
+          "gloss": "the upper chamber",
+          "note": "A raised room above a house, the coolest and most private part of a dwelling. The Quran uses the plural elsewhere for the dwellings of the garden; this is the only place it appears in the singular."
+        },
+        {
+          "arabic": "دُعَآؤُكُمْ",
+          "gloss": "your calling, your supplication",
+          "note": "The noun can mean your calling on God or God's calling on you, since Arabic allows the possessor to be either the actor or the object. The classical readings preserve both, and the ayah works either way."
+        },
+        {
+          "arabic": "لِزَامًۢا",
+          "gloss": "binding, inescapable",
+          "note": "From a root for clinging to something and not letting go. It occurs twice in the Quran, and both times it describes a consequence attached to a person rather than an event that happens to them."
+        }
+      ],
+      "lifeInProphetsTime": "An upper room was a mark of means in a Meccan house: a chamber built on the roof, catching whatever breeze the valley offered, where a household kept what it valued and where guests of standing were received. Most people lived at ground level in one space with the animals near. Promising a person a chamber was promising a specific and enviable thing, not a vague comfort.",
+      "didYouKnow": "The word for the chamber appears here in the singular and definite, the only time the Quran uses it that way; everywhere else the same word is plural. The verb in the final ayah, about what God would have any regard for, occurs once in the whole Book, and the word that closes the surah occurs in only one other place.",
+      "theologicalSignificance": "Two things are settled at the end. The reward is attached to endurance rather than to any single act, which places the weight of a religious life on continuing rather than on performing. And the last sentence makes the relation itself the thing that gives a person value, on either reading. Nothing is said about achievement, contribution or belief held privately. What is named is an address: someone calls, or is called.",
+      "crossReferences": [
+        {
+          "ref": "39:20",
+          "why": "Uses the plural of the same word for the chambers built one above another for those who are aware."
+        },
+        {
+          "ref": "40:60",
+          "why": "Places calling upon God at the centre of the relation, with a promise of response attached."
+        },
+        {
+          "ref": "13:22-24",
+          "why": "Gives the same reward for patience, with the greeting of peace spoken at the entrance."
+        }
+      ],
+      "applyIt": "Ask for something today, out loud, in your own words rather than a memorised formula. Something small and true: help with a decision this week, patience with one person. Thirty seconds. The last line of this surah makes the asking itself the thing that matters, which means the request does not have to be impressive to count.",
+      "exploreFurther": [
+        "40:60",
+        "39:20",
+        "2:186"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:49:58.774Z",
         "reviewed": false
       }
     }
