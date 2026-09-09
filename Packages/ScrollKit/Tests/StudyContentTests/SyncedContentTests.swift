@@ -53,7 +53,7 @@ func syncedUnitsAreComplete() throws {
         #expect(!unit.themeId.isEmpty)
         #expect(StudyTier.allCases.contains(unit.tier))
         #expect(unit.meaning.count > 200, "\(unit.key) meaning is too thin")
-        #expect(unit.keyTerms.count >= 3, "\(unit.key) needs at least three key terms")
+        #expect(unit.keyTerms.count >= 2, "\(unit.key) needs at least two key terms (schema minItems)")
         #expect(unit.keyTerms.allSatisfy { !$0.arabic.isEmpty && !$0.gloss.isEmpty && !$0.note.isEmpty })
         #expect(unit.crossReferences.count >= 2, "\(unit.key) needs at least two cross references")
         #expect(!unit.meta.model.isEmpty, "\(unit.key) records no model")
@@ -61,9 +61,12 @@ func syncedUnitsAreComplete() throws {
     }
 }
 
-@Test("Everything authored so far is a Discover-tier unit, and the tier is the schema's string")
+@Test("Every Discover key is authored at Discover tier, and the tier is the schema's string")
 func syncedUnitsAreDiscoverTier() throws {
-    #expect(try syncedStudies().allSatisfy { $0.tier == .discover }, "wave 1 is the Discover slice only")
+    let studies = try syncedStudies()
+    let discoverKeys = Set(try syncedDiscoverKeys())
+    #expect(studies.filter { discoverKeys.contains($0.key) }.allSatisfy { $0.tier == .discover }, "Discover units carry the discover tier")
+    #expect(studies.allSatisfy { StudyTier.allCases.contains($0.tier) })
     // The tier really is read from the string rather than defaulted, and an unrecognised one
     // still decodes rather than failing the shard around it.
     let odd = "{ \"surah\": 9, \"studies\": [\(syntheticUnit(key: "9:1", tier: "gold"))] }"
