@@ -1,7 +1,7 @@
 {
   "surah": 23,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:01:51.607Z",
+  "generatedAt": "2026-09-09T15:04:47.169Z",
   "studies": [
     {
       "key": "23:1-11",
@@ -2034,6 +2034,296 @@
       }
     },
     {
+      "key": "23:100",
+      "surah": 23,
+      "start": 100,
+      "end": 100,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "A Barrier Until They Are Raised",
+      "tier": "standard",
+      "meaning": "The request from the deathbed finishes: so that I may act rightly in what I left behind. The answer is a single syllable of refusal, and then an explanation that is almost gentle. It is only a word he is saying. The commentators read that as meaning the request is speech without substance, made by someone who would not in fact act differently. Then the passage closes the door with an image: behind them is a barrier until the day they are raised.",
+      "historicalContext": "Meccan. The surah has been arguing with people who denied resurrection outright, and this scene answers them by showing the moment the denial ends. Classical commentators note that the request is for return rather than for mercy, and that the Quran records it several times in almost the same words, always refused, and always made by someone who had already been given time.",
+      "keyTerms": [
+        {
+          "arabic": "بَرْزَخٌ",
+          "gloss": "a barrier, an interval",
+          "note": "Something set between two things to keep them apart. The word occurs three times in the Quran, and the other two describe a barrier between two bodies of water that do not mix."
+        },
+        {
+          "arabic": "كَلِمَةٌ",
+          "gloss": "a word, an utterance",
+          "note": "Naming the request as merely a word is the refusal's whole reasoning. What is denied is not its sincerity in the moment but that anything would follow from granting it."
+        },
+        {
+          "arabic": "تَرَكْتُ",
+          "gloss": "I left behind",
+          "note": "The verb for leaving something undone as much as for leaving a place. The regret is specifically about what was not done, which is the form regret takes when time is what has run out."
+        }
+      ],
+      "lifeInProphetsTime": "Deathbeds in that society were crowded and public. A dying man settled debts, named an heir, released a claim or admitted one, and the words spoken then carried real weight in front of witnesses. Everyone had stood in such a room. The passage borrows that setting exactly, and then shows a request made in it that the usual authority to make such requests does not cover.",
+      "didYouKnow": "The word for the barrier in this ayah occurs three times in the Quran. Its other two uses describe the boundary between two seas, fresh and salt, that meet without mixing. The same term names a division in water and a division in time, and in both cases it describes two things touching along a line neither one crosses.",
+      "theologicalSignificance": "The refusal is explained rather than simply issued, which matters. It does not say the request comes too late in a merely procedural sense; it says the request is empty, because the willingness expressed at the end was available all along and was not used. The barrier that follows removes the possibility of any further attempt, and the passage names the whole interval rather than only the moment of death.",
+      "crossReferences": [
+        {
+          "ref": "6:27-28",
+          "why": "Records the same request to be returned and states that they would go back to what they were forbidden."
+        },
+        {
+          "ref": "63:10-11",
+          "why": "Describes the same plea for a delay and says that God never delays a soul once its term has come."
+        },
+        {
+          "ref": "55:19-20",
+          "why": "Uses the same word for the barrier, there between two seas that meet and do not overrun each other."
+        }
+      ],
+      "applyIt": "Name one thing you would want more time for if you were told today was the last of it. Then do a small piece of it before the week ends. Not the whole thing, and not as a response to fear. The passage's argument is that the willingness at the end was already available, and the only way to test that is to spend some of it now.",
+      "exploreFurther": [
+        "6:27-28",
+        "63:10-11",
+        "55:19-20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.056Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "23:101-104",
+      "surah": 23,
+      "start": 101,
+      "end": 104,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "No Kinship Between Them",
+      "tier": "standard",
+      "meaning": "The trumpet is blown and the first thing named is a loss: no lineages between them that day, and they do not ask after one another. Then the scales, in two matching sentences. Whose weights are heavy are the successful; whose are light have lost themselves and remain in the fire. The commentators note the phrase for that loss, which is not that they lost something but that they lost themselves. The last ayah describes the faces, scorched and drawn back.",
+      "historicalContext": "Meccan, addressed to a society in which lineage decided almost everything. Classical commentators read the removal of kinship as answering a specific Meccan confidence, the assumption that clan standing would carry a man through anything. They note that the ayah does not say relations cease to exist, only that they are not between them on that day, and that nobody asks after anybody.",
+      "keyTerms": [
+        {
+          "arabic": "أَنسَابَ",
+          "gloss": "lineages, blood ties",
+          "note": "The plural of the word for descent, and it occurs only here in the Quran. In a society organised entirely by genealogy, naming its absence was the most economical way to describe a levelling."
+        },
+        {
+          "arabic": "مَوَٰزِينُهُۥ",
+          "gloss": "his weights, his scales",
+          "note": "The plural can mean the balances or the weights placed in them. The commentators allow both, and either way what is measured is deeds rather than the person doing the weighing."
+        },
+        {
+          "arabic": "كَـٰلِحُونَ",
+          "gloss": "grimacing, lips drawn back",
+          "note": "A face pulled back from the teeth by heat or pain, and the word occurs once in the Quran. It describes an involuntary expression, which is why it says more than any account of feeling would."
+        }
+      ],
+      "lifeInProphetsTime": "Genealogy was the operating system. A man's name carried his father, his clan and his tribe, and reciting a lineage established credit, protection, marriage prospects and the price of his blood. Professional memorisers held the trees. To say there would be no lineages between people was to describe the loss of everything that told a Meccan who he was and who owed him anything.",
+      "didYouKnow": "The word for kinship ties in this ayah occurs nowhere else in the Quran, and neither does the word for the drawn-back faces three ayat later. The passage brackets its account of the scales with two terms the Book never repeats, one naming what is taken away at the start and one describing what is left at the end.",
+      "theologicalSignificance": "The loss is described as being of oneself rather than of a reward, which is a specific claim. What the light scales indicate is not a failed transaction but a person who spent a life and has nothing that turned out to be theirs. Removing kinship first makes the point sharper: every borrowed identity is gone, and what is weighed is only what the individual actually did.",
+      "crossReferences": [
+        {
+          "ref": "101:6-9",
+          "why": "Gives the same pair of outcomes in the same order, heavy scales and light ones, in a short surah."
+        },
+        {
+          "ref": "80:34-37",
+          "why": "Describes each person fleeing from brother, parents and family on that day, the same severing."
+        },
+        {
+          "ref": "31:33",
+          "why": "Warns that no parent will avail his child and no child his parent on that day."
+        }
+      ],
+      "applyIt": "Think of one thing you rely on that you did not earn: a family name, a passport, an accent that opens doors, a network you were born into. You are not asked to give any of it up. Just notice, once, how much of what you think of as yourself is on loan, and what would be left if the loan were called in.",
+      "exploreFurther": [
+        "101:6-9",
+        "80:34-37",
+        "31:33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.058Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "23:105-108",
+      "surah": 23,
+      "start": 105,
+      "end": 108,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Our Wretchedness Overcame Us",
+      "tier": "standard",
+      "meaning": "A question is put to them, and it is about a specific thing: were My signs not recited to you, and you kept denying them. Their answer accepts the charge and then reassigns it. Our wretchedness overcame us and we were a people gone astray. Then they ask to be taken out, promising that a return to it would make them wrongdoers. The commentators note the conditional. Even the promise is phrased as a hypothetical rather than as a commitment.",
+      "historicalContext": "Meccan. The exchange closes a long sequence in which the same recitation was described as being read to people who turned away, and classical commentators read the question as picking that thread up. They note that no new evidence is presented in the scene, only a reminder of what was already given, and that the answer offered by those addressed contains no denial of the facts.",
+      "keyTerms": [
+        {
+          "arabic": "شِقْوَتُنَا",
+          "gloss": "our wretchedness",
+          "note": "A state of misery and hard luck, and the word occurs once in the Quran. Naming it as the thing that overcame them turns their own condition into an external force with a will of its own."
+        },
+        {
+          "arabic": "غَلَبَتْ",
+          "gloss": "it overcame, it prevailed",
+          "note": "The verb for winning a contest. Choosing it makes them the losing party in a struggle rather than the ones who decided, which is what the reply that follows declines to accept."
+        },
+        {
+          "arabic": "ٱخْسَـُٔوا۟",
+          "gloss": "be gone, stay put",
+          "note": "A word used to drive off a dog, and it appears once in the Quran. The commentators do not soften it; it is a dismissal that closes a conversation rather than an answer within one."
+        }
+      ],
+      "lifeInProphetsTime": "Fortune was a real category in Arabian thought, and much of the poetry is about it: time as a force that grinds people down, luck that turns without reason, fate as something a man endures rather than shapes. Blaming misfortune for how a life turned out was not an excuse invented on the spot. It was the standard explanation, and everyone in the audience had used it.",
+      "didYouKnow": "Two words in this short exchange occur nowhere else in the Quran: the word they use for their own wretchedness and the word of dismissal they receive. One is the excuse and the other is the answer, and the Book uses each exactly once. The dismissal is ordinarily addressed to an animal being driven off rather than to a person.",
+      "theologicalSignificance": "The request is not refused because repentance is impossible but because there is nothing left to repent from. The scene shows a turning that arrives after the only thing that made turning meaningful, which was the possibility of not turning. Their explanation is also quietly rejected: wretchedness as an overwhelming force is exactly the account the question at the start had already answered, by naming what was recited and what was done with it.",
+      "crossReferences": [
+        {
+          "ref": "35:37",
+          "why": "Records the same request for a second chance and answers that a warner had already come."
+        },
+        {
+          "ref": "4:18",
+          "why": "Describes repentance offered at the point of death and says it is not accepted then."
+        },
+        {
+          "ref": "39:56-58",
+          "why": "Gives the regret in a soul's own words, wishing for another chance to be among those who do good."
+        }
+      ],
+      "applyIt": "Catch yourself blaming a force today. Bad luck, no time, the way you are, how things went. Some of that is true. Then find the smallest part of it that was actually a decision, and name that part out loud. Repentance is not available for what happened to you, and it is available for the part that did not.",
+      "exploreFurther": [
+        "35:37",
+        "4:18",
+        "39:56-58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.058Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "23:109",
+      "surah": 23,
+      "start": 109,
+      "end": 109,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "A Group Of My Servants",
+      "tier": "standard",
+      "meaning": "After the dismissal comes an explanation, and it turns entirely on something small. There was a group of My servants who used to say: our Lord, we have believed, so forgive us and have mercy on us, and You are the best of the merciful. The commentators note the tense. It describes a habit rather than an occasion, words said often enough to be what those people were known for, and the surah is about to say what was done to them for it.",
+      "historicalContext": "Meccan. The earliest followers in the city included many with no clan protection, and reports describe them being ridiculed in public by men of standing. Classical commentators connect this ayah to that situation directly, and note that the group is described by what they said rather than by their names or their tribes, which is the reverse of how Mecca identified anybody.",
+      "keyTerms": [
+        {
+          "arabic": "فَرِيقٌ",
+          "gloss": "a group, a party",
+          "note": "A portion split off from a larger body. The word implies a minority within something rather than a community of its own, which is exactly the position of the people being described."
+        },
+        {
+          "arabic": "يَقُولُونَ",
+          "gloss": "they used to say",
+          "note": "A form for repeated or continuous action in past time. What is recorded is not a single prayer but a practice, said often enough that it became the identifying mark of the group."
+        },
+        {
+          "arabic": "خَيْرُ ٱلرَّٰحِمِينَ",
+          "gloss": "the best of the merciful",
+          "note": "A phrase used twice in the Quran, both times in this surah. It appears here in the mouth of the mocked, and again in the final ayah of the chapter as words the Prophet is told to say."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca decided who mattered by descent and wealth, and the early community drew heavily from people who had neither: freed slaves, clients attached to stronger families, young men without inheritance. Such people were not physically safe and were routinely humiliated in the open. Being identified by a sentence you repeated, rather than by a father's name, was not a distinction that city knew how to award.",
+      "didYouKnow": "The phrase these servants use, calling God the best of the merciful, occurs twice in the Quran and both times in this surah. Its second appearance is the surah's final ayah, where the Prophet Muhammad (peace be upon him) is instructed to say almost exactly the same words. The chapter ends by giving him the prayer of the people who were laughed at.",
+      "theologicalSignificance": "The reason given for their standing is a sentence, not an achievement. They believed, they asked for forgiveness, and they acknowledged mercy as belonging to God in the highest degree. Nothing about power, numbers or vindication appears in it. Placing that speech at the centre of the scene makes the surah's whole argument turn on what a group of unimportant people were in the habit of saying.",
+      "crossReferences": [
+        {
+          "ref": "23:118",
+          "why": "Closes this surah with almost the same prayer, given to the Prophet as words to say."
+        },
+        {
+          "ref": "3:16",
+          "why": "Records believers saying that they have believed, so forgive us, in a closely matching form."
+        },
+        {
+          "ref": "7:151",
+          "why": "Moses uses a closely related phrase, calling God the most merciful of those who show mercy."
+        }
+      ],
+      "applyIt": "Pick a short prayer and say it enough times this month that it becomes yours. Not a long one; the one in this ayah is a single line. What the passage records about these people is not a great act but a habit of speech, kept up while they were being laughed at, and habits are built by repetition rather than by intensity.",
+      "exploreFurther": [
+        "23:118",
+        "3:16",
+        "7:151"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.058Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "23:110-112",
+      "surah": 23,
+      "start": 110,
+      "end": 112,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "You Took Them For A Joke",
+      "tier": "standard",
+      "meaning": "The charge is laid out in sequence. You took them as a laughing matter, until that made you forget My remembrance, and you used to laugh at them. The commentators note the middle clause, which is the mechanism: mockery is not only cruel but occupying, and the attention it takes is attention taken from something else. Then the verdict, in the first person and dated to that day. I have rewarded them today for their patience; they are the ones who have won.",
+      "historicalContext": "Meccan. Reports describe the leading men of the city treating the early followers as entertainment, pointing them out to visitors and mimicking them in gatherings. Classical commentators connect this passage to that practice, and note that the reward named here is for endurance specifically, not for any action the mocked group took in reply.",
+      "keyTerms": [
+        {
+          "arabic": "سِخْرِيًّا",
+          "gloss": "an object of ridicule",
+          "note": "Something taken as a butt of jokes. The word appears twice in the Quran, and its other use is in a scene where people search the fire for those they had ridiculed and cannot find them."
+        },
+        {
+          "arabic": "أَنسَوْكُمْ",
+          "gloss": "they made you forget",
+          "note": "The grammar makes the mocked group the cause of the forgetting, which the commentators read as an effect rather than an act. Being absorbed in ridiculing someone is what displaced the remembrance."
+        },
+        {
+          "arabic": "ٱلْفَآئِزُونَ",
+          "gloss": "the ones who have won",
+          "note": "From the root for attaining a prize or escaping danger. The word is announced with emphasis, and it names the outcome of a contest that the other party did not know they were in."
+        }
+      ],
+      "lifeInProphetsTime": "Mockery was a weapon with a technique. Satirical poetry could destroy a man's standing across the peninsula in a season, and skilled lampooners were feared more than fighters. A group who could be laughed at publicly and could not answer in kind had no protection at all in that system. What the passage describes is not idle unkindness but the standard method of dealing with a threat.",
+      "didYouKnow": "The word for taking someone as a laughing matter appears twice in the Quran. Its other use is in a scene set in the fire, where people ask what became of the men they used to count among the worst and had taken as a joke, and wonder whether their eyes have simply missed them. Both passages put the mockery in the past tense.",
+      "theologicalSignificance": "The reward is given for patience and nothing else, which sets the terms of a very common situation. The mocked group is not described as having answered back, prevailed, or been vindicated in their lifetimes. What is recorded is that they endured, and the verdict on that is announced by God directly rather than reported. The mockers, meanwhile, lost something without noticing they were spending it.",
+      "crossReferences": [
+        {
+          "ref": "38:62-63",
+          "why": "Puts the same word in the mouths of people searching for those they used to ridicule."
+        },
+        {
+          "ref": "83:29-36",
+          "why": "Describes the same pattern at length, and reverses who is laughing at whom in the end."
+        },
+        {
+          "ref": "6:10",
+          "why": "States that messengers before were mocked, and that what they ridiculed closed in on them."
+        }
+      ],
+      "applyIt": "Notice how much of your attention this week goes to disliking someone. The scrolling, the retelling, the small pleasure of a joke at their expense. This ayah says that occupation is itself the cost, before any question of whether the mockery was deserved. Reclaim ten minutes of it and put them somewhere else.",
+      "exploreFurther": [
+        "38:62-63",
+        "83:29-36",
+        "6:10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.058Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "23:113-115",
       "surah": 23,
       "start": 113,
@@ -2088,6 +2378,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:22:34.676Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "23:116-118",
+      "surah": 23,
+      "start": 116,
+      "end": 118,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Forgive And Have Mercy",
+      "tier": "standard",
+      "meaning": "The surah gathers itself. God is exalted, the true King, no god but He, Lord of the noble throne. Then a statement about anyone who calls on another god without proof: his reckoning is with his Lord, and those who refuse do not succeed. And then the last line of the chapter, which is not an argument at all. Say: my Lord, forgive and have mercy, and You are the best of the merciful. The commentators note that the surah ends by asking rather than by concluding.",
+      "historicalContext": "Meccan, and the closing movement of a chapter that has run through four rejected messengers, a long argument about resurrection, and a scene of judgement. Classical commentators observe that the final ayah gives the Prophet Muhammad (peace be upon him) the same words the mocked believers were quoted saying a few ayat earlier, and read the repetition as deliberate closure rather than as coincidence.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَلِكُ ٱلْحَقُّ",
+          "gloss": "the true King",
+          "note": "A pairing used twice in the Quran. The second word means both real and rightful, so the title claims that this kingship is the actual one and that others hold the name without the substance."
+        },
+        {
+          "arabic": "بُرْهَـٰنَ",
+          "gloss": "a proof, a clear demonstration",
+          "note": "A word for evidence that settles a matter, stronger than an argument. Its absence is what the ayah names, so the objection to calling on another god is put as a failure of evidence."
+        },
+        {
+          "arabic": "يُفْلِحُ",
+          "gloss": "he succeeds, he prospers",
+          "note": "From a root meaning to split open ground for planting, so success is pictured as a farmer's return rather than as a windfall. The same verb opens this surah in its first ayah."
+        }
+      ],
+      "lifeInProphetsTime": "Kings were known to Mecca by report and by trade: the Persian court, the Byzantine emperor, the ruler in Abyssinia who had given shelter to some of the early believers. Every one of them was a real power and every one of them could be outlived. Calling God the true King in that setting was making a comparison the audience could run through in their heads with actual names.",
+      "didYouKnow": "The surah opens with the verb for success in its first ayah, declaring the believers successful, and closes with the same verb negated, saying that those who refuse do not succeed. The chapter is bracketed by one root used twice in opposite directions. Its very last words are the prayer that the mocked believers had been quoted saying a few ayat earlier.",
+      "theologicalSignificance": "Everything the chapter established is placed behind a request rather than in front of a conclusion. Having named God as the true King and stated that refusal does not prosper, the surah's final act is to ask for forgiveness and mercy, and to name God as the best at giving them. That order says something about where confidence properly ends. The argument is finished and the asking is not.",
+      "crossReferences": [
+        {
+          "ref": "23:1",
+          "why": "Opens this surah with the same verb for success, declared of the believers in the completed tense."
+        },
+        {
+          "ref": "20:114",
+          "why": "Uses the same title for God, the true King, alongside a prayer for an increase in knowledge."
+        },
+        {
+          "ref": "23:109",
+          "why": "Gives the same closing prayer earlier in this surah, in the mouths of servants who were ridiculed."
+        }
+      ],
+      "applyIt": "End something today with a request rather than a verdict. A conversation you were about to win, a piece of work you were about to sign off, a day you were about to summarise to yourself. Say the surah's last line instead, in your own words, and let that be the last thing rather than your conclusion about how it all went.",
+      "exploreFurther": [
+        "23:1-11",
+        "20:114",
+        "23:109"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:04:47.058Z",
         "reviewed": false
       }
     }
