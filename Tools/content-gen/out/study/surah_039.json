@@ -1,7 +1,7 @@
 {
   "surah": 39,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:16:38.096Z",
+  "generatedAt": "2026-09-09T15:24:45.084Z",
   "studies": [
     {
       "key": "39:1-2",
@@ -1392,6 +1392,586 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T15:16:33.388Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:36-37",
+      "surah": 39,
+      "start": 36,
+      "end": 37,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Is God Not Enough",
+      "tier": "standard",
+      "meaning": "Two questions frame a pair of mirrored statements. The first asks whether God is not sufficient for His servant, and the occasion given for asking is intimidation: people were trying to frighten him with the powers they served. Then guidance and its loss are set out as exact opposites, each with no remedy available outside God. The second question closes the pair by naming God as mighty and as one who exacts what is owed. Commentators note that the word for sufficient appears here in a form used nowhere else.",
+      "historicalContext": "Meccan. The threats being answered were the ordinary ones of that town: warnings that offended powers would bring sickness, madness or ruin on a man who spoke against them. The commentators explain the intimidation as exactly this, the town's gods invoked as a danger to the Prophet Muhammad (peace be upon him) personally. The ayah does not argue with the threat. It answers with a question about who is sufficient.",
+      "keyTerms": [
+        {
+          "arabic": "بِكَافٍ",
+          "gloss": "sufficient, enough",
+          "note": "An active participle from the verb to suffice. This exact form occurs nowhere else in the Quran, and it makes sufficiency a description of God rather than a report of what He happens to supply."
+        },
+        {
+          "arabic": "وَيُخَوِّفُونَكَ",
+          "gloss": "they frighten you",
+          "note": "An intensive verb form, so repeated or sustained attempts to instil fear rather than one threat. The grammar makes the frightening something done at him over time, which fits a long campaign."
+        },
+        {
+          "arabic": "ذِى ٱنتِقَامٍ",
+          "gloss": "owner of redress",
+          "note": "A phrase for one who exacts what is owed after a wrong. It is built as possession rather than as a verb, so it names a standing capacity rather than an act being carried out."
+        }
+      ],
+      "lifeInProphetsTime": "Fear of an offended shrine was practical rather than abstract. People left vows and portions before a journey, and a man whose caravan failed or whose child sickened after slighting a sanctuary would hear about the connection from everyone he met. Threatening an opponent with the anger of a shrine was ordinary social pressure in that town, it cost the speaker nothing, and it was hard to answer.",
+      "didYouKnow": "The form of the word for sufficient used here occurs once in the Quran. Two ayat later the same idea returns in the first person, God suffices for me, in a phrase found in only one other place, the closing ayah of surah nine. Both times it is placed in a messenger's mouth as an answer to people turning away.",
+      "theologicalSignificance": "Sufficiency is put as a question rather than a claim, which leaves the answering to the hearer. The two mirrored sentences that follow refuse to make guidance a human achievement or its loss a human accident, while the surah elsewhere holds people fully answerable. Holding both together is characteristic: God's decision is final and the person is responsible, and neither statement is allowed to dissolve the other into a comfortable half-truth.",
+      "crossReferences": [
+        {
+          "ref": "9:129",
+          "why": "Closes another surah with the same first-person answer, God is enough for me, after people turn away."
+        },
+        {
+          "ref": "65:3",
+          "why": "States the same sufficiency as a plain promise: whoever relies on God, God suffices him."
+        },
+        {
+          "ref": "39:38",
+          "why": "Turns the question on the powers used to threaten, asking what they can lift or hold back."
+        }
+      ],
+      "applyIt": "Name the thing pressuring you right now: a person, a deadline, a figure in an account. Say what it is out loud in one plain sentence, without adjectives, because threats keep much of their force by staying vague. Then read the opening question of this ayah and answer it yourself, rather than letting the ayah answer it on your behalf.",
+      "exploreFurther": [
+        "9:129",
+        "65:3",
+        "3:173"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.958Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:38",
+      "surah": 39,
+      "start": 38,
+      "end": 38,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "Can They Lift The Harm",
+      "tier": "standard",
+      "meaning": "The argument opens with a concession the opponents supply themselves: asked who created the heavens and the earth, they answer God. From that admission the passage moves to a test with two directions. If God intends harm for me, can these lift it? If He intends mercy, can they hold it back? Neither question is answered, because neither needs an answer. The ayah then closes not with a conclusion but with a declaration of reliance, spoken in the first person.",
+      "historicalContext": "Meccan. The people addressed were not deniers of a creator; they acknowledged a supreme maker and used lesser powers as intermediaries, which is the position this surah has been dismantling since its opening ayat. The Quran returns to their admission several times in the Meccan surahs, always in the same form, a question put and an answer they cannot avoid giving. No specific occasion is reported here.",
+      "keyTerms": [
+        {
+          "arabic": "كَـٰشِفَـٰتُ",
+          "gloss": "removers, lifters of",
+          "note": "From a verb for uncovering, drawing back a cloth or a curtain. Harm is imagined as something laid over a person, so removing it means pulling the covering off rather than fighting it away."
+        },
+        {
+          "arabic": "مُمْسِكَـٰتُ",
+          "gloss": "withholders, ones holding back",
+          "note": "From the verb for gripping and retaining. Paired with the previous word it makes the two questions exactly opposite in shape, one about taking away and one about keeping back."
+        },
+        {
+          "arabic": "حَسْبِىَ",
+          "gloss": "my sufficiency",
+          "note": "A noun meaning what suffices, with a possessive ending, so literally my enough. The phrase occurs in only one other place in the Quran, at the close of the ninth surah."
+        }
+      ],
+      "lifeInProphetsTime": "The shrines around Mecca were consulted for exactly these two purposes: to lift something that had already come, and to secure something wanted. Divining arrows were drawn before decisions, vows were made before a journey, and offerings were left in hope of rain or a safe return. The two questions in this ayah name the whole practical use of a shrine and ask whether either half of it works.",
+      "didYouKnow": "The admission this ayah opens with, that if you asked them who created the heavens and the earth they would say God, recurs in nearly identical wording at 29:61 and 31:25, and in shortened form at 43:87. In each place the answer is followed at once by a question about why they turn away, so the belief is treated as common ground.",
+      "theologicalSignificance": "The passage locates the disagreement precisely. It is not about whether God exists or made the world, which the opponents grant, but about whether anything else has a share in running it. Reducing the question to two practical tests, lifting harm and withholding mercy, turns a doctrinal dispute into an operational one. The answer given is then not an argument at all but a stance: reliance, declared in the first person and left standing.",
+      "crossReferences": [
+        {
+          "ref": "31:25",
+          "why": "Records the same admission in nearly the same words, followed by praise and a note on their ignorance."
+        },
+        {
+          "ref": "10:107",
+          "why": "States the two directions as fact rather than question: none removes His harm, none repels His grace."
+        },
+        {
+          "ref": "39:36",
+          "why": "Asks the matching question about sufficiency two ayat earlier, answering the same intimidation."
+        }
+      ],
+      "applyIt": "Think of one thing you have quietly appointed as your backup: a savings figure, a contact, a qualification. It is probably worth having. Put the two questions of this ayah to it anyway, plainly and without drama. Can it lift what actually lands on you? Can it hold back what is sent? Then keep it, with its real size restored.",
+      "exploreFurther": [
+        "10:107",
+        "31:25",
+        "6:17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.965Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:39-40",
+      "surah": 39,
+      "start": 39,
+      "end": 40,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "Work From Where You Stand",
+      "tier": "standard",
+      "meaning": "The instruction is a parting of ways rather than a threat. Each side is told to act from its own position, and the outcome is left to be discovered instead of argued. Commentators read the word for position as covering both a person's capacity and the ground they occupy, so the sentence means act as you are and from where you are. The second ayah completes it with what will become known, and that knowledge is described as arriving rather than as being demonstrated by anyone.",
+      "historicalContext": "Meccan, from the later years when argument in the city had reached a stalemate and the message was meeting settled refusal rather than questions. The same formula appears in three other places in the Quran, always at the end of an exchange between a prophet and people who will not move, which suggests it belonged to a recognised way of closing a dispute. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "مَكَانَتِكُمْ",
+          "gloss": "your position, your standing",
+          "note": "A noun for the place a person occupies and the capacity that goes with it. It carries the physical sense of a station and the social sense of standing, so the instruction is to act as who you are."
+        },
+        {
+          "arabic": "عَـٰمِلٌ",
+          "gloss": "one who works",
+          "note": "An active participle rather than a verb, so it states a settled condition instead of an intention. The reply is not I will work but I am a worker, which declines the argument and simply carries on."
+        },
+        {
+          "arabic": "مُّقِيمٌ",
+          "gloss": "lasting, settled in",
+          "note": "An active participle from the verb to stand or take up residence. Applied to suffering it means what has moved in and stays, rather than what passes through and is gone."
+        }
+      ],
+      "lifeInProphetsTime": "Formal disputes in Arabia ended in recognised ways: a boast, an oath, or a challenge to wait and see whose fortune held. Rival poets closed an exchange with a line that left the verdict to time rather than to the audience. Saying carry on as you are and I will carry on as I am was a known move, understood by everyone present as ending a conversation rather than conceding it.",
+      "didYouKnow": "The phrase translated work according to your position appears four times in the Quran, here and at 6:135, 11:93 and 11:121. In every case it is spoken by a prophet to people who have refused him, and in every case what follows leaves the outcome to time rather than adding a further argument.",
+      "theologicalSignificance": "Ending an argument is treated here as a legitimate move rather than as a failure. The passage assumes that some disagreements are not settled by better reasoning but by what happens, and it is willing to wait for that. It also puts both parties under the same instruction, which grants the opponents real agency. They are not being overpowered; they are left free to act, and the difference will show in the outcome rather than in the permission.",
+      "crossReferences": [
+        {
+          "ref": "11:121-122",
+          "why": "Closes another prophet's argument with the same formula, adding that both sides will now wait."
+        },
+        {
+          "ref": "6:135",
+          "why": "Uses the identical instruction and adds that the wrongdoers will not prevail in the end."
+        },
+        {
+          "ref": "109:6",
+          "why": "Reaches the same parting of ways in the shortest form the Quran gives it."
+        }
+      ],
+      "applyIt": "Identify one argument you keep restarting with someone who has already decided. Choose today to stop making the case and to put that energy into your own work instead. This is not giving up on the person. It is recognising that some disagreements are settled by what each of you does over years, and not by the next conversation.",
+      "exploreFurther": [
+        "6:135",
+        "11:121-122",
+        "109:1-6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.965Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:41",
+      "surah": 39,
+      "start": 41,
+      "end": 41,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "You Are Not Their Guardian",
+      "tier": "standard",
+      "meaning": "Three clauses divide the responsibility. The Book was sent down for people and with truth; the benefit of taking it goes to whoever takes it; the loss of refusing falls on whoever refuses. Then the messenger is told plainly what he is not, an agent set over them. Commentators note that the word used is the ordinary one for someone entrusted with another person's affairs, so what is lifted here is a burden of custody rather than the duty to deliver the message at all.",
+      "historicalContext": "Meccan. The Prophet Muhammad (peace be upon him) is described repeatedly in this period as grieving over the refusal of his own people, and several passages from these years address that grief rather than the opponents. This ayah belongs to that group. The commentators read it together with the ayat just before it, which have told both sides to act from their own positions and leave the result alone.",
+      "keyTerms": [
+        {
+          "arabic": "بِٱلْحَقِّ",
+          "gloss": "with the truth",
+          "note": "The preposition carries weight. The Book is not only described as true but as accompanied by truth, sent with it, which the commentators take to cover the purpose and the manner of the sending too."
+        },
+        {
+          "arabic": "فَلِنَفْسِهِۦ",
+          "gloss": "for his own self",
+          "note": "A preposition of benefit attached to the word for a person's self. The matching clause about straying uses a preposition of burden instead, so the grammar itself separates the gain from the cost."
+        },
+        {
+          "arabic": "بِوَكِيلٍ",
+          "gloss": "a guardian, an agent",
+          "note": "The word for someone entrusted with another's affairs, who acts on their behalf and answers for the result. Denying it to the messenger removes liability for the outcome, not the duty to convey."
+        }
+      ],
+      "lifeInProphetsTime": "Trade in Mecca ran on agents. A merchant who could not travel appointed someone to carry his goods, sell them and return with the price, and that agent answered for what became of the consignment. The word used in this ayah is the ordinary commercial one. Telling the Prophet he was not their agent used a term the traders in his audience had signed themselves and understood exactly.",
+      "didYouKnow": "The word denied to the messenger here, an entrusted agent, is affirmed of God elsewhere in the Quran, and the phrase the excellent guardian is put in believers' mouths at 3:173. The same commercial term is thus withheld from the man delivering the message and applied to the one who sent it, within a single vocabulary.",
+      "theologicalSignificance": "A line is drawn between conveying and controlling. Revelation is given for people, what they do with it belongs to them, and the one who brings it is not accountable for their choice. That protects the messenger from a grief he has no way to discharge, and it protects the reader from imagining that someone else's guidance is theirs to secure. Responsibility is individual on both sides of the exchange, and the ayah says so twice.",
+      "crossReferences": [
+        {
+          "ref": "88:21-22",
+          "why": "States the same limit directly: you are a reminder, and you have no control over them."
+        },
+        {
+          "ref": "10:99",
+          "why": "Asks whether he would compel people to believe when God has not willed it so."
+        },
+        {
+          "ref": "2:272",
+          "why": "Says plainly that their guidance is not his responsibility, since God guides whom He wills."
+        }
+      ],
+      "applyIt": "Think of one person whose choices you have been carrying as though they were your own account to settle. Say the second half of this ayah about them, using their name. You are not being told to stop caring or to stop speaking. You are being told which part of the outcome was never assigned to you, and invited to put that part down.",
+      "exploreFurther": [
+        "2:272",
+        "88:21-22",
+        "6:107"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:42",
+      "surah": 39,
+      "start": 42,
+      "end": 42,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Souls Taken In Sleep",
+      "tier": "standard",
+      "meaning": "Two states are placed under a single verb. God receives souls at death, and receives those that have not died in their sleep; He then keeps the ones whose death is decreed and sends the others back until a named term. Commentators differ over what exactly is taken in sleep, some speaking of the soul itself and others of the faculty of awareness, and they record the range without settling it. What is not in dispute is the structure: a nightly departure, with a decision made each time about who returns.",
+      "historicalContext": "Meccan, set inside a run of ayat arguing against powers that can neither harm nor help. Placing it here is deliberate: the argument moves from what other powers cannot do to something that happens to every listener every night. The surah is preoccupied throughout with death and the Day, and this is the ayah that brings both into the reader's own bed. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "يَتَوَفَّى",
+          "gloss": "takes in full, collects",
+          "note": "From a root for receiving something complete, as a creditor takes the whole of what is owed. It is the Quran's usual verb for dying, and it frames death as a handing over rather than as an ending."
+        },
+        {
+          "arabic": "مَنَامِهَا",
+          "gloss": "its sleep",
+          "note": "The noun for the time and place of sleeping, from the same root as the verb to sleep. Setting it beside death in one sentence makes the nightly event the smaller instance of the larger one."
+        },
+        {
+          "arabic": "أَجَلٍ مُّسَمًّى",
+          "gloss": "a named term",
+          "note": "A fixed period with a stated end, the same phrase used for the due date of a debt. Calling the term named implies it is already specified, and that the specifying was not done by the person living it."
+        }
+      ],
+      "lifeInProphetsTime": "People slept in the open, on roofs and in courtyards, through the hot months, and in a household sharing one room the difference between a sleeping body and a dead one was something everyone had had to check for at least once. Deaths in the night were common, particularly among the very young and the very old. The ayah does not argue that sleep resembles death; its audience had stood over someone at dawn not yet knowing which it was.",
+      "didYouKnow": "The phrase describing sleep as a taking of the soul occurs only here in the Quran. One other passage, at 6:60, describes God taking people by night and raising them again by day using the same verb and ending with the same fixed term. Between them they are the whole of what the Quran says on the subject in these words.",
+      "theologicalSignificance": "The passage makes death continuous with something ordinary rather than setting it apart as an exception. If the soul is received every night and sent back, the last time is the same act without the return, which takes much of the strangeness out of dying without softening what it is. It also places the decision entirely on one side. What is offered to those who reflect is not a doctrine but the observation that they have been through this thousands of times already.",
+      "crossReferences": [
+        {
+          "ref": "6:60",
+          "why": "Describes the same nightly taking and raising, closing with the fixed term and the return."
+        },
+        {
+          "ref": "4:78",
+          "why": "Says death overtakes a person wherever they are, even inside fortified towers built to prevent it."
+        },
+        {
+          "ref": "39:30",
+          "why": "States the same fact in its barest form, mortality asserted of both parties in the argument."
+        }
+      ],
+      "applyIt": "Tonight, once you are lying down and beginning to lose the thread, notice the last moment you are aware of. You will not be able to notice the one after it, and nobody can. That edge is exactly what this ayah describes. Do not try to make anything of it or draw a lesson. Just find the edge once, and then sleep.",
+      "exploreFurther": [
+        "6:60",
+        "4:78",
+        "56:83-87"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:43-44",
+      "surah": 39,
+      "start": 43,
+      "end": 44,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "All Intercession Belongs To God",
+      "tier": "standard",
+      "meaning": "A question exposes the practice and a statement replaces it. They have taken intercessors besides God; the reply asks whether they would do so even if those intercessors own nothing at all and understand nothing. Then the correction arrives: intercession belongs entirely to God, along with the kingdom of the heavens and the earth, and the return is to Him. The commentators are careful here. The passage does not deny that intercession happens; it denies that anyone holds it independently of God's leave.",
+      "historicalContext": "Meccan. The people addressed described their objects of devotion in exactly these terms, as intercessors who would bring them nearer, and this surah quotes that claim in its third ayah. The commentators read the present pair as its direct answer. No specific occasion is reported for either. The wider argument of these years was not about whether God exists but about how access to Him is arranged.",
+      "keyTerms": [
+        {
+          "arabic": "شُفَعَآءَ",
+          "gloss": "intercessors",
+          "note": "From a root meaning to make a thing even by adding a second to it, the opposite of odd. An intercessor joins himself to your case, so the word pictures being paired with someone stronger rather than merely represented."
+        },
+        {
+          "arabic": "يَعْقِلُونَ",
+          "gloss": "they understand, they reason",
+          "note": "From the word for the tether used to hobble a camel. Reason is pictured as what holds a person's judgement in place, so lacking it means having nothing to keep the mind from wandering off."
+        },
+        {
+          "arabic": "ٱلشَّفَـٰعَةُ",
+          "gloss": "the intercession",
+          "note": "Definite, and made the predicate of a phrase meaning belonging to God, which is the strongest construction Arabic has for saying that the whole of a thing is His and none of it is held elsewhere."
+        }
+      ],
+      "lifeInProphetsTime": "Access in Arabia ran through patrons. A stranger entering a town needed a protector to speak for him, a debtor needed someone to stand between himself and a creditor, and a man in danger sought the protection of a chief whose name would make enemies reconsider. The whole system worked because the patron had power of his own, and the reply here goes straight at that assumption: these hold nothing.",
+      "didYouKnow": "The claim being answered is quoted earlier in this same surah, at its third ayah, where those addressed say they serve lesser powers only so that these may bring them nearer to God. The answer is held back for forty ayat and then given in two sentences, one dismantling the assumption and one stating where intercession actually rests.",
+      "theologicalSignificance": "The passage does not abolish intercession; it relocates the ownership of it. Saying that all of it belongs to God makes any intercession that happens an expression of His will rather than a lever upon it, which keeps hope intact while removing the idea of an independent channel. Placed beside the kingdom of the heavens and the earth, it also implies that having power and having the right to intercede are finally the same question.",
+      "crossReferences": [
+        {
+          "ref": "39:3",
+          "why": "Quotes the claim this pair answers, that lesser powers are served only to bring people nearer to God."
+        },
+        {
+          "ref": "2:255",
+          "why": "States the same limit inside the Throne Verse: no one intercedes with Him except by His leave."
+        },
+        {
+          "ref": "10:18",
+          "why": "Records the identical phrase, these are our intercessors with God, and answers it on the spot."
+        }
+      ],
+      "applyIt": "Notice, this week, the moment when you ask someone to put in a word for you. There is nothing wrong with it; human institutions run that way. Just watch what happens in your chest at the moment of asking, and compare it with what happens when you ask God directly, with no one in between. The difference in that feeling is the subject here.",
+      "exploreFurther": [
+        "2:255",
+        "10:18",
+        "53:26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:45",
+      "surah": 39,
+      "start": 45,
+      "end": 45,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "When God Alone Is Mentioned",
+      "tier": "standard",
+      "meaning": "The reaction described is not an intellectual one. When God is mentioned by Himself, without the others, the hearts of those who do not believe in the hereafter contract with distaste; when the others are named, the same people brighten. The word for the first reaction is strong and physical. Commentators locate the offence precisely in the word alone: nothing objectionable has been said about God, only that He has been named without company, and that is what produces the recoil.",
+      "historicalContext": "Meccan. Devotion in the town was plural by habit, and a public statement naming God by Himself excluded a whole apparatus of shrines, guardianship and seasonal trade on which many families depended. The commentators describe the reaction as social as much as theological. No specific occasion is reported. The ayah sits inside a run about intercession and works as its emotional counterpart.",
+      "keyTerms": [
+        {
+          "arabic": "وَحْدَهُ",
+          "gloss": "Him alone, by Himself",
+          "note": "An emphatic word for singleness placed after the name. The whole reaction in the ayah depends on it: the offence lies not in the mention but in the absence of anyone mentioned alongside."
+        },
+        {
+          "arabic": "ٱشْمَأَزَّتْ",
+          "gloss": "shrank, recoiled",
+          "note": "A rare five-consonant verb for a body contracting in disgust. It occurs nowhere else in the Quran, and it names a reaction of the stomach rather than of the mind or the argument."
+        },
+        {
+          "arabic": "يَسْتَبْشِرُونَ",
+          "gloss": "they brighten with joy",
+          "note": "The root behind it covers good news and the outer surface of the skin alike, so the word names news showing on a face. It is set deliberately against the contraction in the first half."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's standing rested on a sanctuary that housed many objects of devotion and drew pilgrims from across the peninsula at fixed seasons. Naming God alone was not only a religious statement; it touched the arrangements of an entire town, its guardianship offices, its truce months and its markets. People heard the exclusion in it immediately, well before they had considered whether the claim was true.",
+      "didYouKnow": "The verb describing the recoil occurs once in the whole Quran. It belongs to a rare five-consonant pattern that Arabic keeps for vivid physical reactions. The word for the opposite response, in the same ayah, comes from a root that also gives the ordinary word for skin, so both halves of the contrast are described as things happening to a body.",
+      "theologicalSignificance": "Resistance to God is diagnosed here as an aversion rather than a conclusion, and it is tied specifically to disbelief in a life after this one. That link repays attention: if there is no reckoning, exclusive devotion costs a great deal and returns nothing visible. The passage therefore treats doctrine and appetite as connected, and admits that the argument it is having is partly with what people want to be true.",
+      "crossReferences": [
+        {
+          "ref": "17:46",
+          "why": "Reports the same reaction, backs turned in aversion when the Lord is mentioned alone in the recitation."
+        },
+        {
+          "ref": "40:12",
+          "why": "Explains the same refusal from the other side: when God alone was called on, you disbelieved."
+        },
+        {
+          "ref": "39:3",
+          "why": "Sets out the position that makes an exclusive mention feel like a loss to the people addressed."
+        }
+      ],
+      "applyIt": "Watch for the small flinch. Sometime this week you will hear something true, correctly said, and still not want it, and the reason will be what accepting it would cost you rather than anything about the claim. Catch yourself once. Do not argue with the flinch and do not obey it. Just note that you had one, and carry on with your day.",
+      "exploreFurther": [
+        "17:46",
+        "40:12",
+        "39:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:46",
+      "surah": 39,
+      "start": 46,
+      "end": 46,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "You Will Judge Between Them",
+      "tier": "standard",
+      "meaning": "A prayer is given to be said, and its shape is the instruction. It opens with a vocative form of the divine name used only a handful of times in the Quran, then names God twice by what He does: opening the heavens and the earth into being, and knowing both the hidden and the seen. Only after that does the content arrive, and it is not a request for victory. It is an acknowledgement that God will judge between His servants in what they differed about, and it stops there.",
+      "historicalContext": "Meccan, and placed at a point where the surah has finished arguing. The dispute in the city was not going to be settled by evidence, since both sides had heard everything the other had. The commentators read the ayah as instruction in what to do when an argument has run out, and note that what is asked for is a judgement rather than a punishment. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱللَّهُمَّ",
+          "gloss": "O God",
+          "note": "A special vocative form of the divine name, ending in a doubled consonant that replaces the usual particle for calling. It occurs five times in the Quran, and in each place it stands at the head of a prayer."
+        },
+        {
+          "arabic": "فَاطِرَ",
+          "gloss": "Originator, Splitter",
+          "note": "From a verb meaning to split something open, used of a seed breaking and of a fast being broken. Creation is pictured as something opened rather than assembled, and one surah takes its title from this word."
+        },
+        {
+          "arabic": "ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ",
+          "gloss": "the unseen and the witnessed",
+          "note": "Two opposites named to cover everything between them. The second is the ordinary word for giving testimony, so the pair takes in what nobody saw and what everybody did."
+        }
+      ],
+      "lifeInProphetsTime": "When a dispute could not be settled inside a tribe, both parties went to an arbitrator whose standing they both accepted, and the point of him was that he knew things neither side could hide. Arbitration failed when no such person could be agreed on. In a town where the two sides had run out of common ground, a prayer naming God as the one who judges was a recognisable legal move, made upward.",
+      "didYouKnow": "The vocative form that opens this prayer occurs five times in the Quran: at 3:26, 5:114, 8:32, 10:10 and here. The name used next for God, the one who splits things open in creating them, occurs six times in the Book and gives the thirty-fifth surah its title.",
+      "theologicalSignificance": "The prayer models something specific: what to say when you are sure you are right and the argument is over. It does not ask for the opponent's defeat and it does not ask for vindication now. It names God's knowledge of the hidden, which is precisely the thing neither party in a human dispute can supply, and then leaves the verdict where it belongs. Restraint is built into the form of the words.",
+      "crossReferences": [
+        {
+          "ref": "3:26",
+          "why": "Opens with the same rare vocative, before a statement about sovereignty given and taken away."
+        },
+        {
+          "ref": "34:26",
+          "why": "Puts the same request in almost the same words: our Lord will gather us, then judge between us."
+        },
+        {
+          "ref": "42:15",
+          "why": "Ends a parallel argument the same way, with God gathering both sides and the return being to Him."
+        }
+      ],
+      "applyIt": "Take one dispute where you are sure you are right and the other person will not move. Instead of rehearsing your case again tonight, say this prayer's shape in your own words: name God, name what He knows that you do not, and then hand over the verdict rather than the person. Notice afterwards whether anything in your shoulders has changed.",
+      "exploreFurther": [
+        "3:26",
+        "34:26",
+        "42:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:47",
+      "surah": 39,
+      "start": 47,
+      "end": 47,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Everything On Earth, Twice Over",
+      "tier": "standard",
+      "meaning": "A hypothetical is built to be impossible and is then made useless. If the wrongdoers owned all that is on the earth, and as much again beside it, they would spend the whole of it to buy their way out. The ayah does not say the offer is refused. It says something else appears to them from God that they had never reckoned with. Commentators note the shift: a scene of bargaining is set up and then replaced by a scene of arrival, which unsettles more than a refusal would.",
+      "historicalContext": "Meccan, addressed to a merchant city whose leading families measured standing in caravan shares and stored goods. Ransom was a familiar transaction there: captives were bought back after raids at negotiated rates, and everyone knew roughly what a life cost. The ayah takes that ordinary arithmetic and extends it past any figure that could exist. No specific occasion is reported for it.",
+      "keyTerms": [
+        {
+          "arabic": "وَمِثْلَهُۥ مَعَهُۥ",
+          "gloss": "the like of it besides",
+          "note": "A doubling clause that adds an equal quantity to an amount already total. Since the first amount was everything on earth, the second cannot exist, and that impossibility is the point being made."
+        },
+        {
+          "arabic": "لَٱفْتَدَوْا۟",
+          "gloss": "they would ransom themselves",
+          "note": "The verb for buying a captive's release, an ordinary transaction after a raid. It assumes a seller willing to deal, and the rest of the ayah quietly removes that assumption without announcing it."
+        },
+        {
+          "arabic": "يَحْتَسِبُونَ",
+          "gloss": "they were reckoning",
+          "note": "An accounting verb for calculating what is owed and expected. What appears is described as outside their reckoning, so the failure named is one of estimation rather than of information."
+        }
+      ],
+      "lifeInProphetsTime": "After a raid, captives were held and then ransomed, and the negotiation was public and precise: so many camels for a fighting man, fewer for a boy. Families sold property to raise the sum, and some could not raise it at all. Everyone in that audience had paid such a price, watched one argued over, or known a household that failed to meet one. The ayah speaks the language of a transaction they had all seen conducted.",
+      "didYouKnow": "The hypothetical in this ayah, everything on earth and the like of it besides, appears in one other place in the Quran, at 13:18, where it also concerns people who did not answer their Lord. The verb used for the attempted ransom is the ordinary commercial one for buying back a captive, not a specialised religious term.",
+      "theologicalSignificance": "Wealth is not condemned here so much as measured. Setting the sum at everything that exists and then doubling it establishes that quantity was never the relevant variable, and it does so without saying property is worthless. The ending carries the more serious claim. What appears is described as entirely outside their calculation, which suggests the deepest failure was not in what they owned but in what they thought the situation was.",
+      "crossReferences": [
+        {
+          "ref": "13:18",
+          "why": "Uses the identical hypothetical, everything on earth and its like, of those who did not answer their Lord."
+        },
+        {
+          "ref": "3:91",
+          "why": "States the refusal concretely: an earth's fill of gold would not be accepted as ransom from them."
+        },
+        {
+          "ref": "39:48",
+          "why": "The next ayah completes the scene by naming what appears to them: their own deeds and their own mockery."
+        }
+      ],
+      "applyIt": "Work out, roughly, the number you have privately decided would make you safe. Most people have one even if they have never said it aloud. Write it down and look at it for a moment. This ayah is not telling you the figure is wrong. It is asking whether safety is the kind of thing that has a price, and leaving you to answer.",
+      "exploreFurther": [
+        "13:18",
+        "3:91",
+        "70:11-14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.966Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "39:48",
+      "surah": 39,
+      "start": 48,
+      "end": 48,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Surrounded By What They Mocked",
+      "tier": "standard",
+      "meaning": "Two things appear and one closes in. The bad of what they earned becomes visible, and then what they used to ridicule surrounds them. Nothing new is introduced into the scene: the material of the reckoning is the person's own record and the person's own jokes. Commentators note that the passage names ridicule specifically, not rejection in general, as the thing that returns, and that the verb for surrounding is one the Quran reserves almost entirely for what a person set in motion coming back.",
+      "historicalContext": "Meccan. Mockery rather than argument was the main instrument used against the message in this period: opponents gave the Prophet Muhammad (peace be upon him) nicknames, imitated the recitation, and made the raising of the dead a subject for jokes at gatherings. Several Meccan passages answer laughter rather than reasoning, and this is one of them. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "سَيِّـَٔاتُ",
+          "gloss": "the evils, the bad deeds",
+          "note": "A plural from the word for what is bad or ugly to look at. Paired here with a verb for becoming visible, it treats wrongs as things already present and simply not yet in view."
+        },
+        {
+          "arabic": "وَحَاقَ",
+          "gloss": "and it encircled",
+          "note": "A verb for closing in from every side. The Quran uses it almost only of something a person started coming back around them, so the word itself makes the outcome a return rather than an addition."
+        },
+        {
+          "arabic": "يَسْتَهْزِءُونَ",
+          "gloss": "they used to ridicule",
+          "note": "A verb form implying seeking amusement at something, so mockery as entertainment rather than as insult. The tense makes it a settled habit rather than a single incident anyone could regret."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation in Arabia was made and unmade in verse. A satirical poem could travel between markets and follow a family for generations, and the standard weapon against a new claim was not refutation but ridicule delivered well enough to be repeated. Making someone laughable was a recognised political act. Answering mockery was harder than answering argument, because there was nothing in it to take hold of.",
+      "didYouKnow": "The sentence about being surrounded by what they used to ridicule occurs six times in the Quran, at 11:8, 16:34, 40:83, 45:33, 46:26 and here. It is among the most repeated full clauses in the Book, and one of those occurrences stands in the surah that immediately follows this one.",
+      "theologicalSignificance": "The reckoning described contains nothing imported. It is made of a person's own deeds becoming visible and their own mockery closing in, which presents judgement as disclosure rather than as an addition from outside. That has a consequence for the present: if nothing new is added later, then what will be seen then is being assembled now. Ridicule is singled out because it is the cheapest available way to avoid a question.",
+      "crossReferences": [
+        {
+          "ref": "6:10",
+          "why": "States the same return of mockery, there of messengers who were ridiculed before this one."
+        },
+        {
+          "ref": "45:33",
+          "why": "Repeats the identical clause: evils becoming visible, and the mocked thing closing in around them."
+        },
+        {
+          "ref": "39:47",
+          "why": "The ayah before, where what appears to them from God is what they had never reckoned with."
+        }
+      ],
+      "applyIt": "Think of one thing you make jokes about that you have never actually examined. Most people have one, and the joke is usually load-bearing. You do not have to stop making it. Just once, ask what you would have to look at if the joke were unavailable to you, and then decide for yourself whether you want to look.",
+      "exploreFurther": [
+        "6:10",
+        "16:34",
+        "83:29-36"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:24:44.967Z",
         "reviewed": false
       }
     },
