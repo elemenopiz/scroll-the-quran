@@ -1,7 +1,7 @@
 {
   "surah": 4,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:27:43.175Z",
+  "generatedAt": "2026-09-09T09:36:41.364Z",
   "studies": [
     {
       "key": "4:1",
@@ -58,6 +58,702 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:27:35.150Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:2",
+      "surah": 4,
+      "start": 2,
+      "end": 2,
+      "theme": "Greed and Generosity",
+      "themeId": "greed-and-generosity",
+      "title": "What Belongs To The Orphan",
+      "tier": "standard",
+      "meaning": "Three distinct failures are named rather than one. Property held in trust has to actually reach its owner. A guardian must not swap poor goods for sound ones drawn from the estate, and the commentators describe exactly that: a lean animal exchanged for a fat one, worn coin for good. And the wealth is not to be quietly merged into the guardian's own holdings, where the boundary between them disappears. The word chosen for the offence at the close is unusually heavy, and it is left unqualified.",
+      "historicalContext": "Medinan, early in the surah that gathers the community's obligations toward the vulnerable. Conflict had left many households without fathers, and the property of the dead passed to whoever stood near enough to hold it. Guardianship was a recognised arrangement already open to abuse. No single occasion is reported; the ayah opens a run on orphans that runs through the inheritance shares and beyond them.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْيَتَـٰمَىٰ",
+          "gloss": "orphans",
+          "note": "The plural of a word for one left alone. In Arabic usage it names a child whose father died before maturity, and it carries the older sense of a solitary thing, a single pearl."
+        },
+        {
+          "arabic": "ٱلْخَبِيثَ",
+          "gloss": "the foul, the corrupt",
+          "note": "A word for what is spoiled rather than merely inferior. Setting it against the wholesome makes the substitution a moral act and not a question of trade quality."
+        },
+        {
+          "arabic": "أَمْوَٰلَهُمْ",
+          "gloss": "their properties",
+          "note": "From a root meaning to lean or incline, since wealth is what inclines toward a person and away again. The possessive pronoun is repeated twice in one short ayah."
+        }
+      ],
+      "lifeInProphetsTime": "Wealth in Medina was countable and physical: date palms in a named grove, camels with known marks, silver kept in a household chest. A guardian who took an orphan's strong she-camel and left a weaker one in its place could do it in daylight, since the herds grazed together and nobody kept a written ledger. Children had no standing to object, and years would pass before anyone thought to ask.",
+      "didYouKnow": "The word this ayah uses for the offence occurs nowhere else in the Quran. Arabic has many terms for sin and the Quran uses several of them often; this one appears a single time, attached to the taking of an orphan's property. Surah 4 carries the name The Women, yet it opens on the orphan rather than on marriage.",
+      "theologicalSignificance": "Trusteeship is treated as a relationship with God before it is a relationship with the child. The orphan cannot audit a guardian, cannot bring a claim, and in most cases will never learn what was taken. The passage answers that gap by making the accounting divine rather than social. It also refuses the excuse of scale, naming the swap of one animal for another beside outright consumption.",
+      "crossReferences": [
+        {
+          "ref": "6:152",
+          "why": "Repeats the instruction not to approach an orphan's property except in the best way, until maturity is reached."
+        },
+        {
+          "ref": "89:17-20",
+          "why": "Names neglect of the orphan and greed for inheritance as symptoms of a whole society's disorder."
+        },
+        {
+          "ref": "93:6-9",
+          "why": "Addresses a prophet who was himself an orphan, and turns his own history into an instruction."
+        }
+      ],
+      "applyIt": "Think of one thing you hold that is not really yours: a shared account, a sibling's stored boxes, money someone left with you, a task somebody trusted you with. Check on it today, before anyone asks. This ayah's concern is not theft so much as the slow blurring of a boundary, and boundaries blur while nobody is looking at them.",
+      "exploreFurther": [
+        "6:152",
+        "89:17-20",
+        "93:6-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.008Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:3",
+      "surah": 4,
+      "start": 3,
+      "end": 3,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Fear Of Being Unfair",
+      "tier": "standard",
+      "meaning": "The ayah opens and closes on fairness, with marriage placed between them as a conditional. The first clause ties the subject to orphan girls under a guardian's care, which is how the classical commentators read the connection, and a well-attested early report explains the situation as guardians marrying their wards in order to keep hold of their property. The permission that follows is bounded twice, by a number and by the condition of dealing evenly, and the closing clause gives avoiding injustice as the reason.",
+      "historicalContext": "Medinan. The commentators connect this ayah to guardians who married orphan girls in their charge so as to retain control of their inheritance while giving them less than a fair dowry, and an early report describing that situation is preserved as its occasion. It arrives in a community that had lost many men and had many dependants to place, and the ayat around it concern the property of those same orphans.",
+      "keyTerms": [
+        {
+          "arabic": "تُقْسِطُوا۟",
+          "gloss": "act with equity",
+          "note": "From a root meaning to give each side its due measure. It names distributive fairness rather than affection, and the ayah makes that the governing test at both ends of the sentence."
+        },
+        {
+          "arabic": "تَعْدِلُوا۟",
+          "gloss": "deal justly, balance",
+          "note": "A second word for justice, from a root about balance and evenness. Using two different terms in one sentence keeps the standard from collapsing into a single claim easily satisfied."
+        },
+        {
+          "arabic": "تَعُولُوا۟",
+          "gloss": "incline away, overburden",
+          "note": "Scholars differ over its sense, reading it either as leaning away from justice or as having more dependants than one can support. Both readings make the closing clause a warning against overreach."
+        }
+      ],
+      "lifeInProphetsTime": "An orphan girl in Medina came with a name, a share of palms, and no father to argue on her behalf. Her guardian controlled both her property and her marriage, and marrying her himself removed any outside party who might ask questions. Households were large and layered, with dependants attached to a head expected to house and feed them all. Fairness there was measured in food, cloth and nights.",
+      "didYouKnow": "The word for orphans here is grammatically masculine plural, but the commentators read it as referring to orphan girls specifically, because the sentence moves straight from them to marriage. This is also the only ayah in the Quran that names a number of wives at all, and it does so while narrowing rather than opening the possibility.",
+      "theologicalSignificance": "A permission is set inside a condition and the condition is then stated twice, which makes the ethical requirement the load-bearing part of the sentence rather than the concession. Fear of one's own unfairness is treated as a reason to act, not merely a feeling to be managed. And by beginning with orphans, the passage frames the whole matter as trusteeship over vulnerable people rather than as appetite.",
+      "crossReferences": [
+        {
+          "ref": "4:127",
+          "why": "Returns to these same orphan girls and their guardians, answering a later request for clarification."
+        },
+        {
+          "ref": "4:129",
+          "why": "States plainly that perfect evenness of feeling lies beyond human reach, and asks for restraint instead."
+        },
+        {
+          "ref": "4:19",
+          "why": "Continues the surah's insistence that women in a household are not property passed between hands."
+        }
+      ],
+      "applyIt": "Notice the method of this ayah rather than its content: it asks you to consult your own fear of falling short. Take one responsibility you have accepted and ask honestly whether you have the capacity for it, or whether you took it simply because it was available. Then let the honest answer change one small thing this week.",
+      "exploreFurther": [
+        "4:127",
+        "4:129-130",
+        "2:220"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.009Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:4-5",
+      "surah": 4,
+      "start": 4,
+      "end": 5,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "A Gift, Not A Price",
+      "tier": "standard",
+      "meaning": "Two instructions about money and the people it passes between. The first sends the dowry to the bride directly and describes it with a word meaning a free gift, which the commentators read as setting aside an older practice in which the payment went to her guardians. If she returns part of it, that is hers to decide. The second concerns wealth held for someone whose judgement is not yet formed: the property is not withheld from them but spent on them, with kind words attached to the spending.",
+      "historicalContext": "Medinan. Commentators describe a pre-existing custom in which the bridal payment went to a woman's father or guardian rather than to her, and read the choice of word here as unmaking that custom. The second ayah is read alongside the surrounding passage on orphans, though its wording is broader and covers anyone unable to manage property. Both belong to the surah's opening reordering of household wealth.",
+      "keyTerms": [
+        {
+          "arabic": "صَدُقَـٰتِهِنَّ",
+          "gloss": "their dowries",
+          "note": "From the root for truthfulness and sincerity. The payment is named after truth, marking it as evidence of how serious the commitment is rather than as a price paid for a person."
+        },
+        {
+          "arabic": "نِحْلَةً",
+          "gloss": "a free gift",
+          "note": "A word for something bestowed without expectation of return. It removes any sense of exchange from the transaction, and it makes the recipient's ownership of what she receives complete."
+        },
+        {
+          "arabic": "ٱلسُّفَهَآءَ",
+          "gloss": "those of unformed judgement",
+          "note": "Not an insult about intelligence but a description of capacity. The word covers anyone unable to manage property well, and the ayah pairs it at once with an instruction about how to speak."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage negotiations in that world ran between families, and the payment was part of what settled two households' relations with each other. Directing it to the bride gave her something of her own inside the marriage, portable and still hers if the marriage ended. Household wealth otherwise moved as a single mass under whoever was head, so separately held property genuinely changed a woman's position.",
+      "didYouKnow": "The second ayah calls the property \"your money\" while apparently speaking of wealth held for someone else, and the classical commentators differ over the possessive: some read it as the guardian's own funds, others as the ward's, described as the community's shared responsibility. The grammar sustains both, and the tradition preserves the ambiguity rather than resolving it.",
+      "theologicalSignificance": "Both ayat correct one instinct, which is to treat a dependant's property as an extension of your own. The first does it by naming the dowry a gift so that ownership passes cleanly. The second allows control to be retained while removing the benefit. Between them they establish that authority over someone's money and entitlement to it are separate things, and that the second does not follow from the first.",
+      "crossReferences": [
+        {
+          "ref": "4:20-21",
+          "why": "Addresses reclaiming a dowry when a marriage ends, and refuses it even where large sums are involved."
+        },
+        {
+          "ref": "4:6",
+          "why": "Gives the point at which property held for a ward is handed over, and how that handover is recorded."
+        },
+        {
+          "ref": "2:83",
+          "why": "Joins kind speech to the same cluster of duties toward parents, orphans, the needy and the near."
+        }
+      ],
+      "applyIt": "If you manage money for someone who cannot manage it themselves, a child, a parent, someone unwell, spend an extra minute today explaining what you did with it in words they can follow. These two ayat pair provision with speech deliberately. Being provided for without being spoken to is its own kind of poverty, and it is easily overlooked.",
+      "exploreFurther": [
+        "4:6",
+        "4:20-21",
+        "2:83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.010Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:6",
+      "surah": 4,
+      "start": 6,
+      "end": 6,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Until They Are Ready",
+      "tier": "standard",
+      "meaning": "Guardianship is given both an end point and a method. The ward is tested as maturity approaches, so that the transfer depends on demonstrated sound judgement rather than on age alone. Two temptations are named: spending the estate lavishly, and hurrying to spend it before the child is old enough to claim it. A guardian with means is asked to take nothing, one in need may take modestly. The handover is then witnessed, and the sentence closes by naming a witness beyond the human ones.",
+      "historicalContext": "Medinan, continuing the run on orphans that opens the surah. The commentators place these instructions in a community where guardianship was customary and largely unsupervised, and where deaths in the early conflicts had multiplied the number of estates held on behalf of children. No single occasion is reported. The ayah reads as a working framework built onto the warning that precedes it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱبْتَلُوا۟",
+          "gloss": "test them",
+          "note": "The verb used across the Quran for trials God sets. Applied here to a guardian assessing a ward, it makes the assessment serious and continuing rather than a single formal question asked once."
+        },
+        {
+          "arabic": "رُشْدًا",
+          "gloss": "sound judgement, maturity",
+          "note": "Not physical growth but the capacity to manage. Commentators discuss whether it means competence with money, uprightness of character, or both together, and they record the range without settling it."
+        },
+        {
+          "arabic": "حَسِيبًا",
+          "gloss": "a reckoner, an accountant",
+          "note": "From a root for counting and calculating. It closes the ayah on the image of an audit, which is precisely what the witnessed handover has just been arranged to make possible."
+        }
+      ],
+      "lifeInProphetsTime": "A handover meant physically moving things and naming them: which palms in the grove, which she-camels, how much silver. Without documents, ownership was carried in the memory of whoever watched. Calling witnesses was the only durable record a family had, which is why the ayah asks for them at the moment of transfer. A guardian who was poor lived beside the property he managed every day of his life.",
+      "didYouKnow": "This is among the longest single ayat in the surah, and it moves through five separate concerns without any connecting narrative: testing, transfer, restraint, the guardian's own compensation, and witnessing. Surah 4 returns to orphans in seven different ayat, more often than any other surah of the Quran, though it is named for women rather than for them.",
+      "theologicalSignificance": "The ayah builds a chain of accountability and then extends it past the point where people can see. Witnesses cover the moment of transfer; the divine Reckoner covers the years before it, when nobody was watching at all. It also declines to make poverty an excuse or wealth a licence, adjusting what is asked of a guardian to what he can afford without ever loosening the underlying trust.",
+      "crossReferences": [
+        {
+          "ref": "2:282",
+          "why": "Applies the same instinct for witnessing to debts, on the grounds that memory and goodwill are not enough."
+        },
+        {
+          "ref": "6:152",
+          "why": "Joins care of an orphan's property to full measure and honest weight, as one continuous ethic."
+        },
+        {
+          "ref": "17:34",
+          "why": "Repeats the boundary around an orphan's wealth and adds that every commitment will be asked about."
+        }
+      ],
+      "applyIt": "When you next hand back something that was in your keeping, a borrowed tool, a key, money held for someone, do it in front of a third person or send a short message confirming it. Between people who trust each other this feels excessive. That is exactly the moment being described, and a record protects the honest party as much as anyone else.",
+      "exploreFurther": [
+        "2:282",
+        "6:152",
+        "17:34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.011Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:7",
+      "surah": 4,
+      "start": 7,
+      "end": 7,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "A Share For Each",
+      "tier": "standard",
+      "meaning": "The sentence is built out of repetition. One clause is stated twice, once for men and once for women, with nothing altered except the party named. Whatever the estate is worth, little or much, both stand inside it. The final phrase makes the portion an apportioned due rather than a gift the family chooses to make. Exact fractions arrive only in the ayat that follow; this one establishes that there is something to be divided at all.",
+      "historicalContext": "Medinan. Commentators report that inheritance among the Arabs of the time commonly followed the capacity to ride and fight, so women and young children of a dead man often received nothing. An early and widely transmitted report describes a widow bringing the case of her daughters forward after her husband was killed, and this passage and those following are read as the response to it.",
+      "keyTerms": [
+        {
+          "arabic": "نَصِيبٌ",
+          "gloss": "a share, a portion",
+          "note": "A word for an allotted portion, used elsewhere of a share of good or of punishment. It names something already assigned rather than something granted by a family's goodwill."
+        },
+        {
+          "arabic": "مَّفْرُوضًا",
+          "gloss": "apportioned, fixed",
+          "note": "From a root meaning to cut or mark out precisely. It turns the share from a moral expectation into a defined quantity, which is what the following ayat then go on to supply."
+        },
+        {
+          "arabic": "ٱلْأَقْرَبُونَ",
+          "gloss": "the near relatives",
+          "note": "A form from the root for nearness, meaning those closest. It widens the estate beyond parents to the surrounding kin, which is how households actually held property at the time."
+        }
+      ],
+      "lifeInProphetsTime": "Property in that society was usually held by a household rather than a person, and it stayed with the men who could defend it. A widow could find herself living in a house that had passed to her husband's brother. Daughters were counted as future members of another family and were often treated as passing out of the estate entirely. The repetition in this ayah lands differently against that background.",
+      "didYouKnow": "The clause about what parents and relatives leave is written out twice in full rather than shortened with a pronoun, which Arabic would readily allow. Commentators read the deliberate repetition as the substance of the ayah rather than its style: symmetry made audible, so that the second half cannot be heard as an appendix attached to the first.",
+      "theologicalSignificance": "The passage moves a question of family custom into the register of divine allotment. Once a share is described as apportioned, withholding it becomes a matter between the withholder and God rather than a family decision open to negotiation. It also establishes that the smallness of an estate releases nobody, since the phrase covering little and much removes the most convenient excuse before it can be offered.",
+      "crossReferences": [
+        {
+          "ref": "4:11",
+          "why": "Supplies the fractions this ayah promises, opening with a direct instruction concerning children."
+        },
+        {
+          "ref": "4:19",
+          "why": "Attacks the older custom from another direction, refusing to let women be inherited as property."
+        },
+        {
+          "ref": "2:180",
+          "why": "Shows the same concern that an estate be settled deliberately rather than left to whoever is nearest."
+        }
+      ],
+      "applyIt": "Look at something you administer on behalf of others: a family fund, a shared bill, a rota, an inheritance still undivided. Write down plainly who is entitled to what, and show it to them. Much unfairness inside families is never decided. It accumulates because nobody wrote anything down while everyone was still on good terms.",
+      "exploreFurther": [
+        "4:11",
+        "4:32",
+        "2:180"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.012Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:8",
+      "surah": 4,
+      "start": 8,
+      "end": 8,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Those Standing At The Division",
+      "tier": "standard",
+      "meaning": "A moment is described rather than a rule laid down. When an estate is divided, people with no claim are often standing there: a cousin outside the line of inheritance, a neighbour's orphan, someone poor. The passage asks that they be given something from it and spoken to well. Commentators differ over whether this describes a settled practice of the early community or a strong recommendation, and both readings are preserved. The instruction about speech does not substitute for the giving; both are asked for.",
+      "historicalContext": "Medinan, placed immediately after the ayah establishing that men and women alike hold shares, and immediately before the fractions are specified. Its position carries weight: it enters between the principle and the arithmetic, so that exact accounting is framed by a gesture no accounting requires. Commentators report the practice observed in the early community, and record that later generations differed over whether it continued.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْقِسْمَةَ",
+          "gloss": "the division, the sharing out",
+          "note": "A noun for the act of dividing, from the same root as the words for equity and for portion. It names the occasion rather than the property, which is what makes this ayah about a moment."
+        },
+        {
+          "arabic": "فَٱرْزُقُوهُم",
+          "gloss": "provide for them",
+          "note": "The verb comes from the root for provision, normally used of God providing. Applying it to the heirs casts their giving as a channel for something they did not ultimately generate themselves."
+        },
+        {
+          "arabic": "مَّعْرُوفًا",
+          "gloss": "kind, recognised as good",
+          "note": "Literally what is known and recognised. The standard is whatever any decent person present would recognise as decent, which leaves the form open while keeping the substance perfectly clear."
+        }
+      ],
+      "lifeInProphetsTime": "A division happened in the open, in a courtyard or beside the palms, and it drew a crowd. Relatives who would receive nothing came anyway, because a household's fortunes were everyone's business. Watching a share of dates counted out to somebody else while your own family had none was an ordinary experience. This ayah is written for the awkwardness of that crowd, which everyone present would have felt.",
+      "didYouKnow": "A phrase asking for good words appears three times within the first nine ayat of this surah, twice in identical wording and once with a different adjective, attached each time to a different vulnerable party: those managing another's wealth, the immature, and the onlookers at a division. Speech is thereby made a component of financial dealing rather than a courtesy beside it.",
+      "theologicalSignificance": "The ayah works against a specific hazard of just systems. Once shares are exact, everything outside them can start to look like nothing owed. By inserting an unmeasured gesture between the principle and the fractions, the passage keeps generosity from being displaced by correctness. It also treats the poor as people standing present rather than as an abstract category, which changes what the moment of division is.",
+      "crossReferences": [
+        {
+          "ref": "4:36",
+          "why": "Extends the same attention outward to neighbours near and far, and to travellers passing through."
+        },
+        {
+          "ref": "2:177",
+          "why": "Places giving to relatives, orphans and the needy at the centre of what righteousness actually consists of."
+        },
+        {
+          "ref": "59:7",
+          "why": "Explains distribution as keeping wealth from circulating only among those who are already rich."
+        }
+      ],
+      "applyIt": "The next time something good arrives that others watched arrive, a bonus, a gift, an inheritance, a windfall, give a small part of it away that same week, to someone who was nearby and received nothing. Not as compensation, and not as an apology. The ayah is describing the difference between a room where that happens and one where it does not.",
+      "exploreFurther": [
+        "2:177",
+        "4:36",
+        "59:7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.012Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:9-10",
+      "surah": 4,
+      "start": 9,
+      "end": 10,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Fire In The Belly",
+      "tier": "standard",
+      "meaning": "The first ayah works by transferring a feeling. It asks people advising a dying man about his estate to picture their own children left behind weak, and to let that fear shape what they say. The second turns to those who take an orphan's property and describes the act as already being what it will become: swallowing fire. The commentators note that only the burning is put in the future tense, so the punishment is presented as the same act seen truly.",
+      "historicalContext": "Medinan, sitting between the ayah about onlookers at a division and the detailed shares. The commentators connect the first of these to deathbed counsel, where a visitor might urge a dying man to give away more than his household could spare, or to pass over the heirs nearest to him. Pairing it with the warning that follows suggests one situation viewed from both ends: advice given, and property taken.",
+      "keyTerms": [
+        {
+          "arabic": "ضِعَـٰفًا",
+          "gloss": "weak, frail ones",
+          "note": "A plural of the adjective for weakness, covering the physically small and the socially powerless together. It describes children exactly as they appear to a father imagining his own absence from the house."
+        },
+        {
+          "arabic": "سَدِيدًا",
+          "gloss": "sound, straight to the mark",
+          "note": "From a root for closing a gap or hitting a target. It asks for speech that is true and well aimed rather than merely inoffensive, which is a higher standard than kindness alone."
+        },
+        {
+          "arabic": "نَارًا",
+          "gloss": "fire",
+          "note": "The ayah places it inside the body rather than around it, which is unusual. The image collapses the distance between an act and its consequence instead of describing a penalty applied later."
+        }
+      ],
+      "lifeInProphetsTime": "A dying man in Medina was surrounded rather than alone. Relatives, creditors and interested neighbours gathered in the room, and words spoken over him in his last hours could redirect an entire estate. The pressure was real and the counsel was rarely disinterested. Everyone in that room had also imagined lying in that bed, with their own small children standing where these ones now stood.",
+      "didYouKnow": "The second ayah uses the ordinary verb for eating, the same one used of meals, and attaches it to fire in the stomach. Classical commentators observed that the image is never announced as a comparison. The sentence simply reports the eating and then the burning, and leaves the reader to supply the connection between them.",
+      "theologicalSignificance": "Moral imagination is treated here as a religious faculty. The first ayah does not argue that taking from orphans is wrong; it asks a person to relocate himself and see what he already knows. The second establishes that consequences are not appended to acts by a judge but lie latent inside them, which is a claim about how the moral world is built rather than about penalties.",
+      "crossReferences": [
+        {
+          "ref": "2:266",
+          "why": "Draws a parallel picture, a man with weak offspring watching his garden burn, to produce the same feeling."
+        },
+        {
+          "ref": "89:17-20",
+          "why": "Names devouring inheritance greedily among the failings of a society that neglects its orphans."
+        },
+        {
+          "ref": "4:2",
+          "why": "Opens the surah's treatment of an orphan's property with the offence this passage reports the end of."
+        }
+      ],
+      "applyIt": "Before you next give someone advice about their money, their will, or their family, ask what you would want said if the person receiving it were your own child. Then say that. Most bad counsel is not malicious. It is simply given by someone who never troubled to put themselves inside the room.",
+      "exploreFurther": [
+        "2:266",
+        "89:17-20",
+        "17:34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.012Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:11",
+      "surah": 4,
+      "start": 11,
+      "end": 11,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Shares You Did Not Choose",
+      "tier": "standard",
+      "meaning": "Fixed portions are set out for children and parents, moving case by case: daughters alone, a single daughter, parents with and without grandchildren, the effect of surviving siblings. Debts and bequests are settled before anything is counted. What the classical commentators dwell on is a sentence near the end that cuts across the arithmetic entirely: you do not know which of your parents or children will prove nearer to you in benefit. The distribution is closed to sentiment for that reason.",
+      "historicalContext": "Medinan, part of the group of ayat replacing an inheritance practice based on the capacity to fight with one based on defined relationship. Commentators report a case brought soon after a battle, in which the daughters of a man killed received nothing while a male relative took the whole estate, and read these ayat as the response. Detailed shares arrive here once the principle has already been stated.",
+      "keyTerms": [
+        {
+          "arabic": "يُوصِيكُمُ",
+          "gloss": "He instructs, He enjoins",
+          "note": "From the root for making a bequest. God uses the language of a testator about His own instruction, which places the whole passage in the register of a will rather than of a decree."
+        },
+        {
+          "arabic": "حَظِّ",
+          "gloss": "portion, lot",
+          "note": "A word for an allotted share carrying an older sense of fortune. Its use keeps attention on the portion assigned rather than on any judgement about the worth of the person receiving it."
+        },
+        {
+          "arabic": "فَرِيضَةً",
+          "gloss": "a fixed due",
+          "note": "From a root meaning to cut precisely, the same one used a few ayat earlier. It marks the fractions as determined rather than proposed, which is why the passage never argues for them."
+        }
+      ],
+      "lifeInProphetsTime": "Estates were physical and awkward to divide: a grove, a well, a herd, a house. Splitting them meant real decisions about who took which trees and who watered when. Families that could not agree brought the matter into the open before witnesses, since there was no registry to appeal to. Precise fractions were not bureaucracy in that world. They were what stood between a household and a feud.",
+      "didYouKnow": "The two long inheritance ayat of this surah are followed at once by two short ones about obeying and disobeying God, and the sequence is striking: detailed arithmetic, then an abrupt turn to the Gardens and the Fire. Commentators read the pairing as a deliberate frame, marking the fractions as something other than administration.",
+      "theologicalSignificance": "The clause about not knowing who will benefit you grounds the passage in a claim about human ignorance rather than about family structure. People distribute according to affection, expectation, or a sense of who is most likely to repay attention, and all three rest on predictions about the future. The passage takes the prediction out of the calculation. Debts and bequests, the commentators note, are cleared first.",
+      "crossReferences": [
+        {
+          "ref": "4:7",
+          "why": "States the principle these fractions implement, that both men and women hold a fixed portion."
+        },
+        {
+          "ref": "2:216",
+          "why": "Argues the same way: your evaluation is limited, so the instruction stands above your reading of it."
+        },
+        {
+          "ref": "4:176",
+          "why": "Closes the surah with the remaining case, an estate left by someone with neither parents nor children."
+        }
+      ],
+      "applyIt": "Notice how much of your own planning quietly assumes you know who will need what, and who will be there for you later. Take one such assumption and hold it loosely for a week. The passage is not asking you to distrust your family. It asks you to notice that you are forecasting, and that a forecast is not knowledge.",
+      "exploreFurther": [
+        "4:7",
+        "4:12",
+        "4:176"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:24.982Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:12",
+      "surah": 4,
+      "start": 12,
+      "end": 12,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Without Any Prejudice",
+      "tier": "standard",
+      "meaning": "The picture is completed here: what a husband receives from a wife's estate and a wife from a husband's, each varying with whether there are children, and then the case of a person who leaves neither parent nor child behind. Debts and bequests come first, and the clause saying so is repeated three times within a single ayah. A phrase about causing no injury attaches to the bequest, which the commentators read as blocking a will written to wound rather than to benefit anyone.",
+      "historicalContext": "Medinan, following directly on the shares for children and parents and completing them. Together the two ayat form the most detailed legislative passage in the Quran. Commentators place them in the years after the community had settled in Medina, as older inheritance customs were reordered, and note that the case of a person with no direct heirs is left partly open here and taken up again at the surah's very end.",
+      "keyTerms": [
+        {
+          "arabic": "كَلَـٰلَةً",
+          "gloss": "one with no direct heirs",
+          "note": "A rare term whose exact scope the classical commentators discuss at length, reading it as an estate with neither parent nor child, or as the relatives themselves. They record the difficulty rather than settling it."
+        },
+        {
+          "arabic": "مُضَآرٍّ",
+          "gloss": "causing injury",
+          "note": "An active participle from the root for harm. Attached to the bequest, it names a will written to wound somebody as a distinct wrong from a will that is merely unfair."
+        },
+        {
+          "arabic": "حَلِيمٌ",
+          "gloss": "forbearing, slow to anger",
+          "note": "A divine name for patient restraint rather than mildness. Closing an ayah of exact fractions with it suggests room is being left for the many people who will get this wrong."
+        }
+      ],
+      "lifeInProphetsTime": "A wife in that society usually brought her dowry into the marriage and kept it; she was not absorbed into her husband's property. When he died she needed a claim of her own, or she returned to her father's people with whatever she could carry. The repeated clause about debts mattered because debt in a cashless economy was constant, held in memory, and easy to deny once the debtor was gone.",
+      "didYouKnow": "The clause about settling bequests and debts occurs three times in this one ayah and once in the ayah before it, four times across two consecutive ayat. Commentators read the repetition as insistence rather than as style: no share is calculated from an estate until whatever the deceased owed has already left it.",
+      "theologicalSignificance": "Two divine names close these ayat, Knowing and Judicious in the first, Knowing and Forbearing in the second. The pairing does something specific. Knowledge grounds the fractions, and forbearance meets the people who have to live with them. A passage of pure arithmetic ends on an attribute concerned with how God treats those who fall short, which keeps the shares from reading as a machine.",
+      "crossReferences": [
+        {
+          "ref": "4:11",
+          "why": "Carries the shares for children and parents that this ayah completes with those for spouses and siblings."
+        },
+        {
+          "ref": "4:176",
+          "why": "Returns at the surah's close to the estate with no parent or child, left partial here."
+        },
+        {
+          "ref": "2:180",
+          "why": "Shows the bequest as an established practice, which is why it is cleared before any share is counted."
+        }
+      ],
+      "applyIt": "Take an hour this month to write down what you owe and what is owed to you, and tell one person you trust where the list is kept. This passage assumes debts outlive people and that memory makes a poor record. Doing it is not morbid. It is a small kindness to whoever will one day have to sort everything out.",
+      "exploreFurther": [
+        "4:11",
+        "4:176",
+        "2:282"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.004Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:13",
+      "surah": 4,
+      "start": 13,
+      "end": 13,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "The Bounds And The Gardens",
+      "tier": "standard",
+      "meaning": "A single demonstrative gathers everything before it, the shares, the settling of debts, the care of orphans, and calls the whole of it a boundary. What follows attaches an outcome not to the arithmetic but to the disposition behind it. The commentators note the choice of a word for limits rather than for laws: what has been described is an edge, and the moral question is whether a person stays inside it or presses steadily against it.",
+      "historicalContext": "Medinan, closing the inheritance ayat. The community was receiving detailed instruction for the first time on matters that had previously run on custom, and this ayah supplies the reason to accept it. Commentators observe that the surah repeatedly follows practical instruction with an appeal to the hereafter, so that the detail is never left standing on its own authority alone.",
+      "keyTerms": [
+        {
+          "arabic": "حُدُودُ",
+          "gloss": "limits, boundaries",
+          "note": "The word for the edge of a piece of land or the border of a territory. It pictures the instructions as a marked perimeter, with a wide space inside it rather than a narrow path."
+        },
+        {
+          "arabic": "يُطِعِ",
+          "gloss": "obeys, complies willingly",
+          "note": "From a root carrying willingness rather than submission under force. The verb suggests someone who goes along with something readily, which is part of why a reward can be attached to it."
+        },
+        {
+          "arabic": "ٱلْفَوْزُ",
+          "gloss": "the attainment, the triumph",
+          "note": "A word for winning through and coming out safe, used of escaping danger as much as of gaining a prize. It frames the Gardens as a successful arrival rather than as a payment received."
+        }
+      ],
+      "lifeInProphetsTime": "Boundaries were the most contested feature of that landscape. A grove's edge, a well's radius, grazing rights along a dry riverbed: these were held by stones, memory and agreement, and shifting a marker at night was a recognised form of theft. Rivers running beneath gardens described the one thing the region did not have, which is permanent water arriving without anyone's labour.",
+      "didYouKnow": "The image of gardens with rivers running beneath them occurs more than thirty times across the Quran, but here it follows immediately on a passage of fractions and debts, with no transition at all. That abruptness is characteristic of this surah, which repeatedly sets the smallest domestic detail directly against the largest possible horizon.",
+      "theologicalSignificance": "The ayah makes an equivalence that is easy to miss. Honouring a widow's eighth is set on the same footing as the great matters usually associated with the word obedience. Nothing is spiritualised away. What is asked is that a person accept a limit on their own advantage at a moment when nobody could have stopped them from crossing it, and that acceptance is what the reward attaches to.",
+      "crossReferences": [
+        {
+          "ref": "4:14",
+          "why": "States the reverse case at once, so the boundary is given two sides in identical construction."
+        },
+        {
+          "ref": "2:229",
+          "why": "Uses the same word for God's limits in another domestic passage, warning against overstepping them."
+        },
+        {
+          "ref": "65:1",
+          "why": "Closes another set of family instructions by naming them limits and warning against transgressing them."
+        }
+      ],
+      "applyIt": "Find one place today where a rule stands between you and something you could take without consequence: a queue, an expense claim, a colleague's credit, a family arrangement tilted your way. Stay inside it deliberately, and notice that nobody saw you do it. That unobserved moment is what this ayah attaches a garden to.",
+      "exploreFurther": [
+        "4:14",
+        "2:229",
+        "65:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.004Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:14",
+      "surah": 4,
+      "start": 14,
+      "end": 14,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Overstepping The Line",
+      "tier": "standard",
+      "meaning": "This mirrors the ayah before it, built from the same parts in the same order with each term replaced by its opposite. One addition breaks the symmetry: alongside disobedience the sentence names overstepping the limits, so the offence is described twice, once as refusal and once as trespass. The punishment named at the close is not merely severe but humiliating, which the commentators read as answering an offence committed in order to gain advantage over other people.",
+      "historicalContext": "Medinan, the second half of a pair closing the inheritance ayat. The community was young and the instructions were new, replacing arrangements that had favoured whoever held power inside a family. Commentators note that this surah's warnings are typically addressed to people within the community rather than to outright deniers, which shapes the reading: it speaks to someone who accepts a boundary and crosses it anyway.",
+      "keyTerms": [
+        {
+          "arabic": "يَعْصِ",
+          "gloss": "disobeys, rebels",
+          "note": "From a root connected with a staff, carrying the sense of breaking away rather than merely failing. It describes a refusal with will behind it, not a lapse of attention or of memory."
+        },
+        {
+          "arabic": "يَتَعَدَّ",
+          "gloss": "oversteps, transgresses",
+          "note": "From the root for going beyond, and for enmity. Adding it to disobedience names a second thing: not only declining a limit but pushing past it into what belongs to someone else."
+        },
+        {
+          "arabic": "مُّهِينٌ",
+          "gloss": "humiliating, degrading",
+          "note": "An active participle from the root for lowliness. It specifies the quality of the punishment rather than its intensity, answering an act that raised one person by lowering another."
+        }
+      ],
+      "lifeInProphetsTime": "Honour was the working currency of that society, more valuable than property and far harder to recover once lost. A man who took a niece's share might gain a grove and lose nothing publicly, since family matters stayed inside families and the wronged party had no forum. A punishment described as degrading speaks straight to that calculation, naming the one cost he thought he had avoided.",
+      "didYouKnow": "The two ayat form a matched pair in Arabic, nearly identical in construction, with the second running noticeably shorter than the first. Commentators across the tradition have observed this asymmetry in Quranic pairings of reward and punishment, where descriptions of mercy are generally given more room than descriptions of the Fire.",
+      "theologicalSignificance": "Placing this straight after the Gardens establishes that one act is being described from two directions, and that the reader already stands somewhere along that line. The word for humiliation matters: it suggests the hereafter answers not only what was done but what was sought by doing it. Someone who crossed a boundary in order to gain standing is met with the loss of standing.",
+      "crossReferences": [
+        {
+          "ref": "4:13",
+          "why": "Gives the matching promise in the same construction, so the two ayat work as a single statement."
+        },
+        {
+          "ref": "2:229",
+          "why": "Warns in almost identical terms against overstepping God's limits in another passage of family instruction."
+        },
+        {
+          "ref": "58:5",
+          "why": "Attaches a humiliating punishment to those who set themselves against God and His Messenger."
+        }
+      ],
+      "applyIt": "Think of a boundary you crossed quietly in the past year and got away with. Do not dwell on the guilt, since the ayah is not asking for that. Instead name what you hoped to gain by crossing it, and ask whether you actually got it. That one question is often enough to make the next boundary easier to keep.",
+      "exploreFurther": [
+        "4:13",
+        "2:229",
+        "58:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.005Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "4:15",
+      "surah": 4,
+      "start": 15,
+      "end": 15,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Or God Makes A Way",
+      "tier": "standard",
+      "meaning": "A procedure is described with an unusually high evidentiary bar: four witnesses drawn from within the community, and nothing proceeding without their testimony. What follows is confinement at home. The final clause then points beyond itself, holding open the possibility of something further. The classical commentators read this as an early and provisional measure, given at the beginning of the community's legislation and superseded once a further provision was revealed.",
+      "historicalContext": "Medinan, early in the surah's treatment of household matters. Commentators place these instructions at the start of the community's legislation on such cases, when much was still being given in stages. They read the closing clause as an explicit signal that the arrangement was interim, and report that a later passage supplied what it pointed toward. The reports agree on that sequence while differing over details.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱسْتَشْهِدُوا۟",
+          "gloss": "call witnesses against",
+          "note": "A form of the verb for witnessing that means to seek witnesses out. The burden falls entirely on the accuser to produce them, which in practice makes such an accusation extremely hard to sustain."
+        },
+        {
+          "arabic": "أَرْبَعَةً",
+          "gloss": "four",
+          "note": "The number stands far above what any other claim requires, and the Quran uses it only for accusations of this kind. Commentators read the figure as protective, designed to make casual accusation impossible."
+        },
+        {
+          "arabic": "سَبِيلًا",
+          "gloss": "a way, a path",
+          "note": "The ordinary word for a road. Left indefinite at the end of the sentence, it marks the passage as open toward something not yet given, which is how the tradition has always read it."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation in a small settled town was a household's main asset, and rumour moved through it faster than any correction could follow. A woman accused without proof had nowhere to appeal and no record to consult, so her name could not be cleared. Requiring four eyewitnesses to the act itself set a threshold that ordinary gossip, however loud and however confident, could never reach.",
+      "didYouKnow": "Four witnesses are unique in the Quran to accusations of this kind. Other matters, including debts and bequests, are settled with two. A later surah attaches a penalty to accusers who cannot produce the four, which turns the requirement into a protection for the accused rather than a procedure for pursuing them.",
+      "theologicalSignificance": "The passage shows revelation arriving in stages, and says so openly. A clause left deliberately unfinished inside the text is unusual, and the tradition has treated it as evidence that guidance was given gradually, matched to what the community could carry at the time. The evidentiary threshold also establishes that certainty rather than suspicion is what the moral order is built to run on.",
+      "crossReferences": [
+        {
+          "ref": "4:16",
+          "why": "Addresses the parallel case in the next ayah and closes on repentance and on God turning in mercy."
+        },
+        {
+          "ref": "24:4",
+          "why": "Sets a penalty for accusers unable to produce four witnesses, completing the protective logic here."
+        },
+        {
+          "ref": "24:11-13",
+          "why": "Records an episode of unfounded accusation and rebukes a community for repeating what it could not verify."
+        }
+      ],
+      "applyIt": "When you next hear something damaging about someone, ask yourself what you would actually accept as proof, then notice that you have not got it. Do not pass it on while that answer is no. The threshold set here is impossibly high on purpose, and the reason is simply that reputations do not recover.",
+      "exploreFurther": [
+        "4:16",
+        "24:4",
+        "24:11-20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:36:25.007Z",
         "reviewed": false
       }
     },
