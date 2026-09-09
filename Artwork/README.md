@@ -18,8 +18,18 @@ brew install imagemagick librsvg     # magick 7 + rsvg-convert
 Artwork/tools/build.sh               # regenerates src/*.svg and every PNG
 ```
 
-`build.sh` is deterministic: all randomness is seeded, so a rebuild reproduces
-the same pixels.
+Every layout decision is seeded (`random.Random(n)` in the generators,
+`magick -seed`), so a rebuild reproduces the same **composition** exactly:
+same cloud shapes, same bead positions, same dune crests, same leaf placement.
+
+It is **not bit-reproducible.** ImageMagick 7 parallelises `+noise` and
+`plasma:` across threads and its per-thread RNG streams are not stable at these
+image sizes, so the film grain and the fractal fields differ slightly between
+runs. Vector-derived assets (app icon, logo mark, glyphs, phone frame,
+envelopes) *are* byte-identical on rebuild. Practically: only re-run `build.sh`
+when you actually intend to replace the committed PNGs, otherwise `git
+checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`,
+`Gift/gift-clouds-*`) afterwards.
 
 | script | what it makes |
 | --- | --- |

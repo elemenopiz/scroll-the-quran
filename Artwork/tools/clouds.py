@@ -83,7 +83,8 @@ def main(out_path, seed=5):
     run("magick", p("cloudcol.png"), p("mask.png"), "-alpha", "off",
         "-compose", "CopyAlpha", "-composite", p("cloud.png"))
     run("magick", "-size", f"{W}x{H}", f"gradient:{BASE_TOP}-{BASE_BOT}", p("base.png"))
-    run("magick", p("base.png"), p("cloud.png"), "-compose", "Over", "-composite",
+    run("magick", "-seed", str(seed * 7 + 101), p("base.png"), p("cloud.png"),
+        "-compose", "Over", "-composite",
         "(", "+clone", "-attenuate", "0.7", "+noise", "Gaussian", ")",
         "-compose", "Blend", "-define", "compose:args=5", "-composite",
         "-colorspace", "sRGB", "-depth", "8", out_path)

@@ -21,7 +21,7 @@ svg() {  # svg() <src.svg> <w> <h> <out.png>
 grain() {  # grain() <png> [amount] [attenuate]
   local f="$1" amt="${2:-7}" att="${3:-0.55}"
   magick "$f" -alpha extract "$TMP/ga.png"
-  magick "$f" -alpha off \
+  magick -seed 20260909 "$f" -alpha off \
     \( +clone -attenuate "$att" +noise Gaussian \) \
     -compose Blend -define "compose:args=$amt" -composite \
     "$TMP/ga.png" -alpha off -compose CopyAlpha -composite \

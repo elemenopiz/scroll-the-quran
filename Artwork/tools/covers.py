@@ -35,7 +35,7 @@ GRAIN_SCALE = 0.6          # keep the texture, keep the PNGs small
 def grain(path, args=8, atten=0.6):
     """Fine film grain, alpha preserved."""
     args = max(3, round(args * GRAIN_SCALE))
-    run("magick", path, "(", "+clone", "-attenuate", atten, "+noise", "Gaussian", ")",
+    run("magick", "-seed", "20260909", path, "(", "+clone", "-attenuate", atten, "+noise", "Gaussian", ")",
         "-compose", "Blend", "-define", f"compose:args={args}", "-composite",
         "-depth", "8", path)
 
