@@ -1,7 +1,7 @@
 {
   "surah": 3,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T10:19:20.438Z",
+  "generatedAt": "2026-09-09T10:27:02.698Z",
   "studies": [
     {
       "key": "3:1-3",
@@ -4791,6 +4791,722 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T10:19:12.947Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:114-115",
+      "surah": 3,
+      "start": 114,
+      "end": 115,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Quick To The Good",
+      "tier": "standard",
+      "meaning": "The commendation continues and becomes a list: belief in God and the Last Day, urging what is recognised as right, restraining what is wrong, and hurrying toward good deeds. The verb for hurrying is the striking one, since it describes competing rather than merely doing. A guarantee follows: whatever good they do will not be denied them. Classical commentators note that these are exactly the qualities the surah applies to the believing community a few ayat earlier.",
+      "historicalContext": "Medinan, inside the passage that refuses to generalise about the People of the Book. These two ayat complete a description begun with an upright community reciting through the night. The classical commentaries observe that the qualities named are the same ones the surah has already applied to the believers themselves, and read the repetition as deliberate rather than incidental.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَعْرُوفِ",
+          "gloss": "what is recognised as good",
+          "note": "A passive participle from the verb to know. It names what a sound conscience already recognises, so the good being urged is described as familiar rather than newly imposed from outside."
+        },
+        {
+          "arabic": "ٱلْمُنكَرِ",
+          "gloss": "what is rejected, found strange",
+          "note": "The counterpart term, from a root meaning to find something strange or to deny it. Wrong is named as what the same conscience refuses, which pairs the two words as recognition and its opposite."
+        },
+        {
+          "arabic": "يُسَـٰرِعُونَ",
+          "gloss": "they race one another",
+          "note": "A form of the verb to hurry that carries competition. It describes not merely speed but eagerness measured against others, so the good is pursued rather than simply performed."
+        },
+        {
+          "arabic": "يُكْفَرُوهُ",
+          "gloss": "they will be denied it",
+          "note": "From the root meaning to cover over, used elsewhere in this surah of refusing signs. Applied to a reward it means having a deed covered up and left unacknowledged by anyone."
+        }
+      ],
+      "lifeInProphetsTime": "Recognition was the currency of a small society. A man who acted well in a public matter expected it to be remembered, and a slight went unforgotten for a generation. Being denied credit for something you did was among the more corrosive injuries in that world, worse in some ways than losing property, since reputation could not be rebuilt by working harder.",
+      "didYouKnow": "The two verbs for urging the good and restraining the wrong appear together as a fixed pair throughout the Quran, and this surah applies them to the believing community a few ayat earlier. Using the identical formula here of a group among the People of the Book is one of the passage's most deliberate features.",
+      "theologicalSignificance": "The guarantee is attached to actions rather than to affiliation: good done will not go unacknowledged, and the doer's community is left unmentioned. Read alongside the identical description of the believers a few lines earlier, the effect is to make the qualities themselves the operative thing. The closing clause, that God knows the mindful, places the accounting beyond human sorting.",
+      "crossReferences": [
+        {
+          "ref": "3:110",
+          "why": "Uses the same three qualities of the believing community, a few ayat earlier in this surah."
+        },
+        {
+          "ref": "21:90",
+          "why": "Describes prophets racing toward good deeds and calling on God in hope and in awe."
+        },
+        {
+          "ref": "2:148",
+          "why": "Instructs everyone to compete in good works, wherever it is that they turn."
+        }
+      ],
+      "applyIt": "Pick the good thing you have been meaning to do and have kept rescheduling. The verb here is about racing, and the enemy of racing is deferral rather than laziness. Do the smaller version today rather than the better version next month, and notice how much of the delay was about wanting it to look impressive.",
+      "exploreFurther": [
+        "2:148",
+        "3:110",
+        "21:90"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.091Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:116",
+      "surah": 3,
+      "start": 116,
+      "end": 116,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Said Again, Ending Elsewhere",
+      "tier": "standard",
+      "meaning": "The sentence is almost the one this surah used a hundred ayat earlier, and the difference lies at the end. There the closing image was fuel; here it is companionship, describing those addressed as the people of the Fire who remain in it. Classical commentators note that the surah repeats formulations at intervals with altered endings, and read the change as marking how far the argument has travelled between two occurrences rather than as variation without purpose.",
+      "historicalContext": "Medinan, immediately after the passage commending an upright group among the People of the Book. The placement is deliberate: a warm description is followed at once by a warning, and the warning is addressed to a category defined by refusal rather than to any community. The classical commentaries treat the pairing as this surah's way of preventing either statement from being read on its own.",
+      "keyTerms": [
+        {
+          "arabic": "أَصْحَـٰبُ",
+          "gloss": "companions, people of",
+          "note": "The plural of a word for a close associate or a travelling companion. Arabic uses it for those permanently attached to a place or a condition, so the phrase describes belonging rather than location."
+        },
+        {
+          "arabic": "خَـٰلِدُونَ",
+          "gloss": "remaining, abiding",
+          "note": "From a root meaning to persist and to endure without change. It describes duration without alteration, which is why the same word is used of both the garden and the fire in this surah."
+        },
+        {
+          "arabic": "ٱلنَّارِ",
+          "gloss": "the Fire",
+          "note": "Named with the definite article, as a known thing rather than as a description. The Quran generally uses it this way, assuming that the referent is understood rather than introducing it."
+        }
+      ],
+      "lifeInProphetsTime": "Belonging in Arabia was expressed in exactly this form. A man was named as one of the people of a valley, a well or a tribe, and that phrase told you everything about where he could travel safely and who would answer for him. Being called the companions of something was a statement of identity, not of address, and the audience heard it in that register.",
+      "didYouKnow": "This ayah repeats an earlier one in the same surah almost word for word, changing only its closing image. Surah 3 does this several times, restating a formulation after a long stretch of intervening material, and the repetitions are one of the ways the chapter holds a long and varied argument together.",
+      "theologicalSignificance": "Placing this immediately after a commendation of people outside the community does something specific. It shows that neither generosity nor warning is being distributed by group, since the preceding ayat praised without qualification and this one warns without naming anyone. What determines the outcome in both cases is described entirely in terms of conduct and refusal, which is the surah's consistent position.",
+      "crossReferences": [
+        {
+          "ref": "3:10",
+          "why": "States the same claim almost word for word earlier in this surah, closing on a different image."
+        },
+        {
+          "ref": "3:113-115",
+          "why": "Supplies the commendation of an upright group that this warning immediately follows."
+        },
+        {
+          "ref": "58:17",
+          "why": "Repeats the same formula about wealth and children availing nothing against God."
+        }
+      ],
+      "applyIt": "Notice how the surah alternates: praise, then warning, then praise again, never letting either settle into a verdict about a group. If you tend to read scripture looking for confirmation about who is in and who is out, this stretch is built to make that difficult. Read the four ayat around this one in order.",
+      "exploreFurther": [
+        "3:10",
+        "3:113-115",
+        "58:17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.100Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:117",
+      "surah": 3,
+      "start": 117,
+      "end": 117,
+      "theme": "Rain and the Living Earth",
+      "themeId": "rain-and-the-earth",
+      "title": "A Wind With Frost In It",
+      "tier": "standard",
+      "meaning": "A comparison is drawn for what is spent without anything behind it. It is like a wind carrying bitter cold that reaches a standing crop and destroys it. The detail that matters is what was lost: not seed, but a harvest, something already grown and nearly ready to cut. Classical commentators note the closing clause, which turns the loss inward. God did not wrong them; the wrong was already in the field, since the owners are described as having wronged themselves before the wind arrived.",
+      "historicalContext": "Medinan, in the section describing those who oppose the community. The classical commentaries connect the parable to spending done for reputation or for advantage, including expenditure on campaigns against the young community. The Quran names no occasion, and the sources treat the comparison as general, since its point concerns the relation between an act and whatever stands behind it.",
+      "keyTerms": [
+        {
+          "arabic": "صِرٌّ",
+          "gloss": "bitter cold, frost",
+          "note": "A word for intense cold, from a root also connected with a persistent sound and with tying something tightly. It names cold as something that grips rather than merely as a lowered temperature."
+        },
+        {
+          "arabic": "حَرْثَ",
+          "gloss": "tilled field, standing crop",
+          "note": "The word for cultivated ground and what grows on it, used earlier in this surah among the things people love. It covers the labour that went in as well as the crop that came up."
+        },
+        {
+          "arabic": "أَنفُسَهُمْ يَظْلِمُونَ",
+          "gloss": "they wrong their own selves",
+          "note": "The object is placed before the verb, a construction Arabic uses for emphasis. The word order insists that the wronged party and the one doing the wrong are the same people."
+        }
+      ],
+      "lifeInProphetsTime": "A crop lost late was the worst kind of loss. Seed that failed cost a season's seed; a standing harvest destroyed days before cutting cost the seed, the water, the labour and the whole year's food. Frost was the specific fear on higher ground, arriving in one night without warning. Everyone farming knew families ruined in exactly that way.",
+      "didYouKnow": "The word used for the tilled field in this parable appears earlier in this same surah, in the list of things made attractive to people. The Quran often reuses a term across a chapter in different roles, and here one word names both something loved and something destroyed.",
+      "theologicalSignificance": "The parable locates the failure before the disaster. A wind destroys the crop, but the ayah says the wrong was already done, and done by the owners to themselves. That reframes loss as disclosure rather than as punishment: what happens reveals what the spending actually was, since an act performed for the wrong reason was never carrying what its owner believed it carried.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Compares a gift given for show to soil on a rock washed bare by heavy rain."
+        },
+        {
+          "ref": "14:18",
+          "why": "Compares the deeds of those who refused to ashes blown apart by wind on a stormy day."
+        },
+        {
+          "ref": "25:23",
+          "why": "Describes deeds turned into scattered dust once they are finally brought forward."
+        }
+      ],
+      "applyIt": "Think of something good you did recently and ask, honestly, what you were hoping would follow from it. Not to spoil it, and not to conclude that you should stop. Just notice the answer. This parable is about what stands behind an act, and that is usually easier to see in a small case than a large one.",
+      "exploreFurther": [
+        "2:264-266",
+        "14:18",
+        "24:39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:118",
+      "surah": 3,
+      "start": 118,
+      "end": 118,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Confidants From Outside",
+      "tier": "standard",
+      "meaning": "The word translated here as friends means the lining of a garment, and it names an inner circle, the people close enough to know what is not said publicly. The warning concerns admitting to that circle those who wish you harm, and the description is precise: they will not stop short of ruining you, they would like to see you strained, hostility has already surfaced in their speech, and what is concealed is greater. The passage closes by saying the signs have been made plain, if you use reason.",
+      "historicalContext": "Medinan, in a period when the community's plans and internal affairs were of practical interest to groups actively opposed to it. The classical commentaries read the ayah as concerning confidential counsel rather than ordinary dealings, and note that the Quran elsewhere describes kindness and fairness toward those who have not fought the community. The distinction is drawn by the vocabulary itself.",
+      "keyTerms": [
+        {
+          "arabic": "بِطَانَةً",
+          "gloss": "lining, inner circle",
+          "note": "The word for the inner lining of a garment, the layer that sits against the skin. Used of people it names close confidants, so the warning concerns access rather than acquaintance."
+        },
+        {
+          "arabic": "خَبَالًا",
+          "gloss": "ruin, derangement",
+          "note": "A noun covering corruption, confusion and loss of one's senses. It names damage that spoils the working of a thing rather than destroying the thing outright."
+        },
+        {
+          "arabic": "عَنِتُّمْ",
+          "gloss": "you are put in hardship",
+          "note": "From a root meaning to be strained or brought into difficulty, used of a bone breaking after it had begun to set. It names distress arising from pressure rather than from a single blow."
+        },
+        {
+          "arabic": "ٱلْبَغْضَآءُ",
+          "gloss": "intense dislike",
+          "note": "An intensive form from the root for hatred. Its appearance is described as having already surfaced in speech, which is what makes the concealed portion something a listener can infer."
+        }
+      ],
+      "lifeInProphetsTime": "In a city the size of Medina, a household's confidential business travelled at the speed of a single conversation. Plans for a journey, a marriage negotiation, a debt coming due, the movements of a caravan, all of it had value to somebody. There were no locked archives. Who you spoke freely in front of was the entire information policy available to a family or a community.",
+      "didYouKnow": "The word used here for an inner circle comes from the vocabulary of clothing, naming the lining that sits against the body, and Arabic uses its counterpart for the outer face of a garment. The pair gives the language a way of distinguishing what is close and hidden from what is put on display.",
+      "theologicalSignificance": "The passage separates the people you deal with from the people you confide in, and places the warning only on the second. That leaves ordinary relations untouched while treating access to a community's inner deliberation as a matter of judgement rather than of goodwill. Ending on reason rather than on obedience also frames the instruction as something to be understood rather than simply followed.",
+      "crossReferences": [
+        {
+          "ref": "60:8",
+          "why": "Instructs kindness and fairness toward those who did not fight you over religion."
+        },
+        {
+          "ref": "3:119",
+          "why": "Continues immediately, describing an affection that runs in only one direction."
+        },
+        {
+          "ref": "9:16",
+          "why": "Uses the same word for an inner circle, in a passage about who is taken into confidence."
+        }
+      ],
+      "applyIt": "There is a difference between who you are kind to and who you tell things to. Most people manage the first carefully and the second by accident. Think about the last thing you were genuinely worried about and who ended up hearing it. Ask whether that list was chosen, or simply whoever happened to be nearby.",
+      "exploreFurther": [
+        "3:119-120",
+        "9:16",
+        "60:7-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:119",
+      "surah": 3,
+      "start": 119,
+      "end": 119,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "You Love Them, They Do Not",
+      "tier": "standard",
+      "meaning": "An asymmetry is described, and the believers are not blamed for it. They love people who do not love them back, and they accept the whole of scripture while others do not extend the same acceptance. Then a scene in two settings: warmth when they meet, and fingers bitten in rage when they are alone. The instruction that follows is brief and uncomfortable. Classical commentators read the phrase about dying in one's rage as a statement about the futility of that anger rather than as an imprecation.",
+      "historicalContext": "Medinan, continuing the previous ayah's discussion of who is admitted to a community's confidence. The classical commentaries place these ayat among groups in Medina whose public conduct differed from their private view. Reports of specific individuals vary, so the surah keeps to the general description, as it does throughout this section, and the emphasis falls on the gap between the two settings.",
+      "keyTerms": [
+        {
+          "arabic": "عَضُّوا۟ ٱلْأَنَامِلَ",
+          "gloss": "they bit their fingertips",
+          "note": "A physical idiom for rage that has found no outlet. Arabic uses it of frustration turned on the self, and the specific noun names the tips of the fingers rather than the hand."
+        },
+        {
+          "arabic": "ٱلْغَيْظِ",
+          "gloss": "boiling anger",
+          "note": "Distinguished by the lexicographers from ordinary anger as the inward heat that has not yet been discharged. It names the feeling itself rather than any act arising out of it."
+        },
+        {
+          "arabic": "ذَاتِ ٱلصُّدُورِ",
+          "gloss": "what the chests hold",
+          "note": "Literally the owner or substance of the chests. The construction names not merely the contents but the settled disposition beneath them, which is why translators reach for the heart."
+        }
+      ],
+      "lifeInProphetsTime": "Public courtesy was obligatory in Arabian society and told you very little. Hospitality was extended to people you intended to fight, and greeting a man warmly in the market said nothing at all about what you said of him at home. Everyone understood that the two registers existed side by side. What was rare was any way of knowing which one you were actually in.",
+      "didYouKnow": "The gesture of biting the fingers in rage appears in the Quran in one other place, where a wrongdoer bites his hands in regret on the Day of Judgement. Both uses describe a body turning frustration on itself at a moment when nothing whatever can be done about the cause.",
+      "theologicalSignificance": "The passage acknowledges an affection that is not returned without instructing anyone to withdraw it. What is corrected is not the love but the misreading of the situation, so the believers are given accurate information rather than a change of heart. The final clause moves the whole matter into God's knowledge, which is this surah's usual way of closing a description of what people conceal.",
+      "crossReferences": [
+        {
+          "ref": "3:118",
+          "why": "Introduces the same group one ayah earlier, warning against admitting them to confidence."
+        },
+        {
+          "ref": "25:27",
+          "why": "Uses the same gesture of biting the hands, in regret rather than in rage."
+        },
+        {
+          "ref": "3:29",
+          "why": "States earlier in this surah that God knows what the chests hold, concealed or disclosed."
+        }
+      ],
+      "applyIt": "There is probably someone you like more than they like you. That is ordinary and not a failure on either side. This ayah does not tell the believers to stop caring; it tells them to see the situation accurately. Try holding both facts about one relationship this week, without adjusting the warmth and without pretending.",
+      "exploreFurther": [
+        "3:118",
+        "3:120",
+        "25:27-29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:120",
+      "surah": 3,
+      "start": 120,
+      "end": 120,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Their Scheming Will Not Reach You",
+      "tier": "standard",
+      "meaning": "A pattern is described first: your good fortune upsets them, and your misfortune pleases them. Then a condition follows, and it is not a strategy. If you endure and remain mindful, their scheming will not harm you at all. Classical commentators note that nothing is said about countering the plan; the protection offered is attached entirely to the conduct of the person threatened. The closing description says God encompasses what they do, which is a claim about scope rather than about response.",
+      "historicalContext": "Medinan, closing the short passage about confidants and concealed hostility. The classical commentaries connect it to the period around the difficult day at Uhud, when the community's setbacks were watched closely by those hoping for them. The surah turns to that battle in the very next ayah, so this instruction sits immediately before an account of a genuine reverse.",
+      "keyTerms": [
+        {
+          "arabic": "تَمْسَسْكُمْ",
+          "gloss": "touches you lightly",
+          "note": "A verb of light contact, used of one thing brushing against another. It is used here of good fortune while a stronger verb is used of misfortune, a difference the commentators notice."
+        },
+        {
+          "arabic": "تُصِبْكُمْ",
+          "gloss": "strikes you",
+          "note": "A verb of hitting a target, stronger than the one used of good fortune in the same sentence. The pairing suggests that difficulty arrives with more force than ease ever does."
+        },
+        {
+          "arabic": "كَيْدُهُمْ",
+          "gloss": "their scheming",
+          "note": "A noun for a plan laid quietly, from a root also used of straining and of a trick. It names the arrangement itself rather than any act eventually carried out through it."
+        },
+        {
+          "arabic": "مُحِيطٌ",
+          "gloss": "encompassing",
+          "note": "An active participle from the verb to surround, used of a wall enclosing a place. It describes knowledge as containment, so nothing done is outside the perimeter of it."
+        }
+      ],
+      "lifeInProphetsTime": "In a city where everyone's fortunes were public, the pleasure taken in a rival's setback was a recognised social fact. A failed harvest, a lost caravan or a marriage broken off was discussed everywhere within days. There was no privacy in which to fail. Living well under that kind of observation was a practical problem people faced constantly.",
+      "didYouKnow": "The two verbs used in this ayah for good and bad fortune are deliberately unequal in force, one meaning to touch lightly and the other to strike a target. The Quran uses this asymmetry in several places, and classical commentators read it as reflecting how differently the two are actually experienced.",
+      "theologicalSignificance": "The protection offered is conditional on the conduct of the one threatened rather than on any action taken against the threat. That relocates security from the outcome of a contest into the state of the person exposed, which is a substantial claim: what makes a scheme harmless is described as happening in the target, not in the plan. The closing name keeps the scheme visible without letting it be decisive.",
+      "crossReferences": [
+        {
+          "ref": "3:186",
+          "why": "Joins the same two qualities, patience and mindfulness, to hearing much hurt from others."
+        },
+        {
+          "ref": "12:52",
+          "why": "Says God does not guide the scheming of the treacherous through to its intended end."
+        },
+        {
+          "ref": "35:43",
+          "why": "States that an evil scheme encircles only the people who devise it."
+        }
+      ],
+      "applyIt": "Someone is probably pleased about a setback of yours right now. You cannot do anything about that, and trying to is precisely what this ayah declines to recommend. Instead, name the two things it does ask for, endurance and mindfulness, and pick the smaller of the two to work on today.",
+      "exploreFurther": [
+        "3:186",
+        "12:52",
+        "35:43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:121-123",
+      "surah": 3,
+      "start": 121,
+      "end": 123,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "The Morning You Went Out",
+      "tier": "standard",
+      "meaning": "The account of the hard day begins not with the fighting but with a morning: leaving home and assigning positions. Then two admissions in quick succession. Two groups among the believers almost lost heart, and the ayah says God was their protector in that very moment. Then a reminder of the earlier victory, won when the community was weak, and an instruction that closes on thankfulness. Classical commentators note that the passage opens its account of a defeat by recalling a victory.",
+      "historicalContext": "Medinan, opening the surah's long treatment of the battle at Uhud in the third year after the migration. A force from Mecca came to avenge its losses at Badr, and the Muslim force met it outside the city. The classical sources agree on the broad course of the day, including the near-withdrawal of two groups before the fighting, which the Quran records here without softening it.",
+      "keyTerms": [
+        {
+          "arabic": "غَدَوْتَ",
+          "gloss": "you set out in the morning",
+          "note": "A verb specific to the early part of the day, from the root that gives Arabic its word for tomorrow. The time of day is built into the verb rather than added on beside it."
+        },
+        {
+          "arabic": "تُبَوِّئُ",
+          "gloss": "you assign positions",
+          "note": "From a root meaning to settle someone in a place, used of finding lodging for a traveller. Applied to a battle line it means putting each group where it is meant to stay."
+        },
+        {
+          "arabic": "تَفْشَلَا",
+          "gloss": "the two would falter",
+          "note": "A dual verb from a root covering weakness of resolve and failure of nerve. The dual form is exact, naming two groups and no more, which is why the report cannot be generalised."
+        },
+        {
+          "arabic": "أَذِلَّةٌ",
+          "gloss": "few and without strength",
+          "note": "The plural of a word for one who is lowly or without power. Used of the earlier battle it concedes the community's own weakness rather than describing anything about its opponents."
+        }
+      ],
+      "lifeInProphetsTime": "A battle in that world was decided before contact as often as during it. Position, high ground and the discipline of holding a line mattered more than numbers, and a force that broke formation was usually finished. Men fought beside relatives, so a single group withdrawing exposed families as well as flanks. Assigning positions in the morning was the most consequential work of the day.",
+      "didYouKnow": "The Quran names the earlier battle of Badr directly in this passage, one of very few places where it names a battlefield at all. Most of its references to specific events describe them without naming them, which makes the explicit naming here, inside an account of a later and harder day, unusually direct.",
+      "theologicalSignificance": "The most striking clause is the one about the two groups who nearly faltered, since it says God was their protector in the same breath. Failure of nerve is recorded and not disowned, and the relationship is not described as suspended by it. That establishes something the rest of the Uhud section develops: the account can be honest about weakness because the argument does not depend on denying it.",
+      "crossReferences": [
+        {
+          "ref": "3:13",
+          "why": "Recalls Badr earlier in this surah, describing the two parties and the sign in them."
+        },
+        {
+          "ref": "8:9-10",
+          "why": "Describes the appeal for help at Badr and the reinforcement sent as reassurance."
+        },
+        {
+          "ref": "3:152",
+          "why": "Continues this account, describing the moment the line broke and giving the reason."
+        }
+      ],
+      "applyIt": "Notice the shape of this opening: before describing a bad day it recalls a good one, and the weakness that preceded that. When something goes wrong this week, try beginning your account of it in the same place, with what went right before and how thin the margin actually was. It changes what the difficult part means.",
+      "exploreFurther": [
+        "3:124-129",
+        "3:152-155",
+        "8:9-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:124",
+      "surah": 3,
+      "start": 124,
+      "end": 124,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "Three Thousand Sent Down",
+      "tier": "standard",
+      "meaning": "A question is quoted rather than a statement made: is it not enough for you that your Lord reinforces you with three thousand angels sent down. Classical commentators differ over which battle the number belongs to, some reading it of the earlier day at Badr and others of the encounter this passage describes, and the sources record the disagreement without settling it. What is not in dispute is the form. Reassurance is offered as a question, which leaves the hearer to answer.",
+      "historicalContext": "Medinan, inside the account of the battle at Uhud, though the classical commentaries differ over whether the promise reported here belongs to that day or to the earlier victory at Badr. Both readings are preserved in the major commentaries along with their evidence. The Quran does not resolve it, and the surah moves straight on to a conditional promise of further reinforcement.",
+      "keyTerms": [
+        {
+          "arabic": "يَكْفِيَكُمْ",
+          "gloss": "suffices you",
+          "note": "From the root for sufficiency, the same one behind the phrase God is enough for us that appears later in this surah. It asks about adequacy rather than about what anyone wants."
+        },
+        {
+          "arabic": "يُمِدَّكُمْ",
+          "gloss": "reinforces you, extends to you",
+          "note": "From a root meaning to stretch or extend, used of a supply line and of ink drawn from a well. Help is pictured as something extended outward rather than simply dropped in."
+        },
+        {
+          "arabic": "مُنزَلِينَ",
+          "gloss": "sent down",
+          "note": "A passive participle stressing that the reinforcement descends rather than merely arrives. The commentators note that the same root runs through this surah's vocabulary for revelation itself."
+        }
+      ],
+      "lifeInProphetsTime": "Numbers in Arabian warfare were known and counted. Before an engagement, scouts reported the opposing force and men made their own calculations about whether to stand. Three thousand was a figure larger than most armies the peninsula had ever assembled, so naming it named a quantity outside ordinary experience while still using the terms a fighter would think in.",
+      "didYouKnow": "The Quran gives specific numbers of angels in only a small number of places, and two of them concern battles fought by this community. Elsewhere angelic presence is described with no figure at all, which makes the counted reinforcements in this surah and in Surah 8 unusual within the text.",
+      "theologicalSignificance": "Offering reassurance as a question puts the work of belief on the hearer rather than delivering a guarantee. It also frames unseen help as already given rather than promised, since the verb describes reinforcement already under way. The passage therefore meets fear by supplying information about the present instead of about the outcome, which is a different kind of comfort from a prediction.",
+      "crossReferences": [
+        {
+          "ref": "8:9",
+          "why": "Describes the appeal at Badr and a thousand angels sent in succession as the answer."
+        },
+        {
+          "ref": "3:125",
+          "why": "Raises the number conditionally in the very next ayah, on two stated conditions."
+        },
+        {
+          "ref": "9:26",
+          "why": "Speaks of forces nobody could see, sent down at a moment when numbers had failed."
+        }
+      ],
+      "applyIt": "Notice that this is a question. When you are afraid you probably ask for reassurance and rarely stop to answer whether what you already have would be enough. Try that today with one specific worry: list what you actually have in hand, then answer the question honestly instead of moving straight on to asking for more.",
+      "exploreFurther": [
+        "3:125-127",
+        "8:9-12",
+        "9:25-26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.101Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:125",
+      "surah": 3,
+      "start": 125,
+      "end": 125,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "If You Hold And Guard",
+      "tier": "standard",
+      "meaning": "The answer to the previous question arrives in one word meaning on the contrary, and the promise is then extended with conditions attached. If you hold fast, if you remain mindful, and if they come upon you suddenly, the reinforcement rises to five thousand marked angels. Classical commentators discuss the word describing them, which suggests distinguishing marks, and preserve more than one explanation. The conditions are the notable part, since unseen help is described as tied to what the people receiving it do.",
+      "historicalContext": "Medinan, continuing the account of the battle at Uhud and its promise of reinforcement. The classical commentaries differ over whether the promised five thousand were sent, since many read the attached conditions as having gone unmet on that day. The sources preserve the discussion carefully, and the surah's later account of the battle describes exactly the failure of resolve those conditions concern.",
+      "keyTerms": [
+        {
+          "arabic": "فَوْرِهِمْ",
+          "gloss": "their immediate rush",
+          "note": "From a root meaning to boil over, used of water and of a sudden surge. It describes an attack arriving at once and without pause, which is why translators reach for the word suddenly."
+        },
+        {
+          "arabic": "مُسَوِّمِينَ",
+          "gloss": "bearing marks",
+          "note": "An active participle from the root for marking, the same one used earlier in this surah of branded horses. Commentators explain it variously as marked in appearance or as marking their targets."
+        },
+        {
+          "arabic": "تَصْبِرُوا۟",
+          "gloss": "you hold fast",
+          "note": "From the root covering binding and restraint. In a battle setting it names holding a position under pressure, which is exactly what the surah's later account says was not done."
+        }
+      ],
+      "lifeInProphetsTime": "Discipline decided engagements in that world. A line that held under archery could win against greater numbers; a line that moved to collect plunder lost the field. Commanders repeated their position orders because everyone knew how quickly a formation dissolved once men began thinking individually. The conditions in this ayah are stated in the vocabulary of exactly that problem.",
+      "didYouKnow": "The number in this ayah rises from the one before it, three thousand to five thousand, and the increase arrives with conditions the earlier figure did not carry. Classical commentators treat the conditional structure as significant, and much of their discussion concerns whether the larger reinforcement was in fact ever sent.",
+      "theologicalSignificance": "The passage attaches unseen assistance to human conduct without making it a payment for it. Endurance and mindfulness are named as conditions rather than as causes, and the help remains God's to extend. That holds together two things easily separated: the assurance that support exists, and the seriousness of what a person actually does while waiting for it to arrive.",
+      "crossReferences": [
+        {
+          "ref": "3:124",
+          "why": "Asks the question this ayah answers, about whether the first reinforcement would suffice."
+        },
+        {
+          "ref": "3:152",
+          "why": "Describes the moment later in this surah when holding fast gave way, and what followed."
+        },
+        {
+          "ref": "8:65-66",
+          "why": "Ties a promised advantage in battle to the state of the people receiving it."
+        }
+      ],
+      "applyIt": "The two conditions here are endurance and care. Both are unglamorous, and both are practised in advance rather than summoned in the moment. Pick one situation you know is coming and decide now, in writing if it helps, what holding your position will actually look like when it arrives.",
+      "exploreFurther": [
+        "3:124",
+        "3:152-153",
+        "8:65-66"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.102Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:126",
+      "surah": 3,
+      "start": 126,
+      "end": 126,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Only Good News For You",
+      "tier": "standard",
+      "meaning": "The purpose of the reinforcement is stated plainly, and it is not military. God made it good news for you, and so that your hearts would settle. Then the point is made without hedging: help comes only from God. Classical commentators read this as correcting a natural misunderstanding, since a promise of thousands of angels invites the thought that the numbers are doing the work. The ayah says the numbers were for the hearts, and the outcome was never a matter of counting.",
+      "historicalContext": "Medinan, closing the passage about angelic reinforcement inside the account of the battle. The classical commentaries treat this ayah as the interpretive key to the two before it, since it states what the promise was actually for. The surah's larger argument about the day is being set up here, because the community's confidence had to be located somewhere other than in a visible advantage.",
+      "keyTerms": [
+        {
+          "arabic": "بُشْرَىٰ",
+          "gloss": "good news",
+          "note": "From the root behind announcing glad tidings and the visible change in a face at good news. It names the message rather than the thing announced, which is precisely the distinction the ayah draws."
+        },
+        {
+          "arabic": "لِتَطْمَئِنَّ",
+          "gloss": "so that they may settle",
+          "note": "From a root describing ground that is level and still, and a heart at rest. It pictures reassurance as settling rather than as excitement, a quieter image than the English usually suggests."
+        },
+        {
+          "arabic": "ٱلنَّصْرُ",
+          "gloss": "the help, the victory",
+          "note": "From the root for coming to someone's aid, the same one used of the disciples earlier in this surah. It names assistance given, so victory is described as something received rather than achieved."
+        }
+      ],
+      "lifeInProphetsTime": "Morale was understood as a material factor in Arabian warfare. Commanders spread reports of allies coming, of reinforcements on the road, of an enemy's losses, because a force that believed itself supported fought differently from one that did not. Everyone knew that what men believed about their numbers mattered as much as the numbers themselves.",
+      "didYouKnow": "The phrase saying victory comes only from God appears twice in the Quran, here and in Surah 8, both times inside an account of a battle and both times immediately after a mention of angelic reinforcement. The repetition in such closely matched settings is among the tightest parallels between those two surahs.",
+      "theologicalSignificance": "The ayah separates a cause from a comfort. Thousands of angels are described as given for the sake of the hearts rather than as the mechanism of the outcome, which stops unseen help from being counted as a resource. That guards against two errors at once: relying on visible strength, and relying on invisible strength as though it were the same kind of thing.",
+      "crossReferences": [
+        {
+          "ref": "8:10",
+          "why": "States the same thing in nearly identical words, after the reinforcement at Badr."
+        },
+        {
+          "ref": "3:160",
+          "why": "Says later in this surah that if God helps you, no one at all can overcome you."
+        },
+        {
+          "ref": "13:28",
+          "why": "Names what hearts actually settle by, which is the remembrance of God."
+        }
+      ],
+      "applyIt": "Notice the distinction between what actually does the work and what was given to steady you. Most reassurance is of the second kind, and mistaking it for the first is how people end up disappointed in things that were never load-bearing. Ask which of your current supports is which, and be honest about one of them.",
+      "exploreFurther": [
+        "8:9-10",
+        "13:28",
+        "3:160"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.102Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:127-128",
+      "surah": 3,
+      "start": 127,
+      "end": 128,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "None Of It Is Yours To Decide",
+      "tier": "standard",
+      "meaning": "Two purposes are named for what happens in a battle, and they are offered as alternatives: to cut off a portion of those who refuse, or to subdue them so they turn back with nothing. Then the address turns personal and sets a limit. None of the matter is yours, whether God turns to them in mercy or punishes them. Classical commentators report an occasion in which the Prophet Muhammad (peace be upon him), wounded and grieving, had begun to name particular opponents in supplication against them.",
+      "historicalContext": "Medinan, within the account of the battle at Uhud, in which the community suffered heavy losses including close relatives of many present. The classical commentaries report that the Prophet began naming opponents in supplication and that this ayah followed. Several of those named are reported to have joined the community later, which the sources note as bearing directly on how the ayah is read.",
+      "keyTerms": [
+        {
+          "arabic": "طَرَفًا",
+          "gloss": "an edge, a portion",
+          "note": "The word for the extremity of a thing, a limb or a border. Cutting off an edge describes a partial reduction rather than a destruction, which is what the alternative in the ayah offers."
+        },
+        {
+          "arabic": "يَكْبِتَهُمْ",
+          "gloss": "subdue, cast down",
+          "note": "A verb for humbling someone through frustration, connected with grief and with turning back thwarted. It names the defeat of an intention rather than the defeat of a force."
+        },
+        {
+          "arabic": "خَآئِبِينَ",
+          "gloss": "come away empty",
+          "note": "A participle from the root for a failed venture, used of a hunt that returns with nothing. It describes the state of someone whose whole effort produced no return at all."
+        }
+      ],
+      "lifeInProphetsTime": "Cursing an enemy by name was a recognised practice, and a man wronged in battle was expected to invoke against those who had wronged him. Poets composed such invocations formally, and communities repeated them for years. To be told, in the middle of a day of losses, that the matter was not yours at all ran directly against what grief in that culture was permitted to do.",
+      "didYouKnow": "The limit set in this passage is placed in the middle of a sentence, so the clause about mercy or punishment interrupts a description of what God does in battle. Classical commentators note that the interruption is itself the point, since the instruction arrives inside an account of the very day that provoked it.",
+      "theologicalSignificance": "The passage removes the final verdict from the person with the strongest claim to want it. Someone wounded and bereaved is told that the outcome for his opponents is not his concern in either direction, mercy or punishment. That leaves grief its full weight while denying it any authority, and the later history of some of those involved suggests why the door was kept open.",
+      "crossReferences": [
+        {
+          "ref": "3:129",
+          "why": "Follows immediately, stating that God forgives whom He wills and punishes whom He wills."
+        },
+        {
+          "ref": "13:40",
+          "why": "Tells the Prophet his duty is to convey, and that the reckoning belongs to God."
+        },
+        {
+          "ref": "88:21-22",
+          "why": "Repeats the same limit: you are a reminder, and not one set in control over them."
+        }
+      ],
+      "applyIt": "Think of someone who has genuinely wronged you, and notice how much of your inner argument is about what should happen to them. This passage does not ask you to forgive them or to stop hurting. It removes the verdict from your hands, which is different, and often more of a relief than forgiveness would be.",
+      "exploreFurther": [
+        "3:129",
+        "13:40",
+        "42:40-43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.102Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:129",
+      "surah": 3,
+      "start": 129,
+      "end": 129,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Forgives Whom He Wills",
+      "tier": "standard",
+      "meaning": "The limit set in the previous ayah is grounded in a statement of ownership. Everything in the heavens and the earth belongs to God, so the disposal of it is His. Then two clauses in perfect balance: He forgives whom He wills, He punishes whom He wills. The ayah does not leave them balanced, though. It closes on two names drawn from the vocabulary of mercy, which classical commentators read as tilting the sentence without cancelling either half of it.",
+      "historicalContext": "Medinan, immediately after the instruction that the outcome for opponents is not the Prophet's to determine. The classical commentaries treat the pairing as a single argument: a limit is placed on a human being, and the reason is then supplied. The ayah belongs to the account of the battle at Uhud, though its content is general and it is quoted independently of that setting throughout the tradition.",
+      "keyTerms": [
+        {
+          "arabic": "يَغْفِرُ",
+          "gloss": "He covers over, forgives",
+          "note": "From a root meaning to cover, the same one behind the Arabic word for a helmet. Forgiveness is described as covering a thing rather than as erasing it, a different picture from the English."
+        },
+        {
+          "arabic": "غَفُورٌ",
+          "gloss": "much forgiving",
+          "note": "An intensive form of the same root, describing not a single act but a settled and repeated disposition. Its placement at the end of the ayah is what gives the whole sentence its direction."
+        },
+        {
+          "arabic": "رَّحِيمٌ",
+          "gloss": "continually merciful",
+          "note": "The second of the two closing names, from the root shared with the word for a womb. Paired with the first, it joins the covering of faults to an active and persisting compassion."
+        }
+      ],
+      "lifeInProphetsTime": "Ownership settled everything in Arabian life. A man could do as he chose with his own camels, his own well and his own land, and nobody questioned the disposal of what belonged to you. Claims and disputes were almost always arguments about ownership rather than about rights of use. Grounding a statement about God's freedom in ownership spoke in the plainest terms available.",
+      "didYouKnow": "The two names that close this ayah appear together more than seventy times in the Quran, which makes them the most frequently paired divine names in the text. They almost always come at the end of an ayah rather than at its opening, closing a passage rather than introducing one.",
+      "theologicalSignificance": "The ayah states two possibilities in identical form and then breaks the symmetry with its closing names. That is a deliberate construction: nothing is guaranteed to anyone, and yet the sentence does not stop in the middle. Grounding it in ownership matters too, since it makes both mercy and punishment expressions of one fact rather than of two competing dispositions.",
+      "crossReferences": [
+        {
+          "ref": "3:128",
+          "why": "Sets the limit this ayah explains, that the outcome is not the Prophet's to determine."
+        },
+        {
+          "ref": "5:18",
+          "why": "Answers a claim to privileged standing with the same statement of ownership and will."
+        },
+        {
+          "ref": "39:53",
+          "why": "States the widest form of the mercy this ayah's closing names point toward."
+        }
+      ],
+      "applyIt": "Read the two halves of this ayah aloud and notice that they are the same length and shape, then notice where the sentence actually ends. That ending is a choice the text makes. When you next find yourself running through what someone deserves, put the closing clause where the text puts it and stop there.",
+      "exploreFurther": [
+        "5:18",
+        "39:53",
+        "48:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:26:56.102Z",
         "reviewed": false
       }
     },
