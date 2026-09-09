@@ -22,6 +22,10 @@ public enum HomeRoute: String, CaseIterable, Sendable {
     case widgetGallery = "widget-gallery"
 
     /// Every route this feature answers to, for `AppShell`'s route table.
+    ///
+    /// `library` and `settings` have no matching `ScreenID` yet, so `--screenshot library` does
+    /// not reach them today — they are here because the sheets exist and a deep link to either
+    /// is one `ScreenID` case away.
     public static func handles(_ rawValue: String) -> Bool {
         HomeRoute(rawValue: rawValue) != nil
     }

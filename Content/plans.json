@@ -3,21 +3,22 @@
   "generatedBy": "Tools/content-gen/build-plans.mjs",
   "sections": [
     {
-      "title": "Read it through",
-      "eyebrow": "Start to finish",
-      "blurb": "The whole mushaf, or the last thirtieth that most people meet first. Both go in order, so you always know where you are.",
+      "title": "Recommended for beginners",
+      "eyebrow": "For new readers",
+      "blurb": "Never opened the Quran before, or not sure where to start? Any of these works on its own — short, in order, and no prior reading needed.",
       "planIDs": [
-        "juz-a-day",
-        "juz-amma"
+        "al-kahf-fridays",
+        "patience",
+        "juz-amma",
+        "protection-verses"
       ]
     },
     {
-      "title": "Weekly rhythm",
-      "eyebrow": "Every week",
-      "blurb": "Short plans built on passages Muslims already return to on a schedule — Friday, and before sleep.",
+      "title": "Read it through",
+      "eyebrow": "Start to finish",
+      "blurb": "The whole mushaf, in the order it is written, at the pace Muslims have read it for centuries.",
       "planIDs": [
-        "al-kahf-fridays",
-        "protection-verses"
+        "juz-a-day"
       ]
     },
     {
@@ -25,7 +26,6 @@
       "eyebrow": "One idea at a time",
       "blurb": "A week with a single theme, followed through the Quran verse by verse.",
       "planIDs": [
-        "patience",
         "gratitude",
         "mercy"
       ]
@@ -367,7 +367,7 @@
       "subtitle": "The last thirtieth, one surah a day",
       "image": "lantern",
       "startHere": true,
-      "section": "Read it through",
+      "section": "Recommended for beginners",
       "bestFor": "Short sittings and the surahs you hear most in prayer",
       "lengthDays": 37,
       "dailyMinutes": 8,
@@ -639,7 +639,7 @@
       "title": "Al-Kahf on Fridays",
       "subtitle": "The Cave, in four sittings",
       "image": "ink-wash",
-      "section": "Weekly rhythm",
+      "section": "Recommended for beginners",
       "bestFor": "Keeping the Friday habit",
       "lengthDays": 4,
       "dailyMinutes": 15,
@@ -680,7 +680,7 @@
       "title": "Ayat al-Kursi and the close of Al-Baqarah",
       "subtitle": "The verses recited for protection",
       "image": "geometric-tile",
-      "section": "Weekly rhythm",
+      "section": "Recommended for beginners",
       "bestFor": "Before sleep, and after prayer",
       "lengthDays": 7,
       "dailyMinutes": 6,
@@ -746,7 +746,7 @@
       "title": "Patience",
       "subtitle": "Sabr, a week at a time",
       "image": "desert-dune",
-      "section": "By theme",
+      "section": "Recommended for beginners",
       "bestFor": "A hard stretch",
       "lengthDays": 7,
       "dailyMinutes": 10,

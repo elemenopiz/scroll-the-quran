@@ -14,6 +14,31 @@ struct ReadingPlanCatalogTests {
         }
     }
 
+    @Test("the sheet opens on a beginners rail that fills two rows of the grid")
+    func firstSectionIsTheBeginnersRail() throws {
+        let catalog = try HomeTestContent.catalog()
+        let first = try #require(catalog.populatedSections.first)
+        #expect(first.title == "Recommended for beginners")
+        #expect(first.eyebrow == "For new readers")
+        // The reference's first rail is two rows of two; a third row would push the next
+        // section's heading off the `plans-sheet` capture entirely.
+        #expect(catalog.plans(in: first).count == 4)
+    }
+
+    @Test("no plan is listed in two sections, so no card is drawn twice")
+    func sectionsDoNotOverlap() throws {
+        let catalog = try HomeTestContent.catalog()
+        var seen: Set<String> = []
+        for section in catalog.populatedSections {
+            for plan in catalog.plans(in: section) {
+                #expect(seen.insert(plan.id).inserted, "'\(plan.id)' appears in more than one section")
+                // The section a plan names is the section it is listed under.
+                #expect(plan.section == section.title, "'\(plan.id)' names '\(plan.section)'")
+            }
+        }
+        #expect(seen.count == catalog.plans.count, "every plan is reachable from a section")
+    }
+
     @Test("every plan carries a cover slug that maps to a catalog image name")
     func everyPlanHasACover() throws {
         for plan in try HomeTestContent.catalog().plans {

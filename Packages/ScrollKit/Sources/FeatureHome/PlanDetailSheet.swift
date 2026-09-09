@@ -44,6 +44,7 @@ public struct PlanDetailSheet: View {
             ScrollView {
                 VStack(spacing: Spacing.lg) {
                     hero
+                        .padding(.top, HomeMetrics.planDetailHeroTopPadding - Spacing.md)
                         .padding(.bottom, Spacing.sm)
                     Text(plan.title)
                         .font(.body(22, weight: .bold))

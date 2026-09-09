@@ -83,7 +83,7 @@ public struct ReadingPlansSheet: View {
             CapsLabel(text: "Your active plan")
             activePlanCard
         }
-        .padding(.top, Spacing.md)
+        .padding(.top, HomeMetrics.activePlanTopPadding)
     }
 
     private var activePlanCard: some View {
@@ -93,33 +93,35 @@ public struct ReadingPlansSheet: View {
             }
         } label: {
             CardContainer(radius: Radius.card, padding: HomeMetrics.todayCardPadding) {
-                VStack(alignment: .leading, spacing: Spacing.md) {
-                    HStack(alignment: .top, spacing: Spacing.lg) {
-                        // With nothing running the card still carries artwork — the cover of the
-                        // plan the section below points a new reader at.
-                        PlanCoverImage(plan: todaysReading?.plan ?? invitationPlan)
-                            .frame(width: HomeMetrics.activePlanCover, height: HomeMetrics.activePlanCover)
-                            .clipShape(.rect(cornerRadius: HomeMetrics.todayCoverRadius, style: .continuous))
-                        VStack(alignment: .leading, spacing: Spacing.sm) {
-                            Text(todaysReading?.plan.title ?? "Pick a plan to begin")
-                                .font(.body(17, weight: .bold))
-                                .foregroundStyle(Color.textPrimary)
-                                .fixedSize(horizontal: false, vertical: true)
-                            Text(activeBlurb)
-                                .font(.body(15))
-                                .foregroundStyle(Color.textSecondary)
-                                .lineLimit(3)
-                                .fixedSize(horizontal: false, vertical: true)
+                HStack(alignment: .top, spacing: Spacing.lg) {
+                    // With nothing running the card still carries artwork — the cover of the
+                    // plan the section below points a new reader at.
+                    PlanCoverImage(plan: todaysReading?.plan ?? invitationPlan)
+                        .frame(width: HomeMetrics.activePlanCover, height: HomeMetrics.activePlanCover)
+                        .clipShape(.rect(cornerRadius: HomeMetrics.todayCoverRadius, style: .continuous))
+                    // The column is pinned to the cover's height so its last line lands on the
+                    // cover's bottom edge, which is where the reference puts "Browse plans ↓".
+                    VStack(alignment: .leading, spacing: Spacing.sm) {
+                        Text(todaysReading?.plan.title ?? "Pick a plan to begin")
+                            .font(.body(17, weight: .bold))
+                            .foregroundStyle(Color.textPrimary)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(activeBlurb)
+                            .font(.body(15))
+                            .foregroundStyle(Color.textSecondary)
+                            .lineLimit(3)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: Spacing.sm)
+                        if let todaysReading {
+                            ProgressBar(value: todaysReading.completion, height: Metrics.progressBarHeight)
                         }
-                        Spacer(minLength: 0)
+                        Label(todaysReading == nil ? "Browse plans" : "Open this plan", systemImage: "arrow.down")
+                            .font(.body(16, weight: .bold))
+                            .foregroundStyle(Color.textPrimary)
+                            .labelStyle(.reversedTitleAndIcon)
                     }
-                    if let todaysReading {
-                        ProgressBar(value: todaysReading.completion, height: Metrics.progressBarHeight)
-                    }
-                    Label(todaysReading == nil ? "Browse plans" : "Open this plan", systemImage: "arrow.down")
-                        .font(.body(16, weight: .bold))
-                        .foregroundStyle(Color.textPrimary)
-                        .labelStyle(.reversedTitleAndIcon)
+                    .frame(minHeight: HomeMetrics.activePlanCover, alignment: .topLeading)
+                    Spacer(minLength: 0)
                 }
             }
             .contentShape(.rect)
@@ -128,9 +130,12 @@ public struct ReadingPlansSheet: View {
         .accessibilityIdentifier("plans.activePlan")
     }
 
-    /// The plan the empty state is inviting the reader into.
+    /// The plan the empty state is inviting the reader into: the first card of the first
+    /// section, which is literally what the blurb next to it points at.
     private var invitationPlan: ReadingPlan? {
-        catalog.plans.first(where: \.startHere) ?? catalog.plans.first
+        catalog.populatedSections.first.flatMap { catalog.plans(in: $0).first }
+            ?? catalog.plans.first(where: \.startHere)
+            ?? catalog.plans.first
     }
 
     private var activeBlurb: String {
@@ -143,7 +148,7 @@ public struct ReadingPlansSheet: View {
     // MARK: Sections
 
     private func planSection(_ section: ReadingPlanSection) -> some View {
-        VStack(alignment: .leading, spacing: Spacing.md) {
+        VStack(alignment: .leading, spacing: HomeMetrics.planSectionHeaderSpacing) {
             if let eyebrow = section.eyebrow {
                 CapsLabel(text: eyebrow)
             }
@@ -177,7 +182,7 @@ public struct ReadingPlansSheet: View {
                     .accessibilityIdentifier("plans.card.\(plan.id)")
                 }
             }
-            .padding(.top, Spacing.xs)
+            .padding(.top, HomeMetrics.planGridTopPadding)
         }
     }
 

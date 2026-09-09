@@ -5,7 +5,10 @@ import SwiftUI
 /// `DesignSystem/Components/README.md`: `home-dark.png` is 1179x2556 px for a 393x852 pt screen
 /// (pt = px / 3) and is read directly; the light Home only exists inside the phone-frame mockup
 /// on `onboarding-slide4-search.png`, so those numbers come from the frame's screen window
-/// (x 256..920, y 754..2170 px → 665 px for 393 pt) and carry the mockup's ~2 % vertical stretch.
+/// (x 254..924, y 755..2170 px → 671 px for 393 pt) and carry the mockup's ~2 % vertical stretch.
+/// The two plan sheets are read the same way out of `onboarding-slide2-plans.png` and
+/// `onboarding-slide2-plan-detail.png`, whose frame sits lower: crop `671x1416+254+803`
+/// (slide 4's is `671x1416+254+755`) before comparing either against a full-screen capture.
 ///
 /// Anything this feature hard-codes lives here. `Metrics` (DesignSystem) owns whatever a shared
 /// component hard-codes; this is only the Home-specific spine.
@@ -80,14 +83,30 @@ enum HomeMetrics {
     static let planHeroRadius: CGFloat = 20
     /// Two columns with a 14 pt gutter in the plans grid.
     static let planGridSpacing: CGFloat = 14
-    /// Section to section in the plans sheet. The reference's first eyebrow sits 21 pt under the
-    /// active-plan card (card edge ~325, "FOR NEW READERS" ink at 346).
-    static let planSectionSpacing: CGFloat = 22
-    /// The cover on the active-plan card (reference: 175..300 pt inside the card).
-    static let activePlanCover: CGFloat = 118
+    /// Section to section in the plans sheet. Tuned so the first eyebrow's ink lands on the
+    /// reference's 346 pt once the capture is normalised from the simulator's 402x874 screen to
+    /// the reference's 393x852 (a 2.5 % shrink that no absolute point value can carry).
+    static let planSectionSpacing: CGFloat = 25
+    /// The cover on the active-plan card. Measured on the cropped phone-frame reference
+    /// (`onboarding-slide2-plans.png`, screen window x 254..924, y 803..2218 px): the cover is
+    /// x 32..163, y 175..307 pt, i.e. a 133 pt square, and the right-hand column's last line
+    /// ("Browse plans ↓", ink 296..305) sits on the cover's bottom edge rather than under it.
+    static let activePlanCover: CGFloat = 133
+    /// "YOUR ACTIVE PLAN" caps sit at 136 pt under a 44 pt sheet header; the card follows.
+    static let activePlanTopPadding: CGFloat = 21
+    /// Eyebrow → title → blurb inside a plans section. The reference's runs are eyebrow
+    /// 346..354, title 368..385, blurb 400..445, first card row 461: 14 pt of air between the
+    /// eyebrow and the title, and 15 between the title and the blurb. `Spacing.md` leaves 23 —
+    /// the serif display face carries the rest as leading.
+    static let planSectionHeaderSpacing: CGFloat = 3
+    /// Blurb to the first card row: 16 pt, on top of `planSectionHeaderSpacing`.
+    static let planGridTopPadding: CGFloat = 9
     /// The plan detail's "Close" row sits lower than a plain sheet header: the reference has
     /// the pill centred at 108 pt and the hero starting at 145.
     static let planDetailHeaderTop: CGFloat = 14
+    /// Close row to hero on `onboarding-slide2-plan-detail.png`: the pill's bottom edge is at
+    /// 121 pt and the hero's top at 143.
+    static let planDetailHeroTopPadding: CGFloat = 24
 
     // MARK: Snapshot routing
 

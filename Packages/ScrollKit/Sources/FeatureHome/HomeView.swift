@@ -31,6 +31,8 @@ public struct HomeView: View {
     /// Identifier of the invisible anchor that parks the scroll view for `home#scrolled`.
     static let scrolledAnchorID = "home.scrolledAnchor"
 
+    /// Main-actor: the initialiser reads `UserStore.plan` to resolve `initialSheet`.
+    @MainActor
     public init(
         store: UserStore,
         surahs: SurahIndex,
