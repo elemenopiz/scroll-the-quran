@@ -1,0 +1,20 @@
+{
+  "id": "paywall-trial",
+  "route": "paywall-trial",
+  "appearance": "light",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "elements": [
+    { "name": "paywall.close",            "query": "identifier", "frame": { "x": 2.0,   "y": 54.0,  "width": 44.1,  "height": 44.0 } },
+    { "name": "paywall.headline",         "query": "identifier", "frame": { "x": 94.0,  "y": 158.0, "width": 205.3, "height": 73.3 } },
+    { "name": "paywall.step.today",       "query": "identifier", "frame": { "x": 15.6,  "y": 268.0, "width": 341.3, "height": 69.7 } },
+    { "name": "paywall.step.day5",        "query": "identifier", "frame": { "x": 15.6,  "y": 355.7, "width": 341.6, "height": 48.7 } },
+    { "name": "paywall.step.day7",        "query": "identifier", "frame": { "x": 15.6,  "y": 422.3, "width": 309.5, "height": 69.7 } },
+    { "name": "paywall.noPaymentDueNow",  "query": "identifier", "frame": { "x": 110.3, "y": 582.0, "width": 174.7, "height": 19.7 } },
+    { "name": "paywall.price",            "query": "identifier", "frame": { "x": 147.2, "y": 619.0, "width": 98.9,  "height": 22.7 } },
+    { "name": "paywall.priceNote",        "query": "identifier", "frame": { "x": 156.4, "y": 644.0, "width": 80.6,  "height": 19.7 } },
+    { "name": "paywall.redeem",           "query": "identifier", "frame": { "x": 15.6,  "y": 680.0, "width": 362.0, "height": 65.0 } },
+    { "name": "paywall.viewAllPlans",     "query": "identifier", "frame": { "x": 147.0, "y": 759.0, "width": 99.6,  "height": 19.7 } },
+    { "name": "paywall.legal.3",          "query": "identifier", "frame": { "x": 264.0, "y": 806.0, "width": 110.6, "height": 17.0 } }
+  ]
+}

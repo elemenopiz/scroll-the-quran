@@ -1,0 +1,263 @@
+import Commerce
+import DesignSystem
+import SwiftUI
+
+/// `gift-closed` and `gift-open`: the one-time offer shown once, after the paywall has
+/// been dismissed without a purchase. Tapping anywhere on the sealed envelope opens it.
+public struct GiftOfferView: View {
+    private let plan: StorePlan?
+    private let standardPlan: StorePlan?
+    private let onDismiss: () -> Void
+    private let onPurchase: () -> Void
+
+    @State private var isOpen: Bool
+
+    public init(
+        plan: StorePlan?,
+        standardPlan: StorePlan?,
+        isOpen: Bool = false,
+        onDismiss: @escaping () -> Void,
+        onPurchase: @escaping () -> Void
+    ) {
+        self.plan = plan
+        self.standardPlan = standardPlan
+        _isOpen = State(initialValue: isOpen)
+        self.onDismiss = onDismiss
+        self.onPurchase = onPurchase
+    }
+
+    public var body: some View {
+        ReferenceCanvas {
+            ZStack(alignment: .top) {
+                CloudBackground()
+                if isOpen {
+                    openState
+                } else {
+                    closedState
+                }
+            }
+        }
+        .animation(.spring(response: 0.55, dampingFraction: 0.78), value: isOpen)
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier(isOpen ? "screen.gift-open" : "screen.gift-closed")
+    }
+
+    // MARK: - Closed
+
+    private var closedState: some View {
+        ZStack(alignment: .top) {
+            Color.clear
+                .contentShape(Rectangle())
+                .onTapGesture { isOpen = true }
+                .accessibilityIdentifier("gift.reveal")
+                .accessibilityLabel(PaywallCopy.giftReveal)
+                .accessibilityAddTraits(.isButton)
+
+            SealedEnvelope()
+                .frame(
+                    width: PaywallMetrics.closedEnvelope.width,
+                    height: PaywallMetrics.closedEnvelope.height
+                )
+                .rotationEffect(.degrees(PaywallMetrics.closedEnvelopeRotation))
+                .offset(
+                    x: PaywallMetrics.closedEnvelopeCenter.x - PaywallMetrics.referenceWidth / 2,
+                    y: PaywallMetrics.closedEnvelopeCenter.y - PaywallMetrics.closedEnvelope.height / 2
+                )
+                .allowsHitTesting(false)
+
+            lines(
+                PaywallCopy.giftHeadline,
+                font: .geoBold(PaywallMetrics.giftHeadlineSize),
+                color: GiftPalette.ink,
+                spacing: PaywallMetrics.giftHeadlineLineSpacing
+            )
+            .padding(.top, PaywallMetrics.giftHeadlineTopClosed)
+            .accessibilityIdentifier("gift.headline")
+            .allowsHitTesting(false)
+
+            lines(
+                PaywallCopy.giftSubtitle,
+                font: .geoRegular(PaywallMetrics.giftSubtitleSize),
+                color: GiftPalette.inkMuted,
+                spacing: PaywallMetrics.giftSubtitleLineSpacing
+            )
+            .padding(.top, PaywallMetrics.giftSubtitleTop)
+            .allowsHitTesting(false)
+
+            HStack(spacing: Spacing.sm) {
+                Text(PaywallCopy.giftReveal)
+                Image(systemName: "chevron.right")
+                    .font(.system(size: PaywallMetrics.giftRevealSize * 0.78, weight: .medium))
+            }
+            .font(.geoBold(PaywallMetrics.giftRevealSize))
+            .foregroundStyle(GiftPalette.ink)
+            .padding(.top, PaywallMetrics.giftRevealTop)
+            .allowsHitTesting(false)
+        }
+    }
+
+    // MARK: - Open
+
+    private var openState: some View {
+        ZStack(alignment: .top) {
+            HStack {
+                Button(action: onDismiss) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 19, weight: .regular))
+                        .foregroundStyle(GiftPalette.ink)
+                        .frame(width: 44, height: 44)
+                }
+                .accessibilityIdentifier("gift.close")
+                .accessibilityLabel("Close")
+                Spacer(minLength: 0)
+            }
+            .padding(.leading, 5)
+            .padding(.top, PaywallMetrics.giftCloseTop)
+
+            OpenedEnvelope { offerCard }
+
+            Text(PaywallCopy.luckyYou)
+                .font(.geoBold(PaywallMetrics.luckySize))
+                .foregroundStyle(GiftPalette.ink)
+                .padding(.top, PaywallMetrics.luckyTop)
+                .accessibilityIdentifier("gift.lucky")
+
+            HStack(spacing: Spacing.lg) {
+                Text(standardPriceText)
+                    .font(.geoBold(PaywallMetrics.strikePriceSize))
+                    .foregroundStyle(GiftPalette.inkMuted)
+                    .strikethrough(true, color: GiftPalette.inkMuted)
+                Text(offerPriceText)
+                    .font(.geoBold(PaywallMetrics.strikePriceSize))
+                    .foregroundStyle(Color.textOnPill)
+                    .frame(
+                        width: PaywallMetrics.offerPillSize.width,
+                        height: PaywallMetrics.offerPillSize.height
+                    )
+                    .background(Color.pillFill, in: Capsule())
+            }
+            .padding(.top, PaywallMetrics.priceRowTop)
+            .accessibilityElement(children: .combine)
+            .accessibilityIdentifier("gift.price")
+
+            PillButton(
+                title: PaywallCopy.startFreeTrial,
+                height: PaywallMetrics.giftCTAHeight,
+                fontSize: 19,
+                action: onPurchase
+            )
+            .padding(.horizontal, Spacing.pageMargin)
+            .padding(.top, PaywallMetrics.giftCTATop)
+            .accessibilityIdentifier("gift.startTrial")
+
+            Text(footnote)
+                .font(.geoRegular(PaywallMetrics.footnoteSize))
+                .foregroundStyle(GiftPalette.inkMuted)
+                .padding(.top, PaywallMetrics.footnoteTop)
+                .accessibilityIdentifier("gift.footnote")
+        }
+    }
+
+    /// The card that slides out of the envelope: "One Time Offer / 33% OFF / +3 day trial".
+    private var offerCard: some View {
+        let cardTop = PaywallMetrics.openEnvelopeGeometry.card.minY
+        return ZStack(alignment: .top) {
+            RoundedRectangle(cornerRadius: 14)
+                .fill(GiftPalette.offerCard)
+                .shadow(color: GiftPalette.envelopeShade.opacity(0.3), radius: 8, y: 4)
+
+            Text(PaywallCopy.oneTimeOffer)
+                .font(.geoRegular(PaywallMetrics.oneTimeOfferSize))
+                .foregroundStyle(GiftPalette.inkMuted)
+                .padding(.top, PaywallMetrics.oneTimeOfferTop - cardTop)
+
+            Text("\(discountPercent)%")
+                .font(.geoBold(PaywallMetrics.percentSize))
+                .foregroundStyle(GiftPalette.ink)
+                .padding(.top, PaywallMetrics.percentTop - cardTop)
+
+            Text(PaywallCopy.off)
+                .font(.geoBold(PaywallMetrics.oneTimeOfferSize))
+                .foregroundStyle(Color.textOnPill)
+                .frame(
+                    width: PaywallMetrics.offPillSize.width,
+                    height: PaywallMetrics.offPillSize.height
+                )
+                .background(Color.pillFill, in: Capsule())
+                .padding(.top, PaywallMetrics.offPillTop - cardTop)
+
+            Text(trialPillTitle)
+                .font(.geoBold(PaywallMetrics.oneTimeOfferSize - 3))
+                .foregroundStyle(GiftPalette.ink)
+                .frame(
+                    width: PaywallMetrics.trialPillSize.width,
+                    height: PaywallMetrics.trialPillSize.height
+                )
+                .background(Color.appBackgroundFlat, in: Capsule())
+                .padding(.top, PaywallMetrics.trialPillTop - cardTop)
+
+            Text(PaywallCopy.neverAgain)
+                .font(.geoRegular(PaywallMetrics.neverAgainSize))
+                .foregroundStyle(GiftPalette.inkMuted)
+                .padding(.top, PaywallMetrics.neverAgainTop - cardTop)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("gift.offerCard")
+    }
+
+    // MARK: - Copy
+
+    private func lines(_ strings: [String], font: Font, color: Color, spacing: CGFloat) -> some View {
+        VStack(spacing: spacing) {
+            ForEach(strings, id: \.self) { line in
+                Text(line)
+                    .font(font)
+                    .foregroundStyle(color)
+            }
+        }
+        .multilineTextAlignment(.center)
+        .accessibilityElement(children: .combine)
+    }
+
+    private var offerPlan: StorePlan {
+        plan ?? StoreCatalogue.gift
+    }
+
+    private var standard: StorePlan {
+        standardPlan ?? StoreCatalogue.yearly
+    }
+
+    private var discountPercent: Int {
+        PlanPricing.discountPercent(standard: standard, offer: offerPlan)
+    }
+
+    private var standardPriceText: String {
+        standard.displayPrice
+    }
+
+    private var offerPriceText: String {
+        offerPlan.displayPrice
+    }
+
+    private var trialPillTitle: String {
+        "+\(offerPlan.introOffer?.freeDays ?? 3) day trial"
+    }
+
+    private var footnote: String {
+        "\(PlanPricing.trialFootnote(offerPlan))  •  Cancel anytime"
+    }
+}
+
+#Preview("Gift closed") {
+    GiftOfferView(plan: StoreCatalogue.gift, standardPlan: StoreCatalogue.yearly, onDismiss: {}, onPurchase: {})
+}
+
+#Preview("Gift open") {
+    GiftOfferView(
+        plan: StoreCatalogue.gift,
+        standardPlan: StoreCatalogue.yearly,
+        isOpen: true,
+        onDismiss: {},
+        onPurchase: {}
+    )
+}

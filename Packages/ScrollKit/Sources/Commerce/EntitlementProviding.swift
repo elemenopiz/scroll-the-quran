@@ -60,7 +60,8 @@ public protocol OneTimeOfferStoring: AnyObject {
 public final class InMemoryOneTimeOfferStore: OneTimeOfferStoring {
     public var seenOneTimeOffer: Bool
 
-    public init(seenOneTimeOffer: Bool = false) {
+    /// `nonisolated` so it can be used as a default argument for a main-actor initialiser.
+    public nonisolated init(seenOneTimeOffer: Bool = false) {
         self.seenOneTimeOffer = seenOneTimeOffer
     }
 }
