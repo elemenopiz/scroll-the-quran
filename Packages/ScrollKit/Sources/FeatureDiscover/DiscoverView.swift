@@ -30,7 +30,6 @@ public struct DiscoverView: View {
     @State private var currentKey: String?
     @State private var isPaywallPresented = false
     @State private var openStudy: Study?
-    @State private var comingSoonKey: StudyKey?
 
     public init(
         feed: DiscoverFeed,
@@ -58,9 +57,6 @@ public struct DiscoverView: View {
             DeepStudyView(study: study, themeTitle: themeTitle(forKey: study.key)) {
                 openStudy = nil
             }
-        }
-        .sheet(item: $comingSoonKey) { key in
-            StudyComingSoonCard(reference: reference(forKey: key.id)) { comingSoonKey = nil }
         }
         .task { syncEntitlement() }
         .onChange(of: entitlements?.isSubscribed ?? false) { _, _ in syncEntitlement() }
@@ -145,10 +141,6 @@ public struct DiscoverView: View {
         themes.theme(forKey: key)?.title
     }
 
-    private func reference(forKey key: String) -> String {
-        PassagePresentation.make(forKey: key, translations: translations)?.reference ?? key
-    }
-
     private func chips(for study: Study) -> [ReferenceChip] {
         study.relatedPassages.prefix(2).map { passage in
             ReferenceChip(
@@ -220,9 +212,4 @@ struct DiscoverLimitSheet: View {
         .background(Color.sheetBackground)
         .accessibilityIdentifier("discover.paywall")
     }
-}
-
-/// A passage key that can drive `sheet(item:)` without a retroactive conformance on `String`.
-struct StudyKey: Identifiable, Hashable {
-    let id: String
 }
