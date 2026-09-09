@@ -2,7 +2,7 @@ import Commerce
 import DesignSystem
 import SwiftUI
 
-/// `paywall-trial`: the mark, the "How your free trial works" headline, the three-step
+/// `paywall-trial`: the brand mark, the "How your free trial works" headline, the three-step
 /// timeline, the live price and the redeem call to action.
 ///
 /// Laid out inside a `ReferenceCanvas`, so every `PaywallMetrics` value is the y measured
@@ -23,7 +23,7 @@ struct PaywallTrialView: View {
             ZStack(alignment: .top) {
                 Color.appBackgroundFlat
 
-                CrescentStarMark()
+                BrandMark()
                     .frame(width: PaywallMetrics.logoSize.width, height: PaywallMetrics.logoSize.height)
                     .padding(.top, PaywallMetrics.logoTop)
 
