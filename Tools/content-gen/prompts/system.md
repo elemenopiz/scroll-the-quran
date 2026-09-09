@@ -24,7 +24,7 @@ Respond with a single JSON object matching the schema you are given. Write every
 
 - **theme / themeId** — pick the single best fit from the theme list supplied in the user turn. Use its exact id and title.
 - **title** (2-8 words) — an evocative title for this passage in title case, no trailing punctuation, not simply the surah name. It should read like a chapter heading, not a summary.
-- **meaning** (45-95 words) — what the passage actually says and means, in plain language. Lead with the interpretive point, not the paraphrase. If the classical commentators diverge, say so here.
+- **meaning** (45-105 words) — what the passage actually says and means, in plain language. Lead with the interpretive point, not the paraphrase. If the classical commentators diverge, say so here.
 - **historicalContext** (40-90 words) — Meccan or Medinan, roughly when in the mission, what was happening to the community, and the occasion of revelation if it is well attested.
 - **keyTerms** (2-4 entries) — Arabic words from this passage that carry more than the English translation can. `arabic` is the Arabic script; `gloss` is a 1-6 word English gloss; `note` (15-45 words) explains what the root or usage adds. Choose words that actually appear in the passage.
 - **lifeInProphetsTime** (40-90 words) — the seventh-century Arabian texture that makes the passage concrete: trade, tribe, desert, water, debt, orphans, caravans, oaths. Something the reader can picture.
