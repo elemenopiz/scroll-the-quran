@@ -1,7 +1,9 @@
+import Commerce
 import DesignSystem
 import FeatureCommunity
 import FeatureDiscover
 import FeatureHome
+import FeaturePaywall
 import FeatureReader
 import Observation
 import QuranData
@@ -144,6 +146,18 @@ public struct TabRoot: View {
         .fullCover(item: $model.deepStudyKey.identifiable) { key in
             deepStudy(key: key.value)
         }
+        // Every locked surface lands on one sheet, so two gates cannot fight over the slot
+        // and the funnel's paywall and this one are the same view with the same store.
+        .sheet(isPresented: gateBinding) { gatePaywall }
+        // Deep Study is premium wherever it is opened *through the router* — a deep link, a
+        // share link, Home's Verse Search. The Discover card gates itself before it ever
+        // sets a key. A `--screenshot deepstudy` route is exempt: the capture harness asks
+        // for that screen by name and must get it.
+        .onChange(of: model.deepStudyKey) { _, key in
+            guard key != nil, route == nil, !env.entitlements.isPremium else { return }
+            model.deepStudyKey = nil
+            env.gate.request(.deepStudy)
+        }
         .onChange(of: model.pendingVerse) { _, verse in
             guard let verse else { return }
             reader.open(verse: verse)
@@ -193,6 +207,36 @@ public struct TabRoot: View {
         homeRouteID == route?.screen.rawValue ? route?.anchor : nil
     }
 
+    // MARK: - The paywall
+
+    /// `PremiumGate.reason` as the boolean a `sheet` wants. Setting it false is the only
+    /// way the sheet can report a swipe-to-dismiss, which `onDismiss` does not cover.
+    private var gateBinding: Binding<Bool> {
+        Binding(
+            get: { env.gate.reason != nil },
+            set: { if !$0 { env.gate.dismiss() } }
+        )
+    }
+
+    /// The paywall a locked control raises.
+    ///
+    /// The one-time offer store is deliberately *not* `env.offers`: the gift envelope is the
+    /// first-run funnel's consolation for dismissing the paywall, and burning it here would
+    /// spend the customer's one discount on a tap they made while reading. An in-memory
+    /// store that already says "seen" makes `PaywallFlow.dismissTrial()` return control
+    /// straight to the app.
+    private var gatePaywall: some View {
+        PaywallFlow(
+            store: env.entitlements,
+            offers: InMemoryOneTimeOfferStore(seenOneTimeOffer: true),
+            stage: .trial,
+            links: env.legalLinks,
+            onDismiss: { env.gate.dismiss() },
+            onPurchased: { env.gate.dismiss() }
+        )
+        .accessibilityIdentifier("gate.paywall")
+    }
+
     private func deepStudy(key: String) -> some View {
         DiscoverScreens.screen(
             id: "deepstudy",
@@ -224,6 +268,7 @@ public extension View {
             .environment(env.user)
             .environment(\.appToday, env.today)
             .environment(\.entitlements, env.discoverEntitlements)
+            .environment(\.requestPremium, env.gate.discoverRequest)
             .environment(\.router, router)
             .environment(\.openPassage, OpenPassageAction { passage in
                 router?.open(verse: VerseRef(surah: passage.surah, ayah: passage.start))

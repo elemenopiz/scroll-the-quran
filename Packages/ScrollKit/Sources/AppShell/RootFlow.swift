@@ -10,8 +10,10 @@ public enum RootPhase: String, CaseIterable, Sendable {
     case tabs
 }
 
-/// Drives `RootPhase`. Deliberately dumb in Phase 1: `FeatureOnboarding`,
-/// `FeaturePaywall` and `UserState` take over the decisions in Phase 3.
+/// Drives `RootPhase`, bound to real persistence: `Prefs.onboardingDone` decides whether
+/// the funnel replays on a cold launch, `Prefs.seenOneTimeOffer` decides whether dismissing
+/// the paywall earns the gift, and the entitlement store short-circuits the whole funnel for
+/// somebody who has already paid.
 @MainActor
 @Observable
 public final class RootFlowModel {
@@ -22,6 +24,10 @@ public final class RootFlowModel {
         self.launch = launch
         if let screen = launch.screenshot?.screen {
             phase = RootFlowModel.phase(forScreenshot: screen)
+        } else if let funnelPhase = launch.funnelPhase {
+            // `--funnel [phase]`: sit in the funnel whatever the stored prefs say, so a UI
+            // test can drive it against live StoreKit without seven onboarding taps first.
+            phase = funnelPhase
         } else if launch.startsOnTabs || subscribed || onboardingDone {
             phase = .tabs
         } else {
