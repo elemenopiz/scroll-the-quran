@@ -206,8 +206,10 @@ func routerOpensAPlanDay() {
 }
 
 @MainActor
-@Test("FeatureHome is wired, so the home routes no longer answer with a placeholder")
-func homeSeamIsWired() {
+@Test("Both feature seams are wired, so no manifest route answers with a placeholder")
+func featureSeamsAreWired() {
     #expect(HomeScreenProvider.isWired)
     #expect(HomeScreenProvider.screenIDs == ["home", "plans-sheet", "plan-detail", "verse-search"])
+    #expect(OnboardingScreenProvider.isWired)
+    #expect(OnboardingScreenProvider.screenIDs.count == 7)
 }

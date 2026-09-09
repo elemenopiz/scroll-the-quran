@@ -1,8 +1,646 @@
 {
   "surah": 21,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:11:33.357Z",
+  "generatedAt": "2026-09-09T15:15:25.209Z",
   "studies": [
+    {
+      "key": "21:1-3",
+      "surah": 21,
+      "start": 1,
+      "end": 3,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Hearts Turned To Play",
+      "tier": "standard",
+      "meaning": "The surah opens on a mismatch. Something is described as having drawn near, and the people it concerns are facing the other way. Then the diagnosis narrows twice: they hear the reminder, but they hear it as entertainment, and their hearts are elsewhere while they listen. Only after that does the passage report what they actually say, and it turns out to be a private conversation about whether a man like themselves could be anything at all.",
+      "historicalContext": "Meccan. The surah belongs to a period when the message had been public long enough to be familiar, and the opposition had settled into dismissal rather than alarm. The picture of men conferring quietly and then putting a rhetorical question to a crowd matches what other passages report of Meccan leaders coordinating their response. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱقْتَرَبَ",
+          "gloss": "has drawn near",
+          "note": "A verb of approach placed first in the sentence for emphasis. It occurs twice in this surah, here of the reckoning and near the end of the true promise, framing everything between them."
+        },
+        {
+          "arabic": "لَاهِيَةً",
+          "gloss": "distracted, occupied elsewhere",
+          "note": "This word occurs only here. It describes a heart absorbed in something else rather than one refusing, so the fault named is attention drifting rather than a decision being made."
+        },
+        {
+          "arabic": "مُّحْدَثٍ",
+          "gloss": "newly arrived, fresh",
+          "note": "Said of the reminder as it comes. Revelation is described as arriving in instalments, each one new when it lands, which is what makes the repeated failure to attend so pointed."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's evenings ran on talk. Men gathered in the courtyards around the sanctuary, poetry was recited and judged, news from the caravans was traded, and a new voice was an event to be sampled. Recitation was one entertainment among several. The complaint here is not that they refused to listen but that they listened in exactly the way they listened to everything else.",
+      "didYouKnow": "The verb that opens this surah, saying that something has drawn near, returns near its close, where the true promise is described in the same word. The surah is bracketed by it. Everything between those two points, including the long gallery of prophets the surah is named for, sits inside a single announcement that time is shorter than the audience assumes.",
+      "theologicalSignificance": "The passage identifies a failure that is not disbelief. These people listen, and what disqualifies them is the manner of the listening: playfully, with the heart occupied elsewhere. That makes attention itself a moral category rather than a preliminary to one. It also implies that the ordinary danger for anyone who has heard the message often is not rejecting it but becoming an audience for it.",
+      "crossReferences": [
+        {
+          "ref": "21:97",
+          "why": "Uses the same opening verb near the end of this surah, of the true promise drawing near."
+        },
+        {
+          "ref": "26:5",
+          "why": "Uses the same phrase for a freshly arrived reminder and reports the same turning away from it."
+        },
+        {
+          "ref": "54:1",
+          "why": "Opens another surah with the same verb of approach, there of the hour itself."
+        }
+      ],
+      "applyIt": "Notice how you listen to something familiar today, a recitation, a talk, a passage you know. Catch the moment your attention slides while your ears stay open. Do not scold yourself for it. Just mark it, because this ayah says the drifting, not the disagreeing, is what it is describing.",
+      "exploreFurther": [
+        "26:1-6",
+        "54:1-3",
+        "21:97-98"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.020Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:4-5",
+      "surah": 21,
+      "start": 4,
+      "end": 5,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "A Jumble Of Dreams",
+      "tier": "standard",
+      "meaning": "The reply to a private conversation is that nothing said anywhere is private, and it ends on two names about hearing and knowing. Then the objections come in a rush, each introduced by a particle that abandons the last one. It is confused dreaming, no, he invented it, no, he is a poet, and then a demand for the kind of sign earlier peoples received. Commentators note that the three charges contradict each other, which is itself the point of listing them.",
+      "historicalContext": "Meccan. Reports of this period describe Meccan leaders trying out different explanations for the recitation and settling on none, since a man who was dreaming could not also be a deliberate forger. Poetry was the recognised category for powerful speech, so calling him a poet was an attempt to file the Quran somewhere familiar. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "أَضْغَـٰثُ",
+          "gloss": "confused bundles",
+          "note": "A word for a mixed handful of stalks or grass tied together. Applied to dreams it means images with no coherent thread, and the phrase occurs only twice in the Quran."
+        },
+        {
+          "arabic": "ٱفْتَرَىٰهُ",
+          "gloss": "he fabricated it",
+          "note": "A verb for cutting and stitching something together, used of invented speech. It accuses him of deliberate work, which is the opposite of the charge in the phrase just before it."
+        },
+        {
+          "arabic": "شَاعِرٌ",
+          "gloss": "a poet",
+          "note": "In seventh-century Arabia a poet was a public figure with a recognised gift, sometimes credited with contact with unseen forces. The label was not an insult but an attempt at classification."
+        }
+      ],
+      "lifeInProphetsTime": "Poetry was the closest thing Arabia had to institutional authority in language. Tribes kept poets the way later states kept lawyers, and a good verse could make a reputation or ruin one at the seasonal fairs. Meccans knew the metres by ear from childhood. That is why the charge could be made and also why it failed: the audience could hear that the recitation did not scan like poetry.",
+      "didYouKnow": "The phrase used here to dismiss the revelation as confused dreams occurs in only one other place in the Quran, where Egyptian courtiers use it to dismiss a king's dream that turns out to be a true warning of famine. In both places the words are spoken confidently by people who are about to be shown to have missed something.",
+      "theologicalSignificance": "The reply given first is about knowledge, not about evidence. Their private conferring is answered by saying that speech anywhere is heard, which relocates the argument from public debate to what people say when they think no one is listening. The three accusations that follow are left uncorrected, and their incompatibility is allowed to stand as the answer. Rejection here is shown to be a conclusion looking for a reason.",
+      "crossReferences": [
+        {
+          "ref": "12:44",
+          "why": "Uses the same phrase for confused dreams, of a warning the courtiers could not read."
+        },
+        {
+          "ref": "69:41-42",
+          "why": "Answers the same two charges directly, that it is not the speech of a poet nor of a soothsayer."
+        },
+        {
+          "ref": "52:29-30",
+          "why": "Reports the same labels being applied and the same waiting for something to befall him."
+        }
+      ],
+      "applyIt": "Listen for incompatible reasons the next time you hear something dismissed, in a meeting, a family argument, or your own head. When the objections do not fit together, the conclusion usually came first. Try noticing it once in your own case today, on something small you have already decided you do not want to do.",
+      "exploreFurther": [
+        "12:43-49",
+        "69:38-43",
+        "52:29-34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:6-8",
+      "surah": 21,
+      "start": 6,
+      "end": 8,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Men Who Ate Food",
+      "tier": "standard",
+      "meaning": "Three answers are given to the demand for a sign. First, earlier towns that received signs did not believe, so the request would not do what it claims. Second, every messenger before was a man, and the audience is told to ask those who keep the earlier records if they doubt it. Third, none of them was a body that did not eat, and none of them lived forever. The objection assumed prophecy meant something other than a human life.",
+      "historicalContext": "Meccan. The complaint that a messenger should not be an ordinary man who walks in markets is reported repeatedly from this period. Jewish and Christian communities on the trade routes north held written records of earlier prophets, and the instruction to ask those who possess the reminder appeals to that knowledge. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "رِجَالًا",
+          "gloss": "men, human beings",
+          "note": "The plain word for men, chosen against every alternative the language offered. Prophecy is defined here by what the messengers were not: not angels, not immortals, not bodies exempt from eating."
+        },
+        {
+          "arabic": "أَهْلَ ٱلذِّكْرِ",
+          "gloss": "the people of the reminder",
+          "note": "Those who hold the earlier record. The phrase occurs twice in the Quran and in both places it sends questioners to a body of knowledge outside the immediate dispute."
+        },
+        {
+          "arabic": "جَسَدًا",
+          "gloss": "a body, a lifeless form",
+          "note": "The Quran uses this word for a form that does not live as a person does. Denying that prophets were such bodies insists that they hungered, aged and died like everyone listening."
+        }
+      ],
+      "lifeInProphetsTime": "Eating was public in Arabia and it placed you. Who slaughtered for whom, who ate at whose fire, who could afford meat and who lived on dates and barley was known to everyone in a small town. A man who did not eat would have stood outside the whole social order. Insisting that the messengers ate meant insisting they were inside it, with obligations to hosts and neighbours.",
+      "didYouKnow": "The instruction to ask the people of the reminder occurs twice in the Quran, and both times it follows the identical statement that God sent only men before, inspired by Him. The two passages are almost word for word, in two different surahs of the same period, which is unusual even among the Quran's many parallel formulations.",
+      "theologicalSignificance": "Prophecy is defined downward here, by subtraction. The messenger is not exempt from hunger, not exempt from death, and not exempt from being an ordinary member of a community. That protects two things at once. It keeps the message from depending on a spectacle, and it makes the messenger's life imitable, since nothing he did was done with a body unlike the reader's own.",
+      "crossReferences": [
+        {
+          "ref": "16:43",
+          "why": "Gives almost the identical statement and the same instruction to ask those who hold the reminder."
+        },
+        {
+          "ref": "25:7-8",
+          "why": "Reports the objection this answers, that the messenger eats food and walks in the markets."
+        },
+        {
+          "ref": "21:34",
+          "why": "States a few ayat later that no human before him was granted permanence, the same denial applied directly."
+        }
+      ],
+      "applyIt": "Take one person whose example you find impossible and check what you have quietly assumed about them: that they had more time, better health, an easier temperament. Then look for the evidence. This passage insists that the people worth following were hungry, tired and mortal, which is the only reason following them is possible.",
+      "exploreFurther": [
+        "16:43-44",
+        "25:7-10",
+        "18:110"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:9-11",
+      "surah": 21,
+      "start": 9,
+      "end": 11,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "And We Raised Another People",
+      "tier": "standard",
+      "meaning": "A promise is described as having been made good, and the rescue that follows has a wider reach than expected: the messengers, and whoever God willed besides them. Those destroyed are named by a single fault, going past all measure. Then a book is mentioned that contains the audience's own reminder, and the passage returns to history with a verb of breaking. Towns were shattered and other peoples raised in their place, which makes replacement, not merely ruin, the point.",
+      "historicalContext": "Meccan. The surah is answering a demand for a sign by pointing at what happened to earlier peoples who received one. Mecca's own prosperity rested on a position its inhabitants had inherited rather than won, and other tribes had held the sanctuary before them. The claim that populations are replaced was not theoretical to that audience. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُسْرِفِينَ",
+          "gloss": "those who go past all measure",
+          "note": "From a verb for exceeding the proper limit, in spending or in anything else. It names the destroyed not by their beliefs but by a manner of living, which is a broader charge than disbelief."
+        },
+        {
+          "arabic": "ذِكْرُكُمْ",
+          "gloss": "your reminder, your honour",
+          "note": "The word carries both a reminder and a mention that raises someone's standing. Commentators note both readings, so the book is at once what recalls them and what their reputation rests on."
+        },
+        {
+          "arabic": "قَصَمْنَا",
+          "gloss": "We broke, We shattered",
+          "note": "A verb for snapping something hard, like a bone or a staff. It occurs only here in the Quran, and it describes destruction as a fracture rather than as a burning or a drowning."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca knew that custodianship changed hands. The tribes that had held the sanctuary and its water before Quraysh were remembered by name, and the arrangement that gave the Prophet Muhammad (peace be upon him) his own clan its standing was a few generations old at most. Every family could recite a genealogy that included someone else's decline. Being told that peoples are replaced described a process they could trace.",
+      "didYouKnow": "The verb used here for shattering a town occurs only once in the whole Quran. It comes from the physical vocabulary of breaking something rigid, a staff or a bone, and Arabic uses it for a fracture that cannot be set. The surah applies it to a settlement, and then in the same breath describes another people being brought into being in its place.",
+      "theologicalSignificance": "The passage makes continuity, not only judgement, the subject. What follows destruction is not emptiness but another community with the same opportunity, which frames history as a sequence of chances rather than a record of verdicts. The mention of the book in the middle of that sequence is deliberate: the reader is being shown where in the pattern they currently stand, with the reminder already in hand.",
+      "crossReferences": [
+        {
+          "ref": "6:6",
+          "why": "Describes generations established and then destroyed, with another generation raised after them."
+        },
+        {
+          "ref": "10:103",
+          "why": "States the same rule about deliverance, that saving the messengers and the believers is binding upon Us."
+        },
+        {
+          "ref": "43:44",
+          "why": "Uses the same word for a reminder that is also an honour, and says you will be questioned about it."
+        }
+      ],
+      "applyIt": "Read the middle ayah as addressed to you: the book contains your reminder. Open it once today at a place you did not choose in advance, and read a few lines as though they were meant for the position you are actually in. The passage is not describing a general truth about scripture. It is locating you inside a sequence.",
+      "exploreFurther": [
+        "6:6-11",
+        "10:102-103",
+        "43:43-45"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.023Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:12-15",
+      "surah": 21,
+      "start": 12,
+      "end": 15,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Go Back To Your Comforts",
+      "tier": "standard",
+      "meaning": "The scene is set at the moment of realisation. They feel the force coming and they run, and the sentence that answers them is heavy with irony: do not run, go back to your comforts and your houses, so that you may be questioned. Commentators read the summons as mocking the assumption that a life of ease entitles a person to be consulted. Their answer is a single cry admitting they were the wrongdoers, and it continues until nothing is left.",
+      "historicalContext": "Meccan. The passage generalises what happened to earlier towns rather than naming one, which is the surah's method throughout this section. Its listeners were the leading families of a trading city whose houses and imported goods marked them out. The picture of prosperous men running from their own streets was aimed at a specific audience without accusing anyone by name. No occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "يَرْكُضُونَ",
+          "gloss": "they run, they bolt",
+          "note": "A verb for the swift striking of legs, used of a horse at speed. Its root occurs three times in the Quran, twice in these two lines and once when Job is told to strike the ground with his foot."
+        },
+        {
+          "arabic": "أُتْرِفْتُمْ",
+          "gloss": "you were given ease",
+          "note": "A passive form: the comfort was conferred on them, not built by them. The root describes a softness produced by abundance, the condition of people whose wealth has removed all friction from life."
+        },
+        {
+          "arabic": "خَـٰمِدِينَ",
+          "gloss": "extinguished, burnt out",
+          "note": "The word for a fire that has gone out, leaving no flame and no sound. It occurs only here, and it ends the scene with an image of silence rather than of destruction."
+        }
+      ],
+      "lifeInProphetsTime": "A prosperous Meccan house announced itself. Imported cloth from Yemen, vessels from Syria, a courtyard with room for guests, and slaves to fetch water from wells other families queued at. These were the visible returns on the caravan trade. Being told to run back to those rooms, because there were questions to answer there, turned the whole display into a summons rather than an achievement.",
+      "didYouKnow": "The cry these people make, admitting they were wrongdoers, returns almost word for word near the end of this surah, where those who disbelieved say it on the day their eyes fix in horror. The surah puts the same sentence in the mouths of a doomed town and of everyone at the resurrection, so history and the last day produce identical speech.",
+      "theologicalSignificance": "The summons back to the houses is the passage's sharpest move. It does not deny that they were comfortable; it treats the comfort as a position that carries an account. That is a different claim from saying wealth is wrong. It also shows recognition arriving intact and too late: they name their fault accurately, in the correct words, at the one moment when naming it changes nothing.",
+      "crossReferences": [
+        {
+          "ref": "21:97",
+          "why": "Puts nearly the same admission in the mouths of those facing the true promise at the end of this surah."
+        },
+        {
+          "ref": "17:16",
+          "why": "Describes those given ease in a town being the first to act corruptly when a warning arrives."
+        },
+        {
+          "ref": "34:34",
+          "why": "Reports that the ones given ease in every warned town were the ones who rejected the message."
+        }
+      ],
+      "applyIt": "Pick one comfort you have stopped noticing: hot water, a car that starts, a fridge with food in it. Say once today, plainly, that it was given rather than earned. Not to feel guilty about it. The ayah's point is that ease comes with a conversation attached, and the conversation is easier to have early.",
+      "exploreFurther": [
+        "17:16-17",
+        "34:34-37",
+        "21:96-98"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.021Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:16-18",
+      "surah": 21,
+      "start": 16,
+      "end": 18,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "Not Created In Play",
+      "tier": "standard",
+      "meaning": "A denial about the universe is followed by a strange concession. Creation was not made as entertainment, and if amusement had been wanted, it could have been found without making anything. The point is that the world is not a diversion for its maker. Then the tone changes to violence: truth is hurled at falsehood and knocks it out, and falsehood simply goes. Commentators note the verb is one of physical impact, not of argument.",
+      "historicalContext": "Meccan. The surah has just described a town realising too late that its comforts were a question rather than an answer, and the objection this passage meets is the assumption that nothing is at stake. That assumption underwrote the mood of the surah's opening, where the reminder was heard playfully. No specific occasion of revelation is reported for these three ayat.",
+      "keyTerms": [
+        {
+          "arabic": "لَـٰعِبِينَ",
+          "gloss": "playing, at sport",
+          "note": "The word occurs twice in this surah. Here creation is denied as play, and later Abraham's people ask whether he is only playing with them, so the same idea is tested from both ends."
+        },
+        {
+          "arabic": "فَيَدْمَغُهُۥ",
+          "gloss": "so it crushes it",
+          "note": "This verb occurs only here. It means to strike the skull hard enough to reach the brain, so the image is a killing blow rather than a refutation or an exposure."
+        },
+        {
+          "arabic": "زَاهِقٌ",
+          "gloss": "vanishing, expiring",
+          "note": "Used of something departing or perishing, including of a life leaving a body. Falsehood is not corrected in this picture; it simply stops being there."
+        }
+      ],
+      "lifeInProphetsTime": "Amusement in Arabia was the privilege of the settled and the rich. Poetry contests, gambling with arrows for portions of a slaughtered camel, wine and singing girls belonged to men with leisure and surplus. The word used here for the diversion God does not need was the word for exactly that world. Saying creation is not that kind of thing addressed people who organised their evenings around it.",
+      "didYouKnow": "The word denying that creation is play appears twice in this surah. It is used here of God, and later of Abraham, when his people ask whether he is telling the truth or only playing with them. It occurs once more in the Quran, in another surah, making the identical statement about the heavens and the earth.",
+      "theologicalSignificance": "The passage rules out two ideas at once: that the world is a toy, and that its maker needed anything from making it. What replaces play is not sternness but seriousness, which is a different quality. The image that follows says something about how falsehood ends. It is not refuted into agreement or slowly persuaded away. It is struck, and what struck it was the truth arriving, not an argument winning.",
+      "crossReferences": [
+        {
+          "ref": "44:38-39",
+          "why": "States the identical denial about the heavens and the earth, adding that they were created with truth."
+        },
+        {
+          "ref": "21:55",
+          "why": "Uses the same word later in this surah, when Abraham's people ask whether he is merely playing."
+        },
+        {
+          "ref": "17:81",
+          "why": "Gives the same picture of truth arriving and falsehood departing, since falsehood is bound to vanish."
+        }
+      ],
+      "applyIt": "Take one thing you are treating as low-stakes because nobody is checking: a habit, a promise, an hour. Ask what it would look like to hold it as though it counted. Not more anxiously, only more seriously. The passage does not say the world is grim. It says it is not a diversion, which is a different thing entirely.",
+      "exploreFurther": [
+        "44:38-39",
+        "17:81-82",
+        "23:115-116"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.021Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:19-21",
+      "surah": 21,
+      "start": 19,
+      "end": 21,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "They Do Not Grow Weary",
+      "tier": "standard",
+      "meaning": "Ownership is stated first, then the behaviour of those nearest is described by three denials. They are not too proud to serve, they do not become exhausted, and they do not slacken. The passage does not say they love it or find it easy; it says fatigue does not enter. That description is then turned into a question. If those closest to God serve without wearying, what exactly are gods taken from the earth supposed to be able to do.",
+      "historicalContext": "Meccan. Some in Mecca held that the angels were daughters of God or intermediaries who could be petitioned, and several surahs of this period address that belief without polemic against any group. The question that closes this passage tests the claim on its own terms rather than dismissing it. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "يَسْتَحْسِرُونَ",
+          "gloss": "they become exhausted",
+          "note": "This verb occurs only here. Its root is used of a camel driven until it collapses and cannot rise, so what is denied is not boredom but the total giving out of strength."
+        },
+        {
+          "arabic": "يُسَبِّحُونَ",
+          "gloss": "they glorify, declare purity",
+          "note": "From a root for swimming or moving freely through something. Glorification is pictured as continuous motion rather than as repeated acts, which fits the denial of tiring that follows."
+        },
+        {
+          "arabic": "يُنشِرُونَ",
+          "gloss": "they raise the dead",
+          "note": "A verb for spreading out and reviving, used of the earth after rain and of bodies being brought back. The question asks whether any earthly god has ever done the one thing that matters."
+        }
+      ],
+      "lifeInProphetsTime": "Exhaustion was the limit of every Arabian enterprise. A camel could be pushed only so far before it foundered, a well yielded only so much before it needed a night to refill, and a man on watch could hold out until dawn and no longer. Everything the audience relied on had a point at which it gave out. Service that never reached that point was the genuinely strange claim in this passage.",
+      "didYouKnow": "The verb denying that those near God become exhausted occurs only once in the Quran, here. It is built on a root that Arabic uses for a beast driven past its endurance until it drops, and the same root supplies a word for the eye straining and returning defeated, which appears in a surah about looking at the sky for a flaw.",
+      "theologicalSignificance": "Worship is described here without any reference to reward or feeling, and defined instead by the absence of two failures: pride and fatigue. That makes constancy, rather than intensity, the mark of nearness. The turn at the end also does real work. It moves from a description of what the nearest creatures do to a question about what the alleged rivals have ever done, and answers it by silence.",
+      "crossReferences": [
+        {
+          "ref": "41:38",
+          "why": "Says those with your Lord glorify Him night and day and do not grow weary of it."
+        },
+        {
+          "ref": "67:3-4",
+          "why": "Uses the same root for a gaze that returns exhausted after searching the sky for any flaw."
+        },
+        {
+          "ref": "21:26-27",
+          "why": "Continues this description a few ayat later, calling them honoured servants who do not speak before He does."
+        }
+      ],
+      "applyIt": "Pick the smallest possible act of remembrance, a single phrase, and attach it to something you already do many times a day: unlocking your phone, filling a glass. The passage measures nearness by not stopping rather than by effort. Choose something so light that tiring is not a factor, and let the repetition be the whole of it.",
+      "exploreFurther": [
+        "41:37-38",
+        "67:1-4",
+        "16:49-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:22-23",
+      "surah": 21,
+      "start": 22,
+      "end": 23,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "They Would Both Have Gone To Ruin",
+      "tier": "standard",
+      "meaning": "An argument is compressed into a single conditional. Had there been other gods in the heavens and the earth, both would have fallen into disorder. Commentators explain the reasoning as a matter of competing wills: two authorities with real power cannot both have the last word, and a universe that holds together is evidence that one does. The next line then removes the last handle anyone might reach for. He is not questioned about what He does, and everyone else is.",
+      "historicalContext": "Meccan. The surah is in the middle of a sustained argument against gods taken alongside God, addressed to an audience whose sanctuary held many objects of devotion and who did not deny God's existence at all. The argument therefore targets partnership rather than atheism. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "لَفَسَدَتَا",
+          "gloss": "both would have gone to ruin",
+          "note": "A dual verb from a root for something spoiling or breaking down, used of food going bad and of order collapsing. The dual keeps heaven and earth together, so the ruin covers the whole arrangement."
+        },
+        {
+          "arabic": "ٱلْعَرْشِ",
+          "gloss": "the Throne",
+          "note": "The Quran's image for the seat of sovereignty. Naming God Lord of the Throne in this sentence answers the question of authority directly, since a throne admits one occupant."
+        },
+        {
+          "arabic": "يَصِفُونَ",
+          "gloss": "they describe, they ascribe",
+          "note": "A verb for giving an account of something, as a merchant describes goods he is selling. It treats the claims about God as descriptions offered rather than as beliefs held, which is a cooler way of putting it."
+        }
+      ],
+      "lifeInProphetsTime": "Divided authority was Arabia's chronic problem. Mecca had no king and no court; it was run by an assembly of clan leaders whose agreements held only while interests aligned, and feuds ran for decades because no one could impose a settlement. The audience did not need the argument explained. They had watched what happens to a valley with several men who each believe they decide.",
+      "didYouKnow": "The argument in this ayah is made in a clause of seven Arabic words, and the Quran gives a longer version of it in another surah, where each god would have taken away what it created and some would have overcome others. Here the reasoning is left entirely implicit, and the classical commentaries reconstruct it from that single conditional.",
+      "theologicalSignificance": "Oneness is argued from the world rather than asserted from revelation, which makes the claim testable in principle. The second ayah then draws the consequence most people would rather avoid: being beyond question is part of what it means to be God. That is stated without softening, and the sentence balances it immediately by saying that everyone else will be questioned, so nobody is exempt from the accounting except the one who runs it.",
+      "crossReferences": [
+        {
+          "ref": "23:91",
+          "why": "Spells out the same argument at length, with each god carrying off what it made and overcoming the rest."
+        },
+        {
+          "ref": "17:42",
+          "why": "Puts the case differently, that other gods would have sought a way to the Lord of the Throne."
+        },
+        {
+          "ref": "21:19",
+          "why": "Establishes a few lines earlier that everyone in the heavens and the earth belongs to Him."
+        }
+      ],
+      "applyIt": "Notice where you are running two authorities at once: what you say you value and what actually decides your week. You do not need to resolve it today. Just write both down on the same page and look at them, because the ayah's claim is that competing authorities do not coexist quietly for long.",
+      "exploreFurther": [
+        "23:91-92",
+        "17:42-44",
+        "39:29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:24",
+      "surah": 21,
+      "start": 24,
+      "end": 24,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Bring Your Proof",
+      "tier": "standard",
+      "meaning": "The demand is turned around. Instead of defending its own claim, the passage asks the other side for evidence, using a word from the vocabulary of legal proof. Then it points at two things at once: this message, and the message of those who came before, treating both as a record available for inspection. The ayah closes with a diagnosis rather than a verdict. Most of them do not know the truth, and what follows from that is turning away.",
+      "historicalContext": "Meccan. The surah has been arguing against gods taken alongside God for several ayat, and here it shifts the burden. Mecca's religion rested on inherited practice rather than on argument, and demanding proof was an unfamiliar move in a society where the strongest reason for anything was that the fathers had done it. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "بُرْهَـٰنَكُمْ",
+          "gloss": "your proof, your evidence",
+          "note": "A word for decisive proof, the kind that settles a case rather than supports a view. The Quran uses the same demand four times, always addressed to a claim that rests on custom rather than reason."
+        },
+        {
+          "arabic": "ذِكْرُ",
+          "gloss": "the reminder, the record",
+          "note": "The same word the surah has already used for the revelation and for the honour it confers. Here it names two bodies of testimony, the present one and the earlier one, as a single line of evidence."
+        },
+        {
+          "arabic": "مُّعْرِضُونَ",
+          "gloss": "turning away, averse",
+          "note": "The word that closed the surah's opening ayah, returning here. Not knowing and turning away are joined by the sentence, so the aversion is presented as the consequence of the ignorance."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan disputes were settled by evidence in exactly this sense. A man claiming a debt or a share in a caravan brought witnesses, and a claim without them failed no matter how loudly it was pressed. The vocabulary of proof belonged to the market and the assembly. Asking for it about the gods in the sanctuary applied an everyday standard to the one area where nobody had ever applied it.",
+      "didYouKnow": "The demand to produce your proof occurs four times in the Quran, and in each of those places it answers a claim about partners beside God or about the hereafter. Three of the four appear in surahs of this same Meccan period. The Quran uses the word for a decisive legal proof, not the ordinary word for an argument.",
+      "theologicalSignificance": "The passage treats belief as something that can be asked to account for itself, and it applies that standard to the opposing side rather than exempting its own. Pointing at the earlier record alongside the present one also makes a claim about continuity: what is being offered is not a novelty but the latest entry in a series. The final clause is generous in a hard way, naming ignorance rather than malice as the problem.",
+      "crossReferences": [
+        {
+          "ref": "2:111",
+          "why": "Uses the identical demand against a claim about who enters the garden, asking for proof if they are truthful."
+        },
+        {
+          "ref": "27:64",
+          "why": "Makes the same demand at the end of a list of things only God does, asking for proof of any partner."
+        },
+        {
+          "ref": "21:1",
+          "why": "Opens this surah with the same word for turning away that closes this ayah."
+        }
+      ],
+      "applyIt": "Take one thing you believe because you have always believed it, not a matter of faith necessarily, anything: about your abilities, about a relative, about how a situation must go. Ask what your proof is. If there is a good one, you will find it. If there is not, you have learned something the ayah is inviting you to learn.",
+      "exploreFurther": [
+        "2:111-112",
+        "27:60-64",
+        "28:75"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:25-27",
+      "surah": 21,
+      "start": 25,
+      "end": 27,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Honoured Servants",
+      "tier": "standard",
+      "meaning": "One sentence is said to have been given to every messenger without exception, and it is put in the first person, so the reader hears it as God speaking rather than as a doctrine reported. Then a specific claim is answered. Some had said the Merciful has taken a child, and the reply corrects the category rather than the detail: they are honoured servants. Two behaviours follow, and both are about precedence. They do not speak ahead of Him, and they act on His command.",
+      "historicalContext": "Meccan. Beliefs about the angels as daughters of God circulated in Mecca and are addressed in several surahs of this period. The reply here is unusually gentle in its wording, correcting the relation while calling them honoured, and it avoids naming any group. No specific occasion of revelation is reported for these ayat, which continue the argument begun with the demand for proof.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱعْبُدُونِ",
+          "gloss": "so worship Me",
+          "note": "A command in the first person, the same words that end the message given to every messenger. It appears again later in this surah, closing the account of the prophets with the same instruction."
+        },
+        {
+          "arabic": "مُّكْرَمُونَ",
+          "gloss": "honoured, held in esteem",
+          "note": "A passive participle: honour conferred on them rather than possessed by them. The word grants everything the mistaken claim wanted, dignity and nearness, while removing the relationship it assumed."
+        },
+        {
+          "arabic": "لَا يَسْبِقُونَهُۥ",
+          "gloss": "they do not precede Him",
+          "note": "A verb from racing, of one runner getting ahead of another. Applied to speech, it describes not saying anything before the one who decides has spoken, which is a picture of restraint rather than obedience."
+        }
+      ],
+      "lifeInProphetsTime": "Precedence governed every Arabian gathering. Who spoke first in an assembly, who was greeted first, who entered a tent ahead of whom, all of it followed a known order, and a man who spoke before his senior committed a real offence. Honoured servants of a chief had standing and were still expected to wait. The picture in these ayat used a hierarchy the audience navigated daily.",
+      "didYouKnow": "The command that closes the message given to every messenger here, an instruction to worship Me in the first person, returns near the end of this surah's gallery of prophets, where the whole community of the messengers is addressed as one and given the identical words. The surah opens and closes its argument about prophecy with the same two-word sentence.",
+      "theologicalSignificance": "Prophecy is presented as monotonous in the strict sense: one message, repeated without variation, across every messenger. That removes the possibility of development or negotiation in the content. The correction that follows models something else. It does not deny that the beings in question are exalted; it changes the category from kinship to service, which preserves reverence while relocating it, and leaves the objectors more than they had claimed rather than less.",
+      "crossReferences": [
+        {
+          "ref": "21:92",
+          "why": "Closes the gallery of prophets in this surah with the same first-person command to worship Me."
+        },
+        {
+          "ref": "16:36",
+          "why": "States the same universal mission, that a messenger was raised in every community with one instruction."
+        },
+        {
+          "ref": "43:19",
+          "why": "Addresses the same claim about the angels, asking whether they witnessed their own creation."
+        }
+      ],
+      "applyIt": "Watch for the impulse to speak before the person who actually decides has spoken, in a meeting, at home, in a group chat. Hold one comment back today and let the silence sit. The passage describes nearness as including that restraint, which is a strange and useful thing to test in an ordinary room.",
+      "exploreFurther": [
+        "21:92-93",
+        "16:36",
+        "43:15-20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:28-29",
+      "surah": 21,
+      "start": 28,
+      "end": 29,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "They Tremble In Awe",
+      "tier": "standard",
+      "meaning": "The description continues with three more limits. His knowledge runs before and behind them, their intercession is confined to those He has approved, and they are in awe of Him. Then a conditional is put that seems unnecessary: if any of them were to claim divinity, the outcome is named without hesitation. Commentators read the clause as hypothetical, framed to close a door rather than to report an event, since the point is that no exception exists anywhere in the order.",
+      "historicalContext": "Meccan. The passage completes the surah's answer to those who took intermediaries alongside God, and it is careful to leave the beings themselves honoured. Mecca's practice assumed that nearness to God could be converted into influence with Him, and these lines dismantle that assumption without mocking anyone who held it. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱرْتَضَىٰ",
+          "gloss": "He has approved",
+          "note": "A verb for finding something acceptable and being pleased with it. The condition on intercession is God's approval of the one interceded for, so the whole transaction begins at the far end from the petitioner."
+        },
+        {
+          "arabic": "خَشْيَتِهِۦ",
+          "gloss": "awe of Him",
+          "note": "A fear that comes from knowing what something is, rather than from expecting harm. The Quran associates it especially with those who know most, which is why it fits beings described as nearest."
+        },
+        {
+          "arabic": "مُّشْفِقُونَ",
+          "gloss": "apprehensive, in dread",
+          "note": "A word for tender anxiety, close to the care a person feels for someone fragile. It occurs twice in this surah, and it describes a fear with concern in it rather than terror."
+        }
+      ],
+      "lifeInProphetsTime": "Intercession in Mecca was a matter of access. A man in trouble found someone close to power and asked him to speak, and the value of a patron was measured by how freely he could be approached. Devotion at the sanctuary worked on the same assumption. These ayat leave the nearness intact and remove the access, which was the part that made the arrangement useful to anyone.",
+      "didYouKnow": "The word describing these beings as apprehensive occurs twice in this surah. Here it is used of those nearest to God, and later it is used of the prophets themselves, who are said to call on Him in longing and in awe. The Quran applies the same trembling to the highest creatures and to its own messengers.",
+      "theologicalSignificance": "Fear is presented as a feature of nearness rather than of distance, which reverses the ordinary expectation that familiarity relaxes awe. The limit placed on intercession makes a related point: proximity to God does not translate into leverage over Him. And the hypothetical at the end establishes that the rule holds without exception, so no rank anywhere in creation converts into a claim.",
+      "crossReferences": [
+        {
+          "ref": "21:90",
+          "why": "Uses the same word later in this surah, of prophets calling upon God in longing and in awe."
+        },
+        {
+          "ref": "2:255",
+          "why": "States the same limit on intercession, that none intercedes with Him except by His leave."
+        },
+        {
+          "ref": "35:28",
+          "why": "Says it is those who know among His servants who stand in awe of Him."
+        }
+      ],
+      "applyIt": "Consider who you would ask to put in a word for you, and notice how naturally the thought forms. Then read the second half of this passage again. Nothing here forbids asking anyone for help. It removes the idea that closeness to God is a channel you can borrow, which changes where you start rather than whether you ask.",
+      "exploreFurther": [
+        "21:90",
+        "2:255",
+        "35:27-28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T14:57:31.022Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "21:30",
       "surah": 21,
@@ -58,6 +696,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:54.071Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:31-33",
+      "surah": 21,
+      "start": 31,
+      "end": 33,
+      "theme": "Night and Day",
+      "themeId": "night-and-day",
+      "title": "Each Floating In An Orbit",
+      "tier": "standard",
+      "meaning": "Three features of the world are named and each is given a purpose. Mountains are set as anchors so the ground does not lurch underfoot, and openings are cut through them so people can find their way. The sky is called a guarded roof, and the complaint attached is that its signs are passed over. Then night, day, sun and moon are gathered into one sentence, and all of them are said to be swimming, each in its own course.",
+      "historicalContext": "Meccan. The surah has been arguing that the world is not a plaything and that its ordering points somewhere. This passage supplies the evidence, drawn from what any listener could verify by looking down at the ground and up at the sky. Navigation by both was ordinary skill in Arabia. No specific occasion of revelation is reported for these three ayat.",
+      "keyTerms": [
+        {
+          "arabic": "رَوَٰسِىَ",
+          "gloss": "firm anchors, mountains",
+          "note": "From a root for a ship dropping anchor and holding fast. The word is not the ordinary term for a mountain; it names them by the function this ayah gives them, which is steadying."
+        },
+        {
+          "arabic": "فِجَاجًا",
+          "gloss": "wide passes, ravines",
+          "note": "Broad openings between heights, the gaps a traveller actually uses. The word occurs twice in the Quran and both times it describes the earth as arranged so that people can move through it."
+        },
+        {
+          "arabic": "يَسْبَحُونَ",
+          "gloss": "they swim, they float",
+          "note": "A verb for moving freely through a medium. The same word appears thirteen ayat earlier in this surah for those near God glorifying Him, so one motion covers worship and orbit."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian travel depended on both halves of this ayah. Routes ran through named passes between the western hills, and a guide's knowledge was a list of those gaps in order. At night the same journey was navigated by stars, whose risings and settings were memorised as a calendar for rain, harvest and raiding. The audience did not admire the sky. They used it, every clear night of the year.",
+      "didYouKnow": "The verb used here for the sun and moon moving in their courses is the same verb the surah used thirteen ayat earlier for those near God glorifying Him. Arabic builds its word for glorification on the image of swimming, so the Quran describes worship and celestial motion with one root, and this surah places both uses within a page of each other.",
+      "theologicalSignificance": "Each thing named is described by what it does for someone. The mountains steady, the passes guide, the sky protects, the lights move in fixed courses. That turns the natural order into a set of provisions rather than a set of facts, and it makes inattention the specific failure the passage names. Nothing here argues that the world proves God. It argues that the world is arranged, and that people are looking past the arrangement.",
+      "crossReferences": [
+        {
+          "ref": "21:20",
+          "why": "Uses the same verb thirteen ayat earlier, there of continuous glorification by those near God."
+        },
+        {
+          "ref": "36:38-40",
+          "why": "Describes the same courses, with sun and moon each swimming in an orbit and neither overtaking the other."
+        },
+        {
+          "ref": "71:20",
+          "why": "Uses the same word for wide passes, saying the earth was spread so people could travel its roads."
+        }
+      ],
+      "applyIt": "Go outside after dark this week and find the moon, then work out roughly where it was a week ago. Two minutes is enough. The ayah's charge is not disbelief but turning away from signs, and the cheapest correction available is to look up once on purpose rather than never.",
+      "exploreFurther": [
+        "36:37-40",
+        "10:5-6",
+        "78:6-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.803Z",
         "reviewed": false
       }
     },
@@ -120,6 +816,818 @@
       }
     },
     {
+      "key": "21:36",
+      "surah": 21,
+      "start": 36,
+      "end": 36,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Is This The One",
+      "tier": "standard",
+      "meaning": "The ayah turns on one word used twice. He is mocked for mentioning their gods, and in the same breath they reject the mention of the Merciful. Commentators note the asymmetry: they defend objects they only inherited, and dismiss the name that is not theirs to defend. The ridicule itself is described as their whole manner of receiving him, and the question they ask each other is designed to be answered by a laugh rather than by a reply.",
+      "historicalContext": "Meccan. Ridicule rather than argument is the response reported through this stretch of the surah, and other passages of the period record the same tactic. The name the Merciful was itself contested in Mecca, where some objected to it as unfamiliar, so the closing clause names a real point of resistance. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "هُزُوًا",
+          "gloss": "an object of mockery",
+          "note": "Not the act of mocking but the thing mocked. The grammar makes him into a category of joke, which is a different and colder posture than disagreement."
+        },
+        {
+          "arabic": "يَذْكُرُ",
+          "gloss": "he mentions, he speaks of",
+          "note": "The verb behind the Quran's word for remembrance. The ayah uses its noun again at the end, so mentioning their gods and the mention of the Merciful are described with one root."
+        },
+        {
+          "arabic": "ٱلرَّحْمَـٰنِ",
+          "gloss": "the Merciful",
+          "note": "A name whose form suggests an overwhelming and general mercy. Several passages record Meccan resistance to this particular name, which is why the ayah closes on it rather than on the word for God."
+        }
+      ],
+      "lifeInProphetsTime": "Mockery was a weapon with a known edge in Arabia. Satirical verse could destroy a man's standing across the peninsula in a season, and tribes retained poets partly for that purpose. A joke repeated at the gatherings around the sanctuary travelled with the caravans. Being made into a figure of ridicule was not a private humiliation; it was a coordinated method of removing someone from serious consideration.",
+      "didYouKnow": "One Arabic root carries the whole ayah. He is faulted for mentioning their gods, and the same root returns at the end as the mention of the Merciful that they reject. The Quran's word for remembrance comes from that root, so an accusation and the thing being refused are named with the same vocabulary in a single line.",
+      "theologicalSignificance": "The passage shows how devotion can attach itself to what a person merely inherited while rejecting what actually addresses them. It also records something about ridicule: it is a way of declining to have the conversation, and the Quran answers it by describing it rather than by returning it. What is being defended in the ayah is not an argument but a name, and names are what the surah keeps returning to.",
+      "crossReferences": [
+        {
+          "ref": "25:41",
+          "why": "Reports the same mockery in almost the same words, asking whether this is the one God sent as a messenger."
+        },
+        {
+          "ref": "25:60",
+          "why": "Records resistance to this name directly, with people asking what the Merciful is when told to prostrate."
+        },
+        {
+          "ref": "21:41",
+          "why": "Answers this mockery five ayat later, saying messengers before him were ridiculed too."
+        }
+      ],
+      "applyIt": "Notice what you defend automatically because it is yours, and what you dismiss because it arrived from outside. Pick one opinion you hold in each category today and swap the treatment for five minutes: question the inherited one, and take the outside one seriously. The ayah is describing a habit, not a doctrine.",
+      "exploreFurther": [
+        "25:41-44",
+        "25:60",
+        "17:110"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:37-38",
+      "surah": 21,
+      "start": 37,
+      "end": 38,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "Created Out Of Haste",
+      "tier": "standard",
+      "meaning": "A statement about human nature is made in four words, and it is stronger than saying people are impatient. The human being is described as made from haste, as though hurry were the material rather than the habit. Commentators offer that reading and also a milder one, that the expression is an intensification. The instruction that follows is not to slow down in general but not to press for the signs, and the next line shows exactly the pressing that was meant.",
+      "historicalContext": "Meccan. Demands to see the threatened outcome immediately are reported repeatedly through this period, sometimes as genuine challenge and sometimes as taunt. The community itself was also waiting, under pressure and without relief, so the instruction lands on both sides of the argument. No specific occasion of revelation is reported for these two ayat, which continue the exchange begun with the mockery a line earlier.",
+      "keyTerms": [
+        {
+          "arabic": "عَجَلٍ",
+          "gloss": "haste, hurry",
+          "note": "This phrasing, made from haste, occurs only here. Arabic can use the preposition for material, as clay or dust, which is why the classical readings differ over how literally to take it."
+        },
+        {
+          "arabic": "سَأُو۟رِيكُمْ",
+          "gloss": "I will show you",
+          "note": "A promise in the first person with the future prefix attached. The signs are not withheld, only timed, which is the whole distinction the ayah is drawing between refusal and delay."
+        },
+        {
+          "arabic": "ٱلْوَعْدُ",
+          "gloss": "the promise, the appointed threat",
+          "note": "One word for a promise of good and of harm alike. The questioners use it here for the outcome they doubt, and the surah returns to it near the end when it is said to have drawn near."
+        }
+      ],
+      "lifeInProphetsTime": "Waiting was structural in Arabia and nobody enjoyed it. A caravan's return was expected within a window of weeks, not days; a debt fell due at a named season; rain came or did not and the answer arrived months after the sowing. Everything important was slow and uncertain. That is precisely why demanding immediate proof was a familiar and effective way to embarrass a claim.",
+      "didYouKnow": "The exact phrasing here, that the human being was created from haste, occurs only once in the Quran. Arabic uses the same construction elsewhere for the material something is made of, clay in one place and a drop in another, which is why the classical commentators had to decide whether this is a statement about substance or a figure of speech. They record both readings.",
+      "theologicalSignificance": "The passage treats impatience as a fact about human beings rather than as a fault to be scolded, and then places a single limit on it. What may not be hurried is God's own schedule. That distinction matters: the ayah does not ask for calm or resignation, and it does not defend the delay. It simply refuses to let the timing of the signs be set by the people demanding them.",
+      "crossReferences": [
+        {
+          "ref": "17:11",
+          "why": "States the same trait plainly, that the human being prays for evil as he prays for good, being hasty."
+        },
+        {
+          "ref": "16:1",
+          "why": "Answers the same demand, saying the command of God is coming, so do not seek to hurry it."
+        },
+        {
+          "ref": "21:97",
+          "why": "Returns to the promise at the end of this surah, where it is described as having drawn near."
+        }
+      ],
+      "applyIt": "Catch one moment of hurry today that has nothing behind it: refreshing a screen, checking whether they have replied, opening the same app twice. Let it pass without acting once. The ayah does not ask you to become patient. It asks you to notice that hurry is what you are made of, which is easier to see in something trivial.",
+      "exploreFurther": [
+        "17:11",
+        "16:1",
+        "70:19-21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:39",
+      "surah": 21,
+      "start": 39,
+      "end": 39,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "If They Only Knew",
+      "tier": "standard",
+      "meaning": "The sentence is deliberately unfinished. If they knew the moment when they cannot keep the fire off their faces or their backs, then what follows is never said, and Arabic allows that ending because the listener supplies it. What is described in the gap is oddly domestic: hands trying to shield a face, and failing. Front and back are both named, which closes off the ordinary human response of turning away from what is coming.",
+      "historicalContext": "Meccan. The passage answers the demand made a line earlier for the promised outcome to arrive now. The surah does not give a date; it describes the condition instead. Its listeners had just been told they were made of haste, and this is what the thing they were hurrying towards is said to look like. No specific occasion of revelation is reported for the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "لَوْ يَعْلَمُ",
+          "gloss": "if only they knew",
+          "note": "A conditional whose consequence is left unstated, a recognised device in Arabic. Withholding the answer makes the sentence heavier than any completion would, since the listener finishes it privately."
+        },
+        {
+          "arabic": "يَكُفُّونَ",
+          "gloss": "they hold back, ward off",
+          "note": "A verb for restraining or keeping something away with the hand. It belongs to ordinary defensive gesture, which is what makes the failure described here physical rather than abstract."
+        },
+        {
+          "arabic": "يُنصَرُونَ",
+          "gloss": "they are helped",
+          "note": "The passive of a verb for coming to someone's aid in a fight. It closes the ayah by removing the last resort of a threatened man in that society, which was that someone else would arrive."
+        }
+      ],
+      "lifeInProphetsTime": "Help in Arabia meant kinsmen. A man under attack shouted the name of his clan and expected men to come, and the entire security of life rested on that expectation being reliable. Someone with no one to call was already effectively dead. The final clause of this ayah, that they will not be helped, described the most frightening condition the audience could imagine before it described anything else.",
+      "didYouKnow": "The ayah is grammatically incomplete. Arabic permits a conditional to be left without its answer when the answer would be overwhelming, and the classical commentators identify this as one of the clearest examples in the Quran. Several supply the missing clause in their commentaries, and they do not agree on it, precisely because the text declines to say.",
+      "theologicalSignificance": "Warning is delivered here as a gap rather than as a description, which respects the listener more than a catalogue would. The detail that is given is chosen carefully: not the fire's heat but the failure of a reflex, the hand that cannot cover the face. That locates the horror in helplessness rather than in pain, and it answers the demand of the previous ayah by suggesting that knowing would not be a favour.",
+      "crossReferences": [
+        {
+          "ref": "21:40",
+          "why": "Completes the picture in the next line, saying it will come suddenly and leave them stunned."
+        },
+        {
+          "ref": "14:50",
+          "why": "Gives a similar physical detail, garments of tar and the fire covering their faces."
+        },
+        {
+          "ref": "23:104",
+          "why": "Describes the fire scorching their faces, another image of the face as what cannot be shielded."
+        }
+      ],
+      "applyIt": "Notice what you do with a thought you would rather not finish. The ayah leaves its own sentence hanging on purpose, and most people do the same with anything serious. Pick one thing you have been leaving unfinished in your head and complete it, in writing, in a single sentence today. Then put it down and carry on.",
+      "exploreFurther": [
+        "14:49-52",
+        "23:101-108",
+        "21:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:40",
+      "surah": 21,
+      "start": 40,
+      "end": 40,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "It Will Come Suddenly",
+      "tier": "standard",
+      "meaning": "The unfinished sentence before this one is answered with a correction: not only will they be unable to shield themselves, it will not even announce itself. The verb chosen means to strike someone dumb, to leave them without a reply, and it occurs nowhere else in the Quran. Two abilities are then denied in order. They cannot turn it back, and they are not given the pause that a condemned man in that world could sometimes negotiate.",
+      "historicalContext": "Meccan. The ayah closes the surah's answer to those who asked when the promise would arrive. Suddenness is the standing reply in passages of this period, since a dated threat would allow preparation at the last moment and would turn the whole matter into a calculation. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "بَغْتَةً",
+          "gloss": "suddenly, without warning",
+          "note": "An adverb the Quran uses repeatedly for how the hour and the punishment arrive. It denies not the certainty but the schedule, which is what every questioner in this surah has been asking for."
+        },
+        {
+          "arabic": "فَتَبْهَتُهُمْ",
+          "gloss": "so it dumbfounds them",
+          "note": "This verb occurs only here. Its root describes being struck speechless by something overwhelming, and it gives Arabic the word for a slander that leaves the accused with nothing to say."
+        },
+        {
+          "arabic": "يُنظَرُونَ",
+          "gloss": "they are given respite",
+          "note": "From a root for looking and waiting, used of a creditor granting more time. Denying it removes the negotiation that ordinarily follows a verdict in a society without prisons."
+        }
+      ],
+      "lifeInProphetsTime": "Respite was the normal currency of Arabian justice. A blood claim could be settled with time to gather camels, a debtor could be granted another season, and a condemned man's clan could buy delay while they negotiated. Almost nothing was final at the moment it was pronounced. An outcome that arrives with no interval and no possibility of arrangement described something outside the audience's entire experience of consequence.",
+      "didYouKnow": "The verb used here for being struck dumb occurs only once in the Quran. Its root supplies the ordinary Arabic word for a false accusation, because such a charge leaves its target speechless, and the same root appears in the account of a king struck dumb when Abraham turned an argument against him. One root covers both kinds of silence.",
+      "theologicalSignificance": "Suddenness is doing theological work here, not dramatic work. A dated end would permit a strategy, and the whole point of the surah's argument is that there is no strategy available, only a manner of living. The removal of respite makes the same claim from the other side. What is being described is not cruelty but the closing of the gap in which people habitually plan to make their arrangements later.",
+      "crossReferences": [
+        {
+          "ref": "2:258",
+          "why": "Uses the same root when a king is left speechless after Abraham turns his own argument against him."
+        },
+        {
+          "ref": "7:187",
+          "why": "Says the hour will not come upon them except suddenly, in answer to the same question about its timing."
+        },
+        {
+          "ref": "39:55",
+          "why": "Urges following the best of what was revealed before the punishment arrives suddenly and unperceived."
+        }
+      ],
+      "applyIt": "Think of one thing you are planning to sort out when you have more warning: a conversation, an apology, a medical appointment. Do the smallest possible piece of it today, in under ten minutes. The ayah's argument is not that you should be afraid. It is that the interval you are counting on is not yours to count on.",
+      "exploreFurther": [
+        "7:187-188",
+        "39:53-56",
+        "12:107"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:41-42",
+      "surah": 21,
+      "start": 41,
+      "end": 42,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "Who Guards You By Night",
+      "tier": "standard",
+      "meaning": "Two answers to the ridicule reported earlier. The first is historical: messengers before him were mocked, and what closed in on the mockers was the very thing they had made a joke of. The second is a question with no available reply. Who keeps watch over you, night and day, against the Merciful. Commentators note the name chosen, since the question would land differently with any other. The line ends by reporting that they turn from the mention of their Lord.",
+      "historicalContext": "Meccan. The community was small and mocked, and the reassurance offered is not that the mockery will stop but that it has a precedent and an outcome. The question that follows addresses an audience who believed in God and relied on other protections alongside Him, which is why it asks about guarding rather than about existence. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "فَحَاقَ",
+          "gloss": "so it closed in on",
+          "note": "A verb for something encircling and then descending on a person. The Quran uses it almost exclusively of a consequence returning to whoever set it in motion, which is exactly the shape of this sentence."
+        },
+        {
+          "arabic": "يَكْلَؤُكُم",
+          "gloss": "guards you, keeps watch over you",
+          "note": "This verb occurs only here. It is the word for a night watchman minding sleeping people or grazing animals, so the question is about who is awake while you are not."
+        },
+        {
+          "arabic": "مُّعْرِضُونَ",
+          "gloss": "turning away, averse",
+          "note": "The word that closed the surah's first ayah, returning for the third time in this stretch. It marks the same posture throughout: not argument against the message but a body turned in another direction."
+        }
+      ],
+      "lifeInProphetsTime": "Every camp posted a watch. Someone stayed awake over the animals and the sleeping tents, because a raid came before dawn or not at all, and a man who dozed cost the party its herd. Payment, rotation and the reliability of particular watchmen were ordinary subjects of conversation. Asking who keeps watch over you by night used the most familiar arrangement in Arabian life to ask an unfamiliar question.",
+      "didYouKnow": "The verb for keeping watch in the second of these ayat occurs only once in the whole Quran. It belongs to the vocabulary of herding and guarding, and Arabic still uses its noun for a guardian or protector. The Quran asks its most searching question about dependence using a word borrowed from the night shift over a flock.",
+      "theologicalSignificance": "The first ayah reframes mockery as something with a history and a direction, which removes its power to isolate. The second makes a claim about dependence: whatever else guards a person, it is not what they would need guarding from. That closes the space in which other protectors are imagined to operate, and it does so by asking rather than asserting, leaving the listener to notice that there is no name to supply.",
+      "crossReferences": [
+        {
+          "ref": "6:10",
+          "why": "Gives the same statement about earlier messengers being mocked and the mockery closing in on the mockers."
+        },
+        {
+          "ref": "21:36",
+          "why": "Reports the ridicule five ayat earlier that these two lines are answering."
+        },
+        {
+          "ref": "67:20-21",
+          "why": "Asks the same kind of question, who is an army for you or who would provide if He withheld."
+        }
+      ],
+      "applyIt": "Tonight, before you sleep, name the arrangements you are relying on to keep you safe: a lock, insurance, a job, a person who would answer the phone. Then read the question in this ayah again. You are not being asked to give any of them up, only to notice what they cover and what they do not.",
+      "exploreFurther": [
+        "6:10-11",
+        "67:19-21",
+        "13:33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:43-44",
+      "surah": 21,
+      "start": 43,
+      "end": 44,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Until Their Lives Grew Long",
+      "tier": "standard",
+      "meaning": "A possible answer to the previous question is raised and dismissed in one line: gods who could defend them cannot even help themselves. Then the real explanation for their confidence is given, and it is not an argument. They and their fathers were given enjoyment until a long life made the arrangement seem permanent. Against that, one observation is offered about land being reduced at its edges, and one question. Are they then the ones who prevail.",
+      "historicalContext": "Meccan. The audience were the leading families of a city whose prosperity had run for generations, and the surah names duration itself as the source of their assurance. The remark about land diminishing at its edges is read by commentators in more than one way, including as territory passing out of the control of those who held it, and they record the range. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "يُصْحَبُونَ",
+          "gloss": "they are given company, protected",
+          "note": "This passive occurs only here. It comes from the word for a companion, and Arabic uses it for the protection a travelling companion owes, so what is denied is escort as much as defence."
+        },
+        {
+          "arabic": "مَتَّعْنَا",
+          "gloss": "We gave enjoyment",
+          "note": "A verb for granting the use of something for a period. It carries a term inside it: what is given this way is on loan, which is exactly what a long run of good fortune makes easy to forget."
+        },
+        {
+          "arabic": "أَطْرَافِهَا",
+          "gloss": "its edges, its extremities",
+          "note": "The outer parts of something. Commentators read the diminishing at the edges as land or people passing out of their control, and the classical works record several explanations without deciding."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan confidence rested on a run of decades. Two caravans a year, custodianship of the sanctuary, and treaties with tribes along the routes had produced a stability nobody living could remember being without. Wealth arrived on a schedule. In a peninsula where most groups lived season to season, a city where the pattern had held for three generations felt to its people like a permanent arrangement rather than a lucky one.",
+      "didYouKnow": "The observation about land being diminished at its edges appears twice in the Quran, here and in one other surah, in nearly identical words. Both times it is introduced with the same phrase, do they not see, so it is offered as something already visible rather than as a prediction. The classical commentaries record several readings of what the shrinking describes and settle on none.",
+      "theologicalSignificance": "The passage identifies duration as the thing that produces false confidence, which is a precise observation about how people actually come to believe they are secure. Nothing was argued to them; a long stretch of comfort did the work. Against that, the answer offered is not a threat but an invitation to look at a trend already underway, and to ask whether the run they are inside is the same thing as an outcome.",
+      "crossReferences": [
+        {
+          "ref": "13:41",
+          "why": "Makes the same observation about the earth being diminished at its edges, adding that nothing reverses His judgement."
+        },
+        {
+          "ref": "21:42",
+          "why": "Asks the question this ayah answers, about who guards them by night and day."
+        },
+        {
+          "ref": "28:58",
+          "why": "Describes towns that exulted in their means, whose dwellings were scarcely inhabited afterwards."
+        }
+      ],
+      "applyIt": "Ask what in your life feels permanent only because it has lasted a while: an income, a health, an arrangement at home. Name one out loud today and add the word so far. Not as a warning to yourself. Just as an accurate description, which is what this passage says the long run makes people stop giving.",
+      "exploreFurther": [
+        "13:41",
+        "28:58-59",
+        "46:20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.805Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:45-46",
+      "surah": 21,
+      "start": 45,
+      "end": 46,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "A Single Breath Of It",
+      "tier": "standard",
+      "meaning": "The role is defined narrowly. He warns, and the warning is by revelation, which means he adds nothing of his own and guarantees no result. Then the difficulty is stated as a fact about hearing rather than about willingness: the deaf do not hear a call, even when it is a warning. The second ayah measures what would be enough. Not the punishment but a breath of it, the faintest touch, and the confession arrives immediately and in full.",
+      "historicalContext": "Meccan. The surah has been reporting mockery and demands for proof, and these two ayat close that exchange by describing the limits of what a messenger does. The tension in the Meccan years between visible failure and continued warning runs through many passages of this period. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "بِٱلْوَحْىِ",
+          "gloss": "by revelation",
+          "note": "The word for what is conveyed swiftly and privately. Placing it here limits the warner's claim: what he transmits is not his assessment of the situation but what was given to him."
+        },
+        {
+          "arabic": "ٱلصُّمُّ",
+          "gloss": "the deaf",
+          "note": "Used of an inability rather than a refusal, which makes the image sharper than calling them stubborn. A deaf man is not disobeying the call; the call simply does not reach him."
+        },
+        {
+          "arabic": "نَفْحَةٌ",
+          "gloss": "a breath, a waft",
+          "note": "This word occurs only here in the Quran. It names the lightest passing touch of air, as a scent reaches you, and it is chosen to measure how little would be required."
+        }
+      ],
+      "lifeInProphetsTime": "Scent carried information in Arabia. A traveller smelled water before he saw it, smoke told him a camp lay ahead, and perfume announced a person's arrival in a room. The word used here belongs to that world of things detected on the air before they are seen. Saying a mere breath of the punishment would be enough measured it in the smallest unit the language had.",
+      "didYouKnow": "The word used for a breath of the punishment occurs only once in the Quran. Its root is the one Arabic uses for scent carried on moving air, and it is deliberately the lightest possible measure. The confession that follows it, that they were wrongdoers, is word for word the same admission made by a destroyed town earlier in this surah.",
+      "theologicalSignificance": "Two limits are set side by side. A messenger cannot make anyone hear, and the smallest touch of consequence makes everyone speak. Between those two facts lies the whole difficulty of warning: what would produce the response is exactly what the warning exists to prevent. The passage does not resolve that, and it does not make the messenger responsible for it. His task is stated in one clause and stops there.",
+      "crossReferences": [
+        {
+          "ref": "21:14",
+          "why": "Puts the identical confession in the mouths of a town earlier in this surah, at the moment of destruction."
+        },
+        {
+          "ref": "27:80-81",
+          "why": "Repeats that you cannot make the deaf hear the call when they turn away in retreat."
+        },
+        {
+          "ref": "88:21-22",
+          "why": "States the same limit on the role, that he is a reminder and not one to compel them."
+        }
+      ],
+      "applyIt": "If you have been trying to convince someone of something important and getting nowhere, take this ayah as permission. Say it once more, plainly, and then stop managing the outcome. The passage assigns you the warning and gives you no responsibility for the hearing, which is a lighter load than most people carry.",
+      "exploreFurther": [
+        "27:80-82",
+        "88:21-26",
+        "21:12-15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.806Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:47",
+      "surah": 21,
+      "start": 47,
+      "end": 47,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Weight Of A Mustard Seed",
+      "tier": "standard",
+      "meaning": "Scales are set up, and the word for them is plural while the word for justice stands alone beside it, which commentators read as saying the balances themselves simply are justice rather than being calibrated to it. Then the guarantee is made concrete in the smallest unit anyone could picture. Even the weight of a mustard seed is brought and produced. The closing phrase is unexpectedly plain: We are sufficient as reckoners, with no threat attached.",
+      "historicalContext": "Meccan. The surah has just described people who confess only when a breath of consequence touches them, and this ayah supplies what they will actually meet. Weights and balances were the everyday instruments of a trading city, and disputes about them were common enough that the image needed no explanation. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَوَٰزِينَ",
+          "gloss": "the balances, the scales",
+          "note": "A plural, and this definite form occurs only here. Commentators differ over whether the plural means many scales or the many things weighed, and the classical works record both without deciding."
+        },
+        {
+          "arabic": "ٱلْقِسْطَ",
+          "gloss": "equity, exact fairness",
+          "note": "A word for giving each party its precise due, used in commerce for correct measure. Placed beside the scales without a connecting word, it makes justice the nature of the instrument rather than its setting."
+        },
+        {
+          "arabic": "خَرْدَلٍ",
+          "gloss": "mustard",
+          "note": "The mustard seed was the proverbial smallest thing in the region, familiar from cooking and medicine. The Quran uses it twice, both times to make a point about nothing being too small to be located."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca ran on weights. Gold and silver were measured rather than counted, spices and incense were sold by fractions of a unit, and every serious transaction involved a balance whose accuracy someone could dispute. Merchants carried their own weights. A promise that the scales at the end would be exact spoke to people who spent their working lives watching a beam settle and arguing about where it stopped.",
+      "didYouKnow": "The mustard seed appears twice in the Quran. Here it measures what will be brought to the scales, and in the other place it is spoken by a father advising his son, saying that even that weight, hidden in a rock or anywhere in the heavens or the earth, will be brought out. Both passages use the smallest unit their audience could picture.",
+      "theologicalSignificance": "The guarantee runs in the direction people rarely expect. The ayah does not promise that nothing small will be missed in punishment; it promises that no soul will be wronged, and the seed is brought precisely so that nothing owed is lost. That makes exactness a mercy rather than a threat. The closing phrase reinforces it, since a reckoner who is sufficient needs no witnesses, no advocates and no records but His own.",
+      "crossReferences": [
+        {
+          "ref": "31:16",
+          "why": "Uses the same mustard seed, promising that even hidden in a rock God will bring it out."
+        },
+        {
+          "ref": "4:40",
+          "why": "States the same guarantee, that God does not wrong by the weight of the smallest particle."
+        },
+        {
+          "ref": "99:7-8",
+          "why": "Closes a short surah with the same principle, an atom's weight of good or evil being seen."
+        }
+      ],
+      "applyIt": "Think of one small good you did that nobody noticed, and one small unfairness you suffered that was never acknowledged. Hold both for a moment against the promise in this ayah. You are not being asked to stop minding. You are being told that the record you assumed was lost is being kept to a finer resolution than you would have asked for.",
+      "exploreFurther": [
+        "31:16-19",
+        "99:1-8",
+        "4:40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.806Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:48-51",
+      "surah": 21,
+      "start": 48,
+      "end": 51,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "A Blessed Reminder Sent Down",
+      "tier": "standard",
+      "meaning": "The gallery of prophets opens with what was given rather than with what happened. Moses and Aaron received three things: a criterion that separates, a light, and a reminder for those who guard themselves. Those people are then described by two marks, fearing their Lord where no one sees and being anxious about the hour. The passage turns without transition to the present book, calls it blessed, and asks a question. Then Abraham is introduced by what he was given.",
+      "historicalContext": "Meccan. The surah has finished arguing and now begins its sequence of prophets, and it starts by putting the present revelation in the same category as the earlier ones. Meccan objections often treated the Quran as unprecedented; describing it in the vocabulary already used for what Moses received answers that directly. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْفُرْقَانَ",
+          "gloss": "the criterion, the separator",
+          "note": "From a root for splitting apart. The Quran uses this name six times, twice of what was given to Moses and elsewhere of its own function, so it describes a book by what it distinguishes."
+        },
+        {
+          "arabic": "بِٱلْغَيْبِ",
+          "gloss": "in the unseen, unobserved",
+          "note": "Read two ways by the commentators: fearing a Lord they cannot see, or fearing Him where others cannot see them. The classical works keep both, and the ayah supports either."
+        },
+        {
+          "arabic": "رُشْدَهُۥ",
+          "gloss": "his sound judgement",
+          "note": "A word for maturity of discernment, the quality that lets someone be trusted with his own affairs. Attached to Abraham with a possessive, it names something given to him in particular."
+        }
+      ],
+      "lifeInProphetsTime": "Being trusted with your own property marked the end of youth in Arabia. A young man's inheritance stayed under guardianship until he showed the settled judgement to handle it, and the assessment was made by relatives who watched how he dealt with animals, debts and disputes. The word used for what Abraham was given is the word for passing that test, which is why the ayah adds that God knew him.",
+      "didYouKnow": "The name used here for what Moses and Aaron received, the criterion, is used six times in the Quran. Two of those describe what was given to Moses, one is the title of an entire surah, and the rest describe the present revelation or a day of decisive separation. One word links the two books the surah has just placed side by side.",
+      "theologicalSignificance": "The passage makes continuity its argument. What was given before is described in three terms, and the present book is then placed in the same series, with the question left as a question. The description of the people it benefits is equally deliberate: they are marked by fear in private and unease about a day nobody has seen, which are qualities invisible to any observer and therefore impossible to perform.",
+      "crossReferences": [
+        {
+          "ref": "2:53",
+          "why": "Records the same gift to Moses, the book and the criterion, so that they might be guided."
+        },
+        {
+          "ref": "25:1",
+          "why": "Uses the same name for the present revelation, sent down to be a warner to all the worlds."
+        },
+        {
+          "ref": "21:52",
+          "why": "Continues immediately, showing what the judgement given to Abraham looked like when he used it."
+        }
+      ],
+      "applyIt": "The people this book benefits are described by something no one can see. Pick one small act this week that nobody will know about: a debt settled quietly, a message of thanks sent and not mentioned, a fast nobody is told of. The point is not the act. It is having one thing in your life that is not being performed for anybody.",
+      "exploreFurther": [
+        "2:53",
+        "25:1-2",
+        "35:18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.806Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:52-55",
+      "surah": 21,
+      "start": 52,
+      "end": 55,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "What Are These Statues",
+      "tier": "standard",
+      "meaning": "The confrontation begins with a question about an object, not a doctrine. He asks what these figures are, and the word he uses is the plain one for carved likenesses rather than any religious term. The answer given is not a defence of the statues at all: we found our fathers doing this. He replies by including the fathers in the verdict, which is the part that stings. Their response is to ask whether he is serious or playing.",
+      "historicalContext": "Meccan. The audience lived beside a sanctuary filled with such objects, and the argument from ancestral practice was the standing Meccan reply to the message. Placing that exact exchange in Abraham's mouth was pointed, since Quraysh traced their own custodianship of the sanctuary back to him. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلتَّمَاثِيلُ",
+          "gloss": "the statues, the likenesses",
+          "note": "From a root for resemblance. The word names them as images of something rather than as gods, which settles the question grammatically before the argument starts."
+        },
+        {
+          "arabic": "عَـٰكِفُونَ",
+          "gloss": "devoted, staying beside",
+          "note": "Remaining beside something in attachment. The Quran uses the same word for those who keep to the Sacred House and for people found attending idols, so the posture is neutral and the object decides."
+        },
+        {
+          "arabic": "وَجَدْنَآ",
+          "gloss": "we found, we came upon",
+          "note": "A verb of discovery, not of choice. The answer describes inherited practice as something encountered rather than adopted, which is exactly why the reply that follows extends the verdict backwards."
+        }
+      ],
+      "lifeInProphetsTime": "Ancestral practice was the strongest argument available in Arabia. Lineage was memorised, a man's standing came from his fathers, and departing from what they had done was closer to disloyalty than to error. The sanctuary's arrangements were maintained by families who had inherited specific roles in them. Asking a Meccan to judge his fathers mistaken was asking him to give up the ground he stood on.",
+      "didYouKnow": "The word Abraham uses for the statues occurs only twice in the Quran. The other place describes objects made for Solomon by those working under him, alongside basins and cauldrons, and there the word carries no reproach at all. The Quran's objection in this passage is to what people do beside such things, not to the craft of making them.",
+      "theologicalSignificance": "The exchange isolates the real argument, which is never about the objects. Nobody in it defends the statues; the defence offered is continuity with the fathers, and the reply refuses to treat inheritance as evidence. That is a heavy thing to say in any society. The final question is equally revealing: faced with a claim they cannot answer, they ask whether it is a joke, which is the same move the surah reported at its opening.",
+      "crossReferences": [
+        {
+          "ref": "21:16",
+          "why": "Uses the same word for playing earlier in this surah, where creation is denied as a diversion."
+        },
+        {
+          "ref": "43:22-23",
+          "why": "Gives the same answer from the fathers, and reports that every warned town replied in exactly those terms."
+        },
+        {
+          "ref": "26:69-77",
+          "why": "Narrates the same conversation at greater length, ending with Abraham naming the Lord of the worlds."
+        }
+      ],
+      "applyIt": "Find one thing you do because it was done in your family, and ask what it is for. Some answers will be good, and you will hold the practice more firmly for having asked. Some will not, and you can decide separately what to do about that. The ayah's objection is to the answer, not to the inheritance.",
+      "exploreFurther": [
+        "26:69-82",
+        "43:22-25",
+        "6:74-79"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:45.806Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:56",
+      "surah": 21,
+      "start": 56,
+      "end": 56,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "The One Who Originated Them",
+      "tier": "standard",
+      "meaning": "The answer to the question about whether he is joking is a correction, not a defence. He does not say he is serious; he supplies what they asked for and replaces their object with a claim about origin. The verb chosen describes splitting something open to bring it into being, which is a specific picture rather than a general word for making. Then he adds a line nobody required of him: he is among the witnesses to that.",
+      "historicalContext": "Meccan. Abraham's confrontation is being told to an audience who traced their sanctuary to him and who had just been described as answering the message with the same combination of inherited practice and mockery. The reply given here matches the surah's own method, which is to argue from what made the world rather than from what was inherited. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "فَطَرَهُنَّ",
+          "gloss": "who originated them",
+          "note": "From a root for splitting or cleaving open, used of dough breaking and of a first opening. It describes creation as bringing something out that was not there, rather than as arranging what was."
+        },
+        {
+          "arabic": "بَل",
+          "gloss": "rather, no indeed",
+          "note": "A particle that cancels what came before and substitutes a correction. Abraham begins his answer with it, so the sentence sets aside their question rather than answering it on their terms."
+        },
+        {
+          "arabic": "ٱلشَّـٰهِدِينَ",
+          "gloss": "those who bear witness",
+          "note": "The word for a legal witness who testifies to what he knows. Adding himself to that class turns a statement about God into personal testimony that can be held against him."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony was the load-bearing institution of Arabian life. Contracts, marriages, debts and blood settlements held because named men had witnessed them and would say so, and a witness who was found unreliable lost standing permanently. Declaring yourself a witness was therefore a costly move, not a rhetorical one. Abraham attaching himself to the claim placed his own credit behind it in front of everyone present.",
+      "didYouKnow": "The verb Abraham uses for originating the heavens and the earth gives Arabic its word for breaking a fast, because both come from the sense of splitting something open or breaking through. The same root supplies the Quran's word for the original disposition a person is made with, so one root covers a first creation, a first nature, and a first meal.",
+      "theologicalSignificance": "The reply relocates the argument from objects to origin, which is where it has to go, since nobody disputes that a statue exists. It also shows what belief looks like when it becomes testimony. Abraham does not merely hold a view; he places himself in the position of a witness, which is a claim other people are entitled to test. That move is the whole difference between an opinion and a stand.",
+      "crossReferences": [
+        {
+          "ref": "6:79",
+          "why": "Gives Abraham's parallel declaration, that he turns his face to the One who originated the heavens and earth."
+        },
+        {
+          "ref": "30:30",
+          "why": "Uses the same root for the original nature God made people upon, with no altering of it."
+        },
+        {
+          "ref": "35:1",
+          "why": "Opens a surah with the same divine name, the Originator of the heavens and the earth."
+        }
+      ],
+      "applyIt": "Say one thing you believe out loud today to someone who might disagree, plainly and without a joke attached to soften it. Not an argument. Just the statement, once. This ayah's second half is what distinguishes holding a view privately from standing behind it, and the difference is felt rather than reasoned.",
+      "exploreFurther": [
+        "6:74-79",
+        "30:30",
+        "35:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.003Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:57-60",
+      "surah": 21,
+      "start": 57,
+      "end": 60,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "Except The Biggest Of Them",
+      "tier": "standard",
+      "meaning": "An oath is sworn and a plan announced in advance, to be carried out once the people have gone. What follows is precise: everything is broken into fragments except the largest, and a reason is attached, so that they might come back to it. Commentators read the exception as the whole point, since a demonstration needs a survivor to be questioned. The search that follows produces a witness who remembers hearing a young man speak about the objects.",
+      "historicalContext": "Meccan. The account belongs to Abraham's early confrontation with his community, and this surah gives it in more detail than any other. The audience in Mecca maintained objects at a sanctuary and were themselves being addressed by a man whose speech about those objects was already public knowledge. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "لَأَكِيدَنَّ",
+          "gloss": "I will surely scheme against",
+          "note": "A verb for a plan made quietly against something. It is normally used of the opponents of prophets, and the Quran allows Abraham the same word, applied to objects rather than to people."
+        },
+        {
+          "arabic": "جُذَٰذًا",
+          "gloss": "fragments, broken pieces",
+          "note": "This word occurs only here in the Quran. It names debris small enough that nothing can be reassembled, which is what makes the single untouched figure conspicuous."
+        },
+        {
+          "arabic": "فَتًى",
+          "gloss": "a young man, a youth",
+          "note": "The word for a young man in his strength, used elsewhere of a servant travelling with a prophet. It records how he was known in the town: by age and by talk, not by any position."
+        }
+      ],
+      "lifeInProphetsTime": "Damage to communal property was a serious matter in any Arabian settlement, and the first move was always the same: find who was heard saying something beforehand. Reputations travelled through overheard talk at wells and markets, and a young man with unusual opinions would be known by everyone without being important to anyone. The investigation in these ayat follows the procedure the audience would have expected.",
+      "didYouKnow": "The word used for the broken fragments occurs only once in the whole Quran. The word describing Abraham as a youth occurs four times, and the others are a servant in the household of Egypt and the young companion who travels with Moses in a later surah. In each case the term marks someone young enough to be spoken about rather than consulted.",
+      "theologicalSignificance": "The passage records a prophet acting rather than only arguing, and it shows the act designed as an argument. The exception left standing is the reasoning made physical: the case will be won by what the survivors cannot do, not by what Abraham says. There is also honesty in the announcement of the plan beforehand, which the Quran preserves. Nothing here is done secretly except the timing.",
+      "crossReferences": [
+        {
+          "ref": "37:91-93",
+          "why": "Narrates the same episode, with Abraham addressing the offerings before turning on the figures."
+        },
+        {
+          "ref": "21:63",
+          "why": "Delivers the point of the exception three ayat later, when he tells them to ask the biggest one."
+        },
+        {
+          "ref": "18:60",
+          "why": "Uses the same word for a youth, of the young companion travelling with Moses on a journey."
+        }
+      ],
+      "applyIt": "Notice that Abraham did not argue the point, he arranged for the argument to make itself. If you are trying to convince someone of something, ask whether there is a small thing you could set up that would let them see it, instead of another explanation. People believe what they work out. That is the method this passage records.",
+      "exploreFurther": [
+        "37:83-98",
+        "21:61-67",
+        "6:74-83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.004Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:61-64",
+      "surah": 21,
+      "start": 61,
+      "end": 64,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "They Returned To Themselves",
+      "tier": "standard",
+      "meaning": "A public hearing is arranged, and the answer given there is famous for being obviously untrue. He attributes the act to the largest figure and tells them to ask the others if they can speak, which places the whole case on that single condition. Commentators note that the statement is a challenge shaped like a claim, not a lie meant to be believed. The result is described in one phrase: they went back to themselves, and turned the accusation inward.",
+      "historicalContext": "Meccan. The scene is staged deliberately, since the leaders themselves call for the trial to be held in front of the crowd. That detail matters for a Meccan audience whose own leaders had held quiet conferences about how to respond to the message, reported at the opening of this surah. No specific occasion of revelation is reported for these four ayat.",
+      "keyTerms": [
+        {
+          "arabic": "أَعْيُنِ ٱلنَّاسِ",
+          "gloss": "the eyes of the people",
+          "note": "An idiom for a fully public setting. The leaders choose it to make the case decisive, which is the same choice that then makes their own reversal happen in front of everyone."
+        },
+        {
+          "arabic": "يَنطِقُونَ",
+          "gloss": "they speak, they utter",
+          "note": "A verb for producing articulate speech. It occurs twice in this surah, once in Abraham's condition and once in their answer, so the case turns on a single word used by both sides."
+        },
+        {
+          "arabic": "فَرَجَعُوٓا۟",
+          "gloss": "so they returned",
+          "note": "The ordinary verb for going back, here directed at themselves. Arabic can express reflection as a physical return, so the moment of realisation is described as walking back into your own house."
+        }
+      ],
+      "lifeInProphetsTime": "Public hearings were how Arabian communities settled accusations. The parties spoke before an assembly, reputations were made and lost in the exchange, and there was no appeal beyond what the gathering concluded. A man who lost such an exchange lost more than the case. That is why calling the crowd was a confident move by the leaders, and why the reversal recorded here would have been so costly to them.",
+      "didYouKnow": "The verb for speaking that carries the whole argument appears twice in this surah, in Abraham's condition and in the reply he draws out of them. Their answer, that these do not speak, is the concession he was after, and it is given by the prosecution rather than argued by the defence. The case is decided by a sentence the other side volunteers.",
+      "theologicalSignificance": "The passage locates conviction in a moment nobody engineered. They return to themselves, and what they find there they say out loud before they can manage it. That suggests a knowledge already present, needing only to be uncovered rather than supplied. The staging matters too. Truth here does not arrive as information; it arrives when a question is put in a form that cannot be answered without conceding.",
+      "crossReferences": [
+        {
+          "ref": "21:65",
+          "why": "Shows the recognition collapsing in the next line, as they are turned back on their heads."
+        },
+        {
+          "ref": "12:26-28",
+          "why": "Another case decided by a piece of evidence that forces the parties to concede without argument."
+        },
+        {
+          "ref": "27:14",
+          "why": "Describes rejection that persists although their own selves were convinced of the truth."
+        }
+      ],
+      "applyIt": "Think of a moment when you knew you were wrong before you admitted it, and how long the gap was. That gap is what this passage is describing. Next time you feel it opening, say the true thing while it is still uncomfortable, because the ayah after this one shows what happens when the moment is allowed to pass.",
+      "exploreFurther": [
+        "21:65-67",
+        "27:13-14",
+        "12:26-29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.004Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:65-67",
+      "surah": 21,
+      "start": 65,
+      "end": 67,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Turned Back On Their Heads",
+      "tier": "standard",
+      "meaning": "The recognition lasts one line. They are described as being set back on their heads, an image of something inverted, and what comes out is a fact stated as a rebuke: you know perfectly well these do not speak. That sentence concedes everything and is offered as a defence. Abraham's reply does not press the contradiction. He asks instead what such things are for, in terms of benefit and harm, and ends with an exclamation rather than an argument.",
+      "historicalContext": "Meccan. The exchange completes Abraham's confrontation and immediately precedes the decision to burn him. Its Meccan listeners had themselves been told, a few ayat earlier, that the objects they maintained could not defend anyone. The argument is put in a form that requires no scripture and no shared authority, only an admission the other side has already made. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "نُكِسُوا۟",
+          "gloss": "they were turned upside down",
+          "note": "This verb occurs only here. It describes something inverted so that its top is at the bottom, and the Quran applies it to a change of mind rather than to a physical posture."
+        },
+        {
+          "arabic": "يَنفَعُكُمْ",
+          "gloss": "it benefits you",
+          "note": "The test offered is capacity, not doctrine. Benefit and harm are the two things anyone can check about anything, which is why the question can be asked of people who share no premises with the questioner."
+        },
+        {
+          "arabic": "أُفٍّ",
+          "gloss": "an expression of disgust",
+          "note": "An interjection rather than a word, occurring three times in the Quran. Elsewhere it names the sound a person must not make to ageing parents, which shows how sharp it was understood to be."
+        }
+      ],
+      "lifeInProphetsTime": "Benefit and harm were how Arabians assessed everything, from a well to an alliance to a marriage. A thing that could neither help you nor hurt you was, in the plainest sense, not a factor. The question put here therefore used the ordinary standard of judgement in that society. What made it uncomfortable was not its difficulty but the fact that nobody had ever applied it to the sanctuary.",
+      "didYouKnow": "The exclamation Abraham makes occurs three times in the Quran. In one of those places it is the very sound a person is told not to make towards an ageing mother or father, which is how the Quran indicates the limit of what may be said to them. The same syllable marks the sharpest disgust and the smallest forbidden rudeness.",
+      "theologicalSignificance": "The passage shows knowledge and conduct coming apart. They have said the decisive thing themselves, and it changes nothing, which suggests that what holds a practice in place is not a belief that could be corrected. Abraham's shift is instructive: having won the argument, he stops arguing and appeals to sense. The final question is not rhetorical, and the passage does not report an answer to it.",
+      "crossReferences": [
+        {
+          "ref": "17:23",
+          "why": "Uses the same exclamation as the limit of what may be said to ageing parents."
+        },
+        {
+          "ref": "21:64",
+          "why": "Gives the admission in the line before, which this passage shows collapsing almost immediately."
+        },
+        {
+          "ref": "22:73",
+          "why": "Puts the same test as a parable, that all of them together could not create a fly."
+        }
+      ],
+      "applyIt": "Ask the passage's question about one thing you spend real time on: can it actually benefit you, and can it harm you. Answer honestly, in both directions. Some things will pass and you can stop feeling uneasy about them. Some will fail on both counts, and knowing that is not the same as being ready to drop them.",
+      "exploreFurther": [
+        "22:73-74",
+        "17:23-24",
+        "26:69-77"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.005Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "21:68-71",
       "surah": 21,
       "start": 68,
@@ -174,6 +1682,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:54.157Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:72-73",
+      "surah": 21,
+      "start": 72,
+      "end": 73,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "A Grandson Given Over",
+      "tier": "standard",
+      "meaning": "Two names are given as a gift, and the second is marked by a word meaning something added beyond what was asked. Commentators read it as the grandson arriving on top of the son, an extra nobody had requested. What follows describes what became of them, and the terms are all about function rather than status: made leaders who guide by God's command, inspired towards good works, and finally called servants. The line ends where it began, in service.",
+      "historicalContext": "Meccan. The surah is moving through its gallery of prophets, and this passage covers what followed Abraham's deliverance from the fire. In a society organised entirely around descent, the note that a line continued through two named generations carried weight beyond the biography. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "نَافِلَةً",
+          "gloss": "an addition, something extra",
+          "note": "What is given beyond what was due or asked. The word occurs twice in the Quran, once of this grandson and once of a night prayer offered over and above what is required."
+        },
+        {
+          "arabic": "أَئِمَّةً",
+          "gloss": "leaders, ones followed",
+          "note": "From a root for the front or the intended direction. It names those others take their bearings from, and the ayah immediately limits the role: they guide by God's command, not their own."
+        },
+        {
+          "arabic": "عَـٰبِدِينَ",
+          "gloss": "servants, worshippers",
+          "note": "The last word describing them, after leadership and inspiration have been mentioned. Placing it at the end makes service the category everything else sits inside rather than a stage they moved beyond."
+        }
+      ],
+      "lifeInProphetsTime": "A man's line was his security and his memory in Arabia. Sons meant hands for the herd, defenders in a feud and someone to keep your name in the genealogies that every family recited. A grandson meant the line was no longer contingent on one life. Being told that a second generation had been added, unasked, described the exact relief an Arabian father would have understood immediately.",
+      "didYouKnow": "The word describing the grandson as something extra occurs twice in the Quran. The other place uses it for a night prayer offered beyond what is required, described as an addition for the one who performs it. The same term marks a voluntary act of worship and an unrequested member of a family, both defined as more than was owed.",
+      "theologicalSignificance": "Leadership is defined here by its source rather than by its authority: they guide by God's command, which makes the role derivative. The order of the description matters too. Guidance and inspiration are listed, and then the summary is that they were servants, so the highest thing said about them is the same thing that can be said about anyone. Nothing in the passage makes their standing hereditary.",
+      "crossReferences": [
+        {
+          "ref": "32:24",
+          "why": "Uses the same phrase for leaders guiding by His command, and attaches it to patience and certainty."
+        },
+        {
+          "ref": "17:79",
+          "why": "Uses the same word for something offered in addition, of prayer in a portion of the night."
+        },
+        {
+          "ref": "2:124",
+          "why": "Records Abraham asking about his descendants and being told the covenant does not reach wrongdoers."
+        }
+      ],
+      "applyIt": "Think of one person in your family who arrived as an addition rather than a plan: a late child, a cousin who moved in, a grandparent you did not expect to know. Call or message them today for no reason. The word in this ayah exists for exactly that category, and it treats it as the better kind of gift.",
+      "exploreFurther": [
+        "2:124-129",
+        "32:23-24",
+        "19:49-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.005Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:74",
+      "surah": 21,
+      "start": 74,
+      "end": 74,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Judgement And Knowledge Given",
+      "tier": "standard",
+      "meaning": "Two things are given and they are given together: the capacity to decide rightly, and knowledge. Commentators treat the pair as deliberate, since knowing what is true and knowing what to do about it are different faculties. Then a rescue is described, and the town is characterised by what it did rather than by who lived in it. The Quran states the charge briefly and moves on, without detail, which is its consistent manner with this episode.",
+      "historicalContext": "Meccan. The surah's gallery is moving quickly, giving each prophet a line or two. Lot's town lay on a route Arabian traders knew, and other passages note that its ruins were passed by travellers. The audience therefore knew the story as geography as well as history. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "حُكْمًا",
+          "gloss": "judgement, sound decision",
+          "note": "The faculty of deciding a matter rightly. It is given here alongside knowledge and again a few ayat later to David and Solomon, so the surah treats it as a distinct gift rather than a result of learning."
+        },
+        {
+          "arabic": "ٱلْقَرْيَةِ",
+          "gloss": "the town, the settlement",
+          "note": "A settled place rather than a tribe or a people. Naming the unit as a town makes the fault collective and located, which is how the Quran generally describes communities that were warned."
+        },
+        {
+          "arabic": "فَـٰسِقِينَ",
+          "gloss": "those who break out",
+          "note": "From a root for something breaking out of its shell or skin. It describes stepping outside a boundary rather than holding a wrong belief, which is why it can be said of conduct alone."
+        }
+      ],
+      "lifeInProphetsTime": "Hospitality was the one obligation no Arabian settlement could waive. A traveller who reached a town was owed shelter and safety, and a place that harmed its guests put itself outside the customs that made travel possible at all. Caravans depended on that guarantee across hundreds of miles. The Quran's accounts of this town elsewhere turn on exactly that breach, which the audience would have registered instantly.",
+      "didYouKnow": "The pairing of judgement and knowledge appears twice within six ayat of this surah, once here for Lot and once for David and Solomon. In the second case the surah immediately shows what having both looks like, in a dispute over a damaged field. The gallery gives the same gift twice and then illustrates it once.",
+      "theologicalSignificance": "Rescue is presented as the ordinary outcome for the one who did not participate, and the passage spends no time on the destruction itself. What it insists on is the pairing at the start: judgement and knowledge given together, which quietly says that being right is not the same as knowing how to act. The characterisation of the town by its practice rather than its creed is equally deliberate.",
+      "crossReferences": [
+        {
+          "ref": "21:79",
+          "why": "Gives the same pair of gifts to David and Solomon a few ayat later, then shows them in use."
+        },
+        {
+          "ref": "29:28-30",
+          "why": "Narrates the same episode at greater length, including Lot's appeal against what his people did."
+        },
+        {
+          "ref": "37:137-138",
+          "why": "Notes that travellers pass by the remains of that place morning and night."
+        }
+      ],
+      "applyIt": "Notice which of the two gifts you actually lack in a decision you are avoiding. Sometimes you do not know enough, and the answer is to find out. More often you know exactly what is happening and cannot see what to do. Naming which one it is takes a minute and usually changes what you do next.",
+      "exploreFurther": [
+        "29:28-35",
+        "37:133-138",
+        "11:77-83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.005Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:75-77",
+      "surah": 21,
+      "start": 75,
+      "end": 77,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "When He Called Out Before",
+      "tier": "standard",
+      "meaning": "One prophet is admitted into mercy and described as righteous, and then the surah reaches back much further. Noah is introduced not by his mission or his ark but by a single act: he called out. The response is given in three verbs, answered, delivered, supported, and the sequence begins with the answering. Commentators note that the surah's method through this whole gallery is to name the call first and the rescue second, so the calling is what the passage is about.",
+      "historicalContext": "Meccan. The gallery is compressing long narratives into single lines, and it selects from each prophet's life the moment of appeal. That selection speaks to a community under pressure with no visible prospect of relief, for whom the length of Noah's mission was the relevant fact. The word before, in this ayah, sets his call at the far end of the whole sequence. No specific occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "نَادَىٰ",
+          "gloss": "he called out",
+          "note": "A verb for calling to someone at a distance, loud enough to carry. It is not the word for a quiet prayer, and the surah uses it repeatedly through this gallery for prophets in extremity."
+        },
+        {
+          "arabic": "فَٱسْتَجَبْنَا",
+          "gloss": "so We answered",
+          "note": "A form that means responding to a request, with the sense of complying rather than merely hearing. The verb follows the calling immediately in the sentence, with nothing between them."
+        },
+        {
+          "arabic": "ٱلْكَرْبِ",
+          "gloss": "crushing distress",
+          "note": "A word for anguish that presses on the chest, from a root for pressing hard. The Quran uses this phrase for the great distress three times, twice of prophets rescued from their own people."
+        }
+      ],
+      "lifeInProphetsTime": "Calling out carried in the desert. A traveller separated from a caravan shouted and listened, a lost herdsman called across a valley, and the sound was the only technology available for reaching anyone. Everyone had experienced calling into a distance without knowing whether anything was there. The prophets in this surah are shown doing exactly that, and the passage is interested in what came back.",
+      "didYouKnow": "The phrase used here for the great distress occurs three times in the Quran. The other two are in a single surah, one of them describing the rescue of this same prophet and the other the deliverance of Moses and Aaron with their people. The Quran reserves the expression for rescues on the scale of an entire community.",
+      "theologicalSignificance": "The sequence puts answering before rescue, which separates two things people usually collapse together. Being answered is not identical with being delivered, and the passage lists them as distinct acts in order. The gallery's structure makes a further claim by repetition: across generations and utterly different circumstances, the pattern of call and response is the same, which is the surah's way of saying it is available now.",
+      "crossReferences": [
+        {
+          "ref": "37:75-76",
+          "why": "Uses the identical phrase for the great distress, of this same prophet and his people."
+        },
+        {
+          "ref": "37:114-115",
+          "why": "Applies the same phrase to the deliverance of Moses and Aaron along with their people."
+        },
+        {
+          "ref": "21:83",
+          "why": "Continues the same pattern later in this surah, where Job calls and is answered in the next line."
+        }
+      ],
+      "applyIt": "Notice that the Quran records the calling and not the wording. If you have been waiting until you can put something properly, drop that. Say the plainest version of what is wrong, out loud, once, in whatever words arrive. The passages in this surah are made of exactly that, and none of them is eloquent.",
+      "exploreFurther": [
+        "37:75-82",
+        "54:9-14",
+        "21:83-90"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.005Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:78",
+      "surah": 21,
+      "start": 78,
+      "end": 78,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Sheep In The Field",
+      "tier": "standard",
+      "meaning": "A dispute is introduced with no verdict attached. Two prophets are judging a case about a cultivated field into which someone's sheep strayed at night, and the verb for both of them judging is left in a form that suggests the process rather than the outcome. Then a single clause is added: We were witnesses to their judgement. The Quran does not report what either of them decided here, and the commentators note the omission before supplying their accounts of it.",
+      "historicalContext": "Meccan. The surah gives this episode in one and a half ayat and nowhere else, and the details it withholds are supplied in the commentaries from transmitted reports, which the classical authorities pass on with varying confidence. The Meccan audience lived in a town without agriculture but traded with settlements where such disputes were ordinary. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْحَرْثِ",
+          "gloss": "the tilled field, the crop",
+          "note": "Cultivated ground and what grows on it, from a root for ploughing. The word covers the labour as well as the plants, which is why damage to it registers as harm to a season's work."
+        },
+        {
+          "arabic": "نَفَشَتْ",
+          "gloss": "they strayed and grazed by night",
+          "note": "This verb occurs only here in the Quran. It means specifically that animals scattered into pasture at night without a herdsman, so the ayah tells you nobody was watching them."
+        },
+        {
+          "arabic": "شَـٰهِدِينَ",
+          "gloss": "witnesses, present observers",
+          "note": "The word for those present at proceedings who can testify to what happened. Applying it to God as observer of the judging places the court itself under observation."
+        }
+      ],
+      "lifeInProphetsTime": "Animals in a crop was among the most common disputes in any settled part of Arabia. Herds were penned at night precisely because unattended sheep would strip a field by morning, and the loss fell on a family's whole year. Custom in such cases weighed the value of the damage against the value of the flock, and the settlement was usually negotiated by elders rather than imposed.",
+      "didYouKnow": "The verb describing the sheep straying at night occurs only once in the whole Quran. It is a precise pastoral term for livestock spreading into pasture after dark with nobody minding them, and the classical lexicons pair it with a separate verb used of the same animals grazing by day. The ayah chooses the word that quietly locates the negligence.",
+      "theologicalSignificance": "The passage is remarkable for what it withholds. Two prophets judge, the outcome is not stated, and the ayah's only comment is that the proceedings were witnessed. That places the emphasis on judging as an activity carried out under observation rather than on the correctness of a particular ruling. The next ayah will say one of them was given understanding of it, without withdrawing anything from the other.",
+      "crossReferences": [
+        {
+          "ref": "21:79",
+          "why": "Continues immediately, saying We gave understanding of it to one of them and knowledge to both."
+        },
+        {
+          "ref": "38:26",
+          "why": "Addresses the same prophet about judging between people with truth and not following desire."
+        },
+        {
+          "ref": "4:58",
+          "why": "States the general principle of judging between people with justice, set beside restoring trusts to their owners."
+        }
+      ],
+      "applyIt": "Notice the clause that ends the ayah. Someone was present at the proceedings. Next time you find yourself deciding something small about another person, their motives, whether they meant it, take ten seconds to imagine the deliberation being watched. Not to frighten yourself. It usually improves the quality of the reasoning.",
+      "exploreFurther": [
+        "38:21-26",
+        "21:79-80",
+        "4:58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.005Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:79",
+      "surah": 21,
+      "start": 79,
+      "end": 79,
+      "theme": "Solomon and David",
+      "themeId": "solomon-and-david",
+      "title": "We Made Him Understand It",
+      "tier": "standard",
+      "meaning": "One of the two is given understanding of the case, and the very next clause gives both of them judgement and knowledge. Commentators are careful with that sequence: the younger sees something the elder does not, and nothing is taken away from the elder for it. Then the passage moves without pause to mountains and birds made to join one of them in glorifying, and closes with three words that read like a signature: and We were the doers.",
+      "historicalContext": "Meccan. The surah is naming what each prophet was given. Both of these figures are unusual in the gallery because they held political power, and the Quran's account of them keeps returning to gifts rather than to conquests. The detail about mountains echoing praise is given in more than one surah of this period. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "فَفَهَّمْنَـٰهَا",
+          "gloss": "so We made him understand",
+          "note": "This verb occurs only here in the Quran, in a form that means causing someone to understand. The insight is described as conferred rather than reached, which is why the other judge is not faulted."
+        },
+        {
+          "arabic": "وَسَخَّرْنَا",
+          "gloss": "and We made subservient",
+          "note": "A verb for putting something at another's disposal, used elsewhere of the sea, the sun and the night. It always names an arrangement made by God rather than a power held by the person."
+        },
+        {
+          "arabic": "يُسَبِّحْنَ",
+          "gloss": "they glorify, declare purity",
+          "note": "A feminine plural verb, agreeing with the mountains. The same verb has already been used in this surah for those near God and for the sun and moon moving in their courses."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian valleys answer. A voice raised between rock walls comes back, and travellers and herdsmen used that fact deliberately, calling to locate one another across broken ground. Poets sang in wadis for the sound. An audience that had heard hills return a human voice did not need the image of mountains joining a song explained to them, though the ayah claims something more than an echo.",
+      "didYouKnow": "The verb used here for being given understanding occurs only once in the Quran. The verb for glorifying, in this same ayah, has already appeared twice in this surah, first of those near God who never tire and then of the sun and moon in their courses. By this point the surah has assigned the same act to angels, to planets and to mountains.",
+      "theologicalSignificance": "The passage handles a difficult situation gently. Two people judge, one is given the better understanding, and the text immediately affirms both. That models how superior insight can be acknowledged without becoming a verdict on the other person. The wider claim is about who arranges things: understanding is granted, mountains are made to respond, and the closing phrase attributes all of it to one actor.",
+      "crossReferences": [
+        {
+          "ref": "34:10",
+          "why": "Gives the same detail, mountains and birds told to echo the praise along with him."
+        },
+        {
+          "ref": "38:18-19",
+          "why": "Describes the mountains glorifying with him at evening and sunrise, and the birds gathered."
+        },
+        {
+          "ref": "21:20",
+          "why": "Uses the same verb earlier in this surah, of those who glorify night and day without tiring."
+        }
+      ],
+      "applyIt": "Think of a time someone younger or less experienced saw something you missed. Notice whether you were able to say so out loud. This ayah does both things in one line: it credits the better reading and it keeps the other person whole. Try that pairing once this week, in that order, with someone who deserves it.",
+      "exploreFurther": [
+        "34:10-11",
+        "38:17-20",
+        "27:15-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.006Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:80-81",
+      "surah": 21,
+      "start": 80,
+      "end": 81,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "Armour Against Your Own Violence",
+      "tier": "standard",
+      "meaning": "A craft is described as taught rather than invented, and the purpose is stated with unusual bluntness: to protect you from your own violence. The word for you is plural and includes the listener, so the danger named is not an enemy but the hearers themselves. A question follows, asking whether they are grateful, and it is left open. Then a wind is placed at the command of the other figure, running towards a land the passage calls blessed.",
+      "historicalContext": "Meccan. The audience lived in a peninsula where feuding was endemic and armour was expensive imported equipment. The blessed land named at the end of this ayah is the same one named earlier in the surah as the destination of Abraham's deliverance, which quietly links the two ends of the gallery. No specific occasion of revelation is reported for these two ayat.",
+      "keyTerms": [
+        {
+          "arabic": "لَبُوسٍ",
+          "gloss": "armour, protective garment",
+          "note": "This word occurs only here in the Quran. It comes from the ordinary verb for wearing clothes, so protective mail is named as a kind of dress rather than as a weapon."
+        },
+        {
+          "arabic": "بَأْسِكُمْ",
+          "gloss": "your violence, your might",
+          "note": "A word covering both military force and hardship. The possessive makes the audience the source of the danger, so the gift is protection from what people do to one another."
+        },
+        {
+          "arabic": "عَاصِفَةً",
+          "gloss": "stormy, violently blowing",
+          "note": "This form occurs only here. The wind put at his command is not a gentle one, which makes the arrangement a matter of a destructive force being directed rather than tamed."
+        }
+      ],
+      "lifeInProphetsTime": "Mail shirts were among the most valuable objects in Arabia. They were imported, repaired by specialists, named in poetry, and given as compensation in blood settlements, where a fixed number of them could close a feud. A man who owned one was wealthy. The Quran describing the making of armour as taught, and as protection from a community's own violence, spoke to an audience for whom both halves were literal.",
+      "didYouKnow": "The land described as blessed at the end of this passage is named with the same phrase earlier in this surah, where Abraham and Lot are delivered to it. The expression occurs four times in the Quran, and two of those are in this surah, so the same blessed destination appears at the start of the gallery and again near its end.",
+      "theologicalSignificance": "The passage locates human danger inside the human community, not outside it, and describes a technology given as mercy against that. The question about gratitude then attaches to something people would ordinarily credit to their own ingenuity. Placing a violent wind under command in the next line makes a related point: forces that destroy and forces that protect are described with the same grammar, both arranged rather than possessed.",
+      "crossReferences": [
+        {
+          "ref": "21:71",
+          "why": "Names the same blessed land earlier in this surah, as the place Abraham and Lot were delivered to."
+        },
+        {
+          "ref": "34:10-11",
+          "why": "Describes iron being softened for him and the instruction to make full coats of mail."
+        },
+        {
+          "ref": "38:36",
+          "why": "Gives the same arrangement with the wind, running gently at his command wherever he directed."
+        }
+      ],
+      "applyIt": "Pick one ordinary safeguard you use without thinking: a seatbelt, a lock, a lit street. Say once, today, that it was learned rather than invented from nothing, and that most of what it protects you from is other people. The ayah's question about gratitude is left unanswered on purpose. It is waiting for one.",
+      "exploreFurther": [
+        "34:10-13",
+        "38:30-40",
+        "57:25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.006Z",
         "reviewed": false
       }
     },
@@ -236,6 +2092,122 @@
       }
     },
     {
+      "key": "21:84",
+      "surah": 21,
+      "start": 84,
+      "end": 84,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "And Their Like With Them",
+      "tier": "standard",
+      "meaning": "The answer comes in four movements and each is stated as an act. He was answered, the harm was lifted, his family was given back, and then something extra: their like along with them. Commentators differ over whether that means a second family or the same people restored and multiplied, and they set the readings side by side. The ayah then names two purposes at once, a mercy from God and a reminder addressed to everyone who serves Him.",
+      "historicalContext": "Meccan. The surah's gallery gives each prophet a moment of appeal and a response, and this one is unusual in stating the restoration in detail. The Quran says almost nothing about the nature of the affliction, and the fuller accounts in the commentaries come largely from transmitted Israelite tradition, which the classical authorities record with varying confidence. No occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "فَكَشَفْنَا",
+          "gloss": "so We removed, uncovered",
+          "note": "A verb for lifting a cover off something. Suffering is pictured as a thing laid over a person rather than as a change in him, so its removal restores what was already there."
+        },
+        {
+          "arabic": "مِثْلَهُم",
+          "gloss": "the like of them",
+          "note": "An addition beyond restoration, and the commentators read it in more than one way. What the phrasing establishes is that the answer exceeded the request, whatever the exact form."
+        },
+        {
+          "arabic": "ذِكْرَىٰ",
+          "gloss": "a reminder, a recollection",
+          "note": "The noun of reminding, addressed here to those who serve. The episode is preserved as something for others to remember, which makes one man's recovery a resource for people who never met him."
+        }
+      ],
+      "lifeInProphetsTime": "Illness in Arabia isolated as much as it hurt. A man who could not travel or work fell out of the arrangements that made him useful to his clan, and prolonged sickness could mean a household quietly moving on without him. Recovery meant re-entry into all of that. Being given back a family, in that setting, described the restoration of a whole position rather than a private happiness.",
+      "didYouKnow": "The words in which this appeal is made, addressing God as the Most Merciful of the merciful, occur four times in the Quran. The other three are spoken by Moses asking forgiveness for himself and his brother, by Jacob as he entrusts a second son to the brothers who lost the first, and by Joseph forgiving those same brothers. All four come from people at the end of their resources.",
+      "theologicalSignificance": "Mercy is described here as exceeding what was asked, which is the passage's distinctive claim. The appeal in the previous line contained no request at all, only a statement of the situation and a name of God, and the response overshoots even that. The final word turns a private rescue into public evidence, so the point of the story is not that Job was restored but that the pattern is on record.",
+      "crossReferences": [
+        {
+          "ref": "12:92",
+          "why": "Uses the identical address to God, spoken by Joseph as he forgives the brothers who wronged him."
+        },
+        {
+          "ref": "38:41-44",
+          "why": "Gives the fuller account of the same restoration, including the family returned and their like with them."
+        },
+        {
+          "ref": "21:83",
+          "why": "Contains the appeal this ayah answers, which states the affliction and asks for nothing."
+        }
+      ],
+      "applyIt": "Look at how the appeal in the previous line is built: here is what is happening to me, and here is who You are. No request. Try praying that way once today about the thing you are most tired of. Describe it accurately and then stop. The passage suggests the asking was never the part that mattered.",
+      "exploreFurther": [
+        "38:41-44",
+        "12:83-92",
+        "7:151"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:09:52.006Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:85-86",
+      "surah": 21,
+      "start": 85,
+      "end": 86,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Each One Of The Steadfast",
+      "tier": "standard",
+      "meaning": "Three names are given with no story attached and one shared description: each was among those who endure. Commentators note that the surah tells us nothing about what any of them endured, which leaves the quality standing on its own. Then the second line adds what followed, and it is the same phrase used for another prophet a few ayat earlier. Admitted into mercy, counted among the righteous. Patience is the only credential the passage records.",
+      "historicalContext": "Meccan. The gallery is compressing, and these three receive a single line between them. The identity of the third figure is disputed among the classical commentators, who record several proposals about who he was and what his name meant, and settle on none. The Meccan community were themselves being asked for endurance without any promise of when it would end. No occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلصَّـٰبِرِينَ",
+          "gloss": "the steadfast, those who endure",
+          "note": "From a root for binding something fast so it cannot move. Patience in Arabic is a holding rather than a waiting, which is why it can be the whole of what is said about a person."
+        },
+        {
+          "arabic": "ذَا ٱلْكِفْلِ",
+          "gloss": "the one of the portion",
+          "note": "A title rather than a name, appearing twice in the Quran and never explained. The root covers a share, a guarantee and taking responsibility, and the commentators record several readings of who is meant."
+        },
+        {
+          "arabic": "رَحْمَتِنَآ",
+          "gloss": "Our mercy",
+          "note": "Described as something entered rather than received, using a verb for being admitted to a place. The same phrase was used of Lot earlier in this surah, so the gallery repeats one destination."
+        }
+      ],
+      "lifeInProphetsTime": "Endurance was the celebrated Arabian virtue and it had a physical shape. A man was praised for sitting out a siege, for holding a position in a feud across years, for keeping a promise through a drought that killed his herd. Poets measured character by what a person could bear without complaint. Naming three prophets and saying only that they endured used the highest compliment the language had.",
+      "didYouKnow": "The second of these three names appears twice in the Quran and both times in a bare list. The third is a title rather than a name, also occurring twice, and the classical commentaries offer several explanations of who he was without agreeing. Two of the three figures the surah asks its readers to admire are people it declines to tell them anything about.",
+      "theologicalSignificance": "The passage makes a quiet claim about what counts. Three lives are summarised by one quality, and the reward is described as entry into mercy, which is the same outcome given elsewhere in the gallery to prophets whose stories are told at length. That levelling matters: it suggests the narrative is not the point, and that endurance without an audience is fully recognised even when nothing about it is recorded.",
+      "crossReferences": [
+        {
+          "ref": "21:75",
+          "why": "Uses the identical phrase about being admitted into Our mercy, of Lot a few ayat earlier."
+        },
+        {
+          "ref": "38:48",
+          "why": "Gives the only other mention of the third title, again inside a bare list of three names."
+        },
+        {
+          "ref": "19:56-57",
+          "why": "Gives the only other mention of the second name, describing him as truthful and a prophet."
+        }
+      ],
+      "applyIt": "Think of someone you know who has held something difficult for years without it becoming a story anyone tells. A carer, a parent, a colleague. Say something to them this week that names the holding rather than the situation. This ayah suggests that is the part actually being recorded.",
+      "exploreFurther": [
+        "38:45-48",
+        "19:56-58",
+        "21:83-88"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "21:87-88",
       "surah": 21,
       "start": 87,
@@ -290,6 +2262,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:54.170Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:89",
+      "surah": 21,
+      "start": 89,
+      "end": 89,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Do Not Leave Me Alone",
+      "tier": "standard",
+      "meaning": "The request is made and then immediately qualified by the petitioner himself. He asks not to be left solitary, and before any answer comes he adds that God is the best of inheritors, which concedes that nothing would be lost if the request were refused. Commentators read the second clause as the shape of the prayer rather than as an apology for it. He asks for what he wants and states, in the same breath, that his hope does not depend on getting it.",
+      "historicalContext": "Meccan. The gallery has been giving each prophet a moment of appeal, and this one is childless and old. In a society where a man without descendants had no continuation of any kind, the request is for the most ordinary thing and the most impossible. The Quran gives fuller versions of this prayer elsewhere. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "لَا تَذَرْنِى",
+          "gloss": "do not leave me",
+          "note": "A verb for leaving something behind or letting it be. It asks God not to let a situation simply continue, which is a different request from asking for an intervention."
+        },
+        {
+          "arabic": "فَرْدًا",
+          "gloss": "alone, singular",
+          "note": "One without a second, occurring three times in the Quran. The other two describe a person coming to God on the last day with nothing and nobody, which is the state he is asking not to be left in now."
+        },
+        {
+          "arabic": "ٱلْوَٰرِثِينَ",
+          "gloss": "the inheritors",
+          "note": "Those who remain when someone is gone and take what he leaves. Calling God the best of them concedes the whole point of wanting an heir while still asking for one."
+        }
+      ],
+      "lifeInProphetsTime": "Childlessness in Arabia was a form of erasure. Property passed to collateral relatives, a man's name dropped out of the genealogies that families recited, and there was nobody obliged to remember him or to answer for his blood. Old men without sons became dependents in other households. The word he uses for being left alone named a social condition as much as a private grief.",
+      "didYouKnow": "The word he uses for being left alone occurs three times in the Quran. The other two both describe a person arriving before God on the last day singular and with nothing, one of them just a few ayat from the end of an earlier surah. He asks not to be left in this life in the condition everyone will be in at the end of it.",
+      "theologicalSignificance": "The prayer models something difficult: wanting a specific outcome and holding it loosely at the same time, without either pretending not to want it or making the want a demand. The clause about inheritance is not resignation. It is an accurate statement of the situation, offered inside the request, and the surah records that the request was answered without suggesting the qualification was what earned it.",
+      "crossReferences": [
+        {
+          "ref": "19:2-6",
+          "why": "Gives the same prayer at greater length, including the fear of what would come after him."
+        },
+        {
+          "ref": "19:80",
+          "why": "Uses the same word for coming to God alone, of a person stripped of everything he counted on."
+        },
+        {
+          "ref": "21:90",
+          "why": "Records the answer in the very next line, and describes the household that resulted from it."
+        }
+      ],
+      "applyIt": "Take something you want badly and say it plainly to God, without softening the wanting. Then add one true sentence about how things stand if it does not come. Both halves. This prayer does not choose between hope and acceptance, and the ayah suggests you are not required to choose either.",
+      "exploreFurther": [
+        "19:1-11",
+        "3:38-41",
+        "21:90"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
         "reviewed": false
       }
     },
@@ -352,6 +2382,412 @@
       }
     },
     {
+      "key": "21:91",
+      "surah": 21,
+      "start": 91,
+      "end": 91,
+      "theme": "Mary",
+      "themeId": "mary",
+      "title": "A Sign For All Peoples",
+      "tier": "standard",
+      "meaning": "She is introduced without a name, by an act: the one who guarded her chastity. The gallery has been naming prophets, and here it names a woman by what she did rather than by a title. Then two things are stated. Something of God's spirit was breathed into her, and she and her son together were made a sign. Commentators note the pairing carefully: the sign is the two of them, not one alone, which keeps mother and child inseparable in the claim.",
+      "historicalContext": "Meccan. Christian communities were present in Arabia, in Najran to the south and along the northern routes, and Meccans knew the outline of this account. The surah places her inside a sequence of prophets without assigning her their office, and describes her by conduct and by what was given. No specific occasion of revelation is reported for this ayah, which the surah gives in a single line.",
+      "keyTerms": [
+        {
+          "arabic": "أَحْصَنَتْ",
+          "gloss": "she guarded, kept secure",
+          "note": "From the root for a fortress. The verb means making something inaccessible and safe, so the description is of a defence maintained rather than of an absence of opportunity."
+        },
+        {
+          "arabic": "مِن رُّوحِنَا",
+          "gloss": "of Our spirit",
+          "note": "A phrase occurring twice in the Quran, both times of this event. The possessive marks origin rather than composition, and the commentators are careful to read it as attribution of honour."
+        },
+        {
+          "arabic": "ءَايَةً",
+          "gloss": "a sign, a token",
+          "note": "The word used throughout the Quran for verses and for indications in nature. Applied to two people, it makes them something to be read, pointing past themselves to what produced them."
+        }
+      ],
+      "lifeInProphetsTime": "A woman's standing in Arabia was inseparable from her family's account of her, and there was no institution to appeal to if that account went wrong. Reputation was maintained by relatives and destroyed by rumour, and the consequences fell on households rather than on individuals. An account of a woman vindicated by God rather than by her kin ran against everything that society had arranged for settling such questions.",
+      "didYouKnow": "This surah's long gallery of prophets is interrupted once, for a person named by an action rather than by a name. The exact phrase used here for what was breathed into her occurs only twice in the Quran, and the other place also refers to her, in a surah where she is held up alongside another woman as an example for everyone who believes.",
+      "theologicalSignificance": "Two claims sit together. The first is about integrity maintained under conditions the passage does not describe, and the second is about something given that could not be earned. Placing them in one sentence refuses the choice between merit and grace. The final phrase widens the audience to all peoples, so what happened to one household in one place is presented as evidence available to everyone afterwards.",
+      "crossReferences": [
+        {
+          "ref": "66:12",
+          "why": "Uses the identical phrase about guarding and about the spirit, and names her as an example for believers."
+        },
+        {
+          "ref": "19:16-21",
+          "why": "Narrates the same event in detail, including her fear and the reassurance given to her."
+        },
+        {
+          "ref": "23:50",
+          "why": "Repeats that she and her son were made a sign, adding that they were sheltered on high ground with water."
+        }
+      ],
+      "applyIt": "Notice that she is identified here by something she did when nobody would have known otherwise. Pick one standard you keep privately and, instead of examining whether it matters, simply keep it today without comment. The ayah treats an unwitnessed integrity as the thing worth naming a person by.",
+      "exploreFurther": [
+        "19:16-34",
+        "66:11-12",
+        "3:42-47"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:92-94",
+      "surah": 21,
+      "start": 92,
+      "end": 94,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "One Community, One Lord",
+      "tier": "standard",
+      "meaning": "The gallery closes by addressing everyone in it at once. All of those lives are declared a single community, and the instruction that follows is the same one every messenger in the surah received. Then the record is stated plainly: they cut their affair into pieces among themselves. Commentators note the verb, which describes tearing rather than disagreeing. The passage does not dwell on it. It moves straight to the individual, whose effort is guaranteed not to be denied.",
+      "historicalContext": "Meccan. The surah has moved through prophets separated by centuries and by entirely different circumstances, and this is its summary. Its listeners lived among Jewish and Christian communities that traced themselves to figures in that same gallery, and among Arabian tribes that traced themselves to Abraham. The claim of one community was audible to all of them. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "أُمَّةً وَٰحِدَةً",
+          "gloss": "one single community",
+          "note": "A word for a body of people held together by something shared. The phrase occurs twice in the Quran in this exact form, both times summarising a sequence of messengers."
+        },
+        {
+          "arabic": "وَتَقَطَّعُوٓا۟",
+          "gloss": "they tore apart, cut up",
+          "note": "An intensive form of the verb to cut, applied to their own affair. It describes a single thing being pulled into fragments rather than parties failing to reach agreement."
+        },
+        {
+          "arabic": "كُفْرَانَ",
+          "gloss": "denial, ingratitude",
+          "note": "This noun occurs only here in the Quran. It is the opposite of thanks rather than of faith, so what is ruled out is effort going unacknowledged, not effort being punished."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian tribes were built from splits. Every large group remembered the quarrel that had separated it from a parent group, and genealogists tracked the fractures back through generations. A dispute over water or succession could produce two peoples within a lifetime. The verb used here for cutting up a shared affair described the ordinary mechanism by which Arabia had come to have so many separate names.",
+      "didYouKnow": "The word ruling out that anyone's effort will go unrecognised occurs only once in the whole Quran. It is built from the root that gives the word for disbelief, but in its plain sense of denying something owed, so it means ingratitude rather than unbelief. The Quran uses that root once in this direction, and it is about a human being's work being credited.",
+      "theologicalSignificance": "Three moves happen quickly. Unity is declared as a fact about the messengers, fragmentation is recorded as a fact about their followers, and then the frame shifts to the individual. That last shift is the passage's mercy: whatever the state of the communities, one person's effort is written down and cannot be denied. The verse does not resolve the divisions. It removes the individual's dependence on them.",
+      "crossReferences": [
+        {
+          "ref": "23:52-53",
+          "why": "Repeats the identical declaration and the same account of the splitting into parties, each pleased with itself."
+        },
+        {
+          "ref": "21:25",
+          "why": "Gives the same instruction earlier in this surah, said to have been revealed to every messenger."
+        },
+        {
+          "ref": "18:30",
+          "why": "States the same guarantee differently, that the reward of one who does good is not wasted."
+        }
+      ],
+      "applyIt": "If you find yourself discouraged by how divided things are, in a family, a community, a field of work, read the third of these ayat again. It does not fix any of that. It says your own effort is being written down independently of it. Do one small good thing today without checking whether it fits the larger picture.",
+      "exploreFurther": [
+        "23:51-56",
+        "18:30-31",
+        "6:159"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:95-96",
+      "surah": 21,
+      "start": 95,
+      "end": 96,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Swarming From Every Height",
+      "tier": "standard",
+      "meaning": "A prohibition is stated on a destroyed town, and the classical commentators divide over what exactly is barred: that its people will not return to the world, or that they will not turn back to God, and the works record both readings. The sentence then runs on without stopping into a second clause about a barrier opening and two peoples pouring down from every rise. The word for their movement is the one used of ants and of anything moving quickly in numbers.",
+      "historicalContext": "Meccan. The two names appear only twice in the Quran, here and in an account of a barrier built by a traveller in the far north. Stories of walled-off peoples circulated in the region through Syriac and Persian channels, and the surah uses the reference without explaining it, which suggests the audience already had it. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "وَحَرَٰمٌ",
+          "gloss": "barred, prohibited",
+          "note": "A word for something set off limits. Applied to a destroyed town, it makes the impossibility of return a matter of prohibition rather than of circumstance, which is why the commentators differ over what is being barred."
+        },
+        {
+          "arabic": "حَدَبٍ",
+          "gloss": "a raised ground, a mound",
+          "note": "This word occurs only here in the Quran. It names any swelling of ground, so the picture is of movement appearing over every horizon at once rather than from one direction."
+        },
+        {
+          "arabic": "يَنسِلُونَ",
+          "gloss": "they hurry, they stream",
+          "note": "A verb for moving quickly in numbers, used of animals and of crowds. It appears once more in the Quran, of people hastening from their graves towards their Lord."
+        }
+      ],
+      "lifeInProphetsTime": "Movement over the horizon was how danger arrived. A raiding party appeared first as dust above a ridge, and lookouts were posted on high ground precisely to see it early. Every settlement knew the sequence: a rise, a shape, then the count. Describing a force coming down from every rise at once removed the one advantage the whole system depended on, which was knowing which direction to watch.",
+      "didYouKnow": "The verb used for these peoples streaming down appears once more in the Quran, describing human beings hurrying from their graves towards their Lord. The word for the mounds they come over occurs only here. The surah gives one of its strangest images using a term found nowhere else and a verb it otherwise reserves for the resurrection.",
+      "theologicalSignificance": "The passage sets a limit that cannot be crossed in one direction and an opening that cannot be closed in another. Nothing returns from what has already been settled, and something held back will be released. Between those two facts sits the reader's present, which is exactly where the surah has been placing them since its opening line. The reticence of the account is part of its effect.",
+      "crossReferences": [
+        {
+          "ref": "18:94-98",
+          "why": "Gives the only other mention of these two names, and the barrier built to hold them back."
+        },
+        {
+          "ref": "36:51",
+          "why": "Uses the same verb for people hurrying out of their graves towards their Lord."
+        },
+        {
+          "ref": "21:97",
+          "why": "Continues immediately, with the true promise drawn near and eyes fixed in horror."
+        }
+      ],
+      "applyIt": "Notice how little the Quran says here, and resist the urge to fill it in. Take one thing you cannot know the shape of, a diagnosis, a decision someone else is making, and practise leaving it undescribed for a day. The passage models a way of holding the unknown that does not require inventing details.",
+      "exploreFurther": [
+        "18:92-99",
+        "36:51-54",
+        "21:97-100"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:97",
+      "surah": 21,
+      "start": 97,
+      "end": 97,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "We Were Heedless Of This",
+      "tier": "standard",
+      "meaning": "The surah's opening sentence returns, and it is the same verb: something has drawn near. What follows is a single physical detail, eyes fixed open and unmoving, and then speech. Their words correct themselves mid-sentence. First they say they were heedless of this, and then they replace that with a harder admission: rather, we were wrongdoers. Commentators note the particle in the middle, which retracts the softer account and puts the sharper one in its place.",
+      "historicalContext": "Meccan. This ayah closes the arc the surah opened with, where people were described as heedless and turning away. Meccan audiences had heard the warning repeatedly by this stage and had settled into treating it as background noise. The surah does not accuse them of anything here; it quotes what they will say about themselves. No specific occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "شَـٰخِصَةٌ",
+          "gloss": "fixed open, staring",
+          "note": "This form occurs only here in the Quran. It describes an eye that stops moving and does not blink, the look of someone facing something they cannot process rather than something they fear."
+        },
+        {
+          "arabic": "غَفْلَةٍ",
+          "gloss": "heedlessness, inattention",
+          "note": "The same word used in the surah's opening ayah of people turning away. Its return here closes a circle: the condition described at the start is named by those who were in it."
+        },
+        {
+          "arabic": "بَلْ",
+          "gloss": "rather, no indeed",
+          "note": "A particle that cancels the previous statement. Using it inside their own confession makes them correct themselves, upgrading heedlessness to wrongdoing without anyone else pressing them."
+        }
+      ],
+      "lifeInProphetsTime": "Meccans knew the look this ayah describes. A caravan returning without its animals, a man carried back from a raid, news arriving at a house before anyone had prepared it. The fixed stare of someone hearing something that has not yet become real was familiar to everyone. The Quran chooses that expression rather than any description of fear, and gives it no other detail.",
+      "didYouKnow": "The verb that opens this surah, saying the reckoning has drawn near, appears again in this ayah of the true promise. The word for the heedlessness people were in also comes from the first ayah. The surah has more than a hundred ayat between them, and it closes its argument by putting its opening words in the mouths of the people it opened by describing.",
+      "theologicalSignificance": "The self-correction is the passage's most careful move. Heedlessness sounds like an accident and would be an excuse; wrongdoing is a claim about responsibility. By having them make the correction themselves, the Quran removes the possibility of arguing that inattention is innocent. What was described at the surah's opening as a manner of listening turns out, on their own account, to have been a choice.",
+      "crossReferences": [
+        {
+          "ref": "21:1",
+          "why": "Opens this surah with the same verb and the same word for heedlessness, describing the same people."
+        },
+        {
+          "ref": "21:14",
+          "why": "Puts nearly the same admission in the mouths of a destroyed town earlier in this surah."
+        },
+        {
+          "ref": "50:22",
+          "why": "Says the covering has been removed and the sight today is sharp, the same shift from inattention to seeing."
+        }
+      ],
+      "applyIt": "Take one thing you have been calling an oversight, something you forgot, did not get round to, did not notice. Ask whether the softer word is accurate. Sometimes it is. When it is not, say the more exact word to yourself once. The correction in this ayah is made voluntarily, and doing it early costs almost nothing.",
+      "exploreFurther": [
+        "21:1-3",
+        "50:19-23",
+        "7:172-173"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.113Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:98-101",
+      "surah": 21,
+      "start": 98,
+      "end": 101,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Fuel And Those Kept Far",
+      "tier": "standard",
+      "meaning": "The argument the surah has been making is settled by an outcome rather than a proof. Whatever was served alongside God ends up in the same place as those who served it, which shows what it was: had they been gods, they would not have gone in. Then the passage turns without transition to the opposite case. Those for whom good had already gone ahead from God are kept far from it, and the phrasing puts the decision earlier than anything they did.",
+      "historicalContext": "Meccan. The surah has spent its length arguing against objects taken alongside God, and the audience maintained such objects at a sanctuary they controlled. The claim that the objects share the fate of their servants was directed at a devotion that expected protection to run the other way. No specific occasion of revelation is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "حَصَبُ",
+          "gloss": "fuel, what is thrown in",
+          "note": "This word occurs only here. It names small stones or debris thrown into a fire to keep it going, so the image is of material fed to something rather than of persons punished by it."
+        },
+        {
+          "arabic": "زَفِيرٌ",
+          "gloss": "a groaning exhalation",
+          "note": "The long outward breath of someone in extremity, and also the sound of a fire drawing air. The Quran uses it three times, and it is a sound rather than a word."
+        },
+        {
+          "arabic": "سَبَقَتْ",
+          "gloss": "went ahead, preceded",
+          "note": "A verb of going before. Placing God's good ahead of them makes the outcome the result of something already settled, which is why the passage can describe the distance as maintained rather than earned."
+        }
+      ],
+      "lifeInProphetsTime": "Keeping a fire alive was daily work. Someone gathered scrub, dung and small stones-worth of debris to bank it through the night, and a household without fuel was cold and could not cook. The word used here belongs to that chore. Describing revered objects as the material shovelled in to maintain a fire was a deliberately undignified way to end a long argument about them.",
+      "didYouKnow": "The word describing what is thrown into the fire occurs only once in the whole Quran. It comes from the vocabulary of small stones and scattered debris, the material used to bank a household fire overnight, and Arabic uses a related term for pebbles. The surah's most serious verdict on the objects it has been arguing about is delivered in a word from the hearth.",
+      "theologicalSignificance": "The refutation is made by outcome rather than by argument, which suits a surah that has already asked twice for proof and received none. On the other side, the good that goes ahead relocates the reader's security away from performance and into something prior. Holding both halves together is the passage's point: the same few lines contain the sharpest verdict in the surah and its most unconditional reassurance.",
+      "crossReferences": [
+        {
+          "ref": "21:24",
+          "why": "Made the demand for proof earlier in this surah that these ayat now settle by outcome instead."
+        },
+        {
+          "ref": "10:26",
+          "why": "Describes the good outcome and more for those who did well, with no gloom covering their faces."
+        },
+        {
+          "ref": "11:106",
+          "why": "Uses the same word for the groaning breath of those in the fire."
+        }
+      ],
+      "applyIt": "Notice the direction of the second half: the good went ahead of them. If you have been treating your standing with God as a running total you are anxiously maintaining, sit with that phrasing for a minute today. It does not remove effort. It puts something in front of your effort that your effort did not have to produce.",
+      "exploreFurther": [
+        "10:25-26",
+        "11:105-108",
+        "41:40-42"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.113Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:102-103",
+      "surah": 21,
+      "start": 102,
+      "end": 103,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "They Will Not Hear It",
+      "tier": "standard",
+      "meaning": "The reward is described first by a subtraction. They do not hear even the faintest sound of the fire, which is a stranger promise than distance: not that they are far from it, but that no trace of it reaches them. Then two positives. They remain in what their own selves desired, so the content is not specified and is left individual. And a fear called the greatest does not reach them either, because angels meet them with a sentence about a day they were promised.",
+      "historicalContext": "Meccan. The passage answers the description of the fire in the ayat just before it, and it is careful to define the reward against that background rather than in isolation. The surah's listeners were being asked to bear present hostility for something they could not see, and the promise given here concerns absence of dread as much as presence of good. No occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "حَسِيسَهَا",
+          "gloss": "its faintest sound",
+          "note": "This word occurs only here. It names the barely audible, a rustle or a whisper of movement, and it is the smallest unit of hearing the language has for what will not reach them."
+        },
+        {
+          "arabic": "ٱشْتَهَتْ",
+          "gloss": "desired, longed for",
+          "note": "A verb for appetite and craving, attributed here to their own selves. The reward is described as whatever each one wanted, which leaves the content unstated and personal to each."
+        },
+        {
+          "arabic": "ٱلْفَزَعُ ٱلْأَكْبَرُ",
+          "gloss": "the greatest terror",
+          "note": "This phrase occurs only here in the Quran. It names a dread by size rather than by cause, and the passage says only that it does not reach them, without describing what it is."
+        }
+      ],
+      "lifeInProphetsTime": "Sound carried far in the desert at night, and safety was often measured by what you could hear. A camp knew it was secure when the night was quiet, and every traveller had lain awake listening for hooves or voices at the edge of hearing. Being told that not even the faintest sound would reach them described security in the terms that audience actually used for it.",
+      "didYouKnow": "Two of the phrases in this short passage occur nowhere else in the Quran: the word for the faintest sound and the name given to the greatest terror. Both describe things the people in question will not experience. The Quran coins its most distinctive expressions here for a sound nobody hears and a fear nobody feels.",
+      "theologicalSignificance": "Reward is defined here largely by absence, which is a serious claim about what people actually want. Not hearing, not being reached by dread, and only then the presence of what each self desired. That order suggests relief precedes pleasure in the order of goods. Leaving the content of the desires unnamed is equally deliberate: the passage declines to describe the reward, and describes instead the conditions under which anything could be enjoyed.",
+      "crossReferences": [
+        {
+          "ref": "43:71",
+          "why": "Describes the same open promise, whatever the souls desire and the eyes delight in."
+        },
+        {
+          "ref": "41:30-31",
+          "why": "Has angels meet them with reassurance, and promises whatever their souls desire."
+        },
+        {
+          "ref": "27:89",
+          "why": "Says whoever comes with a good deed is secure from the terror of that day."
+        }
+      ],
+      "applyIt": "Ask what would actually have to be absent for you to enjoy anything: a worry running in the background, a message you are waiting for, a low hum of dread. Name the one that is loudest today. This passage puts its removal before any description of pleasure, which is probably an accurate account of your own situation.",
+      "exploreFurther": [
+        "43:68-73",
+        "41:30-32",
+        "27:87-89"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.110Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:104",
+      "surah": 21,
+      "start": 104,
+      "end": 104,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Folded Like A Scroll",
+      "tier": "standard",
+      "meaning": "The image is drawn from a writing room. The sky is folded the way a scroll is rolled up over what is written on it, which makes the heavens something that was unrolled and can be put away. Then the argument follows from the picture: as We began the first creation, We repeat it. Commentators note that the reasoning is not about power but about precedent. The line ends with two short statements, a promise binding on Us, and We will do it.",
+      "historicalContext": "Meccan. Resurrection was the single claim Meccan opponents found most absurd, and the surah has been answering it since its opening ayah. The image chosen here comes from the world of documents rather than of nature, which in Mecca meant treaties, debts and the written records kept by scribes. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "نَطْوِى",
+          "gloss": "We fold, We roll up",
+          "note": "The ordinary verb for folding cloth or rolling a scroll. Applying it to the sky treats the visible heavens as a surface that was spread out and can therefore be gathered in again."
+        },
+        {
+          "arabic": "ٱلسِّجِلِّ",
+          "gloss": "the scroll, the register",
+          "note": "This word occurs only here in the Quran. It names a written record kept for reference, and the commentators discuss whether it means the scroll itself or the scribe who rolls it."
+        },
+        {
+          "arabic": "نُّعِيدُهُۥ",
+          "gloss": "We will repeat it",
+          "note": "A verb for doing something again, from a root for returning. The claim is not that a new creation will be made but that the same act will be performed a second time."
+        }
+      ],
+      "lifeInProphetsTime": "Writing in Mecca was rare and consequential. Treaties were inscribed and stored, debts were recorded where the parties could not trust memory, and a document rolled and put away marked a matter concluded. The gesture of rolling a scroll closed something. Using it for the sky told an audience that the world they were standing in was itself a document with a last line.",
+      "didYouKnow": "The word used here for the scroll occurs only once in the whole Quran. It entered Arabic from the vocabulary of the surrounding empires, where written registers were kept and archived, and it is the same root behind the modern word for a register or record. The Quran describes the end of the visible world with an administrative term.",
+      "theologicalSignificance": "The argument from precedent is the passage's core. Something that has already been done once is being described as repeatable, which reframes resurrection from an extraordinary claim into an ordinary inference. The closing phrase changes the register again. Calling it a promise binding upon Himself places the outcome under obligation rather than under mere ability, which is a stronger guarantee than power alone would be.",
+      "crossReferences": [
+        {
+          "ref": "30:27",
+          "why": "Makes the identical argument, that repeating the creation is easier for Him than originating it."
+        },
+        {
+          "ref": "39:67",
+          "why": "Uses the same verb of folding, there of the heavens rolled up in His right hand."
+        },
+        {
+          "ref": "36:78-79",
+          "why": "Answers the same objection about decayed bones with the one who produced them the first time."
+        }
+      ],
+      "applyIt": "Think about how you argue for something you cannot demonstrate. This ayah does not appeal to power; it points at something already done and says it can be done again. Try that structure once today with a person who doubts you about something: not a promise about the future, but an accurate account of the past.",
+      "exploreFurther": [
+        "30:27",
+        "36:77-83",
+        "39:67-68"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.111Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "21:105-108",
       "surah": 21,
       "start": 105,
@@ -406,6 +2842,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:54.046Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:109",
+      "surah": 21,
+      "start": 109,
+      "end": 109,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "I Have Told You Plainly",
+      "tier": "standard",
+      "meaning": "If they turn away, the instruction is not to argue further but to say two things. The first is that they have been informed on equal terms, with nothing held back and no advantage kept. The second is an admission: he does not know whether what they are promised is near or far. Commentators note how unusual the second half is. A messenger is instructed to state the limit of his own knowledge, in the middle of a warning about timing.",
+      "historicalContext": "Meccan. The surah opened with people demanding to know when the promise would come and mocking its absence. These closing ayat answer that demand by conceding it. The Meccan years contained long stretches with no visible progress, and the community had no more information about the schedule than their opponents did. No specific occasion of revelation is reported for this ayah.",
+      "keyTerms": [
+        {
+          "arabic": "ءَاذَنتُكُمْ",
+          "gloss": "I have notified you",
+          "note": "A verb of formal notification, from the root for the ear. It names an announcement made so that no one can later claim not to have been told, which is the point of the phrase that follows."
+        },
+        {
+          "arabic": "عَلَىٰ سَوَآءٍ",
+          "gloss": "on equal terms",
+          "note": "An idiom for a footing where both sides know the same thing. It rules out any private reserve of information, so the warner claims no advantage over the people he is warning."
+        },
+        {
+          "arabic": "وَإِنْ أَدْرِى",
+          "gloss": "and I do not know",
+          "note": "A denial of knowledge, occurring twice in the Quran and both times in this surah's closing lines. It is placed in the mouth of the one delivering the warning, not of those receiving it."
+        }
+      ],
+      "lifeInProphetsTime": "Notice on equal terms was a recognised legal act in Arabia. Before hostilities, a party formally renounced an agreement so that the other side could not claim to have been attacked without warning, and the announcement had to be public and complete. Doing otherwise was treachery. The phrase used here belongs to that practice, and its force came from everyone knowing what a proper notification required.",
+      "didYouKnow": "The phrase in which the Prophet Muhammad (peace be upon him) is instructed to say he does not know occurs in this exact form twice, and both are in these closing ayat of the surah, two lines apart. A surah that spends its length answering demands to know when ends by having its own messenger say twice that he cannot say.",
+      "theologicalSignificance": "The passage separates two things that are usually confused: certainty about a message and knowledge of its timing. The first is asserted, the second is denied, and both are said by the same person in the same breath. That is a model of how confidence and ignorance coexist honestly. It also removes the temptation to defend a claim by pretending to information nobody has.",
+      "crossReferences": [
+        {
+          "ref": "21:111",
+          "why": "Repeats the same denial of knowledge two lines later, about whether this is a trial for them."
+        },
+        {
+          "ref": "72:25",
+          "why": "Has the same instruction to say he does not know whether what is promised is near."
+        },
+        {
+          "ref": "8:58",
+          "why": "Uses the same idiom of equal terms, about returning a treaty openly rather than acting secretly."
+        }
+      ],
+      "applyIt": "Practise the two halves in one sentence today. Say clearly what you do think, and then say plainly what you do not know, without letting the second undermine the first. Most people do one or the other. This ayah puts them side by side and treats the combination as the honest position.",
+      "exploreFurther": [
+        "72:24-28",
+        "21:110-112",
+        "7:187-188"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "21:110-112",
+      "surah": 21,
+      "start": 110,
+      "end": 112,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Whose Help Is Sought",
+      "tier": "standard",
+      "meaning": "Three ayat close the surah and none of them settles the argument. God knows what is said aloud and what is concealed, which answers the private conferring reported at the surah's opening. Then a second admission of not knowing: perhaps this is a trial and an enjoyment for a while. Finally a prayer, brief and without elaboration, asking for judgement with truth, and naming God by the same title the surah has used throughout, with help sought against what they describe.",
+      "historicalContext": "Meccan. The surah ends without vindication, in the middle of an unresolved confrontation, which matches the community's actual position for most of the Meccan years. The name used in the closing line is the same one that Meccans had objected to earlier in the surah, so the last word given to the messenger uses the contested name. No occasion of revelation is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْجَهْرَ",
+          "gloss": "what is spoken aloud",
+          "note": "Open, audible speech, set against what is kept back. The pair answers the surah's opening scene, where the wrongdoers were described conferring privately about what to say in public."
+        },
+        {
+          "arabic": "فِتْنَةٌ",
+          "gloss": "a trial, a testing",
+          "note": "The word for testing metal in fire, covering both the trial and the disorder it exposes. Applied to a delay, it suggests the waiting itself may be the examination rather than an interval before one."
+        },
+        {
+          "arabic": "ٱلْمُسْتَعَانُ",
+          "gloss": "the One whose help is sought",
+          "note": "A passive form, occurring twice in the Quran. The other place is Jacob's response when his sons bring him a story he does not believe, and both uses come at the end of a losing argument."
+        }
+      ],
+      "lifeInProphetsTime": "Formal appeals were how Arabs closed disputes they could not win. A wronged party who had exhausted negotiation would stand and call publicly for judgement, sometimes at the sanctuary itself, and the appeal was heard by everyone present even though no court existed to act on it. The closing prayer of this surah has that shape: a matter handed over in public, with the outcome left open.",
+      "didYouKnow": "The title used in the last line of this surah, the One whose help is sought, occurs twice in the Quran. The other is spoken by Jacob when his sons return with a shirt and an account of a wolf that he tells them he does not accept. Both uses are the words of someone who cannot prove what he knows.",
+      "theologicalSignificance": "The surah ends by handing the matter over rather than resolving it, which is a form of trust rather than of resignation. The admission that the situation may be a trial is important: it allows that the difficulty is purposeful without claiming to know the purpose. And the appeal for judgement with truth asks for the outcome to be correct rather than favourable, which is a harder prayer than it first appears.",
+      "crossReferences": [
+        {
+          "ref": "12:18",
+          "why": "Gives the only other use of this title, in Jacob's reply to an account he does not believe."
+        },
+        {
+          "ref": "21:3",
+          "why": "Opens this surah with the private conferring that the first of these ayat answers."
+        },
+        {
+          "ref": "21:36",
+          "why": "Reports the earlier objection to the same name of God that closes the surah here."
+        }
+      ],
+      "applyIt": "End something today the way this surah does. Take a situation you cannot resolve and say a short sentence over it asking for the true outcome rather than the one you want. Then stop working on it for the rest of the day. The surah's last move is to put a matter down, and it is not the same as giving up.",
+      "exploreFurther": [
+        "12:18",
+        "21:1-5",
+        "10:109"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:15:25.112Z",
         "reviewed": false
       }
     }

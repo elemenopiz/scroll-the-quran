@@ -1,11 +1,14 @@
 import AppShell
 import Commerce
+import FeatureOnboarding
 import FeaturePaywall
 import SwiftUI
 import UserState
 
-/// The app's state machine: onboarding, then the paywall, then the one-time gift offer if
-/// the paywall was dismissed, then the tab bar.
+/// The app's state machine: onboarding, then the paywall, then the one-time gift
+/// offer if the paywall was dismissed, then the tab bar. `FeatureOnboarding` and
+/// `FeaturePaywall` render the first three, so no `PlaceholderScreen` is left on
+/// the funnel.
 ///
 /// Everything long-lived is built once, here, by `AppEnvironment.live()` and handed down:
 /// the bundled content, `UserStore`, and the single StoreKit entitlement store whose
@@ -59,10 +62,19 @@ struct RootView: View {
     private var phaseContent: some View {
         switch flow.phase {
         case .onboarding:
-            OnboardingScreenProvider.screen(id: "onboarding-hook", env: env) {
-                env.user.completeOnboarding()
-                flow.advance()
-            }
+            // Phase 2d: the funnel itself, replacing the Phase 1 placeholder. With a
+            // `--screenshot` route it pins to that screen with fixture state; without
+            // one it resumes from persisted progress. Finishing moves to the paywall,
+            // exactly as `PaywallScreens.view(forScreenID:…)` does below.
+            FeatureOnboardingModule.view(
+                forScreenID: launch.screenshot?.screen.rawValue,
+                // The module does not know about `UserStore`; the funnel is only "done" once
+                // the shell records it, or it replays on the next cold launch.
+                onFinished: {
+                    env.user.completeOnboarding()
+                    flow.advance()
+                }
+            )
         case .paywall, .gift:
             PaywallScreens.view(
                 forScreenID: flow.phase == .gift ? "gift-closed" : "paywall-trial",

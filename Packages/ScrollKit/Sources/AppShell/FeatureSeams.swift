@@ -40,8 +40,9 @@ public enum HomeScreenProvider {
 /// The same seam for `FeatureOnboarding`: the seven `onboarding-*` routes and the first
 /// stage of `RootView`'s state machine.
 ///
-/// **When `FeatureOnboarding` merges**, replace the body of `screen(id:env:onFinished:)`
-/// with `OnboardingFlow(store: env.user, startingAt: id, onFinished: onFinished)`.
+/// `FeatureOnboardingModule` answers by screen id — the ids are `OnboardingStep`'s raw values
+/// plus `onboarding-signin`, which is the hook with the sheet up — so this is a pass-through.
+/// `onFinished` is what `RootView` advances on; a snapshot run never taps it.
 @MainActor
 public enum OnboardingScreenProvider {
     public static let screenIDs = [
@@ -49,20 +50,13 @@ public enum OnboardingScreenProvider {
         "onboarding-slide3", "onboarding-slide4", "onboarding-reviews",
     ]
 
-    public static let isWired = false
+    public static let isWired = true
 
     public static func screen(
         id: String = "onboarding-hook",
-        env: AppEnvironment,
+        env _: AppEnvironment,
         onFinished: @escaping () -> Void
     ) -> some View {
-        VStack(spacing: Spacing.lg) {
-            PlaceholderScreen(screenID: id, title: "Onboarding", systemImage: "sparkle")
-            if !env.launch.isSnapshotRun {
-                Button("Continue", action: onFinished)
-                    .accessibilityIdentifier("stage.continue")
-                    .padding(.bottom, Spacing.xxl)
-            }
-        }
+        FeatureOnboardingModule.view(forScreenID: id, onFinished: onFinished)
     }
 }

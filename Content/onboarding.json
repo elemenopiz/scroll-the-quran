@@ -1,11 +1,12 @@
 {
-  "version": 1,
-  "note": "Every string the onboarding funnel shows. Anything marked \"placeholder\": true is a number or claim we have not earned yet and must be replaced (or the element removed) before submission — App Review treats invented social proof as a rejection.",
+  "version": 2,
+  "note": "Every string the onboarding funnel shows. Anything marked \"placeholder\": true is a number or claim we have not earned yet and must be replaced (or the element removed) before submission — App Review treats invented social proof as a rejection. Slide titles and bodies are written to the line rhythm of the reference captures (two-line title, two-line body) so the layout matches; the words are ours.",
   "hook": {
+    "headlineMarkdown": "The average Muslim will spend ***2+ hours today*** scrolling social media.",
     "headline": [
       { "text": "The average Muslim will spend ", "style": "regular" },
-      { "text": "2+ hours", "style": "boldItalic" },
-      { "text": " today scrolling social media.", "style": "regular" }
+      { "text": "2+ hours today", "style": "boldItalic" },
+      { "text": " scrolling social media.", "style": "regular" }
     ],
     "subheadline": "Let's give some of that time back to Allah.",
     "primaryCTA": "Continue",
@@ -20,48 +21,55 @@
     "emailLabel": "Or use your email address",
     "emailPlaceholder": "you@example.com",
     "emailFootnote": "Stored on this device only. We do not email you.",
-    "recoverCTA": "Recover access",
+    "recoverCTA": "Can't sign in? Recover Access",
+    "recoverMailto": "support@scrollthequran.app",
+    "recoverSubject": "Recover my Scroll the Quran access",
     "skipCTA": "Not now"
   },
   "slides": [
     {
       "id": "onboarding-slide1",
+      "titleLines": 2,
       "eyebrow": "Read",
-      "title": "One ayah at a time",
-      "body": "The Quran, one ayah to a screen, in clear modern English. Swipe down to keep reading. Tap for the meaning behind the line.",
+      "title": "What if scrolling actually fed your heart?",
+      "body": "The Quran, one ayah to a screen, in clear modern English.",
       "mockup": "reader"
     },
     {
       "id": "onboarding-slide2",
+      "titleLines": 3,
       "eyebrow": "Plans",
-      "title": "A plan you will actually finish",
-      "body": "A juz a day through Ramadan, Juz Amma one surah at a time, Al-Kahf on Fridays, or a week each on patience, gratitude and mercy.",
+      "title": "Reading the whole Quran feels impossible, until now.",
+      "body": "A juz a day through Ramadan, or Juz Amma one surah at a time.",
       "mockup": "plans"
     },
     {
       "id": "onboarding-slide3",
+      "titleLines": 2,
       "eyebrow": "Discover",
-      "title": "Something worth stopping on",
-      "body": "A daily feed of ayat with the context that makes them land: what the words mean, when they came down, and what to do about it.",
+      "title": "Every ayah has a story you have not heard.",
+      "body": "A daily feed of ayat with the context that makes them land.",
       "mockup": "discover"
     },
     {
       "id": "onboarding-slide4",
+      "titleLines": 2,
       "eyebrow": "Study",
-      "title": "Go as deep as you want",
-      "body": "Every passage opens into meaning, context of revelation, key Arabic terms in transliteration, related verses and one thing to apply.",
+      "title": "Go deeper into any ayah than ever before.",
+      "body": "Meaning, context of revelation, key Arabic terms, and one thing to apply.",
       "mockup": "deepstudy"
     }
   ],
   "reviews": {
     "title": "Lives are being changed.",
     "subtitle": "Join {{installCount}} Muslims coming back to the Quran.",
+    "subtitleWithoutCount": "Join Muslims coming back to the Quran.",
     "ratingValue": "4.8",
     "ratingCount": "{{reviewCount}}",
     "ratingSuffix": "reviews",
     "primaryCTA": "Continue",
     "placeholder": true,
-    "placeholderNote": "installCount, reviewCount and the star rating are placeholders. Wire them to real App Store values or drop this screen; do not ship invented numbers. The three cards below are written as examples, not quotes from real users.",
+    "placeholderNote": "installCount, reviewCount and the star rating are placeholders. The app renders the rating pill and the count ONLY when real values are injected (OnboardingStats); with none injected it falls back to subtitleWithoutCount and hides the pill. Wire them to real App Store values or drop this screen; do not ship invented numbers. The three cards below are written as examples, not quotes from real users.",
     "cards": [
       {
         "title": "Changed my mornings",
