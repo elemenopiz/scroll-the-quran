@@ -1,7 +1,7 @@
 {
   "surah": 20,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:01:21.485Z",
+  "generatedAt": "2026-09-09T09:11:33.323Z",
   "studies": [
     {
       "key": "20:11-14",
@@ -290,6 +290,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:01:14.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "20:131",
+      "surah": 20,
+      "start": 131,
+      "end": 131,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Splendour And What Is Lasting",
+      "tier": "discover",
+      "meaning": "Three additions make this more than a warning against envy. What others have been given is called the bloom of this life, a word for a flower at its brightest and briefest. Then a purpose is stated for the giving itself: it is a test for them, which reframes what looks like favour. And the closing comparison is doubled, better and more lasting, so the argument turns on quality and duration rather than on quantity.",
+      "historicalContext": "Meccan, from the closing instructions of the surah, immediately after the command to praise at the edges of the day and immediately before the command to tell the household to pray. The classical sources report no specific occasion. The community around the message included many with nothing, while the men rejecting it held the caravan shares, the water rights and the offices of the sanctuary.",
+      "keyTerms": [
+        {
+          "arabic": "زَهْرَةَ",
+          "gloss": "bloom, blossom",
+          "note": "The word for a flower at its most brilliant, and by extension the shine on a thing. It carries the brevity with the beauty, since nobody expects a blossom to hold."
+        },
+        {
+          "arabic": "لِنَفْتِنَهُمْ",
+          "gloss": "so that We test them",
+          "note": "From a root meaning to put metal in fire to separate it from its ore. The word for testing in Arabic is a smelting word, so the giving is described as heat applied rather than as reward."
+        },
+        {
+          "arabic": "أَبْقَىٰ",
+          "gloss": "more lasting",
+          "note": "A comparative from the verb to remain. Pairing it with better means the two provisions are not being ranked by size at all; one simply outlasts the other, which decides the comparison."
+        }
+      ],
+      "lifeInProphetsTime": "Spring in Arabia was short and spectacular. After winter rain the wadis filled with flowers for a few weeks, and then the heat took all of it back to stone and dust. Herders moved to catch that window and knew exactly how long it lasted. Choosing the word for blossom to describe another man's wealth used the one natural event everybody had watched arrive and disappear.",
+      "didYouKnow": "A near-identical instruction appears in an earlier surah, with the same opening verb and the same object. The difference is what each adds: the earlier one follows with gentleness towards believers, this one with the purpose of the test and the comparison of provisions. Reading them together shows the Quran developing an instruction across chapters rather than repeating it.",
+      "theologicalSignificance": "The ayah reassigns what a person is looking at. Abundance in another's hands is not evidence of divine approval; it is described as material for a test whose result is not yet in. That removes the sting from the comparison without denying the difference. And the counter-offer is not that you will get the same later. It is a different provision, named as your Lord's, which is a claim about the source rather than about the amount.",
+      "crossReferences": [
+        {
+          "ref": "15:88",
+          "why": "The earlier form of the same instruction, closing on gentleness rather than on provision."
+        },
+        {
+          "ref": "9:55",
+          "why": "Warns against admiring the wealth and children of others, and gives a reason."
+        },
+        {
+          "ref": "28:79-80",
+          "why": "A crowd envies a man's display, and those given knowledge answer them."
+        }
+      ],
+      "applyIt": "Pick the account or the person whose life you compare yourself to most, and mute them for a week. Not unfollow, not a speech about it: mute. Then notice on day five what you have been thinking about instead. The ayah treats the looking as the mechanism, which means the intervention is on the looking rather than on the feeling.",
+      "exploreFurther": [
+        "15:88",
+        "28:76-83",
+        "57:20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:10:53.787Z",
         "reviewed": false
       }
     }
