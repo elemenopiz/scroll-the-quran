@@ -15,7 +15,7 @@ private let schemaSample = """
   "theme": "Oneness of God",
   "themeId": "tawhid",
   "title": "The Throne Verse",
-  "tier": 1,
+  "tier": "discover",
   "meaning": "The longest single description of God in the Quran.",
   "historicalContext": "Medinan, and widely recited from early on.",
   "keyTerms": [
@@ -53,7 +53,7 @@ func schemaSampleDecodes() throws {
     #expect(study.key == "2:255")
     #expect(study.passage == PassageRef(surah: 2, start: 255, end: 255))
     #expect(study.themeId == "tawhid")
-    #expect(study.tier == 1)
+    #expect(study.tier == .discover)
     #expect(study.keyTerms.count == 2)
     #expect(study.keyTerms[0].gloss == "the Sustainer")
     #expect(study.crossReferences.first?.ref == "112:1-4")
@@ -92,7 +92,7 @@ func passageIsDerivedFromTheKey() throws {
     #expect(study.start == 5)
     #expect(study.end == 6)
     #expect(study.verses.map(\.key) == ["94:5", "94:6"])
-    #expect(study.tier == 1)
+    #expect(study.tier == .standard)
     #expect(study.meta == .unknown)
 }
 
