@@ -1,0 +1,7 @@
+# Phase 2d — Onboarding + sign-in
+Owns: `Packages/ScrollKit/Sources/FeatureOnboarding/**`, `Tests/FeatureOnboardingTests`, `Content/onboarding.json`, `Packages/ScrollKit/Sources/FeatureOnboarding/Resources/**` (mockup images).
+
+Screens (ids in manifest): `onboarding-hook`, `onboarding-signin`, `onboarding-slide1..4`, `onboarding-reviews`. Copy comes from `Content/onboarding.json`; headline supports Markdown bold-italic spans. Slides show our own screens inside `PhoneFrame` (render via `ImageRenderer` at first launch into a cache, or ship PNGs produced by a `Tools/snapshot/render-mockups.sh` once those screens exist — for now use placeholder art with the same frame geometry and note it).
+Sign-in sheet: Sign in with Apple button (real `SignInWithAppleButton`, stores user id in `Prefs.accountId`), optional email field stored locally with note text "We'll use this to sync your library soon" — no fake code flow. "I already signed up on the web" opens the same sheet.
+Flow: `OnboardingFlow` view with `onFinished` callback the RootView uses; progress persisted so relaunch resumes.
+DoD: snapshots hook/sign-in < 0.08, slides/reviews < 0.12; layout spec for hook (headline top ≈ 300 ± 12 pt, Continue frame (30, 732, 333, 60) ± 6 on 393x852); UI test taps through all slides; `Tools/verify.sh --ui --snap onboarding-hook onboarding-signin onboarding-slide1 onboarding-slide2 onboarding-slide3 onboarding-slide4 onboarding-reviews` exits 0.
