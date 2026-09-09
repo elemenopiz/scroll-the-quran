@@ -1,0 +1,20 @@
+{
+  "note": "Parked until Phase 3e routes --screenshot discover into FeatureDiscover; TabRoot still renders the Phase 1 placeholder, so LayoutSpecTests would fail on every element. Drop the .disabled suffix to enrol it. The frames below are the reference geometry read off Reference/discover-dark.png (1179x2556 px = 393x852 pt, pt = px/3), kept as documentation: every element is existenceOnly until the numbers are re-recorded on the simulator with SCROLL_RECORD_SPECS=1.",
+  "id": "discover",
+  "route": "discover",
+  "appearance": "dark",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "elements": [
+    { "name": "discover.card",        "query": "identifier", "existenceOnly": true, "frame": { "x": 16.0,  "y": 120.0, "width": 361.0, "height": 593.7 } },
+    { "name": "discover.themeChip",   "query": "identifier", "existenceOnly": true, "frame": { "x": 145.3, "y": 140.0, "width": 102.7, "height": 26.0 } },
+    { "name": "discover.reference",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 173.0, "width": 321.0, "height": 47.0 } },
+    { "name": "discover.quote",       "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 239.0, "width": 321.0, "height": 52.0 } },
+    { "name": "discover.meaning",     "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 333.7, "width": 321.0, "height": 82.0 } },
+    { "name": "discover.didYouKnow",  "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 427.7, "width": 321.0, "height": 109.7 } },
+    { "name": "discover.deepStudy",   "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0,  "y": 578.0, "width": 321.0, "height": 44.0 } },
+    { "name": "discover.actions.save", "query": "identifier", "existenceOnly": true, "frame": { "x": 36.0, "y": 645.7, "width": 80.3, "height": 44.0 } },
+    { "name": "discover.actions.read", "query": "identifier", "existenceOnly": true, "frame": { "x": 276.7, "y": 645.7, "width": 80.3, "height": 44.0 } },
+    { "name": "Discover", "query": "tabBarButton", "existenceOnly": true, "frame": { "x": 100.7, "y": 772.1, "width": 93.9, "height": 46.8 } }
+  ]
+}

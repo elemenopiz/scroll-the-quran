@@ -10,9 +10,18 @@ enum DiscoverMetrics {
     static let cardInset = Metrics.cardInset
     /// Card top 360 px → theme chip top 420 px: 60 px of padding.
     static let cardPadding: CGFloat = 20
-    /// The card is 1782 px tall inside a 705 pt page: 61 pt above, 50 pt below.
-    static let pageTopPadding: CGFloat = 61
-    static let pageBottomPadding: CGFloat = 50
+    /// Air above and below the card inside its page.
+    ///
+    /// The reference card runs y = 360..2141 px, i.e. 120..713.7 pt of an 852 pt screen —
+    /// 69.7 % of the screen height, sitting a little above centre. Measured on the
+    /// 402x874 pt simulator (which `Tools/snapshot/compare.sh` normalises back to
+    /// 393x852) that is 84 pt of air on each side of a page.
+    ///
+    /// The card centres inside what is left and grows past the reference band when it
+    /// has to: our card carries a muted Arabic line the reference has no equivalent of
+    /// (CLAUDE.md rule 5), which is worth about 24 pt, and a four-line ayah instead of
+    /// the reference's three.
+    static let pagePadding: CGFloat = 84
     /// "James 1:2-3": cap height 81 px.
     static let referenceSize: CGFloat = 44
     /// "KJV": 13 pt, set very wide.
@@ -124,6 +133,7 @@ struct DiscoverCard: View {
                     .foregroundStyle(Color.textPrimary)
                     .lineLimit(DiscoverMetrics.meaningLines)
                     .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.top, Spacing.xl)
@@ -150,6 +160,7 @@ struct DiscoverCard: View {
                         .font(.serifBody(DiscoverMetrics.bodySize))
                         .foregroundStyle(Color.textPrimary)
                         .lineLimit(DiscoverMetrics.didYouKnowLines)
+                        .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }

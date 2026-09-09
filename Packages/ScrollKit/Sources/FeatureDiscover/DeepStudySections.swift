@@ -23,9 +23,18 @@ enum DeepStudyMetrics {
     static let rowRadius = Radius.chip
     static let rowGap: CGFloat = 6
     /// The bold reference column inside a cross-reference row (x 111 → 470 px).
-    static let refColumnWidth: CGFloat = 112
+    /// Widened from the measured 112 pt because a surah name plus its numbers
+    /// ("Al-An'am 6:153") is longer than the reference's "1 Peter 1:6-7".
+    static let refColumnWidth: CGFloat = 124
     /// The book glyph that jumps to the reader.
     static let rowGlyph: CGFloat = 17
+    /// The pinned circular buttons float over the content, so the scroll content is
+    /// inset by their band: a section scrolled to by `--screenshot deepstudy#<id>`
+    /// lands under them otherwise. deepstudy-mid puts ORIGINAL LANGUAGE at 107 pt,
+    /// 48 pt below the top of the content area.
+    static let scrollTopInset: CGFloat = 46
+    /// Chip top at 121 pt on deepstudy-top, less the safe area and `scrollTopInset`.
+    static let headerTopPadding: CGFloat = 16
 }
 
 /// A caps label with the little copy button the reference draws beside it.

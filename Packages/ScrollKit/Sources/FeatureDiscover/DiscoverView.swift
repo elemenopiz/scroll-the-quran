@@ -126,13 +126,13 @@ public struct DiscoverView: View {
                     },
                     onMarkRead: { markRead(presentation.passage) }
                 )
+                .frame(maxHeight: .infinity)
             } else {
                 StudyComingSoonCard(reference: presentation.reference)
             }
         }
         .padding(.horizontal, DiscoverMetrics.cardInset)
-        .padding(.top, DiscoverMetrics.pageTopPadding)
-        .padding(.bottom, DiscoverMetrics.pageBottomPadding)
+        .padding(.vertical, DiscoverMetrics.pagePadding)
     }
 
     // MARK: - Data

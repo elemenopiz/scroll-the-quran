@@ -62,6 +62,7 @@ public struct DeepStudyView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             .scrollIndicators(.visible)
+            .contentMargins(.top, DeepStudyMetrics.scrollTopInset, for: .scrollContent)
             .background(Color.appBackgroundFlat)
             .task {
                 if let anchor {
@@ -120,7 +121,7 @@ public struct DeepStudyView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, Spacing.pageMargin)
-        .padding(.top, 62)
+        .padding(.top, DeepStudyMetrics.headerTopPadding)
     }
 
     private var quoteBox: some View {
