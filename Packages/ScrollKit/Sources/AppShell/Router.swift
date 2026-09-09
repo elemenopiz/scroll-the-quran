@@ -43,7 +43,16 @@ public enum AppTab: String, CaseIterable, Identifiable, Sendable {
 public protocol Router: AnyObject {
     func selectTab(_ tab: AppTab)
     func open(verse: VerseRef)
-    func openDeepStudy(passage: PassageRef)
+    /// Opens Deep Study on a study unit key (`"2:255"`, `"94:5-6"`) — the id
+    /// `Content/discover.json` and `Content/study/*` use.
+    func openDeepStudy(key: String)
+}
+
+public extension Router {
+    /// Convenience for callers that already hold a `PassageRef`.
+    func openDeepStudy(passage: PassageRef) {
+        openDeepStudy(key: passage.key)
+    }
 }
 
 /// Deep-link parsing for the `scrollthequran` URL scheme.
@@ -54,7 +63,8 @@ public enum DeepLink: Equatable, Sendable {
 
     public static let scheme = "scrollthequran"
 
-    /// `scrollthequran://verse/2/255`, `scrollthequran://study/94/5-6`, `scrollthequran://tab/home`.
+    /// `scrollthequran://verse/2/255`, `scrollthequran://study/94:5-6` (or the split
+    /// `study/94/5-6`), `scrollthequran://tab/home`.
     public init?(url: URL) {
         guard url.scheme == DeepLink.scheme else { return nil }
         let path = url.pathComponents.filter { $0 != "/" }
@@ -64,7 +74,15 @@ public enum DeepLink: Equatable, Sendable {
                   surah >= 1, ayah >= 1 else { return nil }
             self = .verse(VerseRef(surah: surah, ayah: ayah))
         case "study":
-            guard path.count == 2, let passage = PassageRef(key: "\(path[0]):\(path[1])") else { return nil }
+            // `study/<key>` is the widget/share form; `study/<surah>/<range>` is kept
+            // because the Phase 1 tests and any already-shared link use it.
+            let key: String
+            switch path.count {
+            case 1: key = path[0]
+            case 2: key = "\(path[0]):\(path[1])"
+            default: return nil
+            }
+            guard let passage = PassageRef(key: key) else { return nil }
             self = .study(passage)
         case "tab":
             guard path.count == 1, let tab = AppTab(rawValue: path[0]) else { return nil }

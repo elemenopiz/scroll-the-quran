@@ -2,40 +2,54 @@ import AppShell
 import Commerce
 import FeaturePaywall
 import SwiftUI
+import UserState
 
-/// The app's state machine: onboarding, then the paywall, then the one-time gift
-/// offer if the paywall was dismissed, then the tab bar. Phase 1 renders labelled
-/// placeholders for the first three; `FeatureOnboarding` and `FeaturePaywall`
-/// replace them in Phase 3.
+/// The app's state machine: onboarding, then the paywall, then the one-time gift offer if
+/// the paywall was dismissed, then the tab bar.
 ///
-/// `--screenshot <id>` routes straight to a screen and `SCROLL_FIXED_DATE` pins
-/// "today", so every screen is capturable headlessly and deterministically.
+/// Everything long-lived is built once, here, by `AppEnvironment.live()` and handed down:
+/// the bundled content, `UserStore`, and the single StoreKit entitlement store whose
+/// `Transaction.updates` listener has to be running before the paywall appears.
+///
+/// `--screenshot <id>` bypasses the state machine and asks `ScreenRegistry` for that screen
+/// directly, and `SCROLL_FIXED_DATE` pins "today", so every screen is capturable headlessly
+/// and deterministically.
 struct RootView: View {
     private let launch: LaunchOptions
+    @State private var env: AppEnvironment
     @State private var flow: RootFlowModel
     @State private var tabs: TabRootModel
-    @State private var entitlements = MockEntitlementStore()
-    @State private var offers = InMemoryOneTimeOfferStore()
 
     init(launch: LaunchOptions = .live) {
         self.launch = launch
-        _flow = State(initialValue: RootFlowModel(launch: launch))
+        let environment = AppEnvironment.live(launch: launch)
+        _env = State(initialValue: environment)
+        _flow = State(
+            initialValue: RootFlowModel(
+                launch: launch,
+                onboardingDone: environment.user.prefs.onboardingDone,
+                subscribed: environment.entitlements.isPremium
+            )
+        )
         _tabs = State(initialValue: TabRootModel(selection: launch.screenshot?.tab ?? .home))
     }
 
     var body: some View {
         content
-            .environment(\.appToday, launch.fixedDate ?? Date())
-            .onOpenURL { url in
-                guard let link = DeepLink(url: url) else { return }
-                tabs.handle(link)
+            .environment(\.appToday, env.today)
+            .task {
+                await env.start()
+                if let url = launch.openURL {
+                    open(url)
+                }
             }
+            .onOpenURL { open($0) }
     }
 
     @ViewBuilder
     private var content: some View {
-        if launch.screenshot?.screen == .gallery {
-            GalleryScreen()
+        if let route = launch.screenshot {
+            ScreenRegistry.screen(for: route, env: env) { flow.advance() }
         } else {
             phaseContent
         }
@@ -45,32 +59,40 @@ struct RootView: View {
     private var phaseContent: some View {
         switch flow.phase {
         case .onboarding:
-            stage(id: launch.screenshot?.screen.rawValue ?? "onboarding-hook",
-                  title: "Onboarding",
-                  systemImage: "sparkle")
+            OnboardingScreenProvider.screen(id: "onboarding-hook", env: env) {
+                env.user.completeOnboarding()
+                flow.advance()
+            }
         case .paywall, .gift:
             PaywallScreens.view(
-                forScreenID: launch.screenshot?.screen.rawValue
-                    ?? (flow.phase == .gift ? "gift-closed" : "paywall-trial"),
-                store: entitlements,
-                offers: offers,
-                onDismiss: { flow.advance() },
+                forScreenID: flow.phase == .gift ? "gift-closed" : "paywall-trial",
+                store: env.entitlements,
+                offers: env.offers,
+                onDismiss: dismissPaywall,
                 onPurchased: { flow.advance() }
             )
         case .tabs:
-            TabRoot(model: tabs)
+            TabRoot(env: env, model: tabs)
         }
     }
 
-    private func stage(id: String, title: String, systemImage: String) -> some View {
-        VStack(spacing: 24) {
-            PlaceholderScreen(screenID: id, title: title, systemImage: systemImage)
-            if !launch.isSnapshotRun {
-                Button("Continue") { flow.advance() }
-                    .accessibilityIdentifier("stage.continue")
-                    .padding(.bottom, 40)
-            }
+    /// Dismissing the trial paywall earns the one-time gift offer, once ever; dismissing
+    /// the gift itself goes straight to the tabs.
+    private func dismissPaywall() {
+        if flow.phase == .gift {
+            env.user.markOneTimeOfferSeen()
+            flow.advance()
+        } else {
+            flow.dismissPaywall(seenOneTimeOffer: env.user.hasSeenOneTimeOffer)
         }
+    }
+
+    /// A deep link always ends on the tab bar, even on a cold launch that would otherwise
+    /// have started in onboarding — a widget tap must land on its ayah.
+    private func open(_ url: URL) {
+        guard let link = DeepLink(url: url) else { return }
+        flow.enterTabs()
+        tabs.handle(link)
     }
 }
 

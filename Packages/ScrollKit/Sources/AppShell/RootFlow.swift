@@ -22,7 +22,7 @@ public final class RootFlowModel {
         self.launch = launch
         if let screen = launch.screenshot?.screen {
             phase = RootFlowModel.phase(forScreenshot: screen)
-        } else if subscribed || onboardingDone {
+        } else if launch.startsOnTabs || subscribed || onboardingDone {
             phase = .tabs
         } else {
             phase = .onboarding
@@ -37,6 +37,12 @@ public final class RootFlowModel {
         case .gift: phase = .tabs
         case .tabs: break
         }
+    }
+
+    /// Jump straight to the tab bar. A deep link (`scrollthequran://verse/2/255`) has to land
+    /// on the verse even on a cold launch that would otherwise start in onboarding.
+    public func enterTabs() {
+        phase = .tabs
     }
 
     /// Dismissing the paywall without buying earns the one-time discounted offer.
