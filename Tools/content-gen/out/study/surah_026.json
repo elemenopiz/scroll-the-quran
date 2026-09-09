@@ -1,7 +1,7 @@
 {
   "surah": 26,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T14:57:05.357Z",
+  "generatedAt": "2026-09-09T15:03:52.366Z",
   "studies": [
     {
       "key": "26:1-4",
@@ -348,6 +348,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T14:57:05.252Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:24-27",
+      "surah": 26,
+      "start": 24,
+      "end": 27,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Lord Of All Between Them",
+      "tier": "standard",
+      "meaning": "Pharaoh asks what the Lord of the worlds is, and Moses does not define. He describes a scope: the heavens, the earth, everything between them. The answer is a boundary, not a portrait. Pharaoh turns to the room instead of replying, inviting the court to hear how absurd it sounded, and Moses simply extends the scope backwards to their own ancestors. Then comes the label that ends every serious conversation. This messenger of yours is possessed.",
+      "historicalContext": "Meccan. The Egyptian court had gods with names, functions and temples, so a question about which one this was had a normal answer, and Moses declines to give one of that kind. Meanwhile the Quraysh were answering the Prophet Muhammad (peace be upon him) with the same word Pharaoh uses at the end here, saying he was possessed. The surah puts an old confrontation and a present one in the same vocabulary. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "مُّوقِنِينَ",
+          "gloss": "those who are certain",
+          "note": "From a root for knowledge that has settled beyond doubt. Moses attaches his answer to a condition, so the description only reaches people already willing to be convinced by it."
+        },
+        {
+          "arabic": "أَلَا تَسْتَمِعُونَ",
+          "gloss": "do you not hear this",
+          "note": "Pharaoh speaks past Moses to the men around him. The verb is for listening attentively, and the question invites the court to treat an answer as a performance rather than a claim."
+        },
+        {
+          "arabic": "لَمَجْنُونٌ",
+          "gloss": "possessed, out of his mind",
+          "note": "Literally covered or affected by unseen beings, the standard Arabian explanation for speech that did not fit. It was also the charge the Quraysh brought, so the word arrives in the surah already loaded."
+        }
+      ],
+      "lifeInProphetsTime": "Calling a man possessed was not name-calling in Arabia; it was a diagnosis with social consequences. The poet and the soothsayer were both understood to be in contact with unseen beings, and that contact explained speech that ordinary men could not produce. The charge therefore did two things at once: it accounted for the eloquence and it removed the speaker's responsibility for it. You did not argue with someone possessed. You made allowances.",
+      "didYouKnow": "Moses speaks three times in this exchange and widens the frame each time: the heavens and the earth, then their fathers, then the east and the west in the next ayah. He never names a god or gives an attribute. Pharaoh never answers the answer; he changes audience once and then changes subject to the speaker's sanity.",
+      "theologicalSignificance": "God is answered for by extent rather than by identity. Every reply names a span and refuses a portrait, which keeps the description from becoming one item in a list of gods. That is the point of the exchange: Pharaoh's question assumes a pantheon and expects a slot to be filled, and the answer will not fill one. What cannot be located among other things also cannot be compared with them, and comparison is what the question was for.",
+      "crossReferences": [
+        {
+          "ref": "26:28",
+          "why": "Continues the same answer, widening it a third time to the east and the west."
+        },
+        {
+          "ref": "51:52",
+          "why": "Says every messenger before was met with the words sorcerer or possessed, the charge made here."
+        },
+        {
+          "ref": "42:11",
+          "why": "Denies that anything is like Him, which is the principle behind refusing to name a comparison."
+        }
+      ],
+      "applyIt": "Notice the next time you handle a difficult claim by describing the person who made it. He is angry, she is naive, they are obsessed. It is quick and it feels like analysis. Try answering the claim instead, once, out loud or on paper. Pharaoh's move is available to everyone, and it works by ending the conversation without appearing to.",
+      "exploreFurther": [
+        "51:52-53",
+        "42:11",
+        "20:49-52"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.262Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:28-31",
+      "surah": 26,
+      "start": 28,
+      "end": 31,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Even If I Bring You Proof",
+      "tier": "standard",
+      "meaning": "Moses widens the answer once more, this time along the horizon, and adds a second condition: if you would use your minds. Pharaoh drops argument entirely and reaches for the cell. The threat is precise about method, that Moses will be made one of the imprisoned, which the commentators note was a worse fate in Egypt than the word suggests. Moses answers a threat with an offer. Even if I bring you something plain? And Pharaoh, who has just refused to reason, agrees to look.",
+      "historicalContext": "Meccan. Imprisonment in the ancient world was not a sentence served but a disappearance: a man was put somewhere and not heard of again. The commentators describe the Egyptian threat in those terms, which is why Moses treats it as a threat to his life rather than to his liberty. The exchange stands at the hinge of the account, where words end and the signs begin. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "تَعْقِلُونَ",
+          "gloss": "you use your minds",
+          "note": "From the word for a tether that keeps a camel from wandering. Reason in Arabic is a restraint on the self, so the challenge is about self-control as much as about intelligence."
+        },
+        {
+          "arabic": "ٱلْمَسْجُونِينَ",
+          "gloss": "the imprisoned ones",
+          "note": "A definite plural, so the threat is to place Moses inside an existing category of people already shut away. The word occurs nowhere else in the Quran in this form."
+        },
+        {
+          "arabic": "ٱلصَّـٰدِقِينَ",
+          "gloss": "the truthful ones",
+          "note": "Pharaoh's condition for looking at the sign is that Moses belong to the truthful, which quietly makes the demonstration a test of character rather than of evidence. The word runs through the surah's other episodes too."
+        }
+      ],
+      "lifeInProphetsTime": "Threatening a troublesome speaker with confinement was familiar to the Meccans in a local form. A man who broke with his clan lost the protection that kept him alive, and the community had already tried a boycott, cutting a whole group off from trade and marriage for a period of years. Nobody in that audience needed the mechanics of the threat explained. They had watched a version of it work.",
+      "didYouKnow": "The word for the imprisoned that Pharaoh threatens Moses with occurs in this form nowhere else in the Quran. Moses' two answers in this exchange each end on a condition about the listener rather than about God: if you were certain, and if you would use your minds. The description is given, and the capacity to receive it is placed on the other side.",
+      "theologicalSignificance": "Force enters the exchange the moment argument runs out, and the sequence is worth noticing: three answers, no reply to any of them, then a cell. The passage treats that as the natural progression rather than as a scandal. What follows is stranger. Moses does not withdraw and does not escalate; he offers evidence to a man who has just announced he will not be persuaded. The offer is made anyway, which is what being sent means here.",
+      "crossReferences": [
+        {
+          "ref": "40:26-28",
+          "why": "Shows the same court, with a threat to kill Moses and one man arguing against it."
+        },
+        {
+          "ref": "17:101-102",
+          "why": "Reports Pharaoh being shown nine clear signs and answering with the same accusation."
+        },
+        {
+          "ref": "12:33",
+          "why": "Uses the same imagery of prison, chosen there by a prophet over what he was being pressed to do."
+        }
+      ],
+      "applyIt": "Watch for the moment a disagreement stops being about the question. Someone raises their voice, or brings up your job, or says this is not up for discussion. That is the point where the argument ended. Notice it when it happens, without announcing it, and decide deliberately what to do next rather than escalating along with it.",
+      "exploreFurther": [
+        "40:23-29",
+        "17:101-104",
+        "12:33-35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.266Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:32-35",
+      "surah": 26,
+      "start": 32,
+      "end": 35,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Named Magic On Sight",
+      "tier": "standard",
+      "meaning": "Two signs, described in six words each. A staff becomes a serpent, plainly; a hand comes out white to whoever is looking. Neither is explained. Pharaoh's response is instant and it is not disbelief: he classifies. This is a skilled magician. Having named the category he moves to consequences, and the consequence he chooses is political. The man wants to drive you out of your land. Then he asks the court what to do, which turns a question about truth into a question about tactics.",
+      "historicalContext": "Meccan. Egypt was known throughout the region for its priestly craft, so magician was the available professional category for what Moses had just done, not an insult invented on the spot. The commentators note that Pharaoh's charge about the land is addressed to his nobles rather than to Moses, since a threat to property and position moves a court faster than a claim about God. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "ثُعْبَانٌ",
+          "gloss": "a serpent, a large snake",
+          "note": "A word for a full-sized snake rather than the small one another surah uses for the same event. The commentators reconcile them by size at different moments; the word occurs twice in the Quran."
+        },
+        {
+          "arabic": "ٱلْمَلَإِ",
+          "gloss": "the chiefs, the assembly",
+          "note": "The body of leading men around a ruler, the same word used for the notables of Mecca. It names those whose agreement a decision needs, which is why Pharaoh turns to them before acting."
+        },
+        {
+          "arabic": "لَسَـٰحِرٌ عَلِيمٌ",
+          "gloss": "a knowing magician",
+          "note": "The second word means learned, so the charge concedes expertise while denying the source. It is the most efficient form of dismissal available: not a fraud, a professional, and therefore explained."
+        }
+      ],
+      "lifeInProphetsTime": "The Quraysh made exactly this move about the Quran. It was called poetry, then soothsaying, then magic, and each label came with a known kind of person attached and a known way of discounting him. The classical sources report the Meccan leaders conferring before a pilgrimage season on which term to settle on, because the labels contradicted each other. Naming a thing was how an unfamiliar claim was kept from having to be answered.",
+      "didYouKnow": "The word used here for the serpent appears twice in the Quran and both times of this event, while two other surahs describe the same staff with a word for a small darting snake. The classical commentators treat the difference as stages of one transformation rather than as a discrepancy, and they say so openly rather than harmonising it away.",
+      "theologicalSignificance": "A sign is shown to be insufficient by itself. Two of them are given, both public and both immediate, and they change nothing, because a category was available that could absorb them. That is the passage's claim about evidence: what a person sees is filtered through what they already have a name for, and a name can be found for almost anything. The refusal then dresses itself as concern for the community's safety.",
+      "crossReferences": [
+        {
+          "ref": "7:106-110",
+          "why": "Gives the same two signs and the same charge, with the court repeating the fear about land."
+        },
+        {
+          "ref": "20:56-58",
+          "why": "Records Pharaoh calling the signs magic and proposing a contest at a fixed place."
+        },
+        {
+          "ref": "27:13-14",
+          "why": "Says they rejected the signs while inwardly certain of them, out of arrogance."
+        }
+      ],
+      "applyIt": "Catch yourself putting someone in a box today. He is just being defensive, she is only saying that because of her background, they are all the same. The box may even be accurate. Notice that the moment you close it, you stop having to consider what was actually said. Reopen one box before the day ends.",
+      "exploreFurther": [
+        "7:103-126",
+        "20:56-73",
+        "27:12-14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.266Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:36-40",
+      "surah": 26,
+      "start": 36,
+      "end": 40,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Whoever Turns Out To Win",
+      "tier": "standard",
+      "meaning": "The court's advice is procedural. Hold him off, send gatherers through the cities, bring back every expert. What follows is a state doing what states do: an appointment fixed for a known day, an announcement, a crowd assembled. Then the crowd's own sentence, which is the sharpest thing in the passage. We may follow the magicians, if they turn out to be the winners. Nobody has asked which side is right. The question is which side will hold the field.",
+      "historicalContext": "Meccan. The day named is identified in another surah as a festival, so the contest was staged when the population was already assembled and watching. The commentators note the political calculation: a public defeat of Moses in front of the whole city would settle the matter more thoroughly than a quiet arrest. No occasion is reported for these ayat, which move the account from a court exchange to a national event.",
+      "keyTerms": [
+        {
+          "arabic": "أَرْجِهْ",
+          "gloss": "hold him off, postpone him",
+          "note": "An imperative meaning to defer or keep waiting. The advice is not to answer Moses but to delay him, which buys the time the rest of the plan needs and concedes that no answer is ready."
+        },
+        {
+          "arabic": "سَحَّارٍ",
+          "gloss": "a master magician",
+          "note": "An intensive form of the ordinary word, so not a magician but a great one. It occurs once in the Quran, and the escalation is in the grammar: Pharaoh's men want the best available, not merely more."
+        },
+        {
+          "arabic": "ٱلْغَـٰلِبِينَ",
+          "gloss": "the victors, the winners",
+          "note": "The word for winning a contest, not for being right. The crowd uses it, and then the magicians use it twice, and no word for truth appears anywhere in the arrangements being made."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca ran on public contests. Poets competed at the seasonal fair at Ukaz, crowds gathered, judgements were given, and a tribe's standing rose or fell with its champion. Everyone in that audience had watched a verdict follow a performance rather than an argument. The scene being described, a proclaimed day, a summoned crowd and a contest whose outcome would decide what people believed, was a familiar civic event.",
+      "didYouKnow": "The word for the magicians Pharaoh's men want is an intensive form that occurs once in the Quran; everywhere else the ordinary word is used. The crowd's stated reason for coming is preserved without comment: they may follow the magicians if the magicians win. The Quran records the sentence and passes on, and the same crowd is not mentioned again.",
+      "theologicalSignificance": "Allegiance is shown attaching itself to outcome rather than to content, and the passage does not moralise about it. The crowd is not condemned; it is simply quoted, and the quotation does the work. What follows in the account undoes the calculation, since the side that wins is the side the crowd was not organised to support. But the disposition described here survives every result. People who follow winners will follow the next one too.",
+      "crossReferences": [
+        {
+          "ref": "20:58-60",
+          "why": "Sets the same appointment, naming the day as a festival and an open place."
+        },
+        {
+          "ref": "7:111-114",
+          "why": "Gives the same advice about summoning magicians and the same bargaining over reward."
+        },
+        {
+          "ref": "2:170",
+          "why": "Names the same logic in another form, following what the fathers did rather than what is shown."
+        }
+      ],
+      "applyIt": "Pick one opinion you hold and ask honestly when you started holding it. If the answer is around the time the people you respect started holding it, that is worth knowing. You do not have to change it. Just separate the two questions for a minute: is this true, and is this what my side says. They are not the same question.",
+      "exploreFurther": [
+        "20:56-64",
+        "7:109-116",
+        "2:170"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.266Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:41-44",
+      "surah": 26,
+      "start": 41,
+      "end": 44,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Is There A Reward For Us",
+      "tier": "standard",
+      "meaning": "The magicians arrive and negotiate before they perform. Their first sentence is about the fee. Pharaoh raises the offer without being pressed, adding nearness to the throne to the money, which is the more valuable half. Then Moses gives them the floor with a courtesy that costs him nothing and concedes nothing: throw what you are going to throw. They do, and swear by Pharaoh's might as they do it, which names exactly what they are actually working for.",
+      "historicalContext": "Meccan. Court magicians in Egypt were professionals with a livelihood at stake, and the commentators read the opening question as ordinary contract negotiation rather than greed. The oath by Pharaoh's might is the only oath of its kind in the Quran, and the audience in Mecca swore by their own gods and their own chiefs in the same way. No occasion is reported for the exchange.",
+      "keyTerms": [
+        {
+          "arabic": "لَأَجْرًا",
+          "gloss": "a wage, a fee",
+          "note": "The commercial word for payment for work. It is the same word other prophets use when they refuse any, five times over in this surah, which sets the magicians' opening question against the surah's own refrain."
+        },
+        {
+          "arabic": "ٱلْمُقَرَّبِينَ",
+          "gloss": "those brought near",
+          "note": "A court term for the inner circle admitted to the ruler's presence. The Quran uses the same word elsewhere for nearness to God, so the offer here is a smaller version of the thing it competes with."
+        },
+        {
+          "arabic": "بِعِزَّةِ فِرْعَوْنَ",
+          "gloss": "by Pharaoh's might",
+          "note": "An oath sworn by the power of a man. The phrase occurs once in the Quran, and the same word for might stands as one of God's names in the refrain that closes each episode of this surah."
+        }
+      ],
+      "lifeInProphetsTime": "Nearness to a chief was the real currency in Mecca too. A man's access to the men who decided things determined what he could charge, whom he could marry his daughters to and whether a grievance of his was heard. Money could be earned by anyone with a caravan share. Proximity could not, and it was understood to be the thing worth more, which is why Pharaoh offers it second.",
+      "didYouKnow": "The oath sworn here by a man's might occurs once in the Quran. The word for the nearness Pharaoh offers appears elsewhere for those brought near to God, including in the announcement made to Mary about her son. And the word for the fee the magicians ask about is the same one five prophets in this surah use to say they want none.",
+      "theologicalSignificance": "Everyone in the scene is working for something and the passage names each price without editorialising. The magicians want a fee and a place at court; Pharaoh wants a result and pays for it; the crowd wants to be on the winning side. Only Moses is described doing something with no stated return, and his single line does not argue, threaten or pray. He hands the floor to his opponents, which is what confidence in a case looks like.",
+      "crossReferences": [
+        {
+          "ref": "7:113-116",
+          "why": "Gives the same negotiation over payment and the same invitation to throw first."
+        },
+        {
+          "ref": "26:109",
+          "why": "Puts the refusal of any fee in Noah's mouth, the first of five identical statements here."
+        },
+        {
+          "ref": "20:65-66",
+          "why": "Records the same offer to throw first, with Moses answering that they may go ahead."
+        }
+      ],
+      "applyIt": "Write down what you are actually being paid for in the thing you spend most of your week on. Not the job title, the exchange: this much money, this much standing, this much of your attention. It is not a moral exercise and there is no correct answer. Most people have never put the terms of their own arrangement into a sentence.",
+      "exploreFurther": [
+        "7:113-126",
+        "20:65-73",
+        "26:109-113"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.266Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "26:45-48",
+      "surah": 26,
+      "start": 45,
+      "end": 48,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Thrown Down In Prostration",
+      "tier": "standard",
+      "meaning": "Moses throws, and the staff begins swallowing what they had fabricated. Then the sentence that carries the whole scene: the magicians were thrown down prostrating. The verb is passive. They do not fall; they are put down, by the same word used four times in the preceding lines for casting a staff or a rope. And their first words name the Lord of the worlds, then correct themselves to make sure nobody thinks they mean Pharaoh: the Lord of Moses and Aaron.",
+      "historicalContext": "Meccan. These were the professionals summoned from every city, the men best placed to know what a trick looks like, and the commentators make that the point of the story: the verdict comes from expert witnesses. The addition naming Moses and Aaron is explained as forestalling the obvious misreading, since Pharaoh claimed lordship himself and had done so in this surah. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "تَلْقَفُ",
+          "gloss": "it swallows, snatches up",
+          "note": "A verb for seizing something quickly with the mouth. It is used of this staff in three surahs and nowhere else, and it describes a taking in rather than a destroying."
+        },
+        {
+          "arabic": "فَأُلْقِىَ",
+          "gloss": "they were thrown down",
+          "note": "A passive from the same verb used for throwing the staffs and ropes. The magicians are described as having been cast down rather than as having knelt, which puts the movement outside their decision."
+        },
+        {
+          "arabic": "يَأْفِكُونَ",
+          "gloss": "what they were faking",
+          "note": "From a root for turning a thing away from its proper direction, used of lies and of overturned towns. It names their work as inversion rather than as invention, and it occurs twice in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "An expert's public reversal was rare and expensive. A poet who conceded another's superiority at the fair lost commissions; a guide who admitted he had misread the stars did not lead again. The men in this scene had been brought in from every city, paid, and promised a place at court, and they gave all of it up in the length of one sentence, in front of the person who had hired them.",
+      "didYouKnow": "The verb for throwing runs through five consecutive scenes of this account: Moses casts his staff, the magicians are told to cast, they cast, Moses casts again, and then they themselves are cast down. The last use is passive, and it is the only one where the thing thrown is a person.",
+      "theologicalSignificance": "Recognition is described as something that happens to a person rather than something they perform. The grammar does the theology: they are thrown down, and belief follows the body rather than preceding it. It also matters who these witnesses are. Nobody was better placed to explain the event away, and the ones who could not explain it were the ones who knew the craft. Expertise, here, is what makes the recognition credible.",
+      "crossReferences": [
+        {
+          "ref": "7:117-122",
+          "why": "Tells the same reversal, with the magicians naming the Lord of Moses and Aaron."
+        },
+        {
+          "ref": "20:69-70",
+          "why": "Uses the same verb for the staff swallowing, and reports the same prostration."
+        },
+        {
+          "ref": "26:49-51",
+          "why": "Gives Pharaoh's response and the magicians' answer, which is the rest of this scene."
+        }
+      ],
+      "applyIt": "Think of one thing you have been arguing for that you have quietly stopped believing. Say it to one person this week, plainly, without a long preamble about how you got there. The magicians change position in a single sentence and lose everything they were promised. Most of the cost people fear in changing their mind is the explaining.",
+      "exploreFurther": [
+        "7:117-126",
+        "20:69-76",
+        "26:49-51"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:03:52.266Z",
         "reviewed": false
       }
     },
