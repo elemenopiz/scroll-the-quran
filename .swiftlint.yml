@@ -11,7 +11,8 @@ line_length:
   ignores_comments: true
 
 identifier_name:
-  min_length: 2
+  min_length: 1
+  excluded: [x, y, id]
 
 disabled_rules:
   - trailing_comma

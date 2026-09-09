@@ -27,9 +27,10 @@ public struct PlaceholderScreen: View {
                 Text(screenID)
                     .capsLabelStyle()
                     .foregroundStyle(Color.textSecondary)
-                    .accessibilityIdentifier("screen.id")
+                    .accessibilityIdentifier("screen.\(screenID).label")
             }
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.\(screenID)")
     }
 }

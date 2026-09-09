@@ -1,0 +1,14 @@
+{
+  "id": "tabbar",
+  "route": "home",
+  "appearance": "dark",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 4,
+  "elements": [
+    { "name": "Community",  "query": "tabBarButton", "frame": { "x": 2.0,   "y": 772.1, "width": 94.8, "height": 46.8 } },
+    { "name": "Discover",   "query": "tabBarButton", "frame": { "x": 100.7, "y": 772.1, "width": 93.9, "height": 46.8 } },
+    { "name": "Home",       "query": "tabBarButton", "frame": { "x": 198.5, "y": 772.1, "width": 94.8, "height": 46.8 } },
+    { "name": "The Quran",  "query": "tabBarButton", "frame": { "x": 297.2, "y": 772.1, "width": 93.9, "height": 46.8 } },
+    { "name": "screen.home.label", "query": "staticText", "frame": { "x": 175.8, "y": 458.7, "width": 41.4, "height": 14.0 }, "tolerance": 8 }
+  ]
+}
