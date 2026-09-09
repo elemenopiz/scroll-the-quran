@@ -36,7 +36,27 @@ enum PaywallCopy {
     static let noPaymentDueNow = "No payment due now"
     static let viewAllPlans = "View all plans"
     static let cancelAnytime = "Cancel anytime."
-    static let legal = ["Terms", "Privacy", "Already Subscribed?", "Restore Purchases"]
+    /// The footer row. Every one of these is a working control: App Review guideline
+    /// 3.1.2(a) requires a live Terms of Use and Privacy Policy link on a subscription
+    /// purchase screen, so none of them may be decorative.
+    enum LegalLink: String, CaseIterable, Identifiable {
+        case terms = "Terms"
+        case privacy = "Privacy"
+        case alreadySubscribed = "Already Subscribed?"
+        case restore = "Restore Purchases"
+
+        var id: String {
+            rawValue
+        }
+
+        var title: String {
+            rawValue
+        }
+    }
+
+    static var legal: [String] {
+        LegalLink.allCases.map(\.title)
+    }
 
     static let fullAccessTitle = "7-Days Full Access"
     static let monthlyPlanTitle = "Monthly plan"
@@ -49,4 +69,7 @@ enum PaywallCopy {
     static let neverAgain = "You will never see this again"
     static let luckyYou = "Lucky you!"
     static let startFreeTrial = "Start FREE trial"
+    static let continueTitle = "Continue"
+    /// Shown while a purchase is waiting on a family organiser (Ask to Buy).
+    static let askToBuyPending = "Ask your family organiser to approve this purchase."
 }

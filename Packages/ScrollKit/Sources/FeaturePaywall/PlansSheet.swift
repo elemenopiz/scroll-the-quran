@@ -24,6 +24,7 @@ struct PlansSheet: View {
                     .onTapGesture(perform: onDismiss)
                     .accessibilityIdentifier("paywall.plans.scrim")
                     .accessibilityLabel("Dismiss plans")
+                    .accessibilityAddTraits(.isButton)
 
                 sheet
                     .padding(.top, PaywallMetrics.sheetTop)
@@ -83,13 +84,17 @@ struct PlansSheet: View {
     private var planCards: some View {
         VStack(spacing: PaywallMetrics.cardSpacing) {
             ForEach(orderedPlans) { plan in
-                PlanCard(
-                    plan: plan,
-                    title: title(for: plan),
-                    isSelected: plan.id == selection,
-                    showsBadge: plan.id == .yearly
-                )
-                .onTapGesture { selection = plan.id }
+                Button {
+                    selection = plan.id
+                } label: {
+                    PlanCard(
+                        plan: plan,
+                        title: title(for: plan),
+                        isSelected: plan.id == selection,
+                        showsBadge: plan.id == .yearly
+                    )
+                }
+                .buttonStyle(.plain)
             }
         }
         .padding(.horizontal, PaywallMetrics.cardInset)
@@ -164,7 +169,7 @@ private struct PlanCard: View {
         }
         .contentShape(shape)
         .accessibilityElement(children: .combine)
-        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
         .accessibilityIdentifier("paywall.plans.card.\(plan.id.rawValue)")
     }
 

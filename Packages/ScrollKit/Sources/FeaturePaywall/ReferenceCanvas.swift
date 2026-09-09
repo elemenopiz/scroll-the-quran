@@ -27,5 +27,8 @@ struct ReferenceCanvas<Content: View>: View {
                 .clipped()
         }
         .ignoresSafeArea()
+        // The canvas is a fixed composition: let type grow, but not far enough to push
+        // the call to action off the bottom of a screen that cannot scroll.
+        .dynamicTypeSize(...DynamicTypeSize.accessibility1)
     }
 }

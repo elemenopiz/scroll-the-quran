@@ -7,20 +7,24 @@ import SwiftUI
 public struct GiftOfferView: View {
     private let plan: StorePlan?
     private let standardPlan: StorePlan?
+    private let introEligible: Bool
     private let onDismiss: () -> Void
     private let onPurchase: () -> Void
 
     @State private var isOpen: Bool
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     public init(
         plan: StorePlan?,
         standardPlan: StorePlan?,
+        introEligible: Bool = true,
         isOpen: Bool = false,
         onDismiss: @escaping () -> Void,
         onPurchase: @escaping () -> Void
     ) {
         self.plan = plan
         self.standardPlan = standardPlan
+        self.introEligible = introEligible
         _isOpen = State(initialValue: isOpen)
         self.onDismiss = onDismiss
         self.onPurchase = onPurchase
@@ -37,9 +41,14 @@ public struct GiftOfferView: View {
                 }
             }
         }
-        .animation(.spring(response: 0.55, dampingFraction: 0.78), value: isOpen)
+        .animation(revealAnimation, value: isOpen)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier(isOpen ? "screen.gift-open" : "screen.gift-closed")
+    }
+
+    /// Opening the envelope is a large motion; Reduce Motion gets a cross-fade instead.
+    private var revealAnimation: Animation {
+        reduceMotion ? .easeInOut(duration: 0.25) : .spring(response: 0.55, dampingFraction: 0.78)
     }
 
     // MARK: - Closed
@@ -141,7 +150,7 @@ public struct GiftOfferView: View {
             .accessibilityIdentifier("gift.price")
 
             PillButton(
-                title: PaywallCopy.startFreeTrial,
+                title: introEligible ? PaywallCopy.startFreeTrial : PaywallCopy.continueTitle,
                 height: PaywallMetrics.giftCTAHeight,
                 fontSize: 19,
                 action: onPurchase
@@ -186,15 +195,17 @@ public struct GiftOfferView: View {
                 .background(Color.pillFill, in: Capsule())
                 .padding(.top, PaywallMetrics.offPillTop - cardTop)
 
-            Text(trialPillTitle)
-                .font(.geoBold(PaywallMetrics.oneTimeOfferSize - 3))
-                .foregroundStyle(GiftPalette.ink)
-                .frame(
-                    width: PaywallMetrics.trialPillSize.width,
-                    height: PaywallMetrics.trialPillSize.height
-                )
-                .background(Color.appBackgroundFlat, in: Capsule())
-                .padding(.top, PaywallMetrics.trialPillTop - cardTop)
+            if let trialPillTitle {
+                Text(trialPillTitle)
+                    .font(.geoBold(PaywallMetrics.oneTimeOfferSize - 3))
+                    .foregroundStyle(GiftPalette.ink)
+                    .frame(
+                        width: PaywallMetrics.trialPillSize.width,
+                        height: PaywallMetrics.trialPillSize.height
+                    )
+                    .background(Color.appBackgroundFlat, in: Capsule())
+                    .padding(.top, PaywallMetrics.trialPillTop - cardTop)
+            }
 
             Text(PaywallCopy.neverAgain)
                 .font(.geoRegular(PaywallMetrics.neverAgainSize))
@@ -239,12 +250,18 @@ public struct GiftOfferView: View {
         offerPlan.displayPrice
     }
 
-    private var trialPillTitle: String {
-        "+\(offerPlan.introOffer?.freeDays ?? 3) day trial"
+    /// `nil` once the customer has used this subscription group's introductory offer:
+    /// StoreKit would charge them immediately, so the screen must not promise a trial.
+    private var trialPillTitle: String? {
+        guard introEligible, let days = offerPlan.introOffer?.freeDays else { return nil }
+        return "+\(days) day trial"
     }
 
     private var footnote: String {
-        "\(PlanPricing.trialFootnote(offerPlan))  •  Cancel anytime"
+        let terms = introEligible
+            ? PlanPricing.trialFootnote(offerPlan)
+            : PlanPricing.periodLine(offerPlan)
+        return "\(terms)  •  Cancel anytime"
     }
 }
 

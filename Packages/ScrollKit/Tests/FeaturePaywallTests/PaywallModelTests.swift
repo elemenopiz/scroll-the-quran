@@ -39,6 +39,29 @@ struct PaywallModelTests {
         #expect(model.errorMessage == nil)
     }
 
+    @Test("An Ask to Buy purchase reports false and explains that approval is pending")
+    func pendingPurchase() async {
+        let store = MockEntitlementStore()
+        store.nextOutcome = .pending
+        let model = PaywallModel(store: store)
+        #expect(await model.purchase(.yearly) == false)
+        #expect(store.isPremium == false)
+        #expect(model.pendingMessage == PaywallCopy.askToBuyPending)
+        #expect(model.errorMessage == nil)
+    }
+
+    @Test("A failure after a pending purchase clears the pending message")
+    func pendingThenFailure() async {
+        let store = MockEntitlementStore()
+        store.nextOutcome = .pending
+        let model = PaywallModel(store: store)
+        _ = await model.purchase(.yearly)
+        store.nextError = .storeKit("offline")
+        _ = await model.purchase(.yearly)
+        #expect(model.pendingMessage == nil)
+        #expect(model.errorMessage == "offline")
+    }
+
     @Test("A cancelled purchase reports false and leaves no error")
     func cancelledPurchase() async {
         let store = MockEntitlementStore()
@@ -116,6 +139,17 @@ struct PaywallScreensTests {
 
 @Suite("Paywall copy")
 struct PaywallCopyTests {
+    @Test("Every footer link is a real destination, none decorative")
+    func legalLinksAreLive() {
+        // App Review 3.1.2(a): Terms and Privacy must be reachable from the purchase screen.
+        #expect(PaywallCopy.LegalLink.allCases.count == 4)
+        #expect(PaywallCopy.LegalLink.allCases.contains(.terms))
+        #expect(PaywallCopy.LegalLink.allCases.contains(.privacy))
+        #expect(PaywallLegalLinks.default.terms.scheme == "https")
+        #expect(PaywallLegalLinks.default.privacy.scheme == "https")
+        #expect(PaywallLegalLinks.default.terms != PaywallLegalLinks.default.privacy)
+    }
+
     @Test("The trial timeline is three steps with stable identifiers")
     func timeline() {
         #expect(PaywallCopy.timeline.map(\.id) == ["today", "day5", "day7"])
@@ -163,5 +197,25 @@ struct PaywallMetricsTests {
         #expect(envelope.card.minY < envelope.bodyTop)
         // The card is hidden behind the pocket point rather than ending in mid air.
         #expect(envelope.card.maxY > envelope.pocketPoint.y)
+    }
+}
+
+@Suite("Gift offer eligibility")
+@MainActor
+struct GiftOfferEligibilityTests {
+    @Test("An eligible customer is offered the free trial")
+    func eligible() {
+        let model = PaywallModel(store: MockEntitlementStore(introOfferEligible: true))
+        #expect(model.introEligible)
+        #expect(PlanPricing.trialFootnote(StoreCatalogue.gift) == "3 days free, then $19.99/year")
+    }
+
+    @Test("A customer who has already used the introductory offer is not promised one")
+    func ineligible() {
+        // StoreKit charges immediately once the group's intro offer is spent, so the
+        // gift screen must fall back to the plain price rather than "3 days free".
+        let model = PaywallModel(store: MockEntitlementStore(introOfferEligible: false))
+        #expect(model.introEligible == false)
+        #expect(PlanPricing.periodLine(StoreCatalogue.gift) == "$19.99/year")
     }
 }

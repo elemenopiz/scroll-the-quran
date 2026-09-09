@@ -21,6 +21,9 @@ public final class PaywallModel {
     public var selectedPlan: ProductID = .yearly
     public private(set) var isPurchasing = false
     public private(set) var errorMessage: String?
+    /// Set when a purchase is waiting on Ask to Buy approval. Nothing is unlocked yet;
+    /// the `Transaction.updates` listener finishes the job if the organiser approves.
+    public private(set) var pendingMessage: String?
 
     @ObservationIgnored public let store: any EntitlementProviding
     @ObservationIgnored private let offers: any OneTimeOfferStoring
@@ -80,12 +83,23 @@ public final class PaywallModel {
         defer { isPurchasing = false }
         do {
             let outcome = try await store.purchase(id)
-            errorMessage = outcome == .purchased ? nil : errorMessage
+            switch outcome {
+            case .purchased:
+                errorMessage = nil
+                pendingMessage = nil
+            case .pending:
+                errorMessage = nil
+                pendingMessage = PaywallCopy.askToBuyPending
+            case .cancelled:
+                break
+            }
             return outcome == .purchased
         } catch let error as CommerceError {
+            pendingMessage = nil
             errorMessage = Self.message(for: error)
             return false
         } catch {
+            pendingMessage = nil
             errorMessage = error.localizedDescription
             return false
         }
@@ -117,17 +131,21 @@ public final class PaywallModel {
 /// it, and the one-time gift offer once the paywall is dismissed.
 public struct PaywallFlow: View {
     @State private var model: PaywallModel
+    @Environment(\.scenePhase) private var scenePhase
     private let onDismiss: () -> Void
     private let onPurchased: () -> Void
+    private let links: PaywallLegalLinks
 
     public init(
         store: any EntitlementProviding,
         offers: any OneTimeOfferStoring = InMemoryOneTimeOfferStore(),
         stage: PaywallStage = .trial,
+        links: PaywallLegalLinks = .default,
         onDismiss: @escaping () -> Void,
         onPurchased: @escaping () -> Void
     ) {
         _model = State(initialValue: PaywallModel(store: store, offers: offers, stage: stage))
+        self.links = links
         self.onDismiss = onDismiss
         self.onPurchased = onPurchased
     }
@@ -142,6 +160,12 @@ public struct PaywallFlow: View {
             }
         }
         .task { await model.load() }
+        // A subscription can lapse, be refunded or be approved while the app is in the
+        // background, and StoreKit does not always redeliver a transaction for that.
+        .onChange(of: scenePhase) { _, phase in
+            guard phase == .active else { return }
+            Task { await model.load() }
+        }
     }
 
     private var trial: some View {
@@ -181,6 +205,7 @@ public struct PaywallFlow: View {
         GiftOfferView(
             plan: model.gift,
             standardPlan: model.yearly,
+            introEligible: model.introEligible,
             isOpen: model.stage == .giftOpen,
             onDismiss: onDismiss,
             onPurchase: { buy(.yearlyGift) }

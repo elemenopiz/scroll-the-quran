@@ -14,6 +14,9 @@ struct PaywallTrialView: View {
     var onRedeem: () -> Void
     var onViewAllPlans: () -> Void
     var onRestore: () -> Void
+    var links: PaywallLegalLinks = .default
+
+    @Environment(\.openURL) private var openURL
 
     var body: some View {
         ReferenceCanvas {
@@ -142,19 +145,27 @@ struct PaywallTrialView: View {
 
     private var legalRow: some View {
         HStack(spacing: 5) {
-            ForEach(Array(PaywallCopy.legal.enumerated()), id: \.element) { index, item in
+            ForEach(Array(PaywallCopy.LegalLink.allCases.enumerated()), id: \.element) { index, link in
                 if index > 0 {
                     Text("|").foregroundStyle(Color.textTertiary)
                 }
-                Button(action: item == "Restore Purchases" ? onRestore : {}) {
-                    Text(item).foregroundStyle(Color.textSecondary)
-                }
-                .accessibilityIdentifier("paywall.legal.\(index)")
+                Button(link.title) { open(link) }
+                    .foregroundStyle(Color.textSecondary)
+                    .accessibilityIdentifier("paywall.legal.\(index)")
             }
         }
         .font(.geoRegular(PaywallMetrics.legalSize))
         .lineLimit(1)
         .fixedSize()
+    }
+
+    /// Terms and Privacy open in the browser; the other two both mean "I already paid".
+    private func open(_ link: PaywallCopy.LegalLink) {
+        switch link {
+        case .terms: openURL(links.terms)
+        case .privacy: openURL(links.privacy)
+        case .alreadySubscribed, .restore: onRestore()
+        }
     }
 
     // MARK: - Copy from the store
