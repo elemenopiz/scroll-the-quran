@@ -247,7 +247,7 @@ struct CommentaryNoteSheet: View {
                 .padding(Spacing.xl)
             }
         }
-        .background(Color.appBackgroundFlat)
+        .background(Color.appBackground)
         .accessibilityIdentifier("settings.commentaryNote")
     }
 }

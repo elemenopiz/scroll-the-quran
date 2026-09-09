@@ -41,7 +41,7 @@ public struct ReadingPlansSheet: View {
                     .accessibilityIdentifier("plans.done")
             }
             ScrollView {
-                VStack(alignment: .leading, spacing: Spacing.xxxl) {
+                VStack(alignment: .leading, spacing: HomeMetrics.planSectionSpacing) {
                     activePlanSection
                     ForEach(catalog.populatedSections) { section in
                         planSection(section)
@@ -51,7 +51,7 @@ public struct ReadingPlansSheet: View {
                 .padding(.bottom, Spacing.huge)
             }
         }
-        .background(Color.appBackgroundFlat)
+        .background(Color.appBackground)
         .accessibilityIdentifier("plans-sheet")
         .sheet(item: $detail) { plan in
             PlanDetailSheet(
@@ -92,10 +92,12 @@ public struct ReadingPlansSheet: View {
             }
         } label: {
             CardContainer(radius: Radius.card, padding: HomeMetrics.todayCardPadding) {
-                VStack(alignment: .leading, spacing: Spacing.lg) {
+                VStack(alignment: .leading, spacing: Spacing.md) {
                     HStack(alignment: .top, spacing: Spacing.lg) {
-                        PlanCoverImage(plan: todaysReading?.plan)
-                            .frame(width: 110, height: 110)
+                        // With nothing running the card still carries artwork — the cover of the
+                        // plan the section below points a new reader at.
+                        PlanCoverImage(plan: todaysReading?.plan ?? invitationPlan)
+                            .frame(width: HomeMetrics.activePlanCover, height: HomeMetrics.activePlanCover)
                             .clipShape(.rect(cornerRadius: HomeMetrics.todayCoverRadius, style: .continuous))
                         VStack(alignment: .leading, spacing: Spacing.sm) {
                             Text(todaysReading?.plan.title ?? "Pick a plan to begin")
@@ -123,6 +125,11 @@ public struct ReadingPlansSheet: View {
         }
         .buttonStyle(.pressable)
         .accessibilityIdentifier("plans.activePlan")
+    }
+
+    /// The plan the empty state is inviting the reader into.
+    private var invitationPlan: ReadingPlan? {
+        catalog.plans.first(where: \.startHere) ?? catalog.plans.first
     }
 
     private var activeBlurb: String {
@@ -161,6 +168,11 @@ public struct ReadingPlansSheet: View {
                     } action: {
                         detail = plan
                     }
+                    // Three single lines under the cover, as in the reference. `lineLimit` and
+                    // `minimumScaleFactor` reach the labels inside `PlanCard`; letting a long
+                    // title wrap instead pushes the next grid row down by most of a line.
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.78)
                     .accessibilityIdentifier("plans.card.\(plan.id)")
                 }
             }

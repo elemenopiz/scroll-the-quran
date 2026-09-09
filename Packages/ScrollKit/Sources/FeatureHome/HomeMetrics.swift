@@ -19,8 +19,11 @@ enum HomeMetrics {
     static let rowGap: CGFloat = 20
     /// Top of the hero card: 73.4 pt on a 59 pt safe area.
     static let contentTopPadding: CGFloat = 13
-    /// The pill sits 29 pt above the tab bar at the bottom of the scroll.
-    static let contentBottomPadding: CGFloat = 28
+    /// The pill sits 29 pt above the tab bar at the bottom of the scroll (home-dark: pill
+    /// 688..739.7 against a 769 pt viewport bottom). Both the reference and this build come to
+    /// rest at the end of the content in the scrolled capture, so this padding is what sets
+    /// where the whole stack lands.
+    static let contentBottomPadding: CGFloat = 38
 
     // MARK: Hero (Verse Search) card
 
@@ -50,11 +53,19 @@ enum HomeMetrics {
 
     // MARK: Streak week row (home-dark)
 
-    /// Dots are 27.6 pt across, centres 47.3 pt apart, with a 36 pt ring around today.
-    static let streakDot: CGFloat = 28
-    static let streakRing: CGFloat = 36
+    /// The dot strip on home-dark runs 263.3..297.0 pt including the ring around today, over
+    /// letters whose ink is 248.7..256.0 — a 7.3 pt cap height, so an 11 pt semibold.
+    static let streakDot: CGFloat = 26
+    static let streakRing: CGFloat = 32
     static let streakRingWidth: CGFloat = 3
-    static let streakLetter: CGFloat = 13
+    static let streakLetter: CGFloat = 11
+    /// Letters to dots, and the footer's own rhythm. The whole card is 184 pt tall
+    /// (124.7..308.7) and `StatCard` spends 18 + header + 16 of that before the footer starts.
+    static let streakLetterGap: CGFloat = 4
+    static let statFooterSpacing: CGFloat = 6
+    /// The line under the count (ink 217.0..229.0) and the verse count under the bar
+    /// (453.0..464.7): one line each, spanning the card's full inner width.
+    static let streakMessage: CGFloat = 14
 
     // MARK: Settings pill
 
@@ -69,11 +80,21 @@ enum HomeMetrics {
     static let planHeroRadius: CGFloat = 20
     /// Two columns with a 14 pt gutter in the plans grid.
     static let planGridSpacing: CGFloat = 14
+    /// Section to section in the plans sheet. The reference's first eyebrow sits 21 pt under the
+    /// active-plan card (card edge ~325, "FOR NEW READERS" ink at 346).
+    static let planSectionSpacing: CGFloat = 22
+    /// The cover on the active-plan card (reference: 175..300 pt inside the card).
+    static let activePlanCover: CGFloat = 118
+    /// The plan detail's "Close" row sits lower than a plain sheet header: the reference has
+    /// the pill centred at 108 pt and the hero starting at 145.
+    static let planDetailHeaderTop: CGFloat = 14
 
     // MARK: Snapshot routing
 
     /// How much of the Today's Reading card is still on screen in the `home#scrolled` capture:
     /// the reference has that card's bottom edge at 98.7 pt with a 59 pt safe area above it.
+    /// The content is barely longer than the viewport, so the scroll usually comes to rest at
+    /// its end before reaching this anchor; it is the ceiling, not the resting place.
     static let scrolledFragment: CGFloat = 40
 }
 

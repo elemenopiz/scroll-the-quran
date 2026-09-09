@@ -15,7 +15,7 @@ struct StreakWeekRow: View {
                     isToday: day.isToday,
                     isFuture: day.isFuture
                 )
-                VStack(spacing: Spacing.sm) {
+                VStack(spacing: HomeMetrics.streakLetterGap) {
                     Text(day.letter)
                         .font(.body(HomeMetrics.streakLetter, weight: .semibold))
                         .foregroundStyle(style.isRinged ? Color.textPrimary : Color.textSecondary)

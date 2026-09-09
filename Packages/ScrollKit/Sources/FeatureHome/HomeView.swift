@@ -38,6 +38,7 @@ public struct HomeView: View {
         navigation: (any HomeNavigation)? = nil,
         today: Date = Date(),
         initialScroll: HomeScrollPosition = .top,
+        initialSheet: HomeInitialSheet? = nil,
         restorePurchases: (() async -> Void)? = nil
     ) {
         self.store = store
@@ -49,6 +50,24 @@ public struct HomeView: View {
         self.initialScroll = initialScroll
         self.restorePurchases = restorePurchases
         _search = State(initialValue: VerseSearchModel(index: surahs))
+        _route = State(initialValue: initialSheet.map { sheet in
+            switch sheet {
+            case .plans: .plans
+            case .planDetail: .planDetail(HomeView.featuredPlan(in: plans, activeID: store.plan.activePlanID))
+            case .library: .library
+            case .widgetGuide: .widgetGuide
+            case .settings: .settings
+            }
+        })
+    }
+
+    /// The plan the `plan-detail` route opens: whatever is running, else the catalog's first
+    /// "start here" plan, else its first plan at all.
+    static func featuredPlan(in catalog: ReadingPlanCatalog, activeID: String?) -> ReadingPlan? {
+        if let activeID, let plan = catalog.plan(activeID) {
+            return plan
+        }
+        return catalog.plans.first(where: \.startHere) ?? catalog.plans.first
     }
 
     public var body: some View {
@@ -72,6 +91,7 @@ public struct HomeView: View {
                     RowLink(systemImage: "bookmark.fill", title: "Saved", subtitle: "Your library") {
                         route = .library
                     }
+                    .lineLimit(1)
                     .accessibilityIdentifier("home.savedRow")
                     .padding(.bottom, HomeMetrics.rowGap)
 
@@ -82,6 +102,10 @@ public struct HomeView: View {
                     ) {
                         route = .widgetGuide
                     }
+                    // `RowLink` sizes itself from its text; both rows are one line tall in the
+                    // reference, and `lineLimit` reaches the labels inside the component.
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.85)
                     .accessibilityIdentifier("home.widgetRow")
                     .padding(.bottom, HomeMetrics.rowGap)
 
@@ -126,11 +150,14 @@ public struct HomeView: View {
             value: "\(streak)",
             caption: StreakMotivation.daysOpenedCaption
         ) {
-            VStack(alignment: .leading, spacing: Spacing.md) {
+            VStack(alignment: .leading, spacing: HomeMetrics.statFooterSpacing) {
                 Text(StreakMotivation.line(forStreak: streak))
-                    .font(.body(16))
+                    .font(.body(HomeMetrics.streakMessage))
                     .foregroundStyle(Color.textPrimary)
-                    .fixedSize(horizontal: false, vertical: true)
+                    // One line in the reference, edge to edge of the card. Shrinking beats
+                    // wrapping here: a second line pushes every card below it down by 21 pt.
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.85)
                 StreakWeekRow(days: store.weekRow(now: today))
             }
         }
@@ -162,10 +189,10 @@ public struct HomeView: View {
             value: store.percentReadLabel,
             caption: ReadProgressSummary.caption
         ) {
-            VStack(alignment: .leading, spacing: Spacing.md) {
+            VStack(alignment: .leading, spacing: HomeMetrics.statFooterSpacing + Spacing.xs) {
                 ProgressBar(value: ReadProgressSummary(readCount: store.readCount).fraction)
                 Text(store.versesReadLabel)
-                    .font(.body(16))
+                    .font(.body(HomeMetrics.streakMessage))
                     .foregroundStyle(Color.textSecondary)
             }
         }
@@ -224,6 +251,16 @@ public struct HomeView: View {
                 today: today,
                 navigation: navigation
             )
+        case let .planDetail(plan):
+            if let plan {
+                PlanDetailSheet(
+                    plan: plan,
+                    store: store,
+                    surahs: surahs,
+                    today: today,
+                    navigation: navigation
+                )
+            }
         case .library:
             LibraryView(store: store, surahs: surahs, translations: translations, navigation: navigation)
         case .widgetGuide:
@@ -234,14 +271,30 @@ public struct HomeView: View {
     }
 }
 
-/// The four sheets Home presents.
-enum HomeSheet: String, Identifiable {
+/// The sheets Home presents.
+enum HomeSheet: Identifiable {
     case plans
+    case planDetail(ReadingPlan?)
     case library
     case widgetGuide
     case settings
 
     var id: String {
-        rawValue
+        switch self {
+        case .plans: "plans"
+        case let .planDetail(plan): "planDetail.\(plan?.id ?? "none")"
+        case .library: "library"
+        case .widgetGuide: "widgetGuide"
+        case .settings: "settings"
+        }
     }
+}
+
+/// A sheet Home can be routed straight into (`--screenshot plans-sheet`, a deep link).
+public enum HomeInitialSheet: String, CaseIterable, Sendable {
+    case plans
+    case planDetail
+    case library
+    case widgetGuide
+    case settings
 }

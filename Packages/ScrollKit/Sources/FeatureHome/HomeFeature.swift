@@ -61,7 +61,11 @@ public struct HomeEnvironment {
 public enum HomeFeature {
     /// The Home tab itself.
     @MainActor
-    public static func tab(_ environment: HomeEnvironment, scroll: HomeScrollPosition = .top) -> some View {
+    public static func tab(
+        _ environment: HomeEnvironment,
+        scroll: HomeScrollPosition = .top,
+        sheet: HomeInitialSheet? = nil
+    ) -> some View {
         HomeView(
             store: environment.store,
             surahs: environment.surahs,
@@ -70,12 +74,14 @@ public enum HomeFeature {
             navigation: environment.navigation,
             today: environment.today,
             initialScroll: scroll,
+            initialSheet: sheet,
             restorePurchases: environment.restorePurchases
         )
     }
 
     /// The view behind a `--screenshot` route (and behind a deep link, once one exists).
-    /// Sheets are rendered as full screens here: a snapshot has nobody to present them.
+    /// The sheet routes are Home with that sheet already up, which is what the references show
+    /// and what a deep link should land on.
     @MainActor
     @ViewBuilder
     public static func screen(for route: HomeRoute, _ environment: HomeEnvironment) -> some View {
@@ -85,58 +91,17 @@ public enum HomeFeature {
         case .homeScrolled:
             tab(environment, scroll: .scrolled)
         case .plansSheet:
-            ReadingPlansSheet(
-                catalog: environment.plans,
-                store: environment.store,
-                surahs: environment.surahs,
-                today: environment.today,
-                navigation: environment.navigation
-            )
+            tab(environment, scroll: .top, sheet: .plans)
         case .planDetail:
-            planDetail(environment)
+            tab(environment, scroll: .top, sheet: .planDetail)
         case .verseSearch:
             VerseSearchView(surahs: environment.surahs, navigation: environment.navigation)
         case .library:
-            LibraryView(
-                store: environment.store,
-                surahs: environment.surahs,
-                translations: environment.translations,
-                navigation: environment.navigation
-            )
+            tab(environment, scroll: .top, sheet: .library)
         case .settings:
-            SettingsView(
-                store: environment.store,
-                translations: environment.translations,
-                restorePurchases: environment.restorePurchases
-            )
+            tab(environment, scroll: .top, sheet: .settings)
         case .widgetGallery:
-            AddWidgetGuide()
+            tab(environment, scroll: .top, sheet: .widgetGuide)
         }
-    }
-
-    /// The detail for the active plan, or — with nothing running — the first plan the catalog
-    /// points a new reader at, so the route always has something to render.
-    @MainActor
-    @ViewBuilder
-    private static func planDetail(_ environment: HomeEnvironment) -> some View {
-        if let plan = featuredPlan(environment) {
-            PlanDetailSheet(
-                plan: plan,
-                store: environment.store,
-                surahs: environment.surahs,
-                today: environment.today,
-                navigation: environment.navigation
-            )
-        } else {
-            Color.appBackgroundFlat.accessibilityIdentifier("plan-detail")
-        }
-    }
-
-    @MainActor
-    static func featuredPlan(_ environment: HomeEnvironment) -> ReadingPlan? {
-        if let active = environment.store.plan.activePlanID, let plan = environment.plans.plan(active) {
-            return plan
-        }
-        return environment.plans.plans.first(where: \.startHere) ?? environment.plans.plans.first
     }
 }

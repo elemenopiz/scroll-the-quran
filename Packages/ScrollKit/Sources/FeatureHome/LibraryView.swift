@@ -41,7 +41,7 @@ public struct LibraryView: View {
                 list
             }
         }
-        .background(Color.appBackgroundFlat)
+        .background(Color.appBackground)
         .accessibilityIdentifier("library")
     }
 
@@ -142,7 +142,7 @@ public struct LibraryView: View {
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
-        .background(Color.appBackgroundFlat)
+        .background(Color.appBackground)
     }
 
     // MARK: Rows

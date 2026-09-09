@@ -37,11 +37,13 @@ public struct PlanDetailSheet: View {
                     .accessibilityIdentifier("planDetail.close")
             }
             .padding(.horizontal, Spacing.pageMargin)
+            .padding(.top, HomeMetrics.planDetailHeaderTop)
             .frame(minHeight: Metrics.headerButton)
 
             ScrollView {
                 VStack(spacing: Spacing.lg) {
                     hero
+                        .padding(.bottom, Spacing.sm)
                     Text(plan.title)
                         .font(.body(22, weight: .bold))
                         .foregroundStyle(Color.textPrimary)
@@ -59,7 +61,7 @@ public struct PlanDetailSheet: View {
                 .padding(.bottom, Spacing.huge)
             }
         }
-        .background(Color.appBackgroundFlat)
+        .background(Color.appBackground)
         .accessibilityIdentifier("plan-detail")
     }
 

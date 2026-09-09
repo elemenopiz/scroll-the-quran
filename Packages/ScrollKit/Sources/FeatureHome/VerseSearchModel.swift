@@ -21,6 +21,18 @@ public enum VerseSearchMode: String, CaseIterable, Sendable, Identifiable {
     }
 }
 
+/// Where the wheel starts.
+///
+/// Ayat al-Kursi is the ayah readers reach for first, and — like the reference's own default —
+/// it is far enough down the list that the wheel opens with rows above and below the selection
+/// rather than pinned to the top of the surah column.
+///
+/// Deliberately outside `VerseSearchModel`: the model is `@MainActor`, and a default argument
+/// cannot read main-actor state from a nonisolated context.
+public enum VerseSearchDefaults {
+    public static let verse = VerseRef(surah: 2, ayah: 255)
+}
+
 /// The state behind the Verse Search card: which surah, which ayah, and — in Advanced — which
 /// last ayah. All of the clamping lives here so the wheel can never produce a reference that is
 /// not in the Quran (`2:300`, or a range that runs backwards).
@@ -43,8 +55,8 @@ public final class VerseSearchModel {
     public init(
         index: SurahIndex,
         mode: VerseSearchMode = .advanced,
-        surah: Int = 1,
-        ayah: Int = 1,
+        surah: Int = VerseSearchDefaults.verse.surah,
+        ayah: Int = VerseSearchDefaults.verse.ayah,
         toAyah: Int? = nil
     ) {
         self.index = index
