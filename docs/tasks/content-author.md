@@ -90,6 +90,8 @@ disagrees with the target is an error.
 - **Word counts split on whitespace**, so a spaced em dash costs a word. `meaning` is now 45–105 words.
 - **Four themes were added** (`divine-attributes`, `revelation-and-its-rejection`, `wealth-and-property`, `love-of-god`); spread themes across a slice, do not lean on one id.
 - **Sectarian-sensitive occasions** (e.g. 28:56, 42:23): describe the setting generally and give classical readings side by side; never name figures whose status divides communities.
+- **Make your pre-check exit non-zero on findings** and run it as a separate command before `write-dir` (a `wc.mjs && write-dir` chain silently proceeds if the checker exits 0). Read word bounds from the schema's `x-wordBounds`, never hardcode them.
+- **Before writing, read the already-assembled units of near-duplicate passages** (e.g. 8:10 vs 3:126) and take a different angle.
 - **`didYouKnow`:** prefer checkable structural or lexical facts (phrase counts, grammatical forms, surah structure) over impressive claims you cannot verify.
 
 ## Quality bar
