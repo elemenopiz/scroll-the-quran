@@ -14,19 +14,25 @@ public struct PlanDetailSheet: View {
     private let surahs: SurahIndex?
     private let today: Date
     private let navigation: (any HomeNavigation)?
+    private let premium: HomePremiumStatus
+    private let requestPremium: HomePremiumRequest
 
     public init(
         plan: ReadingPlan,
         store: UserStore,
         surahs: SurahIndex? = nil,
         today: Date = Date(),
-        navigation: (any HomeNavigation)? = nil
+        navigation: (any HomeNavigation)? = nil,
+        premium: HomePremiumStatus = .unlocked,
+        requestPremium: HomePremiumRequest = HomePremiumRequest()
     ) {
         self.plan = plan
         self.store = store
         self.surahs = surahs
         self.today = today
         self.navigation = navigation
+        self.premium = premium
+        self.requestPremium = requestPremium
     }
 
     public var body: some View {
@@ -78,14 +84,30 @@ public struct PlanDetailSheet: View {
         store.plan.activePlanID == plan.id
     }
 
+    /// Reading plans are premium. The button keeps its label — the reference app does not
+    /// grey it out — and a free reader gets the paywall instead of the plan, so nothing is
+    /// written to `UserStore` for a plan that was never bought.
     private var startButton: some View {
-        PrimaryPillButton(isActive ? "Continue" : "Start Plan", height: Metrics.pillHeightCompact) {
-            if !isActive {
-                store.startPlan(plan.id, on: today)
+        VStack(spacing: Spacing.sm) {
+            PrimaryPillButton(isActive ? "Continue" : "Start Plan", height: Metrics.pillHeightCompact) {
+                guard premium.isPremium else {
+                    requestPremium(.readingPlan)
+                    return
+                }
+                if !isActive {
+                    store.startPlan(plan.id, on: today)
+                }
+                openTodaysDay()
             }
-            openTodaysDay()
+            .accessibilityIdentifier("planDetail.start")
+            if !premium.isPremium {
+                Label("Reading plans are part of Premium", systemImage: "lock.fill")
+                    .font(.body(13))
+                    .foregroundStyle(Color.textTertiary)
+                    .labelStyle(.titleAndIcon)
+                    .accessibilityIdentifier("planDetail.premiumNote")
+            }
         }
-        .accessibilityIdentifier("planDetail.start")
     }
 
     /// Hands the reader today's refs. Reading a plan day is what "start" means; the button also

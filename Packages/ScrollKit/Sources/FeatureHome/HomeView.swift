@@ -24,6 +24,8 @@ public struct HomeView: View {
     private let today: Date
     private let initialScroll: HomeScrollPosition
     private let restorePurchases: (() async -> Void)?
+    private let premium: HomePremiumStatus
+    private let requestPremium: HomePremiumRequest
 
     @State private var search: VerseSearchModel
     @State private var route: HomeSheet?
@@ -42,7 +44,9 @@ public struct HomeView: View {
         today: Date = Date(),
         initialScroll: HomeScrollPosition = .top,
         initialSheet: HomeInitialSheet? = nil,
-        restorePurchases: (() async -> Void)? = nil
+        restorePurchases: (() async -> Void)? = nil,
+        premium: HomePremiumStatus = .unlocked,
+        requestPremium: HomePremiumRequest = HomePremiumRequest()
     ) {
         self.store = store
         self.surahs = surahs
@@ -52,6 +56,8 @@ public struct HomeView: View {
         self.today = today
         self.initialScroll = initialScroll
         self.restorePurchases = restorePurchases
+        self.premium = premium
+        self.requestPremium = requestPremium
         _search = State(initialValue: VerseSearchModel(index: surahs))
         _route = State(initialValue: initialSheet.map { sheet in
             switch sheet {
@@ -78,7 +84,7 @@ public struct HomeView: View {
             ScrollView {
                 VStack(spacing: 0) {
                     VerseSearchCard(model: search) { key in
-                        navigation?.openDeepStudy(key: key)
+                        studyVerse(key)
                     }
                     .padding(.bottom, HomeMetrics.cardGap)
 
@@ -223,6 +229,18 @@ public struct HomeView: View {
         .accessibilityIdentifier("home.settingsPill")
     }
 
+    // MARK: Gating
+
+    /// "Study This Verse" opens Deep Study, which is premium. A free reader gets the
+    /// paywall instead — the same one the Discover card's "Deep study >" raises.
+    private func studyVerse(_ key: String) {
+        guard premium.isPremium else {
+            requestPremium(.verseSearch)
+            return
+        }
+        navigation?.openDeepStudy(key: key)
+    }
+
     // MARK: Derived state
 
     private var streak: Int {
@@ -257,7 +275,9 @@ public struct HomeView: View {
                 store: store,
                 surahs: surahs,
                 today: today,
-                navigation: navigation
+                navigation: navigation,
+                premium: premium,
+                requestPremium: requestPremium
             )
         case let .planDetail(plan):
             if let plan {
@@ -266,7 +286,9 @@ public struct HomeView: View {
                     store: store,
                     surahs: surahs,
                     today: today,
-                    navigation: navigation
+                    navigation: navigation,
+                    premium: premium,
+                    requestPremium: requestPremium
                 )
             }
         case .library:
@@ -274,7 +296,12 @@ public struct HomeView: View {
         case .widgetGuide:
             AddWidgetGuide()
         case .settings:
-            SettingsView(store: store, translations: translations, restorePurchases: restorePurchases)
+            SettingsView(
+                store: store,
+                translations: translations,
+                restorePurchases: restorePurchases,
+                paymentIssue: premium.paymentIssue
+            )
         }
     }
 }

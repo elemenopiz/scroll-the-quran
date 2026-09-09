@@ -11,7 +11,12 @@ import UserState
 /// a snapshot run pinned to `SCROLL_FIXED_DATE` always replays it.
 ///
 /// Free readers get `DiscoverGate.freeCardsPerDay` cards a day; landing on the fourth
-/// raises the paywall instead of the card.
+/// raises the paywall instead of the card. Deep Study is premium outright, so the
+/// "Deep study >" button raises the same paywall until the reader subscribes.
+///
+/// Which paywall depends on who is listening: in the app `AppShell` injects
+/// `\.requestPremium` and presents the real `PaywallFlow` over the tab bar; in a preview or
+/// a host test nothing is listening and the module's own `DiscoverLimitSheet` stands in.
 @MainActor
 public struct DiscoverView: View {
     private let feed: DiscoverFeed
@@ -23,6 +28,7 @@ public struct DiscoverView: View {
     @Environment(StudyStore.self) private var studies: StudyStore?
     @Environment(UserStore.self) private var user: UserStore?
     @Environment(\.entitlements) private var entitlements
+    @Environment(\.requestPremium) private var requestPremium
     @Environment(\.openPassage) private var openPassage
     @Environment(\.openNote) private var openNote
 
@@ -107,7 +113,7 @@ public struct DiscoverView: View {
                     crossRefs: chips(for: study),
                     isSaved: user?.isSaved(presentation.passage) ?? false,
                     isRead: isRead(presentation.passage),
-                    onDeepStudy: { openStudy = study },
+                    onDeepStudy: { openDeepStudy(study) },
                     onOpenReference: { openPassage($0) },
                     onSave: { user?.toggleSaved(presentation.passage) },
                     onNote: { openNote(item.key) },
@@ -152,8 +158,13 @@ public struct DiscoverView: View {
 
     // MARK: - Behaviour
 
+    /// The free tier is the safe default: no injected store means not subscribed.
+    private var isSubscribed: Bool {
+        entitlements?.isSubscribed ?? false
+    }
+
     private func syncEntitlement() {
-        gate.isSubscribed = entitlements?.isSubscribed ?? false
+        gate.isSubscribed = isSubscribed
     }
 
     /// Counts the card that just became visible. The fourth free card of the day raises
@@ -163,7 +174,28 @@ public struct DiscoverView: View {
         if currentKey != key {
             currentKey = key
         }
-        isPaywallPresented = !gate.record(key, on: today)
+        if !gate.record(key, on: today) {
+            raisePaywall(.discoverLimit)
+        }
+    }
+
+    /// Deep Study is premium in full — not metered like the feed — so a free reader gets
+    /// the paywall rather than a truncated page.
+    private func openDeepStudy(_ study: Study) {
+        guard isSubscribed else {
+            raisePaywall(.deepStudy)
+            return
+        }
+        openStudy = study
+    }
+
+    /// The real paywall when the shell is listening, this module's own sheet otherwise.
+    private func raisePaywall(_ reason: RequestPremiumAction.Reason) {
+        if requestPremium.isWired {
+            requestPremium(reason)
+        } else {
+            isPaywallPresented = true
+        }
     }
 
     private func markRead(_ passage: PassageRef) {

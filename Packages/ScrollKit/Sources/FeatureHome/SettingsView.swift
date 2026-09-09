@@ -12,6 +12,8 @@ public struct SettingsView: View {
     private let store: UserStore
     private let translations: TranslationStore?
     private let restorePurchases: (() async -> Void)?
+    /// Set while Apple is retrying a failed payment. Non-nil raises the banner above.
+    private let paymentIssue: PaymentIssue?
     private let versionString: String
 
     @State private var isRestoring = false
@@ -22,11 +24,13 @@ public struct SettingsView: View {
         store: UserStore,
         translations: TranslationStore? = nil,
         restorePurchases: (() async -> Void)? = nil,
+        paymentIssue: PaymentIssue? = nil,
         versionString: String? = nil
     ) {
         self.store = store
         self.translations = translations
         self.restorePurchases = restorePurchases
+        self.paymentIssue = paymentIssue
         self.versionString = versionString ?? SettingsView.bundleVersion()
     }
 
@@ -38,6 +42,7 @@ public struct SettingsView: View {
                     .accessibilityIdentifier("settings.done")
             }
             List {
+                billingSection
                 translationSection
                 accountSection
                 aboutSection
@@ -112,6 +117,34 @@ public struct SettingsView: View {
             }
         } header: {
             CapsLabel(text: "Translation")
+        }
+    }
+
+    /// The grace-period / billing-retry banner.
+    ///
+    /// A failed renewal is the one commerce event the customer cannot see anywhere in the
+    /// app: `Transaction.currentEntitlements` simply stops returning the subscription and
+    /// Premium disappears. `Commerce.BillingState` reads the renewal state so this can say
+    /// what happened and where to fix it. Nothing here can take a payment — the App Store
+    /// owns that — so the banner points at it rather than pretending to.
+    @ViewBuilder
+    private var billingSection: some View {
+        if let paymentIssue {
+            Section {
+                VStack(alignment: .leading, spacing: Spacing.xs) {
+                    Label(paymentIssue.title, systemImage: "exclamationmark.triangle.fill")
+                        .font(.body(16, weight: .semibold))
+                        .foregroundStyle(Color.textPrimary)
+                        .labelStyle(.titleAndIcon)
+                    Text(paymentIssue.message)
+                        .font(.body(14))
+                        .foregroundStyle(Color.textSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(.vertical, Spacing.xxs)
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("settings.billingBanner")
+            }
         }
     }
 
