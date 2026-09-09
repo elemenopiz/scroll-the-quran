@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1179" height="2556" viewBox="0 0 1179 2556" fill="none">
+<defs>
+<linearGradient id="rail" x1="0" y1="0" x2="1" y2="0.08"><stop offset="0" stop-color="#B9B6AF"/><stop offset="0.14" stop-color="#F0EEE9"/><stop offset="0.34" stop-color="#C2BFB8"/><stop offset="0.52" stop-color="#EEECE7"/><stop offset="0.72" stop-color="#BEBBB4"/><stop offset="0.88" stop-color="#EDEBE5"/><stop offset="1" stop-color="#AFACA5"/></linearGradient>
+<linearGradient id="btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6E6C68"/><stop offset="0.5" stop-color="#C6C4BF"/><stop offset="1" stop-color="#7A7873"/></linearGradient>
+<clipPath id="apt"><path d="M190 30 H989 A160 160 0 0 1 1149 190 V2366 A160 160 0 0 1 989 2526 H190 A160 160 0 0 1 30 2366 V190 A160 160 0 0 1 190 30 Z"/></clipPath>
+</defs>
+<rect x="0" y="640" width="9" height="96" rx="4.5" fill="url(#btn)"/>
+<rect x="0" y="812" width="9" height="150" rx="4.5" fill="url(#btn)"/>
+<rect x="0" y="1000" width="9" height="150" rx="4.5" fill="url(#btn)"/>
+<rect x="1170" y="858" width="9" height="250" rx="4.5" fill="url(#btn)"/>
+<path fill-rule="evenodd" fill="url(#rail)" d="M190 0 H989 A190 190 0 0 1 1179 190 V2366 A190 190 0 0 1 989 2556 H190 A190 190 0 0 1 0 2366 V190 A190 190 0 0 1 190 0 Z M190 12 A178 178 0 0 0 12 190 V2366 A178 178 0 0 0 190 2544 H989 A178 178 0 0 0 1167 2366 V190 A178 178 0 0 0 989 12 Z"/>
+<path fill-rule="evenodd" fill="#08080A" d="M190 12 H989 A178 178 0 0 1 1167 190 V2366 A178 178 0 0 1 989 2544 H190 A178 178 0 0 1 12 2366 V190 A178 178 0 0 1 190 12 Z M190 30 A160 160 0 0 0 30 190 V2366 A160 160 0 0 0 190 2526 H989 A160 160 0 0 0 1149 2366 V190 A160 160 0 0 0 989 30 Z"/>
+<path d="M190 30 H989 A160 160 0 0 1 1149 190 V2366 A160 160 0 0 1 989 2526 H190 A160 160 0 0 1 30 2366 V190 A160 160 0 0 1 190 30 Z" fill="none" stroke="#000000" stroke-opacity="0.55" stroke-width="3"/>
+<rect x="402.0" y="66" width="375" height="111" rx="55.5" fill="#000000"/>
+</svg>
