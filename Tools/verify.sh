@@ -15,7 +15,13 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 SCHEME="ScrollTheQuran"
-DESTINATION="platform=iOS Simulator,name=iPhone 17"
+# With SCROLL_SIM set, xcodebuild is pinned to that exact device so a parallel task
+# cannot boot a second simulator behind our back; otherwise the default by-name lookup.
+if [ "$SIM" = booted ]; then
+  DESTINATION="platform=iOS Simulator,name=iPhone 17"
+else
+  DESTINATION="platform=iOS Simulator,id=$SIM"
+fi
 DERIVED=".build/DerivedData"
 BUNDLE_ID="com.scrollthequran.app"
 
