@@ -13,6 +13,9 @@ public final class MockEntitlementStore: EntitlementProviding {
     public private(set) var isPremium: Bool
     public private(set) var products: [StorePlan]
     public var introOfferEligible: Bool
+    /// Settable so a snapshot, a UI test or a preview can stand the app in the grace period
+    /// or in billing retry without a StoreKit session. `nil` means "follow `isPremium`".
+    public var forcedBillingState: BillingState?
 
     /// Set to make `purchase(_:)` report something other than `.purchased`.
     public var nextOutcome: PurchaseOutcome = .purchased
@@ -26,11 +29,17 @@ public final class MockEntitlementStore: EntitlementProviding {
     public init(
         isPremium: Bool = false,
         products: [StorePlan] = StoreCatalogue.all,
-        introOfferEligible: Bool = true
+        introOfferEligible: Bool = true,
+        billingState: BillingState? = nil
     ) {
         self.isPremium = isPremium
         self.products = products
         self.introOfferEligible = introOfferEligible
+        forcedBillingState = billingState
+    }
+
+    public var billingState: BillingState {
+        forcedBillingState ?? (isPremium ? .subscribed : .notSubscribed)
     }
 
     public func load() async {
@@ -63,6 +72,22 @@ public final class MockEntitlementStore: EntitlementProviding {
     /// Test hook: pretend the subscription lapsed.
     public func expire() {
         isPremium = false
+        forcedBillingState = .expired
+    }
+
+    /// Test hook: pretend the customer's card failed. Grace period keeps access, billing
+    /// retry does not — which is exactly the difference Settings has to explain.
+    public func enterBillingTrouble(_ state: BillingState) {
+        forcedBillingState = state
+        isPremium = state == .inGracePeriod
+    }
+
+    /// Test hook: grant the entitlement without going through `purchase(_:)`, the way a
+    /// restore or a renewal landing on the `Transaction.updates` listener would.
+    public func grant() {
+        isPremium = true
+        forcedBillingState = nil
+        introOfferEligible = false
     }
 
     /// The three products in `Config/ScrollTheQuran.storekit`. Lives on `StoreCatalogue`
