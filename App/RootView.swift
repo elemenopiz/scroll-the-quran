@@ -1,12 +1,13 @@
 import AppShell
 import Commerce
+import FeatureOnboarding
 import FeaturePaywall
 import SwiftUI
 
 /// The app's state machine: onboarding, then the paywall, then the one-time gift
-/// offer if the paywall was dismissed, then the tab bar. Phase 1 renders labelled
-/// placeholders for the first three; `FeatureOnboarding` and `FeaturePaywall`
-/// replace them in Phase 3.
+/// offer if the paywall was dismissed, then the tab bar. `FeatureOnboarding` and
+/// `FeaturePaywall` render the first three, so no `PlaceholderScreen` is left on
+/// the funnel.
 ///
 /// `--screenshot <id>` routes straight to a screen and `SCROLL_FIXED_DATE` pins
 /// "today", so every screen is capturable headlessly and deterministically.
@@ -45,9 +46,14 @@ struct RootView: View {
     private var phaseContent: some View {
         switch flow.phase {
         case .onboarding:
-            stage(id: launch.screenshot?.screen.rawValue ?? "onboarding-hook",
-                  title: "Onboarding",
-                  systemImage: "sparkle")
+            // Phase 2d: the funnel itself, replacing the Phase 1 placeholder. With a
+            // `--screenshot` route it pins to that screen with fixture state; without
+            // one it resumes from persisted progress. Finishing moves to the paywall,
+            // exactly as `PaywallScreens.view(forScreenID:…)` does below.
+            FeatureOnboardingModule.view(
+                forScreenID: launch.screenshot?.screen.rawValue,
+                onFinished: { flow.advance() }
+            )
         case .paywall, .gift:
             PaywallScreens.view(
                 forScreenID: launch.screenshot?.screen.rawValue
@@ -59,17 +65,6 @@ struct RootView: View {
             )
         case .tabs:
             TabRoot(model: tabs)
-        }
-    }
-
-    private func stage(id: String, title: String, systemImage: String) -> some View {
-        VStack(spacing: 24) {
-            PlaceholderScreen(screenID: id, title: title, systemImage: systemImage)
-            if !launch.isSnapshotRun {
-                Button("Continue") { flow.advance() }
-                    .accessibilityIdentifier("stage.continue")
-                    .padding(.bottom, 40)
-            }
         }
     }
 }

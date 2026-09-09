@@ -16,12 +16,8 @@ public extension FeatureOnboardingModule {
     )
 
     /// Routes a `--screenshot <id>` / `Reference/manifest.json` screen id to the view
-    /// that renders it, with deterministic fixture state.
-    ///
-    /// **`RootView` does not call this yet.** Phase 1 froze `App/RootView.swift` rendering
-    /// a `PlaceholderScreen` for the whole onboarding phase, and `AppShell` exposes no
-    /// registration seam, so the orchestrator has to wire this in before
-    /// `Tools/verify.sh --snap onboarding-*` can reach these screens.
+    /// that renders it, with deterministic fixture state: nothing is read from or
+    /// written to `UserDefaults`, and the reviews screen gets its fixture stats.
     @MainActor
     static func screen(for id: String, onFinished: @escaping () -> Void = {}) -> AnyView? {
         guard let step = OnboardingStep(rawValue: id) ?? signInStep(for: id) else { return nil }
@@ -35,6 +31,24 @@ public extension FeatureOnboardingModule {
                 onFinished: onFinished
             )
         )
+    }
+
+    /// What `RootView` renders for `RootPhase.onboarding`.
+    ///
+    /// `id` is the `--screenshot` route when there is one: that pins the funnel to a
+    /// single screen with fixture state so `Tools/snapshot/capture.sh` shoots the same
+    /// pixels every run. With no route — the real first launch — the funnel starts from
+    /// persisted progress and writes each step back, so a relaunch resumes where the
+    /// user stopped. `onFinished` is `RootFlowModel.advance()`, which moves to the paywall.
+    ///
+    /// Mirrors `PaywallScreens.view(forScreenID:…)`, which is how `RootView` reaches the
+    /// paywall, so the composition root treats both phases the same way.
+    @MainActor
+    static func view(forScreenID id: String?, onFinished: @escaping () -> Void = {}) -> AnyView {
+        if let id, let screen = screen(for: id, onFinished: onFinished) {
+            return screen
+        }
+        return AnyView(OnboardingFlow(onFinished: onFinished))
     }
 
     /// The sign-in sheet is not a step of its own: it is the hook with the sheet up.

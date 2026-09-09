@@ -3,14 +3,10 @@ import XCTest
 /// Drives the whole first-run funnel on the simulator: hook -> four slides -> reviews,
 /// plus the sign-in sheet the hook's secondary button opens.
 ///
-/// Every test skips itself (loudly) while `App/RootView.swift` still renders the Phase 1
-/// placeholder for the onboarding phase. `FeatureOnboardingModule.screen(for:)` is the
-/// seam that makes these live; wiring it is the orchestrator's call, since `App/` is
-/// frozen and outside this task's ownership.
+/// `App/RootView.swift` renders `RootPhase.onboarding` through
+/// `FeatureOnboardingModule.view(forScreenID:onFinished:)`, so these run against the
+/// real app rather than a harness.
 final class OnboardingFlowTests: XCTestCase {
-    /// The reference space the funnel was measured in (`Reference/onboarding-*.png`).
-    private let referenceSize = CGSize(width: 393, height: 852)
-
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
@@ -24,15 +20,14 @@ final class OnboardingFlowTests: XCTestCase {
         return app
     }
 
-    /// `nil` when the funnel is not reachable yet, so the caller can skip.
+    /// The funnel screen behind a `--screenshot` route. A failure here means the
+    /// onboarding phase is not routed through `FeatureOnboardingModule` any more.
     private func funnel(_ app: XCUIApplication, screen: String) throws -> XCUIElement {
         let element = app.descendants(matching: .any).matching(identifier: "screen.\(screen)").firstMatch
-        guard element.waitForExistence(timeout: 5) else {
-            throw XCTSkip(
-                "screen.\(screen) never appeared: App/RootView.swift still renders the Phase 1 "
-                    + "onboarding placeholder. Route it through FeatureOnboardingModule.screen(for:)."
-            )
-        }
+        XCTAssertTrue(
+            element.waitForExistence(timeout: 10),
+            "screen.\(screen) never appeared: is RootView still routing .onboarding to the funnel?"
+        )
         return element
     }
 
@@ -94,44 +89,7 @@ final class OnboardingFlowTests: XCTestCase {
 
     // MARK: - Layout
 
-    /// The hook's two anchors, in reference points. Numbers come from
-    /// `Reference/onboarding-hook.png`: Continue fills x 52...340.67 and rows 746...801.
-    func testHookMatchesTheReferenceLayout() throws {
-        let app = launch()
-        _ = try funnel(app, screen: "onboarding-hook")
-
-        let window = app.windows.firstMatch.frame
-        XCTAssertGreaterThan(window.width, 0)
-        let scaleX = referenceSize.width / window.width
-        let scaleY = referenceSize.height / window.height
-
-        let headline = app.descendants(matching: .any)
-            .matching(identifier: "onboarding.hook.headline").firstMatch
-        XCTAssertTrue(headline.waitForExistence(timeout: 5))
-        let headlineTop = headline.frame.minY * scaleY
-
-        let button = app.descendants(matching: .any)
-            .matching(identifier: "onboarding.hook.continue").firstMatch
-        XCTAssertTrue(button.waitForExistence(timeout: 5))
-        let cta = CGRect(
-            x: button.frame.minX * scaleX,
-            y: button.frame.minY * scaleY,
-            width: button.frame.width * scaleX,
-            height: button.frame.height * scaleY
-        )
-
-        if ProcessInfo.processInfo.environment["SCROLL_RECORD_SPECS"] == "1" {
-            print(String(
-                format: "SPEC onboarding-hook headline.top=%.1f cta={%.1f, %.1f, %.1f, %.1f}",
-                headlineTop, cta.minX, cta.minY, cta.width, cta.height
-            ))
-            return
-        }
-
-        XCTAssertEqual(Double(headlineTop), 274, accuracy: 12, "headline top in reference points")
-        XCTAssertEqual(Double(cta.minX), 52, accuracy: 6, "Continue x")
-        XCTAssertEqual(Double(cta.minY), 746, accuracy: 6, "Continue y")
-        XCTAssertEqual(Double(cta.width), 289, accuracy: 6, "Continue width")
-        XCTAssertEqual(Double(cta.height), 56, accuracy: 6, "Continue height")
-    }
+    // The hook's frame assertions live in `UITests/Specs/onboarding-hook.json` and run
+    // through `LayoutSpecTests`, which is this project's mechanism for a layout spec.
+    // Duplicating them here only bought a second app launch.
 }
