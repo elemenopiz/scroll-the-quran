@@ -184,7 +184,6 @@ public struct TabRoot: View {
         homeRouteID == route?.screen.rawValue ? route?.anchor : nil
     }
 
-    @ViewBuilder
     private func deepStudy(key: String) -> some View {
         DiscoverScreens.screen(
             id: "deepstudy",
@@ -230,7 +229,9 @@ public extension View {
 /// `fullScreenCover(item:)`.
 struct IdentifiableString: Identifiable, Hashable {
     let value: String
-    var id: String { value }
+    var id: String {
+        value
+    }
 }
 
 extension Binding where Value == String? {

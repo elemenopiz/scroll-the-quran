@@ -63,7 +63,9 @@ public enum VerseWidgetSource {
         pinned: VerseRef? = nil,
         items: [VerseRef]? = nil
     ) -> VerseRef? {
-        if let pinned { return pinned }
+        if let pinned {
+            return pinned
+        }
         let pool = items ?? feedVerses()
         guard !pool.isEmpty else { return nil }
         let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date) ?? 1
@@ -72,18 +74,19 @@ public enum VerseWidgetSource {
 
     /// Every feed item's opening ayah, in file order. Loaded once per process.
     public static func feedVerses(locator: ContentLocator = .shared) -> [VerseRef] {
-        if let cached = cache { return cached }
-        let loaded: [VerseRef]
-        if let file = try? locator.decode(FeedFile.self, from: "discover.json") {
-            loaded = file.items.map { VerseRef(surah: $0.surah, ayah: $0.start) }
+        if let cached = cache {
+            return cached
+        }
+        let loaded: [VerseRef] = if let file = try? locator.decode(FeedFile.self, from: "discover.json") {
+            file.items.map { VerseRef(surah: $0.surah, ayah: $0.start) }
         } else {
-            loaded = []
+            []
         }
         cache = loaded
         return loaded
     }
 
-    nonisolated(unsafe) private static var cache: [VerseRef]?
+    private nonisolated(unsafe) static var cache: [VerseRef]?
 
     /// The full entry for a date: pick the verse, then read its text.
     public static func content(
@@ -124,11 +127,13 @@ public enum VerseWidgetSource {
 
     /// One store for the life of the widget process; a translation is ~800 KB of strings.
     private static func sharedTranslations() -> TranslationStore? {
-        if let store = translationCache { return store }
+        if let store = translationCache {
+            return store
+        }
         let store = try? TranslationStore(locator: .shared)
         translationCache = store
         return store
     }
 
-    nonisolated(unsafe) private static var translationCache: TranslationStore?
+    private nonisolated(unsafe) static var translationCache: TranslationStore?
 }

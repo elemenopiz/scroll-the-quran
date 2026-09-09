@@ -18,7 +18,9 @@ import SwiftUI
 @MainActor
 public enum ScreenRegistry {
     /// Every id the registry answers to, for the "no route is unroutable" test.
-    public nonisolated static var allIDs: [String] { ScreenID.allCases.map(\.rawValue) }
+    public nonisolated static var allIDs: [String] {
+        ScreenID.allCases.map(\.rawValue)
+    }
 
     /// The screen behind a route.
     ///

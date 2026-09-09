@@ -28,7 +28,6 @@ public enum HomeScreenProvider {
     /// True once `FeatureHome` exports a real screen. Drives the UI tests' skip.
     public static let isWired = false
 
-    @ViewBuilder
     public static func screen(id: String = "home", anchor: String? = nil, env _: AppEnvironment) -> some View {
         PlaceholderScreen(
             screenID: anchor.map { "\(id)#\($0)" } ?? id,
@@ -61,7 +60,6 @@ public enum OnboardingScreenProvider {
 
     public static let isWired = false
 
-    @ViewBuilder
     public static func screen(
         id: String = "onboarding-hook",
         env: AppEnvironment,

@@ -72,7 +72,7 @@ final class RoutingTests: XCTestCase {
     // MARK: - Deep links
 
     /// The headline of the brief: a widget tap lands on Ayat al-Kursi.
-    func testVerseDeepLinkLandsOnAlBaqarah255() throws {
+    func testVerseDeepLinkLandsOnAlBaqarah255() {
         let app = launch(["--ui-test"])
         XCTAssertTrue(element(app, "tabroot").waitForExistence(timeout: 15), "the tab bar never appeared")
 
@@ -94,7 +94,7 @@ final class RoutingTests: XCTestCase {
     }
 
     /// A study link opens Deep Study over the Discover tab.
-    func testStudyDeepLinkOpensDeepStudy() throws {
+    func testStudyDeepLinkOpensDeepStudy() {
         let app = launch(["--ui-test"])
         XCTAssertTrue(element(app, "tabroot").waitForExistence(timeout: 15))
 
@@ -107,7 +107,7 @@ final class RoutingTests: XCTestCase {
     }
 
     /// A tab link just switches tabs.
-    func testTabDeepLinkSelectsTheTab() throws {
+    func testTabDeepLinkSelectsTheTab() {
         let app = launch(["--ui-test"])
         XCTAssertTrue(element(app, "tabroot").waitForExistence(timeout: 15))
 
@@ -120,7 +120,7 @@ final class RoutingTests: XCTestCase {
     }
 
     /// A malformed link must not move the app anywhere.
-    func testUnknownDeepLinkIsIgnored() throws {
+    func testUnknownDeepLinkIsIgnored() {
         let app = launch(["--ui-test"])
         XCTAssertTrue(element(app, "tabroot").waitForExistence(timeout: 15))
 
@@ -138,7 +138,7 @@ final class RoutingTests: XCTestCase {
     /// Every id the snapshot harness and the layout specs launch must resolve to a screen
     /// that actually comes up. A route that falls off the registry renders nothing, and a
     /// blank capture is not something an RMSE check reliably catches.
-    func testEveryScreenshotRouteLaunchesAndRendersSomething() throws {
+    func testEveryScreenshotRouteLaunchesAndRendersSomething() {
         continueAfterFailure = true
         for route in Self.manifestRoutes {
             let app = launch(["--screenshot", route])
@@ -167,7 +167,7 @@ final class RoutingTests: XCTestCase {
     }
 
     /// The three routes with an `#anchor` reach the same screen as their bare form.
-    func testDeepStudyAnchorsResolve() throws {
+    func testDeepStudyAnchorsResolve() {
         for route in ["deepstudy", "deepstudy#original-language", "deepstudy#apply-it"] {
             let app = launch(["--screenshot", route])
             defer { app.terminate() }
@@ -181,7 +181,7 @@ final class RoutingTests: XCTestCase {
     // MARK: - Widget
 
     /// `--screenshot widget-gallery` renders every family the widget declares.
-    func testWidgetGalleryRendersEveryFamily() throws {
+    func testWidgetGalleryRendersEveryFamily() {
         let app = launch(["--screenshot", "widget-gallery"])
         XCTAssertTrue(
             element(app, "screen.widget-gallery").waitForExistence(timeout: 15),

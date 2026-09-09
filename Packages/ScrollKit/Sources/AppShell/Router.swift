@@ -70,25 +70,33 @@ public enum DeepLink: Equatable, Sendable {
         let path = url.pathComponents.filter { $0 != "/" }
         switch url.host {
         case "verse":
-            guard path.count == 2, let surah = Int(path[0]), let ayah = Int(path[1]),
-                  surah >= 1, ayah >= 1 else { return nil }
-            self = .verse(VerseRef(surah: surah, ayah: ayah))
+            guard let verse = DeepLink.verse(from: path) else { return nil }
+            self = .verse(verse)
         case "study":
-            // `study/<key>` is the widget/share form; `study/<surah>/<range>` is kept
-            // because the Phase 1 tests and any already-shared link use it.
-            let key: String
-            switch path.count {
-            case 1: key = path[0]
-            case 2: key = "\(path[0]):\(path[1])"
-            default: return nil
-            }
-            guard let passage = PassageRef(key: key) else { return nil }
+            guard let passage = DeepLink.passage(from: path) else { return nil }
             self = .study(passage)
         case "tab":
             guard path.count == 1, let tab = AppTab(rawValue: path[0]) else { return nil }
             self = .tab(tab)
         default:
             return nil
+        }
+    }
+
+    /// `verse/<surah>/<ayah>`.
+    private static func verse(from path: [String]) -> VerseRef? {
+        guard path.count == 2, let surah = Int(path[0]), let ayah = Int(path[1]),
+              surah >= 1, ayah >= 1 else { return nil }
+        return VerseRef(surah: surah, ayah: ayah)
+    }
+
+    /// `study/<key>` is the widget and share form; `study/<surah>/<range>` is kept because
+    /// the Phase 1 tests and any already-shared link use it.
+    private static func passage(from path: [String]) -> PassageRef? {
+        switch path.count {
+        case 1: PassageRef(key: path[0])
+        case 2: PassageRef(key: "\(path[0]):\(path[1])")
+        default: nil
         }
     }
 }

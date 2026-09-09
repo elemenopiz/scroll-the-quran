@@ -58,11 +58,13 @@ struct VerseTimelineProvider: TimelineProvider {
         pinned: VerseRef? = nil
     ) -> [VerseEntry] {
         let startOfToday = calendar.startOfDay(for: now)
+        // Read once, not once per entry: the pin lives in a file in the App Group.
+        let pin = pinned ?? VerseWidgetSource.pinnedVerse()
         return (0 ..< entryCount).compactMap { offset in
             guard let day = calendar.date(byAdding: .day, value: offset, to: startOfToday) else { return nil }
             return VerseEntry(
                 date: offset == 0 ? now : day,
-                content: VerseWidgetSource.content(on: day, calendar: calendar, pinned: pinned ?? VerseWidgetSource.pinnedVerse())
+                content: VerseWidgetSource.content(on: day, calendar: calendar, pinned: pin)
             )
         }
     }

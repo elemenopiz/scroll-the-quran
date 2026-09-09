@@ -64,7 +64,7 @@ public final class AppEnvironment {
     /// position straight back to `UserStore`. Built inside a view initialiser that is a
     /// mutation of observed state *during* body evaluation, which invalidates the body that
     /// is being evaluated: the render never settles and the screen stays blank.
-    public private(set) lazy var reader: ReaderModel = ReaderModel(
+    public private(set) lazy var reader: ReaderModel = .init(
         index: index,
         translations: translations,
         user: user,
@@ -112,7 +112,9 @@ public final class AppEnvironment {
     /// `StoreKitEntitlementStore` would start a second `Transaction.updates` listener, and
     /// the content would be parsed again. Resolved once, on first use.
     public static func shared(launch: LaunchOptions = .live) -> AppEnvironment {
-        if let existing = cached { return existing }
+        if let existing = cached {
+            return existing
+        }
         let environment = live(launch: launch)
         cached = environment
         return environment
@@ -130,7 +132,9 @@ public final class AppEnvironment {
         var failures: [String] = []
 
         let index = (try? SurahIndex(locator: .shared)) ?? Self.emptyIndex()
-        if index.count == 0 { failures.append("quran/surahs.json") }
+        if index.count == 0 {
+            failures.append("quran/surahs.json")
+        }
 
         let user = UserStore.shared()
 
@@ -160,7 +164,9 @@ public final class AppEnvironment {
         }
 
         let themes = (try? ThemeIndex(loader: loader)) ?? .empty
-        if themes.count == 0 { failures.append("themes.json") }
+        if themes.count == 0 {
+            failures.append("themes.json")
+        }
 
         // One store for the life of the process. `StoreKitEntitlementStore.init` starts the
         // `Transaction.updates` listener, so it has to be created at launch — not when the
@@ -234,6 +240,10 @@ final class UserOneTimeOfferStore: OneTimeOfferStoring {
 
     var seenOneTimeOffer: Bool {
         get { user.hasSeenOneTimeOffer }
-        set { if newValue { user.markOneTimeOfferSeen() } }
+        set {
+            if newValue {
+                user.markOneTimeOfferSeen()
+            }
+        }
     }
 }

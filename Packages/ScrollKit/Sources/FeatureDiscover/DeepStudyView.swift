@@ -30,7 +30,6 @@ public struct DeepStudyView: View {
     @Environment(\.openNote) private var openNote
     @Environment(\.dismiss) private var dismiss
 
-
     public init(
         study: Study,
         themeTitle: String? = nil,

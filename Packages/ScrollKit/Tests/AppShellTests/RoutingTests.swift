@@ -98,7 +98,7 @@ func routerSelectsTabs() throws {
 }
 
 @Test("--ui-test and --open-url are parsed, and both start the app on the tabs")
-func launchOptionsParseTheTestFlags() throws {
+func launchOptionsParseTheTestFlags() {
     let options = LaunchOptions(
         arguments: ["ScrollTheQuran", "--ui-test", "--open-url", "scrollthequran://verse/2/255"],
         environment: [:]

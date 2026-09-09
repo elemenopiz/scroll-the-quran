@@ -5,5 +5,7 @@ import SwiftUI
 /// `--screenshot gallery` to it without importing DesignSystem directly.
 public struct GalleryScreen: View {
     public init() {}
-    public var body: some View { ComponentGallery() }
+    public var body: some View {
+        ComponentGallery()
+    }
 }
