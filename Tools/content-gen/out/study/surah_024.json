@@ -1,7 +1,7 @@
 {
   "surah": 24,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:00:00.753Z",
+  "generatedAt": "2026-09-09T15:07:58.491Z",
   "studies": [
     {
       "key": "24:1",
@@ -700,6 +700,238 @@
       }
     },
     {
+      "key": "24:16",
+      "surah": 24,
+      "start": 16,
+      "end": 16,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "It Is Not For Us",
+      "tier": "standard",
+      "meaning": "The words the community failed to say are supplied in full, and they have three parts. A refusal, that it is not for us to speak of this. A glorification of God, which interrupts the sentence in the middle. And a naming of the thing, a monstrous slander. The glorification at the centre is the striking part, because the reaction being asked for is not an analysis of the claim but a turn toward God at the moment of hearing it.",
+      "historicalContext": "Medinan, in the passage on the episode of slander. Commentators note that this ayah and the one before it are phrased as reproach for something not done, and read the supplied sentence as a model rather than as a formula to recite. The words arrive after weeks in which the community had been saying many other things instead.",
+      "keyTerms": [
+        {
+          "arabic": "نَّتَكَلَّمَ",
+          "gloss": "to speak, to utter",
+          "note": "A verb form for producing speech deliberately. The refusal concerns repeating the report rather than believing it, which separates what a person thinks from what a person says aloud."
+        },
+        {
+          "arabic": "سُبْحَـٰنَكَ",
+          "gloss": "glory be to You",
+          "note": "An exclamation declaring God far above something. It appears here inside a sentence about a human accusation, so the distance asserted is between God and the whole ugly business."
+        },
+        {
+          "arabic": "بُهْتَـٰنٌ",
+          "gloss": "a slander that stuns",
+          "note": "From a root meaning to leave someone dumbfounded. It names a lie so brazen that the person it concerns has no reply, which is exactly the position of anyone accused this way."
+        }
+      ],
+      "lifeInProphetsTime": "Conversation in Medina happened in company, and a person who declined to discuss a matter had to decline out loud, in front of others already discussing it. That cost something socially. The sentence given here is short enough to be said quickly and pointed enough to end an exchange, which is what someone standing in a crowded doorway would actually have needed.",
+      "didYouKnow": "The word used here for a stunning slander occurs six times in the Quran, and one of the other occurrences names the accusation made against Mary, so the same term links this episode to the most famous false charge in the text. This is also one of the few places where the Quran supplies a community not only the response expected of it but the exact words.",
+      "theologicalSignificance": "The passage treats the moment of hearing as the decisive one. What is asked for is a sentence rather than a conclusion, which means the response falls due before anyone has worked out whether the report is true. Placing a glorification of God inside that sentence also reframes the matter, since an accusation against a person is answered by an assertion about God.",
+      "crossReferences": [
+        {
+          "ref": "24:12",
+          "why": "Names the same failure a few ayat earlier, before supplying the words that were missing."
+        },
+        {
+          "ref": "4:156",
+          "why": "Uses the same word for slander, there of the accusation made against Mary."
+        },
+        {
+          "ref": "49:12",
+          "why": "Traces the same harm to suspicion and to speaking about people behind their backs."
+        }
+      ],
+      "applyIt": "Have a sentence ready. Not a policy, an actual sentence you could say in four seconds when a conversation turns to someone who is not in the room. This ayah supplies the words rather than the principle, because in the moment a principle is too slow and a sentence is not.",
+      "exploreFurther": [
+        "24:12",
+        "4:156",
+        "49:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.396Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:17-18",
+      "surah": 24,
+      "start": 17,
+      "end": 18,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Never To Return To It",
+      "tier": "standard",
+      "meaning": "Two short ayat close the passage. God counsels you against ever returning to anything like it, with a condition attached: if you are believers. Then a second sentence, that God makes the signs plain, and two names, knowing and wise. The pairing matters. A warning about repetition is followed immediately by a statement that the material has been laid out clearly, which removes the excuse of not having understood.",
+      "historicalContext": "Medinan, at the close of the account of the slander. Commentators note the phrase about never returning to the like of it, and read the word for like as widening the warning past the specific episode to any behaviour of the same kind. The two ayat function as a summary of the whole passage, and no separate occasion is reported for them.",
+      "keyTerms": [
+        {
+          "arabic": "يَعِظُكُمُ",
+          "gloss": "He counsels, He admonishes",
+          "note": "A verb for counsel that stirs the heart rather than informing the mind. The Quran uses it where the aim is to move someone, which is why it fits at the end of a scandal."
+        },
+        {
+          "arabic": "لِمِثْلِهِ",
+          "gloss": "to the like of it",
+          "note": "A phrase widening the warning beyond one episode. What is named is a category of behaviour rather than a particular incident, so the passage outlives the case that produced it."
+        },
+        {
+          "arabic": "يُبَيِّنُ",
+          "gloss": "He makes plain, He clarifies",
+          "note": "An intensive verb for showing something distinctly. Its placement right after a warning shifts responsibility, since a thing made plain cannot afterwards be treated as unclear."
+        }
+      ],
+      "lifeInProphetsTime": "Communities of that size had no mechanism for closing an episode. There was no verdict to announce and no record to correct, so a scandal simply faded while the suspicion stayed behind it. What these ayat supply is a formal ending: the matter named, the behaviour warned against, and the community told the material has been laid out plainly.",
+      "didYouKnow": "The verb for counselling that opens this passage occurs four times in the Quran, and every occurrence concerns how people treat one another rather than how they worship: returning what is held in trust, judging fairly, releasing a divorced wife decently, and here the handling of a rumour. It never appears in a passage about ritual.",
+      "theologicalSignificance": "Attaching the condition if you are believers to a warning about speech makes conduct in this area a test of faith rather than of manners. That is a strong placement. The following ayah then closes the loop by declaring the signs made plain, which removes ignorance as a defence and leaves only choice. Across the two ayat, an episode is converted into a standard.",
+      "crossReferences": [
+        {
+          "ref": "16:90",
+          "why": "Uses the same verb for counsel, listing justice and generosity among what is urged."
+        },
+        {
+          "ref": "4:58",
+          "why": "Carries that same verb, applied to returning trusts and to judging between people fairly."
+        },
+        {
+          "ref": "24:21",
+          "why": "Continues the warning by naming the path such behaviour follows, step after step."
+        }
+      ],
+      "applyIt": "Think of one thing you have already decided not to do again, and be honest about how many times you have decided it. This passage warns against returning to the like of something, which is a wider category than the thing itself. Name that category once, in your own words, and see whether it changes your week.",
+      "exploreFurther": [
+        "16:90",
+        "4:58",
+        "24:19-21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:19-20",
+      "surah": 24,
+      "start": 19,
+      "end": 20,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Those Who Love It Spread",
+      "tier": "standard",
+      "meaning": "The charge sharpens. It is aimed not at people who spread indecency but at people who love that it spread, which locates the offence in a wish rather than in an act. A punishment in both worlds follows, and then a short clause doing most of the work: God knows and you do not. The second ayah opens the unfinished construction again, naming favour and mercy and two divine names, and stops without saying what was averted.",
+      "historicalContext": "Medinan, closing the account of the slander. Commentators read the phrase about loving that it spread as distinguishing several groups caught up in the episode, since some invented, some repeated, and some merely enjoyed it. The distinction matters for how the passage assigns weight, and the sources treat it as deliberate rather than as rhetorical colour.",
+      "keyTerms": [
+        {
+          "arabic": "يُحِبُّونَ",
+          "gloss": "they love, they want",
+          "note": "The ordinary verb for love, attached here to an outcome rather than to a person. It names an appetite for a state of affairs, which is why the charge reaches people who did nothing visible."
+        },
+        {
+          "arabic": "تَشِيعَ",
+          "gloss": "to spread, to become common",
+          "note": "From a root for something turning into common property. The verb occurs once in the Quran, and its subject is not a person but the thing itself, moving under its own momentum."
+        },
+        {
+          "arabic": "ٱلْفَـٰحِشَةُ",
+          "gloss": "indecency, a gross act",
+          "note": "A word for what exceeds every bound. The passage concerns its spread as talk rather than as conduct, so what is circulating here is the report and not the act itself."
+        }
+      ],
+      "lifeInProphetsTime": "Scandal was entertainment in a settlement that had no other kind. Evenings were long, news was scarce, and a story about a household everyone knew filled a space that nothing else did. Most people caught up in the episode this surah describes gained nothing from it and lost nothing by it. They simply enjoyed it, which is the state this ayah reaches past every action to name.",
+      "didYouKnow": "The verb for a thing spreading widely occurs only once in the Quran, here. Its grammatical subject is the indecency itself rather than any person, so the sentence describes talk moving under its own weight while the people in the ayah are charged only with wanting it to. The phrase about God's favour then opens again immediately afterwards.",
+      "theologicalSignificance": "The passage identifies a form of guilt that leaves no evidence. Someone who wants a story to travel need never repeat it, and no community could prosecute a wish. Placing the punishment in both worlds, and then adding that God knows while you do not, locates the judgement precisely where a human process cannot reach. What is protected is a reputation against harm with no traceable author.",
+      "crossReferences": [
+        {
+          "ref": "24:11",
+          "why": "Distributes weight person by person across the same episode, which this ayah then extends."
+        },
+        {
+          "ref": "49:12",
+          "why": "Names the appetite behind such talk and compares it to eating a brother's flesh."
+        },
+        {
+          "ref": "33:58",
+          "why": "Describes harm done to believing men and women for things they never actually did."
+        }
+      ],
+      "applyIt": "Notice which stories about other people you find yourself hoping are true. Not the ones you spread, but the ones you would be quietly disappointed to see corrected. That is where this ayah is pointed, and it is the one part of the whole business that nobody else can see.",
+      "exploreFurther": [
+        "24:11-15",
+        "49:12",
+        "33:58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:21",
+      "surah": 24,
+      "start": 21,
+      "end": 21,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Not One Of You Would Be Pure",
+      "tier": "standard",
+      "meaning": "Two things are joined. A warning against following Satan's footsteps, with a reason given, that whoever follows them ends up urging what is indecent and wrong. The word for footsteps is the point, since a step is small and a sequence of them arrives somewhere nobody planned. Then a statement that overturns any sense of achievement in avoiding this: were it not for God's favour, not one of you would ever have been pure. Purification is assigned entirely to God.",
+      "historicalContext": "Medinan, closing the passage on the slander. The community had just been shown that most of its members took part in something none of them would have chosen at the outset. Commentators read the image of footsteps as explaining exactly that, since nobody decided to ruin a reputation, they took one small step at a time. No separate occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "خُطُوَٰتِ",
+          "gloss": "footsteps, single paces",
+          "note": "The plural of one stride. The image is a sequence in which each step is unremarkable alone, which is why the Quran uses it for how people arrive somewhere they never intended to go."
+        },
+        {
+          "arabic": "زَكَىٰ",
+          "gloss": "became pure, grew clean",
+          "note": "From a root joining purity and growth, used of crops and of wealth. Purity in this sense is something that increases rather than a state achieved once and then kept."
+        },
+        {
+          "arabic": "يُزَكِّى",
+          "gloss": "He purifies, He causes growth",
+          "note": "The same root in a causative form, with God as the one acting. Setting both forms in one sentence makes the human verb impossible and leaves the divine one as the only source."
+        }
+      ],
+      "lifeInProphetsTime": "Tracks mattered in that world. A guide read footprints in sand to learn who had passed, how many and how long before, and following a trail was an ordinary skill rather than a figure of speech. Steps left evidence and led somewhere definite. An audience used to reading tracks would hear this image concretely, as a line of small marks going in one direction.",
+      "didYouKnow": "The phrase about following Satan's footsteps occurs in four places in the Quran, and this ayah alone uses it twice, once in the warning and once in the explanation. Two of the other three attach it to food and livestock rather than to speech, so the same image covers what people eat and what they say about each other.",
+      "theologicalSignificance": "The ayah removes the ground for moral superiority at the exact moment a community has been shown to be at fault. Nobody in the audience gets to stand apart, because the sentence says none of them would have been pure without favour. That keeps the passage from producing the very thing it is correcting, which is a group of people confident about other people's failures.",
+      "crossReferences": [
+        {
+          "ref": "2:168",
+          "why": "Uses the same image of Satan's footsteps, there about what people take as food."
+        },
+        {
+          "ref": "53:32",
+          "why": "Warns against claiming purity for oneself, since God knows who is mindful of Him."
+        },
+        {
+          "ref": "4:49",
+          "why": "Names those who claim purity for themselves, and says God purifies whom He wills."
+        }
+      ],
+      "applyIt": "Trace one habit you are not proud of back to its first step. Not the act itself, but the first small thing that made the act available to you. This ayah describes arriving somewhere by paces rather than by decision, and the work is spotting which pace you are taking right now without noticing.",
+      "exploreFurther": [
+        "2:168",
+        "4:49",
+        "53:32"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "24:22",
       "surah": 24,
       "start": 22,
@@ -758,6 +990,122 @@
       }
     },
     {
+      "key": "24:23-24",
+      "surah": 24,
+      "start": 23,
+      "end": 24,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Their Tongues Will Testify",
+      "tier": "standard",
+      "meaning": "The accusation is named once more, and the women it concerns are described with three words: honourable, unaware, believing. The middle one is the sharpest, since being unaware of what is said about you is the ordinary condition of anyone slandered. Then the scene changes. On a day named without introduction, their own tongues and hands and feet give evidence against them, which turns the instrument of the offence into the witness to it.",
+      "historicalContext": "Medinan, at the close of the passage on the slander. Commentators note the description of the accused as unaware, and read it as covering both innocence of the act and ignorance of the talk. The turn to the Day of Resurrection at this point is characteristic of the surah, which repeatedly answers a present matter by naming a later one.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْغَـٰفِلَـٰتِ",
+          "gloss": "the unaware, the unsuspecting",
+          "note": "A participle for someone with no idea what is happening. It occurs in this feminine plural form once in the Quran, and it names the position of the person a rumour is about."
+        },
+        {
+          "arabic": "لُعِنُوا",
+          "gloss": "they have been cursed",
+          "note": "A passive verb, so no curser is named. The root means being driven off and kept at a distance, and the sentence sets that exclusion in the past rather than in the future."
+        },
+        {
+          "arabic": "تَشْهَدُ",
+          "gloss": "gives testimony, witnesses",
+          "note": "The same verb used throughout this surah for legal testimony. Applying it to a person's own limbs completes the surah's long argument about evidence in the least expected way."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony in Arabia depended on finding people willing to speak, and the powerful could usually find them. A man with standing could produce witnesses; a man without could not. The image of one's own body giving evidence, with no possibility of recruiting it or silencing it, addressed a court everyone had watched fail, and it needed no explanation at all to land.",
+      "didYouKnow": "The word describing the accused women as unaware occurs in this form only once in the Quran. The surah has spent its opening ayat on the difficulty of producing witnesses, and here it supplies witnesses that cannot be found, coached or refused, drawn from the body of the accuser rather than from anyone standing around him.",
+      "theologicalSignificance": "The passage answers a specific despair, which is that slander cannot be disproved. It does not promise the record will be corrected in this world. What it establishes is that the evidence exists and will be produced, and it locates that evidence in the offender rather than in circumstances. Justice is described as delayed and certain, rather than as available now.",
+      "crossReferences": [
+        {
+          "ref": "41:20",
+          "why": "Describes hearing, sight and skins testifying against people about what they used to do."
+        },
+        {
+          "ref": "36:65",
+          "why": "Seals the mouths so that hands speak and feet bear witness to what was earned."
+        },
+        {
+          "ref": "24:4",
+          "why": "Sets the standard of witnesses this passage answers from the opposite direction entirely."
+        }
+      ],
+      "applyIt": "Say something out loud today that you would be comfortable hearing played back. Just one sentence, chosen deliberately. This passage imagines a body giving evidence about its owner, and the exercise is not fear but accuracy. Most of your talk would survive a replay, and knowing which part would not is worth an afternoon.",
+      "exploreFurther": [
+        "36:65",
+        "41:19-22",
+        "24:4-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:25",
+      "surah": 24,
+      "start": 25,
+      "end": 25,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "The Manifest Truth",
+      "tier": "standard",
+      "meaning": "One sentence in two halves. God will pay them their due account in full, and then they will know that God is the Truth made manifest. The second half is the strange one, because knowing is described as arriving at the moment of payment rather than before it. What the day produces, on this account, is not only a settlement but a recognition, and the recognition is of something that had been the case the whole time.",
+      "historicalContext": "Medinan, closing the passage on the slander. The surah has repeatedly set a present dispute against a later clarity, and this ayah completes that pattern. Commentators read the word for their due as covering both a debt paid and a way of life returned, since the Arabic carries both senses, and they record the doubling rather than choosing between them.",
+      "keyTerms": [
+        {
+          "arabic": "يُوَفِّيهِمُ",
+          "gloss": "pays them in full",
+          "note": "An intensive verb from the root for fulfilling a measure. It belongs to commerce, describing a debt settled without shortfall, and it is used here of what people are owed rather than what they owe."
+        },
+        {
+          "arabic": "دِينَهُمُ",
+          "gloss": "their due, their account",
+          "note": "The word carries both religion and a debt owed. Commentators note both senses here, so the sentence can mean their recompense and their way of life at once, and the ambiguity stands."
+        },
+        {
+          "arabic": "ٱلْمُبِينُ",
+          "gloss": "the manifest, the self-evident",
+          "note": "An active participle for what makes itself plain. Attached to the Truth it says the reality was always available, so what changes on that day is the seeing and not the fact."
+        }
+      ],
+      "lifeInProphetsTime": "Debt ran through the whole economy. Caravan shares, deferred payment for grain, bridewealth paid in instalments: almost every household was owed something or owed something, and settlement was a recognised event with witnesses and public reckoning. Using the vocabulary of a debt paid in full to describe a final judgement put it in terms every listener had waited for personally.",
+      "didYouKnow": "The phrase naming God as the Truth made manifest occurs twice in the Quran, and the other occurrence describes what the Prophet Muhammad (peace be upon him) already stands upon rather than what people will come to know. The same phrase therefore names both what is plain to one person now and what will be plain to everyone later.",
+      "theologicalSignificance": "The ayah makes recognition part of the outcome. Knowing is not treated as the route to judgement but as one of its results, which reverses the usual order and says something about how truth becomes visible. It also uses commercial vocabulary throughout, describing the settlement as a payment made in full rather than as a punishment, so nothing arbitrary is being described.",
+      "crossReferences": [
+        {
+          "ref": "22:62",
+          "why": "Names God as the Real, with what is called on beside Him named the empty thing."
+        },
+        {
+          "ref": "27:79",
+          "why": "Carries the same phrase, applied to what a messenger already stands firmly upon."
+        },
+        {
+          "ref": "3:25",
+          "why": "Describes every soul paid in full for what it earned, with no wrong done to any."
+        }
+      ],
+      "applyIt": "Think of a situation where you are certain you were right and nobody ever agreed. Notice how much of the discomfort is about the outcome and how much is about not being seen accurately. This ayah separates the two and promises only the second, at a date nobody gets to set. That is less than you want and more than nothing.",
+      "exploreFurther": [
+        "22:62",
+        "27:79",
+        "3:25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "24:26",
       "surah": 24,
       "start": 26,
@@ -812,6 +1160,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:22:34.683Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:27",
+      "surah": 24,
+      "start": 27,
+      "end": 27,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Until You Have Announced Yourself",
+      "tier": "standard",
+      "meaning": "A boundary is drawn around the home, and the Arabic for asking is unusual. The verb is built from the root for familiarity and putting someone at ease, so what is described is not a knock but making yourself known in a way that lets those inside compose themselves. Greeting comes second. The reason given is not the householder's right but the visitor's benefit, that this is better for you, and the closing clause names remembrance as the aim.",
+      "historicalContext": "Medinan. Houses in Medina often had no doors, only a curtain hung across an opening, and the classical sources describe entering without announcement as an ordinary habit that this passage changed. Commentators treat the ayah as establishing a boundary the society had not previously had, arriving inside a surah otherwise concerned with what people say about one another.",
+      "keyTerms": [
+        {
+          "arabic": "تَسْتَأْنِسُوا",
+          "gloss": "you make yourselves known",
+          "note": "From the root for familiarity and ease, the same root as the word for a human being. It occurs once in the Quran, and it asks for an approach that settles those inside rather than a demand for entry."
+        },
+        {
+          "arabic": "بُيُوتًا",
+          "gloss": "houses, dwellings",
+          "note": "Indefinite and plural, so no particular household is meant. The word covers a tent, a room and a courtyard alike, which widens the boundary to wherever people actually live."
+        },
+        {
+          "arabic": "تُسَلِّمُوا",
+          "gloss": "you greet with peace",
+          "note": "A verb from the root for safety and wholeness. The greeting names what the visitor brings, so the sentence pairs the asking with a declaration of harmlessness."
+        }
+      ],
+      "lifeInProphetsTime": "A house in Medina was often one room where a family slept, ate, changed and argued, closed by a hanging cloth rather than a door. There was no hallway and nowhere to receive anyone. Walking in unannounced meant walking into whatever was happening, and until this passage arrived that was normal enough that the sources record people being startled by the change.",
+      "didYouKnow": "The verb this ayah uses for seeking entry occurs only once in the Quran, and it is built from the same root as the ordinary Arabic word for a human being, a root joining familiarity, company and ease. The word for asking permission in the following ayah is different and more formal, so the passage moves from warmth into procedure.",
+      "theologicalSignificance": "Placing a boundary around the home immediately after a passage on rumour connects two things that look separate. Both concern one question: how much of a person's life belongs to everyone else. The reason given is also unusual, since the benefit is assigned to the visitor rather than the resident, which makes restraint a good for the one exercising it rather than a cost.",
+      "crossReferences": [
+        {
+          "ref": "24:58",
+          "why": "Extends the same concern inside the household, marking times when entry is announced."
+        },
+        {
+          "ref": "33:53",
+          "why": "Draws a comparable boundary around a household, including how long visitors linger."
+        },
+        {
+          "ref": "24:61",
+          "why": "Returns to houses and eating together, easing the boundary among close relatives."
+        }
+      ],
+      "applyIt": "Notice how you enter a room today, especially a room where somebody is already doing something. Most people walk in and start talking. Try pausing at the threshold long enough for the person inside to finish the sentence they are on. This ayah asks for exactly that gap, and it is about two seconds long.",
+      "exploreFurther": [
+        "24:28-29",
+        "33:53",
+        "24:58"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:28",
+      "surah": 24,
+      "start": 28,
+      "end": 28,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "If You Are Told Turn Back",
+      "tier": "standard",
+      "meaning": "Two cases follow. If nobody is there, entry waits until permission comes, which closes the loophole of an empty house. And if you are told to go back, then go back. The second sentence is the harder one, because it removes any right of appeal and offers the visitor no explanation. The reason given is the same as before, that this is purer for you, and the ayah closes by saying God is aware of what you do.",
+      "historicalContext": "Medinan, continuing the passage on entering homes. Commentators note the absence of any obligation on the householder to give a reason, and read that silence as the point, since a refusal is not made to justify itself. The sources treat these ayat as establishing a household's boundary in a society where none had been formally recognised.",
+      "keyTerms": [
+        {
+          "arabic": "يُؤْذَنَ",
+          "gloss": "permission is given",
+          "note": "A passive verb, so the sentence does not name who grants it. That keeps the attention on the visitor waiting rather than on the householder deciding, which is where the passage stays throughout."
+        },
+        {
+          "arabic": "ٱرْجِعُوا",
+          "gloss": "turn back, go home",
+          "note": "A plain imperative with no softening around it. The starkness is deliberate, since anything gentler would invite negotiation, and the ayah repeats the same verb immediately in the response."
+        },
+        {
+          "arabic": "أَزْكَىٰ",
+          "gloss": "purer, cleaner for you",
+          "note": "A comparative from the root joining purity and growth. It occurs twice in this surah, here and shortly afterwards about the gaze, tying two kinds of restraint to one word."
+        }
+      ],
+      "lifeInProphetsTime": "Turning a visitor away was socially costly in a culture built on hospitality, where receiving a guest came close to an obligation and refusing one could be read as an insult to their whole family. This ayah removes that cost. By instructing the visitor to accept a refusal without protest, it makes saying no possible in the first place.",
+      "didYouKnow": "The comparative for purer occurs four times in the Quran, and two of them fall in this surah: here about accepting a refusal, and a couple of ayat later about restraining the gaze. The text therefore uses one word for turning away from a door and for turning the eyes aside, treating both as the same movement.",
+      "theologicalSignificance": "The passage protects the person who says no, and it does so not by giving them a right they have to assert but by placing the whole instruction on the person being refused, which removes the confrontation entirely. It also describes accepting a refusal as making the visitor cleaner rather than more polite, which locates the benefit in character instead of in a social contract.",
+      "crossReferences": [
+        {
+          "ref": "24:27",
+          "why": "Sets the boundary this ayah completes, asking that entry be preceded by announcement."
+        },
+        {
+          "ref": "24:30",
+          "why": "Uses the same comparative for purity, applied there to restraint of the gaze."
+        },
+        {
+          "ref": "33:53",
+          "why": "Describes leaving a household after eating rather than settling in for conversation."
+        }
+      ],
+      "applyIt": "The next time somebody declines something you offered, or asks for space, take the answer without asking why. Notice how strong the pull to ask is. This ayah puts the whole instruction on the person who was refused, and it calls accepting it a way of becoming cleaner rather than a matter of good manners.",
+      "exploreFurther": [
+        "24:27",
+        "24:30-31",
+        "33:53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.398Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:29",
+      "surah": 24,
+      "start": 29,
+      "end": 29,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Houses Nobody Lives In",
+      "tier": "standard",
+      "meaning": "An exception is stated and its wording is careful. There is no blame in entering uninhabited houses in which you have goods of your own. Two conditions arrive together: nobody lives there, and something of yours is inside. The commentators read the ayah as covering inns, storerooms, shops and shelters along a road. Then the closing clause reaches past the wording to what is not visible, saying God knows what you disclose and what you keep back.",
+      "historicalContext": "Medinan, closing the short passage on entering homes. Commentators explain that the preceding boundary needed an exception, since travellers used unattended shelters and traders kept goods in rooms nobody occupied. The ayah is read as preventing a boundary meant to protect privacy from turning into an obstacle to ordinary commerce and travel.",
+      "keyTerms": [
+        {
+          "arabic": "مَسْكُونَةٍ",
+          "gloss": "lived in, inhabited",
+          "note": "A passive participle from the root for dwelling and for stillness. The word defines a house by whether anyone rests in it, so what the boundary protects is a person's repose rather than a structure."
+        },
+        {
+          "arabic": "مَتَـٰعٌ",
+          "gloss": "goods, useful things",
+          "note": "A word for provisions and property that serve a purpose. It names an interest in a place that is practical rather than personal, which is what keeps the exception narrow."
+        },
+        {
+          "arabic": "تُبْدُونَ",
+          "gloss": "you disclose, you show",
+          "note": "A verb for bringing something into view. Paired with its opposite in one clause, it turns a rule about buildings into a statement about stated reasons and real ones."
+        }
+      ],
+      "lifeInProphetsTime": "Trade required storage. A merchant kept bales in a rented room, a traveller left a load at a halt, and roadside shelters stood empty between users. None of these had residents and all of them had contents. Without an exception, a boundary drawn around homes would have made ordinary commerce impossible, and everyone listening had property sitting somewhere unattended.",
+      "didYouKnow": "The phrase describing an uninhabited house occurs only once in the Quran. The word behind it comes from a root meaning stillness and rest, the same root as the ordinary word for a dwelling, so the Arabic defines a home by the fact that somebody is at rest inside it rather than by walls, ownership or address.",
+      "theologicalSignificance": "The exception is stated and then immediately undercut by a clause about what God knows. That pattern recurs throughout the Quran and does something specific here: it grants a permission while removing the possibility of using it dishonestly. A person can satisfy the wording and still be doing something else, and the ayah says so in the same breath as the permission.",
+      "crossReferences": [
+        {
+          "ref": "24:27",
+          "why": "States the boundary this ayah carves an exception out of, around inhabited homes."
+        },
+        {
+          "ref": "2:189",
+          "why": "Corrects another custom about entering houses, naming the door as the way in."
+        },
+        {
+          "ref": "3:29",
+          "why": "States that God knows what is in the breasts, whether concealed or disclosed."
+        }
+      ],
+      "applyIt": "Think of a rule you keep to the letter while both you and everyone around you know what you are actually doing. This ayah gives a permission and then, in the same sentence, notes that God knows what you show and what you hold back. Naming one of those in your own case is the entire exercise.",
+      "exploreFurther": [
+        "24:27-28",
+        "2:189",
+        "3:29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.399Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:30",
+      "surah": 24,
+      "start": 30,
+      "end": 30,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Restraining The Glance",
+      "tier": "standard",
+      "meaning": "The instruction is given to the Prophet to convey, and it is addressed to believing men first, which the commentators consider significant. The verb means to lower something partly rather than to shut it, and the preposition that follows adds a further sense of some rather than all. What is described is a reduction of the gaze, not blindness. The reason given is that it is purer for them, and the closing name says God is aware of what people make.",
+      "historicalContext": "Medinan, in a surah that has spent its opening on reputation and rumour. Commentators place this instruction directly after the passage on entering homes and read the two as continuous, since both concern the boundary between a person and what others may take from them. Men are addressed before women, which the classical readers note explicitly.",
+      "keyTerms": [
+        {
+          "arabic": "يَغُضُّوا",
+          "gloss": "let them lower, let them restrain",
+          "note": "A verb for reducing something partly, used of lowering the voice as well as the eyes. It describes moderation rather than closure, and it occurs in this form once in the Quran."
+        },
+        {
+          "arabic": "مِنْ",
+          "gloss": "some of, part of",
+          "note": "A preposition adding partiality to the verb before it. Its presence means the restraint described covers part of the gaze rather than all of it, and the commentators dwell on that word."
+        },
+        {
+          "arabic": "أَزْكَىٰ",
+          "gloss": "purer, more wholesome",
+          "note": "A comparative from the root joining purity and growth. Its use here says the restraint produces something rather than merely avoiding something, which is a different kind of reason."
+        }
+      ],
+      "lifeInProphetsTime": "Medina had no private streets. Wells, markets, doorways and the mosque courtyard put everyone in view of everyone else, and there was nowhere to go unobserved. In that setting looking was the main way people gathered information about each other, and it fed directly into the talk this surah has spent twenty ayat correcting. The two behaviours were connected in practice.",
+      "didYouKnow": "The verb for restraining the gaze occurs in this form only once in the Quran, and its counterpart addressed to women in the following ayah likewise occurs once, so each form appears exactly one time. The comparative for purer that closes this ayah also appears earlier in the surah, about accepting a refusal at somebody's door.",
+      "theologicalSignificance": "Addressing men first establishes that the burden of restraint does not begin with the person being looked at. That ordering carries weight, since the natural direction of blame in most societies runs the other way. The passage also offers a positive reason rather than a prohibition's logic, describing the restraint as producing purity, so what is protected is the character of the one who looks.",
+      "crossReferences": [
+        {
+          "ref": "24:31",
+          "why": "Gives the parallel instruction to believing women, beginning with the identical verb."
+        },
+        {
+          "ref": "24:28",
+          "why": "Uses the same comparative for what is purer, applied there to accepting a refusal."
+        },
+        {
+          "ref": "17:36",
+          "why": "Names sight among the faculties a person will be answerable for having used."
+        }
+      ],
+      "applyIt": "Notice for one day how often your eyes move to something before you have decided to look. That gap is the whole subject of this ayah, which asks for a reduction rather than a shutting. Count the instances instead of judging them. The counting is the practice, and one day is enough.",
+      "exploreFurther": [
+        "24:31",
+        "17:36",
+        "24:28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.399Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:31",
+      "surah": 24,
+      "start": 31,
+      "end": 31,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "The Circle Of The Household",
+      "tier": "standard",
+      "meaning": "The parallel instruction to believing women opens with the same verb and then extends further. Adornment is not displayed except what appears of it, coverings already worn are drawn across the neckline, and a long list follows naming those before whom the restriction does not apply. That list is the ayah's real structure: husbands, fathers, sons, brothers, nephews and the rest of the household circle. It closes by turning to all believers together and asking them to repent.",
+      "historicalContext": "Medinan. Commentators describe a garment already in ordinary use, a head covering whose ends were commonly thrown back, and read the instruction as concerning how an existing garment was worn rather than introducing a new one. The passage sits inside a surah preoccupied with what people take from one another by looking and by talking about each other.",
+      "keyTerms": [
+        {
+          "arabic": "بِخُمُرِهِنَّ",
+          "gloss": "with their head coverings",
+          "note": "A plural naming a garment the women addressed already wore, from a root meaning to cover over. The word occurs once in the Quran, and it names a familiar item rather than a new one."
+        },
+        {
+          "arabic": "جُيُوبِهِنَّ",
+          "gloss": "the openings of their garments",
+          "note": "A word for the slit at the neck of a robe, which in a wide garment left the chest open. Naming it identifies exactly what the instruction concerns, in plain physical terms."
+        },
+        {
+          "arabic": "ٱلْإِرْبَةِ",
+          "gloss": "need, appetite",
+          "note": "From a root for want and requirement. It occurs once in the Quran, and it is the word by which the ayah distinguishes members of a household by capacity rather than by status."
+        }
+      ],
+      "lifeInProphetsTime": "Households in Medina were crowded, with relatives, servants and dependants sharing a single space, and there was no way to move through a day without being seen constantly by everyone in that circle. The list in this ayah is not abstract. It names, in order, the people who would actually have been in the room, which is why it runs to such length.",
+      "didYouKnow": "This is one of the two longest ayat in the surah, and several of its words occur nowhere else in the Quran. Most of its length is a single list of household members, given in a fixed order that moves outward from a woman's own family to those attached to the house, and it ends by addressing all believers together rather than one group.",
+      "theologicalSignificance": "The passage sets a boundary and then spends most of its length describing where that boundary does not run, which is an unusual proportion. What the structure protects is ordinary domestic life, since the list makes plain that the concern lies outside the household rather than within it. The closing turn to all believers, men and women together, keeps the instruction from reading as one group's burden.",
+      "crossReferences": [
+        {
+          "ref": "24:30",
+          "why": "Gives the parallel instruction to believing men, beginning with the identical verb."
+        },
+        {
+          "ref": "33:59",
+          "why": "Addresses outer garments in public, with recognition and safety given as the reason."
+        },
+        {
+          "ref": "7:26",
+          "why": "Names a covering sent down for people and calls mindfulness the better garment."
+        }
+      ],
+      "applyIt": "Notice what you do with your appearance today that is aimed at strangers rather than at the people you live with. Not in order to change it. This ayah spends most of its length describing the household where none of this applies, and that proportion is worth sitting with for a few minutes.",
+      "exploreFurther": [
+        "24:30",
+        "33:59",
+        "7:26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.399Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "24:32",
+      "surah": 24,
+      "start": 32,
+      "end": 32,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "If They Are Poor",
+      "tier": "standard",
+      "meaning": "After a long passage on restraint, the surah turns to provision. Marriages are to be arranged for those in the community without partners, and the objection anyone would raise is answered before it is voiced: if they are poor, God will enrich them from His bounty. Poverty is named as the obstacle, which tells us what was actually preventing such matches. The ayah closes on two names, one for God's amplitude and one for His knowledge.",
+      "historicalContext": "Medinan. Commentators note that this ayah follows the passages on restraint deliberately, since a community asked to guard against one thing is here given the means for another. The economic point is specific: marriage in Medina required bridewealth and a household, and the poor among the community, including many recent emigrants, had neither.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَيَـٰمَىٰ",
+          "gloss": "those without a spouse",
+          "note": "A plural covering the unmarried, the widowed and the divorced together, of both sexes. It occurs once in the Quran, and its breadth lets one word address several very different situations."
+        },
+        {
+          "arabic": "يُغْنِهِمُ",
+          "gloss": "He will enrich them",
+          "note": "From the root for being free of need, the same root as one of the divine names. The verb says God removes the lack rather than supplying a subsidy, which is a different claim entirely."
+        },
+        {
+          "arabic": "وَٰسِعٌ",
+          "gloss": "encompassing, ample",
+          "note": "From a root for breadth and room. Applied to God it names capacity without limit, and it answers the assumption behind the objection, which is that resources are a fixed quantity."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage was expensive. Bridewealth was paid to the woman herself, a household had to be set up, and a young man without means could wait years or never marry at all. Communities accumulated unmarried people for purely economic reasons, and everyone knew exactly who they were. This ayah addresses the families and guardians who arranged such matters rather than the individuals waiting.",
+      "didYouKnow": "The word this ayah uses for those without a spouse occurs only once in the Quran, and it covers the never-married, the widowed and the divorced in a single term without distinguishing men from women. Arabic has separate words for each of those states, so choosing one that erases every distinction is a deliberate move.",
+      "theologicalSignificance": "The passage makes a communal responsibility out of something usually treated as private fortune. It also answers an economic objection with a theological claim, which is a risky move, and it does so without promising wealth: what is named is the removal of need rather than the arrival of plenty. Provision is presented as following a step taken rather than as something to be waited for first.",
+      "crossReferences": [
+        {
+          "ref": "4:4",
+          "why": "Names the bridewealth given to the woman herself, which is the cost this ayah anticipates."
+        },
+        {
+          "ref": "65:3",
+          "why": "States that God provides from where a person does not expect, and suffices whoever relies."
+        },
+        {
+          "ref": "2:268",
+          "why": "Contrasts a whispered promise of poverty with God's promise of forgiveness and bounty."
+        }
+      ],
+      "applyIt": "Think of a good thing you have postponed until the money is right: a marriage, a move, a commitment. Ask honestly how much of the delay is arithmetic and how much is fear wearing arithmetic's clothes. This ayah answers a financial objection with a claim about God, and telling the two apart is the first step.",
+      "exploreFurther": [
+        "4:4",
+        "65:2-3",
+        "2:268"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:07:58.399Z",
         "reviewed": false
       }
     },
