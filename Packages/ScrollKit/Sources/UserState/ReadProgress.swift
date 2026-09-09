@@ -119,6 +119,7 @@ public struct ReadProgress: Hashable, Codable, Sendable {
     public var versesReadLabel: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
+        formatter.locale = Locale(identifier: "en_US")
         let read = formatter.string(from: NSNumber(value: readCount)) ?? "\(readCount)"
         let total = formatter.string(from: NSNumber(value: Self.totalVerses)) ?? "\(Self.totalVerses)"
         return "\(read) of \(total) verses"
