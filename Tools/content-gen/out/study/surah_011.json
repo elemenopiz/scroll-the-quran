@@ -1,7 +1,7 @@
 {
   "surah": 11,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T11:41:52.222Z",
+  "generatedAt": "2026-09-09T11:50:50.183Z",
   "studies": [
     {
       "key": "11:1-2",
@@ -1455,6 +1455,707 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T11:41:52.099Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:35",
+      "surah": 11,
+      "start": 35,
+      "end": 35,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Upon Me Falls My Crime",
+      "tier": "standard",
+      "meaning": "The narrative stops and the surah turns to address its own audience. The accusation is the one raised twenty ayat earlier, in exactly the same three words, but the answer this time is different. Instead of a challenge, it offers a division of liability: if the charge is true, the guilt is mine and stays with me, while whatever you are doing remains yours. Commentators note that the reply concedes nothing at all while declining to argue.",
+      "historicalContext": "Meccan. Commentators generally treat this ayah as a parenthesis: the story of Noah pauses and the address turns to the Prophet and his opponents before the narrative resumes in the following ayah. Others read it as still inside the story, spoken by Noah to his own people, and the classical sources record both readings side by side.",
+      "keyTerms": [
+        {
+          "arabic": "ٱفْتَرَىٰهُ",
+          "gloss": "he made it up",
+          "note": "The same verb used against the Quran at the thirteenth ayah of this surah, in the identical three-word opening. The repetition marks a deliberate return to an accusation the chapter has already answered once."
+        },
+        {
+          "arabic": "إِجْرَامِى",
+          "gloss": "my crime",
+          "note": "The root is used of cutting fruit from a tree, and came to mean severing yourself from what is right. The possessive makes the liability personal, which is the entire structure of the reply."
+        },
+        {
+          "arabic": "بَرِىٓءٌ",
+          "gloss": "clear of, quit of",
+          "note": "The word means free of a debt or healed of a disease. It describes a separation that is already complete rather than one being argued for, which is why no further defence follows it."
+        }
+      ],
+      "lifeInProphetsTime": "Liability in Arabia was collective by default. A killing by one man could be answered on any member of his clan, and a debt could follow a family for a generation, which made untangling who owed what a constant public business. Someone offering to carry his own consequences alone was refusing the ordinary arrangement everyone around him lived under.",
+      "didYouKnow": "The three-word phrase that opens this ayah, asking whether they say he made it up, occurs seven times in the Quran and twice inside this single surah: at 11:13, where it is met with the challenge to produce ten chapters, and here, where it is met instead with an offer to divide the blame between the parties.",
+      "theologicalSignificance": "The response separates the question of truth from the question of consequence, which is an unusual move. It does not assert that the accusation is false; it says that even on the accusers' own account the liability is his alone and does not reach them, while theirs stays with them. That framing makes each person's answer their own, a position the Quran takes repeatedly about the last day.",
+      "crossReferences": [
+        {
+          "ref": "10:41",
+          "why": "Divides responsibility in the same way when he is accused of lying: my deeds mine, yours yours."
+        },
+        {
+          "ref": "34:25-26",
+          "why": "Says neither party will be questioned about the other's deeds, and leaves the judging to God."
+        },
+        {
+          "ref": "109:6",
+          "why": "Ends a refusal with the same clean division: you have your way and I have mine."
+        }
+      ],
+      "applyIt": "When you are accused of something you did not do, the instinct is to argue the facts, then the tone, then the accuser's motives. Try answering once, plainly, and then leaving the question of who is right exactly where it lies. Notice how much energy you would normally spend past that point, and where it actually goes.",
+      "exploreFurther": [
+        "10:41",
+        "34:25-26",
+        "109:1-6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:49.992Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:36",
+      "surah": 11,
+      "start": 36,
+      "end": 36,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Do Not Grieve Over Them",
+      "tier": "standard",
+      "meaning": "A mission is closed by revelation rather than by a decision. Noah is told the list is complete and that nobody further will believe. What follows is not an instruction to stop working but an instruction about feeling, do not take their conduct into yourself, which commentators take as the real point of the ayah. The grief in question is a prophet's grief over people, and it is being released rather than reproached.",
+      "historicalContext": "Meccan, and the commentators note the length of what has just ended. Another surah gives Noah's stay among his people as nine hundred and fifty years, so the verdict delivered here closes an effort on a scale attributed to no other prophet. The ayah itself says nothing about that. It addresses only what he is to feel from this point on.",
+      "keyTerms": [
+        {
+          "arabic": "أُوحِىَ",
+          "gloss": "it was revealed",
+          "note": "The passive keeps the messenger out of the judgement: Noah does not conclude this, he is told it. The root suggests something conveyed quickly and privately, which is how prophetic communication is generally described."
+        },
+        {
+          "arabic": "لَن يُؤْمِنَ",
+          "gloss": "will never believe",
+          "note": "An emphatic future negation, closing a possibility rather than reporting a present state. Commentators read it as a verdict on people whose refusal had settled, not as a statement about human nature at large."
+        },
+        {
+          "arabic": "لَا تَبْتَئِسْ",
+          "gloss": "do not be distressed",
+          "note": "The verb is reflexive, naming the act of taking misery into yourself. It addresses the inward absorption of grief rather than sorrow itself, which is what makes such an instruction possible at all."
+        }
+      ],
+      "lifeInProphetsTime": "Long labour with nothing to show for it was familiar in that world. A well could be dug through rock for months and come up dry, a herd bred carefully over years could be lost in one bad season, and a man might spend a lifetime pressing a claim his sons would still be pursuing. That audience understood work whose result lay outside the worker's hands.",
+      "didYouKnow": "The verb used here for Noah's distress appears in this form only twice in the whole Quran, and both times as an instruction not to feel it. The other occurrence is at 12:69, where Joseph tells his youngest brother not to be saddened by what the others had been doing to them.",
+      "theologicalSignificance": "The ayah makes a careful separation. The outcome of a mission is settled elsewhere, and the messenger's attachment to that outcome is treated as a distinct matter requiring its own instruction. That God gives the instruction at all takes the grief seriously; it is neither denied nor reasoned away. Noah is simply told that he may now put it down.",
+      "crossReferences": [
+        {
+          "ref": "16:127",
+          "why": "Gives the Prophet the same two instructions together: do not grieve over them, do not be distressed."
+        },
+        {
+          "ref": "18:6",
+          "why": "Names the risk exactly, that he might destroy himself with grief chasing after their belief."
+        },
+        {
+          "ref": "71:26-28",
+          "why": "Records Noah's own prayer at the very end, and which people he asks to be covered instead."
+        }
+      ],
+      "applyIt": "There is probably one person whose choices you carry as though they were partly yours to fix. You may not be able to change what you want for them. You can sometimes change how much of your day their situation occupies. Pick one hour today and deliberately do not think about it; when it comes back, notice it and set it down again.",
+      "exploreFurther": [
+        "16:127",
+        "18:6",
+        "71:26-28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.001Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:37",
+      "surah": 11,
+      "start": 37,
+      "end": 37,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Build It Under Our Eyes",
+      "tier": "standard",
+      "meaning": "The instruction is practical and the reassurance is folded into it. Build, and do it under Our eyes and by Our instruction, so the work is supervised at every point. Then comes a harder prohibition: do not speak to Me about the wrongdoers. Commentators read this as closing the door on intercession for a group whose case is already settled, and they note that it arrives before the flood rather than after, so Noah knows in advance what he may not ask.",
+      "historicalContext": "Meccan. The building of the vessel occupies several ayat here and almost none in the parallel accounts, which the commentators connect to what this surah is for. A community waiting for relief in Mecca is shown a prophet given a long, visible, ridiculed task to carry out during the interval between a verdict and its execution.",
+      "keyTerms": [
+        {
+          "arabic": "بِأَعْيُنِنَا",
+          "gloss": "under Our eyes",
+          "note": "In Arabic usage this is a phrase of protection rather than surveillance, close to saying under our care. The Quran uses it four times, always of something done openly and under God's keeping."
+        },
+        {
+          "arabic": "وَحْيِنَا",
+          "gloss": "Our instruction",
+          "note": "The same word used for revelation given to prophets, applied here to the practical design of a vessel. It makes the shipbuilding a form of guidance rather than an errand carried out afterwards."
+        },
+        {
+          "arabic": "لَا تُخَـٰطِبْنِى",
+          "gloss": "do not address Me",
+          "note": "The verb is of speaking to someone directly and face to face. The prohibition concerns raising the subject at all, which is considerably stronger than a refusal of the request would have been."
+        }
+      ],
+      "lifeInProphetsTime": "There was no shipbuilding tradition in inland Arabia. Mecca knew vessels from the Red Sea ports and from traders who had crossed to Abyssinia, but its own carpentry served houses, saddles and wells. A man constructing something enormous far from any water would have looked to that audience precisely as the next ayah reports he looked to his own people.",
+      "didYouKnow": "The phrase under Our eyes occurs four times in the Quran, and three of them belong to this one event: the building of the vessel here, its building again at 23:27, and its sailing at 54:14. The fourth is an instruction to the Prophet at 52:48 to wait patiently for his Lord's decision.",
+      "theologicalSignificance": "Supervision and prohibition arrive in the same sentence, and both are forms of nearness. Being watched over is offered as reassurance during a task with no visible sense to it, while the ban on pleading marks a limit that even a prophet's closeness does not cross. Placing the verdict before the event also means the flood carries out a judgement rather than constituting one.",
+      "crossReferences": [
+        {
+          "ref": "23:27",
+          "why": "Gives the same instruction in nearly identical words, with the same prohibition attached to it."
+        },
+        {
+          "ref": "54:13-15",
+          "why": "Describes the vessel itself, planks and nails, sailing before Our eyes, and left behind as a sign."
+        },
+        {
+          "ref": "52:48",
+          "why": "Applies the same phrase to the Prophet: wait for your Lord's decision, you are before Our eyes."
+        }
+      ],
+      "applyIt": "Think of something you are doing that will not make sense to anyone for a long time: a course you are studying, a habit you are rebuilding, a relationship you are repairing slowly. Do the next piece of it today without explaining it to anybody. The reassurance in this ayah is not that the work will be understood. It is that it is seen.",
+      "exploreFurther": [
+        "23:23-30",
+        "54:9-15",
+        "52:48"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.001Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:38-39",
+      "surah": 11,
+      "start": 38,
+      "end": 39,
+      "theme": "Noah",
+      "themeId": "noah",
+      "title": "Whenever They Passed By Him",
+      "tier": "standard",
+      "meaning": "The scene is drawn in a continuous tense, so it repeats: they keep passing, they keep laughing. Noah's answer is unusual and the commentators handle it with care. He does not dispute the absurdity of what he is doing; he says the laughter will change direction, and he uses their own verb to say it. What follows names two punishments rather than one, a disgrace that arrives soon and something lasting that does not leave.",
+      "historicalContext": "Meccan, in a city where ridicule was the main instrument used against the message. Mockery cost nothing, required no argument, and worked on the followers rather than on the leader. This surah gives more room to the ark's construction than to the flood, which the commentators connect to the period of exposure a community has to live through before anything changes.",
+      "keyTerms": [
+        {
+          "arabic": "يَصْنَعُ",
+          "gloss": "he was making",
+          "note": "A continuous tense, so the ayah pictures the work still under way as they pass. The verb belongs to craft and manufacture, the ordinary word for a tradesman at his bench rather than a builder of marvels."
+        },
+        {
+          "arabic": "سَخِرُوا۟",
+          "gloss": "they mocked",
+          "note": "The root is that of putting something at your own disposal. Mockery in this word subordinates the other person, which is why the reply speaks about the direction of the mockery rather than about hurt feelings."
+        },
+        {
+          "arabic": "يُخْزِيهِ",
+          "gloss": "that disgraces him",
+          "note": "From a root meaning shame and exposure. It names the first punishment by its social effect, which is an exact answer to a mockery whose whole purpose had been to shame."
+        }
+      ],
+      "lifeInProphetsTime": "A workshop in an Arabian town stood open to the street. Carpenters, smiths and tanners worked where passers-by could watch and comment, and a craftsman's reputation was made or lost in that traffic. Noah building something enormous and unexplained in full view, day after day for years, was not a private eccentricity. It was a public performance he could not stop.",
+      "didYouKnow": "The Quran mentions the vessel in more than twenty places, but the sustained scene of construction, of people passing and laughing, and of the reply given to them belongs to this surah alone. The chapter later states its own purpose in exactly those terms, as material meant to steady the heart of the one receiving it.",
+      "theologicalSignificance": "The reply establishes that mockery is answered by outcome rather than by argument. Noah does not defend the project or explain where water would come from; he says only that the positions will reverse and that both sides will find out which way. Naming two punishments, one that shames and one that lasts, separates the social sting from the real consequence, so the answer is not merely an insult returned.",
+      "crossReferences": [
+        {
+          "ref": "36:30",
+          "why": "States the pattern plainly: no messenger ever came to them without being ridiculed for it."
+        },
+        {
+          "ref": "83:29-36",
+          "why": "Reverses the same scene at the end, with the believers on couches looking at what became of the mockers."
+        },
+        {
+          "ref": "21:41",
+          "why": "Says messengers before were ridiculed, and what they jeered at closed in around the jeerers."
+        }
+      ],
+      "applyIt": "Being laughed at is a specific kind of pressure, and it works on people who are otherwise brave. If you are doing something ordinary and good that somebody in your life finds funny, do not defend it and do not stop it. Just carry on with the next piece of it today. Noah's answer was not a comeback. It was that he kept building.",
+      "exploreFurther": [
+        "36:30",
+        "83:29-36",
+        "21:41"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.002Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:40",
+      "surah": 11,
+      "start": 40,
+      "end": 40,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "When The Oven Boiled Over",
+      "tier": "standard",
+      "meaning": "The signal is domestic and strange: an oven boils over. Commentators offer several readings, that water rose from the household ovens, that the word names a particular place, or that it describes the surface of the earth breaking open, and they set the range out without deciding. What follows is an inventory rather than a scene. Pairs of every kind, the household with one exception already announced, and the believers, counted last and described as few.",
+      "historicalContext": "Meccan. Commentators discuss the exception clause closely, since it announces the loss of a family member before the reader has met him. That is a narrative choice with a purpose: the passage soon after, in which Noah appeals for his son, is read against a verdict the reader already knows had been given in advance.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلتَّنُّورُ",
+          "gloss": "the oven",
+          "note": "A domestic clay oven sunk into the ground. Commentators differ over whether the word is literal here, names a particular place, or stands for the earth's surface, and they record the readings without choosing."
+        },
+        {
+          "arabic": "زَوْجَيْنِ ٱثْنَيْنِ",
+          "gloss": "two of a pair",
+          "note": "The doubling is emphatic. The first word already means one of a pair, so adding two makes the instruction unmistakable about numbers, which mattered for a cargo expected to reproduce afterwards."
+        },
+        {
+          "arabic": "إِلَّا قَلِيلٌ",
+          "gloss": "only a few",
+          "note": "The clause ends the ayah on a count. After the pairs and the household, the believers turn out to be the smallest item on the manifest, and that is the detail the surah leaves with its first readers."
+        }
+      ],
+      "lifeInProphetsTime": "The clay oven was the centre of a household. It was where the day's bread was made, often shared between neighbouring families, and it sat low in the ground where a woman would kneel to work at it. Choosing that object as the sign that the flood had started located the end of a world at the most domestic point in the house.",
+      "didYouKnow": "The instruction to load two of every pair occurs twice in the Quran, here and at 23:27, and the same phrase turns up once more at 13:3, where it describes the two kinds God placed in every fruit. The oven boiling over is likewise mentioned only in this ayah and its counterpart in the twenty-third surah.",
+      "theologicalSignificance": "The ayah pairs the preservation of every kind with the smallness of the believing group and simply lets the contrast stand. Continuity of creation is guaranteed while the community that recognised God is described as a handful, which sets numbers aside as a measure of anything. The exception clause does further work: mercy in this passage operates by name rather than by household or category.",
+      "crossReferences": [
+        {
+          "ref": "23:27",
+          "why": "Gives the same command in nearly identical terms, including both the oven and the pairs."
+        },
+        {
+          "ref": "54:11-12",
+          "why": "Describes the water arriving from two directions at once, gates of the sky and springs of the earth."
+        },
+        {
+          "ref": "69:11-12",
+          "why": "Recalls the same moment and says the whole event was made into a lesson for retaining ears."
+        }
+      ],
+      "applyIt": "Notice that the sign here was a kitchen. Whatever is coming in your life will most likely announce itself through something entirely ordinary, and you will probably not recognise it at the time. That is not an argument for hunting signs. It is an argument for treating the ordinary parts of today as though they might be carrying something.",
+      "exploreFurther": [
+        "23:23-30",
+        "54:9-15",
+        "69:11-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.002Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:41",
+      "surah": 11,
+      "start": 41,
+      "end": 41,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Its Sailing And Its Mooring",
+      "tier": "standard",
+      "meaning": "The boarding is marked by a sentence rather than a ceremony. The vessel's going and its stopping are both placed in the name of God, which covers the whole voyage including the part nobody can plan for. Commentators observe that a ship's mooring mattered as much as its sailing to anyone who actually used one. Two names close the ayah, and both concern mercy rather than power, which is a striking choice at the moment a flood begins.",
+      "historicalContext": "Meccan. The formula spoken here was already familiar to the surah's first hearers in another form, since the same words open every chapter of the Quran but one. Commentators treat this ayah and its counterpart in the story of Solomon as the only two places where the phrase stands inside the text rather than at the head of a chapter.",
+      "keyTerms": [
+        {
+          "arabic": "ٱرْكَبُوا۟",
+          "gloss": "embark, mount up",
+          "note": "The verb is used of getting onto an animal, which was the only kind of riding most of the audience knew. Applied to a vessel it makes boarding an act of trusting yourself to something that carries you."
+        },
+        {
+          "arabic": "مَجْر۪ىٰهَا",
+          "gloss": "its running, its sailing",
+          "note": "The noun names the motion of the vessel while it is under way. Pairing it with its opposite covers the whole voyage, since a ship in trouble is very often one that cannot stop where it needs to."
+        },
+        {
+          "arabic": "مُرْسَىٰهَآ",
+          "gloss": "its mooring, its anchoring",
+          "note": "From a root meaning to be firmly fixed, the same root that gives the word for mountains set into the earth. It names the stopping as an achievement rather than as the mere absence of motion."
+        }
+      ],
+      "lifeInProphetsTime": "Red Sea shipping was a known risk along the routes Meccans traded on. Vessels were sewn rather than nailed, coastal winds were unpredictable, and the dangerous part of a voyage was frequently the arrival, since a boat could survive open water and break apart trying to land. Naming both the sailing and the mooring named both halves of the danger.",
+      "didYouKnow": "The phrase in the name of God occurs inside the body of the Quran only twice. Once here, spoken by Noah as the vessel is boarded, and once at 27:30, where it opens the letter Solomon sends to the queen of Sheba. Everywhere else in the Book the words stand at the head of a chapter rather than within an ayah.",
+      "theologicalSignificance": "Two names of God are chosen at the point where a judgement is being executed, and neither of them is a name of power. Commentators read the pairing as directed at those on board rather than at those outside, since the people being saved are not told they earned it. The ayah also places a formula in a prophet's mouth at the start of a journey, which is how the Quran often marks a change of state.",
+      "crossReferences": [
+        {
+          "ref": "27:30",
+          "why": "The only other place this phrase stands inside an ayah, opening the letter Solomon sends."
+        },
+        {
+          "ref": "43:12-14",
+          "why": "Gives a formula for mounting whatever carries you, ending on the return to your Lord."
+        },
+        {
+          "ref": "29:65",
+          "why": "Notes that people call on God sincerely at sea and forget the moment they reach dry land."
+        }
+      ],
+      "applyIt": "Notice the things you begin without marking at all: getting into a car, opening a laptop, starting a conversation you have been dreading. Pick one of them today and put a sentence at the front of it, even silently. The point is not the words. It is that you noticed a beginning while it was happening rather than afterwards.",
+      "exploreFurther": [
+        "27:29-31",
+        "43:12-14",
+        "29:65"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.002Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:42",
+      "surah": 11,
+      "start": 42,
+      "end": 42,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "My Son, Embark With Us",
+      "tier": "standard",
+      "meaning": "The scale of the scene and the smallness of the appeal are set side by side. Waves like mountains, and a father shouting an affectionate diminutive at his boy. Commentators notice the form of address, the one a parent uses to a small child, reached for at the last possible moment in the middle of a catastrophe. The instruction has two halves, come with us and do not stay with them, which is the choice the whole surah has been describing.",
+      "historicalContext": "Meccan. The son enters the narrative here, having been announced in advance by the exception clause two ayat earlier, so the reader already knows how this ends. The classical commentators discuss how Noah himself understood that clause and record more than one view. What they agree on is that the appeal was made in complete sincerity.",
+      "keyTerms": [
+        {
+          "arabic": "مَوْجٍ كَٱلْجِبَالِ",
+          "gloss": "waves like mountains",
+          "note": "The comparison occurs once in the Quran. For an audience whose landscape was defined by mountains and whose experience of water was wells and sudden torrents, it is the largest available image for water in motion."
+        },
+        {
+          "arabic": "مَعْزِلٍ",
+          "gloss": "a place apart",
+          "note": "A noun of place from a verb meaning to set aside. It describes somewhere he had put himself rather than somewhere he happened to be standing, which is how the commentators read his absence."
+        },
+        {
+          "arabic": "يَـٰبُنَىَّ",
+          "gloss": "my dear son",
+          "note": "A diminutive with a possessive attached, the form a parent uses to a small child. Noah reaches for it at the moment of greatest danger, which makes the appeal a father's before it is a prophet's."
+        }
+      ],
+      "lifeInProphetsTime": "A son was a household's future and its security in old age, and a father's authority over one was close to absolute in Arabian custom. Sons who separated themselves from their father's household were a recognised disgrace, discussed openly and rarely mended. The first audience would have felt the weight of this scene through that lens before any theological one reached them.",
+      "didYouKnow": "The comparison of waves to mountains occurs only here in the Quran. A related image appears at 31:32, where waves cover people like canopies and they call on God with complete sincerity until He brings them to land. Between them, these two passages are the Book's only sustained pictures of high water at sea.",
+      "theologicalSignificance": "The passage sets the strongest natural bond against belonging to the message, and does not soften the collision at all. Noah's appeal is right to make and it fails, which establishes that a prophet's sincerity does not guarantee a result even inside his own house. The two halves of his instruction also make the point that boarding and separating were one act rather than two.",
+      "crossReferences": [
+        {
+          "ref": "66:10",
+          "why": "Gives the wife of Noah and the wife of Lot as examples of closeness that availed them nothing."
+        },
+        {
+          "ref": "31:32",
+          "why": "Describes waves covering people, and the sincerity that lasts only until they are delivered to land."
+        },
+        {
+          "ref": "9:114",
+          "why": "Shows Abraham praying for a father, and names the point at which the asking stopped."
+        }
+      ],
+      "applyIt": "If there is someone in your family you have stopped inviting because the answer is always no, invite them once more this week to the smallest thing you have. Not the big conversation: a meal, a walk, a phone call at a fixed hour. Noah called out in a storm and was refused, and he still called.",
+      "exploreFurther": [
+        "66:10",
+        "31:32",
+        "9:114"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.002Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:43",
+      "surah": 11,
+      "start": 43,
+      "end": 43,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "No Shelter From The Decree",
+      "tier": "standard",
+      "meaning": "The son answers with a plan, and the plan is entirely reasonable. High ground is where anyone goes in a flood. The reply corrects the category rather than the geography: nothing shelters from God's command that day, and then a single exception is named, which is mercy rather than height. The final clause is short, and commentators note that the conversation is cut off mid-exchange by the water rather than brought to a conclusion.",
+      "historicalContext": "Meccan, and read by commentators as the point where the surah's argument about protection is settled. The city's leadership relied on alliances, on walls, and on the standing of its sanctuary. The Noah narrative had already denied that anyone could put themselves beyond reach on the earth, and here the same denial is spoken by a father to his son.",
+      "keyTerms": [
+        {
+          "arabic": "سَـَٔاوِىٓ",
+          "gloss": "I will take shelter",
+          "note": "The verb means withdrawing to a place of safety, and its noun gives the ordinary word for a dwelling. This is the plain language of finding refuge, which is exactly what makes the answer sound so sensible."
+        },
+        {
+          "arabic": "لَا عَاصِمَ",
+          "gloss": "no protector at all",
+          "note": "The word describes something that holds a person back from harm, like a rope that prevents a fall. The construction denies that any such thing exists that day, and this exact phrase occurs only here."
+        },
+        {
+          "arabic": "إِلَّا مَن رَّحِمَ",
+          "gloss": "except whoever receives mercy",
+          "note": "The exception names neither a place nor a means, only a recipient. Commentators read it as making mercy the sole available shelter, which is why the ayah cannot be answered by climbing any higher."
+        }
+      ],
+      "lifeInProphetsTime": "Flash floods were the deadliest ordinary danger in Arabia. Rain falling far away could send a wall of water down a dry valley within minutes, and the standing advice was precisely what the son gives here: get to high ground quickly. Mecca itself sits in a valley and was flooded more than once, so this exchange was not abstract for the first listeners.",
+      "didYouKnow": "This exact construction denying any protector occurs only once in the Quran, in this ayah. Its root supplies several familiar words, including the one used at 3:103 for holding fast to the rope of God. That makes the denial here quite specific: not that nothing holds a person, but that nothing does except by way of mercy.",
+      "theologicalSignificance": "The passage refuses a compromise readers are inclined to make, that faith and precaution are two routes to the same safety. The son takes the precaution and it fails, and the ayah offers no physical explanation of why the mountain was insufficient. Instead it relocates the category: safety was never a property of places. The exception named keeps that conclusion from becoming despair.",
+      "crossReferences": [
+        {
+          "ref": "40:33",
+          "why": "Describes a day of turning and fleeing with no defender against God for anyone at all."
+        },
+        {
+          "ref": "3:103",
+          "why": "Uses the same root positively, telling them to hold fast together to the rope of God."
+        },
+        {
+          "ref": "6:63-64",
+          "why": "Asks who delivers you from the darkness of land and sea, and answers that God alone does."
+        }
+      ],
+      "applyIt": "Think of the thing you rely on to keep you safe: savings, a job, a person, your own competence. None of these are wrong to have, and the ayah does not ask you to give them up. Say once today, about one of them, that it is not actually what is holding you. Then carry on using it as before.",
+      "exploreFurther": [
+        "40:33",
+        "3:103",
+        "6:63-64"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.003Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:44",
+      "surah": 11,
+      "start": 44,
+      "end": 44,
+      "theme": "Rain and the Living Earth",
+      "themeId": "rain-and-the-earth",
+      "title": "O Earth, Swallow Your Waters",
+      "tier": "standard",
+      "meaning": "The ending is written as commands addressed to things that cannot hear. The earth is told to drink and the sky to stop, and then a sequence of short reports follows: the water went down, the matter was finished, the vessel came to rest, a verdict was announced. Commentators have long remarked on the compression. Nothing at all is described; everything is reported, and the close of a world fits into a single breath.",
+      "historicalContext": "Meccan. Judi is named here and nowhere else in the Quran. The classical commentators identify it as a mountain in the region of the upper Tigris, in what is now south-eastern Turkey, and they report that identification from the earlier traditions rather than deriving it from anything in the text itself.",
+      "keyTerms": [
+        {
+          "arabic": "ٱبْلَعِى",
+          "gloss": "swallow",
+          "note": "The verb is used of a throat taking something down, an unmistakably bodily word. Addressed to the earth it makes the ground drink, which is why translators reach for swallow rather than absorb."
+        },
+        {
+          "arabic": "أَقْلِعِى",
+          "gloss": "stop, give over",
+          "note": "Used of a person abandoning a habit, and of rain ceasing. Addressed to the sky it asks for cessation rather than for clearing, so the sequence follows the order events actually take."
+        },
+        {
+          "arabic": "غِيضَ",
+          "gloss": "was made to subside",
+          "note": "A passive of a verb used of water sinking away into the ground. The passive keeps the agent out of sight, which is the pattern of every clause after the opening two commands."
+        },
+        {
+          "arabic": "ٱلْجُودِىِّ",
+          "gloss": "Judi",
+          "note": "A place name given only here in the whole Quran. Commentators locate it among the northern mountains and treat the identification as received from earlier tradition rather than established from the text."
+        }
+      ],
+      "lifeInProphetsTime": "In Arabia water leaving was as dramatic as water arriving. After a sudden torrent a valley floor could drink the whole of it within a day, and herdsmen judged where to graze by watching how quickly the ground took it down. Telling the earth to swallow its water described something that audience had watched, only at a scale beyond any valley they knew.",
+      "didYouKnow": "This is the only ayah in the Quran that addresses the earth and the sky directly by name, and both of those vocatives occur nowhere else in the Book. Classical scholars of Arabic rhetoric returned to it repeatedly as an example of concentrated eloquence, since it runs from command to conclusion in a handful of words while describing nothing.",
+      "theologicalSignificance": "The commands are given to the elements rather than to people, which places the whole event on the far side of human agency. The passive verbs then keep the actor out of view: things were said, the water was made to sink, a proclamation was made. What stays visible is the sequence rather than the power exercising it, which is a particular kind of restraint at the climax of a story.",
+      "crossReferences": [
+        {
+          "ref": "54:11-12",
+          "why": "Describes the water's arrival from two directions, which this single ayah reverses in one line."
+        },
+        {
+          "ref": "69:11-12",
+          "why": "Says the same event was made into a lesson, kept by ears able to retain what they hear."
+        },
+        {
+          "ref": "23:41",
+          "why": "Ends a different people with the identical closing formula, away with the wrongdoing people."
+        }
+      ],
+      "applyIt": "Read this ayah aloud once, slowly, in whichever translation you use, and notice how quickly it ends. Then think of something in your own life that took years and finished in an afternoon: a job, a course, an illness, a house you left. Endings are almost always shorter than we expect. Sit with that for a minute today.",
+      "exploreFurther": [
+        "54:9-15",
+        "69:11-12",
+        "23:41"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.003Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:45",
+      "surah": 11,
+      "start": 45,
+      "end": 45,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "My Son Is Of My Family",
+      "tier": "standard",
+      "meaning": "The prayer is built from three statements rather than a request, and commentators pay attention to that. Noah asks for nothing; he lays out what he takes to be the case. This is my household, Your promise is true, You judge best of all who judge. The request lives in the gap between the first two clauses and is never spoken. The third clause is where he stops, and it is the one that leaves room for the answer he receives.",
+      "historicalContext": "Meccan. Commentators discuss what Noah had understood by the earlier exception, since the command to board specified his household except those already sentenced, and they record more than one view about whether he knew who was meant. What they agree on is that this prayer is offered sincerely and that it is corrected rather than condemned.",
+      "keyTerms": [
+        {
+          "arabic": "نَادَىٰ",
+          "gloss": "he called out",
+          "note": "The verb is of calling across a distance, loudly enough to carry. Used for prayer twice within three ayat here, it keeps the physical situation present: a man on a boat shouting, first to a son and now upward."
+        },
+        {
+          "arabic": "أَهْلِى",
+          "gloss": "my household",
+          "note": "The word covers family and dependants, everyone under a man's roof and his protection. It is the term the earlier promise used, which is precisely why Noah quotes it back in his prayer."
+        },
+        {
+          "arabic": "أَحْكَمُ ٱلْحَـٰكِمِينَ",
+          "gloss": "wisest of all judges",
+          "note": "A superlative built on the root that joins judgement and wisdom. It occurs twice in the Quran, and here it works as a concession folded into the prayer before any answer has arrived."
+        }
+      ],
+      "lifeInProphetsTime": "A protected household was a legal fact in Arabia, not a sentiment. To be counted in a man's household was to be under his guarantee, entitled to his defence, and included in any agreement he entered. Noah is making a claim in exactly that language, and the answer he receives redefines who the membership covers rather than withdrawing the guarantee.",
+      "didYouKnow": "The phrase Noah ends on, wisest of all who judge, occurs twice in the Quran: here, and as the closing question of the short surah of the Fig at 95:8. In both places it stands at the end of a passage, and in both it is put as something the listener is expected to concede rather than debate.",
+      "theologicalSignificance": "The prayer is answered by having its premise corrected, which is a distinct kind of answer. God does not refuse the request or reason with the grief; He tells Noah that the word he used does not mean what he assumed it meant. That makes prayer a place where a person's understanding can be adjusted, and it establishes that the promise held exactly, once household is defined the way the promise defined it.",
+      "crossReferences": [
+        {
+          "ref": "71:26-28",
+          "why": "Shows the shape of Noah's prayers elsewhere, including exactly whom he asks to have covered."
+        },
+        {
+          "ref": "12:86",
+          "why": "Shows another father taking his grief to God rather than to the people standing in front of him."
+        },
+        {
+          "ref": "95:8",
+          "why": "Closes a short surah with the same name, wisest of all who judge, put as a question."
+        }
+      ],
+      "applyIt": "When you next pray about something you badly want, try Noah's structure. Say what you believe is true about the situation, then what you believe is true about God, and stop there without joining the two into a demand. It is a small change and it does something specific: it leaves the connection between them open.",
+      "exploreFurther": [
+        "71:26-28",
+        "12:86",
+        "95:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.003Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:46",
+      "surah": 11,
+      "start": 46,
+      "end": 46,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Ask Me Not What You Do Not Know",
+      "tier": "standard",
+      "meaning": "The answer comes in three parts and only the first concerns the son. He is not of your household, which redefines the word Noah had used. Then a phrase the commentators discuss at length, read either of the son's conduct or of the request just made. Then an instruction: do not ask Me about what you have no knowledge of. The warning at the close is affectionate in its form and severe in its content.",
+      "historicalContext": "Meccan. This exchange is among the most discussed passages in classical commentary on the surah, and the discussion is grammatical rather than doctrinal, turning on whether the middle clause refers to the son, to his conduct, or to Noah's question. Al-Tabari records the range of readings and later commentators repeat it without resolving the matter.",
+      "keyTerms": [
+        {
+          "arabic": "لَيْسَ مِنْ أَهْلِكَ",
+          "gloss": "not of your household",
+          "note": "The denial concerns belonging rather than descent. Commentators read it as redefining the word the promise had used, so that household in the covenant meant those who shared his faith."
+        },
+        {
+          "arabic": "عَمَلٌ غَيْرُ صَـٰلِحٍ",
+          "gloss": "an action that is not sound",
+          "note": "A phrase whose reference is disputed. It is read of the son's conduct, of the son himself, or of the request Noah has just made, and the classical sources present all three without deciding."
+        },
+        {
+          "arabic": "أَعِظُكَ",
+          "gloss": "I counsel you",
+          "note": "The verb is of a warning delivered with concern, the kind a person gives someone they care for. It softens the correction while leaving it unmistakable, which is why it comes at the very end."
+        }
+      ],
+      "lifeInProphetsTime": "Kinship decided everything in Arabia and it was reckoned by blood. A man's obligations, his inheritance, his protection and his claim to vengeance all followed the family line, and no other criterion competed with it. Redefining a household by faith rather than by descent cut directly against the deepest organising principle the first listeners had.",
+      "didYouKnow": "The word for the ignorant that closes this ayah is used across the Quran of behaviour rather than of information, including in the instruction at 7:199 to turn away from those who act ignorantly. Its appearance here, addressed to a prophet at the end of a mission lasting centuries, is one of the sharpest turns in the chapter.",
+      "theologicalSignificance": "The correction establishes that belonging within the covenant is not inherited. That carries a consequence the surah has been building towards, since Mecca's leadership rested every claim it had on lineage. It also shows a prophet being told that he asked out of ignorance, which the passage neither hides nor treats as disqualifying, since the very next ayah is his response to it.",
+      "crossReferences": [
+        {
+          "ref": "9:114",
+          "why": "Shows the same limit with Abraham and his father, and names where the asking had to stop."
+        },
+        {
+          "ref": "7:199",
+          "why": "Uses the same word for the ignorant, in the instruction to turn away from them entirely."
+        },
+        {
+          "ref": "17:85",
+          "why": "States the general position: you have been given only a little of the knowledge there is."
+        }
+      ],
+      "applyIt": "There is probably something you have been asking God for that you have never examined. Not whether it is allowed, but whether you actually know it would be good. Take one such request today and add a clause to it, that you are asking without knowing. Nothing else about the request needs to change.",
+      "exploreFurther": [
+        "9:114",
+        "7:199",
+        "17:85"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.004Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "11:47",
+      "surah": 11,
+      "start": 47,
+      "end": 47,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Refuge From My Own Asking",
+      "tier": "standard",
+      "meaning": "The response takes the correction and goes further than it had to. Noah does not defend his question or explain his grief; he asks for shelter from the act of asking itself, which turns a rebuke into something he takes on willingly. Then he names the stakes in the strongest terms available, and the commentators notice the vocabulary: it is the same commercial word for loss the surah used earlier of people who lost themselves entirely.",
+      "historicalContext": "Meccan, closing the exchange over Noah's son. Commentators treat this ayah as the resolution of the episode and note that it arrives before the aftermath of the flood is described, so the reader leaves the scene holding the prophet's repentance rather than the drowning. That placement is read as deliberate rather than incidental.",
+      "keyTerms": [
+        {
+          "arabic": "أَعُوذُ بِكَ",
+          "gloss": "I take refuge in You",
+          "note": "The verb means attaching yourself to something for protection, the way a person clings to a strong post. The phrase occurs three times in the Quran, and here it is used against a fault the speaker has just been told about."
+        },
+        {
+          "arabic": "تَغْفِرْ لِى",
+          "gloss": "cover it over for me",
+          "note": "The root is that of covering, giving the words for a helmet and for a cloak. Forgiveness in this vocabulary conceals rather than erases, which is why it is requested alongside mercy rather than instead of it."
+        },
+        {
+          "arabic": "ٱلْخَـٰسِرِينَ",
+          "gloss": "the losers",
+          "note": "The commercial word this surah applied earlier to people who lost their own souls. Noah applies it to himself conditionally, placing himself in the same category as anyone else in the absence of forgiveness."
+        }
+      ],
+      "lifeInProphetsTime": "Seeking refuge was a formal act in Arabia. A man in danger could attach himself to a household or to a sanctuary, and the protection, once granted, bound the protector's honour even against his own kin. The phrase Noah uses belonged to that practice, so his prayer takes the shape of a fugitive claiming shelter rather than a servant offering an apology.",
+      "didYouKnow": "The exact phrase Noah uses for seeking refuge appears three times in the Quran. The other two both fall in the twenty-third surah, where the Prophet is taught to seek refuge from the promptings of devils and from their presence. This is the only place the phrase is used about a question that has already been asked.",
+      "theologicalSignificance": "A prophet is shown asking forgiveness for a request made out of love, which sets the standard high and at the same time makes it survivable. The passage does not treat the error as trivial, and it does not treat it as ruinous either; the remedy named is forgiveness and mercy, precisely what the surah has been telling Mecca to seek. The pattern applies to the messenger as much as to those refusing him.",
+      "crossReferences": [
+        {
+          "ref": "7:23",
+          "why": "Adam and his wife close with the same words: unless You forgive us we will be among the losers."
+        },
+        {
+          "ref": "21:87",
+          "why": "Records another prophet's admission inside a prayer made in the dark, and what followed it."
+        },
+        {
+          "ref": "28:16",
+          "why": "Shows Moses saying he wronged himself and asking to be covered, and being answered at once."
+        }
+      ],
+      "applyIt": "Think of a time you were corrected and answered by explaining why you had meant well. Explaining is not wrong, but notice what it does: it moves the conversation back onto your intentions. Today, when someone points something out, try accepting it in one sentence with no account of why, and see where the exchange goes instead.",
+      "exploreFurther": [
+        "7:23",
+        "21:87",
+        "28:16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T11:50:50.004Z",
         "reviewed": false
       }
     },
