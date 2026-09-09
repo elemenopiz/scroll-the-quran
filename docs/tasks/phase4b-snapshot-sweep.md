@@ -9,3 +9,5 @@ Known polish items from earlier reviews:
 - Discover card: the Arabic accent line renders very small on long passages; consider a floor of 13 pt and up to 3 lines before the English.
 - Tab bar: unselected tab icons should be outline variants (reference) not auto-filled.
 - `TintedSectionBox` needs a header slot for the per-section copy button (FeatureDiscover composes locally today).
+- Onboarding slides use placeholder mockup art: unfreeze Package.swift to give `FeatureOnboarding` a `resources: [.process("Resources")]` rule, render `reader`, `discover`, `plans-sheet`, `verse-search` via `--screenshot` into the PhoneFrame window (1119×2496 at +30+30) with `Tools/snapshot/render-mockups.sh`, and swap `MockupArt` blocks for the PNGs.
+- Sign-in sheet: add a second detent or keyboard avoidance so the email field isn't covered.
