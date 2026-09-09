@@ -17,9 +17,16 @@ struct ReferenceScale: Equatable {
     let horizontal: CGFloat
     let vertical: CGFloat
 
+    /// The funnel is an iPhone-portrait design. Anything much wider or shorter (an iPad,
+    /// a landscape phone, a Mac window) is clamped rather than blown up: a 2x scale would
+    /// put a 69 pt headline and a 990 pt phone frame on screen.
+    static let range: ClosedRange<CGFloat> = 0.8 ... 1.15
+
     init(_ size: CGSize) {
-        horizontal = size.width > 0 ? size.width / Self.referenceWidth : 1
-        vertical = size.height > 0 ? size.height / Self.referenceSafeHeight : 1
+        let width = size.width > 0 ? size.width / Self.referenceWidth : 1
+        let height = size.height > 0 ? size.height / Self.referenceSafeHeight : 1
+        horizontal = min(max(width, Self.range.lowerBound), Self.range.upperBound)
+        vertical = min(max(height, Self.range.lowerBound), Self.range.upperBound)
     }
 
     static let identity = ReferenceScale(CGSize(width: referenceWidth, height: referenceSafeHeight))

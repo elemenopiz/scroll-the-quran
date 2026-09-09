@@ -46,16 +46,25 @@ public enum OnboardingMetrics {
     /// The headline column for a slide whose reference title wraps to `lines`.
     /// A three-line reference title (slide 2) sets in a narrower column: ink x 62...329.
     public static func slideHeadlineWidth(titleLines: Int) -> CGFloat {
-        titleLines >= 3 ? 289 : slideHeadlineWidth
+        titleLines >= 3 ? 320 : slideHeadlineWidth
+    }
+
+    /// The reference row a slide's phone frame starts on: 240 on the two-line slides,
+    /// 256 on slide 2's three-line one.
+    public static func slidePhoneTop(titleLines: Int) -> CGFloat {
+        240 + CGFloat(titleLines - 2) * 16
     }
 
     /// Height reserved for a slide's top padding, headline and subheadline together, so
-    /// the phone frame starts where the reference puts it whatever the type does inside:
-    /// frame top 240 on a two-line slide, 256 on slide 2's three-line one, measured from
-    /// a 59 pt safe-area top.
+    /// the phone frame lands on `slidePhoneTop` whatever the type does inside it.
+    /// The 5 pt of slack is calibration: the canvas measures the running device's safe
+    /// area, which is not exactly the reference device's 759 pt tall.
     public static func slideTextBlockHeight(titleLines: Int) -> CGFloat {
-        (240 - 59) + CGFloat(titleLines - 2) * 16
+        slidePhoneTop(titleLines: titleLines) - referenceSafeAreaTop + 5
     }
+
+    /// Safe-area top on the reference device (iPhone 15 Pro class).
+    public static let referenceSafeAreaTop: CGFloat = 59
 
     /// Trim on top of `.leading(.tight)` to reach the reference baseline pitch.
     public static let hookHeadlineExtraLineSpacing: CGFloat = 0
@@ -67,8 +76,17 @@ public enum OnboardingMetrics {
 
     /// Slide headline first ink row 107; safe-area top on the reference device is 59 pt.
     public static let slideTopPadding: CGFloat = 40
-    /// Subheadline block bottom 214 -> phone frame top 240.
-    public static let subheadlineToPhone: CGFloat = 8
+
+    /// The reference starts a three-line headline higher up the screen: ink row 91 on
+    /// slide 2 against 107 on the two-line slides.
+    public static func slideTopPadding(titleLines: Int) -> CGFloat {
+        slideTopPadding - CGFloat(titleLines - 2) * 8
+    }
+
+    /// The slide call to action follows the phone rather than being pinned to the
+    /// bottom: frame bottom 733 -> Continue top 746 on slides 3 and 4, and frame bottom
+    /// 749 -> Continue top 762 on the taller slide 2.
+    public static let phoneToCallToAction: CGFloat = 13
 
     // MARK: - Phone frame mockup
 

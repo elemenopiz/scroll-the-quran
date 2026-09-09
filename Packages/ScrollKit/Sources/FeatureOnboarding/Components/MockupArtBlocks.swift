@@ -4,7 +4,7 @@ import CoreGraphics
 /// Coordinates are traced off `Reference/onboarding-slide*.png` (frame interior).
 extension MockBlock {
     /// Reader with the verse action sheet up — `Reference/onboarding-slide1-feed.png`.
-    static var reader: [MockBlock] {
+    static let reader: [MockBlock] = {
         var blocks: [MockBlock] = [
             MockBlock(0, 0, 228, 196, 0, .dim),
             MockBlock(16, 34, 26, 26, 13, .wash),
@@ -25,11 +25,11 @@ extension MockBlock {
             blocks.append(MockBlock(196, y + 3, 7, 8, 2, .line))
         }
         return blocks
-    }
+    }()
 
     /// Reading plans — `Reference/onboarding-slide2-plans.png`. The reference screen is
     /// dominated by dark cover photos: rows 523...623 and 695...745 of the capture.
-    static var plans: [MockBlock] {
+    static let plans: [MockBlock] = {
         var blocks: [MockBlock] = [
             MockBlock(0, 0, 228, 32, 0, .wash),
             MockBlock(76, 46, 76, 11, 5, .lineStrong),
@@ -38,7 +38,8 @@ extension MockBlock {
             MockBlock(14, 84, 200, 92, 14, .card),
             MockBlock(20, 92, 56, 56, 8, .photo),
         ]
-        blocks += lines(x: 84, y: 96, widths: [104, 122, 118, 96], height: 6, pitch: 11)
+        blocks.append(MockBlock(84, 96, 108, 11, 5, .lineStrong))
+        blocks += lines(x: 84, y: 114, widths: [122, 118, 96], height: 6, pitch: 11)
         blocks += [
             MockBlock(84, 152, 62, 6, 3, .lineStrong),
             MockBlock(14, 186, 66, 5, 2.5, .line),
@@ -56,10 +57,10 @@ extension MockBlock {
             ]
         }
         return blocks
-    }
+    }()
 
     /// Discover feed card — `Reference/onboarding-slide3-discover.png`.
-    static var discover: [MockBlock] {
+    static let discover: [MockBlock] = {
         var blocks: [MockBlock] = [
             MockBlock(14, 12, 200, 46, 16, .card),
             MockBlock(56, 28, 14, 16, 3, .line),
@@ -83,10 +84,10 @@ extension MockBlock {
             MockBlock(158, 384, 14, 16, 3, .line),
         ]
         return blocks + tabBar
-    }
+    }()
 
     /// Verse search and deep study — `Reference/onboarding-slide4-search.png`.
-    static var deepStudy: [MockBlock] {
+    static let deepStudy: [MockBlock] = {
         var blocks: [MockBlock] = [
             MockBlock(14, 12, 200, 296, 16, .card),
             MockBlock(106, 26, 18, 18, 9, .lineStrong),
@@ -115,5 +116,5 @@ extension MockBlock {
             MockBlock(22, 408, 34, 6, 3, .dark),
         ]
         return blocks + tabBar
-    }
+    }()
 }

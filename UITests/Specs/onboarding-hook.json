@@ -1,0 +1,27 @@
+{
+  "id": "onboarding-hook",
+  "route": "onboarding-hook",
+  "appearance": "light",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "note": "Frames measured off Reference/onboarding-hook.png: Continue fills x 52...340.67 and rows 746...801; the headline's first ink row is 280, so its layout frame starts a few points above that. NOTE: the brief's provisional numbers for this spec were Continue (30, 732, 333, 60) and a headline top of 300 — neither matches the reference capture, and these are the measured values.",
+  "elements": [
+    {
+      "name": "onboarding.hook.headline",
+      "query": "identifier",
+      "frame": { "x": 32.0, "y": 274.0, "width": 329.0, "height": 176.0 },
+      "tolerance": 12
+    },
+    {
+      "name": "onboarding.hook.continue",
+      "query": "identifier",
+      "frame": { "x": 52.0, "y": 746.0, "width": 289.0, "height": 56.0 }
+    },
+    {
+      "name": "onboarding.hook.alreadySignedUp",
+      "query": "identifier",
+      "frame": { "x": 52.0, "y": 680.0, "width": 289.0, "height": 56.0 },
+      "tolerance": 8
+    }
+  ]
+}

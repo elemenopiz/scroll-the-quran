@@ -21,8 +21,7 @@ struct MockupArt: View {
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            base
-            ForEach(Array(blocks.enumerated()), id: \.offset) { _, block in
+            ForEach(blocks) { block in
                 RoundedRectangle(cornerRadius: scale.width(block.radius), style: .continuous)
                     .fill(block.tone.color)
                     .frame(width: scale.width(block.rect.width), height: scale.height(block.rect.height))
@@ -49,7 +48,7 @@ struct MockupArt: View {
 }
 
 /// One rounded rectangle of placeholder art, in the 228 x 478 pt mock screen space.
-struct MockBlock {
+struct MockBlock: Identifiable {
     enum Tone {
         case dim, wash, card, line, lineStrong, dark, photo, accent
 
@@ -67,6 +66,7 @@ struct MockBlock {
         }
     }
 
+    let id = UUID()
     let rect: CGRect
     let radius: CGFloat
     let tone: Tone
@@ -89,7 +89,7 @@ struct MockBlock {
     }
 
     /// A four-item tab bar strip across the bottom of a mock screen.
-    static var tabBar: [MockBlock] {
+    static let tabBar: [MockBlock] = {
         var blocks = [MockBlock(0, 436, 228, 42, 0, .card)]
         for index in 0 ..< 4 {
             let x = 22 + CGFloat(index) * 52
@@ -97,5 +97,5 @@ struct MockBlock {
             blocks.append(MockBlock(x, 466, 26, 5, 2.5, .line))
         }
         return blocks
-    }
+    }()
 }

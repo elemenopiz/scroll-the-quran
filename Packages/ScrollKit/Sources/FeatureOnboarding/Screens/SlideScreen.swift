@@ -25,7 +25,7 @@ struct SlideScreen: View {
                     .accessibilityIdentifier("onboarding.slide.subheadline")
             }
             .padding(.horizontal, scale.width(OnboardingMetrics.textInset))
-            .padding(.top, scale.height(OnboardingMetrics.slideTopPadding))
+            .padding(.top, scale.height(OnboardingMetrics.slideTopPadding(titleLines: slide.titleLines)))
             .frame(
                 height: scale.height(OnboardingMetrics.slideTextBlockHeight(titleLines: slide.titleLines)),
                 alignment: .top
@@ -34,8 +34,9 @@ struct SlideScreen: View {
             PhoneFrame(scale: scale) {
                 MockupArt(mockup: slide.mockup, scale: scale)
             }
-
-            Spacer(minLength: 0)
+            // First to give up space on a screen shorter than the reference, so the
+            // call to action can never be pushed off the bottom.
+            .layoutPriority(-1)
 
             CallToActionStack(scale: scale) {
                 PrimaryPillButton(
@@ -45,7 +46,13 @@ struct SlideScreen: View {
                     action: onContinue
                 )
             }
+            .padding(.top, scale.height(OnboardingMetrics.phoneToCallToAction))
+
+            Spacer(minLength: 0)
         }
+        // A slide change replaces the mockup rather than interpolating one placeholder
+        // rectangle into the next.
+        .id(slide.id)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.\(slide.id)")
     }

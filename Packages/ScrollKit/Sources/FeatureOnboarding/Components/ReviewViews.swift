@@ -22,6 +22,7 @@ struct RatingPill: View {
                         .foregroundStyle(Color.ratingStar)
                 }
             }
+            .accessibilityHidden(true)
             Text("\(count) \(suffix)")
                 .font(.body(scale.type(15), weight: .semibold))
                 .foregroundStyle(Color.textSecondary)
@@ -29,7 +30,8 @@ struct RatingPill: View {
         .padding(.horizontal, scale.width(Spacing.xl))
         .frame(height: scale.height(OnboardingMetrics.ratingPillHeight))
         .background(Color.cardBackground, in: Capsule())
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(value) out of 5 stars, \(count) \(suffix)")
         .accessibilityIdentifier("onboarding.reviews.ratingPill")
     }
 }
@@ -52,6 +54,7 @@ struct ReviewCard: View {
                             .foregroundStyle(Color.ratingStar)
                     }
                 }
+                .accessibilityHidden(true)
                 Text(card.title)
                     .font(.body(scale.type(19), weight: .bold))
                     .foregroundStyle(Color.textPrimary)
@@ -72,6 +75,7 @@ struct ReviewCard: View {
         .clipShape(
             RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.cardCornerRadius), style: .continuous)
         )
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(card.stars) out of 5 stars. \(card.title). \(card.body). \(card.author)")
     }
 }

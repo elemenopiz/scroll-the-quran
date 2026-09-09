@@ -18,7 +18,7 @@ struct PrimaryPillButton: View {
                 .font(.body(scale.type(17), weight: .semibold))
                 .foregroundStyle(Color.textOnPill)
                 .frame(maxWidth: .infinity)
-                .frame(height: scale.height(OnboardingMetrics.ctaHeight))
+                .frame(minHeight: scale.height(OnboardingMetrics.ctaHeight))
                 .background(Color.pillFill, in: Capsule())
         }
         .buttonStyle(.plain)
@@ -39,7 +39,7 @@ struct SecondaryPillButton: View {
                 .font(.body(scale.type(17), weight: .semibold))
                 .foregroundStyle(Color.textPrimary)
                 .frame(maxWidth: .infinity)
-                .frame(height: scale.height(OnboardingMetrics.ctaHeight))
+                .frame(minHeight: scale.height(OnboardingMetrics.ctaHeight))
                 .overlay(
                     Capsule().strokeBorder(Color.divider, lineWidth: OnboardingMetrics.secondaryStroke)
                 )

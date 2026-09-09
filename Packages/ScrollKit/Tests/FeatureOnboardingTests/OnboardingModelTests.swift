@@ -8,12 +8,9 @@ struct OnboardingModelTests {
     private func makeModel(
         progress: EphemeralOnboardingProgressStore = EphemeralOnboardingProgressStore(),
         account: EphemeralAccountSink = EphemeralAccountSink(),
-        stats: OnboardingStats? = nil,
-        onFinished: @escaping () -> Void = {}
+        stats: OnboardingStats? = nil
     ) -> OnboardingModel {
-        OnboardingModel(
-            content: .sample, stats: stats, progress: progress, account: account, onFinished: onFinished
-        )
+        OnboardingModel(content: .sample, stats: stats, progress: progress, account: account)
     }
 
     @Test("A fresh install starts on the hook")
@@ -43,11 +40,11 @@ struct OnboardingModelTests {
     @Test("Advancing past the last screen finishes and marks the funnel done")
     func finishesAtTheEnd() {
         let progress = EphemeralOnboardingProgressStore(onboardingStep: 5)
-        var finished = 0
-        let model = makeModel(progress: progress, onFinished: { finished += 1 })
+        let model = makeModel(progress: progress)
         #expect(model.step == .reviews)
+        #expect(!model.isFinished)
         model.advance()
-        #expect(finished == 1)
+        #expect(model.isFinished)
         #expect(progress.onboardingFinished)
     }
 
@@ -82,8 +79,34 @@ struct OnboardingModelTests {
         let model = makeModel(account: account)
         model.email = "  reader@example.com "
         model.dismissSignIn()
+        model.sheetDismissed()
         #expect(account.email == "reader@example.com")
         #expect(!model.isShowingSignIn)
+    }
+
+    @Test("Signing in with Apple and then closing the sheet keeps the Apple address")
+    func appleEmailSurvivesSheetDismissal() {
+        let account = EphemeralAccountSink()
+        let model = makeModel(account: account)
+        model.showSignIn()
+        model.signedInWithApple(userID: "001234.abc", email: "apple@privaterelay.appleid.com", fullName: nil)
+        model.sheetDismissed()
+        #expect(account.email == "apple@privaterelay.appleid.com")
+    }
+
+    @Test("A content file with fewer slides than steps never strands the funnel")
+    func shortSlideListIsSkipped() {
+        var content = OnboardingContent.sample
+        content = OnboardingContent(
+            version: content.version, hook: content.hook, signIn: content.signIn,
+            slides: Array(content.slides.prefix(2)), reviews: content.reviews, legal: content.legal
+        )
+        let progress = EphemeralOnboardingProgressStore(onboardingStep: 4)
+        let model = OnboardingModel(content: content, progress: progress)
+        #expect(model.step != .slide4)
+        model.advance()
+        model.advance()
+        #expect(model.isFinished)
     }
 
     @Test("An empty field stores nothing")
@@ -91,7 +114,7 @@ struct OnboardingModelTests {
         let account = EphemeralAccountSink()
         let model = makeModel(account: account)
         model.email = "   "
-        model.commitEmail()
+        model.sheetDismissed()
         #expect(account.email == nil)
     }
 
@@ -140,13 +163,15 @@ struct OnboardingStoreTests {
         #expect(defaults.string(forKey: UserDefaultsAccountSink.accountIDKey) == "001234.abc")
     }
 
-    @Test("Clearing the email removes it rather than storing an empty string")
+    @Test("A blank field is a no-op; clearing the email is explicit")
     func accountSinkClearsEmail() throws {
         let defaults = try makeDefaults()
         let sink = UserDefaultsAccountSink(defaults: defaults)
         sink.storeEmail("reader@example.com")
         #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == "reader@example.com")
         sink.storeEmail("  ")
+        #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == "reader@example.com")
+        sink.clearEmail()
         #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == nil)
     }
 }

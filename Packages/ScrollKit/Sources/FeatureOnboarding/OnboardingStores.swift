@@ -52,7 +52,9 @@ public protocol OnboardingAccountSink: AnyObject {
     /// The stable user identifier Sign in with Apple hands back.
     func signedInWithApple(userID: String, email: String?, fullName: PersonNameComponents?)
     /// The optional address typed into the sheet. Stored on this device only.
+    /// A blank address is a no-op, never a delete — use `clearEmail()` for that.
     func storeEmail(_ email: String?)
+    func clearEmail()
 }
 
 /// Default `UserDefaults` implementation, used until `UserState` takes over.
@@ -78,12 +80,13 @@ public final class UserDefaultsAccountSink: OnboardingAccountSink {
     }
 
     public func storeEmail(_ email: String?) {
-        let trimmed = email?.trimmingCharacters(in: .whitespacesAndNewlines)
-        if let trimmed, !trimmed.isEmpty {
-            defaults.set(trimmed, forKey: Self.emailKey)
-        } else {
-            defaults.removeObject(forKey: Self.emailKey)
-        }
+        guard let trimmed = email?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !trimmed.isEmpty else { return }
+        defaults.set(trimmed, forKey: Self.emailKey)
+    }
+
+    public func clearEmail() {
+        defaults.removeObject(forKey: Self.emailKey)
     }
 }
 
@@ -102,7 +105,12 @@ public final class EphemeralAccountSink: OnboardingAccountSink {
     }
 
     public func storeEmail(_ email: String?) {
-        let trimmed = email?.trimmingCharacters(in: .whitespacesAndNewlines)
-        self.email = (trimmed?.isEmpty ?? true) ? nil : trimmed
+        guard let trimmed = email?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !trimmed.isEmpty else { return }
+        self.email = trimmed
+    }
+
+    public func clearEmail() {
+        email = nil
     }
 }

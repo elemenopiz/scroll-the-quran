@@ -148,9 +148,9 @@ public extension OnboardingContent {
         try JSONDecoder().decode(OnboardingContent.self, from: Data(contentsOf: url))
     }
 
-    /// What the app renders: the bundled copy, or the built-in sample when the
-    /// resource is missing (SwiftUI previews and host-side unit tests).
-    static var bundled: OnboardingContent {
-        (try? load(from: .main)) ?? .sample
-    }
+    /// What the app renders: the bundled copy, or the built-in sample when the resource
+    /// is missing (SwiftUI previews and host-side unit tests). `let`, not a computed
+    /// property: this is a default argument, so it would otherwise re-read and re-decode
+    /// the file every time a parent body runs.
+    static let bundled: OnboardingContent = (try? load(from: .main)) ?? .sample
 }

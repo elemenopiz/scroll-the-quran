@@ -9,6 +9,8 @@ import SwiftUI
 @MainActor
 public struct OnboardingFlow: View {
     @State private var model: OnboardingModel
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    private let onFinished: () -> Void
 
     public init(
         content: OnboardingContent = .bundled,
@@ -19,13 +21,13 @@ public struct OnboardingFlow: View {
         showingSignIn: Bool = false,
         onFinished: @escaping () -> Void = {}
     ) {
+        self.onFinished = onFinished
         let model = OnboardingModel(
             content: content,
             stats: stats,
             progress: progress,
             account: account,
-            startAt: startAt,
-            onFinished: onFinished
+            startAt: startAt
         )
         model.isShowingSignIn = showingSignIn
         _model = State(initialValue: model)
@@ -34,18 +36,26 @@ public struct OnboardingFlow: View {
     public var body: some View {
         OnboardingCanvas { scale in
             step(scale)
-                .animation(.easeInOut(duration: 0.25), value: model.step)
+                .animation(reduceMotion ? nil : .easeInOut(duration: 0.25), value: model.step)
                 .overlay {
-                    // The reference sheet sits on a ~48% black scrim (measured #828283 over
-                    // #FAFAFC). iOS only dims for itself at detents at or above `.medium`,
-                    // and this one is shorter, so the scrim is ours to draw.
+                    // The reference sheet sits on a scrim measured at #828283 over #FAFAFC.
+                    // `presentationBackgroundInteraction(.disabled)` below gets iOS to dim
+                    // at a detent this short, but only lightly; this overlay makes up the
+                    // rest. The pair was tuned against onboarding-signin.png, not guessed —
+                    // change either one and re-run Tools/snapshot/compare.sh.
                     Color.black
                         .opacity(model.isShowingSignIn ? OnboardingMetrics.sheetScrimOpacity : 0)
                         .ignoresSafeArea()
                         .allowsHitTesting(false)
+                        .animation(reduceMotion ? nil : .easeInOut(duration: 0.3), value: model.isShowingSignIn)
                 }
-                .sheet(isPresented: $model.isShowingSignIn, onDismiss: model.commitEmail) {
+                .sheet(isPresented: $model.isShowingSignIn, onDismiss: model.sheetDismissed) {
                     signInSheet(scale)
+                }
+                .onChange(of: model.isFinished) { _, finished in
+                    if finished {
+                        onFinished()
+                    }
                 }
         }
         .background(Color.appBackground.ignoresSafeArea())
@@ -68,9 +78,9 @@ public struct OnboardingFlow: View {
         )
         .presentationDetents([.height(scale.height(OnboardingMetrics.sheetHeight))])
         .presentationDragIndicator(.visible)
-        // A detent this short leaves the background undimmed by default; the reference
-        // sheet sits on a ~48% black scrim, and disabling background interaction is what
-        // brings that scrim back.
+        // One detent only: the sheet's height is measured off onboarding-signin.png, and
+        // adding a second (.large) makes iOS open on the wrong one. The keyboard covering
+        // the email field is a known gap — see the report.
         .presentationBackgroundInteraction(.disabled)
     }
 

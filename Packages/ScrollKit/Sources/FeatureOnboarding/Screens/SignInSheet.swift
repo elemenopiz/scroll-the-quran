@@ -120,7 +120,7 @@ struct SignInSheet: View {
             guard let credential = authorisation.credential as? ASAuthorizationAppleIDCredential else { return }
             onAppleSignIn(credential)
         }
-        .signInWithAppleButtonStyle(.black)
+        .signInWithAppleButtonStyle(.whiteOutline)
         .frame(height: scale.height(OnboardingMetrics.sheetButtonHeight))
         .frame(maxWidth: .infinity)
         .clipShape(Capsule())
