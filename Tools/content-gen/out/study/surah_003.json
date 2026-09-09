@@ -1,7 +1,7 @@
 {
   "surah": 3,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:45:30.920Z",
+  "generatedAt": "2026-09-09T09:54:01.515Z",
   "studies": [
     {
       "key": "3:1-3",
@@ -1697,6 +1697,712 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:45:22.075Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:40",
+      "surah": 3,
+      "start": 40,
+      "end": 40,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "How Will I Have A Son",
+      "tier": "standard",
+      "meaning": "The man who has just received exactly what he asked for responds with a question about mechanism. He is old, his wife cannot bear children, and he says both things plainly. The reply does not address the obstacle at all. It repeats a single word meaning even so, then states that God does whatever He wills. Classical commentators read the question as wonder rather than doubt, noting that he asks how rather than whether, and that no rebuke follows it in the text.",
+      "historicalContext": "Medinan, within the surah's account of the family of Imran. The episode belongs to an earlier community and is retold at greater length in a later surah, where the same request is given more of its setting. The Quran supplies no dates. The classical commentaries place the prayer immediately after what the guardian had been observing in the sanctuary, which is how this surah orders the two scenes.",
+      "keyTerms": [
+        {
+          "arabic": "أَنَّىٰ",
+          "gloss": "how, from where",
+          "note": "An interrogative covering manner and origin together. It asks by what route a thing could come about, which is why commentators hear wonder in it rather than a challenge to the promise itself."
+        },
+        {
+          "arabic": "عَاقِرٌ",
+          "gloss": "barren",
+          "note": "An adjective used of a woman or a man who does not conceive, and also of land that yields nothing. It states a settled condition rather than a season of waiting for one."
+        },
+        {
+          "arabic": "كَذَٰلِكَ",
+          "gloss": "even so, just like that",
+          "note": "A demonstrative meaning in that manner. As an answer it declines to explain, pointing back at the promise instead of forward to a mechanism, and that refusal is the whole substance of the reply."
+        }
+      ],
+      "lifeInProphetsTime": "Age was estimated rather than counted in Arabia, and a man was old when he could no longer ride or work a season through. Barrenness was named openly and carried public weight, since a household without children lost its labour, its defence and its claim on the future. Saying both facts aloud in a prayer was stating what everyone around him already knew.",
+      "didYouKnow": "The same question, in almost identical wording, appears twice in this surah within a few ayat, once from an old man and once from a young woman. In both places the reply opens with the same demonstrative. The parallel is close enough that classical commentators regularly discuss the two scenes together.",
+      "theologicalSignificance": "The passage allows a prophet to ask how without the question counting against him. It separates asking for a mechanism from doubting a promise, and answers the first by declining it. The reply also grounds the event in will rather than in capacity: the point is not that God can overcome barrenness but that what He wills is simply done, which takes the obstacle out of consideration.",
+      "crossReferences": [
+        {
+          "ref": "19:8-9",
+          "why": "Retells the same exchange, adding that God had created him before when he was nothing."
+        },
+        {
+          "ref": "3:47",
+          "why": "Puts the same question in Mary's mouth a few ayat later, and answers it the same way."
+        },
+        {
+          "ref": "51:29-30",
+          "why": "Shows Abraham's wife asking how she could bear a child in old age, and receiving a like reply."
+        }
+      ],
+      "applyIt": "Notice how often your first response to good news is to work out how it could possibly happen. That instinct is not faithlessness; the man here has it too. But watch what it costs you in the minutes afterwards. Try receiving one piece of unexpected good news this week without immediately auditing whether it is plausible.",
+      "exploreFurther": [
+        "19:2-11",
+        "21:89-90",
+        "51:29-30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.446Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:41",
+      "surah": 3,
+      "start": 41,
+      "end": 41,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "A Sign Of Three Silent Days",
+      "tier": "standard",
+      "meaning": "He asks for a sign and is given one that costs him something. For three days he will be unable to speak to people, only to gesture. Commentators note that the restriction covers speech to people and not speech to God, since the same breath instructs him to remember his Lord abundantly and to praise at both ends of the day. The sign and the instruction are therefore one thing: a tongue withdrawn from conversation and handed to something else.",
+      "historicalContext": "Medinan, within the surah's retelling of the family of Imran. The episode belongs to an earlier community. A longer version appears in a later surah, which reports the same three days and adds that he came out to his people and signalled to them. The Quran gives no place or date. Classical commentators discuss the nature of the silence and generally treat it as an inability rather than a resolution he adopted.",
+      "keyTerms": [
+        {
+          "arabic": "رَمْزًا",
+          "gloss": "by a gesture",
+          "note": "A word for a signal made with the eyes, lips or hand and without sound. It names communication stripped of voice, which is precisely the sign: he can still be understood, but not heard."
+        },
+        {
+          "arabic": "ٱذْكُر",
+          "gloss": "remember, mention",
+          "note": "The verb covers keeping in mind and saying aloud at once. Arabic does not separate the two, so remembering God is already a spoken act, which is why it survives the ban on speaking to people."
+        },
+        {
+          "arabic": "ٱلْإِبْكَـٰرِ",
+          "gloss": "the early morning",
+          "note": "A noun for the first part of the day, paired here with the late afternoon. Naming the two edges of a day is an Arabic way of saying throughout it, without listing what lies between them."
+        }
+      ],
+      "lifeInProphetsTime": "A man's standing in seventh-century Arabia rested on his speech. He argued his claims aloud, made contracts by word before witnesses, and defended his family's name in public. Poetry and oratory were the recognised instruments of power. Losing the use of the tongue for three days was not a private inconvenience; it removed him from every mechanism through which men in that world acted.",
+      "didYouKnow": "This is one of the few places in the Quran where a sign that was requested arrives as a restriction rather than a display. The three days are reported identically in the longer retelling in a later surah, one of several details that match across the two accounts despite their considerable difference in length and emphasis.",
+      "theologicalSignificance": "The sign granted here works by subtraction. Instead of showing power through an addition to the world, it withdraws a capacity and leaves the man with only the use of it that matters. That makes the sign inseparable from a discipline, and the pairing suggests that confirmation and instruction can arrive as a single event. It also treats speech to God and speech to people as genuinely different acts.",
+      "crossReferences": [
+        {
+          "ref": "19:10-11",
+          "why": "Gives the same sign in a fuller retelling, showing him signalling to his people afterwards."
+        },
+        {
+          "ref": "2:260",
+          "why": "Shows Abraham asking to be shown, and answered with an action rather than an argument."
+        },
+        {
+          "ref": "33:41-42",
+          "why": "Repeats the same instruction: remember God much, and praise Him morning and evening."
+        }
+      ],
+      "applyIt": "Try one meal, or one commute, without speaking and without a screen. Not as an achievement, simply as an experiment. Notice what your attention does when its usual outlet is closed. The instruction attached to these three days was not merely to be quiet but to redirect, and the second part is what most people leave out.",
+      "exploreFurther": [
+        "19:10-15",
+        "33:41-42",
+        "73:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.462Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:42-43",
+      "surah": 3,
+      "start": 42,
+      "end": 43,
+      "theme": "Prayer",
+      "themeId": "prayer",
+      "title": "Chosen And Told To Bow",
+      "tier": "standard",
+      "meaning": "Two announcements are made and then an instruction follows. The angels tell Mary she has been chosen, purified, and chosen again over the women of the world. Commentators discuss the repetition, generally reading the first choosing as her acceptance into dedicated service and the second as her selection for what is about to be announced. Then, straight after that height of honour, comes a command to devotion, prostration and bowing alongside others. The honour does not excuse her from the ordinary posture.",
+      "historicalContext": "Medinan. These ayat belong to the surah's central narrative and to its conversation with a community that honours Mary deeply. The passage names her election in strong terms and then places her among worshippers rather than above them. The Quran reports the address of the angels without describing a setting, and the classical commentaries add no occasion beyond the sequence of the surah itself.",
+      "keyTerms": [
+        {
+          "arabic": "ٱصْطَفَىٰكِ",
+          "gloss": "He chose you",
+          "note": "From a root meaning to take the pure part of a thing. It is used twice in one ayah of the same person, which the commentators generally read as two distinct selections rather than emphasis alone."
+        },
+        {
+          "arabic": "ٱقْنُتِى",
+          "gloss": "stand in devoted attention",
+          "note": "An imperative from the root for sustained obedient standing, the same word used earlier in this surah of the reverent. It names a posture held over time rather than an act completed once."
+        },
+        {
+          "arabic": "ٱرْكَعِى",
+          "gloss": "bow down",
+          "note": "The verb for bending at the waist. Its command form here is addressed to a woman on her own, while the phrase immediately following places her among a plural group of those bowing."
+        }
+      ],
+      "lifeInProphetsTime": "Distinction in Arabian society came with exemptions. A chief was not expected to carry water; a man of standing sent others to do what was beneath him, and honour was measured partly by what you no longer had to do yourself. Rank meant relief from common tasks. The instruction here runs directly against that grain, attaching honour to joining in rather than to being excused.",
+      "didYouKnow": "Mary is the only woman the Quran addresses by name in direct speech, and this passage does it twice in two consecutive ayat. The surah that carries her name is one of only a handful named after a person, and it is the sole surah in the Quran named for a woman.",
+      "theologicalSignificance": "Election and obligation are joined here rather than traded against each other. Being chosen above all women is followed at once by an instruction to do what every worshipper does, and to do it in company. That places the highest honour the passage can name inside ordinary devotion rather than beyond it. The purification is described as done to her, which keeps even her standing a gift rather than an achievement.",
+      "crossReferences": [
+        {
+          "ref": "66:12",
+          "why": "Names Mary again as one of the devout, using the same root as the command given here."
+        },
+        {
+          "ref": "19:16-17",
+          "why": "Places her withdrawn to an eastern place, supplying the setting this passage leaves out."
+        },
+        {
+          "ref": "3:35-37",
+          "why": "Supplies the dedication and upbringing that brought her to the point of this address."
+        }
+      ],
+      "applyIt": "Think of an area where you have some standing, at work, in a family, in a community. Find one ordinary task there that people at your level usually stop doing. Do it this week without announcing it. This passage attaches the highest honour it can name to bowing alongside other people rather than in front of them.",
+      "exploreFurther": [
+        "19:16-26",
+        "21:91",
+        "66:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.463Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:44",
+      "surah": 3,
+      "start": 44,
+      "end": 44,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "You Were Not There",
+      "tier": "standard",
+      "meaning": "The narrative pauses to address the one receiving it. These accounts belong to what is unseen, and the point is made by negation twice over: you were not present when they cast lots over Mary's guardianship, and you were not present when they quarrelled about it. Classical commentators note the choice of detail. Not a miracle, but a procedural dispute over who would take responsibility for a child, which is exactly the sort of thing an outsider would have no way of knowing.",
+      "historicalContext": "Medinan, interrupting the account of Mary between her upbringing and the announcement of her son. Addresses of this kind appear throughout the Quran wherever a narrative from an earlier community is retold. Here the interruption lands inside a surah engaged in conversation with people who held those histories themselves, so the claim being made concerns the source of the account rather than its content.",
+      "keyTerms": [
+        {
+          "arabic": "أَنۢبَآءِ",
+          "gloss": "weighty reports",
+          "note": "The plural of a word for news that carries consequence, distinguished by the lexicographers from ordinary information. It names accounts that change something for whoever receives them."
+        },
+        {
+          "arabic": "ٱلْغَيْبِ",
+          "gloss": "the unseen",
+          "note": "What is absent from perception, whether hidden by time, distance or nature. The word does not mean the supernatural; a past event no witness survives is unseen in precisely this sense."
+        },
+        {
+          "arabic": "أَقْلَـٰمَهُمْ",
+          "gloss": "their reeds, their pens",
+          "note": "The word for a trimmed reed used in writing, and here for the marked shafts cast to settle a question. One object served both purposes, which is why the term carries so much at once."
+        }
+      ],
+      "lifeInProphetsTime": "Casting marked arrows or reeds to decide a matter was familiar across pre-Islamic Arabia, used at sanctuaries to settle questions nobody could otherwise resolve. Everyone hearing this ayah would have recognised the procedure at once. It gave a decision the appearance of neutrality, which is exactly what a group of men arguing over a costly responsibility would have wanted.",
+      "didYouKnow": "The Quran repeatedly marks the boundary of the Prophet's own knowledge with the phrase you were not there, using it of Moses at the mountain, of Joseph's brothers agreeing on their plan, and here. The formula appears across several surahs and always attaches to a small, checkable circumstance rather than to a grand event.",
+      "theologicalSignificance": "The claim is staked on a detail rather than on a marvel, which is a particular kind of argument. Anybody could invent a miracle; few would think to invent a quarrel over guardianship. The passage also defines the unseen broadly enough to include the ordinary past, which puts revelation in the position of a witness rather than an interpreter, and does so without disparaging the accounts already held nearby.",
+      "crossReferences": [
+        {
+          "ref": "12:102",
+          "why": "Uses the same formula: you were not with them when they agreed upon their plan."
+        },
+        {
+          "ref": "28:44-46",
+          "why": "Repeats it of Moses, saying the Prophet was not present on the mountain's western side."
+        },
+        {
+          "ref": "11:49",
+          "why": "Calls the account of Noah news of the unseen, revealed and not previously known."
+        }
+      ],
+      "applyIt": "Notice how much of what you know rests on testimony rather than sight: your own birth, your grandparents' lives, nearly all of history. You already live by trusted report. Pick one thing you are certain of today and trace how you actually came to know it. The exercise makes this ayah's kind of claim less foreign than it first looks.",
+      "exploreFurther": [
+        "11:49",
+        "12:102",
+        "28:44-46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.466Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:45-46",
+      "surah": 3,
+      "start": 45,
+      "end": 46,
+      "theme": "Jesus, Son of Mary",
+      "themeId": "jesus-son-of-mary",
+      "title": "A Word From Him",
+      "tier": "standard",
+      "meaning": "The announcement is made in carefully chosen terms. He is a word from God; his name is given with a title and with his mother's name rather than a father's; he is described as held in high regard in both worlds and among those brought near. Then two moments of his speaking are named, in the cradle and in maturity. Classical commentators read the phrase a word from God as meaning brought into being by God's command, and treat the naming through the mother as itself part of the announcement.",
+      "historicalContext": "Medinan, and central to the surah's engagement with the Christian community of Najran, whose delegation the classical sources report travelling to Medina to discuss precisely this question. The surah does not open with disagreement. It gives the announcement first, in terms of honour, and the discussion of how he is to be understood comes later in the chapter, after the narrative has been laid out.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَسِيحُ",
+          "gloss": "the Messiah, the Anointed",
+          "note": "A title rather than a name, from a root meaning to wipe or to anoint. The Quran uses it of Jesus consistently, and the commentators discuss several possible derivations without settling on one."
+        },
+        {
+          "arabic": "وَجِيهًا",
+          "gloss": "held in high regard",
+          "note": "From the word for a face. It describes someone whose face is welcome, a person of standing whose word carries weight, and the ayah extends that standing to this world and the next alike."
+        },
+        {
+          "arabic": "ٱلْمُقَرَّبِينَ",
+          "gloss": "those brought near",
+          "note": "A passive participle: they are drawn close rather than approaching under their own power. It names a rank defined by proximity to God and described as given rather than attained."
+        },
+        {
+          "arabic": "كَهْلًا",
+          "gloss": "in mature adulthood",
+          "note": "The word for the age between youth and old age, roughly the middle years. Pairing it with the cradle marks the two ends of his speaking, one of them impossible and one entirely ordinary."
+        }
+      ],
+      "lifeInProphetsTime": "Names in Arabia carried fathers. A man was known as the son of his father, and that chain placed him in a tribe, an inheritance and a set of obligations. To name a child by his mother in a formal announcement was unusual enough to be a statement in itself. It fixed his identity in a way the audience could not mishear, and it has stayed attached to him since.",
+      "didYouKnow": "The Quran calls Jesus the son of Mary more than twenty times, and the phrase became the standard Arabic way of naming him. Identifying a man by his mother was rare in that setting, and the usage is kept consistently across surahs revealed years apart and in very different circumstances.",
+      "theologicalSignificance": "The announcement establishes his standing in the strongest terms available and locates every part of it in what he has been given. He is a word from God, brought near rather than approaching, held in regard in both worlds. The passage does not diminish him in order to place him; it honours him fully while keeping him consistently on the created side, which is how the surah will frame the later discussion.",
+      "crossReferences": [
+        {
+          "ref": "4:171",
+          "why": "Uses the same terms of him, a word conveyed to Mary and a spirit from Him."
+        },
+        {
+          "ref": "19:29-33",
+          "why": "Reports the speech from the cradle, in which he names himself a servant of God."
+        },
+        {
+          "ref": "3:59",
+          "why": "Compares his creation to Adam's later in this surah, as made from dust by a command."
+        }
+      ],
+      "applyIt": "Read this announcement slowly and notice how much honour it gives. If you have Christian friends or family, it is worth knowing accurately, because it is neither a diminishment nor a full agreement. Being able to say precisely what your own book says about Jesus is more useful in a conversation than a general impression from either side.",
+      "exploreFurther": [
+        "4:171",
+        "19:16-34",
+        "5:110"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.468Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:47-48",
+      "surah": 3,
+      "start": 47,
+      "end": 48,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Be, And It Is",
+      "tier": "standard",
+      "meaning": "Mary asks the same question the old man asked a few ayat earlier, and the reply differs in one significant word. He was told God does what He wills; she is told God creates what He wills, and the answer then supplies a mechanism after all: a command, and the thing is. Classical commentators note that this formula is used in the Quran for events without precedent. The passage then names what the child will be taught, placing him inside a tradition of learning rather than outside it.",
+      "historicalContext": "Medinan, within the surah's central narrative and its careful account of how the birth is to be understood. The classical sources connect this section with the presence in Medina of a Christian delegation from Najran. The Quran's ordering is deliberate: the manner of the creation is stated before any disagreement is discussed, and the teaching of the Torah and the Gospel is named in the same breath as the miracle itself.",
+      "keyTerms": [
+        {
+          "arabic": "يَخْلُقُ",
+          "gloss": "He creates",
+          "note": "The verb for bringing into being with a form. It replaces the more general verb used in the parallel answer to Zechariah, and commentators read the substitution as marking a difference between the two births."
+        },
+        {
+          "arabic": "كُن",
+          "gloss": "Be",
+          "note": "A two-letter imperative, the shortest command Arabic can make. Its brevity is the point: no process is described between the word and the thing, so nothing stands between the will and the result."
+        },
+        {
+          "arabic": "ٱلْحِكْمَةَ",
+          "gloss": "wisdom",
+          "note": "Distinguished here from the Book, so it names something beyond a text: sound judgement about how and when to act. The root also carries restraint, as of a bridle holding a horse."
+        }
+      ],
+      "lifeInProphetsTime": "Making anything in that world took time you could watch. A garment was spun, woven and cut over weeks; a house went up course by course; a field waited on rain and then on months. Nothing came into being without a visible process attached to it. A creation with no interval between the word and the result was, in that setting, unlike everything the audience had ever seen made.",
+      "didYouKnow": "The formula in which God says Be and a thing is occurs eight times in the Quran. It is applied to the origination of the heavens and the earth, to the raising of the dead, and here to a single birth. The same short phrase covers events of entirely different scale, which the commentators treat as deliberate rather than incidental.",
+      "theologicalSignificance": "The passage handles a unique event by setting it inside a general principle rather than treating it as an exception. Creation by command is stated as God's ordinary manner, so this birth is unusual in its circumstances and not in its mechanism. The teaching named immediately afterwards works the same way: whatever is singular about him, his learning is described in the terms used of other prophets.",
+      "crossReferences": [
+        {
+          "ref": "2:117",
+          "why": "Uses the identical formula of the heavens and the earth, originated with no precedent before them."
+        },
+        {
+          "ref": "3:59",
+          "why": "Applies the same command to Adam, created from dust, as this surah's own comparison."
+        },
+        {
+          "ref": "36:82",
+          "why": "States the principle in general: His command, when He wills a thing, is to say Be."
+        }
+      ],
+      "applyIt": "There is a difference between a question asked in order to understand and one asked in order to resist. Mary asks how, and receives an answer. Think of something you have been told is possible and have quietly filed as unrealistic. Ask yourself honestly which of the two kinds of question you have been putting to it, and answer without softening.",
+      "exploreFurther": [
+        "2:117",
+        "19:16-34",
+        "36:81-82"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.470Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:49",
+      "surah": 3,
+      "start": 49,
+      "end": 49,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "By God's Leave",
+      "tier": "standard",
+      "meaning": "A messenger describes his own signs, and every one of them is qualified. He shapes a bird from clay and it lives, he heals two conditions beyond the reach of medicine, he revives the dead, and he tells people what they have eaten and stored at home. Three times the phrase by God's leave interrupts the list. Classical commentators point out that the qualification is spoken by him, about himself, so the limit belongs to the claim rather than being applied to it afterwards.",
+      "historicalContext": "Medinan, in the surah's account of Jesus and his mission to the Children of Israel. The signs are reported as given, without a chronology attached. The classical commentaries observe that each one answered something the community of that time held in high regard, and they treat the pattern as general, since every messenger is described as being given signs the people of his own moment could recognise.",
+      "keyTerms": [
+        {
+          "arabic": "بِإِذْنِ ٱللَّهِ",
+          "gloss": "by God's leave",
+          "note": "From a root that also means to hear or give ear. Permission in Arabic is granted by listening, so the phrase implies an authority attending and allowing rather than merely a rule that permits."
+        },
+        {
+          "arabic": "ٱلْأَكْمَهَ",
+          "gloss": "the born blind",
+          "note": "A specific word for blindness present from birth rather than acquired later. Naming it separately rules out any recovery that might otherwise be credited to the passage of time or to treatment."
+        },
+        {
+          "arabic": "كَهَيْـَٔةِ",
+          "gloss": "in the form of",
+          "note": "A noun for outward shape and appearance. It states carefully that what he makes has the form of a bird, which the commentators note as marking the line between shaping a thing and giving it life."
+        }
+      ],
+      "lifeInProphetsTime": "Medicine in the ancient world was largely accommodation. A blind man was led about, a person with a skin disease lived apart, and families organised themselves around conditions nobody expected to change. Healers set bones and mixed remedies for fevers. Nothing in ordinary experience reversed a condition present from birth, which is why the two named here were the ones chosen.",
+      "didYouKnow": "The sign of the clay bird appears twice in the Quran: here, and in a later surah where God recounts the same favours directly to Jesus. Both times the phrase by God's leave is attached to it. The Quran mentions the sign nowhere else, and never once without that qualification in place.",
+      "theologicalSignificance": "The passage lets a messenger hold extraordinary signs and disclaim their source in the same sentence. That resolves a tension the surah is working on: honour and power can be attributed generously so long as their origin stays clear. The repetition of the qualification, three times inside one short speech, does the work an argument would otherwise have to do, and it does it in his own voice.",
+      "crossReferences": [
+        {
+          "ref": "5:110",
+          "why": "Recounts the same signs, with God addressing Jesus and repeating the same qualification each time."
+        },
+        {
+          "ref": "3:50-51",
+          "why": "Continues the same speech, ending on God as my Lord and your Lord."
+        },
+        {
+          "ref": "2:87",
+          "why": "Says Jesus was given clear signs and supported by the holy spirit."
+        }
+      ],
+      "applyIt": "Think of something you are genuinely good at, the thing people come to you for. Say aloud, once, where the capacity for it came from. Not as false modesty; the man speaking here does not understate what he can do. He simply never makes a sentence about it without naming the source, and that is a habit rather than a mood.",
+      "exploreFurther": [
+        "2:87",
+        "5:110",
+        "19:30-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.471Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:50-51",
+      "surah": 3,
+      "start": 50,
+      "end": 51,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "My Lord And Your Lord",
+      "tier": "standard",
+      "meaning": "The speech continues into its purpose. He confirms the scripture already held, states that some of what had been forbidden is now made lawful, and points again at the sign he brought. Then the whole message reduces to a single sentence: God is my Lord and your Lord, so worship Him. Classical commentators note the order of the pronouns, since the speaker places himself under that lordship before addressing anyone else, and they read the closing phrase as the definition of a straight path.",
+      "historicalContext": "Medinan, in the surah's account of Jesus, and central to its conversation with a community that honoured him. The passage reports his own words rather than describing him from outside. The classical sources connect this section of the surah with a delegation from Najran; the Quran's method here is to quote rather than to argue, letting reported speech carry a point the surah states directly only later.",
+      "keyTerms": [
+        {
+          "arabic": "مُصَدِّقًا",
+          "gloss": "confirming, verifying",
+          "note": "The same participle used of the Quran at this surah's opening. Applying it to a messenger and to a book alike presents both as witnesses to what preceded them rather than as replacements for it."
+        },
+        {
+          "arabic": "بَيْنَ يَدَىَّ",
+          "gloss": "before my hands",
+          "note": "An idiom for what lies ahead in place and behind in time, so what came earlier stands in front of a person. Arabic pictures the past as visible and the future as somewhere behind the back."
+        },
+        {
+          "arabic": "صِرَٰطٌ مُّسْتَقِيمٌ",
+          "gloss": "a straight path",
+          "note": "A road broad enough for many to travel, paired with a participle meaning standing upright and holding its direction. The phrase names both the way and its refusal to bend away from it."
+        }
+      ],
+      "lifeInProphetsTime": "Roads in that world were not built; they were worn by use. A straight route between two places was rare, since paths bent around wells, rock, and territory a traveller could not safely cross. A way that held its direction was the exception and was known by name. Anyone who had made a long journey knew the difference between the shortest road and the one people actually took.",
+      "didYouKnow": "The phrase rendered a straight path occurs more than thirty times in the Quran, including in the short surah every reciter opens with. Here it is placed in the mouth of an earlier prophet, describing his own message, one of several points where the vocabulary of that opening chapter surfaces inside a narrative.",
+      "theologicalSignificance": "The speech puts the speaker and his audience on the same side of one relationship. That is accomplished grammatically, by naming his Lord before theirs, and it settles the passage's central claim without stating it as a proposition. The mention of some earlier restrictions being lifted also presents revelation as able to change in its particulars while its centre holds, which is the surah's larger argument about continuity.",
+      "crossReferences": [
+        {
+          "ref": "19:36",
+          "why": "Reports the same sentence from him almost word for word, in a later surah's account."
+        },
+        {
+          "ref": "43:64",
+          "why": "Repeats it again as his own speech, adding that this is a straight path."
+        },
+        {
+          "ref": "1:6",
+          "why": "Asks for the same path, in the prayer that every recitation of the Quran begins with."
+        }
+      ],
+      "applyIt": "Notice the order of the pronouns: my Lord, then your Lord. When you next find yourself telling someone what they ought to do about faith, try putting yourself into the sentence first, and honestly. It changes what you say next. Most religious advice fails at exactly this point, before any of its content is even reached.",
+      "exploreFurther": [
+        "1:5-7",
+        "19:34-36",
+        "43:63-64"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.472Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:52",
+      "surah": 3,
+      "start": 52,
+      "end": 52,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Who Will Stand With Me",
+      "tier": "standard",
+      "meaning": "The turn is described physically: he sensed disbelief. Then, rather than pressing the argument further, he asks a question that requires people to identify themselves. The answer comes from the disciples in three parts: we are the helpers, we have believed, and bear witness that we have submitted. Classical commentators note the request for witness at the end. It converts a private conviction into something spoken aloud in front of others, which is what that moment demanded.",
+      "historicalContext": "Medinan, at the point where the surah's account of Jesus turns from his mission to its reception. The episode is retold in a later surah, where the same word for his helpers appears again. The Quran gives no setting and names no one. The classical commentaries treat this as the moment the community around him divided, which is why the surah places it immediately before mentioning a plan and a counter-plan.",
+      "keyTerms": [
+        {
+          "arabic": "أَحَسَّ",
+          "gloss": "he sensed, perceived",
+          "note": "A verb tied to the physical senses rather than to reasoning. It suggests he felt the change in the room before anyone stated it, which is how opposition usually announces itself first."
+        },
+        {
+          "arabic": "أَنصَارِى",
+          "gloss": "my helpers, my supporters",
+          "note": "The plural of a word for one who comes to another's aid in difficulty. The same word later named the people of Medina who received the emigrants, a resonance the first audience heard at once."
+        },
+        {
+          "arabic": "ٱلْحَوَارِيُّونَ",
+          "gloss": "the disciples",
+          "note": "A term the classical lexicographers connect with whiteness and with purity or sincerity, and which the Quran uses only of this group. Its exact derivation is discussed without ever being settled."
+        },
+        {
+          "arabic": "مُسْلِمُونَ",
+          "gloss": "ones who have submitted",
+          "note": "The participle from the same root this surah uses for the religion God accepts. Placing it in the disciples' mouths ties them directly to the definition given earlier in the chapter."
+        }
+      ],
+      "lifeInProphetsTime": "In a tribal society, declaring support was a formal act with consequences. Standing up for a man under pressure meant accepting his enemies as your own, and it was done publicly so everyone knew where obligations now lay. A silent sympathiser gave nothing at all. The question asked here follows exactly that pattern: it does not ask what people think, it asks who will say so.",
+      "didYouKnow": "The word the disciples use for helpers is the same one that gave the people of Medina their historical name, and the surah's first audience carried that name themselves. Placing it in the mouths of a much earlier community links the two groups across centuries through a single choice of vocabulary.",
+      "theologicalSignificance": "The passage treats faith as something that must be declarable. Belief is stated, and then witness is requested, so the inward and the spoken are held together without either standing on its own. It also shows a prophet responding to rejection by looking for company rather than by escalating the argument. What follows in the surah confirms that the answer given here was the durable thing.",
+      "crossReferences": [
+        {
+          "ref": "61:14",
+          "why": "Recalls the same exchange and calls the believers to be helpers as the disciples were."
+        },
+        {
+          "ref": "5:111",
+          "why": "Reports the disciples' declaration again, with God saying He inspired them to believe."
+        },
+        {
+          "ref": "3:53",
+          "why": "Gives their prayer immediately afterwards, asking to be recorded among the witnesses."
+        }
+      ],
+      "applyIt": "Support that stays private is not much use to the person who needs it. Think of someone currently taking heat for something you actually agree with. Say so to them directly this week, in a message they can keep. Not a public post. The question in this passage asks who will stand up, and it expects a name in reply.",
+      "exploreFurther": [
+        "5:111",
+        "9:100",
+        "61:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.473Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:53-54",
+      "surah": 3,
+      "start": 53,
+      "end": 54,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Count Us Among The Witnesses",
+      "tier": "standard",
+      "meaning": "A short prayer is followed by a sentence that reverses the scene. The disciples ask to be written among those who bear witness, having named what they believed and whom they followed. Then, with no transition, the passage says that they schemed and God schemed. The same word is used of both, and the commentators explain that of God it means the undoing of a plot by an unseen arrangement, not deception. The contrast is between a plan made in a room and one that encloses it.",
+      "historicalContext": "Medinan, closing the surah's account of the reception Jesus met. The Quran neither describes the plan nor names those who made it. The classical commentaries connect the passage to a plot against his life and to the outcome the following ayat report, on which they preserve more than one reading. The surah keeps the account brief here because its concern is the pattern rather than the sequence of events.",
+      "keyTerms": [
+        {
+          "arabic": "فَٱكْتُبْنَا",
+          "gloss": "so write us down",
+          "note": "The verb for recording in writing. Asking to be written among a group is asking for enrolment on a list, an image drawn from the registers kept of tribes, of soldiers, and of shares."
+        },
+        {
+          "arabic": "ٱلشَّـٰهِدِينَ",
+          "gloss": "the witnesses",
+          "note": "Those who testify to what they have seen, and in another usage those present at an event. Both senses fit: they ask to be counted among people who were there and who then said so."
+        },
+        {
+          "arabic": "مَكَرُوا۟",
+          "gloss": "they schemed",
+          "note": "A verb for a plan made out of its target's sight. Of human beings it carries blame; of God the commentators explain it as the covert overturning of a scheme, keeping the mirrored wording without the moral sense."
+        }
+      ],
+      "lifeInProphetsTime": "Registers mattered in the seventh century. Tribes kept lists of who was owed a share, who had ridden out on a raid, and who stood surety for a debt. Being written down was how a claim survived memory and argument. To ask God to write your name among a group was to reach for the most concrete image of belonging available, one everyone had watched decided in practice.",
+      "didYouKnow": "The verb used here of scheming is attributed to God several times in the Quran, and always mirrors a word just used of human beings in the same sentence. Classical rhetoricians describe this as a recognised device in which a term is turned back on an opponent, and they note the Quran never uses the word of God on its own.",
+      "theologicalSignificance": "The two ayat placed together say something this surah repeats in other settings. A group states its allegiance and asks to be recorded; a plan is meanwhile already in motion against them. The passage does not resolve that by promising safety. It says instead that the larger arrangement encloses the smaller one, which changes the meaning of the plan without necessarily stopping it from running.",
+      "crossReferences": [
+        {
+          "ref": "8:30",
+          "why": "Uses the same mirrored wording of a plot laid against the Prophet Muhammad (peace be upon him)."
+        },
+        {
+          "ref": "27:50-51",
+          "why": "Shows a scheme made and its outcome reversed, using the same vocabulary throughout."
+        },
+        {
+          "ref": "5:83",
+          "why": "Shows others asking to be written among the witnesses, in almost identical words."
+        }
+      ],
+      "applyIt": "There is a difference between asking to be safe and asking to be counted. This prayer asks for the second. Think about which of the two you actually ask for, most days. Then say the disciples' request once in your own words, and notice that it contains no request for the situation to improve.",
+      "exploreFurther": [
+        "5:83",
+        "8:30",
+        "61:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.474Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:55",
+      "surah": 3,
+      "start": 55,
+      "end": 55,
+      "theme": "Jesus, Son of Mary",
+      "themeId": "jesus-son-of-mary",
+      "title": "Raising You To Me",
+      "tier": "standard",
+      "meaning": "God addresses Jesus directly and states four things: a taking, a raising, a clearing from those who refused him, and a placing of his followers above them until the Resurrection. The first word is the difficult one. Scholars differ over whether it means causing to die, taking in full, or taking up as one is taken in sleep, and the classical commentaries record that range without forcing a decision. The ayah then defers every remaining dispute to God's own judgement.",
+      "historicalContext": "Medinan, and directly relevant to the surah's engagement with the Christian community of Najran, whose delegation the classical sources report coming to Medina. The passage does not narrate the events surrounding the end of his earthly presence. It states what God did and then defers the disagreement, which is the method the whole section uses: assert the essentials, and leave contested detail to the judgement named at the close.",
+      "keyTerms": [
+        {
+          "arabic": "مُتَوَفِّيكَ",
+          "gloss": "taking you fully",
+          "note": "A participle from a root meaning to receive something in full, used both of collecting a debt and of death. The classical commentators record several readings of it in this place and settle on none."
+        },
+        {
+          "arabic": "رَافِعُكَ",
+          "gloss": "raising you",
+          "note": "The participle for lifting up, used in the Quran of rank as well as of place. Both senses appear in the commentaries, and the word itself does not choose between them."
+        },
+        {
+          "arabic": "مُطَهِّرُكَ",
+          "gloss": "clearing you",
+          "note": "From the root for purity, here in the sense of separating someone from what would stain them. It concerns his standing among people rather than any condition within him."
+        }
+      ],
+      "lifeInProphetsTime": "A man's reputation in Arabia could outlive him, and could be repaired or ruined by whoever told his story afterwards. Poets were paid to praise and paid to defame, and a family's standing turned on which account survived. Clearing a man of those who had wronged his name was a recognisable act in that world, and it mattered as much as anything done to his body.",
+      "didYouKnow": "This ayah defers a disagreement to a judgement rather than settling it, a move the Quran makes repeatedly with contested matters between communities. The construction appears in several surahs, and the clause about judging between people concerning what they differed in almost always arrives at the close of such a question rather than in the middle.",
+      "theologicalSignificance": "The passage protects a prophet's honour without resolving the historical question that divides communities. It says what God did with him, and it says that the dispute itself will be judged. That structure carries an implication for how believers might hold such questions meanwhile: as genuinely open where the sources are open, and as settled only where the text is plain.",
+      "crossReferences": [
+        {
+          "ref": "4:157-158",
+          "why": "Addresses the same contested end more directly, and says God raised him to Himself."
+        },
+        {
+          "ref": "5:117",
+          "why": "Uses the same verb for taking, in the account of Jesus answering on the Day of Judgement."
+        },
+        {
+          "ref": "2:113",
+          "why": "Ends another dispute between communities the same way, by deferring it to God's judgement."
+        }
+      ],
+      "applyIt": "There are questions you will not settle, including some that matter. This ayah models what to do with them: state clearly what you do hold, name the disagreement as a disagreement, and leave the verdict where it belongs. Try that phrasing once this week on something you have been arguing about in circles.",
+      "exploreFurther": [
+        "4:157-159",
+        "5:116-118",
+        "19:33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.474Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:56",
+      "surah": 3,
+      "start": 56,
+      "end": 56,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "In This World And The Next",
+      "tier": "standard",
+      "meaning": "The sentence begun in the previous ayah divides into its two outcomes, and this is the first of them. Punishment is described as reaching both worlds, and the closing clause removes the possibility of anyone intervening. Classical commentators note the pairing of the two worlds, which recurs across this surah, and read the phrase about helpers as the denial of exactly what an Arabian audience would look for first: not innocence, but somebody with enough standing to intercede.",
+      "historicalContext": "Medinan, closing the surah's account of Jesus before the passage comparing his creation to Adam's. The wording repeats a phrase used earlier in this same surah of a different group, which the commentaries note as its habit of returning to its own formulations. The passage speaks about a category defined by refusal rather than about any named community or period.",
+      "keyTerms": [
+        {
+          "arabic": "فَأَمَّا",
+          "gloss": "as for",
+          "note": "A particle that introduces one branch of a division and expects a matching branch to follow. Its presence signals that the sentence is only half finished, and the next ayah supplies the other half."
+        },
+        {
+          "arabic": "نَّـٰصِرِينَ",
+          "gloss": "helpers, defenders",
+          "note": "The plural of one who comes to another's aid, from the same root used a few ayat earlier of the disciples. The word that named loyalty in one scene names its absence in this one."
+        },
+        {
+          "arabic": "عَذَابًا شَدِيدًا",
+          "gloss": "a severe punishment",
+          "note": "The adjective comes from a root meaning to tighten or bind hard. It describes intensity as constriction rather than as duration, which is a different image from the one the English suggests."
+        }
+      ],
+      "lifeInProphetsTime": "Nobody in Arabia stood alone before a claim. When a man was accused, his clan negotiated, elders intervened, and blood money was raised by relatives who might not even like him. Guilt rarely met a person directly, because a network absorbed the impact. Saying that someone has no helpers described a condition close to unimaginable in that world, and worse than the penalty itself.",
+      "didYouKnow": "The exact phrase about having no helpers occurs earlier in this same surah, in a passage about those who kill prophets and those who call for justice. The surah uses the formula twice, in two quite different sections, one of many repetitions that bind its long argument together across changes of subject.",
+      "theologicalSignificance": "The passage places consequence in both worlds rather than deferring all of it, which keeps the present morally serious. Its most pointed clause is the last one. What is removed is not comfort but advocacy, and that says something about the shape of accountability here, where the decisive absence is not of pleasure but of anyone standing between a person and what they did.",
+      "crossReferences": [
+        {
+          "ref": "3:22",
+          "why": "Uses the identical closing phrase about having no helpers, earlier in this surah."
+        },
+        {
+          "ref": "3:57",
+          "why": "Supplies the matching branch of the sentence: the reward given in full to the faithful."
+        },
+        {
+          "ref": "2:48",
+          "why": "Denies that intercession will be accepted or any help given on that day."
+        }
+      ],
+      "applyIt": "Notice how much of your sense of safety comes from people who would step in for you: a manager, a relative, a friend with influence. That is real and worth being grateful for. Name one of them today and thank them. Then sit for a moment with the fact that the arrangement is temporary, which is what this ayah is pointing at.",
+      "exploreFurther": [
+        "2:48",
+        "3:57-58",
+        "26:100-101"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T09:53:46.475Z",
         "reviewed": false
       }
     },
