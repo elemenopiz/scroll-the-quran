@@ -8,16 +8,35 @@ private func bundledFeed() throws -> (DiscoverFeed, StudyStore) {
     return try (DiscoverFeed(loader: bundledContent, store: store), store)
 }
 
-@Test("The bundled Discover feed only carries keys that resolve to a study")
+@Test("discover.json decodes the assembler's shape, provenance and all")
+func discoverFileDecodes() throws {
+    let file = try bundledDiscoverFile()
+    #expect(file.seed == "discover-seed.txt")
+    #expect(file.promptVersion == "p1")
+    #expect(file.generatedAt?.isEmpty == false)
+    #expect(file.count == file.items.count, "the recorded count disagrees with the list")
+    #expect(file.items.count >= 40)
+    for item in file.items {
+        #expect(!item.title.isEmpty, "\(item.key) has no title")
+        #expect(!item.themeId.isEmpty)
+        #expect(item.passage == PassageRef(surah: item.surah, start: item.start, end: item.end))
+        #expect(item.weight == 50, "the pipeline writes no weights, so they should all default")
+    }
+}
+
+@Test("Every Discover card opens onto a study that exists")
 func feedOnlyCarriesResolvableKeys() throws {
     let (feed, store) = try bundledFeed()
+    let file = try bundledDiscoverFile()
     #expect(!feed.isEmpty)
+    #expect(feed.count == file.items.count, "\(file.items.count - feed.count) card(s) were dropped as unresolvable")
     for item in feed.items {
-        #expect(store.containsUnit(item.key), "\(item.key) is not a unit")
+        #expect(store.containsUnit(item.key), "\(item.key) has no study")
         let study = try #require(store.study(forKey: item.key), "\(item.key) resolves to nothing")
         #expect(study.surah == item.surah)
+        #expect(study.title == item.title, "\(item.key) title drifted from its shard")
+        #expect(study.themeId == item.themeId, "\(item.key) theme drifted from its shard")
     }
-    #expect(feed.count == 5)
     #expect(Set(feed.items.map(\.key)).count == feed.count, "the feed repeats a key")
 }
 
@@ -80,22 +99,28 @@ func differentSeedsReorder() throws {
     #expect(orders.count >= 5, "the shuffle is far too clumpy: \(orders.count) distinct orders in 50 seeds")
 }
 
-@Test("The base order is the file's weighting, not the file's line order")
-func baseOrderIsByWeight() throws {
+@Test("The base order is weight first, then mushaf order")
+func baseOrderIsByWeightThenMushafOrder() throws {
     let loader = InMemoryContentLoader(json: [
         "discover.json": """
         { "items": [
             { "key": "3:1", "themeId": "c", "weight": 10 },
+            { "key": "10:1", "themeId": "d", "weight": 90 },
             { "key": "2:1", "themeId": "b", "weight": 90 },
             { "key": "1:1", "themeId": "a", "weight": 90 }
         ] }
         """,
     ])
     let feed = try DiscoverFeed(loader: loader, resolves: { _ in true })
-    #expect(feed.items.map(\.key) == ["1:1", "2:1", "3:1"])
-    // surah is derived from the key when the file omits it.
-    #expect(feed.items.map(\.surah) == [1, 2, 3])
+    #expect(feed.items.map(\.key) == ["1:1", "2:1", "10:1", "3:1"])
+    // surah, start and end are derived from the key when the file omits them.
+    #expect(feed.items.map(\.surah) == [1, 2, 10, 3])
     #expect(feed.items[0].passage == PassageRef(surah: 1, start: 1, end: 1))
+
+    // The shipped feed carries uniform weights, so its base order is straight mushaf order.
+    let (bundled, _) = try bundledFeed()
+    let order = bundled.items.map { [$0.surah, $0.start] }
+    #expect(order == order.sorted { $0.lexicographicallyPrecedes($1) })
 }
 
 @Test("Today's feed is just the day-of-year seed")
