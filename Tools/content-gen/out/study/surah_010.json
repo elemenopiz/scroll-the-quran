@@ -1,7 +1,7 @@
 {
   "surah": 10,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:07:07.347Z",
+  "generatedAt": "2026-09-09T12:13:45.918Z",
   "studies": [
     {
       "key": "10:1-2",
@@ -4354,6 +4354,64 @@
       }
     },
     {
+      "key": "10:106",
+      "surah": 10,
+      "start": 106,
+      "end": 106,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "What Neither Helps Nor Harms",
+      "tier": "standard",
+      "meaning": "The instruction is defined by capability rather than by identity. Do not call on what cannot benefit you and cannot harm you, which is a description before it is a prohibition. Commentators note that both halves matter: the objects can do no good, so there is nothing to gain, and no harm, so there is nothing to fear from abandoning them. The consequence named for doing so anyway is not punishment but a category, that the person would then be among the wrongdoers.",
+      "historicalContext": "Meccan, in the closing instructions of the surah. The argument about intermediaries has run through the whole chapter, from the question about whether God could be unaware of such an office to the statement that those invoked follow nothing but conjecture. This ayah states the practical upshot, and it is addressed in the singular, to one person, rather than to the objectors.",
+      "keyTerms": [
+        {
+          "arabic": "وَلَا تَدْعُ",
+          "gloss": "and do not call upon",
+          "note": "The verb covers summoning, appealing and praying, from the same root as the word for supplication. Its breadth matters, since the instruction reaches every kind of address, not only formal worship."
+        },
+        {
+          "arabic": "يَنفَعُكَ",
+          "gloss": "benefits you",
+          "note": "Practical usefulness rather than favour. The Quran repeatedly pairs it with its opposite when describing what people invoke, testing such objects by the plainest possible standard, whether anything follows."
+        },
+        {
+          "arabic": "ٱلظَّـٰلِمِينَ",
+          "gloss": "the wrongdoers",
+          "note": "From a root for darkness and for putting something in the wrong place. It names misplacement, so directing appeals to what cannot answer is an error of location before it is an offence."
+        }
+      ],
+      "lifeInProphetsTime": "Fear kept many practices alive more than hope did. A traveller touched a stone at a shrine on his way out of the valley not because he expected much but because omitting it felt dangerous. Everyone knew someone whose luck had turned after a neglected observance. The second half of this ayah addresses that fear directly, saying the objects cannot hurt you either.",
+      "didYouKnow": "The pairing of what cannot harm and cannot benefit runs through the Quran as a standing test. It is used of what a man calls on instead of God in one surah, put as a question by Abraham to his people in another, and answered in a third with a description of hands stretched toward water that never reaches the mouth. The test is always practical.",
+      "theologicalSignificance": "The argument closes on capability rather than on authority. Rather than saying such practices are forbidden, the passage says they are pointless in both directions, which addresses the two motives people actually have. Naming the result as being among the wrongdoers is also precise: a misdirected appeal puts something in the wrong place, and the injury is to the one who does it, since nothing has been taken from God.",
+      "crossReferences": [
+        {
+          "ref": "22:12-13",
+          "why": "Uses the same pairing and adds that the harm of such a master is nearer than any benefit."
+        },
+        {
+          "ref": "21:66",
+          "why": "Puts the same test as a question from Abraham to his people about what they served."
+        },
+        {
+          "ref": "13:14",
+          "why": "Compares such prayers to hands stretched toward water that never reaches the mouth."
+        }
+      ],
+      "applyIt": "Notice one small thing you do out of a vague sense that not doing it would be unlucky. A phrase, a routine, an object you keep. Ask whether you believe it can actually help, then whether you believe it can harm. Most people find the second answer is the one holding the practice in place.",
+      "exploreFurther": [
+        "22:12-13",
+        "6:71",
+        "13:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:13:45.830Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "10:107",
       "surah": 10,
       "start": 107,
@@ -4408,6 +4466,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:09:02.453Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "10:108-109",
+      "surah": 10,
+      "start": 108,
+      "end": 109,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Be Patient Until He Judges",
+      "tier": "standard",
+      "meaning": "The surah closes by dividing responsibility. The truth has arrived, and from that point each person's guidance or straying returns to them, while the one who delivered it is told plainly that he is not a guardian over anyone. Then two final instructions: follow what is revealed, and be patient until God judges. Commentators note that patience here is given an endpoint rather than being asked for indefinitely, and that the endpoint is a judgement rather than a result the messenger can recognise.",
+      "historicalContext": "Meccan, and these are the last two verses of the surah. The chapter has moved through creation, argument, the objectors' demands, the accounts of Noah and Moses, and the exception of Jonah's people, and it ends without any resolution to the situation in Mecca. The instruction to wait for God's judgement is offered instead of a promise about when.",
+      "keyTerms": [
+        {
+          "arabic": "بِوَكِيلٍ",
+          "gloss": "a guardian, a trustee",
+          "note": "One appointed to manage another's affairs, from the same root as the word for reliance used through this surah. Denying the role to the messenger keeps the transfer of responsibility running only upward."
+        },
+        {
+          "arabic": "وَٱصْبِرْ",
+          "gloss": "and be patient, hold fast",
+          "note": "From a root for binding something in place and for a bitter plant. Patience in this word is restraint under difficulty rather than calm feeling, which is why it can be commanded."
+        },
+        {
+          "arabic": "يَحْكُمَ",
+          "gloss": "He judges, decides",
+          "note": "The root joins restraint and sound judgement, and gives the word applied to this Book in the surah's opening line. The chapter therefore ends on the same root it began with."
+        }
+      ],
+      "lifeInProphetsTime": "A dispute in Arabia ended when the arbitrator ruled, and the parties waited however long that took. Nobody expected to see the outcome before the judgement, and pressing the arbitrator was itself a fault. The closing instruction uses that ordinary procedure: the case has been made, the deciding belongs elsewhere, and what remains for the claimant is simply to hold his position without pressing.",
+      "didYouKnow": "The word for judgement that closes this surah shares its root with the word describing the Book in its very first verse, translated there as wise. The chapter opens by calling the scripture firmly judged and closes by handing the outcome to the best of judges, so the same three letters frame the entire surah at both ends.",
+      "theologicalSignificance": "Responsibility is finally divided along a clear line. What a person does with the truth belongs to them, and the one who delivered it holds neither credit nor blame, which protects both parties from a burden that is not theirs. Attaching an endpoint to patience is equally deliberate. What is asked for is not endurance without limit but waiting for a specific event, which is a different thing to carry.",
+      "crossReferences": [
+        {
+          "ref": "39:41",
+          "why": "States the same division in nearly identical words, ending with you are not their overseer."
+        },
+        {
+          "ref": "76:24",
+          "why": "Gives the same closing instruction, patience for the decision of your Lord, in another surah."
+        },
+        {
+          "ref": "10:1",
+          "why": "The opening of this surah, which uses the same root for the Book that its final word uses for judgement."
+        }
+      ],
+      "applyIt": "Take one situation where you have said everything you can say. Write down, in a sentence, what part of it is now genuinely not yours. Then set an actual date to revisit it rather than turning it over daily. Patience with an endpoint is a different task from patience without one, and this ayah gives it one.",
+      "exploreFurther": [
+        "39:41",
+        "20:130",
+        "27:92"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:13:45.832Z",
         "reviewed": false
       }
     }
