@@ -1,7 +1,7 @@
 {
   "surah": 2,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:00:53.420Z",
+  "generatedAt": "2026-09-09T12:08:23.639Z",
   "studies": [
     {
       "key": "2:1-5",
@@ -9584,6 +9584,180 @@
       }
     },
     {
+      "key": "2:219",
+      "surah": 2,
+      "start": 219,
+      "end": 219,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Weighed, Not Simply Declared",
+      "tier": "standard",
+      "meaning": "Two questions are answered in one ayah. The first is met with a weighing rather than a verdict: both things carry serious harm and some benefit for people, and the harm is the heavier. The second question, about what to give, is answered with a single word the commentators read as what is left over beyond need. The ayah closes by naming reflection as its purpose.",
+      "historicalContext": "Medinan, in the run of ayat answering questions the community had put. The commentators describe this as one stage in a sequence of passages on the subject, coming before the later and more decisive ayat in another surah, and they read the weighing here as preparing for what followed. The second half continues a question about giving that was answered a few ayat earlier.",
+      "keyTerms": [
+        {
+          "arabic": "مَنَـٰفِعُ",
+          "gloss": "benefits, uses",
+          "note": "The plural of a word for advantage or profit. Its presence is striking: the ayah concedes real benefits rather than denying them, and then places them on the lighter side of a scale."
+        },
+        {
+          "arabic": "أَكْبَرُ",
+          "gloss": "greater, weightier",
+          "note": "A comparative rather than an absolute. The sentence is built as a measurement rather than a declaration, which is why the classical works describe this ayah as a stage rather than the end of the matter."
+        },
+        {
+          "arabic": "ٱلْعَفْوَ",
+          "gloss": "the surplus, the excess",
+          "note": "The same root gives the word for pardon and for what is left over easily. Answering a question about giving with this word ties generosity to what a person can spare without strain."
+        }
+      ],
+      "lifeInProphetsTime": "Both practices were woven into Arabian social life. Wine circulated at gatherings and was celebrated in poetry, and the arrow game divided a slaughtered camel by lot, with the losers paying and the winners often feeding the poor from the meat. That is the benefit the ayah concedes: real people were fed. Naming it honestly is what makes the weighing land.",
+      "didYouKnow": "This is one of the few places where the Quran answers a question by conceding the other side of the argument before making its own point. The word given as the answer to the second question is a single word in Arabic, and the same root produces the word for pardon, so the vocabulary of giving and of forgiving overlap.",
+      "theologicalSignificance": "A judgement is presented as a comparison, and the reader is left holding the scale. That is unusual, and the closing clause explains it: the purpose named is thinking, not compliance. It also models a kind of honesty about mixed goods. Something can be genuinely useful and still not worth what it costs, and the ayah refuses to make the case easier by denying the usefulness.",
+      "crossReferences": [
+        {
+          "ref": "5:90-91",
+          "why": "Returns to the same two subjects later and states the outcome the classical works read as decisive."
+        },
+        {
+          "ref": "2:215",
+          "why": "Answers the earlier form of the same question about giving, there by naming the recipients."
+        },
+        {
+          "ref": "7:199",
+          "why": "Uses the same word for what comes easily and is left over, there about how to deal with people."
+        }
+      ],
+      "applyIt": "Take one habit you defend by naming its benefits, and write those benefits down honestly. Then write the cost beside them, in the same detail. This ayah does not tell you the answer comes out one way. It shows you the method, and it names thinking as the point of the exercise.",
+      "exploreFurther": [
+        "5:90-91",
+        "2:215",
+        "7:199"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.552Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:220",
+      "surah": 2,
+      "start": 220,
+      "end": 220,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Then They Are Your Brothers",
+      "tier": "standard",
+      "meaning": "A question about orphans is answered in two moves. The first names the standard: whatever improves their situation is best, which leaves the method open and fixes the aim. The second addresses a practical worry about mixing households and property, and answers it with a word about kinship rather than about accounting. Then a clause notes that God distinguishes the one who spoils from the one who repairs.",
+      "historicalContext": "Medinan. The classical sources report that after severe warnings about consuming the property of orphans, guardians began separating their food and belongings entirely, which made caring for them impractical and left the children isolated. The ayah is reported as the answer to that, and the sources are broadly agreed on the setting even where details differ.",
+      "keyTerms": [
+        {
+          "arabic": "إِصْلَاحٌ",
+          "gloss": "improvement, setting right",
+          "note": "From the root for mending what is broken, used earlier in this surah of repairing a testament and of reconciling people. Naming the aim rather than the method leaves the guardian to judge each case."
+        },
+        {
+          "arabic": "تُخَالِطُوهُمْ",
+          "gloss": "you mix with them",
+          "note": "The verb for blending two things together, used of mixing property and of sharing a household. It describes an intermingling rather than a transaction, which is exactly what the questioners were worried about."
+        },
+        {
+          "arabic": "لَأَعْنَتَكُمْ",
+          "gloss": "He would have burdened you",
+          "note": "From a root meaning hardship and being brought into difficulty. The clause states what was not done, so the ease of the arrangement is presented as a deliberate restraint rather than an oversight."
+        }
+      ],
+      "lifeInProphetsTime": "Orphans in Arabia were common and vulnerable. Conflict, disease and hard travel left children without fathers, and their property, often a share of palms or animals, passed into the hands of a relative to manage. Households were shared: the same cooking fire, the same herd, the same store of dates. Separating an orphan's food completely from the family's meant something close to excluding him.",
+      "didYouKnow": "The ayah calls orphans in a shared household your brothers, using the ordinary word for a sibling. The clause about God distinguishing the one who spoils from the one who repairs is built on two roots already used across this surah, so the sentence sorts guardians with the same vocabulary it has been applying to whole communities.",
+      "theologicalSignificance": "The standard given is an outcome rather than a procedure, which places the burden on the guardian's judgement and then names the one who can tell the difference. That is a demanding arrangement, because it removes the safety of a rule followed exactly. And the clause about not being overburdened suggests that a stricter arrangement was possible and was not chosen, which frames the whole answer as a relief.",
+      "crossReferences": [
+        {
+          "ref": "4:2",
+          "why": "Warns against substituting the bad for the good and consuming orphans' property along with your own."
+        },
+        {
+          "ref": "4:6",
+          "why": "Sets out testing orphans before handing over their property, and warns against consuming it hastily."
+        },
+        {
+          "ref": "93:9",
+          "why": "Puts the same concern in one short line, in a Meccan surah addressed to an orphan."
+        }
+      ],
+      "applyIt": "Think of someone you help at arm's length: a relative you send money to, a neighbour you check on from the doorway. This ayah answers a worry about getting too involved by naming the person as family. Do one thing this week that mixes your life with theirs rather than keeping the accounts separate.",
+      "exploreFurther": [
+        "4:2",
+        "4:6",
+        "93:1-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:221",
+      "surah": 2,
+      "start": 221,
+      "end": 221,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Even If She Pleases You",
+      "tier": "standard",
+      "meaning": "Two parallel statements are made, one about women and one about men, in almost identical wording. Between them sits a comparison that does the work: a believing servant is better than an idolater, however attractive. The ayah is built to set attraction against direction, and it explains the reason at the end, that one side calls towards the Fire and the other towards the Garden and forgiveness.",
+      "historicalContext": "Medinan, in a section on households and their arrangements. Marriage in Arabia was an alliance between families as much as a bond between two people, and it carried religious consequences, since a household's practices followed its arrangement. The classical commentators discuss the scope of the terms used here at length and record differences over how widely they extend.",
+      "keyTerms": [
+        {
+          "arabic": "أَعْجَبَتْكُمْ",
+          "gloss": "she pleases you, attracts you",
+          "note": "The same verb used a few ayat earlier of speech that impresses a listener. Its recurrence links the two passages: in both, something admirable on the surface is set against what lies underneath it."
+        },
+        {
+          "arabic": "مُّؤْمِنَةٌ",
+          "gloss": "a believing woman",
+          "note": "The feminine of the word for one who has faith, from a root meaning safety and trust. The comparison applies it to someone in the lowest social position of that time, which is what gives the sentence its force."
+        },
+        {
+          "arabic": "يَدْعُونَ",
+          "gloss": "they call, they invite",
+          "note": "The ordinary verb for calling someone towards something. Using it of both sides is deliberate: the passage describes two invitations rather than a threat and a promise, so the difference lies in the destination."
+        }
+      ],
+      "lifeInProphetsTime": "A marriage in Arabia joined two lineages, and it decided which gods a household honoured, which feasts it kept, and which side it took in a dispute. Children followed the arrangement. Marrying across a religious line was therefore not a private matter, and both families would have weighed the alliance in terms of protection, trade and standing before anything else.",
+      "didYouKnow": "The two halves of this ayah mirror each other almost exactly, with the same clause about being pleased repeated for each. That kind of full symmetry is uncommon in the Quran's passages on household arrangements. The comparison in each half reaches for the person of lowest standing in that society and places them above the alternative.",
+      "theologicalSignificance": "The passage rearranges a social hierarchy without arguing against it directly. Standing, wealth and beauty are not denied; they are simply outweighed by something that society did not rank at all. And the closing image reframes the whole subject: what is described is not a matter of status but two directions of travel, with a household understood as moving in one of them together.",
+      "crossReferences": [
+        {
+          "ref": "24:26",
+          "why": "States a matching principle about who is suited to whom, in the language of good and bad."
+        },
+        {
+          "ref": "49:13",
+          "why": "Denies that lineage or origin decides rank, and grounds honour in awareness of God."
+        },
+        {
+          "ref": "60:10",
+          "why": "Handles a related question about households divided by belief, in a later Medinan passage."
+        }
+      ],
+      "applyIt": "Notice how much of a first impression you form from things you would not defend out loud: appearance, accent, the confidence in someone's voice. This ayah names attraction honestly and then sets it beside something else. Try describing one person this week by what they are pointed at rather than by how they come across.",
+      "exploreFurther": [
+        "24:26",
+        "49:13",
+        "60:10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "2:222",
       "surah": 2,
       "start": 222,
@@ -9638,6 +9812,528 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.575Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:223",
+      "surah": 2,
+      "start": 223,
+      "end": 223,
+      "theme": "Good Character",
+      "themeId": "good-character",
+      "title": "Send Something Ahead For Yourselves",
+      "tier": "standard",
+      "meaning": "An image from farming is used for the marital relation, and the commentators are clear about its scope: it names the bearing of children, the ground on which the next generation grows. Then the sentence turns without pause to something else entirely. Send ahead for yourselves, and know that you will meet Him. What began as a private matter ends facing a meeting.",
+      "historicalContext": "Medinan, in the sequence on households. The classical sources record that a question was raised about a particular matter and that this ayah was the reply, and the works differ over the details. What they agree on is the shape of the answer: an image, then an immediate turn to conduct and to accountability, ending with an instruction to give good news.",
+      "keyTerms": [
+        {
+          "arabic": "حَرْثٌ",
+          "gloss": "cultivated field, tillage",
+          "note": "The word for ploughed land, used earlier in this surah for the crops a corrupter destroys. The commentators read it as naming what grows rather than the standing of the ground, so the image is about offspring."
+        },
+        {
+          "arabic": "وَقَدِّمُوا۟",
+          "gloss": "send ahead, put forward",
+          "note": "A verb for sending something in advance of yourself, used of provisions dispatched before a traveller sets out. It moves the sentence from the present into what a person will find waiting for them."
+        },
+        {
+          "arabic": "مُّلَـٰقُوهُ",
+          "gloss": "ones who will meet Him",
+          "note": "A participle rather than a verb, so it names a settled fact rather than a future event. Placing it here attaches the most private part of a life to the most public reckoning of it."
+        }
+      ],
+      "lifeInProphetsTime": "Agriculture in Medina was the centre of life, and the vocabulary of sowing and harvest ran through ordinary speech. A field was tended over seasons, watered, protected and depended on for years, and a farmer's relation to his land was long rather than transactional. That is the register the image belongs to, and it would have sounded like patience rather than possession.",
+      "didYouKnow": "The word used here for cultivated ground appears earlier in this surah in a completely different setting, describing what a corrupter destroys along with the next generation. The two occurrences are eighteen ayat apart, and both pair the field with offspring, so the surah reuses one image on opposite sides of a contrast.",
+      "theologicalSignificance": "The turn in the middle of the ayah is the teaching. Something intimate is named and then immediately connected to a meeting with God, which refuses to leave private life outside the account. What is asked for is not restraint but forethought: send something ahead. And the last clause changes the addressee entirely, ending a passage about the household with good news.",
+      "crossReferences": [
+        {
+          "ref": "30:21",
+          "why": "Names tranquillity, affection and mercy between spouses as a sign to be reflected on."
+        },
+        {
+          "ref": "2:187",
+          "why": "Uses the image of a garment for the same relation, earlier in this surah."
+        },
+        {
+          "ref": "59:18",
+          "why": "Uses the same verb about a soul considering what it has sent forward for tomorrow."
+        }
+      ],
+      "applyIt": "Take one relationship you are inside every day and ask what you are sending ahead in it. Not what you are getting. This ayah moves in a single sentence from something private to a meeting, and the move is worth copying: choose one small thing today that the other person will still be glad of in ten years.",
+      "exploreFurther": [
+        "30:21",
+        "2:187",
+        "59:18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:224",
+      "surah": 2,
+      "start": 224,
+      "end": 224,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "An Oath Laid Across The Road",
+      "tier": "standard",
+      "meaning": "A specific trap is named. Someone swears by God not to do something, and then finds the oath itself standing between him and doing good, keeping ties, or making peace between people. The ayah does not discuss the technicalities of oaths; it points at what this one is being used for. The construction covers both a genuine bind and a convenient excuse without distinguishing them.",
+      "historicalContext": "Medinan, among the instructions on households and disputes. Oaths were the strongest verbal commitment available in a society without documents, and men swore readily and publicly. The commentators record that some treated an oath sworn in anger as grounds for staying estranged from a relative, and read the ayah as addressing that. The ayat that follow continue with unintended oaths.",
+      "keyTerms": [
+        {
+          "arabic": "عُرْضَةً",
+          "gloss": "an obstacle, a thing set up",
+          "note": "The word means something laid across a path, and also something exposed and put on display. Both senses fit here: the divine name is placed across the road, and held up as the reason for staying put."
+        },
+        {
+          "arabic": "تَبَرُّوا۟",
+          "gloss": "you do good, act dutifully",
+          "note": "From the same root as the word for righteousness used earlier in this surah, and applied especially to kindness towards parents. It names the ordinary good that an oath in this case is preventing."
+        },
+        {
+          "arabic": "تُصْلِحُوا۟",
+          "gloss": "you reconcile, you mend",
+          "note": "The verb for repairing, appearing here for another distinct time in this surah, after a testament and an orphan's affairs. Each time it names putting something back rather than starting something new."
+        }
+      ],
+      "lifeInProphetsTime": "An oath in Arabia bound a man publicly and was expected to hold. Swearing by God in front of witnesses made it a matter of honour, and backing down cost standing. A quarrel between relatives could therefore be frozen permanently by a few words spoken in temper, with neither side able to move without looking weak. Everyone knew a family in that position.",
+      "didYouKnow": "Three good things are named in this one short ayah as what an oath might be blocking: doing good, mindfulness of God, and making peace between people. The ayah then closes with two names of God about hearing and knowing, which sit pointedly at the end of a sentence about words spoken aloud.",
+      "theologicalSignificance": "A religious commitment is described as capable of becoming an obstacle to religion, which is a sharp observation. The divine name is exactly what makes the oath binding, and exactly what is being misused. The passage does not resolve this by adjusting the rules about oaths; it names the purpose the oath is serving and leaves the person to see it. The following ayat then deal with what oaths actually bind.",
+      "crossReferences": [
+        {
+          "ref": "2:225-227",
+          "why": "Continues immediately, distinguishing unintended oaths from what the heart actually resolved."
+        },
+        {
+          "ref": "5:89",
+          "why": "Sets out what is done about an oath deliberately made, rather than leaving it standing forever."
+        },
+        {
+          "ref": "24:22",
+          "why": "Addresses someone who withheld from a relative, asking whether they would rather be pardoned themselves."
+        }
+      ],
+      "applyIt": "Think of a position you have taken that you would not take today, and that you are holding because you said it out loud. Not a principle, a position. This ayah is about the moment a commitment starts working against the thing it was meant to protect. Say the harder sentence this week: I have changed my mind.",
+      "exploreFurther": [
+        "2:225-227",
+        "5:89",
+        "24:22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:225-227",
+      "surah": 2,
+      "start": 225,
+      "end": 227,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "What Your Hearts Have Earned",
+      "tier": "standard",
+      "meaning": "A distinction is drawn between words said without weight behind them and what the heart actually resolved, and only the second is held against a person. Then a specific situation follows: a vow of abstention from one's wife, with a waiting period of four months and two possible endings. Each ending is met with names of God rather than with a verdict, one pair about mercy and one about hearing.",
+      "historicalContext": "Medinan, in the section on households. The classical sources describe a pre-Islamic practice in which a man could swear off his wife indefinitely, leaving her neither married in any real sense nor free to remarry. Setting a limit of four months put an end to an indefinite suspension. The commentators are broadly agreed on that background.",
+      "keyTerms": [
+        {
+          "arabic": "ٱللَّغْوِ",
+          "gloss": "idle speech, thoughtless talk",
+          "note": "Names speech with nothing behind it, the filler phrases people use without meaning them. The word is used elsewhere in the Quran for what is absent from the Garden, so it carries a sense of the pointless."
+        },
+        {
+          "arabic": "كَسَبَتْ قُلُوبُكُمْ",
+          "gloss": "what your hearts earned",
+          "note": "The verb is the ordinary one for earning wages. Applying it to hearts treats an intention as something worked for and acquired rather than as a passing state, which is why it can be held against a person."
+        },
+        {
+          "arabic": "تَرَبُّصُ",
+          "gloss": "a waiting, a holding back",
+          "note": "A reflexive form describing someone holding themselves in expectation. The same root is used for the waiting period after a separation, so the vocabulary of this whole section is built around suspended time."
+        }
+      ],
+      "lifeInProphetsTime": "A woman in that position had no way out. She could not remarry, her family could not press the matter, and she had no income of her own. An indefinite vow left her in a state that could last years, and it was a known instrument of pressure inside a marriage. Setting a fixed limit turned a permanent condition into a bounded one with a required outcome.",
+      "didYouKnow": "These three short ayat close with three pairs of divine names in a row: forgiving and forbearing, forgiving and merciful, hearing and knowing. The last pair arrives at the moment a separation is decided, and the classical commentaries note that hearing is named there rather than any word about judgement.",
+      "theologicalSignificance": "Responsibility is located in what was actually resolved rather than in what was said, which is a claim about how a person is read. Words spoken carelessly do not create obligations; the heart's intention does. Then the passage takes an open-ended cruelty and puts a clock on it. What was indefinite becomes finite, and both possible endings are named without either being condemned.",
+      "crossReferences": [
+        {
+          "ref": "2:224",
+          "why": "Precedes this directly, naming the misuse of an oath that these ayat then take apart."
+        },
+        {
+          "ref": "5:89",
+          "why": "Draws the same distinction between idle oaths and deliberate ones, and sets out what follows."
+        },
+        {
+          "ref": "33:5",
+          "why": "Applies the same principle to an honest mistake, holding a person only to what the heart intended."
+        }
+      ],
+      "applyIt": "Notice the difference between something you said and something you meant, in one conversation this week. Most of our speech is the first kind, and this ayah says it is not being counted against us. Then find the one thing you did mean and have not acted on. That is the part the ayah is actually interested in.",
+      "exploreFurther": [
+        "2:224",
+        "5:89",
+        "33:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:228",
+      "surah": 2,
+      "start": 228,
+      "end": 228,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "What God Created In The Womb",
+      "tier": "standard",
+      "meaning": "A waiting period is set, and then the most striking clause arrives: what is in the womb may not be concealed. The ayah puts that in terms of belief rather than of procedure, which makes honesty here a matter of faith. Then rights are described as mutual, in a phrase the commentators discuss closely, and the closing word about a degree is read in more than one way across the classical works.",
+      "historicalContext": "Medinan, opening the surah's passage on separation. Before this, arrangements afterwards were governed by custom and by whichever family had more standing. A pregnancy decided inheritance, lineage and a child's claims, so concealing one could change a family's future. The commentators read the clause about honesty against that, since the disclosure often ran against a woman's immediate interest or her family's.",
+      "keyTerms": [
+        {
+          "arabic": "قُرُوٓءٍ",
+          "gloss": "periods, cycles",
+          "note": "A word carrying two opposite senses in Arabic, covering both a monthly period and the interval between them. The classical commentators record both readings, and the difference affects the length of the waiting."
+        },
+        {
+          "arabic": "بِٱلْمَعْرُوفِ",
+          "gloss": "in what is recognised as right",
+          "note": "Literally what is known, meaning conduct a community would recognise as decent. The phrase recurs throughout this section, tying the standard to something people can see rather than to a fixed list."
+        },
+        {
+          "arabic": "دَرَجَةٌ",
+          "gloss": "a degree, a step",
+          "note": "The word for a step or a rank. The classical commentators read it in more than one way, most often of the husband's responsibility for maintenance or of his standing in the matter of return, and they record the range."
+        }
+      ],
+      "lifeInProphetsTime": "A separation in Medina reorganised a woman's whole position: where she lived, who supported her, whether she could remarry, and what her children could claim. All of it was decided in front of families who had their own interests. A waiting period created a fixed interval in which nothing could be rushed, and it gave a pregnancy time to become known before arrangements were settled.",
+      "didYouKnow": "The word used for the waiting period belongs to a small class of Arabic words that carry two opposite meanings, and the classical commentaries record both readings without one displacing the other. The clause about not concealing a pregnancy is stated as a matter of believing in God and the Last Day rather than as a procedural requirement.",
+      "theologicalSignificance": "Truthfulness is placed at the exact point where a concealment would be most useful and least detectable. Nobody else could know, and the ayah answers that by attaching the disclosure to belief rather than to enforcement. That is a pattern the Quran uses repeatedly: where verification fails, the standard is raised rather than lowered. The description of rights as mutual then sets a baseline the passage works within.",
+      "crossReferences": [
+        {
+          "ref": "65:1",
+          "why": "Opens a later surah on the same subject and repeats the concern with counting the period carefully."
+        },
+        {
+          "ref": "2:229",
+          "why": "Continues directly, setting limits on what may be taken back and calling them the limits of God."
+        },
+        {
+          "ref": "4:19",
+          "why": "Addresses the same relation and states that women are not to be inherited against their will."
+        }
+      ],
+      "applyIt": "Find one thing you know and have not mentioned because mentioning it would cost you something and nobody would ever find out. That is the exact situation this ayah describes. You do not have to announce it publicly. Just tell the one person whose decision actually depends on it.",
+      "exploreFurther": [
+        "65:1-2",
+        "2:229",
+        "4:19"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.561Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:229",
+      "surah": 2,
+      "start": 229,
+      "end": 229,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "Retention Or Release, Both Kindly",
+      "tier": "standard",
+      "meaning": "A count is set on how far a separation can be reversed, and each stage is given two possible endings named with the same weight: keeping the arrangement decently, or releasing it with kindness. The two are presented as equal options rather than as a good outcome and a failure. Then a narrow exception is described about what may be returned, and the passage closes by naming limits.",
+      "historicalContext": "Medinan. The classical sources describe a practice in which a man could separate and take back repeatedly without limit, keeping a woman suspended indefinitely, and report that this ayah set the count. The reports are widely recorded. The passage sits in a long stretch of the surah working through the arrangements that a separation produces.",
+      "keyTerms": [
+        {
+          "arabic": "تَسْرِيحٌۢ",
+          "gloss": "releasing, letting go",
+          "note": "From a root used of turning livestock loose to pasture in the morning. The image is of release into open ground rather than of expulsion, and the word carries none of the harshness the English can."
+        },
+        {
+          "arabic": "بِإِحْسَـٰنٍ",
+          "gloss": "with excellence, with kindness",
+          "note": "The noun from the verb meaning to do something well and beautifully. Attaching it to the release rather than to the retention puts the higher of the two standards on the harder option."
+        },
+        {
+          "arabic": "حُدُودَ",
+          "gloss": "limits, boundaries",
+          "note": "The word names a boundary line around a piece of ground. The passage repeatedly asks that people stay inside rather than test the edge, and the phrase built on it dominates this whole section."
+        }
+      ],
+      "lifeInProphetsTime": "Repeated separation and return was a recognised way of controlling a woman without releasing her. She could not remarry, her family could not intervene, and the cycle could continue for years. Everyone in Medina would have known of a case. Setting a number turned an open loop into something with an end, and the counting is what made the difference.",
+      "didYouKnow": "The phrase about the limits of God appears four times within this single ayah, more than in any other ayah of the Quran. Both of the endings offered are named with a positive word, one about decency and one about kindness, so the language does not mark the separation as the worse outcome.",
+      "theologicalSignificance": "Ending something well is treated as an achievement rather than as a failure to continue. The passage gives release its own standard, and the higher of the two words is attached to it, which changes what a person is aiming at when a relationship ends. The repeated language of limits then frames the whole arrangement as a marked-out space that both parties are standing inside together.",
+      "crossReferences": [
+        {
+          "ref": "2:231",
+          "why": "Repeats the same pair of options and warns against holding on in order to cause harm."
+        },
+        {
+          "ref": "65:2",
+          "why": "Uses the same two options in a later surah and adds the calling of two just witnesses."
+        },
+        {
+          "ref": "4:130",
+          "why": "States that if the two do separate, God will enrich each of them out of His abundance."
+        }
+      ],
+      "applyIt": "Think of something you are ending or have ended: a job, a friendship, a project. This ayah gives the ending its own standard and uses the warmer of its two words for it. Ask what a good ending would look like in your case, and do one part of it this week rather than letting the thing trail off.",
+      "exploreFurther": [
+        "2:231",
+        "65:1-2",
+        "4:130"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.562Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:230",
+      "surah": 2,
+      "start": 230,
+      "end": 230,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "A Door That Does Not Reopen Easily",
+      "tier": "standard",
+      "meaning": "A limit is described that closes the loop the previous ayah opened. After a final separation the arrangement cannot simply be resumed, and the condition stated makes an immediate reversal impossible. A return becomes possible again only under a further condition, that the two of them think they can keep within the limits. The ayah ends by saying these boundaries are made clear to people who know.",
+      "historicalContext": "Medinan, continuing directly from the ayah that set the count. The commentators describe the effect rather than debating the purpose: what had been a reversible cycle becomes final at a defined point. The classical works discuss the details of this ayah extensively, and much of that discussion belongs to legal literature rather than to a study note.",
+      "keyTerms": [
+        {
+          "arabic": "تَنكِحَ",
+          "gloss": "she marries",
+          "note": "The ordinary verb for entering a marriage. Its use here is what makes the condition substantial, since what is described is a genuine second arrangement rather than a formality arranged for the purpose."
+        },
+        {
+          "arabic": "ظَنَّآ",
+          "gloss": "the two of them think",
+          "note": "A verb sitting between thinking and being fairly sure, short of certainty. The condition asks for a reasonable expectation rather than a guarantee, which the commentators note as realistic about what anyone can know."
+        },
+        {
+          "arabic": "يَتَرَاجَعَآ",
+          "gloss": "the two return to each other",
+          "note": "A reciprocal form, so both parties return rather than one taking the other back. The grammar makes the reunion mutual, which is not how such arrangements had worked in practice before."
+        }
+      ],
+      "lifeInProphetsTime": "Words spoken in anger were binding in Arabia, and a man could dissolve a marriage in a moment and reverse it the next week. Households lived close together, so quarrels were public and reconciliations were performed in front of everyone. A limit that made the third separation final introduced a cost into a sentence that had previously been cheap to say.",
+      "didYouKnow": "This ayah closes a passage in which the phrase about the limits of God appears repeatedly across consecutive ayat. It ends with the words for people who know, one of several closing formulas in this section, each naming a different faculty: those who know, those who believe, and those with understanding.",
+      "theologicalSignificance": "A boundary is placed where reversibility would otherwise be unlimited, and the effect is to make an easy word expensive. That says something about how the passage understands human behaviour: what can be undone cheaply will be done carelessly. The mutual form of the verb for reunion then quietly changes the shape of the arrangement, since the return now requires both of them and not one.",
+      "crossReferences": [
+        {
+          "ref": "2:229",
+          "why": "Sets the count that this ayah completes, and introduces the language of limits it uses."
+        },
+        {
+          "ref": "2:231-232",
+          "why": "Continues the passage, addressing pressure applied after a separation has already been made."
+        },
+        {
+          "ref": "65:1",
+          "why": "Opens a later surah on the same subject and asks that the counting be done carefully."
+        }
+      ],
+      "applyIt": "Notice a sentence you say easily when you are angry, and that you then have to take back. This passage works by making a cheap word expensive, which is a strategy rather than a scolding. Choose one such phrase and take it out of your vocabulary for a month. The cost will land somewhere better.",
+      "exploreFurther": [
+        "2:229",
+        "2:231",
+        "65:1-2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.562Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:231",
+      "surah": 2,
+      "start": 231,
+      "end": 231,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Do Not Hold On To Cause Harm",
+      "tier": "standard",
+      "meaning": "The two options return, and this time both are named with the same word, so neither is presented as the better. Then the specific abuse is named: holding on in order to cause harm. The ayah calls that wronging yourself rather than wronging her, which is a deliberate reversal. It closes by recalling what was given and warning against treating revelations as a plaything.",
+      "historicalContext": "Medinan. The classical sources report that some men would take a woman back near the end of the waiting period and separate again, restarting the count purely to prolong the suspension. The ayah names that use of the arrangement directly. The commentators read the warning about treating revelations lightly as addressed to exactly that manipulation of a protective procedure.",
+      "keyTerms": [
+        {
+          "arabic": "ضِرَارًا",
+          "gloss": "to cause harm, injuriously",
+          "note": "A form describing mutual or deliberate harm, from the root for damage. Placed as the purpose of the holding on, it names the intention rather than the act, so the same action is right or wrong by what it is for."
+        },
+        {
+          "arabic": "ظَلَمَ نَفْسَهُۥ",
+          "gloss": "he wronged himself",
+          "note": "The passage does not say he wronged her, which the commentators notice. The construction turns the harm back on the person doing it, a move the Quran uses repeatedly for wrongs committed against others."
+        },
+        {
+          "arabic": "هُزُوًا",
+          "gloss": "a jest, a plaything",
+          "note": "The word for something taken as a joke or a toy. Used of revelations, it names the treatment of a protective arrangement as a device, which is a specific kind of contempt rather than open rejection."
+        }
+      ],
+      "lifeInProphetsTime": "The waiting period was a woman's protection: a fixed interval after which she was free. Restarting it repeatedly turned that protection into a cage, and there was no authority she could appeal to. Her family could argue, but the man held the procedure. Naming this in revelation gave the situation a public description it had not had before, which is often the first thing that changes anything.",
+      "didYouKnow": "This ayah names three things in sequence at its close: God's favour, the Book, and wisdom, all as things sent down to teach. The same three appear together earlier in this surah in the description of what a messenger does among people. Here they arrive at the end of a warning about manipulating a procedure.",
+      "theologicalSignificance": "The wrong is located in the intention rather than in the action, since taking someone back is otherwise exactly what the passage encourages. That makes identical conduct acceptable or not by what it is for, which is a demanding standard and an unenforceable one. And by saying the person wronged himself, the ayah declines to leave the injury as only the victim's problem.",
+      "crossReferences": [
+        {
+          "ref": "2:229",
+          "why": "Introduces the same two options and the language of limits that this ayah returns to."
+        },
+        {
+          "ref": "4:19",
+          "why": "Warns against coercion undertaken in order to take back part of what was already given."
+        },
+        {
+          "ref": "65:6",
+          "why": "Repeats the instruction not to cause hardship in order to constrain someone's choices."
+        }
+      ],
+      "applyIt": "Ask what one of your ongoing commitments is actually for. Not what it was for originally, what it is doing now. This ayah judges an identical action by its purpose, which means the audit has to be internal. If you find something you are holding on to in order to make a point, let it go this week.",
+      "exploreFurther": [
+        "2:229",
+        "4:19",
+        "65:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.562Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:232",
+      "surah": 2,
+      "start": 232,
+      "end": 232,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Do Not Stand In Their Way",
+      "tier": "standard",
+      "meaning": "The address turns from the two people involved to everyone around them. When a waiting period has run and both parties want to resume, the surrounding family is told not to obstruct it. The verb used describes preventing something by force of position rather than by argument. The ayah ends with a comparative, that this is purer for you, and then plainly: God knows and you do not.",
+      "historicalContext": "Medinan. The classical sources report a case in which a man's sister had separated and then wished to return to her husband, and her brother refused out of anger on her behalf, and they report this ayah as the answer. Accounts differ in detail across the works, but the situation described is consistent: a relative blocking a reconciliation both parties wanted.",
+      "keyTerms": [
+        {
+          "arabic": "تَعْضُلُوهُنَّ",
+          "gloss": "prevent them, hold them back",
+          "note": "An uncommon verb describing obstruction by someone who has the power to obstruct, and used of a difficult birth. It names blocking rather than advising, and its rarity gives the instruction a precise target."
+        },
+        {
+          "arabic": "تَرَٰضَوْا۟",
+          "gloss": "they mutually agree",
+          "note": "A reciprocal form of the verb for being pleased, so agreement on both sides is written into the word itself. The condition is that the two are content, which is what makes the outside objection an intrusion."
+        },
+        {
+          "arabic": "أَزْكَىٰ",
+          "gloss": "purer, more wholesome",
+          "note": "A comparative from the root that joins cleansing and growth, used earlier in this surah for what a messenger does. Naming the outcome as purer answers the objectors in the terms they cared about, which was honour."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage was a family matter, and a brother or father spoke for a woman in negotiations. When a marriage failed, the family that had given her felt the insult, and letting her return could look like accepting humiliation. Honour was a real currency, and refusing was the respectable choice. That is the pressure this ayah is speaking into.",
+      "didYouKnow": "The instruction here is addressed in the plural to the people around the couple rather than to either of them, which is unusual within this passage. The ayah closes with two comparatives in a row, purer and more decent, and then with a short clause saying that God knows and you do not.",
+      "theologicalSignificance": "Third parties are named as a real obstacle, which is an honest observation about how relationships actually end. Family honour is not argued with; the ayah simply asserts a different measure of what is cleaner. And the closing sentence sets a limit on the objectors' confidence, since the outcome they are protecting against is one they cannot actually see.",
+      "crossReferences": [
+        {
+          "ref": "4:19",
+          "why": "Addresses the same kind of obstruction from those holding power over a woman's arrangements."
+        },
+        {
+          "ref": "2:231",
+          "why": "Handles the mirror case, where the husband rather than the family is the one causing harm."
+        },
+        {
+          "ref": "49:12",
+          "why": "Warns against acting on suspicion, which is usually the material an objection like this is made of."
+        }
+      ],
+      "applyIt": "Think of a reconciliation between two other people that you are, quietly, not helping along. Perhaps you heard the story from one side and took it up. This ayah addresses the bystanders, not the couple. Step back once this week from a dispute that is not yours, and say nothing where you would usually add something.",
+      "exploreFurther": [
+        "4:19",
+        "2:231",
+        "49:11-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.562Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "2:233",
+      "surah": 2,
+      "start": 233,
+      "end": 233,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "Neither Parent Harmed Through The Child",
+      "tier": "standard",
+      "meaning": "A period is named for nursing, and then everything else in the ayah is about protecting the people inside the arrangement. The father provides; nobody is burdened beyond capacity; neither parent is to be harmed through the child; the same responsibility passes to an heir. Weaning earlier is cleared if both agree after consulting one another, and hiring a nurse is cleared if payment is fair.",
+      "historicalContext": "Medinan, following the passage on separation, since nursing arrangements were exactly what became contested when a household split. In Arabia, infants were often nursed by women other than their mothers, and the arrangement created lasting bonds recognised as a form of kinship. The ayah addresses a situation the community faced constantly rather than a rare one.",
+      "keyTerms": [
+        {
+          "arabic": "حَوْلَيْنِ كَامِلَيْنِ",
+          "gloss": "two complete years",
+          "note": "A dual form with an adjective for completeness attached to it. The precision is the point: naming a full term gives both parents something fixed to measure an agreement against rather than a matter of opinion."
+        },
+        {
+          "arabic": "لَا تُضَآرَّ",
+          "gloss": "let no harm be done",
+          "note": "A form that carries both harming and being harmed, so the clause covers each parent using the child against the other. Arabic lets a single word do what English needs two separate clauses for."
+        },
+        {
+          "arabic": "تَشَاوُرٍ",
+          "gloss": "mutual consultation",
+          "note": "A reciprocal noun from a root connected to drawing out honey, and so to drawing out an opinion. Requiring consultation alongside agreement means the decision has to be talked through, not merely conceded."
+        }
+      ],
+      "lifeInProphetsTime": "Nursing was a serious economic arrangement. A wet nurse was paid, and Meccan families often sent infants to be nursed among the desert tribes for the health of the child and the language it would learn. A nursing woman had a claim on the household. When a marriage ended, the question of who paid for what was immediate and could turn bitter quickly.",
+      "didYouKnow": "The clause about no soul being burdened beyond its capacity appears here in the middle of a passage about nursing arrangements, and it returns in almost identical words at the very end of the surah, inside the closing supplication. The same principle is stated once as an administrative point and once as the ground of a prayer.",
+      "theologicalSignificance": "The whole ayah is arranged around preventing a child from becoming an instrument. Both parents are protected by the same clause, in the same word, which refuses to assign the fault in advance to either of them. And the requirement of consultation makes the decision joint even after the relationship has ended, which quietly keeps a form of partnership alive past the point where everything else has been divided.",
+      "crossReferences": [
+        {
+          "ref": "2:286",
+          "why": "Repeats the clause about capacity at the very end of the surah, there inside a prayer."
+        },
+        {
+          "ref": "31:14",
+          "why": "Recalls a mother's carrying and her weaning over two years as grounds for gratitude."
+        },
+        {
+          "ref": "65:6",
+          "why": "Repeats the instruction about payment for nursing and about consulting one another properly."
+        }
+      ],
+      "applyIt": "If you share a responsibility with someone you no longer get on with, look at how decisions between you actually get made. This ayah asks for agreement and for consultation, which are two different things. Do the second one this week: ask before you decide, even where you could reasonably decide alone.",
+      "exploreFurther": [
+        "2:286",
+        "31:14",
+        "65:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:08:23.562Z",
         "reviewed": false
       }
     },
