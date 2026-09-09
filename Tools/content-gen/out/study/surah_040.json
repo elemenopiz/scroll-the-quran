@@ -1,8 +1,588 @@
 {
   "surah": 40,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:04:05.538Z",
+  "generatedAt": "2026-09-09T15:45:46.362Z",
   "studies": [
+    {
+      "key": "40:1-4",
+      "surah": 40,
+      "start": 1,
+      "end": 4,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Forgiver Of Sin, Severe In Punishment",
+      "tier": "standard",
+      "meaning": "The surah opens with two disconnected letters, then a statement about where the Book comes from, then four descriptions of God set in a deliberate order: forgiver of sin, accepter of repentance, severe in punishment, holder of abundance. Two of mercy, one of severity, one of generosity, with nothing to soften the joins. Then a warning against being impressed by opponents moving prosperously about the land. Commentators read the four as one portrait rather than a list, and note that mercy stands on both sides of the severity.",
+      "historicalContext": "Meccan. The surah is commonly named from the third word of its third ayah. Its opening speaks to a community watching its opponents thrive: the leading families of the city were travelling, trading and gaining, and the final clause names that appearance as something not to be read as a verdict. The commentators report no specific occasion for these opening ayat.",
+      "keyTerms": [
+        {
+          "arabic": "غَافِرِ ٱلذَّنۢبِ",
+          "gloss": "Forgiver of sin",
+          "note": "An active participle in a possessive construction, so it names a standing description rather than an act performed on occasion. The exact phrase occurs once in the Quran, and one of this surah's names comes from it."
+        },
+        {
+          "arabic": "ذِى ٱلطَّوْلِ",
+          "gloss": "Holder of abundance",
+          "note": "From a root meaning length and reach, used of a man whose means stretch far enough to be generous. As a description of God it occurs only here, closing the list on capacity rather than on threat."
+        },
+        {
+          "arabic": "تَقَلُّبُهُمْ",
+          "gloss": "their moving about",
+          "note": "A noun for turning over and shifting from one state to another, used of a sleeper turning and of goods changing hands. It names activity and prosperity without conceding that either means anything."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan standing was visible in movement. A family holding shares in the caravans sent people north in summer and south in winter, and their comings and goings were the most public evidence of success anyone had. To watch the leading houses prosper while a small group of believers stayed poor was to watch an argument being won in the street, daily, without a word being said.",
+      "didYouKnow": "This is the first of seven consecutive surahs opening with the same two disconnected letters, from the fortieth through the forty-sixth, the longest such run in the Quran. The phrase naming God as forgiver of sin occurs only here in the whole Book, and the surah is commonly known by that word.",
+      "theologicalSignificance": "Setting forgiveness, acceptance of repentance, severity and abundance in one unbroken line refuses to divide God's dealings into separate departments. The reader is not offered a choice between a merciful God and a just one, since the four descriptions belong to one subject and the sentence closes by saying there is no god but He. The warning that follows applies this to history: what prospers now is not the verdict.",
+      "crossReferences": [
+        {
+          "ref": "3:196-197",
+          "why": "Gives the same warning about opponents moving prosperously in the land, with what follows for them."
+        },
+        {
+          "ref": "40:35",
+          "why": "Returns later in this surah to the same charge, disputing God's signs with no authority given."
+        },
+        {
+          "ref": "39:53",
+          "why": "Puts the forgiveness named here into the second person, addressed to those who had despaired."
+        }
+      ],
+      "applyIt": "Pick one person whose life looks like it is going better than yours and say silently, in plain words, what you envy about it. Then read the last clause of this passage, which names exactly that impression and tells the reader not to be taken in. The instruction is not to stop noticing. It is to stop reading a surface as a score.",
+      "exploreFurther": [
+        "3:196-197",
+        "40:35",
+        "39:53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.255Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:5",
+      "surah": 40,
+      "start": 5,
+      "end": 5,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Every Community Plotted",
+      "tier": "standard",
+      "meaning": "A pattern is stated rather than a story told. The people of Noah denied, and the allied parties after them; every community intended to seize its own messenger; and they argued with falsehood in order to make the truth lose its footing. Then the sentence changes person: I seized them. It closes not with a description but with a question, how was My punishment, left unanswered. Commentators note that the ayah compresses the whole prophetic history into one sentence so that the present looks like a repetition of it.",
+      "historicalContext": "Meccan, following the warning against being impressed by opponents who are prospering. This ayah supplies the reason: the same prosperity preceded every earlier collapse. The audience knew the ruined sites and the names, so the surah does not need to narrate them. One of these episodes is told at length later in the same surah, which makes this ayah its heading. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "وَٱلْأَحْزَابُ",
+          "gloss": "and the allied parties",
+          "note": "A plural for factions and confederacies. The Quran uses it of the coalitions that formed against earlier messengers, so the word carries organisation and planning rather than mere hostility."
+        },
+        {
+          "arabic": "وَهَمَّتْ",
+          "gloss": "and it resolved, intended",
+          "note": "A verb for forming an intention and moving toward it, stopping short of completing the act. It records what each community meant to do to its messenger, whether or not it managed to."
+        },
+        {
+          "arabic": "لِيُدْحِضُوا۟",
+          "gloss": "so as to overturn",
+          "note": "From a verb for a foot slipping on wet ground. Argument is pictured as an attempt to make the truth lose its footing, and the word occurs in only one other place in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "Seizing a man was how a dispute in that world was escalated. A troublesome person could be taken by his own kin and confined at home, handed over to an aggrieved party, or driven out with no protection at all. All three had been tried or threatened in Mecca. The word used for what every community intended toward its messenger is the ordinary one for laying hands on someone.",
+      "didYouKnow": "The verb for making the truth lose its footing occurs twice in the Quran, here and at 18:56, and in both places it describes argument used as a tactic rather than as an attempt to find anything out. The image behind it is a foot slipping on wet clay, which is what the word means in ordinary speech.",
+      "theologicalSignificance": "History is presented as a pattern rather than a series of incidents, and the pattern includes the arguing as much as the violence. What earlier communities did was not only to attack their messengers but to reason badly on purpose, which the passage treats as an act rather than a failure of thinking. The abrupt shift into the first person at the end puts the outcome of every one of those episodes under one speaker.",
+      "crossReferences": [
+        {
+          "ref": "18:56",
+          "why": "Uses the same verb for argument aimed at unsettling the truth rather than at reaching it."
+        },
+        {
+          "ref": "22:42-44",
+          "why": "Lists the same sequence of denied messengers and closes with the same kind of question."
+        },
+        {
+          "ref": "40:31",
+          "why": "Names these earlier communities again later in this surah, inside a warning spoken by a believer."
+        }
+      ],
+      "applyIt": "Notice the next time you argue for something you already suspect is wrong, because winning is nearer than being right. Everyone does this in small ways. Stop mid-sentence once and say you need to think about it. This passage treats bad-faith argument as an action rather than an accident, which means it can be interrupted like any other action.",
+      "exploreFurther": [
+        "18:56",
+        "40:30-33",
+        "22:42-44"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:6",
+      "surah": 40,
+      "start": 6,
+      "end": 6,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Thus The Sentence Came Due",
+      "tier": "standard",
+      "meaning": "A short ayah reporting an outcome rather than an event: in this way the word of your Lord became due against those who refused, that they belong with the Fire. The verb means a claim falling due, as a debt does at its term. Commentators note that nothing new is being announced. What is reported is the point at which a standing statement became applicable to particular people, which is why the sentence opens with a phrase meaning in this way and looks back to the pattern just described.",
+      "historicalContext": "Meccan, directly after the sentence about earlier communities and how each of them ended. The surah is addressing opponents who had heard warnings for years with nothing visible happening, and this ayah speaks to the gap between a statement and its effect. The commentators read the word of the Lord here as the standing announcement about those who refuse, rather than as a fresh verdict on individuals.",
+      "keyTerms": [
+        {
+          "arabic": "حَقَّتْ",
+          "gloss": "became due, was realised",
+          "note": "From the root for truth and for a right that is owed. Applied to a statement it means the thing became actual and claimable, as a debt becomes due, rather than merely turning out to be correct."
+        },
+        {
+          "arabic": "كَلِمَتُ رَبِّكَ",
+          "gloss": "the word of your Lord",
+          "note": "A single utterance treated as a standing decision. The Quran uses the phrase for announcements made in advance that later apply to particular people, which is how the commentators take it here."
+        },
+        {
+          "arabic": "أَصْحَـٰبُ ٱلنَّارِ",
+          "gloss": "the companions of the Fire",
+          "note": "The word rendered companions means those who belong with a thing and keep its company, used of the people of a town or a trade. It describes association rather than a sentence imposed from outside."
+        }
+      ],
+      "lifeInProphetsTime": "Debt in Mecca ran on terms. A loan or a consignment fell due on a stated date, and until that day nothing was owed and nothing could be demanded, however certain the obligation was. The word used here comes from that vocabulary. An audience that had heard warnings for years without seeing consequences would have recognised the distinction between a claim that exists and a claim that has come due.",
+      "didYouKnow": "The exact phrase used here, that the word of your Lord came due, occurs twice in the Quran, here and at 10:33, where it is said of those who refuse to believe. Both places use a verb from the root meaning truth and obligation, so the statement is described as becoming owed rather than as coming to pass.",
+      "theologicalSignificance": "The ayah separates a decision from its enforcement, and locates the delay in the second rather than the first. That answers a real objection, since people who are warned and see nothing happen reasonably conclude that nothing was ever going to. The passage does not argue with their observation. It reclassifies it, treating the interval as a term rather than as evidence, which is a claim about time rather than about them.",
+      "crossReferences": [
+        {
+          "ref": "10:33",
+          "why": "Uses the identical phrase about the word of your Lord becoming due against those who refuse."
+        },
+        {
+          "ref": "40:5",
+          "why": "The ayah before, whose account of earlier communities is what the phrase in this way refers back to."
+        },
+        {
+          "ref": "39:71",
+          "why": "Puts a closely matching admission in their own mouths at the gate, that the sentence became due."
+        }
+      ],
+      "applyIt": "Think of a consequence you have been told about and stopped believing in because it has not arrived: a health warning, a financial one, a strain in a relationship. Notice that you converted a delay into a disproof at some point, without deciding to. You do not need to panic about it. Just move the item back into the category it belongs in.",
+      "exploreFurther": [
+        "10:33",
+        "40:5",
+        "39:71"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:7",
+      "surah": 40,
+      "start": 7,
+      "end": 7,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "Those Who Carry The Throne",
+      "tier": "standard",
+      "meaning": "The ayah reports what the highest creatures are doing, and what they are doing is asking on someone else's behalf. Those who bear the Throne and those around it glorify, believe, and seek forgiveness for the believers; then their prayer is quoted directly. It opens by naming the reach of God's mercy and knowledge before making any request, and what it asks is forgiveness for those who repented and followed the path, and protection from the Blaze. Commentators note that angels are described as believing, which is unusual and deliberate.",
+      "historicalContext": "Meccan, addressed to a small and ridiculed community. The surah has just described the parties who gathered against earlier messengers and the sentence that came due. Against that, it reports a support the believers had no way of seeing. The commentators connect this passage to the isolation of the Meccan years rather than to any particular incident, and no specific occasion is reported for the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "يَحْمِلُونَ ٱلْعَرْشَ",
+          "gloss": "they bear the Throne",
+          "note": "The phrase occurs once in the Quran. The verb is the ordinary one for carrying a load, used of a person shouldering goods, and the ayah leaves it entirely without further explanation."
+        },
+        {
+          "arabic": "وَيَسْتَغْفِرُونَ",
+          "gloss": "and they seek forgiveness",
+          "note": "A verb form meaning to ask that someone's fault be covered. Its object here is other people, so the angels are described doing for believers exactly what believers are told to do for one another."
+        },
+        {
+          "arabic": "وَسِعْتَ",
+          "gloss": "You have encompassed",
+          "note": "A verb for being wide enough to contain something. The prayer measures the container before asking for anything, which is why the request that follows sounds modest rather than presumptuous."
+        }
+      ],
+      "lifeInProphetsTime": "A petition to a chief was made through somebody already inside his circle, and the standing of that intermediary was the whole strength of the request. People knew precisely who could speak for them and who could not. To hear that the beings nearest the Throne were already asking on their behalf, unprompted and unpaid, described a kind of access nobody in Mecca could have arranged for themselves.",
+      "didYouKnow": "The phrase describing those who carry the Throne occurs once in the Quran. A closely related statement at 42:5 says the angels ask forgiveness for those on the earth, and 69:17 says eight will bear the Throne of your Lord on that Day. Between them, those three passages are the whole of what the Quran says on the subject.",
+      "theologicalSignificance": "The prayer is quoted rather than summarised, and its order is instructive. God's mercy and knowledge are named first, then forgiveness is asked for a defined group: those who repented and followed the path. Nothing is requested for anyone in general. The passage also shows the highest creatures believing rather than merely obeying, which puts faith at the centre of creation instead of treating it as a human peculiarity.",
+      "crossReferences": [
+        {
+          "ref": "42:5",
+          "why": "Says the angels glorify their Lord and ask forgiveness for those on the earth, in nearly the same terms."
+        },
+        {
+          "ref": "69:17",
+          "why": "Describes the bearing of the Throne on that Day, with angels ranged around its borders."
+        },
+        {
+          "ref": "40:9",
+          "why": "Continues the same prayer two ayat later, asking that they be shielded from evil deeds."
+        }
+      ],
+      "applyIt": "Ask God's forgiveness once today for someone else by name, and do not tell them you did. The prayer quoted here is made by beings who gain nothing from it, for people who never hear it. Try that shape once: a name, a request, no audience. Most people find it changes how they think about the person afterwards.",
+      "exploreFurther": [
+        "42:5",
+        "69:17",
+        "40:8-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:8",
+      "surah": 40,
+      "start": 8,
+      "end": 8,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "And The Righteous Among Their Families",
+      "tier": "standard",
+      "meaning": "The prayer continues and widens. Admit them to the Gardens of lasting residence which You promised them, and whoever was upright among their parents, their spouses and their offspring. The qualifying clause is the interesting part. The family are included, but on condition of their own uprightness, so nothing is being asked by association. Commentators note that the promise is treated as already made, which is why the prayer asks for its keeping rather than for a new favour, and that the family clause is an addition beyond it.",
+      "historicalContext": "Meccan. Faith in that city cut through households: some believers had parents who opposed them, some had children who did not follow, and marriages were strained or broken by it. A prayer naming parents, spouses and offspring in a single line speaks straight into that situation. The commentators report no specific occasion for the ayah, and a closely parallel promise appears at 13:23.",
+      "keyTerms": [
+        {
+          "arabic": "عَدْنٍ",
+          "gloss": "lasting residence",
+          "note": "From a root meaning to stay put and settle, the same one behind the word for a mineral vein fixed in the ground. It describes permanence of dwelling rather than pleasure, and appears eleven times in the Quran."
+        },
+        {
+          "arabic": "صَلَحَ",
+          "gloss": "was sound, was upright",
+          "note": "The plain verb behind the word for righteous deeds, whose root sense is a thing being in good working order. It is used of a repaired tool as readily as of a person's conduct."
+        },
+        {
+          "arabic": "وَذُرِّيَّـٰتِهِمْ",
+          "gloss": "and their offspring",
+          "note": "A word covering children and every descendant after them, from a root suggesting scattering or sowing. It extends the prayer forward through generations the people praying will never meet."
+        }
+      ],
+      "lifeInProphetsTime": "A household in Mecca was an economic and legal unit, not only a family. Its members shared protection, standing and liability, and a man's fortunes reached his parents, his wife and his children whether they wanted them to or not. The idea that entry to a place might run along household lines was intuitive to that audience. The condition attached here, that they be upright themselves, cuts directly against it.",
+      "didYouKnow": "The same three relations, parents, spouses and offspring, appear together in a promise at 13:23, worded so closely that the commentators read the two passages side by side. Here the words are a request made by angels; there they are a statement of what will happen, so the same content stands once as prayer and once as promise.",
+      "theologicalSignificance": "Two things usually kept apart are held together. The bond of a family is honoured, since the prayer names them by relation and asks for them as such, and personal responsibility is preserved, since the request covers only those who were upright. Nobody is admitted on a relative's account and nobody is excluded for lacking one. The prayer also asks for what was already promised, treating a promise as something worth asking to see kept.",
+      "crossReferences": [
+        {
+          "ref": "13:23",
+          "why": "States as a promise what this ayah asks as a prayer, naming the same three family relations."
+        },
+        {
+          "ref": "52:21",
+          "why": "Describes offspring joined to those who believed, with nobody's own work reduced for it."
+        },
+        {
+          "ref": "40:7",
+          "why": "The first half of the same prayer, asking forgiveness for those who repented and followed the path."
+        }
+      ],
+      "applyIt": "Say a prayer today that names three people in your family aloud, one from each generation you can reach: someone older, someone your own age, someone younger. The prayer in this ayah is specific about relations rather than vague about loved ones, and saying actual names changes how the asking feels while you are doing it.",
+      "exploreFurther": [
+        "13:23",
+        "52:21",
+        "40:7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:9",
+      "surah": 40,
+      "start": 9,
+      "end": 9,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Shield Them From The Evils",
+      "tier": "standard",
+      "meaning": "The angels' prayer closes with a request and then a definition. Shield them from evil deeds; and whoever You shield from evil deeds on that Day, You have shown mercy to him. The second clause is not a repetition. It states what mercy consists of in this setting, and it turns out to be protection from a person's own record rather than the granting of anything. The final words then name the whole thing the great triumph. Commentators note that the verb for shielding shares its root with the word usually rendered God-consciousness.",
+      "historicalContext": "Meccan, closing the prayer begun two ayat earlier. The surah is speaking to people whose situation offered them no protection of the ordinary kind, and the prayer they are shown asks for protection of an entirely different order. The commentators treat these three ayat as one quoted supplication and note that this final clause is the only line in it that explains itself.",
+      "keyTerms": [
+        {
+          "arabic": "وَقِهِمُ",
+          "gloss": "and shield them",
+          "note": "An imperative from the verb for putting something between a person and harm. The same root gives the word usually translated God-consciousness, so the prayer asks God to do what a person is elsewhere told to do."
+        },
+        {
+          "arabic": "ٱلسَّيِّـَٔاتِ",
+          "gloss": "the evil deeds",
+          "note": "A plural covering bad actions and the harms that follow from them, so the request reads either as protection from the deeds or from their consequences, and the commentators keep both open."
+        },
+        {
+          "arabic": "ٱلْفَوْزُ ٱلْعَظِيمُ",
+          "gloss": "the great triumph",
+          "note": "A word joining winning and escaping danger in one root. Calling the outcome a triumph rather than a reward frames the whole matter as something survived rather than something collected."
+        }
+      ],
+      "lifeInProphetsTime": "Protection in Arabia was a formal relationship with a name, invoked in ordinary speech every day. A man under someone's protection could travel and trade safely; losing it left him exposed with no recourse and no court. The verb in this prayer belongs to that world, and the audience would have heard the angels asking God to extend protection in exactly the sense a clan extended it to a client.",
+      "didYouKnow": "The same verb for shielding appears twice within this short prayer, once at the end of the previous ayah and once at the start of this one: first asking protection from the Blaze, then from the evil deeds themselves. The prayer moves backward from the punishment to its cause, which reverses the order people usually pray in.",
+      "theologicalSignificance": "Mercy is given a definition here rather than an adjective. Being shielded from your own evil deeds on that Day is what having been shown mercy amounts to, which locates mercy in the lifting of a liability rather than in the giving of a gift. The word chosen for the outcome then recasts the whole hereafter as an escape rather than a prize, which is a sober note on which to end a prayer.",
+      "crossReferences": [
+        {
+          "ref": "40:7",
+          "why": "Begins this same prayer, asking forgiveness for those who repented and followed God's path."
+        },
+        {
+          "ref": "3:185",
+          "why": "Uses the same root for the outcome: whoever is kept away from the Fire and admitted has triumphed."
+        },
+        {
+          "ref": "25:70",
+          "why": "Goes beyond shielding, describing bad deeds exchanged outright for good ones after repentance."
+        }
+      ],
+      "applyIt": "Before you next ask God for something you want, ask first to be kept from the harm inside something you have already done. The prayer here puts protection from your own record ahead of every other request, which is an unusual order. Try it once in your own words and notice how much shorter the rest of the list becomes.",
+      "exploreFurther": [
+        "40:7",
+        "3:185",
+        "25:70"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:10",
+      "surah": 40,
+      "start": 10,
+      "end": 10,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Greater Than Your Own Loathing",
+      "tier": "standard",
+      "meaning": "A sentence is called out to those who refused, and it works entirely by comparison. God's loathing is greater than your loathing of yourselves, and the ground for it is given in the same breath: you were called to faith and you refused. Commentators note that the self-loathing is assumed rather than argued for, since the people addressed have already reached the point of hating what they did. The ayah introduces no new emotion. It takes one they have and tells them their estimate of it is small.",
+      "historicalContext": "Meccan, in a passage describing the moment after arrival. The surah has just quoted the prayer of the angels, and this is its exact reverse: an address to those for whom nobody asked. The commentators read the calling out as public, since the verb used is the one for a proclamation cried to a crowd rather than a message delivered privately. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "يُنَادَوْنَ",
+          "gloss": "they are called out to",
+          "note": "A verb for calling across a distance, used of a herald or of someone shouting to a caravan. It is public and one-directional, and the passive form leaves the speaker entirely unnamed."
+        },
+        {
+          "arabic": "لَمَقْتُ",
+          "gloss": "the loathing, abhorrence",
+          "note": "A strong noun for settled disgust at something contemptible, colder than anger and more lasting. The Quran uses it of actions people find repellent rather than of enemies they are fighting."
+        },
+        {
+          "arabic": "فَتَكْفُرُونَ",
+          "gloss": "and you would refuse",
+          "note": "The verb behind the word for rejection, whose root sense is covering something over. The tense makes it habitual, so what is named is a repeated response rather than one decision taken once."
+        }
+      ],
+      "lifeInProphetsTime": "Public proclamation was how a verdict was made real. A herald announced a decision at the assembly or in the market so that everyone heard it at the same moment, and the shame of a judgement lay as much in its being cried aloud as in its content. The verb here belongs to that practice, and the audience would have pictured a crier rather than a quiet word.",
+      "didYouKnow": "The comparison in this ayah is between two instances of a single word, God's loathing and their loathing of themselves, a construction the Quran uses sparingly. The same word returns later in this surah, at 40:35, where disputing God's signs without any authority is called a great loathing in the sight of God and of those who believe.",
+      "theologicalSignificance": "The passage assumes self-reproach is already present and treats it as accurate but too small, which is a distinctive move. It does not tell the people addressed that they are wrong to hate what they did; it tells them they have underestimated. The reason given is also narrow and precise. What is named is not a set of beliefs but one repeated act: being called, and refusing.",
+      "crossReferences": [
+        {
+          "ref": "40:35",
+          "why": "Uses the same word for loathing, there of disputing God's signs with no authority for it."
+        },
+        {
+          "ref": "61:3",
+          "why": "Applies the same term to the gap between what people say and what they actually do."
+        },
+        {
+          "ref": "40:11",
+          "why": "The reply of those addressed, who acknowledge their sins and ask whether there is a way out."
+        }
+      ],
+      "applyIt": "Think of something you did that you already dislike yourself for. You do not need to add anything to that feeling today. Just notice that this ayah treats it as a real measurement that happens to fall short, and that what it points toward is not more self-reproach but the thing that was being refused.",
+      "exploreFurther": [
+        "40:35",
+        "61:3",
+        "40:11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.257Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:11",
+      "surah": 40,
+      "start": 11,
+      "end": 11,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Two Deaths And Two Lives",
+      "tier": "standard",
+      "meaning": "The answer given is a confession followed by a question. They state what has happened to them in the plainest arithmetic, two deaths and two lives, then acknowledge their sins, then ask whether there is any way out. Commentators explain the count in more than one way, most reading the first death as the state before existing and the second as ordinary dying, with the two lives being this one and the raising. What the ayah stages is a full admission arriving too late to be repentance, offered instead as a bargaining position.",
+      "historicalContext": "Meccan. Being raised after death was the sticking point in the city's argument with the message, and this ayah answers it by having the deniers themselves recite the sequence as fact. A closely matching arithmetic appears at 2:28, where the same four stages are set out as a rebuke to people who deny God. No specific occasion is reported for the ayah.",
+      "keyTerms": [
+        {
+          "arabic": "أَمَتَّنَا ٱثْنَتَيْنِ",
+          "gloss": "You made us die twice",
+          "note": "The number stands alone without a noun, so it counts occurrences of the verb rather than people. The construction is compact enough that the commentators built several different readings on it."
+        },
+        {
+          "arabic": "فَٱعْتَرَفْنَا",
+          "gloss": "so we have confessed",
+          "note": "A verb for acknowledging something openly, from a root connected with knowing and recognising. Confession here is presented as new information about themselves, offered as though it might still count for something."
+        },
+        {
+          "arabic": "خُرُوجٍ",
+          "gloss": "a way out, an exit",
+          "note": "The plain noun for going out, used of leaving a house or a town. Its ordinariness is the point: what is asked for is a door, and the request is left without any answer."
+        }
+      ],
+      "lifeInProphetsTime": "Confession carried weight in that society. A man who admitted a wrong before witnesses could expect the matter settled at a rate, and admitting fault early was a recognised way of reducing what you would owe. The move made in this ayah is exactly that move, made at the wrong moment. The audience would have recognised both the tactic and the reason it fails here.",
+      "didYouKnow": "The arithmetic here is spoken by the deniers themselves, while the same sequence appears at 2:28 as a question put to them: you were dead and He gave you life, then He causes you to die, then He gives you life. The two passages set out an identical progression from opposite directions, one as challenge and one as admission.",
+      "theologicalSignificance": "The passage stages a complete admission and then shows that admission is not the same as turning back. Everything the message asked for is granted here: the sequence acknowledged, the sins named, the authority accepted without argument. What is missing is only the time, and the ayah lets that absence do all the work. Sincerity, it implies, is not the whole of repentance, and the timing is part of the thing itself.",
+      "crossReferences": [
+        {
+          "ref": "2:28",
+          "why": "Sets out the identical sequence of death and life as a question put to those who deny God."
+        },
+        {
+          "ref": "23:99-100",
+          "why": "Shows the same request made at the point of death, and says plainly why it changes nothing."
+        },
+        {
+          "ref": "40:12",
+          "why": "Gives the answer to their question, naming what they did when God alone was called upon."
+        }
+      ],
+      "applyIt": "Think of an apology you have been delaying. Apologies work partly because of when they arrive; the same words are a different act at a different time. Without dwelling on it, send one today that you were going to send eventually anyway. The passage is about a confession that came too late to be anything, and yours has not.",
+      "exploreFurther": [
+        "2:28",
+        "23:99-100",
+        "6:27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.257Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:12",
+      "surah": 40,
+      "start": 12,
+      "end": 12,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "When God Alone Was Called",
+      "tier": "standard",
+      "meaning": "The reply to their question is a diagnosis rather than a refusal. This is because when God was called on by Himself you rejected it, and when others were associated with Him you believed. Two clauses describe the same people responding to two versions of the same claim, and the only variable is exclusivity. Commentators note that belief is described here as something they were fully capable of, and that it appeared the moment the demand for exclusivity was dropped. The ayah closes by placing the judgement with God.",
+      "historicalContext": "Meccan. The people addressed were not without religion; devotion in the city was plural and enthusiastic, and their objection to the message was to what it excluded rather than to what it affirmed. The commentators read this ayah as identifying precisely that. It restates in the second person what the previous surah described from outside. No occasion is reported.",
+      "keyTerms": [
+        {
+          "arabic": "دُعِىَ ٱللَّهُ وَحْدَهُۥ",
+          "gloss": "God alone was called upon",
+          "note": "The word for singleness stands last, where Arabic places the item under emphasis. What was rejected is located exactly in that final word rather than in the calling upon God itself."
+        },
+        {
+          "arabic": "يُشْرَكْ",
+          "gloss": "a partner is associated",
+          "note": "A passive from the word for taking a business partner into a venture. The passive leaves the associating without an agent, which quietly separates the act from any particular person performing it."
+        },
+        {
+          "arabic": "فَٱلْحُكْمُ",
+          "gloss": "so the judgement",
+          "note": "A noun covering a verdict, the authority to decide, and wisdom together. Placing it with God at the close answers the question asked in the previous ayah without addressing it directly at all."
+        }
+      ],
+      "lifeInProphetsTime": "Religion in Mecca was inclusive by design. The sanctuary held many objects of devotion, pilgrims arrived from tribes with their own, and adding a figure cost nothing while removing one insulted somebody. A message that asked only for addition would have been absorbed without friction. The single thing the arrangement could not accommodate was a claim that admitted nothing beside itself.",
+      "didYouKnow": "This ayah puts into the second person what 39:45 describes from outside, where the hearts of those who do not believe in the hereafter contract when God alone is mentioned and brighten when others are named. The two passages stand in consecutive surahs and use the same word for alone in the same emphatic position.",
+      "theologicalSignificance": "The diagnosis is unusual because it grants the capacity while refusing the terms. These people could believe, and did believe; the ayah says so plainly. What they would not accept was a claim leaving no room for anything else, and the passage treats that as the whole of the matter. It relocates refusal from an inability to a preference, which is harder to answer and much closer to most people's experience.",
+      "crossReferences": [
+        {
+          "ref": "39:45",
+          "why": "Describes the same reaction from outside, hearts contracting when God alone is mentioned."
+        },
+        {
+          "ref": "40:11",
+          "why": "The question this ayah answers, put by people looking for a door out of where they are."
+        },
+        {
+          "ref": "39:3",
+          "why": "Sets out the position being rejected here, devotion offered through intermediaries said to bring people nearer."
+        }
+      ],
+      "applyIt": "Notice one place where you accept a demanding idea in principle but quietly keep an exemption for yourself. Everyone runs at least one. Name it in a single sentence without resolving to fix it today. This ayah describes people who agreed with everything except the part that excluded their alternatives, and naming your exemption is most of the work.",
+      "exploreFurther": [
+        "39:45",
+        "39:3",
+        "112:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.257Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "40:13-14",
+      "surah": 40,
+      "start": 13,
+      "end": 14,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Call On Him With Devotion",
+      "tier": "standard",
+      "meaning": "Two ayat, the first giving a reason and the second drawing a conclusion. God shows you His signs and sends down provision from the sky, and only the one who keeps turning back takes any of it in. Then the instruction: call on God with your devotion made purely His, even though those who refuse dislike it. Commentators note the order carefully. Evidence is available to everyone and lands only on someone already turning, so signs are not treated as arguments that compel but as things a certain disposition can read.",
+      "historicalContext": "Meccan, immediately after the exchange with those who asked for a way out. The instruction to call on God sincerely whatever the opposition thinks was given to a community whose devotions were conducted in a city that resented them and said so. The final clause names that resentment directly rather than promising it will end. No specific occasion is reported for either ayah.",
+      "keyTerms": [
+        {
+          "arabic": "يُنِيبُ",
+          "gloss": "turns back, keeps returning",
+          "note": "A verb for coming back to where you belong, in a form implying habit rather than a single act. Taking heed is therefore attributed to someone already in the practice of returning."
+        },
+        {
+          "arabic": "مُخْلِصِينَ",
+          "gloss": "making it purely His",
+          "note": "From a root for a thing being separated out until nothing foreign remains in it, used of butter clarified or metal refined. Sincerity here is a purity of content rather than a strength of feeling."
+        },
+        {
+          "arabic": "ٱلدِّينَ",
+          "gloss": "the religion, the devotion",
+          "note": "A word covering religion, obedience owed, and the reckoning of debts. What is to be kept pure is therefore the whole relation of service, not only the intention behind a particular act."
+        }
+      ],
+      "lifeInProphetsTime": "Rain in that country was the clearest thing a person could point at. It arrived from a direction nobody controlled, it made the difference between a year and a famine, and no one claimed to have produced it. Calling provision something sent down from the sky was not a figure of speech to that audience. It was a plain description of how food actually reached them.",
+      "didYouKnow": "The phrase about making devotion purely God's occurs seven times in the Quran, and twice inside this surah, here and again at 40:65. Both times in this surah it is an imperative, and neither time is a reward attached to it: once it is followed by the resentment of others, and once by praise of the Lord of the Worlds.",
+      "theologicalSignificance": "Two claims sit together here. Evidence is universally available and selectively effective, which places the difference between people in their disposition rather than in their information. And devotion is to be kept pure regardless of who resents it, which detaches sincerity from social approval. Read together they describe a practice that depends neither on persuading others nor on being welcomed by them.",
+      "crossReferences": [
+        {
+          "ref": "39:2",
+          "why": "Gives the same instruction to serve God with devotion made purely His, at the head of that surah."
+        },
+        {
+          "ref": "40:65",
+          "why": "Repeats the identical phrase later in this surah, joined there to God being the Living One."
+        },
+        {
+          "ref": "10:22",
+          "why": "Shows the same sincerity appearing under pressure at sea and disappearing again on dry land."
+        }
+      ],
+      "applyIt": "Do one act of devotion today that nobody will know about and that gains you nothing socially: two extra units of prayer, a charity given without a name attached, a supplication for someone who will never hear it. The word this passage uses is about content rather than feeling, so what matters is only that no second motive is mixed in.",
+      "exploreFurther": [
+        "39:2",
+        "40:65",
+        "98:5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:46.258Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "40:44-45",
       "surah": 40,
