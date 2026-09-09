@@ -1,7 +1,7 @@
 {
   "surah": 48,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T16:01:50.711Z",
+  "generatedAt": "2026-09-09T16:06:00.266Z",
   "studies": [
     {
       "key": "48:1-3",
@@ -464,6 +464,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T16:01:50.521Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:14",
+      "surah": 48,
+      "start": 14,
+      "end": 14,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "Whom He Wills, Either Way",
+      "tier": "standard",
+      "meaning": "A short ayah placed immediately after a hard verdict, and its effect is to reopen what had just closed. Ownership of everything is stated first, which is what makes the two verbs that follow possible rather than arbitrary. Then forgiveness and punishment are given in parallel, each with the same clause about will attached, so neither is described as the default. The closing pair of names breaks the symmetry, since the ayah ends on mercy rather than on the balance it had just drawn.",
+      "historicalContext": "Medinan, following several ayat about groups who held back from the journey toward Mecca and about what they had assumed. The surah has been severe for a stretch, and this ayah interrupts that severity without retracting it. The classical commentators note the placement rather than reporting an occasion, and read the closing names as leaving the previous verdict open at the edges.",
+      "keyTerms": [
+        {
+          "arabic": "مُلْكُ",
+          "gloss": "kingship, ownership",
+          "note": "Dominion in the sense of possession rather than of office. Placing it first makes what follows an exercise of ownership over what is owned, which is why no external standard is invoked in the rest of the ayah."
+        },
+        {
+          "arabic": "يَشَآءُ",
+          "gloss": "He wills",
+          "note": "A verb of willing, attached identically to both halves of the sentence. Its repetition is what makes the two outcomes parallel, and the commentators are careful to read it alongside the names that close the ayah."
+        },
+        {
+          "arabic": "غَفُورًا",
+          "gloss": "much forgiving",
+          "note": "An intensive form from a root meaning to cover over, as a helmet covers the head. Forgiveness in this vocabulary is a shielding of something rather than a declaration that it never happened."
+        }
+      ],
+      "lifeInProphetsTime": "Pardon was a recognised act with a known shape. A chief could remit a blood claim, a creditor could release a debt, and a victor could let a captive go, and in each case the act was public and entirely within the giver's discretion. Nobody could be compelled to it, which is exactly what made it worth something. An audience that had watched such remissions understood the structure of this ayah before its content.",
+      "didYouKnow": "The pair of names closing this ayah, forgiving and merciful in this exact grammatical form, occurs fourteen times in the Quran, and the great majority of those occurrences are in Medinan surahs. It is one of the Book's most frequent closing formulas, and it repeatedly gives the same two words the last position after a difficult passage.",
+      "theologicalSignificance": "The ayah balances two possibilities and then declines to leave them balanced. By ending on mercy it establishes an asymmetry that the grammar of the middle clause had not implied, and the classical tradition has consistently read this pattern as significant rather than decorative. What is preserved is that neither outcome can be claimed as owed. What is added is that only one of the two is named as a quality of the one deciding.",
+      "crossReferences": [
+        {
+          "ref": "5:18",
+          "why": "Uses the same two verbs about forgiving and punishing at will, in answer to a claim of special standing."
+        },
+        {
+          "ref": "3:129",
+          "why": "Repeats the identical construction and closes with the same two names of forgiveness and mercy."
+        },
+        {
+          "ref": "39:53",
+          "why": "Gives the other direction at its widest: despair not, God forgives all sins, addressed to those who went far."
+        }
+      ],
+      "applyIt": "Think of someone you have decided is beyond fixing. A relative, a former friend, a version of yourself from ten years ago. You are not being asked to change your assessment of what they did. Only to notice that you have written the ending, and that this ayah declines to write it. Hold the file open for a week.",
+      "exploreFurther": [
+        "39:53",
+        "3:129",
+        "5:18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.151Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:15",
+      "surah": 48,
+      "start": 15,
+      "end": 15,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Let Us Come With You",
+      "tier": "standard",
+      "meaning": "A second future conversation is quoted, and the trigger for it is stated exactly: when you set out toward gains that can be collected. The same people who had reasons before now have none. The ayah names what they want, which is for a decision already stated to be altered, and it names the refusal as having been made in advance rather than by the messenger on the spot. Then their reply is quoted too. You are envious of us, which converts a decision about them into a motive of yours, and the ayah closes by saying their comprehension does not go far.",
+      "historicalContext": "Medinan. The agreement made at the edge of Mecca was followed by an expedition to Khaybar, and the classical sources connect this ayah to the question of who would take part in it, saying that those who had declined the earlier journey were not to join. The terms were understood as attached to the first refusal rather than as a new judgement, which is what the ayah's phrase about God having said so before conveys.",
+      "keyTerms": [
+        {
+          "arabic": "مَغَانِمَ",
+          "gloss": "gains taken in a campaign",
+          "note": "From a root for acquiring something without a settled price, used of a windfall. The word occurs three times in the Quran, all of them in this surah, and always as a thing being counted on."
+        },
+        {
+          "arabic": "ذَرُونَا",
+          "gloss": "let us, permit us",
+          "note": "An imperative meaning to leave someone to do a thing. It is a request for permission rather than an offer of service, which is a small difference and the whole shape of what is being asked."
+        },
+        {
+          "arabic": "تَحْسُدُونَنَا",
+          "gloss": "you envy us",
+          "note": "Envy in the strict sense: wanting another to lose what he has. The verb occurs once in the Quran, and it is spoken by people accusing rather than being accused."
+        }
+      ],
+      "lifeInProphetsTime": "Expeditions in that world were funded by their outcome. Men brought their own mounts and supplies and expected a share of whatever was taken, and shares were calculated by known rules. Joining or declining was therefore a financial decision as much as anything else, made by weighing risk against likely return. A campaign with a poor outlook drew few volunteers, and one with a good outlook drew crowds who had been unavailable a month earlier.",
+      "didYouKnow": "The word for gains taken in a campaign occurs three times in the whole Quran and all three are in this surah, within six ayat of each other. In one place it is what people want to be included in, in another it is part of a promise, and in the third it is what has been brought forward for them.",
+      "theologicalSignificance": "The passage does something unusual with the timing of judgement. The verdict is not produced in response to the new request; it is said to have been issued already, which makes the request an attempt to have a settled thing reopened rather than a fresh application. That treats a decision as an event with a date. The accusation that follows shows how such a decision is usually handled instead, by finding a motive in the person who delivers it.",
+      "crossReferences": [
+        {
+          "ref": "9:83",
+          "why": "Contains the same refusal in an earlier setting: you will not come out with me, having been content to sit."
+        },
+        {
+          "ref": "48:18-19",
+          "why": "Names the gains promised to those who did give the pledge, a few ayat after this refusal."
+        },
+        {
+          "ref": "4:73",
+          "why": "Describes the same reversal of feeling once a venture turns out well, and the wish to have been present."
+        }
+      ],
+      "applyIt": "Notice the next time you are told no and reach immediately for the other person's motive. They are threatened, they never liked me, they are protecting their own. Sometimes that is right. Sit with the possibility that the no is about the thing rather than about you, for one hour, before you decide.",
+      "exploreFurther": [
+        "9:83",
+        "4:73",
+        "48:16-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.152Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:16",
+      "surah": 48,
+      "start": 16,
+      "end": 16,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "You Will Be Called Again",
+      "tier": "standard",
+      "meaning": "The refusal in the previous ayah is followed immediately by an opening. Those turned away from one thing are told they will be summoned to another, and the summons is placed in the future, so the door is described as still ahead of them. The people they would face are named only by strength, and the commentators differ over who is meant, offering several identifications without agreement. Two outcomes are then given for the encounter itself, and two for the response to the call, arranged so that each has its answer.",
+      "historicalContext": "Medinan, and deliberately unspecific about what lay ahead. The classical sources record several proposals for the people of great might, from the tribes of central Arabia to the empires on the peninsula's northern edge, and they record that the identification was disputed early. What the ayah itself supplies is the structure: a second call would come, and the response to it would be counted.",
+      "keyTerms": [
+        {
+          "arabic": "سَتُدْعَوْنَ",
+          "gloss": "you will be called",
+          "note": "A passive in the future tense. The people addressed are told what will happen to them rather than instructed, which keeps the ayah a description of an opening rather than an order given now."
+        },
+        {
+          "arabic": "بَأْسٍ",
+          "gloss": "might, martial strength",
+          "note": "Force in the sense of hardness and capacity to endure. The phrase used here occurs twice in the Quran, and the other time it is a council describing its own strength to a queen."
+        },
+        {
+          "arabic": "أَجْرًا حَسَنًا",
+          "gloss": "a fine reward",
+          "note": "A wage that is good, using the ordinary word for what a hired man is paid. The vocabulary is contractual rather than exalted, which suits an offer being made to people who had already refused once."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation in that society was not permanent but it was sticky. A man who had failed to appear when needed carried it for years, and rehabilitation was possible only through a second occasion of the same kind. Communities kept an informal ledger of who had come out and who had not. The ayah works inside that system: the way back is not an apology accepted but another summons, still to come.",
+      "didYouKnow": "The phrase describing a people of great might occurs twice in the Quran. Its other occurrence is not about believers or opponents at all; it is spoken by the council of the queen of Sheba, describing themselves to her as people of strength and severe force while leaving the decision to her.",
+      "theologicalSignificance": "The passage keeps a refusal and an opening in the same breath, without softening either. Nothing is retracted about the earlier failure, and yet the future is not closed by it, which is a specific claim about how a record works. What follows is stated as a straight pair of consequences, obedience answered by a wage and turning away answered by pain, with no third possibility offered and no assurance that the second call will be easier than the first.",
+      "crossReferences": [
+        {
+          "ref": "27:33",
+          "why": "Carries the same phrase about people of great might, there spoken by a council about itself."
+        },
+        {
+          "ref": "9:118",
+          "why": "Shows a way back opened for three who had stayed behind, after the earth had closed in on them."
+        },
+        {
+          "ref": "48:17",
+          "why": "Immediately narrows the summons in the next ayah, setting out who is not held to it at all."
+        }
+      ],
+      "applyIt": "Think of one thing you did not show up for. Not to apologise for it again, but to ask what the second occasion would look like if it came. Most people have never worked that out, which is why the second occasion arrives and gets missed too. Name it now, while nothing is being asked of you.",
+      "exploreFurther": [
+        "9:118",
+        "27:33",
+        "48:17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.152Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:17",
+      "surah": 48,
+      "start": 17,
+      "end": 17,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "No Blame On Them",
+      "tier": "standard",
+      "meaning": "Three groups are named and the same short clause is repeated for each of them rather than collapsed into a list. The blind, the lame, the sick, and the word for blame each time. Arabic would allow one negation to cover all three, so the repetition is a choice, and the effect is that each condition is exempted on its own rather than as part of a category. Then the ayah returns to the general terms it had been using, obedience answered by gardens and turning away by pain, without any transition.",
+      "historicalContext": "Medinan, placed directly after a summons addressed to people who had held back without cause. The exemption arrives immediately, before anyone could read the summons as covering everybody. The same three conditions are exempted in similar wording in two other Medinan passages, which suggests the point was raised more than once as the community organised itself around a series of demanding journeys.",
+      "keyTerms": [
+        {
+          "arabic": "حَرَجٌ",
+          "gloss": "constriction, blame",
+          "note": "From a root for narrowness and being hemmed in. The word covers both the difficulty itself and the fault attached to failing under it, so removing it removes the pressure and the shame together."
+        },
+        {
+          "arabic": "ٱلْأَعْرَجِ",
+          "gloss": "the lame",
+          "note": "A permanent condition of the leg rather than an injury of the moment. Naming it beside sickness distinguishes what a person carries always from what has come upon him this season."
+        },
+        {
+          "arabic": "ٱلْمَرِيضِ",
+          "gloss": "the sick",
+          "note": "The one who is ill, with no qualification of degree attached. The absence of any measure in the wording is what the commentators note, since it leaves the condition undefined rather than graded."
+        }
+      ],
+      "lifeInProphetsTime": "A journey of weeks on foot or by camel was the ordinary demand of that period, and it selected hard for physical capacity. Someone with a damaged leg or failing eyes could not keep pace across open country and would slow everyone. Such people were also the most visible members of a small town, so an exemption said aloud mattered publicly. It removed a man from a list everyone could otherwise see he was not on.",
+      "didYouKnow": "The same three exemptions, in the same order and with the same word for blame repeated after each, open an ayah in another Medinan surah, where the subject is not travel at all but eating in other people's houses. A third passage exempts the weak, the sick and those who cannot find the means, adding a single condition about sincerity.",
+      "theologicalSignificance": "The exemption is stated before any of its beneficiaries have asked, which is the passage's most striking feature. Nobody in it makes a case, produces evidence, or is assessed. That treats the removal of blame as something issued rather than granted on appeal, and it sits deliberately next to a warning aimed at people whose incapacity was a story they told. The two are held apart by the ayah without either being softened.",
+      "crossReferences": [
+        {
+          "ref": "24:61",
+          "why": "Opens with the identical three exemptions in the same wording, before turning to an entirely different subject."
+        },
+        {
+          "ref": "9:91",
+          "why": "Exempts the weak, the sick and those without means, on condition of sincerity toward God and His Messenger."
+        },
+        {
+          "ref": "2:286",
+          "why": "States the principle underneath: God does not burden a soul beyond what it can carry."
+        }
+      ],
+      "applyIt": "Think about the allowance you refuse to take. A rest you have earned, help someone offered, a task you should hand on. Many people find it easier to accept an exemption for others than for themselves. This ayah issues one without waiting to be asked, and taking it is not weakness. Take one this week.",
+      "exploreFurther": [
+        "24:61",
+        "9:91",
+        "2:286"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.152Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:18-19",
+      "surah": 48,
+      "start": 18,
+      "end": 19,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "Under The Tree",
+      "tier": "standard",
+      "meaning": "The verb opening these ayat is the one for being well pleased, and it is placed in the past tense and tied to a specific moment. What follows explains the order of events. He knew what was in their hearts, then sent down calm, then gave them an outcome. Approval comes before the settling of nerves rather than after it, and the calm is described as descending rather than arising. A place is named and a tree, so the whole passage is anchored to a piece of ground that could be walked to.",
+      "historicalContext": "Medinan. The party had halted at Hudaybiyyah, short of Mecca, and a rumour reached them that an envoy sent into the city had been killed. Under a tree at that spot, those present pledged themselves one by one. The terms agreed shortly afterward disappointed many. The nearer opening promised here is usually understood as the expedition that followed, and the surah names it before it happened.",
+      "keyTerms": [
+        {
+          "arabic": "رَضِىَ",
+          "gloss": "was well pleased",
+          "note": "Settled satisfaction rather than a passing approval. The verb is in the past tense and attached to a named moment, so what it records is a completed act of approval rather than a standing disposition."
+        },
+        {
+          "arabic": "ٱلسَّكِينَةَ",
+          "gloss": "calm, settledness",
+          "note": "From a root for stillness and dwelling. In this definite form the word occurs twice in the Quran, both times in this surah, and both times as something sent down rather than achieved."
+        },
+        {
+          "arabic": "أَثَـٰبَهُمْ",
+          "gloss": "gave them back a return",
+          "note": "From a root about a thing returning to its place, which also gives the word for a garment. It describes a recompense that comes back to the one who acted rather than a prize awarded."
+        }
+      ],
+      "lifeInProphetsTime": "A tree that could be found again mattered in that landscape. Landmarks were few, and a solitary acacia in open country served as a meeting point, a place of shade and a reference in directions given to travellers. Agreements were made at such places precisely because they could be named afterward. Reports say that in later years the tree at this spot could no longer be identified with certainty, and that this was thought to be for the best.",
+      "didYouKnow": "The word for calm sent down appears twice in this surah in this exact definite form, and nowhere else in the Quran with that spelling. Both occurrences describe it coming down onto the hearts of people who were under pressure, once at the surah's opening and once here, and in neither place is anything said about their feelings changing first.",
+      "theologicalSignificance": "The sequence in this passage puts knowledge before consolation and both before outcome. What is approved is the state of the heart at a moment of maximum uncertainty, before anything was known about how the affair would end, and the approval is recorded as having happened then. That detaches it entirely from the result. The calm is then described as arriving from outside, which makes steadiness under pressure something received rather than mustered.",
+      "crossReferences": [
+        {
+          "ref": "48:4",
+          "why": "Contains the other occurrence of the same word for calm, sent down to increase faith upon faith."
+        },
+        {
+          "ref": "48:10",
+          "why": "Describes the same pledge in the same surah, saying it reached past the hand that received it."
+        },
+        {
+          "ref": "9:40",
+          "why": "Shows the same descent of calm at an earlier moment of danger, on the road out of Mecca."
+        }
+      ],
+      "applyIt": "Recall a time you decided something without knowing how it would turn out, and it turned out badly. The decision and the outcome are two different objects, and most of us store them as one. Separate them today for that single memory. What this passage records is approval attached to the first, at a point when the second was still unknown.",
+      "exploreFurther": [
+        "48:1-4",
+        "9:40",
+        "5:119"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.153Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "48:20",
+      "surah": 48,
+      "start": 20,
+      "end": 20,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "This One Brought Forward",
+      "tier": "standard",
+      "meaning": "A large promise is made and then a small instalment is pointed at inside it. Many gains are promised, and this one has been hastened for you, so what has already arrived is described as an advance against something longer. Alongside it a second thing is named that nobody had asked for: hands were held back from you. The two purposes given at the end are unexpected, since neither is about the gains themselves. One is that it serve as a sign, and the other is guidance along a straight way.",
+      "historicalContext": "Medinan, following the passage about the pledge given under the tree and the nearer opening promised there. The commentators generally read the hastened gains as those of the expedition that followed the agreement, and the restraining of hands as covering the return journey from Hudaybiyyah, when a confrontation had been possible and did not occur. The classical accounts differ over which incident is meant.",
+      "keyTerms": [
+        {
+          "arabic": "فَعَجَّلَ",
+          "gloss": "so He brought forward",
+          "note": "To hasten something in time, to move it earlier than its term. It presents what arrived as part of a larger promise released early rather than as the promise itself being fulfilled."
+        },
+        {
+          "arabic": "كَفَّ",
+          "gloss": "held back, restrained",
+          "note": "To stop a hand from reaching, the verb used of withdrawing an arm or checking a blow. The phrase about hands being restrained from you occurs once in the Quran, in this ayah."
+        },
+        {
+          "arabic": "ءَايَةً",
+          "gloss": "a sign, an indication",
+          "note": "Something that points beyond itself. Naming an outcome a sign turns it from a gain into evidence, which is why the purpose clause is about what the believers would understand rather than what they would hold."
+        }
+      ],
+      "lifeInProphetsTime": "Trade in that region ran on advances. A partner put up capital and received an early portion against a season's returns; a buyer paid something forward on a crop still in the ground; a debt could be part-settled to show good faith while the balance stood. Everyone understood the difference between an instalment and a settlement. This ayah uses that distinction exactly, and calls what has arrived the hastened part.",
+      "didYouKnow": "The phrase in this ayah about hands being held back from you occurs only here in the Quran. The same verb appears elsewhere in the opposite direction, where a group had been told to hold back their own hands before fighting was permitted to them. The Quran uses one verb for both, so restraint is described identically whichever side it falls on.",
+      "theologicalSignificance": "The two purposes at the end reorder the whole passage. A material outcome is given, and then it is said to be for something other than itself: to function as an indication, and to move people along a road. That makes provision instrumental without making it unreal, since the gains are named and counted. It also mentions a danger that did not happen, which is a form of favour nobody can notice at the time and few remember afterward.",
+      "crossReferences": [
+        {
+          "ref": "4:77",
+          "why": "Contains the same verb in reverse, where people had been told to hold back their hands before fighting."
+        },
+        {
+          "ref": "5:11",
+          "why": "Recalls another occasion when hands stretching toward the community were held back from them."
+        },
+        {
+          "ref": "48:18-19",
+          "why": "States the promise of many gains that this ayah describes as having been brought forward in part."
+        }
+      ],
+      "applyIt": "List three things that did not happen to you this year. A near miss on the road, an illness that stayed mild, a conversation that could have gone badly and did not. Nobody keeps that list, because absences leave no trace. Write it once, and notice that half of what you have been given is invisible by nature.",
+      "exploreFurther": [
+        "5:11",
+        "4:77",
+        "48:21-23"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:06:00.153Z",
         "reviewed": false
       }
     },
