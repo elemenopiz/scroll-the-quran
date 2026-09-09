@@ -1,7 +1,7 @@
 {
   "surah": 15,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T12:21:00.181Z",
+  "generatedAt": "2026-09-09T12:22:03.323Z",
   "studies": [
     {
       "key": "15:1-4",
@@ -1450,6 +1450,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T12:20:59.964Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "15:99",
+      "surah": 15,
+      "start": 99,
+      "end": 99,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Until The Certainty Comes",
+      "tier": "standard",
+      "meaning": "Nine words in Arabic close the surah, and everything turns on the last one. The particle before it means until, so worship is given a duration rather than a goal, and the classical commentators overwhelmingly identify the certainty as death. Another surah supports that reading, quoting people in the Fire who say they denied the Day of Judgement until the certainty came to them. The commentators use this verse to rule out any suggestion that devotion could be laid down once some inner state has been reached.",
+      "historicalContext": "Meccan, and the final verse of the surah. What precedes it is an instruction to proclaim openly, a guarantee against the mockers, an acknowledgement that the hostility is tightening his chest, and a prescription of praise and prostration. This closing line extends that prescription across a lifetime rather than across the current difficulty, which is why it reads as a conclusion rather than an addition.",
+      "keyTerms": [
+        {
+          "arabic": "وَٱعْبُدْ",
+          "gloss": "and serve, worship",
+          "note": "From a root for a servant bound to a master, so the word covers a whole standing relationship rather than particular acts. It is the same root behind the statement that jinn and human beings were made for this."
+        },
+        {
+          "arabic": "حَتَّىٰ",
+          "gloss": "until, up to",
+          "note": "A particle of limit that marks an endpoint rather than a purpose. The distinction matters, since the sentence sets a duration for the instruction rather than naming a state to be reached by it."
+        },
+        {
+          "arabic": "ٱلْيَقِينُ",
+          "gloss": "the certainty, the sure thing",
+          "note": "Occurring six times in the Quran. The commentators take it here as death, and another passage puts the same word in the mouths of people who denied the Judgement until it came upon them."
+        }
+      ],
+      "lifeInProphetsTime": "Obligations in that world ended at recognisable points. A debt closed on its date, a truce ran to the end of a sacred month, and a contract of hire finished when the work was done. Everyone was used to duties with a stated boundary, and this instruction gives one, but places it at a point nobody can see coming and nobody can decline to reach.",
+      "didYouKnow": "The word closing this surah occurs six times in the Quran, and one passage uses it twice within three verses, distinguishing knowing something with certainty from seeing it with the eye of certainty. Another surah has the people of the Fire say they denied the Day of Judgement until the certainty came to them, which is the usage the commentators lean on here.",
+      "theologicalSignificance": "Worship is defined by its duration rather than by its achievements. That closes a particular door: if the endpoint is death, then no attainment along the way releases anyone, and no spiritual condition puts a person past the practice. It also reframes the whole instruction as something continuous rather than as a series of episodes. The surah that has spent its length on rejection, ruin and mockery ends by giving the reader one thing to keep doing.",
+      "crossReferences": [
+        {
+          "ref": "74:46-47",
+          "why": "Uses the same word in the mouths of the condemned, who denied the Judgement until it came."
+        },
+        {
+          "ref": "19:31",
+          "why": "Has a prophet describe prayer and charity enjoined on him for as long as he lives."
+        },
+        {
+          "ref": "51:56",
+          "why": "States the purpose this instruction assumes, that jinn and human beings were made to worship."
+        }
+      ],
+      "applyIt": "Pick the smallest act of worship you can commit to every single day without exception. Two units of prayer, one page, one repeated phrase. Make it small enough that no bad week can break it. The verse sets a duration rather than a target, and something durable is worth more here than something impressive.",
+      "exploreFurther": [
+        "51:56",
+        "102:5-7",
+        "3:102"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T12:22:03.133Z",
         "reviewed": false
       }
     }
