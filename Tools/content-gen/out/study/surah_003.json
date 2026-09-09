@@ -1,7 +1,7 @@
 {
   "surah": 3,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T10:27:02.698Z",
+  "generatedAt": "2026-09-09T10:37:25.893Z",
   "studies": [
     {
       "key": "3:1-3",
@@ -5511,6 +5511,64 @@
       }
     },
     {
+      "key": "3:130-132",
+      "surah": 3,
+      "start": 130,
+      "end": 132,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Doubled And Doubled Again",
+      "tier": "standard",
+      "meaning": "The address is to believers, and the practice described is lending at an increase that compounds: a debt doubled, then doubled again on the doubling. Classical commentators note the specific form named here, in which a debtor unable to pay at term had the sum raised and the term extended, so that a modest loan could grow past any hope of repayment. The two ayat that follow set the instruction inside something larger, joining mindfulness and obedience to the hope of mercy.",
+      "historicalContext": "Medinan, placed inside the account of the battle at Uhud, which the classical commentaries treat as deliberate rather than accidental. A community that had just experienced loss and division is addressed about its financial dealings with one another. The practice named was ordinary in Arabian commerce, and the surah returns to it briefly, since a much longer treatment appears in an earlier surah.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرِّبَوٰٓا۟",
+          "gloss": "increase on a loan",
+          "note": "From a root meaning to grow or swell, used of a hill rising out of a plain. The word names the increase itself rather than the lending, which is why the Quran describes it by what it does."
+        },
+        {
+          "arabic": "أَضْعَـٰفًا مُّضَـٰعَفَةً",
+          "gloss": "multiples multiplied",
+          "note": "A noun paired with a participle from its own root, so the phrase doubles the idea of doubling. The sound of it performs the compounding that the sense is describing."
+        },
+        {
+          "arabic": "تُفْلِحُونَ",
+          "gloss": "you may prosper",
+          "note": "From a root meaning to split open, used of a farmer breaking the earth. Success in Arabic is pictured as cutting through to what lies underneath rather than as accumulation on top."
+        }
+      ],
+      "lifeInProphetsTime": "Credit ran everything in Mecca and Medina, and there were no courts to restructure a debt. A man who could not pay at term negotiated with whoever held the loan, and the usual terms were more time in exchange for a larger sum. Families lost land, and sometimes their freedom, through exactly that sequence. Everyone had watched a neighbour disappear into it.",
+      "didYouKnow": "This surah's treatment of the subject is brief and sits inside a passage about a battle, while a much longer treatment appears near the end of Surah 2. Classical commentators discuss the relation between the two, and the placement here, among ayat about loss and division within the community, is part of what they weigh.",
+      "theologicalSignificance": "The instruction is set between two ayat that widen it considerably: one about guarding against the Fire and one about obedience and mercy. That framing presents financial conduct as continuous with everything else rather than as a separate department of life. Its placement inside the account of a difficult battle makes a further point, that a community's internal dealings bear on its outward condition.",
+      "crossReferences": [
+        {
+          "ref": "2:275-280",
+          "why": "Treats the same subject at length, including the instruction to grant a struggling debtor time."
+        },
+        {
+          "ref": "30:39",
+          "why": "Contrasts what is given to grow among people's wealth with what is given seeking God's face."
+        },
+        {
+          "ref": "2:245",
+          "why": "Describes a loan given to God instead, and multiplied many times over."
+        }
+      ],
+      "applyIt": "This passage puts a matter of money inside a chapter about loss, division and mercy, which suggests they belong together. Look at one financial arrangement you are part of and ask what it does to the relationship it sits inside. Not whether it is permitted; simply what it does to the two people involved.",
+      "exploreFurther": [
+        "2:275-281",
+        "2:245",
+        "30:39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.059Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "3:133-134",
       "surah": 3,
       "start": 133,
@@ -5565,6 +5623,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:19:25.896Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:135",
+      "surah": 3,
+      "start": 135,
+      "end": 135,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "They Remember And Ask",
+      "tier": "standard",
+      "meaning": "The description is of people who fail and then do something specific. Having done something indecent or wronged themselves, they remember God and ask forgiveness. A question is inserted mid-sentence, and it is rhetorical: who forgives sins but God. Then the last clause, which classical commentators treat as load-bearing: they do not persist in what they did, knowingly. Failure is assumed throughout; what is described is the shape of the recovery rather than the avoidance of the fall.",
+      "historicalContext": "Medinan, inside the passage describing those who are mindful, immediately after the instruction to race toward forgiveness. The classical commentaries note that this description arrives within the surah's account of a battle in which the community had genuinely failed, and read the placement as addressing people who were, at that very moment, examining their own conduct.",
+      "keyTerms": [
+        {
+          "arabic": "فَـٰحِشَةً",
+          "gloss": "an indecency, an excess",
+          "note": "From a root meaning to exceed proper bounds, used of anything gross or beyond measure. It names a serious wrong, and it is paired here with the milder phrase about wronging oneself."
+        },
+        {
+          "arabic": "ذَكَرُوا۟",
+          "gloss": "they called to mind",
+          "note": "The same verb used across the Quran for remembrance of God. Placing it as the first response to a wrong makes recollection the hinge, coming before any resolve about the future is formed."
+        },
+        {
+          "arabic": "يُصِرُّوا۟",
+          "gloss": "they persist, they dig in",
+          "note": "From a root suggesting tying tightly and a persistent sound. It names holding to something stubbornly, so the denial concerns continuation rather than any repetition after a lapse."
+        }
+      ],
+      "lifeInProphetsTime": "There was nowhere private to fail in a small town. A wrong done was known, discussed and remembered, and the ordinary response was to defend yourself, since a conceded fault damaged a family's standing as well as your own. Admitting rather than justifying ran against every social pressure a person in that world experienced daily.",
+      "didYouKnow": "The question placed in the middle of this ayah, asking who forgives sins but God, interrupts a description of people in order to say something about God. The Quran uses this kind of insertion elsewhere, and classical commentators note that the sentence resumes afterwards as though the interruption had not occurred.",
+      "theologicalSignificance": "The passage builds its portrait of a mindful person around failure rather than around its absence. What distinguishes them is not a clean record but a sequence: remember, ask, and do not dig in. The final phrase, that they know, is exacting, since it rules out persistence excused by ignorance and leaves honest recognition of a fault as the thing actually being asked for.",
+      "crossReferences": [
+        {
+          "ref": "3:133-134",
+          "why": "Describes the same people immediately before, racing toward forgiveness and restraining anger."
+        },
+        {
+          "ref": "4:110",
+          "why": "Says whoever does evil or wrongs himself and then seeks forgiveness will find God forgiving."
+        },
+        {
+          "ref": "39:53",
+          "why": "Addresses those who have gone furthest, telling them not to despair of God's mercy."
+        }
+      ],
+      "applyIt": "The order in this ayah is worth copying exactly: remember, ask, stop. Most people reverse it, resolving to stop first and never getting to the remembering. Next time you catch yourself in something, try naming God before you make any promises about the future, and see whether the promise comes out differently.",
+      "exploreFurther": [
+        "3:133-136",
+        "4:110",
+        "39:53-54"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.095Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:136",
+      "surah": 3,
+      "start": 136,
+      "end": 136,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "The Reward Of The Workers",
+      "tier": "standard",
+      "meaning": "The reward is named in two parts, and the first is unexpected: forgiveness from their Lord, before any mention of gardens. Classical commentators note the order, since a description of reward that opens with pardon assumes there was something to pardon. Then the familiar image of gardens with rivers, and a closing exclamation about the reward of those who work. The final word matters. They are called workers rather than the righteous or the believers, which ties the reward to effort.",
+      "historicalContext": "Medinan, closing the description of the mindful that runs from the instruction to race toward forgiveness. The classical commentaries place the passage inside the surah's treatment of the battle at Uhud, addressed to a community that had recently failed and is now being described in terms beginning with pardon. That placement shapes how the sources read the ordering of the two halves.",
+      "keyTerms": [
+        {
+          "arabic": "مَّغْفِرَةٌ",
+          "gloss": "a covering over, pardon",
+          "note": "From the root meaning to cover, so forgiveness is pictured as something laid over a fault rather than as its erasure. Naming it first makes the fault part of the passage's assumption."
+        },
+        {
+          "arabic": "نِعْمَ",
+          "gloss": "how excellent",
+          "note": "A verb of praise used only in exclamations, with no ordinary indicative sense at all. Arabic reserves it for commendation, so the clause it opens is entirely an expression of approval."
+        },
+        {
+          "arabic": "ٱلْعَـٰمِلِينَ",
+          "gloss": "those who work",
+          "note": "The active participle from the ordinary verb for doing and working. It names people by their labour rather than by their belief, which is a notable choice at the close of this description."
+        }
+      ],
+      "lifeInProphetsTime": "A worker's reward was settled at the end of a job, and the whole relationship rested on it. Harvest labour, caravan work and building were all paid at completion, and a generous employer was spoken of for years afterwards. The exclamation closing this ayah is the kind of thing said about an employer whose payment exceeded expectation, and the audience heard it that way.",
+      "didYouKnow": "The phrase describing gardens with rivers running beneath appears more than thirty times in the Quran, and this occurrence is one of several in this surah alone. Its repetition across chapters revealed years apart, always with small variations in what surrounds it, is among the text's most recognisable formulas.",
+      "theologicalSignificance": "Putting forgiveness first in a list of rewards makes a claim about who the reward is for. The people described are not those who avoided failure but those who handled it in a particular way, so pardon is the first thing they need and the first thing named. Calling them workers at the close keeps effort in the picture without letting it become the whole basis of the outcome.",
+      "crossReferences": [
+        {
+          "ref": "3:135",
+          "why": "Describes the people this reward is promised to, and what they do after a wrong."
+        },
+        {
+          "ref": "39:74",
+          "why": "Uses the same exclamation about the reward of those who work, at the end of a scene."
+        },
+        {
+          "ref": "47:15",
+          "why": "Describes the same gardens in more detail, with rivers of different kinds beneath them."
+        }
+      ],
+      "applyIt": "Notice that the first item on this list is being forgiven, not being rewarded. If you have been holding yourself to a standard where mistakes disqualify you, the order here is worth sitting with. Read the ayah before this one and this one together, in that order, and see what they treat as normal.",
+      "exploreFurther": [
+        "3:133-135",
+        "39:73-74",
+        "47:15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.097Z",
         "reviewed": false
       }
     },
@@ -5627,6 +5801,180 @@
       }
     },
     {
+      "key": "3:140",
+      "surah": 3,
+      "start": 140,
+      "end": 140,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "Days We Turn Between People",
+      "tier": "standard",
+      "meaning": "The comfort offered is comparative rather than soothing: a wound reached you, and a wound like it reached them. Then a principle, expressed with a verb used of passing something from hand to hand. Days are turned about among people, and no group holds them permanently. Two purposes are named for the alternation, both concerning what becomes known and who is taken. Classical commentators note that the knowing spoken of is not God acquiring information but a state being brought into the open.",
+      "historicalContext": "Medinan, in the surah's account of the battle at Uhud, addressed to a community that had won at Badr and lost here. The classical commentaries read the comparison as directed at the specific shock of a reverse following a victory, which was harder to absorb than a defeat on its own would have been. The passage answers by describing alternation as the normal shape of such days.",
+      "keyTerms": [
+        {
+          "arabic": "قَرْحٌ",
+          "gloss": "a wound, an open sore",
+          "note": "A word for an open wound, from a root also connected with hardship and with something breaking the skin. It names the injury rather than the defeat, which keeps the comparison physical."
+        },
+        {
+          "arabic": "نُدَاوِلُهَا",
+          "gloss": "We turn them about",
+          "note": "From a root meaning to pass something around in turns, which later gave Arabic its word for a state. It pictures days circulating between people rather than being awarded to anyone."
+        },
+        {
+          "arabic": "شُهَدَآءَ",
+          "gloss": "witnesses, those who fall",
+          "note": "The same word this surah uses for those who testify. Its double sense joins the one who bears witness to the one who dies doing so, and the Arabic holds both at once."
+        }
+      ],
+      "lifeInProphetsTime": "Fortune in the peninsula was visibly cyclical. A tribe dominant in one generation was reduced in the next by drought, by a lost caravan or by a defeat, and the same families rose again a decade later. Nobody expected permanence, and the genealogies preserved the memory of both. The image of days passed round like a bowl at a gathering needed no explaining.",
+      "didYouKnow": "The verb used here for turning days about among people comes from a root that later gave Arabic its ordinary word for a state or a government. The connection is not accidental: both describe something that changes hands, and the classical lexicographers treat alternation as the root's basic sense.",
+      "theologicalSignificance": "The passage places a defeat inside a pattern without explaining it away. Alternation is described as how such days work, so the reverse is not treated as a withdrawal of favour. What the alternation is said to accomplish is disclosure: something previously indistinguishable becomes visible. That makes hardship an occasion of clarification rather than of correction, which is a different account of why it happens.",
+      "crossReferences": [
+        {
+          "ref": "3:141",
+          "why": "Names the second purpose immediately: to refine those who believe and to wear away refusal."
+        },
+        {
+          "ref": "2:214",
+          "why": "Asks whether you supposed you would enter the garden without what came to those before."
+        },
+        {
+          "ref": "47:31",
+          "why": "Says the same thing plainly: We will test you until the strivers and the steadfast are known."
+        }
+      ],
+      "applyIt": "Notice the comparison the ayah opens with. It does not say your wound is small; it says the other side is wounded too. That is a specific kind of comfort, and it works better than most. Next time you are hurt by something, ask honestly what it cost the other party. The answer is rarely nothing.",
+      "exploreFurther": [
+        "2:214",
+        "3:141-143",
+        "47:31"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.104Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:141-143",
+      "surah": 3,
+      "start": 141,
+      "end": 143,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "You Wished For This",
+      "tier": "standard",
+      "meaning": "Three short ayat press hard. The first names two effects of hard days, refining one group and wearing away another. The second asks whether the garden was expected without God distinguishing those who strive and those who hold fast. The third is the sharpest: you used to wish for death before you met it, and now you have seen it with your own eyes. Classical commentators connect the last to those who had urged going out to meet the attacking force.",
+      "historicalContext": "Medinan, in the account of the battle at Uhud. The classical sources report that the decision to meet the attacking force outside the city was urged by younger members of the community who had missed the earlier battle and wanted the same opportunity. The Prophet Muhammad (peace be upon him) had preferred to remain within the city, and the sources agree that the majority view prevailed.",
+      "keyTerms": [
+        {
+          "arabic": "يُمَحِّصَ",
+          "gloss": "refine, sift clean",
+          "note": "A verb used of purifying gold and of removing what has been mixed in. It describes a process that takes away rather than adds, which is why it suits an account of a costly day."
+        },
+        {
+          "arabic": "يَمْحَقَ",
+          "gloss": "wear away, efface",
+          "note": "From a root used of the waning moon losing its light. It names gradual erasure rather than sudden destruction, and it is paired here with the verb for refining metal."
+        },
+        {
+          "arabic": "تَمَنَّوْنَ",
+          "gloss": "you used to wish for",
+          "note": "A verb for wishing and for picturing something desirable. It names desire directed at what is not present, which is exactly what the ayah then contrasts with having seen it."
+        }
+      ],
+      "lifeInProphetsTime": "Young men in Arabia grew up on poetry about courage and on the reputations of relatives who had fought. Missing a famous engagement was a lasting embarrassment, and the wish to be tested was genuine and formed early. What that wish actually meant was learned only once, in a single afternoon, and the men who learned it were often barely adults.",
+      "didYouKnow": "The two verbs in the first of these ayat are drawn from different domains, one from refining metal and one from the waning of the moon. Placing them in a single short sentence sets a process of purification beside a process of diminishing, and the whole contrast is carried by the roots alone.",
+      "theologicalSignificance": "The passage refuses to let entry into the garden be assumed. It states that distinguishing must happen, and it locates that distinguishing in events rather than in declarations. The third ayah adds something harder: a sincere wish and its fulfilment are different experiences, and the gap between them is not treated as a failure but as what testing means.",
+      "crossReferences": [
+        {
+          "ref": "2:214",
+          "why": "Asks the same question, whether you expected the garden without what came to those before."
+        },
+        {
+          "ref": "29:2-3",
+          "why": "Asks whether people supposed they would be left alone on saying that they believe."
+        },
+        {
+          "ref": "3:152",
+          "why": "Describes what actually happened on the day this passage is referring to."
+        }
+      ],
+      "applyIt": "Think of something you have said you wished for that would be genuinely hard: more responsibility, a test of your patience, a chance to prove something. Sit for a moment with what it would actually involve on a Tuesday afternoon. The ayah is not mocking the wish. It is asking you to know what you asked for.",
+      "exploreFurther": [
+        "2:214",
+        "3:152-153",
+        "29:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.105Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:144",
+      "surah": 3,
+      "start": 144,
+      "end": 144,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Only A Messenger",
+      "tier": "standard",
+      "meaning": "A rumour on the battlefield that the Prophet had been killed is answered with a statement about what a messenger is. Muhammad (peace be upon him) is a messenger, and messengers have passed away before him. Then the question: if he dies or is killed, will you turn back on your heels. Classical commentators note that the ayah does not deny grief. It separates the person from the message, and it names the alternative behaviour precisely, as a reversal of direction rather than a loss of belief.",
+      "historicalContext": "Medinan, revealed in connection with the battle at Uhud, where a cry went up that the Prophet had been killed and part of the force gave way. The classical sources agree on the incident. They also report this ayah being recited publicly at his death some years later, at a moment when the community was struggling to accept it, and they describe the effect that recitation had.",
+      "keyTerms": [
+        {
+          "arabic": "خَلَتْ",
+          "gloss": "have passed on",
+          "note": "A verb meaning to become empty or to pass by, used of times gone and of places vacated. It describes earlier messengers as having gone before rather than as having failed at anything."
+        },
+        {
+          "arabic": "ٱنقَلَبْتُمْ عَلَىٰٓ أَعْقَـٰبِكُمْ",
+          "gloss": "you turn on your heels",
+          "note": "An idiom for reversing direction, built from the word for a heel. It pictures retreat as walking back the way you came, and the surah uses the same phrase again a few ayat later."
+        },
+        {
+          "arabic": "ٱلشَّـٰكِرِينَ",
+          "gloss": "the thankful",
+          "note": "From the root for gratitude. Closing an ayah about a leader's death with a promise to the thankful is unexpected, and commentators read it as naming the response that holds when a support is removed."
+        }
+      ],
+      "lifeInProphetsTime": "A tribe's cohesion often depended on one man. When a chief fell, alliances dissolved, followers scattered, and a confederation could disappear within a season. That was the ordinary expectation, and the opposing force at Uhud was counting on it. The question this ayah asks was therefore not rhetorical to its first hearers; it described what usually happened.",
+      "didYouKnow": "The classical sources report this ayah being recited aloud at the moment of the Prophet's death, and describe those present reacting as though hearing it for the first time. It is among the most widely reported occasions of a Quranic recitation outside the setting of its own revelation.",
+      "theologicalSignificance": "The passage locates the durability of a message somewhere other than in the person who carried it, which is a claim with wide consequences. It also uses the mildest available framing for defection: turning on the heels describes movement, not belief, so what is at stake is presented as conduct under shock. The closing promise names gratitude rather than steadfastness, which puts the response in a different register.",
+      "crossReferences": [
+        {
+          "ref": "39:30",
+          "why": "States the same fact plainly: you will die, and they will die."
+        },
+        {
+          "ref": "3:145",
+          "why": "Follows immediately, saying no soul dies except by God's leave at an appointed term."
+        },
+        {
+          "ref": "21:34",
+          "why": "Asks whether, if the Prophet dies, those addressed imagine they will remain."
+        }
+      ],
+      "applyIt": "Consider what in your religious life depends on a particular person: a teacher, a friend who keeps you honest, a community leader. Now imagine that person gone. This is not morbid; it is the question the ayah asks directly. Identify one practice you would want to keep, and start doing it without reference to them this week.",
+      "exploreFurther": [
+        "3:145",
+        "21:34-35",
+        "39:30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.108Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "3:145",
       "surah": 3,
       "start": 145,
@@ -5681,6 +6029,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:19:25.897Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:146",
+      "surah": 3,
+      "start": 146,
+      "end": 146,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "They Did Not Weaken",
+      "tier": "standard",
+      "meaning": "The question opens with how many, and the answer is left uncounted. Prophets before this one fought alongside large companies of devoted people, and three things are denied of them in a row: they did not lose heart at what struck them, they did not weaken, and they did not give in. The verbs grow progressively more physical. Classical commentators discuss the rare word used for those who fought alongside them, explained variously as great numbers or as the learned and devoted.",
+      "historicalContext": "Medinan, in the account of the battle at Uhud and its aftermath, where part of the force had given way. The passage answers the shock by setting the day inside a much longer history, in which communities before this one had faced the same thing and had not broken. The classical commentaries read it as consolation and correction offered together, without naming any individual at all.",
+      "keyTerms": [
+        {
+          "arabic": "كَأَيِّن",
+          "gloss": "how many a",
+          "note": "An expression for an indefinite large number, more emphatic than the ordinary word for many. It leaves the count open, which is what makes the precedent feel long rather than specific."
+        },
+        {
+          "arabic": "رِبِّيُّونَ",
+          "gloss": "devoted companies",
+          "note": "A rare word the lexicographers explain variously as large numbers or as those devoted to the Lord. The Quran uses it only here, and the commentaries preserve the whole range of readings."
+        },
+        {
+          "arabic": "ٱسْتَكَانُوا۟",
+          "gloss": "they gave in, submitted",
+          "note": "From a root suggesting stillness and lowering oneself. It names the visible posture of surrender rather than the inward state, which is why it comes last in the sequence of three."
+        }
+      ],
+      "lifeInProphetsTime": "A defeated force in Arabia signalled it by posture as much as by words: sitting down, laying arms aside, sending a delegate out. Everyone recognised the signs. The three denials in this ayah move from the inward to the visible, ending with the posture itself, and an audience would have followed that progression as a description of the stages of giving up.",
+      "didYouKnow": "The rare word this ayah uses for those who fought alongside the earlier prophets occurs nowhere else in the Quran. Words of this kind, appearing only once in the whole text, form a recognised category in the classical scholarly literature, and they attract long discussion precisely because there is no second occurrence to compare.",
+      "theologicalSignificance": "The consolation offered is historical rather than promissory. Nothing is said about the outcome; what is said is that others have stood in this position and held. Closing on God's love for those who endure attaches the relationship to the holding rather than to any result, which means the value of the endurance does not depend on how the day went.",
+      "crossReferences": [
+        {
+          "ref": "3:147",
+          "why": "Gives their words immediately: a prayer for forgiveness, firm footing and help."
+        },
+        {
+          "ref": "2:249",
+          "why": "Describes a small band saying many a small group has overcome a large one by God's leave."
+        },
+        {
+          "ref": "3:200",
+          "why": "Closes the surah with the same vocabulary of endurance and of holding a position."
+        }
+      ],
+      "applyIt": "The three verbs here describe a sequence: losing heart, weakening, then giving in. They are not the same thing, and the first can happen without the others following it. Notice which stage you are actually at with something difficult. Most people declare the third when they are only at the first.",
+      "exploreFurther": [
+        "2:249-250",
+        "3:147-148",
+        "3:200"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.111Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:147",
+      "surah": 3,
+      "start": 147,
+      "end": 147,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Their Only Words",
+      "tier": "standard",
+      "meaning": "What those earlier companies said under pressure is reported, and the phrasing insists it was all they said. The prayer has four parts and the order is unexpected. It begins with forgiveness, not for wrongs done to others but for their own excess in their affairs, then asks for firm feet, then for help. Classical commentators note that the request for victory comes last and the request about their own conduct comes first, reversing the order most people would use under threat.",
+      "historicalContext": "Medinan, continuing the description of earlier communities who faced hardship without breaking. The passage sits in the surah's account of Uhud, where the classical sources report both a dispute over the command and a movement to collect spoils. The prayer's mention of excess in one's own affairs is read by the commentaries directly against that background.",
+      "keyTerms": [
+        {
+          "arabic": "إِسْرَافَنَا",
+          "gloss": "our going past the limit",
+          "note": "From a root meaning to exceed proper measure, used of spending and of any excess. It names overstepping rather than sin in general, so the confession is specific about the kind of failure."
+        },
+        {
+          "arabic": "ثَبِّتْ أَقْدَامَنَا",
+          "gloss": "make our feet firm",
+          "note": "A physical request, using the verb for fixing something in place and the word for feet. In a battle it means not being pushed back, and Arabic uses it for steadiness of resolve as well."
+        },
+        {
+          "arabic": "ٱنصُرْنَا",
+          "gloss": "help us",
+          "note": "From the root for coming to another's aid, used throughout this surah. Placing it last means the prayer asks for assistance only after it has asked to be repaired and then steadied."
+        }
+      ],
+      "lifeInProphetsTime": "A line of men held ground physically, shoulder to shoulder, and the phrase about firm feet was no metaphor to them. Sandals in loose ground, a slope, a stumble over a body: these decided whether a formation held. Asking for steady feet was asking for the most concrete thing a fighter could want, and it came before asking to win.",
+      "didYouKnow": "The prayer reported here is quoted in full and introduced by a phrase saying it was the whole of what they said. The Quran preserves a number of such prayers word for word, and several of them appear in this surah, which contains more quoted supplications than most chapters of comparable length.",
+      "theologicalSignificance": "The order of the four requests is the passage's argument. Asking first about one's own excess treats the internal problem as prior to the external one, and asking for firmness before asking for help treats endurance as the thing actually needed. Victory is requested last and briefly, which subordinates the outcome to the state of the people asking for it.",
+      "crossReferences": [
+        {
+          "ref": "2:250",
+          "why": "Records a nearly identical prayer for firm feet and for help, before an earlier battle."
+        },
+        {
+          "ref": "3:8",
+          "why": "Gives another prayer preserved in this surah, asking that hearts not swerve after guidance."
+        },
+        {
+          "ref": "3:193-194",
+          "why": "Closes the surah with a longer prayer, which also begins with forgiveness."
+        }
+      ],
+      "applyIt": "Look at the order of these four requests and compare it with your own prayers under pressure. Most of us begin with the outcome and never reach our own conduct. Try reversing it once this week: ask first about where you have overstepped, and let the request for help come last.",
+      "exploreFurther": [
+        "2:250",
+        "3:8-9",
+        "3:193-194"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.112Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:148-150",
+      "surah": 3,
+      "start": 148,
+      "end": 150,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "The Best Of Helpers",
+      "tier": "standard",
+      "meaning": "Three ayat close one thread and open another. Those earlier communities are said to have been given the reward of this world and the better reward of the next, with a closing note about God's love for those who do good. Then a warning to the believers, using the same image of turning on the heels that appeared a few ayat earlier. Then one short sentence that answers it: God is your protector, and He is the best of helpers.",
+      "historicalContext": "Medinan, in the aftermath of the battle at Uhud, when the community was being approached with advice from various quarters about its position and its prospects. The classical commentaries connect the warning to that pressure. The short ayah that follows is read as the surah's answer, offered without argument, and its vocabulary of protection recurs throughout this section.",
+      "keyTerms": [
+        {
+          "arabic": "ثَوَابَ",
+          "gloss": "return, recompense",
+          "note": "From a root meaning to come back, used of a garment returning to its owner. Reward in Arabic is described as something coming back rather than as a payment made from outside."
+        },
+        {
+          "arabic": "مَوْلَىٰكُمْ",
+          "gloss": "your protector",
+          "note": "From the same root as the word for a guardian used earlier in this surah. It covers protector, patron and the one who takes charge of your affairs, all inside a single term."
+        },
+        {
+          "arabic": "خَيْرُ ٱلنَّـٰصِرِينَ",
+          "gloss": "the best of helpers",
+          "note": "A superlative built on the root for aid used repeatedly in this surah. The comparative form implies there are other helpers, placing God at the head of a list rather than alone on it."
+        }
+      ],
+      "lifeInProphetsTime": "After a defeat, the practical question in Arabia was whose protection you would seek next. Defeated groups negotiated new alliances quickly, since a party without a patron was finished. Advice from interested parties arrived immediately and was rarely disinterested. The warning here belongs to exactly that moment, when a community is weakest and most easily reorganised by somebody else.",
+      "didYouKnow": "The image of turning on the heels appears twice within a few ayat of this surah, once about the death of the Prophet and once here about following bad counsel. The repetition binds two very different dangers with a single image, and the Quran uses the phrase in only a handful of places overall.",
+      "theologicalSignificance": "The answer given to a warning is a statement about relationship rather than a strategy. Nothing is said about what to do; the community is told whose it is. That addresses the actual anxiety of the moment, which was not about tactics but about who would stand behind them. Naming God the best of helpers rather than the only one leaves ordinary human support intact underneath.",
+      "crossReferences": [
+        {
+          "ref": "3:144",
+          "why": "Uses the same image of turning on the heels, at the news of the Prophet's death."
+        },
+        {
+          "ref": "8:40",
+          "why": "Names God as protector with the same word, calling Him an excellent protector and helper."
+        },
+        {
+          "ref": "3:160",
+          "why": "Says shortly afterwards that if God helps you, then no one can overcome you."
+        }
+      ],
+      "applyIt": "After a setback, advice arrives quickly and most of it comes from someone with an interest. Think of a recent disappointment and list who offered you a view of it. Then ask, for each of them, what they wanted the situation to become. It is a clarifying exercise, and it takes about two minutes.",
+      "exploreFurther": [
+        "3:160",
+        "8:40",
+        "9:51"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.114Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:151",
+      "surah": 3,
+      "start": 151,
+      "end": 151,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Dread Cast Into Hearts",
+      "tier": "standard",
+      "meaning": "A future is stated as something God will do, and it happens inside the opposing side rather than on the field. Dread will be cast into their hearts, and a reason is given: they attributed partners to God for which no authority was sent down. Classical commentators note the phrase about authority, which describes their claim as lacking any warrant rather than as merely mistaken. The ayah closes on their lodging, using a word for a place one settles into for shelter.",
+      "historicalContext": "Medinan, following the battle at Uhud. The classical sources report that the attacking force withdrew without pressing its advantage on the city, a decision that puzzled contemporaries given the state of the community after that day. The commentaries connect this ayah to that withdrawal, though the Quran itself states the principle rather than narrating any particular event.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرُّعْبَ",
+          "gloss": "dread, sudden fear",
+          "note": "A word for fear that fills and grips, distinguished by the lexicographers from ordinary fear by its suddenness. It names an experience rather than a judgement about how dangerous something is."
+        },
+        {
+          "arabic": "سُلْطَـٰنًا",
+          "gloss": "authority, warrant",
+          "note": "From a root meaning power and dominance, used of an argument that compels as well as of a ruler. Here it names the sanction a claim would need in order to stand up at all."
+        },
+        {
+          "arabic": "مَأْوَىٰهُمُ",
+          "gloss": "their lodging, their shelter",
+          "note": "From the verb to take refuge. Using a word for shelter of the fire is a deliberate reversal, since the place sought out for safety is named as the destination instead."
+        }
+      ],
+      "lifeInProphetsTime": "Wars in the peninsula were often decided by nerve rather than by losses. A force that suddenly lost confidence withdrew even while holding the advantage, and commanders knew morale could evaporate overnight for no visible reason. That was ordinary experience rather than superstition, and it made the interior of an opponent a real factor in any calculation.",
+      "didYouKnow": "The word used here for dread appears only a handful of times in the Quran, and every occurrence describes it being placed into hearts rather than arising out of a situation. The consistency of that construction across all the occurrences is noted by the classical commentators.",
+      "theologicalSignificance": "The passage describes an intervention that is entirely interior and invisible, which fits this surah's larger argument that outcomes are not decided by what can be counted. Attaching the dread to a specific cause, a claim made without warrant, keeps it from being arbitrary. What is described is a condition following from a false position rather than a punishment applied from outside it.",
+      "crossReferences": [
+        {
+          "ref": "8:12",
+          "why": "Uses nearly identical wording of the earlier battle, dread cast into the hearts of opponents."
+        },
+        {
+          "ref": "59:2",
+          "why": "Describes the same thing again, dread cast in from a direction nobody expected."
+        },
+        {
+          "ref": "3:126",
+          "why": "States earlier in this surah that help comes only from God, not from visible strength."
+        }
+      ],
+      "applyIt": "Notice that this ayah describes something happening inside people rather than to them. Positions held without warrant tend to be uncomfortable to hold, whether or not anyone challenges them. If you are defending something you cannot actually support, that discomfort is information. Name one such position today, even if you keep it.",
+      "exploreFurther": [
+        "8:9-12",
+        "33:25-27",
+        "59:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.120Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:152",
+      "surah": 3,
+      "start": 152,
+      "end": 152,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "Until You Faltered",
+      "tier": "standard",
+      "meaning": "This is the most exacting account of the day. God's promise had been fulfilled and the opposing force was being cut down by His leave, until three things happened in sequence: you faltered, you disputed over the command, and you disobeyed, after being shown what you wanted. Then a division inside the community is named without softening, some wanting this world and some the next. The passage ends where nothing in it prepared for: He pardoned you.",
+      "historicalContext": "Medinan, and the classical sources agree on the incident behind it. Archers had been placed on high ground with orders to hold their position regardless of how the battle went. When the Meccan force gave way and plunder became visible, most left that position, the ground was retaken, and the day reversed. The Quran's account follows exactly that sequence.",
+      "keyTerms": [
+        {
+          "arabic": "تَحُسُّونَهُم",
+          "gloss": "you were cutting them down",
+          "note": "A verb whose root covers both sensing and killing, used of harvesting and of striking down. Its use places the community's early success in unmistakably physical terms rather than abstract ones."
+        },
+        {
+          "arabic": "تَنَـٰزَعْتُمْ",
+          "gloss": "you pulled against each other",
+          "note": "From a root meaning to pull in different directions. The form makes it mutual, so what is described is a group tearing at a decision rather than one party overruling another."
+        },
+        {
+          "arabic": "عَفَا",
+          "gloss": "He pardoned, effaced",
+          "note": "From a root meaning to wipe out a trace, used of wind erasing footprints in sand. Pardon in Arabic is the removal of the mark rather than the excusing of the act that made it."
+        }
+      ],
+      "lifeInProphetsTime": "Plunder was how a raiding force was paid. Men who rode out expected a share, and taking it was not shameful; for many participants it was the point of the expedition. That is what makes the failure at Uhud both ordinary and costly: the archers did what almost any force in Arabia would have done, and the position they left was the one thing holding the field.",
+      "didYouKnow": "This ayah names three separate failures in sequence, faltering, disputing and disobeying, and then divides the community itself into those wanting this world and those wanting the next. It is among the most self-critical passages in the Quran about the community it addresses, and it is preserved in that community's own scripture.",
+      "theologicalSignificance": "The passage refuses every available consolation and then supplies one nobody asked for. It does not soften the account, minimise the division, or attribute the reverse to the enemy's strength. Having established full responsibility, it ends on pardon, which arrives as a gift rather than as a conclusion. That order, complete honesty followed by mercy, is the surah's characteristic movement.",
+      "crossReferences": [
+        {
+          "ref": "3:153",
+          "why": "Continues the account, describing the flight and the sorrow that followed it."
+        },
+        {
+          "ref": "3:155",
+          "why": "Names the cause behind the turning away, and says again that God pardoned them."
+        },
+        {
+          "ref": "8:46",
+          "why": "Warns against disputing with one another, saying it makes resolve itself depart."
+        }
+      ],
+      "applyIt": "The order of this ayah is worth borrowing when you review something that went wrong. Name what actually happened, including your own part in it, in sequence and without adjustment. Then stop. Do not add the excuse or the explanation. The pardon in this passage arrives only once the account is finished.",
+      "exploreFurther": [
+        "3:153-155",
+        "8:45-46",
+        "3:159"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.123Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:153",
+      "surah": 3,
+      "start": 153,
+      "end": 153,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Sorrow Upon Sorrow",
+      "tier": "standard",
+      "meaning": "The scene is described from behind. You were climbing away without turning back for anyone, while the Messenger was calling from your rear. Then a strange clause: He repaid you with sorrow upon sorrow, so that you would not grieve over what you missed or over what struck you. Classical commentators discuss what the two sorrows were and offer more than one arrangement, and they read the purpose clause as describing grief given in order to displace a smaller grief.",
+      "historicalContext": "Medinan, continuing the account of the battle at Uhud after the position was abandoned. The classical sources describe the confusion of the retreat, including the rumour of the Prophet's death and the difficulty of hearing anything at all on the field. They report the news that he was alive arriving while men were still scattered, and read the two sorrows against that sequence.",
+      "keyTerms": [
+        {
+          "arabic": "تُصْعِدُونَ",
+          "gloss": "you were going up and away",
+          "note": "A verb of ascending and of moving off into open ground. It describes the direction of the retreat physically, up the slope, rather than naming it outright as flight."
+        },
+        {
+          "arabic": "تَلْوُۥنَ",
+          "gloss": "you turn to look back",
+          "note": "From the root for twisting, the same one used earlier in this surah of twisting the tongue. Here it means turning the head, so the denial describes running without a backward glance."
+        },
+        {
+          "arabic": "غَمًّۢا",
+          "gloss": "smothering grief",
+          "note": "A word for grief that covers and constricts, from a root used of clouds covering over the sky. It names sorrow as something that presses down rather than as sadness merely felt."
+        }
+      ],
+      "lifeInProphetsTime": "A retreat up broken ground was chaos. Dust, noise and the slope made it impossible to see or hear more than a few paces, and men lost track of brothers and fathers within moments. Calls from behind were routinely inaudible. The detail that the Messenger was calling from the rear would have been heard as a fact about the field before it was heard as a reproach.",
+      "didYouKnow": "The construction rendered as sorrow upon sorrow is a single word repeated with a preposition between, a form Arabic uses for layering rather than for intensity. Classical commentators disagree about which grief was which, and the ambiguity arises from the construction itself rather than from any gap in the reports.",
+      "theologicalSignificance": "A second grief is described as given so that a first would not be felt, which is an unusual account of mercy. The larger sorrow, the fear that the Prophet had been killed, made the smaller ones, the lost plunder and the wounds, stop mattering. That treats a greater loss as something able to reorder the smaller ones rather than simply adding to them, and the ayah presents it as deliberate.",
+      "crossReferences": [
+        {
+          "ref": "3:152",
+          "why": "Gives the sequence of failures that led to the flight described here."
+        },
+        {
+          "ref": "3:154",
+          "why": "Continues immediately with the security that came down over part of the force afterwards."
+        },
+        {
+          "ref": "9:25-26",
+          "why": "Describes another day when numbers failed and tranquillity was sent down afterwards."
+        }
+      ],
+      "applyIt": "Sometimes a large worry arrives and every small one goes quiet. Most people notice that and find it strange. This ayah presents it as intended. Think of a time it happened to you, and notice what the large thing revealed about the size of what it displaced. Keep that ranking when the small ones return.",
+      "exploreFurther": [
+        "3:154-155",
+        "9:25-26",
+        "48:4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:37:05.125Z",
         "reviewed": false
       }
     },
