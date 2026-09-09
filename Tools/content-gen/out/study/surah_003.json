@@ -1,7 +1,7 @@
 {
   "surah": 3,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:54:01.515Z",
+  "generatedAt": "2026-09-09T10:02:38.378Z",
   "studies": [
     {
       "key": "3:1-3",
@@ -2407,6 +2407,238 @@
       }
     },
     {
+      "key": "3:57-58",
+      "surah": 3,
+      "start": 57,
+      "end": 58,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "Wages Paid In Full",
+      "tier": "standard",
+      "meaning": "The other branch of the sentence arrives. Those who believed and worked righteousness are paid their wages in full, using the same commercial verb the surah applied earlier to the settling of every account. Then a clause is attached that seems to belong to the first branch rather than this one: God does not love the wrongdoers. Commentators read the placement as deliberate, so that even a promise of reward closes on a limit. The next ayah names what has just been recited.",
+      "historicalContext": "Medinan, at the close of the surah's account of Jesus and immediately before the comparison with Adam. The second ayah steps outside the narrative to describe it, which the classical commentaries connect with the discussions taking place in Medina at the time with a visiting Christian delegation. Naming the recitation as verses and as a reminder frames what preceded it as evidence rather than as a story told for itself.",
+      "keyTerms": [
+        {
+          "arabic": "فَيُوَفِّيهِمْ",
+          "gloss": "He pays them in full",
+          "note": "The commercial verb for discharging an obligation completely, used earlier in this surah of the final reckoning. Applied to reward, it makes the promise a settlement rather than a present."
+        },
+        {
+          "arabic": "أُجُورَهُمْ",
+          "gloss": "their wages",
+          "note": "The word for a worker's pay, not for a gift. It implies something earned and owed, which is why the verb of full payment suits it and why the two words are so often paired."
+        },
+        {
+          "arabic": "ٱلذِّكْرِ ٱلْحَكِيمِ",
+          "gloss": "the wise reminder",
+          "note": "Two words: a reminder that brings something back to mind, and an adjective from the root for firm judgement. Together they name a text that recalls and decides in the same breath."
+        }
+      ],
+      "lifeInProphetsTime": "Wage labour existed alongside slavery and kinship obligation in seventh-century Arabia. Men were hired for a harvest, a journey or a season of herding, and the pay was agreed beforehand and settled at the end. Disputes over a withheld wage were common enough to be a recognised kind of grievance. Full payment on the agreed day was something people hoped for rather than assumed.",
+      "didYouKnow": "The phrase naming this recitation as verses and a wise reminder occurs only here in the Quran. The surah places it at a hinge, immediately after a long narrative and immediately before a comparison drawn from it, one of several points where the text pauses to describe itself in the middle of an argument.",
+      "theologicalSignificance": "Reward is described in the vocabulary of wages rather than of favour, which makes it owed rather than merely hoped for, while the closing clause holds the whole promise inside a moral frame. The second ayah then does what this surah does repeatedly: it names its own material. The narrative just told is called a sign and a reminder, so its purpose is stated rather than left to be inferred.",
+      "crossReferences": [
+        {
+          "ref": "3:56",
+          "why": "Supplies the other branch of this divided sentence, the outcome for those who refuse."
+        },
+        {
+          "ref": "4:173",
+          "why": "Uses the same promise of wages paid in full, adding an increase from God's bounty."
+        },
+        {
+          "ref": "39:10",
+          "why": "Says the patient will be given their reward without any reckoning applied to it."
+        }
+      ],
+      "applyIt": "Think about work you have done that was never acknowledged, and notice the small resentment attached to it. The word used here is wages, not gifts. Try holding one unacknowledged thing this week as already owed and already recorded, and see whether that changes how badly you need someone else to notice it.",
+      "exploreFurther": [
+        "3:59-60",
+        "4:173",
+        "39:10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.371Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:59-60",
+      "surah": 3,
+      "start": 59,
+      "end": 60,
+      "theme": "Adam and the Human Story",
+      "themeId": "adam-and-the-human-story",
+      "title": "The Likeness Of Adam",
+      "tier": "standard",
+      "meaning": "The argument is made by comparison rather than by denial. If a birth without a father is taken to establish something extraordinary about a person's nature, then the first human being, made without either parent, would establish more. The comparison works by scale: whatever is unusual in one case is more unusual in the other, and no tradition has drawn that conclusion about Adam. The following ayah closes the matter briefly, naming the truth as from God and warning against wavering.",
+      "historicalContext": "Medinan, and the classical sources connect this section with the delegation of Christians from Najran who came to Medina to discuss the nature of Jesus. The comparison belongs to that conversation. The surah has already given the announcement of his birth in terms of full honour, so the argument arrives after the honour rather than in place of it, which is the order the commentaries emphasise.",
+      "keyTerms": [
+        {
+          "arabic": "مَثَلَ",
+          "gloss": "likeness, comparable case",
+          "note": "Not a metaphor but a parallel case put forward for reasoning. The word introduces an argument by analogy, which is how the classical commentators read this ayah as a whole."
+        },
+        {
+          "arabic": "تُرَابٍ",
+          "gloss": "dust, loose earth",
+          "note": "The most ordinary material named in the Quran's accounts of human origin. Choosing it strengthens the point, since the more unusual creation began from the least remarkable substance available."
+        },
+        {
+          "arabic": "ٱلْمُمْتَرِينَ",
+          "gloss": "those who waver",
+          "note": "From a root associated with drawing back and forth, as milk is drawn from an udder. It pictures doubt as an oscillation rather than as a settled position a person has arrived at."
+        }
+      ],
+      "lifeInProphetsTime": "Argument by parallel case was the ordinary tool of Arabian dispute. A poet or an arbitrator made his point by setting one situation beside another and letting the audience draw the line themselves, and that was considered more persuasive than direct assertion. The form of this ayah would have been immediately familiar, even where its content was contested.",
+      "didYouKnow": "The command Be, and it is, appears twice within thirteen ayat of this surah, once of Jesus and once of Adam. Those are the only two places the formula occurs in the whole chapter, and their pairing across such a short distance is the pivot on which this comparison turns.",
+      "theologicalSignificance": "The passage treats an unusual origin as evidence about God rather than about the one originated. Because creation by command is God's ordinary manner, the way a person came into being says nothing about their nature. The principle is applied to a specific question here, but its reach is wider, detaching the value and status of a human being from the circumstances of their arrival.",
+      "crossReferences": [
+        {
+          "ref": "3:47",
+          "why": "Uses the same command of Jesus twelve ayat earlier, which is what makes the comparison land."
+        },
+        {
+          "ref": "15:28-29",
+          "why": "Describes Adam's creation from clay, and the breathing of spirit into him."
+        },
+        {
+          "ref": "4:171",
+          "why": "Addresses the same question directly, asking that nothing beyond the truth be said in religion."
+        }
+      ],
+      "applyIt": "The move this ayah makes is worth borrowing: rather than denying a claim, it sets a second case beside it and lets the comparison do the work. Next time you disagree with someone, try finding the parallel case instead of the counter-argument. It is slower, and it leaves the other person somewhere to stand.",
+      "exploreFurther": [
+        "4:171",
+        "15:28-30",
+        "38:71-72"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.390Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:61",
+      "surah": 3,
+      "start": 61,
+      "end": 61,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Come, Let Us Call",
+      "tier": "standard",
+      "meaning": "When argument has been exhausted, a different kind of resolution is proposed. Both sides are to bring their families and stand together, and then invoke God's rejection upon whichever party is lying. The proposal is remarkable for what it stakes: not property or standing, but the people each side most wants to protect. Classical commentators record that the invocation never took place, because the other party declined it and chose a negotiated settlement instead, which the sources treat as significant in itself.",
+      "historicalContext": "Medinan. This is among the better-attested occasions in the surah: the classical sources agree that a Christian delegation from Najran came to Medina, discussed the nature of Jesus at length, and was offered this mutual invocation when the discussion reached its limit. The delegation withdrew from the proposal and negotiated terms instead. The Quran records the offer and not the outcome.",
+      "keyTerms": [
+        {
+          "arabic": "نَبْتَهِلْ",
+          "gloss": "let us invoke earnestly",
+          "note": "From a root suggesting release and unrestrained supplication, used of praying with nothing held back. The form makes it mutual, an appeal both parties make together rather than one against the other."
+        },
+        {
+          "arabic": "أَنفُسَنَا",
+          "gloss": "our own selves",
+          "note": "The plural of the word for a self or soul. Read plainly it names each party's own persons, and the commentators discuss how widely its scope extends without reaching one settled answer."
+        },
+        {
+          "arabic": "ٱلْكَـٰذِبِينَ",
+          "gloss": "the liars",
+          "note": "Those who state what they know to be false, as distinct from those who are merely mistaken. The proposal targets deliberate falsehood, which is why sincerity on both sides is its condition."
+        }
+      ],
+      "lifeInProphetsTime": "Oaths were the ultimate instrument of Arabian dispute. Where evidence failed, a man swore, and the seriousness of an oath was measured by what he put at risk in swearing it. Oaths taken with children present were understood to place the whole family under whatever followed. This proposal uses that recognised procedure and raises it to its most serious available form.",
+      "didYouKnow": "The invocation described here is one of the few proposals in the Quran that the classical sources agree was never carried out. Its interest for the commentators lies in the withdrawal rather than in any event: a party confident of its position declined a test whose terms it had been invited to share in setting.",
+      "theologicalSignificance": "The passage locates the seriousness of a religious claim in what a person is willing to stake on it. That is not an argument about evidence but about sincerity, and it assumes both parties genuinely believe that God answers. It also places a limit on argument itself: once knowledge has come, further disputation is met not with more argument but with a proposal that would end it.",
+      "crossReferences": [
+        {
+          "ref": "24:6-9",
+          "why": "Sets out a comparable procedure of solemn invocation where ordinary evidence cannot settle a matter."
+        },
+        {
+          "ref": "62:6",
+          "why": "Puts a similar challenge to another community: wish for death, if you are truthful."
+        },
+        {
+          "ref": "3:20",
+          "why": "Gives the earlier instruction for the same situation, that the duty ends at conveying."
+        }
+      ],
+      "applyIt": "Notice the difference between believing something and being willing to stake something on it. You do not need a dramatic test for this. Ask what you would actually risk on one conviction you state often, and answer honestly. If the answer turns out to be nothing, that is worth knowing before somebody else discovers it.",
+      "exploreFurther": [
+        "3:20",
+        "24:6-9",
+        "62:6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.391Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:62-63",
+      "surah": 3,
+      "start": 62,
+      "end": 63,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "The Narrative Of Truth",
+      "tier": "standard",
+      "meaning": "The long account closes with a summary in three parts. What has been told is the true narrative; there is no god but God; and God is mighty and wise. The order matters, because the story is presented as leading to the statement rather than decorating it. Then a short conditional follows: if they turn away, God knows those who corrupt. Classical commentators note that the response to refusal is knowledge rather than punishment, which leaves the matter where it began.",
+      "historicalContext": "Medinan, at the end of the surah's narrative about Mary and Jesus, and immediately before the well-known invitation to a word held in common. The classical sources place this whole sequence in the setting of the discussions with the delegation from Najran. Its position matters: the summary comes after a long and honouring account, and before an appeal, rather than at the end of a rebuke.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْقَصَصُ",
+          "gloss": "the narrative, the account",
+          "note": "From a root meaning to follow a track. A narrative in Arabic is literally a following of traces, so calling this the true account claims accurate tracking rather than merely honest intention."
+        },
+        {
+          "arabic": "ٱلْعَزِيزُ",
+          "gloss": "the Mighty, the Unassailable",
+          "note": "From a root meaning to be scarce and therefore precious, and also strong and hard to reach. It combines value with inaccessibility, which is why English needs two words to carry it."
+        },
+        {
+          "arabic": "ٱلْمُفْسِدِينَ",
+          "gloss": "those who corrupt",
+          "note": "From a root meaning spoilage, used of food going bad and of an arrangement breaking down. It names damage done to something that was working, rather than wrongdoing in the abstract."
+        }
+      ],
+      "lifeInProphetsTime": "Genealogy and tribal history were transmitted by specialists whose reputation depended on accuracy, and a reciter caught inventing lost his standing permanently. Arabic developed a technical vocabulary for judging the reliability of a chain of transmission. To call an account the true narrative in that setting was to make a claim the audience knew exactly how to evaluate.",
+      "didYouKnow": "The word used here for narrative gives its name to a later surah, and the Quran uses it of the story of Joseph, calling that the most beautiful of accounts. The root's basic sense of following a track also produces the verb used when Moses' sister is told to follow her brother along the river.",
+      "theologicalSignificance": "The passage places a narrative and a doctrinal statement in one sentence, so an account of a family and two births is presented as an argument for God's oneness rather than an illustration of it. The closing clause is equally careful. Refusal is met with a statement about God's knowledge, which authorises no human response and leaves the assessment where this surah consistently puts it.",
+      "crossReferences": [
+        {
+          "ref": "3:64",
+          "why": "Follows immediately with the invitation to a word held in common between communities."
+        },
+        {
+          "ref": "12:3",
+          "why": "Calls the account of Joseph the most beautiful of narratives, using this same word."
+        },
+        {
+          "ref": "2:129",
+          "why": "Closes Abraham's prayer with the same two names, mighty and wise, set side by side."
+        }
+      ],
+      "applyIt": "Try telling one story about your own life today in a way that ends where it actually leads, rather than where it is most flattering to stop. This ayah closes a long narrative with the single claim the narrative was for. Most of us let stories trail off. Notice what yours would have to end on.",
+      "exploreFurther": [
+        "3:64",
+        "12:3",
+        "28:1-6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.391Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "3:64",
       "surah": 3,
       "start": 64,
@@ -2461,6 +2693,470 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:00:56.579Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:65",
+      "surah": 3,
+      "start": 65,
+      "end": 65,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Arguing About Abraham",
+      "tier": "standard",
+      "meaning": "The question is put as a matter of sequence. Abraham lived before either the Torah or the Gospel was revealed, so a dispute over which later community he belonged to asks something the timeline cannot support. The argument is chronological rather than doctrinal, and it ends by inviting the listeners to reason it through themselves. Classical commentators note the tone: the address is direct, but the reasoning is offered rather than imposed on anyone.",
+      "historicalContext": "Medinan. Abraham was claimed by more than one community in and around Medina, and the claim mattered because it carried authority over whose practice was original. The classical commentaries report disputes of exactly this kind taking place in the city. The surah's answer does not adjudicate between claimants; it observes that the categories being fought over came into existence after the man they are applied to.",
+      "keyTerms": [
+        {
+          "arabic": "تُحَآجُّونَ",
+          "gloss": "you dispute",
+          "note": "From the root for advancing a proof. The form used makes it reciprocal, a contest of claims, and the verb recurs several times in this section of the surah as the activity being questioned."
+        },
+        {
+          "arabic": "أُنزِلَتِ",
+          "gloss": "was sent down",
+          "note": "The passive of the verb for revelation descending. Using the passive keeps attention on the timing of the event rather than on who caused it, which is exactly what the argument turns on."
+        },
+        {
+          "arabic": "تَعْقِلُونَ",
+          "gloss": "you use reason",
+          "note": "From a root meaning to tie or tether, the same word behind the term for a hobble on a camel. Reason in Arabic is the faculty that restrains, holding a person back from running loose."
+        }
+      ],
+      "lifeInProphetsTime": "Ancestry claims were contested in Arabia the way property was, and with the same seriousness. Tribes traced themselves to prestigious forebears, and a successful claim brought precedence, marriage prospects and a share in sanctuary custodianship. Arguments about who a distant ancestor really belonged to were not antiquarian. They settled current standing, and everyone listening knew it.",
+      "didYouKnow": "The Quran mentions Abraham in twenty-five different surahs, more often than any prophet except Moses, and names him repeatedly in this one. He is the figure the Quran most consistently uses as common ground between communities, which is part of why the argument here is conducted over him rather than anyone else.",
+      "theologicalSignificance": "The passage sets a limit on how far a later category can be pushed backwards. Communities formed around a revelation cannot claim someone who preceded that revelation, however genuinely they trace themselves to him. That protects the earlier figure from annexation, and it also implies something about identity generally: what a person actually was is not settled by who later claims them.",
+      "crossReferences": [
+        {
+          "ref": "2:140",
+          "why": "Puts the same question about several patriarchs, asking whether you know better than God does."
+        },
+        {
+          "ref": "3:67",
+          "why": "Gives the conclusion two ayat later, describing what Abraham actually was."
+        },
+        {
+          "ref": "16:120-123",
+          "why": "Describes Abraham as a community in himself, upright, and not among those who associate."
+        }
+      ],
+      "applyIt": "Notice the shape of this argument: not a better claim, but a question about the timeline. The next time you find yourself in a dispute about who owns a tradition, a phrase, or a founder, check the dates before you weigh the merits. It settles more arguments than people expect, and it costs nothing to look.",
+      "exploreFurther": [
+        "2:135-141",
+        "3:66-68",
+        "16:120-123"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.392Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:66-67",
+      "surah": 3,
+      "start": 66,
+      "end": 67,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "Neither One Nor The Other",
+      "tier": "standard",
+      "meaning": "A distinction is drawn between two kinds of dispute. There is arguing about what you have some knowledge of, which the ayah notes without endorsing, and arguing about what you have none of, which it questions. Then the answer to the previous ayah comes plainly: Abraham belonged to neither of the later communities. He is described instead by two words, one meaning turned away from every false object of worship, the other meaning surrendered to God. He is not claimed for a third party; he is described.",
+      "historicalContext": "Medinan, continuing the address begun in the previous ayah. The dispute over Abraham was live in Medina because his authority underwrote claims about whose practice was original. The classical commentaries describe the argument in general terms and read the surah's answer as removing the terms of the dispute rather than deciding it, which is why the description offered uses neither community's name.",
+      "keyTerms": [
+        {
+          "arabic": "حَنِيفًا",
+          "gloss": "inclining away, upright",
+          "note": "From a root meaning to lean or turn aside. It describes someone who has turned from every false object of worship toward God, and it was used in Arabia before Islam of individuals who kept to that alone."
+        },
+        {
+          "arabic": "مُّسْلِمًا",
+          "gloss": "surrendered to God",
+          "note": "The participle from the same root as the religion named earlier in this surah. Applied to a figure who long preceded any later community, it names a disposition rather than a membership."
+        },
+        {
+          "arabic": "عِلْمٌ",
+          "gloss": "knowledge",
+          "note": "The indefinite form is used twice, so the ayah speaks of having some knowledge of a matter rather than of expertise in it. That makes the contrast one of warrant rather than of qualification."
+        }
+      ],
+      "lifeInProphetsTime": "Pre-Islamic Arabia remembered individuals who rejected the idols without belonging to any scriptural community, and the word used here for upright attached to them in ordinary speech. The audience therefore had a live sense of what it named: someone recognisably devoted to one God and recognisably outside the established religious categories of the region.",
+      "didYouKnow": "The word rendered upright appears twelve times in the Quran, and most of those occurrences describe Abraham. It is never used as the name of a community in the way the two labels rejected in this ayah are, which is part of why it works here as an alternative to both of them.",
+      "theologicalSignificance": "The passage makes a claim about the warrant for religious speech. Disagreement is not itself the fault; disagreement without knowledge is. It then answers the original question by refusing both available labels, which suggests that the categories communities use to sort themselves may not reach back to the figures they are built on. What is offered instead is a description of orientation rather than of belonging.",
+      "crossReferences": [
+        {
+          "ref": "2:135",
+          "why": "Answers the same claim by naming the upright way of Abraham, who associated nothing with God."
+        },
+        {
+          "ref": "22:78",
+          "why": "Calls him the one who named this community, carrying the description forward in time."
+        },
+        {
+          "ref": "6:161",
+          "why": "Describes a straight religion as the upright way of Abraham, spoken in the Prophet's own voice."
+        }
+      ],
+      "applyIt": "There is a specific discipline here: notice when you are arguing past the edge of what you actually know. Pick one topic you have opinions about and locate that edge honestly. Then, in the next conversation about it, say where the edge is, out loud. It is a small thing to say and unusually hard to do.",
+      "exploreFurther": [
+        "2:130-136",
+        "4:125",
+        "16:120-123"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.393Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:68",
+      "surah": 3,
+      "start": 68,
+      "end": 68,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "Nearest To Abraham",
+      "tier": "standard",
+      "meaning": "The question of who has a claim on Abraham is answered by a criterion rather than a lineage. Those closest to him are the ones who followed him, then the prophet addressed here, then those who believe. Classical commentators note that descent is not mentioned at all. The ayah closes by naming God the guardian of the believers, which quietly replaces the whole framework of the dispute: what was being argued over was patronage, and the last clause assigns it.",
+      "historicalContext": "Medinan, concluding the short section that began with a question about arguing over Abraham. Claims of connection to prestigious ancestors carried real authority in the region, and communities in Medina traced themselves to him. The classical commentaries read this ayah as the resolution of the argument set up two ayat earlier, replacing an inherited claim with a criterion anyone can meet or fail to meet.",
+      "keyTerms": [
+        {
+          "arabic": "أَوْلَى",
+          "gloss": "nearest, most entitled",
+          "note": "A comparative from the root meaning to be close and to take charge. It covers proximity and the right that comes with it, so the ayah answers a question about entitlement and about closeness at once."
+        },
+        {
+          "arabic": "ٱتَّبَعُوهُ",
+          "gloss": "those who followed him",
+          "note": "The verb of walking behind someone on a road. It names a relationship established by movement rather than by birth, which is precisely the shift this ayah is making."
+        },
+        {
+          "arabic": "وَلِىُّ",
+          "gloss": "guardian, one who is near",
+          "note": "From the same root as the comparative that opens the ayah. Ending on this word ties the two halves together: nearness to Abraham is answered by naming who is near to the believers."
+        }
+      ],
+      "lifeInProphetsTime": "Patronage was the structure of Arabian society. A client attached himself to a stronger party, and that bond determined who defended him, who spoke for him, and where he stood in any gathering. Claiming a great ancestor was a way of claiming a patron who could never withdraw the arrangement. The last clause of this ayah addresses exactly the need that made such claims valuable.",
+      "didYouKnow": "The comparative that opens this ayah and the noun that closes it come from the same root, so the argument and its resolution are built out of one word. Constructions of this kind, where a passage turns on the repetition of a root in different forms, are a recognised feature of Quranic style and are largely invisible in translation.",
+      "theologicalSignificance": "Belonging is redefined as following rather than descending, which makes a historic figure accessible to anyone and inheritable by no one. That has consequences beyond the immediate dispute, since it removes the possibility of a claim on God's favour held by right of birth. The closing clause completes the move by naming the relationship believers actually have, which is not a claim but a gift.",
+      "crossReferences": [
+        {
+          "ref": "2:124",
+          "why": "Says the covenant with Abraham does not reach the wrongdoers among his own descendants."
+        },
+        {
+          "ref": "22:78",
+          "why": "Applies the same connection to the community addressed, calling it the way of Abraham."
+        },
+        {
+          "ref": "2:257",
+          "why": "Names God the guardian of those who believe, bringing them out of darkness into light."
+        }
+      ],
+      "applyIt": "Ask what you are counting on that you did not earn: a family reputation, a school, a community you were born into. None of it is bad to have. But this ayah puts following where inheritance was, so pick one thing you have inherited and identify the actual practice underneath it. Then do that practice this week.",
+      "exploreFurther": [
+        "2:124",
+        "2:257",
+        "22:77-78"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.394Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:69",
+      "surah": 3,
+      "start": 69,
+      "end": 69,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "They Only Mislead Themselves",
+      "tier": "standard",
+      "meaning": "A wish is described, and then its effect is reversed. Some among the People of the Book would like to lead the believers astray; what actually happens is that they lead themselves astray instead. The final clause is the sharpest part: they do not perceive it. Classical commentators note the careful limitation to a party rather than to a whole community, a qualification the surah maintains and returns to explicitly a few ayat later.",
+      "historicalContext": "Medinan, in the section addressing the scriptural communities of the city directly. The surah is careful with its scope, speaking of a group among them here and describing an upright group among them a few ayat later in warm terms. The classical commentaries preserve that distinction. No specific occasion is reported for this ayah, which the sources read as describing a pattern rather than one episode.",
+      "keyTerms": [
+        {
+          "arabic": "وَدَّت",
+          "gloss": "would love to, wishes",
+          "note": "A verb of affectionate wanting rather than of plotting. It names an inclination of the heart, which is why the ayah can describe an intention without reporting that anything was done."
+        },
+        {
+          "arabic": "طَّآئِفَةٌ",
+          "gloss": "a group, a party",
+          "note": "A word for a portion of a larger body, from a root meaning to go around. Its use here is a deliberate limitation of scope, and the surah keeps to that limitation consistently."
+        },
+        {
+          "arabic": "يَشْعُرُونَ",
+          "gloss": "they perceive",
+          "note": "From the root behind the words for a poet and for fine awareness. It names subtle noticing, so the denial says the harm is not merely unadmitted but genuinely unfelt by them."
+        }
+      ],
+      "lifeInProphetsTime": "A guide who misled a caravan in the desert did not walk a separate road home. He was on the same route, out of water at the same hour, and the consequences of his direction reached him first. Everyone who had travelled understood that misdirection is not something you do to other people from a safe distance. The image behind this ayah was a practical fact of the trade routes.",
+      "didYouKnow": "The word for a party used here recurs through this surah, and not only of others. It later names two groups among the believers who almost lost heart before a battle, and a group at Uhud preoccupied with their own concerns. The surah applies the same limiting term in both directions, which stops it becoming a label for one side.",
+      "theologicalSignificance": "The ayah describes a moral mechanism: an attempt to damage someone else lands first on the one attempting it, and lands invisibly. That places the primary consequence of an intention inside the person who holds it, before anything at all reaches its target. The final clause about not perceiving is what makes it serious, since a harm you cannot feel is one you have no reason to stop.",
+      "crossReferences": [
+        {
+          "ref": "3:113-115",
+          "why": "Describes an upright group among the same community, reciting through the night and prostrating."
+        },
+        {
+          "ref": "2:9",
+          "why": "Uses the same reversal: they deceive only themselves, and they do not perceive it."
+        },
+        {
+          "ref": "35:43",
+          "why": "States the principle generally: an evil scheme encircles only the people who devise it."
+        }
+      ],
+      "applyIt": "Think of a time you wanted something to go badly for someone. Not acted on it, only wanted it. Notice what that wanting did to you while you carried it, and how little it did to them. The claim in this ayah is not moral advice; it is a description of where the damage actually goes.",
+      "exploreFurther": [
+        "2:8-9",
+        "3:113-115",
+        "35:43"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.394Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:70-71",
+      "surah": 3,
+      "start": 70,
+      "end": 71,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Truth Dressed In Falsehood",
+      "tier": "standard",
+      "meaning": "Two questions are put in the same form, and both turn on one phrase: while you know. The first asks why signs are refused by people who are themselves witnesses to them. The second names two distinct acts, mixing truth with falsehood and concealing truth, and again attaches knowledge to both. Classical commentators observe that neither question asks whether the thing happened. The form assumes it and asks for a reason, which leaves the answer with the hearer.",
+      "historicalContext": "Medinan, in the surah's direct address to the scriptural communities of the city. The classical commentaries connect the passage to disagreements in Medina about what the earlier scriptures contained, without fixing it to a single episode. The surah's address in this section is consistently to a party rather than to everyone, a limitation it states explicitly a few ayat earlier and returns to later.",
+      "keyTerms": [
+        {
+          "arabic": "تَلْبِسُونَ",
+          "gloss": "you clothe, you confuse",
+          "note": "The verb literally means to dress something in a garment. Mixing truth with falsehood is pictured as putting the wrong clothes on a thing, so it is still there and no longer recognisable."
+        },
+        {
+          "arabic": "تَكْتُمُونَ",
+          "gloss": "you conceal",
+          "note": "From a root for holding something back within, used of suppressing knowledge, evidence or grief. It names withholding what one has rather than asserting what is false."
+        },
+        {
+          "arabic": "تَشْهَدُونَ",
+          "gloss": "you witness, you testify",
+          "note": "The verb covers seeing something firsthand and testifying to it. Its use sharpens the first question, since a witness who denies is doing something different from a stranger who disbelieves."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony held a society together where almost nothing was written down. A witness in a dispute over a debt, a sale or a killing was the entire evidence, and a man known to have concealed what he saw lost his standing permanently. Everyone understood the difference between lying outright and simply not saying what you knew. The second was harder to prove and just as destructive.",
+      "didYouKnow": "The image of clothing truth in falsehood appears more than once in the Quran, and the verb belongs to the ordinary vocabulary of dress. Arabic uses one root for a garment and for confusion, which lets the text describe a subtle misrepresentation with a completely everyday word rather than a technical one.",
+      "theologicalSignificance": "The passage identifies concealment as a wrong in its own right, separate from denial. Something can be preserved accurately, held in full knowledge, and still be withheld at the moment it would count. Because both questions specify that those addressed know, the failure named is one of will rather than of understanding, which is where this surah has already located division among people who share a text.",
+      "crossReferences": [
+        {
+          "ref": "2:42",
+          "why": "Names the same two acts together: do not clothe truth with falsehood, nor conceal it knowingly."
+        },
+        {
+          "ref": "3:19",
+          "why": "Traces division among scriptural communities to rivalry arising after knowledge had come."
+        },
+        {
+          "ref": "2:159",
+          "why": "Speaks of those who conceal what was sent down of clear proofs and of guidance."
+        }
+      ],
+      "applyIt": "Concealing is easier than lying and feels almost innocent. Think of one thing you know that would help someone if you said it, and that you have not said because saying it would cost you. You do not have to act today. Name the cost accurately to yourself first, because that is usually where the honesty is missing.",
+      "exploreFurther": [
+        "2:42",
+        "2:159",
+        "3:187"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.395Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:72",
+      "surah": 3,
+      "start": 72,
+      "end": 72,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Believe At Dawn, Refuse By Evening",
+      "tier": "standard",
+      "meaning": "A tactic is quoted rather than described. Believe in the morning and reject by evening, the speakers say, so that the believers will turn back. The reasoning behind it is social: if people known to have examined the scriptures publicly reverse themselves, others will conclude there was something in it worth reversing. Classical commentators note that the passage exposes a plan simply by reporting it, which is a method the surah uses more than once in this section.",
+      "historicalContext": "Medinan, in the surah's address to the scriptural communities of the city. The classical commentaries report the tactic as concerning the change in the direction of prayer, though they preserve variation in the details. The surah attributes it to a group rather than to everyone, and the wording of the plan itself suggests a proposal made among a few people rather than a position taken publicly.",
+      "keyTerms": [
+        {
+          "arabic": "وَجْهَ ٱلنَّهَارِ",
+          "gloss": "the face of the day",
+          "note": "An idiom for its first part, the way a face is the front of a person. Arabic gives the day a face and an end, so the tactic is described in the vocabulary of a body turning."
+        },
+        {
+          "arabic": "ءَاخِرَهُۥ",
+          "gloss": "its end, its last part",
+          "note": "The counterpart to the opening phrase, closing the figure. The pairing marks out a single day, which is what makes the reversal conspicuous rather than gradual and unremarkable."
+        },
+        {
+          "arabic": "يَرْجِعُونَ",
+          "gloss": "they may turn back",
+          "note": "The verb for going back the way you came. It names the intended effect on others: not a refutation of anything, but a retracing of steps that had already been taken."
+        }
+      ],
+      "lifeInProphetsTime": "Changing religion in a tribal society was public and structural. It moved a person's alliances, altered who would defend them, and was noticed at once by everyone who mattered. Nobody changed religion privately. That is exactly what makes the tactic described here plausible: a visible reversal inside a single day would have been discussed across the whole city before nightfall.",
+      "didYouKnow": "This ayah quotes a plan directly, in the words of those making it, which the Quran does in several places with the schemes of opponents. Classical commentators observe that reporting a private proposal in public was itself a form of answer, since the tactic depended entirely on nobody knowing that it was a tactic.",
+      "theologicalSignificance": "The passage assumes that conviction is contagious in both directions, and that people take their bearings partly from what others do. That is a realistic account of how belief actually spreads, and it is not condemned here; what is exposed is the deliberate exploitation of it. The tactic also depends on the visibility of religious commitment, which the surah elsewhere treats as a strength rather than a weakness.",
+      "crossReferences": [
+        {
+          "ref": "4:142-143",
+          "why": "Describes wavering between two sides and belonging fully to neither, in similar terms."
+        },
+        {
+          "ref": "2:8-10",
+          "why": "Portrays those who profess belief without holding it, and the sickness in their hearts."
+        },
+        {
+          "ref": "3:73",
+          "why": "Continues the quoted speech, adding the instruction to trust only those of your own religion."
+        }
+      ],
+      "applyIt": "You are more influenced by other people's confidence than you think, and so is everyone around you. Pick one commitment you have quietly softened because somebody you respect seemed unimpressed by it. Reconsider it on its own terms this week, without reference to them. The tactic in this ayah only works on people who have never done that.",
+      "exploreFurther": [
+        "2:8-12",
+        "3:73-74",
+        "4:142-143"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.395Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:73",
+      "surah": 3,
+      "start": 73,
+      "end": 73,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Guidance Is God's Guidance",
+      "tier": "standard",
+      "meaning": "The quoted advice continues and narrows: trust only those who follow your own religion. The reply comes in two parts, each introduced by an instruction to speak. The first states that guidance belongs to God, so it is not a possession any community controls. The second names bounty as lying in God's hand, given to whom He wills. Classical commentators discuss the middle clause at length, since its structure allows more than one reading of who is speaking and where the quotation ends.",
+      "historicalContext": "Medinan, continuing the address begun in the previous ayah. The concern being answered is a real one for any community with a long tradition: the possibility that what it holds might also be given elsewhere. The classical commentaries read the passage as meeting that anxiety directly rather than dismissing it, which is why the answer concerns God's freedom to give rather than anybody's unworthiness.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْهُدَىٰ",
+          "gloss": "the guidance",
+          "note": "Carrying the definite article, so it names guidance as one single thing rather than a quality anyone might possess. Attaching it to God removes it from the inventory of what a community can hold in trust."
+        },
+        {
+          "arabic": "ٱلْفَضْلَ",
+          "gloss": "bounty, surplus",
+          "note": "From a root meaning what remains over and above, an excess. It names a gift beyond anything owed, which is why it cannot be claimed as a right by any party at all."
+        },
+        {
+          "arabic": "وَٰسِعٌ",
+          "gloss": "vast, all-encompassing",
+          "note": "An active participle from the verb to be wide. It describes God as having room, which in this context means that giving to one party does not reduce what remains available to another."
+        }
+      ],
+      "lifeInProphetsTime": "In a world of finite wells, grazing and trade routes, most goods were genuinely rival: what one tribe used, another could not. Standing worked the same way, since precedence was a fixed quantity divided among a limited number of claimants. The description of God as vast pushes directly against that intuition, and the audience would have felt the strangeness of it.",
+      "didYouKnow": "The name describing God as vast, which closes this ayah, occurs several times in the Quran and is usually paired with knowledge, as it is here. Classical commentators explain the pairing as guarding against the idea that abundance means indiscriminateness: the giving is unlimited in extent and exact in its placement.",
+      "theologicalSignificance": "The passage answers a question about exclusivity by relocating the thing being fought over. Guidance and bounty are not shares in a limited stock but gifts from an unlimited giver, so another community receiving something does not diminish what anyone else holds. That removes the logic behind religious rivalry without denying that revelation is genuinely given to particular people at particular times.",
+      "crossReferences": [
+        {
+          "ref": "2:105",
+          "why": "Says God singles out for His mercy whom He wills, answering a comparable reluctance."
+        },
+        {
+          "ref": "2:272",
+          "why": "States plainly that guiding people is not the messenger's to do, but God's alone."
+        },
+        {
+          "ref": "3:74",
+          "why": "Completes the thought immediately: He singles out His mercy for whomever He wills."
+        }
+      ],
+      "applyIt": "Notice whether you feel a small drop when someone outside your circle does well at something you care about. That reaction assumes a fixed supply. The description at the end of this ayah says there is room. Test it once this week: when the feeling arrives, say the person's name and one true good thing about what they did.",
+      "exploreFurther": [
+        "2:105",
+        "2:269-272",
+        "3:74"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.396Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "3:74",
+      "surah": 3,
+      "start": 74,
+      "end": 74,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Singled Out For Mercy",
+      "tier": "standard",
+      "meaning": "One short sentence completes the previous ayah's answer and then closes on a description of God. Mercy is said to be assigned specifically, to whom God wills, with a verb meaning to set something apart for a particular recipient. Classical commentators note that the passage does not say why any given person is chosen, and that the surrounding argument does not need it to. What it establishes is where the decision sits, which is enough to settle the dispute it belongs to.",
+      "historicalContext": "Medinan, concluding the section that answers an anxiety about revelation being given to others. The two ayat work as a pair: one says bounty is in God's hand, and this one says it is placed deliberately. The classical commentaries treat the pairing as the surah's resolution of a long argument about which community holds what, and note that no criterion is offered by either side.",
+      "keyTerms": [
+        {
+          "arabic": "يَخْتَصُّ",
+          "gloss": "He assigns specifically",
+          "note": "From a root meaning to set apart for a particular case, the opposite of what is general. It describes a gift addressed to someone in particular rather than distributed at large."
+        },
+        {
+          "arabic": "بِرَحْمَتِهِۦ",
+          "gloss": "with His mercy",
+          "note": "From the root that also gives Arabic its word for a womb. The Quran uses this term for guidance, revelation and rain alike, so what is being assigned here is deliberately left broad."
+        },
+        {
+          "arabic": "ٱلْعَظِيمِ",
+          "gloss": "immense, weighty",
+          "note": "An adjective from a root connected to bone, so the sense is of something with substance and mass rather than merely large. It describes the bounty as having weight, not only extent."
+        }
+      ],
+      "lifeInProphetsTime": "Gifts in Arabia were public and specific. A chief distributed at a gathering and everyone saw who received what, so a gift was as much a statement about a relationship as a transfer of goods. Being singled out mattered more than the value of the object itself. The verb used here belongs to that world, where the act of assigning was the significant part.",
+      "didYouKnow": "The two ayat that close this section end on three descriptions of God in quick succession: vast, knowing, and possessor of immense bounty. Closing a passage with divine names is a structural habit of the Quran, and commentators read the particular names chosen as summarising the argument the passage has just made.",
+      "theologicalSignificance": "Mercy is presented as specific rather than merely general, which changes its character. A universal mercy reaching everyone equally would be a property of the world; a mercy assigned deliberately is an act, and acts have an actor with intentions. The passage leaves those intentions unexplained, which leaves the recipient holding gratitude rather than an account of why they deserved it.",
+      "crossReferences": [
+        {
+          "ref": "2:105",
+          "why": "Uses the same verb of God singling out His mercy for whomever He wills."
+        },
+        {
+          "ref": "3:73",
+          "why": "Sets up this conclusion by placing all bounty in God's hand, given to whom He wills."
+        },
+        {
+          "ref": "57:29",
+          "why": "Tells the People of the Book that bounty is in God's hand, given out as He wills."
+        }
+      ],
+      "applyIt": "Think of one thing in your life you did nothing to arrange: where you were born, a person who took an interest in you early, a capacity you simply have. Name it specifically rather than in general. The verb here means singled out, and the practice it suggests is identifying what was addressed to you.",
+      "exploreFurther": [
+        "2:105",
+        "35:2",
+        "57:29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T10:02:26.397Z",
         "reviewed": false
       }
     },
