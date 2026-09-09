@@ -1,0 +1,16 @@
+{
+  "name": "scroll-the-quran-content-gen",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Content generation and ingest scripts for Scroll the Quran. Node 24 built-ins only - no runtime dependencies.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test",
+    "verify": "node ingest-translations.mjs --verify",
+    "fetch": "node ingest-translations.mjs --fetch",
+    "fetch:fonts": "node ingest-fonts.mjs --fetch"
+  }
+}
