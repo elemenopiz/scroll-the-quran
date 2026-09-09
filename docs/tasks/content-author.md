@@ -84,6 +84,7 @@ schema). `key`, `surah`, `start`, `end`, `tier` and `meta` are stamped by
 disagrees with the target is an error.
 
 ## Lessons from wave 1 (read these)
+- **Never write to the scratchpad root** (`/private/tmp/claude-501/…/scratchpad/`): sibling authors overwrite each other's helper scripts there within minutes. Put helpers (`wc.mjs`, `show.mjs`, search scripts) under `Tools/content-gen/work/authoring/<your-branch>/` too.
 - **Namespace your scratch.** The session scratchpad is shared by sibling authors. Keep key lists and bodies under `Tools/content-gen/work/authoring/<your-branch>/` (gitignored; the Write tool is allowed there, only `work/cache`, `work/requests`, `work/batches` are hook-protected), one fresh directory per batch — `write-dir` is all-or-nothing over a directory and will refuse a batch that contains an already-assembled body.
 - **Run `node author.mjs status` before `npm test`** on a fresh worktree; it rebuilds `work/units.jsonl`. Never run `segment-passages.mjs`.
 - **Word counts split on whitespace**, so a spaced em dash costs a word. `meaning` is now 45–105 words.
