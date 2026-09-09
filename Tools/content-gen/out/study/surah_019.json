@@ -1,7 +1,7 @@
 {
   "surah": 19,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T15:09:01.130Z",
+  "generatedAt": "2026-09-09T15:14:10.041Z",
   "studies": [
     {
       "key": "19:1-3",
@@ -1218,6 +1218,586 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T15:09:01.042Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:46-47",
+      "surah": 19,
+      "start": 46,
+      "end": 47,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "Peace Be Upon You",
+      "tier": "standard",
+      "meaning": "The father answers, and the tenderness is entirely on one side now. He asks whether his son is turning away from his gods, threatens to stone him, and tells him to leave for a long while. The reply is three short clauses and none of them argues. Peace be upon you; I will ask forgiveness for you from my Lord; He has always been gracious to me. Commentators note that the last clause explains the second. He asks forgiveness for a man who has just threatened to kill him because he has himself been treated generously.",
+      "historicalContext": "Meccan, and directly relevant to the first audience. Believers in Mecca were being disowned, threatened and in some cases physically attacked by their own families, and the classical sources describe individuals cut off entirely by fathers and uncles. The commentators read the promise of forgiveness here alongside later ayat that set a limit to it, and note that the Quran preserves both the promise and its limit.",
+      "keyTerms": [
+        {
+          "arabic": "لَأَرْجُمَنَّكَ",
+          "gloss": "I will surely stone you",
+          "note": "An emphatic form, so a stated intention rather than an outburst. Stoning was a means of killing that spread responsibility across a crowd, which is part of why the threat carried weight in a small community."
+        },
+        {
+          "arabic": "مَلِيًّا",
+          "gloss": "for a long while",
+          "note": "A stretch of time, from a root about fullness and duration. It occurs only here in the Quran, and it makes the dismissal open-ended rather than a demand to go away for the evening."
+        },
+        {
+          "arabic": "حَفِيًّا",
+          "gloss": "gracious, attentive",
+          "note": "One who receives another warmly and takes trouble over them. It occurs only here, and it names the manner of God's dealing with him, which is offered as the reason he can answer a threat this way."
+        }
+      ],
+      "lifeInProphetsTime": "Being told to leave was not an inconvenience in that world. A person outside their family's protection had no standing, no shelter and no one to answer for them, and the roads were dangerous to anyone travelling without a name behind them. The father is not throwing a young man out of a house. He is removing the only thing keeping him alive, and both of them understand that.",
+      "didYouKnow": "Two of the words in these two ayat occur nowhere else in the Quran: the one describing how long the father wants him gone, and the one describing how God has dealt with the son. A single exchange carries two words the text never uses again, one at the end of the threat and one at the end of the reply.",
+      "theologicalSignificance": "The reply models a response that neither concedes nor retaliates. Peace is offered, forgiveness is sought for the other party, and the position is not withdrawn, since the next ayah continues the separation. That combination is hard to hold and the passage does not present it as easy. The reason given is also worth noting: he does not appeal to his own patience but to how he has been treated, so his generosity is described as something passed on rather than produced.",
+      "crossReferences": [
+        {
+          "ref": "60:4",
+          "why": "Cites this same promise of forgiveness as an example, while marking where the example stops."
+        },
+        {
+          "ref": "9:114",
+          "why": "Explains that the asking of forgiveness was due to a promise, and states when it ended."
+        },
+        {
+          "ref": "25:63",
+          "why": "Describes the servants of the Most Merciful answering the ignorant with a word of peace."
+        }
+      ],
+      "applyIt": "Think of someone who has treated you badly and, without contacting them, ask God to forgive them once. Do not tell anybody you did it and do not expect it to change how you feel. This ayah puts the request immediately after a death threat, which suggests the point is not that the feeling has resolved first.",
+      "exploreFurther": [
+        "60:4-6",
+        "9:113-114",
+        "25:63-68"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.928Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:48",
+      "surah": 19,
+      "start": 48,
+      "end": 48,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "Perhaps I Will Not Be Wretched",
+      "tier": "standard",
+      "meaning": "He states what he will do rather than what they should. I withdraw from you and from what you call on besides God, and I will call on my Lord. The two halves use the same verb, so the sentence turns on what a person calls to. The last clause is the surprising one. He says perhaps he will not be disappointed in calling his Lord, which stops short of certainty. Commentators note the humility of the phrasing: a man leaving everything for God does not claim the outcome, he hopes for it.",
+      "historicalContext": "Meccan. The parallel to the first audience was immediate, since Muslims in Mecca were separating from families and from a shrine that was the centre of their city's life. The commentators note that this ayah describes a departure that is stated in advance and carried out in the next line, and that what follows it is a gift rather than a hardship.",
+      "keyTerms": [
+        {
+          "arabic": "وَأَعْتَزِلُكُمْ",
+          "gloss": "I withdraw from you",
+          "note": "A verb for setting oneself apart from a group, not for hostility toward it. It describes leaving a company rather than opposing it, which fits the peace he had offered a line earlier."
+        },
+        {
+          "arabic": "وَأَدْعُوا۟",
+          "gloss": "and I call upon",
+          "note": "The same verb used for what they call on besides God, repeated in the same sentence. Arabic sets the two invocations side by side using one word, so the difference is entirely in the object."
+        },
+        {
+          "arabic": "شَقِيًّا",
+          "gloss": "wretched, disappointed",
+          "note": "One left in misery, from a root about hardship and toil that yields nothing. Denying it of his own calling means hoping the effort will not come back empty, which is the fear behind any prayer."
+        }
+      ],
+      "lifeInProphetsTime": "To withdraw from your people in Arabia was to become a stranger, and strangers had no rights that anyone was obliged to honour. Water at a well, passage across territory, help when ill, all of it ran through belonging. A man announcing that he would separate himself was describing a future of real exposure. The hope in the last clause of this ayah is being expressed by someone who has just given up every ordinary security.",
+      "didYouKnow": "This surah begins with a call made in secret, by Zechariah, and answered. Here, near its middle, Abraham makes a call while leaving everything behind, and expresses only a hope that it will not be wasted. Both men use the same root for calling on God, and in both cases the surah reports the answer in the ayah immediately following.",
+      "theologicalSignificance": "The hesitation in the closing clause is the theological point. He does not treat God as obliged, even while doing the hardest thing available for God's sake, and the Quran preserves that hesitation rather than replacing it with confidence. Prayer here is an act of hope rather than a claim of entitlement. What follows in the next ayah then answers it beyond what was asked, which is how the surah has been arranging every request it records.",
+      "crossReferences": [
+        {
+          "ref": "19:49",
+          "why": "Answers this immediately, granting him sons and prophethood after the withdrawal is carried out."
+        },
+        {
+          "ref": "19:3-7",
+          "why": "Shows the same pattern at the surah's opening: a call made, and answered beyond the request."
+        },
+        {
+          "ref": "40:60",
+          "why": "States the standing invitation, that God will respond to those who call on Him."
+        }
+      ],
+      "applyIt": "Ask for something this week without deciding in advance what the answer means about you. If it comes, it was given; if it does not, the asking was still the right thing. Abraham says only that he hopes he will not be disappointed, and that phrasing is worth borrowing on the days when a request matters a lot.",
+      "exploreFurther": [
+        "19:49-50",
+        "40:60",
+        "2:186"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.929Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:49",
+      "surah": 19,
+      "start": 49,
+      "end": 49,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "When He Left Them",
+      "tier": "standard",
+      "meaning": "The withdrawal announced in the previous ayah is carried out, and the sentence reports it in the same words he had used, so nothing was said that was not done. What follows is the reply, and it does not answer the request he made. He had asked for nothing except not to be disappointed; he is given a son and a grandson, and both are made prophets. Commentators note that a man who had just lost a father is given a family, and that the loss and the gift are placed in one sentence with nothing between them.",
+      "historicalContext": "Meccan. Abraham left his homeland and travelled west, and the Quran assumes the outline of that journey without narrating it. The commentators note that this ayah passes over the whole of it and joins the departure directly to the outcome. For an audience in Mecca watching people leave families for the message, and shortly before some of them would leave the city itself, the compression was the point.",
+      "keyTerms": [
+        {
+          "arabic": "ٱعْتَزَلَهُمْ",
+          "gloss": "he withdrew from them",
+          "note": "The same verb he had used of himself a line earlier, now reported in the narration. Repeating it exactly is how the Quran often marks a stated intention being carried through without alteration."
+        },
+        {
+          "arabic": "وَهَبْنَا",
+          "gloss": "We granted, bestowed",
+          "note": "The verb for giving something outright, with no return expected and no prior claim on it. The Quran uses it especially for children, and it appears three times in this stretch of the surah."
+        },
+        {
+          "arabic": "وَكُلًّا",
+          "gloss": "and each one",
+          "note": "A word marking that what follows applies to both individually rather than jointly. The prophethood is therefore said of each of them separately, which is why the sentence does not simply say a line of prophets."
+        }
+      ],
+      "lifeInProphetsTime": "Leaving your people meant leaving your future as well as your past. Marriages were arranged inside a network of kin, and a man outside it had no obvious way to form a household at all. Descendants were the only continuity anyone had. The answer given here is precisely the thing his departure should have cost him, and an audience in seventh-century Arabia would have felt the shape of that immediately.",
+      "didYouKnow": "The verb for granting outright occurs three times in a few consecutive ayat of this surah. Here it grants Abraham a son and a grandson; a line later it grants their family mercy and a reputation of truth; and a line after that it grants Moses his brother Aaron. The same word gives children, standing and a companion in three consecutive gifts.",
+      "theologicalSignificance": "The ayah establishes an order the Quran uses repeatedly: the leaving comes first and the provision follows, and the provision is not the thing that was asked for. That keeps the departure from being a transaction, since he did not know what was coming, and it keeps the gift from being a payment. What he receives also answers the specific loss he took, which the passage states without commenting on it.",
+      "crossReferences": [
+        {
+          "ref": "29:26-27",
+          "why": "Records the same emigration and the same grant of Isaac and Jacob, with prophethood in his line."
+        },
+        {
+          "ref": "21:71-72",
+          "why": "Describes his deliverance to a blessed land and the gift of Jacob as something additional."
+        },
+        {
+          "ref": "37:99-100",
+          "why": "Has him say he is going to his Lord who will guide him, and ask for a righteous son."
+        }
+      ],
+      "applyIt": "Think of something you gave up for a reason you still believe in, and which cost you more than you expected. Do not try to find the compensation for it. Just write down what you actually received in the years afterwards, whether or not it looks connected. The ayah puts the leaving and the gift in one sentence, without explaining the join.",
+      "exploreFurther": [
+        "29:26-27",
+        "21:71-73",
+        "37:99-113"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.929Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:50-52",
+      "surah": 19,
+      "start": 50,
+      "end": 52,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "Called From The Right Side",
+      "tier": "standard",
+      "meaning": "The family is given mercy and something the Arabic calls a high tongue of truth, meaning a name spoken well of by those who come after. Then the surah turns to Moses with three descriptions and no narrative: chosen and made pure, a messenger, a prophet. What follows is the one scene it gives him, and it is not a plague or a sea. He was called from the right side of the mountain and brought near in private conversation. Commentators note the choice. The event singled out is an intimacy rather than a wonder.",
+      "historicalContext": "Meccan. The surah is moving through a sequence of prophets, and the commentators note that each is introduced with the same instruction to mention them in the Book, followed by a short description rather than a story. The account of Moses at the mountain is told at length in other surahs; here it is reduced to the moment of being called and brought close, which fits the chapter's concern with what passes privately between God and a person.",
+      "keyTerms": [
+        {
+          "arabic": "لِسَانَ",
+          "gloss": "a tongue, a reputation",
+          "note": "Arabic uses the word for tongue to mean what people say about someone. Paired with truth it names a good name that is also deserved, which is why the phrase describes reputation and accuracy at once."
+        },
+        {
+          "arabic": "مُخْلَصًا",
+          "gloss": "made pure, singled out",
+          "note": "A passive form, so someone purified by God rather than someone who purified himself. The Quran uses it of those set apart for God, and the passive is what distinguishes it from ordinary sincerity."
+        },
+        {
+          "arabic": "نَجِيًّا",
+          "gloss": "in confidential converse",
+          "note": "From a root about private talk between two parties. It occurs twice in the Quran, once of brothers withdrawing to confer among themselves and once here, of a man brought near to speak with God."
+        }
+      ],
+      "lifeInProphetsTime": "Access to a chief was staged. You waited, you were announced, you spoke at a distance in front of others, and being called forward to speak privately was the highest mark of favour a person could receive. Everyone in the audience understood the difference between being addressed in an assembly and being drawn aside. The word this ayah uses for the mountain scene is the word for that second thing.",
+      "didYouKnow": "The phrase describing the good name given to Abraham's family appears twice in the Quran. In the other place, Abraham himself is praying, asking his Lord to grant him exactly this, a tongue of truth among later generations. Here it is reported as granted. The request and its answer are recorded in two different surahs, in the same words.",
+      "theologicalSignificance": "Naming the mountain as a private conversation rather than as a commissioning changes what the reader takes from it. Prophethood is presented in this surah as proximity before it is presented as function, and the same emphasis runs through the chapter's other accounts, which favour what happened between a person and God over what they achieved among people. The good name given to Abraham's line also makes a point about reputation: it is described as granted rather than built.",
+      "crossReferences": [
+        {
+          "ref": "26:84",
+          "why": "Records Abraham praying for exactly this good name among later generations, in his own words."
+        },
+        {
+          "ref": "20:9-14",
+          "why": "Gives the scene at the mountain at length, with the call, the fire and the instruction."
+        },
+        {
+          "ref": "4:164",
+          "why": "States that God spoke to Moses directly, the distinction this passage records in one word."
+        }
+      ],
+      "applyIt": "Think about which you would rather have: to be known for something, or to have one honest conversation with someone who matters. Most of us say the second and arrange our week around the first. Take twenty minutes this week for the second kind, with God or with a person, and notice what you had to move to make room.",
+      "exploreFurther": [
+        "26:83-87",
+        "20:9-36",
+        "7:143-144"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.930Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:53-55",
+      "surah": 19,
+      "start": 53,
+      "end": 55,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "True To His Promise",
+      "tier": "standard",
+      "meaning": "A brother is described as a gift out of mercy, which is an unusual way to speak of a sibling. Then Ishmael is introduced, and the first thing said of him is that he was true to what he promised. Commentators note the phrase is used of him alone in the Quran. What follows is domestic rather than public: he used to instruct his own household in prayer and giving, and he was pleasing to his Lord. A prophet's record here is his family and his word, in that order.",
+      "historicalContext": "Meccan, and the naming of Ishmael carried particular weight in that city. The Arabs of the region traced their descent to him, and the sanctuary at Mecca was associated with him and his father. The commentators note that the Quran presents him to that audience not through lineage or through the sanctuary but through keeping his word and teaching his household, which was a pointed way of introducing an ancestor everyone claimed.",
+      "keyTerms": [
+        {
+          "arabic": "صَادِقَ",
+          "gloss": "true, truthful in",
+          "note": "The active participle of truthfulness, joined here to the word for a promise. The construction makes truthfulness his standing quality with respect to what he undertook, rather than an act he performed once."
+        },
+        {
+          "arabic": "ٱلْوَعْدِ",
+          "gloss": "the promise, the undertaking",
+          "note": "What a person binds themselves to do. The Quran uses the same word for God's own promises, so describing a man as true to his is a considerable thing to say of him."
+        },
+        {
+          "arabic": "مَرْضِيًّا",
+          "gloss": "pleasing, approved",
+          "note": "A passive form, so approved of by another rather than pleased in himself. Placed at the end of a description that is entirely domestic, it attaches God's approval to what he did inside his own house."
+        }
+      ],
+      "lifeInProphetsTime": "A promise was the only enforcement mechanism Arabia had. There were no courts and almost no written contracts, so trade credit, safe passage, marriage arrangements and truces all rested on whether a man was known to keep his word. Someone who broke a promise was not fined; he was simply never trusted again, and neither was his family. Being called true to his promise was the highest commercial and social character reference available.",
+      "didYouKnow": "The phrase describing Ishmael as true to his promise occurs only once in the whole Quran, and it is said of no one else. The Quran names several prophets by a single defining quality in this surah, and this is the one it gives him, in a passage otherwise concerned with prayer, giving and his own household.",
+      "theologicalSignificance": "The description locates a prophet's worth in kept promises and in a household taught, rather than in a following or a conquest. That is a deliberate reordering. It also joins two things the reader may keep apart: reliability with people and standing with God, since the ayah moves directly from instructing his family to being approved by his Lord, with no transition. What is done at home is presented as the record, not the preparation for one.",
+      "crossReferences": [
+        {
+          "ref": "37:102",
+          "why": "Shows him accepting what he was told and promising to be found patient, if God wills."
+        },
+        {
+          "ref": "20:132",
+          "why": "Gives the same instruction to the Prophet: enjoin prayer on your family and be steadfast in it."
+        },
+        {
+          "ref": "2:127",
+          "why": "Places him with his father raising the foundations of the House, asking for it to be accepted."
+        }
+      ],
+      "applyIt": "Look at the last three things you said you would do for someone and check whether you did them. Not the large commitments, the small ones: the message you would send, the thing you would look up. Pick one that is outstanding and close it today. The description in this ayah is of a man whose word could be relied on in ordinary matters.",
+      "exploreFurther": [
+        "37:100-113",
+        "20:131-132",
+        "2:124-129"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.930Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:56-57",
+      "surah": 19,
+      "start": 56,
+      "end": 57,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Raised To A High Place",
+      "tier": "standard",
+      "meaning": "Two ayat and almost nothing in them. He is named, described as a man of truth and a prophet, and then raised to a high place. Commentators differ over what the raising means, some reading an elevation of rank and others a physical raising, and they record the disagreement without resolving it. The Quran gives no story, no people, no message and no outcome. What the reader is given is a name held in the same list as Abraham and Moses, and one sentence about where he was placed.",
+      "historicalContext": "Meccan. Idris is named only twice in the Quran, here and in a short list in another surah, and the classical sources have long discussed who he is, with a number of identifications proposed and none of them settled. The commentators generally note the limits of what is known rather than filling the gap, which is why the passage is usually read as it stands.",
+      "keyTerms": [
+        {
+          "arabic": "صِدِّيقًا",
+          "gloss": "a man of deep truthfulness",
+          "note": "An intensive form of the word for truthful, describing someone whose truthfulness is habitual rather than occasional. This exact form occurs twice in the Quran, both in this surah, of him and of Abraham."
+        },
+        {
+          "arabic": "وَرَفَعْنَـٰهُ",
+          "gloss": "and We raised him",
+          "note": "The plain verb for lifting something up. Its ordinariness is what leaves the commentators divided, since Arabic uses it for physical raising and for elevation in rank with equal frequency."
+        },
+        {
+          "arabic": "عَلِيًّا",
+          "gloss": "high, elevated",
+          "note": "An adjective of height, and one of the names of God in its definite form. Used here of a place, it says the position is high without saying where it is or what it consists of."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian audiences knew far more names than stories. Genealogies ran for dozens of generations and were recited accurately, but most of those names carried no narrative at all, only a reputation attached to them. A figure honoured without an account was a familiar thing rather than a puzzle. Hearing a name placed in a list of the greatest, with one line about him, would have been how most of the past reached them.",
+      "didYouKnow": "The intensive word for truthfulness used of him occurs twice in the Quran in this exact form, and both are in this surah. The other is used of Abraham, fifteen ayat earlier, in a sentence built the same way. The chapter gives its two most compressed prophetic portraits the same opening description.",
+      "theologicalSignificance": "The passage shows the Quran declining to fill a gap. A figure is honoured, and almost nothing is disclosed about him, which sets a limit the tradition has generally respected. That has a practical effect on how the past is treated: what is given is enough to establish that God has raised people the reader knows nothing about. It also implies something about the record itself, since the honour here does not depend on anyone remembering why.",
+      "crossReferences": [
+        {
+          "ref": "21:85-86",
+          "why": "Names him again in a short list, describing all of them as patient and admitted into mercy."
+        },
+        {
+          "ref": "19:41",
+          "why": "Uses the same intensive word for truthfulness of Abraham, earlier in this surah."
+        },
+        {
+          "ref": "40:78",
+          "why": "States that messengers were sent whose accounts have not been related at all."
+        }
+      ],
+      "applyIt": "Think of someone who did something good that nobody recorded: a grandparent, a teacher, a neighbour who kept a family going. Say their name once today and ask God to raise them. The passage honours a man whose story was not preserved, which suggests that being remembered by people is not the thing that fixes a person's standing.",
+      "exploreFurther": [
+        "21:85-86",
+        "40:78",
+        "19:41-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.930Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:58",
+      "surah": 19,
+      "start": 58,
+      "end": 58,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "They Fell Down Weeping",
+      "tier": "standard",
+      "meaning": "The whole sequence of prophets is gathered into one sentence and traced through four lines of descent, from Adam, from those carried with Noah, from Abraham's line and from Israel's, and then a fifth category that is not descent at all: those God guided and chose. Commentators note that the list ends by breaking its own pattern. What follows is not what they taught but what they did when revelation was recited: they went down prostrating and weeping. The people at the top of the list are described by their response.",
+      "historicalContext": "Meccan. The surah has moved through Zechariah, John, Mary, Jesus, Abraham, Moses, Aaron, Ishmael and Idris, each introduced with the same instruction to mention them in the Book. This ayah closes that sequence and gathers it. The commentators read the four lines of descent as covering the prophets named above in order, which is why the list runs from the earliest to the latest.",
+      "keyTerms": [
+        {
+          "arabic": "أَنْعَمَ",
+          "gloss": "He favoured, bestowed on",
+          "note": "The verb behind the word for a blessing received. It makes prophethood something done to these figures rather than achieved by them, which is the grammar the whole ayah keeps."
+        },
+        {
+          "arabic": "وَٱجْتَبَيْنَآ",
+          "gloss": "and We selected",
+          "note": "From a root about gathering something up and picking it out for oneself. It names a choosing that is not based on lineage, which is why it stands last, after four lines of descent have been given."
+        },
+        {
+          "arabic": "وَبُكِيًّا",
+          "gloss": "and weeping",
+          "note": "A plural form describing many people in tears at once. Paired with prostration it makes the response bodily and shared, and it is the last word of the ayah before the recitation mark."
+        }
+      ],
+      "lifeInProphetsTime": "Genealogy was how the past was held. A man could recite his ancestors for many generations and place any stranger by asking two questions, and the whole social order rested on those lines. This ayah uses that structure, listing prophets by descent exactly as an Arabian audience would have expected, and then adds a category that has no lineage in it at all, which would have been the arresting part.",
+      "didYouKnow": "This is one of the ayat at which the reciter and listeners traditionally prostrate, and the printed text carries a small mark at the end of it. There are fourteen or fifteen such places in the Quran, depending on the tradition of recitation followed. This one falls at the end of an ayah that describes prophets falling down in exactly that way.",
+      "theologicalSignificance": "Adding a category of the guided and chosen after four genealogies opens the list beyond descent, which matters for every reader who is not in any of those lines. The closing description then sets the standard, and it is not scholarship or authority but response. The greatest figures in the chapter are characterised by what happened to them when they heard revelation, which places the reader in the same position as them at the moment of reading.",
+      "crossReferences": [
+        {
+          "ref": "1:6-7",
+          "why": "Asks for the path of those God has favoured, using the same verb as this ayah."
+        },
+        {
+          "ref": "17:107-109",
+          "why": "Describes the same response, falling on their faces weeping, in the surah just before this one."
+        },
+        {
+          "ref": "5:83",
+          "why": "Shows eyes overflowing at hearing the revelation, in people who recognised what they heard."
+        }
+      ],
+      "applyIt": "Read this ayah aloud to the end and stop at the mark. Notice that the tradition of pausing here grows out of the ayah's own last words, which describe people going down and weeping. Then read it once more and ask which part of you responded, if any. The chapter measures its greatest figures by their response rather than their record.",
+      "exploreFurther": [
+        "1:6-7",
+        "17:107-109",
+        "5:82-85"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.930Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:59-60",
+      "surah": 19,
+      "start": 59,
+      "end": 60,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "Except Whoever Turns Back",
+      "tier": "standard",
+      "meaning": "A generation follows the one just praised, and two things are said of it: they let the prayer go and they followed their appetites. Commentators are careful about the first verb, which means to lose or waste rather than to abandon outright, and read it as neglecting the prayer or emptying it out rather than announcing its end. Then the exception arrives before the sentence has time to settle. Whoever turns back, believes and acts well enters the Garden, and is not wronged in the smallest thing.",
+      "historicalContext": "Meccan. The surah has just closed its long sequence of prophets, and this ayah describes what came after them, in general terms rather than about a named community. The commentators note that the passage is about succession rather than about any one people, since the pattern of a generation inheriting a religion and hollowing it out is the one the chapter has been tracing since it turned to the disagreement over Jesus.",
+      "keyTerms": [
+        {
+          "arabic": "أَضَاعُوا۟",
+          "gloss": "they let go, wasted",
+          "note": "The verb for losing something through neglect, as one loses property by not looking after it. It does not say they refused the prayer. It says they mislaid it, which is a slower and more familiar failure."
+        },
+        {
+          "arabic": "ٱلشَّهَوَٰتِ",
+          "gloss": "appetites, cravings",
+          "note": "The plural of desire, covering anything wanted strongly. The Quran does not treat these as evil in themselves; the fault named here is following them, making the wanting the thing that decides."
+        },
+        {
+          "arabic": "غَيًّا",
+          "gloss": "ruin, going astray",
+          "note": "From a root about losing the way and coming to grief through it. The word joins error and its consequence in one term, so what they meet is described as the shape their own wandering took."
+        }
+      ],
+      "lifeInProphetsTime": "Religion in Arabia was inherited like property, and most people practised what their fathers had without examining it. Rites at the sanctuary had drifted far from anything Abraham would have recognised while still being performed with care, and the Quran repeatedly points at that gap. The audience knew what a hollowed inheritance looked like, because they were living inside one and could name the customs that had no reason left behind them.",
+      "didYouKnow": "The word describing what happened to the prayer means losing something by neglect, not rejecting it. Arabic uses the same verb for a stray animal and for property allowed to fall into ruin. The Quran chooses it here rather than any of the stronger words available for abandoning or denying, which is what makes the description recognisable rather than remote.",
+      "theologicalSignificance": "The exception arrives immediately, which is where the weight of the passage sits. A generation is described in terms that are not dramatic, neglect rather than defiance, and the way back is stated in the next breath and requires three things: turning back, believing, and acting. The closing clause then guards against a fear the exception might create, that a latecomer is admitted on worse terms. Not wronged in the smallest thing means the return is complete.",
+      "crossReferences": [
+        {
+          "ref": "25:70",
+          "why": "States the same three conditions and adds that bad deeds may be changed into good ones."
+        },
+        {
+          "ref": "20:82",
+          "why": "Names God as much forgiving to whoever repents, believes, does right and then stays guided."
+        },
+        {
+          "ref": "39:53",
+          "why": "Tells those who have gone furthest not to despair of the mercy of God at all."
+        }
+      ],
+      "applyIt": "Look at the practice you have quietly let slip: not one you decided against, one that simply stopped happening. Name it out loud. Then do the smallest version of it today, badly and late if necessary. The verb in this ayah is about losing something rather than throwing it away, and lost things are usually still where you left them.",
+      "exploreFurther": [
+        "25:68-71",
+        "20:82",
+        "39:53-55"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.930Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:61-63",
+      "surah": 19,
+      "start": 61,
+      "end": 63,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "No Idle Talk But Peace",
+      "tier": "standard",
+      "meaning": "The Garden is named and then described by three things, and the first two are absences. It was promised in the unseen, and the promise is called something that will certainly be arrived at. Inside it there is no idle or empty speech, only peace. Provision comes morning and evening. Commentators note how little is described here compared with other passages: no fruit, no rivers, no thrones. What is offered is the removal of noise, a settled rhythm, and the word peace standing where conversation would be.",
+      "historicalContext": "Meccan, addressed to a community under pressure and to a city full of argument. The commentators note that the surah has just described generations that lost the prayer and followed appetites, and read this passage as the counterpart to that. What is promised is stated as something belonging to the unseen, which is the term for what cannot be verified now and must be taken on the promise itself.",
+      "keyTerms": [
+        {
+          "arabic": "عَدْنٍ",
+          "gloss": "of lasting residence",
+          "note": "From a root about staying put and settling permanently, related to the word for a mine, a place where something remains fixed. The name describes duration rather than beauty, which is why it is chosen here."
+        },
+        {
+          "arabic": "لَغْوًا",
+          "gloss": "idle, empty talk",
+          "note": "Speech that carries nothing: chatter, nonsense, words spent to no purpose. The Quran repeatedly makes its absence a feature of the Garden, which says something about how much of ordinary life it occupies."
+        },
+        {
+          "arabic": "نُورِثُ",
+          "gloss": "We give as inheritance",
+          "note": "The verb for passing property to those who remain. Applied to the Garden it presents entry as receiving what was always going to come to you, rather than as being admitted by a decision at the door."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan life was loud with talk. Poetry contests, market bargaining, tribal boasting and the endless litigation of standing filled the day, and a person's position was made and lost in speech. Food arriving twice a day without being sought was also a specific dream in a place where provision meant caravans, seasons and risk. Both promises in this passage answer things the first audience actually spent their lives managing.",
+      "didYouKnow": "The phrase describing provision arriving morning and evening occurs twice in the Quran, and both are in this surah. Near its opening, Zechariah comes out unable to speak and signals to his people to glorify God morning and evening. Here the same two words mark the rhythm of the Garden. The chapter begins and ends its arc on the same pair of hours.",
+      "theologicalSignificance": "Describing the Garden mainly by what is absent is a deliberate strategy. Positive descriptions of an unseen thing quickly become the reader's own imagination, while the removal of idle speech is exact and can be understood without being pictured. The word for inheritance also changes the posture of the reader. What is promised is presented as already assigned, waiting for those it belongs to, rather than as a prize still being competed for.",
+      "crossReferences": [
+        {
+          "ref": "19:11",
+          "why": "Uses the same pair of hours near this surah's opening, in Zechariah's silent instruction to his people."
+        },
+        {
+          "ref": "56:25-26",
+          "why": "Repeats that no idle or sinful speech is heard there, only the saying of peace."
+        },
+        {
+          "ref": "23:10-11",
+          "why": "Names the same inheritance, with the heirs being those who turn away from empty talk here."
+        }
+      ],
+      "applyIt": "Count roughly how much of what you said today carried nothing: filler, complaint on autopilot, the comment you made to fill a pause. Do not try to stop it. Just take one conversation this week and leave the empty parts out, and see whether the exchange gets shorter or better or both.",
+      "exploreFurther": [
+        "56:25-26",
+        "23:1-11",
+        "13:23-24"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.931Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "19:64",
+      "surah": 19,
+      "start": 64,
+      "end": 64,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "We Descend Only By Command",
+      "tier": "standard",
+      "meaning": "The speaker changes without announcement. Angels are speaking, and the commentators connect the ayah with reports that revelation was once delayed and the Prophet Muhammad (peace be upon him) felt the gap, though the sources differ over the details. What they say limits themselves in three directions: they come only by command, everything ahead of them and behind them and between belongs to God, and your Lord is not forgetful. The last clause is the answer. What looked like being overlooked is described as timing.",
+      "historicalContext": "Meccan. The classical sources report pauses in revelation during which opponents in the city taunted the Prophet, saying his Lord had left him. Several passages of the Quran are read as answering that taunt. The commentators record more than one account of the specific occasion behind this ayah and treat the general setting as sound while differing over which incident it belongs to.",
+      "keyTerms": [
+        {
+          "arabic": "نَتَنَزَّلُ",
+          "gloss": "we come down",
+          "note": "A form suggesting descent in stages rather than at once. Used by the angels of themselves, it matches the manner in which the Quran describes its own arrival, portioned out over years."
+        },
+        {
+          "arabic": "بِأَمْرِ",
+          "gloss": "by the command of",
+          "note": "Both an order and a matter belonging to someone. The angels place their own movement inside God's command rather than their choice, which is the whole content of what they say here."
+        },
+        {
+          "arabic": "نَسِيًّا",
+          "gloss": "forgetful",
+          "note": "An intensive form denied of God. The word is not the ordinary term for forgetting but one describing a disposition, so what is ruled out is the possibility of being the kind who overlooks."
+        }
+      ],
+      "lifeInProphetsTime": "Silence from a patron was the worst news in Arabia. A person under someone's protection who received no word, no answer to a message and no reply to a request, understood that the arrangement had lapsed and that they were now exposed. The taunts in Mecca used exactly that logic. The reply in this ayah does not offer reassurance about feelings; it addresses the reading of a silence.",
+      "didYouKnow": "This ayah's final word denies forgetfulness of God, using an intensive form. The same surah opened with a woman in labour wishing she could become a thing forgotten, using a word from the same root. The chapter that begins with someone longing to be forgotten ends this passage by stating that God does not forget at all.",
+      "theologicalSignificance": "The ayah addresses a specific difficulty: how to read a silence from God. Its answer is not that the silence was imagined but that it was governed, and the middle clause makes the reach of that governance total, covering what is ahead, behind and in between. The last word then closes off the interpretation that hurts most. A delay may be many things, and the one thing it is not is a lapse of attention.",
+      "crossReferences": [
+        {
+          "ref": "93:1-3",
+          "why": "Answers the same fear directly, saying the Lord has neither forsaken him nor grown to dislike him."
+        },
+        {
+          "ref": "20:52",
+          "why": "States the same denial in Moses' answer to Pharaoh: my Lord neither errs nor forgets."
+        },
+        {
+          "ref": "17:106",
+          "why": "Describes the portioned delivery of the recitation, which is the arrangement these angels are stating."
+        }
+      ],
+      "applyIt": "Think of a prayer that has gone unanswered long enough that you have stopped mentioning it. Say it once more this week, out loud, without adding an explanation for the delay. The ayah does not say the silence means something good. It says only that it is not because you were forgotten, which is a smaller claim and a more useful one.",
+      "exploreFurther": [
+        "93:1-8",
+        "20:49-52",
+        "17:105-106"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:14:09.931Z",
         "reviewed": false
       }
     },
