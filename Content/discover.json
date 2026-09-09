@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "note": "The curated Discover feed. Phase 1 seeds it only from the study fixtures that exist (surahs 1 and 112); Tools/content-gen/assemble.mjs grows it to ~300 units once the batch lands. Order here is the fallback; DiscoverFeed shuffles deterministically from the day of the year.",
+  "items": [
+    { "key": "112:1-4", "themeId": "tawhid",       "surah": 112, "weight": 100 },
+    { "key": "1:5-7",   "themeId": "guidance",     "surah": 1,   "weight": 95 },
+    { "key": "1:1",     "themeId": "names-of-god", "surah": 1,   "weight": 90 },
+    { "key": "1:2-4",   "themeId": "praise",       "surah": 1,   "weight": 85 }
+  ]
+}

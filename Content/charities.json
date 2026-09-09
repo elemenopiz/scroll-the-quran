@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "note": "Community tab. The running total is a config constant that starts at zero — the app makes no claim about money given until money has been given. Votes are stored locally; there is no server. Text only, no logos bundled.",
+  "totalGivenUSD": 0,
+  "currency": "USD",
+  "votingOpensOn": null,
+  "organisations": [
+    {
+      "id": "islamic-relief",
+      "name": "Islamic Relief Worldwide",
+      "blurb": "Emergency response and long-term development in more than 40 countries, working through local offices rather than parachuting in.",
+      "focus": "Emergency relief and development",
+      "founded": 1984,
+      "url": "https://islamic-relief.org"
+    },
+    {
+      "id": "penny-appeal",
+      "name": "Penny Appeal",
+      "blurb": "Small, regular giving pooled into water, orphan care and food programmes, built around the idea that consistency beats size.",
+      "focus": "Water, orphan care, food",
+      "founded": 2009,
+      "url": "https://pennyappeal.org"
+    },
+    {
+      "id": "human-appeal",
+      "name": "Human Appeal",
+      "blurb": "Health, education and livelihood programmes alongside emergency response, with published country-level reporting.",
+      "focus": "Health, education, livelihoods",
+      "founded": 1991,
+      "url": "https://humanappeal.org.uk"
+    }
+  ]
+}

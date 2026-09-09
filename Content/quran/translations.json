@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "defaultID": "itani",
+  "translations": [
+    {
+      "id": "itani",
+      "abbrev": "CLEAR",
+      "name": "ClearQuran",
+      "translator": "Talal Itani",
+      "year": 2012,
+      "copyright": "Translation by Talal Itani, ClearQuran.com",
+      "licence": "CC BY-ND 4.0",
+      "file": "quran/itani.json",
+      "isDefault": true,
+      "bundled": true
+    },
+    {
+      "id": "saheeh",
+      "abbrev": "SAHEEH",
+      "name": "Saheeh International",
+      "translator": "Saheeh International",
+      "year": 1997,
+      "copyright": "The Qur'an: English Meanings, Saheeh International. Republished with attribution.",
+      "licence": "Verbatim republication with attribution",
+      "file": "quran/saheeh.json",
+      "isDefault": false,
+      "bundled": false
+    },
+    {
+      "id": "ruwwad",
+      "abbrev": "RUWWAD",
+      "name": "Ruwwad Translation Center",
+      "translator": "Ruwwad Translation Center, with the Islamic University of Madinah",
+      "year": 2022,
+      "copyright": "Ruwwad Translation Center. Republished with attribution.",
+      "licence": "Verbatim republication with attribution",
+      "file": "quran/ruwwad.json",
+      "isDefault": false,
+      "bundled": false
+    },
+    {
+      "id": "pickthall",
+      "abbrev": "PICKTHALL",
+      "name": "The Meaning of the Glorious Koran",
+      "translator": "Marmaduke Pickthall",
+      "year": 1930,
+      "copyright": "Public domain.",
+      "licence": "Public domain",
+      "file": "quran/pickthall.json",
+      "isDefault": false,
+      "bundled": false
+    }
+  ]
+}

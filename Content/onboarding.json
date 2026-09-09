@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "note": "Every string the onboarding funnel shows. Anything marked \"placeholder\": true is a number or claim we have not earned yet and must be replaced (or the element removed) before submission — App Review treats invented social proof as a rejection.",
+  "hook": {
+    "headline": [
+      { "text": "The average Muslim will spend ", "style": "regular" },
+      { "text": "2+ hours", "style": "boldItalic" },
+      { "text": " today scrolling social media.", "style": "regular" }
+    ],
+    "subheadline": "Let's give some of that time back to Allah.",
+    "primaryCTA": "Continue",
+    "secondaryCTA": "I already signed up on the web",
+    "placeholder": true,
+    "placeholderNote": "The 2+ hours figure needs a citable source or softer wording before ship."
+  },
+  "signIn": {
+    "title": "Sign in",
+    "body": "Sign in with Apple so your streak, notes and saved verses follow you to your other devices.",
+    "appleButtonLabel": "Sign in with Apple",
+    "emailLabel": "Or use your email address",
+    "emailPlaceholder": "you@example.com",
+    "emailFootnote": "Stored on this device only. We do not email you.",
+    "recoverCTA": "Recover access",
+    "skipCTA": "Not now"
+  },
+  "slides": [
+    {
+      "id": "onboarding-slide1",
+      "eyebrow": "Read",
+      "title": "One ayah at a time",
+      "body": "The Quran, one ayah to a screen, in clear modern English. Swipe down to keep reading. Tap for the meaning behind the line.",
+      "mockup": "reader"
+    },
+    {
+      "id": "onboarding-slide2",
+      "eyebrow": "Plans",
+      "title": "A plan you will actually finish",
+      "body": "A juz a day through Ramadan, Juz Amma one surah at a time, Al-Kahf on Fridays, or a week each on patience, gratitude and mercy.",
+      "mockup": "plans"
+    },
+    {
+      "id": "onboarding-slide3",
+      "eyebrow": "Discover",
+      "title": "Something worth stopping on",
+      "body": "A daily feed of ayat with the context that makes them land: what the words mean, when they came down, and what to do about it.",
+      "mockup": "discover"
+    },
+    {
+      "id": "onboarding-slide4",
+      "eyebrow": "Study",
+      "title": "Go as deep as you want",
+      "body": "Every passage opens into meaning, context of revelation, key Arabic terms in transliteration, related verses and one thing to apply.",
+      "mockup": "deepstudy"
+    }
+  ],
+  "reviews": {
+    "title": "Lives are being changed.",
+    "subtitle": "Join {{installCount}} Muslims coming back to the Quran.",
+    "ratingValue": "4.8",
+    "ratingCount": "{{reviewCount}}",
+    "ratingSuffix": "reviews",
+    "primaryCTA": "Continue",
+    "placeholder": true,
+    "placeholderNote": "installCount, reviewCount and the star rating are placeholders. Wire them to real App Store values or drop this screen; do not ship invented numbers. The three cards below are written as examples, not quotes from real users.",
+    "cards": [
+      {
+        "title": "Changed my mornings",
+        "body": "I used to open the same three apps before getting out of bed. Now I read one ayah first. It sounds small and it has not been small.",
+        "author": "Placeholder review",
+        "stars": 5,
+        "placeholder": true
+      },
+      {
+        "title": "The context is the thing",
+        "body": "I have read translations for years and always stopped at the words. Having the background right there is what made it stick.",
+        "author": "Placeholder review",
+        "stars": 5,
+        "placeholder": true
+      },
+      {
+        "title": "Finished my first plan",
+        "body": "Juz Amma, one surah a day. First time I have finished anything like this without falling off in week two.",
+        "author": "Placeholder review",
+        "stars": 5,
+        "placeholder": true
+      }
+    ]
+  },
+  "legal": {
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "alreadySubscribed": "Already Subscribed?",
+    "restore": "Restore Purchases",
+    "translationNotice": "Translation by Talal Itani, ClearQuran.com"
+  }
+}
