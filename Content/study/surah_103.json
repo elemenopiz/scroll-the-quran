@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "surah": 103,
+  "note": "Hand-written Phase 2b fixture. Real shards are produced by Tools/content-gen and replace this file wholesale.",
+  "units": [
+    {
+      "key": "103:1-3",
+      "surah": 103,
+      "start": 1,
+      "end": 3,
+      "theme": "Time and what lasts",
+      "themeId": "time",
+      "title": "By time, the human being is in loss",
+      "tier": 1,
+      "meaning": "Three lines, and the second of them is an accusation: the human being is in loss. Not may be, not risks being. The surah opens by swearing an oath on time itself, and the oath is the argument. Time is the one resource nobody keeps, and a life spent inside something that only ever drains is a losing position by default. Then the third line names the exceptions, and there are four of them, in a deliberate order: believing, doing what is good, and then two things done with other people rather than alone — encouraging one another toward what is true, and encouraging one another toward patience. The last two are what stop the first two from being private. On this reading the surah is not gloomy; it is a balance sheet, drawn up honestly, with the one column that stays in credit marked out.",
+      "historicalContext": "Al-Asr is Meccan and early, from the years when the community was small enough that mutual encouragement was not an abstraction but the only support anyone had. Commentators differ on what the oath names: the passing age, the afternoon hour when the day is visibly running out, or the particular era of the Prophet Muhammad, peace be upon him. Ibn Kathir and al-Tabari report several of these readings without treating them as exclusive, since each supports the same point about time running down.",
+      "keyTerms": [
+        {
+          "arabic": "الْعَصْر",
+          "gloss": "the age, the passing time",
+          "note": "The same word names the late afternoon prayer, when the light is measurably going. Both senses carry the idea of something on its way out."
+        },
+        {
+          "arabic": "خُسْر",
+          "gloss": "loss, a deficit",
+          "note": "A merchant's word, used of capital that does not come back. In a trading city the metaphor would have been heard as an accounting term, not a poetic one."
+        },
+        {
+          "arabic": "تَوَاصَوْا",
+          "gloss": "they counselled one another",
+          "note": "A reciprocal form: each side both gives the advice and receives it. The line does not describe a teacher and an audience."
+        },
+        {
+          "arabic": "الصَّبْر",
+          "gloss": "patience, steady endurance",
+          "note": "Closer to holding a position than to waiting quietly. Classical commentary reads it as covering endurance under hardship, restraint from wrong, and persistence in what is right."
+        }
+      ],
+      "lifeInProphetsTime": "Reports preserved by al-Tabarani and cited by later commentators describe Companions who, when two of them met and then parted, would not separate until one had recited this surah to the other. It functioned as a parting formula: a reminder, in the time it takes to say three lines, of what the meeting had been for.",
+      "didYouKnow": "The surah is one of the shortest in the Quran, and a remark widely attributed to the jurist al-Shafi'i holds that if people considered nothing but this surah, it would be enough for them. Whether or not the attribution is firm, it reflects how consistently commentators treated these three lines as a summary of the whole.",
+      "theologicalSignificance": "Faith and action are named together, and then immediately given a social shape. The surah refuses to let belief be a private state or good work a solo achievement: two of its four exceptions exist only between people. It is the Quran's shortest statement that salvation is not an individual project.",
+      "crossReferences": [
+        { "ref": "95:4-6", "why": "The same structure: humanity brought low, except those who believe and do good." },
+        { "ref": "90:17", "why": "Names the same pair — advising one another to patience and to compassion." },
+        { "ref": "2:155-157", "why": "Fills out what patience under loss actually looks like." },
+        { "ref": "18:46", "why": "Sets what passes against what lasts, in the same accounting terms." }
+      ],
+      "applyIt": "Before the day ends, say one true and useful thing to someone who is struggling — not advice about them, encouragement toward what you both already know is right. The surah treats that exchange as the difference between a day spent and a day kept.",
+      "exploreFurther": ["95:4-6", "90:12-18", "2:153", "31:17"],
+      "meta": {
+        "model": "hand-written",
+        "promptVersion": "fixture-2",
+        "generatedAt": "2026-09-09",
+        "reviewed": true
+      }
+    }
+  ]
+}
