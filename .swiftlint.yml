@@ -15,3 +15,13 @@ identifier_name:
 
 disabled_rules:
   - trailing_comma
+
+nesting:
+  type_level: 3
+
+large_tuple:
+  warning: 3
+
+function_body_length:
+  warning: 70
+  error: 120
