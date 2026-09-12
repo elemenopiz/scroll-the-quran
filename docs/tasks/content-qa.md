@@ -55,3 +55,11 @@ found in the first complete corpus.
   repeat themselves", but the first of the pair (`صَبًّا`, 80:25) is in the ayah
   before the unit. Prose, not structure, so it belongs to the judge-style
   review rather than to a validator rule.
+
+## Follow-ups from the Discover judge review (2026-09-12; ledgers in docs/content-qa/)
+- validate.mjs: flag prose that says "the Prophet" when no field in the unit carries "Muhammad (peace be upon him)" (7 Discover units shipped without the honorific; the current check only fires on the bare name).
+- Author brief: any number in `didYouKnow` ("N times", "two ayat later", "the previous surah") must be counted against the corpus with `search.mjs` before writing; off-by-one counts/positions were the single most common defect (13 of 28 rewrites).
+- Author brief: "same words in the same order" parallels must be checked token by token, not by resemblance.
+- Corpus-wide: extend the near-dup check to facts reused across units in different fields (21:34-35 reused 3:185's `didYouKnow`).
+- Sample the non-Discover corpus (5%, ~150 units) with the same rubric; the Discover set averaged 4.7/5 with 28/326 rewritten, so expect ~9% of the long tail to need a rewrite.
+- 3:173: `crossReferences[].why` says "the Prophet" without the honorific in the note (left as is; one-line fix).
