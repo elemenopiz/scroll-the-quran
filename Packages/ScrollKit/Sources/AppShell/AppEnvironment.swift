@@ -154,6 +154,7 @@ public final class AppEnvironment {
             // the app without clearing its container, so the app clears it here.
             UserStore.shared().deleteAllData()
             UserDefaults.standard.removeObject(forKey: DiscoverGateStore.defaultsKey)
+            FixturePurchaseRecord.forget()
         }
 
         let index = (try? SurahIndex(locator: .shared)) ?? Self.emptyIndex()
@@ -203,11 +204,18 @@ public final class AppEnvironment {
         // paywall is first shown — or a renewal that lands early is missed.
         let entitlements: any Commerce.EntitlementProviding
         if launch.usesFixtureCommerce {
+            // A funnel run remembers its purchases the way `Transaction.currentEntitlements`
+            // does, so "buy, relaunch, still unlocked" asserts something rather than reading
+            // a mock that was born premium.
+            let remembered = launch.fixtureRemembersPurchases && FixturePurchaseRecord.isPurchased
             let mock = Commerce.MockEntitlementStore(
-                isPremium: launch.fixtureIsPremium,
+                isPremium: launch.fixtureIsPremium || remembered,
                 billingState: launch.forcedBillingState
             )
             mock.restoreGrantsPremium = launch.hasRestorablePurchase
+            if launch.fixtureRemembersPurchases {
+                mock.onEntitlementChange = { FixturePurchaseRecord.isPurchased = $0 }
+            }
             entitlements = mock
         } else {
             entitlements = StoreKitEntitlementStore()
@@ -282,6 +290,25 @@ public final class AppEnvironment {
         // The literal is a compile-time constant that matches `TranslationRegistry`'s shape.
         // swiftlint:disable:next force_try
         return try! JSONDecoder().decode(TranslationRegistry.self, from: Data(json.utf8))
+    }
+}
+
+/// Where a `--funnel` run's fixture purchase is written down.
+///
+/// Live StoreKit needs nothing like this: `Transaction.currentEntitlements` is read from the
+/// store on every launch. The fixture has no store behind it, so the shell gives it one line
+/// of `UserDefaults` — cleared by `--reset-state`, and only ever touched under `--funnel`, so
+/// no capture and no other UI test can see it.
+enum FixturePurchaseRecord {
+    static let defaultsKey = "scroll.funnel.fixturePurchased"
+
+    static var isPurchased: Bool {
+        get { UserDefaults.standard.bool(forKey: defaultsKey) }
+        set { UserDefaults.standard.set(newValue, forKey: defaultsKey) }
+    }
+
+    static func forget() {
+        UserDefaults.standard.removeObject(forKey: defaultsKey)
     }
 }
 

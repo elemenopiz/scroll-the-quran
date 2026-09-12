@@ -26,6 +26,14 @@ public final class MockEntitlementStore: EntitlementProviding {
     /// would. A StoreKit test store cannot demonstrate this: it never stops returning a
     /// transaction, so there is nothing there for a restore to bring back.
     public var restoreGrantsPremium = false
+    /// Called whenever the entitlement changes, with the new value.
+    ///
+    /// StoreKit reads `Transaction.currentEntitlements` back from the store on every launch,
+    /// so a purchase outlives the process. A fixture has nowhere to read it back from, which
+    /// is exactly what the "a purchase survives a relaunch" test is about; the shell hands
+    /// this store somewhere to write, and seeds `isPremium` from it at the next launch.
+    /// Left `nil` everywhere else, so previews and unit tests keep no state between runs.
+    @ObservationIgnored public var onEntitlementChange: ((Bool) -> Void)?
 
     public private(set) var purchaseCount = 0
     public private(set) var restoreCount = 0
@@ -61,7 +69,7 @@ public final class MockEntitlementStore: EntitlementProviding {
             throw CommerceError.productUnavailable(id)
         }
         if nextOutcome == .purchased {
-            isPremium = true
+            setPremium(true)
             introOfferEligible = false
         }
         return nextOutcome
@@ -79,7 +87,7 @@ public final class MockEntitlementStore: EntitlementProviding {
 
     /// Test hook: pretend the subscription lapsed.
     public func expire() {
-        isPremium = false
+        setPremium(false)
         forcedBillingState = .expired
     }
 
@@ -87,15 +95,21 @@ public final class MockEntitlementStore: EntitlementProviding {
     /// retry does not — which is exactly the difference Settings has to explain.
     public func enterBillingTrouble(_ state: BillingState) {
         forcedBillingState = state
-        isPremium = state == .inGracePeriod
+        setPremium(state == .inGracePeriod)
     }
 
     /// Test hook: grant the entitlement without going through `purchase(_:)`, the way a
     /// restore or a renewal landing on the `Transaction.updates` listener would.
     public func grant() {
-        isPremium = true
+        setPremium(true)
         forcedBillingState = nil
         introOfferEligible = false
+    }
+
+    /// The one place the entitlement moves, so `onEntitlementChange` cannot be forgotten.
+    private func setPremium(_ value: Bool) {
+        isPremium = value
+        onEntitlementChange?(value)
     }
 
     /// The three products in `Config/ScrollTheQuran.storekit`. Lives on `StoreCatalogue`

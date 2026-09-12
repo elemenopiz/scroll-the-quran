@@ -110,11 +110,27 @@ public struct LaunchOptions: Equatable, Sendable {
     /// Snapshots and UI tests get `MockEntitlementStore` instead of live StoreKit: a
     /// capture has to quote the same prices every time, with no store round-trip.
     ///
-    /// `--funnel` is the exception. Those tests are the ones that have to prove a real
-    /// `product.purchase()` against the scheme's StoreKit configuration unlocks the app and
-    /// survives a relaunch, which a fixture cannot demonstrate.
+    /// Inside the funnel the choice is explicit rather than implied. `--funnel <phase>` on
+    /// its own runs against live StoreKit and the scheme's `Config/ScrollTheQuran.storekit`,
+    /// which is what a run from Xcode wants; adding `--free` or `--premium` says "the store
+    /// reports this", and that answer can only come from the fixture. `xcodebuild test` from
+    /// the command line has to take the second road: `storekitd` refuses to apply a StoreKit
+    /// test configuration — `SKTestSession` and the scheme's own setting both — to an app the
+    /// command-line install did not mark as installed for development, so the catalogue comes
+    /// back empty there and no purchase is possible at all. See `UITests/FunnelTests.swift`.
     public var usesFixtureCommerce: Bool {
-        funnelPhase == nil && (isSnapshotRun || isUITest)
+        if funnelPhase != nil {
+            return forcedEntitlement != nil
+        }
+        return isSnapshotRun || isUITest
+    }
+
+    /// True when a fixture purchase has to outlive the process.
+    ///
+    /// Only the funnel needs it — "a purchase survives a relaunch" is one of its tests — and
+    /// letting it leak into `--ui-test` runs would carry one test's purchase into the next.
+    public var fixtureRemembersPurchases: Bool {
+        funnelPhase != nil && usesFixtureCommerce
     }
 
     /// What `MockEntitlementStore` reports under fixture commerce. Premium unless `--free`
