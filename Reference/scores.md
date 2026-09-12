@@ -29,7 +29,7 @@ are below the table and repeated in `thresholds.json`.
 | `onboarding-signin` | light | 0.0787 | 0.08 | pass | Apple button rebuilt: `.white` pill + our own capsule hairline, so the outline style's stray rules are gone. Was 0.0775 with the broken border. |
 | `onboarding-slide1` | light | 0.0952 | 0.12 | pass | real reader capture in the phone frame (was wireframe art) |
 | `onboarding-slide2` | light | 0.1245 | 0.13 | **accepted deviation** | plan cover artwork — see below |
-| `onboarding-slide3` | light | 0.0567 | 0.12 | pass | real Discover capture; 0.157 -> 0.057 |
+| `onboarding-slide3` | light | 0.0567 | 0.12 | pass | real Discover capture in the phone frame (was wireframe art) |
 | `onboarding-slide4` | light | 0.0705 | 0.12 | pass | real Verse Search capture |
 | `onboarding-reviews` | light | 0.0739 | 0.10 | pass | Continue pill now has a fade behind it; placeholder author handle no longer drawn |
 | `paywall-trial` | light | 0.0346 | 0.06 | pass | Phase 4e accepted deviation (72 pt mark clear of the island) — unchanged |
@@ -106,6 +106,7 @@ Both appearances, every screen. What was found and what was done:
 | Dynamic Type at XL | Walked `reader`, `discover`, `deepstudy` (top and bottom) and `home` at `extra-large`. No clipped or overlapping text. The Discover card's meaning and "Did you know?" previews truncate with an ellipsis, which is their line limit doing its job. |
 | Brand | Phase 4e's mark sizes and clearances were not touched. The mark reads correctly on `paywall-trial`, `paywall-plans`, both gift screens and the reader's logo card in both appearances. |
 | Tab bar bleed | The system material let the warm plan-cover artwork tint the Community/Discover corner by 11 sRGB steps in light appearance. `Color.tabBarBackground` existed as a token and was never applied; it is now, through both `View.opaqueTabBar()` and the appearance proxy iOS 26 actually honours. Measured flat afterwards. |
+| Layout specs | `Tools/verify.sh --ui` had 8 failures, every one a spec that had not caught up with a deliberate change: the 13 pt Arabic floor (commit `70aaf51`) moved `discover.card`, `discover.quote` and `discover.reference`; the same commit pinned `ToastHint` to its measured 214 pt, which `reader.hint` still recorded as 262.7; and Phase 4e moved `gift.offerCard` to y 162 so the envelope flap's peak shows. Re-recorded with a note each. Five were invisible until this task removed `ReaderTests`' `XCTSkip`. |
 | Widget placeholder icon | **Not fixed — needs `project.yml`.** See below. |
 
 ### Still open
