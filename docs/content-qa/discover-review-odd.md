@@ -107,3 +107,13 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 31:13-19 | 5 | The two interrupting ayat and the resumed vocative are exactly as described. | kept |
 | 31:27-28 | 5 | The 18:109 parallel with its smaller quantity is correct; "seven" read as indefinite, which is the classical reading. | kept |
 | 31:34 | 5 | `الغيث` verified as rare and tied to relief; two of the five items placed inside the reader's own life. | kept |
+| 33:21-22 | 5 | Model-not-rule reading is apt; 60:4 correctly shows the same word used of Abraham. | kept |
+| 33:23 | 5 | `نحبه` verified as a hapax, which is exactly why the three readings are reported side by side. | kept |
+| 33:35 | 5 | Ten pairs and one reward accurately described; occasion reported as the commentators broadly agree it. | kept |
+| 33:40-42 | 5 | The name Muhammad verified at four places (3:144, 33:40, 47:2, 48:29); both senses of "seal" held together. | kept |
+| 33:56 | 3 | `didYouKnow` put 33:43 "thirteen ayat later"; it is thirteen ayat earlier. "the Prophet" also used with no honorific. | rewritten |
+| 33:69-70 | 4 | Moses count (136) checks out and the vindication is well handled; "the Prophet" used with no honorific. | rewritten |
+| 33:72 | 5 | The shared root of trust and faith is right, and both classical readings of the closing words are given. | kept |
+| 35:1 | 4 | The five praise-opening surahs (1, 6, 18, 34, 35) are correctly listed; the clause about them sitting "in sequence" is muddled but not false. | kept |
+| 35:5 | 3 | `didYouKnow` called 31:33 "the previous surah" and "four ayat apart in the reading order"; neither is true of 31:33 and 35:5. | rewritten |
+| 35:15-17 | 5 | 35:16-17 verified as word for word identical with 14:19-20. | kept |
