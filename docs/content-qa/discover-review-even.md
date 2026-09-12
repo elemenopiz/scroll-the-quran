@@ -41,3 +41,23 @@ No shard was hand-edited.
 | 2:222 | 4 | Careful, non-legal and warm; `didYouKnow` says the "they ask you" formula occurs "around fifteen times" where the corpus has 13. Hedged. | kept |
 | 2:238-239 | 5 | Gives the range on the middle prayer without choosing; al-Tabari attribution is accurate. | kept |
 | 2:245 | 5 | "Good loan" phrase verified at exactly six occurrences (2:245, 5:12, 57:11, 57:18, 64:17, 73:20). | kept |
+| 2:249 | 5 | River-then-battle sorting is read straight from the text; "only place Saul and Goliath are named" is true of the Quran as a whole (2:246-251). | kept |
+| 2:255 | 5 | Reference exemplar. The footstool note records the classical range rather than choosing. | kept |
+| 2:256 | 5 | Occasion given with the variation in the reports acknowledged; no coercion claim stated without overreach. | kept |
+| 2:257 | 5 | Plural-darkness / singular-light asymmetry verified corpus-wide (no singular `ظلمة`, no plural of light anywhere). | kept |
+| 2:261-262 | 5 | Condition correctly located in the giver's conduct afterwards rather than in the amount; yield described as stretched, not invented. | kept |
+| 2:263 | 5 | Ranks a free act above a costly one and explains the ranking from the two closing divine names. | kept |
+| 2:270-271 | 5 | The `ك ف ر` / sower-covering-seed etymology is attested (cf. 57:20); refuses the simple rule that hidden giving always wins. | kept |
+| 2:274 | 3 | `didYouKnow` called this the fourth occurrence of the "no fear nor grief" refrain in the surah; it is the fifth (2:38 precedes 2:62, 2:112, 2:262), and 2:38 was missing from the list that follows. | rewritten |
+| 2:284 | 5 | The community's distress and the answer in the next two ayat are well attested; honorific used once. | kept |
+| 2:285-286 | 5 | Records both the Medinan and night-journey reports without forcing a choice. | kept |
+| 4:1 | 5 | Shared opening with 22:1 verified; "second longest surah" is the standard word-count measure. | kept |
+| 4:32 | 5 | Keeps the classical distinction between wanting the like of something and wanting it taken; 33:35's ten gendered pairs verified. | kept |
+| 4:36 | 5 | Nine categories counted correctly and read as widening rings; closing on arrogance is the text's own move. | kept |
+| 4:58 | 4 | Excellent; the aside linking the root of "trust" to the word said after a supplication is a commonly repeated etymology that the lexicographers actually dispute. Minor, kept. | kept |
+| 4:59 | 5 | The dropped verb before "those in authority" is a real grammatical point and is the load-bearing one in classical commentary. | kept |
+| 4:67-69 | 5 | Ties the four ranks to the path requested in the opening surah, which is mainstream; company-not-rank reading is well grounded. | kept |
+| 4:79-80 | 5 | Handles the causation/responsibility tension the way the major commentaries do, and says so. | kept |
+| 4:85-86 | 5 | Correctly narrows intercession to the everyday sense; the floor-and-ceiling reading of the greeting is exact. | kept |
+| 4:110-111 | 5 | "Finds" as a verb of discovery is a real lexical point; forgiveness and non-transferable responsibility held together without tension. | kept |
+| 4:135 | 5 | The 4:135 / 5:8 mirroring, with desire and hatred as the two different obstacles, is accurate and well used. | kept |
