@@ -112,12 +112,17 @@ reset_state() {
     fi
   fi
 
-  if [ -n "$group" ] && [ -d "$group" ]; then
+  if [ -d "${group:-}" ]; then
     find "$group" -mindepth 1 -maxdepth 1 ! -name '.com.apple.mobile_container_manager.metadata.plist' \
       -exec rm -rf {} + 2>/dev/null || true
     ok "cleared $APP_GROUP at $group"
   else
-    warn "no $APP_GROUP container to clear on $SIM (first run, or the device was erased)"
+    # Nothing left to clear, which on iOS 26 is the normal outcome: the uninstall above
+    # takes the group container with it (its UUID is different after every reinstall).
+    # The clearing branch stays for the OS versions where it does survive — that is what
+    # made ReaderTests order-dependent in the first place — and for a container left
+    # behind by a crashed run.
+    ok "$APP_GROUP container is gone (removed with the app)"
   fi
 }
 
