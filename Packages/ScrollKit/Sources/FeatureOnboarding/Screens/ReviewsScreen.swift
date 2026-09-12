@@ -62,6 +62,25 @@ struct ReviewsScreen: View {
                     action: onContinue
                 )
             }
+            // The cards scroll *under* the pill, and without this the third card's text
+            // read straight through the button's edges. The page's own ground, fading
+            // upward, so the pill sits on a clean band with no drawn edge.
+            .background(alignment: .bottom) {
+                LinearGradient(
+                    stops: [
+                        .init(color: Color.appBackground.opacity(0), location: 0),
+                        .init(color: Color.appBackground, location: 0.45),
+                        .init(color: Color.appBackground, location: 1),
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .frame(height: scale.height(OnboardingMetrics.ctaHeight + 96))
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .ignoresSafeArea(edges: .bottom)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+            }
         }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.onboarding-reviews")

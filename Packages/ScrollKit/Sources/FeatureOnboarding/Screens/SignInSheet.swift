@@ -21,6 +21,7 @@ struct SignInSheet: View {
     @Binding var isEditingEmail: Bool
 
     @Environment(\.openURL) private var openURL
+    @Environment(\.colorScheme) private var colorScheme
     @FocusState private var emailFocused: Bool
 
     private enum Gap {
@@ -133,10 +134,24 @@ struct SignInSheet: View {
             guard let credential = authorisation.credential as? ASAuthorizationAppleIDCredential else { return }
             onAppleSignIn(credential)
         }
-        .signInWithAppleButtonStyle(.whiteOutline)
+        // `.white`, not `.whiteOutline`. The outline style draws its border on a rounded
+        // *rectangle* at the button's own corner radius, and `.clipShape(Capsule())` then
+        // cut it into stray rules: two hairlines running the full width out of the
+        // capsule's top and bottom, plus a tick at each end. On the dark sheet the white
+        // fill hid them; on the white one they were all you could see of the button.
+        //
+        // So the button draws a plain white pill and the capsule border is ours, in light
+        // appearance only — Apple's guidance is a white button *with an outline* on a
+        // light ground, and on dark the white-on-`#1C1C1E` pill needs no help.
+        .signInWithAppleButtonStyle(.white)
         .frame(height: scale.height(OnboardingMetrics.sheetButtonHeight))
         .frame(maxWidth: .infinity)
         .clipShape(Capsule())
+        .overlay {
+            if colorScheme != .dark {
+                Capsule().strokeBorder(Color.divider, lineWidth: Stroke.hairline)
+            }
+        }
         .accessibilityIdentifier("onboarding.signin.apple")
     }
 }

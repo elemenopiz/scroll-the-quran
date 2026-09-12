@@ -62,10 +62,17 @@ struct ReviewCard: View {
                     .font(.body(scale.type(19)))
                     .foregroundStyle(Color.textPrimary)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(card.author)
-                    .font(.body(scale.type(16), weight: .semibold))
-                    .foregroundStyle(Color.textTertiary)
-                    .padding(.top, scale.height(Spacing.xs))
+                // A card flagged `placeholder` in Content/onboarding.json has no real
+                // reviewer behind it, so it gets no handle: the string in the file is the
+                // literal "Placeholder review", which was reaching the screen, and
+                // replacing it with an invented name would be worse. Inject real App
+                // Store reviews and the line comes back on its own.
+                if !card.placeholder, !card.author.isEmpty {
+                    Text(card.author)
+                        .font(.body(scale.type(16), weight: .semibold))
+                        .foregroundStyle(Color.textTertiary)
+                        .padding(.top, scale.height(Spacing.xs))
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, scale.width(Spacing.lg))
@@ -76,6 +83,12 @@ struct ReviewCard: View {
             RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.cardCornerRadius), style: .continuous)
         )
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(card.stars) out of 5 stars. \(card.title). \(card.body). \(card.author)")
+        .accessibilityLabel(accessibilityLabel)
+    }
+
+    private var accessibilityLabel: String {
+        let head = "\(card.stars) out of 5 stars. \(card.title). \(card.body)"
+        guard !card.placeholder, !card.author.isEmpty else { return head }
+        return "\(head). \(card.author)"
     }
 }

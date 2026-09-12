@@ -86,27 +86,85 @@ public enum Typography {
 // MARK: - Tab bar symbols
 
 public extension View {
-    /// Draws unselected tab icons as **outlines**, the way the reference tab bar does.
+    /// Draws a tab item's symbol as an **outline** when the tab is unselected and
+    /// **filled** when it is selected, the way the reference tab bar does
+    /// (`home-dark.png`: outline `person.3` and `book`, filled `house.fill`).
     ///
-    /// SwiftUI's tab bar applies `.fill` to every `tabItem` symbol in both states, so
-    /// `home-dark.png`'s outline `person.3` / `book` came out as `person.3.fill` /
-    /// `book.fill` — heavier, wider, and the wrong shape. Turning the automatic variant
-    /// off gives outlines everywhere; the selected tab then asks for its filled symbol
-    /// by name:
+    /// SwiftUI fills every `tabItem` symbol in both states on its own. The usual cure —
+    /// `.environment(\.symbolVariants, .none)` on the `TabView` — does not reach the bar
+    /// on iOS 26: the icons came back filled with the modifier in place. Applied to the
+    /// `Label` inside `tabItem` it does take, so this goes there:
     ///
     /// ```swift
-    /// TabView(selection: $selection) {
-    ///     …
-    ///     .tabItem { Label(tab.title, systemImage: tab.tabSymbol(selected: selection == tab)) }
+    /// .tabItem {
+    ///     Label(tab.title, systemImage: tab.tabSymbol(selected: isSelected))
+    ///         .tabSymbolVariant(selected: isSelected)
     /// }
-    /// .outlineTabSymbols()
     /// ```
     ///
-    /// Applied to the `TabView`, not to an individual item: the environment value has
-    /// to reach the tab bar itself. The caller supplies the filled name for the selected
-    /// tab, because not every symbol has a `.fill` variant (`sparkles` does not) and
-    /// `Image(systemName:)` draws nothing at all for a name that does not exist.
-    func outlineTabSymbols() -> some View {
-        environment(\.symbolVariants, .none)
+    /// Pair it with `AppTab.tabSymbol(selected:)`, which names the filled symbol
+    /// explicitly: variant resolution normalises the name, so the two agree, and a symbol
+    /// with no `.fill` (`sparkles`) is left alone by both.
+    func tabSymbolVariant(selected: Bool) -> some View {
+        environment(\.symbolVariants, selected ? .fill : .none)
     }
 }
+
+public extension View {
+    /// Pins the tab bar to a flat colour instead of the system material.
+    ///
+    /// The reference bar is a solid `#121214` (dark) / `#FFFFFF` (light). With the default
+    /// material the scrolling card stack showed through it as a pale panel across the
+    /// first two items. `.tabBar` does not exist on macOS, where this package also builds
+    /// for `swift test`, so the modifier is a no-op there.
+    func opaqueTabBar(_ color: Color = .tabBarBackground) -> some View {
+        #if os(iOS)
+            return toolbarBackground(color, for: .tabBar)
+                .modifier(VisibleTabBarBackground())
+        #else
+            return self
+        #endif
+    }
+}
+
+#if os(iOS)
+    /// `toolbarBackgroundVisibility(_:for:)` is iOS 18; the app deploys to 17, where the
+    /// same thing is spelled `toolbarBackground(_:for:)` with a visibility.
+    private struct VisibleTabBarBackground: ViewModifier {
+        func body(content: Content) -> some View {
+            if #available(iOS 18, *) {
+                content.toolbarBackgroundVisibility(.visible, for: .tabBar)
+            } else {
+                content.toolbarBackground(.visible, for: .tabBar)
+            }
+        }
+    }
+#endif
+
+#if os(iOS)
+    import UIKit
+
+    public extension DesignSystem {
+        /// Pins the tab bar to `Color.tabBarBackground` — the reference's flat `#121214` /
+        /// `#FFFFFF` — instead of the system material.
+        ///
+        /// `View.opaqueTabBar()` is the declarative way to ask for this and it is applied
+        /// too, but iOS 26 draws the bar through its own material regardless: measured on
+        /// `home` in light appearance, the warm plan-cover artwork scrolling behind the bar
+        /// tinted the Community and Discover corner by 11 sRGB steps. The appearance proxy
+        /// is the only thing the bar honours.
+        ///
+        /// Idempotent, so calling it from a view initialiser that re-runs costs nothing.
+        /// It has to run before UIKit builds the bar, which a `View.init` does and an
+        /// `onAppear` does not.
+        @MainActor
+        static func configureTabBarAppearance() {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor(Color.tabBarBackground)
+            appearance.shadowColor = UIColor(Color.divider)
+            UITabBar.appearance().standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
+    }
+#endif

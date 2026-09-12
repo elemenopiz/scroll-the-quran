@@ -109,6 +109,11 @@ public struct TabRoot: View {
         self.env = env
         self.route = route
         _model = State(initialValue: model ?? TabRootModel(selection: route?.tab ?? .home))
+        // Before UIKit builds the bar. See `DesignSystem.configureTabBarAppearance()`:
+        // the declarative `.opaqueTabBar()` below is not enough on iOS 26.
+        #if os(iOS)
+            DesignSystem.configureTabBarAppearance()
+        #endif
     }
 
     /// The Quran tab's model, owned by the environment so it survives — and is built by —
@@ -125,6 +130,7 @@ public struct TabRoot: View {
                         AppTab.community.title,
                         systemImage: AppTab.community.tabSymbol(selected: model.selection == .community)
                     )
+                        .tabSymbolVariant(selected: model.selection == .community)
                 }
                 .tag(AppTab.community)
 
@@ -140,6 +146,7 @@ public struct TabRoot: View {
                     AppTab.discover.title,
                     systemImage: AppTab.discover.tabSymbol(selected: model.selection == .discover)
                 )
+                    .tabSymbolVariant(selected: model.selection == .discover)
             }
             .tag(AppTab.discover)
 
@@ -149,6 +156,7 @@ public struct TabRoot: View {
                         AppTab.home.title,
                         systemImage: AppTab.home.tabSymbol(selected: model.selection == .home)
                     )
+                        .tabSymbolVariant(selected: model.selection == .home)
                 }
                 .tag(AppTab.home)
 
@@ -158,14 +166,15 @@ public struct TabRoot: View {
                         AppTab.quran.title,
                         systemImage: AppTab.quran.tabSymbol(selected: model.selection == .quran)
                     )
+                        .tabSymbolVariant(selected: model.selection == .quran)
                 }
                 .tag(AppTab.quran)
         }
         .tint(Color.textPrimary)
-        // Unselected tabs draw the outline symbol, as the reference does; the selected
-        // one asks for its filled name through `AppTab.tabSymbol(selected:)`. Without
-        // this the tab bar fills every icon in both states.
-        .outlineTabSymbols()
+        // The bar is the reference's flat `#121214` / `#FFFFFF`, not a material: with the
+        // system default, the card stack scrolling behind it washed a pale panel across
+        // the Community and Discover items.
+        .opaqueTabBar()
         .appStores(env, router: model)
         .fullCover(item: $model.deepStudyKey.identifiable) { key in
             deepStudy(key: key.value)
