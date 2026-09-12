@@ -95,6 +95,45 @@ struct ReadingPlanCatalogTests {
         #expect(PlanCoverArtwork.assetName(image: "PlanCover-lantern", planID: "x") == "PlanCover-lantern")
     }
 
+    /// `PlanCoverArtwork` is a hand-kept mirror of `ArtworkAsset.planCovers` (FeatureHome cannot
+    /// import AppShell), and the catalog it names is compiled into the app, not this package. So
+    /// the only thing that catches a slug that drifted out of the two is reading the catalog.
+    @Test("PlanCoverArtwork.slugs is exactly the set of PlanCover-* imagesets the app ships")
+    func slugsMirrorTheAssetCatalog() throws {
+        var url = URL(fileURLWithPath: #filePath)
+        var catalog: URL?
+        while url.pathComponents.count > 1, catalog == nil {
+            url.deleteLastPathComponent()
+            let candidate = url.appending(components: "App", "Assets.xcassets")
+            if FileManager.default.fileExists(atPath: candidate.path) { catalog = candidate }
+        }
+        let directory = try #require(catalog, "App/Assets.xcassets is not above this file")
+        let shipped = Set(
+            try FileManager.default.contentsOfDirectory(atPath: directory.path)
+                .filter { $0.hasPrefix("PlanCover-") && $0.hasSuffix(".imageset") }
+                .map { $0.dropFirst("PlanCover-".count).dropLast(".imageset".count) }
+                .map(String.init)
+        )
+        #expect(Set(PlanCoverArtwork.slugs) == shipped)
+        #expect(PlanCoverArtwork.slugs.count == Set(PlanCoverArtwork.slugs).count, "a slug is listed twice")
+    }
+
+    @Test("every plan names a cover slug, and the only unused cover is the spare")
+    func plansUseTheCoversAndNameTheSpare() throws {
+        let plans = try HomeTestContent.catalog().plans
+        let used = Set(plans.compactMap(\.image))
+        #expect(used.isSubset(of: Set(PlanCoverArtwork.slugs)))
+        // Phase 4k moved every plan onto the owner's renders; `prayer-beads` is the one cover
+        // left over. If another falls out of use, say so here rather than letting it rot.
+        #expect(Set(PlanCoverArtwork.slugs).subtracting(used) == ["prayer-beads"])
+        // The mirror table agrees with the file for every plan that carries an id it knows.
+        for plan in plans {
+            if let mapped = PlanCoverArtwork.slugByPlanID[plan.id] {
+                #expect(mapped == plan.image, "\(plan.id): plans.json says \(plan.image ?? "nil")")
+            }
+        }
+    }
+
     // MARK: The catalogue's shape
 
     @Test("Six shelves, eighteen plans, and the four that wear the START HERE ribbon")

@@ -55,7 +55,7 @@ public enum ArtworkAsset: String, CaseIterable, Sendable {
     /// Reusable dark overlay for charity cards (1200×600).
     case charityCardScrim = "CharityCardScrim"
 
-    // MARK: - Reading-plan covers (1200×800, no text baked in)
+    // MARK: - Reading-plan covers (1200×800 JPEG, no text baked in)
 
     case planCoverMushafPage = "PlanCover-mushaf-page"
     case planCoverPrayerBeads = "PlanCover-prayer-beads"
@@ -65,8 +65,18 @@ public enum ArtworkAsset: String, CaseIterable, Sendable {
     case planCoverInkWash = "PlanCover-ink-wash"
     case planCoverDesertDune = "PlanCover-desert-dune"
     case planCoverOliveBranch = "PlanCover-olive-branch"
+    case planCoverNightWindow = "PlanCover-night-window"
+    case planCoverCrescentSky = "PlanCover-crescent-sky"
+    case planCoverMorningDoorway = "PlanCover-morning-doorway"
+    case planCoverCaravanRoad = "PlanCover-caravan-road"
+    case planCoverWheatAndWell = "PlanCover-wheat-and-well"
+    case planCoverOpenHands = "PlanCover-open-hands"
+    case planCoverRainOnStone = "PlanCover-rain-on-stone"
+    case planCoverWritingBoard = "PlanCover-writing-board"
+    case planCoverStackedVolumes = "PlanCover-stacked-volumes"
+    case planCoverFirstPage = "PlanCover-first-page"
 
-    // MARK: - Charity card imagery (1200×600, abstract, no real organisations)
+    // MARK: - Charity card imagery (1200×600 JPEG, no real organisations, no faces)
 
     case charityGivingHands = "Charity-giving-hands"
     case charityHarvestWheat = "Charity-harvest-wheat"
@@ -90,7 +100,10 @@ public extension ArtworkAsset {
     static let planCovers: [ArtworkAsset] = [
         .planCoverMushafPage, .planCoverPrayerBeads, .planCoverGeometricTile,
         .planCoverDawnLight, .planCoverLantern, .planCoverInkWash,
-        .planCoverDesertDune, .planCoverOliveBranch,
+        .planCoverDesertDune, .planCoverOliveBranch, .planCoverNightWindow,
+        .planCoverCrescentSky, .planCoverMorningDoorway, .planCoverCaravanRoad,
+        .planCoverWheatAndWell, .planCoverOpenHands, .planCoverRainOnStone,
+        .planCoverWritingBoard, .planCoverStackedVolumes, .planCoverFirstPage,
     ]
 
     /// Every charity card image, in catalog order.
@@ -100,19 +113,31 @@ public extension ArtworkAsset {
 
     /// Plan id (`Content/plans.json` → `plans[].id`) → cover artwork.
     ///
-    /// `plans.json` carries no `image` field, so the plan's own id is the slug. The
-    /// artwork slugs (`mushaf-page`, `lantern`, …) are accepted too, so this keeps
-    /// working if the generator later emits an explicit `image`.
+    /// `plans.json` carries an `image` slug per plan, so the artwork slugs
+    /// (`mushaf-page`, `lantern`, …) are the live path; the plan ids below are the
+    /// fallback for a plan written before that field existed. Both tables mirror
+    /// `Tools/content-gen/plans/catalogue.mjs`.
     static let planCoverBySlug: [String: ArtworkAsset] = {
         var map: [String: ArtworkAsset] = [
             // Content/plans.json ids
-            "juz-a-day": .planCoverMushafPage,
+            "first-week": .planCoverFirstPage,
             "juz-amma": .planCoverLantern,
-            "al-kahf-fridays": .planCoverInkWash,
             "protection-verses": .planCoverGeometricTile,
+            "al-kahf-fridays": .planCoverInkWash,
+            "juz-a-day": .planCoverMushafPage,
+            "khatm-60": .planCoverStackedVolumes,
+            "ramadan-khatm": .planCoverCrescentSky,
+            "mulk-every-night": .planCoverNightWindow,
+            "baqarah-nights": .planCoverGeometricTile,
+            "three-quls-morning-evening": .planCoverMorningDoorway,
+            "prophets-in-the-quran": .planCoverCaravanRoad,
+            "surah-yusuf": .planCoverWheatAndWell,
             "patience": .planCoverDesertDune,
             "gratitude": .planCoverOliveBranch,
             "mercy": .planCoverDawnLight,
+            "tawbah": .planCoverRainOnStone,
+            "duas-of-the-quran": .planCoverOpenHands,
+            "short-surahs-40": .planCoverWritingBoard,
         ]
         // Artwork slugs, e.g. "prayer-beads" -> .planCoverPrayerBeads
         for cover in planCovers {

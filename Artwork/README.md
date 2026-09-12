@@ -6,14 +6,18 @@ and rendered by `tools/logo.sh` into the app icon, the bare marks and the reader
 card — so every mark surface in the app is provably the same artwork.
 **Everything else here was drawn or generated for this app** — hand-written SVG
 geometry rasterised with `librsvg`, procedural ImageMagick work (fractal noise,
-metaballs, motion blur, depth-of-field, grain, vignettes), and — for the gift
-screens only — **image-model renders made to the owner's own prompts**
-(`docs/design/gift-assets-prompts.md`), kept in `src/gift/` and cut into layers by
-`tools/gift-assets.sh`. The gift renders include the supplied logo, pressed into the
-wax seal, as the prompts asked. There are **no photographs, no traced or derived
-third-party artwork, no real-organisation logos, no faces, and no text baked into any
-image**. Reference screenshots in `Reference/` were used only to judge composition,
-tone and sizing.
+metaballs, motion blur, depth-of-field, grain, vignettes), and **image-model renders
+made to the owner's own prompts** (`docs/design/asset-prompts.md`,
+`docs/design/gift-assets-prompts.md`): the gift screens from `src/gift/`, cut into
+layers by `tools/gift-assets.sh`, and the reading-plan covers and charity cards from
+`src/covers/` and `src/charity/`, cut by `tools/covers-from-src.sh`. The gift renders
+include the supplied logo, pressed into the wax seal, as the prompts asked. The covers
+and cards are photographic in *style* but are renders, not photographs: there are **no
+stock or third-party photographs, no traced or derived third-party artwork, no
+real-organisation logos, no faces, and no text baked into any image**. Three frames show
+hands (`open-hands`, `giving-hands`, and the palms in `charity-giving-hands`); none show
+a face, and no one is identifiable. Reference screenshots in `Reference/` were used only
+to judge composition, tone and sizing.
 
 Licence for the generated files described below (excluding `Logo/Variants/`):
 **CC0 / public domain, original work** — free for
@@ -23,9 +27,12 @@ the app to use, modify and ship.
 
 ```bash
 brew install imagemagick librsvg     # magick 7 + rsvg-convert
-Artwork/tools/build.sh               # regenerates src/*.svg and every PNG
+Artwork/tools/build.sh               # regenerates src/*.svg and every raster
 Artwork/tools/build.sh --vector-gift # ... with the superseded procedural gift art
+Artwork/tools/build.sh --procedural  # ... with the superseded procedural covers/cards
 Artwork/tools/gift-assets.sh         # just the gift layers, from src/gift/
+Artwork/tools/covers-from-src.sh     # just the covers and cards, from src/{covers,charity}/
+Artwork/tools/scrim-contrast.sh      # would white type read over each cover? (see below)
 ```
 
 `gift-assets.sh` also needs python3 with `numpy`, `scipy` and `Pillow`, and prints the
@@ -43,8 +50,9 @@ runs. Vector-derived assets (app icon, logo mark, glyphs, phone frame,
 envelopes) *are* byte-identical on rebuild. Practically: only re-run `build.sh`
 when you actually intend to replace the committed PNGs, otherwise `git
 checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`) afterwards.
-`gift-assets.sh` is the exception: it only resamples and re-tones fixed inputs, so it
-*is* bit-reproducible.
+`gift-assets.sh` and `covers-from-src.sh` are the exceptions: they only resample and
+re-encode fixed inputs, so they *are* bit-reproducible — the covers, the cards and the
+two scrims come back byte-identical on a rebuild.
 
 | script | what it makes |
 | --- | --- |
@@ -55,7 +63,9 @@ checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`) afterwards.
 | `tools/envelope.py` | superseded vector gift envelope + wax seal (`build.sh --vector-gift`) |
 | `tools/clouds.py` | superseded procedural cloud sky (`build.sh --vector-gift`) |
 | `tools/frame.py` | the iPhone frame overlay |
-| `tools/covers.py` | 8 reading-plan covers, 3 charity cards, the scrims |
+| `tools/covers-from-src.sh` | **18 reading-plan covers and 3 charity cards, from `src/{covers,charity}/`, plus the two scrims** |
+| `tools/scrim-contrast.sh` | the white-type contrast check on every cover under its scrim |
+| `tools/covers.py` | superseded procedural covers, cards and scrims (`build.sh --procedural`) |
 | `tools/contact_sheet.py` | `contact-sheet.png` |
 
 ## The mark
@@ -194,34 +204,71 @@ it. `python3 Artwork/tools/frame.py` prints those constants on stderr —
 
 ### Reading-plan covers — `PlanCovers/`
 
-All 1200×800, no text baked in.
+All 1200×800 **JPEG, quality 88, 4:2:0, no alpha, no text baked in**, cut from the
+1536×1024 renders in `src/covers/` by `tools/covers-from-src.sh` (centre-crop to 3:2,
+sRGB, metadata stripped). 61–203 KB each against a 350 KB budget; the same frames as PNG
+were 1.5–2.5 MB, and the asset catalog takes either.
 
-| file | subject | how generated |
-| --- | --- | --- |
-| `plan-mushaf-page-1200x800.png` | macro of an open page | word-grouped cursive-looking strokes (shapes, never letterforms) + diacritic specks on a cream gradient, gutter shadow, depth-of-field mask keeping a sharp band across the middle |
-| `plan-prayer-beads-1200x800.png` | misbaha | two catenary strands of radial-gradient spheres, the rear strand blurred for depth, warm glow, heavy vignette |
-| `plan-geometric-tile-1200x800.png` | girih screen | lattice of {8/3} star polygons at 300 px pitch plus rotated squares, thin ink strokes, diagonal light wash |
-| `plan-dawn-light-1200x800.png` | dawn sky | five-stop sky gradient, radial sun glow, horizon haze, scattered soft cloud slivers, blur + grain |
-| `plan-lantern-1200x800.png` | pierced lantern | hexagonal lantern silhouette with 20 pierced eight-point stars, screen-composited bloom pass |
-| `plan-ink-wash-1200x800.png` | sumi-e wash | three tapered brush-stroke paths as the silhouette, a motion-blurred fractal-noise field as the dry-brush alpha, ink gradient on laid paper |
-| `plan-desert-dune-1200x800.png` | dunes | five layered dune curves with per-band gradients and crest highlights, low sun, grain |
-| `plan-olive-branch-1200x800.png` | olive branch | leaves placed along the tangent of a cubic Bézier stem, three depth layers (two blurred), on a warm neutral ground |
-| `plan-cover-scrim-1200x800.png` | — | reusable dark overlay: clear for the top ~45 %, ramping to ~80 % black at the bottom edge |
+**One size only.** The covers are drawn at four places, all of which crop rather than
+letterbox: the plans-grid tile (173.5 pt square → 520 px @3x, cropping 781 px out of the
+frame's width), the active-plan cover (133 pt), today's cover (125 pt → 563 px of the
+width) and the plan-detail hero (361 × ~185 pt → 1083 px wide). The hero alone needs
+1083 px, so 1200 px is the master; a 600×400 "card" variant was considered and dropped,
+because even the smallest tile would upscale it.
+
+| file | subject |
+| --- | --- |
+| `plan-caravan-road-1200x800.jpg` | a stony track winding down a desert ridge at sunrise |
+| `plan-crescent-sky-1200x800.jpg` | a thin crescent over a domed skyline, deep blue to amber |
+| `plan-dawn-light-1200x800.jpg` | a hazy valley town at first light, a minaret on the right |
+| `plan-desert-dune-1200x800.jpg` | one dune crest, raked light, pale sky |
+| `plan-first-page-1200x800.jpg` | an open mushaf on a rehal in a sunlit room, olive sprig and lantern behind |
+| `plan-geometric-tile-1200x800.jpg` | a blue-and-cream star-tile floor, close, in low light |
+| `plan-ink-wash-1200x800.jpg` | a reed pen and an inkpot on a plaster table |
+| `plan-lantern-1200x800.jpg` | a pierced brass lantern alight on a stone ledge |
+| `plan-morning-doorway-1200x800.jpg` | an open door onto a sunlit stone courtyard |
+| `plan-mushaf-page-1200x800.jpg` | an open mushaf on a rug, wall-light falling across the page |
+| `plan-night-window-1200x800.jpg` | an oil lamp and a closed book on a sill, shutters behind, night |
+| `plan-olive-branch-1200x800.jpg` | an olive sprig with two olives on pale stone |
+| `plan-open-hands-1200x800.jpg` | two upturned palms against dark cloth |
+| `plan-prayer-beads-1200x800.jpg` | a tasbih and its tassel on linen |
+| `plan-rain-on-stone-1200x800.jpg` | rain darkening a cracked stone slab |
+| `plan-stacked-volumes-1200x800.jpg` | a row of cloth book spines on a shelf, dim room |
+| `plan-wheat-and-well-1200x800.jpg` | sheaves leaning on a stone well, sunset behind |
+| `plan-writing-board-1200x800.jpg` | a wooden writing board and a pot on a table by a window |
+| `plan-cover-scrim-1200x800.png` | — reusable dark overlay (**PNG**, it is pure alpha): clear for the top ~45 %, ramping to ~80 % black at the bottom edge |
+
+`prayer-beads` is a **spare**: Phase 4k moved every one of the 18 plans onto a cover and
+nothing maps to it (`Tools/content-gen/plans/catalogue.mjs` holds the mapping,
+`ArtworkAsset.planCoverBySlug` and `PlanCoverArtwork.slugByPlanID` mirror it).
 
 Composite `plan-cover-scrim` over any cover (`.overlay`, normal blend) so white
 titles read; covers themselves are left clean so they can also be used
 full-bleed or with a custom gradient.
 
+**Contrast.** `tools/scrim-contrast.sh` composites each cover under its scrim, measures
+the mean relative luminance of the top 40 % — the band a title would sit in — and prints
+the contrast against white with a 4.5:1 pass/fail, plus the brightest cell of an 8×4 grid
+as a hotspot figure. It reports, it never repairs: a failure means a different render or
+a heavier scrim, and both are the owner's call. As shipped, 10 of the 21 frames clear
+4.5:1 in that band and 11 do not — which is expected, because the scrim is
+bottom-weighted (its alpha is still ~0 at 40 % down) and no white type is drawn over a
+cover anywhere in the app today: plan cards, the plan-detail hero and charity cards all
+set their labels on the card ground *below* the artwork, and the only thing over a cover
+is the black "START HERE" ribbon, which carries its own ground. The check is the guard
+for the day a title moves onto the image.
+
 ### Charity card imagery — `Charity/`
 
-All 1200×600, abstract, no real organisations, no faces.
+All 1200×600 **JPEG q88**, cut from the 1536×768 renders in `src/charity/` the same way.
+No real organisations, no logos, no faces.
 
-| file | subject | how generated |
-| --- | --- | --- |
-| `charity-giving-hands-1200x600.png` | two open palms cupping a light | constructed hand silhouettes (palm path + capsule fingers + thumb, mirrored and rotated inward), warm radial glow, rising motes, bloom pass |
-| `charity-harvest-wheat-1200x600.png` | wheat field | 32 procedurally built stalks (curved stem, tapered two-column grain heads with awns) in two depth layers |
-| `charity-clean-water-1200x600.png` | drop and ripples | eleven jittered ripple ellipses with paired light/dark strokes and a falling drop, over a cool gradient |
-| `charity-card-scrim-1200x600.png` | — | reusable dark overlay, same ramp as the plan scrim |
+| file | subject |
+| --- | --- |
+| `charity-giving-hands-1200x600.jpg` | one hand passing a loaf to another over dark cloth |
+| `charity-harvest-wheat-1200x600.jpg` | a wheat field at sunset |
+| `charity-clean-water-1200x600.jpg` | ripples spreading across still water |
+| `charity-card-scrim-1200x600.png` | — reusable dark overlay (**PNG**), same ramp as the plan scrim |
 
 ### Contact sheet
 
@@ -230,7 +277,9 @@ cloud sky, the frame over a stand-in screenshot, a cover with the scrim applied.
 
 ## Totals
 
-71 image files (PNG deliverables + SVG sources) and 9 generator scripts. The shipped
-PNGs are ~21 MB; `src/gift/`'s raw renders are another ~23 MB, and they are kept because
-they are the only copy of the input `tools/gift-assets.sh` cuts from. No single shipped
-file is over 2.5 MB — the heaviest is `Gift/envelope-closed-1200x900.png` at 2.1 MB.
+84 shipped files (67 rasters + 17 SVG sources) and 11 generator scripts. The shipped
+rasters are ~18 MB; the raw renders under `src/` are another ~61 MB (`src/gift/` 20 MB,
+`src/covers/` 37 MB, `src/charity/` 4 MB) and are kept because they are the only copy of
+what `gift-assets.sh` and `covers-from-src.sh` cut from. No single shipped file is over
+2.5 MB — the heaviest is `Gift/envelope-closed-1200x900.png` at 2.0 MB, and the heaviest
+cover is 203 KB.

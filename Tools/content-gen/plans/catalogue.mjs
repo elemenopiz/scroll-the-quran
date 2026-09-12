@@ -28,7 +28,7 @@ export const plans = [
         id: "first-week",
         title: "Your first week",
         subtitle: "Seven short readings",
-        image: "dawn-light",
+        image: "first-page",
         startHere: true,
         section: BEGINNERS,
         bestFor: "Day one, if you have never opened it",
@@ -114,7 +114,7 @@ export const plans = [
         id: "khatm-60",
         title: "A hizb a day",
         subtitle: "Half a juz every day",
-        image: "prayer-beads",
+        image: "stacked-volumes",
         section: THROUGH,
         bestFor: "Finishing the book without losing the week",
         about:
@@ -129,7 +129,7 @@ export const plans = [
         id: "ramadan-khatm",
         title: "A Ramadan reading",
         subtitle: "One juz a night",
-        image: "lantern",
+        image: "crescent-sky",
         section: THROUGH,
         bestFor: "Ramadan, or any month you want to give over",
         about:
@@ -147,7 +147,7 @@ export const plans = [
         id: "mulk-every-night",
         title: "Al-Mulk before sleep",
         subtitle: "Three ayat a night",
-        image: "lantern",
+        image: "night-window",
         section: SUNNAH,
         bestFor: "The last few minutes of the day",
         about:
@@ -179,7 +179,7 @@ export const plans = [
         id: "three-quls-morning-evening",
         title: "Morning and evening",
         subtitle: "The three short refuges",
-        image: "dawn-light",
+        image: "morning-doorway",
         section: SUNNAH,
         bestFor: "Bookending an ordinary day",
         about:
@@ -197,7 +197,7 @@ export const plans = [
         id: "prophets-in-the-quran",
         title: "The prophets",
         subtitle: "One prophet a day",
-        image: "desert-dune",
+        image: "caravan-road",
         section: PROPHETS,
         bestFor: "Readers who know the names but not the stories",
         about:
@@ -213,7 +213,7 @@ export const plans = [
         id: "surah-yusuf",
         title: "Surah Yusuf",
         subtitle: "One story, start to finish",
-        image: "ink-wash",
+        image: "wheat-and-well",
         section: PROPHETS,
         bestFor: "A week when you want a story, not fragments",
         about:
@@ -279,7 +279,7 @@ export const plans = [
         id: "tawbah",
         title: "Turning back",
         subtitle: "A week on repentance",
-        image: "olive-branch",
+        image: "rain-on-stone",
         section: THEME,
         bestFor: "After something you would rather undo",
         about:
@@ -295,7 +295,7 @@ export const plans = [
         id: "duas-of-the-quran",
         title: "Prayers in the Quran",
         subtitle: "Fourteen days of asking",
-        image: "prayer-beads",
+        image: "open-hands",
         section: THEME,
         bestFor: "Learning what to ask for",
         about:
@@ -313,7 +313,7 @@ export const plans = [
         id: "short-surahs-40",
         title: "Forty short surahs",
         subtitle: "Shortest first, one a day",
-        image: "mushaf-page",
+        image: "writing-board",
         section: MEMORISE,
         bestFor: "Starting to memorise",
         about:

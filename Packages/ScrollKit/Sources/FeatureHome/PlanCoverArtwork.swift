@@ -18,17 +18,32 @@ enum PlanCoverArtwork {
     static let slugs = [
         "mushaf-page", "prayer-beads", "geometric-tile", "dawn-light",
         "lantern", "ink-wash", "desert-dune", "olive-branch",
+        "night-window", "crescent-sky", "morning-doorway", "caravan-road",
+        "wheat-and-well", "open-hands", "rain-on-stone", "writing-board",
+        "stacked-volumes", "first-page",
     ]
 
-    /// Plan id → slug, for plans whose JSON has no `image`. Mirrors `ArtworkAsset.planCoverBySlug`.
+    /// Plan id → slug, for plans whose JSON has no `image`. Mirrors `ArtworkAsset.planCoverBySlug`
+    /// and the `image` field `Tools/content-gen/plans/catalogue.mjs` writes.
     static let slugByPlanID = [
-        "juz-a-day": "mushaf-page",
+        "first-week": "first-page",
         "juz-amma": "lantern",
-        "al-kahf-fridays": "ink-wash",
         "protection-verses": "geometric-tile",
+        "al-kahf-fridays": "ink-wash",
+        "juz-a-day": "mushaf-page",
+        "khatm-60": "stacked-volumes",
+        "ramadan-khatm": "crescent-sky",
+        "mulk-every-night": "night-window",
+        "baqarah-nights": "geometric-tile",
+        "three-quls-morning-evening": "morning-doorway",
+        "prophets-in-the-quran": "caravan-road",
+        "surah-yusuf": "wheat-and-well",
         "patience": "desert-dune",
         "gratitude": "olive-branch",
         "mercy": "dawn-light",
+        "tawbah": "rain-on-stone",
+        "duas-of-the-quran": "open-hands",
+        "short-surahs-40": "writing-board",
     ]
 
     /// The scrim overlaid on a cover so white type reads over the artwork.
