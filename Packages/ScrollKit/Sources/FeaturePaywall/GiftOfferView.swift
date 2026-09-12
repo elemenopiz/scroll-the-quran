@@ -125,6 +125,7 @@ public struct GiftOfferView: View {
             }
             .padding(.leading, 5)
             .padding(.top, PaywallMetrics.giftCloseTop)
+            .zIndex(1)
 
             OpenedEnvelope { offerCard }
 

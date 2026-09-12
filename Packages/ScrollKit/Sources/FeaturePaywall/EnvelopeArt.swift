@@ -34,6 +34,10 @@ enum GiftArt {
                 .frame(width: width, height: height)
                 .offset(x: origin.x, y: origin.y)
                 .accessibilityHidden(true)
+                // Decorative: the tall open-envelope layer's rectangle reaches up over the
+                // close button, and an Image hit-tests its whole frame, transparent pixels
+                // included. Without this the gift's close button cannot be tapped.
+                .allowsHitTesting(false)
         }
     }
 }
