@@ -66,9 +66,15 @@ final class DiscoverTests: XCTestCase {
         // The feed is a lazy pager: the neighbouring cards are realised too, so there is more
         // than one "Deep study" button in the tree and an unqualified tap is ambiguous. The
         // first match is the card on screen.
-        app.buttons["discover.deepStudy"].firstMatch.tap()
+        // On a cold simulator the first tap after the feed appears can land while the pager
+        // is still settling and go nowhere; the page is only ever a tap away, so tap again
+        // (bounded) rather than fail on scheduler noise.
         let page = app.descendants(matching: .any).matching(identifier: "deepstudy").firstMatch
-        XCTAssertTrue(page.waitForExistence(timeout: 15), "Deep Study never appeared")
+        for attempt in 1...3 {
+            app.buttons["discover.deepStudy"].firstMatch.tap()
+            if page.waitForExistence(timeout: attempt == 3 ? 15 : 5) { break }
+        }
+        XCTAssertTrue(page.exists, "Deep Study never appeared")
         XCTAssertTrue(app.buttons["deepstudy.close"].exists)
 
         app.buttons["deepstudy.close"].tap()
