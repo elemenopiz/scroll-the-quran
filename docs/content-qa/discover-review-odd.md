@@ -137,3 +137,23 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 49:10 | 4 | The dual "your two brothers" is the point of the ayah and is well made; "the Prophet" lacked the honorific. | rewritten |
 | 49:11-13 | 5 | `شعوبا` verified as a hapax; backbiting defined by absence rather than by falsehood, which is the classical definition. | kept |
 | 51:11-15 | 5 | Four oaths in four ayat with the answer at the fifth is correct; the demand for a date refused rather than answered. | kept |
+| 51:16-20 | 5 | Righteousness described entirely by what is unwitnessed; the share in wealth correctly called a right, not charity. | kept |
+| 51:21-25 | 4 | Abraham's guests are told at least three times as stated, but "one records… another…" reads as two surahs when both details sit in surah 11. | kept |
+| 51:52-56 | 5 | 51:57 does immediately deny that God wants provision; speaking separated from responsibility for the result. | kept |
+| 53:38-42 | 5 | The burden clause verified at exactly five places (6:164, 17:15, 35:18, 39:7, 53:38). | kept |
+| 55:1-13 | 4 | The refrain is 31 occurrences in all and 55:13 is the first; "returns thirty-one times before the surah ends" reads as thirty-one more. | rewritten |
+| 55:24-28 | 5 | `ذو الجلال والإكرام` verified at 55:27 and 55:78 and nowhere else; the surah is framed by names, as claimed. | kept |
+| 55:59-63 | 5 | The refrain placement point is right, and the classical broadening of the goodness clause is reported, not invented. | kept |
+| 57:4 | 5 | The four names at 57:3 occur nowhere else; transcendence and nearness both kept, as the tradition does. | kept |
+| 57:16 | 5 | The four-years report is in the early collections and is given as a report. | kept |
+| 57:20-21 | 4 | `الكفار` read agriculturally, which is the classical reading; the width fact overlaps with 3:133-134's note in this same set. | kept |
+| 57:23-24 | 5 | The five surahs opening with the declaration of glorifying (57, 59, 61, 62, 64) check out. | kept |
+| 59:9 | 5 | The closing clause verified as identical at 64:16; greed located in the soul rather than in the circumstance. | kept |
+| 59:17-18 | 5 | The doubled command inside one ayah is real, and the surah does close on a run of names. | kept |
+| 59:19-20 | 5 | The 9:67 contrast (He forgot them / they forgot themselves) is exactly the point the commentators make. | kept |
+| 59:21 | 5 | The 33:72 pairing is apt; the inference about the reader is left implicit rather than preached. | kept |
+| 59:22-24 | 5 | Densest cluster of names in the Quran, with several unique to 59:23; order of knowledge, sovereignty, making is correct. | kept |
+| 61:1-4 | 5 | `مرصوص` verified as a hapax; the failure named is the gap between word and act, not cowardice. | kept |
+| 61:9-10 | 5 | The refrain ayah verified at three places (9:33, 48:28, 61:9). | kept |
+| 63:9 | 5 | The three treatments of wealth-and-children (18:46, 8:28, 63:9) are all real and correctly characterised. | kept |
+| 65:2-3 | 5 | Legal-content surah handled descriptively with no ruling; the companion's remark given as a report. | kept |
