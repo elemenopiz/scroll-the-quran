@@ -10,7 +10,26 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const surahs = JSON.parse(await readFile(join(ROOT, "Content", "quran", "surahs.json"), "utf8"));
-const xml = await readFile(join(ROOT, "Tools", "content-gen", "work", "quran-data.xml"), "utf8");
+// fetch-inputs.mjs caches the file under work/quran/; this script was written
+// against work/. Both are gitignored, so accept either rather than fail on a
+// layout difference no checkout can see.
+const xmlCandidates = [
+    join(ROOT, "Tools", "content-gen", "work", "quran", "quran-data.xml"),
+    join(ROOT, "Tools", "content-gen", "work", "quran-data.xml"),
+];
+let xml = null;
+for (const candidate of xmlCandidates) {
+    try {
+        xml = await readFile(candidate, "utf8");
+        break;
+    } catch { /* try the next location */ }
+}
+if (xml === null) {
+    throw new Error(
+        `No Tanzil quran-data.xml. Looked in:\n  ${xmlCandidates.join("\n  ")}\n` +
+            "Run: node Tools/content-gen/fetch-inputs.mjs",
+    );
+}
 
 const juzStarts = [...xml.matchAll(/<juz\s+([^/>]+)\/>/g)].map((m) => {
     const a = Object.fromEntries([...m[1].matchAll(/(\w+)="([^"]*)"/g)].map((x) => [x[1], x[2]]));
@@ -106,6 +125,8 @@ const plans = [
         id: "juz-a-day",
         title: "The whole Quran in 30 days",
         subtitle: "One juz every day",
+        image: "mushaf-page",
+        startHere: true,
         section: "Read it through",
         bestFor: "Ramadan, or anyone who wants the whole book once",
         lengthDays: 30,
@@ -117,7 +138,9 @@ const plans = [
         id: "juz-amma",
         title: "Juz Amma",
         subtitle: "The last thirtieth, one surah a day",
-        section: "Read it through",
+        image: "lantern",
+        startHere: true,
+        section: "Recommended for beginners",
         bestFor: "Short sittings and the surahs you hear most in prayer",
         lengthDays: juzAmma.length,
         dailyMinutes: 8,
@@ -128,7 +151,8 @@ const plans = [
         id: "al-kahf-fridays",
         title: "Al-Kahf on Fridays",
         subtitle: "The Cave, in four sittings",
-        section: "Weekly rhythm",
+        image: "ink-wash",
+        section: "Recommended for beginners",
         bestFor: "Keeping the Friday habit",
         lengthDays: 4,
         dailyMinutes: 15,
@@ -139,7 +163,8 @@ const plans = [
         id: "protection-verses",
         title: "Ayat al-Kursi and the close of Al-Baqarah",
         subtitle: "The verses recited for protection",
-        section: "Weekly rhythm",
+        image: "geometric-tile",
+        section: "Recommended for beginners",
         bestFor: "Before sleep, and after prayer",
         lengthDays: 7,
         dailyMinutes: 6,
@@ -150,7 +175,8 @@ const plans = [
         id: "patience",
         title: "Patience",
         subtitle: "Sabr, a week at a time",
-        section: "By theme",
+        image: "desert-dune",
+        section: "Recommended for beginners",
         bestFor: "A hard stretch",
         lengthDays: 7,
         dailyMinutes: 10,
@@ -161,6 +187,7 @@ const plans = [
         id: "gratitude",
         title: "Gratitude",
         subtitle: "Shukr, a week at a time",
+        image: "olive-branch",
         section: "By theme",
         bestFor: "Resetting how the day feels",
         lengthDays: 7,
@@ -172,6 +199,7 @@ const plans = [
         id: "mercy",
         title: "Mercy",
         subtitle: "Rahmah, a week at a time",
+        image: "dawn-light",
         section: "By theme",
         bestFor: "When you need the door open",
         lengthDays: 7,
@@ -181,15 +209,49 @@ const plans = [
     },
 ];
 
-const sections = ["Read it through", "Weekly rhythm", "By theme"];
+// Sections carry their own copy and their own order: the beginner shelf is
+// sequenced by how easy a plan is to start, not by the order the plans are
+// defined in above. Every plan's `section` must name one of these titles, and
+// every id listed here must exist — both are asserted below.
+const sections = [
+    {
+        title: "Recommended for beginners",
+        eyebrow: "For new readers",
+        blurb: "Never opened the Quran before, or not sure where to start? Any of these works on its own — short, in order, and no prior reading needed.",
+        planIDs: ["al-kahf-fridays", "patience", "juz-amma", "protection-verses"],
+    },
+    {
+        title: "Read it through",
+        eyebrow: "Start to finish",
+        blurb: "The whole mushaf, in the order it is written, at the pace Muslims have read it for centuries.",
+        planIDs: ["juz-a-day"],
+    },
+    {
+        title: "By theme",
+        eyebrow: "One idea at a time",
+        blurb: "A week with a single theme, followed through the Quran verse by verse.",
+        planIDs: ["gratitude", "mercy"],
+    },
+];
+
+const planIDs = new Set(plans.map((p) => p.id));
+const listed = new Set(sections.flatMap((s) => s.planIDs));
+for (const s of sections) {
+    for (const id of s.planIDs) {
+        if (!planIDs.has(id)) throw new Error(`section "${s.title}" lists unknown plan "${id}"`);
+    }
+}
+for (const p of plans) {
+    if (!listed.has(p.id)) throw new Error(`plan "${p.id}" is in no section`);
+    if (!sections.some((s) => s.title === p.section)) {
+        throw new Error(`plan "${p.id}" names section "${p.section}", which does not exist`);
+    }
+}
 
 const out = {
     version: 1,
     generatedBy: "Tools/content-gen/build-plans.mjs",
-    sections: sections.map((title) => ({
-        title,
-        planIDs: plans.filter((p) => p.section === title).map((p) => p.id),
-    })),
+    sections,
     plans,
 };
 
