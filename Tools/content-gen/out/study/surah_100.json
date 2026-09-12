@@ -1,8 +1,66 @@
 {
   "surah": 100,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.236Z",
+  "generatedAt": "2026-09-12T09:47:53.443Z",
   "studies": [
+    {
+      "key": "100:1-5",
+      "surah": 100,
+      "start": 1,
+      "end": 5,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Sparks Struck At Dawn",
+      "tier": "standard",
+      "meaning": "Five lines of pure motion, and not one of them names a rider. Each closes on a verbal noun of manner, so the Arabic gives the action and then the way it is done: running, and the sound of breath; striking, and the spark; arriving, and the hour of it. Commentators differ over what is being sworn by. Most read war horses at a dawn raid, and a well-known early reading takes them as the mounts of pilgrims moving at speed. The two readings disagree about the animals and agree about the pace.",
+      "historicalContext": "Meccan by the majority of the classical sources. Horses were expensive and comparatively uncommon in Mecca, kept for raiding rather than for work, and the dawn attack was the standard form: ride through the night, strike as the light comes up, be gone before any defence can be organised. The sources record no occasion for the surah and spend their discussion on what the oaths refer to.",
+      "keyTerms": [
+        {
+          "arabic": "ضَبْحًا",
+          "gloss": "with panting breath",
+          "note": "A word for the sound a horse makes breathing hard at speed, and it occurs only here in the Quran. It is a noise rather than a movement, so the oath opens with something heard before anything is seen."
+        },
+        {
+          "arabic": "قَدْحًا",
+          "gloss": "with striking sparks",
+          "note": "The verbal noun for striking a flint to draw fire. Applied to hooves on stone it supplies the only thing visible in the dark, which is why the daylight in the next line lands as a change of scene."
+        },
+        {
+          "arabic": "نَقْعًا",
+          "gloss": "a cloud of dust",
+          "note": "From a root of something raised and left hanging in the air. It occurs only here, and it marks the moment the raid becomes visible at a distance to the people who are about to be hit."
+        }
+      ],
+      "lifeInProphetsTime": "A raid was an economic instrument rather than a battle. Riders covered ground at night, struck a camp at first light while the herds were still gathered and people were asleep, drove the animals off and left. Hearing hooves before dawn meant a family's entire wealth was walking away from them. Nobody in the audience needed the scene explained, and many had stood on one side of it or the other.",
+      "didYouKnow": "The first five lines each end in a verbal noun in the same grammatical case, and three of those five words occur nowhere else in the Quran. That is an unusually dense run of rare vocabulary for so short a passage, which is one reason the classical lexicographers discuss this opening at such length before any commentary on its meaning begins.",
+      "theologicalSignificance": "The oath is sworn on the audience's own image of excellence. Speed, nerve, coordinated force and animals bred for exactly this were what that society admired most and organised itself around, and the passage takes all of it as a witness before turning the argument against the people who prized it. The effort that gets the sympathy in these five lines belongs to the animals, and the riders are not described at all.",
+      "crossReferences": [
+        {
+          "ref": "16:8",
+          "why": "Names horses among what was made for people to ride and as an adornment, from the same created order."
+        },
+        {
+          "ref": "79:1-5",
+          "why": "Opens another surah with a series of oaths on pure motion whose referent the commentators also dispute."
+        },
+        {
+          "ref": "38:31-33",
+          "why": "Shows Solomon with horses at evening, another passage where the animals and their speed carry the scene."
+        }
+      ],
+      "applyIt": "Tomorrow morning, before you look at anything, listen for one minute and count what you can identify by sound alone. Traffic, a bird, a door, someone else's routine. The surah begins with a noise in the dark and only reaches daylight three lines later, which is roughly the order in which a day actually arrives.",
+      "exploreFurther": [
+        "79:1-9",
+        "16:5-8",
+        "100:6-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.284Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "100:6-10",
       "surah": 100,
