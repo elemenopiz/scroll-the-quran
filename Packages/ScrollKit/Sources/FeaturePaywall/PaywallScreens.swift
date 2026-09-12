@@ -27,6 +27,7 @@ public enum PaywallScreens {
         forScreenID id: String,
         store: any EntitlementProviding,
         offers: any OneTimeOfferStoring,
+        links: PaywallLegalLinks = .default,
         onDismiss: @escaping () -> Void,
         onPurchased: @escaping () -> Void
     ) -> some View {
@@ -35,6 +36,7 @@ public enum PaywallScreens {
                 store: store,
                 offers: offers,
                 stage: stage,
+                links: links,
                 onDismiss: onDismiss,
                 onPurchased: onPurchased
             )

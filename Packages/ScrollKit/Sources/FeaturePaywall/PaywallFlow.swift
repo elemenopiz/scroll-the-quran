@@ -184,7 +184,11 @@ public struct PaywallFlow: View {
                     if await model.restore() {
                         onPurchased()
                     }
-                } }
+                } },
+                // Injected rather than defaulted, so the composition root owns the real URLs
+                // and App Review's live-link requirement (3.1.2(a)) is satisfied by
+                // construction rather than by whatever this view happened to hard-code.
+                links: links
             )
             // The half sheet takes over: the paywall behind it must not stay in the
             // accessibility tree, or VoiceOver walks straight into unreachable buttons.

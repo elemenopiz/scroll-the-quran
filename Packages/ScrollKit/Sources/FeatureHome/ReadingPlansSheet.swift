@@ -15,6 +15,8 @@ public struct ReadingPlansSheet: View {
     private let surahs: SurahIndex?
     private let today: Date
     private let navigation: (any HomeNavigation)?
+    private let premium: HomePremiumStatus
+    private let requestPremium: HomePremiumRequest
 
     @State private var detail: ReadingPlan?
 
@@ -24,13 +26,17 @@ public struct ReadingPlansSheet: View {
         surahs: SurahIndex? = nil,
         today: Date = Date(),
         navigation: (any HomeNavigation)? = nil,
-        initialDetail: ReadingPlan? = nil
+        initialDetail: ReadingPlan? = nil,
+        premium: HomePremiumStatus = .unlocked,
+        requestPremium: HomePremiumRequest = HomePremiumRequest()
     ) {
         self.catalog = catalog
         self.store = store
         self.surahs = surahs
         self.today = today
         self.navigation = navigation
+        self.premium = premium
+        self.requestPremium = requestPremium
         _detail = State(initialValue: initialDetail)
     }
 
@@ -60,7 +66,9 @@ public struct ReadingPlansSheet: View {
                 store: store,
                 surahs: surahs,
                 today: today,
-                navigation: navigation
+                navigation: navigation,
+                premium: premium,
+                requestPremium: requestPremium
             )
         }
     }

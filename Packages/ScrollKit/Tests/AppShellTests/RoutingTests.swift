@@ -128,6 +128,30 @@ func screenshotRunsUseFixtureCommerce() {
     #expect(options.isSnapshotRun)
 }
 
+@Test("A funnel run takes the store it is told to take, and only that run remembers purchases")
+func funnelRunsChooseTheirCommerceStore() {
+    // `--funnel` alone means the real thing: the tests that run from Xcode against the
+    // scheme's StoreKit configuration must not be handed a fixture behind their back.
+    let live = LaunchOptions(arguments: ["ScrollTheQuran", "--funnel", "paywall"], environment: [:])
+    #expect(live.funnelPhase == .paywall)
+    #expect(!live.usesFixtureCommerce)
+    #expect(!live.fixtureRemembersPurchases)
+
+    // Saying what the store reports can only be answered by the fixture, and a purchase made
+    // there has to outlive the process or "buy, relaunch, still unlocked" asserts nothing.
+    let fixture = LaunchOptions(arguments: ["ScrollTheQuran", "--funnel", "paywall", "--free"], environment: [:])
+    #expect(fixture.usesFixtureCommerce)
+    #expect(!fixture.fixtureIsPremium)
+    #expect(fixture.fixtureRemembersPurchases)
+    #expect(!fixture.startsOnTabs)
+
+    // Outside the funnel nothing is remembered: one UI test's purchase must not unlock the
+    // next one's free tier.
+    let uiTest = LaunchOptions(arguments: ["ScrollTheQuran", "--ui-test", "--free"], environment: [:])
+    #expect(uiTest.usesFixtureCommerce)
+    #expect(!uiTest.fixtureRemembersPurchases)
+}
+
 @MainActor
 @Test("openDeepStudy(key:) parks the unit key, the passage and the Discover tab")
 func routerOpensDeepStudyByKey() {

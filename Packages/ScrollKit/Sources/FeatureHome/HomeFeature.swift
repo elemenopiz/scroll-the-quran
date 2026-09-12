@@ -41,6 +41,10 @@ public struct HomeEnvironment {
     public let navigation: (any HomeNavigation)?
     public let today: Date
     public let restorePurchases: (() async -> Void)?
+    /// What is unlocked, and whether a payment is failing.
+    public let premium: HomePremiumStatus
+    /// How Home asks for the paywall. Inert when nothing is listening.
+    public let requestPremium: HomePremiumRequest
 
     public init(
         store: UserStore,
@@ -49,7 +53,9 @@ public struct HomeEnvironment {
         plans: ReadingPlanCatalog = ReadingPlanCatalog(),
         navigation: (any HomeNavigation)? = nil,
         today: Date = Date(),
-        restorePurchases: (() async -> Void)? = nil
+        restorePurchases: (() async -> Void)? = nil,
+        premium: HomePremiumStatus = .unlocked,
+        requestPremium: HomePremiumRequest = HomePremiumRequest()
     ) {
         self.store = store
         self.surahs = surahs
@@ -58,6 +64,8 @@ public struct HomeEnvironment {
         self.navigation = navigation
         self.today = today
         self.restorePurchases = restorePurchases
+        self.premium = premium
+        self.requestPremium = requestPremium
     }
 }
 
@@ -79,7 +87,9 @@ public enum HomeFeature {
             today: environment.today,
             initialScroll: scroll,
             initialSheet: sheet,
-            restorePurchases: environment.restorePurchases
+            restorePurchases: environment.restorePurchases,
+            premium: environment.premium,
+            requestPremium: environment.requestPremium
         )
     }
 
@@ -99,7 +109,12 @@ public enum HomeFeature {
         case .planDetail:
             tab(environment, scroll: .top, sheet: .planDetail)
         case .verseSearch:
-            VerseSearchView(surahs: environment.surahs, navigation: environment.navigation)
+            VerseSearchView(
+                surahs: environment.surahs,
+                navigation: environment.navigation,
+                premium: environment.premium,
+                requestPremium: environment.requestPremium
+            )
         case .library:
             tab(environment, scroll: .top, sheet: .library)
         case .settings:

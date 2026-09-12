@@ -33,6 +33,10 @@ public protocol EntitlementProviding: AnyObject {
     /// False once the customer has already used the introductory offer for this group,
     /// which is what turns "Redeem 7 days for $0.00" into a plain price.
     var introOfferEligible: Bool { get }
+    /// The subscription group's renewal state, which `isPremium` cannot express: a customer
+    /// in the grace period is entitled *and* in trouble, one in billing retry is neither.
+    /// It has a default, so a stand-in store only implements it when billing is the point.
+    var billingState: BillingState { get }
 
     /// Fetches the catalogue and the current entitlements. Safe to call repeatedly.
     func load() async
@@ -44,6 +48,17 @@ public extension EntitlementProviding {
     /// The plan for an id, if the catalogue has it.
     func plan(_ id: ProductID) -> StorePlan? {
         products.first { $0.id == id }
+    }
+
+    /// Stores that do not talk to `Product.SubscriptionInfo` only know the two states
+    /// `isPremium` can express.
+    var billingState: BillingState {
+        isPremium ? .subscribed : .notSubscribed
+    }
+
+    /// True when Settings should raise the "update your payment method" banner.
+    var needsPaymentUpdate: Bool {
+        billingState.needsPaymentUpdate
     }
 }
 
