@@ -1,8 +1,66 @@
 {
   "surah": 91,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:34:45.791Z",
+  "generatedAt": "2026-09-12T09:38:58.147Z",
   "studies": [
+    {
+      "key": "91:1-5",
+      "surah": 91,
+      "start": 1,
+      "end": 5,
+      "theme": "Night and Day",
+      "themeId": "night-and-day",
+      "title": "What The Day Reveals",
+      "tier": "standard",
+      "meaning": "Five oaths, and every one of them ends on a pronoun pointing back at something. The sun and its morning light, the moon when it follows it, the day when it displays it, the night when it covers it, and the sky along with what built it. Commentators differ over what several of the pronouns attach to, whether to the sun throughout or to the earth in places, and the sources keep the options open. What does not vary is the shape: each pair sets one thing that uncovers against one thing that hides.",
+      "historicalContext": "Early Meccan. The audience navigated, traded, farmed and settled debts by watching the sky, so an oath sworn on the moon following the sun named the mechanism their whole calendar rested on. Classical sources record no occasion of revelation for the surah. They note instead how long the chapter delays before it states anything at all, so that the withholding becomes part of the structure.",
+      "keyTerms": [
+        {
+          "arabic": "وَضُحَىٰهَا",
+          "gloss": "and its morning brightness",
+          "note": "The word names mid-morning specifically, when the sun is well clear of the horizon and the light is full but not yet overhead. The oath is therefore on the sun together with one particular hour of it."
+        },
+        {
+          "arabic": "جَلَّىٰهَا",
+          "gloss": "displays it, makes it plain",
+          "note": "A verb of polishing something until it shows, used of burnishing a blade until the surface reflects. Daylight is described as uncovering what was already there rather than as adding anything to it."
+        },
+        {
+          "arabic": "يَغْشَىٰهَا",
+          "gloss": "covers it, envelops it",
+          "note": "From the root behind the name of a day that covers everything over. Applied to the night it makes darkness an act performed rather than a light that has merely gone."
+        }
+      ],
+      "lifeInProphetsTime": "Almost every practical arrangement ran off the sky. A loan fell due at the sighting of a new moon, and a disputed sighting was a real quarrel. Summer journeys were made by night and rested through the middle of the day. Markets opened in the mid-morning hour this surah swears by, and disputes were heard then, before the heat made a gathering unbearable. The calendar was not consulted; it was watched.",
+      "didYouKnow": "Every one of the fifteen ayat in this surah ends with the same feminine pronoun attached to the last word, so the chapter closes on an identical sound fifteen times. That is what makes the pronouns difficult to pin down: the rhyme requires them, and they do not all have to refer to the same thing.",
+      "theologicalSignificance": "Creation is presented as a system of alternating disclosure. Nothing in the first four oaths is new or rare; they are the ordinary machinery of a day, arranged so that showing and hiding trade places on a fixed cycle. The fifth oath then changes category, swearing by the sky together with whatever built it, which slips an agent into a list of objects just before the chapter turns inward toward the soul.",
+      "crossReferences": [
+        {
+          "ref": "92:1-2",
+          "why": "Opens another surah with the same pair, the night when it covers and the day when it appears."
+        },
+        {
+          "ref": "10:5",
+          "why": "Explains the arrangement the oaths assume, the sun and moon set with measured phases for reckoning time."
+        },
+        {
+          "ref": "36:37-40",
+          "why": "Extends the same pairing into orbits and mansions, with the night stripped away from the day."
+        }
+      ],
+      "applyIt": "Watch one nightfall this week from the same spot, from full light to the point where you can no longer make out colours. It takes about half an hour. The surah swears by that transition twice, in two directions, and it is difficult to see why until you have sat through the whole of one without looking at a screen.",
+      "exploreFurther": [
+        "92:1-4",
+        "10:5-6",
+        "36:37-40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:38:57.955Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "91:6-10",
       "surah": 91,
@@ -58,6 +116,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:34:38.073Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "91:11-15",
+      "surah": 91,
+      "start": 11,
+      "end": 15,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "One Man, A Whole People",
+      "tier": "standard",
+      "meaning": "Thamud is said to have denied by way of its own excess, so the refusal is traced to a disposition and not to an argument anybody made. Then one man is raised up from among them, identified only as the most wretched of them, and the messenger's entire warning is compressed into three words: God's camel, and her drink. The commentators face the obvious difficulty, that the act is done by an individual and the consequence falls on everyone, and they answer from the wording itself, which says the man was sent out by the people rather than acting alone.",
+      "historicalContext": "Meccan. The ruins of Thamud stood on the caravan road north, so the audience needed no introduction to the story and the Quran gives none, not even the messenger's name. The classical sources treat this people as the standing Arabian example of a warning ignored, precisely because the evidence had not disappeared. Of all the Quran's tellings of the episode, this is the most compressed.",
+      "keyTerms": [
+        {
+          "arabic": "بِطَغْوَىٰهَآ",
+          "gloss": "through its overstepping",
+          "note": "A noun built from the root of water breaking its banks, shaped here to fit the surah's rhyme. Denial is presented as something that followed from an existing excess rather than a conclusion anyone reasoned their way to."
+        },
+        {
+          "arabic": "فَعَقَرُوهَا",
+          "gloss": "so they hamstrung her",
+          "note": "The verb names cutting an animal's leg tendons to bring it down, a specific and deliberate act. It is put in the plural although the accounts describe one man striking, which is why the sharing of guilt is discussed."
+        },
+        {
+          "arabic": "فَدَمْدَمَ",
+          "gloss": "so He crushed them down",
+          "note": "A doubled root meaning to press something flat and cover it over. The word occurs only here in the Quran, and its repeated syllables sound like the action they describe."
+        }
+      ],
+      "lifeInProphetsTime": "A she-camel in milk was a household's water supply through a dry season, worth more alive than any price. Shared access to a well was the kind of arrangement that held a settlement together, and a rota for watering was enforced by nothing but agreement. Hamstringing an animal was a known act of spite in feuds: it destroyed the value without taking the property, and everyone hearing this knew exactly what kind of act it was.",
+      "didYouKnow": "The phrase naming the she-camel as God's occurs three times in the Quran, in three different surahs, and this is by far the shortest of the three. In the other two the messenger explains at length what the animal is for and what will happen; here the whole warning is a few words with no explanation attached to them at all.",
+      "theologicalSignificance": "An individual act is placed inside a collective verdict without either being softened. The people are liable because the man came out from among them, which makes consent a form of participation rather than a lesser thing beside it. The closing line is harder still. It says the one who did this does not fear what follows from it, removing the last frame in which the punishment could be read as a gamble taken by a party who might lose.",
+      "crossReferences": [
+        {
+          "ref": "7:73-79",
+          "why": "Gives the long version of the same episode, with the warning, the killing and the morning that followed."
+        },
+        {
+          "ref": "54:29",
+          "why": "Records that they called their companion, and he took the animal and hamstrung her, naming the delegation."
+        },
+        {
+          "ref": "11:64-65",
+          "why": "Preserves the warning itself in full, the animal left to graze and a stated term of three days."
+        }
+      ],
+      "applyIt": "Think of something wrong that one person did inside a group you belong to, which everybody let stand. Not a scandal, an ordinary one. Ask what your own part in it was: whether you objected, whether you laughed, or whether you simply did not raise it. That question is what this passage is doing to its first audience.",
+      "exploreFurther": [
+        "7:73-79",
+        "54:23-31",
+        "26:141-159"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:38:57.955Z",
         "reviewed": false
       }
     }

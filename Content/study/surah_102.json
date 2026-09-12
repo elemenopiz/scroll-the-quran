@@ -1,7 +1,7 @@
 {
   "surah": 102,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.237Z",
+  "generatedAt": "2026-09-12T09:55:23.703Z",
   "studies": [
     {
       "key": "102:1-5",
@@ -58,6 +58,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:49:38.346Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "102:6-8",
+      "surah": 102,
+      "start": 6,
+      "end": 8,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Seen With The Eye",
+      "tier": "standard",
+      "meaning": "The sentence broken off in the line before is completed here: you would certainly see the blaze. Then it is said again with one phrase added, and that addition is the whole passage. First seeing, then seeing with the eye of certainty, which moves the claim from something held in the mind to something looked at. Commentators treat the repetition as two stages rather than as emphasis. The final line then changes the subject without warning. On that day you will be asked about the comfort you enjoyed.",
+      "historicalContext": "Meccan. The chapter opened on competitive accumulation and on the counting of numbers, which was a live habit in a city where clans reckoned their strength by heads and boasted of totals. These closing lines answer that habit not with a threat about money but with a question about pleasure. The classical sources report no specific occasion and read the last line as the surah's sting.",
+      "keyTerms": [
+        {
+          "arabic": "عَيْنَ ٱلْيَقِينِ",
+          "gloss": "the eye of certainty",
+          "note": "A phrase occurring once in the Quran, naming certainty arrived at by sight. It stands between certainty held as knowledge and certainty that is the thing itself, and the Book uses all three expressions."
+        },
+        {
+          "arabic": "لَتُسْـَٔلُنَّ",
+          "gloss": "you will surely be asked",
+          "note": "A passive verb with a heavy emphatic ending, so the questioning is stated as certain while the questioner is left unnamed. It takes the same emphatic shape as the two verbs of seeing before it."
+        },
+        {
+          "arabic": "ٱلنَّعِيمِ",
+          "gloss": "comfort, ease, delight",
+          "note": "From a root of softness, the word names enjoyment rather than possessions. What is asked about is therefore the experience of having rather than the amount, which is why commentators extend it to health and safety."
+        }
+      ],
+      "lifeInProphetsTime": "Comfort in that setting was specific and countable. Cool water. Shade at midday. Meat instead of dates. A night's sleep with no fear of a raid before dawn. These were not luxuries that divided the rich from the poor; they were the ordinary good moments in everybody's week. A question about them lands quite differently from a question about a fortune, because nobody can claim not to have had any.",
+      "didYouKnow": "The classical collections preserve a report that the Prophet Muhammad (peace be upon him) sat with two companions over dates and cool water and told them this was among the comfort they would be asked about. The first hearers had understood the line as aimed at wealth, and the report redirects it to the plainest things on the mat in front of them.",
+      "theologicalSignificance": "Two moves happen in three lines. Certainty is graded, so knowing something and seeing it are treated as different conditions rather than degrees of the same one, which explains why warning rarely changes anybody. Then accountability is attached to enjoyment instead of to possession. That is a harder standard, because a person can give away what he owns and still has to account for what he enjoyed.",
+      "crossReferences": [
+        {
+          "ref": "56:95",
+          "why": "Supplies the third grade of certainty, the truth of certainty, completing the sequence this line sits in."
+        },
+        {
+          "ref": "69:51",
+          "why": "Uses the same third expression about the revelation itself rather than about a scene of judgement."
+        },
+        {
+          "ref": "16:18",
+          "why": "Says the favours could not be counted if you tried, which is the scale behind the questioning here."
+        }
+      ],
+      "applyIt": "Before you sleep tonight, name three comforts you actually had today. Not achievements and not possessions: the warm water, the chair, the fact that nobody was shouting. Say them in order. The last line of this surah says you will be asked about exactly these, and most people cannot name three without stopping to think.",
+      "exploreFurther": [
+        "56:88-96",
+        "16:18",
+        "102:1-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:23.180Z",
         "reviewed": false
       }
     }
