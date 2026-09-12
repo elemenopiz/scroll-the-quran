@@ -111,18 +111,16 @@ public struct DeepStudyView: View {
                 Chip(title)
                     .accessibilityIdentifier("deepstudy.themeChip")
             }
+            // Same point size as the Discover card's title, and no translation badge
+            // under it (owner, Phase 4i amendment 2): the reader toolbar's pill is the
+            // control that names — and changes — the translation.
             Text(presentation.reference)
-                .font(.serifDisplay(44))
+                .font(.serifDisplay(DiscoverMetrics.referenceSize))
                 .foregroundStyle(Color.textPrimary)
                 .lineLimit(1)
-                .minimumScaleFactor(0.5)
+                .minimumScaleFactor(DiscoverMetrics.referenceMinimumScale)
                 .padding(.top, Spacing.sm)
                 .accessibilityIdentifier("deepstudy.reference")
-            Text(presentation.translationTag)
-                .font(.body(13, weight: .semibold))
-                .tracking(2)
-                .foregroundStyle(Color.textSecondary)
-                .padding(.top, Spacing.xxs)
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, Spacing.pageMargin)

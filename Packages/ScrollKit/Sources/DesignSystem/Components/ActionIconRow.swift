@@ -37,10 +37,24 @@ public struct VerseAction: Identifiable {
 public struct ActionIconRow: View {
     private let identifierPrefix: String
     private let actions: [VerseAction]
+    private let iconSize: CGFloat
+    private let columnWidth: CGFloat?
 
-    public init(identifierPrefix: String, actions: [VerseAction]) {
+    /// - Parameters:
+    ///   - iconSize: glyph point size. Defaults to `Metrics.actionIcon`.
+    ///   - columnWidth: fixed distance between icon centres, the row then centred in its
+    ///     container. `nil` spreads the icons evenly across the full width, which is what
+    ///     every caller but the Discover card wants.
+    public init(
+        identifierPrefix: String,
+        actions: [VerseAction],
+        iconSize: CGFloat = Metrics.actionIcon,
+        columnWidth: CGFloat? = nil
+    ) {
         self.identifierPrefix = identifierPrefix
         self.actions = actions
+        self.iconSize = iconSize
+        self.columnWidth = columnWidth
     }
 
     /// The stock four-action row, wired by the caller.
@@ -48,6 +62,8 @@ public struct ActionIconRow: View {
         identifierPrefix: String,
         isSaved: Bool = false,
         isRead: Bool = false,
+        iconSize: CGFloat = Metrics.actionIcon,
+        columnWidth: CGFloat? = nil,
         save: @escaping @MainActor () -> Void,
         comment: @escaping @MainActor () -> Void,
         share: @escaping @MainActor () -> Void,
@@ -74,7 +90,9 @@ public struct ActionIconRow: View {
                     isOn: isRead,
                     action: markRead
                 ),
-            ]
+            ],
+            iconSize: iconSize,
+            columnWidth: columnWidth
         )
     }
 
@@ -83,9 +101,13 @@ public struct ActionIconRow: View {
             ForEach(actions) { action in
                 Button(action: action.action) {
                     Image(systemName: action.resolvedSystemImage)
-                        .font(.system(size: Metrics.actionIcon, weight: .regular))
+                        .font(.system(size: iconSize, weight: .regular))
                         .foregroundStyle(action.isOn ? Color.textPrimary : Color.textSecondary)
-                        .frame(maxWidth: .infinity, minHeight: 44)
+                        .frame(
+                            width: columnWidth,
+                            height: columnWidth == nil ? nil : Metrics.hitTarget
+                        )
+                        .frame(maxWidth: columnWidth == nil ? .infinity : nil, minHeight: Metrics.hitTarget)
                         .contentShape(.rect)
                 }
                 .buttonStyle(.pressable)
@@ -93,6 +115,7 @@ public struct ActionIconRow: View {
                 .accessibilityIdentifier("\(identifierPrefix).\(action.id)")
             }
         }
+        .frame(maxWidth: .infinity)
     }
 }
 

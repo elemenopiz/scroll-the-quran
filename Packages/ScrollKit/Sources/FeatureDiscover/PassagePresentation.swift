@@ -19,8 +19,6 @@ public struct PassagePresentation: Equatable, Sendable {
     /// The same English, split back into its ayat so a verse surface can mark the
     /// boundaries. A single-ayah passage has exactly one segment.
     public let segments: [VerseSegment]
-    /// The short badge under the reference, e.g. `"ITANI"`.
-    public let translationTag: String
     /// The licence line the translation requires, for share and copy.
     public let attribution: String
 
@@ -29,7 +27,6 @@ public struct PassagePresentation: Equatable, Sendable {
         reference: String,
         arabic: String?,
         english: String,
-        translationTag: String,
         attribution: String = "",
         segments: [VerseSegment]? = nil
     ) {
@@ -37,7 +34,6 @@ public struct PassagePresentation: Equatable, Sendable {
         self.reference = reference
         self.arabic = arabic
         self.english = english
-        self.translationTag = translationTag
         self.attribution = attribution
         self.segments = segments ?? [VerseSegment(ayah: passage.start, text: english)]
     }
@@ -60,7 +56,6 @@ public struct PassagePresentation: Equatable, Sendable {
                 reference: passage.key,
                 arabic: nil,
                 english: "",
-                translationTag: "",
                 segments: []
             )
         }
@@ -80,7 +75,6 @@ public struct PassagePresentation: Equatable, Sendable {
             reference: surah?.reference(for: passage) ?? passage.key,
             arabic: arabic.isEmpty ? nil : arabic,
             english: texts.joined(separator: " "),
-            translationTag: info?.abbrev ?? "",
             attribution: info?.attribution ?? "",
             segments: segments.isEmpty ? nil : segments
         )

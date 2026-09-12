@@ -101,8 +101,7 @@ public struct DiscoverView: View {
             passage: item.passage ?? PassageRef(surah: item.surah, start: 1, end: 1),
             reference: item.key,
             arabic: nil,
-            english: "",
-            translationTag: ""
+            english: ""
         )
         return VStack(spacing: 0) {
             if let study {
@@ -128,13 +127,19 @@ public struct DiscoverView: View {
                     },
                     onMarkRead: { markRead(presentation.passage) }
                 )
-                .frame(maxHeight: .infinity)
             } else {
                 StudyComingSoonCard(reference: presentation.reference)
             }
         }
+        // The card is a fixed height (`DiscoverCardLayout.cardHeight`) rather than a
+        // stretched one, which is the whole of the fixed-slot change: a stretched card
+        // was as tall as the page and the next card peeked under the tab bar. Centred on
+        // the page and nudged down by half of `pageTopBias`, its top edge lands on the
+        // reference's 14 % of the screen and its bottom near 85 %.
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.horizontal, DiscoverMetrics.cardInset)
         .padding(.vertical, DiscoverMetrics.pagePadding)
+        .padding(.top, DiscoverMetrics.pageTopBias)
     }
 
     // MARK: - Data
