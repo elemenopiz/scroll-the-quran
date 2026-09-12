@@ -1,5 +1,8 @@
+import CoreText
+import DesignSystem
 @testable import FeatureHome
 import Foundation
+import QuranData
 import Testing
 
 @Suite("Reading plan catalog")
@@ -90,5 +93,147 @@ struct ReadingPlanCatalogTests {
         #expect(PlanCoverArtwork.assetName(image: "not-a-slug", planID: "mercy") == "PlanCover-dawn-light")
         #expect(PlanCoverArtwork.assetName(image: nil, planID: "unheard-of") == nil)
         #expect(PlanCoverArtwork.assetName(image: "PlanCover-lantern", planID: "x") == "PlanCover-lantern")
+    }
+
+    // MARK: The catalogue's shape
+
+    @Test("Six shelves, eighteen plans, and the four that wear the START HERE ribbon")
+    func shelvesAndStartHere() throws {
+        let catalog = try HomeTestContent.catalog()
+        #expect(catalog.sections.count == 6)
+        #expect(catalog.plans.count == 18)
+        #expect(catalog.sections.map(\.title) == [
+            "Recommended for beginners",
+            "Read it through",
+            "The Sunnah of reading",
+            "Stories of the prophets",
+            "By theme",
+            "Memorise",
+        ])
+        let startHere = catalog.plans.filter(\.startHere).map(\.id)
+        #expect(startHere.count == 4)
+        // The ribbon and the beginner shelf are the same four plans, in the same order.
+        #expect(Set(startHere) == Set(catalog.sections[0].planIDs))
+    }
+
+    @Test("Plan ids are unique, and every id Phase 1 shipped still exists")
+    func idsAreStable() throws {
+        let catalog = try HomeTestContent.catalog()
+        let ids = catalog.plans.map(\.id)
+        #expect(Set(ids).count == ids.count, "two plans share an id")
+        // `PlanProgress` is keyed by plan id: dropping one strands a reader mid-plan.
+        let phase1 = [
+            "juz-a-day", "juz-amma", "al-kahf-fridays", "protection-verses",
+            "patience", "gratitude", "mercy",
+        ]
+        #expect(Set(ids).isSuperset(of: phase1))
+    }
+
+    @Test("Every ref is a whole-ayah passage that exists in the Quran")
+    func everyRefIsInsideTheQuran() throws {
+        let index = try HomeTestContent.surahIndex()
+        for plan in try HomeTestContent.catalog().plans {
+            for day in plan.schedule {
+                for ref in day.refs {
+                    let passage = try #require(PassageRef(key: ref), "\(plan.id) day \(day.day): '\(ref)'")
+                    #expect(passage.start <= passage.end, "\(plan.id): '\(ref)' runs backwards")
+                    #expect(index.contains(passage), "\(plan.id): '\(ref)' is outside the Quran")
+                    // Whole ayat only: the key the generator wrote is the key the passage
+                    // round-trips to, so nothing was split mid-ayah or padded.
+                    let expected = passage.start == passage.end
+                        ? "\(passage.surah):\(passage.start)"
+                        : "\(passage.surah):\(passage.start)-\(passage.end)"
+                    #expect(ref == expected, "\(plan.id): '\(ref)' is not a plain whole-ayah ref")
+                }
+            }
+        }
+    }
+
+    @Test("dailyMinutes is a computed figure inside the range a card can print")
+    func dailyMinutesArePlausible() throws {
+        for plan in try HomeTestContent.catalog().plans {
+            #expect(plan.dailyMinutes >= 3, "\(plan.id) claims \(plan.dailyMinutes) min/day")
+            #expect(plan.dailyMinutes <= 90, "\(plan.id) claims \(plan.dailyMinutes) min/day")
+            #expect(plan.metaLine.contains("min/day"), "\(plan.id) prints no daily figure")
+        }
+    }
+
+    // MARK: The copy
+
+    @Test("Plan prose is English, descriptive, and carries no transliterated Arabic")
+    func planProseFollowsTheHouseRules() throws {
+        // The generator enforces these when it writes the file; this is the regression
+        // guard on the shipped copy, in the same spirit as `ThemeIndexTests`.
+        let arabic = try #require(try? NSRegularExpression(pattern: "[\\u0600-\\u06FF\\u0750-\\u077F\\uFB50-\\uFEFF]"))
+        for plan in try HomeTestContent.catalog().plans {
+            let prose = [plan.title, plan.subtitle, plan.bestFor, plan.about]
+            for text in prose {
+                let range = NSRange(text.startIndex ..< text.endIndex, in: text)
+                #expect(
+                    arabic.firstMatch(in: text, range: range) == nil,
+                    "\(plan.id): Arabic script belongs to the muted line the app draws"
+                )
+                #expect(!text.contains("Allah"), "\(plan.id): English prose says God")
+            }
+            let aboutWords = plan.about.split(whereSeparator: \.isWhitespace).count
+            #expect(aboutWords >= 60 && aboutWords <= 120, "\(plan.id): about is \(aboutWords) words")
+            let subtitleWords = plan.subtitle.split(whereSeparator: \.isWhitespace).count
+            #expect(subtitleWords <= 6, "\(plan.id): subtitle is \(subtitleWords) words")
+            #expect(!plan.bestFor.isEmpty, "\(plan.id): no bestFor line")
+        }
+    }
+
+    @Test("Every Sunnah-of-reading plan says which collection its practice is reported in")
+    func sunnahPlansNameTheirSource() throws {
+        let catalog = try HomeTestContent.catalog()
+        let shelf = try #require(catalog.sections.first { $0.title == "The Sunnah of reading" })
+        let plans = catalog.plans(in: shelf)
+        #expect(!plans.isEmpty)
+        for plan in plans {
+            #expect(
+                plan.about.contains("collection"),
+                "'\(plan.id)' describes a reported practice without naming where it is reported"
+            )
+        }
+    }
+
+    // MARK: The card
+
+    /// The plans grid is two flexible columns inside the sheet's page margin, and a card's
+    /// labels sit inside `Spacing.md` of padding. 393 pt is the reference screen, which is
+    /// narrower than the simulator's 402, so it is the width that has to hold.
+    private static let cardLabelWidth: CGFloat =
+        (393 - 2 * Spacing.pageMargin - HomeMetrics.planGridSpacing) / 2 - 2 * Spacing.md
+
+    /// `ReadingPlansSheet` gives every card `.lineLimit(1).minimumScaleFactor(0.78)`, so a
+    /// label may set up to 1/0.78 of the card's width before it starts being truncated.
+    private static let labelBudget = cardLabelWidth / 0.78
+
+    /// Typographic width of one line, measured through CoreText. `Font.body(_:weight:)`
+    /// resolves to the system face, which is the same SF Pro on the host as on the device;
+    /// this is a fit check, not a pixel measurement.
+    private func lineWidth(_ text: String, size: CGFloat, weight: CTFontSymbolicTraits?) -> CGFloat {
+        var font = CTFontCreateUIFontForLanguage(.system, size, nil)!
+        if let weight, let heavier = CTFontCreateCopyWithSymbolicTraits(font, size, nil, weight, weight) {
+            font = heavier
+        }
+        let attributed = NSAttributedString(
+            string: text,
+            attributes: [kCTFontAttributeName as NSAttributedString.Key: font]
+        )
+        return CGFloat(CTLineGetTypographicBounds(CTLineCreateWithAttributedString(attributed), nil, nil, nil))
+    }
+
+    @Test("No plan card's title, meta line or tagline outruns the card at the default size")
+    func cardCopyFitsTheCard() throws {
+        let budget = Self.labelBudget
+        for plan in try HomeTestContent.catalog().plans {
+            let title = lineWidth(plan.title, size: 17, weight: .traitBold)
+            let meta = lineWidth(plan.metaLine, size: 14, weight: nil)
+            let tagline = lineWidth(plan.subtitle, size: 14, weight: .traitBold)
+            #expect(title <= budget, "\(plan.id) title sets \(Int(title)) pt against \(Int(budget))")
+            #expect(meta <= budget, "\(plan.id) meta sets \(Int(meta)) pt against \(Int(budget))")
+            #expect(tagline <= budget, "\(plan.id) tagline sets \(Int(tagline)) pt against \(Int(budget))")
+        }
     }
 }

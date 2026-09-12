@@ -37,4 +37,27 @@ Where: the three charity vote cards. Today: procedural (water drop, hands, wheat
 - Onboarding slide screenshots: rendered from the real app.
 
 ## Reading-plan covers wish-list (appended by the plans task)
-_(pending)_
+
+The catalogue is now 18 plans over the same 8 covers, so several slugs carry three plans
+each. Same spec as section 1 above (**1200×800**, landscape, muted warm palette, subject
+in the lower-left or right third, no text, no legible calligraphy, no faces). Ranked by
+how many plans would stop sharing a cover.
+
+| slug | subject | mood | frees up |
+|---|---|---|---|
+| `night-window` | a shuttered window at night with one oil lamp and a closed book on the sill | quiet, last thing before sleep | `lantern` (Al-Mulk before sleep, Al-Baqarah at night) |
+| `crescent-sky` | a thin crescent high in a deep blue evening sky, rooftops in silhouette | Ramadan, the month's own light | `lantern` (the Ramadan reading) |
+| `morning-doorway` | daylight falling through an open doorway onto a worn stone floor | the start of an ordinary day | `dawn-light` (morning and evening) |
+| `caravan-road` | a worn track between rock outcrops at dusk, footprints, no figures | the prophets' journeys | `desert-dune` (the prophets) |
+| `wheat-and-well` | sheaves of wheat stacked beside an old stone well head | Yusuf: famine, grain, the pit | `ink-wash` (Surah Yusuf) |
+| `open-hands` | two open palms in soft side light, from above, no face | asking | `prayer-beads` (the prayers in the Quran) |
+| `rain-on-stone` | the first rain darkening dry paving, a few bright drops | turning back, relief | `olive-branch` (repentance) |
+| `writing-board` | a wooden writing board with faint washed-out ink, no legible words | learning by heart | `mushaf-page` (forty short surahs) |
+| `stacked-volumes` | thirty thin unlabelled volumes stacked on a shelf, warm light | the long read | `prayer-beads` (a hizb a day) |
+| `first-page` | a mushaf opened at its opening page, morning light across the gutter | day one | `dawn-light` (your first week) |
+
+Two more that no plan needs today but that the shelves would use if they existed: a
+**`friday-light`** (late-afternoon light across an empty prayer hall, no people) for the
+Al-Kahf plan, which currently borrows `ink-wash`; and a **`lamp-and-cup`** (a cooling cup
+beside a low lamp) for anything in the "By theme" shelf, where four plans now share two
+covers.
