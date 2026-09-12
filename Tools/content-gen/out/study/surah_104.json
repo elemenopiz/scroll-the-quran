@@ -1,7 +1,7 @@
 {
   "surah": 104,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.242Z",
+  "generatedAt": "2026-09-12T09:55:23.703Z",
   "studies": [
     {
       "key": "104:1-5",
@@ -58,6 +58,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:49:38.349Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "104:6-9",
+      "surah": 104,
+      "start": 6,
+      "end": 9,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "A Fire That Climbs",
+      "tier": "standard",
+      "meaning": "Four short lines, each adding one thing. The fire is attributed to God by name, which happens nowhere else in the Quran; it is kindled rather than simply burning; and then it is given a verb of climbing up to see over something, the word used of the sun coming up and of a person looking over a wall. What it climbs to is the inner organ. The last two lines shut the scene: closed over them, in columns stretched out. Commentators read the columns as pillars of flame, as door bars, or as the structure of the closing itself.",
+      "historicalContext": "Meccan. The chapter has moved from a habit of mockery through a heap of counted money to this description, and its final third is entirely architectural. Classical sources report no occasion for the surah and note that the naming of the fire as God's own, rather than as a place or a punishment, is unique in the Book and is discussed in every major commentary.",
+      "keyTerms": [
+        {
+          "arabic": "نَارُ ٱللَّهِ",
+          "gloss": "the fire of God",
+          "note": "The only place in the Quran where a fire is attached directly to God's name. The construction is read as ownership rather than as origin, which rules out any picture of a force running under its own power."
+        },
+        {
+          "arabic": "تَطَّلِعُ",
+          "gloss": "climbs up over, mounts to see",
+          "note": "A verb of rising to look across something, used of the sun clearing the horizon and of a person putting his head over a wall. It gives the fire a direction and a target rather than a mere reach."
+        },
+        {
+          "arabic": "مُّؤْصَدَةٌ",
+          "gloss": "closed over, shut fast",
+          "note": "A passive participle of shutting a door and barring it. The word occurs twice in the Quran, both times of a fire closed over its occupants, and in both places in the closing lines of a short chapter."
+        }
+      ],
+      "lifeInProphetsTime": "A house in Mecca was shut with a door barred from the outside, and a storeroom was closed and sealed on its contents. The word for a supporting column would have brought to mind the poles of a great tent or the pillars of the structures around the sanctuary. Both images in the final two lines are architectural, so what is described is a built enclosure rather than an open blaze on a hillside.",
+      "didYouKnow": "The word describing the fire as shut over its occupants appears in only one other place in the Quran, at the close of another very short Meccan chapter, where it also falls in the final lines. Two surahs sitting fourteen chapters apart therefore end on the identical image of a door closed from outside.",
+      "theologicalSignificance": "Naming the fire as God's own removes the idea of impersonal machinery grinding on by itself, which is how punishment is most often imagined. The architectural vocabulary does something else. The chapter began with a man assembling a heap of money and believing it had made him permanent; it ends by describing a structure with columns, built and closed, and the permanence he wanted is supplied in a form he did not choose.",
+      "crossReferences": [
+        {
+          "ref": "90:20",
+          "why": "Ends another short chapter with the same word for a fire closed over those inside it."
+        },
+        {
+          "ref": "111:1-3",
+          "why": "Shows the same failure from another angle, a man whose wealth and earnings did nothing for him."
+        },
+        {
+          "ref": "18:29",
+          "why": "Describes a fire whose enclosure surrounds those in it, using a different word for the same closing."
+        }
+      ],
+      "applyIt": "Think of a resentment you have been keeping warm for more than a year, the one you can start up again in a second. Say the person's name to yourself once, without rehearsing the story. This passage describes a fire that climbs to reach the heart, and the one you are keeping is already there.",
+      "exploreFurther": [
+        "90:17-20",
+        "111:1-5",
+        "18:29-31"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:23.180Z",
         "reviewed": false
       }
     }

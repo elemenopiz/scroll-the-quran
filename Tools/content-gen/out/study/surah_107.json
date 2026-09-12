@@ -1,7 +1,7 @@
 {
   "surah": 107,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.245Z",
+  "generatedAt": "2026-09-12T09:55:23.704Z",
   "studies": [
     {
       "key": "107:1-5",
@@ -58,6 +58,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:49:38.358Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "107:6-7",
+      "surah": 107,
+      "start": 6,
+      "end": 7,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Withholding The Small Kindness",
+      "tier": "standard",
+      "meaning": "Two relative clauses finish the description, and both concern appearance and access. The first names people who act in order to be seen acting, using a verb form that requires an audience to exist at all. The second names what they refuse, and the commentators divide openly over the word: the small everyday things neighbours lend each other, or the formal alms, or assistance of any kind. Every reading keeps the withheld thing minor. The chapter ends not on a great crime but on a borrowed bucket.",
+      "historicalContext": "Meccan according to most of the classical sources, with some placing part of the chapter in Medina; the disagreement is recorded rather than settled. Either setting puts the audience at close quarters in a settlement where households borrowed from each other daily and a refusal was noticed the same hour. Commentators read the closing pair of lines as the surah's turn from public worship to private neighbourliness.",
+      "keyTerms": [
+        {
+          "arabic": "يُرَآءُونَ",
+          "gloss": "they are seen, they display",
+          "note": "A reciprocal form built from the verb to see, meaning to act so as to be observed doing it. The form implies onlookers, so the fault it names cannot occur when a person is alone."
+        },
+        {
+          "arabic": "ٱلْمَاعُونَ",
+          "gloss": "small assistance, common necessities",
+          "note": "Occurring only here in the Quran, and the commentators disagree about it more openly than about almost any word in the short chapters. Readings run from a neighbour's cooking pot to the obligatory alms."
+        },
+        {
+          "arabic": "وَيَمْنَعُونَ",
+          "gloss": "and they withhold",
+          "note": "A verb of preventing access rather than of failing to give. It describes an active refusal of something already asked for, which is why the small size of the thing refused matters so much."
+        }
+      ],
+      "lifeInProphetsTime": "Households ran on constant small lending. A cooking pot, a bucket for the well, a hand mill, a measure of salt, a needle. Nobody owned everything and the borrowing went in every direction, which meant the system worked only because refusing was close to unthinkable. A man who said no to a bucket was announcing that he had stepped outside the arrangement keeping everyone around him fed.",
+      "didYouKnow": "The word for what is withheld occurs once in the entire Quran, and the classical commentators set out at least three different meanings for it without choosing. Al-Tabari lists the readings side by side. A chapter of seven lines therefore ends on the one word in it whose sense the tradition has never settled.",
+      "theologicalSignificance": "The final measure is the smallest possible act. Having begun with a man who denies the reckoning and passed through people who pray without attention, the chapter tests them on a household utensil, and the scale of evidence runs opposite to the scale of importance. A person can manage a large donation in front of witnesses. What he does with a neighbour's request at an inconvenient hour is much harder to arrange.",
+      "crossReferences": [
+        {
+          "ref": "4:142",
+          "why": "Uses the same verb for standing in prayer to be seen by people, with reluctance underneath it."
+        },
+        {
+          "ref": "2:264",
+          "why": "Describes charity cancelled by display, spending wealth to be seen by people rather than for God."
+        },
+        {
+          "ref": "89:17-18",
+          "why": "Pairs the same two failures, the orphan and the feeding of the poor, as evidence about a whole society."
+        }
+      ],
+      "applyIt": "Say yes to the next small thing somebody asks you for, even if it is slightly inconvenient and even if you suspect they could manage without it. A tool, a lift, ten minutes. Do it once and pay attention to how quickly the reasons for saying no assemble themselves. That speed is what the chapter is pointing at.",
+      "exploreFurther": [
+        "4:142-143",
+        "2:262-264",
+        "89:17-20"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:23.180Z",
         "reviewed": false
       }
     }
