@@ -1,7 +1,7 @@
 {
   "surah": 57,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T10:03:14.823Z",
+  "generatedAt": "2026-09-12T10:09:30.849Z",
   "studies": [
     {
       "key": "57:1-3",
@@ -642,6 +642,64 @@
       }
     },
     {
+      "key": "57:15",
+      "surah": 57,
+      "start": 15,
+      "end": 15,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "No Ransom Will Be Taken",
+      "tier": "standard",
+      "meaning": "The answer to the previous exchange ends with a refusal and then an inversion. No ransom is taken from you today, nor from those who openly refused, so the two groups are placed on one footing at the last moment. The Fire is called your shelter, using the word for the place you go home to, and then your protector, the word for the ally who stands behind you in a dispute. Both belong to the vocabulary of safety, and both are turned around inside a single line.",
+      "historicalContext": "Medinan, closing a passage about people whose commitment was visible but not real. No specific occasion is reported for this ayah. Ransom was a live institution: captives were exchanged for payment after a battle, families raised the sum, and the practice was recent enough in the audience's memory that denying it named a real and expected last resort.",
+      "keyTerms": [
+        {
+          "arabic": "فِدْيَةٌ",
+          "gloss": "a ransom, a substitute",
+          "note": "A payment made to release someone, from a root about putting one thing in the place of another. What the line rules out is substitution itself rather than any particular price being too low."
+        },
+        {
+          "arabic": "مَأْوَىٰكُمُ",
+          "gloss": "your shelter, your refuge",
+          "note": "The place a person goes at the end of a day, used of a home and of a resting place. The word normally carries safety, and applying it here removes the safety while keeping the finality."
+        },
+        {
+          "arabic": "ٱلْمَصِيرُ",
+          "gloss": "the destination, the outcome",
+          "note": "A noun for where something ends up, from the verb for becoming. It closes many passages of the Quran and names the result of a process rather than a place that was chosen."
+        }
+      ],
+      "lifeInProphetsTime": "A man without a patron in Arabia was exposed. Your clan answered for you, paid your blood money and took your side, and if you had none you found somebody to take you under their protection. Ransom worked the same way: after a defeat, relatives raised a payment and a captive came home. Both were how that society undid a disaster, and the ayah names them and cancels them.",
+      "didYouKnow": "Three of the words in this short line come from the vocabulary of safety: a ransom that buys someone back, a shelter that takes someone in, and a patron who stands behind them. The ayah applies all three to the Fire without altering any of them, so the reversal is achieved entirely by placement rather than by reaching for harsher words.",
+      "theologicalSignificance": "The refusal of ransom makes the outcome personal in a way nothing else in the chapter does. Everything up to this point could be helped by somebody else: money is given, light is asked for, a group is joined. Here substitution is closed off in one clause. And the two words that follow describe the Fire in the language of belonging, which says that what a person ends with is what they were actually attached to.",
+      "crossReferences": [
+        {
+          "ref": "3:91",
+          "why": "Says the earth's weight in gold would not be accepted from those who died refusing, even if offered."
+        },
+        {
+          "ref": "70:11-14",
+          "why": "Imagines a man wanting to ransom himself with his children, his family and everyone on earth."
+        },
+        {
+          "ref": "2:48",
+          "why": "Denies both intercession and compensation on that day, in the same order this ayah uses."
+        }
+      ],
+      "applyIt": "Think of the last problem you solved with money that you could not have solved any other way. A repair, a fine, a fare home. Notice how normal that is, and how much of ordinary life runs on substitution. The whole weight of this ayah is in describing one situation where that mechanism is simply absent.",
+      "exploreFurther": [
+        "2:47-48",
+        "3:91-92",
+        "70:8-18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.433Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "57:16",
       "surah": 57,
       "start": 16,
@@ -696,6 +754,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.229Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:17-18",
+      "surah": 57,
+      "start": 17,
+      "end": 18,
+      "theme": "Rain and the Living Earth",
+      "themeId": "rain-and-the-earth",
+      "title": "The Earth After Its Death",
+      "tier": "standard",
+      "meaning": "The instruction is to know something, and what follows is a fact about soil: God gives the earth life after its death. It arrives directly after a line about hearts hardening over long duration, so the commentators read it as the answer rather than as a new subject. Then the signs are said to be set out so that you may understand, and the passage returns to money. The men and women who give, and who have lent God a good loan, will have it multiplied and a generous reward besides.",
+      "historicalContext": "Medinan. These two lines sit between a rebuke about hardened hearts and a statement about the truthful, and they carry the chapter's turn from warning back toward encouragement. No specific occasion is reported for them. Medina's agriculture depended on a short rainy window, so the revival of dead ground was an annual event the audience watched for rather than an image they had to imagine.",
+      "keyTerms": [
+        {
+          "arabic": "ٱعْلَمُوٓا۟",
+          "gloss": "know, be aware",
+          "note": "A plural imperative to know something. The chapter uses it twice within a few lines, and both times it introduces a fact meant to reframe what has just been said rather than to add information."
+        },
+        {
+          "arabic": "ٱلْمُصَّدِّقِينَ وَٱلْمُصَّدِّقَـٰتِ",
+          "gloss": "the charitable men and women",
+          "note": "A form built on the root for giving alms, doubled to include both. The same root gives Arabic its words for truthfulness, which is why the next ayah can move to the truthful without changing subject."
+        },
+        {
+          "arabic": "يُضَـٰعَفُ",
+          "gloss": "it is multiplied",
+          "note": "A passive, where the question seven lines earlier used the active voice. The chapter asks who will lend and then reports the multiplication without naming who performs it, so the two lines do not repeat each other."
+        }
+      ],
+      "lifeInProphetsTime": "Dead ground in Arabia looked genuinely dead: cracked, colourless, with nothing standing on it. After rain the change was fast enough to be startling, green showing within days on land that had held nothing for months. People walked out to look at it. That was the event the audience pictured, and it was seasonal, expected and still surprising every time.",
+      "didYouKnow": "The words for giving charity and for being truthful are built on the same Arabic root. This chapter uses one in a line about spending and the other in the line immediately after it, about the people it calls the deeply truthful, so two ayat that look like separate subjects are joined in the sound as well as in the sense.",
+      "theologicalSignificance": "A hardened heart is answered with a fact about ground rather than with an instruction. That places the remedy outside a person's own effort while leaving them responsible for noticing it, which is the balance the chapter keeps striking. Putting charity immediately afterwards is not a change of topic either, since giving is presented as what a softened heart does, so the spending the surah keeps asking for becomes a symptom rather than a duty.",
+      "crossReferences": [
+        {
+          "ref": "30:50",
+          "why": "Points at the traces of mercy reviving the earth and draws the same conclusion about reviving the dead."
+        },
+        {
+          "ref": "41:39",
+          "why": "Describes ground that is still and then stirs and swells when water is sent down on it."
+        },
+        {
+          "ref": "57:16",
+          "why": "States the problem this line answers, hearts hardened after a long interval had passed over them."
+        }
+      ],
+      "applyIt": "Water something that looks finished: a plant you gave up on, a patch of soil, a pot on a step. Do it for a week without expecting anything. The passage puts the revival of dead ground directly after a line about a heart gone hard, and it assumes you have watched the first before you think about the second.",
+      "exploreFurther": [
+        "22:5-7",
+        "30:46-54",
+        "41:39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.451Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:19",
+      "surah": 57,
+      "start": 19,
+      "end": 19,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "The Truthful And The Witnesses",
+      "tier": "standard",
+      "meaning": "A rank is conferred rather than described. Those who believe in God and His messengers, these are the deeply truthful, and the witnesses with their Lord. Commentators divide over whether the second group is a separate rank or a continuation of the same sentence, and the classical works carry both readings. What is given them is two things, their reward and their light, and the light has been the chapter's own image since a few lines earlier. The opposite case is stated briefly and left without elaboration.",
+      "historicalContext": "Medinan. The line follows a passage about giving and precedes the parable of the withering crop, so it stands at the chapter's high point. No specific occasion is reported for it. The word translated as witnesses carries both the sense of giving testimony and of dying in a cause, and the classical commentators discuss both senses without settling on one.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلصِّدِّيقُونَ",
+          "gloss": "the deeply truthful",
+          "note": "An intensive form from the root for truth, describing someone whose truthfulness has become a characteristic rather than a series of acts. The Quran treats it as a named rank rather than as a compliment."
+        },
+        {
+          "arabic": "وَٱلشُّهَدَآءُ",
+          "gloss": "the witnesses",
+          "note": "A plural covering those who testify and those who give their lives. Arabic holds both together, and the commentators let the ayah carry either, since seeing and being seen share one root."
+        },
+        {
+          "arabic": "وَنُورُهُمْ",
+          "gloss": "and their light",
+          "note": "The chapter has already shown this light running ahead of the believers and refused to others. Naming it here as something they possess ties the reward directly to that earlier scene."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony was the mechanism of Arabian justice. Without records a dispute was settled by who would stand up and say what they had seen, and a man known to be accurate was worth more in a quarrel than a document would have been. Reputations were built slowly and lost instantly. Naming a rank of the deeply truthful put a religious honour into the vocabulary of the courtroom.",
+      "didYouKnow": "Elsewhere the Quran gives four ranks in a single list: the prophets, the deeply truthful, the witnesses and the righteous. Two of those four are conferred here on anyone who believes in God and His messengers, which is why the classical commentators discuss at length whether the line is naming the same ranks or extending them.",
+      "theologicalSignificance": "A rank normally associated with a few is attached to a condition anybody can meet. The classical tradition does not flatten the difference and it debates how much weight the word carries here, but the grammar of the sentence is plain. That places one of the highest descriptions in the Book within reach of belief itself, and the chapter balances it at once by turning to a parable about a crop that looked good and then yellowed.",
+      "crossReferences": [
+        {
+          "ref": "4:69",
+          "why": "Lists the four ranks, prophets, the truthful, the witnesses and the righteous, as company on the straight path."
+        },
+        {
+          "ref": "39:33",
+          "why": "Names the one who brought the truth and the one who confirmed it, calling them the God-conscious."
+        },
+        {
+          "ref": "57:12",
+          "why": "Shows the light these people are said to have, running ahead of the believing men and women."
+        }
+      ],
+      "applyIt": "Say one true thing today that costs you a little: an admission, a correction, a number you have been rounding in your own favour. Small is fine. The rank named in this ayah rests on a word for truthfulness that has become habitual, and habits are built out of instances that were slightly inconvenient at the time.",
+      "exploreFurther": [
+        "4:66-70",
+        "39:32-35",
+        "57:12-15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.451Z",
         "reviewed": false
       }
     },
@@ -763,6 +937,64 @@
       }
     },
     {
+      "key": "57:22",
+      "surah": 57,
+      "start": 22,
+      "end": 22,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "Written Before It Happens",
+      "tier": "standard",
+      "meaning": "Two places are named where a misfortune can land, the earth and yourselves, and one clause covers both. Nothing strikes except that it is in a record before We bring it into being. Commentators discuss what the pronoun refers to, some reading it as the misfortune and some as the earth and the souls, and the range is left open. The closing line refuses to make any of it impressive: that is easy for God. The purpose of the whole statement arrives in the ayah after it.",
+      "historicalContext": "Medinan, from a surah addressed to people who had recently lost a great deal and recently gained a great deal. No specific occasion is reported for this ayah. It sits between the parable of a crop that yellows and a statement about not grieving over losses or exulting over gains, so it is placed as a premise rather than as a doctrine offered for its own sake.",
+      "keyTerms": [
+        {
+          "arabic": "مُّصِيبَةٍ",
+          "gloss": "a misfortune, a thing that strikes",
+          "note": "From a verb for hitting a target. The word describes an event by its accuracy rather than by its size, so a small setback and a bereavement are named with the same term."
+        },
+        {
+          "arabic": "نَّبْرَأَهَآ",
+          "gloss": "We bring it into being",
+          "note": "A verb for originating something and separating it out, which gives one of the divine names for the Maker. Its precision matters, since the record is said to precede the making rather than the striking."
+        },
+        {
+          "arabic": "يَسِيرٌ",
+          "gloss": "easy, slight",
+          "note": "An ordinary adjective for something requiring no effort, from a root also used of small amounts. The claim is deliberately understated, which is how the Quran usually closes statements of this kind."
+        }
+      ],
+      "lifeInProphetsTime": "Loss in that world arrived without warning and without explanation. A caravan failed to return, a well went dry, a child died in a season of fever. There was no insurance and no appeal, and the usual response was to read the event as luck, which the Arabs before Islam took seriously and attached to days and to the flight of birds. This ayah replaces luck with a record.",
+      "didYouKnow": "The verb used here for bringing something into being is the root behind one of the divine names, the Originator, which appears in a run of three such names near the end of surah 59. The ayah therefore places the record earlier than the very act that name describes, which is the point the wording is making.",
+      "theologicalSignificance": "The statement is not offered as a solution to suffering and the chapter does not use it as one. What it does is remove surprise, and the next ayah says exactly what that is for: so that you do not grieve over what escaped you or exult over what you were given. Foreknowledge is put to work on the emotional life rather than on the philosophical question, which is why the Quran can state it so briefly and move on.",
+      "crossReferences": [
+        {
+          "ref": "57:23",
+          "why": "Gives the purpose of this statement directly, neither sorrow over a loss nor elation over a gain."
+        },
+        {
+          "ref": "9:51",
+          "why": "Says nothing befalls us except what God has decreed, and makes reliance on Him the conclusion."
+        },
+        {
+          "ref": "64:11",
+          "why": "Attaches the same idea to the heart, saying whoever believes has his heart guided through it."
+        }
+      ],
+      "applyIt": "Think of something that went wrong this year and write one sentence about it with no explanation in it. Just what happened, when, and to whom. Most accounts of a loss are largely explanation. The ayah offers a different frame, and the first step in testing it is seeing the event without the story you have built around it.",
+      "exploreFurther": [
+        "2:155-157",
+        "9:50-52",
+        "64:11-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.451Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "57:23-24",
       "surah": 57,
       "start": 23,
@@ -817,6 +1049,306 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.229Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:25",
+      "surah": 57,
+      "start": 25,
+      "end": 25,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Book, The Balance, The Iron",
+      "tier": "standard",
+      "meaning": "Three things are described as sent down and the third is the surprise. Messengers came with clear proofs, and with them the Book and the balance, so that people would stand in fairness. And We sent down iron, in which is great force and benefits for people. Commentators read the sending down of iron as its being made available rather than as a physical descent, and note that the ayah gives it two properties without ranking them. The purpose clause that follows is about knowing who supports God unseen.",
+      "historicalContext": "Medinan, from the period when the community had responsibilities it had not carried before. No specific occasion is reported for this ayah. It gives the chapter its name, and the naming is unusual: this is the only surah in the Quran titled after a metal, in a Book whose chapter names are usually drawn from a story, an animal or a divine attribute.",
+      "keyTerms": [
+        {
+          "arabic": "وَٱلْمِيزَانَ",
+          "gloss": "and the balance",
+          "note": "The word for a weighing instrument. Surah 55 uses the same term for a balance set beneath the raised sky, so the Quran applies it both to the order of the world and to what a messenger brings with him."
+        },
+        {
+          "arabic": "بِٱلْقِسْطِ",
+          "gloss": "with fairness, with equity",
+          "note": "A word for a just share, distinguished by the lexicons from the general word for justice by its reference to portions. Standing in it is described as something people do rather than as something done to them."
+        },
+        {
+          "arabic": "ٱلْحَدِيدَ",
+          "gloss": "iron",
+          "note": "The metal, named three times in the Quran and giving this chapter its title. The root also carries sharpness and limit, which is why the same letters give Arabic its word for a boundary."
+        },
+        {
+          "arabic": "بِٱلْغَيْبِ",
+          "gloss": "unseen, out of sight",
+          "note": "A phrase for doing something where it cannot be observed. Attached to supporting God and His messengers, it makes the test one of conduct without an audience rather than of declared allegiance."
+        }
+      ],
+      "lifeInProphetsTime": "Iron in Arabia came mostly from outside and was expensive. A sword was inherited, named and remembered, and a smith was a specialist a whole district depended on. The same metal made ploughshares, nails, cooking pots and knives. Everyone in the audience knew both halves of what this ayah says about it, because both came out of the same forge in the same week.",
+      "didYouKnow": "This is the only chapter of the Quran named after a metal. Its title comes from one word in this ayah, and the word itself appears three times in the whole Book: here, in an account of a barrier built across a mountain pass, and in a statement about the metal being made soft in the hands of a prophet.",
+      "theologicalSignificance": "Revelation and force are named in one sentence and neither is apologised for. The Book and the balance establish what fairness is; iron is what makes a standard enforceable and also what builds the tools of an ordinary life. The ayah gives it both properties in a single clause and does not separate them. What follows is the qualifier: the point of all three is to make visible who supports the arrangement when nobody is watching.",
+      "crossReferences": [
+        {
+          "ref": "55:7-9",
+          "why": "Sets the same balance beneath the sky and warns against transgressing in it or falling short of it."
+        },
+        {
+          "ref": "4:135",
+          "why": "Tells believers to stand firmly for fairness as witnesses, even against themselves or their parents."
+        },
+        {
+          "ref": "34:10-11",
+          "why": "Describes iron made soft for David and the making of armour, one of its three mentions in the Book."
+        }
+      ],
+      "applyIt": "Find the sharpest tool in your house and look at it properly: a kitchen knife, scissors, a blade in a drawer. It is useful and it is dangerous, and nothing about the object decides which. The ayah names both properties in one clause and then says the real test is what you do when nobody is watching.",
+      "exploreFurther": [
+        "4:135",
+        "5:8",
+        "34:10-13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.452Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:26",
+      "surah": 57,
+      "start": 26,
+      "end": 26,
+      "theme": "The Prophets",
+      "themeId": "prophets",
+      "title": "Noah, Abraham, And Their Line",
+      "tier": "standard",
+      "meaning": "Two names stand for the whole history. Noah and Abraham were sent, and prophethood and the Book were placed in their descendants, so the line of revelation is described as running through a family rather than appearing at intervals. Then the outcome is given in one balanced clause: among them is one who is guided, and many of them break out of every bound. The same clause closes the ayah after this one, word for word, so the chapter passes its verdict on two eras in identical terms.",
+      "historicalContext": "Medinan, from a passage placing the community it addresses inside a long sequence rather than at the start of one. No specific occasion is reported for this ayah. Naming Noah and Abraham together covers the whole span the audience recognised, since one stood at the beginning after the flood and the other was the ancestor claimed by the Arabs and by the communities they lived beside.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلنُّبُوَّةَ",
+          "gloss": "prophethood",
+          "note": "An abstract noun for the office rather than for a person, occurring five times in the Quran. Naming it as something placed in a line treats prophecy as an institution with a history, not only as a series of individual callings."
+        },
+        {
+          "arabic": "ذُرِّيَّتِهِمَا",
+          "gloss": "the offspring of them both",
+          "note": "A dual possessive, so the descendants of the two are counted as one line. The word covers descendants at any distance, which is how a single term can span the many centuries the ayah is summarising."
+        },
+        {
+          "arabic": "فَـٰسِقُونَ",
+          "gloss": "those who break out",
+          "note": "From a root describing a date leaving its skin. It names stepping outside a boundary rather than denying anything, which is why the word can be applied to people inside a tradition rather than outside it."
+        }
+      ],
+      "lifeInProphetsTime": "Descent was the framework of everything in Arabia. A man was his lineage, alliances were marriages, and the tribes of the Hijaz traced themselves to Abraham and regarded the sanctuary at Mecca as his building. An audience hearing that prophethood had been placed in a line was not hearing an abstract claim about history but a statement about the family they said they belonged to.",
+      "didYouKnow": "This ayah and the one that follows end with exactly the same words, that many of them broke out of every bound. The chapter passes one verdict on two long eras without varying its wording, and the repetition is easy to miss on a first reading because the second ayah is more than twice the length of the first.",
+      "theologicalSignificance": "Inheritance of an office is affirmed and then immediately qualified. Prophethood and scripture run in a line, and the moral outcome does not: the ayah counts one guided among many who went outside the bounds. That combination cuts in two directions at once. It grants the line its standing, and it removes the idea that standing travels with the office, which matters for a community beginning to think of itself as an inheritance.",
+      "crossReferences": [
+        {
+          "ref": "29:27",
+          "why": "Says the same of Abraham, that prophethood and the Book were placed among his descendants."
+        },
+        {
+          "ref": "4:54",
+          "why": "Recalls that the Book and wisdom were given to the family of Abraham, along with a great kingdom."
+        },
+        {
+          "ref": "2:124",
+          "why": "Records the answer to Abraham's request for his line, that the covenant does not reach wrongdoers."
+        }
+      ],
+      "applyIt": "Name something you inherited that you have never actually taken up: a craft, a language, a practice, a habit of mind from a grandparent. Say out loud what it would cost to begin. The ayah is precise that a line can carry an office while most of the people in it stand outside what it asks, and knowing which you are is a question rather than a mood.",
+      "exploreFurther": [
+        "2:124-129",
+        "4:54-55",
+        "29:26-27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.452Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:27",
+      "surah": 57,
+      "start": 27,
+      "end": 27,
+      "theme": "Jesus, Son of Mary",
+      "themeId": "jesus-son-of-mary",
+      "title": "Compassion, Mercy, And Monasticism",
+      "tier": "standard",
+      "meaning": "Messengers followed one another, and then Jesus son of Mary, and the Gospel was given to him. What was put into the hearts of those who followed him is named as two things, tenderness and mercy. Then a third appears and it is described differently: a withdrawal from the world which they originated, which We did not prescribe for them, taken up in seeking God's approval. Commentators read that clause in more than one way, and they agree on what follows, that it was not kept as it should have been.",
+      "historicalContext": "Medinan. The chapter has placed its audience inside a long line of revelation and reaches the most recent link here. No specific occasion is reported for this ayah. Christian communities were known to the audience through the trade with Syria and Abyssinia and through monks living along the caravan routes, several of whom appear in the early accounts, so the practice described was something travellers had seen.",
+      "keyTerms": [
+        {
+          "arabic": "قَفَّيْنَا",
+          "gloss": "We sent following after",
+          "note": "A verb for placing one thing behind another in a track, from the root for the back of the neck. It makes the sequence of messengers a single procession rather than a series of separate appearances."
+        },
+        {
+          "arabic": "رَأْفَةً وَرَحْمَةً",
+          "gloss": "tenderness and mercy",
+          "note": "The same two words the chapter used of God a few lines earlier. Here they describe what was placed in the hearts of the followers, so a divine pair is handed to human beings as a characteristic."
+        },
+        {
+          "arabic": "وَرَهْبَانِيَّةً",
+          "gloss": "a monastic withdrawal",
+          "note": "Found only here in the Quran, from a root for awe and fear. It names a way of life rather than an attitude, and the ayah presents it as something originated rather than as something sent down."
+        },
+        {
+          "arabic": "ٱبْتَدَعُوهَا",
+          "gloss": "they originated it",
+          "note": "A verb for bringing something into existence without a precedent. The same root gives a divine name for the one who originates the heavens and the earth, so the word by itself carries no criticism."
+        }
+      ],
+      "lifeInProphetsTime": "Monks were a familiar sight on the Syrian road. They kept cells near the routes, gave water and shelter to travellers, and Arab merchants who ran the northern trade knew several of them by name. Their poverty and their solitude were understood and often admired. An audience in Medina had a specific picture in mind here rather than a category, which is why the ayah can treat the practice with such care.",
+      "didYouKnow": "The word for the monastic life in this ayah appears once in the whole Quran. The verb used for taking it up means originating something without a precedent, and its root also gives one of the names of God as the Originator of the heavens and the earth, so the verb itself carries no reproach and the reproach in the line falls elsewhere.",
+      "theologicalSignificance": "The passage is unusually careful. It records what was given, names what was added, states that it was not prescribed, credits the motive as seeking God's approval, and then says it was not kept as it should have been. Each of those is a separate clause and none cancels the one before it. The ayah ends by giving the believers among them their reward, so the assessment separates a practice from the people who followed it.",
+      "crossReferences": [
+        {
+          "ref": "5:82",
+          "why": "Names priests and monks among those nearest in affection to the believers, and gives a reason for it."
+        },
+        {
+          "ref": "3:45-47",
+          "why": "Gives the announcement of Jesus son of Mary and his standing, which this ayah takes as known."
+        },
+        {
+          "ref": "5:46",
+          "why": "Describes the Gospel given to him, carrying guidance and light and confirming what came before it."
+        }
+      ],
+      "applyIt": "Think of a commitment you took on that nobody required of you: an extra hour of work each week, a rule about your phone, a promise to call someone regularly. Ask honestly whether you are still keeping it. The ayah is careful about exactly that distinction, crediting the intention and then noting that the thing was not observed as it should have been.",
+      "exploreFurther": [
+        "3:42-51",
+        "5:44-48",
+        "5:82-85"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.452Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:28",
+      "surah": 57,
+      "start": 28,
+      "end": 28,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "A Double Share And A Light",
+      "tier": "standard",
+      "meaning": "An address to believers asks two things and promises three. Be mindful of God, and believe in His Messenger: you will be given a double portion of His mercy, a light to walk by, and forgiveness. The word for the portion is a measure, and commentators discuss the doubling at length, most reading it as a share for what came before and a share for what has come now. The light returns from earlier in the chapter, and this time the verb attached to it is walking rather than running ahead.",
+      "historicalContext": "Medinan. The ayah follows the passage about the earlier communities and is usually read together with the line after it, which addresses the People of the Book directly. No specific occasion is reported for it. Medina had long-established scriptural communities living alongside the new one, and the chapter's closing lines treat the relation between them in terms of grace rather than of history.",
+      "keyTerms": [
+        {
+          "arabic": "كِفْلَيْنِ",
+          "gloss": "two portions, a double share",
+          "note": "A dual from a word for a measured share, found in this form only here. Its singular is used elsewhere in the Quran for a share of responsibility, so the same measure covers a burden and a reward."
+        },
+        {
+          "arabic": "نُورًا تَمْشُونَ",
+          "gloss": "a light to walk by",
+          "note": "The same light the chapter showed running ahead on the day of reckoning, given here with a verb for ordinary walking. The reward is described as usable now rather than only at the end."
+        },
+        {
+          "arabic": "ٱتَّقُوا۟",
+          "gloss": "be mindful, guard yourselves",
+          "note": "From a root for putting a shield between yourself and harm. It describes an ongoing care rather than a single act, which is why it is paired here with a verb for believing rather than with a verb for doing."
+        }
+      ],
+      "lifeInProphetsTime": "A share in Arabia was a measured thing. Spoils were divided into portions, inheritance was counted in fractions, and water at a well was allotted by turns. Everyone knew what it meant to be given a double share of something, and it was a public honour rather than a private benefit. Promising a doubled portion used the language of a distribution people had watched being made.",
+      "didYouKnow": "The dual word for a double portion in this ayah occurs only here. Its singular appears elsewhere in the Quran for the share of responsibility that comes from intervening in an affair, whether for good or for ill, so the same measure is used in the Book both for what you gain and for what you end up carrying.",
+      "theologicalSignificance": "Three gifts are named and only one of them belongs to the hereafter. The light is for walking now, and the forgiveness is given without any condition beyond the two verbs at the head of the line. That makes the ayah an offer rather than a warning, which is where the chapter chooses to end its argument after twenty-seven lines of pressing and rebuking. The last words given to the reader are two divine names.",
+      "crossReferences": [
+        {
+          "ref": "28:54",
+          "why": "Promises a double reward to those given scripture before who then believed and were patient."
+        },
+        {
+          "ref": "24:35",
+          "why": "Develops the same image of light at much greater length, light upon light, given to whom God wills."
+        },
+        {
+          "ref": "57:12",
+          "why": "Shows the light promised here in its later form, running ahead on the day of reckoning."
+        }
+      ],
+      "applyIt": "Pick one thing you carry as a burden and one thing you count as a gain, and notice that you use different language for each. This ayah uses the same measure word for both. Spend a minute holding them in a single sentence, as two portions of one allotment, and see whether either of them changes size.",
+      "exploreFurther": [
+        "24:35-38",
+        "28:52-55",
+        "65:11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.453Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "57:29",
+      "surah": 57,
+      "start": 29,
+      "end": 29,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Grace Is In God's Hand",
+      "tier": "standard",
+      "meaning": "The chapter's last line explains the one before it, and it does so with a construction the grammarians discuss at length, since a negative particle sits where the sense does not appear to need one. Commentators read it as emphasis rather than as denial, and take the meaning as: so that the People of the Book may know that they have no power at all over God's grace. Then the positive statement, twice over. Grace is in God's hand, He gives it to whom He wills, and He is the possessor of immense grace.",
+      "historicalContext": "Medinan, closing a surah that has moved from the names of God through spending, through hypocrisy, and through the history of revelation. No specific occasion is reported for this ayah. Medina contained long-established scriptural communities and a new one, and questions about which had a claim on divine favour were live, so the chapter ends on the general principle rather than on any particular dispute.",
+      "keyTerms": [
+        {
+          "arabic": "لِّئَلَّا يَعْلَمَ",
+          "gloss": "so that they may know",
+          "note": "A construction the grammarians treat as carrying an extra negative particle for emphasis, a known feature of classical Arabic. The commentators read the phrase positively, and the discussion of it fills pages in the older works."
+        },
+        {
+          "arabic": "يَقْدِرُونَ",
+          "gloss": "they have power over",
+          "note": "A verb for being able to determine or measure something out. Denying it here says that no group can allocate God's favour, which is a statement about capacity rather than about anyone's worth."
+        },
+        {
+          "arabic": "فَضْلِ",
+          "gloss": "grace, bounty, surplus",
+          "note": "A noun for what exceeds what is due. The word appears three times in this single ayah, each time in a different construction, which is why the line reads as a conclusion rather than as a fresh claim."
+        }
+      ],
+      "lifeInProphetsTime": "Favour in Arabia was distributed by people with names. A chief's patronage, a merchant's credit, a clan's protection: each was allocated by somebody who could be petitioned and who could refuse. The whole social world ran on knowing whose hand a benefit had come from. This closing line takes the word for that kind of favour and names one hand as the source of all of it.",
+      "didYouKnow": "The word for grace appears three times in this single ayah and in three different positions: as something nobody can control, as something held in God's hand, and as an attribute of God Himself. The chapter's very last word is the same adjective it used earlier for the great triumph promised to the believers.",
+      "theologicalSignificance": "The surah ends by removing the question of entitlement rather than by answering it. No community is said to be able to reach God's favour and none is said to be excluded; the capacity to allocate is denied to everybody. That leaves grace as something given rather than earned or held, which matches how the chapter opened, where six lines of description came before the first request. What began by establishing scale ends by saying the scale is not administered by anyone in the room.",
+      "crossReferences": [
+        {
+          "ref": "2:105",
+          "why": "States the same principle, that God singles out for His mercy whom He wills, in a similar setting."
+        },
+        {
+          "ref": "3:73-74",
+          "why": "Says the grace is in God's hand and that He gives it to whom He wills, in almost the same words."
+        },
+        {
+          "ref": "62:4",
+          "why": "Calls it the grace of God given to whom He wills, and names Him the possessor of immense grace."
+        }
+      ],
+      "applyIt": "Think of one advantage you have that you did not arrange: where you were born, a language you grew up in, a person who took an interest in you early. Name it plainly, without gratitude language, as a fact about allocation. The chapter closes on exactly that point, and the exercise works better as an observation than as a feeling.",
+      "exploreFurther": [
+        "2:105-107",
+        "3:73-76",
+        "62:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:09:30.453Z",
         "reviewed": false
       }
     }
