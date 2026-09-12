@@ -9,6 +9,11 @@ import SwiftUI
 @MainActor
 public struct OnboardingFlow: View {
     @State private var model: OnboardingModel
+    /// Which detent the sign-in sheet is on. Starts at the measured height and only
+    /// moves to `.large` while the email field is being edited. Held in state rather
+    /// than recomputed because `presentationDetents(_:selection:)` matches the
+    /// selection against the set by equality, so both have to be the same value.
+    @State private var signInDetent: PresentationDetent = .height(OnboardingMetrics.sheetHeight)
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     private let onFinished: () -> Void
 
@@ -57,6 +62,13 @@ public struct OnboardingFlow: View {
                         onFinished()
                     }
                 }
+                // The detent set is scaled to the running device, and the selection has
+                // to be the *same* value or iOS falls back to the taller one. Resolved
+                // as soon as the canvas has measured, before the sheet can be raised.
+                .onAppear { signInDetent = Self.detent(scale) }
+                .onChange(of: scale) { _, new in
+                    if !model.isEditingEmail { signInDetent = Self.detent(new) }
+                }
         }
         .background(Color.appBackground.ignoresSafeArea())
         // The screen id lives here, not only on the step view. Each step marks itself
@@ -71,6 +83,11 @@ public struct OnboardingFlow: View {
         .accessibilityIdentifier("screen.\(model.step.rawValue)")
     }
 
+    /// The sheet's measured height on the running device.
+    private static func detent(_ scale: ReferenceScale) -> PresentationDetent {
+        .height(scale.height(OnboardingMetrics.sheetHeight))
+    }
+
     private func signInSheet(_ scale: ReferenceScale) -> some View {
         SignInSheet(
             content: model.content.signIn,
@@ -83,14 +100,25 @@ public struct OnboardingFlow: View {
                     fullName: credential.fullName
                 )
             },
-            onSkip: model.dismissSignIn
+            onSkip: model.dismissSignIn,
+            isEditingEmail: $model.isEditingEmail
         )
-        .presentationDetents([.height(scale.height(OnboardingMetrics.sheetHeight))])
+        // Two detents, with the selection bound: the sheet still *opens* on the measured
+        // height from onboarding-signin.png (that is what `signInDetent` starts at, and
+        // an explicit selection is what stops iOS choosing the taller one), and raising
+        // the keyboard moves it to `.large` so the email field is not covered. It drops
+        // back to the measured height when the field resigns, so the capture is
+        // unchanged and the screen is usable.
+        .presentationDetents([Self.detent(scale), .large], selection: $signInDetent)
         .presentationDragIndicator(.visible)
-        // One detent only: the sheet's height is measured off onboarding-signin.png, and
-        // adding a second (.large) makes iOS open on the wrong one. The keyboard covering
-        // the email field is a known gap — see the report.
         .presentationBackgroundInteraction(.disabled)
+        .onChange(of: model.isEditingEmail) { _, editing in
+            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.25)) {
+                signInDetent = editing ? .large : Self.detent(scale)
+            }
+        }
+        .onDisappear { signInDetent = Self.detent(scale) }
+
     }
 
     @ViewBuilder

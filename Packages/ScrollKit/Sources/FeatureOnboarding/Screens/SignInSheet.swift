@@ -15,8 +15,13 @@ struct SignInSheet: View {
     let scale: ReferenceScale
     let onAppleSignIn: (ASAuthorizationAppleIDCredential) -> Void
     let onSkip: () -> Void
+    /// Mirrors the email field's focus out to the presenter, which raises the sheet's
+    /// detent while the keyboard is up. The reference sheet is short enough that the
+    /// keyboard covers the field outright.
+    @Binding var isEditingEmail: Bool
 
     @Environment(\.openURL) private var openURL
+    @FocusState private var emailFocused: Bool
 
     private enum Gap {
         static let title: CGFloat = 54
@@ -87,6 +92,11 @@ struct SignInSheet: View {
         .frame(maxWidth: .infinity)
         .padding(.horizontal, scale.width(OnboardingMetrics.sheetContentInset))
         .background(Color.sheetBackground)
+        // A tap anywhere on the sheet's own ground puts the keyboard away, so the sheet
+        // can come back down without the reader having to find the Done key.
+        .contentShape(.rect)
+        .onTapGesture { emailFocused = false }
+        .onChange(of: emailFocused) { _, focused in isEditingEmail = focused }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.onboarding-signin")
     }
@@ -108,6 +118,9 @@ struct SignInSheet: View {
                 RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.fieldCornerRadius), style: .continuous)
                     .fill(Color.rowBackground)
             )
+            .focused($emailFocused)
+            .submitLabel(.done)
+            .onSubmit { emailFocused = false }
             .accessibilityLabel(content.emailLabel)
             .accessibilityIdentifier("onboarding.signin.email")
     }
@@ -134,6 +147,7 @@ struct SignInSheet: View {
         email: .constant(""),
         scale: .identity,
         onAppleSignIn: { _ in },
-        onSkip: {}
+        onSkip: {},
+        isEditingEmail: .constant(false)
     )
 }
