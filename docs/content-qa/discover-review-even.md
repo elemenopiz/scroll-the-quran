@@ -101,3 +101,23 @@ No shard was hand-edited.
 | 16:125 | 5 | "Spends all its words on the caller and almost none on the message" is a true and useful observation. | kept |
 | 16:127-128 | 5 | 128-ayah count correct; reframes exhaustion as a reason to ask rather than evidence of failure. | kept |
 | 18:1-10 | 5 | The saktah after `عِوَجَا` is one of the four in the Hafs text, correctly called rare; the three-questions report is hedged. | kept |
+| 18:23-25 | 5 | The 300 solar / 309 lunar correspondence is a genuine classical observation and is the best available fact here. | kept |
+| 18:28 | 5 | Occasion (the request to exclude the poor believers) attested and handled without naming anyone; `زينة` recurs three times in the surah as claimed. | kept |
+| 18:30 | 5 | The grammatical resumption is real; promise correctly read as a denial of loss rather than a description of gain. | kept |
+| 18:46 | 5 | "The lasting good things" verified at two occurrences (18:46, 19:76); both classical readings of the phrase kept open. | kept |
+| 18:107-110 | 5 | `الفردوس` verified at exactly two occurrences (18:107, 23:11); the ink/supply wordplay is real in the Arabic. | kept |
+| 20:11-14 | 5 | Lists the classical readings of "for My remembrance" without choosing; Tuwa verified at only 20:12 and 79:16. | kept |
+| 20:25-28 | 5 | Twelve-word prayer counted correctly; asks for capacity, not a different assignment, which is the text's own shape. | kept |
+| 20:114 | 5 | The 75:16-19 parallel is exact; "the one place the instruction is to ask for more" is a fair and checkable claim. | kept |
+| 20:124 | 5 | `ضَنكًا` verified as a single occurrence in the Quran, which is what makes the commentary range meaningful. | kept |
+| 20:130 | 5 | The two recognised readings of the final word are both transmitted and are presented as complementary, not competing. | kept |
+| 20:131 | 5 | The 15:88 parallel and what each passage adds is accurately described; the smelting sense of the test-verb is attested. | kept |
+| 22:5 | 5 | Argument from precedent rather than power, which is the ayah's own method; the mixed Meccan/Medinan note is properly hedged. | kept |
+| 22:32-33 | 4 | Content is excellent (two sajdahs unique to this surah; `البيت العتيق` only here, twice). Nit: `exploreFurther[0]` is 22:26-37, a range containing the unit's own ayat. | kept |
+| 22:46 | 5 | The structural point about eyes being left out of the first half and dismissed in the second is true and well made. | kept |
+| 22:78 | 5 | Records the old division over who did the naming without declaring a winner. | kept |
+| 24:22 | 5 | Well-attested occasion given without naming the parties, which avoids a sectarian-sensitive identification; pardon tied to a resumed payment. | kept |
+| 24:26 | 5 | Both classical readings (people / speech) given; the chiasm observation is accurate. | kept |
+| 24:35 | 5 | Holds the classical line that the parable is of His light, not of Him; `مشكاة` verified as a single occurrence. | kept |
+| 24:55 | 5 | Succession read as a turn that ends, which is what the root gives; condition stated as the text states it. | kept |
+| 26:79-83 | 5 | 227 ayat and the eightfold refrain both check out; the self-attribution of illness is given the classical courtesy-of-speech reading. | kept |
