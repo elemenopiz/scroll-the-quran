@@ -1,7 +1,7 @@
 {
   "surah": 100,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T09:47:53.443Z",
+  "generatedAt": "2026-09-12T09:55:23.701Z",
   "studies": [
     {
       "key": "100:1-5",
@@ -116,6 +116,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:49:38.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "100:11",
+      "surah": 100,
+      "start": 11,
+      "end": 11,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Fully Acquainted With Them",
+      "tier": "standard",
+      "meaning": "The chapter ends by naming an attribute instead of an outcome. After the graves are emptied and the contents of the chests are collected, the last line says their Lord is, on that day, fully acquainted with them. Classical commentators note the name chosen. It is not the one for seeing or for hearing but the one for inward knowledge, acquaintance with what a thing is underneath. The line also says of them rather than of their deeds, so what is known is the people themselves, and no verdict follows.",
+      "historicalContext": "Meccan. The surah has travelled from a cavalry charge at dawn, through a charge laid against human nature, to two verbs describing the last day, and it stops here without describing a fire, a garden or a sentence. Classical sources record no occasion for the closing line and observe that ending on a divine name rather than on a consequence is a recurring shape in the short Meccan chapters.",
+      "keyTerms": [
+        {
+          "arabic": "لَّخَبِيرٌۢ",
+          "gloss": "fully acquainted, informed",
+          "note": "The root carries the sense of testing ground by digging into it. The name describes knowledge of what lies inside rather than of what shows, which is why translations reach for acquaintance rather than for sight."
+        },
+        {
+          "arabic": "بِهِمْ",
+          "gloss": "of them, about them",
+          "note": "The preposition attaches the knowing to the persons rather than to their actions. Commentators notice the shift, since the two lines immediately before have been entirely about deeds and about what the chests contain."
+        },
+        {
+          "arabic": "يَوْمَئِذٍ",
+          "gloss": "on that day",
+          "note": "A compound fixing the statement to one particular day, although the knowledge it names is plainly not limited to one. The time marker is read as naming when the knowing becomes visible rather than when it begins."
+        }
+      ],
+      "lifeInProphetsTime": "An expert in that world was someone who had tested a thing himself. A man knew a well by having dug it, a route by having ridden it in a bad season, a horse by having handled it. The word this surah closes on belongs to that register rather than to the language of a distant observer. It describes the knowledge of someone with his hands already in the thing.",
+      "didYouKnow": "The closing line contains no verb at all. Arabic can build a complete sentence out of nouns alone, and this one does: an emphatic particle, a subject, a prepositional phrase, a time marker, and a name carrying a second emphatic prefix. A chapter that opened with five lines of violent motion therefore ends on a sentence in which nothing moves.",
+      "theologicalSignificance": "Knowledge is given the last word where a verdict was expected, and that changes what the day is for. If the final statement is that God is acquainted with them, the accounting is not primarily the assembling of evidence, since the evidence adds nothing to what is already known. What the day does is make visible a knowledge that was complete beforehand, and the surah stops there rather than describing what follows.",
+      "crossReferences": [
+        {
+          "ref": "67:13-14",
+          "why": "Asks whether the one who created would not know, and closes on the same name for inward acquaintance."
+        },
+        {
+          "ref": "31:34",
+          "why": "Lists what no soul knows about its own tomorrow and ends by naming God knowing and acquainted."
+        },
+        {
+          "ref": "49:13",
+          "why": "Uses the same name to close a statement that rank before God is measured by something invisible."
+        }
+      ],
+      "applyIt": "Think of the person who knows you best and then of the one thing about yourself you have never told them. Not to confess it to anyone. Just to notice that the gap exists with every human being you know, and that this line is describing the only relationship in which there is no such gap at all.",
+      "exploreFurther": [
+        "67:12-14",
+        "49:13",
+        "31:33-34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:23.159Z",
         "reviewed": false
       }
     }
