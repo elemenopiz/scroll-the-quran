@@ -161,3 +161,23 @@ No shard was hand-edited.
 | 58:11 | 5 | Verified against the corpus: surah 58 is the only surah carrying the divine name in every one of its 22 ayat. | kept |
 | 62:9-10 | 5 | `الجمعة` verified as a single occurrence; the passage read as an interruption with a defined edge, which both ayat support. | kept |
 | 64:11-13 | 5 | Declines to answer the theodicy question, as the ayah does, and says so; the companion's gloss is cited as a gloss. | kept |
+| 64:14-15 | 5 | The partitive particle correctly narrows "enemy" to a situation rather than a category; occasion given with its early attribution hedged. | kept |
+| 64:16 | 5 | "As much as you can" read as a standard set at capacity rather than lowered, which is the classical reading. | kept |
+| 66:6-7 | 5 | The fuel clause verified as identical at 2:24; the duty located in teaching and example, not force. | kept |
+| 66:8 | 5 | `نصوحا` verified as a single occurrence, which is why the commentary range is wide; nobody in the passage is finished, as the text has it. | kept |
+| 66:11 | 4 | Excellent on the surah's four-women structure and the nearness-before-place order of the prayer. Nit: `exploreFurther[0]` is 66:10-12, containing the unit. | kept |
+| 68:1-5 | 5 | The character-reference reading is exactly right; the "his character was the Quran" report is cited without naming the narrator. | kept |
+| 70:16-20 | 5 | Notes that the Quran defines `هلوعا` in its own next two lines, which is true and is the best fact here. | kept |
+| 74:37-41 | 5 | The pledge/collateral image is precise, including the implication that collateral can be released; 52:21 parallel is real. | kept |
+| 76:5-8 | 5 | Sectarian-sensitive occasion handled correctly: "a household", with the accounts noted as differing and nobody named. `كافور` verified as a single occurrence. | kept |
+| 76:9-12 | 5 | Sincerity defined by what is refused rather than by an inner state — read straight off the quoted speech. | kept |
+| 82:6-10 | 4 | The "generosity itself is what deceived him" reading is a genuine classical answer. Nit: `exploreFurther[0]` is 82:10-19, overlapping the unit. | kept |
+| 84:6-10 | 5 | The "easy reckoning is a presentation" exchange is correctly attributed and correctly used. | kept |
+| 90:1-5 | 5 | Gives both readings of `حِلٌّ` and leaves the third oath open, as the commentators do. | kept |
+| 90:11-15 | 5 | `مسغبة` verified as a single occurrence; the rhyme observation across 90:12-16 is accurate. | kept |
+| 92:1-5 | 4 | Divergence normalised before judgement, which is what the oaths do. Nit: both `crossReferences[0]` (92:5-10) and `exploreFurther[0]` (92:5-13) overlap the unit's own ayah 5. | kept |
+| 94:1-8 | 5 | The definite/indefinite grammar point is stated correctly and the "one hardship, two eases" saying is cited as a saying. | kept |
+| 96:1-5 | 5 | `الأكرم` verified as used of God only here; the first-revelation account is given with the detail the sources agree on. | kept |
+| 98:5 | 5 | Continuity claim read straight from the ayah; the recitation report cited without naming the companion. | kept |
+| 100:6-10 | 5 | `لكنود` verified as a single occurrence; the winnowing image behind `حُصِّل` is accurate. | kept |
+| 102:1-5 | 5 | Diagnosis correctly located in competition rather than acquisition; the three grades of certainty are counted right. | kept |
