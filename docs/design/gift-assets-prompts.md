@@ -32,7 +32,7 @@ scalloped rim, emblem pressed in as a clean relief. Single soft key light from t
 contact shadow. Straight-on camera with a subtle 8° top-down tilt, 85 mm look, no perspective
 distortion. Isolated on a plain flat background (for cut-out). Nothing else in frame.
 
-## Prompts (generate ≥ 2048 px, 4:3)
+## Prompts (generate ≥ 2048 px on the long side; closed 4:3 landscape, open 2:3 portrait)
 
 ### 1. Closed envelope with sealed logo
 ```
