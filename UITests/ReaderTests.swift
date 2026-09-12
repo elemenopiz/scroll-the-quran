@@ -2,12 +2,14 @@ import XCTest
 
 /// The Quran tab's flows: paging, the rail, the translation sheet and the notes sheet.
 ///
-/// **These tests skip themselves until Phase 3e wires the reader.** `FeatureReader` is finished
-/// and screenshot-verified, but `AppShell` still renders the Phase 1 placeholder in the Quran
-/// tab, so `--screenshot reader` does not reach `ReaderView` yet. Every test here first checks
-/// for `screen.reader` and calls `XCTSkip` when it is not there, which keeps
-/// `Tools/verify.sh --ui` green while leaving the assertions ready to run the moment the route
-/// lands. The wiring is one line per route — see the Phase 3a report.
+/// `AppShell` routes `--screenshot reader` (and the sheet routes) into `ReaderView`
+/// (Phase 3e), so `launchReader` asserts `screen.reader` appeared instead of skipping.
+///
+/// **State.** The reader writes the chosen translation and any note to the App Group
+/// container, which survives `simctl uninstall`. A test whose assertions depend on the
+/// starting state — `testSwitchingTranslationChangesTheText` expects CLEAR, and the
+/// translation pill's width is measured against it — passes `--reset-state` so it does
+/// not inherit whatever the previous run left behind.
 final class ReaderTests: XCTestCase {
     /// Al-Baqarah, the surah the reader opens on for the screenshot routes.
     private let surah = 2
@@ -38,15 +40,11 @@ final class ReaderTests: XCTestCase {
         app.launchEnvironment["SCROLL_FIXED_DATE"] = "2026-09-14"
         app.launch()
 
-        guard app.descendants(matching: .any).matching(identifier: "screen.reader").firstMatch
-            .waitForExistence(timeout: 10)
-        else {
-            app.terminate()
-            throw XCTSkip(
-                "AppShell does not route '\(route)' to FeatureReader yet (Phase 3e). "
-                    + "ReaderView.screen(for:index:translations:user:) is ready to be called."
-            )
-        }
+        XCTAssertTrue(
+            app.descendants(matching: .any).matching(identifier: "screen.reader").firstMatch
+                .waitForExistence(timeout: 10),
+            "--screenshot \(route) did not reach FeatureReader: 'screen.reader' never appeared"
+        )
         return app
     }
 
@@ -151,7 +149,11 @@ final class ReaderTests: XCTestCase {
 
     /// Switching translation changes the English on the page and the pill's abbreviation.
     func testSwitchingTranslationChangesTheText() throws {
-        let app = try launchReader()
+        // `--reset-state` wipes the App Group container first. Without it this test starts
+        // on whatever translation the *previous* run left selected — PICKTHALL, after this
+        // test itself has run once — and both the "Translation: CLEAR" assertion and the
+        // pill's measured width (106.9 pt against the spec's 72.0) fail on a second run.
+        let app = try launchReader(arguments: ["--reset-state"])
         defer { app.terminate() }
 
         let pager = app.descendants(matching: .any).matching(identifier: "reader.pager").firstMatch

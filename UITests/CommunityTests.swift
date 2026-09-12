@@ -2,10 +2,9 @@ import XCTest
 
 /// The Community tab's flows, driven through the real app.
 ///
-/// The tab is still `AppShell/TabRoot`'s Phase-1 `PlaceholderScreen` until one line wires
-/// `CommunityView` in, so every test here **skips** while the placeholder is on screen rather
-/// than failing the gate for work that lives in another task's file. The moment the shell hands
-/// the tab to `FeatureCommunity` these run for real, with no edit.
+/// `AppShell/TabRoot` hands the tab to `FeatureCommunity` (Phase 3e), so these are real
+/// assertions: `requireCommunity` waits for the screen and fails the test if it is not
+/// there. It used to skip while the tab was the Phase-1 placeholder.
 final class CommunityTests: XCTestCase {
     /// Frames in the 393x852 pt space `Reference/community-dark.png` was captured in, measured off
     /// that capture by scanning runs of constant colour (the scan lines are in
@@ -35,20 +34,19 @@ final class CommunityTests: XCTestCase {
         return app
     }
 
-    /// Skips while the Community tab is still `AppShell`'s Phase-1 `PlaceholderScreen`, which
-    /// renders the screen id as a static text. Once the shell hands the tab to `CommunityView`
-    /// that label is gone and the rest of the test runs.
-    private func skipIfNotWired(_ app: XCUIApplication) throws {
-        let placeholder = app.staticTexts["screen.community.label"]
-        if placeholder.waitForExistence(timeout: 8) {
-            throw XCTSkip(
-                "AppShell still renders PlaceholderScreen for the Community tab. "
-                    + "Wire `CommunityView(store: store)` into TabRoot and these run as written."
-            )
-        }
+    /// Waits for `CommunityView` and fails if the route does not reach it.
+    ///
+    /// `screen.community.label` is the Phase-1 placeholder's static text; it is asserted
+    /// absent so a regression back to the placeholder reads as "the placeholder is on
+    /// screen" rather than as a missing identifier somewhere further down the test.
+    private func requireCommunity(_ app: XCUIApplication) throws {
         XCTAssertTrue(
             app.staticTexts["community.given.amount"].waitForExistence(timeout: 10),
-            "neither the placeholder nor CommunityView is on screen"
+            "CommunityView is not on screen for --screenshot community"
+        )
+        XCTAssertFalse(
+            app.staticTexts["screen.community.label"].exists,
+            "AppShell is rendering PlaceholderScreen for the Community tab again"
         )
     }
 
@@ -75,7 +73,7 @@ final class CommunityTests: XCTestCase {
 
     func testCommunityScreenShowsTheGivingCardAndEveryCharity() throws {
         let app = launch()
-        try skipIfNotWired(app)
+        try requireCommunity(app)
 
         XCTAssertTrue(app.descendants(matching: .any)["community.givenCard"].exists)
         XCTAssertTrue(app.staticTexts["community.given.amount"].exists)
@@ -92,7 +90,7 @@ final class CommunityTests: XCTestCase {
 
     func testGivingCardAndVoteButtonMatchTheReferenceGeometry() throws {
         let app = launch()
-        try skipIfNotWired(app)
+        try requireCommunity(app)
 
         let card = referenceFrame(app.descendants(matching: .any)["community.givenCard"], in: app)
         XCTAssertEqual(card.minX, Reference.givingCard.minX, accuracy: Reference.tolerance)
@@ -112,7 +110,7 @@ final class CommunityTests: XCTestCase {
     /// The DoD: a vote survives a cold launch.
     func testVotePersistsAcrossRelaunch() throws {
         let app = launch()
-        try skipIfNotWired(app)
+        try requireCommunity(app)
 
         let vote = app.buttons["community.vote.penny-appeal"]
         XCTAssertTrue(vote.waitForExistence(timeout: 5))
@@ -146,7 +144,7 @@ final class CommunityTests: XCTestCase {
 
     func testVotingIsExclusiveAndCanBeWithdrawn() throws {
         let app = launch()
-        try skipIfNotWired(app)
+        try requireCommunity(app)
 
         let relief = app.buttons["community.vote.islamic-relief"]
         let human = app.buttons["community.vote.human-appeal"]
