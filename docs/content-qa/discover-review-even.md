@@ -81,3 +81,23 @@ No shard was hand-edited.
 | 8:46 | 5 | "Your wind" read as momentum with the classical gloss; promise is company rather than victory, which the text actually says. | kept |
 | 10:25-26 | 5 | "Home of Peace" verified at exactly two occurrences (6:127, 10:25); leaves the unnamed "more" unnamed. | kept |
 | 10:57-58 | 5 | Healing-before-guidance order is read off the ayah; the self-description passages are cited with their limits intact. | kept |
+| 10:62-65 | 5 | Defines "friends of God" by the two ordinary qualities the ayah itself gives; keeps the range on the worldly good news open. | kept |
+| 10:107 | 5 | The 6:17 / 10:107 asymmetry (touch vs intend) is real and precisely described. | kept |
+| 12:4 | 5 | The rational-plural on the prostrating stars is a genuine grammatical point; "only continuous story" and the 12:3 self-description both check out. | kept |
+| 12:18 | 5 | "Beautiful patience" occurs twice in the surah, both from Jacob; the shirt-as-thread observation is accurate (18, 25-28, 93). | kept |
+| 12:21 | 5 | Providence working through unrelated motives is stated without denying the human motive; the surah's namelessness is a real pattern. | kept |
+| 12:87 | 5 | Holds searching and hope in one sentence, which is what the ayah does; the `رَوْح` / spirit / wind relation is attested. | kept |
+| 12:91-92 | 5 | Splits pardon into what Joseph can cancel and what only God forgives — exactly what the text does. Conquest-of-Mecca report properly hedged. | kept |
+| 12:101 | 5 | "Some of the sovereignty" read from the partitive particle; notes that nothing is asked for in this life, which is true of the prayer. | kept |
+| 14:7 | 5 | The broken parallel in the second half is a real classical observation and the best fact available here. | kept |
+| 14:24 | 5 | Leaves the tree unnamed and reports both positions; the hidden-root/visible-fruit structure is read from the ayah. | kept |
+| 14:34 | 5 | Uncountable-blessings sentence verified at two occurrences (14:34, 16:18) with different sequels; the 55:13 refrain is exactly 31 times. | kept |
+| 14:40-41 | 5 | Seven-ayah supplication (14:35-41) counted correctly; "one of only six surahs named after a prophet" is right (10, 11, 12, 14, 47, 71). | kept |
+| 16:18-21 | 5 | The bee appears in only two ayat of its own surah (16:68-69); the capability argument is made without polemic. | kept |
+| 16:53-55 | 5 | The animal-cry verb is rare (16:53, 23:64, 23:67) and always in this setting, as claimed. | kept |
+| 16:90 | 5 | The three-and-three structure is exact; the Friday-pulpit custom and the companion's report are both properly attributed. | kept |
+| 16:96 | 5 | The repeated closing clause across 16:96 and 16:97 is verbatim in the Arabic, as claimed. | kept |
+| 16:97 | 5 | Notes the singular-to-plural switch inside the ayah; the male-and-female symmetry is described, not editorialised. | kept |
+| 16:125 | 5 | "Spends all its words on the caller and almost none on the message" is a true and useful observation. | kept |
+| 16:127-128 | 5 | 128-ayah count correct; reframes exhaustion as a reason to ask rather than evidence of failure. | kept |
+| 18:1-10 | 5 | The saktah after `عِوَجَا` is one of the four in the Hafs text, correctly called rare; the three-questions report is hedged. | kept |
