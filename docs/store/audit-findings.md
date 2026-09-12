@@ -16,6 +16,12 @@ already correct and are confirmed, one is addressed with a stated rationale, and
 still open — three because they sit outside 4d's owned paths and one (A11Y-6) because it
 is a design decision rather than a defect.
 
+**Phase 4g (2026-09-12) closed SEC-2**, the last of the security findings and the only one
+of the four still-open items that was a functional defect: Sign in with Apple reaches
+`UserStore`, so Settings stops telling a signed-in reader that they are not. It also closed
+the Keychain access-group gap SEC-1's status line left behind. Three findings remain open:
+A11Y-5 (touch targets), A11Y-6 (a design decision) and STORE-1 (the screenshot fixture).
+
 **Headline:** nothing found is an automatic App Store rejection. Two findings are real
 review risks worth fixing before submitting (IAP-1 and IAP-2). One accessibility finding
 is a genuine WCAG failure across most of the app (A11Y-1).
@@ -268,6 +274,15 @@ backups) than this app needs.
 > `Widget/ScrollTheQuranWidget.entitlements`; neither has it and `App/` is frozen after Phase
 > 1. Without it the items live in the app's own access group and the widget reads nothing,
 > which is what it did before. `SystemKeychain.init` already takes the group.
+>
+> **Access group closed in Phase 4g** — `7e8e467`. No entitlement was needed: an **App Group**
+> identifier can be used as a keychain access group without a `keychain-access-groups`
+> entitlement of its own, so `CompositeAccountSink.live` passes
+> `UserStateLocation.appGroupIdentifier` (`group.com.scrollthequran`) — the group both targets
+> already declare — to `SystemKeychain`. Verified on the simulator: a fixture sign-in, then
+> `prefs.json` deleted from the group container, then a relaunch **without** `--signed-in`
+> wrote the account back out of the Keychain. The widget does not display a reader name today,
+> so nothing reads it there yet; it now could.
 
 ### SEC-2 — Onboarding's sign-in never reaches `UserStore`, so Settings always says "Not signed in"
 **Severity: HIGH (functional bug).**
@@ -287,14 +302,31 @@ sink and delete `UserDefaultsAccountSink`. That closes the plaintext storage gap
 functional bug together.
 
 
-> **STILL OPEN after Phase 4d — not closable from that task's owned paths.** The fix is one
-> argument: `FeatureOnboardingModule.view(forScreenID:onFinished:)` has to take the account
-> sink, and `App/RootView.swift:93-100` has to pass it one backed by `env.user`. `App/` is
-> frozen after Phase 1, and neither `FeatureOnboardingModule.swift` nor `OnboardingModel.swift`
-> is in the 4d brief. One correction to the fix as written above: routing it to `UserStore`
-> *alone* would write the identifier and the email back into the App Group's plaintext
-> `prefs.json`, undoing SEC-1. The right shape is a composite — the identity to
-> `KeychainAccountSink`, the "is signed in" flag and the display email to `UserStore`.
+> **FIXED in Phase 4g** — `7e8e467`, `c57044d`, `82ee3b3`. The composite the note above asked
+> for: `CompositeAccountSink` sends the identity (Apple user identifier, display name, address)
+> to `KeychainAccountSink` and the state (an `isSignedIn` boolean and the address Settings
+> prints) to `UserStore`. `FeatureOnboardingModule.view(forScreenID:account:onFinished:)` takes
+> the sink and `App/RootView.swift` builds it at launch — not inside the onboarding branch,
+> because constructing it is also what hands `UserStore` the Keychain record, and Settings'
+> "Sign out" has to clear both halves on a launch that skips the funnel.
+>
+> `Prefs.accountID` is gone: it is `Prefs.isSignedIn` now, and decoding a `prefs.json` that
+> still carries the old `accountId` reads it as "signed in", never writes it back, and marks
+> the file dirty so the identifier leaves the disk on the launch that finds it (`42582ea`).
+> Proof from the simulator after a fixture sign-in — the whole file:
+>
+> ```json
+> {"accountEmail":"reader@example.com","isSignedIn":true,"onboardingDone":false,
+>  "onboardingStep":0,"seenOneTimeOffer":false,"translationId":"itani"}
+> ```
+>
+> Settings shows the signed-in state and grows a "Sign out" row, which goes through
+> `UserStore.signOut()` — prefs *and* the Keychain, since the store holds the record. Two
+> things turned up on the way: `RootView.init` runs again on every update of the app's body, so
+> `--signed-in` re-applied its credential the instant the reader signed out (one-shot now); and
+> the Keychain outlives the App Group container, so a delete-and-reinstall left the app holding
+> the identity while telling the reader they were not signed in — `CompositeAccountSink` adopts
+> a stored identity at construction.
 
 ### A11Y-4 — Reduce Motion is ignored in the reader and Community
 **Severity: HIGH.**
