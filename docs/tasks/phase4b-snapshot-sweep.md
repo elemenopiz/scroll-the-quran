@@ -24,3 +24,6 @@ Beyond RMSE, walk every screen in both appearances and fix or file each of these
 - **Motion:** paging snaps without overshoot; sheet and toast animations use the same duration/curve; no layout jumps when the Arabic line loads.
 - **Dynamic Type at XL:** no clipped or overlapping text on reader, Discover, Deep Study, Home (verse text may cap).
 - **Brand:** logo mark sizes/clearance as set by Phase 4e; do not change them here, but flag any screen where the mark looks out of place.
+
+## Also fix (from docs/qa/brand-review.md, Phase 4e walk)
+Items 1–8 in that file: Deep Study and Home scroll under the status bar unmasked; onboarding-reviews Continue pill has no scrim; onboarding-signin light hairlines; slide mockups still wireframes; Today's Reading cover blank + panel bleed behind tab items; notes-sheet captures without keyboard; OnboardingMetricsTests order dependency (register fonts in a suite setup). Item 9 (widget target placeholder icon) needs a project.yml edit: report it, do not do it.
