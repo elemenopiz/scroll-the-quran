@@ -38,7 +38,16 @@ let package = Package(
 
         // MARK: - Features (one public entry view each)
 
-        .target(name: "FeatureOnboarding", dependencies: ["DesignSystem", "UserState"]),
+        // `resources`: the funnel slides show real captures of our own Reader, Plans,
+        // Discover and Verse Search screens inside the phone frame. They are rendered by
+        // `Tools/snapshot/render-mockups.sh` and shipped as PNGs rather than composed
+        // live, because `FeatureOnboarding` sits *below* those features in the graph and
+        // cannot import them. Without this rule SwiftPM leaves the PNGs unbundled.
+        .target(
+            name: "FeatureOnboarding",
+            dependencies: ["DesignSystem", "UserState"],
+            resources: [.process("Resources")]
+        ),
         .target(name: "FeaturePaywall", dependencies: ["DesignSystem", "Commerce"]),
         .target(name: "FeatureReader", dependencies: ["DesignSystem", "QuranData", "StudyContent", "UserState"]),
         .target(name: "FeatureDiscover", dependencies: ["DesignSystem", "QuranData", "StudyContent", "UserState"]),
