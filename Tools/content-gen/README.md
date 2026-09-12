@@ -135,16 +135,30 @@ any error. Checks:
 - word bounds for every prose field, from that schema's `x-wordBounds`
 - Arabic script appears **only** in `keyTerms[].arabic`, and that field must
   be Arabic script with no Latin letters
+- **`keyTerms[].arabic` occurs verbatim in the unit's own Uthmani text** —
+  NFC, contiguous, every mark kept, with the Bismillah prefix of ayah 1
+  stripped first so it cannot supply a term. When the exact match fails a
+  diacritics-insensitive second pass decides the message: *not copied
+  verbatim* (the word is there, retyped — a dropped tatweel carrier, a plain
+  alef for a dagger alef U+0670, a missing annotation sign) names the
+  passage's own spelling so the fix is a paste; *does not occur* means the
+  word is not in the passage at all, usually because it sits in a neighbouring
+  ayah or carries a prefix in the text (`لِلْمُتَّقِينَ`, not `ٱلْمُتَّقِينَ`)
+- `theme` is the **title of `themeId`** in `themes.json`, verbatim
 - every `crossReferences[].ref` and `exploreFurther` entry is a real
-  `surah:ayah` within that surah's ayah count
+  `surah:ayah` within that surah's ayah count, and **does not overlap the
+  unit's own ayat** (a "read next" that leads back to the page you are on)
+- prose contains no script but Latin (plus punctuation, digits and combining
+  accents): a stray Cyrillic or Greek word is a copy-paste accident
 - banned phrasing: legal rulings, sectarian or school-of-law framing, `Allah`
   in English prose, filler openers, model self-reference
 - the honorific "(peace be upon him)" accompanies the first naming of the
   Prophet Muhammad
 - `key` is an actual unit key from `passages.json`, and `surah`/`start`/`end`
   agree with it; `themeId` exists in `themes.json`
-- near-duplicate `meaning` sections across records (5-word shingle Jaccard;
-  ≥ 0.50 errors, ≥ 0.35 warns)
+- near-duplicate `meaning`, `didYouKnow` and `applyIt` sections across records
+  (5-word shingle Jaccard; ≥ 0.50 errors, ≥ 0.35 warns). Candidate pairs come
+  from an inverted shingle index, so the whole corpus validates in seconds.
 
 ### `node assemble.mjs [--model …] [--only …]`
 
