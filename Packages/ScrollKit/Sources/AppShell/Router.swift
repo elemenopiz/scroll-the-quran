@@ -30,6 +30,22 @@ public enum AppTab: String, CaseIterable, Identifiable, Sendable {
         }
     }
 
+    /// The tab bar symbol in a given selection state: the outline when unselected, the
+    /// filled counterpart when selected — the reference's tab bar, which SwiftUI will not
+    /// produce on its own (it fills both states). Pair with `View.outlineTabSymbols()`.
+    ///
+    /// Discover names `sparkles` in both states on purpose: SF Symbols has no
+    /// `sparkles.fill`, the glyph is already solid, and `Image(systemName:)` draws
+    /// nothing at all for a name that does not exist.
+    public func tabSymbol(selected: Bool) -> String {
+        switch self {
+        case .community: selected ? "person.3.fill" : "person.3"
+        case .discover: "sparkles"
+        case .home: selected ? "house.fill" : "house"
+        case .quran: selected ? "book.fill" : "book"
+        }
+    }
+
     /// Stable identifier for XCUITest layout specs and taps.
     public var accessibilityIdentifier: String {
         "tab.\(rawValue)"

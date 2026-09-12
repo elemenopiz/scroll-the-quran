@@ -120,7 +120,12 @@ public struct TabRoot: View {
     public var body: some View {
         TabView(selection: $model.selection) {
             CommunityView(store: env.user)
-                .tabItem { Label(AppTab.community.title, systemImage: AppTab.community.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.community.title,
+                        systemImage: AppTab.community.tabSymbol(selected: model.selection == .community)
+                    )
+                }
                 .tag(AppTab.community)
 
             DiscoverScreens.screen(
@@ -130,18 +135,37 @@ public struct TabRoot: View {
                 studies: env.studies,
                 today: env.today
             )
-            .tabItem { Label(AppTab.discover.title, systemImage: AppTab.discover.systemImage) }
+            .tabItem {
+                Label(
+                    AppTab.discover.title,
+                    systemImage: AppTab.discover.tabSymbol(selected: model.selection == .discover)
+                )
+            }
             .tag(AppTab.discover)
 
             HomeScreenProvider.screen(id: homeRouteID, anchor: homeAnchor, env: env, navigation: model)
-                .tabItem { Label(AppTab.home.title, systemImage: AppTab.home.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.home.title,
+                        systemImage: AppTab.home.tabSymbol(selected: model.selection == .home)
+                    )
+                }
                 .tag(AppTab.home)
 
             quranTab
-                .tabItem { Label(AppTab.quran.title, systemImage: AppTab.quran.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.quran.title,
+                        systemImage: AppTab.quran.tabSymbol(selected: model.selection == .quran)
+                    )
+                }
                 .tag(AppTab.quran)
         }
         .tint(Color.textPrimary)
+        // Unselected tabs draw the outline symbol, as the reference does; the selected
+        // one asks for its filled name through `AppTab.tabSymbol(selected:)`. Without
+        // this the tab bar fills every icon in both states.
+        .outlineTabSymbols()
         .appStores(env, router: model)
         .fullCover(item: $model.deepStudyKey.identifiable) { key in
             deepStudy(key: key.value)

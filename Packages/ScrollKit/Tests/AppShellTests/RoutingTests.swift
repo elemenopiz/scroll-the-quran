@@ -10,6 +10,19 @@ func tabsAreInReferenceOrder() {
     #expect(AppTab.home.accessibilityIdentifier == "tab.home")
 }
 
+@Test("Unselected tabs draw the outline symbol and selected tabs the filled one")
+func tabSymbolsAreOutlineUntilSelected() {
+    #expect(AppTab.allCases.map { $0.tabSymbol(selected: false) } == ["person.3", "sparkles", "house", "book"])
+    #expect(
+        AppTab.allCases.map { $0.tabSymbol(selected: true) }
+            == ["person.3.fill", "sparkles", "house.fill", "book.fill"]
+    )
+    // The unselected name is the one the rest of the app calls `systemImage`.
+    for tab in AppTab.allCases {
+        #expect(tab.tabSymbol(selected: false) == tab.systemImage)
+    }
+}
+
 @Test("Screen routes split the anchor off the id")
 func screenRoutesSplitAnchors() {
     let anchored = ScreenRoute(rawValue: "deepstudy#apply-it")

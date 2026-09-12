@@ -82,3 +82,31 @@ public enum Typography {
         .arabicAccent(size)
     }
 }
+
+// MARK: - Tab bar symbols
+
+public extension View {
+    /// Draws unselected tab icons as **outlines**, the way the reference tab bar does.
+    ///
+    /// SwiftUI's tab bar applies `.fill` to every `tabItem` symbol in both states, so
+    /// `home-dark.png`'s outline `person.3` / `book` came out as `person.3.fill` /
+    /// `book.fill` — heavier, wider, and the wrong shape. Turning the automatic variant
+    /// off gives outlines everywhere; the selected tab then asks for its filled symbol
+    /// by name:
+    ///
+    /// ```swift
+    /// TabView(selection: $selection) {
+    ///     …
+    ///     .tabItem { Label(tab.title, systemImage: tab.tabSymbol(selected: selection == tab)) }
+    /// }
+    /// .outlineTabSymbols()
+    /// ```
+    ///
+    /// Applied to the `TabView`, not to an individual item: the environment value has
+    /// to reach the tab bar itself. The caller supplies the filled name for the selected
+    /// tab, because not every symbol has a `.fill` variant (`sparkles` does not) and
+    /// `Image(systemName:)` draws nothing at all for a name that does not exist.
+    func outlineTabSymbols() -> some View {
+        environment(\.symbolVariants, .none)
+    }
+}
