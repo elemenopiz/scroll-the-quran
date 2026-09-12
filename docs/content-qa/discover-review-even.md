@@ -181,3 +181,82 @@ No shard was hand-edited.
 | 98:5 | 5 | Continuity claim read straight from the ayah; the recitation report cited without naming the companion. | kept |
 | 100:6-10 | 5 | `لكنود` verified as a single occurrence; the winnowing image behind `حُصِّل` is accurate. | kept |
 | 102:1-5 | 5 | Diagnosis correctly located in competition rather than acquisition; the three grades of certainty are counted right. | kept |
+| 104:1-5 | 5 | Makes contempt a symptom of the permanence-illusion rather than a separate vice, which is the surah's own join. | kept |
+| 108:1-3 | 5 | Shortest surah and its ten words counted correctly; the insult is answered without naming the man who made it. | kept |
+| 110:1-3 | 5 | The "announcement of an ending" report is cited as a report and the surah is not made to say it. | kept |
+| 112:1-4 | 5 | Definition by denial held throughout; the third-of-the-Quran report is attributed and its classical explanation given. | kept |
+| 114:1-6 | 5 | "The last word of the Quran is the word for people" is true and well used; 50:16 shares the whispering verb. | kept |
+
+## Summary
+
+**165 even-surah Discover units reviewed** — the whole even half of the 326-unit
+Discover set.
+
+| Score | Units |
+| --- | --- |
+| 5 | 143 |
+| 4 | 18 |
+| 3 | 4 |
+| 2 or 1 | 0 |
+
+**Rewritten (4).** All four were factual errors in `didYouKnow`; every other
+field in those units was sound, so each rewrite replaced that one field and left
+the rest byte-for-byte (no Arabic was ever retyped — `keyTerms` were carried over
+programmatically from the assembled shard).
+
+- **2:1-5** — claimed the detached letters are "always" followed within a few lines
+  by a mention of the Book (false for surahs 29 and 30), and counted "three ayat
+  describing those who reject it" where 2:6-7 is two.
+- **2:274** — called this the fourth occurrence of the "no fear nor grief" refrain
+  in al-Baqarah; it is the fifth (2:38, 2:62, 2:112, 2:262, 2:274), and 2:38 was
+  missing from the list that followed.
+- **28:77** — said Qarun is named three times in the Quran; he is named four
+  times (28:76, 28:79, 29:39, 40:24), twice in this surah alone.
+- **36:82-83** — said `ملكوت` is twice what Abraham was shown; of its four
+  occurrences only 6:75 is Abraham, while 7:185 and 23:88 are both questions put
+  to those who reject.
+
+**Recurring failure modes** (for the author brief):
+
+1. **Off-by-one counting in `didYouKnow`.** Every rewrite was this. The pattern is
+   a claim of the form "N times in the Quran" or "the Nth occurrence in this
+   surah" where the author counted the occurrences they could recall and missed
+   one — usually an occurrence in a different surah (Qarun), an earlier one in
+   the same surah (2:274), or a second reading of the same word (`ملكوت`).
+   *Suggested rule for the brief: any numeric claim about occurrences must be
+   run against the bundled corpus before the body is written, not recalled.*
+2. **`exploreFurther` / `crossReferences` ranges that swallow the unit.** 18 of
+   the 165 point at a range containing the unit's own ayat (e.g. 22:32-33 →
+   22:26-37; 36:40-42 → 36:37-44; 92:1-5 → 92:5-13, which also affects a
+   `crossReferences` entry). `validate.mjs` only warns on an exact key match, so
+   none of these are caught. Every case is an author reaching for "the passage
+   this sits inside" as a next read. *Suggested rule: a next-read reference must
+   not overlap the unit's ayah range; use the neighbouring passage instead.*
+3. **Hedged counts that are still slightly off.** 2:45-47 ("within a hundred
+   ayat" for 2:45→2:153, which is 108) and 2:222 ("around fifteen times" for a
+   formula that occurs 13 times). Not errors that mislead, but the hedge is
+   doing work the number should do.
+4. **Etymological asides stated more confidently than the lexicographers do.**
+   4:58's link between the root of "trust" and the word said after a supplication
+   is a commonly repeated connection that the classical lexicographers actually
+   dispute. Rare, but worth a line in the brief: an etymology is a claim like any
+   other.
+
+**What held up well.** No sectarian framing, no legal rulings, no prescriptive
+language, no honorific misuse, no Arabic outside `keyTerms`, and no invalid
+cross-reference anywhere in the 165. The sectarian-sensitive passages the brief
+singles out (28:55-56, 42:23, 24:22, 76:5-8) are handled exactly as asked: the
+setting is described, the classical readings are given side by side, and the
+divisive names are left out. `applyIt` is concrete and doable throughout, and
+the prose is genuinely varied across near-duplicate passages (the charity ayat
+of al-Baqarah each take a different angle; the "no fear nor grief" units are not
+interchangeable).
+
+**Gates.**
+
+```
+node validate.mjs out/study   →  validated 3293 record(s); 0 error(s), 0 warning(s); OK
+npm test                      →  tests 59, pass 59, fail 0
+node sync-study-content.mjs --prune  →  3 file(s) synced
+cd Packages/ScrollKit && swift test  →  Test run with 472 tests in 54 suites passed
+```
