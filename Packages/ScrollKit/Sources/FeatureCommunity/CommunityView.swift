@@ -10,6 +10,9 @@ import SwiftUI
 /// put in both.
 public struct CommunityView: View {
     @State private var model: CommunityModel
+    /// Audit A11Y-4: casting a vote re-flows the whole card list, and this was the one
+    /// animation in Community that did not check.
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// The app's entry point: the bundled catalog, the real vote store.
     public init(store: any CharityVoteStore) {
@@ -68,7 +71,7 @@ public struct CommunityView: View {
         }
         .scrollIndicators(.hidden)
         .background(Color.appBackground)
-        .animation(.easeOut(duration: 0.15), value: model.vote)
+        .animation(reduceMotion ? nil : .easeOut(duration: 0.15), value: model.vote)
         .accessibilityIdentifier("screen.community")
     }
 }

@@ -20,6 +20,17 @@ public final class StoreKitEntitlementStore: EntitlementProviding {
     /// Grace period and billing retry are invisible to `currentEntitlements`, so they are
     /// asked for separately and surfaced to Settings as a "update your payment method" banner.
     public private(set) var billingState: BillingState = .notSubscribed
+    /// How many entitlements the last refresh threw away because StoreKit could not verify
+    /// their signature (audit IAP-6).
+    ///
+    /// They are **not** `finish()`ed. Finishing one would stop it redelivering, which is
+    /// the only thing that would let it come back after a transient verification failure —
+    /// a wrong device clock, an interrupted signing key rotation — and the customer would
+    /// have paid for a purchase the app then permanently forgot. Refusing the entitlement
+    /// and leaving the transaction in the queue is the conservative half of the trade.
+    /// What the audit was actually asking for was that it not be *invisible*; the app logs
+    /// nothing anywhere (`CLAUDE.md`), so it is observable state instead.
+    public private(set) var unverifiedEntitlementCount = 0
     /// The last error `load()`, `purchase(_:)` or `restore()` hit, for the paywall to show.
     public private(set) var lastError: CommerceError?
 
@@ -116,7 +127,11 @@ public final class StoreKitEntitlementStore: EntitlementProviding {
     /// unverified, revoked or already expired.
     public func refreshEntitlements() async {
         var entitled: Set<String> = []
+        var unverified = 0
         for await result in Transaction.currentEntitlements {
+            if case .unverified = result {
+                unverified += 1
+            }
             guard case let .verified(transaction) = result,
                   transaction.revocationDate == nil
             else { continue }
@@ -126,6 +141,7 @@ public final class StoreKitEntitlementStore: EntitlementProviding {
             entitled.insert(transaction.productID)
         }
         entitledProductIDs = entitled
+        unverifiedEntitlementCount = unverified
         isPremium = ProductID.allRawValues.contains { entitled.contains($0) }
         await refreshBillingState()
     }

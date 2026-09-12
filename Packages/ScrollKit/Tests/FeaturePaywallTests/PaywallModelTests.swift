@@ -1,3 +1,4 @@
+import Foundation
 import Commerce
 @testable import FeaturePaywall
 import Testing
@@ -382,5 +383,40 @@ struct GiftOfferEligibilityTests {
         let model = PaywallModel(store: MockEntitlementStore(introOfferEligible: false))
         #expect(model.introEligible == false)
         #expect(PlanPricing.periodLine(StoreCatalogue.gift) == "$19.99/year")
+    }
+}
+
+/// Audit IAP-4, IAP-5.
+@Suite("Trial paywall disclosures")
+@MainActor
+struct TrialDisclosureTests {
+    @Test("The injected links reach the view instead of the view's own default")
+    func injectedLinksAreUsed() throws {
+        // IAP-4: `PaywallFlow.init` took `links:` and built `PaywallTrialView` without it,
+        // so any change to the injected URLs would silently have done nothing. Both
+        // defaults resolve to the same URLs, which is why it was invisible.
+        let custom = PaywallLegalLinks(
+            terms: try #require(URL(string: "https://example.test/terms")),
+            privacy: try #require(URL(string: "https://example.test/privacy"))
+        )
+        let view = PaywallTrialView(
+            plan: StoreCatalogue.yearly,
+            introEligible: true,
+            onClose: {},
+            onRedeem: {},
+            onViewAllPlans: {},
+            onRestore: {},
+            links: custom
+        )
+        #expect(view.links == custom)
+        #expect(view.links != .default)
+    }
+
+    @Test("The renewal wording sits on the line next to the call to action")
+    func renewalCopyIsAdjacentToTheCTA() {
+        // IAP-5: the reference prints only "($2.49/mo)" there.
+        #expect(PlanPricing.monthlyEquivalent(StoreCatalogue.yearly) == "($2.49/mo)")
+        #expect(PaywallCopy.autoRenewNote == "Auto-renews")
+        #expect(PaywallMetrics.priceNoteTop < PaywallMetrics.ctaTop)
     }
 }

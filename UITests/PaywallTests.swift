@@ -35,7 +35,9 @@ final class PaywallTests: XCTestCase {
         let app = try launch("paywall-trial")
         XCTAssertTrue(element(app, "paywall.headline").exists)
         XCTAssertEqual(element(app, "paywall.price").label, "$29.99/year")
-        XCTAssertEqual(element(app, "paywall.priceNote").label, "($2.49/mo)")
+        // Audit IAP-5: the Redeem button can buy directly, so the renewal wording has to be
+        // next to it, not only behind the Terms link.
+        XCTAssertEqual(element(app, "paywall.priceNote").label, "($2.49/mo)  •  Auto-renews")
         XCTAssertEqual(element(app, "paywall.redeem").label, "Redeem 7 days for $0.00")
         XCTAssertTrue(element(app, "paywall.viewAllPlans").exists)
         XCTAssertTrue(element(app, "paywall.legal.3").exists, "Restore Purchases must be reachable")

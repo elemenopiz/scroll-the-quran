@@ -16,6 +16,15 @@ struct VerseRail: View {
     let onCommit: () -> Void
 
     @State private var isDragging = false
+    /// Audit A11Y-4. The rail animates on every ayah crossed — continuously, while reading,
+    /// on the app's most-used screen — and was the one place in the reader that never asked.
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    /// `nil` while the finger is down (the indicator must track it exactly) and for a
+    /// reader who has asked for less motion.
+    private var scrubAnimation: Animation? {
+        isDragging || reduceMotion ? nil : .easeOut(duration: 0.18)
+    }
 
     var body: some View {
         GeometryReader { proxy in
@@ -84,7 +93,7 @@ struct VerseRail: View {
                 x: ReaderMetrics.railCentreX - ReaderMetrics.railIndicatorWidth / 2,
                 y: rail.origin(ofAyah: currentAyah)
             )
-            .animation(isDragging ? nil : .easeOut(duration: 0.18), value: currentAyah)
+            .animation(scrubAnimation, value: currentAyah)
             .allowsHitTesting(false)
     }
 
@@ -92,7 +101,7 @@ struct VerseRail: View {
     private func currentNumber(_ rail: VerseRailGeometry) -> some View {
         number(currentAyah, colour: .textSecondary)
             .offset(x: ReaderMetrics.railNumberLeading, y: rail.centre(ofAyah: currentAyah) - numberHeight / 2)
-            .animation(isDragging ? nil : .easeOut(duration: 0.18), value: currentAyah)
+            .animation(scrubAnimation, value: currentAyah)
             .allowsHitTesting(false)
     }
 

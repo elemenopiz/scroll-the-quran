@@ -211,8 +211,15 @@ struct PaywallTrialView: View {
         plan.map(PlanPricing.periodLine) ?? PlanPricing.periodLine(StoreCatalogue.yearly)
     }
 
+    /// The reference prints "($2.49/mo)" here and nothing about renewal anywhere near the
+    /// call to action (audit IAP-5). The Redeem button can buy directly, so the line the
+    /// customer's eye is already on is where the renewal belongs, rather than a new row
+    /// crowding the 14 pt between the button and "View all plans".
     private var monthlyNote: String? {
-        PlanPricing.monthlyEquivalent(plan ?? StoreCatalogue.yearly)
+        guard let equivalent = PlanPricing.monthlyEquivalent(plan ?? StoreCatalogue.yearly) else {
+            return PaywallCopy.autoRenewNote
+        }
+        return "\(equivalent)  •  \(PaywallCopy.autoRenewNote)"
     }
 
     private var redeemTitle: String {
