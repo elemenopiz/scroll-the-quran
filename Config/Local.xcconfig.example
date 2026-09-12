@@ -3,3 +3,7 @@
 // Not required for iOS Simulator builds.
 
 DEVELOPMENT_TEAM = ABCDE12345
+
+// RevenueCat public SDK key for this app (appl_…), read into Info.plist as RC_API_KEY once
+// the SDK is added (see docs/infra/revenuecat.md). Leave empty to keep StoreKit 2 direct.
+RC_API_KEY =
