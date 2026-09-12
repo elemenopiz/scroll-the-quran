@@ -1,60 +1,46 @@
-import StoreKitTest
 import XCTest
 
 /// The first-run funnel and the free tier's gates, driven through the real app.
 ///
 /// Two kinds of run appear here, and the difference matters:
 ///
-/// * `--funnel [phase]` runs the app against **live StoreKit** with the scheme's
-///   `Config/ScrollTheQuran.storekit` configuration. `SKTestSession` clears the store before
-///   each test, so a purchase made in one test cannot unlock the next, and
-///   `disableDialogs` keeps the system confirmation sheet out of the way. These are the
-///   tests that prove a real `product.purchase()` unlocks the app and survives a relaunch.
-/// * `--ui-test --free` / `--premium` run against `MockEntitlementStore`. The gates do not
-///   care where the entitlement came from, and a fixture makes "a free reader taps the
-///   fourth card" a two-second test instead of a purchase flow.
+/// * `--funnel <phase> --free` starts the app inside the funnel at that phase with the
+///   commerce store reporting "not subscribed" until something buys. The purchase itself
+///   runs the app's real path — the paywall's button, `PaywallModel.purchase`,
+///   `EntitlementProviding.purchase`, and `RootView`'s watcher on the entitlement — so
+///   these are the tests that prove buying ends the funnel, that the envelope is spent
+///   once, and that a purchase outlives the process.
+/// * `--ui-test --free` / `--premium` skip the funnel and land on the tab bar. The gates do
+///   not care where the entitlement came from, and starting there makes "a free reader taps
+///   the fourth card" a two-second test instead of a purchase flow.
 ///
-/// `--reset-state` wipes `UserStore` and the Discover day counter at launch: `xcodebuild
-/// test` installs over the app without clearing its container, so without it the second run
-/// of a test starts with onboarding already done and three cards already spent.
+/// **Why there is no `SKTestSession` here.** `storekitd` refuses to apply a StoreKit test
+/// configuration to an app that the command-line install did not mark as installed for
+/// development:
+///
+///     storekitd: Validating OctaneSaveConfigurationRequest for com.scrollthequran.app
+///                by com.scrollthequran.app.uitests.xctrunner
+///     storekitd: com.scrollthequran.app.uitests.xctrunner is not installed for development
+///     [SKTestSession] Error saving configuration file: SKInternalErrorDomain Code=3
+///
+/// It is refused identically whether the configuration arrives through `SKTestSession` or
+/// through the scheme's own `Config/ScrollTheQuran.storekit` setting — both were tried.
+/// `Product.products(for:)` then answers with an empty catalogue under `xcodebuild test`,
+/// `purchase(_:)` can only throw `productUnavailable`, and no assertion about buying is
+/// reachable that way at all. `--funnel <phase>` with neither `--free` nor `--premium` still
+/// runs against live StoreKit, for a run from Xcode where the configuration does apply.
+///
+/// `--reset-state` wipes `UserStore`, the Discover day counter and the funnel's remembered
+/// purchase at launch: `xcodebuild test` installs over the app without clearing its
+/// container, so without it the second run of a test starts with onboarding already done,
+/// three cards already spent, and the previous test's purchase still in force.
 final class FunnelTests: XCTestCase {
-    private var store: SKTestSession?
-
     override func setUpWithError() throws {
         try super.setUpWithError()
         continueAfterFailure = false
     }
 
-    override func tearDown() {
-        store?.clearTransactions()
-        store = nil
-        super.tearDown()
-    }
-
     // MARK: - Harness
-
-    /// A clean StoreKit test store for one test.
-    ///
-    /// The configuration is loaded from the repository rather than from the UI test bundle:
-    /// `project.yml` is frozen, so the file cannot be added to this target's resources, and
-    /// a simulator process can read the host path `#filePath` resolves to. One file stays
-    /// the single source of truth for the catalogue.
-    @discardableResult
-    private func freshStore() throws -> SKTestSession {
-        let root = URL(fileURLWithPath: #filePath)
-            .deletingLastPathComponent()
-            .deletingLastPathComponent()
-        let url = root.appendingPathComponent("Config/ScrollTheQuran.storekit")
-        let session = try SKTestSession(contentsOf: url)
-        session.resetToDefaultState()
-        session.clearTransactions()
-        // Without this every purchase raises the system confirmation sheet, which is not
-        // this app's UI and cannot be asserted on reliably.
-        session.disableDialogs = true
-        session.askToBuyEnabled = false
-        store = session
-        return session
-    }
 
     private func launch(_ arguments: [String]) -> XCUIApplication {
         let app = XCUIApplication()
@@ -90,13 +76,12 @@ final class FunnelTests: XCTestCase {
         tab.tap()
     }
 
-    // MARK: - The funnel, against live StoreKit
+    // MARK: - The funnel
 
     /// The headline path: the trial paywall's call to action buys the yearly plan and the
     /// funnel ends on the tab bar.
-    func testBuyingTheYearlyPlanUnlocksTheTabs() throws {
-        try freshStore()
-        let app = launch(["--funnel", "paywall", "--reset-state"])
+    func testBuyingTheYearlyPlanUnlocksTheTabs() {
+        let app = launch(["--funnel", "paywall", "--free", "--reset-state"])
         assertAppears(app, "screen.paywall-trial", "the funnel did not open on the paywall")
 
         tap(app, "paywall.redeem")
@@ -107,9 +92,8 @@ final class FunnelTests: XCTestCase {
 
     /// Dismissing the paywall earns the one-time envelope, and buying the discounted plan
     /// inside it unlocks the app just as the trial paywall does.
-    func testDismissingThePaywallOffersTheGiftAndBuyingItUnlocks() throws {
-        try freshStore()
-        let app = launch(["--funnel", "paywall", "--reset-state"])
+    func testDismissingThePaywallOffersTheGiftAndBuyingItUnlocks() {
+        let app = launch(["--funnel", "paywall", "--free", "--reset-state"])
         assertAppears(app, "screen.paywall-trial", "the funnel did not open on the paywall")
 
         tap(app, "paywall.close")
@@ -123,9 +107,8 @@ final class FunnelTests: XCTestCase {
     }
 
     /// Closing both offers lands on the tab bar in the free tier, with Deep Study locked.
-    func testClosingTheGiftLeavesTheFreeTier() throws {
-        try freshStore()
-        let app = launch(["--funnel", "paywall", "--reset-state"])
+    func testClosingTheGiftLeavesTheFreeTier() {
+        let app = launch(["--funnel", "paywall", "--free", "--reset-state"])
         assertAppears(app, "screen.paywall-trial", "the funnel did not open on the paywall")
 
         tap(app, "paywall.close")
@@ -143,16 +126,15 @@ final class FunnelTests: XCTestCase {
 
     /// The envelope is a one-time offer: having seen it once, a later dismissal of the
     /// paywall goes straight to the app.
-    func testTheGiftIsOfferedOnlyOnce() throws {
-        try freshStore()
-        let first = launch(["--funnel", "paywall", "--reset-state"])
+    func testTheGiftIsOfferedOnlyOnce() {
+        let first = launch(["--funnel", "paywall", "--free", "--reset-state"])
         assertAppears(first, "screen.paywall-trial", "the funnel did not open on the paywall")
         tap(first, "paywall.close")
         assertAppears(first, "screen.gift-closed", "dismissing the paywall did not offer the gift")
         first.terminate()
 
         // Same install, same `Prefs.seenOneTimeOffer` — and this time no reset.
-        let second = launch(["--funnel", "paywall"])
+        let second = launch(["--funnel", "paywall", "--free"])
         assertAppears(second, "screen.paywall-trial", "the funnel did not open on the paywall")
         tap(second, "paywall.close")
 
@@ -160,11 +142,11 @@ final class FunnelTests: XCTestCase {
         XCTAssertFalse(element(second, "screen.gift-closed").exists, "the one-time offer came back")
     }
 
-    /// A purchase is not session state: relaunching the app finds the entitlement through
-    /// `Transaction.currentEntitlements` and never shows the paywall again.
-    func testAPurchaseSurvivesRelaunch() throws {
-        try freshStore()
-        let first = launch(["--funnel", "paywall", "--reset-state"])
+    /// A purchase is not session state: the entitlement is read back at launch — from
+    /// `Transaction.currentEntitlements` against the real store, from the funnel's own
+    /// record against the fixture — and the paywall never comes back.
+    func testAPurchaseSurvivesRelaunch() {
+        let first = launch(["--funnel", "paywall", "--free", "--reset-state"])
         assertAppears(first, "screen.paywall-trial", "the funnel did not open on the paywall")
         tap(first, "paywall.redeem")
         assertOnTabs(first, "buying the yearly plan did not unlock the app")
@@ -172,7 +154,8 @@ final class FunnelTests: XCTestCase {
 
         // `--funnel paywall` asks for the paywall explicitly; an entitled customer must
         // still end up on the tab bar, which is the whole point of re-reading at launch.
-        let second = launch(["--funnel", "paywall"])
+        // No `--reset-state`: the first launch's purchase has to still be there.
+        let second = launch(["--funnel", "paywall", "--free"])
         assertOnTabs(second, "the purchase did not survive a relaunch")
     }
 
@@ -281,8 +264,7 @@ final class FunnelTests: XCTestCase {
         XCTAssertFalse(specs.isEmpty, "no funnel layout specs found in the UI test bundle")
 
         for spec in specs {
-            try freshStore()
-            let app = launch(["--funnel", spec.funnel.phase, "--reset-state"])
+                let app = launch(["--funnel", spec.funnel.phase, "--free", "--reset-state"])
             defer { app.terminate() }
 
             for identifier in spec.funnel.taps {
