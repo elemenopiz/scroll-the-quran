@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects.
+# Pages already serves /privacy.html at /privacy; these make the .html spelling
+# canonicalise onto the clean URL so only one address is ever indexed or linked.
+/index.html    /          301
+/privacy.html  /privacy   301
+/support.html  /support   301
+/terms.html    /terms     301

@@ -1,0 +1,10 @@
+# Cloudflare Pages project configuration.
+#
+# The Pages project's "root directory" is this folder (web/), so the build output
+# directory is the folder itself: the site is plain static files with no build step.
+#
+#   npx wrangler pages dev web --port 8788          # local, from the repo root
+#   npx wrangler pages deploy web --project-name scroll-the-quran
+name = "scroll-the-quran"
+compatibility_date = "2026-09-12"
+pages_build_output_dir = "."
