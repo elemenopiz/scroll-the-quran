@@ -114,7 +114,9 @@ export function exactSpanFor(haystack, needle) {
 export const BASMALA = "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ";
 
 export function stripBasmala(text, surah, ayah) {
-  if (ayah !== 1 || surah === 1 || surah === 9) return text;
+  // Always NFC: Tanzil's file is not normalised, and comparing a normalised
+  // term against an unnormalised passage is how a verbatim check goes wrong.
   const t = nfc(text);
+  if (ayah !== 1 || surah === 1 || surah === 9) return t;
   return t.startsWith(BASMALA) ? t.slice(BASMALA.length).trimStart() : t;
 }

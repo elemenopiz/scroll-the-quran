@@ -160,6 +160,26 @@ any error. Checks:
   (5-word shingle Jaccard; ≥ 0.50 errors, ≥ 0.35 warns). Candidate pairs come
   from an inverted shingle index, so the whole corpus validates in seconds.
 
+### `node search.mjs <arabic term> [--exact] [--in KEY] [--surah N] [--limit N] [--json]`
+
+Finds an Arabic term in the Uthmani text. The default search is
+diacritics-insensitive; `--exact` is NFC with every mark kept, which is the
+comparison `validate.mjs` actually performs on `keyTerms[].arabic`. When the
+loose search hits and `--exact` would not, the text's own spelling is printed
+as `exact:` — paste that into the body. `--in 2:153-157` restricts the search
+to one unit and then answers the authoring question directly ("verbatim in
+2:153-157: yes / NO — the word is there but spelled …").
+
+A search with no hit falls back to listing the tokens that carry the term with
+a prefix, because that is the usual reason a key term is not in its passage:
+the text has `لِلْمُتَّقِينَ`, not `ٱلْمُتَّقِينَ`.
+
+The normaliser traps it exists to absorb are documented in the file header and
+in `lib/arabic.mjs`: U+0640 tatweel as a carrier for the dagger alef, U+0670
+superscript alef (a written alef, not a vowel sign), the U+06D6–U+06ED Quranic
+annotation signs, U+0671 alef wasla vs a bare alef, U+0649 alef maqsura vs
+U+064A ya, the hamza-bearing alefs, and ta marbuta vs ha.
+
 ### `node assemble.mjs [--model …] [--only …]`
 
 Reads `work/cache/`, stamps `key`/`surah`/`start`/`end`/`tier`/`meta` onto each
@@ -258,6 +278,8 @@ prompts/user.hbs            per-unit user turn template
 named-passages.json         47 protected passages segmentation must not split
 discover-seed.txt           337 curated refs → 329 Discover units, all 30 juz
 lib/data.mjs                Quran text + surah metadata, key/ref helpers
+lib/arabic.mjs              NFC/diacritics-insensitive normalisers, the exact-
+                            span resolver, stripBasmala
 lib/units.mjs               unit selection (discover / all / surah:N) + tiers
 lib/prompt.mjs              prompt assembly, output schema, custom_id codec
 lib/author.mjs              authoring mode: todo/prompt/validate/write/status
@@ -265,6 +287,10 @@ lib/pricing.mjs             model prices and the cost estimator
 out/                        committed pipeline output
 work/                       gitignored: raw downloads, requests, cache, judge
 author.mjs                  authoring-mode CLI (see "Authoring mode" above)
+search.mjs                  find an Arabic term in the Uthmani text (loose /
+                            --exact); toks.mjs prints a token index, and
+                            resolve-arabic.mjs turns "@S:A/i" into the exact
+                            token so no Arabic is ever hand-typed
 test/                       node --test suite
 ```
 
