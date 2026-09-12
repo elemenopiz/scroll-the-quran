@@ -1,7 +1,7 @@
 {
   "surah": 49,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T09:13:35.849Z",
+  "generatedAt": "2026-09-12T09:44:43.427Z",
   "studies": [
     {
       "key": "49:1",
@@ -522,6 +522,238 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:30:40.999Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "49:14",
+      "surah": 49,
+      "start": 14,
+      "end": 14,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Faith Has Not Entered Your Hearts",
+      "tier": "standard",
+      "meaning": "A claim is corrected without being dismissed. The desert Arabs say they have believed, and the reply substitutes a different word: say instead that you have submitted. The distinction is not between honest and dishonest people. It is between an outward alignment, which they genuinely have, and an inward one, which the ayah says has not arrived yet. The particle used for not yet leaves the door open rather than closing it, and the ayah goes on to promise that obedience will lose them nothing.",
+      "historicalContext": "Medinan, from the later years, when delegations from the tribes around Medina were arriving to declare their allegiance. The commentators connect the ayah with one such group, and they differ over which. What is not in dispute is the situation: people whose position had changed with events, coming in, and the surah answers them with a correction of vocabulary and then with a promise that their deeds will still count.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَعْرَابُ",
+          "gloss": "the desert dwellers",
+          "note": "Not a word for Arabs in general but for the nomadic population outside the settled towns. The Quran uses it ten times, and the surrounding ayat each time describe a distance from the community's centre rather than an ethnic category."
+        },
+        {
+          "arabic": "أَسْلَمْنَا",
+          "gloss": "we have submitted",
+          "note": "A verb for handing something over and so for giving oneself up to another's authority. It names an act that can be seen from outside, which is exactly why the ayah offers it as the accurate word for what they had done."
+        },
+        {
+          "arabic": "يَلِتْكُم",
+          "gloss": "diminish you, dock you",
+          "note": "A verb for shaving an amount off something owed, used of short measure. It occurs once in the Quran and the classical reciters transmit it in two forms. The promise is that nothing will be deducted from their record."
+        }
+      ],
+      "lifeInProphetsTime": "A tribe that made terms with a rising power in Arabia sent its chiefs, said the words, and expected the arrangement to be recognised. That was how alliances worked, and nobody asked what the men involved felt about it. What the ayah does is unusual in that context: it accepts the alliance at face value, keeps its benefits in place, and then declines to call it by the larger word. The transaction stands. The claim attached to it is corrected.",
+      "didYouKnow": "The verb about nothing being deducted occurs once in the Quran, in this ayah, and the classical reciters transmit two different forms of it from two different roots, both meaning to reduce. The ayah also gives one of the few places in the Book where two words normally treated as interchangeable, belief and submission, are deliberately separated.",
+      "theologicalSignificance": "The ayah separates a public identity from an inner state and refuses to collapse either into the other. The submission is real and is not called a lie. The faith is said not to have arrived, and the word used for not yet implies that it may. Between the two, the Quran sets out something the tradition has held ever since: what can be seen of a person is genuine but partial, and the part nobody can inspect is the part God is speaking about.",
+      "crossReferences": [
+        {
+          "ref": "49:15",
+          "why": "Gives the positive definition immediately after, naming what belief looks like when it has arrived."
+        },
+        {
+          "ref": "9:97-99",
+          "why": "Describes the same population in both directions, some nearer and some further from what they professed."
+        },
+        {
+          "ref": "2:8-9",
+          "why": "Addresses a different group making a claim about belief, and treats the gap between word and heart."
+        }
+      ],
+      "applyIt": "Notice one label you use about yourself that you have not examined recently: a practising person, a good friend, someone who reads. Ask what you did in the last week that the label would predict. The ayah does not tell anyone to drop the word. It asks for the accurate one, which is a smaller and more useful question than whether you deserve the large one.",
+      "exploreFurther": [
+        "49:15",
+        "9:97-99",
+        "2:8-10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:44:43.230Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "49:15",
+      "surah": 49,
+      "start": 15,
+      "end": 15,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "And Then They Did Not Doubt",
+      "tier": "standard",
+      "meaning": "A definition follows the correction, and it has three parts in a deliberate order. Belief in God and His Messenger comes first, then a clause introduced by a word meaning afterwards: and then they did not doubt. That particle matters, because it places the absence of doubt in the time that follows the first assent rather than inside it. Third comes effort with property and person. The closing verdict names them truthful, which answers the claim made in the previous ayah.",
+      "historicalContext": "Medinan, immediately after an ayah correcting people who said they believed. The two belong together: one says what the word does not yet cover, the other says what it does. The commentators read the mention of property before person as fitting the setting, since a community under pressure needed funding before it needed bodies, and the order recurs elsewhere in the Quran.",
+      "keyTerms": [
+        {
+          "arabic": "ثُمَّ",
+          "gloss": "then, afterwards",
+          "note": "A particle of sequence with a gap in it, unlike the ordinary connector that means simply and. Using it here puts the not doubting after the believing in time, so what is described is a state maintained rather than a moment."
+        },
+        {
+          "arabic": "يَرْتَابُوا۟",
+          "gloss": "they wavered, they doubted",
+          "note": "An eighth form verb from a root for unsettled suspicion, the kind that disturbs rather than the kind that investigates. Its root also gives the word for a misgiving about a person, so it names disquiet more than intellectual uncertainty."
+        },
+        {
+          "arabic": "ٱلصَّـٰدِقُونَ",
+          "gloss": "the truthful ones",
+          "note": "The word is about matching, not about honesty in speech alone: a report is truthful when it fits what happened, and a person when the life fits the claim. Placing it at the end makes the whole ayah a test of a sentence."
+        }
+      ],
+      "lifeInProphetsTime": "Medina in these years ran on contributions that were visible to everyone. Who equipped a rider, who supplied the dates for a journey, who sent a son and who kept him back: all of it was known within a day in a town of that size. Wealth was harder to part with than time because it was the household's whole security, held in animals, palms and stored grain rather than in anything easily replaced.",
+      "didYouKnow": "The phrase pairing property and person occurs ten times in the Quran, and property is named first in nine of them. The single exception comes in an ayah describing the exchange as a purchase, where the person is named first instead. In this ayah the usual order stands, and it closes on the word for those whose claims match their lives.",
+      "theologicalSignificance": "Faith is described as something that continues rather than something that occurred. The order of the clauses does the work: assent, then a stretch of time without unsettling, then costly action. None of the three is a feeling, and none of them can be established by a statement. That makes the verdict at the end, that these are the truthful, a conclusion drawn from a life rather than from a declaration, which is precisely the correction the previous ayah had made.",
+      "crossReferences": [
+        {
+          "ref": "9:111",
+          "why": "Describes the same exchange as a purchase, and is the one place that names the person before the property."
+        },
+        {
+          "ref": "2:214",
+          "why": "Shows the same sequence in reverse, believers shaken until they ask when the help will come."
+        },
+        {
+          "ref": "29:2-3",
+          "why": "States that the claim to believe is followed by testing, which is what the word for afterwards implies."
+        }
+      ],
+      "applyIt": "Pick something you believed firmly a year ago and check whether you still do, or whether you have simply stopped looking at it. The ayah puts the absence of doubt after the believing, in the time that follows, which means it is describing maintenance. Spend five minutes today on one belief you have not visited since you first accepted it.",
+      "exploreFurther": [
+        "9:111",
+        "29:1-3",
+        "2:214"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:44:43.230Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "49:16",
+      "surah": 49,
+      "start": 16,
+      "end": 16,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "Teaching God Your Own Religion",
+      "tier": "standard",
+      "meaning": "One question does the whole work, and it is an argument by absurdity. To insist on one's faith when the insistence is addressed to God is to offer Him information, and the ayah names that plainly. Then it widens: God knows what is in the heavens and what is in the earth. The move from an inner state to the whole cosmos is not a change of subject. It says that a claim about one's own heart concerns a very small region of what is already known.",
+      "historicalContext": "Medinan, in a sequence addressed to people who had come in and wanted their standing recognised. The preceding ayah had corrected their vocabulary and the next will correct the favour they thought they were doing. This one sits between the two and removes the ground under the argument itself. No specific occasion is reported for the single ayah beyond the setting of the passage around it.",
+      "keyTerms": [
+        {
+          "arabic": "أَتُعَلِّمُونَ",
+          "gloss": "are you instructing",
+          "note": "The second form of the verb to know, meaning to make someone know. The question is not whether they are lying but whether they imagine themselves supplying a fact, which is a sharper and quieter charge."
+        },
+        {
+          "arabic": "بِدِينِكُمْ",
+          "gloss": "about your religion",
+          "note": "The word covers a debt, a judgement and a way of life, all from one root for what is owed and settled between two parties. Attaching it to a possessive is part of the point: they are speaking of it as a holding of theirs."
+        },
+        {
+          "arabic": "عَلِيمٌ",
+          "gloss": "All Knowing",
+          "note": "An intensive adjective rather than a participle, so it names knowledge as a permanent attribute rather than an act performed. The ayah closes with it after listing the heavens and the earth, which makes the list an illustration rather than a limit."
+        }
+      ],
+      "lifeInProphetsTime": "Reputation in Arabia was managed out loud. A man stated his lineage, recited what his people had done, and expected the statement to settle his rank, because there was no register to consult and no other way of being placed. Delegations arriving in Medina brought that habit with them. The ayah meets a completely normal social manoeuvre with a reply that belongs to a different order entirely.",
+      "didYouKnow": "The word the ayah uses for religion carries in Arabic the sense of a debt owed and a judgement given, which is why the Day of Judgement is named with the same word. The surah ends two ayat later with God described as knowing the unseen of the heavens and the earth, repeating this ayah's claim with a different word for what is hidden.",
+      "theologicalSignificance": "The ayah closes a particular kind of religious argument for good. If God knows everything in the heavens and the earth, then no amount of insisting adds anything, and no one can establish a rank before God by announcement. What is left is the thing itself. That cuts in two directions at once: it disarms the person making claims, and it relieves anyone who fears that their case has not been heard properly.",
+      "crossReferences": [
+        {
+          "ref": "49:18",
+          "why": "Closes the surah by restating the same knowledge, this time as knowledge of what is unseen."
+        },
+        {
+          "ref": "3:29",
+          "why": "Says the same thing about hiding or showing what is in the breast, and adds that God knows it either way."
+        },
+        {
+          "ref": "2:77",
+          "why": "Puts the question to a different audience: do they not know that God knows what they conceal."
+        }
+      ],
+      "applyIt": "The next time you are about to explain yourself to God in a prayer, stop after the first sentence. Not out of despair, and not to be clever about it. Just notice how much of what you were going to say was an argument, and how little of it was a request. This ayah is specifically about the difference.",
+      "exploreFurther": [
+        "49:18",
+        "3:29",
+        "2:284"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:44:43.230Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "49:17-18",
+      "surah": 49,
+      "start": 17,
+      "end": 18,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "Who Is Doing Whom A Favour",
+      "tier": "standard",
+      "meaning": "The direction of a debt is reversed in one sentence. They present their entry into Islam as a favour done to the Prophet, and the reply refuses the framing twice: do not count it as a favour to me, and then, God is the one doing you a favour by guiding you to faith. A condition closes it, if you are truthful, which returns the passage to the standard set three ayat earlier. The next line supplies the ground: what is hidden is known.",
+      "historicalContext": "Medinan, and the setting is a real political one. Tribes that had accepted the new order expected something in return, and the expectation was not unusual: in Arabia an alliance created obligations that ran in both directions and were tallied carefully. These ayat close the surah by refusing to enter that ledger at all. The commentators connect the passage with delegations arriving in the final years.",
+      "keyTerms": [
+        {
+          "arabic": "يَمُنُّونَ",
+          "gloss": "they count it a favour",
+          "note": "A verb for conferring a benefit and then holding it over someone. The Quran elsewhere warns that charity is cancelled by exactly this, the reminder that follows the gift. This form of it occurs only in this ayah."
+        },
+        {
+          "arabic": "هَدَىٰكُمْ",
+          "gloss": "He guided you",
+          "note": "A verb for showing the way and for bringing someone to it, and Arabic uses the same root for a gift presented to a host. Guidance is therefore named with the vocabulary of a present rather than of instruction."
+        },
+        {
+          "arabic": "غَيْبَ",
+          "gloss": "the unseen, the hidden",
+          "note": "A noun for whatever is absent from perception, not for the mysterious as such. Attaching it to the heavens and the earth makes the claim comprehensive: there is no region, high or low, where something is stored out of view."
+        }
+      ],
+      "lifeInProphetsTime": "Gift and obligation were the same transaction in Arabia. A man who gave another a camel had placed something on him, and the poets treated the reminder of a favour as a defect serious enough to name publicly. Generosity was admired precisely because it was supposed to be given and then dropped. These ayat apply that widely shared social standard to religion, and then move the account to a different creditor entirely.",
+      "didYouKnow": "The verb in this ayah for counting something as a favour done appears in this exact form only here. Its root runs through the Quran in two opposite directions: as the divine bestowal described in several places, and as the human habit of reminding people what they were given, which the Book says destroys charity outright.",
+      "theologicalSignificance": "Guidance is described as a gift received rather than a position achieved, and the whole surah's argument about rank rests on that. If faith is given, then no one holds it as a credit against anyone else, and the chapter's earlier instructions about ridicule, suspicion and names all follow from the same point. The closing ayah then removes the last refuge of a religion kept as reputation: the part nobody can see is the part being assessed.",
+      "crossReferences": [
+        {
+          "ref": "2:264",
+          "why": "Says that charity is voided by the reminder of the favour, using the same root as this ayah."
+        },
+        {
+          "ref": "49:13",
+          "why": "Sets the measure the surah works with, that rank before God is not a matter of origin or claim."
+        },
+        {
+          "ref": "16:53",
+          "why": "States the general principle: whatever good anyone has is from God."
+        }
+      ],
+      "applyIt": "Think of something you did for someone that you have mentioned more than once. Decide today not to mention it again, to them or to anyone. That is the whole exercise. The surah ends by moving a favour from one column to another, and the same move is available in the small accounts you keep without meaning to.",
+      "exploreFurther": [
+        "2:262-264",
+        "49:13",
+        "16:53"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:44:43.230Z",
         "reviewed": false
       }
     }
