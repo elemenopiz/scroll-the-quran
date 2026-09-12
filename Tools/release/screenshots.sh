@@ -12,11 +12,13 @@
 # SCROLL_FIXED_DATE pinned, so the captures are deterministic (same streak, same date,
 # same fixture verses) and premium content is unlocked by the fixture entitlement store.
 #
-# The raw capture is 1206x2622 (iPhone 17 at @3x), which is not an App Store size. Each
-# one is scaled to fill the transparent PhoneFrame's screen window (x30 y30, 1119x2496,
-# corner radius 160 in the frame's 1179x2556 artwork space — never stretched, see
-# AppShell/ArtworkAssets.swift) and laid on a captioned canvas at the two sizes App Store
-# Connect asks for:
+# The raw capture is 1206x2622 (iPhone 17 Pro at @3x), which is not an App Store size. Each
+# one is scaled to fill the transparent PhoneFrame's screen window and laid on a captioned
+# canvas at the two sizes App Store Connect asks for. The window is the device's own screen
+# — 402x874 pt — so the capture lands in it edge to edge: the fill-and-crop below now takes
+# 0.03 % off, not the 1.5 % the pre-4h frame did. The window's numbers are printed by
+# `Artwork/tools/frame.py`, which draws the frame from `DeviceFrameMetrics`; re-run it
+# (`Artwork/tools/build.sh`) and copy WIN_*/FRAME_* below if the device ever changes.
 #     6.9"  1290x2796   (iPhone 17 Pro Max / 16 Pro Max)
 #     6.5"  1284x2778   (iPhone 14 Plus / 13 Pro Max)
 #
@@ -44,8 +46,10 @@ FIXED_DATE="${SCROLL_FIXED_DATE:-2026-09-14}"
 SETTLE="${SCROLL_CAPTURE_SETTLE:-4}"
 CAPTURE_TRIES="${SCROLL_CAPTURE_TRIES:-5}"
 
-# The frame's transparent screen window, in the frame's own pixels.
-WIN_X=30; WIN_Y=30; WIN_W=1119; WIN_H=2496; WIN_R=160
+# The frame's transparent screen window, and the enclosure's own box, in the frame
+# artwork's 1179x2556 pixels. Printed by `python3 Artwork/tools/frame.py`.
+WIN_X=33; WIN_Y=69; WIN_W=1113; WIN_H=2419; WIN_R=152
+FRAME_X=0; FRAME_W=1179; FRAME_Y=45; FRAME_H=2466
 
 # id|route|appearance|caption   — order is the App Store display order.
 #
@@ -102,21 +106,23 @@ frame_one() {
   local raw="$1" cw="$2" ch="$3" caption="$4" out="$5"
   local tmp; tmp="$(mktemp -d)"
 
-  # Scale the capture to *fill* the window (the capture is 0.460:1, the window 0.448:1),
+  # Scale the capture to *fill* the window (both are 0.460:1 to within 0.03 %),
   # centre-crop it, and round its corners to the window's radius.
   magick "$raw" -alpha off -resize "${WIN_W}x${WIN_H}^" -gravity center -extent "${WIN_W}x${WIN_H}" \
     \( -size "${WIN_W}x${WIN_H}" xc:black -fill white \
        -draw "roundrectangle 0,0,$((WIN_W-1)),$((WIN_H-1)),$WIN_R,$WIN_R" -alpha off \) \
     -compose CopyOpacity -composite "$tmp/screen.png"
 
-  # Slide it into the frame's window, frame on top so the bezel and island overlap it.
+  # Slide it into the frame's window, frame on top so the rail and the border overlap it,
+  # then cut the canvas down to the enclosure so the phone is not floating in dead space.
   magick -size 1179x2556 xc:none \
     "$tmp/screen.png" -geometry "+${WIN_X}+${WIN_Y}" -composite \
-    "$FRAME" -composite "$tmp/device.png"
+    "$FRAME" -composite \
+    -crop "${FRAME_W}x${FRAME_H}+${FRAME_X}+${FRAME_Y}" +repage "$tmp/device.png"
 
   local phone_w phone_h phone_x phone_y cap_w cap_size cap_y
   phone_w=$(( cw * 80 / 100 ))
-  phone_h=$(( phone_w * 2556 / 1179 ))
+  phone_h=$(( phone_w * FRAME_H / FRAME_W ))
   phone_x=$(( (cw - phone_w) / 2 ))
   phone_y=$(( ch * 135 / 1000 ))
   cap_w=$(( cw * 84 / 100 ))

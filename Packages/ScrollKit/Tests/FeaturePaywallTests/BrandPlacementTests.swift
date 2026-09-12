@@ -62,7 +62,11 @@ struct BrandPlacementTests {
         // width above the pill's own top — that is the edge that has to clear the digits.
         let pillTop = PaywallMetrics.offPillTop - PaywallMetrics.offPillOutline / 2
         let overlap = max(0, ink.upperBound - pillTop)
-        #expect(overlap <= (ink.upperBound - ink.lowerBound) * 0.25)
+        // Phase 4h: "the OFF under 33% needs to be moved down a bit". At most a tenth of
+        // the digits' height may be covered, and the pill still has to read as hanging off
+        // them rather than floating free, so it stays within 6 pt of the ink.
+        #expect(overlap <= (ink.upperBound - ink.lowerBound) * 0.10)
+        #expect(pillTop - ink.upperBound <= 6)
         #expect(pillTop > ink.lowerBound)
     }
 
@@ -70,6 +74,8 @@ struct BrandPlacementTests {
     func offerCardRowsDoNotCollide() {
         let offBottom = PaywallMetrics.offPillTop + PaywallMetrics.offPillSize.height
         #expect(offBottom + PaywallMetrics.offPillOutline <= PaywallMetrics.trialPillTop)
+        // Phase 4h: dropping the pill must not crowd "+3 day trial" — 8 pt of air minimum.
+        #expect(PaywallMetrics.trialPillTop - offBottom >= 8)
         let offerLineBottom = PaywallMetrics.oneTimeOfferTop + PaywallMetrics.oneTimeOfferSize
         #expect(offerLineBottom <= PaywallMetrics.percentInk.lowerBound)
         let trialBottom = PaywallMetrics.trialPillTop + PaywallMetrics.trialPillSize.height

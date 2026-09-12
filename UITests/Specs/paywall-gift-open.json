@@ -21,6 +21,7 @@
     {
       "name": "gift.offerCard",
       "query": "identifier",
+      "note": "Phase 4h: `PaywallMetrics.offPillTop` moves 270 -> 278 so the OFF pill sits under the \"33%\" digits' baseline instead of across them (owner: \"the OFF under 33% needs to be moved down a bit\"). The card's own frame does not move: the pill is one of five rows inside a fixed-size card, and the card is a single combined accessibility element, so the pill has no frame of its own to record here. What guards the move is `BrandPlacementTests` (at most a tenth of the digits covered, at most 6 pt of air, at least 8 pt to the \"+3 day trial\" pill) and the gift-open RMSE.",
       "frame": {
         "x": 71.8,
         "y": 162.0,

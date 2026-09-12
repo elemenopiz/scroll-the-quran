@@ -48,10 +48,13 @@ public enum OnboardingMetrics {
         titleLines >= 3 ? 320 : slideHeadlineWidth
     }
 
-    /// The reference row a slide's phone frame starts on: 240 on the two-line slides,
-    /// 256 on slide 2's three-line one.
+    /// The reference row a slide's phone frame starts on — the **enclosure's** own top
+    /// edge, measured off the reference slides: 238.3 on the two-line ones
+    /// (`onboarding-slide3-discover.png` / `-slide4-search.png`) and 254.3 on slide 2's
+    /// three-line one. Slide 1 is the reference's own outlier, 9 pt higher again for the
+    /// same two-line title; this model follows the pair, as the 240 it replaces did.
     public static func slidePhoneTop(titleLines: Int) -> CGFloat {
-        240 + CGFloat(titleLines - 2) * 16
+        238 + CGFloat(titleLines - 2) * 16
     }
 
     /// Height reserved for a slide's top padding, headline and subheadline together, so
@@ -94,26 +97,35 @@ public enum OnboardingMetrics {
     }
 
     /// The slide call to action follows the phone rather than being pinned to the
-    /// bottom: frame bottom 733 -> Continue top 746 on slides 3 and 4, and frame bottom
-    /// 749 -> Continue top 762 on the taller slide 2.
-    public static let phoneToCallToAction: CGFloat = 13
+    /// bottom: enclosure bottom 736 -> Continue top 746 on slides 3 and 4, and enclosure
+    /// bottom 752 -> Continue top 762 on the taller slide 2. Both are the reference's own
+    /// rows.
+    public static let phoneToCallToAction: CGFloat = 10
 
     // MARK: - Phone frame mockup
 
-    /// Outer bezel spans x 74...318 (244 pt) and rows 240...733 (494 pt).
-    public static let phoneWidth: CGFloat = 244
-    public static let phoneHeight: CGFloat = 494
-    /// Black bezel measured 8 pt: outer edge x 75, screen starts x 85.
-    public static let phoneBezel: CGFloat = 8
-    public static let phoneCornerRadius: CGFloat = 42
-    public static let phoneScreenCornerRadius: CGFloat = 34
-    /// Dynamic Island: rows 253...273 inside a screen that starts at 249.
-    public static let phoneIslandSize = CGSize(width: 98, height: 21)
-    public static let phoneIslandTop: CGFloat = 5
+    /// The height of the device's **enclosure** on the reference grid.
+    ///
+    /// This is the only size the frame is given: `PhoneFrameLayout` divides it by the
+    /// iPhone 17 Pro's own 891 pt of enclosure and scales every other number —
+    /// width, radii, rail, border, buttons — by the result, so the screen window inside
+    /// keeps the capture's 402:874 aspect exactly and nothing has to be cropped to fit.
+    ///
+    /// 498 is the reference's own enclosure height (238.3...736 on the two-line slides,
+    /// 254.3...752 on slide 2), so the device's silhouette lands where the reference puts
+    /// it. Its *width* cannot also match: the reference's enclosure is 243.3 pt across,
+    /// which is a 0.489 : 1 body no iPhone has, because its bezel is more than twice the
+    /// thickness the hardware's is. At the device's own 419 : 891 a 498 pt tall enclosure
+    /// is 234.2 pt wide — 4.6 pt inside the reference's edge down each side, and 12 pt
+    /// more glass top to bottom. That is the accepted deviation in `Reference/scores.md`:
+    /// we draw the iPhone the app runs on, not the mockup's fatter stand-in.
+    public static let phoneHeight: CGFloat = 498
 
-    public static var phoneScreenSize: CGSize {
-        CGSize(width: phoneWidth - phoneBezel * 2, height: phoneHeight - phoneBezel * 2)
-    }
+    /// The soft ground shadow under the device.
+    public static let phoneShadowRadius: CGFloat = 24
+    public static let phoneShadowOffset: CGFloat = 12
+    public static let phoneShadowOpacityLight: CGFloat = 0.22
+    public static let phoneShadowOpacityDark: CGFloat = 0.55
 
     // MARK: - Sign-in sheet
 

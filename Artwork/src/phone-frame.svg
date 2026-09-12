@@ -1,15 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1179" height="2556" viewBox="0 0 1179 2556" fill="none">
 <defs>
-<linearGradient id="rail" x1="0" y1="0" x2="1" y2="0.08"><stop offset="0" stop-color="#B9B6AF"/><stop offset="0.14" stop-color="#F0EEE9"/><stop offset="0.34" stop-color="#C2BFB8"/><stop offset="0.52" stop-color="#EEECE7"/><stop offset="0.72" stop-color="#BEBBB4"/><stop offset="0.88" stop-color="#EDEBE5"/><stop offset="1" stop-color="#AFACA5"/></linearGradient>
-<linearGradient id="btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6E6C68"/><stop offset="0.5" stop-color="#C6C4BF"/><stop offset="1" stop-color="#7A7873"/></linearGradient>
-<clipPath id="apt"><path d="M190 30 H989 A160 160 0 0 1 1149 190 V2366 A160 160 0 0 1 989 2526 H190 A160 160 0 0 1 30 2366 V190 A160 160 0 0 1 190 30 Z"/></clipPath>
+<linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6E6EB"/><stop offset="0.02" stop-color="#B9B9BE"/><stop offset="1" stop-color="#8E8E93"/></linearGradient>
+<linearGradient id="btn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E8E93"/><stop offset="0.5" stop-color="#B9B9BE"/><stop offset="1" stop-color="#8E8E93"/></linearGradient>
 </defs>
-<rect x="0" y="640" width="9" height="96" rx="4.5" fill="url(#btn)"/>
-<rect x="0" y="812" width="9" height="150" rx="4.5" fill="url(#btn)"/>
-<rect x="0" y="1000" width="9" height="150" rx="4.5" fill="url(#btn)"/>
-<rect x="1170" y="858" width="9" height="250" rx="4.5" fill="url(#btn)"/>
-<path fill-rule="evenodd" fill="url(#rail)" d="M190 0 H989 A190 190 0 0 1 1179 190 V2366 A190 190 0 0 1 989 2556 H190 A190 190 0 0 1 0 2366 V190 A190 190 0 0 1 190 0 Z M190 12 A178 178 0 0 0 12 190 V2366 A178 178 0 0 0 190 2544 H989 A178 178 0 0 0 1167 2366 V190 A178 178 0 0 0 989 12 Z"/>
-<path fill-rule="evenodd" fill="#08080A" d="M190 12 H989 A178 178 0 0 1 1167 190 V2366 A178 178 0 0 1 989 2544 H190 A178 178 0 0 1 12 2366 V190 A178 178 0 0 1 190 12 Z M190 30 A160 160 0 0 0 30 190 V2366 A160 160 0 0 0 190 2526 H989 A160 160 0 0 0 1149 2366 V190 A160 160 0 0 0 989 30 Z"/>
-<path d="M190 30 H989 A160 160 0 0 1 1149 190 V2366 A160 160 0 0 1 989 2526 H190 A160 160 0 0 1 30 2366 V190 A160 160 0 0 1 190 30 Z" fill="none" stroke="#000000" stroke-opacity="0.55" stroke-width="3"/>
-<rect x="402.0" y="66" width="375" height="111" rx="55.5" fill="#000000"/>
+<rect x="0" y="487.85" width="16.61" height="83.03" rx="8.3" fill="url(#btn)"/>
+<rect x="0" y="659.44" width="16.61" height="166.06" rx="8.3" fill="url(#btn)"/>
+<rect x="0" y="869.78" width="16.61" height="166.06" rx="8.3" fill="url(#btn)"/>
+<rect x="1162.39" y="739.7" width="16.61" height="265.69" rx="8.3" fill="url(#btn)"/>
+<path fill-rule="evenodd" fill="url(#rail)" d="M185.43 45.03 H993.57 A175.74 175.74 0 0 1 1169.31 220.77 V2335.23 A175.74 175.74 0 0 1 993.57 2510.97 H185.43 A175.74 175.74 0 0 1 9.69 2335.23 V220.77 A175.74 175.74 0 0 1 185.43 45.03 Z M185.43 51.95 A168.82 168.82 0 0 0 16.61 220.77 V2335.23 A168.82 168.82 0 0 0 185.43 2504.05 H993.57 A168.82 168.82 0 0 0 1162.39 2335.23 V220.77 A168.82 168.82 0 0 0 993.57 51.95 Z"/>
+<path fill-rule="evenodd" fill="#050506" d="M185.43 51.95 H993.57 A168.82 168.82 0 0 1 1162.39 220.77 V2335.23 A168.82 168.82 0 0 1 993.57 2504.05 H185.43 A168.82 168.82 0 0 1 16.61 2335.23 V220.77 A168.82 168.82 0 0 1 185.43 51.95 Z M185.43 68.56 A152.22 152.22 0 0 0 33.21 220.77 V2335.23 A152.22 152.22 0 0 0 185.43 2487.44 H993.57 A152.22 152.22 0 0 0 1145.79 2335.23 V220.77 A152.22 152.22 0 0 0 993.57 68.56 Z"/>
+<path d="M185.43 68.56 H993.57 A152.22 152.22 0 0 1 1145.79 220.77 V2335.23 A152.22 152.22 0 0 1 993.57 2487.44 H185.43 A152.22 152.22 0 0 1 33.21 2335.23 V220.77 A152.22 152.22 0 0 1 185.43 68.56 Z" fill="none" stroke="#000000" stroke-opacity="0.55" stroke-width="3"/>
 </svg>
