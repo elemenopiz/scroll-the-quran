@@ -7,7 +7,7 @@ import XCTest
 ///
 /// **State.** The reader writes the chosen translation and any note to the App Group
 /// container, which survives `simctl uninstall`. A test whose assertions depend on the
-/// starting state — `testSwitchingTranslationChangesTheText` expects CLEAR, and the
+/// starting state — `testSwitchingTranslationChangesTheText` expects ITANI, and the
 /// translation pill's width is measured against it — passes `--reset-state` so it does
 /// not inherit whatever the previous run left behind.
 final class ReaderTests: XCTestCase {
@@ -151,8 +151,8 @@ final class ReaderTests: XCTestCase {
     func testSwitchingTranslationChangesTheText() throws {
         // `--reset-state` wipes the App Group container first. Without it this test starts
         // on whatever translation the *previous* run left selected — PICKTHALL, after this
-        // test itself has run once — and both the "Translation: CLEAR" assertion and the
-        // pill's measured width (106.9 pt against the spec's 72.0) fail on a second run.
+        // test itself has run once — and both the "Translation: ITANI" assertion and the
+        // pill's measured width (106.9 pt against the spec's 62.2) fail on a second run.
         let app = try launchReader(arguments: ["--reset-state"])
         defer { app.terminate() }
 
@@ -166,7 +166,7 @@ final class ReaderTests: XCTestCase {
         let before = verse.label
 
         let pill = app.descendants(matching: .any).matching(identifier: "reader.translationPill").firstMatch
-        XCTAssertEqual(pill.label, "Translation: CLEAR")
+        XCTAssertEqual(pill.label, "Translation: ITANI")
         pill.tap()
 
         let row = app.descendants(matching: .any).matching(identifier: "translationSheet.row.pickthall").firstMatch
