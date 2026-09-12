@@ -21,6 +21,11 @@ public final class MockEntitlementStore: EntitlementProviding {
     public var nextOutcome: PurchaseOutcome = .purchased
     /// Set to make `purchase(_:)` or `restore()` throw.
     public var nextError: CommerceError?
+    /// Set when the customer is meant to *have* a purchase to restore, so `restore()` grants
+    /// the entitlement the way `AppStore.sync()` plus a re-read of `currentEntitlements`
+    /// would. A StoreKit test store cannot demonstrate this: it never stops returning a
+    /// transaction, so there is nothing there for a restore to bring back.
+    public var restoreGrantsPremium = false
 
     public private(set) var purchaseCount = 0
     public private(set) var restoreCount = 0
@@ -66,6 +71,9 @@ public final class MockEntitlementStore: EntitlementProviding {
         restoreCount += 1
         if let error = nextError {
             throw error
+        }
+        if restoreGrantsPremium {
+            grant()
         }
     }
 

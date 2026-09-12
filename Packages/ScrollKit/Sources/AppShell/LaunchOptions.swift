@@ -1,3 +1,4 @@
+import Commerce
 import Foundation
 
 /// Everything the process environment tells the app about how it was started.
@@ -25,6 +26,14 @@ public struct LaunchOptions: Equatable, Sendable {
     /// fixture commerce means premium — a capture and a test that is not about gating want
     /// the unlocked app.
     public let forcedEntitlement: Bool?
+    /// Set by `--billing <state>`: what `MockEntitlementStore` should report as the
+    /// subscription group's renewal state, so a UI test can stand the app in billing retry
+    /// without waiting out a simulated renewal.
+    public let forcedBillingState: BillingState?
+    /// Set by `--restorable`: the fixture store has a purchase waiting to be restored, so
+    /// "Restore Purchases" unlocks the app. A StoreKit test store cannot express this — it
+    /// never forgets a transaction — so the fixture is the only place to test the wiring.
+    public let hasRestorablePurchase: Bool
 
     public init(
         screenshot: ScreenRoute? = nil,
@@ -33,7 +42,9 @@ public struct LaunchOptions: Equatable, Sendable {
         openURL: URL? = nil,
         funnelPhase: RootPhase? = nil,
         resetState: Bool = false,
-        forcedEntitlement: Bool? = nil
+        forcedEntitlement: Bool? = nil,
+        forcedBillingState: BillingState? = nil,
+        hasRestorablePurchase: Bool = false
     ) {
         self.screenshot = screenshot
         self.fixedDate = fixedDate
@@ -42,6 +53,8 @@ public struct LaunchOptions: Equatable, Sendable {
         self.funnelPhase = funnelPhase
         self.resetState = resetState
         self.forcedEntitlement = forcedEntitlement
+        self.forcedBillingState = forcedBillingState
+        self.hasRestorablePurchase = hasRestorablePurchase
     }
 
     public init(arguments: [String], environment: [String: String]) {
@@ -57,6 +70,9 @@ public struct LaunchOptions: Equatable, Sendable {
         } else {
             funnelPhase = nil
         }
+        hasRestorablePurchase = arguments.contains("--restorable")
+        forcedBillingState = LaunchOptions.value(of: "--billing", in: arguments)
+            .flatMap(BillingState.init(rawValue:))
         if arguments.contains("--premium") {
             forcedEntitlement = true
         } else if arguments.contains("--free") {

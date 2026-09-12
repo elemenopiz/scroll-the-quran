@@ -201,9 +201,17 @@ public final class AppEnvironment {
         // One store for the life of the process. `StoreKitEntitlementStore.init` starts the
         // `Transaction.updates` listener, so it has to be created at launch — not when the
         // paywall is first shown — or a renewal that lands early is missed.
-        let entitlements: any Commerce.EntitlementProviding = launch.usesFixtureCommerce
-            ? Commerce.MockEntitlementStore(isPremium: launch.fixtureIsPremium)
-            : StoreKitEntitlementStore()
+        let entitlements: any Commerce.EntitlementProviding
+        if launch.usesFixtureCommerce {
+            let mock = Commerce.MockEntitlementStore(
+                isPremium: launch.fixtureIsPremium,
+                billingState: launch.forcedBillingState
+            )
+            mock.restoreGrantsPremium = launch.hasRestorablePurchase
+            entitlements = mock
+        } else {
+            entitlements = StoreKitEntitlementStore()
+        }
 
         return AppEnvironment(
             launch: launch,
