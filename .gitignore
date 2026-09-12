@@ -9,6 +9,13 @@ xcuserdata/
 # Local config
 Config/Local.xcconfig
 .claude/settings.local.json
+# Service credentials (see docs/infra/README.md); only the .example files are tracked
+.env
+.env.local
+supabase/.env
+# Cloudflare Wrangler local state (`wrangler pages dev`)
+.wrangler/
+web/.wrangler/
 # Content generation scratch
 Tools/content-gen/work/
 node_modules/
