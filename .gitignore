@@ -12,7 +12,6 @@ Config/Local.xcconfig
 # Service credentials (see docs/infra/README.md); only the .example files are tracked
 .env
 .env.local
-web/.env
 supabase/.env
 # Cloudflare Wrangler local state (`wrangler pages dev`)
 .wrangler/
