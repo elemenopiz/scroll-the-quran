@@ -193,6 +193,9 @@ public extension UserStore {
         notes.reset()
         plan.reset()
         prefs = Prefs()
+        // "Delete my data" means the account too, and the account is half in the Keychain,
+        // which `fileStore.removeAll()` below cannot reach.
+        accountIdentity?.signOut()
         saveTask?.cancel()
         saveTask = nil
         dirty = []
@@ -240,10 +243,6 @@ extension UserStore: OfferSeenStore {
 }
 
 extension UserStore: AccountSink {
-    public var accountID: String? {
-        prefs.accountID
-    }
-
     public var accountEmail: String? {
         prefs.accountEmail
     }
@@ -252,9 +251,15 @@ extension UserStore: AccountSink {
         prefs.isSignedIn
     }
 
-    public func signIn(accountID: String, email: String?) {
+    public func attachIdentity(_ identity: any AccountIdentityStore) {
+        accountIdentity = identity
+    }
+
+    /// Records the sign-in itself. There is no `accountID` parameter on purpose (audit
+    /// SEC-1/SEC-2): the Apple user identifier goes to `accountIdentity`, never into `prefs`.
+    public func signIn(email: String?) {
         updatePrefs {
-            $0.accountID = accountID
+            $0.isSignedIn = true
             // Apple only hands over the email on the very first sign-in; keep the one we have.
             if let email, !email.isEmpty {
                 $0.accountEmail = email
@@ -262,11 +267,17 @@ extension UserStore: AccountSink {
         }
     }
 
+    /// Clears both sides of the account: the flag and the address here, the identity in the
+    /// Keychain. Settings' "Sign out" is this method, so leaving either behind would leave the
+    /// reader signed out of an account the device still remembers (audit SEC-4).
     public func signOut() {
         updatePrefs {
-            $0.accountID = nil
+            $0.isSignedIn = false
             $0.accountEmail = nil
         }
+        // Outside `updatePrefs`: that returns early when nothing changed, and a Keychain
+        // record left over from an interrupted sign-out still has to go.
+        accountIdentity?.signOut()
     }
 }
 

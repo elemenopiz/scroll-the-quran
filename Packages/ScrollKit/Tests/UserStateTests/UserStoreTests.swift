@@ -92,14 +92,19 @@ struct UserStoreTests {
         offer.markOneTimeOfferSeen()
         #expect(store.prefs.seenOneTimeOffer)
 
-        account.signIn(accountID: "001234.abcdef", email: "reader@example.com")
+        let identity = SpyAccountIdentity()
+        account.attachIdentity(identity)
+        account.signIn(email: "reader@example.com")
         #expect(account.isSignedIn)
         // Apple only sends the email on the first sign-in; a later nil must not erase it.
-        account.signIn(accountID: "001234.abcdef", email: nil)
+        account.signIn(email: nil)
         #expect(store.prefs.accountEmail == "reader@example.com")
         account.signOut()
-        #expect(store.prefs.accountID == nil)
+        #expect(store.prefs.isSignedIn == false)
         #expect(store.prefs.accountEmail == nil)
+        // Audit SEC-2/SEC-4: Settings can only reach `UserStore`, so `UserStore` is what has
+        // to drop the Keychain half of the account as well as its own flag.
+        #expect(identity.signOutCount == 1)
 
         onboarding.resetOnboarding()
         #expect(store.prefs.onboardingDone == false)
@@ -246,5 +251,72 @@ struct UserStoreTests {
         store.calendar = Fixture.losAngeles
         store.recordOpen(now: Fixture.date(2026, 9, 14, 22, 0, in: Fixture.utc))
         #expect(store.streak.openedDays.sorted().map(\.text) == ["2026-09-14", "2026-09-15"])
+    }
+}
+
+/// Stands in for `FeatureOnboarding.KeychainAccountSink`, which `UserState` cannot see.
+@MainActor
+final class SpyAccountIdentity: AccountIdentityStore {
+    private(set) var signOutCount = 0
+
+    func signOut() {
+        signOutCount += 1
+    }
+}
+
+/// Audit SEC-1/SEC-2: `prefs.json` is plaintext in the App Group container, so the account it
+/// records is a boolean and an address — never the Apple stable user identifier.
+@MainActor
+@Suite("Account state")
+struct UserStoreAccountTests {
+    private func makeStore() -> UserStore {
+        UserStore(fileStore: MemoryUserStateFileStore(), calendar: Fixture.utc, debounce: .milliseconds(1))
+    }
+
+    @Test("Signing in records a flag and an address, and nothing that identifies anyone")
+    func signInWritesNoIdentifier() throws {
+        let store = makeStore()
+        store.signIn(email: "reader@example.com")
+        store.saveAll()
+
+        let data = try #require(try store.fileStore.read(.prefs))
+        let json = try #require(String(data: data, encoding: .utf8))
+        #expect(json.contains(#""isSignedIn":true"#))
+        #expect(!json.contains("accountId"))
+        #expect(!json.contains("000000."))
+    }
+
+    @Test("A prefs.json from before the split drops the identifier and keeps the sign-in")
+    func legacyIdentifierIsMigratedAway() throws {
+        let fileStore = MemoryUserStateFileStore()
+        let legacy = #"{"translationId":"itani","accountId":"001234.abcdef","accountEmail":"reader@example.com"}"#
+        try fileStore.write(Data(legacy.utf8), to: .prefs)
+
+        let store = UserStore(fileStore: fileStore, calendar: Fixture.utc, debounce: .milliseconds(1))
+        store.load()
+        #expect(store.isSignedIn)
+        #expect(store.accountEmail == "reader@example.com")
+        #expect(store.prefs.carriesLegacyAccountID)
+
+        // The migration is not only in memory: seeing the old key marks the file dirty, so the
+        // identifier leaves the disk on the launch that finds it rather than on some later
+        // preference change that may never come.
+        #expect(store.hasPendingSaves)
+        store.save()
+        let raw = try #require(try fileStore.read(.prefs))
+        let rewritten = try #require(String(data: raw, encoding: .utf8))
+        #expect(!rewritten.contains("accountId"))
+        #expect(rewritten.contains(#""isSignedIn":true"#))
+    }
+
+    @Test("Deleting everything drops the Keychain identity too")
+    func deleteAllDataClearsTheIdentity() {
+        let store = makeStore()
+        let identity = SpyAccountIdentity()
+        store.attachIdentity(identity)
+        store.signIn(email: "reader@example.com")
+        store.deleteAllData()
+        #expect(store.isSignedIn == false)
+        #expect(identity.signOutCount == 1)
     }
 }

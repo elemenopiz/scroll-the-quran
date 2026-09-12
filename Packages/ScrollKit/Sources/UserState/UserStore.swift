@@ -38,6 +38,12 @@ public final class UserStore {
     /// their concern starts from defaults, so one bad file never takes the others with it.
     public private(set) var unreadableFiles: Set<UserStateFile> = []
 
+    /// The Keychain record holding the Sign in with Apple identity, which `prefs` deliberately
+    /// does not (audit SEC-1). Attached by the shell's composite account sink at launch;
+    /// `signOut()` and `deleteAllData()` clear it alongside the flag here, because Settings —
+    /// the only place either happens — holds this store and nothing else.
+    @ObservationIgnored public var accountIdentity: (any AccountIdentityStore)?
+
     public init(
         fileStore: any UserStateFileStore,
         calendar: Calendar = .autoupdatingCurrent,
@@ -105,6 +111,12 @@ public final class UserStore {
         notes = decode(.notes) ?? Notes()
         plan = decode(.plan) ?? PlanProgress()
         prefs = decode(.prefs) ?? Prefs()
+        // Audit SEC-2: a `prefs.json` written before the account split still carries the
+        // plaintext Apple user identifier. Decoding has already dropped it from memory; this
+        // marks the file dirty so the copy on disk goes too, on the first launch that sees it.
+        if prefs.carriesLegacyAccountID {
+            touch(.prefs)
+        }
     }
 
     private func decode<T: Decodable>(_ file: UserStateFile) -> T? {

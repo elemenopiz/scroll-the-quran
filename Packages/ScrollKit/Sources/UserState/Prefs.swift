@@ -54,8 +54,14 @@ public struct Prefs: Hashable, Codable, Sendable {
     public var onboardingStep: Int
     /// The paywall's one-time-offer envelope has been shown once; it never shows again.
     public var seenOneTimeOffer: Bool
-    /// Sign in with Apple's stable user identifier, when signed in.
-    public var accountID: String?
+    /// True once Sign in with Apple has succeeded.
+    ///
+    /// A boolean, not the Apple stable user identifier: this file is plaintext JSON in the
+    /// App Group container and travels in unencrypted backups, so the identifier lives in the
+    /// Keychain instead (audit SEC-1). Settings needs to know *that* the reader is signed in,
+    /// not who they are.
+    public var isSignedIn: Bool
+    /// The address to show in Settings. Apple hands it over on the first sign-in only.
     public var accountEmail: String?
     /// The organisation id the user voted for on the Community tab.
     public var charityVote: String?
@@ -68,7 +74,7 @@ public struct Prefs: Hashable, Codable, Sendable {
         onboardingDone: Bool = false,
         onboardingStep: Int = 0,
         seenOneTimeOffer: Bool = false,
-        accountID: String? = nil,
+        isSignedIn: Bool = false,
         accountEmail: String? = nil,
         charityVote: String? = nil,
         widgetVerseRef: VerseRef? = nil,
@@ -78,23 +84,27 @@ public struct Prefs: Hashable, Codable, Sendable {
         self.onboardingDone = onboardingDone
         self.onboardingStep = onboardingStep
         self.seenOneTimeOffer = seenOneTimeOffer
-        self.accountID = accountID
+        self.isSignedIn = isSignedIn
         self.accountEmail = accountEmail
         self.charityVote = charityVote
         self.widgetVerseRef = widgetVerseRef
         self.lastReaderPosition = lastReaderPosition
     }
 
-    public var isSignedIn: Bool {
-        accountID != nil
-    }
+    /// True when this value was decoded from a `prefs.json` still carrying the old plaintext
+    /// `accountId`. Decoding drops the identifier; `UserStore.load()` watches this so the file
+    /// is rewritten once and the identifier actually leaves the disk, rather than surviving
+    /// until the reader next happens to change a preference. Never encoded, never decoded.
+    public private(set) var carriesLegacyAccountID = false
 
     // MARK: Codable
 
     private enum CodingKeys: String, CodingKey {
         case translationID = "translationId"
         case onboardingDone, onboardingStep, seenOneTimeOffer
-        case accountID = "accountId"
+        /// Read-only: builds before the account split wrote the Apple user identifier here.
+        case legacyAccountID = "accountId"
+        case isSignedIn
         case accountEmail, charityVote, widgetVerseRef, lastReaderPosition
     }
 
@@ -104,7 +114,12 @@ public struct Prefs: Hashable, Codable, Sendable {
         onboardingDone = try container.decodeIfPresent(Bool.self, forKey: .onboardingDone) ?? false
         onboardingStep = try container.decodeIfPresent(Int.self, forKey: .onboardingStep) ?? 0
         seenOneTimeOffer = try container.decodeIfPresent(Bool.self, forKey: .seenOneTimeOffer) ?? false
-        accountID = try container.decodeIfPresent(String.self, forKey: .accountID)
+        // The one-time account migration: a stored identifier means "signed in", and is then
+        // never written back (`encode(to:)` has no `accountId` case at all).
+        let legacyAccountID = try container.decodeIfPresent(String.self, forKey: .legacyAccountID)
+        carriesLegacyAccountID = legacyAccountID != nil
+        isSignedIn = try container.decodeIfPresent(Bool.self, forKey: .isSignedIn)
+            ?? (legacyAccountID?.isEmpty == false)
         accountEmail = try container.decodeIfPresent(String.self, forKey: .accountEmail)
         charityVote = try container.decodeIfPresent(String.self, forKey: .charityVote)
         widgetVerseRef = try container.decodeIfPresent(String.self, forKey: .widgetVerseRef).flatMap(VerseRef.init(key:))
@@ -117,7 +132,7 @@ public struct Prefs: Hashable, Codable, Sendable {
         try container.encode(onboardingDone, forKey: .onboardingDone)
         try container.encode(onboardingStep, forKey: .onboardingStep)
         try container.encode(seenOneTimeOffer, forKey: .seenOneTimeOffer)
-        try container.encodeIfPresent(accountID, forKey: .accountID)
+        try container.encode(isSignedIn, forKey: .isSignedIn)
         try container.encodeIfPresent(accountEmail, forKey: .accountEmail)
         try container.encodeIfPresent(charityVote, forKey: .charityVote)
         try container.encodeIfPresent(widgetVerseRef?.key, forKey: .widgetVerseRef)
