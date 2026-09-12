@@ -142,8 +142,10 @@ def main():
     run("magick", "-size", "1179x2556", "xc:none", stand_in, "-geometry", "+30+30",
         "-composite", A / "Frames/phone-frame-1179x2556.png", "-composite",
         "-background", "#EFEDE7", "-alpha", "remove", "-alpha", "off", framed)
-    covers = sorted((A / "PlanCovers").glob("plan-*-1200x800.png"))
-    covers = [c for c in covers if "scrim" not in c.name]
+    # The covers ship as JPEG (tools/covers-from-src.sh); the scrim beside them is the one
+    # PNG in the directory and is shown on its own row below, not as a cover.
+    covers = sorted(p for p in (A / "PlanCovers").glob("plan-*-1200x800.*")
+                    if p.suffix in (".jpg", ".png") and "scrim" not in p.name)
     scrim_demo = tmp()
     run("magick", covers[0], A / "PlanCovers/plan-cover-scrim-1200x800.png",
         "-composite", scrim_demo)
@@ -156,11 +158,12 @@ def main():
 
     # --- plan covers --------------------------------------------------------
     cs = [cell(c, f"PlanCovers/{c.name}\n1200x800") for c in covers]
-    rows.append(("Reading-plan covers (8)", cs[:4]))
-    rows.append((None, cs[4:]))
+    rows.append((f"Reading-plan covers ({len(cs)})", cs[:4]))
+    for start in range(4, len(cs), 4):
+        rows.append((None, cs[start:start + 4]))
 
     # --- charity ------------------------------------------------------------
-    ch = sorted(p for p in (A / "Charity").glob("charity-*-1200x600.png")
+    ch = sorted(p for p in (A / "Charity").glob("charity-*-1200x600.*")
                 if "scrim" not in p.name)
     rows.append(("Charity cards (3)",
                  [cell(c, f"Charity/{c.name}\n1200x600") for c in ch] +
@@ -191,8 +194,9 @@ def main():
         "-annotate", "+14+16", "Scroll the Quran - original artwork (Phase 2g)",
         "-font", FONT, "-pointsize", "15", "-fill", "#9A9A9E",
         "-annotate", "+16+58",
-        "All assets generated procedurally with ImageMagick + hand-written SVG. "
-        "No photographs, no traced artwork, no baked-in text.", title)
+        "Original artwork: hand-written SVG and procedural ImageMagick, plus image-model "
+        "renders made to the owner's prompts (gift screens, plan covers, charity cards). "
+        "No stock photographs, no traced artwork, no faces, no baked-in text.", title)
     run("magick", title, body, "-background", SHEET_BG, "-append",
         "-bordercolor", SHEET_BG, "-border", "18", "-resize", "1500x",
         "-background", SHEET_BG, "-alpha", "remove", "-alpha", "off", "-depth", "8",
