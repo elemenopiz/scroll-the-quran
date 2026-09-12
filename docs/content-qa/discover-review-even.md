@@ -61,3 +61,23 @@ No shard was hand-edited.
 | 4:85-86 | 5 | Correctly narrows intercession to the everyday sense; the floor-and-ceiling reading of the greeting is exact. | kept |
 | 4:110-111 | 5 | "Finds" as a verb of discovery is a real lexical point; forgiveness and non-transferable responsibility held together without tension. | kept |
 | 4:135 | 5 | The 4:135 / 5:8 mirroring, with desire and hatred as the two different obstacles, is accurate and well used. | kept |
+| 4:136 | 5 | The five objects of belief here and the five in 2:177 match, and neither list is claimed as exhaustive. | kept |
+| 6:12 | 5 | "Mercy written upon Himself" verified as occurring only at 6:12 and 6:54; the contract vocabulary is read from the verb, not imposed. | kept |
+| 6:15-17 | 5 | Surah 6 does carry the most `qul` in the Quran (44 occurrences), so "more often than in almost any other surah" is safe. | kept |
+| 6:32-33 | 5 | The 57:20 five-stage expansion is counted correctly; consolation offered by correcting a fact rather than softening one. | kept |
+| 6:38 | 5 | Records the commentators' disagreement over how far the animal-communities comparison reaches; the "two wings" redundancy is a real classical discussion. | kept |
+| 6:54-55 | 5 | Contrasts the two occurrences of the written-mercy clause in the same surah to good effect; occasion (the demand to dismiss the poor) is well attested. | kept |
+| 6:59 | 5 | Descending-list structure is accurate; `applyIt` turns the cosmic scope onto something unnoticed, which is the ayah's own move. | kept |
+| 6:73 | 5 | "Be" and its instant answer occurs eight times, always in the same construction; resurrection argument drawn without overstating. | kept |
+| 6:78-79 | 5 | Gives both classical readings of the sequence (personal search vs debating technique) without choosing. | kept |
+| 6:81-82 | 5 | Notes early listeners' difficulty with the second ayah and gives the mainstream resolution via 31:13. | kept |
+| 6:102-103 | 5 | The Subtle / the Expert pairing does cluster in hidden-thing contexts (6:103, 22:63, 31:16, 33:34, 67:14). | kept |
+| 6:151 | 5 | Legal content handled descriptively throughout; `applyIt` turns to the concealed half rather than issuing a ruling. | kept |
+| 6:160 | 5 | Correctly reads ten as the floor rather than the ceiling, with 2:261 as the parallel. | kept |
+| 6:162-163 | 5 | "First of those who submit" glossed as foremost in this community, which is the mainstream resolution. | kept |
+| 8:2 | 5 | Marks of faith read as involuntary responses, which is the classical point; Badr setting is exact. | kept |
+| 8:24-25 | 5 | Keeps the ambiguity of "comes between a man and his heart" open, as the commentators do. | kept |
+| 8:29 | 5 | The one word naming a book, a day (8:41) and a faculty is a genuine and checkable observation. | kept |
+| 8:46 | 5 | "Your wind" read as momentum with the classical gloss; promise is company rather than victory, which the text actually says. | kept |
+| 10:25-26 | 5 | "Home of Peace" verified at exactly two occurrences (6:127, 10:25); leaves the unnamed "more" unnamed. | kept |
+| 10:57-58 | 5 | Healing-before-guidance order is read off the ayah; the self-description passages are cited with their limits intact. | kept |
