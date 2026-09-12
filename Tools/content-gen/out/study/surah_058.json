@@ -1,8 +1,588 @@
 {
   "surah": 58,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:50:11.651Z",
+  "generatedAt": "2026-09-09T15:46:02.850Z",
   "studies": [
+    {
+      "key": "58:1",
+      "surah": 58,
+      "start": 1,
+      "end": 1,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "The Complaint That Was Heard",
+      "tier": "standard",
+      "meaning": "The surah opens by reporting that a conversation has already been overheard. A woman pressed her case about her husband and, not satisfied with the answer she was given, turned the matter upward. The ayah does not summarise her argument or name her. It records twice that the hearing happened, and then closes with two names, Hearing and Seeing, so the report of one exchange widens into a statement about every exchange. Only afterwards does the surah address the practice she was protesting.",
+      "historicalContext": "Medinan. The classical sources report with unusual agreement that a woman of Medina came about a spoken formula her husband had used, a pre-Islamic device that cut a wife off without releasing her. She was told that nothing had yet come down on the matter, and she kept pressing while praying aloud about it. The passage that follows was the answer, and the surah takes its name from her.",
+      "keyTerms": [
+        {
+          "arabic": "تُجَـٰدِلُكَ",
+          "gloss": "she argues with you",
+          "note": "A verb of sustained back-and-forth, not a single request. The form implies two sides pressing a case. The Quran uses it of her without a syllable of criticism, which is what makes its placement striking."
+        },
+        {
+          "arabic": "تَشْتَكِىٓ",
+          "gloss": "she lays out her grievance",
+          "note": "From a root for opening up a difficulty before someone else. The form carries the sense of doing it for one's own relief, so the word covers unburdening as much as petitioning for a verdict."
+        },
+        {
+          "arabic": "تَحَاوُرَكُمَآ",
+          "gloss": "the exchange between you two",
+          "note": "A word for speech turned back and forth between two people. It makes the object of the divine hearing a dialogue, both halves of it, rather than only the appeal addressed upward."
+        }
+      ],
+      "lifeInProphetsTime": "Marriage in Arabia was arranged between families, and a woman's standing in a dispute usually ran through her male relatives. If her own household had already settled the matter, she had no court to appeal to and nobody obliged to argue for her. Speaking her own case, at length, to the man leading the community was outside the ordinary shape of things. Anyone watching would have registered how far outside it was.",
+      "didYouKnow": "This is the only surah of the Quran in which the name God appears in every single ayah, all twenty-two of them. It is also named for a woman rather than for a prophet, a people or a natural sign, and the Arabic title is a participle: the woman who argues her case.",
+      "theologicalSignificance": "Hearing is established before any instruction is given, which sets the order of the whole surah: a private grievance is answered first, and the general provision is drawn out of it second. The two names at the close are load-bearing. Setting Hearing beside Seeing covers what is spoken and what is not, so a person with no standing before any human authority is not thereby outside the audience.",
+      "crossReferences": [
+        {
+          "ref": "2:186",
+          "why": "States the nearness this ayah demonstrates, promising an answer to the one who calls, with no intermediary named."
+        },
+        {
+          "ref": "12:86",
+          "why": "Jacob uses the same verb for laying out a grievance, and says he directs it to God alone."
+        },
+        {
+          "ref": "27:62",
+          "why": "Asks who answers the distressed person when he calls, framing it as something only God does."
+        }
+      ],
+      "applyIt": "Think of a complaint you have decided is too small to raise, or one you raised once and got no answer to. Say it out loud, in your own words, the next time you pray. Do not tidy it into something more presentable first. What this ayah records being heard was the untidied version, argued at length by someone nobody expected to argue.",
+      "exploreFurther": [
+        "2:186",
+        "40:60",
+        "58:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:25:49.077Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:2",
+      "surah": 58,
+      "start": 2,
+      "end": 2,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "They Are Not Their Mothers",
+      "tier": "standard",
+      "meaning": "The formula men used is quoted and then contradicted on factual grounds before anything else is said about it. A wife is not a mother, and motherhood is defined narrowly and physically: mothers are the women who gave birth. The saying is then given two labels, something the mind rejects and a distortion, which the commentators read as covering its moral wrongness and its untruth together. The ayah ends on pardon, so the correction and the way back arrive in the same sentence.",
+      "historicalContext": "Medinan, continuing directly from the complaint the surah opens with. The practice belonged to pre-Islamic Arabia: a husband declared his wife like his mother's back and treated the marriage as suspended without dissolving it. She could not remarry and had no claim on him. The commentators name the woman's case as the occasion for these ayat, and describe this as the first passage to address the practice at all.",
+      "keyTerms": [
+        {
+          "arabic": "يُظَـٰهِرُونَ",
+          "gloss": "they pronounce the estranging formula",
+          "note": "Built on the ordinary word for a back, from the phrase men actually used. It names an act of speech rather than a state of feeling, which is why the reply begins by testing whether the speech is true."
+        },
+        {
+          "arabic": "أُمَّهَـٰتِهِمْ",
+          "gloss": "their mothers",
+          "note": "The word appears three times in this one ayah: denied, defined, then denied again by implication. Repetition does the arguing. The claim is dismantled by restating the term rather than by threatening anyone."
+        },
+        {
+          "arabic": "زُورًا",
+          "gloss": "a distortion, a falsehood",
+          "note": "From a root meaning to lean away from something. It is the word standing behind false testimony elsewhere in the Quran, which files the formula under lying rather than under mere bad manners."
+        }
+      ],
+      "lifeInProphetsTime": "Kinship in Arabia was legal architecture rather than sentiment. Who counted as your mother settled inheritance, whom you could marry, who owed blood money on your behalf, and which men were obliged to defend you. A husband declaring his wife a mother was not speaking poetically. He was trying to shift her across a line the whole social order rested on, and the entire cost of the move landed on her.",
+      "didYouKnow": "The Quran returns to this formula once more, at 33:4, where it is set beside two other fictions about kinship: that a man has two hearts inside him, and that an adopted son is a son by blood. All three are answered the same way, by pointing out that saying a thing does not make it so.",
+      "theologicalSignificance": "A speech act is denied the power to reshape reality. Words can bind a speaker and can wrong a listener, but they do not rewrite what a person is, and the ayah settles that before it discusses consequences. Pardon is then named immediately, which keeps the passage from reading as condemnation of the men involved. The wrong is described accurately and the door is left open in the same breath.",
+      "crossReferences": [
+        {
+          "ref": "33:4",
+          "why": "Answers the same formula alongside adoption, denying that any spoken claim can create a blood relationship."
+        },
+        {
+          "ref": "4:1",
+          "why": "Grounds all kinship in a single origin, which is the background this ayah's definition of motherhood assumes."
+        },
+        {
+          "ref": "24:15",
+          "why": "Treats careless speech about others as a serious matter rather than as words that pass harmlessly."
+        }
+      ],
+      "applyIt": "Notice a phrase you use about someone close to you when you are angry, the one that assigns them a category rather than describing what they did. Say the description instead the next time, even if it takes longer. This ayah spends its whole length separating what a person is from what was said about them, and it does that before it discusses any remedy.",
+      "exploreFurther": [
+        "33:4",
+        "58:3",
+        "4:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:25:49.078Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:3",
+      "surah": 58,
+      "start": 3,
+      "end": 3,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "A Price Between Word And Return",
+      "tier": "standard",
+      "meaning": "A remedy is attached to the formula rather than a punishment. Where a man used the saying and then goes back on it, the freeing of a person from bondage stands between the words and the resumption of the marriage. Commentators differ over what going back means: withdrawing the words, wanting the wife again, or repeating the formula. They agree the release comes first. The ayah calls the whole arrangement an admonition rather than a fine, and closes on God's awareness of what is actually done.",
+      "historicalContext": "Medinan. The surah's opening episode continues: the husband had spoken the formula, then wanted the marriage on ordinary terms again, while his wife had spent the interval neither married nor free to remarry. Nothing in the customs of Arabia dissolved the saying or ended the suspension. The commentators read these ayat as the answer to that specific impasse, framed so that it covers every later case.",
+      "keyTerms": [
+        {
+          "arabic": "يَعُودُونَ",
+          "gloss": "they go back",
+          "note": "The verb only says return, without saying return to what. That gap is where the classical readings divide, and the Quran leaves it open rather than defining the trigger it attaches the remedy to."
+        },
+        {
+          "arabic": "رَقَبَةٍ",
+          "gloss": "a neck",
+          "note": "The word for the back of the neck, used across the Quran for a human being held in bondage. Freeing is expressed as loosening a neck, which keeps the physical fact of restraint inside the vocabulary."
+        },
+        {
+          "arabic": "تُوعَظُونَ",
+          "gloss": "you are being admonished",
+          "note": "A passive from a root for counsel that moves the heart, not for penalty. It files the whole provision under teaching, so the release is presented as instruction rather than as a price paid."
+        }
+      ],
+      "lifeInProphetsTime": "Bondage was ordinary in Arabian households: captives from raids, people sold at market, debtors who had lost their standing. A freed person did not vanish; they usually stayed attached to the household as a client. Setting one free meant giving up labour and status in front of neighbours who would notice. Tying the resumption of a marriage to that particular cost put the man's private words in public view, and put a second person's freedom on the other side of them.",
+      "didYouKnow": "The phrase for freeing a person from bondage occurs three times in the Quran, and each time it answers a different failure: this passage, a broken oath at 5:89, and an accidental killing at 4:92. In every case a lighter alternative follows for someone without the means, so the provision never depends on being wealthy enough to comply.",
+      "theologicalSignificance": "The passage does not undo the harm by declaring the words void and moving on. It attaches a cost, and the cost is another person's freedom rather than a payment to the wronged wife or to a treasury. Something said carelessly inside a marriage is answered by a change in someone else's life entirely. The closing name for God's awareness covers the inward part of the act, which no outside observer could confirm.",
+      "crossReferences": [
+        {
+          "ref": "4:92",
+          "why": "Uses the same release of a person from bondage as the answer to an accidental killing, with the same fallback of fasting."
+        },
+        {
+          "ref": "5:89",
+          "why": "Sets out graded atonement for a broken oath, showing the same pattern of a cost scaled to what a person has."
+        },
+        {
+          "ref": "90:12-13",
+          "why": "Names the freeing of a person from bondage as the first thing on the ascent that surah describes."
+        }
+      ],
+      "applyIt": "Think of something you said in a temper that you have since walked back with an apology and nothing more. Add one action to it this week, something that costs you a little and that the other person did not ask for. This passage sets a real price between the words and the return, and the price is what makes the return believable.",
+      "exploreFurther": [
+        "4:92",
+        "5:89",
+        "58:4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:4",
+      "surah": 58,
+      "start": 4,
+      "end": 4,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Ladder Down To Everyone",
+      "tier": "standard",
+      "meaning": "Two fallbacks descend from the first: two consecutive months of fasting, then feeding sixty people in need. The ladder is built on capacity, so no one is left without a route back. Then comes the reason, and it is not restitution. The whole arrangement exists so that faith in God and His messenger is affirmed in something done rather than said. The word for limits arrives last, marking these as boundaries set by God rather than terms negotiated between the parties.",
+      "historicalContext": "Medinan, completing the provision begun in the previous ayah. Medina in this period was not uniformly wealthy; many of the emigrants had arrived with nothing and were being housed by others. A requirement that only a man with property could meet would have applied to part of the community and not the rest. The descending alternatives address that directly, and the commentators note the order runs from what costs most to what costs least.",
+      "keyTerms": [
+        {
+          "arabic": "مُتَتَابِعَيْنِ",
+          "gloss": "consecutive, following one another",
+          "note": "A dual adjective from a root for following on someone's heels. What it measures is unbroken succession rather than a total number of days, which is why the classical discussion turns on continuity rather than on arithmetic."
+        },
+        {
+          "arabic": "مِسْكِينًا",
+          "gloss": "a needy person",
+          "note": "From a root for stillness, describing someone whom poverty has brought to a standstill. It is distinguished in the tradition from the word for one who asks, since this person may be too settled in want to appear at anyone's door."
+        },
+        {
+          "arabic": "حُدُودُ",
+          "gloss": "limits, boundaries",
+          "note": "The word for the edge of a piece of land or the blade of a sword, the line where one thing stops. Naming these provisions boundaries frames them as territory with edges rather than as a list of demands."
+        }
+      ],
+      "lifeInProphetsTime": "Sixty meals was a visible quantity in a town where a household counted its dates and barley by the measure. Feeding that many meant buying at market, cooking in batches, and being seen doing it. Two unbroken months of fasting was harder still for a man who worked in the sun or travelled with caravans. Neither alternative could be done quietly, which mattered in a settlement where everyone knew whose marriage was in trouble.",
+      "didYouKnow": "Two consecutive months of fasting appears in exactly two places in the Quran: here, and at 4:92, where it answers an accidental killing. The phrase naming the limits of God occurs seven times, spread across passages on fasting, divorce, inheritance and this one, which is what ties otherwise unrelated subjects into a single vocabulary.",
+      "theologicalSignificance": "The stated purpose is striking. The graded requirement is not there to compensate anyone; it exists so that belief becomes something a person enacts. That turns an internal commitment into an event with a date and a cost. And by scaling the requirement to means, the passage refuses to make sincerity a function of wealth: the poorest man reaches the same endpoint as the richest, along a longer road.",
+      "crossReferences": [
+        {
+          "ref": "2:187",
+          "why": "Closes with the same phrase about God's limits, there marking the boundaries of the fast rather than of a marriage."
+        },
+        {
+          "ref": "5:89",
+          "why": "Grades atonement for a broken oath the same way, descending until it reaches something anyone can do."
+        },
+        {
+          "ref": "2:286",
+          "why": "States the principle underneath the descending ladder, that no soul is charged beyond its capacity."
+        }
+      ],
+      "applyIt": "Look at a commitment you have quietly dropped because the version you first pictured was beyond you. Name the smaller version you could actually keep, and start there this week. The ladder in this passage descends deliberately. It does not treat the lower rung as failure; it treats reaching the ground at all as the point.",
+      "exploreFurther": [
+        "2:286",
+        "5:89",
+        "2:187"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:5",
+      "surah": 58,
+      "start": 5,
+      "end": 5,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Standing Across The Line",
+      "tier": "standard",
+      "meaning": "The verb for opposition comes from the root just used for limits, so the picture is of people placing themselves on the far side of a boundary, not merely disagreeing. What follows is stated as already accomplished: they have been thrown back, as earlier peoples were. Between the two halves sits a single sentence about clear signs having been sent down, which supplies the reason the outcome is not arbitrary. The closing word for the punishment names humiliation rather than pain.",
+      "historicalContext": "Medinan, and the surah turns here from a domestic case to open hostility. The community had opponents inside Medina as well as outside it, some of whom kept up the outward forms while working against the arrangement. The commentators do not attach a single occasion to this ayah; they read it against the general situation after the migration, with the appeal to earlier peoples serving as the argument from precedent.",
+      "keyTerms": [
+        {
+          "arabic": "يُحَآدُّونَ",
+          "gloss": "they set themselves against",
+          "note": "Built on the root for a boundary or an edge. The form describes taking up the position on the other side of a line, which makes the opposition territorial in image rather than a matter of argument."
+        },
+        {
+          "arabic": "كُبِتُوا۟",
+          "gloss": "they were thrown back",
+          "note": "A passive from a root for being flung down on the face, used of a rout. It reports the outcome as finished, and the classical readers take the past tense as certainty rather than as a date already passed."
+        },
+        {
+          "arabic": "مُّهِينٌ",
+          "gloss": "demeaning, humiliating",
+          "note": "From a root for lowness and contempt. The Quran distinguishes it from the word for painful, so what is promised here is loss of standing rather than sensation, matched to people whose aim was standing."
+        }
+      ],
+      "lifeInProphetsTime": "Standing in Arabia was held in public and lost in public. A man's word carried because his kin backed it and because no one had seen him humiliated. Defeat in a raid cost animals, but the lasting damage was the story told afterwards at other people's fires. A poem naming a chief's disgrace outlived the event by generations. Promising humiliation rather than pain named the loss that society actually feared.",
+      "didYouKnow": "The verb translated as opposing here shares its root with the word for God's limits used one ayah earlier. Placing them back to back sets up a single image across two ayat: boundaries are drawn, and then people are described by where they stand relative to them. The same verb returns at 58:20, and the same root once more at 58:22.",
+      "theologicalSignificance": "Rejection is treated as having a shape that recurs, so the passage argues from history rather than from threat alone. The middle clause is doing the moral work: signs were made clear, which is what makes the outcome an answer rather than a display of power. And by specifying humiliation, the passage locates the reversal precisely where the opposition invested, in reputation and position, not in the body.",
+      "crossReferences": [
+        {
+          "ref": "58:20",
+          "why": "Repeats the same verb for opposition later in this surah, placing such people among the lowest."
+        },
+        {
+          "ref": "40:82",
+          "why": "Makes the same argument from precedent, pointing to earlier peoples who were stronger and were not spared."
+        },
+        {
+          "ref": "22:16",
+          "why": "Pairs the sending down of clarifying signs with guidance, which is the middle clause of this ayah stated on its own."
+        }
+      ],
+      "applyIt": "Notice the next time a disagreement stops being about the question and becomes about your position in the room. That shift is what this ayah's verb describes. When you catch it, say the other person's argument back to them in your own words before you answer. It is a small way of stepping off the line and back into the discussion.",
+      "exploreFurther": [
+        "58:20-21",
+        "40:82",
+        "22:16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:6",
+      "surah": 58,
+      "start": 6,
+      "end": 6,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "Counted And Forgotten",
+      "tier": "standard",
+      "meaning": "Two verbs are set against each other in the middle of the ayah, and the whole point sits in the gap between them. One party has kept a running tally; the other has mislaid the same material. Forgetting is presented not as innocence but as the ordinary human condition, which is exactly why the record matters. The Day is described as informing rather than accusing: what happens is that people are told what they did, in detail they no longer hold.",
+      "historicalContext": "Medinan, following directly on the warning to those who set themselves against the community. The surah is working through things said in private: a formula spoken inside a marriage, and, in the ayat just ahead, whispered plotting. This ayah answers the assumption underneath both, that quiet words spoken long ago have simply gone. No specific occasion is reported for it; its placement is what carries the argument.",
+      "keyTerms": [
+        {
+          "arabic": "أَحْصَىٰهُ",
+          "gloss": "He has enumerated it",
+          "note": "From a root for counting with pebbles, the way a herdsman kept a tally of animals passing a gate. The word is arithmetical rather than judicial: it names an exact count, not yet a verdict."
+        },
+        {
+          "arabic": "نَسُوهُ",
+          "gloss": "they forgot it",
+          "note": "The plain verb for forgetting, with no blame built into it. Placing it directly beside the counting makes the contrast one of memory rather than of honesty, which is harder to argue with."
+        },
+        {
+          "arabic": "شَهِيدٌ",
+          "gloss": "Witness",
+          "note": "An intensive form from a root that covers both seeing and testifying. It carries presence at the event and the ability to report it afterwards, which is why the same word serves for a witness in court."
+        }
+      ],
+      "lifeInProphetsTime": "Records in Medina were mostly memory. Debts were held in the heads of the parties and their witnesses, and a dispute a few years old came down to whose recollection the community trusted. Written contracts existed but were rare enough that the Quran had to instruct people to draw them up. In that world, an exact and permanent count of everything a person had done was not a familiar object at all.",
+      "didYouKnow": "The longest ayah in the Quran, 2:282, is the instruction to write down debts, and it runs to well over a hundred words about scribes, witnesses and dictation. Set beside it, this ayah describes a ledger that needs none of that apparatus, and the episode opening this same surah turned on a spoken formula nobody had written down.",
+      "theologicalSignificance": "Accountability is grounded in memory rather than in surveillance, and that changes its tone. Nothing is described as being watched for; it is described as being retained. The asymmetry is the point: human beings lose the details of their own lives, which means the reckoning cannot be a matter of both sides comparing notes. Being informed of what one did is presented as the substance of the Day, before any sentence is mentioned.",
+      "crossReferences": [
+        {
+          "ref": "18:49",
+          "why": "Describes the record as a book that omits nothing, with people astonished at what it has kept."
+        },
+        {
+          "ref": "36:65",
+          "why": "Has hands and feet testify, which is the same idea of a record independent of the person's memory."
+        },
+        {
+          "ref": "2:282",
+          "why": "The long instruction to write debts down, showing how much apparatus human record-keeping needs."
+        }
+      ],
+      "applyIt": "Write down three things you did last Tuesday. Most people cannot manage it, and noticing that is the exercise. This ayah does not say your deeds are being judged harshly; it says they are being kept while you are losing them. Let that sit for a moment before you decide what today is worth.",
+      "exploreFurther": [
+        "18:49",
+        "36:65",
+        "99:6-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:7",
+      "surah": 58,
+      "start": 7,
+      "end": 7,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "He Is Their Fourth",
+      "tier": "standard",
+      "meaning": "Knowledge is stated in the widest possible terms and then immediately narrowed to a specific human scene. Three people lean together and He is the fourth; five, and He is the sixth. The numbers rise by twos, which is how private conversations actually grow, and the ayah then closes off every other size in a single clause. What began as an attribute has become a description of a room. Presence, not observation, is the word chosen.",
+      "historicalContext": "Medinan. Private conferences were a live political problem in the town: groups meeting apart from the main body and letting others see that they were meeting. The commentators connect this ayah with the ayat that follow it about such gatherings, rather than reporting a separate occasion. Its argument is placed before the criticism, so the reasoning arrives ahead of the reproach it will support.",
+      "keyTerms": [
+        {
+          "arabic": "نَّجْوَىٰ",
+          "gloss": "confidential talk",
+          "note": "From a root for high ground set apart, then for drawing someone aside. The word is neutral in itself; it names talk held apart from others, which the surah goes on to sort by content rather than by secrecy."
+        },
+        {
+          "arabic": "رَابِعُهُمْ",
+          "gloss": "the fourth of them",
+          "note": "An ordinal with a possessive ending, so it does not say a fourth is present but that He is theirs, counted into their group. The grammar puts Him inside the gathering rather than outside it."
+        },
+        {
+          "arabic": "مَعَهُمْ",
+          "gloss": "with them",
+          "note": "The ordinary preposition for accompaniment. Classical commentators read it here as knowledge and encompassing rather than physical location, and note that the ayah opens and closes with knowing, which frames the word between them."
+        }
+      ],
+      "lifeInProphetsTime": "Medina was a settlement of clustered houses, courtyards and date gardens where sound carried. To speak apart from the crowd, people withdrew to the edge of a palm grove or lowered their voices in a corner of the mosque, and everyone could see them doing it. The visible fact of a huddle was itself information. A group counted from the outside is exactly three or five heads, which is why the ayah counts.",
+      "didYouKnow": "The word for confidential talk occurs in eleven ayat of the Quran, and five of them are in this one short surah, at 58:7, 58:8, 58:10, 58:12 and 58:13. No other surah uses it more than once. A chapter of twenty-two ayat thus holds nearly half the Quran's total use of the term.",
+      "theologicalSignificance": "The ayah moves from a general claim about knowledge to a claim about company, and the second is much harder to hold at arm's length. A person can accept that God knows everything and still feel alone in a room. Counting God into the gathering closes that gap by grammar rather than by argument. It also removes the idea of a private moral space, which is what secrecy assumes rather than what it achieves.",
+      "crossReferences": [
+        {
+          "ref": "50:16",
+          "why": "States the same nearness in the singular, closer than the jugular vein, where this ayah states it for a group."
+        },
+        {
+          "ref": "9:78",
+          "why": "Says God knows their confidential talk, using the same noun, in a passage about concealed intentions."
+        },
+        {
+          "ref": "43:80",
+          "why": "Answers those who suppose their secret talk is unheard, and adds that messengers are recording."
+        }
+      ],
+      "applyIt": "The next time you find yourself lowering your voice, pause on the reason. Some reasons are good ones: kindness, discretion, a confidence someone entrusted to you. Some are not. Ask yourself which this is before you carry on, and if the answer is the second kind, say the sentence at normal volume or not at all.",
+      "exploreFurther": [
+        "50:16",
+        "43:80",
+        "58:9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:8",
+      "surah": 58,
+      "start": 8,
+      "end": 8,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "The Greeting That Was Not",
+      "tier": "standard",
+      "meaning": "The ayah tracks a pattern rather than a single act: a prohibition, a return to what was prohibited, and then a specific content given to the whispering. Sin, aggression and defiance of the messenger are named, so the objection is to what was being said, not to speaking privately. Then the scene shifts to the greeting at the door, courteous on the surface and altered underneath. The last move is inward, an argument they make silently to themselves from the absence of consequences.",
+      "historicalContext": "Medinan. The commentators report that certain visitors twisted the customary greeting when they came to the Prophet Muhammad (peace be upon him), altering a word so that it kept the sound of a blessing while carrying something else. Reports differ on who exactly, and the Quran does not name them. What is agreed is the setting: a period when hostility in Medina was expressed through etiquette and gossip rather than open confrontation.",
+      "keyTerms": [
+        {
+          "arabic": "حَيَّوْكَ",
+          "gloss": "they greeted you",
+          "note": "Built on the root for life, because the Arabic greeting is a wish for long life or peace. Naming the act with that root sharpens the contrast: the form of the words wishes life while the intent does not."
+        },
+        {
+          "arabic": "ٱلْعُدْوَٰنِ",
+          "gloss": "aggression, overstepping",
+          "note": "From a root for crossing a limit and running past it. Set beside the word for sin, it separates wrongs that damage the doer from wrongs that reach across and land on someone else."
+        },
+        {
+          "arabic": "ٱلْمَصِيرُ",
+          "gloss": "the destination, the outcome",
+          "note": "A noun of place from a verb meaning to become. It names where something ends up rather than where it is sent, so the word treats the destination as the result of a process."
+        }
+      ],
+      "lifeInProphetsTime": "Greeting was the first test of a relationship in Arabia. How a traveller addressed a man on the road announced whether he came in peace, and a formula was expected within earshot of the household. Because the words were fixed, a small alteration was audible to anyone paying attention and deniable to anyone challenged on it. That is exactly the space a hostile guest could work in without ever being accused of an insult.",
+      "didYouKnow": "The same three-item list, sin and aggression and defiance of the messenger, appears twice in consecutive ayat, here and at 58:9, in identical wording. The first time it describes what a group was doing; the second time the identical phrase is addressed to believers as something to steer away from. The repetition is what converts a report into guidance.",
+      "theologicalSignificance": "The delay of consequences is treated as an argument people actually make, and the Quran states it in their own voice before answering it. That is a serious concession: nothing in experience refutes the reasoning. The answer is not a demonstration but a horizon, which relocates the question from evidence to time. It also establishes that a courtesy performed with hostile intent is legible, so the outward form of speech is not where the account is settled.",
+      "crossReferences": [
+        {
+          "ref": "4:86",
+          "why": "Instructs that a greeting be returned with something better or its equal, the norm this passage shows being abused."
+        },
+        {
+          "ref": "2:8-9",
+          "why": "Describes the same gap between what is said outwardly and what is held inwardly."
+        },
+        {
+          "ref": "13:6",
+          "why": "Answers the same impatience for a punishment, noting that God is full of forgiveness despite people's wrongdoing."
+        }
+      ],
+      "applyIt": "Pick one greeting you say every day without meaning it, at the door, on a call, in a message. Say it once tomorrow while actually looking at the person and wanting for them what the words say. This ayah is about the distance between a formula and an intention. Closing that distance takes about three seconds.",
+      "exploreFurther": [
+        "4:86",
+        "2:8-9",
+        "58:9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.321Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:9",
+      "surah": 58,
+      "start": 9,
+      "end": 9,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Change The Subject, Keep The Room",
+      "tier": "standard",
+      "meaning": "Private conversation is left standing; it is redirected. The same three things named in the previous ayah are set out as what not to confer about, and then two positive words replace them: goodness and mindfulness of God. The structure keeps the practice and changes the content, which is a different move from banning the practice outright. The closing clause supplies the reason, naming the gathering to which all private gatherings eventually report.",
+      "historicalContext": "Medinan, addressed to believers immediately after a description of others. The community in Medina was newly assembled from groups that had recently been at war with each other, and factions still met apart. An instruction that ruled out private talk altogether would have been unworkable in a town run by conversation. The commentators read this ayah as the constructive half of the passage, arriving once the problem has been described.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْبِرِّ",
+          "gloss": "goodness, dutiful kindness",
+          "note": "A wide word covering piety and practical decency together, used elsewhere of open land. It is not confined to ritual; the Quran defines it at length in one long passage as belief, spending, keeping promises and patience."
+        },
+        {
+          "arabic": "ٱلتَّقْوَىٰ",
+          "gloss": "mindfulness of God",
+          "note": "From a root for shielding oneself. It describes a protective alertness rather than dread, and pairing it with goodness gives the passage an inward and an outward term for the same redirected conversation."
+        },
+        {
+          "arabic": "تُحْشَرُونَ",
+          "gloss": "you will be gathered",
+          "note": "A passive from a root for driving a crowd together into one place. It answers the private huddle with the largest possible assembly, and the passive leaves no one arranging their own attendance."
+        }
+      ],
+      "lifeInProphetsTime": "Business in a caravan town was done in small groups: two partners settling a share, three men agreeing a price before the market opened, a family arranging a marriage. None of that could be conducted in the open without losing the deal. The instruction assumes people will keep meeting this way and asks only what passes between them, which is the difference between regulating a town and shutting it down.",
+      "didYouKnow": "Goodness and mindfulness of God appear as a pair elsewhere in the Quran, at 5:2, where people are told to help one another in exactly these two things. The same two words, in the same order, are given there as the alternative to cooperating in sin and aggression, which are also the words this ayah replaces.",
+      "theologicalSignificance": "Secrecy is not treated as a moral category on its own. What is weighed is content, which means privacy is neither a refuge nor a charge in itself, and the same act can go either way. That is a demanding position, because it removes the comfort of a rule that could be kept without judgement. The closing reference to a universal gathering supplies the only frame in which every private room is finally one room.",
+      "crossReferences": [
+        {
+          "ref": "5:2",
+          "why": "Pairs the same two words for goodness and mindfulness against the same two words for sin and aggression."
+        },
+        {
+          "ref": "4:114",
+          "why": "Says there is no good in much of their private talk, except where it urges charity or reconciliation."
+        },
+        {
+          "ref": "49:12",
+          "why": "Addresses believers about suspicion and backbiting, the everyday form of the problem this ayah redirects."
+        }
+      ],
+      "applyIt": "Think of a group chat or a standing conversation with one friend where the register has slowly drifted towards other people's failings. You do not have to leave it. Introduce one different subject this week, something you actually want for someone. Notice whether the conversation follows you. This ayah keeps the meeting and changes what is on the table.",
+      "exploreFurther": [
+        "5:2",
+        "4:114",
+        "49:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.322Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:10",
+      "surah": 58,
+      "start": 10,
+      "end": 10,
+      "theme": "Trust in God",
+      "themeId": "trust-in-god",
+      "title": "Designed To Cause Grief",
+      "tier": "standard",
+      "meaning": "The aim of the whispering is named, and it is not damage but grief. What the plotters were producing was a feeling in other people, the sense of being talked about and excluded. The ayah then separates that feeling from actual harm, which it says cannot occur except by permission. Nothing here denies the distress; it relocates it. The final clause is an instruction to redirect reliance, phrased so that the believers do it themselves rather than being reassured.",
+      "historicalContext": "Medinan, closing the passage on private conferences. Believers in Medina could see groups meeting apart and could not hear what was said, and the commentators describe the resulting anxiety as the actual problem: people returning from the mosque uneasy about what had been discussed without them. No single occasion is reported. The ayah addresses the effect of the plotting rather than the plotters.",
+      "keyTerms": [
+        {
+          "arabic": "لِيَحْزُنَ",
+          "gloss": "so that he may grieve",
+          "note": "The verb for sorrow, not for injury. Naming grief as the objective identifies the tactic precisely: the plotting worked by being visible, and what it produced in onlookers was its whole purpose."
+        },
+        {
+          "arabic": "بِضَآرِّهِمْ",
+          "gloss": "one who harms them",
+          "note": "An active participle under a negation, which denies the capacity rather than a particular act. The construction says the adversary is not a harmer of them at all, before the exception is stated."
+        },
+        {
+          "arabic": "فَلْيَتَوَكَّلِ",
+          "gloss": "so let them rely",
+          "note": "A command in the third person, from a root for appointing someone to act on one's behalf. Reliance here is delegation of an outcome, not passivity, and the form leaves the doing to the believers themselves."
+        }
+      ],
+      "lifeInProphetsTime": "In a town of a few thousand, exclusion was a weapon that cost nothing. A man who saw three others fall silent as he approached had no way to find out what had been said, and no way to ask without appearing suspicious. Reputation moved by talk, and talk moved fastest in the gaps between people. Anxiety about being discussed was not vanity there; it was a reasonable calculation about one's safety.",
+      "didYouKnow": "The command to rely on God in this third-person form, which leaves the believers as the ones who act, occurs nine times in the Quran and clusters at moments of pressure rather than of ease. It closes a passage on battle at 3:160 and appears in the mouths of prophets under threat at 12:67 and 14:12. Here it answers a purely social injury.",
+      "theologicalSignificance": "Causation is placed under permission without denying that people plot. The adversary is granted a strategy and refused an outcome, which keeps human malice real while removing its final authority. This matters for how fear is handled: the passage does not tell believers that nobody is against them, and it does not promise that nothing will happen. It moves the question of what can actually reach them to a different desk.",
+      "crossReferences": [
+        {
+          "ref": "3:160",
+          "why": "Ends with the same third-person command to rely, after stating that no one can help if God withholds."
+        },
+        {
+          "ref": "4:76",
+          "why": "Calls the adversary's scheming weak, which is the same downgrading of an opponent's apparent power."
+        },
+        {
+          "ref": "12:67",
+          "why": "Jacob takes precautions and then says the decision belongs to God alone, holding both together."
+        }
+      ],
+      "applyIt": "Think of a room you were not in this week, a decision made without you, a message you were left off. Name what you actually lost, in plain words, and then name what you only felt. Usually the second list is longer. This ayah separates those two things before it asks anything of you.",
+      "exploreFurther": [
+        "3:160",
+        "4:76",
+        "12:67"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:32.320Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "58:11",
       "surah": 58,
@@ -58,6 +638,470 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.230Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:12",
+      "surah": 58,
+      "start": 12,
+      "end": 12,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "A Gift Before The Question",
+      "tier": "standard",
+      "meaning": "A small charitable gift is placed in front of a private consultation, and the reason given is that this is better and purer for the one asking. The provision then exempts anyone without the means in the same breath, closing on two names of mercy. Commentators read the requirement as a filter: it costs nothing to a person with a genuine question and something to a person seeking access for its own sake. The following ayah lifts it.",
+      "historicalContext": "Medinan. Access to the Prophet Muhammad (peace be upon him) had become a scarce resource: people sought private audiences in numbers, some with real needs and some for the standing that a visible private word conferred. The commentators agree on this general situation as the setting. They also report that the requirement stood only briefly, and that very few, by some accounts one person alone, acted on it before it was lifted.",
+      "keyTerms": [
+        {
+          "arabic": "نَجْوَىٰكُمْ",
+          "gloss": "your private consultation",
+          "note": "The same noun the surah has used for whispered plotting, now attached to the reader with a possessive ending. Nothing in the word changes; the surah is showing that the practice takes its character from what surrounds it."
+        },
+        {
+          "arabic": "أَطْهَرُ",
+          "gloss": "purer",
+          "note": "A comparative from the root for cleanness, used of water fit to wash with. Applied to a conversation, it suggests the gift removes something clouding the exchange rather than adding merit to it."
+        },
+        {
+          "arabic": "صَدَقَةً",
+          "gloss": "a charitable gift",
+          "note": "From the root for truthfulness, so the word treats giving as a verification of what a person claims. The indefinite form leaves the amount unstated, which is what allows the exemption that follows."
+        }
+      ],
+      "lifeInProphetsTime": "Medina had no waiting rooms and no appointments. A man with a question walked to the mosque and stood near enough to be noticed, and the ones who got a private word were often the ones with the confidence to press for it. Time was the community's scarcest commodity, and it was distributed by whoever was loudest or best connected. A required gift was a way of pricing something that had been going to the assertive for free.",
+      "didYouKnow": "This ayah and the one after it are among the classical tradition's standard examples of a provision that arrives and is withdrawn within two ayat. Because the withdrawal follows immediately, the pair survives in the recitation as a record of the requirement itself, not only of its replacement, which is unusual for something that stood for so short a time.",
+      "theologicalSignificance": "A cost is attached to access rather than to speech, and the stated benefit runs to the one paying, not to anyone receiving. That is unusual: the charity is not framed as compensating the community for the time taken. It is framed as clarifying the asker's own motive to himself. The exemption for those without means arrives before anyone can object, which keeps the provision from sorting people by wealth.",
+      "crossReferences": [
+        {
+          "ref": "58:13",
+          "why": "Lifts the requirement in the very next ayah and replaces it with prayer, alms and obedience."
+        },
+        {
+          "ref": "2:271",
+          "why": "Treats giving openly and secretly as both good, with the hidden gift better for the giver."
+        },
+        {
+          "ref": "49:2",
+          "why": "Also regulates how people addressed the Prophet, asking for lowered voices rather than a payment."
+        }
+      ],
+      "applyIt": "Before you ask someone busy for a favour this week, do one small thing for them first, and do not mention it when you ask. Then notice whether you still want to ask. This ayah put a cost in front of a request precisely so the asker could find out what the request was worth to him.",
+      "exploreFurther": [
+        "58:13",
+        "2:271",
+        "49:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.303Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:13",
+      "surah": 58,
+      "start": 13,
+      "end": 13,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "The Requirement That Was Lifted",
+      "tier": "standard",
+      "meaning": "The question is put directly and it names a feeling: were they apprehensive about the cost. Nothing is said about disobedience. The requirement is then set aside, and what replaces it is not a lighter version of the same thing but the ordinary standing practices, prayer and alms and obedience. Commentators read the sequence as a test that has done its work, since the reluctance it uncovered was the information. Pardon is announced in the middle, before the alternative.",
+      "historicalContext": "Medinan, arriving immediately after the requirement it withdraws. The commentators describe a brief interval in which almost no one acted, and the withdrawal follows without any interval of reproach. The general setting is the same: a community in which private access to the Prophet carried weight, and in which the surah has been separating consultation that serves a purpose from consultation that serves position.",
+      "keyTerms": [
+        {
+          "arabic": "ءَأَشْفَقْتُمْ",
+          "gloss": "were you apprehensive",
+          "note": "From a root for tender anxiety, the worry of someone who cares about an outcome rather than the fear of a threat. Choosing it makes the question sympathetic in form even while it is exposing a reluctance."
+        },
+        {
+          "arabic": "وَتَابَ",
+          "gloss": "and He turned in pardon",
+          "note": "The verb for turning, used of God towards people and of people towards God. Here it is God who turns, which is why the tradition reads the withdrawal as an act of relenting rather than as a concession."
+        },
+        {
+          "arabic": "خَبِيرٌۢ",
+          "gloss": "fully aware",
+          "note": "From a root for probing the ground to learn what lies beneath. It names knowledge of the hidden layer rather than of the surface, which is the fitting closing word for an ayah about a reluctance nobody voiced."
+        }
+      ],
+      "lifeInProphetsTime": "Coin was scarce in Medina and most wealth was held in dates, livestock and cloth. A man asked to hand over something before speaking would have had to decide, on the spot and in public, what to part with. Even a small gift meant a calculation in front of witnesses. That is the moment the question in this ayah reaches for, and everyone hearing it would have recognised the hesitation being described.",
+      "didYouKnow": "The two standing practices named as the replacement, establishing prayer and giving alms, occur together in this exact wording in eight ayat of the Quran. Here they arrive as what remains after a special provision is withdrawn, which frames the ordinary obligations as the floor a community stands on rather than as an achievement.",
+      "theologicalSignificance": "A requirement is issued and then withdrawn without anyone being blamed for the interval, which says something about how the Quran treats commands: they can be occasion-bound and still be real while they stand. The withdrawal is attributed to God turning in pardon, not to the difficulty of the rule. And what replaces a demanding one-off is a set of ordinary continuing practices, which quietly rates continuity above intensity.",
+      "crossReferences": [
+        {
+          "ref": "58:12",
+          "why": "The requirement this ayah withdraws, issued one ayah earlier with its own exemption for those without means."
+        },
+        {
+          "ref": "2:286",
+          "why": "Ends with a plea not to be burdened beyond capacity, the concern this withdrawal answers."
+        },
+        {
+          "ref": "4:28",
+          "why": "States that the human being was created weak, in a passage that lightens what had been required."
+        }
+      ],
+      "applyIt": "Notice a resolution you made loudly and dropped quietly, and notice that the dropping usually came with a story about why. This ayah does the opposite: it names the reluctance, and then names what to do instead. Pick the smallest ordinary practice you have let slide, and do that one thing today rather than making a new resolution.",
+      "exploreFurther": [
+        "58:12",
+        "2:286",
+        "4:28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.311Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:14",
+      "surah": 58,
+      "start": 14,
+      "end": 14,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Of Neither Side",
+      "tier": "standard",
+      "meaning": "The description turns on a middle clause that belongs to neither side. People who have attached themselves to one group while claiming another are placed outside both, which is stated as a fact about their position rather than as a punishment. Then comes the sharpest phrase: they swear to what is false, and they know it. Swearing under oath was the strongest verification available in that society, so the sentence describes the most reliable instrument being used deliberately to mislead.",
+      "historicalContext": "Medinan, in the surah's closing movement about divided loyalties. Medina in this period held groups whose alliances ran in more than one direction, some of them maintaining ties on both sides of an active conflict while presenting themselves as committed to the community. The commentators describe this general situation rather than fixing on one incident, and the Quran keeps the description unnamed, which is how the surah has handled the plotters throughout.",
+      "keyTerms": [
+        {
+          "arabic": "تَوَلَّوْا۟",
+          "gloss": "they took as allies",
+          "note": "From a root for nearness and turning towards. The same root gives the words for a guardian, a patron and a client, so the verb describes an alliance with obligations, not a friendship of sentiment."
+        },
+        {
+          "arabic": "يَحْلِفُونَ",
+          "gloss": "they swear oaths",
+          "note": "The verb for a binding oath, the strongest guarantee a person could offer where no documents existed. Its use here is what makes the charge specific: the failure is not vagueness but the deliberate misuse of the society's proof."
+        },
+        {
+          "arabic": "يَعْلَمُونَ",
+          "gloss": "they know",
+          "note": "A plain verb of knowing, placed last so it lands on the oath just described. The whole weight of the ayah rests on this clause, which rules out error and leaves only intent."
+        }
+      ],
+      "lifeInProphetsTime": "Alliance in Arabia was formal and public. Two groups swore a pact, and afterwards each was obliged to answer for the other's debts and defend the other's people. A man could not belong to two such pacts on opposite sides; the obligations cancelled. To be of neither group was not an insult in that world but a description of real exposure, because a person outside every alliance had nobody bound to avenge him.",
+      "didYouKnow": "The verb for swearing an oath appears twice in this surah, here and at 58:18, and the second occurrence carries it into the resurrection: the same people swear to God as they used to swear to other people. Four ayat separate the pair, and the repetition is what closes the surah's argument about words that cannot be checked.",
+      "theologicalSignificance": "Belonging is treated as a matter of where obligations actually run, not of what is declared. Saying one is with a group does not place a person there, which is the same principle the surah opened with when it denied that calling a wife a mother made her one. The closing clause about knowledge matters morally: it separates people who are confused from people who are managing an impression, and only the second are described here.",
+      "crossReferences": [
+        {
+          "ref": "58:18",
+          "why": "Carries the same swearing into the Day of Resurrection, where the habit is described as continuing before God."
+        },
+        {
+          "ref": "4:139",
+          "why": "Asks whether those who look elsewhere for standing expect to find glory there, and answers that it belongs to God."
+        },
+        {
+          "ref": "63:2",
+          "why": "Uses almost the same wording about oaths taken as a cover, in a later surah on the same subject."
+        }
+      ],
+      "applyIt": "Think about the last time you strengthened a claim you were not sure of, by saying I promise or I swear or you have my word. Most of us reach for that when the plain sentence feels too thin. Try saying the plain sentence this week and letting it stand on its own. Notice how differently you choose what to say.",
+      "exploreFurther": [
+        "58:18",
+        "63:1-3",
+        "4:139"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.311Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:15-17",
+      "surah": 58,
+      "start": 15,
+      "end": 17,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "Oaths Held Up As Shields",
+      "tier": "standard",
+      "meaning": "Three ayat move from a verdict to its mechanism to its futility. The middle one supplies the image: oaths taken as a shield, a thing held up in front of the body so that nothing lands. What the shield protects is not the person but the conduct, and the consequence named is that others are turned away from a road. The last ayah removes the two assets a man in that world would have counted on, property and sons, in a single clause.",
+      "historicalContext": "Medinan. The passage continues the description of people whose declared loyalty and actual alignment came apart. Medina's population included households of substantial wealth and large families, and the two together were the ordinary measure of a man's security. The commentators do not attach a specific occasion to these ayat; they read them as the closing assessment of a group the surah has been describing since it turned from the domestic case.",
+      "keyTerms": [
+        {
+          "arabic": "جُنَّةً",
+          "gloss": "a shield, a screen",
+          "note": "From a root meaning to cover or conceal, which also gives the words for a garden, a hidden being and madness. The image is of something interposed, and here what is hidden is intention rather than a body."
+        },
+        {
+          "arabic": "صَدُّوا۟",
+          "gloss": "they turned others away",
+          "note": "A verb for blocking a road or diverting someone from it. What is described is not the private belief but the obstruction, since the object of the verb is other people rather than the doers themselves."
+        },
+        {
+          "arabic": "تُغْنِىَ",
+          "gloss": "to avail, to suffice",
+          "note": "From the root for wealth and independence. The verb asks whether something can make a person self-sufficient, so denying it of property is a play on the word's own origin."
+        }
+      ],
+      "lifeInProphetsTime": "A shield in Arabia was usually hide stretched over a wooden frame, light enough to carry and good for one campaign. Everyone knew what it did and what it did not do: it turned a glancing blow and failed against a determined one. Property and sons were the other two defences, the first buying allies and the second supplying them. This passage takes all three images and empties them in three ayat.",
+      "didYouKnow": "The phrase about oaths taken as a shield appears twice in the Quran, here and at 63:2, in almost identical wording and with the same following clause about turning people from God's path. The two surahs sit five apart in the order of the Book and share this sentence almost word for word.",
+      "theologicalSignificance": "The passage locates the wrong in effect rather than in inner state. Oaths are described as a working device, and the objection is that the device turned people off a road. That keeps the judgement tied to something observable. Then the two things a person might set against a verdict, wealth and offspring, are named and cancelled, which reframes them: they are real securities against ordinary hazards and simply do not operate in the setting being described.",
+      "crossReferences": [
+        {
+          "ref": "63:2",
+          "why": "Repeats the image of oaths held up as a cover almost word for word, in a surah devoted to the same problem."
+        },
+        {
+          "ref": "3:10",
+          "why": "States the same futility of wealth and children before God, using the identical verb for availing."
+        },
+        {
+          "ref": "26:88-89",
+          "why": "Names the day when neither wealth nor sons benefit, leaving only a sound heart."
+        }
+      ],
+      "applyIt": "Name the thing you reach for when a conversation gets uncomfortable: a joke, a qualification, a change of subject, an assurance nobody asked for. That is your shield, and it works. The next time you feel yourself lifting it, put it down for one sentence and say the plain thing instead. One sentence is enough to notice the difference.",
+      "exploreFurther": [
+        "63:1-3",
+        "3:10",
+        "26:88-89"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.311Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:18",
+      "surah": 58,
+      "start": 18,
+      "end": 18,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Still Swearing On That Day",
+      "tier": "standard",
+      "meaning": "The habit survives the resurrection. People who swore falsely in Medina are shown swearing again, to God, in the same manner and apparently by reflex. The ayah adds that they suppose they are on something, which is the strangest detail: the self-deception is intact after the point where deception could work. The last clause supplies the verdict in the flattest possible terms, and the word for liars is definite, making it their description rather than an accusation.",
+      "historicalContext": "Medinan, and the surah shifts from the present tense to the Day. The people described had been operating in a community where an oath settled a dispute, so a habit of swearing was a practical instrument, not a verbal tic. The commentators do not report a separate occasion; the ayah extends the picture built over the preceding lines and follows it forward to the point where the instrument stops working.",
+      "keyTerms": [
+        {
+          "arabic": "يَحْسَبُونَ",
+          "gloss": "they reckon, they suppose",
+          "note": "From the root for calculating and keeping accounts. It describes a conclusion arrived at by working something out, which is why the word carries the sense of a confident error rather than a vague hope."
+        },
+        {
+          "arabic": "شَىْءٍ",
+          "gloss": "something, anything",
+          "note": "Deliberately empty. The ayah does not say what they think they are standing on, and the indefiniteness is the point: the confidence has no object that could be named and examined."
+        },
+        {
+          "arabic": "ٱلْكَـٰذِبُونَ",
+          "gloss": "the liars",
+          "note": "An active participle with the definite article, so it names a settled character rather than an act performed. Placing it at the end turns the ayah from a report of behaviour into a description of who these people are."
+        }
+      ],
+      "lifeInProphetsTime": "In a society without archives, an oath was the closing move of an argument. A man swore, the matter was settled, and the community moved on, because the alternative was a dispute with no end. That gave oaths enormous practical value and made habitual swearers effective. A man who swore easily and often was not thought eccentric; he was thought hard to pin down, and people adjusted around him.",
+      "didYouKnow": "This ayah opens with the same four words as 58:6 earlier in the surah, describing the Day when God resurrects them all. The two openings frame the passage between them: the first is followed by a record the people had forgotten, and the second by an oath they still remember how to swear.",
+      "theologicalSignificance": "Character is presented as durable rather than as a series of choices that stop at death. The people described are not shown being confronted and then confessing; they are shown continuing, which suggests that habits of self-presentation become the shape of a person. That is a serious claim about how the Day works: it is less an interrogation than an unveiling, in which what a person has practised is simply what they still are.",
+      "crossReferences": [
+        {
+          "ref": "6:23",
+          "why": "Shows the same reflex, people swearing by God that they were never idolaters, at the moment of reckoning."
+        },
+        {
+          "ref": "58:6",
+          "why": "Opens with the same words about the Day of resurrection, and follows them with a record rather than an oath."
+        },
+        {
+          "ref": "63:1",
+          "why": "Reports a declaration made to the Prophet and then states plainly that the speakers are lying."
+        }
+      ],
+      "applyIt": "Pick one thing you say about yourself that you have not tested in years, something like I am not a jealous person or I always tell the truth. Ask one person who knows you well whether it is accurate, and let them answer without arguing. The ayah's hardest word is the one about supposing you are on something.",
+      "exploreFurther": [
+        "6:23",
+        "58:6",
+        "63:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.311Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:19",
+      "surah": 58,
+      "start": 19,
+      "end": 19,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Gathered Like A Scattered Herd",
+      "tier": "standard",
+      "meaning": "A single rare verb carries the ayah: something has taken complete possession of them, gained the upper hand and kept it. The consequence named is not a crime but a subtraction, the forgetting of God's remembrance, and forgetting is presented as the result rather than the cause. Then a label is applied, a party, which is the vocabulary of political allegiance. The final clause states the outcome flatly, and the same construction returns three ayat later with the opposite party.",
+      "historicalContext": "Medinan. The surah has been describing a faction inside the community, and here it names what stands behind the behaviour rather than adding another item to the list. Medina was full of parties in the ordinary political sense, groupings with leaders and interests. The commentators read the word for a party here as a deliberate borrowing from that vocabulary, applied to an allegiance nobody would have declared out loud.",
+      "keyTerms": [
+        {
+          "arabic": "ٱسْتَحْوَذَ",
+          "gloss": "took complete hold",
+          "note": "A verb for a herdsman gathering scattered animals and driving them where he wants. It occurs only here in the Quran, and it describes control established over time rather than a single seizure."
+        },
+        {
+          "arabic": "فَأَنسَىٰهُمْ",
+          "gloss": "so he made them forget",
+          "note": "A causative form, so forgetting is something done to them rather than something they did. The grammar makes the loss of remembrance the mechanism of the control, not a symptom noticed afterwards."
+        },
+        {
+          "arabic": "حِزْبُ",
+          "gloss": "a party, a faction",
+          "note": "A word for an organised group with a shared allegiance, used in Arabic of political and military formations. Applying it here turns a private drift into a membership, complete with the standing and the fate that go with one."
+        }
+      ],
+      "lifeInProphetsTime": "A herd left to itself scattered across the wadi within an hour. The skill of a herdsman lay in gathering animals that had drifted apart and moving them as one body without their noticing they were being moved. Everyone in that world had watched it done. Using that verb for what happens to a person describes something slower and less dramatic than possession: attention wanders, and something else does the gathering.",
+      "didYouKnow": "The verb for taking complete hold occurs exactly once in the whole Quran, in this ayah. The phrase for the party of Satan also occurs only here, and the matching phrase for the party of God occurs twice, at 5:56 and at 58:22, three ayat further on. The surah supplies both halves of a pairing found nowhere else together.",
+      "theologicalSignificance": "Forgetting is placed at the centre of the account, which changes what spiritual danger looks like. Nothing here involves a decision against God; it involves God dropping out of mind, and the ayah presents that as sufficient to describe a whole allegiance. The label of a party then makes the state social rather than private: people who have forgotten in the same way find each other, and the forgetting acquires the momentum of a group.",
+      "crossReferences": [
+        {
+          "ref": "58:22",
+          "why": "Names the opposite party at the close of the surah, with the same construction and the opposite outcome."
+        },
+        {
+          "ref": "59:19",
+          "why": "Says that forgetting God leads to forgetting oneself, which states this ayah's mechanism from the other end."
+        },
+        {
+          "ref": "43:36",
+          "why": "Describes a companion assigned to whoever shuns the remembrance of the Most Gracious."
+        }
+      ],
+      "applyIt": "Set one fixed point in tomorrow that is not about achieving anything: two minutes after a meal, or before you open your phone in the morning, where you simply say something to God. This ayah describes forgetting as the opening move, not the outcome. A fixed point is small, and it is exactly what drifting cannot survive.",
+      "exploreFurther": [
+        "59:19-20",
+        "58:22",
+        "43:36"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:20-21",
+      "surah": 58,
+      "start": 20,
+      "end": 21,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "Already Written, Not Predicted",
+      "tier": "standard",
+      "meaning": "A verdict and a guarantee, set as a pair. The first ayah is short and places a group at the bottom of a scale, using a superlative rather than a description of what they did. The second answers with a written decree in the first person, and the emphatic form of the verb makes it a solemn undertaking rather than a prediction. Commentators note that the messengers are included in the promise, so the outcome is not only God's but theirs.",
+      "historicalContext": "Medinan, near the surah's close and after a long description of opposition. The community had been through open conflict and continuous internal pressure, and the outcome was not obvious to anyone living through it. The commentators read the decree in the second ayah as a general statement covering all messengers rather than a forecast of a particular battle, which is why it is expressed as something already written.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَذَلِّينَ",
+          "gloss": "the most abased",
+          "note": "A superlative in the plural from a root for lowness and being trodden on. It does not describe an action; it assigns a rank, and the rank is the lowest available in the language."
+        },
+        {
+          "arabic": "كَتَبَ",
+          "gloss": "He has written, decreed",
+          "note": "The ordinary verb for writing, used of a decision recorded and therefore settled. It appears twice in three ayat here, once for this promise and once for faith inscribed in hearts."
+        },
+        {
+          "arabic": "لَأَغْلِبَنَّ",
+          "gloss": "I will surely prevail",
+          "note": "Carries two separate emphatic markers, a prefixed particle and a doubled ending, which is the strongest form of assertion available. Arabic reserves it for oaths and solemn undertakings rather than for ordinary statements about the future."
+        }
+      ],
+      "lifeInProphetsTime": "Writing existed in Arabia and was used for the things that had to survive an argument: treaties between tribes, the terms of a truce, a debt too large to trust to memory. A written document was produced when the parties expected to be challenged later. To say a promise has been written borrows that expectation exactly, and everyone hearing it knew what a written agreement was for.",
+      "didYouKnow": "The verb for opposing God and His messenger, which opens the first of these two ayat, has appeared once before in this surah at 58:5, and the surah's final ayah uses the same root a third time. Between the second and third occurrence sits this written promise, so the decree falls exactly in the middle of the pattern.",
+      "theologicalSignificance": "The promise is stated as already written, which locates certainty in a decision rather than in a forecast of events. That distinction matters for how the passage can be read in a bad year: nothing is claimed about the timing, and nothing about any particular conflict. Including the messengers in the first person of the verb also ties the outcome to people who died without seeing it, which rules out reading prevailing as success in a lifetime.",
+      "crossReferences": [
+        {
+          "ref": "37:171-173",
+          "why": "States the same settled decree for the messengers, that they are the ones helped and that the outcome is victory."
+        },
+        {
+          "ref": "6:12",
+          "why": "Uses the same verb for something God has written upon Himself, there mercy rather than victory."
+        },
+        {
+          "ref": "40:51",
+          "why": "Promises support for the messengers and those who believe, in this life and on the Day the witnesses arise."
+        }
+      ],
+      "applyIt": "Think of something good you are working at that has not moved this year. Write one sentence about why it is worth doing, and put it where you will see it in six months. This passage rests certainty on a decision that was recorded, not on visible progress. Recording your own reason is a small version of the same move.",
+      "exploreFurther": [
+        "37:171-173",
+        "6:12",
+        "40:51"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:45:14.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "58:22",
+      "surah": 58,
+      "start": 22,
+      "end": 22,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "One Letter Apart",
+      "tier": "standard",
+      "meaning": "The ayah is a single long sentence built on a contrast the Arabic makes audible: the verb for holding affection and the verb for setting oneself against differ by one letter. The claim is empirical in form, that such a people will not be found, and the four relationships listed are the closest a person has. Then the description turns to what is given: faith written into hearts, support by a spirit, gardens, and a mutual pleasure stated from both sides.",
+      "historicalContext": "Medinan, and the surah closes where it has been heading. Families in Medina were genuinely split by the new allegiance, with fathers and sons on opposite sides of a conflict that had killed people they both knew. The commentators connect this ayah to that lived situation without settling on a single episode; several are reported, and they differ. What is agreed is that the households described were real ones.",
+      "keyTerms": [
+        {
+          "arabic": "يُوَآدُّونَ",
+          "gloss": "they hold affection for",
+          "note": "From the root for love that shows itself in conduct, the same root behind one of the names of God meaning the Loving. The form used implies affection returned between two parties rather than felt by one."
+        },
+        {
+          "arabic": "أَيَّدَهُم",
+          "gloss": "He strengthened them",
+          "note": "From the word for a hand, so the verb means to back someone by putting a hand behind them. It carries reinforcement supplied from outside rather than resolve summoned from within."
+        },
+        {
+          "arabic": "رَضِىَ",
+          "gloss": "He was pleased",
+          "note": "A verb for settled contentment with something, not delight at it. The same verb appears twice in one clause, once with God as its subject and once with the people, and that symmetry is what makes the relation mutual."
+        }
+      ],
+      "lifeInProphetsTime": "Kinship was not one loyalty among several in Arabia; it was the framework everything else hung from. A person's clan fed them in famine, paid their blood money, and buried them. A man who broke with his kin had no standing anywhere and no protection on any road. Listing fathers, sons, brothers and clan in that order names the whole structure, working outwards from the household to the tribe.",
+      "didYouKnow": "Two expressions in this ayah occur nowhere else in the Quran: faith written into hearts, and support by a spirit from Him. Both describe something placed inside a person rather than asked of them, and both fall in the second half of an ayah whose first half sounds like a demand about loyalty.",
+      "theologicalSignificance": "Faith is described as written into hearts by God and then supported from outside, which places its origin beyond the person holding it. That reframes the whole ayah: what looks like a demand about loyalty is presented as a description of what has already been done to someone. The closing mutuality is the boldest part. God's contentment with a person is stated, and then the person's contentment with God is stated in the same breath.",
+      "crossReferences": [
+        {
+          "ref": "5:56",
+          "why": "Contains the only other occurrence of the phrase for the party of God, with the same closing declaration."
+        },
+        {
+          "ref": "9:24",
+          "why": "Lists the same close relations and asks whether they are dearer than God and His messenger."
+        },
+        {
+          "ref": "3:31",
+          "why": "Turns the direction of love around, making following the messenger the route to being loved by God."
+        }
+      ],
+      "applyIt": "Notice that this ayah does not ask you to feel less for the people closest to you. It describes where your weight settles when the two pull apart. Think of one small thing you have gone along with lately only because someone you love wanted it. Sit with why, honestly, and without deciding anything today.",
+      "exploreFurther": [
+        "5:56",
+        "9:24",
+        "3:31"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:46:02.752Z",
         "reviewed": false
       }
     }
