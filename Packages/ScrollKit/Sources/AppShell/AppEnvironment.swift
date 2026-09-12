@@ -213,6 +213,11 @@ public final class AppEnvironment {
                 billingState: launch.forcedBillingState
             )
             mock.restoreGrantsPremium = launch.hasRestorablePurchase
+            // `--purchase-outcome <case>`: stand the store in the branch the paywall has to
+            // say something about (audit IAP-1). Absent, the fixture buys successfully.
+            if let outcome = launch.purchaseOutcome {
+                mock.pose(outcome)
+            }
             if launch.fixtureRemembersPurchases {
                 mock.onEntitlementChange = { FixturePurchaseRecord.isPurchased = $0 }
             }

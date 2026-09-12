@@ -1,3 +1,4 @@
+import Commerce
 @testable import AppShell
 import Foundation
 import QuranData
@@ -132,6 +133,27 @@ func launchOptionsParseTheTestFlags() {
     // A trailing flag with no value must not crash or half-parse.
     let dangling = LaunchOptions(arguments: ["ScrollTheQuran", "--screenshot"], environment: [:])
     #expect(dangling.screenshot == nil)
+}
+
+@Test("--purchase-outcome poses the branch the paywall has to speak about")
+func launchOptionsParsePurchaseOutcome() {
+    for outcome in FixturePurchaseOutcome.allCases {
+        let options = LaunchOptions(
+            arguments: ["ScrollTheQuran", "--screenshot", "paywall-trial", "--purchase-outcome", outcome.rawValue],
+            environment: [:]
+        )
+        #expect(options.purchaseOutcome == outcome)
+    }
+    // Absent, unknown, or dangling all mean "the fixture buys successfully".
+    #expect(LaunchOptions(arguments: ["ScrollTheQuran"], environment: [:]).purchaseOutcome == nil)
+    #expect(
+        LaunchOptions(arguments: ["ScrollTheQuran", "--purchase-outcome", "nonsense"], environment: [:])
+            .purchaseOutcome == nil
+    )
+    #expect(
+        LaunchOptions(arguments: ["ScrollTheQuran", "--purchase-outcome"], environment: [:])
+            .purchaseOutcome == nil
+    )
 }
 
 @Test("A screenshot run uses fixture commerce")

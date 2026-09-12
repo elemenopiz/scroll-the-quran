@@ -13,6 +13,10 @@ struct PlansSheet: View {
     let introEligible: Bool
     var onRedeem: () -> Void
     var onDismiss: () -> Void
+    /// What the last purchase attempt left to say (audit IAP-1). `nil` on every capture.
+    var notice: PaywallNotice?
+    var isBusy = false
+    var onDismissNotice: () -> Void = {}
 
     @State private var dragOffset: CGFloat = 0
 
@@ -25,6 +29,15 @@ struct PlansSheet: View {
                     .accessibilityIdentifier("paywall.plans.scrim")
                     .accessibilityLabel("Dismiss plans")
                     .accessibilityAddTraits(.isButton)
+
+                // Over the dim rather than inside the sheet: the sheet's own 340 pt is
+                // spoken for down to the last 32 pt, and a message that lands on the home
+                // indicator is a message nobody reads.
+                if let notice {
+                    PaywallNoticeView(notice: notice, onDismiss: onDismissNotice)
+                        .padding(.horizontal, Spacing.pageMargin)
+                        .padding(.top, PaywallMetrics.sheetNoticeTop)
+                }
 
                 sheet
                     .padding(.top, PaywallMetrics.sheetTop)
@@ -67,10 +80,15 @@ struct PlansSheet: View {
             .padding(.top, PaywallMetrics.sheetNoPaymentTop - PaywallMetrics.sheetTop)
             .accessibilityElement(children: .combine)
 
-            PillButton(title: redeemTitle, height: PaywallMetrics.ctaHeight, action: onRedeem)
-                .padding(.horizontal, PaywallMetrics.cardInset)
-                .padding(.top, PaywallMetrics.sheetCTATop - PaywallMetrics.sheetTop)
-                .accessibilityIdentifier("paywall.plans.redeem")
+            PillButton(
+                title: redeemTitle,
+                height: PaywallMetrics.ctaHeight,
+                isBusy: isBusy,
+                action: onRedeem
+            )
+            .padding(.horizontal, PaywallMetrics.cardInset)
+            .padding(.top, PaywallMetrics.sheetCTATop - PaywallMetrics.sheetTop)
+            .accessibilityIdentifier("paywall.plans.redeem")
 
             Text(PaywallCopy.cancelAnytime)
                 .font(.geoRegular(PaywallMetrics.cancelAnytimeSize))

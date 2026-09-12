@@ -48,5 +48,14 @@ enum GiftPalette {
     /// Ink on the gift screens: `#2B2B2B`.
     static let ink = Color(rgb: 0x2B2B2B)
     /// Muted copy on the gift screens: `#6B655C`.
+    ///
+    /// Decorative and supporting copy only. It measures 3.98:1 on `paper` (#DED6C0), under
+    /// WCAG 1.4.3's 4.5:1 for normal-size text, so anything a customer has to *read* — the
+    /// renewal disclosure, the Terms / Privacy / Restore row — uses `inkLegible` instead
+    /// (audit A11Y-2).
     static let inkMuted = Color(rgb: 0x6B655C)
+    /// The lightest warm grey that still clears 4.5:1 on every surface of this
+    /// composition: 4.78 on `paper`, 5.75 on `cloudCool`, 5.92 on `offerCard`,
+    /// 6.32 on `cloudWarm`.
+    static let inkLegible = Color(rgb: 0x5F594F)
 }

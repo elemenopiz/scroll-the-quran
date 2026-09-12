@@ -15,6 +15,12 @@ struct PaywallTrialView: View {
     var onViewAllPlans: () -> Void
     var onRestore: () -> Void
     var links: PaywallLegalLinks = .default
+    /// What the last purchase or restore attempt left to say. `nil` on every capture in
+    /// `Reference/`, which is why the banner cannot move a snapshot.
+    var notice: PaywallNotice?
+    /// A purchase or a restore is in flight: the call to action is disabled and spinning.
+    var isBusy = false
+    var onDismissNotice: () -> Void = {}
 
     @Environment(\.openURL) private var openURL
 
@@ -43,6 +49,7 @@ struct PaywallTrialView: View {
                     headline.padding(.top, PaywallMetrics.headlineTop)
                     timelineConnector
                     timeline.padding(.top, PaywallMetrics.timelineTop)
+                    noticeBanner
                     footer
                 }
             }
@@ -136,10 +143,15 @@ struct PaywallTrialView: View {
                     .accessibilityIdentifier("paywall.priceNote")
             }
 
-            PillButton(title: redeemTitle, height: PaywallMetrics.ctaHeight, action: onRedeem)
-                .padding(.horizontal, Spacing.pageMargin)
-                .padding(.top, PaywallMetrics.ctaTop)
-                .accessibilityIdentifier("paywall.redeem")
+            PillButton(
+                title: redeemTitle,
+                height: PaywallMetrics.ctaHeight,
+                isBusy: isBusy,
+                action: onRedeem
+            )
+            .padding(.horizontal, Spacing.pageMargin)
+            .padding(.top, PaywallMetrics.ctaTop)
+            .accessibilityIdentifier("paywall.redeem")
 
             Button(action: onViewAllPlans) {
                 Text(PaywallCopy.viewAllPlans)
@@ -154,6 +166,18 @@ struct PaywallTrialView: View {
                 .padding(.top, PaywallMetrics.legalTop)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+    }
+
+    /// The banner sits in the gap the reference leaves between the last timeline row and
+    /// the footer's "No payment due now" — the only band on this screen with 70 pt of air
+    /// in it — so a message never lands on top of the price or the call to action.
+    @ViewBuilder
+    private var noticeBanner: some View {
+        if let notice {
+            PaywallNoticeView(notice: notice, onDismiss: onDismissNotice)
+                .padding(.horizontal, Spacing.pageMargin)
+                .padding(.top, PaywallMetrics.noticeTop)
+        }
     }
 
     private var legalRow: some View {
@@ -242,17 +266,32 @@ struct PillButton: View {
     /// on cream when the system is in dark mode.
     var fill: Color = .pillFill
     var label: Color = .textOnPill
+    /// A purchase is in flight. The button dims, stops responding and spins, so a second
+    /// tap cannot start a second StoreKit sheet and the customer can see that the first
+    /// one is working (audit IAP-1).
+    var isBusy = false
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Text(title)
-                .font(.geoBold(fontSize))
-                .foregroundStyle(label)
-                .frame(maxWidth: .infinity)
-                .frame(height: height)
-                .background(fill, in: Capsule())
+            ZStack {
+                Text(title)
+                    .font(.geoBold(fontSize))
+                    .foregroundStyle(label)
+                    .opacity(isBusy ? 0 : 1)
+                if isBusy {
+                    ProgressView()
+                        .progressViewStyle(.circular)
+                        .tint(label)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: height)
+            .background(fill.opacity(isBusy ? 0.55 : 1), in: Capsule())
         }
         .buttonStyle(.plain)
+        .disabled(isBusy)
+        .accessibilityLabel(isBusy ? PaywallCopy.purchaseInProgress : title)
+        .accessibilityValue(isBusy ? PaywallCopy.purchaseInProgress : "")
     }
 }

@@ -34,6 +34,11 @@ public struct LaunchOptions: Equatable, Sendable {
     /// "Restore Purchases" unlocks the app. A StoreKit test store cannot express this — it
     /// never forgets a transaction — so the fixture is the only place to test the wiring.
     public let hasRestorablePurchase: Bool
+    /// Set by `--purchase-outcome <success|cancelled|failed|pending|stalled>`: what the
+    /// fixture store's `purchase(_:)` does. The paywall has a different thing to say for
+    /// each, and before Phase 4d it said none of them (audit finding IAP-1), so each one
+    /// needs a way to be stood up from a launch argument.
+    public let purchaseOutcome: FixturePurchaseOutcome?
 
     public init(
         screenshot: ScreenRoute? = nil,
@@ -44,7 +49,8 @@ public struct LaunchOptions: Equatable, Sendable {
         resetState: Bool = false,
         forcedEntitlement: Bool? = nil,
         forcedBillingState: BillingState? = nil,
-        hasRestorablePurchase: Bool = false
+        hasRestorablePurchase: Bool = false,
+        purchaseOutcome: FixturePurchaseOutcome? = nil
     ) {
         self.screenshot = screenshot
         self.fixedDate = fixedDate
@@ -55,6 +61,7 @@ public struct LaunchOptions: Equatable, Sendable {
         self.forcedEntitlement = forcedEntitlement
         self.forcedBillingState = forcedBillingState
         self.hasRestorablePurchase = hasRestorablePurchase
+        self.purchaseOutcome = purchaseOutcome
     }
 
     public init(arguments: [String], environment: [String: String]) {
@@ -73,6 +80,8 @@ public struct LaunchOptions: Equatable, Sendable {
         hasRestorablePurchase = arguments.contains("--restorable")
         forcedBillingState = LaunchOptions.value(of: "--billing", in: arguments)
             .flatMap(BillingState.init(rawValue:))
+        purchaseOutcome = LaunchOptions.value(of: "--purchase-outcome", in: arguments)
+            .flatMap(FixturePurchaseOutcome.init(rawValue:))
         if arguments.contains("--premium") {
             forcedEntitlement = true
         } else if arguments.contains("--free") {

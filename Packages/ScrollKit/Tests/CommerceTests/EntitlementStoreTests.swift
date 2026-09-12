@@ -152,6 +152,52 @@ struct MockEntitlementStoreTests {
     }
 }
 
+/// `pose(_:)` is the seam `--purchase-outcome` drives, so each case has to actually put the
+/// store in the state it names (audit IAP-1).
+@Suite("Posed purchase outcomes")
+@MainActor
+struct PosedOutcomeTests {
+    @Test("Each pose puts the fixture in the branch it names", arguments: FixturePurchaseOutcome.allCases)
+    func poses(_ outcome: FixturePurchaseOutcome) async throws {
+        let store = MockEntitlementStore()
+        store.pose(outcome)
+        switch outcome {
+        case .success:
+            #expect(try await store.purchase(.yearly) == .purchased)
+            #expect(store.isPremium)
+        case .cancelled:
+            #expect(try await store.purchase(.yearly) == .cancelled)
+            #expect(store.isPremium == false)
+        case .pending:
+            #expect(try await store.purchase(.yearly) == .pending)
+            #expect(store.isPremium == false)
+        case .failed:
+            #expect(store.nextError == .storeKit(FixturePurchaseOutcome.failureMessage))
+            await #expect(throws: CommerceError.self) { try await store.purchase(.yearly) }
+        case .stalled:
+            // Not awaited: the whole point is that it does not answer.
+            #expect(store.purchaseDelay > .zero)
+            #expect(store.isPremium == false)
+        }
+    }
+
+    @Test("Posing one outcome clears the last one")
+    func posesAreExclusive() async throws {
+        let store = MockEntitlementStore()
+        store.pose(.failed)
+        store.pose(.success)
+        #expect(store.nextError == nil)
+        #expect(store.purchaseDelay == .zero)
+        #expect(try await store.purchase(.yearly) == .purchased)
+    }
+
+    @Test("Every outcome has a launch-argument spelling")
+    func rawValues() {
+        #expect(Set(FixturePurchaseOutcome.allCases.map(\.rawValue))
+            == ["success", "cancelled", "failed", "pending", "stalled"])
+    }
+}
+
 @Suite("One-time offer persistence")
 @MainActor
 struct OneTimeOfferStoreTests {

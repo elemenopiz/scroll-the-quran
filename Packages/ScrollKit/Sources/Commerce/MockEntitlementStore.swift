@@ -1,6 +1,30 @@
 import Foundation
 import Observation
 
+/// The outcomes `MockEntitlementStore` can be told to pose, one per branch the paywall has
+/// to show the customer something for.
+///
+/// The IAP audit's finding was that `PaywallModel` computed all of these and no view read
+/// any of them, which is exactly the kind of gap a fixture cannot catch unless the fixture
+/// can *be* each state. `--purchase-outcome <case>` is that switch.
+public enum FixturePurchaseOutcome: String, Sendable, CaseIterable {
+    /// The purchase goes through.
+    case success
+    /// The customer backed out of the App Store sheet.
+    case cancelled
+    /// StoreKit threw: a declined card, an unavailable product, an ineligible offer.
+    case failed
+    /// Ask to Buy — nothing is unlocked until a family organiser approves.
+    case pending
+    /// The purchase never answers, so the in-flight state stays on screen.
+    case stalled
+
+    /// The message a `failed` pose throws. Public so a UI test can assert on the line the
+    /// customer actually reads rather than on a substring someone invented.
+    public static let failureMessage =
+        "We could not complete that purchase. Check your payment method and try again."
+}
+
 /// A store with no StoreKit behind it.
 ///
 /// It backs SwiftUI previews, the `--screenshot` snapshot runs (where the real store may
@@ -21,6 +45,12 @@ public final class MockEntitlementStore: EntitlementProviding {
     public var nextOutcome: PurchaseOutcome = .purchased
     /// Set to make `purchase(_:)` or `restore()` throw.
     public var nextError: CommerceError?
+    /// How long `purchase(_:)` takes to answer.
+    ///
+    /// Zero everywhere except the UI test that has to *see* the in-flight state: a fixture
+    /// purchase otherwise resolves inside the same run-loop turn, so the disabled call to
+    /// action and its spinner never exist long enough for XCUITest to catch them.
+    public var purchaseDelay: Duration = .zero
     /// Set when the customer is meant to *have* a purchase to restore, so `restore()` grants
     /// the entitlement the way `AppStore.sync()` plus a re-read of `currentEntitlements`
     /// would. A StoreKit test store cannot demonstrate this: it never stops returning a
@@ -62,6 +92,9 @@ public final class MockEntitlementStore: EntitlementProviding {
     @discardableResult
     public func purchase(_ id: ProductID) async throws -> PurchaseOutcome {
         purchaseCount += 1
+        if purchaseDelay > .zero {
+            try? await Task.sleep(for: purchaseDelay)
+        }
         if let error = nextError {
             throw error
         }
@@ -82,6 +115,30 @@ public final class MockEntitlementStore: EntitlementProviding {
         }
         if restoreGrantsPremium {
             grant()
+        }
+    }
+
+    /// Pose one of the outcomes a real purchase can end in, so a snapshot route or a UI
+    /// test can stand the paywall in that state with one launch argument.
+    public func pose(_ outcome: FixturePurchaseOutcome) {
+        nextError = nil
+        purchaseDelay = .zero
+        switch outcome {
+        case .success:
+            nextOutcome = .purchased
+        case .cancelled:
+            nextOutcome = .cancelled
+        case .pending:
+            nextOutcome = .pending
+        case .failed:
+            // What a declined card or an unavailable product reads like by the time it has
+            // been through `StoreKitEntitlementStore`.
+            nextError = .storeKit(FixturePurchaseOutcome.failureMessage)
+        case .stalled:
+            // Long enough for a UI test to see the spinner; the outcome never arrives
+            // inside the test, which is the point.
+            purchaseDelay = .seconds(30)
+            nextOutcome = .cancelled
         }
     }
 

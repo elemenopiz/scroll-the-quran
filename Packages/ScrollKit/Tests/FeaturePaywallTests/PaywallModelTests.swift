@@ -119,6 +119,171 @@ struct PaywallModelTests {
     }
 }
 
+/// Audit IAP-1. Every branch a purchase or a restore can end in has to leave something on
+/// screen — the finding was that the model computed all of this and no view read it, and
+/// the only reason that shipped is that nothing asserted the state was *reachable*.
+@Suite("Purchase feedback")
+@MainActor
+struct PaywallNoticeTests {
+    @Test("A cancelled purchase says so instead of failing silently")
+    func cancelledSpeaks() async {
+        let store = MockEntitlementStore()
+        store.pose(.cancelled)
+        let model = PaywallModel(store: store)
+        #expect(await model.purchase(.yearly) == false)
+        #expect(model.notice == .info(PaywallCopy.purchaseCancelled))
+        // A cancellation is not an error: it must not be dressed as one.
+        #expect(model.notice?.isError == false)
+        #expect(model.errorMessage == nil)
+    }
+
+    @Test("A failed purchase surfaces the store's message as an error")
+    func failureSpeaks() async {
+        let store = MockEntitlementStore()
+        store.pose(.failed)
+        let model = PaywallModel(store: store)
+        #expect(await model.purchase(.yearly) == false)
+        #expect(model.notice == .error(FixturePurchaseOutcome.failureMessage))
+        #expect(model.notice?.isError == true)
+    }
+
+    @Test("Ask to Buy reads as pending, not as a failure")
+    func pendingSpeaks() async {
+        let store = MockEntitlementStore()
+        store.pose(.pending)
+        let model = PaywallModel(store: store)
+        #expect(await model.purchase(.yearly) == false)
+        #expect(model.notice == .pending(PaywallCopy.askToBuyPending))
+        #expect(model.notice?.isError == false)
+        #expect(model.pendingMessage == PaywallCopy.askToBuyPending)
+    }
+
+    @Test("A successful purchase leaves nothing on screen")
+    func successIsSilent() async {
+        let store = MockEntitlementStore()
+        store.pose(.success)
+        let model = PaywallModel(store: store)
+        #expect(await model.purchase(.yearly))
+        #expect(model.notice == nil)
+    }
+
+    @Test("A restore that finds nothing says so rather than doing nothing")
+    func emptyRestoreSpeaks() async {
+        let store = MockEntitlementStore()
+        let model = PaywallModel(store: store)
+        #expect(await model.restore() == false)
+        #expect(model.notice == .info(PaywallCopy.nothingToRestore))
+    }
+
+    @Test("A restore that finds a purchase is silent and reports true")
+    func restoreThatWorks() async {
+        let store = MockEntitlementStore()
+        store.restoreGrantsPremium = true
+        let model = PaywallModel(store: store)
+        #expect(await model.restore())
+        #expect(model.notice == nil)
+    }
+
+    @Test("A restore that cannot reach the App Store reads as an error")
+    func restoreFailureSpeaks() async {
+        let store = MockEntitlementStore()
+        store.pose(.failed)
+        let model = PaywallModel(store: store)
+        #expect(await model.restore() == false)
+        #expect(model.notice == .error(PaywallCopy.restoreFailed))
+    }
+
+    @Test("The banner's close button clears the message")
+    func dismissClears() async {
+        let store = MockEntitlementStore()
+        store.pose(.cancelled)
+        let model = PaywallModel(store: store)
+        _ = await model.purchase(.yearly)
+        #expect(model.notice != nil)
+        model.dismissNotice()
+        #expect(model.notice == nil)
+    }
+
+    @Test("A new attempt clears the message the last one left")
+    func retryClearsTheLastMessage() async {
+        let store = MockEntitlementStore()
+        store.pose(.failed)
+        let model = PaywallModel(store: store)
+        _ = await model.purchase(.yearly)
+        #expect(model.notice?.isError == true)
+        store.pose(.success)
+        #expect(await model.purchase(.yearly))
+        #expect(model.notice == nil)
+    }
+
+    @Test("Nothing is busy before or after an attempt, and a second tap is refused")
+    func busyState() async {
+        let store = MockEntitlementStore()
+        let model = PaywallModel(store: store)
+        #expect(model.isBusy == false)
+        #expect(model.isPurchasing == false)
+        #expect(model.isRestoring == false)
+        _ = await model.purchase(.yearly)
+        #expect(model.isBusy == false)
+        #expect(store.purchaseCount == 1)
+    }
+
+    @Test("A purchase in flight blocks a second purchase and a restore")
+    func concurrentAttemptsAreRefused() async {
+        let store = MockEntitlementStore()
+        // `pose(.stalled)` is 30 s, which is what a UI test needs to *see* the spinner and
+        // what a unit test must not spend. The mechanism under test is the same one.
+        store.purchaseDelay = .milliseconds(200)
+        let model = PaywallModel(store: store)
+        async let first = model.purchase(.yearly)
+        // Give the first attempt a turn to set `isPurchasing` before the second one asks.
+        await Task.yield()
+        #expect(await model.restore() == false)
+        #expect(store.restoreCount == 0, "a restore must not run while a purchase is in flight")
+        #expect(model.isBusy)
+        _ = await first
+    }
+
+    @Test("Notice text and severity read correctly")
+    func noticeShape() {
+        #expect(PaywallNotice.error("boom").text == "boom")
+        #expect(PaywallNotice.error("boom").isError)
+        #expect(PaywallNotice.pending("wait").isError == false)
+        #expect(PaywallNotice.info("hm").isError == false)
+    }
+}
+
+/// Audit IAP-2: the gift offer is an independent purchase surface and needs its own live
+/// Terms, Privacy and Restore (guideline 3.1.2(a)).
+@Suite("Gift offer disclosures")
+struct GiftDisclosureTests {
+    @Test("The gift footer carries Terms, Privacy and Restore")
+    func giftLegalLinks() {
+        #expect(PaywallCopy.giftLegal.contains(.terms))
+        #expect(PaywallCopy.giftLegal.contains(.privacy))
+        #expect(PaywallCopy.giftLegal.contains(.restore))
+        #expect(PaywallCopy.giftLegal.count == 3)
+        // Every slug is usable as an accessibility identifier suffix.
+        #expect(PaywallCopy.giftLegal.allSatisfy { !$0.slug.contains(" ") })
+        #expect(Set(PaywallCopy.LegalLink.allCases.map(\.slug)).count == 4)
+    }
+
+    @Test("The gift footnote states the price, the period and that it renews")
+    func giftFootnoteDiscloses() {
+        // The screen composes `trialFootnote` with `autoRenewNote`; both halves matter.
+        #expect(PlanPricing.trialFootnote(StoreCatalogue.gift) == "3 days free, then $19.99/year")
+        #expect(PaywallCopy.autoRenewNote.lowercased().contains("renew"))
+        // It has to stay short enough to share one 393 pt line with the price.
+        #expect(PaywallCopy.autoRenewNote.count < 16)
+    }
+
+    @Test("The gift row sits below the disclosure and above the home indicator")
+    func giftLegalPlacement() {
+        #expect(PaywallMetrics.giftLegalTop > PaywallMetrics.footnoteTop)
+        #expect(PaywallMetrics.giftLegalTop + PaywallMetrics.giftLegalSize < PaywallMetrics.referenceHeight - 10)
+    }
+}
+
 @Suite("Screen routing")
 struct PaywallScreensTests {
     @Test("Every screen id in the manifest maps to a stage")

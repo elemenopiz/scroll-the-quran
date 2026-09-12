@@ -101,6 +101,20 @@ enum PaywallMetrics {
     static let footerTop: CGFloat = 582
     static let footerBottomInset: CGFloat = 33
 
+    /// Where the purchase/restore banner goes on the trial screen (audit IAP-1).
+    ///
+    /// The last timeline row's copy ends around y 470 and the footer's "No payment due now"
+    /// starts at 582, so this band is the one place on the screen with room for two or three
+    /// lines that is not carrying anything in the reference. The banner is drawn only when
+    /// there is something to say, so no capture in `Reference/` sees it.
+    static let noticeTop: CGFloat = 496
+    /// The same banner over the plans half sheet, in the dimmed band above the sheet's
+    /// rounded top edge (y 512). Three lines fit between 424 and the sheet.
+    static let sheetNoticeTop: CGFloat = 424
+    /// And on the gift offer, under the close control and over the envelope's raised flap
+    /// — the only band on that composition that is not price, call to action or disclosure.
+    static let giftNoticeTop: CGFloat = 118
+
     // MARK: - paywall-plans
 
     /// The sheet's dimmed backdrop measured #BABABA over white.
@@ -351,6 +365,12 @@ enum PaywallMetrics {
     static let priceRowTop: CGFloat = 674
     static let footnoteSize: CGFloat = 13
     static let footnoteTop: CGFloat = 800
+    /// The gift screen's Terms / Privacy / Restore row, directly under the renewal
+    /// disclosure (audit IAP-2). The disclosure itself does not move: the row is added
+    /// below it, in the band the reference leaves empty because its gift screen has no
+    /// legal affordances at all. Accepted deviation on `gift-open`.
+    static let giftLegalSize: CGFloat = 11
+    static let giftLegalTop: CGFloat = 819
     static let giftCTAHeight: CGFloat = 60
     static let giftCTATop: CGFloat = 728
     static let giftCloseTop: CGFloat = 73

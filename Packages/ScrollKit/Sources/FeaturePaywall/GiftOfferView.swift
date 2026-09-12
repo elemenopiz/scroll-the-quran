@@ -10,9 +10,15 @@ public struct GiftOfferView: View {
     private let introEligible: Bool
     private let onDismiss: () -> Void
     private let onPurchase: () -> Void
+    private let onRestore: () -> Void
+    private let links: PaywallLegalLinks
+    private let notice: PaywallNotice?
+    private let isBusy: Bool
+    private let onDismissNotice: () -> Void
 
     @State private var isOpen: Bool
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.openURL) private var openURL
 
     public init(
         plan: StorePlan?,
@@ -20,7 +26,12 @@ public struct GiftOfferView: View {
         introEligible: Bool = true,
         isOpen: Bool = false,
         onDismiss: @escaping () -> Void,
-        onPurchase: @escaping () -> Void
+        onPurchase: @escaping () -> Void,
+        onRestore: @escaping () -> Void = {},
+        links: PaywallLegalLinks = .default,
+        notice: PaywallNotice? = nil,
+        isBusy: Bool = false,
+        onDismissNotice: @escaping () -> Void = {}
     ) {
         self.plan = plan
         self.standardPlan = standardPlan
@@ -28,6 +39,11 @@ public struct GiftOfferView: View {
         _isOpen = State(initialValue: isOpen)
         self.onDismiss = onDismiss
         self.onPurchase = onPurchase
+        self.onRestore = onRestore
+        self.links = links
+        self.notice = notice
+        self.isBusy = isBusy
+        self.onDismissNotice = onDismissNotice
     }
 
     public var body: some View {
@@ -39,6 +55,7 @@ public struct GiftOfferView: View {
                 } else {
                     closedState
                 }
+                noticeBanner
             }
         }
         .animation(revealAnimation, value: isOpen)
@@ -159,6 +176,7 @@ public struct GiftOfferView: View {
                 fontSize: 19,
                 fill: GiftPalette.pillFill,
                 label: GiftPalette.pillLabel,
+                isBusy: isBusy,
                 action: onPurchase
             )
             .padding(.horizontal, Spacing.pageMargin)
@@ -167,9 +185,63 @@ public struct GiftOfferView: View {
 
             Text(footnote)
                 .font(.geoRegular(PaywallMetrics.footnoteSize))
-                .foregroundStyle(GiftPalette.inkMuted)
+                .foregroundStyle(GiftPalette.inkLegible)
                 .padding(.top, PaywallMetrics.footnoteTop)
                 .accessibilityIdentifier("gift.footnote")
+
+            legalRow
+                .padding(.top, PaywallMetrics.giftLegalTop)
+        }
+    }
+
+    /// Terms of Use, Privacy Policy and Restore Purchases (audit IAP-2).
+    ///
+    /// The gift offer is an independent purchase surface for a real auto-renewing
+    /// subscription: a customer who dismisses the paywall lands here and never sees the
+    /// trial screen's footer again, so guideline 3.1.2(a)'s live links have to be on this
+    /// screen too. The reference has nothing in this band — its gift screen has no legal
+    /// affordances at all — which is the accepted deviation recorded in `Reference/scores.md`.
+    private var legalRow: some View {
+        HStack(spacing: 5) {
+            ForEach(Array(PaywallCopy.giftLegal.enumerated()), id: \.element) { index, link in
+                if index > 0 {
+                    Text("|").foregroundStyle(GiftPalette.inkLegible)
+                }
+                Button(link.title) { open(link) }
+                    .foregroundStyle(GiftPalette.inkLegible)
+                    .accessibilityIdentifier("gift.legal.\(link.slug)")
+            }
+        }
+        .font(.geoRegular(PaywallMetrics.giftLegalSize))
+        .lineLimit(1)
+        .fixedSize()
+    }
+
+    /// Terms and Privacy open in the browser; Restore Purchases goes back to the App Store.
+    private func open(_ link: PaywallCopy.LegalLink) {
+        switch link {
+        case .terms: openURL(links.terms)
+        case .privacy: openURL(links.privacy)
+        case .alreadySubscribed, .restore: onRestore()
+        }
+    }
+
+    /// Under the close control and over the envelope's raised flap: the only band on this
+    /// composition that is not price, call to action or disclosure. Drawn only when there
+    /// is something to say, so neither gift capture sees it.
+    @ViewBuilder
+    private var noticeBanner: some View {
+        if let notice {
+            PaywallNoticeView(
+                notice: notice,
+                ink: GiftPalette.ink,
+                mutedInk: GiftPalette.inkLegible,
+                paper: GiftPalette.offerCard,
+                edge: GiftPalette.envelopeShade,
+                onDismiss: onDismissNotice
+            )
+            .padding(.horizontal, Spacing.pageMargin)
+            .padding(.top, PaywallMetrics.giftNoticeTop)
         }
     }
 
@@ -274,7 +346,7 @@ public struct GiftOfferView: View {
         let terms = introEligible
             ? PlanPricing.trialFootnote(offerPlan)
             : PlanPricing.periodLine(offerPlan)
-        return "\(terms)  •  Cancel anytime"
+        return "\(terms)  •  \(PaywallCopy.autoRenewNote)"
     }
 }
 
