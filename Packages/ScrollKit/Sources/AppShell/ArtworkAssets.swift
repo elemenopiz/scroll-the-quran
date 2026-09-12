@@ -9,9 +9,9 @@ import SwiftUI
 /// Compositing notes carried over from the artwork brief:
 /// - `planCoverScrim` / `charityCardScrim` are meant to be `.overlay`ed (normal blend)
 ///   over a cover or charity image so white titles read.
-/// - The opened envelope is a sandwich: `envelopeOpenBack` → live card view →
-///   `envelopeOpenFront`. The card slot is `x 250, y 110, w 700, h 530, radius 24`
-///   in the 1200×900 artwork space.
+/// - The opened envelope (Phase 4f) is a stack: `giftClouds` → `envelopeOpen` →
+///   `envelopeCard` clipped at the pocket mouth → `waxSealLogo`; the geometry comes
+///   from `PaywallMetrics.openEnvelope(...)`, derived from the layer's own canvas.
 /// - `phoneFrame`'s screen window is `x 30, y 30, 1119 × 2496` in the 1179×2556
 ///   artwork space. It is 0.4484:1 while a real screenshot is 0.4613:1, so scale the
 ///   screenshot to *fill* the window and clip it to `RoundedRectangle(cornerRadius: 160)`
@@ -32,14 +32,16 @@ public enum ArtworkAsset: String, CaseIterable, Sendable {
 
     /// Warm beige cloud sky behind the gift screens (1179×2556).
     case giftClouds = "GiftClouds"
-    /// Closed envelope with the wax seal (1200×900, transparent).
+    /// Closed envelope with the logo wax seal baked in (1200×900, transparent).
     case envelopeClosed = "EnvelopeClosed"
-    /// Opened envelope, back panel + raised flap only (1200×900, transparent).
-    case envelopeOpenBack = "EnvelopeOpenBack"
-    /// Opened envelope, front pocket + seal only (1200×900, transparent).
-    case envelopeOpenFront = "EnvelopeOpenFront"
-    /// The blank inner card on its own (1200×900, transparent).
+    /// Opened, empty envelope with the tall raised flap (1000×1500, transparent).
+    case envelopeOpen = "EnvelopeOpen"
+    /// The blank cream card that stands in the pocket (900×1200, transparent).
     case envelopeCard = "EnvelopeCard"
+    /// The logo wax seal cut from the render, for the open envelope (600×600, transparent).
+    case waxSealLogo = "WaxSealLogo"
+    /// A blank gold seal for a code-embossed fallback (600×600, transparent).
+    case waxSealBlank = "WaxSealBlank"
 
     // MARK: - Onboarding
 
