@@ -10,10 +10,13 @@
 # (`Sources/FeatureOnboarding/Resources/Mockup-<name>.png`), which `MockupArt` draws.
 #
 # Each capture is the app launched with `--screenshot <route>` and the fixture state the
-# slides should advertise, then cut down to the phone's screen window: 1119x2496 px at
-# +30+30 out of the 1179x2556 px frame (a 10 pt bezel on every side), with the 160 px
-# (53.3 pt) corner radius the device has. The result drops straight into `PhoneFrame`,
-# whose own clip shape has the same proportions.
+# slides should advertise, kept **whole** — status bar, Dynamic Island, home indicator and
+# all — and shipped at 690x1500 px with the display's 55 pt corner radius cut into its
+# alpha. Nothing is cropped: `PhoneFrame`'s screen window has the device's own 402:874
+# aspect, so `MockupArt` fits the capture into it edge to edge. (Until Phase 4h these were
+# 1119x2496 windows cut out of a 1179x2556 frame and then scaled to *fill* a window of a
+# different aspect, which sliced the clock off the status bar and the outer tab labels off
+# both sides — and cost 4.4 MB of bundle.)
 #
 # Re-run after any change to the reader, plans, discover or search screens, and commit
 # the PNGs — the app never renders these live.
@@ -28,13 +31,14 @@ FIXED_DATE="${SCROLL_FIXED_DATE:-2026-09-14}"
 FIXTURE="${SCROLL_FIXTURE_STATE:-premium-active-plan}"
 SETTLE="${SCROLL_CAPTURE_SETTLE:-3}"
 
-# The phone's screen window inside a 1179x2556 px capture, and its corner radius.
-# 30 px = the 10 pt bezel `OnboardingMetrics.phoneBezel` draws at @3x.
-CROP_W=1119
-CROP_H=2496
-CROP_X=30
-CROP_Y=30
-CORNER=160
+# The capture's native size (iPhone 17 Pro, 402x874 pt at @3x) and the size we ship.
+# 690 px is ~3x the ~223 pt the screen window is drawn at on a slide; the corner radius is
+# the display's own 55 pt at the shipped scale (55 * 690 / 402).
+NATIVE_W=1206
+NATIVE_H=2622
+OUT_W=690
+OUT_H=1500
+CORNER=94
 
 # name -> --screenshot route. The names are `OnboardingContent.Mockup` raw values.
 # `deepstudy` renders `verse-search`: the reference slide 4 (onboarding-slide4-search.png)
@@ -49,29 +53,29 @@ route_for() {
     esac
 }
 
-# Pixels to drop off the top of the captured window before it goes in the frame.
+# Pixels to drop off the top of the capture, and pixels of the screen's own ground to put
+# back in their place.
 #
-# `plans-sheet` is a *sheet*, so its capture carries 185 px of the dimmed parent screen
-# above the sheet's rounded top edge. Inside a 228 pt phone frame that band reads as a
-# black bar, and the reference slide shows the plans list filling the screen. 185 is
-# measured: the sheet is full width from that row down.
+# `plans-sheet` is a *sheet*, so its capture carries 236 px of the dimmed parent screen
+# above the sheet's first full-width row. Inside a 223 pt phone frame that band reads as a
+# black bar, and the reference slide shows the plans list filling the screen. 236 is
+# measured — it is the first row where the sheet's own #FAFAFC reaches both edges, i.e.
+# past its rounded top corners — and trimming and padding by the same amount leaves every
+# row of the sheet exactly where
+# it was while replacing the dimmed band with the sheet's own background. This is the one
+# mockup with no status bar in it: iOS dims the parent screen to *black* behind a sheet,
+# where the reference's slide 2 shows a light grey band with the clock still legible on it,
+# and a black bar across the top of the phone is the worse of the two wrongs.
 trim_top_for() {
     case "$1" in
-        plans) echo 185 ;;
+        plans) echo 236 ;;
         *) echo 0 ;;
     esac
 }
 
-# Pixels of the screen's own ground to put back at the top after trimming.
-#
-# `PhoneFrame` draws the Dynamic Island over the top 26 pt (136 px at this scale) of the
-# window, so a trim that brings real content up to y 0 hides it: the plans sheet's
-# "Reading Plans / Done" header ended up behind the island. Padding the trim back with the
-# colour of the first surviving row puts the header where a status bar would leave it, and
-# the band under the island is the sheet's own background rather than a black bar.
 pad_top_for() {
     case "$1" in
-        plans) echo 210 ;;
+        plans) echo 236 ;;
         *) echo 0 ;;
     esac
 }
@@ -103,28 +107,29 @@ for name in "${NAMES[@]}"; do
     sleep "$SETTLE"
     xcrun simctl io "$SIM" screenshot --type=png "$WORK/$name-raw.png" >/dev/null 2>&1
 
-    # Normalise to the reference device (1179x2556) before cropping, so the window is
-    # the same slice of the design whatever simulator this ran on, then round the
-    # corners with an alpha mask.
+    # Normalise to the device's native @3x size, so the shipped PNG is the same slice of
+    # the design whatever simulator this ran on, then scale it down and round the corners
+    # with an alpha mask.
     trim="$(trim_top_for "$name")"
     pad="$(pad_top_for "$name")"
     magick "$WORK/$name-raw.png" -alpha remove -alpha off -colorspace sRGB \
-        -resize '1179x2556!' -crop "${CROP_W}x${CROP_H}+${CROP_X}+${CROP_Y}" +repage \
-        -crop "${CROP_W}x$((CROP_H - trim))+0+${trim}" +repage \
+        -resize "${NATIVE_W}x${NATIVE_H}!" \
+        -crop "${NATIVE_W}x$((NATIVE_H - trim))+0+${trim}" +repage \
         "$WORK/$name-trim.png"
-    ground="$(magick "$WORK/$name-trim.png" -format '%[pixel:p{560,4}]' info:)"
+    ground="$(magick "$WORK/$name-trim.png" -format '%[pixel:p{600,40}]' info:)"
     magick "$WORK/$name-trim.png" \
         -background "$ground" -gravity north -splice "0x${pad}" \
-        -resize "${CROP_W}x${CROP_H}!" \
+        -resize "${OUT_W}x${OUT_H}!" \
         "$WORK/$name-window.png"
     # White inside the rounded rectangle, black outside, no alpha of its own — the mask
     # is read as *intensity* by CopyOpacity. Drawing on `xc:none` instead leaves the
     # whole mask at alpha 0, which silently makes every shipped PNG invisible.
-    magick -size "${CROP_W}x${CROP_H}" xc:black -fill white \
-        -draw "roundrectangle 0,0,$((CROP_W - 1)),$((CROP_H - 1)),$CORNER,$CORNER" \
+    magick -size "${OUT_W}x${OUT_H}" xc:black -fill white \
+        -draw "roundrectangle 0,0,$((OUT_W - 1)),$((OUT_H - 1)),$CORNER,$CORNER" \
         -alpha off "$WORK/$name-mask.png"
     magick "$WORK/$name-window.png" "$WORK/$name-mask.png" \
         -alpha off -compose CopyOpacity -composite \
+        -strip -define png:compression-level=9 \
         "$OUTDIR/Mockup-$name.png"
 
     # Prove it: an all-transparent or all-flat capture is the failure mode this script

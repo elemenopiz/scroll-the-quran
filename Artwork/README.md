@@ -175,14 +175,22 @@ app draws when the asset catalog is absent — package previews and host tests.
 | --- | --- | --- | --- |
 | `phone-frame-1179x2556.png` | 1179×2556 | transparent iPhone frame to overlay our own screenshots | `src/phone-frame.svg` |
 
-Structure: a 12 px titanium rail (multi-stop linear gradient), an 18 px black
-bezel, side-button nubs, and a black Dynamic Island pill (375×111 at x 402,
-y 66). Outer corner radius 190; aperture corner radius 160.
+Structure: the iPhone 17 Pro, drawn from the device's own points — a 402 × 874 pt
+screen with a 55 pt corner radius, a 6 pt black border, a 2.5 pt titanium rail
+(`#B9B9BE` → `#8E8E93` with a lighter top face), and four side buttons 3.5 pt
+proud of the rail (action / volume up / volume down on the left, power on the
+right). Those are the same numbers `DeviceFrameMetrics` draws the onboarding
+slides' frame from, so the two frames are one device at two scales. `frame.py`
+picks a single scale factor — the enclosure plus a button nub on each edge fills
+the canvas's width — and multiplies everything by it. **It draws no Dynamic
+Island:** the capture behind the aperture carries the real one.
 
-**Screen window: x 30, y 30, 1119 × 2496.** That window is 0.4484 : 1 while a
-real screenshot is 0.4613 : 1, so scale the screenshot to *fill* the window and
-clip it to a `RoundedRectangle(cornerRadius: 160)` — a ~1.5 % vertical crop,
-invisible in practice. Do not stretch it.
+**Screen window: x 33, y 69, 1113 × 2419, corner radius 152**, with the enclosure
+itself at y 45, 1179 × 2466. The window is the device's screen, so a 1206 × 2622
+capture lands in it edge to edge (0.4601 : 1 against the capture's 0.4600 : 1);
+scale to fill and clip to `RoundedRectangle(cornerRadius: 152)`. Do not stretch
+it. `python3 Artwork/tools/frame.py` prints those constants on stderr —
+`Tools/release/screenshots.sh` carries a copy and must be updated with them.
 
 ### Reading-plan covers — `PlanCovers/`
 
