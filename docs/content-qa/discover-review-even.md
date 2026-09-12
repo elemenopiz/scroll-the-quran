@@ -141,3 +141,23 @@ No shard was hand-edited.
 | 36:57-61 | 4 | "Children of Adam" verified at exactly five places (7:26, 7:27, 7:31, 7:35, 36:60), four of them in surah 7. Nit: `exploreFurther[0]` is 36:51-58, overlapping the unit. | kept |
 | 36:82-83 | 3 | `didYouKnow` said `ملكوت` is twice what Abraham was shown; of its four occurrences only 6:75 is Abraham, while 7:185 and 23:88 are both questions put to rejectors. | rewritten |
 | 38:26 | 5 | `خليفة` in the singular verified at exactly two places (2:30, 38:26); desire correctly named as the mechanism that moves a judge before it bends a verdict. | kept |
+| 38:29-31 | 5 | `صافنات` described from the lexicographers rather than invented; the 54:17 fourfold refrain is counted correctly. | kept |
+| 40:44-45 | 5 | Reliance correctly placed after the speaking, not instead of it; the surah's two traditional names are accurate. | kept |
+| 40:59-60 | 5 | The supplication-is-worship report is cited as a report; asking classed as worship, which is what the ayah's join does. | kept |
+| 42:11 | 5 | The doubled `كمثله` construction and the grammarians' reading of it are reported accurately. | kept |
+| 42:23 | 5 | Sectarian-sensitive passage handled exactly as the brief requires: all classical readings of the exception given, none preferred. Five identical refusals in surah 26 verified. | kept |
+| 42:30-32 | 4 | "He pardons much" verified at 42:30 and 42:34, as claimed; refuses to let circumstances be read backwards as a verdict. Nit: `exploreFurther[0]` is 42:27-35, containing the unit. | kept |
+| 42:40 | 4 | Names the surah correctly from 42:38; distinguishes pardon from repair, which is what the second verb means. Nit: `exploreFurther[0]` is 42:36-43, containing the unit. | kept |
+| 42:41-43 | 4 | Holds the right to redress and the choice to forgo it together, which is the passage's own balance. Same `exploreFurther` overlap nit. | kept |
+| 44:34-38 | 4 | Tubba verified at exactly two places (44:37, 50:14) and correctly described as a royal title. Nit: `exploreFurther[0]` is 44:38-42, overlapping the unit. | kept |
+| 46:15 | 5 | The six-month deduction is a genuine early reading, given without naming the authority; `أوزعني` verified as shared only with 27:19. | kept |
+| 48:1-3 | 5 | Hudaybiyyah occasion accurate and well told; forgiveness correctly read as the purpose of the opening rather than its reward. | kept |
+| 48:4 | 5 | `سكينة` verified at six occurrences, three of them in this surah, with the other three correctly identified. | kept |
+| 48:29 | 5 | "Muhammad" verified at exactly four places (3:144, 33:40, 47:2, 48:29), with 61:6 noted separately as Ahmad. | kept |
+| 50:15-17 | 5 | Three single-letter openings (38, 50, 68) is correct; the Friday-recitation report is properly attributed. | kept |
+| 50:34-37 | 5 | Leaves `مزيد` unspecified as the grammar does, and cites the sight-of-God explanation as a report rather than as the meaning. | kept |
+| 54:13-17 | 5 | The fourfold "made easy" refrain and the sixfold `مدكر` (54:15, 17, 22, 32, 40, 51 — nowhere else) both verified. | kept |
+| 56:6-10 | 5 | The unique three-way sorting and its return at 56:88-94 are both accurate. | kept |
+| 58:11 | 5 | Verified against the corpus: surah 58 is the only surah carrying the divine name in every one of its 22 ayat. | kept |
+| 62:9-10 | 5 | `الجمعة` verified as a single occurrence; the passage read as an interruption with a defined edge, which both ayat support. | kept |
+| 64:11-13 | 5 | Declines to answer the theodicy question, as the ayah does, and says so; the companion's gloss is cited as a gloss. | kept |
