@@ -3,17 +3,10 @@
   "configurations": [
     {
       "name": "site",
-      "runtimeExecutable": "npx",
+      "runtimeExecutable": "sh",
       "runtimeArgs": [
-        "--yes",
-        "wrangler@4",
-        "pages",
-        "dev",
-        "web",
-        "--port",
-        "8788",
-        "--ip",
-        "127.0.0.1"
+        "-c",
+        "cd web && npx --yes wrangler@4 pages dev . --port 8788 --ip 127.0.0.1"
       ],
       "port": 8788
     }
