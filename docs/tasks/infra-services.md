@@ -11,3 +11,6 @@ Deliver:
 5. Gate: `cd Packages/ScrollKit && swift build && swift test --filter Commerce` green; `Tools/verify.sh --skip-sim` PASS.
 
 DoD: four web pages served locally with clean URLs; migration parses; adapter + tests green; three docs written; nothing changes in the shipped app's behaviour; report the owner steps that need their logins.
+
+## Amendment (owner is weighing Cloudflare over Vercel)
+Make `web/` host-agnostic: plain static files that deploy unchanged to **Cloudflare Pages** (add `_headers`, `_redirects` for the clean URLs, and a `wrangler.toml` with `pages_build_output_dir = "."`) and to **Vercel** (`vercel.json`). The README documents both paths (`npx wrangler pages deploy web --project-name scroll-the-quran` after `npx wrangler login`; `vercel --prod`) and recommends Cloudflare Pages when the domain's DNS is on Cloudflare (free, no cold starts, one dashboard for DNS + hosting). Prove both configs: `npx wrangler pages dev web` (or the python server) and curl `/privacy`, `/support`, `/terms`.
