@@ -2,11 +2,20 @@
 # Regenerate every asset in Artwork/ from source.
 # Requires: ImageMagick 7 (`magick`), librsvg (`rsvg-convert`), python3.
 #
-#   build.sh                 gift layers cut from the generated renders (tools/gift-assets.sh)
+#   build.sh                 gift layers cut from the generated renders (tools/gift-assets.sh),
+#                            plan covers and charity cards cut from src/{covers,charity}/
 #   build.sh --vector-gift   the superseded procedural envelopes and sky instead
+#   build.sh --procedural    the superseded procedural covers and charity cards (tools/covers.py)
 set -euo pipefail
 VECTOR_GIFT=0
-[ "${1:-}" = "--vector-gift" ] && VECTOR_GIFT=1
+PROCEDURAL_COVERS=0
+for arg in "$@"; do
+  case "$arg" in
+    --vector-gift) VECTOR_GIFT=1 ;;
+    --procedural)  PROCEDURAL_COVERS=1 ;;
+    *) echo "build.sh: unknown argument '$arg'" >&2; exit 2 ;;
+  esac
+done
 cd "$(dirname "$0")"
 ART="$(cd .. && pwd)"
 SRC="$ART/src"
@@ -76,10 +85,17 @@ svg "$SRC/phone-frame.svg" 1179 2556 "$ART/Frames/phone-frame-1179x2556.png"
 say "Frames/phone-frame-1179x2556.png"
 
 echo "7/7  Reading-plan covers + charity cards"
-python3 covers.py all
-for f in "$ART"/PlanCovers/*.png "$ART"/Charity/*.png; do
-  magick "$f" "${PNGOPT[@]}" "$f"
-done
+# The shipped covers and cards are cut from the owner's renders in src/{covers,charity}/
+# (see tools/covers-from-src.sh). The procedural set from covers.py is superseded but kept
+# behind --procedural, and is what a checkout without src/covers/ falls back to.
+if [ "$PROCEDURAL_COVERS" = 1 ] || [ ! -d "$SRC/covers" ]; then
+  python3 covers.py all
+  for f in "$ART"/PlanCovers/*.png "$ART"/Charity/*.png; do
+    magick "$f" "${PNGOPT[@]}" "$f"
+  done
+else
+  ./covers-from-src.sh
+fi
 
 echo
 echo "Contact sheet"
