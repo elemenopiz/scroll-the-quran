@@ -57,3 +57,33 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 9:111 | 5 | 9:111 is the only ayah naming Torah, Gospel and Quran together, and the order is chronological; fighting handled descriptively. | kept |
 | 9:119 | 4 | `didYouKnow` called this the last ayah of the expedition passage; 9:120-122 continue it directly. | rewritten |
 | 9:128 | 5 | `رءوف رحيم` as a divine pair applied to a man is correct; the last-revealed reports are attributed as reports. | kept |
+| 11:6 | 5 | 6:38 parallel about creatures is real and closely built; provision framed as an undertaking, not a guarantee of abundance. | kept |
+| 11:88 | 5 | Shu'ayb answering a charge of hypocrisy, stated without turning it into a ruling about trade. | kept |
+| 11:112 | 5 | Singular command and plural prohibition in one line verified; the "greyed me" report handled as a report. | kept |
+| 11:114-115 | 5 | `يذهبن` does take the good deeds as subject; prayer times described, never prescribed. | kept |
+| 13:11 | 5 | Surah 13's four-letter opening is unique and neighbours 10–12, 14–15 do use three; thunder naming correct. | kept |
+| 13:17 | 5 | The ayah does say twice that God sets forth comparisons; both halves of the parable land. | kept |
+| 13:23-24 | 3 | `didYouKnow` delivered no fact — it noted the greeting is the ordinary one and then told the reader a clause was "worth pausing on". | rewritten |
+| 13:28 | 5 | The chiasm reading is exact, and the promise is kept to settling rather than to relief. | kept |
+| 15:9-13 | 5 | The doubled emphatic pledge and the Hijr tombs both check out. | kept |
+| 15:45-49 | 5 | `ونزعنا ما في صدورهم من غل` verified as identical at 7:43; the 15:49/15:50 pairing is correct. | kept |
+| 15:88 | 5 | The wing idiom recurs exactly twice more (17:24, 26:215), as claimed. | kept |
+| 17:9 | 5 | The elided noun after the superlative is a real grammatical feature and classically discussed. | kept |
+| 17:23-24 | 5 | `أف` as a sound rather than a word, and the "one or both" construction, are both right. | kept |
+| 17:36 | 5 | Hearing-sight-heart order holds across the Quran; 41:20-21 is the right partner. | kept |
+| 17:37-38 | 5 | 31:18 does pair the same prohibition with the turned cheek. | kept |
+| 17:44-45 | 5 | `حجابا مستورا` as a veil that is itself veiled is the classical observation. | kept |
+| 17:52-53 | 5 | "My servants" and the 39:53 link are apt; the quarrel is diagnosed without excusing the speaker. | kept |
+| 17:70 | 5 | Dignity read as unconditional, with the "many" qualification correctly flagged. | kept |
+| 17:80-82 | 5 | `شفاء` of the Quran verified at exactly three places (10:57, 17:82, 41:44), each paired as described. | kept |
+| 17:110 | 4 | Sound; the `didYouKnow` about a range set by its two ends is a fair observation rather than a striking fact. | kept |
+| 19:4 | 4 | `didYouKnow` put the answer "two ayat later"; Zechariah is addressed by name at 19:7, three ayat after this one. | rewritten |
+| 19:96-97 | 5 | `الرحمن` counted: 13 occurrences in surah 19, more than any other surah; `لدا` is a hapax as stated. | kept |
+| 21:30 | 3 | `didYouKnow` only restated the two `keyTerms` notes about the sewing vocabulary — no fact the reader did not already have. | rewritten |
+| 21:34-35 | 3 | `didYouKnow` reused the "every soul tastes death appears three times" fact already carried by 3:185 in this same Discover set. | rewritten |
+| 21:68-71 | 5 | The vocative to the fire and the 11:44 parallel to earth and sky are both correct. | kept |
+| 21:82-83 | 5 | Job's prayer is six words and contains no request, as stated; the Solomon/Job pairing is the surah's own. | kept |
+| 21:87-88 | 5 | Three-part prayer accurately described; 68:48-50 and 10:98 both real and related. | kept |
+| 21:90 | 5 | `رغبا ورهبا` verified as occurring only here; the range on `أصلحنا` reported without settling it. | kept |
+| 21:105-108 | 5 | The mercy clause is five words in Arabic and the restrictive construction is correctly read. | kept |
+| 23:1-11 | 4 | `الفردوس` verified at exactly two places (18:107, 23:11); "two different words" for the prayer frame is loose — it is one word in two numbers. | kept |
