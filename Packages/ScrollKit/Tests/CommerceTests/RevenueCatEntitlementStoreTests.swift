@@ -34,7 +34,9 @@ private func applying(
     }
 
     action()
-    if condition() { return true }
+    if condition() {
+        return true
+    }
 
     let backstop = Task { @MainActor in
         try? await Task.sleep(for: timeout)
@@ -144,7 +146,10 @@ struct RevenueCatStorePlanTests {
     @Test("paywallOffering falls back to `default` when no offering is marked current")
     func offeringFallback() {
         let offering = RCOffering(identifier: "default", packages: [])
-        let offerings = RCOfferings(current: nil, all: ["default": offering, "promo": RCOffering(identifier: "promo", packages: [])])
+        let offerings = RCOfferings(
+            current: nil,
+            all: ["default": offering, "promo": RCOffering(identifier: "promo", packages: [])]
+        )
         #expect(offerings.paywallOffering?.identifier == "default")
         #expect(RCOfferings(current: offering).paywallOffering?.identifier == "default")
         #expect(RCOfferings(current: nil, all: [:]).paywallOffering == nil)
@@ -347,7 +352,7 @@ struct RevenueCatEntitlementStoreTests {
             Issue.record("expected a .storeKit error, got \(String(describing: store.lastError))")
             return
         }
-        #expect(message.contains("not available") )
+        #expect(message.contains("not available"))
         #expect(message.lowercased().contains("configure") == false)
     }
 

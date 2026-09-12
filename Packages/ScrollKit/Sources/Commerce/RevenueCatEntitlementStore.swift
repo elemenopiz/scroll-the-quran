@@ -107,7 +107,7 @@ public final class RevenueCatEntitlementStore: EntitlementProviding {
         }
 
         do {
-            apply(try await client.customerInfo())
+            try await apply(client.customerInfo())
         } catch {
             lastError = Self.flatten(error)
         }
@@ -150,7 +150,7 @@ public final class RevenueCatEntitlementStore: EntitlementProviding {
 
     public func restore() async throws {
         do {
-            apply(try await client.restore())
+            try await apply(client.restore())
             await refreshIntroEligibility()
             lastError = nil
         } catch {

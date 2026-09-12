@@ -138,6 +138,7 @@ public final class StubRevenueCatClient: RevenueCatClient {
     }
 
     // MARK: - Test hooks
+
     //
     // Each of these poses something that happens *outside* the app, which is the whole
     // category `Transaction.updates` / `customerInfoStream` exists for and the one a

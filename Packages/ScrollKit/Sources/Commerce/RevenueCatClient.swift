@@ -148,8 +148,13 @@ public struct RCPackage: Sendable, Equatable, Identifiable {
         self.storeProduct = storeProduct
     }
 
-    public var id: String { identifier }
-    public var productID: ProductID? { storeProduct.productID }
+    public var id: String {
+        identifier
+    }
+
+    public var productID: ProductID? {
+        storeProduct.productID
+    }
 }
 
 /// `RevenueCat.Offering`.
