@@ -87,26 +87,17 @@ public struct DiscoverRouteView: View {
         case "deepstudy":
             deepStudy
         default:
-            DiscoverView(feed: feed, themes: themes, today: today, initialKey: initialKey)
+            DiscoverView(
+                feed: feed,
+                themes: themes,
+                today: today,
+                initialKey: key,
+                startIndex: DiscoverLaunchIndex.value ?? 0
+            )
         }
     }
 
-    /// Which card the feed opens on.
-    ///
-    /// `--discover-index N` lands the pager on the Nth card of the day's feed so a
-    /// snapshot run can prove the fixed slots hold for a one-ayah unit and for the
-    /// longest one, not only for whatever the seed puts first. It is read here rather
-    /// than in `AppShell`'s `LaunchOptions` because the feed — the thing that turns an
-    /// index into a key — lives in this module, and `FeatureDiscover` cannot import the
-    /// shell. Ignored when the route already names a key.
-    private var initialKey: String? {
-        if let key {
-            return key
-        }
-        guard let index = DiscoverLaunchIndex.value else { return nil }
-        let keys = feed.items(on: today).map(\.key)
-        return keys.indices.contains(index) ? keys[index] : keys.last
-    }
+
 
     @ViewBuilder
     private var deepStudy: some View {
@@ -125,6 +116,12 @@ public struct DiscoverRouteView: View {
 
 
 /// `--discover-index N`, parsed once out of the process arguments.
+///
+/// It makes the Nth card of the day's feed the *first* page, so a snapshot run can prove
+/// the fixed slots hold for a one-ayah unit and for the longest one and not only for
+/// whatever the seed puts first — and every such capture frames the card the same way.
+/// Read here rather than in `AppShell`'s `LaunchOptions` because the feed lives in this
+/// module and `FeatureDiscover` cannot import the shell.
 enum DiscoverLaunchIndex {
     static let flag = "--discover-index"
 

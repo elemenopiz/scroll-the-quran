@@ -23,6 +23,10 @@ public struct DiscoverView: View {
     private let themes: ThemeIndex
     private let today: Date
     private let initialKey: String?
+    /// How many cards of the day's feed to skip. Only `--discover-index N` sets it: a
+    /// capture of the third card has to *start* on the third card, because landing there
+    /// with `scrollPosition(id:)` leaves the pager mid-page and the card off its mark.
+    private let startIndex: Int
 
     @Environment(TranslationStore.self) private var translations: TranslationStore?
     @Environment(StudyStore.self) private var studies: StudyStore?
@@ -42,12 +46,14 @@ public struct DiscoverView: View {
         themes: ThemeIndex = .empty,
         today: Date = Date(),
         initialKey: String? = nil,
+        startIndex: Int = 0,
         gate: DiscoverGateStore? = nil
     ) {
         self.feed = feed
         self.themes = themes
         self.today = today
         self.initialKey = initialKey
+        self.startIndex = max(0, startIndex)
         _gate = State(initialValue: gate ?? DiscoverGateStore(now: today))
     }
 
@@ -145,7 +151,8 @@ public struct DiscoverView: View {
     // MARK: - Data
 
     private var items: [DiscoverItem] {
-        feed.items(on: today)
+        let all = feed.items(on: today)
+        return startIndex < all.count ? Array(all.dropFirst(startIndex)) : all
     }
 
     private func themeTitle(forKey key: String) -> String? {

@@ -1,5 +1,5 @@
 {
-  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it. The quote's height and everything under it depend on the selected translation, so these were recorded on a clean install with the default (Itani/CLEAR) selected \u2014 which is what `verify.sh --ui` now guarantees by uninstalling the app first.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it. The quote's height and everything under it depend on the selected translation, so these were recorded on a clean install with the default (Itani) selected — which is what `verify.sh --ui` now guarantees by uninstalling the app first. Re-recorded for Phase 4i: the header title is 32 pt like the Discover card's and the translation badge under it is gone, so the quote box and everything below sit about 30 pt higher.",
   "id": "deepstudy",
   "route": "deepstudy",
   "appearance": "dark",
@@ -53,10 +53,10 @@
       "name": "deepstudy.reference",
       "query": "identifier",
       "frame": {
-        "x": 16.1,
+        "x": 57.4,
         "y": 154.0,
-        "width": 360.7,
-        "height": 55.6
+        "width": 278.3,
+        "height": 42.9
       }
     },
     {
@@ -64,7 +64,7 @@
       "query": "identifier",
       "frame": {
         "x": 23.0,
-        "y": 246.3,
+        "y": 216.4,
         "width": 347.1,
         "height": 306.7
       }
@@ -74,7 +74,7 @@
       "query": "identifier",
       "frame": {
         "x": 92.7,
-        "y": 600.8,
+        "y": 576.1,
         "width": 27.4,
         "height": 27.3
       }
