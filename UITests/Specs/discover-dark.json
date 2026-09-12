@@ -1,5 +1,5 @@
 {
-  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it. Re-recorded for Phase 4i: the card is a fixed-height fixed-slot layout with no translation badge and no Arabic line, so every one of the 326 units records these same frames.",
   "id": "discover",
   "route": "discover",
   "appearance": "dark",
@@ -14,18 +14,18 @@
       "query": "identifier",
       "frame": {
         "x": 15.6,
-        "y": 58.2,
+        "y": 120.6,
         "width": 361.7,
-        "height": 722.3
+        "height": 594.3
       },
-      "note": "+7.1 pt since the muted Arabic line gained a 13 pt legibility floor and a 3-line cap (commit 70aaf51). The card grows with its own content; discover-dark scores 0.059 against a 0.14 threshold, so the visual is unaffected."
+      "note": "Fixed height (DiscoverCardLayout.cardHeight): 594.3 pt on the 393x852 canvas, top 120.6 pt, bottom 714.9 — the reference card runs 120..714. It was 722.3 pt tall and stretched to the page, which is what let the next card peek under the tab bar."
     },
     {
       "name": "discover.themeChip",
       "query": "identifier",
       "frame": {
         "x": 147.9,
-        "y": 77.7,
+        "y": 140.1,
         "width": 97.5,
         "height": 25.3
       }
@@ -34,30 +34,30 @@
       "name": "discover.reference",
       "query": "identifier",
       "frame": {
-        "x": 36.7,
-        "y": 106.9,
-        "width": 319.7,
-        "height": 49.4
+        "x": 57.4,
+        "y": 169.2,
+        "width": 278.3,
+        "height": 42.9
       },
-      "note": "The recorded x/width are the element's *frame*, not its glyph box: the label carries `.frame(maxWidth: .infinity)` so it spans the card and centres the text inside, and `.padding(.top, Spacing.xs)` is inside the accessibility element. The earlier 100.9 x 191.3 was the tight text box from before that frame existed. The line still renders as one centred serif line — see Reference/discover-dark.png."
+      "note": "The 32 pt title's own glyph box, not the full-width frame the 44 pt one reported: at 44 pt every surah name hit minimumScaleFactor and the label claimed the card's width."
     },
     {
       "name": "discover.quote",
       "query": "identifier",
       "frame": {
         "x": 35.2,
-        "y": 185.5,
+        "y": 231.6,
         "width": 322.6,
-        "height": 158.6
+        "height": 85.8
       },
-      "note": "Pushed down 16.2 pt and 12.7 pt shorter by the same 13 pt Arabic floor above it (commit 70aaf51), which takes more height and leaves the English less."
+      "note": "Four lines exactly (85.8 = 4 x 21.9), whatever the passage's length: short ones are centred in the slot, long ones elide with a tail '…'. The muted Arabic line above it is gone (owner, Phase 4i amendment 2)."
     },
     {
       "name": "discover.meaning",
       "query": "identifier",
       "frame": {
         "x": 35.2,
-        "y": 360.0,
+        "y": 329.1,
         "width": 61.6,
         "height": 13.0
       }
@@ -67,7 +67,7 @@
       "query": "identifier",
       "frame": {
         "x": 52.5,
-        "y": 500.1,
+        "y": 461.1,
         "width": 125.4,
         "height": 14.9
       }
@@ -77,7 +77,7 @@
       "query": "identifier",
       "frame": {
         "x": 35.2,
-        "y": 652.5,
+        "y": 601.8,
         "width": 322.6,
         "height": 42.9
       }
@@ -86,19 +86,20 @@
       "name": "discover.actions.save",
       "query": "identifier",
       "frame": {
-        "x": 35.2,
-        "y": 710.9,
-        "width": 80.8,
+        "x": 55.7,
+        "y": 652.5,
+        "width": 70.4,
         "height": 42.9
-      }
+      },
+      "note": "Icons are 21 pt on 72 pt centres, centred in the card, so the row is narrower than the evenly-spread one it replaced (70.4 pt columns, was 80.8)."
     },
     {
       "name": "discover.actions.read",
       "query": "identifier",
       "frame": {
-        "x": 277.3,
-        "y": 710.9,
-        "width": 80.5,
+        "x": 266.9,
+        "y": 652.5,
+        "width": 70.4,
         "height": 42.9
       }
     },

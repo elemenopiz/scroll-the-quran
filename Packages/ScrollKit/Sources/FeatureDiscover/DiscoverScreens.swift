@@ -87,9 +87,17 @@ public struct DiscoverRouteView: View {
         case "deepstudy":
             deepStudy
         default:
-            DiscoverView(feed: feed, themes: themes, today: today, initialKey: key)
+            DiscoverView(
+                feed: feed,
+                themes: themes,
+                today: today,
+                initialKey: key,
+                startIndex: DiscoverLaunchIndex.value ?? 0
+            )
         }
     }
+
+
 
     @ViewBuilder
     private var deepStudy: some View {
@@ -103,5 +111,26 @@ public struct DiscoverRouteView: View {
         } else {
             StudyComingSoonCard(reference: resolvedKey ?? "")
         }
+    }
+}
+
+
+/// `--discover-index N`, parsed once out of the process arguments.
+///
+/// It makes the Nth card of the day's feed the *first* page, so a snapshot run can prove
+/// the fixed slots hold for a one-ayah unit and for the longest one and not only for
+/// whatever the seed puts first — and every such capture frames the card the same way.
+/// Read here rather than in `AppShell`'s `LaunchOptions` because the feed lives in this
+/// module and `FeatureDiscover` cannot import the shell.
+enum DiscoverLaunchIndex {
+    static let flag = "--discover-index"
+
+    static let value: Int? = parse(ProcessInfo.processInfo.arguments)
+
+    static func parse(_ arguments: [String]) -> Int? {
+        guard let position = arguments.firstIndex(of: flag) else { return nil }
+        let next = arguments.index(after: position)
+        guard next < arguments.endIndex else { return nil }
+        return Int(arguments[next])
     }
 }

@@ -17,9 +17,9 @@ final class DiscoverTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    private func launch(_ route: String) -> XCUIApplication {
+    private func launch(_ route: String, extra: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["--screenshot", route]
+        app.launchArguments = ["--screenshot", route] + extra
         app.launchEnvironment["SCROLL_FIXED_DATE"] = fixedDate
         app.launch()
         return app
@@ -57,6 +57,59 @@ final class DiscoverTests: XCTestCase {
                 "missing action discover.actions.\(action)"
             )
         }
+    }
+
+    /// The owner's complaint: "when you scroll the verses on the original app all of them
+    /// have the same placement". `--discover-index N` makes the Nth card of the day's feed
+    /// the first page, so three very different units — a two-ayah one, the corpus's longest
+    /// (Luqman 31:13-19, seven ayat) and its shortest (At-Tawbah 9:119) — can be framed the
+    /// same way and compared. `DiscoverCardLayoutTests` proves the arithmetic over all 326;
+    /// this proves the views actually lay out that way.
+    func testEveryCardHasTheSameGeometry() throws {
+        var frames: [(index: Int, frame: CGRect)] = []
+        for index in [0, 150, 247] {
+            let app = launch("discover", extra: ["--discover-index", "\(index)"])
+            requireRouted(app, "discover.card")
+            let card = app.descendants(matching: .any).matching(identifier: "discover.card").firstMatch
+            frames.append((index, card.frame))
+            app.terminate()
+        }
+
+        let first = try XCTUnwrap(frames.first)
+        for other in frames.dropFirst() {
+            XCTAssertEqual(
+                Double(other.frame.minY), Double(first.frame.minY), accuracy: 0.5,
+                "card \(other.index) starts at a different y than card \(first.index)"
+            )
+            XCTAssertEqual(
+                Double(other.frame.height), Double(first.frame.height), accuracy: 0.5,
+                "card \(other.index) is a different height than card \(first.index)"
+            )
+        }
+    }
+
+    /// Amendment 2: no translation badge on the card or the Deep Study header, and no
+    /// Arabic line on the card. `ITANI` is the bundled default's badge; the reader
+    /// toolbar's pill is where it still belongs.
+    func testTheCardCarriesNoBadgeAndNoArabic() throws {
+        let app = launch("discover")
+        requireRouted(app, "discover.card")
+        XCTAssertFalse(app.staticTexts["ITANI"].exists, "the translation badge is back on the card")
+
+        let quote = app.descendants(matching: .any).matching(identifier: "discover.quote").firstMatch
+        XCTAssertTrue(quote.exists)
+        // The muted Arabic layer is `accessibilityHidden`, so it cannot be asserted away by
+        // label; its absence shows in the quote's height, which is exactly four English lines.
+        XCTAssertLessThan(
+            quote.frame.height, 110,
+            "the quote block is taller than four lines — the Arabic slot looks like it is back"
+        )
+    }
+
+    func testDeepStudyHeaderCarriesNoBadge() throws {
+        let app = launch("deepstudy")
+        requireRouted(app, "deepstudy.quote")
+        XCTAssertFalse(app.staticTexts["ITANI"].exists, "the translation badge is back on the Deep Study header")
     }
 
     func testDeepStudyOpensFromTheCardAndCloses() throws {

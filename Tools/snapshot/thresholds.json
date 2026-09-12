@@ -93,13 +93,15 @@
       "file": "discover-dark.png",
       "appearance": "dark",
       "route": "discover",
-      "threshold": 0.14
+      "threshold": 0.14,
+      "notes": "opaque tab bar; Phase 4i accepted deviations (owner's amendment 2 and the fixed-slot amendment): no KJV/ITANI translation badge under the title, no muted Arabic line, and a quote slot fixed at four lines where the reference draws three — so MEANING and everything under it sit about 21 pt lower than the reference while the card's own edges (14.15 % / 83.9 % of the screen) match it. Scores 0.0362 against 0.14, better than the 0.0592 it scored before, so the threshold is unchanged."
     },
     "deepstudy-top": {
       "file": "deepstudy-top.png",
       "appearance": "dark",
       "route": "deepstudy",
-      "threshold": 0.14
+      "threshold": 0.14,
+      "notes": "status-bar scrim; Phase 4i: the header title is 32 pt (the Discover card's size, owner's amendment 2) where the reference's is ~38 pt, and the translation badge under it is gone, so the quote box and everything below sit about 30 pt higher. Scores 0.0641 against 0.14, better than the 0.0663 before."
     },
     "deepstudy-mid": {
       "file": "deepstudy-mid.png",

@@ -76,6 +76,72 @@ reference's face, so at 270 the pill's white outline still cut 5.8 pt into a 49.
 (12 %); at 278 it clears the ink by 2.2 pt and still leaves 8.7 pt to the "+3 day trial"
 pill. The reference's own pill overlaps its digits slightly more than ours now does, which
 is the whole of the +0.0030.
+## Discover card polish — Phase 4i, 2026-09-12
+
+iPhone 17 Pro (`ScrollSim-3e`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`, `SCROLL_CAPTURE_SETTLE=6`.
+Six screens re-scored; **no threshold changed**, and every affected screen improved.
+
+| id | Phase 4d | Phase 4i | threshold | delta |
+| --- | ---: | ---: | ---: | ---: |
+| `discover-dark` | 0.0591492 | 0.0361800 | 0.14 | −0.0230 |
+| `deepstudy-top` | 0.0663536 | 0.0640829 | 0.14 | −0.0023 |
+| `deepstudy-mid` | 0.0571212 | 0.0571212 | 0.14 | ±0.0000 |
+| `deepstudy-crossrefs` | 0.0561442 | 0.0561442 | 0.14 | ±0.0000 |
+| `deepstudy-bottom` | 0.0495345 | 0.0495345 | 0.14 | ±0.0000 |
+| `reader-dark` | 0.0389370 | 0.0386839 | 0.05 | −0.0003 |
+
+### Accepted deviations recorded here
+
+**CLAUDE.md rule 5 has one exception, and this is it: the Discover card shows no Arabic.**
+Rule 5 says every verse surface carries the muted Uthmani line above the English. The owner
+removed it from the Discover card on 2026-09-12 (brief amendment 2). The card is the one
+fixed-height surface in the app — four English lines, four of meaning, three of did-you-know,
+all in a 594 pt box — and the accent line only fitted there by being elided, which rule 5
+forbids outright. **The layer is unchanged everywhere else**: the reader page, the Deep Study
+quote box, the share card and the widget all still draw it, still at `Typography.arabicAccent`
+in `Tokens.textTertiary`, still RTL, still `accessibilityHidden`, still never transliterated.
+`UITests/DiscoverTests.testTheCardCarriesNoBadgeAndNoArabic` is the guard.
+
+**No translation badge on the Discover card or the Deep Study header.** The reference draws
+`KJV` under both titles and we drew `ITANI`; the owner took it off both (amendment 2) because
+the reader toolbar's translation pill is the control that names and changes the translation
+and a second, untappable copy of the same string reads as noise. `PassagePresentation`'s
+`translationTag` went with it. Costs a small band of difference under each title; both screens
+still improved on the round.
+
+**The Deep Study header title is 32 pt where the reference's is ~38 pt.** The owner asked for
+the Discover card's title size on both for consistency. Measured off the references: the card's
+"James 1:2-3" is a 32.2 pt em (65 px of cap height against Source Serif 4's 670/1000, and a
+487 px ink box against a 5050/1000 em advance); the Deep Study one is 77 px of cap, a 38.3 pt
+em. Ours is 32 on both.
+
+**The Discover quote slot is four lines where the reference draws three.** The fixed-slot
+amendment asks for four, so MEANING, the did-you-know box, the chips and "Deep study ›" all
+sit about 21 pt lower than the reference draws them. The card's own edges still match: ours
+runs 120.6..714.9 pt on the normalised canvas against the reference's 120..714, and the action
+row lands within 1.3 pt. The cost shows up between "Deep study ›" and the icons, which is
+29 pt of air where the reference has 57.
+
+**The action icons are 21 pt, not the brief's 26.** Measured rather than estimated: the
+reference's row ink is 22.4 pt tall and its bookmark glyph 14.0 pt wide, which is a 21 pt SF
+Symbol. Their centres are 88.5 / 160.3 / 232.5 / 304.3 pt — 72 pt apart, centred on the card's
+own centre line rather than spread across its width. The brief's 26 pt drew them 22 % too
+large; 24 pt (the old `Metrics.actionIcon`, still the default for every other caller) drew them
+14 % too large.
+
+### Fixed slots — the thing the owner actually asked for
+
+"When you scroll the verses on the original app all of them have the same placement and look
+polished; on ours it's not the case." Every card is now `DiscoverCardLayout.cardHeight` tall
+with the same slots, so the pager lands identically on each one.
+`Packages/ScrollKit/Tests/FeatureDiscoverTests/DiscoverCardLayoutTests.swift` lays all **326**
+Discover units out with the real registered Source Serif at the real content width and asserts
+one card height for all of them; `UITests/DiscoverTests.testEveryCardHasTheSameGeometry` asserts
+the same of the running views. Captured proof, via the new `--discover-index N` launch option
+(`.build/snapshots/discover-card<N>-<appearance>.png`): card 0 (Al-Ankabut 29:68-69, two ayat),
+card 150 (Luqman 31:13-19, seven ayat — the corpus's longest passage) and card 247
+(At-Tawbah 9:119, the shortest) all put the card's top edge at 123.7 pt and its bottom at
+733.3 pt of the 874 pt simulator, in both appearances.
 
 ## Full sweep — Phase 4d, 2026-09-12
 

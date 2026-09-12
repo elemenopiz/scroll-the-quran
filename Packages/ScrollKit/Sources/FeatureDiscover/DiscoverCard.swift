@@ -3,52 +3,17 @@ import QuranData
 import StudyContent
 import SwiftUI
 
-/// Discover card geometry, measured from `Reference/discover-dark.png`
-/// (1179x2556 px for 393x852 pt, so pt = px / 3).
-enum DiscoverMetrics {
-    /// Card fill `#1E1E23` runs x = 48..1130 px, i.e. the 16 pt page margin.
-    static let cardInset = Metrics.cardInset
-    /// Card top 360 px → theme chip top 420 px: 60 px of padding.
-    static let cardPadding: CGFloat = 20
-    /// Air above and below the card inside its page.
-    ///
-    /// The reference card runs y = 360..2141 px, i.e. 120..713.7 pt of an 852 pt screen —
-    /// 69.7 % of the screen height, sitting a little above centre. Measured on the
-    /// 402x874 pt simulator (which `Tools/snapshot/compare.sh` normalises back to
-    /// 393x852) that is 84 pt of air on each side of a page.
-    ///
-    /// The card centres inside what is left and grows past the reference band when it
-    /// has to: our card carries a muted Arabic line the reference has no equivalent of
-    /// (CLAUDE.md rule 5), which is worth about 24 pt, and a four-line ayah instead of
-    /// the reference's three.
-    static let pagePadding: CGFloat = 84
-    /// "James 1:2-3": cap height 81 px.
-    static let referenceSize: CGFloat = 44
-    /// "KJV": 13 pt, set very wide.
-    static let tagSize: CGFloat = 13
-    static let tagTracking: CGFloat = 2
-    /// MEANING body: line pitch 70 px = 23.3 pt at 1.371 em.
-    static let bodySize: CGFloat = 17
-    /// The DID YOU KNOW box is 329 px tall with three lines of body copy in it.
-    static let didYouKnowLines = 3
-    static let meaningLines = 4
-}
-
-/// A cross-reference chip: the passage and the name to print on it.
-struct ReferenceChip: Identifiable, Hashable {
-    let passage: PassageRef
-    let title: String
-
-    var id: String {
-        passage.key
-    }
-}
-
 /// One full-height Discover card.
 ///
-/// Everything above the action row is fixed-height content; a single `Spacer` between
-/// "Deep study" and the icons absorbs the difference, which is how the reference keeps
-/// the icon row pinned near the bottom of a card whose body copy varies in length.
+/// **Fixed slots.** Every block sits in a slot whose height is `DiscoverCardLayout`'s
+/// arithmetic over the font metrics, so a one-ayah unit and the longest of the 326 build
+/// a card of exactly the same height and the pager lands on every card the same way. The
+/// slots are `minHeight`, so Dynamic Type still grows them.
+///
+/// **What is deliberately absent.** No translation badge and no Arabic line: the badge is
+/// the reader toolbar's pill, and the muted Arabic layer stays on the reader page, the
+/// Deep Study quote box, the share card and the widget (owner, Phase 4i amendment 2 —
+/// recorded as the rule-5 exception in `Reference/scores.md`).
 @MainActor
 struct DiscoverCard: View {
     let presentation: PassagePresentation
@@ -72,51 +37,14 @@ struct DiscoverCard: View {
             background: .cardBackground
         ) {
             VStack(alignment: .leading, spacing: 0) {
-                if let themeTitle, !themeTitle.isEmpty {
-                    Chip(themeTitle)
-                        .frame(maxWidth: .infinity)
-                        .accessibilityIdentifier("discover.themeChip")
-                }
-                Text(presentation.reference)
-                    .font(.serifDisplay(DiscoverMetrics.referenceSize))
-                    .foregroundStyle(Color.textPrimary)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, Spacing.xs)
-                    .accessibilityIdentifier("discover.reference")
-                Text(presentation.translationTag)
-                    .font(.body(DiscoverMetrics.tagSize, weight: .semibold))
-                    .tracking(DiscoverMetrics.tagTracking)
-                    .foregroundStyle(Color.textSecondary)
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, Spacing.xxs)
-                VerseText(
-                    arabic: presentation.arabic,
-                    segments: presentation.segments,
-                    size: .discover,
-                    style: .italic,
-                    quoted: true
-                )
-                .padding(.top, Spacing.lg)
-                .accessibilityIdentifier("discover.quote")
-
+                chip
+                title
+                quote
                 meaning
                 didYouKnow
                 crossReferences
                 deepStudyLink
-
-                Spacer(minLength: Spacing.lg)
-
-                ActionIconRow.standard(
-                    identifierPrefix: "discover.actions",
-                    isSaved: isSaved,
-                    isRead: isRead,
-                    save: onSave,
-                    comment: onNote,
-                    share: onShare,
-                    markRead: onMarkRead
-                )
+                actions
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -131,84 +59,142 @@ struct DiscoverCard: View {
         .accessibilityIdentifier("discover.card")
     }
 
-    // MARK: - Blocks
+    // MARK: - Slots
 
-    @ViewBuilder
+    /// The chip's slot is reserved whether or not the unit is filed under a theme, so a
+    /// themeless unit does not shorten the card.
+    private var chip: some View {
+        Group {
+            if let themeTitle, !themeTitle.isEmpty {
+                Chip(themeTitle)
+                    .accessibilityIdentifier("discover.themeChip")
+            }
+        }
+        .frame(maxWidth: .infinity, minHeight: Metrics.chipHeight)
+    }
+
+    private var title: some View {
+        Text(presentation.reference)
+            .font(.serifDisplay(DiscoverMetrics.referenceSize))
+            .foregroundStyle(Color.textPrimary)
+            .lineLimit(1)
+            .minimumScaleFactor(DiscoverMetrics.referenceMinimumScale)
+            .frame(maxWidth: .infinity, minHeight: DiscoverCardLayout.titleSlot)
+            .padding(.top, DiscoverMetrics.chipToTitle)
+            .accessibilityIdentifier("discover.reference")
+    }
+
+    /// Four lines, tail-elided, centred in the slot when the passage is shorter — the same
+    /// "…" treatment the meaning and the did-you-know box use.
+    private var quote: some View {
+        VerseText(
+            arabic: nil,
+            segments: presentation.segments,
+            size: .discover,
+            style: .italic,
+            quoted: true,
+            lineLimit: DiscoverMetrics.quoteLines
+        )
+        .frame(maxWidth: .infinity, minHeight: DiscoverCardLayout.quoteSlot)
+        .padding(.top, DiscoverMetrics.titleToQuote)
+        .accessibilityIdentifier("discover.quote")
+    }
+
     private var meaning: some View {
-        if let text = study?.meaning, !text.isEmpty {
-            VStack(alignment: .leading, spacing: Spacing.sm) {
-                CapsLabel(text: StudySection.meaning.displayTitle, size: DeepStudyMetrics.labelSize)
-                Text(text)
+        VStack(alignment: .leading, spacing: DiscoverMetrics.labelToBody) {
+            CapsLabel(text: StudySection.meaning.displayTitle, size: DeepStudyMetrics.labelSize)
+                .lineLimit(1)
+                .frame(minHeight: DiscoverCardLayout.capsLabelHeight, alignment: .leading)
+            Text(study?.meaning ?? "")
+                .font(.serifBody(DiscoverMetrics.bodySize))
+                .foregroundStyle(Color.textPrimary)
+                .lineLimit(DiscoverMetrics.meaningLines)
+                .multilineTextAlignment(.leading)
+                .frame(
+                    maxWidth: .infinity,
+                    minHeight: DiscoverCardLayout.meaningSlot,
+                    alignment: .topLeading
+                )
+        }
+        .padding(.top, DiscoverMetrics.quoteToMeaning)
+        .accessibilityIdentifier("discover.meaning")
+    }
+
+    private var didYouKnow: some View {
+        CardContainer(
+            radius: Radius.cardSmall,
+            padding: DiscoverMetrics.didYouKnowPadding,
+            background: .didYouKnowBackground
+        ) {
+            VStack(alignment: .leading, spacing: DiscoverMetrics.didYouKnowLabelGap) {
+                CapsLabel(
+                    icon: "lightbulb.fill",
+                    text: StudySection.didYouKnow.displayTitle,
+                    size: DeepStudyMetrics.labelSize,
+                    tint: .ratingStar
+                )
+                .lineLimit(1)
+                .frame(minHeight: DiscoverCardLayout.capsLabelWithIconHeight, alignment: .leading)
+                Text(study?.didYouKnow ?? "")
                     .font(.serifBody(DiscoverMetrics.bodySize))
                     .foregroundStyle(Color.textPrimary)
-                    .lineLimit(DiscoverMetrics.meaningLines)
-                    .multilineTextAlignment(.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
-            .padding(.top, Spacing.xl)
-            .accessibilityIdentifier("discover.meaning")
-        }
-    }
-
-    @ViewBuilder
-    private var didYouKnow: some View {
-        if let text = study?.didYouKnow, !text.isEmpty {
-            CardContainer(
-                radius: Radius.cardSmall,
-                padding: Spacing.lg,
-                background: .didYouKnowBackground
-            ) {
-                VStack(alignment: .leading, spacing: Spacing.sm) {
-                    CapsLabel(
-                        icon: "lightbulb.fill",
-                        text: StudySection.didYouKnow.displayTitle,
-                        size: DeepStudyMetrics.labelSize,
-                        tint: .ratingStar
+                    .lineLimit(DiscoverMetrics.didYouKnowLines)
+                    .frame(
+                        maxWidth: .infinity,
+                        minHeight: DiscoverCardLayout.didYouKnowSlot,
+                        alignment: .topLeading
                     )
-                    Text(text)
-                        .font(.serifBody(DiscoverMetrics.bodySize))
-                        .foregroundStyle(Color.textPrimary)
-                        .lineLimit(DiscoverMetrics.didYouKnowLines)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
             }
-            .padding(.top, Spacing.md)
-            .accessibilityIdentifier("discover.didYouKnow")
         }
+        .padding(.top, DiscoverMetrics.bodyToDidYouKnow)
+        .accessibilityIdentifier("discover.didYouKnow")
     }
 
-    @ViewBuilder
+    /// One row, at most two chips — and the row's height is reserved even when the unit
+    /// names no related passage.
     private var crossReferences: some View {
-        if !crossRefs.isEmpty {
-            HStack(spacing: Spacing.md) {
-                ForEach(crossRefs) { chip in
-                    Chip(chip.title, kind: .crossReference) {
-                        onOpenReference(chip.passage)
-                    }
-                    .accessibilityIdentifier("discover.crossRef.\(chip.passage.key)")
+        HStack(spacing: Spacing.md) {
+            ForEach(Array(crossRefs.prefix(2))) { chip in
+                Chip(chip.title, kind: .crossReference) {
+                    onOpenReference(chip.passage)
                 }
-                Spacer(minLength: 0)
+                .accessibilityIdentifier("discover.crossRef.\(chip.passage.key)")
             }
-            .padding(.top, Spacing.md)
+            Spacer(minLength: 0)
         }
+        .frame(minHeight: Metrics.crossRefChipHeight)
+        .padding(.top, DiscoverMetrics.didYouKnowToChips)
     }
 
     private var deepStudyLink: some View {
         Button(action: onDeepStudy) {
-            HStack(spacing: Spacing.sm) {
+            HStack(spacing: Spacing.xs) {
                 Text("Deep study")
-                    .font(.body(16, weight: .semibold))
+                    .font(.body(17, weight: .semibold))
                 Image(systemName: "chevron.right")
-                    .font(.system(size: 13, weight: .semibold))
+                    .font(.system(size: 15, weight: .semibold))
             }
             .foregroundStyle(Color.textSecondary)
-            .frame(maxWidth: .infinity, minHeight: 44)
+            .frame(maxWidth: .infinity, minHeight: Metrics.hitTarget)
             .contentShape(.rect)
         }
         .buttonStyle(.pressable)
-        .padding(.top, Spacing.xs)
+        .padding(.top, DiscoverMetrics.chipsToDeepStudy)
         .accessibilityIdentifier("discover.deepStudy")
+    }
+
+    private var actions: some View {
+        ActionIconRow.standard(
+            identifierPrefix: "discover.actions",
+            isSaved: isSaved,
+            isRead: isRead,
+            iconSize: DiscoverMetrics.actionIcon,
+            columnWidth: DiscoverMetrics.actionColumnWidth,
+            save: onSave,
+            comment: onNote,
+            share: onShare,
+            markRead: onMarkRead
+        )
+        .padding(.top, DiscoverMetrics.deepStudyToActions)
     }
 }

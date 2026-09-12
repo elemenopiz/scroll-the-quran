@@ -104,8 +104,7 @@ struct PassagePresentationTests {
             passage: #require(PassageRef(key: "94:5-6")),
             reference: "Ash-Sharh 94:5-6",
             arabic: "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
-            english: "With hardship comes ease.",
-            translationTag: "ITANI"
+            english: "With hardship comes ease."
         )
         #expect(presentation.quoted == "\"With hardship comes ease.\"")
     }

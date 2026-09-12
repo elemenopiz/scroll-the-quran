@@ -61,6 +61,22 @@ public struct VerseText: View {
             case .widget: 2
             }
         }
+
+        /// The muted numeral that opens each ayah after the first.
+        ///
+        /// 55 % of the English, which is the bottom of CLAUDE.md rule 5's band for the
+        /// Arabic layer and the same relationship the mushaf uses between a verse and its
+        /// number. It was 62 % and wrapped in \u{2329}\u{232A}, which read as a code token
+        /// rather than as a verse mark (Phase 4i).
+        public var marker: CGFloat {
+            english * 0.55
+        }
+
+        /// How far the marker rides above the baseline: enough to sit with the ascenders
+        /// rather than on the line, not so far that it clips the line above.
+        public var markerRise: CGFloat {
+            english * 0.18
+        }
     }
 
     /// Roman for the reader page, italic for the quoted ayah on Discover and Deep Study.
@@ -82,20 +98,23 @@ public struct VerseText: View {
     private let size: Size
     private let style: Style
     private let alignment: TextAlignment
+    private let lineLimit: Int?
 
     public init(
         arabic: String?,
         english: String,
         size: Size = .reader,
         style: Style = .roman,
-        alignment: TextAlignment = .center
+        alignment: TextAlignment = .center,
+        lineLimit: Int? = nil
     ) {
         self.init(
             arabic: arabic,
             segments: [VerseSegment(ayah: 0, text: english)],
             size: size,
             style: style,
-            alignment: alignment
+            alignment: alignment,
+            lineLimit: lineLimit
         )
     }
 
@@ -116,7 +135,8 @@ public struct VerseText: View {
         size: Size = .reader,
         style: Style = .roman,
         alignment: TextAlignment = .center,
-        quoted: Bool = false
+        quoted: Bool = false,
+        lineLimit: Int? = nil
     ) {
         self.arabic = arabic
         self.segments = segments
@@ -124,6 +144,7 @@ public struct VerseText: View {
         self.size = size
         self.style = style
         self.alignment = alignment
+        self.lineLimit = lineLimit
     }
 
     public var body: some View {
@@ -135,9 +156,13 @@ public struct VerseText: View {
                 .font(englishFont)
                 .foregroundStyle(Color.textPrimary)
                 .multilineTextAlignment(alignment)
-                // A verse is never elided: `fixedSize` makes the block claim the
-                // height it needs instead of truncating inside a tight container.
-                .fixedSize(horizontal: false, vertical: true)
+                // A verse is never elided *unless the surface asks for it*: the Discover
+                // card's quote slot is a fixed four lines with a tail ellipsis (Phase 4i),
+                // every other surface leaves `lineLimit` nil and `fixedSize` makes the
+                // block claim the height it needs instead of truncating in a tight container.
+                .lineLimit(lineLimit)
+                .truncationMode(.tail)
+                .fixedSize(horizontal: false, vertical: lineLimit == nil)
         }
         .frame(maxWidth: .infinity, alignment: frameAlignment)
         .accessibilityElement(children: .ignore)
@@ -159,9 +184,10 @@ public struct VerseText: View {
         }
         for (offset, segment) in segments.enumerated() {
             if offset > 0 {
-                out += AttributedString(" ")
+                // Thin spaces (U+2009): the marker is a mark on the line, not a word.
+                out += AttributedString("\u{2009}")
                 out += marker(for: segment.ayah)
-                out += AttributedString(" ")
+                out += AttributedString("\u{2009}")
             }
             out += AttributedString(segment.text)
         }
@@ -171,10 +197,13 @@ public struct VerseText: View {
         return out
     }
 
+    /// A bare muted numeral, raised toward the ascenders — the mushaf's verse mark, not
+    /// the \u{2329}69\u{232A} code token Phase 4b drew.
     private func marker(for ayah: Int) -> AttributedString {
-        var marker = AttributedString("\u{2329}\(ayah)\u{232A}")
-        marker.font = .body(size.english * 0.62, weight: .semibold)
+        var marker = AttributedString("\(ayah)")
+        marker.font = .body(size.marker, weight: .semibold)
         marker.foregroundColor = .textTertiaryReadable
+        marker.baselineOffset = size.markerRise
         return marker
     }
 
