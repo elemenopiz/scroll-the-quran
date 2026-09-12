@@ -126,7 +126,7 @@ CTA, and disable/spin the button while `isPurchasing`. Add one UI-level test so 
 regress silently.
 
 
-> **FIXED in Phase 4d** — `21fdaa5`. One `PaywallNotice` (error / pending / info) that all
+> **FIXED in Phase 4d** — `7a34310`. One `PaywallNotice` (error / pending / info) that all
 > three purchase surfaces bind to, a disabled + spinning call to action while a purchase is
 > in flight, and `--purchase-outcome <success|cancelled|failed|pending|stalled>` so each
 > branch can be stood up from a launch argument. 12 XCUITests in
@@ -147,7 +147,7 @@ sees a "Start FREE trial" button with none of the required legal affordances.
 through `PaywallFlow.gift` the way `trial` already does.
 
 
-> **FIXED in Phase 4d** — `21fdaa5`. Terms / Privacy / Restore Purchases sit under the
+> **FIXED in Phase 4d** — `7a34310`. Terms / Privacy / Restore Purchases sit under the
 > renewal disclosure, which now says "Auto-renews" in as many words. `gift-open` measures
 > 0.0624148 against 0.0624227 before: the row lands inside the comparison's bottom mask, so
 > no threshold moved.
@@ -170,7 +170,7 @@ layout pass, because fixed row heights (`RowLink`, `ExploreRow`, the `NotesSheet
 fixed `height`) have never had to accommodate growing text.
 
 
-> **FIXED in Phase 4d** — `a6b4f2b`. `Font.body` and `Font.capsLabel` scale through
+> **FIXED in Phase 4d** — `43feeb0`. `Font.body` and `Font.capsLabel` scale through
 > `UIFontMetrics`, capped at 200 % — WCAG 1.4.4 AA's requirement, and as far as the fixed row
 > heights stretch without the layout pass those call sites have never had. `UIFontMetrics` is
 > the identity at the `large` content size, so every capture in `Reference/` is unchanged to
@@ -195,7 +195,7 @@ token is reused for load-bearing text at 12-16pt: translation licence/copyright
 e.g. `textQuaternary`) and raise `textTertiary` to a contrast-safe value for real text.
 
 
-> **FIXED in Phase 4d** — `8b775d9`. Split rather than raised: `textTertiary` keeps its
+> **FIXED in Phase 4d** — `092b46a`. Split rather than raised: `textTertiary` keeps its
 > measured value for the decorative Arabic layer, the chevrons and the separators (3:1 is all
 > WCAG 1.4.11 asks of those), and a new `textTertiaryReadable` (#6C6C70 / #9A9A9E) carries
 > the 22 pieces of text a reader actually reads. It clears 4.5:1 on every ground in
@@ -216,7 +216,7 @@ screen and they may never discover the gift offer exists.
 phase change, or use `@AccessibilityFocusState` on the new screen's title.
 
 
-> **FIXED in Phase 4d** — `7e0190d`. `AccessibilityNotification.ScreenChanged()` on every
+> **FIXED in Phase 4d** — `a9be93a`. `AccessibilityNotification.ScreenChanged()` on every
 > stage change, plus an `@AccessibilityFocusState` that says where to land rather than
 > leaving it to SwiftUI: the yearly card on the sheet, the headline on the sealed envelope,
 > "Lucky you!" on the opened one.
@@ -260,7 +260,7 @@ nothing is *transmitted*. It is still more PII sitting in the clear (and in unen
 backups) than this app needs.
 
 
-> **FIXED in Phase 4d** — `246c126`. `KeychainAccountSink` replaces `UserDefaultsAccountSink`
+> **FIXED in Phase 4d** — `98a359b`. `KeychainAccountSink` replaces `UserDefaultsAccountSink`
 > behind the same protocol: `kSecClassGenericPassword`, `kSecAttrAccessibleAfterFirstUnlock`,
 > and a one-time migration that copies anything the old sink left and deletes the plist keys.
 > **The App Group access group is not set.** Sharing the item with the widget needs
@@ -309,7 +309,7 @@ reading, on the app's most-used screen.
 **Fix:** match the existing pattern — `.animation(isDragging || reduceMotion ? nil : …)`.
 
 
-> **FIXED in Phase 4d** — `e406ea8`. Both now match the pattern `OnboardingFlow`,
+> **FIXED in Phase 4d** — `b9ca6f3`. Both now match the pattern `OnboardingFlow`,
 > `PillButtons` and `GiftOfferView` already used. Outside 4d's owned list, taken anyway:
 > three lines, no snapshot movement, and the one HIGH accessibility finding nothing else in
 > the task would have reached.
@@ -346,7 +346,7 @@ is broken — but any future change to the injected links would silently do noth
 **Fix:** `PaywallTrialView(..., links: links)` at the call site.
 
 
-> **ALREADY FIXED before Phase 4d; the missing test added** — `e406ea8`. `PaywallFlow.trial`
+> **ALREADY FIXED before Phase 4d; the missing test added** — `b9ca6f3`. `PaywallFlow.trial`
 > passes `links: links`. Both defaults resolve to the same URLs, which is exactly why nobody
 > noticed for a phase — `TrialDisclosureTests.injectedLinksAreUsed` now asserts that a custom
 > pair reaches the view.
@@ -360,7 +360,7 @@ whose Redeem button can purchase directly. Mitigated by the working Terms link a
 visible price/period in the same footer.
 
 
-> **FIXED in Phase 4d** — `e406ea8`. The renewal joins the price note the customer's eye is
+> **FIXED in Phase 4d** — `b9ca6f3`. The renewal joins the price note the customer's eye is
 > already on rather than crowding the 14 pt between the button and "View all plans":
 > "($2.49/mo)  •  Auto-renews". paywall-trial 0.0345931 -> 0.0350887 against a 0.06 threshold.
 
@@ -375,7 +375,7 @@ visible price/period in the same footer.
   `UserState.AccountSink.signOut()` already does this correctly.
 
 
-> **FIXED in Phase 4d** — `246c126`. SEC-3: `KeychainStoring` / `SystemKeychain` /
+> **FIXED in Phase 4d** — `98a359b`. SEC-3: `KeychainStoring` / `SystemKeychain` /
 > `InMemoryKeychain` are that wrapper. It uses `kSecAttrAccessibleAfterFirstUnlock` rather
 > than the `…WhenUnlockedThisDeviceOnly` suggested above — the widget refreshes its timeline
 > while the device is locked, and a reader restoring a backup onto a new phone should not
@@ -390,7 +390,7 @@ visible price/period in the same footer.
 with no visibility. Correct in refusing entitlement; no revenue or security risk.
 
 
-> **ADDRESSED in Phase 4d** — `e406ea8`. They are still not `finish()`ed, deliberately:
+> **ADDRESSED in Phase 4d** — `b9ca6f3`. They are still not `finish()`ed, deliberately:
 > finishing one stops it redelivering, which is the only way it comes back after a transient
 > verification failure (a wrong device clock, an interrupted key rotation), and the customer
 > would have paid for something the app then permanently forgot. The finding's actual ask was
