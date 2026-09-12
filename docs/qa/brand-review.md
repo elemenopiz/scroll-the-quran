@@ -111,6 +111,13 @@ Each of these was seen in this walk and is **not** in Phase 4e's owned paths.
    flip it once. The fix is for the suite to register the fonts itself rather than to rely
    on another suite having done it.
    → `Packages/ScrollKit/Tests/FeatureOnboardingTests/OnboardingMetricsTests.swift`.
+9. **The widget extension ships Xcode's placeholder icon.** Installing the app puts a
+   second tile on the home screen, `ScrollTheQuran…`, drawn as the white
+   construction-grid placeholder right next to our own icon — see
+   `.build/snapshots/appicon-springboard-60pt.png`. Phase 4e could not fix it: the widget
+   target has no asset catalog, and giving it one needs a `project.yml` edit, which is
+   frozen. It needs one line of `project.yml` plus an `AppIcon` set for the extension.
+   → `project.yml`, `App/` (frozen after Phase 1).
 
 ## Tooling note
 
