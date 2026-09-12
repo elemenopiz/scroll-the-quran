@@ -1,5 +1,5 @@
-# Cloudflare Pages response headers. Mirrored in vercel.json for the Vercel path —
-# change one, change the other.
+# Cloudflare Pages response headers. The site is Cloudflare-only: these headers are the
+# whole security story, there is no second host to keep in sync.
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
@@ -7,7 +7,7 @@
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), interest-cohort=(), microphone=(), payment=(), usb=()
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Cross-Origin-Opener-Policy: same-origin
-  Content-Security-Policy: default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; script-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
 
 # Fingerprint-free assets, but they only change when the site is redeployed.
 /assets/*
