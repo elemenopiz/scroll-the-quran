@@ -47,6 +47,9 @@ public struct RowLink: View {
             .frame(minHeight: Metrics.rowLinkHeight)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.cardBackground, in: .rect(cornerRadius: Radius.cardSmall, style: .continuous))
+            // Same light-only hairline `CardContainer` draws: on `#FAFAFC` a white row
+            // has no edge of its own. See `Color.cardBorder`.
+            .cardEdge(radius: Radius.cardSmall)
             .contentShape(.rect)
         }
         .buttonStyle(.pressable)

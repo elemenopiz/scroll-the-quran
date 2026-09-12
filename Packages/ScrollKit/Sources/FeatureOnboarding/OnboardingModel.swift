@@ -27,6 +27,9 @@ public final class OnboardingModel {
     public private(set) var isFinished = false
     public var isShowingSignIn = false
     public var email = ""
+    /// True while the email field has the keyboard. Drives the sign-in sheet up to
+    /// `.large` so the field is not covered — see `OnboardingFlow.signInSheet`.
+    public var isEditingEmail = false
     /// True once Sign in with Apple has handed us an account, so dismissing the sheet
     /// does not then overwrite the Apple address with the empty text field.
     public private(set) var didSignInWithApple = false

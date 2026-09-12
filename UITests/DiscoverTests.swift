@@ -2,12 +2,9 @@ import XCTest
 
 /// Flow tests for the Discover feed and Deep Study.
 ///
-/// The app does not route `--screenshot discover` / `--screenshot deepstudy#…` into
-/// `FeatureDiscover` yet — that wiring is Phase 3e's, and `AppShell` is not this task's
-/// to edit. Until it lands, `TabRoot` renders the Phase 1 placeholder for the Discover
-/// tab, so every test here starts by looking for an element only the real screen has
-/// and skips with a clear message when it is not there. Once 3e wires
-/// `DiscoverScreens.screen(id:anchor:…)` in, these become real assertions with no edit.
+/// `AppShell` routes `--screenshot discover` / `--screenshot deepstudy#…` into
+/// `FeatureDiscover` (Phase 3e), so `requireRouted` asserts the screen is there instead
+/// of skipping when it is not.
 ///
 /// The recorded layout specs are parked beside them as
 /// `UITests/Specs/discover-dark.json.disabled` and `deepstudy-top.json.disabled`;
@@ -28,26 +25,22 @@ final class DiscoverTests: XCTestCase {
         return app
     }
 
-    /// Skips the test when the route still lands on the Phase 1 placeholder.
+    /// Fails the test when the route does not reach the real Discover screen.
     ///
     /// The sentinel has to be an element only the real screen has: XCUITest matches an
-    /// identifier against an element's *label* too, and the placeholder prints its own
-    /// screen id ("discover") as a label.
-    private func requireRouted(_ app: XCUIApplication, _ identifier: String) throws {
+    /// identifier against an element's *label* too, and the Phase 1 placeholder printed
+    /// its own screen id ("discover") as a label.
+    private func requireRouted(_ app: XCUIApplication, _ identifier: String) {
         let screen = app.descendants(matching: .any).matching(identifier: identifier).firstMatch
-        guard screen.waitForExistence(timeout: 5) else {
-            throw XCTSkip(
-                """
-                '\(identifier)' is not on screen: FeatureDiscover is not routed yet. \
-                Phase 3e wires ScreenRoute -> DiscoverScreens.screen(id:anchor:feed:themes:studies:today:).
-                """
-            )
-        }
+        XCTAssertTrue(
+            screen.waitForExistence(timeout: 8),
+            "'\(identifier)' never appeared — the route did not reach FeatureDiscover"
+        )
     }
 
     func testDiscoverCardShowsItsParts() throws {
         let app = launch("discover")
-        try requireRouted(app, "discover.card")
+        requireRouted(app, "discover.card")
 
         for identifier in [
             "discover.card", "discover.themeChip", "discover.reference",
@@ -68,7 +61,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyOpensFromTheCardAndCloses() throws {
         let app = launch("discover")
-        try requireRouted(app, "discover.card")
+        requireRouted(app, "discover.card")
 
         // The feed is a lazy pager: the neighbouring cards are realised too, so there is more
         // than one "Deep study" button in the tree and an unqualified tap is ambiguous. The
@@ -88,7 +81,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyRendersEverySectionInOrder() throws {
         let app = launch("deepstudy")
-        try requireRouted(app, "deepstudy.quote")
+        requireRouted(app, "deepstudy.quote")
 
         XCTAssertTrue(app.staticTexts["MEANING"].waitForExistence(timeout: 3))
         // The three list-shaped sections are further down; scroll to the foot of the page.
@@ -107,7 +100,7 @@ final class DiscoverTests: XCTestCase {
 
     func testDeepStudyAnchorScrollsToTheSection() throws {
         let app = launch("deepstudy#apply-it")
-        try requireRouted(app, "deepstudy.quote")
+        requireRouted(app, "deepstudy.quote")
         XCTAssertTrue(
             app.staticTexts["APPLY IT"].waitForExistence(timeout: 5),
             "deepstudy#apply-it did not scroll APPLY IT into view"
@@ -118,7 +111,7 @@ final class DiscoverTests: XCTestCase {
     /// `deepstudy-mid`; ours has to land on KEY ARABIC TERMS, the same slot in the order.
     func testManifestAnchorAliasResolves() throws {
         let app = launch("deepstudy#original-language")
-        try requireRouted(app, "deepstudy.quote")
+        requireRouted(app, "deepstudy.quote")
         XCTAssertTrue(
             app.staticTexts["KEY ARABIC TERMS"].waitForExistence(timeout: 5),
             "the manifest's original-language anchor did not land on KEY ARABIC TERMS"

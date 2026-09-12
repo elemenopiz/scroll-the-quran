@@ -15,8 +15,14 @@ struct SignInSheet: View {
     let scale: ReferenceScale
     let onAppleSignIn: (ASAuthorizationAppleIDCredential) -> Void
     let onSkip: () -> Void
+    /// Mirrors the email field's focus out to the presenter, which raises the sheet's
+    /// detent while the keyboard is up. The reference sheet is short enough that the
+    /// keyboard covers the field outright.
+    @Binding var isEditingEmail: Bool
 
     @Environment(\.openURL) private var openURL
+    @Environment(\.colorScheme) private var colorScheme
+    @FocusState private var emailFocused: Bool
 
     private enum Gap {
         static let title: CGFloat = 54
@@ -87,6 +93,11 @@ struct SignInSheet: View {
         .frame(maxWidth: .infinity)
         .padding(.horizontal, scale.width(OnboardingMetrics.sheetContentInset))
         .background(Color.sheetBackground)
+        // A tap anywhere on the sheet's own ground puts the keyboard away, so the sheet
+        // can come back down without the reader having to find the Done key.
+        .contentShape(.rect)
+        .onTapGesture { emailFocused = false }
+        .onChange(of: emailFocused) { _, focused in isEditingEmail = focused }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("screen.onboarding-signin")
     }
@@ -108,6 +119,9 @@ struct SignInSheet: View {
                 RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.fieldCornerRadius), style: .continuous)
                     .fill(Color.rowBackground)
             )
+            .focused($emailFocused)
+            .submitLabel(.done)
+            .onSubmit { emailFocused = false }
             .accessibilityLabel(content.emailLabel)
             .accessibilityIdentifier("onboarding.signin.email")
     }
@@ -120,10 +134,24 @@ struct SignInSheet: View {
             guard let credential = authorisation.credential as? ASAuthorizationAppleIDCredential else { return }
             onAppleSignIn(credential)
         }
-        .signInWithAppleButtonStyle(.whiteOutline)
+        // `.white`, not `.whiteOutline`. The outline style draws its border on a rounded
+        // *rectangle* at the button's own corner radius, and `.clipShape(Capsule())` then
+        // cut it into stray rules: two hairlines running the full width out of the
+        // capsule's top and bottom, plus a tick at each end. On the dark sheet the white
+        // fill hid them; on the white one they were all you could see of the button.
+        //
+        // So the button draws a plain white pill and the capsule border is ours, in light
+        // appearance only — Apple's guidance is a white button *with an outline* on a
+        // light ground, and on dark the white-on-`#1C1C1E` pill needs no help.
+        .signInWithAppleButtonStyle(.white)
         .frame(height: scale.height(OnboardingMetrics.sheetButtonHeight))
         .frame(maxWidth: .infinity)
         .clipShape(Capsule())
+        .overlay {
+            if colorScheme != .dark {
+                Capsule().strokeBorder(Color.divider, lineWidth: Stroke.hairline)
+            }
+        }
         .accessibilityIdentifier("onboarding.signin.apple")
     }
 }
@@ -134,6 +162,7 @@ struct SignInSheet: View {
         email: .constant(""),
         scale: .identity,
         onAppleSignIn: { _ in },
-        onSkip: {}
+        onSkip: {},
+        isEditingEmail: .constant(false)
     )
 }

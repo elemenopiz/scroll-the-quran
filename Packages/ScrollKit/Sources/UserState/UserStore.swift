@@ -75,6 +75,12 @@ public final class UserStore {
     /// The store the app and the widget use: the App Group container, or Application Support
     /// when the group is unavailable, or memory as a last resort so the app still runs.
     public static func shared(calendar: Calendar = .autoupdatingCurrent) -> UserStore {
+        // `--fixture-state <name>`: a snapshot or UI run gets a seeded, memory-backed
+        // store instead of the container, so a capture of Home shows a plan and a streak
+        // and nothing it invents is written back to the App Group. See `FixtureState`.
+        if let fixture = FixtureState.requested() {
+            return UserStore.fixture(fixture, today: FixtureState.fixedDate() ?? Date(), calendar: calendar)
+        }
         let directory = UserStateLocation.defaultDirectory()
         if let store = try? UserStore(directory: directory, calendar: calendar) {
             store.load()

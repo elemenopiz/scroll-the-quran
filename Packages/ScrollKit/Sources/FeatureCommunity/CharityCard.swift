@@ -35,6 +35,10 @@ struct CharityCard: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.cardBackground)
         .clipShape(.rect(cornerRadius: Radius.card, style: .continuous))
+        // The card is `#FFFFFF` on `Color.appBackground`'s `#FAFAFC`: a two-step
+        // difference with no edge of its own. The same hairline `CardContainer` draws,
+        // and a no-op in dark appearance. See `Color.cardBorder`.
+        .cardEdge(radius: Radius.card)
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier("community.card.\(charity.id)")
     }

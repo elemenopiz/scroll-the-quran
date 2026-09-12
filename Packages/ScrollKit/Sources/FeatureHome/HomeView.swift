@@ -129,6 +129,11 @@ public struct HomeView: View {
                 guard initialScroll == .scrolled else { return }
                 proxy.scrollTo(HomeView.scrolledAnchorID, anchor: .top)
             }
+            // Scrolled, the card stack runs up under the clock and the Dynamic Island —
+            // worst on `home#scrolled`, where "Pick a plan to begin" sits behind them.
+            // The page's own ground, faded out, rather than an inset that would leave a
+            // band of empty page at the top of an unscrolled Home.
+            .statusBarScrim(Color.appBackground)
         }
         .accessibilityIdentifier("home")
         .sheet(item: $route) { sheet in

@@ -16,8 +16,9 @@
         "x": 15.6,
         "y": 58.2,
         "width": 361.7,
-        "height": 715.2
-      }
+        "height": 722.3
+      },
+      "note": "+7.1 pt since the muted Arabic line gained a 13 pt legibility floor and a 3-line cap (commit 70aaf51). The card grows with its own content; discover-dark scores 0.059 against a 0.14 threshold, so the visual is unaffected."
     },
     {
       "name": "discover.themeChip",
@@ -33,21 +34,23 @@
       "name": "discover.reference",
       "query": "identifier",
       "frame": {
-        "x": 100.9,
+        "x": 36.7,
         "y": 106.9,
-        "width": 191.3,
-        "height": 29.5
-      }
+        "width": 319.7,
+        "height": 49.4
+      },
+      "note": "The recorded x/width are the element's *frame*, not its glyph box: the label carries `.frame(maxWidth: .infinity)` so it spans the card and centres the text inside, and `.padding(.top, Spacing.xs)` is inside the accessibility element. The earlier 100.9 x 191.3 was the tight text box from before that frame existed. The line still renders as one centred serif line — see Reference/discover-dark.png."
     },
     {
       "name": "discover.quote",
       "query": "identifier",
       "frame": {
         "x": 35.2,
-        "y": 169.3,
+        "y": 185.5,
         "width": 322.6,
-        "height": 171.3
-      }
+        "height": 158.6
+      },
+      "note": "Pushed down 16.2 pt and 12.7 pt shorter by the same 13 pt Arabic floor above it (commit 70aaf51), which takes more height and leaves the English less."
     },
     {
       "name": "discover.meaning",

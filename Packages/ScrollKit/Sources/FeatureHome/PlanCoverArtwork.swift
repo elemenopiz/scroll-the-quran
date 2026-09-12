@@ -68,6 +68,17 @@ struct PlanCoverImage: View {
                 Image(name, bundle: .main)
                     .resizable()
                     .scaledToFill()
+            } else if plan == nil {
+                // No plan running: Home's "Pick a plan to begin" card had a featureless
+                // grey square where the cover goes, which reads as artwork that failed to
+                // load rather than as an empty state. The same closed book Deep Study's
+                // empty state uses, so the two agree.
+                GeometryReader { proxy in
+                    Image(systemName: "book.closed")
+                        .font(.system(size: min(proxy.size.width, proxy.size.height) * 0.38, weight: .regular))
+                        .foregroundStyle(Color.textTertiary)
+                        .frame(width: proxy.size.width, height: proxy.size.height)
+                }
             }
             if scrimmed {
                 Image(PlanCoverArtwork.scrimName, bundle: .main)

@@ -2,11 +2,8 @@ import XCTest
 
 /// Flows on the Home tab.
 ///
-/// **These skip until Phase 3e.** `FeatureHome` ships its views, but `AppShell` still routes the
-/// `home` screen id to `PlaceholderScreen`, so nothing with a `home.*` identifier is on screen
-/// yet. Each test therefore launches the route, looks for the Home tab's own root, and calls
-/// `XCTSkipUnless` when it is not there — green today, a real assertion the moment the wiring
-/// lands. Nothing else about the tests changes then.
+/// `AppShell` routes the `home` screen ids into `FeatureHome` (Phase 3e), so `requireHome`
+/// asserts rather than skips: a route that does not reach the real screen fails the gate.
 final class HomeTests: XCTestCase {
     private static let launchTimeout: TimeInterval = 8
 
@@ -26,12 +23,12 @@ final class HomeTests: XCTestCase {
         return app
     }
 
-    /// Skips the test unless the real Home screen is on screen (see the type comment).
-    private func requireHome(_ app: XCUIApplication) throws {
+    /// Fails the test unless the real Home screen is on screen (see the type comment).
+    private func requireHome(_ app: XCUIApplication) {
         let home = app.descendants(matching: .any).matching(identifier: "home.settingsPill").firstMatch
-        try XCTSkipUnless(
+        XCTAssertTrue(
             home.waitForExistence(timeout: HomeTests.launchTimeout),
-            "FeatureHome is not wired into AppShell yet (Phase 3e): 'home' still renders the placeholder."
+            "FeatureHome did not render for this route: 'home.settingsPill' never appeared."
         )
     }
 
@@ -44,7 +41,7 @@ final class HomeTests: XCTestCase {
     /// The card stack the `home-dark` reference shows, in order.
     func testHomeShowsTheCardStack() throws {
         let app = launch("home")
-        try requireHome(app)
+        requireHome(app)
 
         for identifier in [
             "home.verseSearchCard",
@@ -63,7 +60,7 @@ final class HomeTests: XCTestCase {
     /// The DoD flow: open the plans sheet, open a plan, start it, and Home says "Day 1 of …".
     func testStartingAPlanPutsDayOneOnHome() throws {
         let app = launch("home")
-        try requireHome(app)
+        requireHome(app)
 
         element(app, "home.todaysReading").tap()
 
@@ -93,7 +90,7 @@ final class HomeTests: XCTestCase {
     /// The Saved row opens the library, and Done closes it again.
     func testSavedRowOpensTheLibrary() throws {
         let app = launch("home")
-        try requireHome(app)
+        requireHome(app)
 
         element(app, "home.savedRow").tap()
         let library = element(app, "library")
@@ -109,7 +106,7 @@ final class HomeTests: XCTestCase {
     /// The settings pill opens Settings with the translation list in it.
     func testSettingsPillOpensSettings() throws {
         let app = launch("home")
-        try requireHome(app)
+        requireHome(app)
 
         element(app, "home.settingsPill").tap()
         XCTAssertTrue(
@@ -132,7 +129,7 @@ final class HomeTests: XCTestCase {
         for spec in specs {
             let app = launch(spec.route)
             defer { app.terminate() }
-            try requireHome(app)
+            requireHome(app)
 
             let screen = app.windows.firstMatch.frame
             XCTAssertGreaterThan(screen.width, 0, "\(spec.id): could not read the window frame")
@@ -187,9 +184,9 @@ final class HomeTests: XCTestCase {
     func testVerseSearchModeSwitch() throws {
         let app = launch("verse-search")
         let card = element(app, "home.verseSearchCard")
-        try XCTSkipUnless(
+        XCTAssertTrue(
             card.waitForExistence(timeout: HomeTests.launchTimeout),
-            "FeatureHome is not wired into AppShell yet (Phase 3e): 'verse-search' has no route."
+            "--screenshot verse-search did not render 'home.verseSearchCard'"
         )
 
         element(app, "home.verseSearch.basic").tap()

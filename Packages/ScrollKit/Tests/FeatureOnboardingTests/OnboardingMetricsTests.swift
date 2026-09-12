@@ -1,8 +1,21 @@
+import DesignSystem
 @testable import FeatureOnboarding
 import Testing
 
 @Suite("Onboarding metrics")
 struct OnboardingMetricsTests {
+    /// Swift Testing builds the suite value once per test, so this is the suite's setup.
+    ///
+    /// `headlineSpacingIsZero` measures Source Serif 4 through CoreText, which only
+    /// answers once the bundled faces are registered. Relying on another suite in the
+    /// same process having called `registerFonts()` first made this file order-dependent:
+    /// it failed every time under `swift test --filter OnboardingMetricsTests`, and
+    /// whenever the scheduler happened to run it first. `registerFonts()` is idempotent
+    /// and thread-safe, so calling it here costs nothing.
+    init() {
+        DesignSystem.registerFonts()
+    }
+
     @Test("Line spacing is the difference between the wanted pitch and the font's line height")
     func lineSpacingHitsThePitch() {
         let family = "Helvetica"

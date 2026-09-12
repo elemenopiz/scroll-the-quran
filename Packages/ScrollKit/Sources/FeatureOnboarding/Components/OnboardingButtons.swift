@@ -21,7 +21,10 @@ struct PrimaryPillButton: View {
                 .frame(minHeight: scale.height(OnboardingMetrics.ctaHeight))
                 .background(Color.pillFill, in: Capsule())
         }
-        .buttonStyle(.plain)
+        // `.pressable` is `.plain` with the press feedback every other pill in the app
+        // has: a 0.97 scale, no tint change, dimmed rather than scaled under Reduce
+        // Motion. The funnel's two call-to-action pills were the only ones with none.
+        .buttonStyle(.pressable)
         .accessibilityIdentifier(identifier)
     }
 }
@@ -44,7 +47,10 @@ struct SecondaryPillButton: View {
                     Capsule().strokeBorder(Color.divider, lineWidth: OnboardingMetrics.secondaryStroke)
                 )
         }
-        .buttonStyle(.plain)
+        // `.pressable` is `.plain` with the press feedback every other pill in the app
+        // has: a 0.97 scale, no tint change, dimmed rather than scaled under Reduce
+        // Motion. The funnel's two call-to-action pills were the only ones with none.
+        .buttonStyle(.pressable)
         .accessibilityIdentifier(identifier)
     }
 }

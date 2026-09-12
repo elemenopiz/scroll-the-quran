@@ -93,9 +93,10 @@ struct DiscoverCard: View {
                     .padding(.top, Spacing.xxs)
                 VerseText(
                     arabic: presentation.arabic,
-                    english: presentation.quoted,
+                    segments: presentation.segments,
                     size: .discover,
-                    style: .italic
+                    style: .italic,
+                    quoted: true
                 )
                 .padding(.top, Spacing.lg)
                 .accessibilityIdentifier("discover.quote")

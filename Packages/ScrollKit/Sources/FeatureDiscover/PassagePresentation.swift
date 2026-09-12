@@ -1,3 +1,4 @@
+import DesignSystem
 import Foundation
 import QuranData
 import StudyContent
@@ -15,6 +16,9 @@ public struct PassagePresentation: Equatable, Sendable {
     public let arabic: String?
     /// The joined English of the passage, without quotation marks.
     public let english: String
+    /// The same English, split back into its ayat so a verse surface can mark the
+    /// boundaries. A single-ayah passage has exactly one segment.
+    public let segments: [VerseSegment]
     /// The short badge under the reference, e.g. `"CLEAR"`.
     public let translationTag: String
     /// The licence line the translation requires, for share and copy.
@@ -26,7 +30,8 @@ public struct PassagePresentation: Equatable, Sendable {
         arabic: String?,
         english: String,
         translationTag: String,
-        attribution: String = ""
+        attribution: String = "",
+        segments: [VerseSegment]? = nil
     ) {
         self.passage = passage
         self.reference = reference
@@ -34,6 +39,7 @@ public struct PassagePresentation: Equatable, Sendable {
         self.english = english
         self.translationTag = translationTag
         self.attribution = attribution
+        self.segments = segments ?? [VerseSegment(ayah: passage.start, text: english)]
     }
 
     /// The English wrapped the way the reference app draws it, in straight quotes.
@@ -54,20 +60,29 @@ public struct PassagePresentation: Equatable, Sendable {
                 reference: passage.key,
                 arabic: nil,
                 english: "",
-                translationTag: ""
+                translationTag: "",
+                segments: []
             )
         }
         let id = translationID ?? translations.selectedID
         let info = translations.info(for: id)
         let surah = translations.index.surah(passage.surah)
         let arabic = translations.arabic(for: passage).joined(separator: " ")
+        // Ayah by ayah rather than pre-joined: a multi-ayah passage draws a muted ⟨n⟩
+        // at each boundary (`VerseText`), because joining the translator's sentences
+        // with a bare space reads as one run-on ("…call for help Guide us…") and
+        // adding punctuation of our own would be a derivative of a no-derivatives
+        // translation. `english` stays the plain join for copy, share and VoiceOver.
+        let texts = translations.texts(for: passage, translation: id)
+        let segments = zip(passage.verses, texts).map { VerseSegment(ayah: $0.ayah, text: $1) }
         return PassagePresentation(
             passage: passage,
             reference: surah?.reference(for: passage) ?? passage.key,
             arabic: arabic.isEmpty ? nil : arabic,
-            english: translations.texts(for: passage, translation: id).joined(separator: " "),
+            english: texts.joined(separator: " "),
             translationTag: info?.abbrev ?? "",
-            attribution: info?.attribution ?? ""
+            attribution: info?.attribution ?? "",
+            segments: segments.isEmpty ? nil : segments
         )
     }
 

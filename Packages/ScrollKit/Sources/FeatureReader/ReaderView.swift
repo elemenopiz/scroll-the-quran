@@ -151,7 +151,8 @@ public struct ReaderView: View {
                 message: "to jump to any verse",
                 onDismiss: { withAnimation(.easeOut(duration: 0.2)) { model.dismissHint() } }
             )
-            .fixedSize()
+            // `ToastHint` is now pinned to its measured 214 pt; `.fixedSize()` here used
+            // to be what stopped it from stretching, and it fought the fixed frame.
             .padding(.leading, ReaderMetrics.toastLeadingInset)
             .padding(.bottom, ReaderMetrics.toastBottomInset)
             .transition(.opacity)

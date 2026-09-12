@@ -6,8 +6,8 @@ import XCTest
 /// StoreKit configuration), so asserting on the price strings here is the app-hosted
 /// half of the commerce tests: it proves the catalogue reaches the UI.
 ///
-/// Every test skips when the paywall is not routed yet, so this file stays green on a
-/// checkout where `RootView` still renders the Phase 1 placeholders.
+/// `RootView` routes every paywall and gift screen (Phase 3e), so `launch` asserts the
+/// screen appeared rather than skipping when it does not.
 final class PaywallTests: XCTestCase {
     override func setUp() {
         super.setUp()
@@ -20,9 +20,9 @@ final class PaywallTests: XCTestCase {
         app.launchEnvironment["SCROLL_FIXED_DATE"] = "2026-09-14"
         app.launch()
         let root = app.descendants(matching: .any).matching(identifier: "screen.\(screen)").firstMatch
-        try XCTSkipUnless(
+        XCTAssertTrue(
             root.waitForExistence(timeout: 8),
-            "\(screen) is not routed yet — RootView still renders the Phase 1 placeholder"
+            "--screenshot \(screen) did not render 'screen.\(screen)'"
         )
         return app
     }

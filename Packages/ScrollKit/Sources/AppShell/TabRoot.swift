@@ -109,6 +109,11 @@ public struct TabRoot: View {
         self.env = env
         self.route = route
         _model = State(initialValue: model ?? TabRootModel(selection: route?.tab ?? .home))
+        // Before UIKit builds the bar. See `DesignSystem.configureTabBarAppearance()`:
+        // the declarative `.opaqueTabBar()` below is not enough on iOS 26.
+        #if os(iOS)
+            DesignSystem.configureTabBarAppearance()
+        #endif
     }
 
     /// The Quran tab's model, owned by the environment so it survives — and is built by —
@@ -120,7 +125,13 @@ public struct TabRoot: View {
     public var body: some View {
         TabView(selection: $model.selection) {
             CommunityView(store: env.user)
-                .tabItem { Label(AppTab.community.title, systemImage: AppTab.community.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.community.title,
+                        systemImage: AppTab.community.tabSymbol(selected: model.selection == .community)
+                    )
+                        .tabSymbolVariant(selected: model.selection == .community)
+                }
                 .tag(AppTab.community)
 
             DiscoverScreens.screen(
@@ -130,18 +141,40 @@ public struct TabRoot: View {
                 studies: env.studies,
                 today: env.today
             )
-            .tabItem { Label(AppTab.discover.title, systemImage: AppTab.discover.systemImage) }
+            .tabItem {
+                Label(
+                    AppTab.discover.title,
+                    systemImage: AppTab.discover.tabSymbol(selected: model.selection == .discover)
+                )
+                    .tabSymbolVariant(selected: model.selection == .discover)
+            }
             .tag(AppTab.discover)
 
             HomeScreenProvider.screen(id: homeRouteID, anchor: homeAnchor, env: env, navigation: model)
-                .tabItem { Label(AppTab.home.title, systemImage: AppTab.home.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.home.title,
+                        systemImage: AppTab.home.tabSymbol(selected: model.selection == .home)
+                    )
+                        .tabSymbolVariant(selected: model.selection == .home)
+                }
                 .tag(AppTab.home)
 
             quranTab
-                .tabItem { Label(AppTab.quran.title, systemImage: AppTab.quran.systemImage) }
+                .tabItem {
+                    Label(
+                        AppTab.quran.title,
+                        systemImage: AppTab.quran.tabSymbol(selected: model.selection == .quran)
+                    )
+                        .tabSymbolVariant(selected: model.selection == .quran)
+                }
                 .tag(AppTab.quran)
         }
         .tint(Color.textPrimary)
+        // The bar is the reference's flat `#121214` / `#FFFFFF`, not a material: with the
+        // system default, the card stack scrolling behind it washed a pale panel across
+        // the Community and Discover items.
+        .opaqueTabBar()
         .appStores(env, router: model)
         .fullCover(item: $model.deepStudyKey.identifiable) { key in
             deepStudy(key: key.value)

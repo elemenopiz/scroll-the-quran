@@ -61,29 +61,104 @@ public enum TintedSectionKind: String, CaseIterable, Sendable {
 /// The tinted Deep Study section: a rounded box in one of five measured tints with a
 /// `CapsLabel` header. Boxes are inset 24 pt from the screen edge (72 px in
 /// deepstudy-top → 345 pt wide) and padded 20 pt inside.
-public struct TintedSectionBox<Content: View>: View {
-    private let kind: TintedSectionKind
+///
+/// The header is a slot, not a fixed label: the reference draws a small copy button on
+/// the same line as the caps label, and `FeatureDiscover` used to compose its own box
+/// rather than use this one for exactly that reason. Pass the button (or anything else)
+/// as `accessory` and it lands to the right of the label, before the spacer.
+///
+/// `kind` is optional so an untinted section — most of Deep Study — can use the same
+/// header without gaining a fill: `nil` draws the header and content flat on the page.
+public struct TintedSectionBox<Accessory: View, Content: View>: View {
+    private let kind: TintedSectionKind?
     private let title: String?
+    private let icon: String?
+    private let iconTint: Color?
+    private let labelSize: CGFloat
+    private let identifier: String?
+    private let accessory: Accessory
     private let content: Content
 
-    public init(kind: TintedSectionKind, title: String? = nil, @ViewBuilder content: () -> Content) {
+    public init(
+        kind: TintedSectionKind?,
+        title: String? = nil,
+        icon: String? = nil,
+        iconTint: Color? = nil,
+        labelSize: CGFloat = 11,
+        identifier: String? = nil,
+        @ViewBuilder accessory: () -> Accessory,
+        @ViewBuilder content: () -> Content
+    ) {
         self.kind = kind
         self.title = title
+        self.icon = icon
+        self.iconTint = iconTint
+        self.labelSize = labelSize
+        self.identifier = identifier
+        self.accessory = accessory()
         self.content = content()
     }
 
     public var body: some View {
         VStack(alignment: .leading, spacing: Spacing.md) {
-            if let label = title ?? kind.title {
-                CapsLabel(icon: kind.systemImage, text: label, tint: kind.iconTint)
+            if let label = title ?? kind?.title {
+                HStack(spacing: Spacing.sm) {
+                    CapsLabel(
+                        icon: icon ?? kind?.systemImage,
+                        text: label,
+                        size: labelSize,
+                        tint: iconTint ?? kind?.iconTint
+                    )
+                    accessory
+                    Spacer(minLength: 0)
+                }
             }
             content
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(Metrics.sectionBoxPadding)
-        .background(kind.tint, in: .rect(cornerRadius: Radius.cardSmall, style: .continuous))
+        .modifier(SectionTint(kind: kind))
         .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("section.\(kind.rawValue)")
+        .accessibilityIdentifier(identifier ?? kind.map { "section.\($0.rawValue)" } ?? "section")
+    }
+}
+
+public extension TintedSectionBox where Accessory == EmptyView {
+    /// A box with no header accessory — the original shape.
+    init(
+        kind: TintedSectionKind?,
+        title: String? = nil,
+        icon: String? = nil,
+        iconTint: Color? = nil,
+        labelSize: CGFloat = 11,
+        identifier: String? = nil,
+        @ViewBuilder content: () -> Content
+    ) {
+        self.init(
+            kind: kind,
+            title: title,
+            icon: icon,
+            iconTint: iconTint,
+            labelSize: labelSize,
+            identifier: identifier,
+            accessory: { EmptyView() },
+            content: content
+        )
+    }
+}
+
+/// The measured fill and 20 pt inset a tinted section gets, and nothing at all for an
+/// untinted one — an untinted section sits flat on the page at the page's own inset.
+private struct SectionTint: ViewModifier {
+    let kind: TintedSectionKind?
+
+    func body(content: Content) -> some View {
+        if let kind {
+            content
+                .padding(Metrics.sectionBoxPadding)
+                .background(kind.tint, in: .rect(cornerRadius: Radius.cardSmall, style: .continuous))
+        } else {
+            content
+        }
     }
 }
 

@@ -68,6 +68,10 @@ public struct DeepStudyView: View {
                 }
             }
         }
+        // Deep Study is full-bleed, so its body text scrolls up under the clock and the
+        // battery. The reference fades the content out toward the top rather than
+        // insetting it; this is that fade. Below the pinned buttons, which stay crisp.
+        .statusBarScrim()
         .overlay(alignment: .top) { pinnedButtons }
         // Same reason as `DiscoverCard`: without the container element, the identifier
         // below overwrites the two pinned buttons' own ids (the scroll view's contents keep
@@ -129,9 +133,10 @@ public struct DeepStudyView: View {
         TintedSectionBox(kind: .quote) {
             VerseText(
                 arabic: presentation.arabic,
-                english: presentation.quoted,
+                segments: presentation.segments,
                 size: .deepStudy,
-                style: .italic
+                style: .italic,
+                quoted: true
             )
         }
         .padding(.horizontal, DeepStudyMetrics.inset)
