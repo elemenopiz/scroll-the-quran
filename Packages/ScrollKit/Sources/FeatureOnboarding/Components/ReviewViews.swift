@@ -82,6 +82,8 @@ struct ReviewCard: View {
         .clipShape(
             RoundedRectangle(cornerRadius: scale.width(OnboardingMetrics.cardCornerRadius), style: .continuous)
         )
+        // `#FFFFFF` on `#FAFAFC`. See `Color.cardBorder`; no-op on dark.
+        .cardEdge(radius: scale.width(OnboardingMetrics.cardCornerRadius))
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(accessibilityLabel)
     }

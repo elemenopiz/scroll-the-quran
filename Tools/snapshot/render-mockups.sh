@@ -49,6 +49,33 @@ route_for() {
     esac
 }
 
+# Pixels to drop off the top of the captured window before it goes in the frame.
+#
+# `plans-sheet` is a *sheet*, so its capture carries 185 px of the dimmed parent screen
+# above the sheet's rounded top edge. Inside a 228 pt phone frame that band reads as a
+# black bar, and the reference slide shows the plans list filling the screen. 185 is
+# measured: the sheet is full width from that row down.
+trim_top_for() {
+    case "$1" in
+        plans) echo 185 ;;
+        *) echo 0 ;;
+    esac
+}
+
+# Pixels of the screen's own ground to put back at the top after trimming.
+#
+# `PhoneFrame` draws the Dynamic Island over the top 26 pt (136 px at this scale) of the
+# window, so a trim that brings real content up to y 0 hides it: the plans sheet's
+# "Reading Plans / Done" header ended up behind the island. Padding the trim back with the
+# colour of the first surviving row puts the header where a status bar would leave it, and
+# the band under the island is the sheet's own background rather than a black bar.
+pad_top_for() {
+    case "$1" in
+        plans) echo 210 ;;
+        *) echo 0 ;;
+    esac
+}
+
 command -v magick >/dev/null || { echo "render-mockups.sh: ImageMagick 7 (magick) is required" >&2; exit 1; }
 
 NAMES=("$@")
@@ -79,8 +106,16 @@ for name in "${NAMES[@]}"; do
     # Normalise to the reference device (1179x2556) before cropping, so the window is
     # the same slice of the design whatever simulator this ran on, then round the
     # corners with an alpha mask.
+    trim="$(trim_top_for "$name")"
+    pad="$(pad_top_for "$name")"
     magick "$WORK/$name-raw.png" -alpha remove -alpha off -colorspace sRGB \
         -resize '1179x2556!' -crop "${CROP_W}x${CROP_H}+${CROP_X}+${CROP_Y}" +repage \
+        -crop "${CROP_W}x$((CROP_H - trim))+0+${trim}" +repage \
+        "$WORK/$name-trim.png"
+    ground="$(magick "$WORK/$name-trim.png" -format '%[pixel:p{560,4}]' info:)"
+    magick "$WORK/$name-trim.png" \
+        -background "$ground" -gravity north -splice "0x${pad}" \
+        -resize "${CROP_W}x${CROP_H}!" \
         "$WORK/$name-window.png"
     # White inside the rounded rectangle, black outside, no alpha of its own — the mask
     # is read as *intensity* by CopyOpacity. Drawing on `xc:none` instead leaves the

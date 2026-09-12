@@ -72,6 +72,8 @@ public struct PlanCard<Cover: View>: View {
         }
         .background(Color.cardBackground)
         .clipShape(.rect(cornerRadius: Radius.chip, style: .continuous))
+        // `#FFFFFF` on the plans sheet's `#FAFAFC`. See `Color.cardBorder`; no-op on dark.
+        .cardEdge(radius: Radius.chip)
         .accessibilityElement(children: .combine)
     }
 }

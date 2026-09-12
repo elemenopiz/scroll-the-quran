@@ -39,6 +39,8 @@ public struct ReviewCard: View {
         }
         .background(Color.cardBackground)
         .clipShape(.rect(cornerRadius: Radius.cardSmall, style: .continuous))
+        // `#FFFFFF` on `#FAFAFC`. See `Color.cardBorder`; no-op on dark.
+        .cardEdge(radius: Radius.cardSmall)
         .accessibilityElement(children: .combine)
     }
 }
