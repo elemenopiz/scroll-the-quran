@@ -17,6 +17,83 @@ the app with `--reset-state`, so a score does not depend on what the last run le
 App Group container (it used to: `plan-detail` scored 0.179 on a dirty container and 0.138
 on a clean one from the identical build).
 
+## Full sweep — Phase 4d, 2026-09-12
+
+iPhone 17 Pro (`ScrollSim-3d`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`. 27 screens, all
+under threshold, **no threshold changed and no new accepted deviation**. Phase 4d is the
+pre-submission audit-fix pass (`docs/store/audit-findings.md`), and the point of this table
+is that nine findings were closed without the design moving.
+
+| id | Phase 4b | Phase 4d | threshold | delta |
+| --- | ---: | ---: | ---: | ---: |
+| `onboarding-hook` | 0.0485 | 0.0490827 | 0.08 | +0.0006 |
+| `onboarding-signin` | 0.0787 | 0.0792698 | 0.08 | +0.0006 |
+| `onboarding-slide1` | 0.0952 | 0.0953370 | 0.12 | +0.0001 |
+| `onboarding-slide2` | 0.1245 | 0.1248200 | 0.13 | +0.0003 |
+| `onboarding-slide3` | 0.0567 | 0.0571480 | 0.12 | +0.0004 |
+| `onboarding-slide4` | 0.0705 | 0.0710667 | 0.12 | +0.0006 |
+| `onboarding-reviews` | 0.0739 | 0.0741706 | 0.10 | +0.0003 |
+| `paywall-trial` | 0.0346 | 0.0350887 | 0.06 | +0.0005 |
+| `paywall-plans` | 0.0340 | 0.0340461 | 0.08 | +0.0000 |
+| `gift-closed` | 0.0424 | 0.0423650 | 0.10 | −0.0000 |
+| `gift-open` | 0.0624 | 0.0624148 | 0.10 | −0.0000 |
+| `community-dark` | 0.0539 | 0.0538826 | 0.10 | −0.0000 |
+| `discover-dark` | 0.0591 | 0.0591492 | 0.14 | +0.0000 |
+| `deepstudy-top` | 0.0664 | 0.0663536 | 0.14 | −0.0000 |
+| `deepstudy-mid` | 0.0571 | 0.0571212 | 0.14 | +0.0000 |
+| `deepstudy-crossrefs` | 0.0561 | 0.0561442 | 0.14 | +0.0000 |
+| `deepstudy-bottom` | 0.0491 | 0.0495345 | 0.14 | +0.0004 |
+| `reader-dark` | 0.0389 | 0.0389370 | 0.05 | +0.0000 |
+| `reader-light` | 0.0642 | 0.0641577 | 0.08 | −0.0000 |
+| `translation-sheet` | 0.0411 | 0.0419785 | 0.10 | +0.0009 |
+| `notes-sheet` | 0.0236 | 0.0236446 | 0.12 | +0.0000 |
+| `home-dark` | 0.0638 | 0.0638344 | 0.10 | +0.0000 |
+| `home-light` | 0.1021 | 0.1021540 | 0.16 | +0.0000 |
+| `verse-search` | 0.1077 | 0.1077010 | 0.16 | +0.0000 |
+| `plans-sheet` | 0.1927 | 0.1927420 | 0.20 | +0.0000 |
+| `plan-detail` | 0.1382 | 0.1382070 | 0.145 | +0.0000 |
+| `tabbar-dark` | 0.0375 | 0.0374815 | 0.12 | −0.0000 |
+
+Three changes could have moved these and did not, which is the thing worth recording:
+
+**Dynamic Type (A11Y-1) moves nothing.** `Font.body` and `Font.capsLabel` now scale
+through `UIFontMetrics`, and `UIFontMetrics.scaledValue(for:)` returns its argument
+unchanged at the `large` content size every capture is taken at. Every screen was measured
+before and after the commit and matched to four decimals. The 200 % cap is a WCAG 1.4.4
+decision, not a snapshot one.
+
+**The tertiary text split (A11Y-2) is the whole of the visible delta.** `textTertiary`
+(#8E8E93 / #7D7D7E) keeps its measured value for the decorative Arabic layer, the chevrons
+and the separators; 22 pieces of read text moved to `textTertiaryReadable`
+(#6C6C70 / #9A9A9E), which is darker in light and lighter in dark. The largest cost is
+`translation-sheet` at +0.0009 — four licence blocks are most of that screen. **No measured
+card, sheet or page ground changed**: this is a new token, not a re-measured one.
+
+**The gift offer's legal footer (IAP-2) is under the mask.** Terms / Privacy / Restore
+Purchases sit at y 819 in reference space, and `compare.sh` masks the bottom 34 pt, so
+`gift-open` reads 0.0624148 against 0.0624227 before it. It is a real, visible, tappable
+row on the device — it is simply below the band the score looks at. Recorded here so it is
+not mistaken for a row that was never added.
+
+**The purchase-state banner (IAP-1) never appears in a capture.** `PaywallNoticeView` is
+drawn only when a purchase or a restore has left something to say, and a `--screenshot`
+route makes no purchase. Its three positions (`PaywallMetrics.noticeTop` 496,
+`sheetNoticeTop` 424, `giftNoticeTop` 118) are each in a band the reference leaves empty;
+`UITests/PaywallStateTests.swift` asserts the placement rather than a capture.
+
+### Dynamic Type walk — Phase 4d
+
+Not scored; there is no reference for a screen at a larger content size. Captures in
+`.build/snapshots/../dynamictype/`:
+
+| capture | verdict |
+| --- | --- |
+| `reader-extra-extra-extra-large.png`, `reader-accessibility-extra-large.png` | clean; the toolbar's translation and surah pills truncate on the line limits they already had |
+| `home-extra-extra-extra-large.png`, `home-accessibility-extra-large.png` | clean; row titles and subtitles grow and the rows grow with them |
+| `deepstudy-accessibility-extra-large.png`, `deepstudy-ax5.png` | clean and scrollable at every size |
+| `discover-extra-extra-extra-large.png`, `discover-accessibility-extra-large.png` | the paged card's verse overflows the card. **Pre-existing** — it is `serifItalic`, which scaled before Phase 4d; `discover-ax3-BEFORE.png` is the A/B from the previous build. `FeatureDiscover` is outside 4d's ownership. |
+| `deepstudy-ax5.png` | A11Y-6 confirmed: English ~3x, Arabic fixed, so the ~58 % ratio is gone. Nothing clips; the layer is decorative and VoiceOver-hidden. A design call, not a defect. |
+
 ## Full sweep — Phase 4b, 2026-09-12
 
 iPhone 17 Pro (`ScrollSim-3e`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`. 27 screens, all

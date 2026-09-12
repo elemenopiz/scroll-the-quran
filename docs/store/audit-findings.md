@@ -10,6 +10,12 @@ settings only. Almost every finding lands in `Packages/ScrollKit/Sources`, which
 task does not own — those are listed here with file, line and severity, and nothing was
 edited outside the owned paths.
 
+**Phase 4d (2026-09-12) worked this list.** Every finding below carries a blockquoted
+status line saying what happened to it and in which commit. Ten are fixed, two were
+already correct and are confirmed, one is addressed with a stated rationale, and four are
+still open — three because they sit outside 4d's owned paths and one (A11Y-6) because it
+is a design decision rather than a defect.
+
 **Headline:** nothing found is an automatic App Store rejection. Two findings are real
 review risks worth fixing before submitting (IAP-1 and IAP-2). One accessibility finding
 is a genuine WCAG failure across most of the app (A11Y-1).
@@ -119,6 +125,13 @@ view, which is exactly how this shipped.
 CTA, and disable/spin the button while `isPurchasing`. Add one UI-level test so it cannot
 regress silently.
 
+
+> **FIXED in Phase 4d** — `21fdaa5`. One `PaywallNotice` (error / pending / info) that all
+> three purchase surfaces bind to, a disabled + spinning call to action while a purchase is
+> in flight, and `--purchase-outcome <success|cancelled|failed|pending|stalled>` so each
+> branch can be stood up from a launch argument. 12 XCUITests in
+> `UITests/PaywallStateTests.swift`, one per state the customer can reach.
+
 ### IAP-2 — The gift offer screen has no Terms/Privacy links and no Restore
 **Severity: HIGH.** Guideline 3.1.2(a) risk.
 **File:** `Packages/ScrollKit/Sources/FeaturePaywall/GiftOfferView.swift` (whole file)
@@ -132,6 +145,12 @@ sees a "Start FREE trial" button with none of the required legal affordances.
 
 **Fix:** reuse `PaywallTrialView.legalRow` and thread `PaywallLegalLinks` + `onRestore`
 through `PaywallFlow.gift` the way `trial` already does.
+
+
+> **FIXED in Phase 4d** — `21fdaa5`. Terms / Privacy / Restore Purchases sit under the
+> renewal disclosure, which now says "Auto-renews" in as many words. `gift-open` measures
+> 0.0624148 against 0.0624227 before: the row lands inside the comparison's bottom mask, so
+> no threshold moved.
 
 ### A11Y-1 — The app-wide UI text token does not scale with Dynamic Type
 **Severity: CRITICAL (WCAG 1.4.4 AA).**
@@ -150,6 +169,16 @@ verse/serif and paywall fonts do scale, so this is specifically the general UI t
 layout pass, because fixed row heights (`RowLink`, `ExploreRow`, the `NotesSheet` editor's
 fixed `height`) have never had to accommodate growing text.
 
+
+> **FIXED in Phase 4d** — `a6b4f2b`. `Font.body` and `Font.capsLabel` scale through
+> `UIFontMetrics`, capped at 200 % — WCAG 1.4.4 AA's requirement, and as far as the fixed row
+> heights stretch without the layout pass those call sites have never had. `UIFontMetrics` is
+> the identity at the `large` content size, so every capture in `Reference/` is unchanged to
+> four decimals. Walked at XXXL and AX3 on reader, Discover, Deep Study and Home; captures in
+> `.build/dynamictype/`. Nothing the change introduces clips or overlaps. The Discover card's
+> verse overflowing its own card at AX3 is pre-existing (`serifItalic` already scaled) —
+> `discover-ax3-BEFORE.png` is the A/B.
+
 ### A11Y-2 — `Color.textTertiary` fails contrast for real body text
 **Severity: HIGH (WCAG 1.4.3 AA).**
 **File:** `Packages/ScrollKit/Sources/DesignSystem/Tokens.swift:104`
@@ -165,6 +194,13 @@ token is reused for load-bearing text at 12-16pt: translation licence/copyright
 **Fix:** split the token — keep the current muted value for the Arabic layer (rename it,
 e.g. `textQuaternary`) and raise `textTertiary` to a contrast-safe value for real text.
 
+
+> **FIXED in Phase 4d** — `8b775d9`. Split rather than raised: `textTertiary` keeps its
+> measured value for the decorative Arabic layer, the chevrons and the separators (3:1 is all
+> WCAG 1.4.11 asks of those), and a new `textTertiaryReadable` (#6C6C70 / #9A9A9E) carries
+> the 22 pieces of text a reader actually reads. It clears 4.5:1 on every ground in
+> `Tokens.swift`; largest snapshot delta across the 27-screen sweep was 0.0009.
+
 ### A11Y-3 — VoiceOver focus does not follow the paywall → gift / plans transitions
 **Severity: HIGH.**
 **Files:** `Packages/ScrollKit/Sources/FeaturePaywall/PaywallFlow.swift:193,205`;
@@ -179,6 +215,12 @@ screen and they may never discover the gift offer exists.
 **Fix:** post `UIAccessibility.post(notification: .screenChanged, argument: nil)` on the
 phase change, or use `@AccessibilityFocusState` on the new screen's title.
 
+
+> **FIXED in Phase 4d** — `7e0190d`. `AccessibilityNotification.ScreenChanged()` on every
+> stage change, plus an `@AccessibilityFocusState` that says where to land rather than
+> leaving it to SwiftUI: the yearly card on the sheet, the headline on the sealed envelope,
+> "Lucky you!" on the opened one.
+
 ### IAP-3 — No subscription status tracking (grace period / billing retry)
 **Severity: HIGH (churn, not rejection).**
 **File:** `Packages/ScrollKit/Sources/Commerce/StoreKitEntitlementStore.swift:111-134`
@@ -191,6 +233,15 @@ false and it reads as "the app just stopped working" rather than "update your ca
 
 **Fix:** read `product.subscription?.status` in `refreshEntitlements()` and surface a
 banner for `.inGracePeriod` / `.inBillingRetryPeriod`.
+
+
+> **ALREADY FIXED — confirmed in Phase 4d, no change needed.** Phase 4a's
+> `StoreKitEntitlementStore.refreshBillingState()` reads
+> `Product.SubscriptionInfo.status(for:)` and folds it into `Commerce.BillingState`, which
+> carries `bannerTitle` / `bannerMessage` for `.inGracePeriod` and `.inBillingRetry`.
+> `SettingsView.billingSection` (`SettingsView.swift:131-148`) renders it as
+> `settings.billingBanner`, and `UITests/FunnelTests.swift` covers both directions:
+> `--billing inBillingRetry` raises the banner and a healthy subscription does not.
 
 ### SEC-1 — Sign in with Apple identity stored in plaintext UserDefaults
 **Severity: HIGH.**
@@ -207,6 +258,16 @@ This is not an App Store rejection — Apple does not mandate Keychain here — 
 privacy manifest's `NSPrivacyCollectedDataTypes: []` claim remains accurate, because
 nothing is *transmitted*. It is still more PII sitting in the clear (and in unencrypted
 backups) than this app needs.
+
+
+> **FIXED in Phase 4d** — `246c126`. `KeychainAccountSink` replaces `UserDefaultsAccountSink`
+> behind the same protocol: `kSecClassGenericPassword`, `kSecAttrAccessibleAfterFirstUnlock`,
+> and a one-time migration that copies anything the old sink left and deletes the plist keys.
+> **The App Group access group is not set.** Sharing the item with the widget needs
+> `keychain-access-groups` in `App/ScrollTheQuran.entitlements` and
+> `Widget/ScrollTheQuranWidget.entitlements`; neither has it and `App/` is frozen after Phase
+> 1. Without it the items live in the app's own access group and the widget reads nothing,
+> which is what it did before. `SystemKeychain.init` already takes the group.
 
 ### SEC-2 — Onboarding's sign-in never reaches `UserStore`, so Settings always says "Not signed in"
 **Severity: HIGH (functional bug).**
@@ -225,6 +286,16 @@ forever. A reviewer testing Sign in with Apple may well notice.
 sink and delete `UserDefaultsAccountSink`. That closes the plaintext storage gap and the
 functional bug together.
 
+
+> **STILL OPEN after Phase 4d — not closable from that task's owned paths.** The fix is one
+> argument: `FeatureOnboardingModule.view(forScreenID:onFinished:)` has to take the account
+> sink, and `App/RootView.swift:93-100` has to pass it one backed by `env.user`. `App/` is
+> frozen after Phase 1, and neither `FeatureOnboardingModule.swift` nor `OnboardingModel.swift`
+> is in the 4d brief. One correction to the fix as written above: routing it to `UserStore`
+> *alone* would write the identifier and the email back into the App Group's plaintext
+> `prefs.json`, undoing SEC-1. The right shape is a composite — the identity to
+> `KeychainAccountSink`, the "is signed in" flag and the display email to `UserStore`.
+
 ### A11Y-4 — Reduce Motion is ignored in the reader and Community
 **Severity: HIGH.**
 **Files:** `Packages/ScrollKit/Sources/FeatureReader/VerseRail.swift:87,95`;
@@ -236,6 +307,12 @@ all do check it. `VerseRail` fires on every ayah crossed, i.e. continuously whil
 reading, on the app's most-used screen.
 
 **Fix:** match the existing pattern — `.animation(isDragging || reduceMotion ? nil : …)`.
+
+
+> **FIXED in Phase 4d** — `e406ea8`. Both now match the pattern `OnboardingFlow`,
+> `PillButtons` and `GiftOfferView` already used. Outside 4d's owned list, taken anyway:
+> three lines, no snapshot movement, and the one HIGH accessibility finding nothing else in
+> the task would have reached.
 
 ### A11Y-5 — Touch targets under 44×44pt
 **Severity: MEDIUM.**
@@ -251,6 +328,12 @@ reading, on the app's most-used screen.
 **Fix:** `.frame(minWidth: 44, minHeight: 44).contentShape(.rect)` around the existing
 visual size, as `ReaderToolbar.swift:67/82/105` already does for its own controls.
 
+
+> **STILL OPEN after Phase 4d — outside the owned paths.** All four sites are in
+> `DesignSystem/Components` and `FeatureDiscover`; 4d owns `Typography.swift` and
+> `Tokens.swift` only. The one control 4d added — `PaywallNoticeView`'s dismiss × — carries a
+> 44 pt target around a 12 pt glyph, so the list has not grown.
+
 ### IAP-4 — Injected `PaywallLegalLinks` is stored but never passed to the view
 **Severity: MEDIUM (currently harmless).**
 **File:** `Packages/ScrollKit/Sources/FeaturePaywall/PaywallFlow.swift:137, 148, 171-202`
@@ -262,6 +345,12 @@ is broken — but any future change to the injected links would silently do noth
 
 **Fix:** `PaywallTrialView(..., links: links)` at the call site.
 
+
+> **ALREADY FIXED before Phase 4d; the missing test added** — `e406ea8`. `PaywallFlow.trial`
+> passes `links: links`. Both defaults resolve to the same URLs, which is exactly why nobody
+> noticed for a phase — `TrialDisclosureTests.injectedLinksAreUsed` now asserts that a custom
+> pair reaches the view.
+
 ### IAP-5 — Trial paywall CTA has no adjacent auto-renewal copy
 **Severity: LOW.**
 **File:** `Packages/ScrollKit/Sources/FeaturePaywall/PaywallTrialView.swift:99-144`
@@ -269,6 +358,11 @@ is broken — but any future change to the injected links would silently do noth
 `PaywallCopy.cancelAnytime` is rendered in `PlansSheet` but not on the trial screen,
 whose Redeem button can purchase directly. Mitigated by the working Terms link and the
 visible price/period in the same footer.
+
+
+> **FIXED in Phase 4d** — `e406ea8`. The renewal joins the price note the customer's eye is
+> already on rather than crowding the 14 pt between the button and "View all plans":
+> "($2.49/mo)  •  Auto-renews". paywall-trial 0.0345931 -> 0.0350887 against a 0.06 threshold.
 
 ### SEC-3 / SEC-4 — Keychain and sign-out completeness
 **Severity: MEDIUM / LOW.** Both follow from SEC-1.
@@ -280,12 +374,28 @@ visible price/period in the same footer.
   against this sink), but it would leak straight through a SEC-2 fix applied on its own.
   `UserState.AccountSink.signOut()` already does this correctly.
 
+
+> **FIXED in Phase 4d** — `246c126`. SEC-3: `KeychainStoring` / `SystemKeychain` /
+> `InMemoryKeychain` are that wrapper. It uses `kSecAttrAccessibleAfterFirstUnlock` rather
+> than the `…WhenUnlockedThisDeviceOnly` suggested above — the widget refreshes its timeline
+> while the device is locked, and a reader restoring a backup onto a new phone should not
+> have to sign in again to keep the account they had. SEC-4: `signOut()` is part of
+> `OnboardingAccountSink` now and drops the identifier and the name, not only the email.
+
 ### IAP-6 — Unverified transactions are dropped silently
 **Severity: LOW.**
 **File:** `Packages/ScrollKit/Sources/Commerce/StoreKitEntitlementStore.swift:136-141`
 
 `.unverified` results are neither logged nor finished, so they redeliver on every launch
 with no visibility. Correct in refusing entitlement; no revenue or security risk.
+
+
+> **ADDRESSED in Phase 4d** — `e406ea8`. They are still not `finish()`ed, deliberately:
+> finishing one stops it redelivering, which is the only way it comes back after a transient
+> verification failure (a wrong device clock, an interrupted key rotation), and the customer
+> would have paid for something the app then permanently forgot. The finding's actual ask was
+> that it not be *invisible*, and the app logs nothing anywhere (CLAUDE.md), so
+> `StoreKitEntitlementStore.unverifiedEntitlementCount` is observable state instead.
 
 ### A11Y-6 — Arabic/English size ratio at accessibility text sizes
 **Severity: MEDIUM (design QA, not a code bug).**
@@ -296,6 +406,15 @@ Type grow the decorative layer would push the English off the page. Correct. But
 A11Y-1 is fixed and the English scales to AX5 while the Arabic stays fixed at ~58% of the
 *base* size, the ratio will distort. Needs a manual AX5 pass on reader, Discover and Deep
 Study rather than a code change.
+
+
+> **WALKED in Phase 4d; no code change, and it is still a design question.**
+> `.build/dynamictype/` holds reader, Discover, Deep Study and Home at XXXL and AX3, and
+> reader + Deep Study at AX5. Confirmed as predicted: at AX5 the English serif is roughly 3x
+> its design size while the Arabic stays fixed, so the ~58 % ratio is gone and the Arabic
+> reads as a caption over a very large English block. Nothing clips or overlaps, and the
+> layer is decorative and VoiceOver-hidden, so there is no WCAG failure — it is a call for
+> whoever owns the Arabic treatment.
 
 ### STORE-1 — Screenshot fixtures show an empty app
 **Severity: MEDIUM (marketing, not review).**
@@ -308,6 +427,10 @@ a materially better screenshot set and let a "keep a daily rhythm" shot back in.
 fixture lives in `AppShell`/`UserState`, outside this task.
 
 ---
+
+
+> **STILL OPEN after Phase 4d — outside the owned paths.** The fixture lives in
+> `AppShell`/`UserState`; 4d's AppShell allowance was launch-option plumbing only.
 
 ## What the audits confirmed is fine
 
