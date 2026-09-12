@@ -96,10 +96,10 @@ def main():
     # --- reader card + glyphs ----------------------------------------------
     card_ctx = tmp()
     run("magick", "-size", "600x600", "xc:#121214",
-        A / "Logo/logo-card-288.png", "-gravity", "center", "-composite", card_ctx)
+        A / "Logo/logo-card-336.png", "-gravity", "center", "-composite", card_ctx)
     cardl_ctx = tmp()
     run("magick", "-size", "600x600", "xc:#FAFAFC",
-        A / "Logo/logo-card-light-288.png", "-gravity", "center", "-composite", cardl_ctx)
+        A / "Logo/logo-card-light-336.png", "-gravity", "center", "-composite", cardl_ctx)
     glyphs = tmp()
     run("magick", "-size", "600x220", "xc:#121214",
         "(", A / "Icons/icon-lock-192.png", ")", "-gravity", "west", "-geometry", "+40+0",
@@ -109,8 +109,8 @@ def main():
     run("magick", glyphs, A / "Icons/icon-check-192.png", "-gravity", "east",
         "-geometry", "+40+0", "-composite", glyphs)
     rows.append(("Reader logo card & paywall glyphs", [
-        cell(card_ctx, "Logo/logo-card-288.png\n@3x of a 96pt card"),
-        cell(cardl_ctx, "Logo/logo-card-light-288.png\nlight-mode variant"),
+        cell(card_ctx, "Logo/logo-card-336.png\n@3x of a 112pt card"),
+        cell(cardl_ctx, "Logo/logo-card-light-336.png\nlight-mode variant"),
         cell(glyphs, "Icons/icon-{lock,bell,check}-*.png\n64/128/192 white, transparent",
              w=CELL_W * 2 + PAD),
     ]))

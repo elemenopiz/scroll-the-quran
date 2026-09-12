@@ -39,7 +39,7 @@ checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`,
 | script | what it makes |
 | --- | --- |
 | `tools/logo.sh` | **app icon, bare marks and logo cards, from the supplied logo** |
-| `tools/mark.py` | superseded octagram+crescent geometry, kept for the wax seal |
+| `tools/mark.py` | superseded octagram+crescent geometry, no longer used by the app |
 | `tools/compose.py` | superseded app-icon / logo-card / bare-mark SVG documents |
 | `tools/envelope.py` | closed + opened gift envelope, wax seal |
 | `tools/clouds.py` | the warm-beige cloud sky |
@@ -66,12 +66,17 @@ variant's edges). One master, one origin, three inks:
 | dark | `#0B0B0D` | light grounds — light app icon, `logo-card-light`, `mark-black` |
 | light | `#FFFFFF` | dark grounds — dark/mono app icon, `logo-card`, `mark-white` |
 
-The mark sits at **78 %** of the app-icon canvas and **74 %** of the logo card
-(94 pt card, 70 pt mark — `ReaderMetrics`).
+The mark sits at **86 %** of the app-icon canvas and **80 %** of the logo card
+(112 pt card, 90 pt mark — `ReaderMetrics`). Phase 4e grew both on the owner's
+direction that the mark should read bigger inside and out; at 86 % the ring's
+diagonal finials still clear iOS's corner mask with room to spare, which
+`AppIcon/icon-masked-60.png` shows at the size it is judged on.
 
 The previous mark — a constructed rub' al-hizb octagram with a crescent in the
-central void (`tools/mark.py`, `tools/compose.py`) — is superseded. Its geometry
-is still used for the figure struck into the gift envelope's wax seal.
+central void (`tools/mark.py`, `tools/compose.py`) — is superseded everywhere,
+the gift envelope's wax seal included: Phase 4e strikes **this** ring into the
+wax (`FeaturePaywall/EnvelopeArt.swift`, two tinted `BrandMark` copies offset
+1 pt apart for the emboss), so there is no second mark left in the app.
 
 ## Files
 
@@ -79,9 +84,11 @@ is still used for the figure struck into the gift envelope's wax seal.
 
 | file | size | purpose | how generated |
 | --- | --- | --- | --- |
-| `appicon-1024.png` | 1024×1024 | App Store / light icon. **No alpha.** | `tools/logo.sh`; black logo at 78 % on `src/appicon-ground.svg`, a warm off-white radial ground |
+| `appicon-1024.png` | 1024×1024 | App Store / default icon. **No alpha.** | `tools/logo.sh`; white logo at 86 % on `src/appicon-ground-gray.svg`, a `#3C3C41 → #2F2F34` radial ground |
 | `appicon-180.png` | 180×180 | iPhone @3x preview. No alpha. | downscale of the 1024 |
-| `appicon-dark-1024.png` | 1024×1024 | iOS 18 dark icon variant. No alpha. | white logo on `src/appicon-ground-dark.svg`, a near-black radial ground |
+| `appicon-dark-1024.png` | 1024×1024 | iOS 18 dark icon variant. No alpha. | byte-identical to the default: the app is dark, so both appearances use the one grey ground |
+| `icon-masked-60.png` | 180×180 | the shipped icon under iOS's corner mask at 60 pt — the clearance check, not a shipped asset | `tools/logo.sh` |
+| `icon-candidates.png` | 720×540 | the three greys the owner was offered (`#5A5A60`, `#3C3C41`, `#2A2A2E`), flat on the top row and masked at 60 pt on the bottom. `#3C3C41` ships. | `tools/logo.sh` |
 | `appicon-mono-1024.png` | 1024×1024 | iOS 18 tinted/mono layer | white logo on flat black |
 
 The icon is drawn edge-to-edge with no rounded corner — iOS applies its own mask.
@@ -94,8 +101,8 @@ The icon is drawn edge-to-edge with no rounded corner — iOS applies its own ma
 | `mark-black-512.png` | 512×512 | black logo, transparent | `tools/logo.sh` |
 | `mark-white-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark (paywall header) | `tools/logo.sh` |
 | `mark-black-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark | `tools/logo.sh` |
-| `logo-card-96/192/288.png` | 96/192/288 | the reader's centred logo card, @1x/@2x/@3x of 96 pt — white logo in a `#1E1E23` rounded square (corner radius 21.75 % of the side) | `tools/logo.sh` |
-| `logo-card-light-96/192/288.png` | 96/192/288 | light-appearance card (`#EFEDE7` ground, black logo) | `tools/logo.sh` |
+| `logo-card-112/224/336.png` | 112/224/336 | the reader's centred logo card, @1x/@2x/@3x of 112 pt — white logo in a `#1E1E23` rounded square (corner radius 21.75 % of the side) | `tools/logo.sh` |
+| `logo-card-light-112/224/336.png` | 112/224/336 | light-appearance card (`#EFEDE7` ground, black logo) | `tools/logo.sh` |
 
 In app code use **`BrandMark`** (`DesignSystem/Components/BrandMark.swift`), which picks
 `LogoMarkWhite` / `LogoMarkBlack` off the colour scheme and falls back to a drawn ring when
