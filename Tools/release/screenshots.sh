@@ -6,7 +6,9 @@
 #   Tools/release/screenshots.sh --frames-only   # re-frame the captures in .build/screenshots
 #   Tools/release/screenshots.sh --keep-booted   # leave the simulator running afterwards
 #
-# Each screen is launched through the app's own `--screenshot <route>` entry point with
+# Each screen is launched through the app's own `--screenshot <route>` entry point (plus
+# `--reset-state`, so a stale App Group container from a UI-test run cannot leak into
+# the marketing captures) with
 # SCROLL_FIXED_DATE pinned, so the captures are deterministic (same streak, same date,
 # same fixture verses) and premium content is unlocked by the fixture entitlement store.
 #
@@ -179,7 +181,7 @@ print(next((x["state"] for v in d.values() for x in v if x["udid"]=="'"$SIM"'"),
     xcrun simctl ui "$SIM" appearance "$appearance" >/dev/null 2>&1 || true
     xcrun simctl terminate "$SIM" "$APP_BUNDLE_ID" >/dev/null 2>&1 || true
     SIMCTL_CHILD_SCROLL_FIXED_DATE="$FIXED_DATE" \
-      xcrun simctl launch "$SIM" "$APP_BUNDLE_ID" --screenshot "$route" >/dev/null \
+      xcrun simctl launch "$SIM" "$APP_BUNDLE_ID" --screenshot "$route" --reset-state >/dev/null \
       || die "could not launch --screenshot $route"
     # Wait for the screen to actually draw, then prove that it did. The routes that read
     # a study shard (discover, deepstudy) reach first paint noticeably later than the
