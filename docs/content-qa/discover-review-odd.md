@@ -117,3 +117,23 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 35:1 | 4 | The five praise-opening surahs (1, 6, 18, 34, 35) are correctly listed; the clause about them sitting "in sequence" is muddled but not false. | kept |
 | 35:5 | 3 | `didYouKnow` called 31:33 "the previous surah" and "four ayat apart in the reading order"; neither is true of 31:33 and 35:5. | rewritten |
 | 35:15-17 | 5 | 35:16-17 verified as word for word identical with 14:19-20. | kept |
+| 35:27-28 | 5 | `غرابيب` verified as a hapax; the awe-follows-attention reading is grounded and non-sectarian. | kept |
+| 35:29 | 5 | 2:282 really is the longest ayah; commercial vocabulary used without turning the note into a transaction. | kept |
+| 37:96-100 | 4 | `didYouKnow` said the fire gets one word, the one for the built structure; 37:97 also names the blaze itself. | rewritten |
+| 39:9 | 5 | The unfinished comparison is exactly as described; knowledge tied to the body rather than to study. | kept |
+| 39:10 | 5 | The reward without a count attached specifically to patience is a real and classically noted point. | kept |
+| 39:53 | 5 | `جميعا` doing the generalising work is right; the two ayat that follow correctly kept in view. | kept |
+| 39:73 | 5 | The extra connective against 39:71 is the classical crux, and both readings of it are reported. | kept |
+| 41:30 | 5 | Duration rather than achievement as the condition; 46:13 and 2:38 both apt. | kept |
+| 41:33-35 | 4 | The repeated clause in 41:35 is correctly described and the difficulty is stated honestly; "the Prophet" lacked the honorific. | rewritten |
+| 41:44 | 5 | The surah's name-verb reappearing inside the objectors' imagined complaint is exact and elegant. | kept |
+| 43:32 | 5 | Mutual service reading is the mainstream one; provision separated from worth without moralising. | kept |
+| 43:67-70 | 5 | The shared root with Abraham's title is correct; friendship treated as instrument, not as blame. | kept |
+| 45:13 | 5 | The seven-surah run from 40 to 46 opening with the same letters checks out; 45:28 supplies the name. | kept |
+| 45:23 | 3 | `didYouKnow` claimed 2:7 seals the same faculties "in the same order"; 2:7 runs hearts-hearing-sight, this ayah hearing-heart-sight. | rewritten |
+| 47:5-8 | 5 | "Help to God" handled exactly as the commentators do; the promise is footing, not victory. | kept |
+| 47:19 | 5 | The hadith collection's chapter heading on knowledge is a real and checkable detail. | kept |
+| 47:31 | 5 | "Until We know" given the standard reading; 3:142 does use the same two words. | kept |
+| 49:10 | 4 | The dual "your two brothers" is the point of the ayah and is well made; "the Prophet" lacked the honorific. | rewritten |
+| 49:11-13 | 5 | `شعوبا` verified as a hapax; backbiting defined by absence rather than by falsehood, which is the classical definition. | kept |
+| 51:11-15 | 5 | Four oaths in four ayat with the answer at the fifth is correct; the demand for a date refused rather than answered. | kept |
