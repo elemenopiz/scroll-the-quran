@@ -354,7 +354,7 @@ never reads it at runtime for purchasing, so the two do not have to match. Keep
 | Product ID | `com.scrollthequran.yearly` |
 | Reference Name (internal) | `Premium Yearly` |
 | Display Name (30 char limit) — 14 used | `Premium Yearly` |
-| Description (45 char limit) — 44 used | `Deep Study, every plan, every translation.` |
+| Description (45 char limit) — 42 used | `Deep Study, every plan, every translation.` |
 | Duration | 1 year |
 | Price (USA) | **$29.99** (Tier equivalent; set USD 29.99 and let ASC generate the rest) |
 | Subscription level in group | 1 |
@@ -368,7 +368,7 @@ never reads it at runtime for purchasing, so the two do not have to match. Keep
 | Product ID | `com.scrollthequran.monthly` |
 | Reference Name (internal) | `Premium Monthly` |
 | Display Name (30 char limit) — 15 used | `Premium Monthly` |
-| Description (45 char limit) — 44 used | `Deep Study, every plan, every translation.` |
+| Description (45 char limit) — 42 used | `Deep Study, every plan, every translation.` |
 | Duration | 1 month |
 | Price (USA) | **$4.99** |
 | Subscription level in group | 2 |
@@ -382,7 +382,7 @@ never reads it at runtime for purchasing, so the two do not have to match. Keep
 | Product ID | `com.scrollthequran.yearly.gift` |
 | Reference Name (internal) | `Premium Yearly Gift` |
 | Display Name (30 char limit) — 21 used | `Premium Yearly (Gift)` |
-| Description (45 char limit) — 41 used | `A year of Premium at 33% off. One time.` |
+| Description (45 char limit) — 39 used | `A year of Premium at 33% off. One time.` |
 | Duration | 1 year |
 | Price (USA) | **$19.99** (33% below the $29.99 yearly) |
 | Subscription level in group | 1 |
