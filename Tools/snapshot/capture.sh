@@ -13,6 +13,13 @@
 # overwrite the capture the RMSE gate compares. There is no reference for the
 # off-appearance shot; it is for looking at.
 #
+# **State.** Every launch carries `--reset-state`, which makes the app wipe the App Group
+# container before it builds anything. Without it a capture reads whatever the last run
+# left there — a UI test's PICKTHALL, a plan someone started — and the score silently
+# stops measuring the design: `plan-detail` scored 0.138 on a clean container and 0.179 on
+# a dirty one, from the same build. Set SCROLL_CAPTURE_RESET=0 to capture the container's
+# real contents instead.
+#
 # **Waiting for first paint.** `SCROLL_CAPTURE_SETTLE` (default 6 s) is how long to give
 # SwiftUI before shooting, and the shot is then *checked*: a screen that has not drawn is
 # a perfectly flat rectangle, so the capture's standard deviation away from the status bar
@@ -29,6 +36,7 @@ BUNDLE_ID="com.scrollthequran.app"
 FIXED_DATE="${SCROLL_FIXED_DATE:-2026-09-14}"
 SETTLE="${SCROLL_CAPTURE_SETTLE:-6}"
 TRIES="${SCROLL_CAPTURE_TRIES:-3}"
+RESET="${SCROLL_CAPTURE_RESET:-1}"
 
 ID="${1:-}"
 [ -n "$ID" ] || { echo "usage: capture.sh <screen-id> [--no-launch] [--appearance light|dark]" >&2; exit 2; }
@@ -86,8 +94,10 @@ OUT="$OUTDIR/$OUT_ID.png"
 if [ "$LAUNCH" -eq 1 ]; then
   xcrun simctl ui "$SIM" appearance "$appearance" >/dev/null 2>&1 || true
   xcrun simctl terminate "$SIM" "$BUNDLE_ID" >/dev/null 2>&1 || true
+  launch_args=(--screenshot "$route")
+  [ "$RESET" = 1 ] && launch_args+=(--reset-state)
   SIMCTL_CHILD_SCROLL_FIXED_DATE="$FIXED_DATE" \
-    xcrun simctl launch "$SIM" "$BUNDLE_ID" --screenshot "$route" >/dev/null
+    xcrun simctl launch "$SIM" "$BUNDLE_ID" "${launch_args[@]}" >/dev/null
   # Give SwiftUI a beat to lay out and any animation to settle, then prove it drew.
   painted=0
   for attempt in $(seq 1 "$TRIES"); do
