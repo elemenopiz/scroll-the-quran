@@ -50,7 +50,8 @@ struct StudyCopyButton: View {
                 .foregroundStyle(Color.textSecondary)
                 .frame(width: 28, height: 28)
                 // 28 pt glyph box, 44 pt hit target (audit A11Y-5).
-                .contentShape(Rectangle().inset(by: -8))
+                .contentShape(.interaction, Rectangle().inset(by: -8))
+                .contentShape(.accessibility, Rectangle())
         }
         .buttonStyle(.pressable)
         .accessibilityLabel("Copy \(section.displayTitle.lowercased())")
@@ -181,7 +182,8 @@ struct ExploreRow: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.rowBackground, in: .rect(cornerRadius: DeepStudyMetrics.rowRadius, style: .continuous))
         // Rows are 41 pt by measurement; the hit target reaches 44 (audit A11Y-5).
-        .contentShape(Rectangle().inset(by: -1.5))
+        .contentShape(.interaction, Rectangle().inset(by: -1.5))
+        .contentShape(.accessibility, Rectangle())
         .onTapGesture(perform: open)
         .accessibilityElement(children: .combine)
         .accessibilityAddTraits(.isButton)

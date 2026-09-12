@@ -45,7 +45,8 @@ public struct CapsuleIconGroup: View {
                         .padding(.horizontal, Metrics.capsuleGroupItemPadding)
                         .frame(height: Metrics.capsuleGroupHeight)
                         // 36 pt visual, 44 pt hit target (audit A11Y-5) without moving a pixel.
-                        .contentShape(Rectangle().inset(by: -(Metrics.hitTarget - Metrics.capsuleGroupHeight) / 2))
+                        .contentShape(.interaction, Rectangle().inset(by: -(Metrics.hitTarget - Metrics.capsuleGroupHeight) / 2))
+                        .contentShape(.accessibility, Rectangle())
                 }
                 .buttonStyle(.pressable)
                 .accessibilityLabel(item.label)
