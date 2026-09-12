@@ -22,6 +22,9 @@ import { ROOT, dailyMinutes, parseRef, surah } from "./plans/mushaf.mjs";
 const COVER_SLUGS = new Set([
     "mushaf-page", "prayer-beads", "geometric-tile", "dawn-light",
     "lantern", "ink-wash", "desert-dune", "olive-branch",
+    "night-window", "crescent-sky", "morning-doorway", "caravan-road",
+    "wheat-and-well", "open-hands", "rain-on-stone", "writing-board",
+    "stacked-volumes", "first-page",
 ]);
 
 const ABOUT_WORDS = [60, 120];
