@@ -53,6 +53,10 @@ public struct GiftOfferView: View {
 
     // MARK: - Closed
 
+    private var closedEnvelopeArt: CGRect {
+        PaywallMetrics.closedEnvelopeArt()
+    }
+
     private var closedState: some View {
         ZStack(alignment: .top) {
             Color.clear
@@ -62,15 +66,14 @@ public struct GiftOfferView: View {
                 .accessibilityLabel(PaywallCopy.giftReveal)
                 .accessibilityAddTraits(.isButton)
 
+            // The artwork's canvas carries margin around the paper, so the frame is the
+            // canvas rect that lands the paper on the reference's envelope.
             SealedEnvelope()
-                .frame(
-                    width: PaywallMetrics.closedEnvelope.width,
-                    height: PaywallMetrics.closedEnvelope.height
-                )
+                .frame(width: closedEnvelopeArt.width, height: closedEnvelopeArt.height)
                 .rotationEffect(.degrees(PaywallMetrics.closedEnvelopeRotation))
                 .offset(
-                    x: PaywallMetrics.closedEnvelopeCenter.x - PaywallMetrics.referenceWidth / 2,
-                    y: PaywallMetrics.closedEnvelopeCenter.y - PaywallMetrics.closedEnvelope.height / 2
+                    x: closedEnvelopeArt.midX - PaywallMetrics.referenceWidth / 2,
+                    y: closedEnvelopeArt.minY
                 )
                 .allowsHitTesting(false)
 
@@ -169,13 +172,13 @@ public struct GiftOfferView: View {
         }
     }
 
-    /// The card that slides out of the envelope: "One Time Offer / 33% OFF / +3 day trial".
+    /// The copy on the card that stands out of the envelope: "One Time Offer / 33% OFF /
+    /// +3 day trial". The paper under it is `GiftArt.card`, drawn by `OpenedEnvelope`,
+    /// which also clips both at the pocket's mouth.
     private var offerCard: some View {
         let cardTop = PaywallMetrics.openEnvelopeGeometry.card.minY
         return ZStack(alignment: .top) {
-            RoundedRectangle(cornerRadius: 14)
-                .fill(GiftPalette.offerCard)
-                .shadow(color: GiftPalette.envelopeShade.opacity(0.3), radius: 8, y: 4)
+            Color.clear
 
             Text(PaywallCopy.oneTimeOffer)
                 .font(.geoRegular(PaywallMetrics.oneTimeOfferSize))

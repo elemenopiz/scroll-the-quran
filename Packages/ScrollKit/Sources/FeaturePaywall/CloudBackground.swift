@@ -1,12 +1,37 @@
 import DesignSystem
 import SwiftUI
 
-/// The warm paper sky behind both gift screens: a flat `GiftPalette.paper` ground with
-/// soft light blooms where the reference has clouds.
+/// The warm paper sky behind both gift screens: the generated `GiftClouds` render, toned
+/// to `Reference/gift-closed.png`'s own sky band by `Artwork/tools/gift-assets.sh`.
 ///
-/// Positions are given in the 393x852 reference space and scaled to whatever the screen
-/// is, so the composition survives a taller device.
+/// Without the app's asset catalog it falls back to the drawn version below — a flat
+/// `GiftPalette.paper` ground with soft light blooms where the reference has clouds,
+/// positioned in the 393x852 reference space and scaled to whatever the screen is, so the
+/// composition survives a taller device.
 struct CloudBackground: View {
+    var body: some View {
+        Group {
+            if let sky = GiftArt.layer(GiftArt.clouds) {
+                // The render is cut to 1179x2556 — the reference canvas's own aspect — so
+                // filling the canvas neither stretches it nor crops anything.
+                sky
+                    .resizable()
+                    .interpolation(.high)
+                    .scaledToFill()
+                    .frame(
+                        width: PaywallMetrics.referenceWidth,
+                        height: PaywallMetrics.referenceHeight
+                    )
+                    .clipped()
+            } else {
+                DrawnCloudBackground()
+            }
+        }
+        .accessibilityHidden(true)
+    }
+}
+
+private struct DrawnCloudBackground: View {
     /// Centre and radius in reference points, plus the tint and how opaque the bloom is.
     private struct Bloom {
         let center: CGPoint
