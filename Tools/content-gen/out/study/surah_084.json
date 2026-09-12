@@ -1,8 +1,66 @@
 {
   "surah": 84,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:24:18.249Z",
+  "generatedAt": "2026-09-09T16:14:34.004Z",
   "studies": [
+    {
+      "key": "84:1-5",
+      "surah": 84,
+      "start": 1,
+      "end": 5,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "It Listened, As It Must",
+      "tier": "standard",
+      "meaning": "Two things are described coming apart, and both are described obeying. The sky splits and gives ear to its Lord; the earth is stretched flat, throws out everything inside it and empties itself, and then gives ear in exactly the same words. The repeated line is the point. Neither is said to be destroyed. Both are said to have listened and to have done what was rightly required of them, so the dismantling of the world is presented as an act of compliance rather than as a collapse.",
+      "historicalContext": "Meccan. The surah opens the way several chapters of this period do, with the undoing of the visible world, but it differs from them by giving the sky and the earth a verb of hearing. The commentators note that difference and treat it as the chapter's keynote. No occasion is reported. The clause about the earth casting out what is in it was heard by an audience who buried their dead in that ground.",
+      "keyTerms": [
+        {
+          "arabic": "أَذِنَتْ",
+          "gloss": "it gave ear, it listened",
+          "note": "From the word for an ear. The verb means to hear and to comply, and Arabic does not separate the two, so listening here already contains the obedience that follows from it."
+        },
+        {
+          "arabic": "وَحُقَّتْ",
+          "gloss": "and it was right to",
+          "note": "A passive from the root meaning truth and what is due. The clause says the obedience was fitting, so the sky is not merely made to comply but described as owing what it gives."
+        },
+        {
+          "arabic": "تَخَلَّتْ",
+          "gloss": "it emptied itself",
+          "note": "A reflexive form meaning to become void of something, used of a place cleared out. It occurs once in the Quran, and it puts the emptying on the earth's own side rather than describing something taken from it."
+        }
+      ],
+      "lifeInProphetsTime": "A tent site was left clean. When a camp moved on, everything was pulled out of the ground, the pits were filled and the place returned to what it had been, and a party arriving later could tell how carefully the last group had done it. The earth casting out its contents and emptying itself uses that vocabulary of clearing a site, applied to the whole ground at once.",
+      "didYouKnow": "The same six-word line appears twice in these five ayat, once after the sky and once after the earth, unchanged. It is one of the few places where the Quran repeats a whole ayah within a handful of lines. The effect is that the two halves of the passage are given the identical verdict, so nothing distinguishes the sky's response from the earth's.",
+      "theologicalSignificance": "The end of the world is described here in the language of obedience, which removes it from the category of disaster. Nothing is broken; something is asked and given. That reframes the whole scene for the human being addressed a line later, because the sky and the earth have just modelled the response, and their compliance is called fitting rather than forced. Everything in the passage does what it owes except, by implication, the reader.",
+      "crossReferences": [
+        {
+          "ref": "41:11",
+          "why": "Has the sky and the earth answer a command by saying they come willingly, in the same register of consent."
+        },
+        {
+          "ref": "99:1-2",
+          "why": "Describes the earth shaken and putting out its burdens, the same emptying under a different verb."
+        },
+        {
+          "ref": "82:1-4",
+          "why": "Opens with the sky splitting and the graves turned out, without any language of listening."
+        }
+      ],
+      "applyIt": "Notice one instruction today that you follow without resisting, because it is obviously right: stopping at a red light, standing when someone older enters. Notice how little of you it costs. That is the posture this passage gives the sky, and it is closer to hand than the vocabulary of obedience usually suggests.",
+      "exploreFurther": [
+        "41:9-12",
+        "99:1-8",
+        "82:1-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:14:33.612Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "84:6-10",
       "surah": 84,
@@ -58,6 +116,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:24:05.725Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "84:11-15",
+      "surah": 84,
+      "start": 11,
+      "end": 15,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "He Thought He Would Not Return",
+      "tier": "standard",
+      "meaning": "The second case completes a comparison the surah left hanging. This man calls for his own destruction and enters a blaze, and then two lines explain how he got there. He was happy among his family, and he assumed he would never come back. The Arabic for coming back is a rare verb about returning to a point of origin. Nothing is said about crimes. The whole account of him is an assumption he made about the shape of his life and the pleasant years that assumption bought.",
+      "historicalContext": "Meccan. The passage answers the previous case point for point: a book in the right hand against a book from behind, a return to family in gladness against gladness among family in this life. The commentators read the parallelism as the design of the surah. No occasion is reported. The confidence being described was widespread among the prosperous households of the city and is quoted directly in other chapters.",
+      "keyTerms": [
+        {
+          "arabic": "ثُبُورًا",
+          "gloss": "destruction, ruin",
+          "note": "The cry of a person calling down his own end, which Arabic treats as a single exclamation rather than a request. It is what a man shouts when there is nothing else available to say."
+        },
+        {
+          "arabic": "يَحُورَ",
+          "gloss": "he would return",
+          "note": "A verb about coming back to a starting point, related to a word for turning something over. It occurs once in the Quran, and the assumption it denies is not about punishment but about there being any return at all."
+        },
+        {
+          "arabic": "بَصِيرًا",
+          "gloss": "seeing, watching",
+          "note": "The intensive form of the word for sight, used here of God in the past tense. The line answers the man's assumption not with a threat but with the fact that he had been in view the whole time."
+        }
+      ],
+      "lifeInProphetsTime": "An evening among family in a prosperous Meccan household was the good life exactly: food from the caravan trade, sons around you, a standing in the valley that meant nobody troubled you. It was not decadence. It was the ordinary reward of a working life, and the surah names it without a word of criticism, then places it beside an assumption the man never examined.",
+      "didYouKnow": "The verb denying a return occurs once in the whole Quran, and the surah uses a related word for the joy of the other man returning to his family six ayat earlier. One man goes back to his people gladly; the other thought there was no going back at all. The two are built on the same idea of return, from opposite sides.",
+      "theologicalSignificance": "What condemns the man is not stated as a deed. It is a settled expectation, described with a verb of thinking, and the answer to it is a divine attribute rather than an argument. His Lord was seeing him. That places the whole case on the question of whether anyone was watching, which is a question about God rather than about morality, and it is the question the man had already answered wrongly in private.",
+      "crossReferences": [
+        {
+          "ref": "84:7-9",
+          "why": "Gives the matching case in this surah, a book in the right hand and a glad return to family."
+        },
+        {
+          "ref": "75:36",
+          "why": "Names the same assumption directly: does the human being think he will be left without purpose."
+        },
+        {
+          "ref": "41:22-23",
+          "why": "Describes people whose assumption that God did not know much of what they did brought them to ruin."
+        }
+      ],
+      "applyIt": "Find the assumption underneath a comfortable stretch of your week, the one you have never said out loud. Something like: this will keep working, or nobody is counting. Write the sentence down in the plainest words you can. The man in this passage was undone by an assumption, and the only defence against one is putting it into words.",
+      "exploreFurther": [
+        "75:31-40",
+        "41:19-25",
+        "69:19-32"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:14:33.632Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "84:16-20",
+      "surah": 84,
+      "start": 16,
+      "end": 20,
+      "theme": "Night and Day",
+      "themeId": "night-and-day",
+      "title": "Stage After Stage",
+      "tier": "standard",
+      "meaning": "Three oaths, and all three are the same hour seen at different points. The red light after sunset, the night and what it gathers in, and the moon when it comes together into a full disc. Each names a thing at a stage of a process rather than in a state. Then the claim they support, and it is about the reader: you will ride one stage after another. Scholars read the stages as the phases of a life, or of the resurrection, or of the sky itself, and the sources give all three.",
+      "historicalContext": "Meccan. The oath series interrupts a passage about the two books and the two outcomes, and the commentators read it as supplying the mechanism between them: not a leap from this life to the next but a series of stages already under way. No occasion is reported. The audience navigated and timed their whole lives by exactly these three markers, so the oaths are sworn on the instruments of ordinary reckoning.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلشَّفَقِ",
+          "gloss": "the red glow at dusk",
+          "note": "The colour left in the western sky after the sun has gone. It occurs once in the Quran, and its root also gives the word for tender concern, the softness of feeling that matches the softness of the light."
+        },
+        {
+          "arabic": "وَسَقَ",
+          "gloss": "it gathered in, collected",
+          "note": "To drive scattered things together, used of a herdsman bringing animals in. Night is described as a collector, so what the day dispersed is being assembled rather than merely hidden."
+        },
+        {
+          "arabic": "ٱتَّسَقَ",
+          "gloss": "it became whole, evened out",
+          "note": "The same root as the previous oath in a reflexive form, so the moon does to itself what the night does to the world. Arabic makes the two lines a single image, and the word occurs once in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "The red after sunset was a working signal. It marked the end of a travelling day, the hour to make camp, and the boundary between two prayer times. The moon's shape told a caravan how much light it would have on the road for the coming nights, and men planned departures around the full disc. These were not poetic images; they were the timetable everyone in the valley lived by.",
+      "didYouKnow": "Two of these three oaths come from the same Arabic root, one describing the night gathering things in and the other the moon gathering itself into a full circle. The words look almost identical in the text and rhyme with each other. Both occur once in the Quran, and the surah puts them in consecutive lines so the repetition is heard.",
+      "theologicalSignificance": "The oaths establish gradualness, and the claim they support applies it to the reader. Nothing named here jumps: dusk becomes night, the crescent fills, and a person moves through conditions one at a time. That places the two destinies described earlier in the surah at the end of a process already running, so the last day is presented as the final stage of something continuous rather than as an interruption.",
+      "crossReferences": [
+        {
+          "ref": "71:13-14",
+          "why": "Asks why they do not attribute to God the weight He is due, having created them in stages."
+        },
+        {
+          "ref": "22:5",
+          "why": "Sets out the human stages one by one, from dust to childhood to strength to old age."
+        },
+        {
+          "ref": "10:5",
+          "why": "Gives the moon its measured phases so that the count of years and the reckoning may be known."
+        }
+      ],
+      "applyIt": "Watch the sky once between sunset and full dark, for the ten minutes when the red is going. It is the first thing this passage swears by and almost nobody looks at it deliberately. The rest of the argument is about stages you cannot see moving. This is the one you can.",
+      "exploreFurther": [
+        "71:13-20",
+        "22:5-7",
+        "10:5-6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:14:33.633Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "84:21-25",
+      "surah": 84,
+      "start": 21,
+      "end": 25,
+      "theme": "Prayer",
+      "themeId": "prayer",
+      "title": "When They Do Not Bow",
+      "tier": "standard",
+      "meaning": "A question is asked about them and never given an explanation, only a correction: they are in denial. What sits between the question and the correction is a physical detail. The Quran is recited to them and they do not go down. Not that they argue, walk out or object; they remain standing. Then God is said to know better what they are storing up inside, and the surah closes with an instruction to give them news of a painful punishment, using the verb for good tidings, and one exception.",
+      "historicalContext": "Meccan. Public recitation was the community's main activity and the city's main irritation, and the commentators describe gatherings where the Quran was heard by people who neither accepted it nor could dismiss it. No occasion is reported for these ayat. The prostration described here is one of the places in the Quran where the tradition has long recorded a prostration during recitation, and this surah is among them.",
+      "keyTerms": [
+        {
+          "arabic": "لَا يَسْجُدُونَ",
+          "gloss": "they do not prostrate",
+          "note": "The verb for putting the forehead to the ground. The passage names the absence of a movement rather than of a belief, so what is reported about them is something a bystander could have seen."
+        },
+        {
+          "arabic": "يُوعُونَ",
+          "gloss": "they store up, hold within",
+          "note": "From the word for a vessel or a container. It occurs once in the Quran, and it describes them as keeping something in rather than concealing it, which is a claim about accumulation, not deceit."
+        },
+        {
+          "arabic": "مَمْنُونٍۭ",
+          "gloss": "cut off, diminished",
+          "note": "From a root meaning both to sever and to remind someone of a favour done. Both senses fit: the reward is neither reduced nor held over the recipient's head afterwards."
+        }
+      ],
+      "lifeInProphetsTime": "Prostration was not a neutral gesture. Putting your forehead on the ground in public, in a valley where standing was everything, was a visible surrender of rank, and the earliest accounts of opposition dwell on the humiliation of it rather than on doctrine. A man might accept an argument privately for a long time before he could bring himself to be seen doing that in the open.",
+      "didYouKnow": "The final line of this surah appears almost word for word at the end of a much shorter chapter later in the Quran, and the phrase closing it, a reward not cut off, occurs four times in the Book. The two surahs use the same sentence as an exception clause, so the same escape is granted at the close of two different arguments.",
+      "theologicalSignificance": "Belief is measured here by a body rather than by a state of mind. What is reported is a failure to move, and the explanation offered is not stubbornness but denial hardening inside. Then the instruction uses the verb for announcing good news to announce a punishment, which is not sarcasm but a way of saying the news is certain. The exception at the end keeps the door open in the final line.",
+      "crossReferences": [
+        {
+          "ref": "95:4-6",
+          "why": "Ends with almost this exact sentence about believers and a reward that is not cut off."
+        },
+        {
+          "ref": "17:107-109",
+          "why": "Describes those who fall on their faces when it is recited to them, weeping, as the opposite response."
+        },
+        {
+          "ref": "39:23",
+          "why": "Shows the skins of those who fear their Lord shivering at it, then softening to His remembrance."
+        }
+      ],
+      "applyIt": "The next time you hear the Quran recited, whether you understand it or not, let your body do one thing in response: sit down, stop what you are holding, close your eyes. This passage names people who heard and did not move. The smallest movement is the whole difference it is pointing at.",
+      "exploreFurther": [
+        "17:105-109",
+        "39:22-23",
+        "95:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:14:33.633Z",
         "reviewed": false
       }
     }
