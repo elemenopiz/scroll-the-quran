@@ -87,3 +87,23 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 21:90 | 5 | `رغبا ورهبا` verified as occurring only here; the range on `أصلحنا` reported without settling it. | kept |
 | 21:105-108 | 5 | The mercy clause is five words in Arabic and the restrictive construction is correctly read. | kept |
 | 23:1-11 | 4 | `الفردوس` verified at exactly two places (18:107, 23:11); "two different words" for the prayer frame is loose — it is one word in two numbers. | kept |
+| 23:12-13 | 4 | Sequence and the closing phrase of praise check out; the report of a companion completing it is properly hedged. | kept |
+| 23:96-99 | 4 | Sound; the `didYouKnow` describes the prayers' framing rather than delivering a hard fact. | kept |
+| 23:113-115 | 5 | `عبثا` verified as a hapax; the surah does close on a prayer for forgiveness at 23:118. | kept |
+| 25:20 | 4 | Strong note — the 25:7 / 25:20 repetition thirteen ayat apart is exact — but "the Prophet" was used twice with no honorific. | rewritten |
+| 25:43-44 | 5 | The 7:179 parallel is real; idolatry redefined without naming any group. | kept |
+| 25:63-68 | 4 | `didYouKnow` said the chain closes the surah; it runs to 25:76 and 25:77 breaks off to address the deniers. | rewritten |
+| 25:69-70 | 5 | The exchange of bad deeds for good is unique to 25:70; mercy stated without softening the offences. | kept |
+| 25:74 | 4 | `keyTerms[].arabic` was `ٱلْمُتَّقِينَ`; the passage reads `لِلْمُتَّقِينَ`. Everything else, including the count of quoted prayers in the portrait, is right. | rewritten |
+| 27:19 | 5 | Ants appear in exactly two ayat of the surah, as stated; Solomon's power kept subordinate throughout. | kept |
+| 27:40 | 5 | Surah 27 is the only surah carrying the opening formula twice (27:30); gratitude credited to the grateful. | kept |
+| 27:62 | 3 | `didYouKnow` called the refrain a "five-word challenge" — it is three words — and listed four varying endings for five ayat. | rewritten |
+| 29:1-4 | 5 | Twenty-nine surahs with disconnected letters is the standard count; the tradition's own uncertainty reported honestly. | kept |
+| 29:5-6 | 5 | The striving verb does return in 29:69, the surah's last ayah, as claimed. | kept |
+| 29:20 | 5 | 29:20 really is the only place the travel command is turned toward how creation began. | kept |
+| 29:45 | 5 | `الفحشاء` / `المنكر` distinction is right; both readings of the closing clause given without a winner. | kept |
+| 29:68-69 | 4 | `didYouKnow` said two ayat give the surah its name; `العنكبوت` occurs in one ayah only, 29:41. | rewritten |
+| 31:11-12 | 5 | Luqman correctly not called a prophet, origins reported as the commentators differ. | kept |
+| 31:13-19 | 5 | The two interrupting ayat and the resumed vocative are exactly as described. | kept |
+| 31:27-28 | 5 | The 18:109 parallel with its smaller quantity is correct; "seven" read as indefinite, which is the classical reading. | kept |
+| 31:34 | 5 | `الغيث` verified as rare and tied to relief; two of the five items placed inside the reader's own life. | kept |
