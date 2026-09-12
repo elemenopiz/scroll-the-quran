@@ -25,6 +25,9 @@ public enum Metrics {
     public static let chipHeight: CGFloat = 26
     /// Deep Study cross-reference chip: 1 px hairline, 30 pt tall.
     public static let crossRefChipHeight: CGFloat = 30
+    /// Minimum hit target for any control (HIG / WCAG 2.5.8): visuals may be smaller, the
+    /// content shape is not.
+    public static let hitTarget: CGFloat = 44
     /// Reader toolbar capsule `[dice][heart]`: 106 px = 35.3 pt, rounded up to 36.
     public static let capsuleGroupHeight: CGFloat = 36
     /// Glyph size inside the reader toolbar capsule (40 px).

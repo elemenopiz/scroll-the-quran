@@ -48,7 +48,8 @@ public struct ToastHint: View {
                         .font(.system(size: Metrics.toastCloseGlyph, weight: .medium))
                         .foregroundStyle(Color.textSecondary)
                         .frame(width: Metrics.toastCloseButton, height: Metrics.toastCloseButton)
-                        .contentShape(.rect)
+                        // 44 pt hit target around the 32 pt box (audit A11Y-5).
+                        .contentShape(Rectangle().inset(by: -(Metrics.hitTarget - Metrics.toastCloseButton) / 2))
                 }
                 .buttonStyle(.pressable)
                 .accessibilityLabel("Dismiss")

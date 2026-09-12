@@ -361,10 +361,9 @@ reading, on the app's most-used screen.
 visual size, as `ReaderToolbar.swift:67/82/105` already does for its own controls.
 
 
-> **STILL OPEN after Phase 4d — outside the owned paths.** All four sites are in
-> `DesignSystem/Components` and `FeatureDiscover`; 4d owns `Typography.swift` and
-> `Tokens.swift` only. The one control 4d added — `PaywallNoticeView`'s dismiss × — carries a
-> 44 pt target around a 12 pt glyph, so the list has not grown.
+> **FIXED on main after Phase 4g** — all four sites take a `contentShape(Rectangle().inset(by:))`
+> that reaches 44 pt around the unchanged visual (`Metrics.hitTarget`), so no pixel moved;
+> `PaywallNoticeView`'s dismiss × already carried a 44 pt target.
 
 ### IAP-4 — Injected `PaywallLegalLinks` is stored but never passed to the view
 **Severity: MEDIUM (currently harmless).**
