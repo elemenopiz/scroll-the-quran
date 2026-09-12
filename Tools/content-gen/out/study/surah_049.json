@@ -1,7 +1,7 @@
 {
   "surah": 49,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T16:14:16.048Z",
+  "generatedAt": "2026-09-12T09:13:35.849Z",
   "studies": [
     {
       "key": "49:1",
@@ -348,6 +348,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T16:14:15.473Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "49:8-9",
+      "surah": 49,
+      "start": 8,
+      "end": 9,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Set Things Right Between Them",
+      "tier": "standard",
+      "meaning": "The passage opens by closing the previous thought, calling what was just described a bounty and a favour, and then turns to a situation the surah treats as ordinary rather than shocking: two groups of believers fighting. Reconciliation is named first. The sequence that follows assumes the attempt may fail, and it ends where it began, with setting things right, this time with equity added and repeated as an imperative. The word for the wronging group returning is the word for a shadow coming back, and the whole passage closes on what God loves rather than on a penalty.",
+      "historicalContext": "Medinan. Medina had been divided by long feuds before the emigration, and the community formed there included former opponents living within a few streets of one another. The classical sources report a specific quarrel behind this passage, and the accounts differ over which incident and which parties. What is not in dispute is that fighting between groups who both counted as believers was a real occurrence rather than a hypothetical one.",
+      "keyTerms": [
+        {
+          "arabic": "طَآئِفَتَانِ",
+          "gloss": "two groups, two parties",
+          "note": "A dual form, occurring once in the Quran, from a word for a portion of a larger body. Both parties keep the same description throughout, so neither is written out of the community by the quarrel."
+        },
+        {
+          "arabic": "تَفِىٓءَ",
+          "gloss": "it returns, it comes back",
+          "note": "The verb used of a shadow swinging back after noon. It names a return to a place already occupied rather than a surrender, and it occurs once in the Quran."
+        },
+        {
+          "arabic": "وَأَقْسِطُوٓا۟",
+          "gloss": "and act equitably",
+          "note": "From a root for a fair share. The imperative occurs once in the Quran, and it is added after equity has already been mentioned, so the same demand is made twice in one sentence."
+        }
+      ],
+      "lifeInProphetsTime": "Feud in that world had a known life cycle. An injury led to a reprisal, the reprisal to another, and the two families reached a point where neither could stop without appearing to concede. Mediators existed precisely for this; a respected outsider carried terms, blood money was assessed, and the settlement was announced publicly. The passage assumes that whole machinery and names the standard it should meet.",
+      "didYouKnow": "The phrase closing this passage, that God loves those who act equitably, occurs three times in the Quran, and one of the others is about dealing well with people who have not fought you or driven you out. The same closing formula covers reconciliation inside a community and fairness toward those outside it.",
+      "theologicalSignificance": "The passage refuses to let a conflict change what people are called. Both parties are described as believers at the start, and the description is not withdrawn from either of them when one is named as the wrongdoer. What follows from that is the shape of the whole passage: it begins and ends with reconciliation, and everything in between is instrumental to getting back there. The closing clause then names the standard as something loved rather than merely required.",
+      "crossReferences": [
+        {
+          "ref": "49:10",
+          "why": "Draws the conclusion in the next ayah, calling the believers brothers and asking for peace between them."
+        },
+        {
+          "ref": "60:8",
+          "why": "Carries the same closing formula about God loving the equitable, there about people outside the community."
+        },
+        {
+          "ref": "4:114",
+          "why": "Names reconciliation between people as one of the few things worth speaking privately about."
+        }
+      ],
+      "applyIt": "Think of two people you know who are not speaking. You probably have a view about who was at fault, and this passage assumes you might be right. Notice that it still ends where it began. If there is one honest sentence you could carry between them this month, carry it.",
+      "exploreFurther": [
+        "49:10",
+        "4:114",
+        "8:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:13:24.847Z",
         "reviewed": false
       }
     },
