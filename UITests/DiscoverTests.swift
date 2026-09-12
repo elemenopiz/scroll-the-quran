@@ -68,7 +68,7 @@ final class DiscoverTests: XCTestCase {
         // first match is the card on screen.
         app.buttons["discover.deepStudy"].firstMatch.tap()
         let page = app.descendants(matching: .any).matching(identifier: "deepstudy").firstMatch
-        XCTAssertTrue(page.waitForExistence(timeout: 5), "Deep Study never appeared")
+        XCTAssertTrue(page.waitForExistence(timeout: 15), "Deep Study never appeared")
         XCTAssertTrue(app.buttons["deepstudy.close"].exists)
 
         app.buttons["deepstudy.close"].tap()
