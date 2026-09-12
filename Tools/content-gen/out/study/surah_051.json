@@ -1,8 +1,124 @@
 {
   "surah": 51,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:30:49.310Z",
+  "generatedAt": "2026-09-09T15:36:32.649Z",
   "studies": [
+    {
+      "key": "51:1-5",
+      "surah": 51,
+      "start": 1,
+      "end": 5,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Four Oaths Before The Answer",
+      "tier": "standard",
+      "meaning": "Four oaths open the surah, and not one of them names what it swears by. Each is a feminine plural participle followed by a single bare noun: scattering, carrying, running, distributing. The classical commentators, following a report from the early community, read them as winds, rain clouds, ships and angels, and note that the sequence moves from air to water to sea to command. Only at the fifth ayah does a subject arrive, and it is a promise, declared true before it is described.",
+      "historicalContext": "Meccan, and from the stretch of the mission when resurrection was the sharpest point of dispute in the city. The surah answers that dispute twice over, first by oath and then by argument. The commentators report no specific occasion for these ayat; they place them with the other Meccan oath openings, which address an audience that accepted the natural world as ordered while denying that its ordering implied a reckoning.",
+      "keyTerms": [
+        {
+          "arabic": "وَٱلذَّٰرِيَـٰتِ",
+          "gloss": "the scattering ones",
+          "note": "From a root used of winnowing grain, throwing it up so the wind takes the chaff. The image is not random dispersal but separation: something is being sorted while it is being scattered."
+        },
+        {
+          "arabic": "ذَرْوًا",
+          "gloss": "a scattering",
+          "note": "A cognate accusative: the same root repeated as a bare noun straight after its participle, which Arabic uses to intensify. The three oaths that follow keep the rhythm but swap in a different noun each time."
+        },
+        {
+          "arabic": "لَصَادِقٌ",
+          "gloss": "is certainly true",
+          "note": "An active participle, so the promise is called truthful rather than merely factual, as a speaker is. The prefixed particle adds emphasis, giving the sense that this is beyond question."
+        }
+      ],
+      "lifeInProphetsTime": "Winnowing was the last step of the harvest and the one everyone watched. Grain was tossed into the air with a wooden fork on an open threshing floor, and the breeze carried the light husk away while the heavy kernels dropped back. Farmers waited for the right wind and worked at dusk when it was steadiest. An audience that had stood in that dust knew scattering as a sorting process, not as waste.",
+      "didYouKnow": "Five surahs open with an oath by unnamed feminine plural participles, each followed by a single bare noun: this one and surahs 37, 77, 79 and 100. In every case what is being sworn to arrives only after the run of oaths has finished, so a listener hears the rhythm and the rhyming endings well before learning the point.",
+      "theologicalSignificance": "The passage establishes the truth of the promise before saying anything about its content, and it does so by pointing at processes rather than at arguments. What the oaths have in common is that each is an agent carrying out an assignment it did not choose: scattering, lifting, running, apportioning. A world already full of things that reliably do what they were set to do is offered as the ground for expecting one more thing to happen on time.",
+      "crossReferences": [
+        {
+          "ref": "77:1-7",
+          "why": "Runs the same four-oath pattern to the same conclusion, that what you are promised is going to happen."
+        },
+        {
+          "ref": "15:22",
+          "why": "Describes the winds as fertilising and the water they bring down, matching how the early commentators read the first two oaths."
+        },
+        {
+          "ref": "30:48",
+          "why": "Shows the full sequence the commentators find compressed here: wind raised, cloud spread, rain released on whom God wills."
+        }
+      ],
+      "applyIt": "Stand outside for a minute today when the wind is moving and watch one thing it is carrying: dust off a roof, a bag along a kerb, a branch. The passage asks you to treat that as work being done rather than as weather happening. Notice that the wind did not consult you, and that it will not stop when you go back in.",
+      "exploreFurther": [
+        "77:1-7",
+        "79:1-5",
+        "30:48"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.867Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:6-10",
+      "surah": 51,
+      "start": 6,
+      "end": 10,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Woven Sky, Divided Speech",
+      "tier": "standard",
+      "meaning": "The verdict from the first oath lands here: the reckoning is going to happen. Then a second oath, by the sky described with a word the commentators read several ways — woven, ridged like windblown sand, or laced with paths. Against that ordered surface the audience is set: your speech is divided, one account contradicting another. The line that follows says whoever is turned away from the message is turned away, and the last word falls on those who guess.",
+      "historicalContext": "Meccan. The opposition to the message in Mecca was not a single position: the same speaker could be called a poet, a soothsayer, a man taught by others, or simply mad, and the labels shifted with the occasion. The commentators read the charge of divided speech against exactly that, and place these ayat with the surah's opening rather than at any particular incident.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْحُبُكِ",
+          "gloss": "the woven paths",
+          "note": "A plural whose singular is used of a garment's weave, of ripples wind leaves on sand, and of a braid of hair. Commentators keep all three, so the sky is described as patterned rather than plain."
+        },
+        {
+          "arabic": "مُّخْتَلِفٍ",
+          "gloss": "differing, inconsistent",
+          "note": "From a root meaning to come after or take the place of, so the sense is speech in which each statement replaces the last. Not merely varied opinions but accounts that cannot all stand together."
+        },
+        {
+          "arabic": "ٱلْخَرَّٰصُونَ",
+          "gloss": "those who guess",
+          "note": "An intensive form from a verb used of estimating a date crop by eye before it is picked. The word carries habitual guesswork presented as knowledge, which is the charge being made."
+        }
+      ],
+      "lifeInProphetsTime": "Before a date harvest, an experienced man would walk the palms and estimate the yield by eye so shares could be agreed in advance. The whole arrangement rested on his honesty and his skill, and a bad estimator cost people real money. Everyone knew the difference between a practised guess and a confident invention. The word used at the end of this passage comes from that trade.",
+      "didYouKnow": "The word translated here as woven occurs nowhere else in the Quran. Its rarity is part of why the commentators record three readings rather than settling on one, and al-Tabari lists them side by side without choosing. The sky is called by a name used elsewhere in Arabic for cloth, for hair and for wind-marked sand.",
+      "theologicalSignificance": "Two claims are made about knowledge. The first is that a message can be turned away from, and the phrasing leaves the agency deliberately open, so commentators read it as both a human turning and a consequence of persistent refusal. The second is that guessing dressed as certainty is treated as a moral failure and not merely an intellectual one. Between them sits an oath by a sky whose order nobody in the audience disputed.",
+      "crossReferences": [
+        {
+          "ref": "6:116",
+          "why": "Uses the same verb for guessing, and sets conjecture against knowledge as the thing most people follow."
+        },
+        {
+          "ref": "17:88-89",
+          "why": "Notes that the message was explained in every way and most people still refused, which is the turning described here."
+        },
+        {
+          "ref": "85:1-3",
+          "why": "Another Meccan oath by the sky, given a different epithet, before a warning of the same kind."
+        }
+      ],
+      "applyIt": "Pick one thing you have been confidently telling people lately and check whether you actually know it or estimated it. Not a belief, a fact: a number, a date, a claim about someone's reasons. Look it up or ask. The passage is hard on guesswork worn as certainty, and the smallest way to take that seriously is to correct one sentence you have been repeating.",
+      "exploreFurther": [
+        "6:116",
+        "85:1-3",
+        "53:28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "51:11-15",
       "surah": 51,
@@ -183,6 +299,354 @@
       }
     },
     {
+      "key": "51:26-28",
+      "surah": 51,
+      "start": 26,
+      "end": 28,
+      "theme": "Abraham",
+      "themeId": "abraham",
+      "title": "The Guest Who Did Not Eat",
+      "tier": "standard",
+      "meaning": "Three quick actions and one silence. Abraham goes to his household without announcing anything, comes back with a fatted calf, and sets it down close to them, then asks why they are not eating. The refusal is never explained to him; commentators note that a guest declining food, in that setting, signalled hostile intent. What he feels is described with a word for fear kept inside. The visitors answer the feeling rather than the question, and hand him news of a son.",
+      "historicalContext": "Meccan. The surah has just sworn that the promise is true and then turns, with no transition, to a story its audience partly knew from Jewish and Christian neighbours in the region. The scene is told more than once in the Quran, and the commentators read the versions alongside each other, filling this compressed account from the fuller ones. Here it functions as evidence for the surah's argument rather than as narrative for its own sake.",
+      "keyTerms": [
+        {
+          "arabic": "فَرَاغَ",
+          "gloss": "he slipped away",
+          "note": "A verb for turning aside quietly, out of sight of those you leave. It carries no deceit here; the commentators read it as courtesy, since announcing a meal would oblige guests to refuse it."
+        },
+        {
+          "arabic": "فَقَرَّبَهُۥٓ",
+          "gloss": "he brought it near",
+          "note": "Literally to bring close, and the form intensifies it. The detail is that he carried the food to them rather than calling them to it, which the tradition reads as part of the courtesy."
+        },
+        {
+          "arabic": "فَأَوْجَسَ",
+          "gloss": "he conceived inwardly",
+          "note": "A verb for a feeling registered and hidden, never spoken. It says Abraham was afraid without saying he showed it, which is why the visitors respond before he has said a word."
+        }
+      ],
+      "lifeInProphetsTime": "Hospitality in the desert was a contract with rules everyone knew. A stranger at the tent was fed first and questioned later, and the host slaughtered from his own herd rather than serving what was already cooked. A calf was an expensive choice. On the other side of the contract, eating a man's food placed you under his protection, so a guest who would not eat had refused the bond, and refusing the bond meant something was wrong.",
+      "didYouKnow": "The Quran never says in this passage who the visitors are. They are introduced only as honoured guests, and the word for angels does not appear anywhere in the account. Abraham's question about the food and his hidden fear both depend on that: the reader is kept at his level of knowledge until the visitors themselves say why they were sent.",
+      "theologicalSignificance": "The passage shows a prophet frightened by something he does not understand and does not pretend otherwise. His fear is recorded, not corrected, and the answer to it is news rather than reassurance. What follows from that is a picture of how God deals with people: the reassurance is a fact, and the fact is a promise about the future. Nothing is said to make Abraham feel better except what is going to happen.",
+      "crossReferences": [
+        {
+          "ref": "11:69-70",
+          "why": "Gives the same scene with the detail that his hand did not reach the food, which explains the fear here."
+        },
+        {
+          "ref": "15:51-53",
+          "why": "Runs the same exchange with a different emphasis, and names the fear openly before the good news."
+        },
+        {
+          "ref": "51:24-25",
+          "why": "Opens this episode two lines earlier, with the greeting exchanged and the guests called honoured."
+        }
+      ],
+      "applyIt": "Next time you host anyone, carry the food to where they are sitting instead of calling them to the table. It is a small change and it shifts something. Abraham's whole reputation for hospitality in this passage rests on three verbs, and two of them are about movement: he went himself, and he brought it near. Do the moving.",
+      "exploreFurther": [
+        "11:69-73",
+        "15:51-56",
+        "51:24-25"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.868Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:29-33",
+      "surah": 51,
+      "start": 29,
+      "end": 33,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "A Cry, Then Two Names",
+      "tier": "standard",
+      "meaning": "The wife's response is physical before it is verbal: she comes forward in a cry and strikes her own face, a gesture of shock rather than of doubt, then names the objection in two words. The answer does not argue with her. It repeats that this is what her Lord said and closes with two names, the Wise and the Knowing, which between them cover the how and the why. Abraham then changes the subject entirely and asks the visitors their business.",
+      "historicalContext": "Meccan, inside a run of examples the surah gives for its claim that the promise is true. The commentators do not report a specific occasion. They note that this telling withholds the woman's name, as the Quran does throughout, and that the report about Lot's people is placed here so the same visit carries both a birth and a destruction. The Meccan audience knew the ruined sites on the northern trade road.",
+      "keyTerms": [
+        {
+          "arabic": "صَرَّةٍ",
+          "gloss": "a loud cry",
+          "note": "A noun for a sharp sound, used of a shriek and of the creak of something under strain. It describes the manner of her approach, not words, so her voice arrives before her objection."
+        },
+        {
+          "arabic": "عَقِيمٌ",
+          "gloss": "barren",
+          "note": "Used of a woman who has never borne a child, and later in this same surah of a wind that carries no rain and leaves nothing alive. The word means unproductive rather than merely childless."
+        },
+        {
+          "arabic": "ٱلْحَكِيمُ",
+          "gloss": "the Wise",
+          "note": "From a root for restraining and for sound judgement, the same root behind the word for a bridle. It names not cleverness but decision that holds, which answers an objection about what is possible."
+        }
+      ],
+      "lifeInProphetsTime": "Striking the face or the chest was a recognised public register of shock in Arabia, used at news of a death and at news too large to absorb. It was performative in the sense that everyone could read it, not in the sense that it was insincere. Childlessness in a household without other support was a practical crisis as much as a private grief, since children were the only pension anyone had.",
+      "didYouKnow": "The word this passage uses for barren returns twelve ayat later in the same surah, applied to the wind sent against the people of Aad. One adjective covers a womb that produces nothing and a storm that leaves nothing standing, and the Quran uses it of a wind in only that one place.",
+      "theologicalSignificance": "Two divine names are given as the whole answer to an objection from biology. Wisdom addresses whether there is a reason and knowledge addresses whether the case has been understood, and together they leave nothing for the objection to hold on to. The passage also shows that a startled reaction is not treated as unbelief. She is answered, not rebuked, and the narrative moves on without comment on her cry.",
+      "crossReferences": [
+        {
+          "ref": "11:71-73",
+          "why": "Gives her laughter and the question about her husband's age, and the answer about God's mercy on that house."
+        },
+        {
+          "ref": "15:54-56",
+          "why": "Puts the same objection in Abraham's mouth and answers it by naming despair as the mark of the lost."
+        },
+        {
+          "ref": "51:41-42",
+          "why": "Uses the same adjective for barren of the wind that left the people of Aad like decayed ruins."
+        }
+      ],
+      "applyIt": "Think of the last time somebody brought you news you could not fit into your picture of what was possible, and what your body did before your mouth caught up. The passage records that reaction without judging it. If you are waiting on something you have privately written off, say the two names from this ayah once, and notice which of the two your objection is actually against.",
+      "exploreFurther": [
+        "11:71-73",
+        "15:54-56",
+        "19:8-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.868Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:34-38",
+      "surah": 51,
+      "start": 34,
+      "end": 38,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "One Household In The Town",
+      "tier": "standard",
+      "meaning": "The stones are described as marked, and the commentators read the marking as designation, each one assigned. Then the rescue is stated as a procedure: the believers were brought out first, and the count is given plainly, one household. The passage does not say the town was large, but the arithmetic makes its point without a comment. What was left behind is called a sign, and it is left specifically for people who fear, not for people who reason. Then a single word turns to Moses.",
+      "historicalContext": "Meccan. The route from Mecca north to Syria passed the region the classical geographers associated with these ruins, and Meccan traders travelled it twice a year. The surah is listing precedents at speed, five peoples in fifteen lines, and the commentators note the compression: each case gets its accusation, its punishment and its remainder, and nothing else.",
+      "keyTerms": [
+        {
+          "arabic": "مُّسَوَّمَةً",
+          "gloss": "marked, designated",
+          "note": "A passive participle from a verb used of branding livestock and of marking a horse for battle. The stones are not simply thrown; each carries an assignment, which is what the commentators draw from the word."
+        },
+        {
+          "arabic": "لِلْمُسْرِفِينَ",
+          "gloss": "for the excessive",
+          "note": "From a root for going past a limit, used of overspending and of overreach generally. It names the fault as exceeding a boundary rather than as any single act, which is why the term is broad."
+        },
+        {
+          "arabic": "ءَايَةً",
+          "gloss": "a sign",
+          "note": "The same word the Quran uses for its own verses and for a miracle. Here it is a physical remainder on the ground, so the ruins are put in the same category as a recited line."
+        }
+      ],
+      "lifeInProphetsTime": "Caravans navigated by ruins. A dead town on a trade road was a landmark, a place to water, and a story told at the fire that night, and the same sites came up year after year on the same journeys. Meccan merchants were not being asked to imagine a distant catastrophe. They were being asked about stonework they had walked past, and about why nobody had rebuilt on it.",
+      "didYouKnow": "These two lines use two different words for the people rescued, believers in one and those who submit in the next, describing the same household. Classical commentators discussed the pair at length, and the passage is one of the places they turn to when distinguishing the two terms, since here the reference is identical.",
+      "theologicalSignificance": "Rescue is placed before destruction in the telling, which reverses the order of interest. The sequence says the removal of the believers was the operation and the ruin was its remainder. The count that follows refuses to make the survivors representative: they were one house. And the sign left behind is addressed to those who already fear the punishment, so the passage does not claim that ruins convert anybody.",
+      "crossReferences": [
+        {
+          "ref": "11:81-83",
+          "why": "Gives the fuller account of the same night, including the marked stones and the timing set at dawn."
+        },
+        {
+          "ref": "29:34-35",
+          "why": "States the same outcome and calls what was left a clear sign for people who use reason."
+        },
+        {
+          "ref": "37:137-138",
+          "why": "Points out that the audience passes the site by morning and by night, and asks whether they think."
+        }
+      ],
+      "applyIt": "Notice one place you pass regularly that is a remainder of something that ended: a closed shop, a scorched patch, a name still on a wall. You have stopped seeing it, which is the ordinary fate of signs. Look at it properly once this week and let it be information rather than scenery. That is the exact shift this passage is asking for.",
+      "exploreFurther": [
+        "11:81-83",
+        "29:34-35",
+        "54:33-39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:39-42",
+      "surah": 51,
+      "start": 39,
+      "end": 42,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "He Turned Away With His Pillar",
+      "tier": "standard",
+      "meaning": "Pharaoh's refusal is described by what he took with him. The word is used of a corner or a support, the part of a building that holds the weight, and commentators read it as his army, his ministers, or his own sense of standing. He turns away leaning on it, and offers the two labels every messenger in this surah receives. What is thrown into the sea is him and his troops together. The verdict on him is one word: blameworthy.",
+      "historicalContext": "Meccan, in the surah's rapid list of earlier peoples. The pairing is deliberate: Pharaoh had the largest state the Quran's audience could name, and Aad had the greatest physical strength, and both are dealt with in two lines each. Mecca's leadership was neither, which is part of the argument. The commentators report no specific occasion for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "بِرُكْنِهِۦ",
+          "gloss": "with his support",
+          "note": "The word for a corner of a building, the part bearing the load. Used of a person it means the strength he leans on, and the preposition here makes him turn away carrying it with him."
+        },
+        {
+          "arabic": "مُلِيمٌ",
+          "gloss": "deserving blame",
+          "note": "An active participle from a form meaning to do what brings blame on oneself. It does not say he was blamed; it says he had earned it, which places the fault before the punishment."
+        },
+        {
+          "arabic": "كَٱلرَّمِيمِ",
+          "gloss": "like crumbled remains",
+          "note": "Used of old bone that breaks apart in the hand and of dry plant matter gone to powder. The comparison is not to rubble but to something that keeps its shape until touched."
+        }
+      ],
+      "lifeInProphetsTime": "Wind was the weather that frightened people in that country, more than heat and more than thirst. A sandstorm could bury a well, strip a tent, and change a familiar route overnight, and caravans read the sky for it the way sailors read water. Bones lay bleached along the roads, and every traveller had picked one up and felt it come apart. The comparison in this passage needed no explaining.",
+      "didYouKnow": "The word for crumbled remains appears twice in the Quran. Here it describes what the wind left of Aad, and in surah 36 it describes bones in the mouth of a man asking who could revive them. The same image of things falling apart is used once for a punishment and once for the objection to resurrection.",
+      "theologicalSignificance": "The passage locates the failure precisely. Pharaoh is not condemned for lacking evidence; a clear authority had already been given to him. He is condemned for turning away while holding on to something, and the something is named. That makes the sin structural rather than intellectual: he had an alternative support and preferred it. The blame is assigned to him before the sea is mentioned, so the punishment reads as consequence rather than as argument.",
+      "crossReferences": [
+        {
+          "ref": "11:80",
+          "why": "Uses the same word for a support, in Lot's wish for a strong corner to lean on against his people."
+        },
+        {
+          "ref": "69:6-8",
+          "why": "Gives the wind against Aad in more detail, seven nights and eight days, and the same emptiness after."
+        },
+        {
+          "ref": "37:142",
+          "why": "Uses the same word for deserving blame of Jonah, swallowed while he was in that state."
+        }
+      ],
+      "applyIt": "Name the thing you lean on when you would rather not think about a hard question — your income, a title, a person who always agrees with you. Write the word down. You are not being asked to give it up. You are being asked to notice the moment when you reach for it instead of answering, because that reach is the whole of what this passage describes.",
+      "exploreFurther": [
+        "69:6-8",
+        "11:80",
+        "79:15-26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:43-47",
+      "surah": 51,
+      "start": 43,
+      "end": 47,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "Enjoy Yourselves For A While",
+      "tier": "standard",
+      "meaning": "Thamud are given a period, not a threat, and the word for it is deliberately vague: a while. The commentators connect it to the three days of respite reported elsewhere. What they did with the time is described with a verb for outgrowing restraint, and then the blast takes them while they are watching, which is the detail the passage keeps. They could not stand and no one came. Noah's people get one line. Then the subject changes to the sky.",
+      "historicalContext": "Meccan. Thamud's rock-cut dwellings lay on the caravan road north from Mecca, and the classical sources treat them as the best-attested of the ruined peoples for that audience. The three days of respite after the she-camel was killed are reported in the fuller account in surah 11. Here the surah gives only the grant of time and what was done with it, before turning without warning to the building of the sky.",
+      "keyTerms": [
+        {
+          "arabic": "تَمَتَّعُوا۟",
+          "gloss": "enjoy yourselves",
+          "note": "A verb for taking benefit and pleasure from something temporary. The same root names the goods a traveller carries, so the enjoyment is framed from the start as portable and due to be set down."
+        },
+        {
+          "arabic": "فَعَتَوْا۟",
+          "gloss": "they grew insolent",
+          "note": "From a root for exceeding the bounds of what can be restrained, used of a plant that grows past training and of a person past correction. It describes hardening, not a single act of defiance."
+        },
+        {
+          "arabic": "وَإِنَّا لَمُوسِعُونَ",
+          "gloss": "and We are expanding",
+          "note": "A participle from a root for width and capacity, which also gives the word for a person of ample means. Commentators read it as making the sky vast and as God's power being without limit."
+        }
+      ],
+      "lifeInProphetsTime": "Thamud were remembered as builders. Their houses were cut into rock faces rather than raised from the ground, and the facades were still standing when Arab traders passed them, which is the reason they turn up so often in early poetry. A people who had carved their own permanence into a cliff, and who then could not stand up, made the point about respite without any need for a moral.",
+      "didYouKnow": "Three of the peoples listed here are introduced with the same two-word formula, and in, which turns the list into a run of exhibits rather than a set of stories. The people of Noah, added last, break the pattern with a different connector, and the classical commentators discuss the grammar of that shift.",
+      "theologicalSignificance": "Respite is presented as part of the judgement rather than as a suspension of it. The time given was real time, and what it revealed was what they would do with it. The passage then places a line about building the sky immediately after four accounts of ruin, so the same power appears twice in one breath, making and unmaking, without any suggestion that the two are different kinds of act.",
+      "crossReferences": [
+        {
+          "ref": "11:65",
+          "why": "Gives the three days of respite that the commentators read behind the vague period named here."
+        },
+        {
+          "ref": "41:17",
+          "why": "Says Thamud were guided and preferred blindness, which supplies the choice this passage compresses."
+        },
+        {
+          "ref": "79:27-28",
+          "why": "Sets the building of the sky against human self-importance in the same argumentative move."
+        }
+      ],
+      "applyIt": "Take one deadline you have been treating as a formality and put an actual date on it this week — the conversation you keep deferring, the appointment, the debt. The word used here for the time Thamud were given is the vaguest one available, and vagueness is what let them spend it. Naming a date is the smallest defence against that.",
+      "exploreFurther": [
+        "11:61-68",
+        "41:17",
+        "79:27-33"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:48-51",
+      "surah": 51,
+      "start": 48,
+      "end": 51,
+      "theme": "Repentance",
+      "themeId": "repentance",
+      "title": "So Flee Toward God",
+      "tier": "standard",
+      "meaning": "The argument arrives at an instruction and the verb is unexpected. Fleeing is what you do away from something, and here it takes a destination instead, so the only direction of escape given is toward the one you would ordinarily be escaping. What comes before it is preparation: the earth laid out like bedding, and everything made in pairs, which is offered as a prompt for thought. The last line rules out the alternative refuge, and both lines end identically.",
+      "historicalContext": "Meccan. The surah has spent fifteen lines on peoples who were destroyed and now turns to the audience directly for the first time since its opening. The commentators report no occasion for these ayat and read them as the surah's turn, where the accumulated evidence becomes an address. The commentators read the speaker of the closing two lines as the Prophet Muhammad (peace be upon him).",
+      "keyTerms": [
+        {
+          "arabic": "فَرَشْنَـٰهَا",
+          "gloss": "We spread it out",
+          "note": "From the noun for a mattress or bedding. The earth is described with a word from the sleeping quarters rather than from architecture, so the emphasis is on comfort and fit rather than on scale."
+        },
+        {
+          "arabic": "زَوْجَيْنِ",
+          "gloss": "a pair, two of a kind",
+          "note": "The dual of a word meaning one of a couple, so it names each member by its partner. Nothing in the term implies male and female only; commentators extend it to any two matched opposites."
+        },
+        {
+          "arabic": "فَفِرُّوٓا۟",
+          "gloss": "so flee",
+          "note": "The ordinary verb for running from danger, used of a soldier leaving a line and an animal bolting. Giving it a destination rather than a thing fled from is what makes the sentence unusual."
+        }
+      ],
+      "lifeInProphetsTime": "Flight had a precise meaning in tribal Arabia. A man in danger from a blood feud ran to a protector, and the protection held only as long as the protector's standing did, which meant choosing well and arriving fast. Sanctuary was a place you reached, not a state of mind. An audience that had watched men run for a tent or a shrine heard this instruction as a matter of route and destination.",
+      "didYouKnow": "The two closing lines of this passage end with exactly the same five-word clause, repeated with nothing between them but a single prohibition. The first closes a positive instruction and the second a negative one, so the identical wording brackets the two halves of one demand rather than adding anything.",
+      "theologicalSignificance": "The instruction relocates safety. Everything in the surah so far has shown that there is nowhere outside God's reach, and the natural conclusion would be resignation. Instead the passage keeps the language of escape and simply redirects it, which means the fear is not denied and the impulse to run is not treated as a fault. Then the second line closes the only remaining exit, so refuge and danger are named as the same address.",
+      "crossReferences": [
+        {
+          "ref": "9:118",
+          "why": "Describes the earth closing in on men who had no refuge from God except toward Him."
+        },
+        {
+          "ref": "36:36",
+          "why": "States the same pairing of everything created, extending it to what people do not know."
+        },
+        {
+          "ref": "78:6",
+          "why": "Uses a related image of the earth as a resting place prepared for the people on it."
+        }
+      ],
+      "applyIt": "Notice where you go first when something goes wrong: a screen, a person, a fridge, a spreadsheet. Everybody has a default direction and most people have never named theirs. Name yours this week, without deciding to change it. This passage does not ask you to stop running. It asks you to know which way you are already pointed.",
+      "exploreFurther": [
+        "9:118",
+        "36:36",
+        "78:6-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "51:52-56",
       "surah": 51,
       "start": 52,
@@ -237,6 +701,64 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:30:41.009Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "51:57-60",
+      "surah": 51,
+      "start": 57,
+      "end": 60,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "He Asks Nothing From You",
+      "tier": "standard",
+      "meaning": "Immediately after saying that jinn and humans were created to worship, the passage removes the obvious inference. Worship is not a transaction and God is not fed by it. The wording is deliberately concrete, using the language of a master who expects his household to keep him supplied, and denying it twice. Then three names close the point: the Provider, the owner of strength, the firm. The last two lines tell the ones who wrong themselves that their share is coming, unhurried.",
+      "historicalContext": "Meccan. Arabian religion involved feeding: offerings were slaughtered at shrines, portions were set aside for deities, and a share of crops and herds was assigned to them. The commentators read this passage against that background, since a god who needed provisioning was the ordinary assumption. No specific occasion is reported; the ayat follow directly on the surah's statement of why creation exists.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرَّزَّاقُ",
+          "gloss": "the Provider",
+          "note": "An intensive form, so it names provision as a continuous occupation rather than an occasional gift. The definite article restricts it: this is the one who does the providing, which is the argument of the passage."
+        },
+        {
+          "arabic": "ٱلْمَتِينُ",
+          "gloss": "the firm, the unyielding",
+          "note": "Used of a rope or a structure that does not give under load. Paired with the word for power just before it, it adds durability to strength, so the strength is not something that could be spent."
+        },
+        {
+          "arabic": "ذَنُوبًا",
+          "gloss": "a bucketful, a share",
+          "note": "The word for one bucket drawn from a well, taken in turn at a shared watering. It makes retribution a measured portion in a queue rather than an outburst, which is why the next clause says not to hurry."
+        }
+      ],
+      "lifeInProphetsTime": "Wells were shared and worked in rotation. Each household or herd took a turn, a bucket at a time, and the order was fixed by custom and defended when it was broken. Nobody drew twice while another waited. The image behind the word used here for what the wrongdoers will receive is that queue: a portion the same size as the one the people before them took, arriving when their turn comes.",
+      "didYouKnow": "The intensive name for the Provider used here occurs only once in the Quran, in this ayah, although the root behind it turns up in more than a hundred ayat. The surah that most insists nobody is providing for God is the one place that gives Him the name in its strongest form.",
+      "theologicalSignificance": "Two things are established at once. God is described as needing nothing from creation, which removes any idea that worship supplies Him with something, and in the same breath He is named as the one supplying everything else. That makes the relationship entirely one-directional, and it also makes worship intelligible: it is not payment but acknowledgement. The delay in punishment is then explained by the same self-sufficiency, since nothing presses on the one who is firm.",
+      "crossReferences": [
+        {
+          "ref": "22:37",
+          "why": "States the same principle about sacrifice, that neither flesh nor blood reaches God, only the intention."
+        },
+        {
+          "ref": "35:15",
+          "why": "Names the direction of need explicitly: people are the poor ones and God is beyond need."
+        },
+        {
+          "ref": "51:56",
+          "why": "States the purpose of creation that this passage immediately qualifies, two lines earlier."
+        }
+      ],
+      "applyIt": "Pick one act of worship you did this week and ask, honestly, who you thought it was for. Most people find a trace of accounting in there, a sense of having put something in. The passage says the ledger runs one way only. Try one prayer tomorrow where you deliberately expect nothing back, and see whether it feels different.",
+      "exploreFurther": [
+        "22:37",
+        "35:15",
+        "112:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:36:27.869Z",
         "reviewed": false
       }
     }

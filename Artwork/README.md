@@ -1,6 +1,10 @@
 # Artwork — Scroll the Quran
 
-Original artwork for the app. **Everything here was drawn or generated from
+Original artwork for the app. **The brand mark is the user-supplied logo**, preserved
+unmodified in [`Logo/Variants/`](Logo/Variants/README.md) (provenance documented there)
+and rendered by `tools/logo.sh` into the app icon, the bare marks and the reader logo
+card — so every mark surface in the app is provably the same artwork.
+**Everything else here was drawn or generated from
 scratch in this repo** — hand-written SVG geometry rasterised with `librsvg`,
 plus procedural ImageMagick work (fractal noise, metaballs, motion blur,
 depth-of-field, grain, vignettes). There are **no photographs, no traced or
@@ -8,7 +12,8 @@ derived third-party artwork, no real-organisation logos, no faces, and no text
 baked into any image**. Reference screenshots in `Reference/` were used only to
 judge composition, tone and sizing.
 
-Licence for every file below: **CC0 / public domain, original work** — free for
+Licence for the generated files described below (excluding `Logo/Variants/`):
+**CC0 / public domain, original work** — free for
 the app to use, modify and ship.
 
 ## Rebuilding
@@ -33,8 +38,9 @@ checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`,
 
 | script | what it makes |
 | --- | --- |
-| `tools/mark.py` | the mark geometry (interlaced octagram + crescent) |
-| `tools/compose.py` | app-icon / logo-card / bare-mark SVG documents |
+| `tools/logo.sh` | **app icon, bare marks and logo cards, from the supplied logo** |
+| `tools/mark.py` | superseded octagram+crescent geometry, kept for the wax seal |
+| `tools/compose.py` | superseded app-icon / logo-card / bare-mark SVG documents |
 | `tools/envelope.py` | closed + opened gift envelope, wax seal |
 | `tools/clouds.py` | the warm-beige cloud sky |
 | `tools/frame.py` | the iPhone frame overlay |
@@ -43,11 +49,29 @@ checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`,
 
 ## The mark
 
-A **rub' al-hizb octagram** — two squares of equal size, one rotated 45°, woven
-over-and-under at their eight crossings — with a **crescent** in the central
-octagonal void. It is pure construction geometry (`tools/mark.py`), so it scales
-cleanly, reads as a ring at 24 pt, and works in solid black on light or solid
-white on dark. It shares no shape language with any existing app's mark.
+The supplied logo: an **arabesque ring** — a circular band of interlaced vine and
+leaf forms, with a lobed finial at each of the four cardinal points and a pointed
+one at each diagonal, enclosing an empty circular field. It is a solid silhouette,
+so it reads as a ring down to 24 pt and works in solid black on light or solid
+white on dark.
+
+`tools/logo.sh` derives every rendition from
+`Logo/Variants/logo-transparent.png`: it trims to the ink, re-centres on a square
+canvas, and floods a colour through the artwork's own alpha (rather than
+`-colorize`, which would leave the original near-black bleeding into the white
+variant's edges). One master, one origin, three inks:
+
+| ink | hex | used on |
+| --- | --- | --- |
+| dark | `#0B0B0D` | light grounds — light app icon, `logo-card-light`, `mark-black` |
+| light | `#FFFFFF` | dark grounds — dark/mono app icon, `logo-card`, `mark-white` |
+
+The mark sits at **78 %** of the app-icon canvas and **74 %** of the logo card
+(94 pt card, 70 pt mark — `ReaderMetrics`).
+
+The previous mark — a constructed rub' al-hizb octagram with a crescent in the
+central void (`tools/mark.py`, `tools/compose.py`) — is superseded. Its geometry
+is still used for the figure struck into the gift envelope's wax seal.
 
 ## Files
 
@@ -55,10 +79,10 @@ white on dark. It shares no shape language with any existing app's mark.
 
 | file | size | purpose | how generated |
 | --- | --- | --- | --- |
-| `appicon-1024.png` | 1024×1024 | App Store / light icon. **No alpha.** | `src/appicon.svg`; black mark at 77 % on a warm off-white radial ground |
+| `appicon-1024.png` | 1024×1024 | App Store / light icon. **No alpha.** | `tools/logo.sh`; black logo at 78 % on `src/appicon-ground.svg`, a warm off-white radial ground |
 | `appicon-180.png` | 180×180 | iPhone @3x preview. No alpha. | downscale of the 1024 |
-| `appicon-dark-1024.png` | 1024×1024 | iOS 18 dark icon variant. No alpha. | `src/appicon-dark.svg`; white mark on a near-black radial ground |
-| `appicon-mono-1024.png` | 1024×1024 | iOS 18 tinted/mono layer | `src/appicon-mono.svg`; white mark on flat black |
+| `appicon-dark-1024.png` | 1024×1024 | iOS 18 dark icon variant. No alpha. | white logo on `src/appicon-ground-dark.svg`, a near-black radial ground |
+| `appicon-mono-1024.png` | 1024×1024 | iOS 18 tinted/mono layer | white logo on flat black |
 
 The icon is drawn edge-to-edge with no rounded corner — iOS applies its own mask.
 
@@ -66,16 +90,17 @@ The icon is drawn edge-to-edge with no rounded corner — iOS applies its own ma
 
 | file | size | purpose | how generated |
 | --- | --- | --- | --- |
-| `mark-white-512.png` | 512×512 | white line-art mark, transparent | `src/mark-white.svg` (stroke 15.5, optically matched to the black weight) |
-| `mark-black-512.png` | 512×512 | black line-art mark, transparent | `src/mark-black.svg` (stroke 14) |
-| `mark-white-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark (paywall header) | same SVGs |
-| `mark-black-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark | same SVGs |
-| `logo-card-96/192/288.png` | 96/192/288 | the reader's centred logo card, @1x/@2x/@3x of 96 pt — white mark in a `#1E1E23` rounded square (corner radius 21.75 % of the side) | `src/logo-card.svg` |
-| `logo-card-light-96/192/288.png` | 96/192/288 | light-appearance card (`#EFEDE7` ground, black mark) | `src/logo-card-light.svg` |
+| `mark-white-512.png` | 512×512 | white logo, transparent | `tools/logo.sh` |
+| `mark-black-512.png` | 512×512 | black logo, transparent | `tools/logo.sh` |
+| `mark-white-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark (paywall header) | `tools/logo.sh` |
+| `mark-black-64/128/192.png` | 64/128/192 | @1x/@2x/@3x of a 64 pt mark | `tools/logo.sh` |
+| `logo-card-96/192/288.png` | 96/192/288 | the reader's centred logo card, @1x/@2x/@3x of 96 pt — white logo in a `#1E1E23` rounded square (corner radius 21.75 % of the side) | `tools/logo.sh` |
+| `logo-card-light-96/192/288.png` | 96/192/288 | light-appearance card (`#EFEDE7` ground, black logo) | `tools/logo.sh` |
 
-Prefer the bare `mark-*` PNGs plus a SwiftUI `RoundedRectangle` from
-`DesignSystem` — the composed cards are provided so the intended proportion is
-unambiguous.
+In app code use **`BrandMark`** (`DesignSystem/Components/BrandMark.swift`), which picks
+`LogoMarkWhite` / `LogoMarkBlack` off the colour scheme and falls back to a drawn ring when
+the catalog is absent (package previews). The composed cards are shipped so the intended
+card proportion is unambiguous.
 
 ### Paywall trial-timeline glyphs — `Icons/`
 

@@ -1,8 +1,182 @@
 {
   "surah": 70,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:11:01.337Z",
+  "generatedAt": "2026-09-09T16:05:12.736Z",
   "studies": [
+    {
+      "key": "70:1-5",
+      "surah": 70,
+      "start": 1,
+      "end": 5,
+      "theme": "Patience in Trials",
+      "themeId": "patience-in-trials",
+      "title": "The Long Ascent",
+      "tier": "standard",
+      "meaning": "Someone demanded a punishment, and the surah reports the demand as a fact before it answers. The commentators read the opening either as a question about the punishment or as a challenge to produce it, and the grammar allows both. What follows says nothing about when. It gives God a title drawn from the routes of ascent, describes angels and the Spirit going up along them, and measures the day in question at fifty thousand years. Then one instruction closes the passage: be patient, and beautifully so.",
+      "historicalContext": "Meccan. Demands that the threatened punishment be produced on the spot are recorded across the Meccan surahs, and the commentators name several men of Mecca who made them, without agreeing which stands behind this opening. The setting is a community small enough that the challenge was delivered face to face, and an instruction to endure without complaint is the surah's first answer to it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَعَارِجِ",
+          "gloss": "the ways of ascent",
+          "note": "A plural of the word for a stairway. The Quran uses it once elsewhere of silver staircases in a house, so the term is architectural before it is cosmic, and here it becomes a title."
+        },
+        {
+          "arabic": "تَعْرُجُ",
+          "gloss": "they ascend, they climb",
+          "note": "The verb behind the noun in the title just given, so the ayah repeats its own key word in another form. Arabic often builds a line this way, letting the shared root do the joining."
+        },
+        {
+          "arabic": "صَبْرًا جَمِيلًا",
+          "gloss": "beautiful patience",
+          "note": "The adjective covers what is fitting as well as what is lovely. This exact form occurs only here, and a related form is used twice by Jacob in the story of Joseph, both times after a loss."
+        }
+      ],
+      "lifeInProphetsTime": "Distance in Arabia was measured in days of travel rather than in miles. A journey was named by how long it took, and the answer changed with the season and the load. Height had no such scale, so an ascent measured in years transferred an ordinary unit onto something with no horizontal shape. The audience thought in durations, and the ayah answered them in one.",
+      "didYouKnow": "The figure of fifty thousand years appears only in this ayah. Two other passages measure a day of God's ordering at a thousand years by human counting, and the classical commentators discuss the difference at length without settling it, some taking the numbers to refer to different things and others reading them as expressions of length rather than counts.",
+      "theologicalSignificance": "The demand for a punishment is answered by a change of scale rather than by a denial. Nothing is said to be untrue; what gets adjusted is the timeframe the questioner assumed. That move recurs across the Quran, and it locates the disagreement in duration rather than in fact. The instruction that follows then treats patience as something with a manner, since it is qualified by an adjective, which makes how a person waits part of what is asked.",
+      "crossReferences": [
+        {
+          "ref": "32:5",
+          "why": "Measures a day of God's ordering at a thousand years by human reckoning, a different figure."
+        },
+        {
+          "ref": "22:47",
+          "why": "Answers the same demand to hasten punishment by adjusting the scale of a day."
+        },
+        {
+          "ref": "12:83",
+          "why": "Uses a related form of the phrase for patience, spoken by Jacob after a second loss."
+        }
+      ],
+      "applyIt": "Notice the next time you want something unpleasant to happen sooner simply so it will be over. A conversation, a result, a decision belonging to someone else. The person in this ayah asks for a punishment to arrive. The instruction answering him is not about the outcome at all but about the manner of waiting, which is the part you can choose.",
+      "exploreFurther": [
+        "32:4-6",
+        "22:47-48",
+        "12:83-87"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.627Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:6-10",
+      "surah": 70,
+      "start": 6,
+      "end": 10,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "Near And Far At Once",
+      "tier": "standard",
+      "meaning": "Two short lines set two views of one thing against each other: they see it far off, and We see it near. Nothing is argued, and the difference in estimate is simply stated and left standing. Three images follow. The sky becomes like molten metal, the mountains like dyed wool, and a close friend does not so much as ask after a close friend. The commentators note the progression from the largest visible things down to the smallest social one, which is where the passage stops.",
+      "historicalContext": "Meccan. The surah has just been asked when the punishment is coming, and these ayat answer without giving any date. No occasion of revelation is reported. The comparison of mountains to coloured wool appears in another short Meccan surah in almost the same words, which the commentators take as evidence of a shared stock of images running through the chapters of this period.",
+      "keyTerms": [
+        {
+          "arabic": "كَٱلْمُهْلِ",
+          "gloss": "like molten metal",
+          "note": "Commentators gloss it as metal melted down, or as the dregs of oil. Either way the sky is described as having lost its structure and become something that pours, which is the opposite of what a sky does."
+        },
+        {
+          "arabic": "كَٱلْعِهْنِ",
+          "gloss": "like dyed wool",
+          "note": "Wool that has been coloured. In another surah the same word carries an addition meaning teased apart, so mountains become the lightest thing a household handled, and a coloured one at that."
+        },
+        {
+          "arabic": "قَرِيبًا",
+          "gloss": "near, close at hand",
+          "note": "The word covers nearness in space, in time and in kinship. Set against its opposite in the line before, it turns the disagreement about the day into a disagreement about distance rather than about fact."
+        }
+      ],
+      "lifeInProphetsTime": "Wool was everywhere and everybody handled it. It was sheared, washed, dyed with plant colours and teased apart before spinning, and a bag of carded wool weighed almost nothing for its bulk. Comparing a mountain to it is not a comparison of colour but of weight: the heaviest fixed object anyone knew, described as the lightest thing in the house.",
+      "didYouKnow": "The comparison of mountains to dyed wool appears twice in the Quran, here and in a later short surah, where one extra word is added meaning carded or teased apart. The two lines are otherwise identical, and reading them together shows the second filling in a texture the first leaves to the listener to supply.",
+      "theologicalSignificance": "The passage never argues that the day is near. It reports two estimates and attributes one of them to God, which leaves the reader holding a disagreement rather than a proof. Everything afterwards describes what that difference would look like once settled. Ending on a friend who does not ask after a friend makes the point socially, since the last thing to dissolve in the description is not matter but obligation.",
+      "crossReferences": [
+        {
+          "ref": "101:4-5",
+          "why": "Repeats the same comparison of mountains to wool, with one word added to the image."
+        },
+        {
+          "ref": "80:34-37",
+          "why": "Names the specific relations a person flees from that day, extending this line about friends."
+        },
+        {
+          "ref": "18:29",
+          "why": "Uses the same word for molten metal, applied there to a drink rather than to the sky."
+        }
+      ],
+      "applyIt": "Think of something you have placed far enough in the future that it does not affect this week: a health change, a conversation with a parent, a plan you keep deferring. You do not have to bring it forward. Just move it, in your own estimate, from far to near for one minute, and see whether anything about today looks different.",
+      "exploreFurther": [
+        "101:1-11",
+        "80:33-42",
+        "18:29-31"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:11-15",
+      "surah": 70,
+      "start": 11,
+      "end": 15,
+      "theme": "Family and Parents",
+      "themeId": "family-and-parents",
+      "title": "Everyone He Would Give Away",
+      "tier": "standard",
+      "meaning": "They are made to see one another, and then a wish is described in the form of an inventory. The guilty man would ransom himself with his sons, his wife, his brother, the kin group that shelters him, and finally everyone on earth. The commentators note the order, which moves outward from the closest relation and begins with children. What stops the sentence is a single word of refusal, followed by the naming of the fire with a proper name rather than a description.",
+      "historicalContext": "Meccan. Ransom was a working institution in Arabia, where captives were exchanged for goods or for other people and a clan negotiated for its own. No occasion of revelation is reported for these ayat. The word used for the kin group in the middle of the list is the term for the branch of a family that actually takes a man in, which the commentators gloss as the relatives close enough to be an obligation rather than a memory.",
+      "keyTerms": [
+        {
+          "arabic": "فَصِيلَتِهِ",
+          "gloss": "his close kin group",
+          "note": "From the root for separating a branch from a stock, so it names the segment of a lineage a man actually belongs to. It occurs only here, and the ayah adds a clause saying it is the one that shelters him."
+        },
+        {
+          "arabic": "يَفْتَدِى",
+          "gloss": "he would ransom himself",
+          "note": "The verb for buying somebody out of captivity by handing over something else. It presumes an exchange rate, which is what turns the list that follows into a valuation rather than a lament."
+        },
+        {
+          "arabic": "لَظَىٰ",
+          "gloss": "a blaze, a flaring",
+          "note": "A name rather than a description, from a root for a flame licking upward. Used as a proper name for the fire it appears only here, though a verb from the same root occurs in another surah."
+        }
+      ],
+      "lifeInProphetsTime": "Captives were currency. After a raid the prisoners were held and negotiated over, and families sold property or handed across animals to recover a son. Everybody knew what a person was worth in that trade and had heard the sums discussed openly. The scene here works because the audience could price the list: children, wife, brother, the clan that housed you, and then the whole earth.",
+      "didYouKnow": "The word for the kin group in this list occurs only once in the Quran, and it is the technical term for the branch of a lineage that has a duty to take a man in. The ayah then adds a relative clause spelling that duty out, so the passage names the closest social obligation in Arabian life immediately before offering it up in a ransom.",
+      "theologicalSignificance": "The wish is monstrous and the passage lets it stand without comment, which works better than a judgement would. What it establishes is that the closest bonds a person has are, under sufficient pressure, tradable in his own imagination. The refusal that follows does not answer on moral grounds; it simply states what the fire is. Nothing in the exchange was ever going to be accepted, and the offer exposes only him.",
+      "crossReferences": [
+        {
+          "ref": "2:48",
+          "why": "States the principle behind the refusal, that no ransom is taken and no intercession accepted."
+        },
+        {
+          "ref": "80:34-36",
+          "why": "Lists the same relations in a similar order, as the people a man flees from that day."
+        },
+        {
+          "ref": "3:91",
+          "why": "Says the earth's weight in gold would not be accepted from one who dies rejecting."
+        }
+      ],
+      "applyIt": "Notice, once, what happens to your loyalties under a small amount of pressure: a deadline, a shortage of money, a bad night's sleep. Nothing dramatic. Just observe which relationship gets the shortest version of you first. This ayah describes an extreme case of an ordinary mechanism, and the ordinary version shows up on any difficult Tuesday.",
+      "exploreFurther": [
+        "2:47-48",
+        "80:33-42",
+        "3:90-91"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.634Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "70:16-20",
       "surah": 70,
@@ -58,6 +232,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:10:42.486Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:21-25",
+      "surah": 70,
+      "start": 21,
+      "end": 25,
+      "theme": "Prayer",
+      "themeId": "prayer",
+      "title": "A Known Right In Wealth",
+      "tier": "standard",
+      "meaning": "The description of the grasping human being ends on withholding, and an exception then opens that will run for more than a dozen ayat. It begins with prayer, described not by its performance but by its continuity: they are constant at it. The next item is money, and the wording is precise. Their wealth contains a right, the right is called known, and it belongs to the one who asks and to the one deprived. The commentators note that a right is owed rather than granted, which changes what the transfer is.",
+      "historicalContext": "Meccan, so this precedes the organised collection of the Medinan years by some time, and the commentators are careful about the difference: the phrase here names an acknowledged claim rather than a defined rate. No occasion of revelation is reported. The audience was a trading population for whom the language of a right attached to property was legal vocabulary and not sentiment.",
+      "keyTerms": [
+        {
+          "arabic": "دَآئِمُونَ",
+          "gloss": "constant, unceasing",
+          "note": "A participle for something continuing without interruption. Applied to prayer it describes regularity rather than length, and the word appears in this particular form only once in the Quran."
+        },
+        {
+          "arabic": "حَقٌّ مَّعْلُومٌ",
+          "gloss": "a known, established right",
+          "note": "A legal pairing: an entitlement, and one that is recognised rather than estimated. Both words belong to the vocabulary of claims and debts rather than to the vocabulary of kindness."
+        },
+        {
+          "arabic": "ٱلْمَحْرُومِ",
+          "gloss": "the deprived one",
+          "note": "A passive participle, so the person is described as having been kept from something rather than as simply lacking it. Commentators read it as one who does not ask, which is why it is paired with one who does."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca had beggars at the sanctuary and around the markets, visible to everyone, and it also had people who had lost a caravan or an inheritance and would not ask. The second group was harder to see, and the ayah names them separately. In a town where reputation was capital, asking was expensive, and the household that had quietly stopped eating well was a recognisable thing.",
+      "didYouKnow": "The list beginning here has a close counterpart in another surah, where nearly the same items appear in nearly the same order and two of the ayat run almost word for word alike. Both lists open with prayer and close with prayer, so each is framed by the same practice at both ends, with everything else set between them.",
+      "theologicalSignificance": "Two things are named first, and they are the two most easily measured: whether a person keeps to prayer, and whether their money has a claim on it. Neither is a state of mind. The passage then calls that claim a right, which removes the transaction from the register of generosity altogether. What the giver does is release something already owed, and the language of entitlement protects the standing of whoever receives it.",
+      "crossReferences": [
+        {
+          "ref": "23:1-4",
+          "why": "Opens a comparable list with prayer and then names the giving that comes immediately after."
+        },
+        {
+          "ref": "51:19",
+          "why": "Uses the same idea of a right in the wealth of the settled, for the asker and the deprived."
+        },
+        {
+          "ref": "2:273",
+          "why": "Describes the poor who do not ask and are taken for self-sufficient by anyone not looking."
+        }
+      ],
+      "applyIt": "Set aside a fixed small amount this month before you spend anything, and treat it as not yours. Not as an act of generosity you decide on when you feel able. The wording here calls it a right belonging to somebody else, and the practical difference is only the order: subtract first, then budget with whatever is left.",
+      "exploreFurther": [
+        "23:1-11",
+        "51:15-19",
+        "2:271-274"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:26-30",
+      "surah": 70,
+      "start": 26,
+      "end": 30,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Never Taken For Granted",
+      "tier": "standard",
+      "meaning": "The list continues with two items that are internal. They affirm the Day of Judgement as true, and they are apprehensive of their Lord's punishment, and a short line then explains the second: their Lord's punishment is not something anybody may feel secure from. The commentators read this as the surah's own definition of the balance it is describing, since these same people are promised gardens a few lines later. Then the list returns to conduct, naming a boundary around the settled relations of that society.",
+      "historicalContext": "Meccan, from a period before the detailed regulation of the Medinan surahs, and the commentators read the items as a portrait of a way of living rather than as a code. No occasion of revelation is reported for these ayat. The clause about relations reflects the household arrangements the classical sources describe for that society, and the passage states the boundary here without elaborating on it.",
+      "keyTerms": [
+        {
+          "arabic": "يُصَدِّقُونَ",
+          "gloss": "they affirm as true",
+          "note": "The verb for holding a thing true and saying so, the exact opposite of the verb used throughout these surahs for calling a message false. It names an act rather than a private conviction."
+        },
+        {
+          "arabic": "مُّشْفِقُونَ",
+          "gloss": "apprehensive, wary",
+          "note": "A participle for fear mixed with care, used of somebody anxious about a thing they value. It is not terror, and the Quran applies it to people who are also being promised safety."
+        },
+        {
+          "arabic": "غَيْرُ مَأْمُونٍ",
+          "gloss": "not to be felt safe from",
+          "note": "A negated passive participle from the root for security. The phrasing puts the weight on what nobody may assume rather than on what will happen, which keeps the statement about attitude."
+        }
+      ],
+      "lifeInProphetsTime": "Security in Mecca was never absolute. A caravan could be lost, a protector could die, an alliance could shift within a season, and prosperous families remembered when they had not been prosperous. People lived competently inside a risk they could not remove. The attitude this passage describes would have been recognisable as how a careful merchant already held his own affairs.",
+      "didYouKnow": "The passage places an apprehension of punishment inside a list of people who are told at its end that they will be honoured in gardens. The commentators point out that the same individuals hold both at once, and several classical writers built their treatment of fear and hope on exactly this pairing, where neither state is permitted to displace the other.",
+      "theologicalSignificance": "The short explanatory line does the work. It does not say the punishment will reach these people; it says nobody is in a position to feel secure from it. That is a statement about knowledge rather than about outcome, so it leaves hope untouched while removing complacency. Set beside the promise at the end of the list, it describes a settled way of holding two things together, which the tradition treats as the ordinary condition of a believer.",
+      "crossReferences": [
+        {
+          "ref": "23:57-61",
+          "why": "Describes the same people, apprehensive of their Lord while hurrying towards what is good."
+        },
+        {
+          "ref": "7:99",
+          "why": "States the other side, that only those who lose feel secure from the planning of God."
+        },
+        {
+          "ref": "32:16",
+          "why": "Pairs the same two attitudes in a single line, calling on their Lord in fear and in hope."
+        }
+      ],
+      "applyIt": "Notice which of the two you default to when you consider your own standing: the assumption that it is basically fine, or the assumption that it is basically bad. Almost everybody leans one way. This passage describes people holding both at once, and the correction is simply to spend a minute inside whichever one you avoid.",
+      "exploreFurther": [
+        "23:57-61",
+        "32:15-17",
+        "7:96-99"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:31-35",
+      "surah": 70,
+      "start": 31,
+      "end": 35,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Trusts, Pledges And Testimony",
+      "tier": "standard",
+      "meaning": "The list closes with three social items and then returns to where it started. Trusts and pledges are to be tended, using the verb a shepherd's work is named by; testimonies are to be stood by, described with the word for standing upright; and prayer is named a second time, now with a verb for guarding rather than for constancy. The commentators note the frame. What opened the list also closes it, in a different form, so the whole description is enclosed by one practice named twice.",
+      "historicalContext": "Meccan. Trusts in that society were literal: goods left with a man while their owner travelled, deposits held with no paperwork, promises made in front of witnesses. Testimony was the mechanism by which almost every dispute was settled. No occasion of revelation is reported. The commentators read the list as describing an ordinary reputable life rather than an exceptional one, which is part of its force.",
+      "keyTerms": [
+        {
+          "arabic": "رَٰعُونَ",
+          "gloss": "tending, keeping watch over",
+          "note": "A participle from the verb that names a shepherd's work. Applied to trusts and pledges it makes keeping them continuous attention rather than one act of honesty at the moment of return."
+        },
+        {
+          "arabic": "قَآئِمُونَ",
+          "gloss": "standing firm, upholding",
+          "note": "From the verb to stand. Applied to testimony it describes staying upright behind what you said, which in a society with no written records was the entire security of any agreement."
+        },
+        {
+          "arabic": "يُحَافِظُونَ",
+          "gloss": "they guard, they maintain",
+          "note": "An intensive form for protecting something against loss. It closes the list with a different verb from the one that opened it, so prayer is described twice, once as constancy and once as guarding."
+        }
+      ],
+      "lifeInProphetsTime": "A deposit left with a trusted man was how a merchant travelled light. There were no receipts and no courts to enforce a claim, so the whole institution rested on the reputation of individuals, and a man known to have returned a deposit intact was worth doing business with. The verb this ayah uses is the herdsman's verb, and the audience heard the comparison immediately.",
+      "didYouKnow": "Two ayat in this list run almost word for word alongside two ayat in another surah's parallel list, and both lists open and close with prayer. The overlap is close enough that the classical commentators discuss the two together, and the differences are as informative as the repetitions, since each list carries items the other leaves out.",
+      "theologicalSignificance": "The list ends on things that exist only between people. A trust needs a depositor, a pledge needs a second party, and testimony needs a dispute, so the closing items make the life being described irreducibly social. Prayer bracketing them then does structural work, setting the most private obligation and the most public ones on the same footing. The reward named afterwards is honour rather than pleasure, which suits a list built out of reputation.",
+      "crossReferences": [
+        {
+          "ref": "23:8-11",
+          "why": "Gives two of these items in nearly identical wording, and closes its own list the same way."
+        },
+        {
+          "ref": "8:27",
+          "why": "Names the betrayal of trusts directly, addressed to a community that already knows better."
+        },
+        {
+          "ref": "4:135",
+          "why": "Presses testimony to its hardest case, standing by it against yourself or your own kin."
+        }
+      ],
+      "applyIt": "Return something small this week that you are holding for somebody and have stopped noticing. A borrowed tool, a book, money someone fronted you months ago. The verb here is the one for tending a flock, which implies attention over time rather than honesty at the moment of return, and the test is whether you still remember the item at all.",
+      "exploreFurther": [
+        "23:1-11",
+        "8:27-28",
+        "4:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.634Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:36-40",
+      "surah": 70,
+      "start": 36,
+      "end": 40,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "Made From What You Know",
+      "tier": "standard",
+      "meaning": "A question is put about the opponents' behaviour: they are craning towards the messenger from the right and the left in scattered knots. The commentators describe the scene as mockery conducted at close range. Then the surah asks whether every one of them expects to be admitted into a garden of bliss, and refuses the expectation with a single word. The reason given is not about their conduct. It is about their origin: they were made from something they themselves know about.",
+      "historicalContext": "Meccan. The commentators describe gatherings around the Prophet Muhammad (peace be upon him) at which men came in small groups to listen and to ridicule, and this passage is generally read against that ordinary daily setting rather than against one named occasion. The word used for their grouping means scattered clusters, which suggests an audience arriving in twos and threes rather than as any kind of delegation.",
+      "keyTerms": [
+        {
+          "arabic": "مُهْطِعِينَ",
+          "gloss": "craning forward, straining",
+          "note": "A participle for hurrying with the neck outstretched and the gaze fixed. The Quran uses it three times, twice of people at the reckoning and once here, of an audience in this world."
+        },
+        {
+          "arabic": "عِزِينَ",
+          "gloss": "in scattered groups",
+          "note": "A plural for small separate clusters. It occurs only here in the Quran, and it pictures the listeners as knots of men rather than as a crowd, which is a detail about how the mockery was organised."
+        },
+        {
+          "arabic": "يَطْمَعُ",
+          "gloss": "he hopes, he covets",
+          "note": "The verb for wanting something you have no established claim to. Used of an expectation about the garden, it names that expectation as an appetite rather than as a belief held on evidence."
+        }
+      ],
+      "lifeInProphetsTime": "Public teaching happened in the open. A man spoke at the sanctuary or beside a well, and listeners drifted up in small groups, stood at an angle, and made their comments to each other rather than to the speaker. Ridicule in that setting was ambient rather than confrontational. Anyone who has stood at the edge of a market trying to say something serious knows the arrangement being described.",
+      "didYouKnow": "The word describing how these men gathered occurs only once in the whole Quran, and it means small scattered clusters rather than a crowd. The word for how they lean forward occurs three times, and in the other two places it describes people at the resurrection. The same posture is applied here to an audience standing in an ordinary street.",
+      "theologicalSignificance": "The refusal is grounded in origin rather than in behaviour, which is unexpected. The argument is that a being made from something ordinary and known cannot claim an entitlement to what has just been described, and it is left almost unstated, since the audience is told they already know the material. That puts the answer to their expectation inside information they have had since childhood, making the passage a reminder rather than a disclosure.",
+      "crossReferences": [
+        {
+          "ref": "77:20",
+          "why": "States the same reminder about origin, put as a question about the fluid a person comes from."
+        },
+        {
+          "ref": "54:8",
+          "why": "Uses the same word for craning forward, applied there to people hurrying towards the caller."
+        },
+        {
+          "ref": "36:77",
+          "why": "Puts the same argument about origin against exactly this kind of confident dispute."
+        }
+      ],
+      "applyIt": "Catch yourself once this week expecting a good outcome you have not earned, and follow the expectation back to where it came from. Not in order to strip it away. This passage answers an entitlement by pointing at something the audience already knew about themselves, and doing that honestly takes about two minutes and needs no conclusion.",
+      "exploreFurther": [
+        "77:20-24",
+        "36:77-79",
+        "54:6-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:41-43",
+      "surah": 70,
+      "start": 41,
+      "end": 43,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "Leave Them To It",
+      "tier": "standard",
+      "meaning": "The oath sworn in the previous line completes itself with a claim of capability: to replace them with better, and not to be outrun in doing it. The instruction follows, which is to leave them to plunge and to play until they meet the day they are being promised. The commentators note the two verbs, one for wading into deep talk and one for amusement. The last line gives the day as a single image, people coming out of graves at speed, as though hurrying towards a marker set up ahead of them.",
+      "historicalContext": "Meccan. Setting up stones as objects of veneration was familiar in Arabia, and converging on a raised marker was part of ordinary festival life, so the closing image works in either direction and the commentators record both readings. No occasion of revelation is attested. The instruction to leave the opponents alone appears in several surahs of this period, addressed to a messenger with no power to compel anybody.",
+      "keyTerms": [
+        {
+          "arabic": "بِمَسْبُوقِينَ",
+          "gloss": "outrun, overtaken",
+          "note": "From the verb for winning a race. The denial uses the vocabulary of competition, so the claim is that nothing arrives there first, which is a different assertion from simple power."
+        },
+        {
+          "arabic": "يَخُوضُوا۟",
+          "gloss": "let them wade in",
+          "note": "A verb for stepping into water and, by extension, for plunging into talk without footing. Paired here with playing, it describes conversation that has no bottom rather than deliberate malice."
+        },
+        {
+          "arabic": "ٱلْأَجْدَاثِ",
+          "gloss": "the graves",
+          "note": "A plural the Quran uses only in scenes of coming out. It appears three times, always beside a verb of emerging, so the word carries a direction the ordinary term for a grave does not."
+        }
+      ],
+      "lifeInProphetsTime": "Raised stones stood at the edges of Arabian settlements and along the routes, some marking a boundary and some receiving offerings. People converged on them, and crowds moved towards a set point at festivals with a particular urgency. The comparison of a crowd rushing at a marker was therefore literal for the audience, and it carried the extra edge of describing them as hurrying towards a stone.",
+      "didYouKnow": "The word for graves used here appears three times in the Quran and never once in a description of burial. In all three places people are coming out of them, and each time a verb of emerging is attached immediately. The ordinary Arabic word for a grave is used elsewhere in the book; this one arrives only when the direction is outward.",
+      "theologicalSignificance": "The claim about replacement is left as a capability rather than as a plan, which keeps it from being a threat about anybody in particular. What follows is an instruction to stop pressing, treating the opponents' behaviour as something to be waited out rather than corrected. That combination sets a limit on what argument is for. The closing image then supplies the reason the waiting is bearable, since the destination is one everybody reaches at speed.",
+      "crossReferences": [
+        {
+          "ref": "54:7-8",
+          "why": "Gives the same emergence from graves and the same hurrying, with a different comparison attached."
+        },
+        {
+          "ref": "6:68",
+          "why": "Carries a comparable instruction to turn away from those who plunge into talk about the signs."
+        },
+        {
+          "ref": "36:51",
+          "why": "Describes the same coming out of the graves, with the crowd hastening towards their Lord."
+        }
+      ],
+      "applyIt": "Pick one argument you have been losing repeatedly with the same person and stop having it for a month. Not out of contempt. This passage instructs a messenger to leave people to their own conversation, which is a recognition that some disagreements are not moved by more talking, and a month is long enough to learn whether yours is one of them.",
+      "exploreFurther": [
+        "54:6-8",
+        "6:68-70",
+        "36:48-54"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.635Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "70:44",
+      "surah": 70,
+      "start": 44,
+      "end": 44,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "Eyes Lowered At The End",
+      "tier": "standard",
+      "meaning": "One line closes the surah, and it is made of two states and a sentence. Their eyes are cast down, and humiliation covers them, described with a verb for something settling over a person the way dust settles on a face. Then the surah ends by naming the scene: this is the day they were being promised. The commentators note that nothing is said about punishment here. What closes the chapter is a description of bearing, and the last clause completes a sentence that has been repeated throughout.",
+      "historicalContext": "Meccan, closing a surah that opened with a demand to bring the punishment forward. The final line answers that opening directly, identifying the arrival with the thing that had been requested. No occasion of revelation is reported. The commentators read the whole chapter as framed by that exchange, with the demand at one end and its silent fulfilment at the other, and nothing argued in between.",
+      "keyTerms": [
+        {
+          "arabic": "تَرْهَقُهُمْ",
+          "gloss": "covers them, overtakes them",
+          "note": "A verb for something settling over a person from above, used of dust on a face and of debt closing over a household. It makes the humiliation an atmosphere rather than a feeling held inside."
+        },
+        {
+          "arabic": "ذِلَّةٌ",
+          "gloss": "lowness, humiliation",
+          "note": "The opposite of the word for might. In a society where standing was everything it names the loss of position rather than pain, and the ayah gives it as the last state described."
+        },
+        {
+          "arabic": "يُوعَدُونَ",
+          "gloss": "they were being promised",
+          "note": "A passive in the continuous form, so the promising was ongoing rather than a single announcement. The word closes the surah on the same footing as the demand that opened it."
+        }
+      ],
+      "lifeInProphetsTime": "Bearing carried information in that society. A man walked into a gathering with his head at a particular angle, and everyone read his position from it before he had spoken. Humiliation was visible and public, and a family could lose standing for a generation over a single episode. This last ayah describes the condition every Meccan most wanted to avoid, and says nothing further about it.",
+      "didYouKnow": "This ayah's first clause is word for word identical with a line in Al-Qalam, two chapters earlier, where the same lowered eyes and the same covering humiliation appear. The two passages then diverge completely in what they attach to it: one adds an inability to bow, and this one adds the naming of the day itself.",
+      "theologicalSignificance": "The surah does not end on fire or on a verdict. It ends on how people look, which keeps the final emphasis on standing rather than on pain, and that suits a chapter which has spent its length on wealth, kin and reputation. The closing clause then completes a loop begun in the first line. What was demanded at the start arrives at the end, and the only thing added between them is who can bear it.",
+      "crossReferences": [
+        {
+          "ref": "68:42-43",
+          "why": "Contains the identical opening clause, attached there to an inability to bow when called."
+        },
+        {
+          "ref": "54:7",
+          "why": "Describes the same lowered eyes at the emergence from graves, using a different form of the word."
+        },
+        {
+          "ref": "70:1-2",
+          "why": "Records the demand that this final line answers, at the opening of the same surah."
+        }
+      ],
+      "applyIt": "Notice today how you carry yourself when you walk into a room where you feel slightly behind. Shoulders, gaze, pace. This ayah ends a whole chapter on nothing but bearing, and paying attention to your own for one afternoon is a way of finding out how much of your standing you are broadcasting without meaning to.",
+      "exploreFurther": [
+        "68:42-45",
+        "54:6-8",
+        "70:1-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:05:12.635Z",
         "reviewed": false
       }
     }
