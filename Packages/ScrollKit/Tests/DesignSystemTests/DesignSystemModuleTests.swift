@@ -73,3 +73,57 @@ private extension Color {
         )
     }
 }
+
+/// Audit A11Y-1 (CRITICAL, WCAG 1.4.4 AA). `Font.body` and `Font.capsLabel` were
+/// `.system(size:)` with no scaling, so a reader on a larger Dynamic Type setting saw **no
+/// change** to settings rows, library rows, buttons, toolbar labels, notes, Deep Study
+/// prose or community copy — 119 call sites across 39 files.
+///
+/// The scaling itself is `UIFontMetrics`, which only exists on the device; what can be
+/// asserted on the host is the contract around it, which is where the bugs would be.
+@Suite("UI text scaling")
+struct UITextScalingTests {
+    @Test("The design size is what the reference was measured at, and the floor")
+    func neverSmallerThanTheDesignSize() {
+        // `Reference/` was captured at the `large` content size. A reader on `extraSmall`
+        // must not shrink a 393x852 composition out from under its measured metrics.
+        #expect(Font.capped(15, base: 15) == 15)
+        #expect(Font.capped(13, base: 15) == 15)
+        #expect(Font.capped(14.2, base: 15) == 15)
+    }
+
+    @Test("UI text grows to 200 % and stops there")
+    func ceilingIsTwoHundredPercent() {
+        // WCAG 1.4.4 AA asks for 200 %. Past it the reference's fixed row heights
+        // (`RowLink`, `ExploreRow`, the notes editor) have never had a layout pass.
+        #expect(Font.uiTextScaleCeiling == 2)
+        #expect(Font.capped(30, base: 15) == 30)
+        // AX5 takes 15 pt to ~47 pt unclamped.
+        #expect(Font.capped(47, base: 15) == 30)
+        #expect(Font.capped(22.5, base: 15) == 22.5)
+    }
+
+    @Test("At the Large content size nothing moves", arguments: [11.0, 12, 13, 14, 15, 16, 17, 20] as [CGFloat])
+    func largeIsIdentity(_ size: CGFloat) {
+        // `UIFontMetrics.scaledValue(for:)` returns its argument unchanged at `.large`, so
+        // this is the property every snapshot in `Reference/` depends on.
+        #expect(Font.capped(size, base: size) == size)
+        #expect(Font.scaledSize(size, relativeTo: .body) >= size)
+        #expect(Font.scaledSize(size, relativeTo: .body) <= size * Font.uiTextScaleCeiling)
+    }
+
+    @Test("Every SwiftUI text style maps to a UIKit metric")
+    func styleMappingIsTotal() {
+        // A style with no mapping would silently scale against `.body` and drift.
+        for style in Font.TextStyle.allCases {
+            #expect(Font.scaledSize(17, relativeTo: style) >= 17)
+        }
+    }
+
+    @Test("The muted Arabic layer is still deliberately fixed")
+    func arabicStaysFixed() {
+        // CLAUDE.md rule 5 and audit A11Y-6: letting Dynamic Type grow the decorative layer
+        // pushes the English verse off the page. `arabicAccent` uses `fixedSize:` on purpose.
+        #expect(Font.arabicAccent(20) == Font.custom(FontFamily.quran, fixedSize: 20))
+    }
+}
