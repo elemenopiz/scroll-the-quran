@@ -345,9 +345,12 @@ enum PaywallMetrics {
     /// "OFF": black capsule x 162...230.7, y 268...301 in `gift-open.png`, with a ~3.3 pt
     /// white outline around it. It clears the "33%" digits, whose ink ends at y 266.
     static let offPillSize = CGSize(width: 69, height: 33)
-    /// 2 pt below the reference's 268, which is what our deeper digits need to keep the
-    /// pill under their baseline rather than across it.
-    static let offPillTop: CGFloat = 270
+    /// 10 pt below the reference's 268. Geo Bold's digits run 5 pt deeper than the
+    /// reference face's, so at 270 the pill's white outline still cut across the bottom of
+    /// the "33%" (5.8 pt of a 49.3 pt tall digit, 12 %). 278 puts the outline's top edge
+    /// 2.2 pt clear of the ink — the pill tucks *under* the digits, as the reference's
+    /// does — and still leaves 8.7 pt to the "+3 day trial" pill below it.
+    static let offPillTop: CGFloat = 278
     static let offPillOutline: CGFloat = 3.3
     /// The "33%" ink **as we render it** — Geo Bold at `percentSize`, measured off
     /// `.build/snapshots/gift-open.png`. The reference's own band is 224.7...268.7; ours is
