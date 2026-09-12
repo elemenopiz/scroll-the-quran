@@ -22,6 +22,11 @@
 # name. It boots the device, uses `-destination id=<udid>` (never "booted") and shuts it
 # down again at the end.
 #
+# Every capture is checked for ink before it is accepted: a route that has not reached
+# first paint photographs as a *black rectangle* that is otherwise a perfectly valid
+# screenshot, so the script waits SCROLL_CAPTURE_SETTLE seconds (default 4) and retries
+# up to SCROLL_CAPTURE_TRIES times (default 5) rather than shipping a blank phone.
+#
 # Output: docs/store/screenshots/{6.9,6.5}/NN-<id>.png
 
 # shellcheck source=lib.sh
@@ -34,15 +39,21 @@ OUT_DIR="$RELEASE_ROOT/docs/store/screenshots"
 FRAME="$RELEASE_ROOT/Artwork/Frames/phone-frame-1179x2556.png"
 FONT="$RELEASE_ROOT/Packages/ScrollKit/Sources/DesignSystem/Resources/Fonts/Poppins-SemiBold.ttf"
 FIXED_DATE="${SCROLL_FIXED_DATE:-2026-09-14}"
-SETTLE="${SCROLL_CAPTURE_SETTLE:-3}"
+SETTLE="${SCROLL_CAPTURE_SETTLE:-4}"
+CAPTURE_TRIES="${SCROLL_CAPTURE_TRIES:-5}"
 
 # The frame's transparent screen window, in the frame's own pixels.
 WIN_X=30; WIN_Y=30; WIN_W=1119; WIN_H=2496; WIN_R=160
 
 # id|route|appearance|caption   — order is the App Store display order.
+#
+# `home`, not `home#scrolled`: the scrolled route exists for snapshot diffing against
+# Reference/, and it lands mid-card with the heading running under the Dynamic Island —
+# fine for an RMSE comparison, bad as the second thing a shopper sees. The unscrolled
+# route opens on Verse Search, which is a better story anyway.
 SHOTS=(
   "01-reader|reader|dark|One verse at a time"
-  "02-home|home#scrolled|dark|Keep a daily rhythm"
+  "02-home|home|dark|Study any verse you choose"
   "03-discover|discover|dark|Discover by theme"
   "04-deepstudy|deepstudy|dark|Go deeper on every passage"
   "05-community|community|dark|Read together, give together"
@@ -56,7 +67,7 @@ while [ $# -gt 0 ]; do
     --no-build) BUILD=0; shift ;;
     --frames-only) FRAMES_ONLY=1; BUILD=0; shift ;;
     --keep-booted) KEEP_BOOTED=1; shift ;;
-    -h|--help) sed -n '2,28p' "$0"; exit 0 ;;
+    -h|--help) sed -n '2,30p' "$0"; exit 0 ;;
     *) die "unknown argument '$1'" 2 ;;
   esac
 done
@@ -68,6 +79,20 @@ need xcrun
 [ -f "$FONT" ] || die "no caption font at $FONT"
 
 mkdir -p "$RAW_DIR" "$OUT_DIR/6.9" "$OUT_DIR/6.5"
+
+# --- "did anything draw?" --------------------------------------------------
+# Prints 1 when the capture has content, 0 when it is a blank screen.
+#
+# The status bar always draws, so it is cropped out (the top 300px) before measuring;
+# what is left is the app's own canvas. A screen that has not reached first paint is a
+# perfectly flat rectangle and scores exactly 0.00 standard deviation. A rendered screen
+# scores 8-13 in this app's dark palette. The 1.0 threshold sits in a very wide gap, so
+# this cannot mistake a dim screen for an empty one.
+ink() {
+  local sd
+  sd="$(magick "$1" -crop 1206x2200+0+300 +repage -format '%[fx:standard_deviation*100]' info: 2>/dev/null)"
+  awk -v v="${sd:-0}" 'BEGIN { print (v > 1.0) ? 1 : 0 }'
+}
 
 # --- framing ---------------------------------------------------------------
 # frame_one <raw.png> <canvas-w> <canvas-h> <caption> <out.png>
@@ -156,9 +181,22 @@ print(next((x["state"] for v in d.values() for x in v if x["udid"]=="'"$SIM"'"),
     SIMCTL_CHILD_SCROLL_FIXED_DATE="$FIXED_DATE" \
       xcrun simctl launch "$SIM" "$APP_BUNDLE_ID" --screenshot "$route" >/dev/null \
       || die "could not launch --screenshot $route"
-    sleep "$SETTLE"
-    xcrun simctl io "$SIM" screenshot --type=png "$RAW_DIR/$id.png" >/dev/null 2>&1 \
-      || die "could not capture $id"
+    # Wait for the screen to actually draw, then prove that it did. The routes that read
+    # a study shard (discover, deepstudy) reach first paint noticeably later than the
+    # reader does, and a too-early capture is a *black rectangle* that every later check
+    # in this script still passes: right size, no alpha, and it lands inside the frame
+    # looking like a switched-off phone. So retry until there is ink on the screen.
+    got=""
+    for attempt in $(seq 1 "$CAPTURE_TRIES"); do
+      sleep "$SETTLE"
+      xcrun simctl io "$SIM" screenshot --type=png "$RAW_DIR/$id.png" >/dev/null 2>&1 \
+        || die "could not capture $id"
+      if [ "$(ink "$RAW_DIR/$id.png")" -eq 1 ]; then got="$attempt"; break; fi
+      warn "$id still blank after $((attempt * SETTLE))s, waiting"
+    done
+    [ -n "$got" ] || die "$id ($route) never rendered: still a blank screen after $((CAPTURE_TRIES * SETTLE))s.
+  Run it by hand to see what it does:
+    xcrun simctl launch $SIM $APP_BUNDLE_ID --screenshot $route"
     ok "$id ($route, $appearance) $(magick identify -format '%wx%h' "$RAW_DIR/$id.png")"
   done
   xcrun simctl terminate "$SIM" "$APP_BUNDLE_ID" >/dev/null 2>&1 || true
@@ -175,6 +213,8 @@ for shot in "${SHOTS[@]}"; do
   IFS='|' read -r id _route _appearance caption <<< "$shot"
   raw="$RAW_DIR/$id.png"
   [ -f "$raw" ] || die "no capture at $raw — run without --frames-only"
+  # Also guards --frames-only, which reuses captures this run never took.
+  [ "$(ink "$raw")" -eq 1 ] || die "$raw is a blank screen; re-capture it (drop --frames-only)"
   frame_one "$raw" 1290 2796 "$caption" "$OUT_DIR/6.9/$id.png"
   frame_one "$raw" 1284 2778 "$caption" "$OUT_DIR/6.5/$id.png"
   ok "$id -> 6.9/$id.png, 6.5/$id.png"
