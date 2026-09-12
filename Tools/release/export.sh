@@ -30,9 +30,25 @@ need xcodebuild
 need plutil
 
 # 1. Signing -----------------------------------------------------------------
+# A real export must have the real Team ID. `--validate` must not: its job is to prove the
+# options plist is well-formed and that every key in it is one this Xcode accepts, and
+# none of that depends on the *value* of teamID. Requiring a team here made the dry run
+# unusable on exactly the machines it exists for — a fresh checkout with no signing set up
+# — so validation falls back to a placeholder and says loudly that it did.
 step "Signing"
-TEAM="$(require_team "$@")" || exit $?
-ok "DEVELOPMENT_TEAM = $TEAM"
+if [ "$VALIDATE_ONLY" -eq 1 ]; then
+  TEAM="$(team_id)"
+  if [ -z "$TEAM" ] || [ "$TEAM" = "ABCDE12345" ]; then
+    TEAM="ABCDE12345"
+    warn "no Team ID configured — validating with the placeholder $TEAM"
+    warn "the plist below is structurally what export will use, but teamID is not real yet"
+  else
+    ok "DEVELOPMENT_TEAM = $TEAM"
+  fi
+else
+  TEAM="$(require_team "$@")" || exit $?
+  ok "DEVELOPMENT_TEAM = $TEAM"
+fi
 
 # 2. Export options ----------------------------------------------------------
 step "Export options"
@@ -67,17 +83,26 @@ PLIST
 plutil -lint "$EXPORT_OPTIONS" >/dev/null || die "generated ExportOptions.plist is not a valid plist"
 ok "wrote $EXPORT_OPTIONS"
 
-# xcodebuild validates the keys and their values against its own schema and exits
-# non-zero on an unknown key or a bad enum value, without touching an archive.
+# Check every key we emit against the list this Xcode prints under
+# "Available keys for -exportOptionsPlist:", so a key Apple renames or drops is caught
+# here rather than by a failed export at the end of a 10-minute archive.
+#
+# `xcodebuild -help` writes to *stderr*, not stdout — redirecting only stdout (as this
+# did) leaves $HELP empty, which made every key "unknown" and the whole check a
+# guaranteed failure that nothing had reached yet. Capture stderr, and refuse to run on
+# an empty capture rather than silently passing an empty haystack.
 step "Validate the options against xcodebuild's schema"
-HELP="$(xcodebuild -help 2>/dev/null)"
+HELP="$(xcodebuild -help 2>&1)"
+KEYS="$(printf '%s\n' "$HELP" | sed -n '/^Available keys for -exportOptionsPlist:/,$p')"
+[ -n "$KEYS" ] || die "could not read the -exportOptionsPlist key list out of 'xcodebuild -help'"
+
 for key in method destination teamID signingStyle uploadSymbols manageAppVersionAndBuildNumber stripSwiftSymbols generateAppStoreInformation; do
-  printf '%s\n' "$HELP" | grep -q "^[[:space:]]*$key : " \
-    || die "xcodebuild does not know the export option '$key' — check Xcode's -exportOptionsPlist help"
+  printf '%s\n' "$KEYS" | grep -qE "^[[:space:]]*$key : " \
+    || die "xcodebuild does not know the export option '$key' — check 'xcodebuild -help'"
 done
-printf '%s\n' "$HELP" | grep -q "app-store-connect" \
+printf '%s\n' "$KEYS" | grep -q "app-store-connect" \
   || die "this Xcode does not accept method 'app-store-connect' (older Xcode used 'app-store')"
-ok "every key and the 'app-store-connect' method are accepted by this Xcode"
+ok "all 8 keys and the 'app-store-connect' method are accepted by $(xcodebuild -version | head -1)"
 
 if [ "$VALIDATE_ONLY" -eq 1 ]; then
   plutil -p "$EXPORT_OPTIONS"
