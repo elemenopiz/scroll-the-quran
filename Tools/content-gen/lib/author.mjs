@@ -234,7 +234,9 @@ export function validateBodies(entries, { withCorpus = true, model = AUTHOR_MODE
   ensureUnits();
   const quran = loadQuran();
   const passages = loadPassages();
-  const themeIds = new Set(readJSON(path.join(OUT, "themes.json")).themes.map((t) => t.id));
+  const themes = readJSON(path.join(OUT, "themes.json")).themes;
+  const themeIds = new Set(themes.map((t) => t.id));
+  const themeTitles = new Map(themes.map((t) => [t.id, t.title]));
   const units = new Map(selectUnits("all").map((u) => [u.key, u]));
 
   const results = new Map();
@@ -249,7 +251,7 @@ export function validateBodies(entries, { withCorpus = true, model = AUTHOR_MODE
 
   const keys = new Set(candidates.map((c) => c.key));
   const records = withCorpus ? [...candidates, ...corpusRecords({ exclude: keys, model })] : candidates;
-  const { errors, warnings } = validateRecords(records, { quran, themeIds, passages });
+  const { errors, warnings } = validateRecords(records, { quran, themeIds, themeTitles, passages });
 
   const sort = (list, bucket) => {
     for (const msg of list) {
