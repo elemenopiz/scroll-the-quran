@@ -36,13 +36,19 @@ struct RootView: View {
     /// about the Keychain record — and Settings' "Sign out" has to clear both on a launch
     /// that skips the funnel entirely, which is every launch after the first.
     private let account: CompositeAccountSink
+    /// See `init`: `--signed-in` is a one-shot, not a state the app is held in.
+    private static var appliedFixtureSignIn = false
 
     init(launch: LaunchOptions = .live) {
         self.launch = launch
         let environment = AppEnvironment.shared(launch: launch)
         _env = State(initialValue: environment)
         account = CompositeAccountSink.live(state: environment.user)
-        if launch.fixtureSignIn {
+        // Once per process, not once per `init`: this runs again on every update of the app's
+        // body, and re-applying the fixture credential would silently sign the reader back in
+        // the instant they signed out in Settings.
+        if launch.fixtureSignIn, !RootView.appliedFixtureSignIn {
+            RootView.appliedFixtureSignIn = true
             account.applyFixtureSignIn()
         }
         _flow = State(

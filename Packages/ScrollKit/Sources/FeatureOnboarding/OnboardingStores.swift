@@ -346,6 +346,21 @@ public final class CompositeAccountSink: OnboardingAccountSink {
         self.identity = identity
         self.state = state
         state.attachIdentity(identity)
+        restoreFromIdentity()
+    }
+
+    /// Adopts an account the Keychain already holds but the store does not know about.
+    ///
+    /// The Keychain outlives the App Group container: a delete-and-reinstall, or a restore of
+    /// a backup onto a new phone, brings the identity back while `prefs.json` starts empty.
+    /// Without this the app would be holding the reader's Apple identity and still telling
+    /// them they were not signed in — SEC-2's symptom, arrived at from the other direction.
+    ///
+    /// Idempotent, and it cannot resurrect a signed-out account: `signOut()` clears both
+    /// sides, so there is nothing left here to adopt.
+    private func restoreFromIdentity() {
+        guard !state.isSignedIn, identity.appleUserID != nil else { return }
+        state.signIn(email: identity.email)
     }
 
     /// The sink the shipping app uses.

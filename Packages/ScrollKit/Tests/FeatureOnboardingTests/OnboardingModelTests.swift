@@ -423,3 +423,51 @@ struct CompositeAccountSinkTests {
         #expect(next.email == "reader@example.com")
     }
 }
+
+/// The Keychain outlives the App Group container, so the account has to survive a
+/// reinstall that takes `prefs.json` with it.
+@MainActor
+@Suite("Account restored from the keychain")
+struct CompositeAccountRestoreTests {
+    private func makeDefaults() throws -> UserDefaults {
+        let suite = "composite.restore.\(UUID().uuidString)"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        return defaults
+    }
+
+    @Test("A keychain that already knows the reader signs them back in")
+    func adoptsTheStoredIdentity() throws {
+        let keychain = InMemoryKeychain([
+            KeychainAccountSink.accountIDKey: "001234.abc",
+            KeychainAccountSink.emailKey: "reader@example.com",
+        ])
+        let state = CompositeAccountSinkTests.StateSpy()
+        _ = CompositeAccountSink(
+            identity: KeychainAccountSink(keychain: keychain, defaults: try makeDefaults()),
+            state: state
+        )
+        #expect(state.isSignedIn)
+        #expect(state.accountEmail == "reader@example.com")
+    }
+
+    @Test("Signing out is not undone by the next launch")
+    func signOutIsNotResurrected() throws {
+        let keychain = InMemoryKeychain()
+        let state = CompositeAccountSinkTests.StateSpy()
+        let defaults = try makeDefaults()
+        let sink = CompositeAccountSink(
+            identity: KeychainAccountSink(keychain: keychain, defaults: defaults),
+            state: state
+        )
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+        sink.signOut()
+
+        // The next launch builds a fresh composite over the same keychain.
+        _ = CompositeAccountSink(
+            identity: KeychainAccountSink(keychain: keychain, defaults: defaults),
+            state: state
+        )
+        #expect(state.isSignedIn == false)
+    }
+}
