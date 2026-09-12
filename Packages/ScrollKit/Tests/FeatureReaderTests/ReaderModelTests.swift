@@ -110,7 +110,7 @@ struct ReaderModelTests {
     func switchingTranslation() throws {
         let model = try TestContent.model(surah: 2, startAyah: 255)
         let before = try #require(model.currentPage?.english)
-        #expect(model.translationAbbreviation == "CLEAR")
+        #expect(model.translationAbbreviation == "ITANI")
 
         model.selectTranslation("pickthall")
         let after = try #require(model.currentPage?.english)

@@ -53,7 +53,7 @@ struct ReaderToolbar: View {
         .accessibilityIdentifier("reader.toolbar")
     }
 
-    /// The abbreviation of the selected translation ("CLEAR"); opens the translation sheet.
+    /// The abbreviation of the selected translation ("ITANI"); opens the translation sheet.
     private var translationPill: some View {
         Button(action: onTranslation) {
             Text(translationAbbreviation)

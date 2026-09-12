@@ -6,7 +6,7 @@ import Testing
 func storeStartsOnTheDefault() throws {
     let store = try TestContent.store()
     #expect(store.selectedID == "itani")
-    #expect(store.selected?.abbrev == "CLEAR")
+    #expect(store.selected?.abbrev == "ITANI")
     #expect(store.translations.count == 4)
     #expect(store.translations.filter(\.isDefault).count == 1)
     #expect(store.index.count == 114)

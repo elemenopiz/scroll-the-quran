@@ -5,7 +5,7 @@ import Observation
 /// shown verbatim in the Translation sheet — the licences require it.
 public struct TranslationInfo: Hashable, Codable, Sendable, Identifiable {
     public let id: String
-    /// Short badge on the reader's translation pill, e.g. `"CLEAR"`.
+    /// Short badge on the reader's translation pill, e.g. `"ITANI"`.
     public let abbrev: String
     public let name: String
     public let translator: String

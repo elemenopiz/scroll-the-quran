@@ -260,7 +260,7 @@ public final class ReaderModel {
         user.toggleSaved(verse)
     }
 
-    /// The abbreviation on the translation pill, e.g. `"CLEAR"`.
+    /// The abbreviation on the translation pill, e.g. `"ITANI"`.
     public var translationAbbreviation: String {
         translations.selected?.abbrev ?? translations.selectedID.uppercased()
     }

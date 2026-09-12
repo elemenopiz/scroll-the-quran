@@ -19,7 +19,7 @@ public struct PassagePresentation: Equatable, Sendable {
     /// The same English, split back into its ayat so a verse surface can mark the
     /// boundaries. A single-ayah passage has exactly one segment.
     public let segments: [VerseSegment]
-    /// The short badge under the reference, e.g. `"CLEAR"`.
+    /// The short badge under the reference, e.g. `"ITANI"`.
     public let translationTag: String
     /// The licence line the translation requires, for share and copy.
     public let attribution: String

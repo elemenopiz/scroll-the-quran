@@ -85,7 +85,7 @@ func translationRegistryHasOneDefault() throws {
     #expect(defaults.first?.id == "itani")
     #expect(defaults.first?.copyright == "Translation by Talal Itani, ClearQuran.com")
     #expect(registry.translations.map(\.id) == ["itani", "saheeh", "ruwwad", "pickthall"])
-    #expect(registry.translations.map(\.abbrev) == ["CLEAR", "SAHEEH", "RUWWAD", "PICKTHALL"])
+    #expect(registry.translations.map(\.abbrev) == ["ITANI", "SAHEEH", "RUWWAD", "PICKTHALL"])
     #expect(registry.translations.allSatisfy { info in info.bundled })
     #expect(registry.translations.allSatisfy { info in info.offline })
     #expect(Set(registry.translations.map(\.abbrev)).count == registry.translations.count)
