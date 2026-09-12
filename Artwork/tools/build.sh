@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 # Regenerate every asset in Artwork/ from source.
 # Requires: ImageMagick 7 (`magick`), librsvg (`rsvg-convert`), python3.
+#
+#   build.sh                 gift layers cut from the generated renders (tools/gift-assets.sh)
+#   build.sh --vector-gift   the superseded procedural envelopes and sky instead
 set -euo pipefail
+VECTOR_GIFT=0
+[ "${1:-}" = "--vector-gift" ] && VECTOR_GIFT=1
 cd "$(dirname "$0")"
 ART="$(cd .. && pwd)"
 SRC="$ART/src"
@@ -49,14 +54,21 @@ say "Icons/icon-{lock,bell,check}-{64,128,192}.png"
 
 echo "5/7  Gift: envelopes + cloud sky"
 mkdir -p "$ART/Gift"
-for n in closed open open-back open-front card; do
-  svg "$SRC/envelope-$n.svg" 1200 900 "$ART/Gift/envelope-$n-1200x900.png"
-  grain "$ART/Gift/envelope-$n-1200x900.png" 4 0.45
-  say "Gift/envelope-$n-1200x900.png"
-done
-python3 clouds.py "$ART/Gift/gift-clouds-1179x2556.png" 5
-magick "$ART/Gift/gift-clouds-1179x2556.png" "${PNGOPT[@]}" "$ART/Gift/gift-clouds-1179x2556.png"
-say "Gift/gift-clouds-1179x2556.png"
+# The shipped gift screens are cut from the generated renders in src/gift/. The
+# procedural envelopes and sky below are superseded but kept as the --vector-gift
+# fallback: they are also what the app draws when the asset catalog is absent.
+if [ "$VECTOR_GIFT" = 1 ]; then
+  for n in closed open open-back open-front card; do
+    svg "$SRC/envelope-$n.svg" 1200 900 "$ART/Gift/envelope-$n-1200x900.png"
+    grain "$ART/Gift/envelope-$n-1200x900.png" 4 0.45
+    say "Gift/envelope-$n-1200x900.png"
+  done
+  python3 clouds.py "$ART/Gift/gift-clouds-1179x2556.png" 5
+  magick "$ART/Gift/gift-clouds-1179x2556.png" "${PNGOPT[@]}" "$ART/Gift/gift-clouds-1179x2556.png"
+  say "Gift/gift-clouds-1179x2556.png"
+else
+  ./gift-assets.sh
+fi
 
 echo "6/7  Onboarding phone frame"
 mkdir -p "$ART/Frames"

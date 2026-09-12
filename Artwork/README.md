@@ -4,13 +4,16 @@ Original artwork for the app. **The brand mark is the user-supplied logo**, pres
 unmodified in [`Logo/Variants/`](Logo/Variants/README.md) (provenance documented there)
 and rendered by `tools/logo.sh` into the app icon, the bare marks and the reader logo
 card — so every mark surface in the app is provably the same artwork.
-**Everything else here was drawn or generated from
-scratch in this repo** — hand-written SVG geometry rasterised with `librsvg`,
-plus procedural ImageMagick work (fractal noise, metaballs, motion blur,
-depth-of-field, grain, vignettes). There are **no photographs, no traced or
-derived third-party artwork, no real-organisation logos, no faces, and no text
-baked into any image**. Reference screenshots in `Reference/` were used only to
-judge composition, tone and sizing.
+**Everything else here was drawn or generated for this app** — hand-written SVG
+geometry rasterised with `librsvg`, procedural ImageMagick work (fractal noise,
+metaballs, motion blur, depth-of-field, grain, vignettes), and — for the gift
+screens only — **image-model renders made to the owner's own prompts**
+(`docs/design/gift-assets-prompts.md`), kept in `src/gift/` and cut into layers by
+`tools/gift-assets.sh`. The gift renders include the supplied logo, pressed into the
+wax seal, as the prompts asked. There are **no photographs, no traced or derived
+third-party artwork, no real-organisation logos, no faces, and no text baked into any
+image**. Reference screenshots in `Reference/` were used only to judge composition,
+tone and sizing.
 
 Licence for the generated files described below (excluding `Logo/Variants/`):
 **CC0 / public domain, original work** — free for
@@ -21,7 +24,13 @@ the app to use, modify and ship.
 ```bash
 brew install imagemagick librsvg     # magick 7 + rsvg-convert
 Artwork/tools/build.sh               # regenerates src/*.svg and every PNG
+Artwork/tools/build.sh --vector-gift # ... with the superseded procedural gift art
+Artwork/tools/gift-assets.sh         # just the gift layers, from src/gift/
 ```
+
+`gift-assets.sh` also needs python3 with `numpy`, `scipy` and `Pillow`, and prints the
+geometry the app positions the layers by (`PaywallMetrics.openEnvelopeArt`,
+`closedEnvelopeArtBody`, `giftCardBody`) — copy those numbers across after a re-cut.
 
 Every layout decision is seeded (`random.Random(n)` in the generators,
 `magick -seed`), so a rebuild reproduces the same **composition** exactly:
@@ -33,16 +42,18 @@ image sizes, so the film grain and the fractal fields differ slightly between
 runs. Vector-derived assets (app icon, logo mark, glyphs, phone frame,
 envelopes) *are* byte-identical on rebuild. Practically: only re-run `build.sh`
 when you actually intend to replace the committed PNGs, otherwise `git
-checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`,
-`Gift/gift-clouds-*`) afterwards.
+checkout` the noise-bearing ones (`PlanCovers/`, `Charity/`) afterwards.
+`gift-assets.sh` is the exception: it only resamples and re-tones fixed inputs, so it
+*is* bit-reproducible.
 
 | script | what it makes |
 | --- | --- |
 | `tools/logo.sh` | **app icon, bare marks and logo cards, from the supplied logo** |
 | `tools/mark.py` | superseded octagram+crescent geometry, no longer used by the app |
 | `tools/compose.py` | superseded app-icon / logo-card / bare-mark SVG documents |
-| `tools/envelope.py` | closed + opened gift envelope, wax seal |
-| `tools/clouds.py` | the warm-beige cloud sky |
+| `tools/gift-assets.sh` | **the gift envelope, card, wax seal and sky, cut from `src/gift/`** |
+| `tools/envelope.py` | superseded vector gift envelope + wax seal (`build.sh --vector-gift`) |
+| `tools/clouds.py` | superseded procedural cloud sky (`build.sh --vector-gift`) |
 | `tools/frame.py` | the iPhone frame overlay |
 | `tools/covers.py` | 8 reading-plan covers, 3 charity cards, the scrims |
 | `tools/contact_sheet.py` | `contact-sheet.png` |
@@ -124,23 +135,39 @@ paywall needs a fixed optical size.
 
 ### Gift screens — `Gift/`
 
+Cut from the renders in `src/gift/` by `tools/gift-assets.sh`: the model paints a fake
+checkerboard instead of writing alpha, so every layer is keyed on saturation (the
+checkerboard is the only grey thing in frame), opened with a disk to drop the squares,
+reduced to its largest component and eroded to lose the painted halo. The paper is then
+lifted onto the tones sampled from `Reference/gift-*.png`; the wax is left as rendered.
+
 | file | size | purpose | how generated |
 | --- | --- | --- | --- |
-| `gift-clouds-1179x2556.png` | 1179×2556 | warm beige sky behind the gift screens | `tools/clouds.py`: circle metaballs (body + crown-scallop tiers) blurred and re-levelled into puffy silhouettes, roughened and density-varied by two fractal-noise fields, top-lit by an offset blur of the same mask, over a `#E7E0CD → #D5CCB2` gradient, plus grain |
-| `envelope-closed-1200x900.png` | 1200×900 | closed envelope, transparent | `src/envelope-closed.svg`: four paper panels meeting at centre, flap over the top, fold shadows, gold wax seal |
-| `envelope-open-1200x900.png` | 1200×900 | opened envelope with a blank card in the slot | `src/envelope-open.svg` (= back + card + front composited) |
-| `envelope-open-back-1200x900.png` | 1200×900 | back panel + raised flap only | `src/envelope-open-back.svg` |
-| `envelope-open-front-1200x900.png` | 1200×900 | front pocket + seal only | `src/envelope-open-front.svg` |
-| `envelope-card-1200x900.png` | 1200×900 | the blank inner card on its own | `src/envelope-card.svg` |
+| `gift-clouds-1179x2556.png` | 1179×2556 | warm sky behind both gift screens, opaque | `sky-raw.png`, per-channel mean and spread matched to the reference's own sky band, scaled to fill and centre-cropped |
+| `envelope-closed-1200x900.png` | 1200×900 | closed envelope **with the logo wax seal baked in**, transparent | `closed-sealed-raw.png` keyed; paper spans 96 % of the canvas width, centred (paper bounds `x 24, y 55, 1152 × 790`) |
+| `envelope-closed-noseal-1200x900.png` | 1200×900 | the same envelope with no seal, for a code-drawn one | `closed-noseal-raw.png`, keyed by distance from the corner colour (it sits on a beige vignette, not a checkerboard) |
+| `envelope-open-1000x1500.png` | 1000×1500 | opened envelope: raised flap, lining and front pocket in one layer, transparent | `open-empty-raw.png` keyed, the flap above the pocket line stretched ×1.85 into a tower for a portrait phone, then padded with a 40 px margin and bottom-anchored |
+| `envelope-card-900x1200.png` | 900×1200 | the blank offer card, transparent | `card-blank.png` (real alpha), card body 94 % of the canvas height, centred, its drop shadow spilling into the margin (body bounds `x 55, y 36, 791 × 1128`) |
+| `wax-seal-logo-600.png` | 600×600 | **the seal the closed envelope wears**, cut off the paper | `seal-logo-crop-raw.png`, traced — see below |
+| `wax-seal-blank-600.png` | 600×600 | the same seal with no emblem, for a code-struck mark | `seal-blank.png` (real alpha) |
 
-To put live SwiftUI content inside the opened envelope, stack
-`envelope-open-back` → your card view → `envelope-open-front`. The card slot is
-the rect **x 250, y 110, w 700, h 530, corner radius 24** in the 1200×900
-coordinate space; the front pocket occludes everything below y = 380.
+The gift-open screen stacks `gift-clouds` → `envelope-open` → `envelope-card` **clipped at
+the front pocket's mouth** → `wax-seal-logo`. The mouth is flat across the pocket's top
+corners and dips to the point where the two front edges meet; `PaywallMetrics.openEnvelope(...)`
+derives it, and every other coordinate, from six fractions of the envelope layer's own
+canvas, so replacing the render is one image plus one line.
 
-The wax seal is a jittered Catmull-Rom blob with radial-gradient gold shading
-and the app mark struck into a recessed disc (a light offset copy under a dark
-copy gives the emboss).
+**Cutting the seal.** No colour key works on it: the gold rim highlights run as light and
+as unsaturated as the kraft paper, and the envelope's fold shadow under the rim is as dark
+and as saturated as the wax. So the rim is traced — for each of 1440 angles, the furthest
+radius that is still gold — and the radial profile is percentile-filtered around the
+circle, which keeps the wax's broad scalloped lobes and discards the narrow spikes where
+the fold shadow reaches past them. The path is rasterised at 4× for a soft edge and pulled
+2 px inside the seal's own contact shadow.
+
+The superseded vector envelopes (`envelope-open-1200x900.png`, `-open-back`, `-open-front`,
+`envelope-card-1200x900.png`) are still built by `build.sh --vector-gift` and are what the
+app draws when the asset catalog is absent — package previews and host tests.
 
 ### Onboarding phone frame — `Frames/`
 
@@ -195,6 +222,7 @@ cloud sky, the frame over a stand-in screenshot, a cover with the scrim applied.
 
 ## Totals
 
-64 image files (PNG deliverables + SVG sources) and 8 generator scripts,
-**15.8 MB** on disk (limit 25 MB). The heaviest single file is
-`Gift/gift-clouds-1179x2556.png` at 2.7 MB.
+71 image files (PNG deliverables + SVG sources) and 9 generator scripts. The shipped
+PNGs are ~21 MB; `src/gift/`'s raw renders are another ~23 MB, and they are kept because
+they are the only copy of the input `tools/gift-assets.sh` cuts from. No single shipped
+file is over 2.5 MB — the heaviest is `Gift/envelope-closed-1200x900.png` at 2.1 MB.
