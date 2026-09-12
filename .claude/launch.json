@@ -4,7 +4,17 @@
     {
       "name": "site",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["wrangler", "pages", "dev", "web", "--port", "8788"],
+      "runtimeArgs": [
+        "--yes",
+        "wrangler@4",
+        "pages",
+        "dev",
+        "web",
+        "--port",
+        "8788",
+        "--ip",
+        "127.0.0.1"
+      ],
       "port": 8788
     }
   ]
