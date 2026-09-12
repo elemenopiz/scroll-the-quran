@@ -148,3 +148,43 @@ struct VerseRailScrubGeometryTests {
         #expect(abs(Self.railHeight - 627) < 0.5)
     }
 }
+
+/// Phase 4j. `.paging` snaps *relative* to where the content is, so a pager that is left 283 pt
+/// into a page stays 283 pt into every page after it. `ReaderPagingBehavior` snaps to the
+/// absolute grid instead, which is what a jump needs and what heals a mis-parked pager.
+@Suite("Reader paging behaviour")
+struct ReaderPagingBehaviorTests {
+    static let pageHeight: CGFloat = 729
+
+    @Test("a target inside a page is pulled onto the nearest boundary")
+    func snapsToTheNearestBoundary() {
+        let height = Self.pageHeight
+        // The measured failure: a jump to 2:86 stopped 283 pt short of the page's start.
+        #expect(ReaderPagingBehavior.snapped(86 * height - 283, pageHeight: height) == 86 * height)
+        // Just past the halfway point goes to the next page, not back.
+        #expect(ReaderPagingBehavior.snapped(3 * height + height * 0.51, pageHeight: height) == 4 * height)
+        #expect(ReaderPagingBehavior.snapped(3 * height + height * 0.49, pageHeight: height) == 3 * height)
+    }
+
+    @Test("a target already on a boundary does not move", arguments: [0, 1, 2, 86, 252, 286])
+    func boundariesAreFixedPoints(_ page: Int) {
+        let y = CGFloat(page) * Self.pageHeight
+        #expect(ReaderPagingBehavior.snapped(y, pageHeight: Self.pageHeight) == y)
+    }
+
+    @Test("every snapped target is a whole number of pages")
+    func alwaysLandsOnTheGrid() {
+        for step in stride(from: -2000.0, through: 20000.0, by: 37.0) {
+            let snapped = ReaderPagingBehavior.snapped(CGFloat(step), pageHeight: Self.pageHeight)
+            let pages = snapped / Self.pageHeight
+            #expect(pages == pages.rounded(), "\(step) snapped to \(snapped), which is not a page boundary")
+            #expect(abs(snapped - CGFloat(step)) <= Self.pageHeight / 2 + 0.001)
+        }
+    }
+
+    @Test("a container with no height is left alone rather than divided by")
+    func zeroContainerIsSafe() {
+        #expect(ReaderPagingBehavior.snapped(123, pageHeight: 0) == 123)
+        #expect(ReaderPagingBehavior.snapped(123, pageHeight: -10) == 123)
+    }
+}

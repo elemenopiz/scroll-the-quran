@@ -5,9 +5,9 @@ import UserState
 
 /// The Quran tab: a vertical pager through one surah at a time.
 ///
-/// `ScrollView` + `LazyVStack(spacing: 0)` + `.containerRelativeFrame(.vertical)` +
-/// `.scrollTargetBehavior(.paging)` + `.scrollPosition(id:)`, which is the shape CLAUDE.md
-/// specifies. Everything the pager does — marking read after a 1.2 s dwell, remembering the
+/// `ScrollView` + `LazyVStack(spacing: 0)` + `.containerRelativeFrame(.vertical)` + paging +
+/// `.scrollPosition(id:)`, which is the shape CLAUDE.md specifies. The paging is
+/// `ReaderPagingBehavior` rather than the stock `.paging` — see the note on it. Everything the pager does — marking read after a 1.2 s dwell, remembering the
 /// position, handing over to the next surah — lives in `ReaderModel`; this file is layout.
 public struct ReaderView: View {
     @State private var model: ReaderModel
@@ -83,7 +83,7 @@ public struct ReaderView: View {
                     }
                     .scrollTargetLayout()
                 }
-                .scrollTargetBehavior(.paging)
+                .scrollTargetBehavior(ReaderPagingBehavior())
                 .scrollPosition(id: $model.currentPageID)
                 .scrollIndicators(.hidden)
                 .accessibilityIdentifier("reader.pager")
@@ -116,32 +116,37 @@ public struct ReaderView: View {
 
     /// Commits a programmatic page change so the pager can never stop between two pages.
     ///
-    /// Phase 4j. `.scrollPosition(id:)` is a binding, not a command: a single write into a
-    /// paging scroll view that is still settling (or that has not realised the target row of
-    /// the 287-page `LazyVStack` yet) can leave the content offset mid-page — the bug the
-    /// owner photographed, one ayah in the top half and the next rising from the bottom.
+    /// Phase 4j. `.scrollPosition(id:)` is a binding, not a command. A single write into a
+    /// paging scroll view lands *near* the target and stops short of it: measured on the
+    /// simulator, a rail tap to 2:86 parked 283 pt into the previous page, and a three-page
+    /// nudge still parked 159 pt short — one ayah in the top half of the screen and the next
+    /// rising from the bottom, which is the picture the owner sent.
     ///
-    /// So the move is made twice, both times with animations off: once now, through
-    /// `scrollTo(_:anchor: .top)` — which addresses the row by its `.id` and aligns its top
-    /// edge with the pager, i.e. exactly a page boundary — and once on the next run loop,
-    /// after the rows the jump crossed have been laid out and any in-flight scroll has been
-    /// cancelled. The binding is left in place for reads: it is still what tells the model
-    /// which page the reader swiped to.
+    /// Two things hold it on the boundary. `ReaderPagingBehavior` rounds every scroll target
+    /// onto the absolute page grid, which is what actually lands the jump; and the move is
+    /// asserted twice, once now and once on the next run loop, so a jump issued while the
+    /// pager was still settling is re-stated after that settle. Both with animations off: a
+    /// jump is a cut, not a scroll. A newer jump (the dice pressed twice) abandons the older
+    /// one's second round.
     private func commit(_ request: ReaderJump?, with scroller: ScrollViewProxy) {
         guard let request else { return }
+        reassert(request, with: scroller)
+        Task { @MainActor in
+            // A newer jump owns the pager now; its own second round is already queued.
+            guard model.jumpRequest == request else { return }
+            reassert(request, with: scroller)
+        }
+    }
+
+    /// One round of the commit: the binding, because it is what the chrome and the rail read,
+    /// and `scrollTo(_:anchor: .top)`, which addresses the row by its `.id` and puts its top
+    /// edge on the container's — exactly a page boundary.
+    private func reassert(_ request: ReaderJump, with scroller: ScrollViewProxy) {
         var transaction = Transaction()
         transaction.disablesAnimations = true
         withTransaction(transaction) {
+            model.currentPageID = request.id
             scroller.scrollTo(request.id, anchor: .top)
-        }
-        Task { @MainActor in
-            // Still the same request? A second jump landing in between (the dice pressed
-            // twice) owns the pager now, and its own commit is already queued.
-            guard model.jumpRequest == request else { return }
-            withTransaction(transaction) {
-                model.currentPageID = request.id
-                scroller.scrollTo(request.id, anchor: .top)
-            }
         }
     }
 
@@ -308,5 +313,33 @@ public extension ReaderView {
         case .reader, nil: break
         }
         return ReaderView(model: model)
+    }
+}
+
+
+
+/// Paging that snaps to the reader's **absolute** page grid.
+///
+/// Phase 4j. The stock `.scrollTargetBehavior(.paging)` moves by one container height *from
+/// wherever the content happens to be*: it preserves whatever phase it is given. Land the pager 283 pt into
+/// a page — which is what a programmatic jump into a 287-row `LazyVStack` does, measured on the
+/// simulator with `onScrollGeometryChange`: a rail tap to 2:86 stopped at content offset
+/// 62348.7 where the page starts at 62632 — and `.paging` keeps those 283 pt for every swipe
+/// afterwards, one ayah in the top half of the screen and the next rising from the bottom.
+///
+/// Every page is exactly one container tall (`containerRelativeFrame(.vertical)`), so page *k*
+/// starts at `k x containerHeight` and the grid is absolute. Rounding the scroll target onto it
+/// lands a jump on a boundary, is consulted for programmatic scrolls as well as gestures, and
+/// heals a pager that was somehow left between two pages on the reader's next swipe.
+struct ReaderPagingBehavior: ScrollTargetBehavior {
+    func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
+        target.rect.origin.y = Self.snapped(target.rect.minY, pageHeight: context.containerSize.height)
+    }
+
+    /// The nearest page boundary to `y`. A zero or negative container leaves `y` alone rather
+    /// than dividing by it; the reader has no page to snap to in that state anyway.
+    static func snapped(_ y: CGFloat, pageHeight: CGFloat) -> CGFloat {
+        guard pageHeight > 0 else { return y }
+        return (y / pageHeight).rounded() * pageHeight
     }
 }
