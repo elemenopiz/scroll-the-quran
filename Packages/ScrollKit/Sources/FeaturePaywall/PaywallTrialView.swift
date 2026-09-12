@@ -18,20 +18,33 @@ struct PaywallTrialView: View {
 
     @Environment(\.openURL) private var openURL
 
+    /// The mark is the one element that cannot live at its reference y: on a Dynamic Island
+    /// device y = 47 is behind the island. The outer reader hands `PaywallMetrics` the real
+    /// safe-area inset so the mark can be dropped below it, in canvas points.
     var body: some View {
-        ReferenceCanvas {
-            ZStack(alignment: .top) {
-                Color.appBackgroundFlat
+        GeometryReader { proxy in
+            let insets = proxy.safeAreaInsets
+            let screen = CGSize(
+                width: proxy.size.width + insets.leading + insets.trailing,
+                height: proxy.size.height + insets.top + insets.bottom
+            )
+            ReferenceCanvas {
+                ZStack(alignment: .top) {
+                    Color.appBackgroundFlat
 
-                BrandMark()
-                    .frame(width: PaywallMetrics.logoSize.width, height: PaywallMetrics.logoSize.height)
-                    .padding(.top, PaywallMetrics.logoTop)
+                    BrandMark()
+                        .frame(
+                            width: PaywallMetrics.logoSize.width,
+                            height: PaywallMetrics.logoSize.height
+                        )
+                        .padding(.top, PaywallMetrics.logoTop(safeAreaTop: insets.top, screen: screen))
 
-                closeButton
-                headline.padding(.top, PaywallMetrics.headlineTop)
-                timelineConnector
-                timeline.padding(.top, PaywallMetrics.timelineTop)
-                footer
+                    closeButton
+                    headline.padding(.top, PaywallMetrics.headlineTop)
+                    timelineConnector
+                    timeline.padding(.top, PaywallMetrics.timelineTop)
+                    footer
+                }
             }
         }
         .accessibilityElement(children: .contain)

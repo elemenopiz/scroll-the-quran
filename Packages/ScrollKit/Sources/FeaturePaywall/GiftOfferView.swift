@@ -185,14 +185,21 @@ public struct GiftOfferView: View {
                 .foregroundStyle(GiftPalette.ink)
                 .padding(.top, PaywallMetrics.percentTop - cardTop)
 
+            // The pill tucks under the digits' baseline with a white outline, exactly as the
+            // reference does — the outline is what separates it from the "33%" above it.
             Text(PaywallCopy.off)
                 .font(.geoBold(PaywallMetrics.oneTimeOfferSize))
-                .foregroundStyle(Color.textOnPill)
+                .foregroundStyle(GiftPalette.offPillLabel)
                 .frame(
                     width: PaywallMetrics.offPillSize.width,
                     height: PaywallMetrics.offPillSize.height
                 )
-                .background(Color.pillFill, in: Capsule())
+                .background(GiftPalette.offPillFill, in: Capsule())
+                .overlay {
+                    Capsule()
+                        .stroke(GiftPalette.offPillOutline, lineWidth: PaywallMetrics.offPillOutline)
+                        .padding(-PaywallMetrics.offPillOutline / 2)
+                }
                 .padding(.top, PaywallMetrics.offPillTop - cardTop)
 
             if let trialPillTitle {

@@ -16,9 +16,41 @@ enum PaywallMetrics {
 
     // MARK: - paywall-trial
 
-    /// Logo mark: x 167...225, y 47...101.
-    static let logoSize = CGSize(width: 58, height: 54)
-    static let logoTop: CGFloat = 47
+    /// Logo mark. The reference draws it 58x54 at y 47, which on a Dynamic Island device
+    /// puts it *behind* the island (bottom edge ~52 pt). Phase 4e's accepted deviation:
+    /// square, 72 pt, and anchored to the safe-area top instead of a measured constant —
+    /// see `logoTop(safeAreaTop:screen:)`.
+    static let logoSize = CGSize(width: 72, height: 72)
+    /// Air between the safe-area top edge and the mark, in **screen** points. The safe-area
+    /// top already sits below the island; this is the extra breathing room on top of it.
+    static let logoTopPadding: CGFloat = 2
+    /// The reference's own y, and the floor for a device that reports no top inset.
+    static let logoTopFloor: CGFloat = 47
+
+    /// `ReferenceCanvas` scales the 393x852 composition to fill the screen and centres it,
+    /// so a screen-space y has to be mapped back before it can be used as a canvas padding.
+    static func canvasScale(screen: CGSize) -> CGFloat {
+        guard screen.width > 0, screen.height > 0 else { return 1 }
+        return max(screen.width / referenceWidth, screen.height / referenceHeight)
+    }
+
+    /// Screen point -> reference-canvas point.
+    static func referenceY(screenY: CGFloat, screen: CGSize) -> CGFloat {
+        (screenY - screen.height / 2) / canvasScale(screen: screen) + referenceHeight / 2
+    }
+
+    /// Reference-canvas point -> screen point. The inverse of `referenceY(screenY:screen:)`,
+    /// and what the tests measure the mark's clearance from the island with.
+    static func screenY(referenceY y: CGFloat, screen: CGSize) -> CGFloat {
+        (y - referenceHeight / 2) * canvasScale(screen: screen) + screen.height / 2
+    }
+
+    /// Where the mark's top goes, in canvas points, for a device whose safe-area top inset
+    /// is `safeAreaTop`. Anchoring to the inset rather than to a constant is what keeps the
+    /// ring clear of the Dynamic Island (or the notch, or nothing at all) on every device.
+    static func logoTop(safeAreaTop: CGFloat, screen: CGSize) -> CGFloat {
+        max(referenceY(screenY: safeAreaTop + logoTopPadding, screen: screen), logoTopFloor)
+    }
     /// Close control: ~11 pt glyph centred on (24, 76).
     static let closeSize: CGFloat = 17
     /// Leading edge of the 44 pt tap target, so the 17 pt glyph centres on x = 24
@@ -104,6 +136,14 @@ enum PaywallMetrics {
     static let closedEnvelopeCenter = CGPoint(x: 196, y: 368)
     /// Wax seal on the sealed envelope: 75 pt across, centred on (196, 371).
     static let closedSealDiameter: CGFloat = 75
+    /// The recessed disc inside the wax: 56.7 pt across on the 75 pt seal in
+    /// `gift-closed.png`, i.e. inset 12.2 % of the diameter on each side.
+    static let sealDiscInset: CGFloat = 0.122
+    /// The struck mark: 46.7 pt across on that same 75 pt seal — 0.62 of the diameter,
+    /// so it is inset 19 % on each side.
+    static let sealMarkInset: CGFloat = 0.19
+    /// The emboss offset, as a fraction of the seal: 1 pt on the 92 pt open seal.
+    static let sealEmbossOffset: CGFloat = 0.011
     static let giftHeadlineSize: CGFloat = 31
     static let giftHeadlineTop: CGFloat = 564
     static let giftHeadlineLineSpacing: CGFloat = -7
@@ -138,16 +178,31 @@ enum PaywallMetrics {
         flapApex: CGPoint(x: 196.5, y: 118),
         pocketPoint: CGPoint(x: 196.5, y: 505),
         sealCenter: CGPoint(x: 196.5, y: 490),
-        card: CGRect(x: 72, y: 143, width: 249, height: 417)
+        // Card top is 486 px = 162 pt in `gift-open.png`, not the 143 Phase 3 used: at 143
+        // the card swallowed the flap and left only a sliver of the peak showing.
+        card: CGRect(x: 72, y: 162, width: 249, height: 417)
     )
 
     static let openSealDiameter: CGFloat = 92
     static let oneTimeOfferSize: CGFloat = 24
     static let oneTimeOfferTop: CGFloat = 185
     static let percentSize: CGFloat = 70
-    static let percentTop: CGFloat = 206
-    static let offPillSize = CGSize(width: 72, height: 47)
-    static let offPillTop: CGFloat = 255
+    /// The "33%" ink band runs y 224.7...268.7 in the reference. Geo Bold sets a taller
+    /// cap than the reference's face, so the box top is what is matched: 202 puts our
+    /// ink top on 224.8 and the digits run 5 pt deeper than the reference's.
+    static let percentTop: CGFloat = 202
+    /// "OFF": black capsule x 162...230.7, y 268...301 in `gift-open.png`, with a ~3.3 pt
+    /// white outline around it. It clears the "33%" digits, whose ink ends at y 266.
+    static let offPillSize = CGSize(width: 69, height: 33)
+    /// 2 pt below the reference's 268, which is what our deeper digits need to keep the
+    /// pill under their baseline rather than across it.
+    static let offPillTop: CGFloat = 270
+    static let offPillOutline: CGFloat = 3.3
+    /// The "33%" ink **as we render it** — Geo Bold at `percentSize`, measured off
+    /// `.build/snapshots/gift-open.png`. The reference's own band is 224.7...268.7; ours is
+    /// the same top and 5 pt deeper. The OFF pill, outline included, must not cover more
+    /// than a quarter of it.
+    static let percentInk = ClosedRange<CGFloat>(uncheckedBounds: (lower: 224.8, upper: 274.1))
     static let trialPillSize = CGSize(width: 131, height: 35)
     static let trialPillTop: CGFloat = 323
     static let neverAgainSize: CGFloat = 13

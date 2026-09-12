@@ -8,6 +8,10 @@ public enum BrandMarkInk: Sendable {
     case black
     /// Always the dark-ground ink, for a mark sitting on a known-dark surface.
     case white
+    /// The silhouette flooded with an arbitrary colour. The artwork is a solid shape, so
+    /// template rendering tints it exactly; the gift envelope's wax impression needs two
+    /// such copies (a dark strike and a light highlight) of the one mark.
+    case tinted(Color)
 }
 
 /// The app's mark: the arabesque ring supplied as `Artwork/Logo/Variants/logo-transparent.png`
@@ -32,8 +36,10 @@ public struct BrandMark: View {
             if let artwork = Self.image(named: assetName) {
                 artwork
                     .resizable()
+                    .renderingMode(tint == nil ? .original : .template)
                     .interpolation(.high)
                     .scaledToFit()
+                    .foregroundStyle(tint ?? fallbackColor)
             } else {
                 fallback
             }
@@ -45,19 +51,26 @@ public struct BrandMark: View {
     private var isLightInk: Bool {
         switch ink {
         case .white: true
-        case .black: false
+        case .black, .tinted: false
         case .automatic: colorScheme == .dark
         }
     }
 
+    /// A tinted mark always starts from the black rendition: template rendering throws the
+    /// source colour away, and the black PNG is the one with no white halo to alias against.
     private var assetName: String {
         isLightInk ? "LogoMarkWhite" : "LogoMarkBlack"
+    }
+
+    private var tint: Color? {
+        if case let .tinted(colour) = ink { colour } else { nil }
     }
 
     private var fallbackColor: Color {
         switch ink {
         case .white: .white
         case .black: .black
+        case let .tinted(colour): colour
         case .automatic: .textPrimary
         }
     }
@@ -76,7 +89,7 @@ public struct BrandMark: View {
     }
 
     /// Optically matched to the supplied artwork's band weight.
-    static let fallbackStrokeRatio: CGFloat = 0.075
+    public static let fallbackStrokeRatio: CGFloat = 0.075
 
     /// `Image(_:)` renders an empty box for a name the catalog does not have, so ask first.
     public static func image(named name: String) -> Image? {

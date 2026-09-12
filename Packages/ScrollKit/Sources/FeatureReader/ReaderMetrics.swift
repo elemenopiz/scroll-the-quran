@@ -52,9 +52,13 @@ public enum ReaderMetrics {
 
     // Logo card fill runs x 449..730, y 390..671 px: a 281 px (93.7 pt) square.
 
-    public static let logoCardSize: CGFloat = 94
-    /// The line mark inside it: 212 x 201 px, i.e. an ~11.5 pt inset on each side.
-    public static let logoMarkSize: CGFloat = 70
+    /// The reference card is 93.7 pt. Phase 4e's accepted deviation, on the owner's
+    /// direction that the mark should read bigger inside the app: 112 pt, with the ring at
+    /// 0.80 of it (`CARD_SCALE` in `Artwork/tools/logo.sh` matches, so the shipped
+    /// `LogoCard` artwork is pixel-exact at 112 pt @1x/@2x/@3x).
+    public static let logoCardSize: CGFloat = 112
+    /// The mark inside it: 0.80 of the card, an 11.2 pt inset on each side.
+    public static let logoMarkSize: CGFloat = 90
     /// Card top is 390 px = 130 pt, 28 pt below the toolbar's 101.7 pt bottom edge.
     public static let logoCardTopFromToolbar: CGFloat = 28
     /// Corner inset reaches zero at dy ≈ 55 px and is 16 px at dy = 12 px — a 48 px (16 pt) corner.

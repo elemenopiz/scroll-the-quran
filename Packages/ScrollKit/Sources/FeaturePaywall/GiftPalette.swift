@@ -14,6 +14,10 @@ enum GiftPalette {
     static let cloudWarm = Color(rgb: 0xF8F4EC)
     /// Cool cloud highlight on the right of the sealed envelope: `#EDE9E7`.
     static let cloudCool = Color(rgb: 0xEDE9E7)
+    /// The lit face of the envelope paper: `#F6E9D2`. The sealed envelope reads as one warm
+    /// cream sheet in `gift-closed.png` (samples #F4E4C9 top, #EADBBE bottom), not as the
+    /// near-white `cloudWarm` the first pass ramped from.
+    static let envelopePaper = Color(rgb: 0xF6E9D2)
     /// Envelope paper front: `#F0E0C2`.
     static let envelopeFront = Color(rgb: 0xF0E0C2)
     /// Envelope flap, one step darker: `#E7D2A9`.
@@ -28,6 +32,12 @@ enum GiftPalette {
     static let sealLight = Color(rgb: 0xD9A94F)
     static let sealMid = Color(rgb: 0xC18A40)
     static let sealDark = Color(rgb: 0x9A6B2C)
+    /// The "OFF" pill: pure black capsule, `#D9D9D9` letters, `#FFFFFF` outline — sampled
+    /// straight off `gift-open.png`. Fixed rather than token-derived because the gift
+    /// screens are a warm-paper composition that does not invert with the appearance.
+    static let offPillFill = Color(rgb: 0x000000)
+    static let offPillLabel = Color(rgb: 0xD9D9D9)
+    static let offPillOutline = Color(rgb: 0xFFFFFF)
     /// Ink on the gift screens: `#2B2B2B`.
     static let ink = Color(rgb: 0x2B2B2B)
     /// Muted copy on the gift screens: `#6B655C`.
