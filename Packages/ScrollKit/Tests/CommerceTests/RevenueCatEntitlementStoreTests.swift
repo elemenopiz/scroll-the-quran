@@ -2,22 +2,48 @@
 import Foundation
 import Testing
 
-/// Waits for a main-actor condition to come true, or gives up.
+/// Performs `action`, then waits for the store to have applied enough of
+/// `customerInfoUpdates` for `condition` to hold.
 ///
-/// The store's entitlement can change on `customerInfoUpdates`, which is a `Task` started
-/// in `init` — so "the card failed" and "the family organiser approved it" are observed
-/// one hop later, not on the line that caused them. Polling here rather than sleeping a
-/// fixed interval keeps the suite fast when it passes and honest when it does not.
+/// The store's entitlement can change on the update stream, which is a `Task` started in
+/// `init` — so "the card failed" and "the family organiser approved it" are observed one
+/// hop after the line that causes them. The obvious way to wait for that is to poll a
+/// clock, and it is wrong: under the full parallel suite the main actor is a single queue
+/// shared by hundreds of tests, the hop can take seconds, and a wall-clock budget then
+/// fails for reasons that have nothing to do with the code under test. (It did: three of
+/// the tests below failed inside `Tools/verify.sh` and passed in isolation.)
+///
+/// So this waits on the store's own `onCustomerInfoApplied` seam instead — one wake per
+/// applied update, no polling, no sleeping. The timeout is only a backstop so a genuine
+/// failure reports rather than hangs the suite; on the passing path it is never reached.
+///
+/// Any update still buffered from an earlier call (a purchase pushes one) is applied
+/// first, in order, and simply costs one extra condition check.
 @MainActor
-private func waitUntil(
-    _ timeout: Duration = .milliseconds(2000),
-    _ condition: () -> Bool
+private func applying(
+    to store: RevenueCatEntitlementStore,
+    timeout: Duration = .seconds(30),
+    until condition: @MainActor () -> Bool,
+    _ action: @MainActor () -> Void
 ) async -> Bool {
-    let deadline = ContinuousClock.now + timeout
-    while ContinuousClock.now < deadline {
-        if condition() { return true }
-        await Task.yield()
-        try? await Task.sleep(for: .milliseconds(1))
+    let (wakes, continuation) = AsyncStream<Void>.makeStream()
+    store.onCustomerInfoApplied = { _ in continuation.yield() }
+    defer {
+        store.onCustomerInfoApplied = nil
+        continuation.finish()
+    }
+
+    action()
+    if condition() { return true }
+
+    let backstop = Task { @MainActor in
+        try? await Task.sleep(for: timeout)
+        continuation.finish()
+    }
+    defer { backstop.cancel() }
+
+    for await _ in wakes where condition() {
+        return true
     }
     return condition()
 }
@@ -271,8 +297,9 @@ struct RevenueCatEntitlementStoreTests {
 
         // Twenty minutes later, a family organiser says yes. Nothing in the app is called;
         // it arrives on customerInfoUpdates.
-        client.approvePendingPurchase(of: .yearly)
-        #expect(await waitUntil { store.isPremium })
+        #expect(await applying(to: store, until: { store.isPremium }) {
+            client.approvePendingPurchase(of: .yearly)
+        })
         #expect(store.billingState == .subscribed)
     }
 
@@ -378,9 +405,9 @@ struct RevenueCatEntitlementStoreTests {
         #expect(store.billingState == .subscribed)
         #expect(store.needsPaymentUpdate == false)
 
-        client.enterGracePeriod()
-
-        #expect(await waitUntil { store.billingState == .inGracePeriod })
+        #expect(await applying(to: store, until: { store.billingState == .inGracePeriod }) {
+            client.enterGracePeriod()
+        })
         // The point of the whole BillingState detour: still a paying customer.
         #expect(store.isPremium)
         #expect(store.needsPaymentUpdate)
@@ -394,9 +421,9 @@ struct RevenueCatEntitlementStoreTests {
         await store.load()
         _ = try await store.purchase(.yearly)
 
-        client.enterBillingRetry()
-
-        #expect(await waitUntil { store.billingState == .inBillingRetry })
+        #expect(await applying(to: store, until: { store.billingState == .inBillingRetry }) {
+            client.enterBillingRetry()
+        })
         #expect(store.isPremium == false)
         #expect(store.needsPaymentUpdate)
     }
@@ -408,9 +435,9 @@ struct RevenueCatEntitlementStoreTests {
         await store.load()
         _ = try await store.purchase(.yearly)
 
-        client.expire()
-
-        #expect(await waitUntil { store.isPremium == false })
+        #expect(await applying(to: store, until: { store.isPremium == false }) {
+            client.expire()
+        })
         #expect(store.billingState == .expired)
         #expect(store.needsPaymentUpdate == false)
     }
@@ -422,9 +449,9 @@ struct RevenueCatEntitlementStoreTests {
         await store.load()
         #expect(store.isPremium == false)
 
-        client.push(.entitled(to: .yearlyGift))
-
-        #expect(await waitUntil { store.isPremium })
+        #expect(await applying(to: store, until: { store.isPremium }) {
+            client.push(.entitled(to: .yearlyGift))
+        })
         #expect(store.entitledProductIDs == [ProductID.yearlyGift.rawValue])
         #expect(client.purchaseCount == 0)
         #expect(client.restoreCount == 0)

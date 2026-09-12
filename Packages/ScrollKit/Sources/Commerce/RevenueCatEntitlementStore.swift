@@ -37,6 +37,17 @@ public final class RevenueCatEntitlementStore: EntitlementProviding {
     /// can tell "still loading" from "loaded and empty".
     public private(set) var hasLoaded = false
 
+    /// Test seam: called on the main actor after each customer info **that arrived on
+    /// `customerInfoUpdates`** has been applied.
+    ///
+    /// It exists because the alternative is a test that polls a clock. The listener is a
+    /// `Task`, so "the card failed" is observed one hop after the line that caused it, and
+    /// under a parallel suite the main actor can be deep enough that the hop takes seconds
+    /// — a wall-clock wait then fails for reasons that have nothing to do with the code
+    /// under test. Waiting on this instead makes those tests event-driven and exact.
+    /// `MockEntitlementStore.onEntitlementChange` is the same idea for the same reason.
+    @ObservationIgnored var onCustomerInfoApplied: ((RCCustomerInfo) -> Void)?
+
     @ObservationIgnored private let client: any RevenueCatClient
     @ObservationIgnored private var packagesByProductID: [ProductID: RCPackage] = [:]
     @ObservationIgnored private var updates: Task<Void, Never>?
@@ -59,6 +70,7 @@ public final class RevenueCatEntitlementStore: EntitlementProviding {
             for await info in client.customerInfoUpdates {
                 guard let self else { return }
                 apply(info)
+                onCustomerInfoApplied?(info)
             }
         }
     }
