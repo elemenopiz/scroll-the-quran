@@ -13,7 +13,8 @@ public protocol EntitlementProviding: AnyObject {
     var isSubscribed: Bool { get }
 }
 
-/// The stand-in used by previews, snapshots and tests until StoreKit is wired.
+/// The stand-in used by previews, snapshots and tests. The shell injects the bridge onto
+/// the real `Commerce` store instead; this exists so a view can be exercised on its own.
 @MainActor
 @Observable
 public final class MockEntitlementStore: EntitlementProviding {
