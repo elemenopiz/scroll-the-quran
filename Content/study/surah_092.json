@@ -1,7 +1,7 @@
 {
   "surah": 92,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:34:45.792Z",
+  "generatedAt": "2026-09-12T10:26:18.910Z",
   "studies": [
     {
       "key": "92:1-5",
@@ -36,8 +36,8 @@
       "theologicalSignificance": "The oaths make difference structural. Night and day, male and female: creation is built out of opposed pairs, and human effort is placed in the same category. That normalises divergence before any judgement is passed, so the sorting that follows is not a complaint about variety but a claim that the directions lead somewhere different. The first type is then defined by an act, giving, rather than by a state of mind.",
       "crossReferences": [
         {
-          "ref": "92:5-10",
-          "why": "Completes the sorting this passage opens, giving three conditions for each type and a matched promise."
+          "ref": "92:6-13",
+          "why": "Completes the sorting this passage opens, setting the two paths against each other and naming what each is eased toward."
         },
         {
           "ref": "51:49",
@@ -50,14 +50,241 @@
       ],
       "applyIt": "Write down the three things you spent most of this week's energy on. Just the three, without ranking them. The ayah says efforts run in different directions, and most people have never actually looked at where theirs are pointing. Then leave the list somewhere you will see it on Friday.",
       "exploreFurther": [
-        "92:5-13",
+        "92:14-21",
         "51:49",
         "53:38-41"
       ],
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:34:38.073Z",
+        "generatedAt": "2026-09-12T10:26:10.842Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "92:6-10",
+      "surah": 92,
+      "start": 6,
+      "end": 10,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "Giving, And Needing Nothing",
+      "tier": "standard",
+      "meaning": "The turn sits in the second man's second verb. He withholds, which is common enough, and then he holds himself to be beyond need, which is the charge that actually lands. Commentators read that either as having no need of what giving would earn him or as having no need of God, and both readings are kept. Against him stands a man who gives and guards himself, and the two are then separated by what they do with something the surah names only as the most beautiful, leaving its noun unspoken.",
+      "historicalContext": "Meccan. Giving in the city was competitive and performed in public, and refusing was just as visible. Classical sources attach the closing lines of this surah to a wealthy believer who bought and freed people being persecuted for their faith, though the commentators observe that the wording stays general throughout and describes a type rather than naming anybody.",
+      "keyTerms": [
+        {
+          "arabic": "بَخِلَ",
+          "gloss": "he was miserly, he withheld",
+          "note": "The root covers holding back what is expected of you. It is not a word about having little; it names a refusal at the moment of asking, which is why the verb that follows explains the attitude behind it."
+        },
+        {
+          "arabic": "وَٱسْتَغْنَىٰ",
+          "gloss": "and thought himself beyond need",
+          "note": "A form meaning to seek or to claim independence. The object is left out, so the sentence can mean he felt no need of the reward or no need of God, and the ambiguity is not resolved."
+        },
+        {
+          "arabic": "بِٱلْحُسْنَىٰ",
+          "gloss": "the most beautiful",
+          "note": "A feminine superlative with its noun removed, so what is best is never said. Classical readings supply the promised reward, the word of God's oneness, or goodness itself, and the sources set them side by side."
+        }
+      ],
+      "lifeInProphetsTime": "There was a loud kind of generosity in Mecca and a quiet one. The loud kind happened at gatherings, was counted, and turned into verse. The quiet kind was buying a person out of bondage or paying a fine for a man with no clan to stand behind him, and it bought the giver nothing at all socially, since the beneficiary had no standing to repay the gesture with reputation. The surah is describing the second kind.",
+      "didYouKnow": "The second half of this surah runs almost entirely on superlatives: the easiest way, the hardest, the most beautiful, the most wretched, the most God-fearing, the Most High. Arabic builds them all on a single pattern, so the sorting of people is carried out in a grammatical form that has no comfortable middle term available to it.",
+      "theologicalSignificance": "What is diagnosed is not stinginess but self-sufficiency, and the order of the verbs makes that explicit: the withholding comes first and is then explained by the attitude. The passage also refuses to treat giving as a transaction it can price. The man who gives is described by three things at once, only one of which involves money, and the other two are an inner caution and an act of assent.",
+      "crossReferences": [
+        {
+          "ref": "96:6-7",
+          "why": "Names the same disorder with the same verb, a person overstepping once he sees himself as needing nothing."
+        },
+        {
+          "ref": "64:16-17",
+          "why": "Promises that whoever is guarded from his own soul's grasping is among those who succeed."
+        },
+        {
+          "ref": "2:268",
+          "why": "Describes the fear of poverty as a suggestion whispered against giving, answered with a promise of bounty."
+        }
+      ],
+      "applyIt": "Give something small away today in a way that produces no acknowledgement: nobody knows it was you, nobody can thank you, nothing comes back. Then notice how much less satisfying it feels than the version where someone sees. That gap is the thing this passage is measuring.",
+      "exploreFurther": [
+        "96:6-8",
+        "2:261-268",
+        "64:14-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:38:57.955Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "92:11-15",
+      "surah": 92,
+      "start": 11,
+      "end": 15,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "When The Money Cannot Reach",
+      "tier": "standard",
+      "meaning": "A man falls, and the verb is one of tumbling into a pit rather than of dying in a bed, so the moment of need arrives at speed and his wealth is simply not there. Two statements follow in the same emphatic shape, one placing the guidance on God and one putting both worlds in His hands, the later world named before the earlier one. Then the voice changes. For the only time in the surah the speaker says I, and what He says is that He has warned them of a fire described by a verb of flaring rather than by any noun.",
+      "historicalContext": "Meccan. The surah has just sorted people into two kinds by what they do with their money and their assent; these lines close that argument by naming the things neither kind controls. Classical commentators mark the brief shift into the first person singular as unusual and read it as the warning being delivered directly rather than relayed. No specific occasion is reported for the passage.",
+      "keyTerms": [
+        {
+          "arabic": "تَرَدَّىٰٓ",
+          "gloss": "he falls, he plunges",
+          "note": "A verb of tumbling into a pit or down a slope, also used of perishing outright. It sets the moment of need at a fall, which is the one situation where nothing can be fetched in time."
+        },
+        {
+          "arabic": "وَٱلْأُولَىٰ",
+          "gloss": "and the first",
+          "note": "The feminine for the earlier one, meaning the present world. Placing it after the hereafter reverses the order a listener expects and gathers both under a single ownership in one short line."
+        },
+        {
+          "arabic": "تَلَظَّىٰ",
+          "gloss": "blazing up, flaring",
+          "note": "A verb rather than a description, from a root of flame licking upward. The fire is given as something doing rather than something being, which keeps it in the present tense of the warning."
+        }
+      ],
+      "lifeInProphetsTime": "A trader's wealth travelled with him, roped onto the animals. The tracks out of Mecca ran along wadi beds and over ledges, and moving at night to avoid the heat meant moving where a misjudged step took a man and his packs over an edge together. Falls were the ordinary way that people and fortunes were lost on the road, which is why the image needed no elaboration for a first audience.",
+      "didYouKnow": "This is the only line in the surah where God speaks as I. Everywhere else in these twenty-one ayat He is We, or He is spoken of in the third person, and the surrounding lines about guidance and ownership both use the plural. The singular appears once, for the warning, and then the surah returns to the plural and never uses it again.",
+      "theologicalSignificance": "Guidance is stated as something resting on God rather than as something a person achieves, and the line immediately after removes every alternative address by putting both worlds under one owner. Together the two close off the escape the first line has just illustrated: there is nowhere outside the arrangement to fall to. The warning that follows is then delivered in the first person, so it arrives unmediated rather than as a report.",
+      "crossReferences": [
+        {
+          "ref": "16:9",
+          "why": "States the same responsibility in nearly the same construction, that the direction of the way rests upon God."
+        },
+        {
+          "ref": "3:10",
+          "why": "Says outright that wealth and children will not avail anyone at all against God on that day."
+        },
+        {
+          "ref": "111:2",
+          "why": "Shows the principle applied to one named man, whose wealth and earnings did nothing for him."
+        }
+      ],
+      "applyIt": "Name the thing you are quietly counting on to catch you if everything goes wrong: savings, a relative, a qualification, a person who owes you. You do not have to give it up or feel bad about it. Just say what it is out loud, once, and notice that you have one and that you had never named it.",
+      "exploreFurther": [
+        "16:9",
+        "3:10",
+        "104:1-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:38:57.955Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "92:16-20",
+      "surah": 92,
+      "start": 16,
+      "end": 20,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "No Favour To Repay",
+      "tier": "standard",
+      "meaning": "The man who will be kept clear of the fire is built up in three stages, and the last two are subtractions. He gives his wealth, seeking to grow pure. Then a motive is removed: nobody has a favour with him that is being settled, so the gift is not a repayment. Then everything else is removed by an exception, leaving only the seeking of his Lord's face. Classical commentators note how total the exclusion is. Nothing survives it except one intention, which is why the passage reads as a definition rather than a portrait.",
+      "historicalContext": "Meccan. Giving in the city ran on an economy of returns: a gift created an obligation, obligations were remembered, and poets recited the ledger aloud. Classical sources attach these closing lines to a wealthy believer who spent his money buying and freeing people being tortured for their faith, where no return of any kind was available. The commentators add that the wording stays general and names nobody.",
+      "keyTerms": [
+        {
+          "arabic": "يَتَزَكَّىٰ",
+          "gloss": "seeking to grow pure",
+          "note": "A verb joining growth and purification, from the root behind the word for alms. Giving is presented as the pruning that makes a thing grow rather than as a subtraction from a total."
+        },
+        {
+          "arabic": "تُجْزَىٰٓ",
+          "gloss": "that is being repaid",
+          "note": "A passive of recompense, the word used in trade for settling what is owed. The clause removes the entire system in which a gift creates a debt that can be called in later."
+        },
+        {
+          "arabic": "وَجْهِ",
+          "gloss": "face, countenance",
+          "note": "The word for a face, used in Arabic for the direction one turns toward and for the thing itself rather than anything it produces. Commentators read it of God, warning against picturing anything."
+        }
+      ],
+      "lifeInProphetsTime": "Generosity in Mecca functioned as credit. A man who fed you held a claim on you, and the claim was enforced by reputation if by nothing else, since the amounts were recited publicly afterwards. Giving where no return was possible, to a person in bondage or to somebody with no clan behind him, meant spending outside the system entirely. To onlookers it looked less like virtue than like waste.",
+      "didYouKnow": "The title given to God at the end of this passage, the Most High attached to the word Lord, appears in only a few places in the Quran. One of them is another early surah's opening command to glorify. Another is in the mouth of Pharaoh, who uses the identical phrase about himself, so the same two words mark the summit of devotion and the summit of arrogance.",
+      "theologicalSignificance": "Judgement is placed on motive, and the passage gets there by elimination rather than by assertion. It does not praise the giver's generosity; it strips away every reason he might have had until only one remains, and then says that one is what counts. The effect is to make sincerity a negative quality, defined by what is absent from an act, which is far harder to manufacture than a feeling.",
+      "crossReferences": [
+        {
+          "ref": "76:8-9",
+          "why": "Puts the same disclaimer into direct speech: we feed you for God's face, wanting from you neither reward nor thanks."
+        },
+        {
+          "ref": "2:264",
+          "why": "Describes the opposite case, charity cancelled by reminding the recipient of it afterwards."
+        },
+        {
+          "ref": "30:38-39",
+          "why": "Sets giving that seeks God's face against giving arranged to increase through other people's wealth."
+        }
+      ],
+      "applyIt": "Think of the last significant thing you gave someone, and check honestly whether you have kept an account of it. Most people find one, quietly maintained, with an expectation attached. You do not need to tear it up today. Just notice that you have been keeping it, and that this passage is about the man who is not.",
+      "exploreFurther": [
+        "76:5-12",
+        "2:262-264",
+        "30:38-39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.285Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "92:21",
+      "surah": 92,
+      "start": 21,
+      "end": 21,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "And He Will Be Satisfied",
+      "tier": "standard",
+      "meaning": "Two words close the surah and both are doing work. The first is a particle of the future carrying an oath's emphasis, so the promise is certain and deferred in the same breath. The second is a verb of being content, and it is left without an object: the text never says what he will be satisfied with. Classical commentators treat the omission as deliberate, since naming a reward would put a limit on it. What is promised is a condition of the person rather than a thing handed over.",
+      "historicalContext": "Meccan, the final line of a chapter that has sorted people by what they do with money and with assent. It closes on the generous man rather than on the fire described in the middle, and the commentators observe that the surah gives its last word to the better of the two outcomes rather than to the warning.",
+      "keyTerms": [
+        {
+          "arabic": "وَلَسَوْفَ",
+          "gloss": "and surely, in time",
+          "note": "A future particle carrying the weight of an oath. It fixes certainty and delay in a single word, so the sentence cannot be read as immediate and cannot be read as doubtful either."
+        },
+        {
+          "arabic": "يَرْضَىٰ",
+          "gloss": "he will be content",
+          "note": "A verb of accepting something as satisfactory, used with no object here. The gap is the point: commentators read it as leaving the satisfaction unmeasured rather than as an ellipsis to be filled in."
+        }
+      ],
+      "lifeInProphetsTime": "Meccan wealth arrived late. A man financed a caravan in the spring and saw nothing back until the autumn, and in between he lived entirely on expectation while the goods travelled without him. Delay between outlay and return was simply the shape of money there. A promise phrased as certain but not yet was therefore a familiar instrument rather than a consolation offered in place of one.",
+      "didYouKnow": "The verb that ends this surah reappears in one of the Quran's most quoted descriptions of reward, where God is content with them and they are content with Him, the same root used twice facing in opposite directions. That sentence occurs four times in the Book, so the single unfinished verb here has a completed form elsewhere.",
+      "theologicalSignificance": "Reward is left unnamed, and the grammar is what does it. A verb without an object cannot be priced or compared, so the promise resists being turned into an expected quantity. The passage also relocates the reward inside the person. What is guaranteed is not that he will receive something adequate, but that he will be satisfied, which is a claim about him rather than about the size of the gift.",
+      "crossReferences": [
+        {
+          "ref": "93:5",
+          "why": "Uses the same verb in the same future construction, promising a giving after which you will be content."
+        },
+        {
+          "ref": "98:8",
+          "why": "Completes the sentence this one leaves open, with God content with them and they with Him."
+        },
+        {
+          "ref": "89:27-28",
+          "why": "Describes a soul called back well pleased and pleasing, the same root turned into two matched participles."
+        }
+      ],
+      "applyIt": "Name one thing you are currently waiting on a result for, and estimate how much of today's mood is attached to it. Then notice that this line promises an outcome without saying when or what. Sit with the discomfort of that for a moment. Most of what you are waiting on is smaller and arrives sooner.",
+      "exploreFurther": [
+        "93:1-8",
+        "98:8",
+        "89:27-30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.285Z",
         "reviewed": false
       }
     }

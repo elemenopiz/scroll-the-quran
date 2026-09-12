@@ -122,15 +122,29 @@ struct VerseSearchCard: View {
 public struct VerseSearchView: View {
     @State private var model: VerseSearchModel
     private let navigation: (any HomeNavigation)?
+    private let premium: HomePremiumStatus
+    private let requestPremium: HomePremiumRequest
 
-    public init(surahs: SurahIndex, navigation: (any HomeNavigation)? = nil) {
+    public init(
+        surahs: SurahIndex,
+        navigation: (any HomeNavigation)? = nil,
+        premium: HomePremiumStatus = .unlocked,
+        requestPremium: HomePremiumRequest = HomePremiumRequest()
+    ) {
         _model = State(initialValue: VerseSearchModel(index: surahs))
         self.navigation = navigation
+        self.premium = premium
+        self.requestPremium = requestPremium
     }
 
     public var body: some View {
         ScrollView {
             VerseSearchCard(model: model) { key in
+                // The same gate Home applies: Verse Search's only destination is Deep Study.
+                guard premium.isPremium else {
+                    requestPremium(.verseSearch)
+                    return
+                }
                 navigation?.openDeepStudy(key: key)
             }
             .padding(.horizontal, Spacing.pageMargin)

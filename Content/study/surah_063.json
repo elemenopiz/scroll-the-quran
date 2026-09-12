@@ -1,8 +1,414 @@
 {
   "surah": 63,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:00:24.544Z",
+  "generatedAt": "2026-09-12T09:40:04.612Z",
   "studies": [
+    {
+      "key": "63:1",
+      "surah": 63,
+      "start": 1,
+      "end": 1,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "A True Sentence Falsely Said",
+      "tier": "standard",
+      "meaning": "The ayah does something unusual: it takes a statement that is true, confirms it independently, and still calls the speakers liars. What they said about the messenger is accurate. God's own witness follows immediately, using the same emphatic form. Then a third clause identifies the lie, which is not the content of the sentence but the claim to bear witness: they testified to something they did not hold. Classical commentators note the precision. The falsehood sits in the speaker, not the proposition.",
+      "historicalContext": "Medinan, from the years when the community in Medina included people who had joined it publicly while keeping other loyalties. The surah is named for them. Commentators connect it broadly to an expedition on which words were spoken against the community and then denied under oath, though the reports differ on details. The Quran's response is not to expose individuals but to describe a posture, which is why the surah names no one.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُنَـٰفِقُونَ",
+          "gloss": "those who dissemble",
+          "note": "The root describes a burrow with a second exit, the kind a desert rodent digs so it can leave by the hole no one is watching. The image is of an escape route kept open, not of simple lying."
+        },
+        {
+          "arabic": "نَشْهَدُ",
+          "gloss": "we bear witness",
+          "note": "A verb of formal testimony, not of opinion. It commits the speaker personally to what is said, which is why the ayah can accept the statement as true and still convict the act of saying it."
+        },
+        {
+          "arabic": "لَكَـٰذِبُونَ",
+          "gloss": "indeed liars",
+          "note": "An emphatic plural carrying a particle of assertion, the same emphasis the speakers had used in their own sentence. The ayah answers their certainty with a matching grammatical weight rather than with a milder word."
+        }
+      ],
+      "lifeInProphetsTime": "Testimony was the machinery of that society. With almost no written record, disputes over a debt, a marriage or a boundary were settled by men standing up and saying what they had seen, and a person known to testify loosely lost standing that took years to rebuild. To open a sentence with the formula of witness was to stake a reputation. The people described here spent that credit on a sentence they did not mean.",
+      "didYouKnow": "The word that names this surah appears four times inside it, twice in this opening ayah alone, which is a high density for an eleven-ayah chapter. The same ayah puts two verbs of witnessing and one of knowing into a single line: the speakers testify, God knows, and then God testifies, so the human claim is bracketed by divine ones.",
+      "theologicalSignificance": "The ayah separates the truth of a statement from the truthfulness of a speaker, which is a distinction ordinary language blurs. A person can say only correct things and still be describable as a liar, because speech is an act as well as a content. It also shows God confirming the messenger independently of any human endorsement, so the testimony offered adds nothing and its withdrawal would take nothing away.",
+      "crossReferences": [
+        {
+          "ref": "2:8",
+          "why": "Opens the Quran's longest description of the same posture: people who say they believe while not believing."
+        },
+        {
+          "ref": "4:142",
+          "why": "Describes the same group standing for prayer without appetite, seen by others and remembering God little."
+        },
+        {
+          "ref": "49:14",
+          "why": "Distinguishes between saying you have believed and having belief actually enter the heart."
+        }
+      ],
+      "applyIt": "Listen to yourself the next time you say something warm that you do not entirely feel: the compliment, the promise to visit, the agreement in a meeting. You do not have to stop. Just notice it, once, without excusing it. The ayah is aimed at people who said an accurate thing for a reason that had nothing to do with its being accurate.",
+      "exploreFurther": [
+        "2:8-16",
+        "4:142-143",
+        "49:14"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.425Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:2-3",
+      "surah": 63,
+      "start": 2,
+      "end": 3,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "Oaths Used As Armour",
+      "tier": "standard",
+      "meaning": "An oath is described as a shield, taken up to deflect consequence rather than to bind the one swearing. The commentators note the effect the ayah names next: the cover does not only protect the swearer, it turns others away from the path, because a community that cannot trust its oaths stops trusting its shared commitments. The second ayah gives the cause in a short sequence: belief, then rejection, then a sealing of the hearts. Understanding is what is lost, which the Quran treats as a consequence and not a starting condition.",
+      "historicalContext": "Medinan. Medina in those years was a city of overlapping agreements, where clans had sworn alliances with each other and, in some cases, with parties outside. An oath was the instrument that held all of it together. The commentators place these ayat among reports of statements made and then sworn away, without settling on one incident, and read the passage as describing a pattern rather than prosecuting a case.",
+      "keyTerms": [
+        {
+          "arabic": "جُنَّةً",
+          "gloss": "a shield, a screen",
+          "note": "From a root meaning to cover or conceal, which also produces the words for garden, for the unseen beings, and for madness. All of them share the idea of something hidden from sight."
+        },
+        {
+          "arabic": "فَطُبِعَ",
+          "gloss": "so it was sealed",
+          "note": "The verb used of stamping wax or striking a coin, where a shape is fixed and will not change. Passive here, and placed after the turning away, so the sealing follows the choice rather than preceding it."
+        },
+        {
+          "arabic": "يَفْقَهُونَ",
+          "gloss": "they understand deeply",
+          "note": "A verb for grasping what lies beneath the surface of something, stronger than simply knowing. What the ayah says is lost is not information but penetration, the ability to see what a thing actually means."
+        }
+      ],
+      "lifeInProphetsTime": "A shield in that world was often a round hide stretched over a frame, light enough to carry all day and good against a first blow. It was defensive equipment, not a weapon, and nobody won anything holding one. Oaths worked the same way in disputes. Sworn before witnesses, an oath closed a question and ended the questioning, which is exactly the use the ayah describes and exactly why the misuse mattered so much.",
+      "didYouKnow": "The phrase about oaths taken as a shield occurs twice in the Quran, here and a few surahs earlier, with almost identical wording, and both times it is followed by the same clause about turning people from God's path. Repetitions this close in form are uncommon outside the accounts of earlier prophets, where refrains are built in deliberately.",
+      "theologicalSignificance": "The sealing of a heart is given a history here, and the order is the whole argument. Belief came first, then its abandonment, then the seal. Nothing in the sequence suggests a person made unable to believe from the start. The passage also identifies the damage a broken oath does outside the person who breaks it: trust is a public good, and the ayah counts its loss as obstruction of the path rather than as a private fault.",
+      "crossReferences": [
+        {
+          "ref": "58:16",
+          "why": "Uses nearly the same sentence about oaths taken as a cover and the turning away that follows."
+        },
+        {
+          "ref": "2:7",
+          "why": "Describes the sealing of hearts and hearing, with a covering placed over the sight."
+        },
+        {
+          "ref": "4:137",
+          "why": "Traces a movement in and out of belief more than once, and states the outcome plainly."
+        }
+      ],
+      "applyIt": "Find one commitment you made and have been quietly explaining away. Do not renegotiate it in your head again. Either do it this week or go to the person and say plainly that you will not. The ayah is about protective language, the sentence that closes a question without settling it. Say the uncomfortable version once and notice what it costs.",
+      "exploreFurther": [
+        "58:14-16",
+        "2:7",
+        "16:94"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.426Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:4",
+      "surah": 63,
+      "start": 4,
+      "end": 4,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Timber Propped Against A Wall",
+      "tier": "standard",
+      "meaning": "The description works through the senses in order: what you see impresses, what you hear holds attention, and then the simile withdraws both. Propped timber is shaped, substantial and useless, leaning because it cannot stand. The next clause is psychological rather than visual. People in this condition hear every raised voice as directed at them, which the commentators read as the permanent alertness of someone whose position depends on not being found out. The closing line tells the listener to be wary, not to retaliate.",
+      "historicalContext": "Medinan. The people this surah describes were not outsiders; they were present at gatherings, well dressed, articulate and often well connected, which is why the ayah begins with the impression they made. The commentators record that some were notably eloquent. No single occasion is attached to this ayah. It belongs to the surah's portrait, which is drawn in general terms so that no name attaches to it.",
+      "keyTerms": [
+        {
+          "arabic": "خُشُبٌ",
+          "gloss": "timbers, logs",
+          "note": "A plural for cut wood, not for living trees. The word already carries the loss of growth, so the comparison is to material that was once part of something alive and is now only material."
+        },
+        {
+          "arabic": "مُّسَنَّدَةٌ",
+          "gloss": "propped, leaned up",
+          "note": "A passive participle meaning set against a support. Timber stored this way is waiting to be used and holds nothing up itself, which is the precise force of the image: presence without function."
+        },
+        {
+          "arabic": "صَيْحَةٍ",
+          "gloss": "a shout, a cry",
+          "note": "The word for a sudden loud cry, used elsewhere of the blast that overtakes a doomed people. Hearing every one of them as aimed at you is the reaction of a person expecting to be named."
+        }
+      ],
+      "lifeInProphetsTime": "Good timber was scarce in that landscape and worth keeping. Beams for a roof or a door frame were carried in from the north or salvaged, and a household with spare wood leaned it against an outer wall where it stayed for years, drying, in the way, occasionally stolen. Everyone in Medina had walked past a stack like that. Nothing about it was worthless; nothing about it was doing anything either.",
+      "didYouKnow": "This is the only place in the Quran where human beings are compared to timber, and the word itself is among the noted variants in the recitation tradition, read with two different vowel patterns of the same plural. Either way the picture holds: shaped wood, stored and idle, waiting for a use that does not come.",
+      "theologicalSignificance": "The ayah locates the failure in substance rather than in style, and it does so after conceding the style completely. Impressive presence and persuasive speech are granted, not denied, which makes the point sharper: neither is evidence of anything. The detail about hearing every shout as an accusation adds something rare, an account of what this costs the person living it. Concealment is described from the inside, as exhausting.",
+      "crossReferences": [
+        {
+          "ref": "2:204",
+          "why": "Describes a man whose speech about worldly life impresses, while God knows what is in his heart."
+        },
+        {
+          "ref": "24:39",
+          "why": "Gives another image of substance that fails on inspection, a mirage taken for water."
+        },
+        {
+          "ref": "9:56",
+          "why": "Records people swearing they belong to the community while in fact being afraid of it."
+        }
+      ],
+      "applyIt": "Take one thing you are good at presenting and ask what it is holding up. A skill, a role, a reputation: name the person or the work that actually rests on it. If nothing does, that is worth knowing without panic. The image in this ayah is not of rot. It is of good wood leaning against a wall, waiting to be put into a building.",
+      "exploreFurther": [
+        "2:204-206",
+        "24:39",
+        "9:56"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.426Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:5",
+      "surah": 63,
+      "start": 5,
+      "end": 5,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "Heads Turned From An Offer",
+      "tier": "standard",
+      "meaning": "What is refused here is not a demand but an offer. They are invited to come so that the messenger may seek forgiveness on their behalf, which costs them nothing but the coming. The response is described as a physical gesture before it is named as a disposition: heads twisted aside, then a turning away that the ayah calls arrogance. Commentators differ over whether the twisting is a sneer, an averted face or a shaking of the head; all readings agree that the body answered before any word did.",
+      "historicalContext": "Medinan. Intercession by a respected figure was the ordinary way a quarrel ended in that society, and accepting it was how a person rejoined a group without losing everything. The offer described here follows that shape exactly. The commentators connect the ayah to the aftermath of words spoken on an expedition, where the offer was made publicly and declined, though the reports vary in their details.",
+      "keyTerms": [
+        {
+          "arabic": "تَعَالَوْا۟",
+          "gloss": "come, come up",
+          "note": "An imperative built from a root meaning height, so the invitation literally says come up rather than come here. It carries the sense of being called toward something raised, and is the word used for invitations to reconciliation."
+        },
+        {
+          "arabic": "لَوَّوْا۟",
+          "gloss": "they twisted",
+          "note": "An intensive verb for bending or turning something repeatedly, used of twisting rope and of wringing a cloth. Applied to heads it suggests a deliberate, visible motion rather than a glance."
+        },
+        {
+          "arabic": "مُّسْتَكْبِرُونَ",
+          "gloss": "acting greatly, arrogant",
+          "note": "A form that means seeking to be great rather than being great. The Quran uses it for a posture adopted, which is why it fits people whose standing was precarious and who needed the gesture more than a secure person would."
+        }
+      ],
+      "lifeInProphetsTime": "Reconciliation in Arabia had choreography. A mediator went between the parties, a meeting was arranged, and the one at fault came in person to a place where others could see him come. Showing up was most of the apology. Refusing to come was therefore a public act, legible to everyone present, and the ayah records it in the way it would have been seen: not as an argument, but as a head turning in a crowded room.",
+      "didYouKnow": "The verb used for twisting the head appears in only a few places in the Quran, and one of them describes people twisting their tongues with the scripture to make something sound like part of it. The same physical word covers both, so the surah's language links a gesture of the head to a distortion of speech without saying so directly.",
+      "theologicalSignificance": "Forgiveness is presented as something that has to be walked toward. The ayah does not say the offer was unavailable or insufficient; it says it was declined, and it locates the refusal in self-regard rather than in doubt. That matters for how the passage reads. What blocks the outcome is not the size of the fault but an unwillingness to be seen needing anything, which is a condition available to anyone.",
+      "crossReferences": [
+        {
+          "ref": "4:64",
+          "why": "Describes people coming to the Prophet and seeking forgiveness with him, which is the step refused here."
+        },
+        {
+          "ref": "40:60",
+          "why": "Promises an answer to whoever calls on God, and names refusal to ask as a kind of disdain."
+        },
+        {
+          "ref": "71:7",
+          "why": "Shows an earlier people putting fingers in their ears and covering themselves when called to forgiveness."
+        }
+      ],
+      "applyIt": "There is a room you have not walked into: an apology you decided would be humiliating, a message you drafted and left unsent. The ayah says nothing about the words. It is entirely about the coming. Go this week, and let it be awkward. You can say almost nothing once you are there, and it will still have been the hard part.",
+      "exploreFurther": [
+        "4:64",
+        "40:60",
+        "71:5-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.427Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:6",
+      "surah": 63,
+      "start": 6,
+      "end": 6,
+      "theme": "Forgiveness",
+      "themeId": "forgiveness",
+      "title": "When Asking Changes Nothing",
+      "tier": "standard",
+      "meaning": "A hard ayah, and the commentators read its severity narrowly. It does not say that intercession is useless in general; it says that for people in this particular posture, described across the previous five ayat as knowingly refusing, the asking and the not asking come to the same thing. The reason is given in the closing clause, which names conduct rather than decree: God does not guide people who step outside what they know. The obstacle is on their side of the exchange.",
+      "historicalContext": "Medinan. The classical sources preserve reports that the Prophet Muhammad (peace be upon him) continued to seek forgiveness for people the community knew to be double-dealing, and that ayat of this kind were revealed in response. The reports differ over the occasions. What they agree on is the direction of the correction: it is addressed to a messenger inclined toward mercy, not to a community inclined toward exclusion.",
+      "keyTerms": [
+        {
+          "arabic": "سَوَآءٌ",
+          "gloss": "equal, the same",
+          "note": "A word for evenness, used of a level surface and of two things that balance. Placing it first makes the whole sentence a statement about equivalence before either option is named."
+        },
+        {
+          "arabic": "أَسْتَغْفَرْتَ",
+          "gloss": "you sought forgiveness",
+          "note": "A verb in the form that means to seek something out, so forgiveness is presented as requested rather than produced. Even in the mouth of a messenger it remains a petition, which is what the ayah then answers."
+        },
+        {
+          "arabic": "لَن",
+          "gloss": "will never",
+          "note": "A particle of emphatic future negation, stronger than the ordinary negative. It rules out the outcome rather than reporting that it has not happened, which is why the ayah reads as closing a door rather than describing one."
+        }
+      ],
+      "lifeInProphetsTime": "A chief's word could cover a great deal in that world. If a respected man spoke for you, blood money was reduced, a feud paused, a door reopened. People calculated on it, and part of joining a strong man's circle was acquiring access to that protection. The ayah is addressed to a society that assumed influence transfers. It tells them that in one direction, toward God, it does not work that way.",
+      "didYouKnow": "A closely parallel ayah in the surah of repentance puts the same point as a number: whether forgiveness is sought for them seventy times, it will not be granted. The classical commentators are unanimous that the seventy is not a threshold but an idiom for a large count, and they read this ayah as the same statement without the figure.",
+      "theologicalSignificance": "The passage protects something that might otherwise be misread. Intercession is real in the Quran, but it is not a mechanism that operates on a person who has not moved. What the ayah rules out is the idea that another's petition can substitute for the turning the person has declined to make. Read that way, the severity is a statement about human agency: the one thing no one else can do for you is want it.",
+      "crossReferences": [
+        {
+          "ref": "9:80",
+          "why": "States the same equivalence and adds the figure of seventy requests, with the same outcome."
+        },
+        {
+          "ref": "4:110",
+          "why": "Holds the door open for anyone who wrongs himself and then seeks God's forgiveness."
+        },
+        {
+          "ref": "39:53",
+          "why": "Tells those who have gone far in harming themselves not to despair of God's mercy."
+        }
+      ],
+      "applyIt": "Think of a time someone else apologised on your behalf, or smoothed something over for you. It worked, and you did not have to say anything. Notice how little of it you remember. Then pick one thing this week that you owe and handle yourself, badly if necessary. The ayah is about the difference between being covered for and turning around.",
+      "exploreFurther": [
+        "9:80",
+        "39:53",
+        "3:135"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.427Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:7",
+      "surah": 63,
+      "start": 7,
+      "end": 7,
+      "theme": "Greed and Generosity",
+      "themeId": "greed-and-generosity",
+      "title": "Starve Them Out",
+      "tier": "standard",
+      "meaning": "A political calculation is quoted and then answered from an unexpected direction. The speakers propose withholding support from the people around the messenger until they scatter, which assumes that a community held together by shared poverty can be broken by cutting its supply. The reply does not argue about strategy. It says the storehouses of the heavens and the earth belong to God, which relocates the question of supply entirely. The closing clause calls the failure one of understanding rather than of malice.",
+      "historicalContext": "Medinan, and the economics behind it are specific. The emigrants had arrived with little and depended for years on the households of Medina, which made the flow of support a real lever. Commentators attach this ayah to remarks made during an expedition, though they differ on who said what. The Quran preserves the sentence and withholds the name, which keeps the passage a description of a tactic rather than an accusation.",
+      "keyTerms": [
+        {
+          "arabic": "تُنفِقُوا۟",
+          "gloss": "you spend",
+          "note": "A verb for spending that empties a store, from a root also used of a tunnel with an opening at both ends. What is spent is pictured as passing through rather than being lost."
+        },
+        {
+          "arabic": "خَزَآئِنُ",
+          "gloss": "treasuries, storehouses",
+          "note": "The plural of a word for a locked store where grain or valuables are kept against scarcity. Applying it to the heavens and the earth answers an argument about supply with a statement about who holds the keys."
+        },
+        {
+          "arabic": "يَنفَضُّوا۟",
+          "gloss": "they scatter, disperse",
+          "note": "The same verb used at the end of the previous surah for a congregation breaking apart. Here it names the intended outcome of a policy, which makes the earlier scattering look less accidental than it first appeared."
+        }
+      ],
+      "lifeInProphetsTime": "Medina's economy ran on date palms, small plots and household stores, and hospitality was not sentiment but infrastructure. A family that fed guests for a season expected the obligation to return in a bad year. Withdrawing support from a group was therefore a recognised weapon, quieter than a raid and often more effective, because a community without provisions dissolves into the households that can still feed themselves.",
+      "didYouKnow": "The image of God holding the storehouses of the heavens and the earth appears only a few times in the Quran, and in another of them a prophet is told to say that he does not possess them himself. Used here, against a threat to cut off supply, the same phrase does defensive work rather than theological work.",
+      "theologicalSignificance": "The answer given is not a promise that the tactic will fail. It is a claim about where provision originates, which changes what the tactic is. If supply is held by God, then withholding is a redirection rather than a cut, and the people doing it are moving something that was never theirs to withhold. The ayah then calls this a failure to understand, which treats the whole calculation as an error of perception.",
+      "crossReferences": [
+        {
+          "ref": "15:21",
+          "why": "States that the depositories of everything are with God, who sends them down by a known measure."
+        },
+        {
+          "ref": "59:9",
+          "why": "Describes the Medinan hosts preferring the emigrants over themselves despite their own need."
+        },
+        {
+          "ref": "34:39",
+          "why": "Says that whatever you spend, God will replace it, and He is the best of providers."
+        }
+      ],
+      "applyIt": "Notice the next time you catch yourself weighing whether someone deserves your help. That calculation is the one this ayah is examining. Give the smallest thing you were hesitating over, this week, to the person you were hesitating about. Not as a gesture. Just to find out whether the hesitation was about them or about your own sense of supply.",
+      "exploreFurther": [
+        "15:21",
+        "59:8-9",
+        "34:39"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.427Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:8",
+      "surah": 63,
+      "start": 8,
+      "end": 8,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Who The Honour Belongs To",
+      "tier": "standard",
+      "meaning": "A boast is quoted and its key word is taken away from the speaker. The claim assumes a ranking in the city, the stronger expelling the weaker, and uses a comparative built on honour. The reply keeps the word and reassigns it: honour belongs to God, to His messenger and to the believers. The order of that list is not incidental. It runs downward from the source, so what the believers hold is described as derived, not as a counter-claim of their own strength.",
+      "historicalContext": "Medinan, and the commentators place the words on the return from an expedition, in a quarrel at a watering place that briefly set the emigrants and some of the Medinans against each other. The reports agree that the sentence was spoken, that it reached the Prophet, and that the man who said it denied it. They differ on almost everything else, which is why the surah records the sentence and not the speaker.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْأَعَزُّ",
+          "gloss": "the mightier, more honoured",
+          "note": "A comparative from a root meaning strength that resists being overcome. It carries both rank and hardness, so the boast is about who cannot be pushed rather than simply who is richer."
+        },
+        {
+          "arabic": "ٱلْأَذَلَّ",
+          "gloss": "the lowlier, more humbled",
+          "note": "The opposite comparative, from a root used of a road worn smooth by being walked on. It names not weakness but submission to being handled, which is the insult the speaker intended."
+        },
+        {
+          "arabic": "ٱلْعِزَّةُ",
+          "gloss": "might, honour",
+          "note": "The noun behind the comparative in the boast, returned here in its definite form so that the quality itself, not a degree of it, is placed with God. The reply answers a comparison by naming an owner."
+        }
+      ],
+      "lifeInProphetsTime": "Expulsion was the harshest thing a town could do short of killing. A person outside the protection of a clan had no standing, no redress and no safety on the road, and settlements had used banishment for generations to settle who belonged. Medina's own recent history included clans driving other clans out. The threat quoted here was not rhetoric. Everyone who heard it knew what the sentence described, because they had seen it done.",
+      "didYouKnow": "The word for the city in this ayah is the same word that became its name. Before the emigration the settlement was generally called Yathrib, and the Quran uses that older name once. Here it is simply the City, which is what the Arabic word means, and the usage records a change of identity in a single noun.",
+      "theologicalSignificance": "Honour is treated as a property with an owner rather than a resource people compete for. That reframing does something specific to the insult: if the quality itself belongs to God and is given, then being called the lowlier is a claim about social position and not about worth. The passage also joins the believers to God and the messenger in one clause, which grants them standing without asking them to assert any.",
+      "crossReferences": [
+        {
+          "ref": "35:10",
+          "why": "States that whoever desires honour should know that honour belongs entirely to God."
+        },
+        {
+          "ref": "4:139",
+          "why": "Asks whether people seek honour with others, and answers that all honour belongs to God."
+        },
+        {
+          "ref": "3:26",
+          "why": "Describes God giving and withdrawing honour and abasement together with sovereignty itself."
+        }
+      ],
+      "applyIt": "Think of the last time someone put you in a lower position in front of others, in a meeting or a family argument. You probably rehearsed a reply. Try letting the ranking itself be the thing you decline, rather than your place in it. That is a harder move than winning, and it is the one this ayah makes: it disputes who owns the scale.",
+      "exploreFurther": [
+        "35:10",
+        "3:26",
+        "10:65"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.427Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "63:9",
       "surah": 63,
@@ -58,6 +464,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:00:16.877Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:10",
+      "surah": 63,
+      "start": 10,
+      "end": 10,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "Before The Delay Is Asked For",
+      "tier": "standard",
+      "meaning": "The instruction is short and the sentence it produces is long, because what follows is the speech of someone who has run out of time. The request is modest: not a return, not a second life, only a short postponement, and two things are named as its purpose. Giving comes first and becoming righteous second, which the commentators note as significant: the speaker asks for the act, not the character, because the act is what would have produced it. Nothing in the ayah says the request is granted.",
+      "historicalContext": "Medinan, and placed deliberately. The surah has just described people who tried to use withheld spending as a weapon, and then turned to the believers with a warning about wealth and children absorbing attention. This ayah follows with an instruction to give. The commentators report no specific occasion. They read the sequence as the surah's argument arriving at the reader: the problem named in others is set as a question to the one listening.",
+      "keyTerms": [
+        {
+          "arabic": "رَزَقْنَـٰكُم",
+          "gloss": "We have provided you",
+          "note": "The verb places the source of what is held before the instruction to give any of it away. Property is described as issued rather than generated, which changes what giving is: a transfer, not a loss."
+        },
+        {
+          "arabic": "أَجَلٍ",
+          "gloss": "an appointed term",
+          "note": "A word for a fixed period with a known end, used in contracts for the date a debt falls due. The speaker asks for an extension in the language of a borrower, which is the ayah's quietest detail."
+        },
+        {
+          "arabic": "فَأَصَّدَّقَ",
+          "gloss": "so I may give charity",
+          "note": "From the root for truthfulness, which is why the ordinary word for alms is built on it. Giving is treated in Arabic as a verification of a claim, the proof that what you said about your priorities was true."
+        }
+      ],
+      "lifeInProphetsTime": "Wills were spoken, not written, and usually late. A man called witnesses when illness made the matter urgent, and the tradition is full of disputes that began at that bedside: promises remembered differently, an estate divided by people who had waited. Giving during life was a different thing entirely, done in the open, with the giver present to see the effect. The ayah is about the distance between those two moments.",
+      "didYouKnow": "The Quran records several requests made after the point of no return, and they escalate: some ask to be sent back, some ask for a second chance at the whole life. This one is the smallest of them. It asks only for a short term, which the commentators read as a sign that the speaker knows exactly how little would have been needed.",
+      "theologicalSignificance": "Time is presented as the scarce resource, not wealth. The speech at the end of the ayah belongs to someone who still has property and no longer has the hours in which property means anything, which inverts the usual anxiety. The passage also shows regret as clear-sighted rather than confused: the dying speaker names exactly the right thing to have done. Understanding arrives; it simply arrives after the window.",
+      "crossReferences": [
+        {
+          "ref": "23:99",
+          "why": "Gives the same request in fuller form, asking to be sent back so as to do righteousness."
+        },
+        {
+          "ref": "2:254",
+          "why": "Calls for spending before a day comes with no bargaining, no friendship and no intercession."
+        },
+        {
+          "ref": "57:10",
+          "why": "Asks why anyone would withhold when the inheritance of the heavens and the earth belongs to God."
+        }
+      ],
+      "applyIt": "Pick an amount you would not miss and give it today, not this month. Then notice the small negotiation that happens as you do it, the part of you that wants to wait until a better moment. That voice is the one quoted at the end of this ayah, asking for a short delay. It is always asking for a short delay.",
+      "exploreFurther": [
+        "23:99-100",
+        "57:10",
+        "3:92"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.426Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "63:11",
+      "surah": 63,
+      "start": 11,
+      "end": 11,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "No Soul Is Postponed",
+      "tier": "standard",
+      "meaning": "A single short line closes the surah, and it answers the request made in the line before. The refusal is stated with the strongest negative available, and its condition is precise: not that God never delays, but that no delay is given once the term has arrived. That leaves everything before the arrival open. The final clause changes register entirely, from a statement about time to a statement about attention: God is aware of what you do, which is the note the surah ends on.",
+      "historicalContext": "Medinan, and the position matters more than any occasion. The surah opened with people saying what they did not mean and closes with a sentence that cannot be negotiated with. The commentators report nothing specific for this ayah. They read it as the seal on the previous one, which is why the two are almost always cited together in the classical commentaries and rarely treated apart.",
+      "keyTerms": [
+        {
+          "arabic": "يُؤَخِّرَ",
+          "gloss": "He delays, postpones",
+          "note": "An intensive verb for putting something back, built from the root meaning what comes after. It is the same verb the speaker used in his request, returned here in the answer, so the refusal is worded in his own language."
+        },
+        {
+          "arabic": "أَجَلُهَا",
+          "gloss": "its appointed term",
+          "note": "The same contractual word used in the previous ayah, now with a possessive ending: the term belongs to the soul rather than being imposed on it. Each life is described as carrying its own due date."
+        },
+        {
+          "arabic": "خَبِيرٌۢ",
+          "gloss": "aware, intimately informed",
+          "note": "A divine name for knowledge of what is inward and detailed, as distinct from observation. Ending a surah about concealed intentions with this particular name rather than a name of power is the passage's last turn."
+        }
+      ],
+      "lifeInProphetsTime": "Debt in that economy ran on fixed terms, and everyone understood the machinery: a date agreed before witnesses, an extension possible if the creditor consented, forfeiture if it did not come. Extensions were granted often, since a ruined debtor paid nobody. The vocabulary of this closing pair is taken straight from that world, which is what makes the refusal land. It is the one creditor who does not renegotiate.",
+      "didYouKnow": "The word used here for an appointed term appears in the Quran more than fifty times, and it is not reserved for death. It names the term of a debt, the term of a pregnancy, the period of a contract, and the span given to whole nations. Death is one appointment in a vocabulary built for deadlines of every kind.",
+      "theologicalSignificance": "The ayah does two things at once, and the second softens the first. A fixed term removes the possibility of buying more time, which is a hard thing to hear. But the closing name is not one of power. It says God is aware of what you do, in detail and from the inside, which means the span you actually have is being watched with attention rather than merely counted down. Limit and regard arrive in the same sentence.",
+      "crossReferences": [
+        {
+          "ref": "7:34",
+          "why": "States that every community has a term, and when it comes they cannot delay or advance it."
+        },
+        {
+          "ref": "16:61",
+          "why": "Says that when their term arrives they cannot postpone it by an hour, nor bring it forward."
+        },
+        {
+          "ref": "31:34",
+          "why": "Places knowledge of where and when a soul will die among the things held by God alone."
+        }
+      ],
+      "applyIt": "Look at your calendar for the next seven days and find the one commitment you keep moving. Not the urgent things, the one that has been slipping for months. Put it somewhere this week and leave it there. The ayah is not a warning about death. It is an observation about postponement, which is a habit long before it becomes a crisis.",
+      "exploreFurther": [
+        "7:34",
+        "31:34",
+        "6:2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:40:04.426Z",
         "reviewed": false
       }
     }

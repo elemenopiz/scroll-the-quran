@@ -138,12 +138,12 @@ public struct GiftOfferView: View {
                     .strikethrough(true, color: GiftPalette.inkMuted)
                 Text(offerPriceText)
                     .font(.geoBold(PaywallMetrics.strikePriceSize))
-                    .foregroundStyle(Color.textOnPill)
+                    .foregroundStyle(GiftPalette.pillLabel)
                     .frame(
                         width: PaywallMetrics.offerPillSize.width,
                         height: PaywallMetrics.offerPillSize.height
                     )
-                    .background(Color.pillFill, in: Capsule())
+                    .background(GiftPalette.pillFill, in: Capsule())
             }
             .padding(.top, PaywallMetrics.priceRowTop)
             .accessibilityElement(children: .combine)
@@ -153,6 +153,8 @@ public struct GiftOfferView: View {
                 title: introEligible ? PaywallCopy.startFreeTrial : PaywallCopy.continueTitle,
                 height: PaywallMetrics.giftCTAHeight,
                 fontSize: 19,
+                fill: GiftPalette.pillFill,
+                label: GiftPalette.pillLabel,
                 action: onPurchase
             )
             .padding(.horizontal, Spacing.pageMargin)
@@ -185,14 +187,21 @@ public struct GiftOfferView: View {
                 .foregroundStyle(GiftPalette.ink)
                 .padding(.top, PaywallMetrics.percentTop - cardTop)
 
+            // The pill tucks under the digits' baseline with a white outline, exactly as the
+            // reference does — the outline is what separates it from the "33%" above it.
             Text(PaywallCopy.off)
                 .font(.geoBold(PaywallMetrics.oneTimeOfferSize))
-                .foregroundStyle(Color.textOnPill)
+                .foregroundStyle(GiftPalette.offPillLabel)
                 .frame(
                     width: PaywallMetrics.offPillSize.width,
                     height: PaywallMetrics.offPillSize.height
                 )
-                .background(Color.pillFill, in: Capsule())
+                .background(GiftPalette.offPillFill, in: Capsule())
+                .overlay {
+                    Capsule()
+                        .stroke(GiftPalette.offPillOutline, lineWidth: PaywallMetrics.offPillOutline)
+                        .padding(-PaywallMetrics.offPillOutline / 2)
+                }
                 .padding(.top, PaywallMetrics.offPillTop - cardTop)
 
             if let trialPillTitle {
@@ -203,7 +212,7 @@ public struct GiftOfferView: View {
                         width: PaywallMetrics.trialPillSize.width,
                         height: PaywallMetrics.trialPillSize.height
                     )
-                    .background(Color.appBackgroundFlat, in: Capsule())
+                    .background(GiftPalette.softPillFill, in: Capsule())
                     .padding(.top, PaywallMetrics.trialPillTop - cardTop)
             }
 

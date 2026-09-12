@@ -1,7 +1,7 @@
 {
   "surah": 96,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:34:45.792Z",
+  "generatedAt": "2026-09-12T09:47:53.443Z",
   "studies": [
     {
       "key": "96:1-5",
@@ -63,6 +63,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:34:38.080Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "96:6-10",
+      "surah": 96,
+      "start": 6,
+      "end": 10,
+      "theme": "Prayer",
+      "themeId": "prayer",
+      "title": "When He Thinks Himself Enough",
+      "tier": "standard",
+      "meaning": "A word of refusal opens the second half of the surah, and the diagnosis that follows is stated as a general law about the human being: he overflows his limits. The trigger is named with unusual precision. Not that he is wealthy, but that he sees himself as needing nothing, so the cause is a perception rather than a balance. One line then states where everything is heading, and the surah drops into a particular scene. Someone is forbidding a servant who prays.",
+      "historicalContext": "Meccan. The first five ayat of this surah are held to be the earliest revelation; these lines belong to a later moment, when praying openly near the sanctuary had become dangerous. Classical sources report a leading Meccan threatening to tread on the Prophet Muhammad (peace be upon him) as he prostrated, and read the passage as answering that obstruction while keeping the wording general enough to describe a type.",
+      "keyTerms": [
+        {
+          "arabic": "لَيَطْغَىٰٓ",
+          "gloss": "he surely oversteps",
+          "note": "The root is water rising past its banks and running where it should not. The verb makes excess an overflow rather than a decision, and the emphatic prefix presents it as what happens rather than what might."
+        },
+        {
+          "arabic": "ٱلرُّجْعَىٰٓ",
+          "gloss": "the returning",
+          "note": "A verbal noun of return that occurs only here in the Quran. Its form names the act itself rather than an occasion, so the line states a direction of travel instead of predicting a date."
+        },
+        {
+          "arabic": "عَبْدًا",
+          "gloss": "a servant, a worshipper",
+          "note": "Left indefinite, so the one being obstructed is anyone praying rather than a particular man. The word carries both servanthood and worship, and the passage works on the overlap between them."
+        }
+      ],
+      "lifeInProphetsTime": "The sanctuary was public ground and the city's business happened around it: deals struck, disputes arbitrated, news exchanged. Praying there was done in front of an audience that included the men who controlled the caravan trade. Forbidding someone to pray was therefore not a private quarrel. It was performed in the open, in front of witnesses, and it worked through shame at least as much as through threat.",
+      "didYouKnow": "The word this passage uses for the return appears only once in the whole Quran. The surah itself is also unusual in being read as two revelations joined: the opening five lines from the very beginning of the mission, and the rest from years later, when the opposition had taken a physical form. The join falls exactly at the word of refusal.",
+      "theologicalSignificance": "A private illusion is connected to a public act without any argument being offered for the step. The man who believes he needs nothing is the man who interferes with someone else's prayer, and the surah simply puts the two beside each other. What that establishes is a direction of causation: the obstruction of worship is presented as a symptom of self-sufficiency rather than as a considered position about God.",
+      "crossReferences": [
+        {
+          "ref": "92:8",
+          "why": "Uses the identical verb for thinking oneself beyond need, there attached to withholding money."
+        },
+        {
+          "ref": "10:22-23",
+          "why": "Describes people rescued from a storm who immediately overstep in the land, the same pattern of relief and excess."
+        },
+        {
+          "ref": "8:34-35",
+          "why": "Names those who obstruct people from the sacred place and answers the claim that they are its guardians."
+        }
+      ],
+      "applyIt": "Notice the moment this week when you feel least in need of anything: after good news, a payment landing, a problem solving itself. That is the hour this passage is describing. You do not have to do anything about it. Just be able to name it when it arrives, because it arrives without announcing itself.",
+      "exploreFurther": [
+        "92:5-11",
+        "10:21-23",
+        "107:4-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "96:11-15",
+      "surah": 96,
+      "start": 11,
+      "end": 15,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Does He Not Know",
+      "tier": "standard",
+      "meaning": "Three questions arrive in a row, each opening with the same conversational verb of seeing. The first two suppose that the man being obstructed is in fact upon guidance, or is urging others toward caution. The third turns to the obstructor and supposes that he denies and turns away. Then, after three suppositions, comes a flat statement with no supposition in it: does he not know that God sees. The commentators note the reversal. A surah about a man watching a worshipper ends its argument by naming who is watching him.",
+      "historicalContext": "Meccan. The verb that opens the three questions belongs to ordinary speech, the form a person uses to make someone else weigh a point, so the passage is shaped like an argument conducted in a public place rather than a pronouncement delivered from one. Classical sources connect it to the obstruction described a few lines earlier and note that no name appears anywhere in the chapter.",
+      "keyTerms": [
+        {
+          "arabic": "أَرَءَيْتَ",
+          "gloss": "have you considered",
+          "note": "Literally have you seen, used in speech to make a listener weigh something. Repeating it three times builds the case one supposition at a time, the way an argument in a crowded square actually proceeds."
+        },
+        {
+          "arabic": "يَرَىٰ",
+          "gloss": "sees, is seeing",
+          "note": "The same root as the three questions before it, now turned around and left without an object. Nothing limits what is seen, and the verb is in the form used for continuous action rather than a single glance."
+        },
+        {
+          "arabic": "لَنَسْفَعًۢا",
+          "gloss": "We shall surely seize",
+          "note": "A verb of grabbing something and dragging it by force, occurring only here in the Quran. It carries a shortened emphatic ending that appears in very few places, which gives the threat its abrupt finish."
+        }
+      ],
+      "lifeInProphetsTime": "Taking a man by the hair at the front of his head was a gesture of complete domination. Captives were led that way, and a horse was controlled by the same handful of hair. To seize someone's forelock in public was to display ownership of him where everyone could see it. The image inverts the scene the surah has just described, since the man standing over a worshipper is himself taken by the head.",
+      "didYouKnow": "The verb in the threat occurs once in the entire Quran, and it ends in a rare shortened form of the emphatic that the Arabic grammarians treat as a special case. Two features that appear almost nowhere else are therefore packed into a single short word, which is part of why the line lands as abruptly as it does.",
+      "theologicalSignificance": "Sight is the attribute under discussion, and the passage arranges the whole argument around who is doing the looking. A man positioned to observe and correct another person's worship is shown, in one clause, to be the object of a larger observation. The claim is not that God will punish, though that follows. It is that the observer's position, which feels like the safe one, was never the safe one.",
+      "crossReferences": [
+        {
+          "ref": "11:56",
+          "why": "Uses the same image of the forelock, saying there is no creature whose forelock He does not hold."
+        },
+        {
+          "ref": "40:19",
+          "why": "Extends divine sight to the treachery of the eyes and whatever the chests are concealing."
+        },
+        {
+          "ref": "2:284",
+          "why": "States that what is disclosed and what is hidden will both be brought into account."
+        }
+      ],
+      "applyIt": "Catch yourself the next time you form a quick judgement about how somebody else is praying, dressing, or keeping their religion. Do not argue with the thought. Just finish the surah's sentence in your own head while it is happening: and who is watching me while I am watching him. Then leave them alone.",
+      "exploreFurther": [
+        "11:54-57",
+        "40:19-20",
+        "2:284-286"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "96:16-19",
+      "surah": 96,
+      "start": 16,
+      "end": 19,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "Prostrate And Draw Near",
+      "tier": "standard",
+      "meaning": "The forelock is named a second time and given two adjectives, lying and sinning, so the guilt is attached to a part of the body that cannot itself do either. Then a challenge: let him summon his assembly, meaning the men who sit with him and back him. The reply names another set of callers with a word found nowhere else in the Book. Then the surah stops arguing altogether and turns to the listener with two instructions, one a posture and the second explaining what the posture is for.",
+      "historicalContext": "Meccan. A man's council was the circle of men who sat with him and could be called on, and summoning them was how a confrontation near the sanctuary escalated into something the whole city took sides over. Classical sources report that the man who made the threat against the Prophet Muhammad (peace be upon him) approached and then withdrew, giving an account of what had stopped him.",
+      "keyTerms": [
+        {
+          "arabic": "نَادِيَهُۥ",
+          "gloss": "his council, his assembly",
+          "note": "The word names the gathering itself rather than the people in it, so summoning his council means calling the place and everyone it holds. Mecca had such a house standing beside the sanctuary."
+        },
+        {
+          "arabic": "ٱلزَّبَانِيَةَ",
+          "gloss": "the guards, the enforcers",
+          "note": "A plural occurring only here in the Quran, with no singular used anywhere in the text. Lexicographers connect it to pushing or thrusting, and the commentators identify them as the angels of the fire."
+        },
+        {
+          "arabic": "وَٱسْجُدْ",
+          "gloss": "and prostrate",
+          "note": "The verb of putting the forehead on the ground. It answers the forelock of two lines earlier exactly: the same part of the head is either seized by force or lowered by choice."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca had a real assembly house next to the sanctuary, where the leading men of the clans met and the city's decisions were made. Summoning your council was a concrete move with concrete consequences, and a man who could fill that room won most disputes before they began. The surah answers with a counter-summons rather than a denial, which is a reply on exactly the terms offered.",
+      "didYouKnow": "The last line of this surah is one of the places where a reciter performs a prostration on reaching it. The instruction in the text and the act performed by the person reading are therefore the same act, so the chapter ends not by being understood but by being carried out, which is unusual even among the passages that carry that marking.",
+      "theologicalSignificance": "Two positions of the head are set against each other, and the surah chooses between them at the end rather than arguing about them. The final instruction also changes the subject of the whole chapter. After an argument conducted entirely about an opponent, the last word is addressed to the worshipper and concerns his own posture, and the reason attached to it is nearness rather than victory.",
+      "crossReferences": [
+        {
+          "ref": "50:16",
+          "why": "Names the nearness this passage aims at, God closer to a person than his own jugular vein."
+        },
+        {
+          "ref": "68:42-43",
+          "why": "Describes those who will be called to prostrate on the last day and will find they cannot."
+        },
+        {
+          "ref": "7:206",
+          "why": "Closes another surah with those near their Lord glorifying and prostrating to Him."
+        }
+      ],
+      "applyIt": "The next time you put your head on the ground, stay there for three breaths longer than you meant to, and do not fill the time with anything. The surah gives the posture a reason, and the reason is not submission but nearness. Three breaths is enough to notice which of the two you are actually doing.",
+      "exploreFurther": [
+        "50:16-18",
+        "68:42-43",
+        "7:204-206"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
         "reviewed": false
       }
     }

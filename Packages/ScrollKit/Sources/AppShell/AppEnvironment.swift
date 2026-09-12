@@ -1,6 +1,7 @@
 import Commerce
 import FeatureDiscover
 import FeatureHome
+import FeaturePaywall
 import FeatureReader
 import Foundation
 import QuranData
@@ -56,6 +57,12 @@ public final class AppEnvironment {
     /// `FeatureDiscover` declares its own one-boolean entitlement protocol (it does not
     /// depend on `Commerce`); this adapts the store above onto it.
     public let discoverEntitlements: any FeatureDiscover.EntitlementProviding
+    /// Raised by any locked surface; `TabRoot` presents the paywall while it holds a reason.
+    public let gate: PremiumGate
+    /// The Terms and Privacy URLs the paywall links to. Placeholders live in exactly one
+    /// constant (`PaywallLegalLinks.default`) and are injected from here, so shipping the
+    /// real URLs is a one-line change in one file rather than a hunt through the views.
+    public let legalLinks: PaywallLegalLinks
 
     /// Content files that could not be read, for diagnostics. Empty in a healthy build.
     public private(set) var loadFailures: [String] = []
@@ -94,6 +101,7 @@ public final class AppEnvironment {
         user: UserStore,
         entitlements: any Commerce.EntitlementProviding,
         offers: any OneTimeOfferStoring,
+        legalLinks: PaywallLegalLinks = .default,
         loadFailures: [String] = []
     ) {
         self.launch = launch
@@ -107,8 +115,12 @@ public final class AppEnvironment {
         self.user = user
         self.entitlements = entitlements
         self.offers = offers
+        self.legalLinks = legalLinks
         self.loadFailures = loadFailures
         discoverEntitlements = DiscoverEntitlementBridge(entitlements)
+        // The gate asks the store rather than caching a boolean: a purchase that lands on
+        // the `Transaction.updates` listener between the tap and the sheet must win.
+        gate = PremiumGate { entitlements.isPremium }
     }
 
     /// The process's one environment.
@@ -135,6 +147,15 @@ public final class AppEnvironment {
     /// Builds everything the running app needs.
     public static func live(launch: LaunchOptions = .live) -> AppEnvironment {
         var failures: [String] = []
+
+        if launch.resetState {
+            // `--reset-state`: a UI test that drives the first-run funnel or the free tier
+            // has to start from a genuinely fresh install. `xcodebuild test` installs over
+            // the app without clearing its container, so the app clears it here.
+            UserStore.shared().deleteAllData()
+            UserDefaults.standard.removeObject(forKey: DiscoverGateStore.defaultsKey)
+            FixturePurchaseRecord.forget()
+        }
 
         let index = (try? SurahIndex(locator: .shared)) ?? Self.emptyIndex()
         if index.count == 0 {
@@ -181,8 +202,24 @@ public final class AppEnvironment {
         // One store for the life of the process. `StoreKitEntitlementStore.init` starts the
         // `Transaction.updates` listener, so it has to be created at launch — not when the
         // paywall is first shown — or a renewal that lands early is missed.
-        let entitlements: any Commerce.EntitlementProviding =
-            launch.usesFixtureCommerce ? Commerce.MockEntitlementStore() : StoreKitEntitlementStore()
+        let entitlements: any Commerce.EntitlementProviding
+        if launch.usesFixtureCommerce {
+            // A funnel run remembers its purchases the way `Transaction.currentEntitlements`
+            // does, so "buy, relaunch, still unlocked" asserts something rather than reading
+            // a mock that was born premium.
+            let remembered = launch.fixtureRemembersPurchases && FixturePurchaseRecord.isPurchased
+            let mock = Commerce.MockEntitlementStore(
+                isPremium: launch.fixtureIsPremium || remembered,
+                billingState: launch.forcedBillingState
+            )
+            mock.restoreGrantsPremium = launch.hasRestorablePurchase
+            if launch.fixtureRemembersPurchases {
+                mock.onEntitlementChange = { FixturePurchaseRecord.isPurchased = $0 }
+            }
+            entitlements = mock
+        } else {
+            entitlements = StoreKitEntitlementStore()
+        }
 
         return AppEnvironment(
             launch: launch,
@@ -199,8 +236,19 @@ public final class AppEnvironment {
         )
     }
 
-    /// Kicks the store into loading its catalogue. Idempotent.
+    /// Kicks the store into loading its catalogue and its entitlements. Idempotent.
     public func start() async {
+        await entitlements.load()
+    }
+
+    /// Re-reads the catalogue, the entitlement set and the renewal state.
+    ///
+    /// Called every time the app comes back to the foreground. A subscription can lapse,
+    /// be refunded, be approved by an Ask to Buy organiser, or fall into billing retry while
+    /// the app is in the background, and StoreKit does not always redeliver a transaction
+    /// for any of that — checking entitlements only at launch is how apps end up showing a
+    /// paywall to a paying customer, or the paid app to a refunded one.
+    public func refresh() async {
         await entitlements.load()
     }
 
@@ -218,7 +266,12 @@ public final class AppEnvironment {
             plans: plans,
             navigation: navigation,
             today: today,
-            restorePurchases: { [entitlements] in try? await entitlements.restore() }
+            restorePurchases: { [entitlements] in try? await entitlements.restore() },
+            premium: HomePremiumStatus(
+                isPremium: entitlements.isPremium,
+                paymentIssue: PaymentIssue(entitlements.billingState)
+            ),
+            requestPremium: gate.homeRequest
         )
     }
 
@@ -237,6 +290,25 @@ public final class AppEnvironment {
         // The literal is a compile-time constant that matches `TranslationRegistry`'s shape.
         // swiftlint:disable:next force_try
         return try! JSONDecoder().decode(TranslationRegistry.self, from: Data(json.utf8))
+    }
+}
+
+/// Where a `--funnel` run's fixture purchase is written down.
+///
+/// Live StoreKit needs nothing like this: `Transaction.currentEntitlements` is read from the
+/// store on every launch. The fixture has no store behind it, so the shell gives it one line
+/// of `UserDefaults` — cleared by `--reset-state`, and only ever touched under `--funnel`, so
+/// no capture and no other UI test can see it.
+enum FixturePurchaseRecord {
+    static let defaultsKey = "scroll.funnel.fixturePurchased"
+
+    static var isPurchased: Bool {
+        get { UserDefaults.standard.bool(forKey: defaultsKey) }
+        set { UserDefaults.standard.set(newValue, forKey: defaultsKey) }
+    }
+
+    static func forget() {
+        UserDefaults.standard.removeObject(forKey: defaultsKey)
     }
 }
 

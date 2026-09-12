@@ -2,7 +2,7 @@ import Commerce
 import DesignSystem
 import SwiftUI
 
-/// `paywall-trial`: the mark, the "How your free trial works" headline, the three-step
+/// `paywall-trial`: the brand mark, the "How your free trial works" headline, the three-step
 /// timeline, the live price and the redeem call to action.
 ///
 /// Laid out inside a `ReferenceCanvas`, so every `PaywallMetrics` value is the y measured
@@ -18,20 +18,33 @@ struct PaywallTrialView: View {
 
     @Environment(\.openURL) private var openURL
 
+    /// The mark is the one element that cannot live at its reference y: on a Dynamic Island
+    /// device y = 47 is behind the island. The outer reader hands `PaywallMetrics` the real
+    /// safe-area inset so the mark can be dropped below it, in canvas points.
     var body: some View {
-        ReferenceCanvas {
-            ZStack(alignment: .top) {
-                Color.appBackgroundFlat
+        GeometryReader { proxy in
+            let insets = proxy.safeAreaInsets
+            let screen = CGSize(
+                width: proxy.size.width + insets.leading + insets.trailing,
+                height: proxy.size.height + insets.top + insets.bottom
+            )
+            ReferenceCanvas {
+                ZStack(alignment: .top) {
+                    Color.appBackgroundFlat
 
-                CrescentStarMark()
-                    .frame(width: PaywallMetrics.logoSize.width, height: PaywallMetrics.logoSize.height)
-                    .padding(.top, PaywallMetrics.logoTop)
+                    BrandMark()
+                        .frame(
+                            width: PaywallMetrics.logoSize.width,
+                            height: PaywallMetrics.logoSize.height
+                        )
+                        .padding(.top, PaywallMetrics.logoTop(safeAreaTop: insets.top, screen: screen))
 
-                closeButton
-                headline.padding(.top, PaywallMetrics.headlineTop)
-                timelineConnector
-                timeline.padding(.top, PaywallMetrics.timelineTop)
-                footer
+                    closeButton
+                    headline.padding(.top, PaywallMetrics.headlineTop)
+                    timelineConnector
+                    timeline.padding(.top, PaywallMetrics.timelineTop)
+                    footer
+                }
             }
         }
         .accessibilityElement(children: .contain)
@@ -224,16 +237,21 @@ struct PillButton: View {
     let title: String
     var height: CGFloat = PaywallMetrics.ctaHeight
     var fontSize: CGFloat = PaywallMetrics.ctaLabelSize
+    /// The paywall follows the appearance; the gift screens are a fixed warm-paper
+    /// composition and pass their own pair, so the call to action does not turn white
+    /// on cream when the system is in dark mode.
+    var fill: Color = .pillFill
+    var label: Color = .textOnPill
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             Text(title)
                 .font(.geoBold(fontSize))
-                .foregroundStyle(Color.textOnPill)
+                .foregroundStyle(label)
                 .frame(maxWidth: .infinity)
                 .frame(height: height)
-                .background(Color.pillFill, in: Capsule())
+                .background(fill, in: Capsule())
         }
         .buttonStyle(.plain)
     }

@@ -1,8 +1,414 @@
 {
   "surah": 79,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:24:18.247Z",
+  "generatedAt": "2026-09-12T10:26:18.892Z",
   "studies": [
+    {
+      "key": "79:1-5",
+      "surah": 79,
+      "start": 1,
+      "end": 5,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "Five Oaths Without A Subject",
+      "tier": "standard",
+      "meaning": "Five oaths in a row, each a feminine plural participle followed by its own verbal noun, and the thing sworn by is never identified. Something pulls out hard, something draws out gently, something glides, something outstrips, something manages an affair. Scholars differ over what is meant, listing angels, stars, souls and the winds, and the sources record the range rather than settling it. The last participle, which puts a task in the hands of the subject, is what tilts most classical readings toward angels.",
+      "historicalContext": "Meccan and early. Rhymed oath-openings were a recognised form of speech in Arabia, and the Quran elsewhere records the accusation that the Prophet Muhammad (peace be upon him) was practising it. This surah takes the form and does something unusual with it. No occasion is reported for these ayat. What the commentators note is that the audience knew the shape of an oath series well enough to expect what came after it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلنَّـٰزِعَـٰتِ",
+          "gloss": "those that pull out",
+          "note": "The verb is used of drawing a bucket up from a deep well and of pulling a bowstring back. It describes extraction against resistance rather than removal, and it occurs in this form only here."
+        },
+        {
+          "arabic": "غَرْقًا",
+          "gloss": "to the utmost extent",
+          "note": "A verbal noun tied to sinking or immersion. Applied to the pulling it means all the way, the archer drawing until the arrowhead reaches the bow, with nothing held back."
+        },
+        {
+          "arabic": "ٱلْمُدَبِّرَٰتِ",
+          "gloss": "those that manage affairs",
+          "note": "From a root meaning the back or end of a thing, so the verb is to look to how something turns out. It implies delegated administration, which is why most readings take the subject to be angels."
+        }
+      ],
+      "lifeInProphetsTime": "An archer drew a bow by feel, and the phrase for a full draw described pulling until the hand reached the ear and nothing more could be taken. A well-hand pulling a bucket up from thirty feet worked the same muscles against the same steady weight. Both images are of effort applied evenly and completely, and both were things men in the audience did with their own arms most weeks.",
+      "didYouKnow": "All five of the participles in these ayat occur nowhere else in the Quran, which is why the passage has generated so much commentary. The oath series is also left unanswered: an Arabic oath normally leads to a statement, and this one never states it. The sentence simply gives way to the Day arriving in the sixth ayah.",
+      "theologicalSignificance": "Naming agents purely by what they do, and never by who they are, makes the passage about function rather than identity. Whatever these are, they are described entirely as instruments carrying out an order, and the fifth one is given responsibility without being given autonomy. That fits a creation in which enormous power exists and none of it is self-directed, which is the ground the surah then builds its warning on.",
+      "crossReferences": [
+        {
+          "ref": "32:11",
+          "why": "Names the angel of death as the one who takes people, which supports the commonest reading of the first oath."
+        },
+        {
+          "ref": "37:1-4",
+          "why": "Opens with three oaths in the same feminine plural form and does state what they lead to."
+        },
+        {
+          "ref": "6:61",
+          "why": "Describes envoys who take a person at death and never fall short in the task."
+        }
+      ],
+      "applyIt": "Read these five lines aloud once, slowly, without looking for what they refer to. The Quran withholds the subject, and the commentators could not agree on it either. Sitting with an unresolved passage for a minute, instead of reaching for an explanation, is a skill that most of your reading will eventually need.",
+      "exploreFurther": [
+        "37:1-10",
+        "32:7-11",
+        "77:1-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.035Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:6-10",
+      "surah": 79,
+      "start": 6,
+      "end": 10,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "The Quake And What Follows",
+      "tier": "standard",
+      "meaning": "The unanswered oaths give way to a day named by two shocks. The first is called the shaker and the second only the follower, so the second is defined by its position rather than by anything it does. Most commentators read the pair as the two soundings of the trumpet. Then the camera moves from cosmos to anatomy in one line. Hearts beating hard, eyes lowered, and a sentence quoted from people who are still arguing the case they lost.",
+      "historicalContext": "Meccan. The surah is answering an audience that treated the resurrection as an absurdity worth mocking, and the commentators note that the quoted objection in these lines is reported speech, not invention: the same argument is preserved in several surahs of the same period. No occasion is reported. The setting is a city where the claim was familiar enough to have a standard reply.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلرَّاجِفَةُ",
+          "gloss": "the shaking one",
+          "note": "A participle from a verb for violent trembling, made into a name. Nothing is said about what shakes, so the event is identified only by the motion, which the commentators take as the first blast."
+        },
+        {
+          "arabic": "ٱلرَّادِفَةُ",
+          "gloss": "the one that follows",
+          "note": "From a verb meaning to ride behind someone on the same mount. The second event is named purely by coming after the first, and the image carries the sense of arriving close behind, without a gap."
+        },
+        {
+          "arabic": "وَاجِفَةٌ",
+          "gloss": "pounding, beating hard",
+          "note": "Used of a heart racing and of a camel's uneven, hurried gait. The word puts the same disturbance into a chest that the previous lines put into the earth, using rhyme to link them."
+        }
+      ],
+      "lifeInProphetsTime": "Two riders on one camel was an ordinary arrangement, and the word for the man sitting behind gave Arabic its verb for anything that follows immediately. A tremor in the ground was ordinary too along that fault-marked coast. The passage uses two everyday facts, a rider behind and a shaking earth, and the audience would have heard the second blast described in the vocabulary of shared transport.",
+      "didYouKnow": "Four of the five rhyme words in this passage occur nowhere else in the Quran, and three of them are participles coined for the occasion. The one word here that is ordinary is the term for downcast eyes. The surah rhymes on this sound for nine straight ayat and then abandons it for a different one that runs to the end.",
+      "theologicalSignificance": "Naming the two events by motion and sequence, rather than by their effects, leaves the reader without a picture and with a certainty. Something happens, and something follows it closely. Then the passage relocates the whole event inside a human chest, which is where the surah is actually working. The cosmic and the physiological are given the same rhyme so that neither can be treated as a metaphor for the other.",
+      "crossReferences": [
+        {
+          "ref": "39:68",
+          "why": "Describes two soundings of the trumpet with an interval between them, which is how most read the pair here."
+        },
+        {
+          "ref": "27:87-88",
+          "why": "Puts the same terror at the blast beside mountains that seem fixed and are already moving."
+        },
+        {
+          "ref": "69:13-16",
+          "why": "Gives a single blast and then the earth and mountains crushed at once, a shorter version of the sequence."
+        }
+      ],
+      "applyIt": "Put a hand flat on your chest and find the beat, which takes a few seconds. That is the organ this passage names when it moves from the shaking of the world to the shaking of a person. You will not feel anything unusual. The point is to know where the ayah is pointing before you ever need it to.",
+      "exploreFurther": [
+        "39:67-70",
+        "69:13-18",
+        "22:1-2"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.043Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:11-15",
+      "surah": 79,
+      "start": 11,
+      "end": 15,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "One Shout, And Awake",
+      "tier": "standard",
+      "meaning": "The objection is quoted in full and its logic is respectable: bones go hollow, and nothing is put back from that. They call the proposed return a losing venture, borrowing the vocabulary of trade. The reply does not argue. It sets against the whole objection a single shout, and then a word that changes the terms altogether. What follows the shout is not reassembly but wakefulness, as though the difficulty had been in the wrong category all along.",
+      "historicalContext": "Meccan. The commentators treat the quoted lines as the standard Meccan reply to the resurrection, preserved almost identically in several surahs from this period. No specific occasion is reported. The argument turns on a physical fact everyone in a desert town had seen, since graves were shallow and bones surfaced, and the objection was made by people who considered themselves the realists in the conversation.",
+      "keyTerms": [
+        {
+          "arabic": "نَّخِرَةً",
+          "gloss": "crumbling, hollowed out",
+          "note": "Said of bone or wood so decayed that air passes through it and it makes a sound in the wind. The word appears once in the Quran, and it names the exact stage past which repair looks impossible."
+        },
+        {
+          "arabic": "خَاسِرَةٌ",
+          "gloss": "a losing venture",
+          "note": "A commercial term for a transaction that returns less than it cost. Using it of resurrection treats the whole prospect as a bad investment, which is how a merchant audience framed the objection."
+        },
+        {
+          "arabic": "ٱلسَّاهِرَةِ",
+          "gloss": "the waking surface",
+          "note": "Linked to a root about staying awake. Classical readings take it as the earth's open surface, a level plain, or wakefulness itself, and the sources record the range without deciding."
+        }
+      ],
+      "lifeInProphetsTime": "Burial in stony ground was shallow, and flash floods and animals brought bones back up. Anyone who had walked an old campsite had seen what a decade does to a skeleton left in dry heat: it goes light, chalky and porous. That was the physical fact behind the objection. It also explains why the reply avoids the mechanics entirely and gives a sound and a plain instead.",
+      "didYouKnow": "The word Arabic uses here for a shout is one of a small set the Quran reserves for the single sound that ends or begins everything, and the passage attaches to it the word one. The name given to the ground they wake on is used nowhere else in the Book, and its root has to do with staying awake rather than with any feature of a landscape.",
+      "theologicalSignificance": "The reply refuses the frame of the question. Nothing is said about how bone becomes body, because the passage locates the difficulty in the objector rather than in the material. What is offered instead is scale: one shout, no process, and they are simply there. That makes resurrection a matter of a word being spoken rather than of a mechanism working, which is a claim about who is speaking.",
+      "crossReferences": [
+        {
+          "ref": "17:49-51",
+          "why": "Quotes the same objection about bones and answers it by naming the one who originated them."
+        },
+        {
+          "ref": "36:78-79",
+          "why": "Puts the argument in a man's mouth about decayed bones and gives the reply in a single line."
+        },
+        {
+          "ref": "36:53",
+          "why": "Also reduces the whole event to one shout, after which they are all present together."
+        }
+      ],
+      "applyIt": "Notice today where you use the language of cost and return for something that is not a transaction: a relationship, a prayer, an hour spent with a parent. The objectors here reached for exactly that vocabulary and it misled them. You do not need to stop using it. Just catch yourself once, and see what the sentence was quietly assuming.",
+      "exploreFurther": [
+        "17:49-52",
+        "36:77-83",
+        "50:41-44"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.042Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:16-20",
+      "surah": 79,
+      "start": 16,
+      "end": 20,
+      "theme": "Moses",
+      "themeId": "moses",
+      "title": "The Errand In The Valley",
+      "tier": "standard",
+      "meaning": "The surah turns without warning to a question, and the account that follows is stripped almost to nothing. A call in a named valley, an instruction to go, and the words to say on arrival. What is striking is the wording of the errand. Moses is not sent to condemn but to make an offer, phrased as a question about willingness, and the sequence runs from being cleansed to being guided to becoming reverent. Only then is the great sign shown.",
+      "historicalContext": "Meccan. The account is compressed because the audience knew it; the same call in the same valley is given at length in another surah, where the fire, the staff and the hand are all described. Here everything except the commission is cut away. No occasion is reported. The commentators read the sudden turn as an answer to the surah's opening dispute: a warner has been sent before, and the pattern is known.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُقَدَّسِ",
+          "gloss": "the sanctified, made holy",
+          "note": "A passive form, so the valley is not holy in itself but has been made so. The same construction underlies the words for purification and for the sanctuary, and it always implies an act of setting apart."
+        },
+        {
+          "arabic": "تَزَكَّىٰ",
+          "gloss": "to be purified, to grow",
+          "note": "A reflexive form from a root joining cleanness and increase. The offer to Pharaoh is put as something he would do to himself, and the same root gives the word for the growth of a plant."
+        },
+        {
+          "arabic": "طَغَىٰ",
+          "gloss": "he overstepped, overflowed",
+          "note": "Used of water rising past its bank. The charge against Pharaoh is not that he chose wrong but that he exceeded a limit, and the same verb returns near the end of the surah for anyone who does."
+        }
+      ],
+      "lifeInProphetsTime": "A message carried between rulers was delivered word for word. The envoy memorised the sentence, repeated it exactly, and had no authority to soften or expand it, which is why an insult delivered by a messenger could start a war and why the messenger himself was usually safe. The instruction here has that shape: go, and say this. Everyone listening knew what a commission of that kind cost the man carrying it.",
+      "didYouKnow": "The sacred valley is named in only two places in the Quran, here and in one earlier surah, and both use the identical phrase. This surah gives the commission and skips the fire, the staff and the shining hand; the other gives all of them. Read together, the two accounts divide one scene between them without repeating a line.",
+      "theologicalSignificance": "The most severe figure in the Quran's historical accounts is approached with an invitation rather than a sentence, and the invitation is phrased as a question about his own willingness. That places the offer before the judgement even in the hardest case. The order inside the offer also matters: cleansing comes first, guidance second, and reverence last, so awe is presented as the result of being guided rather than as the entry requirement.",
+      "crossReferences": [
+        {
+          "ref": "20:9-14",
+          "why": "Tells the same call in the same valley at length, with the fire and the removal of the sandals."
+        },
+        {
+          "ref": "20:43-44",
+          "why": "Adds the instruction to speak to Pharaoh gently, in the hope that he might take heed."
+        },
+        {
+          "ref": "28:29-32",
+          "why": "Gives the fire and the two signs, the staff and the hand, that this passage compresses into one phrase."
+        }
+      ],
+      "applyIt": "Think of the person you have most written off. Then notice the shape of the sentence Moses is told to use: not an accusation but a question about whether the man would like to be cleaned up. You do not have to say it. Just draft it in your head once, and see how different it is from the sentence you had ready.",
+      "exploreFurther": [
+        "20:9-48",
+        "28:29-35",
+        "26:10-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.042Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:21-25",
+      "surah": 79,
+      "start": 21,
+      "end": 25,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "He Gathered And Proclaimed",
+      "tier": "standard",
+      "meaning": "The refusal is given as a run of bare verbs with almost nothing attached to them. He denied, disobeyed, turned his back while working at it, gathered a crowd, called out, and made his claim. The speed is the point: an offer that took three lines to make is rejected in six words. Then the claim itself, which is not that there is no God but that he is the highest one. The seizure that answers it is described as covering both the last and the first.",
+      "historicalContext": "Meccan. The account is placed inside a surah about the resurrection because the audience in Mecca had wealth, standing and a sanctuary to defend, and the classical commentators read the Pharaoh material of this period as addressed to that position rather than to Egypt. No occasion is reported for these lines. The compressed telling assumes hearers who already knew how the story ended at the sea.",
+      "keyTerms": [
+        {
+          "arabic": "أَدْبَرَ",
+          "gloss": "he turned his back",
+          "note": "From the word for the back or the rear. It is the ordinary term for retreating from a fight, so the refusal is described in the vocabulary of a man leaving a field rather than winning an argument."
+        },
+        {
+          "arabic": "فَحَشَرَ",
+          "gloss": "so he gathered them",
+          "note": "The same verb the Quran uses of God assembling all people on the last day. Applied to Pharaoh collecting a crowd, it makes his summons a small imitation of the gathering he was denying."
+        },
+        {
+          "arabic": "نَكَالَ",
+          "gloss": "an exemplary punishment",
+          "note": "A penalty whose purpose is to deter onlookers, from a root about restraint and shackling. The word names the effect on witnesses rather than the suffering of the one punished."
+        }
+      ],
+      "lifeInProphetsTime": "Authority in Arabia was made and unmade in public assembly. A man who wanted a claim accepted called people together, stood where he could be seen, and said it aloud, and if nobody contradicted him it stood. The sequence here, gathering and then proclaiming, is exactly that procedure. So the audience recognised the method before they judged the content, and they knew how quickly an unopposed claim hardened.",
+      "didYouKnow": "The superlative Pharaoh attaches to himself is one the Quran uses in two nearby surahs of God, in the almost identical phrase, your Lord the Most High. It is the same construction with the possessive changed. Within this surah, too, the verb for overstepping that opened the commission is the one used later of anyone who is defiant.",
+      "theologicalSignificance": "The claim being refuted is not atheism. Pharaoh does not deny that lords exist; he ranks himself at the top of them, which is the more common human failure and the harder one to see. The punishment is then described by its function for onlookers rather than by its severity, so the account is offered as evidence rather than as revenge, and the following ayah says exactly that.",
+      "crossReferences": [
+        {
+          "ref": "28:38",
+          "why": "Records the same claim in a longer form, where Pharaoh tells his nobles he knows no god for them but himself."
+        },
+        {
+          "ref": "10:90-92",
+          "why": "Gives the seizure this passage summarises, and the body preserved afterwards as a sign."
+        },
+        {
+          "ref": "43:51-54",
+          "why": "Shows the method here in detail, a proclamation to a gathered people that they accept without resistance."
+        }
+      ],
+      "applyIt": "Watch for the small version of this today: the moment you settle a question by being the one who speaks loudest or last rather than the one who is right. It usually happens in a room where nobody will contradict you, at home or at work. You do not need to correct it publicly. Notice it once, and let the noticing be enough for now.",
+      "exploreFurther": [
+        "28:36-42",
+        "43:46-56",
+        "40:36-46"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.042Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:26-30",
+      "surah": 79,
+      "start": 26,
+      "end": 30,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Which Was Harder To Make",
+      "tier": "standard",
+      "meaning": "The account of Pharaoh is closed off as a lesson, and the surah returns to its argument with a comparison rather than an assertion. Are you the harder thing to make, or the sky. Then the making of the sky is described in three quick verbs and its night and daylight are named as things done to it. The earth follows, and the classical commentators discussed at length whether the phrase after that reports a sequence in time or simply moves the description along.",
+      "historicalContext": "Meccan. The passage belongs to the argument from creation that runs through the early surahs, and the commentators cite it alongside a longer account elsewhere that puts the earth first, treating the two together rather than as a conflict. No occasion is reported. The audience being addressed accepted that God had made the sky, which is what allows the comparison to work without any preliminary proof.",
+      "keyTerms": [
+        {
+          "arabic": "سَمْكَهَا",
+          "gloss": "its height, its thickness",
+          "note": "The word for the raised extent of a structure, the distance from floor to roof. Applied to the sky it treats the space overhead as a built dimension rather than as emptiness that happens to be there."
+        },
+        {
+          "arabic": "أَغْطَشَ",
+          "gloss": "He darkened it",
+          "note": "A rare causative verb for making dark, related to a word for weak eyesight. It occurs once in the Quran, and it makes night an act performed on the sky rather than the mere absence of the sun."
+        },
+        {
+          "arabic": "دَحَىٰهَآ",
+          "gloss": "He spread it out",
+          "note": "A verb about extending and smoothing something outward from a point. It occurs once in the Quran, and the lexicons connect it with clearing a level space, which is what the following ayat then fill."
+        }
+      ],
+      "lifeInProphetsTime": "Building meant raising a roof, and the height of a structure was its most expensive measurement. The sanctuary in Mecca had been rebuilt within living memory and the whole city knew what the work had cost in labour and imported timber. To ask whether a human being was harder to construct than the ceiling overhead was to invite a comparison people had recently made in practical terms about a far smaller roof.",
+      "didYouKnow": "Two of the verbs in these five lines occur nowhere else in the Quran, the one for darkening the night and the one for spreading the earth. The classical commentators spent considerable effort on the phrase after that, since another passage describes the earth being made before the sky, and the standard resolution reads the verb here as a later act of preparing a surface rather than of originating it.",
+      "theologicalSignificance": "The argument is comparative rather than absolute. Nobody is asked to accept that God can do anything; they are asked whether the smaller job is harder than the larger one they already grant. That places the burden of strangeness on the objector. Naming night as something done to the sky makes the same point in miniature, since a thing you thought was simply absence turns out to have been an act.",
+      "crossReferences": [
+        {
+          "ref": "40:57",
+          "why": "States the same comparison directly: the making of the heavens and earth is greater than the making of people."
+        },
+        {
+          "ref": "41:9-12",
+          "why": "Gives the fuller account of the order of creation that the commentators read alongside this passage."
+        },
+        {
+          "ref": "50:6-7",
+          "why": "Uses the same pairing, the sky built without a flaw and then the earth spread out and anchored."
+        }
+      ],
+      "applyIt": "Go outside tonight and estimate how high the sky looks, knowing the estimate is useless. The passage asks you to compare that with yourself and does not let you answer easily. Give it a minute of honest looking rather than a quick agreement. The ayah is built to be slower than the assent it asks for.",
+      "exploreFurther": [
+        "41:9-12",
+        "50:6-11",
+        "36:81-83"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T10:26:10.839Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:31-35",
+      "surah": 79,
+      "start": 31,
+      "end": 35,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Water, Pasture, Then The Reckoning",
+      "tier": "standard",
+      "meaning": "Three short lines finish the account of the earth by naming what came out of it: its water, its pasture, and the mountains set as anchors. The whole set is then summed up in one phrase as something to be used, by you and by your animals. And the sentence does not stop there. The next line turns straight from grazing to the great overwhelming, so the list of provisions runs without a break into the day when what a person worked at is remembered.",
+      "historicalContext": "Meccan. The surah has argued from the sky and the earth and now brings the argument down to the ground the audience stood on. The commentators note that pasture and water, not gold or harvest, are the terms chosen, which fits a listening public whose wealth walked on four legs. No occasion is reported for these ayat. The turn at the end returns to the resurrection the surah opened by defending.",
+      "keyTerms": [
+        {
+          "arabic": "مَرْعَىٰهَا",
+          "gloss": "its pasture, its grazing",
+          "note": "From the verb to graze, which also gives the word for a shepherd and, by extension, for a ruler responsible for people. The land is named by what feeds animals rather than by what it grows for people."
+        },
+        {
+          "arabic": "أَرْسَىٰهَا",
+          "gloss": "He anchored them",
+          "note": "The verb for mooring a ship or setting something firmly in place. It shares a root with the word used later in this surah when people ask when the Hour will drop anchor."
+        },
+        {
+          "arabic": "ٱلطَّآمَّةُ",
+          "gloss": "the overwhelming one",
+          "note": "From a verb used of water rising over everything and burying it. It occurs once in the Quran and names the day by the way it covers, without saying what is covered."
+        }
+      ],
+      "lifeInProphetsTime": "Wealth in inland Arabia was counted in animals, and animals were counted in access to grazing. A tribe's territory was really a claim on seasonal pasture and the wells that made it usable, and most raiding and most negotiation was about those two things. Naming water and pasture in that order, and then adding your livestock to the list of who benefits, described the household economy exactly as its owners would have.",
+      "didYouKnow": "The phrase that closes this list, provision for you and for your animals, occurs in only one other place in the Quran, at the end of a similar list in the surah placed immediately after this one. The two lists are worded differently throughout and then land on the same four words. The verb used here for anchoring the mountains also returns nine ayat later, of the Hour.",
+      "theologicalSignificance": "Placing the overwhelming day directly after the pasture refuses the separation most people keep between ordinary provision and final accounting. The same passage that describes grass gives the day on which effort is remembered, with no transition. That makes daily sustenance and judgement two aspects of one arrangement rather than two subjects, and it explains why the surah keeps moving between the ground and the last day without apology.",
+      "crossReferences": [
+        {
+          "ref": "80:24-32",
+          "why": "Runs the parallel list of what the ground produces and ends on the identical phrase about you and your livestock."
+        },
+        {
+          "ref": "16:10-11",
+          "why": "Names the same sequence, water sent down, then vegetation for grazing, then the crops people eat."
+        },
+        {
+          "ref": "87:4-5",
+          "why": "Compresses the same movement, pasture brought out and then turned to dark debris, into two lines."
+        }
+      ],
+      "applyIt": "At one meal today, trace the food back one step further than usual: not the shop, but the field or the animal, and the water that fell on it. Thirty seconds is enough. The passage puts that chain and the day of reckoning in consecutive lines, and eating with the chain in mind is the nearest thing to keeping them together.",
+      "exploreFurther": [
+        "80:24-42",
+        "16:5-16",
+        "87:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.043Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "79:36-40",
       "surah": 79,
@@ -37,7 +443,7 @@
         }
       ],
       "lifeInProphetsTime": "Mecca's leadership were traders whose horizon was the next caravan season, and the surah's audience heard the phrase about preferring the nearer life as a description of specific men they could name. Wealth arrived twice a year and had to be watched. Nobody in that town needed the choice explained to them; they were making a version of it every time a season's profit came in.",
-      "didYouKnow": "The same word is used for both destinations, four ayat apart: the fire is a shelter and the garden is a shelter. Arabic uses it for the place an animal returns to at the end of the day. The parallel is exact throughout the passage, two clauses each, so the two outcomes are described in matching grammar as well as matching vocabulary.",
+      "didYouKnow": "The same word is used for both destinations, two ayat apart: the fire is the shelter, and then the garden is the shelter. Arabic uses it for the place an animal returns to at the end of the day. The parallel is exact throughout the passage, two clauses for each person, so the two outcomes are described in matching grammar as well as in matching vocabulary.",
       "theologicalSignificance": "The passage puts the whole difference between two destinies inside a habit of preference. Nothing here is about intelligence, opportunity or even belief in the abstract; what separates the two people is which life they chose to weight and whether they told themselves no. That locates the decisive activity in small repeated moments rather than in a single conversion, and the restraint described is stated as an act, not a temperament.",
       "crossReferences": [
         {
@@ -55,14 +461,130 @@
       ],
       "applyIt": "Say no to one thing today that you were going to say yes to, and choose something genuinely small: a second helping, an hour of scrolling, a purchase already in the basket. Do not replace it with anything. The ayah describes a person addressing himself, and the only way to know whether you can is to try it on something that does not matter.",
       "exploreFurther": [
-        "79:40-46",
+        "79:41-46",
         "87:14-19",
         "45:23"
       ],
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:24:05.714Z",
+        "generatedAt": "2026-09-12T10:26:10.839Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:41-45",
+      "surah": 79,
+      "start": 41,
+      "end": 45,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "You Are Not Its Timekeeper",
+      "tier": "standard",
+      "meaning": "The unit opens by completing the sentence begun in the ayah before it: for the one who feared standing before his Lord and held himself back, the garden is the shelter. Then the surah turns to a question the audience kept asking, when the Hour will drop anchor. The reply does not give a date and does not defend the withholding. It removes the Prophet from the position of someone who could know, hands the endpoint to his Lord, and redefines his role as warning rather than announcing.",
+      "historicalContext": "Meccan. The question about timing is reported across several surahs of this period, and the commentators read it as a challenge rather than an inquiry, since a warner unable to name a date could be dismissed. No occasion is reported for these ayat. The answer given here is the same one given elsewhere in the Quran, and the near-identical opening clause appears in a longer Meccan passage on the same question.",
+      "keyTerms": [
+        {
+          "arabic": "مُرْسَىٰهَا",
+          "gloss": "its arrival, its anchoring",
+          "note": "Literally where a ship comes to rest. The question asks not when the Hour begins but where it drops anchor, using an image of arrival at a fixed point rather than of an event breaking out."
+        },
+        {
+          "arabic": "مُنتَهَىٰهَآ",
+          "gloss": "its final point, its limit",
+          "note": "The end of a thing, the place past which it does not go. The reply gives the endpoint to God without saying when it falls, so knowledge is relocated rather than described."
+        },
+        {
+          "arabic": "مُنذِرُ",
+          "gloss": "a warner",
+          "note": "One who gives notice of danger ahead. The word defines the role by the notice given, not by information held, which is exactly the distinction the answer to the question turns on."
+        }
+      ],
+      "lifeInProphetsTime": "A ship coming into harbour was known from the Red Sea ports the Meccan caravans supplied, and the word for where it settles was ordinary trade vocabulary. So was the figure of the man sent ahead of a caravan to shout a warning about raiders on the road. He did not know when they would strike or from where. His whole job was to make sure nobody could later say they had not been told.",
+      "didYouKnow": "The question here is worded identically to one asked in a much longer Meccan passage, down to the last word, and those are the only two places in the Quran where it appears in that form. The longer passage answers by saying nobody can disclose its time but God; this one answers in four short lines and ends by describing the messenger's job instead.",
+      "theologicalSignificance": "The passage draws a line between two kinds of knowledge and puts the messenger firmly on one side of it. He is not a lesser holder of the same information; the information is not his at all. That protects the shape of prophecy itself, since a prophet who could schedule the end would be consulted rather than heeded, and it explains why the surah answers a question about dates with a description of a role.",
+      "crossReferences": [
+        {
+          "ref": "7:187",
+          "why": "Opens with the identical question about the Hour and gives the fuller answer about who can disclose it."
+        },
+        {
+          "ref": "33:63",
+          "why": "Reports the same question again and adds that the Hour may well be near."
+        },
+        {
+          "ref": "31:34",
+          "why": "Places knowledge of the Hour in a short list of things no soul is given, beside tomorrow and the place of death."
+        }
+      ],
+      "applyIt": "Pick a question you keep asking that has no answer available to you: how long something will last, when a decision will come, whether a person will change. Write it down, then write beside it the one thing you can actually do this week. The passage separates those two exactly, and it gives the second one all its attention.",
+      "exploreFurther": [
+        "7:187-188",
+        "31:33-34",
+        "67:25-27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.043Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "79:46",
+      "surah": 79,
+      "start": 46,
+      "end": 46,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "An Evening Or Its Morning",
+      "tier": "standard",
+      "meaning": "The surah ends on a comparison rather than a judgement. On the day they see the Hour, it will seem to them that they lingered no longer than an evening, or the morning that follows it. Two of the shortest units of time in the language are offered, and the second is given as a fraction of the first day rather than as a separate one. Nothing is said about how long they actually stayed. The whole point is the discrepancy between the length and the impression of it.",
+      "historicalContext": "Meccan. The chapter began with people demanding to know when the Hour would arrive and ends by telling them how the wait will look from the far side of it. The commentators read the closing line as the reply to the question four ayat earlier, delivered indirectly. No occasion is reported. Several surahs of the same period record similar exchanges in which the dead estimate their time and get it wrong.",
+      "keyTerms": [
+        {
+          "arabic": "عَشِيَّةً",
+          "gloss": "an evening",
+          "note": "The last part of the day, from mid-afternoon to nightfall. It is the shorter half of the pair, and the word carries the sense of a day already closing rather than of a fresh stretch of time."
+        },
+        {
+          "arabic": "ضُحَىٰهَا",
+          "gloss": "its late morning",
+          "note": "The hours after sunrise when the day has warmed but is not yet at noon. The possessive ties it to the same day as the evening, so the two together do not add up even to a full day."
+        },
+        {
+          "arabic": "يَلْبَثُوٓا۟",
+          "gloss": "they stayed, they lingered",
+          "note": "A verb for remaining somewhere temporarily, used of a traveller stopping rather than of a resident living. It treats the whole span before the Hour as an interruption in a journey."
+        }
+      ],
+      "lifeInProphetsTime": "Travel was measured in mornings and evenings because those were the hours you could move. A caravan started in the cool after dawn, rested through the worst of the heat, and went on again toward dusk. Saying that a whole age felt like one evening, or one late morning, used the smallest practical unit of a journey the audience had. It was the length of a single stage between stops.",
+      "didYouKnow": "The word for the late morning is the last word of this surah, and it is also used earlier in the same chapter of the daylight brought out of the sky at creation. The Quran records several other estimates from the same moment, in which people guess a day, part of a day, ten days, or an hour, and every one of them is short.",
+      "theologicalSignificance": "Nothing here is said to be false. The centuries were real; the impression of brevity is also reported as real, and the passage does not correct it. What that establishes is that duration is not the measure it appeared to be while it was being lived, which quietly answers the demand for a date in the preceding lines. A stretch of time you can be wrong about by that margin is not the thing to be planning around.",
+      "crossReferences": [
+        {
+          "ref": "10:45",
+          "why": "Has them gathered as though they had stayed only an hour of a day, and recognising one another."
+        },
+        {
+          "ref": "23:112-114",
+          "why": "Puts the estimate in their own mouths, a day or part of a day, and then calls it a little while."
+        },
+        {
+          "ref": "20:103-104",
+          "why": "Records them murmuring ten, while the most measured among them says only a day."
+        }
+      ],
+      "applyIt": "Think back to a stretch of your life that felt endless while you were inside it, a job, an illness, a year of study. Try to feel its length now. It will not come back at the size it had. Do that once today with something you are currently finding long, and notice that the ayah is describing something you have already experienced.",
+      "exploreFurther": [
+        "23:112-115",
+        "20:102-104",
+        "17:52"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:51:32.043Z",
         "reviewed": false
       }
     }

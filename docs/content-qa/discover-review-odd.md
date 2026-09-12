@@ -1,0 +1,195 @@
+# Discover review — odd surahs
+
+Judge: Opus agent on `content/qa-discover-a`. Scope: the 161 Discover units whose
+surah number is odd (of 326 total; the even half is reviewed separately).
+
+Scoring is 1–5 across the whole rubric in `Tools/content-gen/prompts/system.md`
+and `docs/tasks/content-author.md`: grounding in mainstream classical tafsir,
+non-sectarian and free of legal rulings, honorific used exactly once, Arabic
+confined to `keyTerms` with faithful glosses, every cross-reference real and
+genuinely related, `applyIt` warm and concrete and second person, `didYouKnow`
+checkable and true, prose varied and not restating the verse.
+
+Anything below 4, and anything with a factual error at any score, was rewritten
+through `author.mjs write --force --author opus-judge` → `assemble` → `validate`.
+Lexical and structural claims were checked against the bundled corpus with
+helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
+
+| key | score | reason | action |
+| --- | --- | --- | --- |
+| 1:1-7 | 5 | Structure-led, no paraphrase; "more than twenty names" and the seven-oft-repeated tie to 15:87 both check out. | kept |
+| 3:8-9 | 5 | `الوهاب` verified at three occurrences (3:8, 38:9, 38:35); 3:7 / 6:110 / 18:10 all apt. | kept |
+| 3:18 | 5 | The "only ayah where God witnesses His own oneness" claim survives checking; 35:28, 58:11, 4:135 real and related. | kept |
+| 3:26-27 | 4 | `اللهم` verified at five occurrences; "four of those are prayers" holds only if 8:32 is read as a challenge rather than a prayer — soft edge, not an error. | kept |
+| 3:31 | 5 | `يحببكم` occurs only here; the if/then reading is the classical one, cross-refs exact. | kept |
+| 3:38 | 5 | Three tellings of Zechariah's prayer confirmed (3:38, 19:2-11, 21:89-90). | kept |
+| 3:64 | 5 | Heraclius letter and the 2007 "A Common Word" letter are both checkable; invitation framed non-sectarianly. | kept |
+| 3:101-102 | 5 | `يعتصم` → `واعتصموا` two ayat later verified; Aws/Khazraj occasion is the well-attested one. | kept |
+| 3:103 | 5 | Rope-as-pact reading attested; 8:63 and 49:10 land exactly. | kept |
+| 3:104-105 | 4 | `didYouKnow` claimed the ma'ruf/munkar pair occurs "more than a dozen times"; the corpus has nine (3:104, 3:110, 3:114, 7:157, 9:67, 9:71, 9:112, 22:41, 31:17). | rewritten |
+| 3:110 | 5 | The 3:113 qualification three ayat later is correct; the "functional excellence" reading is mainstream. | kept |
+| 3:133-134 | 5 | Singular `السماء` at 57:21 vs plural here verified; both do open with a race command. | kept |
+| 3:137-139 | 5 | Three terms in 3:138 confirmed; 47:35 does pair the same two roots. | kept |
+| 3:145 | 5 | 42:20 harvest parallel accurate; 63:11 apt. | kept |
+| 3:159 | 5 | `شورى` occurs once, at 42:38, as claimed; Uhud placement handled without blaming anyone. | kept |
+| 3:168-169 | 5 | 2:154 contrast (saying vs supposing) is exactly right. | kept |
+| 3:173 | 5 | `حسبنا الله ونعم الوكيل` occurs only here; the Ibn Abbas report is attributed as a report. Honorific not triggered (only a cross-reference clause says "the Prophet"). | kept |
+| 3:185 | 5 | "Every soul tastes death" verified at 3:185, 21:35, 29:57 with three different continuations. | kept |
+| 3:190-191 | 5 | The four-ayah prayer 191–194 and God's answer at 3:195 both check out. | kept |
+| 3:200 | 5 | Two commands from one root confirmed; `رابطوا` range given without picking a school. | kept |
+| 5:2 | 5 | The hatred warning does recur six ayat later at 5:8; Hudaybiyya reference is the attested one. | kept |
+| 5:8 | 5 | The 4:135 pairing (desire vs hatred) is exact. | kept |
+| 5:32 | 5 | Mishnah parallel stated carefully as a parallel, not a borrowing; exceptions handled descriptively. | kept |
+| 5:34-35 | 5 | `الوسيلة` verified at exactly two places (5:35, 17:57); no ruling on the punishment passage. | kept |
+| 5:54 | 4 | `didYouKnow` counted "five qualities, only one about their relationship with God", which does not survive the count (striving in God's way is a second). | rewritten |
+| 5:69 | 5 | The nominative `الصابئون` against the accusative at 2:62 is a real and famous crux; Sabians named three times as stated. | kept |
+| 7:26 | 4 | `didYouKnow` said the surah addresses the children of Adam five times; the vocative occurs four times (7:26, 7:27, 7:31, 7:35) plus once at 36:60. | rewritten |
+| 7:31 | 4 | Three imperatives and one prohibition is right, but "among the shortest in the Quran to contain" them is a hedge rather than a fact. | kept |
+| 7:32 | 5 | Two `قل` commands inside one ayah confirmed; the courtroom reading is apt. | kept |
+| 7:55-56 | 5 | `خوفا وطمعا` verified at 7:56, 13:12, 30:24, 32:16; 19:3 is the hidden call as described. | kept |
+| 7:180 | 5 | `الأسماء الحسنى` verified at four places (7:180, 17:110, 20:8, 59:24); the 99 figure correctly attributed to a report. | kept |
+| 7:199-202 | 4 | `didYouKnow` placed the inner description "two ayat later"; 7:201 is the very next ayah after the command at 7:200. | rewritten |
+| 7:203-204 | 5 | The surah's closing prostration two ayat later at 7:206 is correct. | kept |
+| 9:40 | 4 | `didYouKnow` said every one of the six occurrences of `سكينة` describes it descending; 2:248 places it in the ark rather than sending it down. | rewritten |
+| 9:51 | 3 | `keyTerms[].arabic` was `كَتَبَ لَنَا`, a splice — the passage reads `كَتَبَ ٱللَّهُ لَنَا`; and "the Prophet" was named with no honorific. | rewritten |
+| 9:71 | 5 | Ten pairs at 33:35 verified; the 9:67 mirror construction is real. | kept |
+| 9:104 | 4 | Strong note; "the Quran uses that verb of God more often than of human beings" is a standard observation I could not count cleanly either way. | kept |
+| 9:111 | 5 | 9:111 is the only ayah naming Torah, Gospel and Quran together, and the order is chronological; fighting handled descriptively. | kept |
+| 9:119 | 4 | `didYouKnow` called this the last ayah of the expedition passage; 9:120-122 continue it directly. | rewritten |
+| 9:128 | 5 | `رءوف رحيم` as a divine pair applied to a man is correct; the last-revealed reports are attributed as reports. | kept |
+| 11:6 | 5 | 6:38 parallel about creatures is real and closely built; provision framed as an undertaking, not a guarantee of abundance. | kept |
+| 11:88 | 5 | Shu'ayb answering a charge of hypocrisy, stated without turning it into a ruling about trade. | kept |
+| 11:112 | 5 | Singular command and plural prohibition in one line verified; the "greyed me" report handled as a report. | kept |
+| 11:114-115 | 5 | `يذهبن` does take the good deeds as subject; prayer times described, never prescribed. | kept |
+| 13:11 | 5 | Surah 13's four-letter opening is unique and neighbours 10–12, 14–15 do use three; thunder naming correct. | kept |
+| 13:17 | 5 | The ayah does say twice that God sets forth comparisons; both halves of the parable land. | kept |
+| 13:23-24 | 3 | `didYouKnow` delivered no fact — it noted the greeting is the ordinary one and then told the reader a clause was "worth pausing on". | rewritten |
+| 13:28 | 5 | The chiasm reading is exact, and the promise is kept to settling rather than to relief. | kept |
+| 15:9-13 | 5 | The doubled emphatic pledge and the Hijr tombs both check out. | kept |
+| 15:45-49 | 5 | `ونزعنا ما في صدورهم من غل` verified as identical at 7:43; the 15:49/15:50 pairing is correct. | kept |
+| 15:88 | 5 | The wing idiom recurs exactly twice more (17:24, 26:215), as claimed. | kept |
+| 17:9 | 5 | The elided noun after the superlative is a real grammatical feature and classically discussed. | kept |
+| 17:23-24 | 5 | `أف` as a sound rather than a word, and the "one or both" construction, are both right. | kept |
+| 17:36 | 5 | Hearing-sight-heart order holds across the Quran; 41:20-21 is the right partner. | kept |
+| 17:37-38 | 5 | 31:18 does pair the same prohibition with the turned cheek. | kept |
+| 17:44-45 | 5 | `حجابا مستورا` as a veil that is itself veiled is the classical observation. | kept |
+| 17:52-53 | 5 | "My servants" and the 39:53 link are apt; the quarrel is diagnosed without excusing the speaker. | kept |
+| 17:70 | 5 | Dignity read as unconditional, with the "many" qualification correctly flagged. | kept |
+| 17:80-82 | 5 | `شفاء` of the Quran verified at exactly three places (10:57, 17:82, 41:44), each paired as described. | kept |
+| 17:110 | 4 | Sound; the `didYouKnow` about a range set by its two ends is a fair observation rather than a striking fact. | kept |
+| 19:4 | 4 | `didYouKnow` put the answer "two ayat later"; Zechariah is addressed by name at 19:7, three ayat after this one. | rewritten |
+| 19:96-97 | 5 | `الرحمن` counted: 13 occurrences in surah 19, more than any other surah; `لدا` is a hapax as stated. | kept |
+| 21:30 | 3 | `didYouKnow` only restated the two `keyTerms` notes about the sewing vocabulary — no fact the reader did not already have. | rewritten |
+| 21:34-35 | 3 | `didYouKnow` reused the "every soul tastes death appears three times" fact already carried by 3:185 in this same Discover set. | rewritten |
+| 21:68-71 | 5 | The vocative to the fire and the 11:44 parallel to earth and sky are both correct. | kept |
+| 21:82-83 | 5 | Job's prayer is six words and contains no request, as stated; the Solomon/Job pairing is the surah's own. | kept |
+| 21:87-88 | 5 | Three-part prayer accurately described; 68:48-50 and 10:98 both real and related. | kept |
+| 21:90 | 5 | `رغبا ورهبا` verified as occurring only here; the range on `أصلحنا` reported without settling it. | kept |
+| 21:105-108 | 5 | The mercy clause is five words in Arabic and the restrictive construction is correctly read. | kept |
+| 23:1-11 | 4 | `الفردوس` verified at exactly two places (18:107, 23:11); "two different words" for the prayer frame is loose — it is one word in two numbers. | kept |
+| 23:12-13 | 4 | Sequence and the closing phrase of praise check out; the report of a companion completing it is properly hedged. | kept |
+| 23:96-99 | 4 | Sound; the `didYouKnow` describes the prayers' framing rather than delivering a hard fact. | kept |
+| 23:113-115 | 5 | `عبثا` verified as a hapax; the surah does close on a prayer for forgiveness at 23:118. | kept |
+| 25:20 | 4 | Strong note — the 25:7 / 25:20 repetition thirteen ayat apart is exact — but "the Prophet" was used twice with no honorific. | rewritten |
+| 25:43-44 | 5 | The 7:179 parallel is real; idolatry redefined without naming any group. | kept |
+| 25:63-68 | 4 | `didYouKnow` said the chain closes the surah; it runs to 25:76 and 25:77 breaks off to address the deniers. | rewritten |
+| 25:69-70 | 5 | The exchange of bad deeds for good is unique to 25:70; mercy stated without softening the offences. | kept |
+| 25:74 | 4 | `keyTerms[].arabic` was `ٱلْمُتَّقِينَ`; the passage reads `لِلْمُتَّقِينَ`. Everything else, including the count of quoted prayers in the portrait, is right. | rewritten |
+| 27:19 | 5 | Ants appear in exactly two ayat of the surah, as stated; Solomon's power kept subordinate throughout. | kept |
+| 27:40 | 5 | Surah 27 is the only surah carrying the opening formula twice (27:30); gratitude credited to the grateful. | kept |
+| 27:62 | 3 | `didYouKnow` called the refrain a "five-word challenge" — it is three words — and listed four varying endings for five ayat. | rewritten |
+| 29:1-4 | 5 | Twenty-nine surahs with disconnected letters is the standard count; the tradition's own uncertainty reported honestly. | kept |
+| 29:5-6 | 5 | The striving verb does return in 29:69, the surah's last ayah, as claimed. | kept |
+| 29:20 | 5 | 29:20 really is the only place the travel command is turned toward how creation began. | kept |
+| 29:45 | 5 | `الفحشاء` / `المنكر` distinction is right; both readings of the closing clause given without a winner. | kept |
+| 29:68-69 | 4 | `didYouKnow` said two ayat give the surah its name; `العنكبوت` occurs in one ayah only, 29:41. | rewritten |
+| 31:11-12 | 5 | Luqman correctly not called a prophet, origins reported as the commentators differ. | kept |
+| 31:13-19 | 5 | The two interrupting ayat and the resumed vocative are exactly as described. | kept |
+| 31:27-28 | 5 | The 18:109 parallel with its smaller quantity is correct; "seven" read as indefinite, which is the classical reading. | kept |
+| 31:34 | 5 | `الغيث` verified as rare and tied to relief; two of the five items placed inside the reader's own life. | kept |
+| 33:21-22 | 5 | Model-not-rule reading is apt; 60:4 correctly shows the same word used of Abraham. | kept |
+| 33:23 | 5 | `نحبه` verified as a hapax, which is exactly why the three readings are reported side by side. | kept |
+| 33:35 | 5 | Ten pairs and one reward accurately described; occasion reported as the commentators broadly agree it. | kept |
+| 33:40-42 | 5 | The name Muhammad verified at four places (3:144, 33:40, 47:2, 48:29); both senses of "seal" held together. | kept |
+| 33:56 | 3 | `didYouKnow` put 33:43 "thirteen ayat later"; it is thirteen ayat earlier. "the Prophet" also used with no honorific. | rewritten |
+| 33:69-70 | 4 | Moses count (136) checks out and the vindication is well handled; "the Prophet" used with no honorific. | rewritten |
+| 33:72 | 5 | The shared root of trust and faith is right, and both classical readings of the closing words are given. | kept |
+| 35:1 | 4 | The five praise-opening surahs (1, 6, 18, 34, 35) are correctly listed; the clause about them sitting "in sequence" is muddled but not false. | kept |
+| 35:5 | 3 | `didYouKnow` called 31:33 "the previous surah" and "four ayat apart in the reading order"; neither is true of 31:33 and 35:5. | rewritten |
+| 35:15-17 | 5 | 35:16-17 verified as word for word identical with 14:19-20. | kept |
+| 35:27-28 | 5 | `غرابيب` verified as a hapax; the awe-follows-attention reading is grounded and non-sectarian. | kept |
+| 35:29 | 5 | 2:282 really is the longest ayah; commercial vocabulary used without turning the note into a transaction. | kept |
+| 37:96-100 | 4 | `didYouKnow` said the fire gets one word, the one for the built structure; 37:97 also names the blaze itself. | rewritten |
+| 39:9 | 5 | The unfinished comparison is exactly as described; knowledge tied to the body rather than to study. | kept |
+| 39:10 | 5 | The reward without a count attached specifically to patience is a real and classically noted point. | kept |
+| 39:53 | 5 | `جميعا` doing the generalising work is right; the two ayat that follow correctly kept in view. | kept |
+| 39:73 | 5 | The extra connective against 39:71 is the classical crux, and both readings of it are reported. | kept |
+| 41:30 | 5 | Duration rather than achievement as the condition; 46:13 and 2:38 both apt. | kept |
+| 41:33-35 | 4 | The repeated clause in 41:35 is correctly described and the difficulty is stated honestly; "the Prophet" lacked the honorific. | rewritten |
+| 41:44 | 5 | The surah's name-verb reappearing inside the objectors' imagined complaint is exact and elegant. | kept |
+| 43:32 | 5 | Mutual service reading is the mainstream one; provision separated from worth without moralising. | kept |
+| 43:67-70 | 5 | The shared root with Abraham's title is correct; friendship treated as instrument, not as blame. | kept |
+| 45:13 | 5 | The seven-surah run from 40 to 46 opening with the same letters checks out; 45:28 supplies the name. | kept |
+| 45:23 | 3 | `didYouKnow` claimed 2:7 seals the same faculties "in the same order"; 2:7 runs hearts-hearing-sight, this ayah hearing-heart-sight. | rewritten |
+| 47:5-8 | 5 | "Help to God" handled exactly as the commentators do; the promise is footing, not victory. | kept |
+| 47:19 | 5 | The hadith collection's chapter heading on knowledge is a real and checkable detail. | kept |
+| 47:31 | 5 | "Until We know" given the standard reading; 3:142 does use the same two words. | kept |
+| 49:10 | 4 | The dual "your two brothers" is the point of the ayah and is well made; "the Prophet" lacked the honorific. | rewritten |
+| 49:11-13 | 5 | `شعوبا` verified as a hapax; backbiting defined by absence rather than by falsehood, which is the classical definition. | kept |
+| 51:11-15 | 5 | Four oaths in four ayat with the answer at the fifth is correct; the demand for a date refused rather than answered. | kept |
+| 51:16-20 | 5 | Righteousness described entirely by what is unwitnessed; the share in wealth correctly called a right, not charity. | kept |
+| 51:21-25 | 4 | Abraham's guests are told at least three times as stated, but "one records… another…" reads as two surahs when both details sit in surah 11. | kept |
+| 51:52-56 | 5 | 51:57 does immediately deny that God wants provision; speaking separated from responsibility for the result. | kept |
+| 53:38-42 | 5 | The burden clause verified at exactly five places (6:164, 17:15, 35:18, 39:7, 53:38). | kept |
+| 55:1-13 | 4 | The refrain is 31 occurrences in all and 55:13 is the first; "returns thirty-one times before the surah ends" reads as thirty-one more. | rewritten |
+| 55:24-28 | 5 | `ذو الجلال والإكرام` verified at 55:27 and 55:78 and nowhere else; the surah is framed by names, as claimed. | kept |
+| 55:59-63 | 5 | The refrain placement point is right, and the classical broadening of the goodness clause is reported, not invented. | kept |
+| 57:4 | 5 | The four names at 57:3 occur nowhere else; transcendence and nearness both kept, as the tradition does. | kept |
+| 57:16 | 5 | The four-years report is in the early collections and is given as a report. | kept |
+| 57:20-21 | 4 | `الكفار` read agriculturally, which is the classical reading; the width fact overlaps with 3:133-134's note in this same set. | kept |
+| 57:23-24 | 5 | The five surahs opening with the declaration of glorifying (57, 59, 61, 62, 64) check out. | kept |
+| 59:9 | 5 | The closing clause verified as identical at 64:16; greed located in the soul rather than in the circumstance. | kept |
+| 59:17-18 | 5 | The doubled command inside one ayah is real, and the surah does close on a run of names. | kept |
+| 59:19-20 | 5 | The 9:67 contrast (He forgot them / they forgot themselves) is exactly the point the commentators make. | kept |
+| 59:21 | 5 | The 33:72 pairing is apt; the inference about the reader is left implicit rather than preached. | kept |
+| 59:22-24 | 5 | Densest cluster of names in the Quran, with several unique to 59:23; order of knowledge, sovereignty, making is correct. | kept |
+| 61:1-4 | 5 | `مرصوص` verified as a hapax; the failure named is the gap between word and act, not cowardice. | kept |
+| 61:9-10 | 5 | The refrain ayah verified at three places (9:33, 48:28, 61:9). | kept |
+| 63:9 | 5 | The three treatments of wealth-and-children (18:46, 8:28, 63:9) are all real and correctly characterised. | kept |
+| 65:2-3 | 5 | Legal-content surah handled descriptively with no ruling; the companion's remark given as a report. | kept |
+| 65:7 | 5 | The 94:5-6 contrast (ease *with* hardship vs *after* it) is exact, and the poorer household is not excused from giving. | kept |
+| 67:1-5 | 5 | "Death created" taken as a claim rather than a phrase; the nightly-recitation reports given as reports. | kept |
+| 67:15-16 | 5 | The gift-then-security alternation really does run through the following ayat. | kept |
+| 71:8-12 | 5 | The same offer verified in Hud's mouth at 11:52; repentance and rainfall joined as the text joins them. | kept |
+| 73:6-9 | 5 | The surah does carry both the demand and its relief; the "about a year" gap is reported as the sources report it. | kept |
+| 73:20 | 5 | Every concession grounded in "He knows", which is what the ayah actually does three times over. | kept |
+| 75:36-40 | 5 | `النفس اللوامة` verified as a hapax at 75:2; the two ends of the surah do answer each other. | kept |
+| 79:36-40 | 4 | The shared word for shelter at 79:39 and 79:41 is real, but they are two ayat apart, not four. | rewritten |
+| 87:11-15 | 5 | The surah does close by naming the pages of Abraham and Moses; the disagreement about its scope is recorded. | kept |
+| 87:16-19 | 5 | The pages of Abraham verified at exactly two places (53:36-37, 87:19), with 53:38-39 supplying their content. | kept |
+| 89:26-30 | 5 | "My servants, My garden" is correct, and the mutual satisfaction is the tightest reading of the pair. | kept |
+| 91:6-10 | 4 | `دساها` verified as a hapax and the seven-oath run is right; "the last two" is loose, since the soul and its proportioner are one oath. | kept |
+| 93:1-11 | 5 | The three rescues answered by three instructions is exactly the surah's structure; occasion well attested. | kept |
+| 95:1-5 | 3 | `didYouKnow` said the rhyme runs on one syllable throughout; ayah 4 ends on a different consonant. "the Prophet" also lacked the honorific. | rewritten |
+| 97:1-5 | 5 | The name occurs three times in five lines, as stated; the night correctly left undated. | kept |
+| 99:6-8 | 4 | The symmetry reading is excellent, but the hadith was summarised as answering a question about horses when the ayat answer the one about donkeys, and the honorific was missing. | rewritten |
+| 103:1-3 | 5 | Both reports are attributed as reports; the reciprocal clauses are read exactly right. | kept |
+| 105:1-5 | 5 | The plan confounded before the birds arrive is the surah's own order, and the dating is the Arabs' own. | kept |
+| 107:1-5 | 5 | The woe really does land on those who pray, at the fourth of seven lines. | kept |
+| 109:1-6 | 5 | Occasion consistently reported; tolerance and agreement kept apart without hostility. | kept |
+| 113:1-5 | 5 | The pair of refuge-seekings and the nightly practice are both in the collections; envy correctly timed rather than personal. | kept |
+
+## Recurring failure modes
+
+For the author brief. In rough order of how often they appeared:
+
+1. **Off-by-N structural claims.** "Two ayat later" when it is the next ayah (7:199-202), "three ayat later" that is really three earlier (33:56), "four ayat apart" for two (79:36-40), an answer placed two ayat on when it is three (19:4). Every one of these is checkable in ten seconds and none of them were. **Count the ayat, do not estimate them.**
+2. **Lexical counts stated confidently and wrong.** "More than a dozen" for a pair that occurs nine times (3:104-105), "five times" for a vocative that occurs four (7:26), "two ayat" for a word appearing in one (29:68-69), "five qualities, only one about God" that does not survive the count (5:54), a three-word refrain called five words (27:62), a refrain's total confused with what remains (55:1-13). **If a `didYouKnow` contains a number, count it against the corpus before writing it.**
+3. **"The same … in the same order" when the order differs.** 45:23 against 2:7 is the clearest case. Parallels are the best `didYouKnow` material available and are also where the slips cluster, because the resemblance is checked and the detail is not.
+4. **`keyTerms[].arabic` spliced or prefix-stripped.** `كَتَبَ لَنَا` for a passage reading `كَتَبَ ٱللَّهُ لَنَا` (9:51); `ٱلْمُتَّقِينَ` for `لِلْمُتَّقِينَ` (25:74). Both pass the validator's script check and both break rule 4 of the system prompt. The token workflow (`toks.mjs` → `@S:A/i` → `resolve-arabic.mjs`) prevents this entirely and was clearly not used for these.
+5. **`didYouKnow` that delivers no fact.** 13:23-24 noted that the greeting is the ordinary one and then told the reader a clause was "worth pausing on"; 21:30 restated its own two `keyTerms` notes. A `didYouKnow` that could be deleted without losing information has failed.
+6. **Facts reused across units.** 21:34-35 carried the same "every soul tastes death appears three times" observation that 3:185 already carries, and both are in the Discover set. The near-duplicate check covers `meaning` only, so `didYouKnow` repetition goes unnoticed.
+7. **Honorific missing where the note discusses the Prophet.** 9:51, 25:20, 33:56, 33:69-70, 41:33-35, 49:10, 95:1-5, 99:6-8 all referred to "the Prophet" in prose without the honorific ever appearing. The validator only fires on the name "Muhammad", so the rule as written in the brief is not machine-enforced.
+8. **Hadith summarised loosely.** 99:6-8 compressed the horses-and-donkeys report into "a question about horses"; the ayat answer the donkey question. Reports were otherwise attributed carefully throughout, which is what made this one stand out.
+
+None of the 161 units contained a sectarian framing, a legal ruling, Arabic outside `keyTerms`, an invented occasion of revelation, or a cross-reference that did not exist. Every `crossReferences[].ref` and `exploreFurther` entry in the odd half was checked against the corpus for bounds and read for relevance; all 161 passed.

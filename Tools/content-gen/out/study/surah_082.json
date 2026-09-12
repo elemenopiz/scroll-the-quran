@@ -1,8 +1,66 @@
 {
   "surah": 82,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:24:18.248Z",
+  "generatedAt": "2026-09-12T10:26:18.895Z",
   "studies": [
+    {
+      "key": "82:1-5",
+      "surah": 82,
+      "start": 1,
+      "end": 5,
+      "theme": "Death and the Hereafter",
+      "themeId": "death-and-the-hereafter",
+      "title": "When The Tombs Are Turned Out",
+      "tier": "standard",
+      "meaning": "Four clauses of breaking, and they move downward. The sky splits, the scattered lights come apart, the seas are burst open, and then the ground itself: graves turned out and their contents strewn. Only after the movement has reached the earth does the sentence complete, and the completion is short. A soul knows what it sent ahead and what it left behind. Two categories, and the second is the one people rarely count, since what was deferred is also on the list.",
+      "historicalContext": "Meccan and early. The surah opens with the same construction as the one before it, and the commentators read the pair as companion chapters on a single subject approached from two directions. No occasion is reported. What is being addressed is a settled Meccan confidence that death ended the matter, so the passage spends four lines dismantling the sky and one line arriving at a person's own account.",
+      "keyTerms": [
+        {
+          "arabic": "ٱنفَطَرَتْ",
+          "gloss": "split apart, cleft",
+          "note": "From a root about splitting open, which also gives the word for the natural disposition a thing is made with. The sky comes apart along the seam it was made along, and the surah takes its name from this verb."
+        },
+        {
+          "arabic": "بُعْثِرَتْ",
+          "gloss": "turned out, strewn about",
+          "note": "A verb for tipping a container over and scattering what is inside. It occurs once in the Quran, and it treats the graves as receptacles emptied rather than as ground that opens."
+        },
+        {
+          "arabic": "وَأَخَّرَتْ",
+          "gloss": "and what it deferred",
+          "note": "To put something back or leave it for later. Set beside the verb for sending forward, it adds omissions to the account, so what a person postponed is registered alongside what was done."
+        }
+      ],
+      "lifeInProphetsTime": "Graves in Arabia were shallow, marked by a stone or nothing at all, and the ground gave things up. Floods opened them, animals disturbed them, and old burial grounds were known to be full without anyone knowing quite where. The image of a grave tipped out was therefore not fantastic; it was something that had happened to somebody's relative within living memory in most valleys.",
+      "didYouKnow": "This surah and the one before it both suspend a long series of clauses and then land on the same four-word form: a soul knows. Those are the only two places in the Quran where that construction appears. One says the soul knows what it brought with it, the other what it sent forward and what it held back, so the two chapters divide the account between them.",
+      "theologicalSignificance": "Adding what was deferred to the reckoning changes its shape entirely. A record of deeds can be balanced by more deeds; a record that includes what you kept putting off cannot be, because the omissions have no upper limit. The passage says this in three words and moves on, having redefined the account without argument. The dismantled sky above it is there to establish that the account is not optional.",
+      "crossReferences": [
+        {
+          "ref": "75:13",
+          "why": "States the same double account, informed of what he put forward and what he left behind."
+        },
+        {
+          "ref": "81:1-14",
+          "why": "Builds the same suspended sentence out of twelve clauses and lands on the same short main clause."
+        },
+        {
+          "ref": "100:9-10",
+          "why": "Pairs the graves turned out with the chests brought out, so the outer and the inner are both emptied."
+        }
+      ],
+      "applyIt": "Make a list of three things you have been deferring, and write only the list, not a plan. The passage counts the deferred alongside the done, which most self-assessment never does. Seeing the three of them written in your own hand is enough for today, and the ayah does not ask you to have solved them by tomorrow.",
+      "exploreFurther": [
+        "81:1-14",
+        "75:1-15",
+        "100:6-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:26.418Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "82:6-10",
       "surah": 82,
@@ -55,14 +113,130 @@
       ],
       "applyIt": "Name one thing you have got away with recently and were quietly relieved about. Not a crime, just something that should have had a consequence and did not. Then sit with the possibility that the absence of consequence was a kindness rather than an escape. The ayah's question is exactly about that gap, and most people have one open right now.",
       "exploreFurther": [
-        "82:10-19",
+        "82:11-19",
         "40:64",
         "95:1-8"
       ],
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:24:05.720Z",
+        "generatedAt": "2026-09-12T10:26:10.840Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "82:11-15",
+      "surah": 82,
+      "start": 11,
+      "end": 15,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Noble Ones Who Write",
+      "tier": "standard",
+      "meaning": "The watchers named a line earlier are given two qualities, and both are surprising in context. They are noble, and they write. Not that they judge, threaten or intervene; they keep a record, and they know what is being done. Then the account divides in two lines built on identical grammar, one for those who are dutiful and one for those who break through, with a single word changed in each half. The fire is given a date, and then a clause saying they will not be absent from it.",
+      "historicalContext": "Meccan. The passage follows an accusation of denying the reckoning and answers it not with a threat but with an administrative fact: the record is already being kept. The commentators note the mildness of the description. No occasion is reported. Written record-keeping was the instrument of trust in a trading city with no courts, which gives the image its weight for the first audience.",
+      "keyTerms": [
+        {
+          "arabic": "كِرَامًا",
+          "gloss": "noble, generous",
+          "note": "The same adjective used of a generous host and of a person above pettiness. Applied to recorders it suggests they do not distort, exaggerate or take pleasure in what they write down."
+        },
+        {
+          "arabic": "ٱلْأَبْرَارَ",
+          "gloss": "the dutiful, the devoted",
+          "note": "From a root joining kindness, truthfulness and dutiful conduct, the same root that gives the word for keeping an oath. It names people by their reliability toward others rather than by their beliefs."
+        },
+        {
+          "arabic": "ٱلْفُجَّارَ",
+          "gloss": "the unrestrained, the corrupt",
+          "note": "From a verb about splitting open, so the word describes someone who has burst through a boundary rather than one who fell short of a standard. It is the exact opposite of the term paired with it."
+        }
+      ],
+      "lifeInProphetsTime": "A Meccan merchant's business ran on written notes and named witnesses. Deposits, caravan shares and debts across seasons were all held on record, and the character of the man who wrote them was as important as the figures, since a scribe who could be bought made the whole system useless. Saying that the recorders were noble answered the first question anyone in that city would have asked about a record.",
+      "didYouKnow": "The line about the dutiful in this passage occurs word for word again in the surah that follows this one, where it opens the account of their reward. Its partner line about the unrestrained has no such twin anywhere. The two nouns are opposites in the lexicon as well as in the sentence: one root joins truthfulness with dutiful conduct, the other means to split a thing open.",
+      "theologicalSignificance": "The reckoning is presented as documentation rather than surveillance. The recorders are named as noble first and as writers second, and nothing is said about them reporting, accusing or acting. That leaves the account entirely in the hands of the one being recorded. The division that follows is then stated as a present fact in the Arabic rather than as a future outcome, which the commentators note as an intensification.",
+      "crossReferences": [
+        {
+          "ref": "50:17-18",
+          "why": "Places two receivers on either side, so that no word is uttered without a watcher ready to record it."
+        },
+        {
+          "ref": "43:80",
+          "why": "Answers the assumption that their private conferences go unheard, since messengers are writing beside them."
+        },
+        {
+          "ref": "76:5-6",
+          "why": "Describes the dutiful drinking from a spring, using the same word for them as this passage does."
+        }
+      ],
+      "applyIt": "Pick one thing you did today that nobody witnessed, good or bad, and write a single sentence about it in a notebook. Then close the book. The exercise is not confession. It is finding out what it feels like when the unwitnessed thing exists in writing, which is the whole content of these two ayat.",
+      "exploreFurther": [
+        "50:16-22",
+        "43:77-83",
+        "76:5-12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:26.418Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "82:16-19",
+      "surah": 82,
+      "start": 16,
+      "end": 19,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "A Question Asked Twice",
+      "tier": "standard",
+      "meaning": "One short clause closes the previous scene: they will not be absent from it. Then the surah asks what the Day of Recompense is, and asks again with a word meaning then, and never answers the question descriptively. What follows instead is a removal. On that day no soul possesses anything at all for another soul, and the command belongs to God. The definition offered is not a picture of the day but a statement of what stops working on it, which is every arrangement people make to be covered by someone else.",
+      "historicalContext": "Meccan. The formula asking what a thing is appears across the early surahs and is used where description would fall short, so the doubling here is an intensification rather than a repetition. No occasion is reported. In Mecca a person's security came from a patron, a clan or a purchased protection, and the closing line names precisely that system and says it does not operate.",
+      "keyTerms": [
+        {
+          "arabic": "بِغَآئِبِينَ",
+          "gloss": "absent from it",
+          "note": "The participle for being away or hidden from view, in the plural with a negative. It answers a hope nobody states aloud, that one might somehow not be present for one's own case."
+        },
+        {
+          "arabic": "ٱلدِّينِ",
+          "gloss": "the recompense, the judgement",
+          "note": "The word covers both a religion and a debt repaid, and here it is the second sense. The same root gives the word for a loan, so the day is named as the day accounts are settled."
+        },
+        {
+          "arabic": "لَا تَمْلِكُ",
+          "gloss": "possesses no power",
+          "note": "The verb of ownership rather than of ability. No soul owns anything on behalf of another, which rules out intercession by right or by purchase while saying nothing about what may be permitted."
+        }
+      ],
+      "lifeInProphetsTime": "Protection in Mecca was a transaction. A stranger entering the city needed a resident to stand for him, a weak clan bought security from a strong one, and a man in trouble went to whoever had accepted responsibility for him. Everyone understood that you survived by what someone else owned on your behalf. The closing line of this surah cancels that arrangement in seven words.",
+      "didYouKnow": "The question that opens these lines is one the Quran asks in a handful of places, always where the answer resists description. Here it is asked twice in a row, the second time with a particle meaning then, and this is the only place in the Quran where the formula is doubled. What follows is not a description at all but a sentence about ownership.",
+      "theologicalSignificance": "The day is defined by a negation, and the negation is precise. It is not that intercession is impossible but that no soul owns anything for another, so nothing can be claimed as a right or arranged in advance. The command is then said to belong to God on that day, which the commentators read as an emphasis rather than a limit, since it belongs to Him on every other day too.",
+      "crossReferences": [
+        {
+          "ref": "2:48",
+          "why": "Sets out the same cancellation at length, no soul availing another, no intercession accepted, no ransom taken."
+        },
+        {
+          "ref": "31:33",
+          "why": "Applies the principle to the closest tie there is, a parent and a child, neither availing the other."
+        },
+        {
+          "ref": "40:16",
+          "why": "Asks whose the kingdom is on that day and answers with God's alone, in the same construction."
+        }
+      ],
+      "applyIt": "Notice who you are quietly counting on to cover for you: a relative's reputation, a colleague who will catch the error, a friend who explains you to others. Name one of them today. The point is not to withdraw from anyone. It is to see clearly the one place where the arrangement does not reach.",
+      "exploreFurther": [
+        "2:47-48",
+        "40:15-18",
+        "31:32-34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:03:26.418Z",
         "reviewed": false
       }
     }

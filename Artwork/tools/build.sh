@@ -29,38 +29,16 @@ grain() {  # grain() <png> [amount] [attenuate]
     "${PNGOPT[@]}" "$f"
 }
 
-echo "1/7  SVG sources"
+echo "1/7  SVG sources (mark/appicon SVGs here are superseded by the supplied logo)"
 python3 compose.py  >/dev/null
 python3 envelope.py >/dev/null
 python3 frame.py "$SRC/phone-frame.svg"
 say "src/*.svg"
 
 echo "2/7  App icon"
-mkdir -p "$ART/AppIcon"
-for v in "" "-dark"; do
-  rsvg-convert -w 1024 -h 1024 "$SRC/appicon$v.svg" -o "$TMP/i.png"
-  magick "$TMP/i.png" -background white -alpha remove -alpha off \
-         "${PNGOPT[@]}" "$ART/AppIcon/appicon$v-1024.png"
-  say "AppIcon/appicon$v-1024.png"
-done
-rsvg-convert -w 1024 -h 1024 "$SRC/appicon-mono.svg" -o "$TMP/m.png"
-magick "$TMP/m.png" -background black -alpha remove -alpha off \
-       "${PNGOPT[@]}" "$ART/AppIcon/appicon-mono-1024.png"
-magick "$ART/AppIcon/appicon-1024.png" -resize 180x180 -alpha off \
-       "${PNGOPT[@]}" "$ART/AppIcon/appicon-180.png"
-say "AppIcon/appicon-mono-1024.png, appicon-180.png"
-
 echo "3/7  Logo mark + reader logo card"
-mkdir -p "$ART/Logo"
-for v in black white; do
-  svg "$SRC/mark-$v.svg" 512 512 "$ART/Logo/mark-$v-512.png"
-  for s in 64 128 192; do svg "$SRC/mark-$v.svg" $s $s "$ART/Logo/mark-$v-$s.png"; done
-done
-for s in 96 192 288; do
-  svg "$SRC/logo-card.svg"       $s $s "$ART/Logo/logo-card-$s.png"
-  svg "$SRC/logo-card-light.svg" $s $s "$ART/Logo/logo-card-light-$s.png"
-done
-say "Logo/mark-*, Logo/logo-card-*"
+# Both come from the supplied logo, not from src/*.svg — see tools/logo.sh.
+./logo.sh
 
 echo "4/7  Paywall timeline glyphs"
 mkdir -p "$ART/Icons"

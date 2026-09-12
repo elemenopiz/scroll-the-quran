@@ -16,6 +16,10 @@ public final class StoreKitEntitlementStore: EntitlementProviding {
     public private(set) var isPremium: Bool = false
     public private(set) var products: [StorePlan] = []
     public private(set) var introOfferEligible: Bool = true
+    /// The subscription group's renewal state, read from `Product.SubscriptionInfo.status`.
+    /// Grace period and billing retry are invisible to `currentEntitlements`, so they are
+    /// asked for separately and surfaced to Settings as a "update your payment method" banner.
+    public private(set) var billingState: BillingState = .notSubscribed
     /// The last error `load()`, `purchase(_:)` or `restore()` hit, for the paywall to show.
     public private(set) var lastError: CommerceError?
 
@@ -123,6 +127,31 @@ public final class StoreKitEntitlementStore: EntitlementProviding {
         }
         entitledProductIDs = entitled
         isPremium = ProductID.allRawValues.contains { entitled.contains($0) }
+        await refreshBillingState()
+    }
+
+    /// Reads the subscription group's renewal state.
+    ///
+    /// `Transaction.currentEntitlements` answers "may they use it"; it cannot tell a healthy
+    /// subscription from one whose card just failed. `Product.SubscriptionInfo.status(for:)`
+    /// is the only API that reports `.inGracePeriod` and `.inBillingRetryPeriod`, and both
+    /// deserve the same nudge before the customer silently loses access.
+    ///
+    /// Unverified statuses are ignored the same way unverified transactions are.
+    private func refreshBillingState() async {
+        do {
+            let statuses = try await Product.SubscriptionInfo.status(for: ProductID.subscriptionGroupID)
+            var state: BillingState = .notSubscribed
+            for status in statuses {
+                guard case .verified = status.renewalInfo, case .verified = status.transaction else { continue }
+                state = state.combined(with: BillingState(status.state))
+            }
+            billingState = state
+        } catch {
+            // No StoreKit configuration, or the store is unreachable: fall back to what the
+            // entitlement set already told us rather than inventing a warning.
+            billingState = isPremium ? .subscribed : .notSubscribed
+        }
     }
 
     private func refreshIntroEligibility() async {
@@ -180,5 +209,21 @@ extension StorePlan {
         @unknown default: 1
         }
         return perUnit * period.value
+    }
+}
+
+// MARK: - Renewal state
+
+extension BillingState {
+    /// Maps StoreKit's `RenewalState` onto the app's own vocabulary.
+    init(_ state: Product.SubscriptionInfo.RenewalState) {
+        switch state {
+        case .subscribed: self = .subscribed
+        case .inGracePeriod: self = .inGracePeriod
+        case .inBillingRetryPeriod: self = .inBillingRetry
+        case .expired: self = .expired
+        case .revoked: self = .revoked
+        default: self = .notSubscribed
+        }
     }
 }

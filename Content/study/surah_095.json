@@ -1,7 +1,7 @@
 {
   "surah": 95,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:34:45.792Z",
+  "generatedAt": "2026-09-12T10:48:11.544Z",
   "studies": [
     {
       "key": "95:1-5",
@@ -32,7 +32,7 @@
         }
       ],
       "lifeInProphetsTime": "Figs and olives did not grow in Mecca. They came from the north, from the hills of Syria and Palestine, and arrived as trade goods with a season and a price. Naming them at the head of a surah pointed a Meccan listener up the caravan road toward country he had heard about all his life, and the mountain named next lay along the same route.",
-      "didYouKnow": "A companion is reported to have said that he never heard a finer voice or recitation than the Prophet's when he recited this surah in an evening prayer on a journey. The report is preserved in the major collections. The surah is eight ayat long, and its rhyme runs on a single syllable from the first line to the last.",
+      "didYouKnow": "A companion is reported to have said that he never heard a finer voice or recitation than that of the Prophet Muhammad (peace be upon him) reciting this surah in an evening prayer while travelling. The report is preserved in the major collections. The surah is eight ayat long, short enough to be said in one unit of prayer without lengthening it at all.",
       "theologicalSignificance": "Two statements about the human being are set beside each other without either being withdrawn. The best proportion is asserted, and then the lowest position, and the surah does not explain how both are true of the same creature. That refusal is the passage's honesty: it names the height and the fall as facts of the same nature, and the exemption that follows in the next ayah is granted to conduct rather than to species.",
       "crossReferences": [
         {
@@ -57,7 +57,65 @@
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:34:38.078Z",
+        "generatedAt": "2026-09-12T10:48:03.760Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "95:6-8",
+      "surah": 95,
+      "start": 6,
+      "end": 8,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "A Reward Without End",
+      "tier": "standard",
+      "meaning": "An exception is hung on a bleak statement, and it rescues by category rather than by name: those who believed and did the works. Their reward is then described by a denial. The word ruled out carries two senses at once, severing and reproaching, so the reward is both uninterrupted and free of anyone holding it over them. Two questions close the surah and neither is answered. The first asks what still makes the hearer deny the reckoning; the second asks whether God is not the best of judges.",
+      "historicalContext": "Meccan and early. The oaths that open the surah name places long associated with earlier prophecy and then the city the audience was standing in, so the argument is set inside a geography of revelation before it says anything. Classical sources report no occasion for these closing lines and read the questions as addressed to a single listener rather than to the opposition as a body.",
+      "keyTerms": [
+        {
+          "arabic": "مَمْنُونٍ",
+          "gloss": "cut off, or held over one",
+          "note": "The root joins severing something and reminding a person of a favour until it weighs on him. Denying both at once makes the reward continuous and also free of any obligation attached to it."
+        },
+        {
+          "arabic": "بِٱلدِّينِ",
+          "gloss": "the judgement, the reckoning",
+          "note": "One word covers a debt, a recompense and a religion, all from the sense of what is owed and then settled. Here the commentators read the accounting rather than the creed."
+        },
+        {
+          "arabic": "بِأَحْكَمِ",
+          "gloss": "the most just of judges",
+          "note": "A superlative from a root meaning both to judge and to make something firm, so the best judge is also the one whose ruling holds. The phrase occurs twice in the Quran."
+        }
+      ],
+      "lifeInProphetsTime": "Disputes in Mecca went to arbitration, and an arbitrator's ruling had no force behind it beyond his reputation. A powerful clan could simply decline. Compensation for a killing was negotiated rather than imposed, and the settlement depended on who could be pressured. Everyone hearing the last line had watched a judgement ignored by someone strong enough to ignore it, which is what gives the question its edge.",
+      "didYouKnow": "The phrase naming God as the most just of judges occurs in only one other place in the Quran, where it is spoken by Noah as he appeals over the loss of his own son. The same four words serve as the close of a public argument here and as the last resort of a grieving father there.",
+      "theologicalSignificance": "The exception clause is the structural centre of the surah, and it is worth noticing how little it demands: belief and work, described in general terms, with no quantity attached. Everything before it has been about descent from a high origin, and this one clause interrupts that descent without reversing the account of it. Then the closing questions hand the argument to the hearer instead of finishing it for him.",
+      "crossReferences": [
+        {
+          "ref": "11:45",
+          "why": "Contains the only other use of the phrase about the best of judges, in Noah's appeal to his Lord."
+        },
+        {
+          "ref": "84:25",
+          "why": "Ends another short surah with the identical promise of a reward that is never cut off."
+        },
+        {
+          "ref": "103:2-3",
+          "why": "Uses the same exception clause to rescue humanity from a blanket statement of loss."
+        }
+      ],
+      "applyIt": "Answer the surah's question out loud in one sentence, as though it had been put to you personally, because it has. Not what people in general say, and not a defence of anyone else. What, after all this, still makes you treat the reckoning as unreal. Say it once and then leave it alone.",
+      "exploreFurther": [
+        "84:20-25",
+        "103:1-3",
+        "11:42-47"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.285Z",
         "reviewed": false
       }
     }

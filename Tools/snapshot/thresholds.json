@@ -57,7 +57,8 @@
       "file": "paywall-trial.png",
       "appearance": "light",
       "route": "paywall-trial",
-      "threshold": 0.06
+      "threshold": 0.06,
+      "notes": "Phase 4e accepted deviation: the brand mark is 72 pt square anchored to the safe-area top, where the reference draws it 58x54 at y 47 \u2014 that y is behind the Dynamic Island on every island device. The mark is the only element that moved; the extra height comes out of the gap above the headline. Costs ~0.007 RMSE."
     },
     "paywall-plans": {
       "file": "paywall-plans.png",
@@ -71,13 +72,14 @@
       "appearance": "light",
       "route": "gift-closed",
       "threshold": 0.1,
-      "notes": "raster envelope art; ours will differ in detail"
+      "notes": "raster envelope art; ours will differ in detail. Phase 4e accepted deviation: the wax seal carries the app's own mark instead of the reference's crown-of-thorns."
     },
     "gift-open": {
       "file": "gift-open.png",
       "appearance": "light",
       "route": "gift-open",
-      "threshold": 0.1
+      "threshold": 0.1,
+      "notes": "Phase 4e: the OFF pill now matches the reference (69x33 at y 270 with a 3.3 pt white outline) and the offer card starts at y 162 so the flap's peak shows. Accepted deviation: the seal carries the app's own mark."
     },
     "community-dark": {
       "file": "community-dark.png",
@@ -120,7 +122,7 @@
       "appearance": "dark",
       "route": "reader",
       "threshold": 0.05,
-      "notes": "surah start: logo card above verse 1, hint toast visible"
+      "notes": "surah start: logo card above verse 1, hint toast visible. Phase 4e accepted deviation: the card is 112 pt where the reference is 93.7, on the owner's direction that the mark should read bigger inside the app. Costs ~0.004 RMSE."
     },
     "reader-light": {
       "file": "reader-dark.png",
@@ -128,7 +130,7 @@
       "route": "reader",
       "threshold": 0.08,
       "negate": true,
-      "notes": "no light reference of the reader exists; the light appearance is the same layout with the tokens mirrored, so the capture is negated before comparing"
+      "notes": "no light reference of the reader exists; the light appearance is the same layout with the tokens mirrored, so the capture is negated before comparing. Phase 4e accepted deviation: the 112 pt logo card, as reader-dark."
     },
     "translation-sheet": {
       "file": "translation-sheet.png",
@@ -173,7 +175,7 @@
       "route": "plans-sheet",
       "threshold": 0.1,
       "refCrop": "671x1416+254+803",
-      "notes": "phone-frame mockup; Phase 3c measured 0.193 with the layout matched — the residue is cover artwork (our procedural covers against the reference's stock photographs) and iOS dimming the parent black behind the sheet where the reference shows it grey"
+      "notes": "phone-frame mockup; Phase 3c measured 0.193 with the layout matched \u2014 the residue is cover artwork (our procedural covers against the reference's stock photographs) and iOS dimming the parent black behind the sheet where the reference shows it grey"
     },
     "plan-detail": {
       "file": "onboarding-slide2-plan-detail.png",
@@ -181,7 +183,7 @@
       "route": "plan-detail",
       "threshold": 0.1,
       "refCrop": "671x1416+254+803",
-      "notes": "phone-frame mockup; Phase 3c measured 0.138 with the layout matched — the residue is the hero cover (ours reads 191 mean luminance against the reference's 143)"
+      "notes": "phone-frame mockup; Phase 3c measured 0.138 with the layout matched \u2014 the residue is the hero cover (ours reads 191 mean luminance against the reference's 143)"
     },
     "tabbar-dark": {
       "file": "home-dark.png",

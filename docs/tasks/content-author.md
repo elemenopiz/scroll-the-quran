@@ -57,6 +57,7 @@ For each key:
 
 ```bash
 node author.mjs prompt 2:255            # read the passage in context
+node search.mjs ٱلْقَيُّوم --in 2:255      # is this term verbatim in my unit?
 #   ...write the body to bodies/2_255.json...
 node author.mjs write 2:255 bodies/2_255.json
 ```
@@ -90,6 +91,19 @@ disagrees with the target is an error.
 - **Word counts split on whitespace**, so a spaced em dash costs a word. `meaning` is now 45–105 words.
 - **Four themes were added** (`divine-attributes`, `revelation-and-its-rejection`, `wealth-and-property`, `love-of-god`); spread themes across a slice, do not lean on one id.
 - **Sectarian-sensitive occasions** (e.g. 28:56, 42:23): describe the setting generally and give classical readings side by side; never name figures whose status divides communities.
+- **Never hand-type Arabic key terms.** Write `"arabic": "@S:A/i"` (token index from `node toks.mjs S:A`, or `@S:A/i-j` for a phrase) and run `node resolve-arabic.mjs <batch dir>` before the pre-check; it substitutes the exact Uthmani token(s) so `keyTerms[].arabic` is verbatim by construction. The validator now enforces this: the term must occur **verbatim, NFC, contiguous** in the unit's own ayat, Bismillah excluded.
+- **`gloss` is 1–6 words. It is the most common single failure.** Words split on whitespace, so "the Self-Subsisting, the Sustainer" is four and "they bit their fingertips at you" is six. Anything longer belongs in `note`, which has 15–45 words to spend.
+- **Use `node search.mjs` before you commit to a term** (`--exact` for the check the validator makes, `--in <your key>` to ask about your own unit). The two modes disagree constantly, and every disagreement is one of these traps:
+  - **U+0640 tatweel** — Uthmani hangs the dagger alef on a tatweel carrier: the text is `ٱلْأَلْبَـٰبِ`, and a word retyped from a rendered page comes out `ٱلْأَلْبَٰبِ`, one codepoint short. 91 terms in the first corpus failed this way.
+  - **U+0670 superscript alef** — a *written* alef, not a vowel sign. `قَـٰسِيَةً` and a hand-typed `قَاسِيَةً` are the same word and neither contains the other.
+  - **U+06D6–U+06ED** — the small high seen, the sajdah sign, the pause marks. They sit *inside* tokens and are invisible in most editors.
+  - **U+0671 alef wasla vs U+0627 bare alef** — the Uthmani definite article is `ٱل`, not `ال`.
+  - **U+0649 alef maqsura vs U+064A ya** — final `ى` and `ي` are indistinguishable by ear, and `موسىٰ` is spelled with the first.
+  - Plus the trap that is not a normaliser at all: **the text usually carries the word with a prefix**. `ٱلْمُتَّقِينَ` is not in 25:74 — `لِلْمُتَّقِينَ` is. Copy the whole token, and make the gloss match it ("for the God-conscious").
+  - And the term has to be in **your** ayat. Five notes in the first corpus keyed a word from the ayah just outside the unit (9:51, 23:56-60, 80:26-30, 81:16-20).
+- **`theme` must be the title of `themeId`, verbatim**, as `out/themes.json` spells it. Copy both from the theme list in the prompt; do not paraphrase the title.
+- **A cross-reference or `exploreFurther` entry may not overlap your own ayat.** "Read this next" that leads back to the page the reader is on is an error now, not a warning, and a surrounding context window counts: `2:132-134` is not a valid further reading for unit `2:133`. Trim it to the side that survives.
+- **`didYouKnow` and `applyIt` are checked for near-duplication** across the whole corpus, at the same 0.50/0.35 thresholds as `meaning`. A good fact reused in a neighbouring unit is the repetition readers notice fastest.
 - **Make your pre-check exit non-zero on findings** and run it as a separate command before `write-dir` (a `wc.mjs && write-dir` chain silently proceeds if the checker exits 0). Read word bounds from the schema's `x-wordBounds`, never hardcode them.
 - **Before writing, read the already-assembled units of near-duplicate passages** (e.g. 8:10 vs 3:126) and take a different angle.
 - **`didYouKnow`:** prefer checkable structural or lexical facts (phrase counts, grammatical forms, surah structure) over impressive claims you cannot verify.
@@ -114,10 +128,11 @@ Structure is enforced by the validator. Truth is not. Take the time.
   Meccan or Medinan setting. Where reports differ, say they differ.
 - **Honorific.** "the Prophet Muhammad (peace be upon him)" at the first naming,
   "the Prophet" after. Once per note — a second use is a warning.
-- **Arabic script only in `keyTerms[].arabic`**, taken from the passage itself,
-  with a faithful gloss and a note that says what the root or usage adds. Never
-  a transliteration, never Arabic anywhere else, never "sabr (patience)" in
-  prose.
+- **Arabic script only in `keyTerms[].arabic`**, taken from the passage itself
+  **verbatim** — same codepoints, contiguous, from your own ayat — with a
+  faithful gloss of **1–6 words** and a note that says what the root or usage
+  adds. Never a transliteration, never Arabic anywhere else, never "sabr
+  (patience)" in prose.
 - **Every cross-reference must be real and must genuinely relate.** Check the
   ayah number. `why` says how it connects, not what it says.
 - **`applyIt` in warm second person**: one small, concrete, doable thing. Not a
@@ -266,8 +281,13 @@ than for a feeling.
 | `unknown themeId` | Ids come from `out/themes.json`, used verbatim, with the matching title in `theme`. |
 | `key is not a unit key` | Use the unit key from `todo`, not a bare ayah reference. |
 | `meaning is a near-duplicate of X` | Two notes are saying the same thing. Find a different angle for one of them. |
+| `didYouKnow is a near-duplicate of X` | The same fact is doing duty in two units. Keep it where it lands best and find another for the other. Same for `applyIt`. |
+| `keyTerms[0].arabic is not copied verbatim from 13:19 … the text has X` | The word is in the passage, retyped rather than copied — a dropped tatweel, a plain alef for U+0670, a missing annotation sign. Paste the `X` the message prints, or use `@S:A/i` and `resolve-arabic.mjs`. |
+| `keyTerms[0].arabic does not occur in 25:74` | Not in your ayat at all. Usually the text carries it with a prefix (`لِلْمُتَّقِينَ`) or the word is in a neighbouring ayah outside the unit. `node search.mjs <term> --in <key>` says which. |
+| `theme "X" is not the title of themeId "y"` | Copy the title from `out/themes.json` verbatim; the app's pill and the Swift `ThemeIndex` join on different halves of the pair. |
+| `exploreFurther[0] overlaps the passage's own ayat` | Further reading has to lead somewhere else. Trim the range to the side that does not touch your unit. |
+| `meaning contains non-Latin script: "с" (U+0441)` | A stray Cyrillic or Greek character from a paste. Retype the word. |
 | `WARN honorific used more than once` | Second and later mentions are "the Prophet". |
-| `WARN … points at the passage itself` | A cross-reference or `exploreFurther` entry is the unit's own key. |
 
 ## Commit conventions
 

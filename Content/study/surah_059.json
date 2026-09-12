@@ -1,8 +1,414 @@
 {
   "surah": 59,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:00:24.533Z",
+  "generatedAt": "2026-09-09T16:00:12.107Z",
   "studies": [
+    {
+      "key": "59:1",
+      "surah": 59,
+      "start": 1,
+      "end": 1,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "Everything Already Says It",
+      "tier": "standard",
+      "meaning": "The surah opens with a completed action: glorification has been performed by everything in the heavens and the earth. The verb is in the past tense, which the commentators note as a claim that this is settled rather than ongoing or aspirational. Nothing is asked of the reader. Two names close the ayah, one for irresistible power and one for wisdom, and the pairing matters for what follows, since the surah is about to describe a defeat and insist it was neither accident nor cruelty.",
+      "historicalContext": "Medinan, opening a surah that will deal with the expulsion of a tribe from Medina in the years after the migration. The community was in a period of sharp insecurity, with agreements inside the town breaking down. The opening ayah says nothing about any of that. The commentators read it as the frame: the surah places the whole episode inside a universe already engaged in praise before it names a single party.",
+      "keyTerms": [
+        {
+          "arabic": "سَبَّحَ",
+          "gloss": "glorified, declared free",
+          "note": "From a root for swimming or moving smoothly through water. The word carries motion, and its religious sense is declaring God free of any defect, so the praise is subtractive rather than decorative."
+        },
+        {
+          "arabic": "ٱلْعَزِيزُ",
+          "gloss": "the Almighty, the Unassailable",
+          "note": "From a root meaning to be rare, precious and hard to reach. It joins scarcity and strength, so the name says both that nothing overpowers Him and that nothing is comparable to Him."
+        },
+        {
+          "arabic": "ٱلْحَكِيمُ",
+          "gloss": "the Most Wise",
+          "note": "From a root for a bridle that restrains an animal, which also gives the words for judgement and for governing. Wisdom in this vocabulary is the placing of limits, not the accumulation of knowledge."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian religious language already had words for praising: poets praised patrons, and pilgrims called out formulas approaching the sanctuary. What was unusual was assigning the act to things that do not speak. Stones, wells, herds and the ridge line above a valley were part of a landscape people read for signs rather than for worship. The opening puts all of it into a single sentence with one verb.",
+      "didYouKnow": "Five surahs of the Quran open with this verb of glorification: 57, 59, 61, 62 and 64. Three of them, including this one, use the completed past form, and the other two use the ongoing present. The five sit close together in the order of the Book and are known collectively by that opening word.",
+      "theologicalSignificance": "Praise is described as a fact about the world rather than a duty laid on it, which shifts what a human act of worship is: joining something already underway, not starting it. The past tense removes any suggestion that the universe waits for people to begin. And placing power beside wisdom at the outset commits the surah in advance, since everything it will report about a defeat must be read as both irresistible and considered.",
+      "crossReferences": [
+        {
+          "ref": "17:44",
+          "why": "Says the seven heavens and all in them glorify Him, and that people do not grasp how."
+        },
+        {
+          "ref": "24:41",
+          "why": "Describes birds in flight, each one knowing its own prayer and its manner of praise."
+        },
+        {
+          "ref": "61:1",
+          "why": "Opens another surah with the identical wording, and goes on to a different subject entirely."
+        }
+      ],
+      "applyIt": "Pick something in view from where you are sitting that has no say in the matter: a tree, a wall, the sky through a window. Look at it for thirty seconds with this ayah in mind. The claim is that it is already doing what you are trying to remember to do. Nothing is asked of you here except noticing.",
+      "exploreFurther": [
+        "17:44",
+        "24:41",
+        "61:1"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.481Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:2",
+      "surah": 59,
+      "start": 2,
+      "end": 2,
+      "theme": "Protection and Refuge",
+      "themeId": "protection-and-refuge",
+      "title": "The Fortresses Did Not Hold",
+      "tier": "standard",
+      "meaning": "The ayah reports an expulsion and then dismantles two expectations at once. The believers did not think it would happen; the other party thought their strongholds would hold. Both assumptions are named and both are set aside by a single clause about God arriving from an unreckoned direction. The strangest detail is the demolition: houses pulled apart by their own occupants as well as by the besiegers. It closes by telling people with eyes to draw the lesson.",
+      "historicalContext": "Medinan. The commentators agree that this describes the expulsion of one of the Jewish tribes of Medina after an agreement between them and the community broke down, and that the siege ended without a general battle. The tribe departed northward and elsewhere. Reports differ on the details of the negotiation and the terms of departure, and the Quran gives none of them, keeping the account at the level of what happened and why.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْحَشْرِ",
+          "gloss": "the gathering, the mustering",
+          "note": "The word the surah is named after. It means driving people together and out, and is used elsewhere of the gathering at the resurrection, which gives the historical event an echo it would not otherwise carry."
+        },
+        {
+          "arabic": "حُصُونُهُم",
+          "gloss": "their fortresses",
+          "note": "From a root for being inaccessible and fortified, which also gives the word for a chaste person and for a well-guarded thing. The image is of something sealed, and the ayah reports the seal failing from an unexpected side."
+        },
+        {
+          "arabic": "ٱلرُّعْبَ",
+          "gloss": "terror, dread",
+          "note": "A word for fear that fills and hollows out, distinct from ordinary fright. It appears four times in the Quran, always of something placed into hearts rather than caused by what an enemy did."
+        }
+      ],
+      "lifeInProphetsTime": "The settlements around Medina were built around stone towers, some of them several storeys high, with a single door and a store of water and dates inside. A family could hold one for weeks. They were the whole security architecture of an oasis, and the reason a small group could refuse a much larger one. Dismantling a house meant prising out its timber and door frames, which were worth more than the walls.",
+      "didYouKnow": "The word this surah takes its name from occurs in it exactly once, in this ayah, where it is called the first gathering. The word for terror appears four times in the whole Quran, and in every case it is described as being cast into hearts by God rather than produced by an enemy's strength.",
+      "theologicalSignificance": "The ayah insists on a cause the participants could not see, and it does so without denying what they did see. Fortresses were real, the siege was real, the hands that pulled the timber out were human hands. What is added is a direction, arriving from where nobody reckoned. That phrasing protects the account from becoming a claim about superior tactics or numbers, and the closing instruction asks for interpretation rather than triumph.",
+      "crossReferences": [
+        {
+          "ref": "33:26",
+          "why": "Describes another episode in Medina with the same phrase about terror cast into hearts."
+        },
+        {
+          "ref": "8:12",
+          "why": "Uses the same expression for terror at a different engagement, again attributing it to God rather than to force."
+        },
+        {
+          "ref": "3:26",
+          "why": "States that God grants and strips sovereignty, which is the general principle this episode illustrates."
+        }
+      ],
+      "applyIt": "Think of a protection you have arranged for yourself: savings, a qualification, a person who would take your call. There is nothing wrong with any of it. Just name, once, the thing it would not cover. This ayah is not against walls. It is against the quiet assumption that you have already thought of everything.",
+      "exploreFurther": [
+        "33:26",
+        "8:12",
+        "3:26"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.482Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:3-4",
+      "surah": 59,
+      "start": 3,
+      "end": 4,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Exile Instead Of Destruction",
+      "tier": "standard",
+      "meaning": "A counterfactual is stated and left in place: if departure had not been decreed for them, something worse would have followed in this life. The passage therefore describes what happened as the lighter of two written outcomes, without calling it mercy. The second ayah supplies the ground, and the verb it uses for their opposition means to place oneself on the far side of something. The general clause that follows widens the case beyond the people involved.",
+      "historicalContext": "Medinan, continuing the account of the expulsion. The tribe left Medina under terms that allowed them to carry away what their camels could bear, which the commentators contrast with the outcome the passage says was avoided. The setting is a town where several agreements between groups had failed in succession, and where the Quran is explaining an outcome to a community that had expected either a battle or nothing.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْجَلَآءَ",
+          "gloss": "departure, evacuation",
+          "note": "A specific word for leaving a place and abandoning it, used of a whole population rather than an individual. It occurs only here in the Quran, and it names the event without describing it as flight or as defeat."
+        },
+        {
+          "arabic": "شَآقُّوا۟",
+          "gloss": "they took the far side",
+          "note": "From the word for a side or a split, so the verb means putting oneself in the opposite half of something. The image is of a break running through what was one thing, which is what a broken agreement is."
+        },
+        {
+          "arabic": "ٱلْعِقَابِ",
+          "gloss": "the retribution",
+          "note": "From a root for a heel and for what follows behind. The word treats a consequence as something that comes after and catches up, which keeps the sense of sequence rather than of arbitrary infliction."
+        }
+      ],
+      "lifeInProphetsTime": "Exile was among the heaviest sentences a tribal society could impose, heavier in some ways than a fine or a killing. A group that left its palm groves lost the only capital it had, since date gardens took a decade to establish and could not be carried. Wells, terraces and grafted trees stayed behind. Departure meant beginning again somewhere with animals, cloth and whatever could be loaded.",
+      "didYouKnow": "The word used here for the departure of a whole population occurs only once in the Quran, in this ayah. Arabic had a large vocabulary for the movement of groups, and the choice of this particular term places the event in the register of an evacuation ordered from above rather than of a rout or an escape.",
+      "theologicalSignificance": "Two things are held together that people usually separate. The passage says a hard outcome was the milder of the possibilities, and it says so without asking anyone to feel grateful about it. That is a particular kind of honesty: the lightening is stated as a fact of the record, not offered as consolation. And by giving a reason, the passage refuses to leave the event unexplained, which is what would make it arbitrary.",
+      "crossReferences": [
+        {
+          "ref": "8:33",
+          "why": "States that punishment was withheld while certain conditions held, the same logic of a worse outcome averted."
+        },
+        {
+          "ref": "59:14",
+          "why": "Continues the account, describing the divisions inside the group whose opposition this passage names."
+        },
+        {
+          "ref": "4:115",
+          "why": "Uses the same verb for making a breach with the messenger after guidance has become clear."
+        }
+      ],
+      "applyIt": "Think of a bad outcome from your own life that you know could have been worse, and let yourself say both halves of that sentence out loud. Most of us can manage one half or the other. Holding the two together is uncomfortable and accurate, which is exactly how this passage handles the event it is reporting.",
+      "exploreFurther": [
+        "8:33",
+        "59:14",
+        "4:115"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.483Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:5",
+      "surah": 59,
+      "start": 5,
+      "end": 5,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "The Palms And The Permission",
+      "tier": "standard",
+      "meaning": "A dispute about conduct during the siege is settled in one sentence. Whichever was done, felling the trees or leaving them standing on their roots, both are placed under God's leave. The ayah does not rank the two options or praise either party. It then gives a purpose clause that attaches to the whole episode rather than to the trees. Commentators read the ayah as closing an argument among the besiegers about whether the felling had been wrong.",
+      "historicalContext": "Medinan. The commentators report with broad agreement that some date palms were cut during the siege and that this caused an objection, since destroying productive trees ran against everything the region's economy assumed. The ayah answers that objection. Reports differ on how many trees and on who raised the complaint, and the Quran names neither, which is consistent with how the whole surah handles the episode.",
+      "keyTerms": [
+        {
+          "arabic": "لِّينَةٍ",
+          "gloss": "a palm tree",
+          "note": "A word for a variety of date palm, occurring only here in the Quran. Commentators differ over which variety, and the specificity matters: the ayah is about actual named trees, not about vegetation in general."
+        },
+        {
+          "arabic": "أُصُولِهَا",
+          "gloss": "their roots, their trunks",
+          "note": "The plural of a word meaning a base or origin, used in Arabic for the foundations of an argument as well as the root of a plant. Leaving a tree on its roots is leaving it able to bear again."
+        },
+        {
+          "arabic": "فَبِإِذْنِ",
+          "gloss": "so by the leave of",
+          "note": "From a root meaning to listen and then to permit. Permission in this vocabulary begins with hearing, so the word carries a sense of something granted attentively rather than allowed by default."
+        }
+      ],
+      "lifeInProphetsTime": "A date palm took seven or eight years to bear and far longer to reach full yield, and a family's standing was counted in trees. Groves were inherited, named and quarrelled over. Cutting one was close to unthinkable outside a siege, and even raiders generally left them, because next season's dates fed everyone eventually. The objection the ayah answers was not sentimental; it was about destroying something nobody could quickly replace.",
+      "didYouKnow": "The word for the palm tree in this ayah appears nowhere else in the Quran. It is one of a small number of words that occur a single time in the whole text, and its meaning was already debated in the earliest commentaries, which record several proposals for which variety of date palm is meant.",
+      "theologicalSignificance": "The ayah takes a question about conduct and answers it by relocating the agency, which is a move worth noticing. It does not say the felling was good or that it was necessary. It says the outcome, either way, fell inside what was allowed, and it attaches the purpose to the disgrace of those who had broken faith rather than to the trees. That keeps a specific act from becoming a general principle about destruction.",
+      "crossReferences": [
+        {
+          "ref": "59:2",
+          "why": "Reports the same siege, including houses pulled down by their own occupants, which this ayah's question follows from."
+        },
+        {
+          "ref": "2:205",
+          "why": "Describes the ruin of crops and livestock by someone who gains power as corruption God does not like."
+        },
+        {
+          "ref": "6:141",
+          "why": "Names date palms among the things God produces, which is why cutting one needed answering at all."
+        }
+      ],
+      "applyIt": "Think of an argument you are still having with yourself about a decision that is already made and cannot be reversed. Write the two options side by side, honestly, and then stop. This ayah ends a dispute by declining to rank the alternatives. Some questions are worth settling; this kind is worth setting down.",
+      "exploreFurther": [
+        "59:2",
+        "2:205",
+        "6:141"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.483Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:6",
+      "surah": 59,
+      "start": 6,
+      "end": 6,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "No Horse Was Spurred",
+      "tier": "standard",
+      "meaning": "The property is described by how it did not arrive. No cavalry charge, no camel forced across country, nothing the community can claim as effort. A specific word is used for wealth that comes back without fighting, and the point of the ayah is to detach it from the category of battle spoils. What replaces the claim of effort is a statement about God giving authority to messengers, which places the outcome outside the ledger of who earned what.",
+      "historicalContext": "Medinan. The tribe's land and property in Medina came into the community's hands without a general engagement, since the siege ended in departure. That created a genuine question: property taken in battle was distributed by a known rule, and this was not that. The commentators treat this ayah and the next as establishing the distinct category, and they read the denial of horses and camels as answering an expectation the fighters already had.",
+      "keyTerms": [
+        {
+          "arabic": "أَفَآءَ",
+          "gloss": "restored, brought back",
+          "note": "From a root for a shadow turning back in the afternoon and for anything returning to where it belongs. The word treats the property as reverting rather than as being seized, which is the whole argument of the ayah."
+        },
+        {
+          "arabic": "أَوْجَفْتُمْ",
+          "gloss": "you urged to a gallop",
+          "note": "A verb for driving an animal hard, occurring only here in the Quran. It names the physical effort of a raid precisely, which is what makes its denial specific rather than general."
+        },
+        {
+          "arabic": "رِكَابٍ",
+          "gloss": "riding camels",
+          "note": "A collective noun for camels used as mounts, distinct from the words for camels as property or as herds. It appears once in the Quran, and pairing it with horses covers both kinds of expedition."
+        }
+      ],
+      "lifeInProphetsTime": "A raid was expensive before it was profitable. Horses were rare and costly in Arabia and were fed grain rather than left to graze, so a man who kept one had invested heavily. Camels wore down on hard marches and needed weeks to recover. Anyone who had spurred an animal towards a settlement had a claim afterwards that everyone recognised, and the size of the claim tracked what the effort had cost him.",
+      "didYouKnow": "Two of this ayah's words appear nowhere else in the Quran: the verb for driving an animal to a gallop, and the collective noun for riding camels. Both belong to the technical vocabulary of a raid, and the ayah reaches for them only in order to deny that either one applied here.",
+      "theologicalSignificance": "Entitlement is the question, and the ayah answers it by examining causes rather than by asserting authority. Because no one exerted himself, no one holds a claim by exertion, which is a piece of reasoning anyone in that society could follow. The theological claim rides on the practical one: what arrives without effort has to be attributed somewhere, and the ayah attributes it, then hands the distribution to the passage that follows.",
+      "crossReferences": [
+        {
+          "ref": "59:7",
+          "why": "Takes up the distribution of exactly this property in the next ayah, naming who it reaches."
+        },
+        {
+          "ref": "8:41",
+          "why": "Sets out the rule for property taken in an actual engagement, the category this ayah is distinguishing itself from."
+        },
+        {
+          "ref": "33:27",
+          "why": "Speaks of land and homes inherited including ground never stepped on, the same idea of an unearned transfer."
+        }
+      ],
+      "applyIt": "Take one good thing in your life and try, seriously, to trace the part of it you did not arrange: who introduced you, what happened to be open that week, the health that held. Write down two items. This ayah begins by subtracting effort from an outcome, and the subtraction is what makes room for gratitude.",
+      "exploreFurther": [
+        "59:7",
+        "8:41",
+        "33:27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.484Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:7",
+      "surah": 59,
+      "start": 7,
+      "end": 7,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "So It Does Not Circulate",
+      "tier": "standard",
+      "meaning": "A list of recipients is given and then a purpose clause explains the list. The named categories run from the messenger's relatives down to the traveller with nothing, and the reason offered is economic: so that the property does not stay in rotation among the wealthy. The word for that rotation appears only here. The ayah then widens sharply, instructing that what the messenger gives be taken and what he withholds be left, which commentators read as extending well past this distribution.",
+      "historicalContext": "Medinan. The property left behind by the departing tribe was substantial, chiefly land and date groves inside the oasis, and it arrived without an engagement that would have triggered the ordinary rule for spoils. The commentators describe genuine expectation among the fighters. These ayat settle the matter by naming categories rather than individuals, and by stating a reason nobody could dispute on its own terms.",
+      "keyTerms": [
+        {
+          "arabic": "دُولَةًۢ",
+          "gloss": "a thing passed around",
+          "note": "From a root for turning and taking turns, which also gives the word for a state or dynasty. It names wealth that circulates within a closed set of hands, and it occurs only here in the Quran."
+        },
+        {
+          "arabic": "ٱبْنِ ٱلسَّبِيلِ",
+          "gloss": "the son of the road",
+          "note": "The Arabic idiom for a traveller, literally the child of the way, since the road is what he belongs to while he is on it. It names someone with resources at home and none where he stands."
+        },
+        {
+          "arabic": "فَٱنتَهُوا۟",
+          "gloss": "so refrain, so stop",
+          "note": "From a root for reaching an end or a boundary. The command is to arrive at a stopping point rather than to resist an urge, which makes it a word about limits rather than about struggle."
+        }
+      ],
+      "lifeInProphetsTime": "In an oasis economy, land was the only asset that produced year after year, and it tended to consolidate. A poor family sold a corner of a grove in a bad season, and a wealthy one bought it; over two generations, ownership narrowed. Everyone could name the handful of households that had been buying. A rule directing a large windfall away from exactly those households was not abstract to anyone hearing it.",
+      "didYouKnow": "The word translated as circulating among the wealthy occurs only once in the Quran, in this ayah. Its root later supplied the ordinary Arabic word for a state, so the term that names wealth going round a closed circle of hands is the same one that came to name political power itself.",
+      "theologicalSignificance": "A reason is given for a distribution, which is not the usual shape of a command. The stated aim is the circulation of wealth through a whole society rather than the reward of any group, and that aim is placed in the text itself rather than left to be inferred. The instruction about taking and leaving then generalises the messenger's authority, which the commentators have long read as extending past the case in hand.",
+      "crossReferences": [
+        {
+          "ref": "8:41",
+          "why": "Names a comparable set of recipients for property taken in an engagement, sharing the orphan, the poor and the traveller."
+        },
+        {
+          "ref": "9:60",
+          "why": "Lists the categories for alms, overlapping with these and adding others, so the vocabulary of need is shared."
+        },
+        {
+          "ref": "59:6",
+          "why": "Explains why this property fell outside the ordinary rule, since no expedition was mounted for it."
+        }
+      ],
+      "applyIt": "Look at where your regular giving goes and ask whether it reaches anyone outside the circle you already move in. Most giving follows relationships, which is natural and not a fault. This ayah is interested in the shape of the whole flow. Add one recipient this month who has no way of thanking you.",
+      "exploreFurther": [
+        "8:41",
+        "9:60",
+        "59:8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T15:52:44.484Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:8",
+      "surah": 59,
+      "start": 8,
+      "end": 8,
+      "theme": "Sincerity",
+      "themeId": "sincerity",
+      "title": "Driven Out And Still Seeking",
+      "tier": "standard",
+      "meaning": "The recipients are named by what happened to them and by what they wanted. They were driven from homes and property, and the ayah puts those two losses in one phrase, so the material and the domestic go together. Then their motive is stated in the present tense: seeking favour and approval, and coming to the aid of God and His messenger. The closing verdict uses a word for truthfulness, applied to people rather than to statements.",
+      "historicalContext": "Medinan, specifying the first category among those the previous ayah named. The emigrants had left Mecca with nothing and had been in Medina for some years, many still dependent on host families. The commentators describe this distribution as the moment their long dependence eased. The ayah's description of them is unusually warm for a passage about property, which the commentators note as deliberate rather than incidental.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُهَـٰجِرِينَ",
+          "gloss": "the emigrants",
+          "note": "An active participle from a root for cutting ties and departing, not merely for travelling. The word makes the leaving the person's own act, which matters beside the passive verb the same ayah uses for being driven out."
+        },
+        {
+          "arabic": "رِضْوَٰنًا",
+          "gloss": "approval, good pleasure",
+          "note": "An intensive form for settled acceptance, used in the Quran almost entirely of God's satisfaction with people. Placing it beside the word for material favour makes the pair cover both what they lost and what they were after."
+        },
+        {
+          "arabic": "ٱلصَّـٰدِقُونَ",
+          "gloss": "the truthful ones",
+          "note": "From the root for truth, but applied to persons rather than to speech, so it names people whose conduct matches their claim. The same root gives the ordinary Arabic word for a charitable gift."
+        }
+      ],
+      "lifeInProphetsTime": "A man who left Mecca left a trade, a house and a network of relatives who guaranteed his debts. In Medina he arrived as a guest, and guests in Arabia were honoured and also, inevitably, dependent. Several emigrants took up unfamiliar work, carrying water or trading in a market whose customs were not theirs. Years of that wears on a person in a society where standing came from what a family held.",
+      "didYouKnow": "The definite plural naming the emigrants appears in five ayat of the Quran. One of them, 9:100, sets out the same three-tier picture this passage builds across three consecutive ayat: those who emigrated, those who received them, and those who came afterwards. The two passages describe one community from different angles.",
+      "theologicalSignificance": "Need and merit are named in the same breath and neither is allowed to cancel the other. The ayah could have justified the distribution on need alone, which would have been sufficient, or on service alone, which would have been flattering. It gives both, and then adds a verdict about character. That combination refuses to treat the poor as objects of a transfer; the recipients are described as people with a record, not a condition.",
+      "crossReferences": [
+        {
+          "ref": "9:100",
+          "why": "Sets out the same three groups, emigrants, supporters and those who followed, with God pleased with all of them."
+        },
+        {
+          "ref": "2:218",
+          "why": "Names those who believed and migrated as looking forward to God's mercy, in the same vocabulary."
+        },
+        {
+          "ref": "59:9",
+          "why": "Describes the group that received them, and is the second panel of the picture this ayah begins."
+        }
+      ],
+      "applyIt": "If you have ever had to accept help for a long stretch, you know the hard part is not the lack but the position. Think of someone currently in that position near you, and find a way this week to give them something to do rather than something to take. This ayah describes its recipients by what they were doing, not only by what they lacked.",
+      "exploreFurther": [
+        "59:9",
+        "9:100",
+        "2:218"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.912Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "59:9",
       "surah": 59,
@@ -63,6 +469,354 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.230Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:10",
+      "surah": 59,
+      "start": 10,
+      "end": 10,
+      "theme": "Supplication (Dua)",
+      "themeId": "supplication",
+      "title": "The Ones Who Came After",
+      "tier": "standard",
+      "meaning": "The third group in the sequence is defined by a prayer rather than by a deed. They ask forgiveness for themselves and for those who preceded them in faith, and then ask for something more specific: that no rancour towards believers be placed in their hearts. Commentators note that the request is about the inside of a person, and that it is phrased as something God does or refrains from doing. The prayer closes on two names of tenderness.",
+      "historicalContext": "Medinan, completing a sequence that began with the emigrants and continued with those who received them. The commentators read this third group as everyone who would come later, which is unusual: a passage about distributing property in one town extends itself to people not yet born. The Medina of the time already had frictions between the two earlier groups, and the prayer names exactly the feeling that frictions leave behind.",
+      "keyTerms": [
+        {
+          "arabic": "سَبَقُونَا",
+          "gloss": "who went ahead of us",
+          "note": "From the root for a race and for arriving first. It occurs only here in the Quran, and it casts earlier believers as runners already down the track rather than as a generation to be judged."
+        },
+        {
+          "arabic": "غِلًّا",
+          "gloss": "rancour, a grudge",
+          "note": "From a root for something entering and lodging inside, also used of a shackle. It names resentment that has settled in and become part of the fittings rather than a passing anger."
+        },
+        {
+          "arabic": "رَءُوفٌ",
+          "gloss": "Clement, deeply kind",
+          "note": "The strongest word in Arabic for pity that acts, held in the classical accounts to be more intense than the ordinary term for mercy. It is paired with mercy in nine ayat of the Quran, and this is one of them."
+        }
+      ],
+      "lifeInProphetsTime": "Medina in these years was two communities learning to be one. The households that had taken in emigrants had given up rooms, shares of land and standing, and the emigrants had spent years as guests. Both arrangements strain. Arab society had elaborate customs for hospitality precisely because everyone knew how quickly generosity curdles when it lasts. A prayer about grudges was not abstract in a town built on those arrangements.",
+      "didYouKnow": "The noun for a lodged grudge appears three times in the Quran. The other two, at 7:43 and 15:47, both describe it being pulled out of the chests of the people of the Garden. This ayah is the only place the word occurs inside a prayer, asking for that removal now rather than later.",
+      "theologicalSignificance": "The prayer treats an inner state as something to petition for rather than to manufacture. That is a considered position: resentment is notoriously hard to argue oneself out of, and the request acknowledges as much by addressing it upward. Including earlier believers in the plea for forgiveness also builds a relationship in one direction only, since the people prayed for cannot answer, which removes any question of exchange.",
+      "crossReferences": [
+        {
+          "ref": "7:43",
+          "why": "Describes the same rancour being drawn out of the chests of those admitted to the Garden."
+        },
+        {
+          "ref": "59:9",
+          "why": "Describes the group this prayer names as those who preceded, and their freedom from grudging."
+        },
+        {
+          "ref": "3:103",
+          "why": "Recalls hearts reconciled after enmity, which is the gift this prayer asks be kept in place."
+        }
+      ],
+      "applyIt": "Say this prayer once for someone you have quietly written off, by name, without telling them and without expecting the feeling to change today. Grudges do not respond to argument, which is why the ayah puts the request where it does. Notice what it costs you to say the name at all.",
+      "exploreFurther": [
+        "7:43",
+        "59:9",
+        "3:103"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.904Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:11",
+      "surah": 59,
+      "start": 11,
+      "end": 11,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "Three Promises, All Emphatic",
+      "tier": "standard",
+      "meaning": "A promise is quoted in full, and its grammar is the point. Two of its three clauses carry the strongest emphatic markers Arabic has, and the third is closed with a word meaning ever. We will leave with you, we will never obey anyone against you, we will support you. Nothing is hedged. The ayah then ends with one short clause of testimony that cancels all three at once, and commentators read that contrast in length as deliberate.",
+      "historicalContext": "Medinan, during or just before the siege. The commentators report that messages were sent from inside Medina to the tribe under pressure, urging them to hold out and promising support that never came. Reports differ on the wording and on who carried them, and the Quran gives the promise rather than the names. The general situation is agreed: assurances circulating in a town where nobody could be sure who would act.",
+      "keyTerms": [
+        {
+          "arabic": "نَافَقُوا۟",
+          "gloss": "they played a double part",
+          "note": "From the word for a jerboa's burrow with a second exit, dug so the animal can bolt when the first hole is blocked. The image is of a prepared escape rather than of simple dishonesty."
+        },
+        {
+          "arabic": "لَنَخْرُجَنَّ",
+          "gloss": "we will surely leave",
+          "note": "Carries a prefixed particle and a doubled ending, the double emphasis Arabic reserves for oaths. Quoting the promise in this form is what makes the closing verdict land, since nothing weaker was said."
+        },
+        {
+          "arabic": "يَشْهَدُ",
+          "gloss": "bears witness",
+          "note": "The verb for giving testimony in a dispute. Using it here puts God in the position of a witness rather than a judge, which is the position that settles a matter where two accounts contradict each other."
+        }
+      ],
+      "lifeInProphetsTime": "Promises of support were the currency of Arabian politics. A tribe under threat sent riders out to allies and counted the answers, because the count decided whether to fight or to negotiate. An assurance given and not kept was among the worst things said about a man in poetry, worse than cowardice, because a whole group had staked its decision on it. Everyone knew someone who had been left waiting.",
+      "didYouKnow": "The Arabic word for playing a double part comes from the name of a burrow with a hidden second exit, which the jerboa digs so it can break out the far side when a predator blocks the entrance. The term was already in use for the animal's tunnel before the Quran applied it to a way of living.",
+      "theologicalSignificance": "The passage treats a promise as evidence about the promiser rather than as a fact about the future. That is why the verdict can be delivered before anything happens: the ayah is not predicting, it is reading. Placing God as witness rather than as judge is precise, because the question at issue is what is true now, inside people, and testimony is the instrument for exactly that kind of question.",
+      "crossReferences": [
+        {
+          "ref": "59:12",
+          "why": "Unwinds the promise clause by clause in the next ayah, in the same order it was given."
+        },
+        {
+          "ref": "63:1",
+          "why": "Uses the same structure of a declaration quoted and then answered by God's own testimony."
+        },
+        {
+          "ref": "3:167",
+          "why": "Reports people saying with their mouths what is not in their hearts, in the same kind of moment."
+        }
+      ],
+      "applyIt": "Notice the next promise you are about to make with an intensifier attached: definitely, absolutely, no matter what. Take the intensifier off and see whether you still want to say the sentence. If you do, it was a real promise. If the sentence weakens without it, that is worth knowing before anyone is relying on you.",
+      "exploreFurther": [
+        "59:12",
+        "63:1-3",
+        "3:167"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.911Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:12",
+      "surah": 59,
+      "start": 12,
+      "end": 12,
+      "theme": "Honesty and Truthfulness",
+      "themeId": "honesty-and-truthfulness",
+      "title": "Taken Apart Clause By Clause",
+      "tier": "standard",
+      "meaning": "The promise of the previous ayah is dismantled in the order it was made. They will not leave; they will not help; and if they somehow do help, they will turn their backs. Then a fourth clause is added that was not in the promise at all, saying they themselves will not be helped. The passage does not argue or produce evidence. It simply runs the same sentence again with each verb negated.",
+      "historicalContext": "Medinan, and events bore it out: the promised support did not arrive and the besieged tribe left. The commentators use that outcome to explain why the passage is stated so flatly, as a description of something already known rather than a warning. The setting is a town in which several groups were calculating which way to move, and in which a stated intention and an actual decision were routinely different things.",
+      "keyTerms": [
+        {
+          "arabic": "لَيُوَلُّنَّ",
+          "gloss": "they will surely turn",
+          "note": "Carries the same doubled emphatic ending the promise used, now attached to the opposite action. The grammar of the assurance is turned around and pointed back at the people who spoke it."
+        },
+        {
+          "arabic": "ٱلْأَدْبَـٰرَ",
+          "gloss": "the backs",
+          "note": "The plural of the word for a back or a rear, used in the Quran only of flight from an engagement. Turning the backs is the technical phrase for a rout, not a general image of retreat."
+        },
+        {
+          "arabic": "يُنصَرُونَ",
+          "gloss": "they will be helped",
+          "note": "A passive of the verb used three times already across these two ayat for giving support. The switch to the passive at the end puts the promisers in the position they had offered to fill for someone else."
+        }
+      ],
+      "lifeInProphetsTime": "Turning the back was the moment a battle ended in Arabian warfare. Lines held while men faced each other, and a rout began when a few at the edge broke and ran, since a fleeing man exposed the flank of everyone beside him. Poets who praised a warrior praised him for holding. The phrase in this ayah is not a metaphor; it names the exact instant everything came apart.",
+      "didYouKnow": "The phrase for turning the backs occurs three times in the Quran, at 33:15, 48:22 and here, and in each case it describes flight from an engagement rather than ordinary retreat. The verb for giving support appears four times across this ayah and the one before it, ending in the passive with nobody left to supply it.",
+      "theologicalSignificance": "The passage says what people will do before they do it, which raises the question of whether they were free to do otherwise. The classical reading does not treat this as compulsion but as knowledge: the description follows from what these people already are, in the same way that anyone who knows a friend well can say in advance how a hard conversation will go. What is settled is the character, not the choice.",
+      "crossReferences": [
+        {
+          "ref": "59:11",
+          "why": "Gives the promise this ayah takes apart, in the same order and with the same verbs."
+        },
+        {
+          "ref": "33:15",
+          "why": "Recalls a covenant made not to turn the backs, and notes that such covenants are asked about."
+        },
+        {
+          "ref": "3:154",
+          "why": "Describes people concealing within themselves what they would not say aloud after a setback."
+        }
+      ],
+      "applyIt": "Think of something you have been meaning to do for someone, and estimate honestly how likely you are to do it this week. Not how much you want to. How likely. If the number is low, either put it in the calendar today or tell the person plainly. This ayah is unkind about the third option.",
+      "exploreFurther": [
+        "59:11",
+        "33:15",
+        "3:154"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.912Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:13",
+      "surah": 59,
+      "start": 13,
+      "end": 13,
+      "theme": "The Heart",
+      "themeId": "the-heart",
+      "title": "The Fear That Ranks Higher",
+      "tier": "standard",
+      "meaning": "One comparison carries the ayah. The dread these people feel towards other human beings is greater than what they feel towards God, and the ayah states it as a measurement rather than as a reproach. The word used is not the ordinary term for fear; it names an awe that keeps a person back. Then a reason is given, and it is not wickedness but a failure of comprehension: they are a people who do not grasp things.",
+      "historicalContext": "Medinan, addressed about the group whose promises the previous ayat quoted. The immediate context is a calculation: which side was more dangerous to cross in the Medina of that moment. The commentators read the ayah as diagnosing why the calculation came out as it did, and note that the diagnosis is intellectual rather than moral, which is how the following ayah also ends.",
+      "keyTerms": [
+        {
+          "arabic": "رَهْبَةً",
+          "gloss": "dread, awe that restrains",
+          "note": "A word for fear that holds a person back from acting, distinct from fright. It occurs only here in the Quran, and its root gives the word for a monk, someone whose whole life is organised around it."
+        },
+        {
+          "arabic": "صُدُورِهِم",
+          "gloss": "their chests",
+          "note": "The Quran locates thought and feeling in the chest as often as in the heart, and the word carries a sense of what is enclosed and carried about. Saying the dread is in their chests places it where they cannot set it down."
+        },
+        {
+          "arabic": "يَفْقَهُونَ",
+          "gloss": "they understand deeply",
+          "note": "A verb for grasping something from the inside, not merely knowing it. Its negation says the failure is one of penetration rather than of information, which is a gentler and more troubling diagnosis at once."
+        }
+      ],
+      "lifeInProphetsTime": "Fear was a rational instrument in a society without police. Safety came from being attached to people who would answer for a person, and the practical question in any dispute was who could reach you and how fast. A neighbour with armed cousins was a present danger; a distant authority was not. The ayah takes that entirely sensible arithmetic and points out what it leaves out of the sum.",
+      "didYouKnow": "The word for restraining dread used here appears only once in the Quran. This ayah and the next both close with the same phrase about a people who do not, yet each ends on a different verb of understanding, one for grasping from within and one for reasoning. These are the only two consecutive ayat where those two exact forms are paired.",
+      "theologicalSignificance": "Fear is treated as a measuring instrument. What a person dreads most reveals what they actually believe has power, regardless of what they say. That makes the ayah diagnostic rather than accusatory. And the reason given is understanding, not wickedness, which locates the problem where it can still be addressed: someone who has not grasped something can grasp it, whereas someone condemned for malice has nowhere to go.",
+      "crossReferences": [
+        {
+          "ref": "33:39",
+          "why": "Describes those who deliver God's messages and fear none but Him, the opposite measurement."
+        },
+        {
+          "ref": "9:13",
+          "why": "Asks whether people are more deserving of fear than God, putting the same comparison as a question."
+        },
+        {
+          "ref": "59:14",
+          "why": "Ends with the same construction about a people who do not, using the other verb for understanding."
+        }
+      ],
+      "applyIt": "Ask yourself which conversation you have been avoiding this month, and who is on the other side of it. Then ask what exactly you are expecting them to do. Usually the answer, said plainly, is smaller than the avoidance suggests. This ayah is about weighing the things we fear against each other honestly.",
+      "exploreFurther": [
+        "59:14",
+        "33:39",
+        "9:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.912Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:14",
+      "surah": 59,
+      "start": 14,
+      "end": 14,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "United Only From Outside",
+      "tier": "standard",
+      "meaning": "A military observation becomes a description of a condition. They will only fight from behind fortifications, never in the open together, and the reason is supplied at once: their hostility towards one another is severe. Then comes the line that generalises, addressed to the observer. One would reckon them united, and their hearts are scattered. The ayah ends on the same construction as the one before it, with a different verb for understanding.",
+      "historicalContext": "Medinan, closing the description of the groups involved in the episode. The oasis settlements around Medina were separate fortified compounds rather than one town, which made the observation about walls literal. The commentators do not confine the ayah to one group, and they read the closing comment about scattered hearts as the underlying explanation the whole surah has been working towards.",
+      "keyTerms": [
+        {
+          "arabic": "جُدُرٍۭ",
+          "gloss": "walls",
+          "note": "The plural of a word for a built wall, occurring only here in the Quran. It is more specific than the general terms for a barrier, naming masonry raised deliberately between people."
+        },
+        {
+          "arabic": "بَأْسُهُم",
+          "gloss": "their fighting force",
+          "note": "A word covering both might and hardship, used for the strength shown in battle and for the distress that comes of it. Saying their force is severe among themselves turns an asset into the thing that divides them."
+        },
+        {
+          "arabic": "شَتَّىٰ",
+          "gloss": "scattered, various",
+          "note": "A plural adjective for things dispersed and unlike one another. It is used elsewhere of the varied plants that come out of one watered ground, so the word carries difference without implying disorder."
+        }
+      ],
+      "lifeInProphetsTime": "The oasis of Medina was a scatter of fortified compounds, each belonging to a clan, with gardens between them. A group could shut its gate and be effectively out of reach. That architecture shaped politics: alliances formed and dissolved without anyone having to face anyone in the open, and a quarrel could last years while both parties stayed a short walk apart behind their own walls.",
+      "didYouKnow": "The plural for built walls in this ayah occurs nowhere else in the Quran. The word for scattered appears three times in the whole Book, and one of the others, at 20:53, uses it of the various plants brought out of a single watered soil, so the same adjective covers fruitful variety and a divided heart.",
+      "theologicalSignificance": "The passage says that apparent unity and actual unity are different things, and that the difference is measurable by behaviour under pressure. That is not a claim about a single group; it is a general test. Walls make a coalition look like a body. The ayah's closing diagnosis is again a failure of reasoning rather than of will, which keeps the description from hardening into a verdict about persons.",
+      "crossReferences": [
+        {
+          "ref": "3:103",
+          "why": "Recalls hearts reconciled after enmity as a favour, which is the condition this ayah reports missing."
+        },
+        {
+          "ref": "8:63",
+          "why": "Says all the wealth on earth could not have united those hearts, but that God united them."
+        },
+        {
+          "ref": "59:13",
+          "why": "Ends with the same construction about a people who do not, using the other verb for understanding."
+        }
+      ],
+      "applyIt": "Think of a group you belong to that looks more united from outside than it feels from inside. Do not try to fix it this week. Just have one honest conversation with one person in it, about something real, without recruiting them to a side. The ayah's diagnosis is scattered hearts. That is what a real conversation works on.",
+      "exploreFurther": [
+        "3:103",
+        "8:63",
+        "59:13"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.912Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "59:15-16",
+      "surah": 59,
+      "start": 15,
+      "end": 16,
+      "theme": "Adam and the Human Story",
+      "themeId": "adam-and-the-human-story",
+      "title": "The Voice That Walks Away",
+      "tier": "standard",
+      "meaning": "Two comparisons stand side by side. The first points to a group shortly before, who tasted the consequence of their own decision; the commentators differ over which group is meant and the Quran does not say. The second is a small scene with dialogue: a voice urges a human being to reject faith, and the moment he does, the same voice separates itself and says it fears God. Nothing intervenes between the urging and the abandonment.",
+      "historicalContext": "Medinan, closing the surah's account of broken assurances with two comparisons rather than a further argument. The first looks back to a recent reversal the audience would have recognised without being told which one, and the classical sources offer more than one candidate. The second leaves history altogether. Placed here, the pair reframes the whole episode as an instance of an old pattern rather than a local political failure.",
+      "keyTerms": [
+        {
+          "arabic": "وَبَالَ",
+          "gloss": "the heavy consequence",
+          "note": "From a root for a downpour of cold rain and for anything oppressive and hard to digest. The word treats the outcome of a decision as something swallowed, which is why the verb beside it is tasting."
+        },
+        {
+          "arabic": "لِلْإِنسَـٰنِ",
+          "gloss": "to the human being",
+          "note": "The generic term for a human being with the definite article, not a name and not a group. It turns the scene from an episode into a pattern that any reader can be standing inside."
+        },
+        {
+          "arabic": "بَرِىٓءٌ",
+          "gloss": "clear of, disowning",
+          "note": "From a root for being cured and for being quit of a debt. The word describes separation completed rather than denial attempted, which is what makes the desertion in this scene so cold."
+        }
+      ],
+      "lifeInProphetsTime": "Arabian society ran on guarantors. A man who wanted a loan, a safe passage or a marriage brought someone who would stand behind him, and that person's word was the whole security. There was a formal declaration for withdrawing it, made publicly so that everyone knew the guarantee had lapsed. The scene in these ayat borrows that exact move, and puts it at the worst possible moment.",
+      "didYouKnow": "The same disowning line appears at 8:48, where it is addressed to a whole army once the two forces come in sight of each other, and the same withdrawal is spoken at 14:22 after judgement is settled. This passage gives the shortest version and the only one aimed at a single person, which is what makes it read less like a report than a warning.",
+      "theologicalSignificance": "Temptation is portrayed as having no stake in the outcome it produces, which is a specific claim about how evil operates. The urging is loud and the abandonment is instant, with nothing offered in between. The tempter's closing line is the strangest part: it claims fear of God, so even the voice that argued against faith does not dispute the fact of God. What it abandons is the person, not the belief.",
+      "crossReferences": [
+        {
+          "ref": "8:48",
+          "why": "Gives the same disowning line to a whole army once the two forces come in sight of each other."
+        },
+        {
+          "ref": "14:22",
+          "why": "Has the same figure explain, after judgement, that he only called and they answered."
+        },
+        {
+          "ref": "59:17",
+          "why": "States the ending both parties share, which completes the comparison these two ayat set up."
+        }
+      ],
+      "applyIt": "Think of the last thing you did that you would not want described plainly, and notice how loud the reasoning was beforehand and how quiet it went afterwards. That gap is the whole subject of these ayat. You do not need to punish yourself over it. Just notice that the voice did not stay.",
+      "exploreFurther": [
+        "8:48",
+        "14:22",
+        "59:17-18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-09T16:00:11.912Z",
         "reviewed": false
       }
     },

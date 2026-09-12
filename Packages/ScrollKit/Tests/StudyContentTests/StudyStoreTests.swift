@@ -70,7 +70,7 @@ func unitKeysAndStudyKeysDiffer() throws {
     if let shardless = (1...114).first(where: { !(try! syncedSurahs()).contains($0) }) {
         #expect(store.studyKeys(inSurah: shardless).isEmpty)
     }
-    #expect(store.unitKeys.count > authored.count)
+    #expect(store.unitKeys.count >= authored.count, "every study is a unit; the corpus is now complete so the counts may be equal")
 }
 
 @Test("The authored units of a surah come back in ayah order")

@@ -10,6 +10,7 @@ import path from "node:path";
 import Ajv from "ajv";
 import { ROOT, OUT, loadQuran, hasArabic, parseKey, refInBounds, words } from "./lib/data.mjs";
 import { loadPassages } from "./lib/units.mjs";
+import { nfc, looseArabic, unitUthmani, exactSpanFor } from "./lib/arabic.mjs";
 
 const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
 const PROSE_FIELDS = [
@@ -31,11 +32,34 @@ const BANNED = [
   [/\bAllah\b/, "use \"God\" in English prose"],
 ];
 
+/** Sections compared for near-duplication across the whole corpus. */
+const DUP_FIELDS = ["meaning", "didYouKnow", "applyIt"];
+const DUP_ERROR = 0.5;
+const DUP_WARN = 0.35;
+
+/**
+ * Prose scripts a note may legitimately contain. Latin covers the English and
+ * the transliterated names in the tafsir tradition (al-Sa'di, al-Tabari);
+ * Common and Inherited cover punctuation, digits and combining accents. Arabic
+ * is deliberately absent: `hasArabic` reports it with a more specific message.
+ * Anything else — a stray Cyrillic or Greek word — is a copy-paste accident.
+ */
+const FOREIGN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}\p{Script=Arabic}]/gu;
+
 const shingles = (text, n = 5) => {
   const w = text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
   const out = new Set();
   for (let i = 0; i + n <= w.length; i++) out.add(w.slice(i, i + n).join(" "));
   return out;
+};
+
+/** The distinct characters of `text` in a script a note may not contain, or null. */
+const foreignScript = (text) => {
+  const hits = String(text ?? "").match(FOREIGN_SCRIPT);
+  if (!hits) return null;
+  return [...new Set(hits)]
+    .map((c) => `${JSON.stringify(c)} (U+${c.codePointAt(0).toString(16).toUpperCase().padStart(4, "0")})`)
+    .join(", ");
 };
 
 const jaccard = (a, b) => {
@@ -68,7 +92,7 @@ export function loadRecords(dir) {
   return records;
 }
 
-export function validateRecords(records, { quran, themeIds, passages }) {
+export function validateRecords(records, { quran, themeIds, themeTitles = null, passages }) {
   const ajv = new Ajv({ allErrors: true, strict: false });
   ajv.addFormat("date-time", (v) => !Number.isNaN(Date.parse(v)));
   const full = ajv.compile(SCHEMA);
@@ -116,6 +140,8 @@ export function validateRecords(records, { quran, themeIds, passages }) {
       }
       checkWords(key, f, text);
       if (hasArabic(text)) err(key, `${f} contains Arabic script (only keyTerms[].arabic may)`);
+      const foreign = foreignScript(text);
+      if (foreign) err(key, `${f} contains non-Latin script: ${foreign}`);
       for (const [re, why] of BANNED) if (re.test(text)) err(key, `${f}: ${why} (${re})`);
     }
     if (typeof s.title === "string" && /[.!?]$/.test(s.title.trim())) {
@@ -131,6 +157,8 @@ export function validateRecords(records, { quran, themeIds, passages }) {
       if (typeof c?.why === "string") nested.push([`crossReferences[${i}].why`, c.why]);
     }
     for (const [f, text] of nested) {
+      const foreign = foreignScript(text);
+      if (foreign) err(key, `${f} contains non-Latin script: ${foreign}`);
       for (const [re, why] of BANNED) if (re.test(text)) err(key, `${f}: ${why} (${re})`);
     }
 
@@ -146,9 +174,36 @@ export function validateRecords(records, { quran, themeIds, passages }) {
 
     // Key terms.
     if (Array.isArray(s.keyTerms)) {
+      // The unit's own Uthmani text, Bismillah stripped: every key term has to
+      // come out of it, character for character.
+      const surahMeta = quran.byNumber.get(parsed.surah);
+      const passage =
+        surahMeta && parsed.start >= 1 && parsed.end <= surahMeta.ayahCount
+          ? unitUthmani(quran, parsed)
+          : null;
+      const passageLoose = passage === null ? null : looseArabic(passage);
+
       for (const [i, t] of s.keyTerms.entries()) {
         if (!hasArabic(t.arabic ?? "")) err(key, `keyTerms[${i}].arabic is not Arabic script`);
         if (/[A-Za-z]/.test(t.arabic ?? "")) err(key, `keyTerms[${i}].arabic contains Latin letters`);
+        if (passage !== null && hasArabic(t.arabic ?? "")) {
+          const term = nfc(t.arabic);
+          if (!passage.includes(term)) {
+            // Diacritics-insensitive second pass: it separates "this word is not
+            // in the passage" from "this word is in the passage but was retyped"
+            // (a dropped tatweel carrier, a plain alef for a dagger alef, a
+            // missing Quranic annotation sign).
+            if (passageLoose.includes(looseArabic(term))) {
+              err(
+                key,
+                `keyTerms[${i}].arabic is not copied verbatim from ${key}: ` +
+                  `${term} — the text has ${exactSpanFor(passage, term)}`,
+              );
+            } else {
+              err(key, `keyTerms[${i}].arabic does not occur in ${key}: ${term}`);
+            }
+          }
+        }
         for (const f of ["gloss", "note"]) {
           if (hasArabic(t[f] ?? "")) err(key, `keyTerms[${i}].${f} contains Arabic script`);
           checkWords(key, `keyTerms[].${f}`, t[f] ?? "");
@@ -163,7 +218,17 @@ export function validateRecords(records, { quran, themeIds, passages }) {
     ];
     for (const [ref, where] of refs) {
       if (!refInBounds(ref, quran.byNumber)) err(key, `${where} out of bounds: ${ref}`);
-      if (ref === s.key) warn(key, `${where} points at the passage itself`);
+      const rp = parseKey(ref);
+      // "Read this next" must lead somewhere else: any overlap with the unit's
+      // own ayat sends the reader back to the page they are already on.
+      if (rp && rp.surah === parsed.surah && rp.start <= parsed.end && rp.end >= parsed.start) {
+        err(
+          key,
+          ref === s.key
+            ? `${where} points at the passage itself: ${ref}`
+            : `${where} overlaps the passage's own ayat: ${ref}`,
+        );
+      }
     }
     for (const [i, c] of (s.crossReferences ?? []).entries()) {
       checkWords(key, "crossReferences[].why", c.why ?? "");
@@ -171,17 +236,52 @@ export function validateRecords(records, { quran, themeIds, passages }) {
     }
 
     if (s.themeId && !themeIds.has(s.themeId)) err(key, `unknown themeId "${s.themeId}"`);
+    // The pill in the app is rendered from `theme`; the Swift ThemeIndex joins on
+    // `themeId`. They drift silently unless the title is checked verbatim.
+    if (s.themeId && themeTitles?.has(s.themeId) && s.theme !== themeTitles.get(s.themeId)) {
+      err(
+        key,
+        `theme "${s.theme}" is not the title of themeId "${s.themeId}" ` +
+          `(themes.json says "${themeTitles.get(s.themeId)}")`,
+      );
+    }
   }
 
-  // Near-duplicate detection on the meaning section.
-  const sig = records
-    .filter((r) => typeof r.study.meaning === "string")
-    .map((r) => ({ key: r.key, sh: shingles(r.study.meaning) }));
-  for (let i = 0; i < sig.length; i++) {
-    for (let j = i + 1; j < sig.length; j++) {
+  // Near-duplicate detection. `meaning` says what the passage means and two
+  // similar passages can legitimately come close; `didYouKnow` and `applyIt` are
+  // supposed to be unique per note, and a fact or an exercise reused across
+  // units is the failure readers notice fastest.
+  for (const field of DUP_FIELDS) {
+    const sig = records
+      .filter((r) => typeof r.study[field] === "string")
+      .map((r) => ({ key: r.key, sh: shingles(r.study[field]) }));
+
+    // Only records sharing at least one 5-word shingle can clear the threshold,
+    // so an inverted index replaces the full n^2 sweep.
+    const byShingle = new Map();
+    for (const [i, s] of sig.entries()) {
+      for (const g of s.sh) {
+        const bucket = byShingle.get(g);
+        if (bucket) bucket.push(i);
+        else byShingle.set(g, [i]);
+      }
+    }
+    const pairs = new Set();
+    for (const bucket of byShingle.values()) {
+      if (bucket.length < 2 || bucket.length > 400) continue;
+      for (let a = 0; a < bucket.length; a++) {
+        for (let b = a + 1; b < bucket.length; b++) pairs.add(bucket[a] * sig.length + bucket[b]);
+      }
+    }
+    for (const packed of pairs) {
+      const i = Math.floor(packed / sig.length);
+      const j = packed % sig.length;
       const score = jaccard(sig[i].sh, sig[j].sh);
-      if (score >= 0.5) err(sig[i].key, `meaning is a near-duplicate of ${sig[j].key} (${score.toFixed(2)})`);
-      else if (score >= 0.35) warn(sig[i].key, `meaning overlaps ${sig[j].key} (${score.toFixed(2)})`);
+      if (score >= DUP_ERROR) {
+        err(sig[i].key, `${field} is a near-duplicate of ${sig[j].key} (${score.toFixed(2)})`);
+      } else if (score >= DUP_WARN) {
+        warn(sig[i].key, `${field} overlaps ${sig[j].key} (${score.toFixed(2)})`);
+      }
     }
   }
 
@@ -196,9 +296,9 @@ function main(argv = process.argv.slice(2)) {
   }
   const records = loadRecords(dir);
   const quran = loadQuran();
-  const themeIds = new Set(
-    JSON.parse(fs.readFileSync(path.join(OUT, "themes.json"), "utf8")).themes.map((t) => t.id),
-  );
+  const themes = JSON.parse(fs.readFileSync(path.join(OUT, "themes.json"), "utf8")).themes;
+  const themeIds = new Set(themes.map((t) => t.id));
+  const themeTitles = new Map(themes.map((t) => [t.id, t.title]));
   const passages = loadPassages();
 
   if (!records.length) {
@@ -207,7 +307,7 @@ function main(argv = process.argv.slice(2)) {
     return;
   }
 
-  const { errors, warnings } = validateRecords(records, { quran, themeIds, passages });
+  const { errors, warnings } = validateRecords(records, { quran, themeIds, themeTitles, passages });
 
   console.log(`validated ${records.length} record(s) in ${dir}`);
   for (const w of warnings) console.log(`WARN  ${w}`);

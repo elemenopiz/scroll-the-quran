@@ -1,7 +1,7 @@
 {
   "surah": 55,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:50:11.648Z",
+  "generatedAt": "2026-09-12T10:45:45.313Z",
   "studies": [
     {
       "key": "55:1-13",
@@ -37,7 +37,7 @@
         }
       ],
       "lifeInProphetsTime": "Weights and measures were the nervous system of an Arabian market. A merchant carried his own stone weights, and a shaved weight was the easiest fraud there was and the hardest to prove. Disputes over a scale could set clans against each other. To move in three lines from the sun's orbit to a hand on a balance beam was to run the argument straight through the place where a listener's honesty was actually tested.",
-      "didYouKnow": "The question that closes this passage returns thirty-one times before the surah ends, more than any other repeated line in the Quran. Its pronoun is dual throughout, addressing two groups rather than one, and the surah names them a few ayat later as humans and jinn, each made from a different material.",
+      "didYouKnow": "The question that closes this passage is the first of thirty-one occurrences of the same sentence, more than any other repeated line in the Quran carries. Its pronoun is dual throughout, addressing two groups rather than one, and the surah names them in the two ayat immediately after this passage as the human being and the jinn, each made from a different material.",
       "theologicalSignificance": "The order of the opening is the argument. Mercy is named first, teaching second, and the human being third, so a person arrives into a world where the instruction already exists. Language is then given the same status as existence, both taught. The balance that follows joins physics and ethics in one word, which means honesty in trade is presented as continuous with the motion of the sun rather than as a separate department of life.",
       "crossReferences": [
         {
@@ -62,7 +62,133 @@
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:30:41.009Z",
+        "generatedAt": "2026-09-12T10:44:55.337Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:14-18",
+      "surah": 55,
+      "start": 14,
+      "end": 18,
+      "theme": "Adam and the Human Story",
+      "themeId": "adam-and-the-human-story",
+      "title": "Fired Clay And Smokeless Flame",
+      "tier": "standard",
+      "meaning": "Two creations are set side by side in two lines and the materials do the work. The human being comes from dried clay that rings like pottery. The jinn come from a flame with no smoke in it, the tip of a fire where it is purest. Commentators note the contrast between something shaped and fired into a fixed form and something with no fixed form at all. Then a single line of sovereignty, two risings and two settings, and the question returns.",
+      "historicalContext": "Classified as Medinan in the tradition this collection follows, though many classical authorities place it in Mecca. No specific occasion is reported for these ayat. Whichever setting is taken, the chapter is addressing two kinds of listener at once, and this is the passage that says why: each is introduced by what it was made from, before anything at all is asked of either.",
+      "keyTerms": [
+        {
+          "arabic": "صَلْصَـٰلٍ",
+          "gloss": "dried ringing clay",
+          "note": "Clay dried until it rings when struck. The word appears in only two chapters of the Quran, both about the making of the first human being, and it carries sound as well as texture."
+        },
+        {
+          "arabic": "كَٱلْفَخَّارِ",
+          "gloss": "like fired pottery",
+          "note": "A potter's word, used nowhere else in the Book. It compares the human material to a vessel taken out of a kiln, a thing that holds its shape and then breaks rather than bending."
+        },
+        {
+          "arabic": "مَّارِجٍ",
+          "gloss": "a flame without smoke",
+          "note": "Also unique to this ayah. Lexicographers describe the pure tip of a fire, the part that moves and mixes, from a root about things running together without ever settling."
+        },
+        {
+          "arabic": "ٱلْمَشْرِقَيْنِ",
+          "gloss": "the two easts",
+          "note": "A dual, which the commentators read as the extreme rising points of the sun in summer and winter, or as the risings of sun and moon. Either way it names a range rather than a point."
+        }
+      ],
+      "lifeInProphetsTime": "Pottery in Arabia was largely imported and therefore valued, and everyone knew the sound a fired jar makes when you tap it and the sound a cracked one makes. Fire was read the same way by people who slept beside it: the smoky base, the clear tip that leaves no soot. Both materials in this passage were things a listener could pick up, strike, or hold a hand near.",
+      "didYouKnow": "The word for clay here occurs in only one other chapter, surah 15, where it is used three times in the account of the first human being's making. Two of the words describing the two materials in this passage appear nowhere else in the Quran, which is an unusual density for two short lines.",
+      "theologicalSignificance": "Naming the material is a way of naming the limit. Fired clay is stable and brittle; unsmoked flame is quick and formless. Neither is presented as superior, and the chapter goes on to address both in the same dual grammar and put the same question to both. That is the claim being made here: two very different kinds of creature, made of opposite substances, stand in an identical relation to the one who made them.",
+      "crossReferences": [
+        {
+          "ref": "15:26-27",
+          "why": "Gives the same two materials in the same order, with the clay described at greater length."
+        },
+        {
+          "ref": "7:12",
+          "why": "Has the refusal in the garden argued on exactly this contrast of materials, fire set against clay."
+        },
+        {
+          "ref": "51:56",
+          "why": "States the one purpose given to both jinn and humankind, which this chapter assumes throughout."
+        }
+      ],
+      "applyIt": "Pick up something fired: a mug, a plate, a tile. Feel how it holds an edge, and how it would go if you dropped it. The passage chooses that material on purpose. Spend ten seconds with it in your hand before you put it down, and let the comparison be physical rather than an idea you agree with.",
+      "exploreFurther": [
+        "7:11-13",
+        "15:26-33",
+        "72:1-7"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.310Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:19-23",
+      "surah": 55,
+      "start": 19,
+      "end": 23,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "The Barrier Between Two Seas",
+      "tier": "standard",
+      "meaning": "Two bodies of water are described as released toward one another and meeting, and then a barrier is placed between them which neither overruns. The word for the barrier is not a wall; it is an interval, something in between. Commentators read the two seas as salt and fresh, or as two named bodies of water, and keep the range open. Then the yield: pearl and coral come out of them. The passage moves from a boundary to what the boundary makes possible without spelling out the connection.",
+      "historicalContext": "From a chapter whose placement the classical authorities dispute. No specific occasion is reported for these ayat. They sit in the opening inventory of the surah, a run of signs taken from sky, land and sea, with the sea items last. Arabia's coastal trade reached the Gulf and the Red Sea, so pearl fisheries were near enough to be an ordinary export rather than a rumour.",
+      "keyTerms": [
+        {
+          "arabic": "مَرَجَ",
+          "gloss": "released, let loose",
+          "note": "A verb used of turning animals out to pasture where they mingle freely. It makes the meeting of the waters an act of release rather than of construction, which sets up the restraint described in the next line."
+        },
+        {
+          "arabic": "بَرْزَخٌ",
+          "gloss": "a barrier, an interval",
+          "note": "The word occurs three times in the Quran. The other two place it between death and any return, so the same term names the line between two waters and the line between two states of a human being."
+        },
+        {
+          "arabic": "يَبْغِيَانِ",
+          "gloss": "they do not overstep",
+          "note": "From a root for wanting more than your share, which elsewhere describes human injustice. The waters are given moral vocabulary, so the boundary reads as restraint rather than as a physical fact."
+        },
+        {
+          "arabic": "ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ",
+          "gloss": "pearls and coral",
+          "note": "Two things of value that grow rather than being mined or manufactured. Commentators differ over whether the second names red coral or small pearls, and the lexicons record both readings."
+        }
+      ],
+      "lifeInProphetsTime": "Pearl diving in the Gulf was old, dangerous and seasonal. Divers went down on a held breath with a stone and a basket, and a good season could settle a family's debts for a year. Coral came up the same coast. A Meccan merchant handled both as goods with a price rather than as wonders, which is why the passage names them plainly and leaves the wonder to the listener.",
+      "didYouKnow": "The word used here for the barrier appears three times in the Quran and never twice in the same sense. In one place it stands between a person who has died and any return to the world; in another it divides sweet water from salt. It has since become the ordinary Arabic word for an isthmus.",
+      "theologicalSignificance": "The sign being offered is a restraint rather than a display. Two things are let loose, they meet, and something unstated holds each to itself. The chapter has already described a balance set beneath the sky and warned against cheating it, so this is the same idea in another register: the order of the world consists of limits that hold without visible enforcement. And the fruit of that order is ornament rather than survival, which is an argument about generosity.",
+      "crossReferences": [
+        {
+          "ref": "25:53",
+          "why": "Gives the same two waters and the same barrier, adding that one is sweet and the other salt and bitter."
+        },
+        {
+          "ref": "27:61",
+          "why": "Lists the same sea boundary among the questions asking who else could have arranged any of it."
+        },
+        {
+          "ref": "35:12",
+          "why": "Sets the two waters side by side and notes that ornaments are brought out of both of them."
+        }
+      ],
+      "applyIt": "Find the boundary in your week that nobody is policing: the hour you do not check messages, the subject you do not raise with a particular person, the line between work and the room where you eat. Name one that has been eroding. Restore it for three days without announcing it, and notice what the restraint produces rather than what it costs.",
+      "exploreFurther": [
+        "25:53-54",
+        "27:59-64",
+        "35:12"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.311Z",
         "reviewed": false
       }
     },
@@ -125,6 +251,422 @@
       }
     },
     {
+      "key": "55:29-32",
+      "surah": 55,
+      "start": 29,
+      "end": 32,
+      "theme": "The Attributes of God",
+      "themeId": "divine-attributes",
+      "title": "Every Day He Is At Work",
+      "tier": "standard",
+      "meaning": "Everyone in the heavens and the earth is described as asking Him, which makes petition the standing condition of every creature rather than an occasional act. Then a short clause the commentators treat as one of the densest in the Book: every day He is upon a matter. They read it as continuous activity, giving and forgiving and raising and lowering, with no change in Him. The section ends by turning to the two groups directly and telling them they will be attended to, which is a promise and a warning in the same words.",
+      "historicalContext": "From a chapter the classical authorities place variously in Mecca and in Medina. No specific occasion is reported for these ayat. They mark the surah's turn: the inventory of gifts is finished, the statement that everyone on earth perishes has just been made, and from here the chapter moves toward the day of reckoning and the two destinations.",
+      "keyTerms": [
+        {
+          "arabic": "شَأْنٍ",
+          "gloss": "a matter, an affair",
+          "note": "A noun for a business in hand. The indefinite form leaves the content open, and the commentators use the ayah to say that the acting never pauses while nothing new arises in the one who acts."
+        },
+        {
+          "arabic": "سَنَفْرُغُ",
+          "gloss": "We shall turn to you",
+          "note": "The verb means being free of one task and available for the next. Used here of God, the commentators handle it carefully, reading it as directing full attention rather than as finishing any work."
+        },
+        {
+          "arabic": "ٱلثَّقَلَانِ",
+          "gloss": "the two weighty ones",
+          "note": "A dual noun found only in this ayah, from the root for weight. Classical explanations connect it to two kinds of creature burdened with responsibility, and to their weight upon the earth itself."
+        }
+      ],
+      "lifeInProphetsTime": "A chief or a judge in Arabia heard petitions in sequence, and everything depended on when he became free for you. A man might wait a whole day at the edge of an assembly. Being told you would be attended to was not reassuring in itself; it depended entirely on what was owed. The passage borrows that whole scene, including the queue and the moment the one in charge looks up.",
+      "didYouKnow": "The dual name given to this chapter's two audiences occurs only in this ayah. Its root is the ordinary word for weight, and the same root gives the Quran the scales in which deeds are weighed, which this surah has already invoked in its opening lines with the balance set beneath the raised sky.",
+      "theologicalSignificance": "Two claims are held together that are hard to hold together. God is asked by everything that exists, continuously, and is engaged in a new matter every day, yet the tradition reads none of that as change in Him. It keeps providence detailed rather than general, so the world is not wound up and left running. Placing the promise of attention immediately afterwards means the reckoning is presented as more of the same engagement, not an interruption of it.",
+      "crossReferences": [
+        {
+          "ref": "14:34",
+          "why": "Says He gave you of everything you asked Him for, which is the other side of every creature asking."
+        },
+        {
+          "ref": "2:255",
+          "why": "Denies drowsiness and sleep, which is another way of saying the attending never lapses."
+        },
+        {
+          "ref": "7:54",
+          "why": "Follows the creation of the heavens with the statement that creation and command belong to Him alone."
+        }
+      ],
+      "applyIt": "Count your requests for one day. Not the formal ones, the ordinary ones: let this work, let them be all right, let the traffic move. Keep a tally on your phone. The ayah says asking is what every creature is doing at every moment, and the count usually surprises people who thought they rarely prayed.",
+      "exploreFurther": [
+        "2:255",
+        "14:32-34",
+        "35:15-17"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:33",
+      "surah": 55,
+      "start": 33,
+      "end": 33,
+      "theme": "Humility",
+      "themeId": "humility",
+      "title": "If You Can Pass, Pass",
+      "tier": "standard",
+      "meaning": "A challenge is issued to both kinds of creature at once, and it is not rhetorical in form. If you are able to pass out through the regions of the heavens and the earth, then pass. The permission is real and the outcome is stated in the same breath: you will not pass except by an authority. Commentators read that word as power, or as a warrant granted from above, and most keep the two together. What is denied is not the attempt but any means of succeeding that does not come from the one being escaped.",
+      "historicalContext": "From a chapter whose placement the authorities dispute. No specific occasion is reported for this ayah. It sits just after the announcement that both groups will be attended to, so the challenge reads as an answer to an unspoken question about whether the appointment can be avoided. This is by some way the longest ayah in a chapter otherwise built out of very short ones.",
+      "keyTerms": [
+        {
+          "arabic": "يَـٰمَعْشَرَ",
+          "gloss": "O assembly, O company",
+          "note": "A vocative for a gathered group bound by kind or by common interest. Using it of jinn and humans together treats them as one assembly under one address, which the chapter has been building toward."
+        },
+        {
+          "arabic": "أَقْطَارِ",
+          "gloss": "regions, outer edges",
+          "note": "A plural for the sides or quarters of a thing, used elsewhere of a town entered from every side at once. It pictures the created order as an enclosure with edges rather than as open space."
+        },
+        {
+          "arabic": "بِسُلْطَـٰنٍ",
+          "gloss": "by an authority",
+          "note": "The word covers both force and warrant, and the commentators keep both readings. On either one the means of passing would have to be granted, so the escape route runs through the one being escaped."
+        }
+      ],
+      "lifeInProphetsTime": "Travel in Arabia was bounded by what a party could carry and by whose territory lay ahead. You did not cross a tribe's land without protection, and a man travelling without a guarantor could be stopped at any watering point. Everyone understood that movement depended on permission granted by someone with the standing to grant it. The ayah takes that ordinary arrangement and applies it to the edges of the sky.",
+      "didYouKnow": "This is the longest ayah of surah 55 by a wide margin, in a chapter whose lines often run to two or three words. It is also one of only two places in the Quran that use the word for the outer regions of a thing; the other describes a city being entered from all its sides at a moment of siege.",
+      "theologicalSignificance": "The passage does not argue that escape is impossible in principle. It concedes the attempt and removes the resource. That is a particular way of describing creaturely limits: not as a wall but as a dependence, since everything you would use to get out is itself given. The address to both kinds together also matters, because the jinn were popularly credited with reaching places human beings could not. The chapter puts them under the same ceiling.",
+      "crossReferences": [
+        {
+          "ref": "72:8-9",
+          "why": "Reports the jinn finding the sky filled with guards and burning flames when they tried to listen at its edges."
+        },
+        {
+          "ref": "6:35",
+          "why": "Offers the same concession in the other direction, a tunnel or a ladder if the messenger could manage one."
+        },
+        {
+          "ref": "29:22",
+          "why": "States plainly that you cannot escape on earth or in the sky, and have no protector besides God."
+        }
+      ],
+      "applyIt": "Take the thing you are most trying to get out of this month and write down every exit you have considered. Then note beside each one what it depends on that you did not provide: a person's goodwill, your health, money arriving. The ayah is not telling you to stop looking for a way out. It is asking where the way out would have come from.",
+      "exploreFurther": [
+        "6:35",
+        "29:19-23",
+        "72:1-10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:34-38",
+      "surah": 55,
+      "start": 34,
+      "end": 38,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "The Sky Turns Rose",
+      "tier": "standard",
+      "meaning": "The consequence of the attempt is a bombardment: a flame of fire and something the commentators read as molten brass or as smoke, sent against both groups, with no help available. Then the scene changes without transition. The sky splits and becomes a rose, red like oil. Scholars differ over the comparison, and the range they record runs from tanned hide to the shifting colours on hot oil. What they agree on is that the firmament is described as changing texture, not simply as breaking.",
+      "historicalContext": "From a chapter placed variously by the classical authorities. No specific occasion is reported for these ayat. They belong to the surah's middle section, which turns from the world's gifts to the day on which it ends. The description of the sky opening appears across the early Meccan chapters in many forms, and this is one of the shortest and strangest versions of it.",
+      "keyTerms": [
+        {
+          "arabic": "شُوَاظٌ",
+          "gloss": "a smokeless flame",
+          "note": "Found only here in the Quran. Lexicographers describe a flame that has separated from its smoke, so the pursuing fire is made of the same substance as one of the creatures being pursued."
+        },
+        {
+          "arabic": "وَنُحَاسٌ",
+          "gloss": "and molten brass",
+          "note": "Commentators divide over whether the word means copper run to liquid or smoke without any flame. The lexicons carry both, and the chapter leaves the matter unresolved rather than choosing between them."
+        },
+        {
+          "arabic": "وَرْدَةً",
+          "gloss": "a rose, rose-red",
+          "note": "The ordinary word for the flower, used only here in the Quran as a colour. Applying it to the sky keeps something beautiful inside a sentence about the world coming apart."
+        },
+        {
+          "arabic": "كَٱلدِّهَانِ",
+          "gloss": "like oil, like tanned hide",
+          "note": "Another word unique to this ayah, read as oil, as melted fat, or as red-dyed leather. All three are things whose surface shifts as the light moves across them."
+        }
+      ],
+      "lifeInProphetsTime": "Leather was dyed red in Arabia and the best of it came up from the Yemen, prized enough that a red hide was a gift worth naming in a poem. Oil in a shallow dish moved its colour as you carried it across a room. Both images belonged to a household rather than to a battlefield, which is why the description lands the way it does: the sky opens in the vocabulary of a well-furnished room.",
+      "didYouKnow": "Three of the words in these two ayat occur nowhere else in the Quran: the flame, the substance sent with it, and the comparison used for the split sky. Surah 55 is not long, and it carries an unusual number of terms found only once in the Book, several of them inside this single stretch.",
+      "theologicalSignificance": "The chapter has been listing what is given, and here it describes what the same power looks like when the giving stops. That continuity is the work the refrain does, since it does not change tone between the gardens and the fire: both are counted as marvels of one Lord. Describing the split sky by its colour rather than by its destruction also keeps the day inside the chapter's own aesthetic, so the end of the world is not filed under something other than beauty.",
+      "crossReferences": [
+        {
+          "ref": "70:8",
+          "why": "Gives the same moment with the sky like molten metal and the mountains like tufts of wool."
+        },
+        {
+          "ref": "84:1-2",
+          "why": "Describes the sky splitting and adds that it listens to its Lord, as it is right for it to do."
+        },
+        {
+          "ref": "72:8-9",
+          "why": "Supplies the background to the pursuing flames, guards and burning missiles set at the sky's edge."
+        }
+      ],
+      "applyIt": "Look at the sky once today at a time you would not normally look, and name its colour out loud as precisely as you can. Not blue. The actual shade. This ayah describes the end of the world with a colour word taken from a flower, and the habit it assumes is one most people lose somewhere around the age of ten.",
+      "exploreFurther": [
+        "70:8-14",
+        "72:8-10",
+        "84:1-6"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:39-43",
+      "surah": 55,
+      "start": 39,
+      "end": 43,
+      "theme": "Justice",
+      "themeId": "justice",
+      "title": "Known Without Being Asked",
+      "tier": "standard",
+      "meaning": "Nobody will be asked about their sin, and then the guilty are recognised by their marks. The two lines are not in tension. Commentators read the first as ruling out an interrogation that could establish facts, since the facts are already visible, and note that the Quran elsewhere describes questioning of another kind. Recognition replaces investigation. They are then taken by the forelock and the feet, a hold that folds a person double, and the fire is named by pointing: this is the one you called a lie.",
+      "historicalContext": "From a chapter placed variously by the classical authorities. No specific occasion is reported for these ayat. They come immediately after the sky is described as splitting, and they are the surah's only sustained account of judgement before the gardens arrive. The scene is unusually brief for a passage of its kind, four lines including two appearances of the refrain.",
+      "keyTerms": [
+        {
+          "arabic": "بِسِيمَـٰهُمْ",
+          "gloss": "by their mark",
+          "note": "A noun for a distinguishing sign on a face or a body, used of a brand on livestock. The word makes identification physical and immediate, the way an owner knows his animal from across a field."
+        },
+        {
+          "arabic": "بِٱلنَّوَٰصِى",
+          "gloss": "by the forelocks",
+          "note": "The hair at the front of the head, which in Arabian usage was what you seized to control a horse or a captive. Taking someone by it was the gesture of complete mastery over them."
+        },
+        {
+          "arabic": "يُكَذِّبُ",
+          "gloss": "denies, calls a lie",
+          "note": "The verb of this chapter's refrain, appearing here in narrative form. It is the only place in the surah where the root is used outside the repeated question, so the charge finally attaches to a scene."
+        }
+      ],
+      "lifeInProphetsTime": "Marks identified property and people alike. Camels were branded on the thigh with a clan's sign, and a herd could be sorted at a distance by anyone who knew the marks. A captive was taken by the hair at the front of the head, and Arabic kept that gesture as a figure for holding someone's fate in your hand. Both images in this passage come straight off a working day.",
+      "didYouKnow": "The verb in this chapter's refrain, the one asking which favours you deny, appears just once outside the refrain itself, in the line naming the fire that the guilty used to deny. The repeated question has been aimed at the listener fourteen times before the same word is finally allowed to describe somebody else.",
+      "theologicalSignificance": "Judgement is described here as recognition rather than as a trial. That removes the picture of a court establishing what happened and replaces it with something more uncomfortable: a state that is already legible. The passage also lets the fire be named by pointing rather than by description, which puts the reader in the position of the one being shown it. And the refrain runs through the scene unchanged, refusing to separate the reckoning from the list of gifts before it.",
+      "crossReferences": [
+        {
+          "ref": "7:46-48",
+          "why": "Has the people on the heights recognising each group by their marks in exactly the same way."
+        },
+        {
+          "ref": "15:92-93",
+          "why": "States that all of them will be questioned about what they used to do, the other half of the picture."
+        },
+        {
+          "ref": "3:106-107",
+          "why": "Gives darkened faces and bright ones as the visible sign by which that day sorts people."
+        }
+      ],
+      "applyIt": "Think of someone who can tell your mood from your face before you speak: a spouse, a parent, a close friend. That recognition is not a judgement and you cannot switch it off. Sit for a minute with the idea that the day described here works like that rather than like a hearing, and notice which of the two you find harder.",
+      "exploreFurther": [
+        "7:44-49",
+        "15:90-93",
+        "75:13-15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:44-48",
+      "surah": 55,
+      "start": 44,
+      "end": 48,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "Between The Fire And The Gardens",
+      "tier": "standard",
+      "meaning": "The guilty are shown circling between the fire and scalding water at its peak, a movement with no destination in it. Then one line turns the whole chapter: for whoever feared the standing before his Lord, two gardens. The condition is not a deed but a fear, and what is feared is a place to stand rather than a punishment. The description that opens is deliberately spare, a single word which the commentators read either as spreading boughs or as varieties, and they let both stand.",
+      "historicalContext": "From a chapter the classical authorities place variously in Mecca and in Medina. No specific occasion is reported for these ayat. This is the hinge of the surah: everything before it has been gift or warning, and everything after it describes two pairs of gardens in decreasing detail. The turn is made in a single line, with no transition and no summary of what has come before it.",
+      "keyTerms": [
+        {
+          "arabic": "حَمِيمٍ ءَانٍ",
+          "gloss": "scalding water at its peak",
+          "note": "The first word names water hot enough to burn and the second says it has reached its limit. The pairing describes a temperature that cannot rise any further, which is why nothing more is added to it."
+        },
+        {
+          "arabic": "مَقَامَ",
+          "gloss": "the standing, the station",
+          "note": "A place of standing. Commentators read it as the moment of standing before God for judgement, and some as God's own standing over every soul, and both readings are recorded without a decision."
+        },
+        {
+          "arabic": "أَفْنَانٍ",
+          "gloss": "spreading branches, varieties",
+          "note": "A plural that can come from the word for a branch or from the word for a kind. The lexicons carry both, so the single word offers either shade or variety depending on which root is taken."
+        }
+      ],
+      "lifeInProphetsTime": "Shade was the measure of a good place. A garden in Arabia was valued for its canopy before its fruit, since a tree you could sit under in the afternoon changed what the whole day was like. Boiling water was equally familiar and entirely practical: it was how you scalded a hide or a carcass to strip it. The two images here are the extremes of an ordinary life spent outdoors.",
+      "didYouKnow": "The phrase used here for fearing the standing before one's Lord appears in only one other place in the Quran, near the end of surah 79, where it is followed by restraining the self from its cravings. Both occurrences attach the garden to the same fear, and neither of them mentions any particular action.",
+      "theologicalSignificance": "The condition for the gardens is a disposition and not a record. Fear of standing before God is described as sufficient, which puts the decisive thing inside a person rather than in the tally of what they managed to do. The classical tradition treats that fear as the root from which conduct grows, which is why the chapter can name it on its own. Setting it against an aimless circuit between heat and heat also defines the alternative as motion without arrival.",
+      "crossReferences": [
+        {
+          "ref": "79:40-41",
+          "why": "Uses the identical phrase for fearing the standing before one's Lord and names the garden as the refuge."
+        },
+        {
+          "ref": "14:14",
+          "why": "Gives the same promise to those who feared God's standing, there as inheriting the land after them."
+        },
+        {
+          "ref": "56:42-44",
+          "why": "Describes the same scalding water and black smoke for the companions of the left hand."
+        }
+      ],
+      "applyIt": "Notice what you are afraid of this week and rank the fears by size. A missed payment, a scan result, an awkward conversation. Then put the fear this ayah names somewhere honestly on that list, wherever it actually sits rather than where you think it should. The passage treats that particular fear as productive, which is not how you are treating any of the others.",
+      "exploreFurther": [
+        "14:13-17",
+        "56:41-48",
+        "79:37-41"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:49-53",
+      "surah": 55,
+      "start": 49,
+      "end": 53,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Two Springs And Everything Doubled",
+      "tier": "standard",
+      "meaning": "The first pair of gardens is filled in with two items and each arrives as a pair. Two springs, running, and of every fruit two kinds. Commentators read the doubled fruit as one familiar and one unknown, or as fresh and dried, and record the range without settling it. The grammar of the whole chapter is dual, and here the content matches the grammar, since nothing is singular. The refrain falls between each item, so the description reaches the listener in pieces rather than as a picture.",
+      "historicalContext": "From a chapter whose placement the classical authorities dispute. No specific occasion is reported for these ayat. They open the surah's long description of the gardens, which runs to the end of the chapter and is built entirely out of very short lines, most of them three or four words, each one answered by the same repeated question.",
+      "keyTerms": [
+        {
+          "arabic": "عَيْنَانِ تَجْرِيَانِ",
+          "gloss": "two springs, flowing",
+          "note": "A spring that runs by itself rather than one that must be drawn. In a country where water was lifted from wells by rope and bucket, the participle carries the whole difference between labour and abundance."
+        },
+        {
+          "arabic": "فَـٰكِهَةٍ",
+          "gloss": "fruit, something enjoyed",
+          "note": "A word for produce eaten for pleasure rather than for sustenance, distinguished in Arabic from staple food. Its root also gives the words for good humour and for taking delight in something."
+        },
+        {
+          "arabic": "زَوْجَانِ",
+          "gloss": "two of a pair",
+          "note": "The word for one member of a pair, used of spouses and of matched things. Applied to fruit it can mean two varieties of every kind, which is how most of the commentators take it."
+        }
+      ],
+      "lifeInProphetsTime": "A spring that ran on its own was the difference between a settlement and a camp. Around Medina water was lifted from wells by bucket and by camel, and a whole day's labour could go on irrigation alone. Fruit was seasonal and singular: you had dates, and in some places grapes, and that was the list. Being told that every kind came in two would have sounded like an inventory rather than a poem.",
+      "didYouKnow": "In this stretch the refrain is longer than most of the lines it answers. The ayah about the two springs runs to three words, the one about the fruit to five, and the repeated question to four. The classical collections preserve a report of the chapter being recited to a silent gathering, with the remark that another audience had answered the question each time it came round.",
+      "theologicalSignificance": "Describing the reward in pairs continues the chapter's grammar rather than decorating it. Everything in the surah is addressed to two kinds of creature, and the garden arrives doubled to match. The detail about two kinds of every fruit also makes a point about abundance that is not about quantity: what is promised is not more of what you know but a second version of it, so the reward includes something you cannot picture from where you are.",
+      "crossReferences": [
+        {
+          "ref": "56:28-33",
+          "why": "Describes the garden's fruit as never cut off and never forbidden, filling in what this list leaves bare."
+        },
+        {
+          "ref": "76:5-6",
+          "why": "Gives another spring in the garden, named, and made to gush wherever the servants of God wish."
+        },
+        {
+          "ref": "47:15",
+          "why": "Lists the rivers of the garden by their contents, which is the same description made concrete."
+        }
+      ],
+      "applyIt": "Eat one piece of fruit today with nothing else and no screen. Notice that you are eating something grown for pleasure rather than for survival, and that this is ordinary for you. The chapter counts that as one of the favours it keeps asking about, and its question only works if you have recently paid attention to an answer.",
+      "exploreFurther": [
+        "47:15",
+        "56:27-40",
+        "76:5-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:54-58",
+      "surah": 55,
+      "start": 54,
+      "end": 58,
+      "theme": "Contentment",
+      "themeId": "contentment",
+      "title": "Fruit Within Reach",
+      "tier": "standard",
+      "meaning": "The furnishing is described from underneath: couches whose linings are heavy brocade, which leaves the upper surface entirely to the imagination. Then the detail that gives the passage its character. The harvest of both gardens is near, hanging low enough to take without standing up. Commentators note that reaching is exactly what the word removes. The companions are introduced next, their glances restrained, untouched before by human or jinn, and compared to two stones a listener would know by sight.",
+      "historicalContext": "From a chapter the classical authorities place variously. No specific occasion is reported for these ayat. They continue the description of the first pair of gardens, and they are the first place in the surah where a human posture appears at all: everything before this has been landscape, material or event. The chapter is speaking to an audience for whom reclining at ease was a mark of standing rather than a daily habit.",
+      "keyTerms": [
+        {
+          "arabic": "إِسْتَبْرَقٍ",
+          "gloss": "heavy brocade",
+          "note": "A word borrowed into Arabic from Persian, which the early lexicographers noted as foreign. It names thick silk shot with gold, the costliest cloth a seventh-century listener could name, and the Quran uses it only of the garden."
+        },
+        {
+          "arabic": "دَانٍ",
+          "gloss": "near, low-hanging",
+          "note": "An adjective of nearness from the root that gives the word for the lower world. Here it describes fruit that comes to the hand, so the effort of harvest is what the garden is said to remove."
+        },
+        {
+          "arabic": "قَـٰصِرَٰتُ ٱلطَّرْفِ",
+          "gloss": "restraining the glance",
+          "note": "A phrase describing eyes kept for one person rather than roving. The commentators read it as a picture of constancy and devotion rather than of concealment, and it describes the companions of the garden."
+        },
+        {
+          "arabic": "ٱلْيَاقُوتُ",
+          "gloss": "ruby, precious stone",
+          "note": "A stone named for its clarity as much as for its colour. The comparison is to something that holds light inside itself rather than reflecting it, which is how the classical commentators explain the image."
+        }
+      ],
+      "lifeInProphetsTime": "Brocade reached Arabia along the same routes as pepper and did not stay in Arabia. It was what a Persian or Byzantine court wore, known to traders as something handled and sold onward. To describe it as the lining of a couch, the part lying against the floor, was to put the most expensive thing in the known world where nobody would see it. A Meccan merchant would have understood the gesture exactly.",
+      "didYouKnow": "The word for brocade in this ayah is a loanword, taken into Arabic from Persian before the revelation and recognised as foreign by the early Arabic lexicographers themselves. It appears four times in the Quran, and every one of those occurrences describes the garden rather than anything in this world.",
+      "theologicalSignificance": "The passage describes the reward as the removal of distance. Fruit does not need reaching for, the most costly fabric lies where nobody looks, and attention is undivided. Each detail takes something that requires effort or competition here and returns it without either. That is a specific claim about what the garden is: not an intensified version of pleasure but the same goods with the strain taken out, which is why the chapter can list them so calmly.",
+      "crossReferences": [
+        {
+          "ref": "69:23",
+          "why": "Gives the same image in a single phrase, clusters of the garden hanging low and within easy reach."
+        },
+        {
+          "ref": "76:14",
+          "why": "Repeats the low shade and says the garden's clusters are made entirely submissive to those there."
+        },
+        {
+          "ref": "37:48-49",
+          "why": "Uses the same phrase for restrained glances and compares the companions to carefully sheltered eggs."
+        }
+      ],
+      "applyIt": "Notice one thing today that you got without reaching: a seat on the bus, a message that arrived at the right moment, food already cooked when you walked in. Say thank you for it out loud, to the person or to God. The passage defines ease as the absence of reaching, and that only registers if you name it while it is happening.",
+      "exploreFurther": [
+        "37:40-49",
+        "69:19-24",
+        "76:11-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "55:59-63",
       "surah": 55,
       "start": 59,
@@ -179,6 +721,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.229Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:64-68",
+      "surah": 55,
+      "start": 64,
+      "end": 68,
+      "theme": "Rain and the Living Earth",
+      "themeId": "rain-and-the-earth",
+      "title": "Green Almost To Black",
+      "tier": "standard",
+      "meaning": "The second pair of gardens is described in one word that stands as a complete ayah: dark green, greened to the point of blackness. Commentators explain the colour as the result of unstinting water rather than of a different plant. Two springs follow, and the verb used of them is not flowing but gushing, water pushed up under pressure. Then three named things: fruit, and date palms, and pomegranates. The list is shorter and plainer than the first garden's, and the tradition reads that shortness as part of the meaning.",
+      "historicalContext": "From a chapter whose placement the classical authorities dispute. No specific occasion is reported for these ayat. They belong to the second of two descriptions of the gardens, and classical commentary generally treats the second pair as a rank below the first, taking the briefer description as information rather than as abbreviation for its own sake.",
+      "keyTerms": [
+        {
+          "arabic": "مُدْهَآمَّتَانِ",
+          "gloss": "dark green, almost black",
+          "note": "One word, found nowhere else in the Quran, standing as a complete ayah on its own. It describes green so saturated with water that it reads as black, which is what a well-watered palm grove looks like from a distance."
+        },
+        {
+          "arabic": "نَضَّاخَتَانِ",
+          "gloss": "two gushing springs",
+          "note": "An intensive form for water thrown upward under pressure rather than merely running. The first pair of gardens was given springs that flow, and this change of verb is the only stated difference between the two waters."
+        },
+        {
+          "arabic": "وَرُمَّانٌ",
+          "gloss": "and pomegranates",
+          "note": "Named separately after fruit and palms, which the commentators discuss, several reading the separation as emphasis rather than as a claim that these are not fruit. The tree was grown in the Arabian oases and well known."
+        }
+      ],
+      "lifeInProphetsTime": "A palm grove seen from the edge of the desert does look black, and travellers navigated by that colour long before they could make out any trees. Pomegranates were grown at Taif and in the northern oases and did not travel well, so they were a thing you ate where they grew. Naming them put a specific and slightly local luxury into a description that had otherwise stayed general.",
+      "didYouKnow": "Ayah 64 of this chapter consists of a single word, and that word occurs nowhere else in the Quran. The word used two lines later for the gushing springs is also found only here, so the second garden is described largely in vocabulary the Book never uses again, in a chapter whose lines are already unusually short.",
+      "theologicalSignificance": "The Quran describes two pairs of gardens and makes one plainer than the other without ever saying it is lesser. The refrain runs identically through both, so neither description is graded by the text itself. That leaves degrees in the hereafter as something real but not laid out in front of the reader for comparison, which matches how the tradition handles the subject: differences are affirmed, and measuring individuals against each other is not invited.",
+      "crossReferences": [
+        {
+          "ref": "6:99",
+          "why": "Names the same produce, palms and pomegranates, as signs in this world for people who will believe."
+        },
+        {
+          "ref": "55:46-48",
+          "why": "Gives the first pair of gardens, against which this shorter second description is being measured."
+        },
+        {
+          "ref": "76:15-16",
+          "why": "Applies the same vocabulary of measured abundance to the vessels of the garden rather than to its plants."
+        }
+      ],
+      "applyIt": "Find the greenest thing near you this week and look at it for a full minute in good light: a park tree, a plant on a windowsill, a lawn after rain. The chapter describes a whole garden by its colour alone. Colour is a favour that costs you nothing to receive and is almost always spent without ever being noticed.",
+      "exploreFurther": [
+        "6:95-99",
+        "16:10-11",
+        "76:12-18"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.312Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:69-73",
+      "surah": 55,
+      "start": 69,
+      "end": 73,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "Good And Beautiful, In Tents",
+      "tier": "standard",
+      "meaning": "Two short lines describe the companions of the second pair of gardens and both are unusually plain. Good ones, beautiful ones: the first word carries character and the second appearance, so the pair covers what a person is and how they look. Then they are placed, reserved in pavilions. Commentators read the tents as dwellings of the garden and note that the word is used nowhere else in the Book. The refrain separates every line, so each detail stands alone instead of accumulating into a scene.",
+      "historicalContext": "From a chapter the classical authorities place variously in Mecca and in Medina. No specific occasion is reported for these ayat. They belong to the shorter second description of the gardens, which runs through the same elements as the first: foliage, water, fruit, companions and furnishing. The chapter builds both descriptions on one frame and varies the length of each line rather than the order.",
+      "keyTerms": [
+        {
+          "arabic": "خَيْرَٰتٌ حِسَانٌ",
+          "gloss": "good ones, beautiful ones",
+          "note": "The first adjective comes from the word for goodness and the second from beauty of form. Commentators read the pair as deliberately covering character and appearance together rather than resting on either one alone."
+        },
+        {
+          "arabic": "حُورٌ",
+          "gloss": "companions of the garden",
+          "note": "A word describing eyes in which the white and the dark are strongly distinguished. Classical commentary treats it as a description of the garden's people rather than as a name, and the Quran uses it only of the hereafter."
+        },
+        {
+          "arabic": "ٱلْخِيَامِ",
+          "gloss": "the tents, the pavilions",
+          "note": "The ordinary word for a tent, found only here in the Quran. It places the dwellings of the garden in the vocabulary of a nomad's camp rather than of a palace, which is the reverse of the usual direction."
+        }
+      ],
+      "lifeInProphetsTime": "A tent in Arabia was not a shelter of last resort; it was a house. Woven from goat hair, divided inside by hangings, pitched and struck by the women of the household, it was where a family's honour was kept. Poets described a camp by its tents the way another tradition would describe a town by its towers. Furnishing the garden with them was describing home in the only terms many listeners had.",
+      "didYouKnow": "The chapter describes its two pairs of gardens using the same elements in almost the same sequence: foliage, springs, fruit, companions and furnishing. Each element gets a longer line in the first description than in the second, and the only element that moves is the furnishing, which comes fourth in one account and last in the other.",
+      "theologicalSignificance": "The garden's companionship is described in terms of goodness before beauty, and both descriptions are given the same weight. That ordering matters for how these lines have been read: the classical commentators treat them as describing a completed human being rather than as a catalogue, and this same chapter has already said that the recompense for goodness is nothing but goodness. Placing the dwellings in tents also refuses grandeur, which the surah does again and again.",
+      "crossReferences": [
+        {
+          "ref": "55:60",
+          "why": "States the principle these lines illustrate, that the recompense for goodness is nothing other than goodness."
+        },
+        {
+          "ref": "56:35-37",
+          "why": "Describes the companions of the garden as newly brought into being and equal in age, filling out what this leaves short."
+        },
+        {
+          "ref": "36:55-57",
+          "why": "Places the people of the garden with their spouses in shade, reclining, and gives them whatever they call for."
+        }
+      ],
+      "applyIt": "Think about the last time someone described a person to you and led with their appearance. Then describe someone you love to yourself in the order this ayah uses: what they are like first, how they look second. It takes about twenty seconds, and it tends to change which details come to mind at all.",
+      "exploreFurther": [
+        "36:55-58",
+        "56:35-40",
+        "78:31-36"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.313Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "55:74-78",
+      "surah": 55,
+      "start": 74,
+      "end": 78,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Green Cushions And A Name",
+      "tier": "standard",
+      "meaning": "The description closes with the same clause used of the first garden's companions, untouched before by human or jinn, and then with furnishing: green cushions and finely wrought carpets, the last word taken from a byword for anything made past human skill. Then the chapter stops describing and blesses. The final line is not addressed to the two audiences at all. It turns to a single listener, and it ends on the name rather than on the gardens, which is where the surah began.",
+      "historicalContext": "From a chapter the classical authorities place variously. No specific occasion is reported for these ayat. They close a surah that opened with a divine name standing alone as its first ayah and has spent seventy-seven lines on gifts, on judgement and on gardens. The closing blessing uses a form the Quran reserves for moments of summation rather than for instruction.",
+      "keyTerms": [
+        {
+          "arabic": "رَفْرَفٍ",
+          "gloss": "cushions, spread coverings",
+          "note": "Found only here in the Quran. The lexicons describe hangings or a spread cloth whose edges move, so the word carries a suggestion of something light rather than of heavy furniture."
+        },
+        {
+          "arabic": "وَعَبْقَرِىٍّ",
+          "gloss": "richly wrought carpets",
+          "note": "From a place name in Arabian legend associated with workmanship too fine to be human. The word came to describe anything of unmatched quality, and this is its only appearance in the Book."
+        },
+        {
+          "arabic": "تَبَـٰرَكَ",
+          "gloss": "blessed, abundant is",
+          "note": "A verb form meaning to be full of increase and to stay so. The Quran uses it only of God and never of a creature, and it expresses abundance rather than a blessing being handed over."
+        }
+      ],
+      "lifeInProphetsTime": "Floor coverings were the furniture of an Arabian house. You sat on them, ate on them and slept on them, and their quality was the first thing a guest registered on entering. A fine carpet came from the north or from Persia and was a household's single most valuable movable possession. The chapter closes its description of the garden with the item by which a visitor would have judged a home.",
+      "didYouKnow": "The repeated question of this chapter appears thirty-one times, and the last of them falls on the second to last line. The final ayah is the only line in the whole second half of the surah that is not followed by the refrain, so the rhythm the listener has been carrying stops one line before the chapter does.",
+      "theologicalSignificance": "A chapter listing what is given ends by blessing the giver rather than by summarising the list. The final line also drops the dual address that has governed the whole surah and speaks to one person, which returns the reader from the two assemblies to himself. And it closes on a name, as the chapter opened on a name, so the gardens and the fire are framed as things said about someone rather than as subjects of their own.",
+      "crossReferences": [
+        {
+          "ref": "55:1",
+          "why": "Opens the chapter with a single divine name standing alone as an ayah, which this last line answers."
+        },
+        {
+          "ref": "67:1",
+          "why": "Uses the same verb of blessing to open a surah, applied to the one in whose hand all dominion lies."
+        },
+        {
+          "ref": "7:54",
+          "why": "Ends a passage on creation with the same verb, blessed be God, the Lord of all the worlds."
+        }
+      ],
+      "applyIt": "Say the last line of this chapter out loud at the end of something ordinary this week: a meal, a shift, a phone call that went well. Not as a formula, and not at a moment already set aside for prayer. The surah ends by blessing a name right after a list of good things, and the timing is the whole instruction.",
+      "exploreFurther": [
+        "7:54",
+        "25:1-2",
+        "67:1-4"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:39:46.313Z",
         "reviewed": false
       }
     }

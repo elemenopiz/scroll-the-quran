@@ -13,11 +13,27 @@ public final class MockEntitlementStore: EntitlementProviding {
     public private(set) var isPremium: Bool
     public private(set) var products: [StorePlan]
     public var introOfferEligible: Bool
+    /// Settable so a snapshot, a UI test or a preview can stand the app in the grace period
+    /// or in billing retry without a StoreKit session. `nil` means "follow `isPremium`".
+    public var forcedBillingState: BillingState?
 
     /// Set to make `purchase(_:)` report something other than `.purchased`.
     public var nextOutcome: PurchaseOutcome = .purchased
     /// Set to make `purchase(_:)` or `restore()` throw.
     public var nextError: CommerceError?
+    /// Set when the customer is meant to *have* a purchase to restore, so `restore()` grants
+    /// the entitlement the way `AppStore.sync()` plus a re-read of `currentEntitlements`
+    /// would. A StoreKit test store cannot demonstrate this: it never stops returning a
+    /// transaction, so there is nothing there for a restore to bring back.
+    public var restoreGrantsPremium = false
+    /// Called whenever the entitlement changes, with the new value.
+    ///
+    /// StoreKit reads `Transaction.currentEntitlements` back from the store on every launch,
+    /// so a purchase outlives the process. A fixture has nowhere to read it back from, which
+    /// is exactly what the "a purchase survives a relaunch" test is about; the shell hands
+    /// this store somewhere to write, and seeds `isPremium` from it at the next launch.
+    /// Left `nil` everywhere else, so previews and unit tests keep no state between runs.
+    @ObservationIgnored public var onEntitlementChange: ((Bool) -> Void)?
 
     public private(set) var purchaseCount = 0
     public private(set) var restoreCount = 0
@@ -26,11 +42,17 @@ public final class MockEntitlementStore: EntitlementProviding {
     public init(
         isPremium: Bool = false,
         products: [StorePlan] = StoreCatalogue.all,
-        introOfferEligible: Bool = true
+        introOfferEligible: Bool = true,
+        billingState: BillingState? = nil
     ) {
         self.isPremium = isPremium
         self.products = products
         self.introOfferEligible = introOfferEligible
+        forcedBillingState = billingState
+    }
+
+    public var billingState: BillingState {
+        forcedBillingState ?? (isPremium ? .subscribed : .notSubscribed)
     }
 
     public func load() async {
@@ -47,7 +69,7 @@ public final class MockEntitlementStore: EntitlementProviding {
             throw CommerceError.productUnavailable(id)
         }
         if nextOutcome == .purchased {
-            isPremium = true
+            setPremium(true)
             introOfferEligible = false
         }
         return nextOutcome
@@ -58,11 +80,36 @@ public final class MockEntitlementStore: EntitlementProviding {
         if let error = nextError {
             throw error
         }
+        if restoreGrantsPremium {
+            grant()
+        }
     }
 
     /// Test hook: pretend the subscription lapsed.
     public func expire() {
-        isPremium = false
+        setPremium(false)
+        forcedBillingState = .expired
+    }
+
+    /// Test hook: pretend the customer's card failed. Grace period keeps access, billing
+    /// retry does not — which is exactly the difference Settings has to explain.
+    public func enterBillingTrouble(_ state: BillingState) {
+        forcedBillingState = state
+        setPremium(state == .inGracePeriod)
+    }
+
+    /// Test hook: grant the entitlement without going through `purchase(_:)`, the way a
+    /// restore or a renewal landing on the `Transaction.updates` listener would.
+    public func grant() {
+        setPremium(true)
+        forcedBillingState = nil
+        introOfferEligible = false
+    }
+
+    /// The one place the entitlement moves, so `onEntitlementChange` cannot be forgotten.
+    private func setPremium(_ value: Bool) {
+        isPremium = value
+        onEntitlementChange?(value)
     }
 
     /// The three products in `Config/ScrollTheQuran.storekit`. Lives on `StoreCatalogue`

@@ -1,8 +1,71 @@
 {
   "surah": 56,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T08:50:11.650Z",
+  "generatedAt": "2026-09-12T09:55:34.046Z",
   "studies": [
+    {
+      "key": "56:1-5",
+      "surah": 56,
+      "start": 1,
+      "end": 5,
+      "theme": "The Day of Judgement",
+      "themeId": "the-day-of-judgement",
+      "title": "The Event That Cannot Be Denied",
+      "tier": "standard",
+      "meaning": "The chapter opens on a word that simply means the thing that falls, and the first two lines turn that root over three times. When the falling falls, there is no lie about its falling. Then two participles with no stated subject: bringing down, lifting up. Commentators read them of the event itself, which rearranges every rank at once. The earth is shaken and the mountains are crumbled to powder, and both verbs are doubled by a noun from the same root, so each action is named twice.",
+      "historicalContext": "Meccan, from the years when resurrection was the central point of dispute. No specific occasion is reported for these ayat. Classical sources preserve a report that this chapter and a handful like it turned the hair of the Prophet Muhammad (peace be upon him) grey, which indicates the register the early listeners heard. The surah proceeds by scene rather than by argument until its second half.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْوَاقِعَةُ",
+          "gloss": "the falling event",
+          "note": "An active participle from a verb for falling or coming to pass. Naming the day by that verb makes it an event that drops rather than one that approaches, and the opening lines use the root three times over."
+        },
+        {
+          "arabic": "كَاذِبَةٌ",
+          "gloss": "a denial, anything false",
+          "note": "A feminine form read by the commentators either as a soul that denies or as the falsehood itself. On either reading the line closes off the possibility that the report has been overstated."
+        },
+        {
+          "arabic": "خَافِضَةٌ رَّافِعَةٌ",
+          "gloss": "bringing low, raising high",
+          "note": "Two participles with no noun attached, so the event is described by what it does rather than by what it is. The pair belongs to the vocabulary of social rank, used of a day that redistributes it."
+        },
+        {
+          "arabic": "بَسًّا",
+          "gloss": "a thorough crumbling",
+          "note": "A cognate noun repeating its own verb, a construction Arabic uses to intensify. The root is used of crumbling bread into liquid, so the mountains end as something that could be stirred."
+        }
+      ],
+      "lifeInProphetsTime": "Mountains were the fixed landmarks of Arabian travel. You navigated by them, named them and used them to say where a place was, because everything else in that landscape moved. Dust in a shaft of light through a tent opening was the other picture here, the finest thing anyone could point at. The passage takes the most permanent object a listener knew and reduces it to the least.",
+      "didYouKnow": "The chapter's first two lines use a single root three times: the verb, the name of the day, and the noun for its falling. Arabic can do that without sounding repetitive because each form has a different shape, and the classical scholars treat this opening as a set piece of that technique.",
+      "theologicalSignificance": "The day is introduced by what it does to ranking, before anything is said about reward or punishment. That order matters. It presents judgement first as a reordering rather than as a sentence, which prepares the three groups named a few lines later. And the denial of falsehood in the second line is put in the present tense, so the claim is not that nobody will deny it afterwards but that there is nothing false about it now.",
+      "crossReferences": [
+        {
+          "ref": "69:13-16",
+          "why": "Gives the same sequence, a single blast followed by the earth and the mountains crushed in one blow."
+        },
+        {
+          "ref": "101:1-5",
+          "why": "Names another day by a verb of striking and reduces the mountains to carded wool."
+        },
+        {
+          "ref": "99:1-5",
+          "why": "Opens with the earth shaken by its own quaking, using the same cognate construction twice over."
+        }
+      ],
+      "applyIt": "Name the three things in your life you would call permanent. Not people; structures: a job, a house, a routine. Write them down and put a rough number of years beside each. The chapter opens by taking the most fixed object its listeners knew and reducing it to dust, and the exercise only works if you name your own.",
+      "exploreFurther": [
+        "69:13-18",
+        "99:1-8",
+        "101:1-11"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.035Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "56:6-10",
       "surah": 56,
@@ -58,6 +121,1090 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T08:50:03.229Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:11-15",
+      "surah": 56,
+      "start": 11,
+      "end": 15,
+      "theme": "Paradise",
+      "themeId": "paradise",
+      "title": "The Nearest, And A Few Latecomers",
+      "tier": "standard",
+      "meaning": "The forerunners are identified by one word, those brought near, and everything else here is location and proportion. They are in gardens of bliss. Then a count: a great company from the earliest and a few from those who came later. Commentators discuss whether the earliest means earlier communities or the first generation of this one, and both readings are recorded. The single furnishing named is a couch woven close, the word used of mail shirts, so the first detail of the reward is craftsmanship.",
+      "historicalContext": "Meccan. The chapter has just divided humanity into three and now takes the third group first, reversing the order of its own announcement. No specific occasion is reported for these ayat. The surah dates from a period when the community was small, and the arithmetic in these lines was being recited to people who could count themselves in a single room.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُقَرَّبُونَ",
+          "gloss": "those brought near",
+          "note": "A passive form, so the nearness is done to them rather than achieved by them. The word appears four times in the Quran, and each time it names a rank rather than describing a location."
+        },
+        {
+          "arabic": "ثُلَّةٌ",
+          "gloss": "a large company",
+          "note": "A noun for a sizeable group cut away from a larger one. It occurs three times in the Quran and all three are in this chapter, where it counts the people of the two gardens."
+        },
+        {
+          "arabic": "مَّوْضُونَةٍ",
+          "gloss": "closely woven, interlaced",
+          "note": "Found only here. The root describes the interlocking rings of a coat of mail, so the couch is pictured as something made link by link rather than draped, carved or cast."
+        }
+      ],
+      "lifeInProphetsTime": "A mail shirt was the most expensive object an Arabian fighter could own, and the ones made in Yemen were named and remembered. Every ring was closed by hand, so the garment stood for patience as much as for wealth. Using that word for the seating in the garden put labour into a description of rest, which a listener who had priced armour would have caught at once.",
+      "didYouKnow": "The chapter announces its three groups in one order and then describes them in another. The forerunners are named last in the announcement and described first; the companions of the left, named second, are described last. The effect is that the two gardens stand side by side before the fire is reached at all.",
+      "theologicalSignificance": "Nearness is made the defining reward and it is given in the passive, which removes any sense that it was reached by effort alone. The passage also counts, and the count is uncomfortable: the group described as nearest draws mostly from people who came earlier. That is not offered as discouragement but as a proportion, and the chapter answers it some thirty lines later by giving the second group large numbers from both periods.",
+      "crossReferences": [
+        {
+          "ref": "83:18-21",
+          "why": "Uses the same word for those brought near, there as witnesses to the register of the righteous."
+        },
+        {
+          "ref": "3:45",
+          "why": "Applies the same term to the Messiah, showing that it names a rank the Quran grants outside this scene."
+        },
+        {
+          "ref": "9:100",
+          "why": "Names the first and foremost among the emigrants and the helpers, the same vocabulary of precedence."
+        }
+      ],
+      "applyIt": "Think of one thing you are early to and one thing you are always late for. Not morally: literally, in time. The chapter's word for this group means those who got out ahead, and it is worth noticing that the habit of being early is something you already have in one part of your life and not in another.",
+      "exploreFurther": [
+        "9:100",
+        "56:27-40",
+        "83:18-28"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.037Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:16-20",
+      "surah": 56,
+      "start": 16,
+      "end": 20,
+      "theme": "Community and Brotherhood",
+      "themeId": "community-and-brotherhood",
+      "title": "Facing One Another",
+      "tier": "standard",
+      "meaning": "The posture comes before anything else: reclining, and facing one another. Commentators note that nobody in the garden sees another's back, which turns the seating into a statement about relations rather than about comfort. Then the service. Youths who do not age go round with cups, pitchers and a bowl from a flowing spring, and the drink is defined by two things it does not do. No splitting head, and no loss of the senses. The fruit that follows is chosen rather than handed over.",
+      "historicalContext": "Meccan. These lines describe the first of the three groups and form the chapter's longest single description. No specific occasion is reported for them. Wine was ordinary in Mecca and was not yet restricted for the community, so the detail about headache and intoxication was heard as a comparison with something the audience knew from experience rather than as a contrast with something already refused.",
+      "keyTerms": [
+        {
+          "arabic": "مُتَقَـٰبِلِينَ",
+          "gloss": "facing one another",
+          "note": "A reciprocal form, so the facing is mutual by construction. The commentators take it to mean that nobody there has his back to anyone, which turns an item of furniture into a description of a society."
+        },
+        {
+          "arabic": "وَأَبَارِيقَ",
+          "gloss": "and pitchers",
+          "note": "A vessel with a spout and a handle, found only here in the Quran. Its root carries a sense of gleaming, so the jug is named for the way it catches light rather than for its shape."
+        },
+        {
+          "arabic": "يُصَدَّعُونَ",
+          "gloss": "they are given headaches",
+          "note": "From a root for splitting, used of a crack in a wall and of a splitting head. The passive says the drink does not do this to them, rather than that they choose to abstain from it."
+        },
+        {
+          "arabic": "يُنزِفُونَ",
+          "gloss": "they lose their senses",
+          "note": "From a verb for drawing a well dry. What the drink does not take away is the mind, so the word measures intoxication as depletion rather than as pleasure."
+        }
+      ],
+      "lifeInProphetsTime": "Drinking in Arabia was a social performance, conducted in company with a cupbearer moving round a circle, and the poetry is full of the morning after. The vessels named here, the cup, the jug and the drinking bowl, were the ordinary furniture of that gathering. A listener heard a scene he had sat in, with the two things that ended it, the ache and the stupor, taken out and nothing else altered.",
+      "didYouKnow": "The word for the pitcher in this passage appears once in the Quran and comes from a root about brightness; the same root gives Arabic its word for lightning. The vessel is named for its shine rather than for its form, which is how several of this chapter's objects are introduced.",
+      "theologicalSignificance": "The garden's pleasures are described by subtraction. The drink is defined by the two costs it does not carry and the seating by the absence of anyone turned away. That is a consistent method in the Quran's accounts of the hereafter: rather than inventing new pleasures, it takes familiar ones and removes what spoils them. The claim underneath is that what is wrong with human enjoyment is not the enjoyment but the price attached to it.",
+      "crossReferences": [
+        {
+          "ref": "37:45-47",
+          "why": "Gives the same cup from a flowing spring and the same denial of both headache and stupefaction."
+        },
+        {
+          "ref": "15:47",
+          "why": "Describes the people of the garden facing one another on couches with all rancour removed from their breasts."
+        },
+        {
+          "ref": "76:15-18",
+          "why": "Continues the vessels, silver cups measured exactly, and a drink mixed at a named spring."
+        }
+      ],
+      "applyIt": "Arrange one meal this week so that everyone at it can see everyone else. Move the chairs if you have to. The chapter names that arrangement before it names any of the food, and it is the one part of the description you can reproduce exactly, tonight, with what you already own.",
+      "exploreFurther": [
+        "15:45-48",
+        "37:40-49",
+        "76:11-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.037Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:21-25",
+      "surah": 56,
+      "start": 21,
+      "end": 25,
+      "theme": "Speech and the Tongue",
+      "themeId": "speech-and-the-tongue",
+      "title": "No Idle Talk, No Blame",
+      "tier": "standard",
+      "meaning": "The list finishes with two items and then turns to what is absent. Bird meat, chosen; companions compared to pearls kept covered, the same word the chapter will later use of the Book itself. The reward is then labelled repayment for what they used to do, which grounds the description in something earned. And the last thing named in the garden is a kind of silence: no idle talk, nothing that incurs blame. Commentators note the first word covers chatter and the second covers speech that leaves a mark.",
+      "historicalContext": "Meccan. These lines close the description of the forerunners, and they end it on speech rather than on any of the physical comforts listed before. No specific occasion is reported for these ayat. The setting is a culture where a gathering's quality was measured by its talk, and where a wrong word at a feast could start a feud that outlasted everyone present at it.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمَكْنُونِ",
+          "gloss": "kept covered, treasured",
+          "note": "A passive participle for something stored out of sight. This chapter uses it twice, once of the pearls here and once of the Book in which the Quran is kept, linking the two by their protection."
+        },
+        {
+          "arabic": "لَغْوًا",
+          "gloss": "idle talk, nonsense",
+          "note": "Speech with nothing in it, the word used of empty oaths and of chatter. Naming it first puts ordinary noise, rather than insult, at the head of what the garden does not contain."
+        },
+        {
+          "arabic": "تَأْثِيمًا",
+          "gloss": "speech that incurs blame",
+          "note": "A verbal noun meaning to make someone sin, or to accuse them of it. The lexicons carry both, so the word covers what you say that harms another and what you say that harms yourself."
+        }
+      ],
+      "lifeInProphetsTime": "An Arabian gathering was a verbal contest. Reputations were made and destroyed in verse, insults were remembered word for word, and a satire could follow a family for generations. Bird meat meanwhile was a rarity, since game birds were snared rather than kept and did not appear at an ordinary meal. The passage names a luxury and then names something rarer: an evening with nothing said that anyone regrets.",
+      "didYouKnow": "The participle describing the pearls here is used once more in this chapter, fifty-five lines later, where it is applied to the Book in which the Quran is preserved. The same word for something kept covered therefore describes both the garden's treasure and the text that is being recited to the listener.",
+      "theologicalSignificance": "The final item in a long list of delights is the absence of two kinds of speech, which quietly ranks them. Everything material is named and then set aside for a quality of conversation. The passage also attaches the whole description to conduct, calling it a repayment for what they used to do, which keeps the garden from reading as arbitrary while the earlier lines have already said that the nearness itself was conferred.",
+      "crossReferences": [
+        {
+          "ref": "78:35",
+          "why": "Says the same of another garden, that no idle talk is heard there and no denial of the truth."
+        },
+        {
+          "ref": "19:62",
+          "why": "Repeats that no empty speech is heard there, only peace, with provision morning and evening."
+        },
+        {
+          "ref": "88:8-11",
+          "why": "Describes faces at ease in a high garden where not one empty word is heard at all."
+        }
+      ],
+      "applyIt": "Go one whole conversation today without saying anything about a person who is not there. Not as a rule, as an experiment, for one conversation. The chapter puts the quality of talk at the end of its list of pleasures, after the food and the furnishings, and the experiment usually tells you something about the shape of your ordinary exchanges.",
+      "exploreFurther": [
+        "19:61-63",
+        "78:31-36",
+        "88:8-16"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.037Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:26-30",
+      "surah": 56,
+      "start": 26,
+      "end": 30,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Only The Word Peace",
+      "tier": "standard",
+      "meaning": "One exception is made to the silence, and it is a greeting given twice. Commentators read the repetition as greeting exchanged in both directions rather than as emphasis. Then the second group is announced with the same doubled question used of the first, and their garden begins with trees. A lote tree with its thorns taken off, and a tree the classical commentators could not agree on, read as the banana or as a flowering acacia. Then shade, and the word chosen for it means stretched out.",
+      "historicalContext": "Meccan. The description of the second group begins here and is noticeably plainer than the first: trees and water rather than cups and service. No specific occasion is reported for these ayat. The lote tree grew in Arabia and was valued for its shade and its fruit, so this garden opens with something the audience had actually sat under rather than with anything imported.",
+      "keyTerms": [
+        {
+          "arabic": "سَلَـٰمًا سَلَـٰمًا",
+          "gloss": "peace, peace",
+          "note": "The ordinary greeting, given twice over. The root means wholeness and safety, so the only speech permitted in the garden is a word that asks for nothing and reports no harm to anyone."
+        },
+        {
+          "arabic": "مَّخْضُودٍ",
+          "gloss": "with its thorns removed",
+          "note": "A passive participle from a verb for cutting back. The lote tree is known for thorns long enough to tear cloth, and the description does not replace the tree but takes away its one drawback."
+        },
+        {
+          "arabic": "وَطَلْحٍ",
+          "gloss": "a tree, banana or acacia",
+          "note": "Found only here in the Quran, and the classical commentators divide over which tree it names. The lexicons record both the banana and a large flowering acacia, and the tradition leaves the question open."
+        },
+        {
+          "arabic": "مَّمْدُودٍ",
+          "gloss": "extended, drawn out",
+          "note": "From a verb for stretching something. Applied to shade it can mean wide or unending, and commentators note that shade in this world always moves, which is exactly what the word removes."
+        }
+      ],
+      "lifeInProphetsTime": "The lote tree was the shade of the Arabian countryside, with fruit you could eat and leaves used in washing the dead. It was also armed: its thorns went through a sandal. Shade was measured and argued over, since a tree's shadow shifted through the day and two families could share one tree by taking turns. Permanent shade was not a poetic idea but the answer to a scheduling problem.",
+      "didYouKnow": "The second tree named in this garden appears once in the whole Quran, and the early commentators could not settle what it was. Some read it as the banana, others as a large acacia growing in the valleys of the Hijaz, and the classical works record the disagreement without resolving it, which is unusual in a description of the garden.",
+      "theologicalSignificance": "The second garden is built out of Arabian plants with their defects taken out, while the first was built out of imported luxuries. Both are called reward, and the chapter ranks the people rather than the pleasures. That leaves these descriptions doing something other than inventory: they are pitched at what a particular listener is able to want, which is why the details differ while the word for the place does not.",
+      "crossReferences": [
+        {
+          "ref": "53:14-16",
+          "why": "Names the same lote tree standing at a boundary, covered by something the passage refuses to describe."
+        },
+        {
+          "ref": "76:13-14",
+          "why": "Gives shade in the same terms, with neither burning sun nor bitter cold felt anywhere in it."
+        },
+        {
+          "ref": "13:35",
+          "why": "Describes the garden promised to the God-conscious by its food and its shade, both of them perpetual."
+        }
+      ],
+      "applyIt": "Sit in shade this week on purpose, outdoors, for five minutes, and pay attention to the temperature difference rather than to your phone. The chapter puts extended shade among the highest goods it can name. That only means something to someone who has recently been too hot, which is why the exercise has to be physical.",
+      "exploreFurther": [
+        "13:35",
+        "53:13-18",
+        "76:12-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:31-35",
+      "surah": 56,
+      "start": 31,
+      "end": 35,
+      "theme": "Provision and Sustenance",
+      "themeId": "provision-and-sustenance",
+      "title": "Neither Cut Off Nor Withheld",
+      "tier": "standard",
+      "meaning": "Water poured out, fruit in quantity, and then the two denials that define it: not cut off by a season, not kept back by an owner. Commentators point out that these are the two ways fruit fails a person in this world, and the ayah removes them in that order. The last item is raised bedding, followed by a line about the companions being brought into being by a fresh making. Every noun in this stretch carries a passive participle, so each thing is named by what was done to it.",
+      "historicalContext": "Meccan. This completes the landscape of the second garden before the chapter turns to its people. No specific occasion is reported for these ayat. The oases lived on irrigation and on harvests that arrived once a year, and fruit was also property: a grove had an owner, and reaching it depended on his permission as much as on the season.",
+      "keyTerms": [
+        {
+          "arabic": "مَّسْكُوبٍ",
+          "gloss": "poured out, falling",
+          "note": "From a verb for pouring liquid from a vessel. It describes water in motion without a channel, so the image is of a fall rather than of a stream that has to be dug and then maintained."
+        },
+        {
+          "arabic": "مَقْطُوعَةٍ",
+          "gloss": "cut off, ended",
+          "note": "The word for something severed, used of a season ending and of a road being cut. Denying it removes the interruption every orchard has between one harvest and the next one."
+        },
+        {
+          "arabic": "مَمْنُوعَةٍ",
+          "gloss": "withheld, kept back",
+          "note": "From a verb for preventing access. The second denial concerns ownership rather than nature, so the fruit is freed from the two quite separate things that keep people away from it."
+        },
+        {
+          "arabic": "مَّرْفُوعَةٍ",
+          "gloss": "raised, elevated",
+          "note": "A passive participle for something lifted up. Commentators read it as bedding piled high, and some as rank rather than height, and the word carries both without deciding between them."
+        }
+      ],
+      "lifeInProphetsTime": "A date harvest came once, and the whole year was arranged around it. Between harvests you lived on what was stored, and the stores ran down. Groves were owned, walled and watched, and a hungry man walking past fruit he could see was an ordinary sight rather than an injustice. The two denials in this passage name exactly the two reasons a person in that world stood outside a garden.",
+      "didYouKnow": "Every item in the second garden's description is given as a passive participle: pruned, stacked, extended, poured out, not cut off, not withheld, raised. Seven consecutive lines describe things by what has been done to them rather than by what they are, a pattern the chapter uses nowhere else at that length.",
+      "theologicalSignificance": "Abundance is defined here by the removal of two limits rather than by quantity. Nature does not interrupt it and no owner stands between a person and it, which together describe a world without scarcity and without gatekeeping. That is a claim about what spoils good things: the passage locates the problem in seasons and in property, both of them features of arrangement rather than of the fruit itself.",
+      "crossReferences": [
+        {
+          "ref": "13:35",
+          "why": "States the same two qualities of the promised garden, its food perpetual and its shade the same."
+        },
+        {
+          "ref": "14:25",
+          "why": "Uses the image of a good tree yielding its fruit every season by the permission of its Lord."
+        },
+        {
+          "ref": "2:265",
+          "why": "Describes a garden on high ground that gives double produce, and takes light rain when heavy rain does not come."
+        }
+      ],
+      "applyIt": "Open your fridge and find one thing that is there only because of a season somewhere else and a chain of people you will never meet. Say what it took to arrive, out loud, in one sentence. The passage defines abundance as the absence of cutting off and of withholding, and both of those are happening behind that item right now.",
+      "exploreFurther": [
+        "2:261-266",
+        "13:35",
+        "14:24-27"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:36-40",
+      "surah": 56,
+      "start": 36,
+      "end": 40,
+      "theme": "Hope",
+      "themeId": "hope",
+      "title": "A Multitude From The Latecomers",
+      "tier": "standard",
+      "meaning": "The companions of the second garden are described briefly and then counted, and the count is where the passage does its work. The earlier group was a great company from the ancients and only a few from those who came later. This group is a great company from the ancients and a great company from those who came later. One word changes between the two summaries. Commentators take that difference as a statement about proportions across the whole history of humanity rather than about any individual.",
+      "historicalContext": "Meccan. These lines close the description of the second group before the chapter turns to the third. No specific occasion is reported for these ayat. The audience receiving them was numerically tiny, and the two counts, heard one after the other, would have landed as an answer to an obvious worry about arriving late to something that had already begun.",
+      "keyTerms": [
+        {
+          "arabic": "أَبْكَارًا",
+          "gloss": "untouched, new",
+          "note": "A plural from the root for the first of anything, which also gives Arabic its words for a firstborn and for early morning. The emphasis of the word falls on newness rather than on any other quality."
+        },
+        {
+          "arabic": "عُرُبًا",
+          "gloss": "loving, devoted",
+          "note": "An adjective the lexicons explain as deeply attached and affectionate toward a spouse. The commentators gloss it by devotion rather than by appearance, so the quality named is a disposition."
+        },
+        {
+          "arabic": "أَتْرَابًا",
+          "gloss": "of the same age",
+          "note": "From a root connected with dust, since children who played in the same dust grew up together. The word means coevals, so what is described is a matched generation rather than youth on its own."
+        },
+        {
+          "arabic": "وَثُلَّةٌ",
+          "gloss": "and a large company",
+          "note": "The same noun used of the first group, repeated here where the earlier summary had a word meaning few. The single change between two otherwise identical lines is the whole point of the passage."
+        }
+      ],
+      "lifeInProphetsTime": "Age sets mattered in Arabia. Boys who grew up in the same season of the same camp stayed a group for life, fought beside each other and were buried near each other, and a man was placed socially by naming his coevals. Describing the garden's companions as of one age was describing a cohort rather than a look. It located a person inside a generation, which is where an Arab already stood.",
+      "didYouKnow": "The chapter summarises each of its two gardens with the same two line count and changes a single word between them. The earlier group has few from the later generations; the second has a great company of them. A reader who hears the second summary without remembering the first will miss the only comparison the chapter actually makes.",
+      "theologicalSignificance": "Rank is affirmed and then made bearable. The chapter has already said that the highest group draws mostly from earlier generations, which could leave a late arrival with nothing to aim at. These lines answer that without adjusting the first statement, since the second garden is filled equally from both eras. Degrees stay real and the door stays wide, and the passage manages both by changing one word rather than by arguing.",
+      "crossReferences": [
+        {
+          "ref": "56:13-14",
+          "why": "Gives the first of the two counts, against which this one is read and from which one word differs."
+        },
+        {
+          "ref": "9:100",
+          "why": "Names the foremost of the first generations and those who follow them well, joining both in one promise."
+        },
+        {
+          "ref": "57:10",
+          "why": "Distinguishes those who spent before a victory from those who spent after it, and promises good to both."
+        }
+      ],
+      "applyIt": "Think of something you started later than you wanted to: a language, a practice, a friendship, a career. Write one sentence about what you have actually done with it since. The chapter concedes that some ranks are mostly filled by people who arrived early, and then spends two lines saying that this is not the only door in the wall.",
+      "exploreFurther": [
+        "9:100-102",
+        "57:10",
+        "56:1-10"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:41-45",
+      "surah": 56,
+      "start": 41,
+      "end": 45,
+      "theme": "Wealth and Property",
+      "themeId": "wealth-and-property",
+      "title": "A Shade That Gives No Shade",
+      "tier": "standard",
+      "meaning": "The third group is announced with the same doubled question and then placed in three things, each a parody of a comfort. A scorching wind instead of a breeze, scalding water instead of drink, and a shade made of black smoke. The last is denied twice over: not cool, and not generous. Shade is the only element that appears in both this description and the second garden's, which is how the passage measures the distance between them. Then the cause is named, and it is affluence.",
+      "historicalContext": "Meccan, addressed to a leadership whose wealth was the visible argument against the message. No specific occasion is reported for these ayat. The word used for their former state names people softened by ease, and the Quran uses it repeatedly of the prosperous classes of destroyed communities, so the charge made here is one the surrounding chapters make in the same terms.",
+      "keyTerms": [
+        {
+          "arabic": "سَمُومٍ",
+          "gloss": "a scorching wind",
+          "note": "A hot wind that gets into the pores, from a root for a small opening. It appears three times in the Quran, once of the material the jinn were made from and twice of punishment."
+        },
+        {
+          "arabic": "يَحْمُومٍ",
+          "gloss": "black smoke",
+          "note": "Found only here, from a root for something intensely black, or for heat. The commentators read it as smoke thick enough to cast a shadow, which is what allows it to be called a shade at all."
+        },
+        {
+          "arabic": "وَلَا",
+          "gloss": "generous, honourable",
+          "note": "The ordinary word for a noble character, applied here to a shadow. Arabic uses it of anything that gives freely, so denying it to the smoke says that it withholds what a shade exists to provide."
+        },
+        {
+          "arabic": "مُتْرَفِينَ",
+          "gloss": "softened by luxury",
+          "note": "A passive form from a root for ease and plenty, describing people to whom comfort has been done. The Quran uses it of the leading classes of earlier communities, always at the point where they refuse a message."
+        }
+      ],
+      "lifeInProphetsTime": "The hot wind was a real and named danger. It came off the sand in summer, carried no dust to warn you, and could kill a traveller between wells. Shade in that country was survival equipment, and a man caught in the open looked for any shadow at all, including a rock's or his own camel's. Offering someone a shadow made of smoke is a very particular cruelty in that landscape.",
+      "didYouKnow": "Shade is the only item that appears in both the second garden and the punishment described here, and the chapter uses the same word for each: extended shade in one place, a shade of black smoke in the other. Everything else on the two lists differs, so the repeated word is the hinge on which the contrast turns.",
+      "theologicalSignificance": "The reason given for this group's state is not disbelief in the abstract but comfort. They were softened by ease and they persisted, and the persistence is named before the denial of resurrection that follows it. That order makes affluence a condition which produces a position, rather than an offence in itself. The Quran is consistent on the point across many chapters, and it is one of the few claims it repeats with the same vocabulary each time.",
+      "crossReferences": [
+        {
+          "ref": "34:34-35",
+          "why": "Reports the affluent of every warned town making the same objection, in almost the same vocabulary."
+        },
+        {
+          "ref": "23:64-66",
+          "why": "Shows the comfortable among them crying out when the punishment takes them, and being told not to."
+        },
+        {
+          "ref": "11:116",
+          "why": "Says the wrongdoers pursued the ease they had been given, and names that as what made them guilty."
+        }
+      ],
+      "applyIt": "Name the comfort you would find hardest to give up for a month. Not the large one you would say out loud; the small one: a temperature, a mattress, a coffee, a particular seat. Just identify it accurately today. The chapter names softness by ease as a condition rather than as a sin, and conditions are worth knowing before they are worth arguing about.",
+      "exploreFurther": [
+        "11:116-117",
+        "23:63-67",
+        "34:31-35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:46-50",
+      "surah": 56,
+      "start": 46,
+      "end": 50,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "And Our Ancient Ancestors Too",
+      "tier": "standard",
+      "meaning": "Two habits are named in sequence. They persisted in a great breach, which commentators read as the deliberate breaking of oaths or as the gravest wrongdoing generally, and both readings run through the classical works. Then their argument is quoted, and it is not philosophical: when we are dead and dust and bones, are we really to be raised, and our forefathers with us. The reply is one instruction and one line of content. Say it. The first and the last are gathered to a fixed time on a day already known.",
+      "historicalContext": "Meccan. The objection quoted here was the standing Meccan response to resurrection and is repeated across the early chapters in similar words. No specific occasion is reported for these ayat. Ancestry was the frame of the argument, since a man's forefathers were the guarantee of his standing, and raising them was the part the objectors found most absurd of all.",
+      "keyTerms": [
+        {
+          "arabic": "يُصِرُّونَ",
+          "gloss": "they persist, they insist",
+          "note": "From a root for tying something tight, used of knotting a purse shut. Persisting is described as binding yourself to a position, which is a different failure from committing an act once."
+        },
+        {
+          "arabic": "ٱلْحِنثِ",
+          "gloss": "a breach, a great wrong",
+          "note": "Found only here in the Quran. The root elsewhere gives the word for breaking an oath, and the commentators read it either in that narrow sense or as the gravest wrongdoing in general."
+        },
+        {
+          "arabic": "مِيقَـٰتِ",
+          "gloss": "an appointed time",
+          "note": "A noun for a fixed moment or a place of meeting, the same word used for the appointed times of the pilgrimage. It makes the gathering an appointment rather than something that merely happens to people."
+        }
+      ],
+      "lifeInProphetsTime": "Genealogy was the Arabian archive. A man could recite his line back many generations, and his standing, his alliances and his entitlements all came out of that recitation. The dead were not distant figures but the load-bearing part of a living identity. To say those ancestors would be raised and assembled alongside their descendants was to interfere with the one structure in which a man's worth was held.",
+      "didYouKnow": "The word used here for their persistent wrongdoing appears once in the whole Quran. Its root is otherwise used for the breaking of an oath, which is why part of the classical tradition reads the line as being about broken pledges specifically, while the rest reads it as a general term for a great and repeated wrong.",
+      "theologicalSignificance": "The order of the two charges is the argument. Persistence comes first and denial of resurrection second, which presents the doctrine they rejected as the consequence of a fixed position rather than its cause. The reply reinforces that reading: no proof is offered, only the assertion of an appointment, framed as something to be conveyed rather than debated. What is given as the answer is a date, and a date does not argue.",
+      "crossReferences": [
+        {
+          "ref": "37:16-18",
+          "why": "Quotes the identical objection about dust and bones and forefathers, and gives the same flat reply."
+        },
+        {
+          "ref": "50:2-4",
+          "why": "Answers the same complaint by saying what the earth takes from the dead is known and recorded."
+        },
+        {
+          "ref": "75:3-4",
+          "why": "Meets the argument about bones directly, saying the fingertips themselves can be put back in order."
+        }
+      ],
+      "applyIt": "Find a position you have held for years and ask when you last checked it. Not a belief you would defend in public; something small, like a view about a relative, a rule about food, an opinion about a city. The word this passage uses for persistence means tying a knot, and the only way to know if a knot still holds is to look at it.",
+      "exploreFurther": [
+        "37:12-21",
+        "50:1-11",
+        "75:1-15"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:51-55",
+      "surah": 56,
+      "start": 51,
+      "end": 55,
+      "theme": "Guidance",
+      "themeId": "guidance",
+      "title": "Drinking Like Thirsty Camels",
+      "tier": "standard",
+      "meaning": "The address turns to the second person and names its audience twice over: you who have gone astray, you who deny. Then a meal in three stages, and the sequence is what makes it unbearable. Eating from a bitter tree, filling the stomach with it, and drinking scalding water on top of that. The last line supplies the simile, drawn from a specific animal condition: camels with a disease that leaves them drinking without ever being satisfied. The passage ends on thirst rather than on heat.",
+      "historicalContext": "Meccan. The chapter has been describing the third group in the third person, and here it switches to direct address, which is the only place in the surah it does so at any length. No specific occasion is reported for these ayat. The tree named here appears in two other early chapters in the same setting, and one of those records the objectors treating a tree that grows in fire as a joke.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلضَّآلُّونَ ٱلْمُكَذِّبُونَ",
+          "gloss": "you astray, you deniers",
+          "note": "Two definite plurals stacked without a conjunction. The chapter uses the same pair again in its closing lines, in the opposite order, which is one of several frames holding the surah together."
+        },
+        {
+          "arabic": "ٱلْبُطُونَ",
+          "gloss": "the bellies",
+          "note": "The plain word for stomachs, used elsewhere of what a wrongdoer swallows. Its bluntness is the point: the line describes the mechanics of eating rather than the taste of what is eaten."
+        },
+        {
+          "arabic": "ٱلْهِيمِ",
+          "gloss": "camels sick with thirst",
+          "note": "Found only here. The lexicons describe a disease that leaves an animal drinking endlessly without relief, so the simile names a thirst that drinking makes worse rather than better."
+        }
+      ],
+      "lifeInProphetsTime": "A herdsman knew the sick animal at the trough, the one that drank and drank and stayed gaunt. It was a familiar and slightly frightening sight, because the disease could not be helped by the one thing that should have helped. Water was also the axis of the whole economy, carried, owned and rationed, so an image of drinking that does not satisfy inverted the most reliable relief that world had.",
+      "didYouKnow": "The word for the diseased camels in the last line of this passage occurs once in the Quran. The name of the bitter tree occurs three times, always in early chapters, and one of them reports the objection that a tree could not possibly grow inside a fire, which suggests the image was being argued over in Mecca while it was still new.",
+      "theologicalSignificance": "The passage describes punishment as consumption that cannot end, which is a particular choice. Nothing here is imposed from outside; the scene is of people eating and drinking, and the horror is that the appetite is never closed. Placing that immediately after a description of people softened by luxury connects the two, since the failure named earlier was also a matter of appetite. What is described is not the reversal of their life but its continuation without the relief.",
+      "crossReferences": [
+        {
+          "ref": "37:62-66",
+          "why": "Names the same tree, describes it growing from the bottom of the fire, and calls it a trial."
+        },
+        {
+          "ref": "44:43-46",
+          "why": "Gives the same tree with boiling water, and the same order of eating first and drinking after."
+        },
+        {
+          "ref": "14:16-17",
+          "why": "Describes a drink swallowed in mouthfuls that cannot be got down, with death approaching and never arriving."
+        }
+      ],
+      "applyIt": "Notice one appetite today that gets stronger the more you feed it. Scrolling, a second helping, checking a number. Do not try to stop it. Just watch one cycle of it from the outside and name the moment where satisfaction should have arrived and did not. The passage is describing exactly that shape, extended without a limit.",
+      "exploreFurther": [
+        "14:15-17",
+        "37:62-68",
+        "44:43-50"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:48:28.038Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:56-60",
+      "surah": 56,
+      "start": 56,
+      "end": 60,
+      "theme": "Creation",
+      "themeId": "creation",
+      "title": "This Is Their Welcome",
+      "tier": "standard",
+      "meaning": "One word closes the description of the third group, and it is the word a host uses. This is their hospitality on the Day of Judgement, the provision set out for an arriving guest. Then the chapter changes method entirely. It stops describing and starts asking, and the first question is about the beginning of a human being. We created you, so why will you not confirm it. Have you considered what you emit. Do you create it, or are We the creators. The argument runs from something nobody disputed to something everybody did.",
+      "historicalContext": "Meccan. This is the turn in the chapter's structure: the first two thirds are scene and the last third is argument, and the join is made in a single line. No specific occasion is reported for these ayat. The audience being addressed had heard the descriptions and rejected the premise underneath them, so the surah changes tactics and starts again from something they could not deny.",
+      "keyTerms": [
+        {
+          "arabic": "نُزُلُهُمْ",
+          "gloss": "their welcome, their hospitality",
+          "note": "The provision a host sets out for a guest on arrival. The Quran uses the same word of the garden elsewhere, so both destinations are described with the vocabulary of receiving a visitor into your house."
+        },
+        {
+          "arabic": "تُمْنُونَ",
+          "gloss": "what you emit",
+          "note": "A verb about the discharge of seed, from a root that also gives the words for a wish and for an appointed end. The question begins at the least dignified point in the human story on purpose."
+        },
+        {
+          "arabic": "بِمَسْبُوقِينَ",
+          "gloss": "outrun, overtaken",
+          "note": "A racing word. Death is presented as something that cannot be got ahead of, and the passive construction puts God in the position of a runner nobody passes, which is the register the line chooses."
+        }
+      ],
+      "lifeInProphetsTime": "Hospitality had a technical vocabulary. What you put before a guest in the first hour, ahead of the real meal, had its own name, and failing at it was a public disgrace. Everyone knew the word used in this line from the good side of it. Hearing it applied to boiling water and a bitter tree produced the particular discomfort of a familiar courtesy used exactly backwards.",
+      "didYouKnow": "The word for what is set before a guest is used in the Quran for both destinations. It describes the fire here, and in other chapters it describes the gardens prepared for the righteous. The same term returns a second time inside this surah, near its end, in the shorter summary of the same three groups.",
+      "theologicalSignificance": "The chapter's argument begins where the objection began. The Meccans denied that a body reduced to dust could be reassembled, and the answer offered is not a demonstration of power but a reminder of a process already completed. You were made once, out of something you cannot claim to have made. The move is from a known beginning to a contested end, with no appeal to authority, which is why it still reads as an argument.",
+      "crossReferences": [
+        {
+          "ref": "75:36-40",
+          "why": "Runs the identical argument from a drop of fluid to the question of whether that maker cannot revive the dead."
+        },
+        {
+          "ref": "22:5",
+          "why": "Lays out the whole sequence of formation in detail and draws the same conclusion about the dead earth."
+        },
+        {
+          "ref": "18:107",
+          "why": "Uses the same word for a host's provision, there of the gardens prepared for those who believed."
+        }
+      ],
+      "applyIt": "Ask an older relative what they remember about the first weeks of your life, or if that is not possible, find the earliest photograph of yourself that exists. Sit with it for a minute without commentary. The chapter starts its whole argument at that point, on the grounds that it is the one part of your existence you had no hand in.",
+      "exploreFurther": [
+        "18:105-108",
+        "22:5-7",
+        "75:36-40"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.574Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:61-65",
+      "surah": 56,
+      "start": 61,
+      "end": 65,
+      "theme": "Knowledge",
+      "themeId": "knowledge",
+      "title": "You Have Known The First Making",
+      "tier": "standard",
+      "meaning": "The thought continues from the line before and widens. Death is decreed and nobody outruns it, so that others like you can be put in your place and you can be brought into being in a form you know nothing about. Then a sentence that carries the whole passage: you have already known the first making, so why will you not remember. Commentators read it as an argument from experience rather than from power. The second question follows, about the crop, and this time the alternative is spelled out.",
+      "historicalContext": "Meccan. These lines belong to the chapter's second half, which argues by four parallel questions about seed, crop, water and fire. No specific occasion is reported for them. Agriculture was not a Meccan livelihood but the whole town depended on it, since the valley grew nothing and grain arrived by caravan from the oases and from the north.",
+      "keyTerms": [
+        {
+          "arabic": "وَنُنشِئَكُمْ",
+          "gloss": "and bring you into being",
+          "note": "A verb for raising something up, used of putting up a building and of growing a plant. It is not the word for repeating an act, so the second making is described as constructive rather than as a copy."
+        },
+        {
+          "arabic": "ٱلنَّشْأَةَ ٱلْأُولَىٰ",
+          "gloss": "the first bringing forth",
+          "note": "This exact phrase occurs only here in the Quran. It names the beginning of a human being as something already witnessed, which is what lets the line ask for memory rather than for belief."
+        },
+        {
+          "arabic": "حُطَـٰمًا",
+          "gloss": "broken debris, stubble",
+          "note": "Crushed dry matter, the state of a crop that has failed. The word appears three times in the Quran, and one of the others uses it of worldly life turning to straw after a green season."
+        },
+        {
+          "arabic": "تَفَكَّهُونَ",
+          "gloss": "you would exclaim in regret",
+          "note": "From the same root as the word for fruit used throughout this chapter's gardens. Commentators read it here as regret spoken aloud, so the vocabulary of enjoyment is turned to describe its loss."
+        }
+      ],
+      "lifeInProphetsTime": "A grain harvest could be destroyed in an afternoon. Hot wind at the wrong point in the ripening, or rain that failed to arrive, and a field went from standing crop to brittle stalks. Farmers in the oases carried that risk every season and talked about little else at the end of one. The two sentences quoted in the next ayat are the two things such a man actually said.",
+      "didYouKnow": "The verb describing what the farmers would do if the crop failed comes from the same root as the word for fruit, which this chapter has used repeatedly in its gardens. Arabic lets that root cover both enjoying something and turning it over in talk, so the failed harvest is described in the vocabulary of the harvest that succeeded.",
+      "theologicalSignificance": "The argument rests on memory rather than on proof. You have known the first making, so the second is not a new claim but the same claim again, and refusing it is described as forgetfulness rather than as scepticism. The passage also puts replacement in the middle of it, since others like you will take your place. That is offered without consolation, as a statement about how the world already runs.",
+      "crossReferences": [
+        {
+          "ref": "53:47",
+          "why": "States that the second bringing forth is also upon Him, using the same noun this passage uses."
+        },
+        {
+          "ref": "29:19-20",
+          "why": "Tells the reader to travel and see how creation began, and says the later making follows the same way."
+        },
+        {
+          "ref": "57:20",
+          "why": "Uses the same word for broken straw, there inside a parable about the whole of worldly life."
+        }
+      ],
+      "applyIt": "Plant one thing this month, in soil, from a seed. A herb on a windowsill is enough. Do the minimum and then watch it, and notice exactly how much of the process you are responsible for. This passage is an argument built entirely on that gap, and it works better when the gap is in front of you rather than described to you.",
+      "exploreFurther": [
+        "29:19-23",
+        "53:43-49",
+        "57:20-21"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.590Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:66-70",
+      "surah": 56,
+      "start": 66,
+      "end": 70,
+      "theme": "Gratitude",
+      "themeId": "gratitude",
+      "title": "We Are In Debt, We Are Robbed",
+      "tier": "standard",
+      "meaning": "Two sentences are quoted from the ruined farmers and they do not agree with each other. The first says we have been landed with a loss; the second corrects it and says no, we have been cut off from what was ours. Commentators note that the second is the harder statement, because it assumes an entitlement. Then the third question, about water, with a detail worth catching: the alternative offered is not drought but salt. The line closes on a different verb from the two before it.",
+      "historicalContext": "Meccan. Mecca had no river and almost no rain, and its water came from wells sunk in a dry valley, so this question landed on an audience for whom drinkable water was a daily calculation rather than an assumption. No specific occasion is reported for these ayat. They form the third of the four parallel questions that carry the chapter's closing argument.",
+      "keyTerms": [
+        {
+          "arabic": "لَمُغْرَمُونَ",
+          "gloss": "burdened with a loss",
+          "note": "From the root for a debt that has to be paid. The complaint is phrased in accounting terms, so the first reaction to the ruined field is to reckon it as money owed rather than as anything else."
+        },
+        {
+          "arabic": "مَحْرُومُونَ",
+          "gloss": "deprived, cut off",
+          "note": "A passive participle from a root about something placed out of reach. The word carries the sense of being denied a share, which is why this correction is sharper than the sentence it replaces."
+        },
+        {
+          "arabic": "ٱلْمُزْنِ",
+          "gloss": "the rain cloud",
+          "note": "A specific word for the white cloud that carries rain, found only here in the Quran. The question names the exact part of the sky the water is in, rather than the sky in general."
+        },
+        {
+          "arabic": "أُجَاجًا",
+          "gloss": "bitter, undrinkable",
+          "note": "Salt water that cannot be swallowed. The word appears three times in the Book, twice describing the sea and once, here, as what your drinking water might have been instead."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's water came from wells sunk in a valley floor, and the good ones were famous and owned. Bad water was not a theory: brackish wells existed, were known by name, and were avoided. A caravan chose its route by where the sweet water lay. The threat in this ayah is not that water would be taken away but that it would still be there and undrinkable, which was a familiar disappointment.",
+      "didYouKnow": "The four questions in this part of the chapter each end with a different demand: believe, remember, give thanks, and then glorify. The verbs are not interchangeable, and read in order they move from assent through memory and gratitude to worship, which is the shape of the argument rather than a list of synonyms for one idea.",
+      "theologicalSignificance": "Gratitude is placed at the end of an argument rather than at the start of a devotion, which is unusual. The passage reasons from ownership: you did not send it down, so the thing you drink every day arrives from outside any claim you have on it. The quoted complaint before it makes the same point from the other side, since a man who says he has been deprived is assuming something was already his.",
+      "crossReferences": [
+        {
+          "ref": "67:30",
+          "why": "Puts the same question at the end of a surah, asking who would bring you flowing water if yours sank away."
+        },
+        {
+          "ref": "25:48-49",
+          "why": "Describes pure water sent down from the sky to revive a dead land and to give drink to many creatures."
+        },
+        {
+          "ref": "16:10-11",
+          "why": "Names the rain as the source of drink and of pasture, and calls it a sign for people who reflect."
+        }
+      ],
+      "applyIt": "Drink a glass of water today standing at the tap and say one sentence before you drink it. Nothing elaborate. The chapter ends its water question with the word thanks rather than with the word believe, and that distinction only becomes real when it attaches to a specific mouthful rather than to the idea of water in general.",
+      "exploreFurther": [
+        "16:10-16",
+        "25:45-50",
+        "67:28-30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.590Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:71-75",
+      "surah": 56,
+      "start": 71,
+      "end": 75,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "The Fire You Kindle",
+      "tier": "standard",
+      "meaning": "The last of the four questions is about fire, and it is put in a way that assumes a detail: the tree its wood comes from. Do you grow that, or do We. Then the purpose is given in two words and they are unexpected. A reminder, and a provision for those who camp in open country. Commentators read the first as a reminder of the greater fire and the second plainly, as the practical use of a campfire. The section then turns from argument to response.",
+      "historicalContext": "Meccan. This completes the four questions, and the response the chapter wants arrives here for the first time. No specific occasion is reported for these ayat. Fire in Arabia was struck from particular trees whose wood held a spark reliably, and a traveller carried pieces of them, so a question about the tree was a question about the first link in a chain everybody used daily.",
+      "keyTerms": [
+        {
+          "arabic": "تُورُونَ",
+          "gloss": "you strike, you kindle",
+          "note": "A verb for producing fire from something that hides it, used of striking a spark out of wood or stone. It names the human act precisely, which is what lets the next line ask about the part that is not human."
+        },
+        {
+          "arabic": "تَذْكِرَةً",
+          "gloss": "a reminder",
+          "note": "A noun for something that brings a thing back to mind. Applying it to fire turns a campfire into a pointer, and the commentators read the thing pointed at as the fire described earlier in this same chapter."
+        },
+        {
+          "arabic": "لِّلْمُقْوِينَ",
+          "gloss": "for those in open country",
+          "note": "Found only here. The lexicons describe travellers halted in empty land, from a root for a place with nothing in it, so the word names the people for whom a fire is equipment rather than comfort."
+        }
+      ],
+      "lifeInProphetsTime": "A fire in the desert did four jobs at once: warmth after dark, cooking, keeping animals off, and showing where you were. Arab hospitality was measured partly by whether your fire could be seen from a distance, and poets praised men who kept a high blaze so that travellers could find them. Two particular trees were known to give a spark, and you carried them with the rest of your kit.",
+      "didYouKnow": "The Quran elsewhere describes the fire you kindle as coming out of a green tree, which is the same observation this passage makes from the other end. Fresh wood holds water and will not catch, and the point being pressed is that the flame was in the living tree all along, waiting on something a human being did not put there.",
+      "theologicalSignificance": "The chapter has argued from seed, crop and water, and it finishes with the element that looks most like a human invention. Fire is what people point to when they describe themselves as makers, and the passage concedes the striking and asks about the fuel. It then gives fire a second job, as a reminder, which turns a tool into a sign. The response asked for is not assent but glorification, so the argument ends outside argument.",
+      "crossReferences": [
+        {
+          "ref": "36:80",
+          "why": "Names the green tree from which you kindle fire, inside the same argument about raising the dead."
+        },
+        {
+          "ref": "20:10",
+          "why": "Shows Moses seeing a fire in the distance and going toward it for exactly the uses this passage lists."
+        },
+        {
+          "ref": "87:1",
+          "why": "Gives the same command to glorify the name of one's Lord, there as the opening line of a surah."
+        }
+      ],
+      "applyIt": "Light something tonight, a candle or a gas ring, and watch the first few seconds of it. Notice which part of that you supplied and which part you did not. The chapter concedes the striking and asks about everything upstream of it, and the concession only lands if you have recently done the striking yourself.",
+      "exploreFurther": [
+        "20:9-16",
+        "36:77-83",
+        "87:1-9"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.593Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:76-80",
+      "surah": 56,
+      "start": 76,
+      "end": 80,
+      "theme": "The Quran Itself",
+      "themeId": "the-quran",
+      "title": "A Noble Recitation, Kept Covered",
+      "tier": "standard",
+      "meaning": "The oath just sworn is graded before anything is sworn to: this is a great oath, if you knew. Then four short statements, one to a line. It is a noble recitation. It is in a Book kept covered. None touch it except the purified. It is a sending down from the Lord of the worlds. Commentators read the covered Book as the record held with God and the purified as the angels, and they note that the grammar of that line is a statement of fact rather than an instruction.",
+      "historicalContext": "Meccan, from a chapter answering the charge that the recitation was the work of a poet or a soothsayer. No specific occasion is reported for these ayat. The stars sworn by in the line before were the instruments of both those professions, since diviners read them and travellers steered by them, so the oath and the denial of human authorship are placed deliberately close together.",
+      "keyTerms": [
+        {
+          "arabic": "كَرِيمٌ",
+          "gloss": "noble, generous",
+          "note": "The same adjective this chapter denied to a shade that gives nothing. Applied to a text it means generous in what it yields as much as high in rank, so the word carries both standing and usefulness."
+        },
+        {
+          "arabic": "مَّكْنُونٍ",
+          "gloss": "kept covered, protected",
+          "note": "A passive participle for something stored away and covered over. The commentators read the Book as the record held with God, and the participle says its condition is being protected rather than being concealed from anyone."
+        },
+        {
+          "arabic": "ٱلْمُطَهَّرُونَ",
+          "gloss": "the purified ones",
+          "note": "A passive plural, those who have been purified rather than those who purify themselves. Most classical commentators read it of the angels, in keeping with the line's grammar, which reports rather than commands."
+        },
+        {
+          "arabic": "تَنزِيلٌ",
+          "gloss": "a sending down",
+          "note": "A verbal noun describing gradual descent rather than a single drop. The word carries the manner of the revelation into its name, since the recitation arrived in portions across more than twenty years."
+        }
+      ],
+      "lifeInProphetsTime": "Mecca's poets and diviners were professionals with reputations, and both were understood to have a source beyond ordinary speech. A soothsayer had an informant; a poet was said to have one too. The charge against the recitation was not that it was poor but that it belonged to one of those two known categories. These lines rule out both by naming a different origin and a different place of keeping.",
+      "didYouKnow": "The Quran swears by a great many things and only rarely stops to comment on the oath it has just made. Here it does so with a parenthesis, if you only knew, which claims the oath's magnitude and puts it out of the listener's reach in the same clause. The four statements that follow are each a single short line.",
+      "theologicalSignificance": "The passage locates the text before it reaches anybody. It is noble, it sits in a protected record, its handling there is restricted, and it comes down from the Lord of the worlds. That sequence answers the question of authorship by describing a chain rather than by defending a person, which is why no messenger is mentioned in these four lines at all. The recitation is presented as transmitted intact rather than composed.",
+      "crossReferences": [
+        {
+          "ref": "85:21-22",
+          "why": "Calls it a glorious recitation in a preserved tablet, the same two claims compressed into two lines."
+        },
+        {
+          "ref": "26:210-212",
+          "why": "Denies that the devils brought it down and says they are barred from hearing it at all."
+        },
+        {
+          "ref": "80:11-16",
+          "why": "Describes the same record, honoured pages in the hands of noble and virtuous scribes."
+        }
+      ],
+      "applyIt": "Read four short lines of the Quran today the way this passage presents them, as something that arrived rather than something that was written. Read them slowly, twice, and notice the difference between reading for meaning and reading for source. The chapter spends four whole lines on where the text came from before it says anything about what the text says.",
+      "exploreFurther": [
+        "26:192-212",
+        "80:11-16",
+        "85:20-22"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.593Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:81-85",
+      "surah": 56,
+      "start": 81,
+      "end": 85,
+      "theme": "Time and the Brevity of Life",
+      "themeId": "time-and-life",
+      "title": "When It Reaches The Throat",
+      "tier": "standard",
+      "meaning": "Two accusations, then a scene. Is it this account that you treat lightly, and do you make your denial into your daily living. Commentators record a second reading of that line, taking it as turning your thanks for provision into denial. Then the chapter goes to a deathbed. When it reaches the throat and you are sitting there watching, We are nearer to him than you are, and you do not see it. The sentence is left unfinished at that point, and its conclusion comes two lines later.",
+      "historicalContext": "Meccan. These lines follow the statement about where the recitation comes from and turn it into a charge. No specific occasion is reported for them. Deathbeds were public in a way they are not now: a dying person lay in one room surrounded by family, and the moment described here, when the breathing changes and everybody present knows, was something almost every listener had witnessed.",
+      "keyTerms": [
+        {
+          "arabic": "مُّدْهِنُونَ",
+          "gloss": "treating lightly, humouring",
+          "note": "From the root for oil. The verb describes smoothing something over or going easy on it, so the charge is not hostility but a soft dismissal that avoids ever giving a direct answer."
+        },
+        {
+          "arabic": "رِزْقَكُمْ",
+          "gloss": "your provision, your portion",
+          "note": "The ordinary word for what a person is given to live on. Commentators read the line two ways, as making denial your livelihood or as making your share of thanks into denial, and both are recorded."
+        },
+        {
+          "arabic": "ٱلْحُلْقُومَ",
+          "gloss": "the throat, the windpipe",
+          "note": "The anatomical word for the gullet, found only here in the Quran. Its precision is the point: the ayah names the exact place the soul is said to reach and describes nothing else about the moment."
+        }
+      ],
+      "lifeInProphetsTime": "A death in seventh-century Arabia happened in company. There were no separate rooms for it, and a family sat with a dying man through the night watching the breathing and the colour. People knew the sequence by sight and had words for each stage of it. The ayah describes the last of them, the point at which the watchers can do nothing and everyone in the room understands that.",
+      "didYouKnow": "The Quran twice says that God is nearer to a person than the people around them. Here it is said at the moment of dying, with the family close enough to touch; in surah 50 it is said of ordinary life, nearer than the jugular vein. The two statements between them bracket a human being's whole span with one claim.",
+      "theologicalSignificance": "Nearness is asserted at the one moment when human presence is least useful. That placement carries the argument, since the people in the room are as close as people can get and the passage says something is closer and cannot be seen. The lines before it, about treating the message lightly, are answered by this scene rather than by a rebuttal. A soft dismissal is only available at a distance from the event.",
+      "crossReferences": [
+        {
+          "ref": "50:16",
+          "why": "States the same nearness during ordinary life, closer to a person than their own jugular vein."
+        },
+        {
+          "ref": "75:26-30",
+          "why": "Gives the same moment in more detail, the soul at the collarbones and the legs twined together."
+        },
+        {
+          "ref": "6:93",
+          "why": "Describes the angels stretching out their hands at that moment and what is said to the one dying."
+        }
+      ],
+      "applyIt": "Sit with someone who is ill this week, even briefly, and do not fill the silence. The chapter puts its sharpest claim in a room exactly like that one, addressed to the people who are watching rather than to the person in the bed. You do not have to think about the claim while you are there. Go, and let it come afterwards.",
+      "exploreFurther": [
+        "6:93-94",
+        "50:16-19",
+        "75:26-35"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.593Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:86-90",
+      "surah": 56,
+      "start": 86,
+      "end": 90,
+      "theme": "The Purpose of Life",
+      "themeId": "purpose-of-life",
+      "title": "Then Send It Back",
+      "tier": "standard",
+      "meaning": "The suspended sentence finishes here and it is a challenge. If you are not going to be held to account, send it back, if you are telling the truth. Commentators read it as an argument rather than a taunt: the ability to stop a death would be the proof that nothing is owed by anybody. Then the three outcomes arrive in order, and the first is given in two nouns that sound like each other. Rest, and fragrance, and a garden of bliss. The second receives a greeting rather than a description.",
+      "historicalContext": "Meccan. These lines close the chapter's argument by returning to its opening division into three groups, now applied to one dying person rather than to all humanity. No specific occasion is reported for them. The challenge they contain is put inside a conditional the audience would never have accepted, which is how several of the early chapters build their arguments.",
+      "keyTerms": [
+        {
+          "arabic": "مَدِينِينَ",
+          "gloss": "held to account, judged",
+          "note": "A passive plural from the root for a debt owed and for judgement. The same root gave this chapter its earlier phrase for the Day of Judgement, so the challenge is phrased in the vocabulary of accounts being settled."
+        },
+        {
+          "arabic": "تَرْجِعُونَهَآ",
+          "gloss": "you send it back",
+          "note": "A plural imperative addressed to the watchers rather than to the one dying. It asks the people in the room to do the single thing they have just been shown they cannot do, which is the argument in one word."
+        },
+        {
+          "arabic": "فَرَوْحٌ وَرَيْحَانٌ",
+          "gloss": "rest and fragrance",
+          "note": "Two nouns from one root that also gives the word for wind. The first is read as ease or relief and the second as sweet scent, and the pairing arrives as sound before it arrives as sense."
+        }
+      ],
+      "lifeInProphetsTime": "Scent was a currency of hospitality and of honour. Incense came up the western route from the south and was burned to receive a guest, and a host's generosity could be judged by what a room smelled of. The dead were perfumed before burial as well. Naming fragrance immediately after a deathbed scene put the reward inside the one sense most tied, in that culture, to being welcomed.",
+      "didYouKnow": "The word for the fragrance promised here occurs twice in the Quran. The other occurrence is in the chapter immediately before this one, in a list of things growing out of the earth, so the same noun names a plant of this world and a reward of the next in two consecutive surahs.",
+      "theologicalSignificance": "Accountability is argued from the inability to prevent a death. If nothing is owed, then the soul belongs to nobody and can be recalled; since it cannot be, something is owed. That is a compact argument and the chapter does not develop it further. The three outcomes that follow also bring the surah's opening division down to a single person, which changes its scale: a cosmic sorting is shown happening in one room, to somebody's relative.",
+      "crossReferences": [
+        {
+          "ref": "56:7-10",
+          "why": "Announces the same three groups at the scale of all humanity, which these lines apply to one death."
+        },
+        {
+          "ref": "89:27-30",
+          "why": "Addresses the soul at rest directly and tells it to return to its Lord well pleased and pleasing."
+        },
+        {
+          "ref": "16:32",
+          "why": "Describes the greeting given by the angels to the God-conscious whom they take in a good state."
+        }
+      ],
+      "applyIt": "Write down what you would want said about you in the room after you left it. Not the eulogy; the first sentence somebody says once the door closes. Then look at the gap between that sentence and this week. The passage compresses the whole of judgement into one moment in one room, and this is the closest you can get to standing in it.",
+      "exploreFurther": [
+        "16:28-32",
+        "79:37-41",
+        "89:27-30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.593Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:91-95",
+      "surah": 56,
+      "start": 91,
+      "end": 95,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "The Truth Of Certainty",
+      "tier": "standard",
+      "meaning": "The second outcome is a greeting and nothing else: peace to you, from the companions of the right. Then the third, named with the same two words used forty lines earlier but in the opposite order, deniers and astray. Their welcome is scalding water and a burning. And the chapter closes its argument with a phrase that names a degree of certainty rather than a fact. This is the truth of certainty, which classical writers place above knowing a thing and above seeing it.",
+      "historicalContext": "Meccan. These lines complete the three-way sorting that opened the chapter, using the same vocabulary as the opening with its terms reversed. No specific occasion is reported for them. The surah is early, and its closing formula belongs to a period when the central dispute was not about conduct at all but about whether any of what was described would happen.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْمُكَذِّبِينَ ٱلضَّآلِّينَ",
+          "gloss": "the deniers, the astray",
+          "note": "The same two words used of this group forty lines earlier, with their order swapped over. Arabic allows the reversal without a change of sense, and it closes the section by returning to its own opening terms."
+        },
+        {
+          "arabic": "وَتَصْلِيَةُ",
+          "gloss": "and a burning, a roasting",
+          "note": "A verbal noun found only here, from the verb for entering a fire. The noun form names the process rather than the place, so what is described is an experience rather than a destination."
+        },
+        {
+          "arabic": "حَقُّ ٱلْيَقِينِ",
+          "gloss": "the truth of certainty",
+          "note": "A construction joining truth to certainty. Classical writers distinguish three degrees, knowing a thing, seeing it, and this, which they explain as the certainty of having entered the thing itself."
+        }
+      ],
+      "lifeInProphetsTime": "News travelled Arabia by report and was weighed accordingly. A man who had heard of a well was believed cautiously; a man who had seen it was believed; a man who had drunk from it ended the discussion. Caravans made decisions on that scale every week, and the difference between the three kinds of witness was a practical matter with lives attached, not a fine distinction.",
+      "didYouKnow": "The Quran names three degrees of certainty in three different constructions: the knowledge of certainty and the eye of certainty, which appear together in one short late chapter, and the truth of certainty, which occurs twice and both times as the closing claim of a passage about the hereafter.",
+      "theologicalSignificance": "The chapter ends by grading its own claim rather than by repeating it. Instead of asserting the outcome again it asserts the quality of the knowledge behind it, which is why the last statement is about certainty and not about the fire. The sorting is also completed in the reverse of the opening order, so the surah closes the circle it opened, and a reader who notices the reversal has been handed the structure along with the content.",
+      "crossReferences": [
+        {
+          "ref": "69:51",
+          "why": "Closes another chapter with the identical phrase, after a description of the same day and the same sorting."
+        },
+        {
+          "ref": "102:5-7",
+          "why": "Names the two lower degrees of certainty, knowing and then seeing, in consecutive lines."
+        },
+        {
+          "ref": "56:51",
+          "why": "Uses the same two descriptions of this group in the opposite order, near the start of the section."
+        }
+      ],
+      "applyIt": "Think of something you know by having been through it rather than by having been told. An illness, a bereavement, a move, a first child. Notice how differently you hold that knowledge from the things you merely accept. The chapter ends by claiming its report has that second quality, and the comparison only means anything if you have one of your own to hand.",
+      "exploreFurther": [
+        "69:38-52",
+        "83:18-28",
+        "102:1-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.594Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "56:96",
+      "surah": 56,
+      "start": 96,
+      "end": 96,
+      "theme": "Worship and Devotion",
+      "themeId": "worship-and-devotion",
+      "title": "So Glorify Your Lord's Name",
+      "tier": "standard",
+      "meaning": "One line, and it is a repetition. The same sentence closed the chapter's four questions twenty-two ayat earlier, and here it closes the chapter itself. Nothing is added and nothing is altered. Commentators read the repeat as the response the whole surah has been building toward: after the scene, the argument and the sorting, what is asked for is not agreement but a declaration that God is free of any inadequacy. The verb means exactly that, and it is given to one listener in the singular.",
+      "historicalContext": "Meccan, the closing line of a chapter that has moved from the Hour to three destinations to a deathbed. No specific occasion is reported for this ayah. The same sentence ends another early chapter as well, which suggests it worked as a recognised closing formula rather than as a comment on this surah in particular.",
+      "keyTerms": [
+        {
+          "arabic": "فَسَبِّحْ",
+          "gloss": "so glorify, so declare free",
+          "note": "The verb means declaring something free of any defect, from a root for moving away swiftly through water. What is asked is the removal of unworthy ideas rather than the addition of praise."
+        },
+        {
+          "arabic": "بِٱسْمِ",
+          "gloss": "with the name of",
+          "note": "The preposition attaches the act to the name rather than to the one named. Commentators discuss the difference and most read it as glorifying God by means of naming Him, which makes speech the instrument."
+        },
+        {
+          "arabic": "ٱلْعَظِيمِ",
+          "gloss": "the Magnificent, the Immense",
+          "note": "An adjective of sheer magnitude. It is the last word of the chapter, and it answers the opening scene, where mountains were reduced to dust with nothing said about who had done it."
+        }
+      ],
+      "lifeInProphetsTime": "Closing formulas mattered in a spoken culture. A poem ended on a line people could carry away, and an orator's last sentence was the one repeated at the next gathering. Nothing was written down for most listeners, so the shape of an ending did the work a title page does now. A chapter that finishes by repeating a line already heard is using a device its first audience knew well.",
+      "didYouKnow": "This exact sentence appears three times in the Quran: twice inside this chapter, at the end of its four questions and again as its final line, and once as the closing line of surah 69. The same words therefore end two different chapters of the Book, which is why reciters often hear them as a seal rather than as a statement.",
+      "theologicalSignificance": "The chapter ends with an instruction that has no object beyond a name. After ninety-five lines of description and argument, nothing at all is demanded except a form of speech, and even that is speech about removing wrong ideas rather than adding right ones. It leaves the reader in a particular position: the content has been delivered in full, and the only thing asked back is that God not be thought small.",
+      "crossReferences": [
+        {
+          "ref": "56:74",
+          "why": "Gives the identical line earlier in the same chapter, closing the sequence of four questions."
+        },
+        {
+          "ref": "69:52",
+          "why": "Ends another chapter with the same sentence, after a comparable description of that day."
+        },
+        {
+          "ref": "110:3",
+          "why": "Pairs the same verb with seeking forgiveness as the closing instruction of a very short surah."
+        }
+      ],
+      "applyIt": "Say this one line at the end of today, out loud, wherever you are. It is four words in Arabic and a short sentence in English, and the chapter chose it as the only thing it asks for after everything it has described. Say it once, and do not follow it with anything else, which is what makes it an ending rather than a beginning.",
+      "exploreFurther": [
+        "69:40-52",
+        "87:1-5",
+        "110:1-3"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:55:33.594Z",
         "reviewed": false
       }
     }

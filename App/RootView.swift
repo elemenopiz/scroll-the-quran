@@ -22,6 +22,13 @@ struct RootView: View {
     @State private var env: AppEnvironment
     @State private var flow: RootFlowModel
     @State private var tabs: TabRootModel
+    @Environment(\.scenePhase) private var scenePhase
+
+    /// The funnel — not `PaywallFlow` — decides whether dismissing the paywall earns the
+    /// gift, because only the shell can see `Prefs.seenOneTimeOffer`. Handing the flow a
+    /// store that already says "seen" makes `dismissTrial()` return control here instead of
+    /// switching to the envelope behind the shell's back, so there is one state machine.
+    private let funnelOffers = InMemoryOneTimeOfferStore(seenOneTimeOffer: true)
 
     init(launch: LaunchOptions = .live) {
         self.launch = launch
@@ -42,9 +49,27 @@ struct RootView: View {
             .environment(\.appToday, env.today)
             .task {
                 await env.start()
+                enterTabsIfEntitled()
                 if let url = launch.openURL {
                     open(url)
                 }
+            }
+            // A subscription can lapse, be refunded, be approved by an Ask to Buy organiser
+            // or fall into billing retry while the app is in the background, and StoreKit
+            // does not redeliver a transaction for all of that. Re-read on every return.
+            .onChange(of: scenePhase) { _, phase in
+                guard phase == .active else { return }
+                Task {
+                    await env.refresh()
+                    enterTabsIfEntitled()
+                }
+            }
+            // A purchase that lands anywhere — this paywall, another device, the updates
+            // listener — ends the funnel. Watching the store rather than only the button's
+            // callback means a renewal arriving mid-funnel is not shown a paywall.
+            .onChange(of: env.entitlements.isPremium) { _, isPremium in
+                guard isPremium else { return }
+                enterTabsIfEntitled()
             }
             .onOpenURL { open($0) }
     }
@@ -79,10 +104,15 @@ struct RootView: View {
             PaywallScreens.view(
                 forScreenID: flow.phase == .gift ? "gift-closed" : "paywall-trial",
                 store: env.entitlements,
-                offers: env.offers,
+                offers: funnelOffers,
+                links: env.legalLinks,
                 onDismiss: dismissPaywall,
-                onPurchased: { flow.advance() }
+                onPurchased: purchased
             )
+            // Both phases render the same view type in the same position, so without an
+            // identity of their own SwiftUI keeps the first `PaywallModel` and the gift
+            // never appears: the `stage` argument is only read by `init`.
+            .id(flow.phase)
         case .tabs:
             TabRoot(env: env, model: tabs)
         }
@@ -90,13 +120,36 @@ struct RootView: View {
 
     /// Dismissing the trial paywall earns the one-time gift offer, once ever; dismissing
     /// the gift itself goes straight to the tabs.
+    ///
+    /// The envelope is marked seen the moment it is *shown*, not when it is dismissed: a
+    /// force-quit on the offer screen must not hand the customer a second first-time
+    /// discount on the next launch.
     private func dismissPaywall() {
         if flow.phase == .gift {
-            env.user.markOneTimeOfferSeen()
             flow.advance()
-        } else {
-            flow.dismissPaywall(seenOneTimeOffer: env.user.hasSeenOneTimeOffer)
+            return
         }
+        let seen = env.user.hasSeenOneTimeOffer
+        if !seen {
+            env.user.markOneTimeOfferSeen()
+        }
+        flow.dismissPaywall(seenOneTimeOffer: seen)
+    }
+
+    /// A purchase anywhere in the funnel ends it.
+    ///
+    /// Onboarding is recorded as done at the same time: somebody who paid has been through
+    /// the funnel, and a relaunch must not replay it while `Transaction.currentEntitlements`
+    /// is still being read (the read is async; `RootFlowModel.init` is not).
+    private func purchased() {
+        env.user.completeOnboarding()
+        flow.enterTabs()
+    }
+
+    /// Leaves the funnel once the store says the customer is entitled.
+    private func enterTabsIfEntitled() {
+        guard env.entitlements.isPremium, flow.phase != .tabs, launch.screenshot == nil else { return }
+        purchased()
     }
 
     /// A deep link always ends on the tab bar, even on a cold launch that would otherwise

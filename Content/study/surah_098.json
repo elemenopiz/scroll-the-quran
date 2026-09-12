@@ -1,8 +1,66 @@
 {
   "surah": 98,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.231Z",
+  "generatedAt": "2026-09-12T09:47:53.443Z",
   "studies": [
+    {
+      "key": "98:1-4",
+      "surah": 98,
+      "start": 1,
+      "end": 4,
+      "theme": "Revelation and Its Rejection",
+      "themeId": "revelation-and-its-rejection",
+      "title": "Until The Clear Proof Came",
+      "tier": "standard",
+      "meaning": "The opening sentence is among the most discussed in the Book, because the participle it turns on can be completed in more than one way. Those who disbelieved among the People of the Scripture and the idolaters were not breaking off until the clear evidence reached them. Commentators differ over whether that means they would not have left their position without it, or that they were not going to be left as they were. The evidence is then identified as a person reciting purified pages, and the splitting is dated after its arrival, not before.",
+      "historicalContext": "Medinan according to the majority of the classical sources, though some place it in Mecca and the disagreement is recorded rather than settled. Medina held a long-established Jewish community with real religious literacy, so a chapter whose vocabulary runs on scriptures, pages and written decrees was addressing people for whom books were ordinary objects rather than a novelty.",
+      "keyTerms": [
+        {
+          "arabic": "مُنفَكِّينَ",
+          "gloss": "breaking off, coming apart",
+          "note": "An active participle from the root of a joint working loose. It occurs only here in the Quran, and because the sentence never says what they were parting from, the whole line admits more than one completion."
+        },
+        {
+          "arabic": "ٱلْبَيِّنَةُ",
+          "gloss": "the clear evidence",
+          "note": "A noun for whatever makes a thing plain, used in legal settings for proof. The surah then identifies it as a person in the next line, so the proof arrives reciting rather than arguing."
+        },
+        {
+          "arabic": "قَيِّمَةٌ",
+          "gloss": "upright, straight, enduring",
+          "note": "From the root of standing. It describes writings that stand straight themselves and hold other things upright, and the same word returns at the end of the following line to describe a whole religion."
+        }
+      ],
+      "lifeInProphetsTime": "Books were physical, rare and expensive. Sheets were written on prepared skin, kept rolled, protected from damp and carried carefully on a journey. A community that held scripture held objects, and being a people of the Book meant in the plainest sense that someone among you owned the pages and could read them aloud to everyone else. The surah's phrase about purified sheets described things the audience could picture.",
+      "didYouKnow": "The participle in the first line appears only once in the entire Quran, and the sentence built on it is one of the passages the classical commentators openly describe as difficult. The problem is not doctrinal. The verb is left without a stated object, so Arabic grammar permits several completions, and al-Tabari sets the options out at length rather than choosing between them.",
+      "theologicalSignificance": "Two structural claims sit close together. Revelation is identified with a person rather than with a text, so the clear evidence walks and speaks. And the splintering of a scriptural community is dated after the evidence arrived, which refuses the comfortable explanation that division comes from missing information. Whatever produced it was not ignorance, and the passage does not offer a softer alternative.",
+      "crossReferences": [
+        {
+          "ref": "3:19",
+          "why": "Gives the same sequence and names the cause, those given the Scripture differing only after knowledge came, out of rivalry."
+        },
+        {
+          "ref": "42:14",
+          "why": "Repeats the dating exactly, that they did not divide until after knowledge had reached them."
+        },
+        {
+          "ref": "2:213",
+          "why": "Sets the whole pattern out, one community, then messengers and the Book, then difference arising after the clear proofs."
+        }
+      ],
+      "applyIt": "Think of a disagreement in your family or workplace that got worse rather than better once everybody had the facts. Do not relitigate it. Just note what actually widened it, because it was not the information, and this passage is making the same observation about far larger quarrels.",
+      "exploreFurther": [
+        "3:19-20",
+        "42:13-15",
+        "2:213"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
+        "reviewed": false
+      }
+    },
     {
       "key": "98:5",
       "surah": 98,
@@ -58,6 +116,122 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:49:38.364Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "98:6-7",
+      "surah": 98,
+      "start": 6,
+      "end": 7,
+      "theme": "Fear and Hope",
+      "themeId": "fear-and-hope",
+      "title": "The Worst And The Best",
+      "tier": "standard",
+      "meaning": "Two verdicts stand side by side in identical grammar, and the word that changes between them is the one carrying the judgement. What the two groups are called is neither people nor servants but created things, a term covering everything brought into being, and it appears nowhere else in the Quran except these two lines. The commentators note an asymmetry inside the symmetry: one group is defined by disbelief alone, the other by belief together with what it produces, so the second description carries two parts where the first carries one.",
+      "historicalContext": "Medinan by the majority reading. The surah has just dated the splitting of a scriptural community to the moment after clear evidence arrived; these two lines give the outcome of that split without leaving any space between them. Classical sources report no occasion for the pair and observe that both verdicts are pronounced on categories and never attached to a named individual.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْبَرِيَّةِ",
+          "gloss": "created beings, creatures",
+          "note": "From a root meaning to shape or bring into existence. The word occurs only in these two lines of the Quran, and using it sets the comparison across the whole of creation rather than among human beings."
+        },
+        {
+          "arabic": "خَـٰلِدِينَ",
+          "gloss": "abiding, remaining",
+          "note": "The root means to stay long or to endure, and Arabic uses it of what lasts rather than of what strictly cannot end. The following line adds a second word to make the endlessness explicit."
+        },
+        {
+          "arabic": "وَعَمِلُوا۟",
+          "gloss": "and they did, they worked",
+          "note": "A verb of doing rather than of intending, attached here to belief as a second condition. The verdict on the better group therefore requires two things where the other verdict requires one."
+        }
+      ],
+      "lifeInProphetsTime": "Medina was arranged by tribe and by faith at the same time, and a person's standing came from which group he belonged to before anything else was considered. Blanket judgements on whole clans were the ordinary currency of that world: a family was honourable or it was not, and the verdict travelled with the name. The surah uses that familiar form and quietly changes the axis it sorts on.",
+      "didYouKnow": "The word used here for created beings occurs twice in the Quran and both occurrences are in these two consecutive lines. The best and the worst are named with the identical term, so the two sentences rhyme with each other exactly, and the only audible difference between them falls on the single word at the front.",
+      "theologicalSignificance": "The pairing refuses any middle category, which is uncomfortable and clearly deliberate. But the asymmetry inside it carries more weight than the severity. The better group is described by two things and the other by one, so faith is nowhere presented as sufficient by itself. And since both verdicts land on descriptions rather than on individuals, no actual person's position is settled by the passage at all.",
+      "crossReferences": [
+        {
+          "ref": "103:2-3",
+          "why": "Uses the same two-part description, belief joined to work, to rescue humanity from a blanket statement of loss."
+        },
+        {
+          "ref": "95:6",
+          "why": "Attaches an identical exception clause, belief and works together, to another bleak general verdict."
+        },
+        {
+          "ref": "18:107-108",
+          "why": "Gives the same two-part description its reward, gardens as a lodging with no desire to move from them."
+        }
+      ],
+      "applyIt": "Take one belief you genuinely hold and name the single practical thing it has changed about this week. Not about your life in general. This week. If nothing comes, do not manufacture an answer; just sit with the gap, because the passage puts belief and work together for a reason and does not explain why.",
+      "exploreFurther": [
+        "103:1-3",
+        "18:107-110",
+        "95:4-8"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "98:8",
+      "surah": 98,
+      "start": 8,
+      "end": 8,
+      "theme": "The Love Between God and the Believer",
+      "themeId": "love-of-god",
+      "title": "Pleased With Each Other",
+      "tier": "standard",
+      "meaning": "The reward is set out and then the description stops being about the garden. God is pleased with them, and they are pleased with Him: two clauses on the same verb pointing in opposite directions. Classical commentators pay attention to the order, since the divine pleasure is named first and the human response follows from it rather than earning it. Then the final clause narrows everything to one condition, and it is not a list of deeds. It is for whoever held his Lord in awe.",
+      "historicalContext": "Medinan by the majority reading, closing a chapter that opened on division among people who already possessed scripture. The last line answers that opening: after all the sorting, what qualifies a person is a single inward disposition rather than membership of a community. Classical sources record no occasion for the ayah and treat it as the surah's resolution.",
+      "keyTerms": [
+        {
+          "arabic": "عَدْنٍ",
+          "gloss": "of lasting residence",
+          "note": "From a root of staying put, used also of a mine where something sits fixed in its place. The gardens are named for permanence of dwelling rather than for anything they contain, which is unusual in these descriptions."
+        },
+        {
+          "arabic": "رَّضِىَ",
+          "gloss": "was pleased, was content",
+          "note": "A verb of accepting something as satisfactory. Used of God and of the person in the same line and the same form, it makes the relation reciprocal in a way the Quran states outright only a few times."
+        },
+        {
+          "arabic": "خَشِىَ",
+          "gloss": "held in awe, feared",
+          "note": "A fear that comes from knowing what something is, distinguished by the lexicographers from ordinary fright. It names the one condition attached to the whole promise, and it is a disposition rather than an act."
+        }
+      ],
+      "lifeInProphetsTime": "Permanence of dwelling was itself the luxury. Many families moved with their herds, wells failed, and a settlement could relocate within a generation; a household's position could be lost in one bad season. A garden held without term, with water running underneath it rather than carried to it, described security to that audience far more than it described indulgence or pleasure.",
+      "didYouKnow": "The sentence about mutual pleasure occurs four times in the Quran, word for word, in four different surahs. Each time it sits inside a description of gardens with rivers running beneath them, and each time it is followed by a short verdict. It is one of the most exactly repeated formulas in the Book, and this is its final appearance.",
+      "theologicalSignificance": "A relation is described rather than a transaction completed. The two clauses use one verb in both directions, which puts God and the person on the same grammatical footing for the length of a line, something the Quran does very sparingly. The condition attached at the end then rules out any reading of this as reward for performance. What qualifies is awe, which is a way of standing rather than a quantity of work.",
+      "crossReferences": [
+        {
+          "ref": "5:119",
+          "why": "Contains the same sentence about mutual pleasure and calls the whole thing the great triumph."
+        },
+        {
+          "ref": "89:27-28",
+          "why": "Turns the same root into two matched participles for a soul called back, pleased and pleasing."
+        },
+        {
+          "ref": "35:28",
+          "why": "Names awe as belonging to those of His servants who know, the same disposition this line makes the condition."
+        }
+      ],
+      "applyIt": "Notice that this promise is attached to awe rather than to a tally. Once today, before you do something ordinary and religious, pause for two seconds and remember who you are addressing. That pause is the whole of what the last clause asks for, and it is considerably harder to maintain than the action it precedes.",
+      "exploreFurther": [
+        "5:116-120",
+        "9:100",
+        "89:27-30"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:53.286Z",
         "reviewed": false
       }
     }

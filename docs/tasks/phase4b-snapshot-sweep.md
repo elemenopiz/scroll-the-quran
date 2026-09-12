@@ -11,3 +11,27 @@ Known polish items from earlier reviews:
 - `TintedSectionBox` needs a header slot for the per-section copy button (FeatureDiscover composes locally today).
 - Onboarding slides use placeholder mockup art: unfreeze Package.swift to give `FeatureOnboarding` a `resources: [.process("Resources")]` rule, render `reader`, `discover`, `plans-sheet`, `verse-search` via `--screenshot` into the PhoneFrame window (1119×2496 at +30+30) with `Tools/snapshot/render-mockups.sh`, and swap `MockupArt` blocks for the PNGs.
 - Sign-in sheet: add a second detent or keyboard avoidance so the email field isn't covered.
+
+## Professional-polish checklist (owner's ask, 2026-09-12: "everything inside should look polished/professional")
+Beyond RMSE, walk every screen in both appearances and fix or file each of these; record the outcome per screen in `Reference/scores.md` notes:
+- **Clearance:** nothing under the Dynamic Island/status bar or behind the home indicator; sheets respect the top detent grabber; toasts never cover tab bar or CTA.
+- **Alignment and rhythm:** one horizontal margin per screen family (`Spacing.*`), card paddings identical across Discover/Home/Deep Study, section headers on the same baseline grid, icons optically centred in their pills.
+- **Typography hierarchy:** at most three text sizes per screen; tracking from tokens; no orphan single words on titles at the default size; Arabic muted line never wraps to more than 3 lines.
+- **Radii and borders:** one radius per component class (`Radius.*`); light-mode cards visibly separated from `#FAFAFC` (hairline or darker token) with dark values untouched.
+- **Iconography:** unselected tab icons outline, selected filled; SF Symbol weights match the adjacent text weight; no mixed icon families in one row.
+- **States:** empty states for Library/Notes/Plans with copy and a CTA; loading never flashes blank; disabled buttons look disabled; pressed states on every pill/CTA.
+- **Copy:** no placeholder strings ("Placeholder review", lorem, TODO) reach the screen; sentence case per the reference; consistent product names ("Deep Study", "The Quran").
+- **Motion:** paging snaps without overshoot; sheet and toast animations use the same duration/curve; no layout jumps when the Arabic line loads.
+- **Dynamic Type at XL:** no clipped or overlapping text on reader, Discover, Deep Study, Home (verse text may cap).
+- **Brand:** logo mark sizes/clearance as set by Phase 4e; do not change them here, but flag any screen where the mark looks out of place.
+
+## Also fix (from docs/qa/brand-review.md, Phase 4e walk)
+Items 1–8 in that file: Deep Study and Home scroll under the status bar unmasked; onboarding-reviews Continue pill has no scrim; onboarding-signin light hairlines; slide mockups still wireframes; Today's Reading cover blank + panel bleed behind tab items; notes-sheet captures without keyboard; OnboardingMetricsTests order dependency (register fonts in a suite setup). Item 9 (widget target placeholder icon) needs a project.yml edit: report it, do not do it.
+
+## Added ownership and items (2026-09-12, after 4a/4e merged)
+Owns additionally: `Tools/verify.sh`, `Tools/snapshot/capture.sh`, `UITests/**` (except `FunnelTests.swift`).
+- `Tools/verify.sh --snap all` must expand to every id in `Reference/manifest.json` (both appearances when `--both` is given); today `all` is not a keyword.
+- Before the XCUITest stage, `verify.sh` must actually reset state: `simctl uninstall` does not clear the App Group container (`group.com.scrollthequran`), so `ReaderTests` are order-dependent (translation pill width 106.9 vs 72.0 on a dirty container). Erase the device, or clear `Containers/Shared/AppGroup`, and give `testSwitchingTranslationChangesTheText` a `--reset-state` launch.
+- `capture.sh`: default settle 2 s yields blank first captures on this machine; make the default 6 s (or wait for first paint by sampling the capture's standard deviation as `Tools/release/screenshots.sh` does).
+- Remove the dead `XCTSkip` guards in `UITests/{ReaderTests,HomeTests,DiscoverTests,CommunityTests,PaywallTests}.swift` (they claim Phase 3e routing is missing; it is merged and every test executes).
+- `OnboardingMetricsTests`: register fonts in a suite-level setup so the suite passes when run alone.
