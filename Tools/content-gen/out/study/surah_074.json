@@ -1,7 +1,7 @@
 {
   "surah": 74,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T09:37:49.074Z",
+  "generatedAt": "2026-09-12T09:47:41.032Z",
   "studies": [
     {
       "key": "74:1-5",
@@ -357,6 +357,122 @@
       }
     },
     {
+      "key": "74:31",
+      "surah": 74,
+      "start": 31,
+      "end": 31,
+      "theme": "Angels",
+      "themeId": "angels",
+      "title": "The Number Made A Trial",
+      "tier": "standard",
+      "meaning": "The ayah answers a reaction rather than continuing a description, and it works in layers. First it states what the wardens are, and it is not what the objectors were picturing. Then it says the number itself was made a testing, and lists four effects on four groups, so one fact produces certainty in some, an increase in others, an absence of doubt in a third and a question in a fourth. The closing clauses pull back twice: the forces are known only to God, and all of this is a reminder.",
+      "historicalContext": "Meccan and early, and unusually this ayah responds to something that had already happened in the town. The reports describe Meccans seizing on the figure given three ayat before and joking about it, one of them offering to deal with the wardens himself. The reference to those given the Scripture points beyond Mecca, to communities in the peninsula whose reaction the ayah expects to be different.",
+      "keyTerms": [
+        {
+          "arabic": "فِتْنَةً",
+          "gloss": "a trial, a testing",
+          "note": "The word covers both an ordeal and the assaying of metal in fire to find out what it is. The number does not produce belief or refusal here. It exposes which of the two was already present."
+        },
+        {
+          "arabic": "لِيَسْتَيْقِنَ",
+          "gloss": "so they may reach certainty",
+          "note": "An intensive reflexive of the verb to be sure, so the sense is seeking certainty and arriving at it rather than simply possessing it. It names an outcome that has to be travelled to."
+        },
+        {
+          "arabic": "جُنُودَ",
+          "gloss": "forces, troops",
+          "note": "A military word for organised companies. Applying it to what stands over the fire makes the wardens a detachment of something larger rather than a fixed quantity a person could reason his way around."
+        }
+      ],
+      "lifeInProphetsTime": "Numbers carried weight in that world because almost all reckoning was done aloud and held in memory. A tribe's strength, a debt's size, the stages of a journey: these circulated as figures that people repeated, compared and tested against each other. A precise and unexplained number dropped into a warning was therefore something an audience would pick up immediately, turn over and argue about, which is what the reports say happened within days.",
+      "didYouKnow": "This is by a wide margin the longest ayah in a surah otherwise built from very short ones, several of them only two or three words. The change in length is doing work. The clipped rhythm that carries the whole chapter opens out into one extended paragraph at exactly the point where a public objection has to be met.",
+      "theologicalSignificance": "The ayah has one piece of information do opposite things to different hearers, and says so explicitly. That is a claim about revelation itself: it does not act uniformly, because what it meets in a person is not uniform. Guiding and leaving astray are then attributed to God in a single clause, and immediately afterwards the whole thing is called a reminder for human beings, which keeps responsibility inside the room.",
+      "crossReferences": [
+        {
+          "ref": "2:26",
+          "why": "Makes the same point about a small detail: many are guided by it and many led astray."
+        },
+        {
+          "ref": "17:82",
+          "why": "Says the revelation is healing for believers and increases only loss for the wrongdoers."
+        },
+        {
+          "ref": "9:124-125",
+          "why": "Describes a single surah increasing faith in some hearers and defilement in others."
+        }
+      ],
+      "applyIt": "Think of a piece of news that landed differently on two people you know. The same fact, opposite reactions, and both of them certain the fact spoke for itself. Notice that you were one of the two. This ayah says the information was never the variable in that exchange. What it met was.",
+      "exploreFurther": [
+        "2:26",
+        "17:82",
+        "9:124-127"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:40.531Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "74:32-36",
+      "surah": 74,
+      "start": 32,
+      "end": 36,
+      "theme": "Night and Day",
+      "themeId": "night-and-day",
+      "title": "The Night As It Withdraws",
+      "tier": "standard",
+      "meaning": "Three oaths, then the thing sworn to, which arrives as a pronoun with no clear antecedent. Commentators take it as the fire named a few ayat earlier, or as the surah, or as the warning itself, and the range is left open. What the three oaths share is a turning point: a moon that waxes and wanes, a night caught at the moment it turns its back, a morning caught at the moment it opens out. Each names a threshold rather than a state, which is what the thing sworn to also is.",
+      "historicalContext": "Meccan and early. The surah has just answered a public objection at unusual length, and here it changes register completely, from an extended paragraph of argument into a run of two-word lines. Oath formulas of this shape were the opening move of both Arabian sooth-speech and poetry, so the audience recognised the form immediately, even as what followed refused to behave like either one.",
+      "keyTerms": [
+        {
+          "arabic": "أَدْبَرَ",
+          "gloss": "it turned its back",
+          "note": "A verb used of a person walking away, applied here to the night. The same verb described a man turning his back on the recitation eleven ayat earlier, so refusal and a movement of the sky share one word."
+        },
+        {
+          "arabic": "أَسْفَرَ",
+          "gloss": "it brightened, uncovered",
+          "note": "From a root for lifting a covering off a face. The morning is described as unveiling rather than arriving, which makes daylight a matter of something being removed rather than something being added."
+        },
+        {
+          "arabic": "ٱلْكُبَرِ",
+          "gloss": "the great things",
+          "note": "A plural of the elative for greatest, standing with no noun attached. Arabic can leave the noun out when the category is meant to stay open, and the commentators accordingly differ over what is being ranked."
+        }
+      ],
+      "lifeInProphetsTime": "The moon governed the calendar, the markets and the pilgrimage seasons, and its phases were watched by everybody rather than by specialists. Night travel was normal because the days were too hot to move in, so the turning of the night was a practical moment: the hour a caravan began looking for somewhere to stop. And the first paling of the sky was when a watchman could finally tell a white thread from a black one.",
+      "didYouKnow": "The verb used of the night turning its back is the same verb used, eleven ayat earlier in this surah, of a man turning his back on what he had heard. The chapter puts a human refusal and a movement of the sky into one word, and the two uses arrive close enough together that anybody hearing the surah through will catch the echo.",
+      "theologicalSignificance": "Oaths in the Quran are not offered as proofs. They direct attention. Sworn by things everybody has seen, they make an audience look hard at what they take for granted just before a claim is made about what they have not seen. The three chosen here are all thresholds, so the passage argues by shape rather than by evidence: the world you already know is made of turnings, and one more is coming.",
+      "crossReferences": [
+        {
+          "ref": "81:17-18",
+          "why": "Swears by the night as it departs and the morning as it breathes, in almost these terms."
+        },
+        {
+          "ref": "93:1-2",
+          "why": "Pairs the brightness of morning with a settled night as the opening oath of a short surah."
+        },
+        {
+          "ref": "89:1-4",
+          "why": "Runs a comparable sequence of oaths by dawn, by nights, and by night as it passes."
+        }
+      ],
+      "applyIt": "Be awake for one turning this week: the last dark before the sky pales, or the moment the light finally goes. Do not do anything with it, and do not photograph it. The oaths in this passage rest on people having noticed these moments, and most of us have arranged our days so that we never do.",
+      "exploreFurther": [
+        "81:15-19",
+        "93:1-5",
+        "89:1-5"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:40.548Z",
+        "reviewed": false
+      }
+    },
+    {
       "key": "74:37-41",
       "surah": 74,
       "start": 37,
@@ -411,6 +527,180 @@
         "model": "claude-opus-5",
         "promptVersion": "p1",
         "generatedAt": "2026-09-09T09:24:05.696Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "74:42-46",
+      "surah": 74,
+      "start": 42,
+      "end": 46,
+      "theme": "Charity",
+      "themeId": "charity",
+      "title": "We Did Not Feed Them",
+      "tier": "standard",
+      "meaning": "A question is put and the answer comes from the condemned themselves, which is rare. They give four items, and the order repays attention: two omissions, then a habit, then a denial. Prayer and feeding come first, ahead of the belief that would seem to underlie them, and the third item is not an act at all but a way of talking, joining in with people who talk emptily about what they have not examined. The list ends where an accusation would normally begin.",
+      "historicalContext": "Meccan and early. The pairing of prayer with feeding the destitute recurs throughout the earliest surahs, addressed to an audience whose religion was extensive and whose treatment of the poor was not. The exchange is set after the fact and the speakers are not identified, so it works as a category rather than as a case against named people. No occasion is reported for these ayat.",
+      "keyTerms": [
+        {
+          "arabic": "سَلَكَكُمْ",
+          "gloss": "drove you, threaded you in",
+          "note": "A verb for passing something through a narrow way, used of a road and of a thread through a needle. It makes the question about the route taken rather than about a verdict handed down."
+        },
+        {
+          "arabic": "ٱلْمِسْكِينَ",
+          "gloss": "the destitute one",
+          "note": "From a root for stillness. It names somebody whom poverty has brought to a standstill, and Arabic keeps it distinct from the word for a poor man who is still moving and still asking."
+        },
+        {
+          "arabic": "نَخُوضُ",
+          "gloss": "we waded in",
+          "note": "The verb for walking into water without knowing its depth. Applied to speech it means talking into subjects you have never sounded, and the Quran treats that as a habit with consequences."
+        }
+      ],
+      "lifeInProphetsTime": "Feeding was the visible form of virtue in Arabia and it was competitive. Chiefs were praised in verse for the number of pots they kept over the fire through a hard winter, and hospitality claims were part of a man's standing for years afterwards. What this passage names is not a failure of generosity in general. It is the failure to feed the one person who could never return the meal, which the poetry rarely bothered to celebrate.",
+      "didYouKnow": "The third item on this list is a way of speaking rather than a deed, and the verb behind it means to wade into water of unknown depth. The Quran uses that image for talking about God and the unseen without knowledge. The speakers name it in the same breath as neglecting prayer and neglecting the poor, as though it belonged in the same order of seriousness.",
+      "theologicalSignificance": "The self-accusation puts practice before creed, reversing the order most people would expect. Prayer and feeding come first and the denial of the Day comes last, so belief is presented as what sits at the bottom of a stack rather than at the top of it. The passage also declines to have anybody else describe them. The record is given in their own words, which settles any question of its accuracy.",
+      "crossReferences": [
+        {
+          "ref": "107:1-7",
+          "why": "Ties denial of the reckoning to neglect of the orphan and the destitute, in the same order."
+        },
+        {
+          "ref": "89:17-20",
+          "why": "Names the failure to honour the orphan and to urge feeding the poor as the actual charge."
+        },
+        {
+          "ref": "69:33-34",
+          "why": "Gives two reasons for a man's ruin: he did not believe, and he did not urge feeding the destitute."
+        }
+      ],
+      "applyIt": "Feed one person this week who cannot reciprocate and will not thank you where anybody can hear. A meal left somewhere, money given where it cannot be traced back to you. The second item on this list is the concrete one, and it is the only item you can act on before the day is out.",
+      "exploreFurther": [
+        "107:1-7",
+        "89:17-20",
+        "69:30-34"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:40.548Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "74:47-51",
+      "surah": 74,
+      "start": 47,
+      "end": 51,
+      "theme": "Remembrance of God",
+      "themeId": "remembrance-of-god",
+      "title": "Like Donkeys Bolting From A Lion",
+      "tier": "standard",
+      "meaning": "The confession closes on a word that ordinarily means certainty, used here as a name for death, the point past which no argument is available. Then the passage turns from them to the audience present, with a question that is not really asking anything. The simile answering it is startling and faintly comic: wild donkeys bolting. Commentators observe that the flight is not from the reminder's content but from its approach, since an animal in flight has evaluated nothing at all.",
+      "historicalContext": "Meccan and early. The surah addresses people who left gatherings when the recitation began and who took other routes through the town to avoid hearing it. The classical reports describe Meccans stopping their ears and warning visitors away. The comparison reaches out of the town and into the desert, placing a familiar animal behaviour in front of an audience who had all watched it happen.",
+      "keyTerms": [
+        {
+          "arabic": "ٱلْيَقِينُ",
+          "gloss": "the certainty",
+          "note": "The word for certain knowledge, standing here as a name for death. It is a striking substitution: the one event nobody in the argument disputed becomes the noun for the thing itself."
+        },
+        {
+          "arabic": "حُمُرٌ مُّسْتَنفِرَةٌ",
+          "gloss": "startled wild donkeys",
+          "note": "The second word is an intensive form of taking fright and scattering. Wild asses were known for exactly this, grazing quietly and then bolting at nothing, and the phrase occurs once in the Quran."
+        },
+        {
+          "arabic": "قَسْوَرَةٍۭ",
+          "gloss": "a lion, or hunters",
+          "note": "Commentators divide between a lion and a band of hunters, and the early lexicographers record both without deciding. The word occurs once in the Quran, which is why the question was never closed."
+        }
+      ],
+      "lifeInProphetsTime": "Wild asses lived on the margins of the settled land and were hunted for their meat. Poets used them constantly, and the stock scene is a herd standing at a waterhole that explodes into flight at a sound nobody else heard. Anybody who had ridden any distance out of Mecca had watched this happen. The comparison would have raised a laugh before it landed, which is part of how it does its work.",
+      "didYouKnow": "Both halves of the closing image occur once each in the Quran. The word for the startled herd appears nowhere else, and the word for whatever they are fleeing is rare enough that the early lexicographers could not agree whether it names a lion or a party of hunters. The picture is vivid, and its second half has never been fixed.",
+      "theologicalSignificance": "The passage diagnoses avoidance rather than disagreement. These people are not shown arguing; they are shown leaving. Making the image an animal one removes reasoning from the account altogether, which is a serious charge: the response is a reflex, below the level at which anything gets weighed. The line just before has already taken away the fallback, saying no intercession reaches them, so flight is the only move left.",
+      "crossReferences": [
+        {
+          "ref": "71:7",
+          "why": "Describes people putting fingers in their ears and pulling their clothes over themselves to avoid hearing."
+        },
+        {
+          "ref": "41:26",
+          "why": "Records the instruction to drown the recitation in noise so that nobody can follow it."
+        },
+        {
+          "ref": "39:45",
+          "why": "Describes hearts shrinking in aversion the moment God alone is mentioned."
+        }
+      ],
+      "applyIt": "Notice what you reach for when a particular subject comes up: the phone, a joke, a change of topic. Everybody has one. Name yours this week, and the next time that subject arrives, stay for thirty seconds longer than usual. This passage is not about people who considered something and declined it. It is about people who never got that far.",
+      "exploreFurther": [
+        "71:5-9",
+        "41:26",
+        "39:45"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:40.548Z",
+        "reviewed": false
+      }
+    },
+    {
+      "key": "74:52-56",
+      "surah": 74,
+      "start": 52,
+      "end": 56,
+      "theme": "The Mercy of God",
+      "themeId": "mercy-of-god",
+      "title": "Scrolls Delivered Already Open",
+      "tier": "standard",
+      "meaning": "A demand is quoted and then refused, and the refusal names the real obstacle. They want personal documents, each man his own sheet delivered unrolled, and the reply is that evidence was never the problem. The surah then closes with two statements set beside each other and left in tension: whoever wills remembers, and they will not remember unless God wills. Commentators have written at length on the pairing, and the classical position holds both rather than dissolving either into the other.",
+      "historicalContext": "Meccan and early. The reports describe Meccans asking for letters from heaven addressed to them by name, guaranteeing what they were being told, and the surrounding surahs record similar requests for a visible sign. These five ayat close one of the earliest chapters of the Quran, and its last words name God by two descriptions rather than by an act.",
+      "keyTerms": [
+        {
+          "arabic": "صُحُفًا مُّنَشَّرَةً",
+          "gloss": "scrolls spread open",
+          "note": "The second word is an intensive of unrolling. They are asking not for a message but for a document already unfurled, delivered ready to read, with even the act of opening it done for them."
+        },
+        {
+          "arabic": "كَلَّا",
+          "gloss": "no indeed",
+          "note": "A particle of rebuttal. The Quran uses it to stop a line of thought rather than to refute it, cutting across what has just been said instead of engaging with it on its own terms."
+        },
+        {
+          "arabic": "أَهْلُ ٱلتَّقْوَىٰ",
+          "gloss": "worthy of being heeded",
+          "note": "The construction names God as the one to whom that guarding awareness is properly owed, and the phrase immediately after it names Him, in the same form, as the one with whom forgiveness belongs."
+        }
+      ],
+      "lifeInProphetsTime": "Written documents existed and carried authority precisely because they were rare. A debt, a treaty or a grant of protection could be committed to writing and kept, and a sealed sheet settled disputes that testimony could not. Asking for a personal scroll was therefore asking for the form of proof their own commerce ran on. The demand was not absurd in that world. It was how a careful man secured anything at all.",
+      "didYouKnow": "The indefinite word for scrolls occurs twice in the Quran. Here, in a demand for sheets delivered open to each man personally. And in another surah, describing a messenger from God reciting purified scrolls aloud. They asked to be handed pages; the other passage shows pages being read to them, which is what they already had.",
+      "theologicalSignificance": "The refusal of the documents is the sharpest claim in the passage. More evidence would not move somebody whose obstacle is not evidential, and the ayah says so by naming the absent fear instead of arguing. Then the two closing statements about willing are left side by side without resolution, and the final words of the surah are not about power at all. They are two qualities: that God is rightly heeded, and that forgiveness belongs with Him.",
+      "crossReferences": [
+        {
+          "ref": "17:93",
+          "why": "Records a demand for a book that can be read, inside a list of signs asked for."
+        },
+        {
+          "ref": "6:7",
+          "why": "Says a written book sent down on parchment would still be called plain magic."
+        },
+        {
+          "ref": "81:27-29",
+          "why": "Ends another early surah on the same pairing of human willing and God's willing."
+        }
+      ],
+      "applyIt": "Ask yourself what evidence would actually change your mind about something you have been avoiding. Not about God: about a habit, a relationship, a decision you keep deferring. Then ask whether that evidence has already arrived. This passage says the people demanding documents had everything they needed and were missing something else entirely.",
+      "exploreFurther": [
+        "17:90-93",
+        "6:7-8",
+        "81:27-29"
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "promptVersion": "p1",
+        "generatedAt": "2026-09-12T09:47:40.549Z",
         "reviewed": false
       }
     }
