@@ -43,8 +43,8 @@ struct OnboardingMetricsTests {
 
     @Test("A slide's phone frame lands on the reference row for its title's line count")
     func slideGeometryFollowsTitleLines() {
-        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 2) == 240)
-        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 3) == 256)
+        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 2) == 238)
+        #expect(OnboardingMetrics.slidePhoneTop(titleLines: 3) == 254)
         #expect(
             OnboardingMetrics.slideTextBlockHeight(titleLines: 3)
                 - OnboardingMetrics.slideTextBlockHeight(titleLines: 2) == 16
@@ -57,8 +57,7 @@ struct OnboardingMetricsTests {
         // Continue spans x 52...340.67 and rows 746...801 on the 393x852 reference grid.
         #expect(OnboardingMetrics.ctaHorizontalInset == 52)
         #expect(OnboardingMetrics.ctaHeight == 56)
-        #expect(OnboardingMetrics.phoneScreenSize.width == 228)
-        #expect(OnboardingMetrics.phoneScreenSize.height == 478)
+        #expect(OnboardingMetrics.phoneHeight == 498)
     }
 }
 

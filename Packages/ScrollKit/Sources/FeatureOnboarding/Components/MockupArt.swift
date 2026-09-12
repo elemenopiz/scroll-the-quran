@@ -9,26 +9,22 @@ import SwiftUI
 /// `FeatureReader` / `FeatureHome` / `FeatureDiscover` in the package graph and cannot
 /// import them. The captures are made from the running app by
 /// `Tools/snapshot/render-mockups.sh` (`--screenshot reader | plans-sheet | discover |
-/// verse-search`, cut to the phone's screen window at 1119x2496 px with the device's
-/// corner radius) and land in `Sources/FeatureOnboarding/Resources/Mockup-<name>.png`,
-/// which `Package.swift`'s `resources: [.process("Resources")]` rule bundles. Re-run
-/// that script after any change to those four screens.
+/// verse-search`) and land in `Sources/FeatureOnboarding/Resources/Mockup-<name>.png`,
+/// which `Package.swift`'s `resources: [.process("Resources")]` rule bundles. Re-run that
+/// script after any change to those four screens.
 ///
-/// The capture is a 9:19.5 phone; the reference frame's window is 228 x 478 pt, which is
-/// slightly wider in proportion. The image fills the window and is centre-cropped, so
-/// roughly 3 % comes off the top and the bottom — the status bar and the home indicator,
-/// neither of which carries meaning at this size. The Dynamic Island is drawn by
-/// `PhoneFrame` on top, so all four slides get the same one.
+/// **Fit, never fill.** Each capture is a whole 402 x 874 pt screen, shipped at 690 x 1500
+/// px (~3x the width it is drawn at) with the display's corner radius already cut into its
+/// alpha. `PhoneFrame`'s window has the same 402:874 aspect, so `.fit` lands the capture on
+/// it edge to edge with nothing to crop: the status bar's clock, the Dynamic Island and all
+/// four tab labels stay whole. The old frame scaled the capture to *fill* a window of a
+/// different aspect and centre-cropped ~1.5 %, which was enough to cut the clock in half and
+/// clip "Community" and "The Quran" down to "mmunity" and "The Qu".
 struct MockupArt: View {
     let mockup: OnboardingContent.Mockup
     let scale: ReferenceScale
 
-    private var size: CGSize {
-        CGSize(
-            width: scale.width(OnboardingMetrics.phoneScreenSize.width),
-            height: scale.height(OnboardingMetrics.phoneScreenSize.height)
-        )
-    }
+    private var size: CGSize { PhoneFrameLayout(scale: scale).screenSize }
 
     var body: some View {
         Group {
@@ -36,9 +32,8 @@ struct MockupArt: View {
                 image
                     .resizable()
                     .interpolation(.high)
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: size.width, height: size.height)
-                    .clipped()
             } else {
                 base
             }
