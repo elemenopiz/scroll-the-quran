@@ -351,3 +351,18 @@ Phase 4e's decision, unchanged.
 **The reveal animation** was checked frame by frame (`.build/snapshots/gift-reveal-mid.png`):
 the open state cross-fades in with every element already in its final place, so there is no
 layout jump between the two states.
+
+### Phase 4k — owner-generated covers and charity cards (2026-09-12)
+
+Every plan cover and charity card pixel changed (18 photographic covers, 3 cards; `Artwork/src/covers`, `Artwork/src/charity`). Measured on a cold `ScrollSim-3c` with `SCROLL_CAPTURE_SETTLE=12`:
+
+| id | RMSE | threshold | verdict |
+|---|---|---|---|
+| `plans-sheet` | 0.1995 | 0.22 (was 0.20) | accepted deviation — photographic covers, 18 plans vs the reference's list |
+| `plan-detail` | 0.1584 | 0.17 (was 0.145) | accepted deviation — the first-page cover replaces the procedural one |
+| `home-dark` | 0.0638 | 0.10 | pass (no plan active in the fixture, so no cover shows) |
+| `home-light` | 0.1022 | 0.12 | pass |
+| `community-dark` | 0.0551 | 0.10 | pass — giving-hands card |
+| `onboarding-slide2` | 0.1360 | 0.14 | pass (mockup rendered by Phase 4h) |
+
+Note for the release sweep: the slide mockups still show the pre-rename reader pill (CLEAR) and the pre-plans titles; re-run `Tools/snapshot/render-mockups.sh` after the final merge and re-measure the four slides.
