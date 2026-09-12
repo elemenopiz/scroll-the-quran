@@ -1,4 +1,5 @@
 import CoreGraphics
+import DesignSystem
 @testable import FeatureReader
 import Testing
 
@@ -74,5 +75,76 @@ struct VerseRailGeometryTests {
         let rail = VerseRailGeometry(ayahCount: 21, height: 600)
         #expect(rail.showsBottomNumber(forAyah: 1))
         #expect(!rail.showsBottomNumber(forAyah: 21))
+    }
+}
+
+/// Phase 4j. The rail is the control that drops the reader anywhere in a 286-ayah surah, so
+/// the mapping it does — a y down the rail to an ayah, and back to a label position — has to be
+/// monotonic, clamped, and never put a number where the chrome is.
+@Suite("Verse rail geometry (Phase 4j)")
+struct VerseRailScrubGeometryTests {
+    /// The rail as `ReaderView` lays it out on the reference device: the safe area (710 pt)
+    /// less the rail's own top and bottom insets.
+    static let railHeight = ReaderMetrics.referenceSize.height
+        - ReaderMetrics.referenceTopInset
+        - ReaderMetrics.referenceBottomInset
+        - ReaderMetrics.railTopInset
+        - ReaderMetrics.railBottomInset
+
+    @Test("a scrub down the rail never goes backwards", arguments: [1, 7, 21, 112, 286])
+    func scrubIsMonotonic(_ ayahCount: Int) {
+        let rail = VerseRailGeometry(ayahCount: ayahCount, height: Self.railHeight)
+        var previous = rail.ayah(atY: -50)
+        #expect(previous == 1)
+        // Half-point steps: finer than the 2.19 pt pitch of the longest surah.
+        for step in stride(from: -50.0, through: Double(Self.railHeight) + 50, by: 0.5) {
+            let ayah = rail.ayah(atY: CGFloat(step))
+            #expect(ayah >= previous, "y \(step) went back from \(previous) to \(ayah)")
+            #expect((1 ... ayahCount).contains(ayah), "y \(step) left the surah: \(ayah)")
+            previous = ayah
+        }
+        #expect(previous == ayahCount)
+    }
+
+    @Test("every ayah is reachable by a scrub", arguments: [1, 7, 21, 112, 286])
+    func everyAyahIsReachable(_ ayahCount: Int) {
+        let rail = VerseRailGeometry(ayahCount: ayahCount, height: Self.railHeight)
+        let reached = Set(stride(from: 0.0, through: Double(Self.railHeight), by: 0.25)
+            .map { rail.ayah(atY: CGFloat($0)) })
+        #expect(reached == Set(1 ... ayahCount))
+    }
+
+    /// The ayah number beside the indicator is not clamped into the rail — clamping it would
+    /// move pixels the `reader-dark` capture is scored against — so the clearance it has
+    /// without clamping is what has to hold, at both ends and for every surah length.
+    @Test("the number beside the indicator clears the toolbar and the tab bar")
+    func numberClearsTheChrome() {
+        let labelHeight = ReaderMetrics.railNumberSize + Spacing.xs
+        // Screen-space y of the rail's top edge, and of the chrome it must not touch.
+        let railTop = ReaderMetrics.referenceTopInset + ReaderMetrics.railTopInset
+        let toolbarBottom = ReaderMetrics.referenceTopInset
+            + ReaderMetrics.toolbarTopInset
+            + ReaderMetrics.toolbarHeight
+        let safeBottom = ReaderMetrics.referenceSize.height - ReaderMetrics.referenceBottomInset
+
+        for ayahCount in 1 ... 286 {
+            let rail = VerseRailGeometry(ayahCount: ayahCount, height: Self.railHeight)
+            let top = railTop + rail.centre(ofAyah: 1) - labelHeight / 2
+            let bottom = railTop + rail.centre(ofAyah: ayahCount) + labelHeight / 2
+            #expect(top > toolbarBottom, "surah of \(ayahCount): the '1' overlaps the toolbar")
+            #expect(bottom < safeBottom, "surah of \(ayahCount): the last number is over the tab bar")
+        }
+    }
+
+    /// 286 ayat is the worst case for both ends; state the numbers so a change to the insets
+    /// shows up here rather than in a screenshot.
+    @Test("the longest surah keeps 9 pt of clearance at the top")
+    func longestSurahClearance() {
+        let rail = VerseRailGeometry(ayahCount: 286, height: Self.railHeight)
+        let labelHeight = ReaderMetrics.railNumberSize + Spacing.xs
+        let railTop = ReaderMetrics.referenceTopInset + ReaderMetrics.railTopInset
+        let top = railTop + rail.centre(ofAyah: 1) - labelHeight / 2
+        #expect(abs(top - 111.1) < 0.2)
+        #expect(abs(Self.railHeight - 627) < 0.5)
     }
 }

@@ -1,6 +1,7 @@
 import Foundation
 import Observation
 import QuranData
+import SwiftUI
 import UserState
 
 /// Which sheet the reader is showing, if any.
@@ -12,6 +13,26 @@ public enum ReaderSheet: String, Identifiable, Hashable, Sendable {
 
     public var id: String {
         rawValue
+    }
+}
+
+/// One programmatic move of the pager, as a value the view can watch.
+///
+/// Phase 4j. `.scrollPosition(id:)` on a `.scrollTargetBehavior(.paging)` scroll view is not a
+/// reliable one-shot command: a set that arrives while the pager is still settling — or that
+/// names a row the `LazyVStack` has not realised yet — can leave the content offset between
+/// two snap points, which is how the rail used to drop the reader half a page down. So the
+/// model does not just move `currentPageID`; it also publishes the move, and `ReaderView`
+/// re-asserts it on the next run loop through `ScrollViewProxy.scrollTo(_:anchor:)`.
+///
+/// The token is what makes two jumps to the *same* page two distinct requests.
+public struct ReaderJump: Equatable, Sendable {
+    public let id: ReaderPageID
+    public let token: Int
+
+    public init(id: ReaderPageID, token: Int) {
+        self.id = id
+        self.token = token
     }
 }
 
@@ -36,7 +57,12 @@ public final class ReaderModel {
     public private(set) var surah: Surah
     public private(set) var pages: [ReaderPage] = []
     /// The page the pager is showing. Bound to `.scrollPosition(id:)`.
+    ///
+    /// Set directly only by the pager itself (the reader swiping). Every *programmatic* move
+    /// goes through ``move(to:)`` so the view gets a ``ReaderJump`` to re-assert.
     public var currentPageID: ReaderPageID?
+    /// The last programmatic move, for `ReaderView` to commit. See ``ReaderJump``.
+    public private(set) var jumpRequest: ReaderJump?
     public var sheet: ReaderSheet?
     /// The verse the notes and share sheets are about; the current ayah when they opened.
     public private(set) var focusedVerse: VerseRef?
@@ -46,6 +72,7 @@ public final class ReaderModel {
     public private(set) var railDragAyah: Int?
 
     @ObservationIgnored private var dwell = DwellTracker()
+    @ObservationIgnored private var jumpToken = 0
     /// `pages` by id. The chrome asks for `currentPage` several times per render and the rail
     /// asks once per drag tick, so the lookup must not be a scan of 287 pages.
     @ObservationIgnored private var pageIndex: [ReaderPageID: Int] = [:]
@@ -89,7 +116,11 @@ public final class ReaderModel {
             hasFollowingSurah: surah.number < index.count
         )
         pageIndex = Dictionary(uniqueKeysWithValues: pages.enumerated().map { ($1.id, $0) })
-        currentPageID = pageID(forAyah: startAyah) ?? pages.first?.id
+        if let id = pageID(forAyah: startAyah) ?? pages.first?.id {
+            move(to: id)
+        } else {
+            currentPageID = nil
+        }
     }
 
     /// Re-paginates without moving: used when the translation changes under the reader.
@@ -107,7 +138,7 @@ public final class ReaderModel {
         // so land back on whichever of them was showing rather than snapping to page 0. A
         // split ayah does restart at its first slice: another translation splits differently.
         if ayah == nil, let previous, pageIndex[previous] != nil {
-            currentPageID = previous
+            move(to: previous)
         }
     }
 
@@ -146,9 +177,26 @@ public final class ReaderModel {
     // MARK: Navigation
 
     /// Jumps to an ayah of the open surah — the rail's tap and drag, and the surah picker.
+    ///
+    /// A long ayah that was split into continuation pages always lands on its first slice,
+    /// the one captioned "(1/n)": `pageID(forAyah:)` returns the first page of the ayah.
     public func jump(toAyah ayah: Int) {
         guard let id = pageID(forAyah: min(max(ayah, 1), surah.ayahCount)) else { return }
-        currentPageID = id
+        move(to: id)
+    }
+
+    /// The one place a page change is *commanded* rather than scrolled to.
+    ///
+    /// The set itself is made with animations off — a jump is a cut, not a scroll, and an
+    /// ambient `withAnimation` (the hint toast retiring itself on the same release, say) must
+    /// not turn it into an animated glide the paging behaviour can interrupt — and the move is
+    /// then published as a ``ReaderJump`` for `ReaderView` to re-assert a run loop later.
+    public func move(to id: ReaderPageID) {
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) { currentPageID = id }
+        jumpToken &+= 1
+        jumpRequest = ReaderJump(id: id, token: jumpToken)
     }
 
     /// Opens another surah at `ayah`. Resets the dwell bookkeeping: a new surah is a new

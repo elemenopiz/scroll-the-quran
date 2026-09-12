@@ -72,33 +72,75 @@ public struct ReaderView: View {
     /// same on every page and already known here.
     private var pager: some View {
         GeometryReader { proxy in
-            ScrollView(.vertical) {
-                LazyVStack(spacing: 0) {
-                    ForEach(model.pages) { page in
-                        VersePageView(page: page, pageSize: proxy.size)
-                            .containerRelativeFrame(.vertical)
-                            .id(page.id)
+            ScrollViewReader { scroller in
+                ScrollView(.vertical) {
+                    LazyVStack(spacing: 0) {
+                        ForEach(model.pages) { page in
+                            VersePageView(page: page, pageSize: proxy.size)
+                                .containerRelativeFrame(.vertical)
+                                .id(page.id)
+                        }
                     }
+                    .scrollTargetLayout()
                 }
-                .scrollTargetLayout()
+                .scrollTargetBehavior(.paging)
+                .scrollPosition(id: $model.currentPageID)
+                .scrollIndicators(.hidden)
+                .accessibilityIdentifier("reader.pager")
+                .onChange(of: model.currentPageID) { _, _ in
+                    model.advanceToNextSurahIfNeeded()
+                }
+                // Every programmatic move — the rail's release, the surah picker, a deep
+                // link, the dice, the handoff to the next surah — arrives here as a
+                // `ReaderJump` and is committed twice. See `commit(_:with:)`.
+                .onChange(of: model.jumpRequest) { _, request in
+                    commit(request, with: scroller)
+                }
+                // The first page is a jump too: a route that opens on an ayah (a deep link,
+                // a restored position) has to land on a boundary as much as a scrub does.
+                .task { commit(model.jumpRequest, with: scroller) }
+                // One dwell task per page, and the arrival is recorded inside it rather than in an
+                // `onChange`: `task(id:)` runs for the *first* page too (an `onChange` does not),
+                // and doing both here means the clock can never be read before it has been set.
+                // The task is cancelled the moment the page changes, so an ayah that was only
+                // scrolled past is never marked read.
+                .task(id: model.currentPageID) {
+                    model.pageChanged(to: model.currentPageID)
+                    try? await Task.sleep(for: .seconds(model.dwellRemaining()))
+                    guard !Task.isCancelled else { return }
+                    model.settleDwell()
+                }
             }
-            .scrollTargetBehavior(.paging)
-            .scrollPosition(id: $model.currentPageID)
-            .scrollIndicators(.hidden)
-            .accessibilityIdentifier("reader.pager")
-            .onChange(of: model.currentPageID) { _, _ in
-                model.advanceToNextSurahIfNeeded()
-            }
-            // One dwell task per page, and the arrival is recorded inside it rather than in an
-            // `onChange`: `task(id:)` runs for the *first* page too (an `onChange` does not),
-            // and doing both here means the clock can never be read before it has been set.
-            // The task is cancelled the moment the page changes, so an ayah that was only
-            // scrolled past is never marked read.
-            .task(id: model.currentPageID) {
-                model.pageChanged(to: model.currentPageID)
-                try? await Task.sleep(for: .seconds(model.dwellRemaining()))
-                guard !Task.isCancelled else { return }
-                model.settleDwell()
+        }
+    }
+
+    /// Commits a programmatic page change so the pager can never stop between two pages.
+    ///
+    /// Phase 4j. `.scrollPosition(id:)` is a binding, not a command: a single write into a
+    /// paging scroll view that is still settling (or that has not realised the target row of
+    /// the 287-page `LazyVStack` yet) can leave the content offset mid-page — the bug the
+    /// owner photographed, one ayah in the top half and the next rising from the bottom.
+    ///
+    /// So the move is made twice, both times with animations off: once now, through
+    /// `scrollTo(_:anchor: .top)` — which addresses the row by its `.id` and aligns its top
+    /// edge with the pager, i.e. exactly a page boundary — and once on the next run loop,
+    /// after the rows the jump crossed have been laid out and any in-flight scroll has been
+    /// cancelled. The binding is left in place for reads: it is still what tells the model
+    /// which page the reader swiped to.
+    private func commit(_ request: ReaderJump?, with scroller: ScrollViewProxy) {
+        guard let request else { return }
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            scroller.scrollTo(request.id, anchor: .top)
+        }
+        Task { @MainActor in
+            // Still the same request? A second jump landing in between (the dice pressed
+            // twice) owns the pager now, and its own commit is already queued.
+            guard model.jumpRequest == request else { return }
+            withTransaction(transaction) {
+                model.currentPageID = request.id
+                scroller.scrollTo(request.id, anchor: .top)
             }
         }
     }
@@ -122,6 +164,7 @@ public struct ReaderView: View {
 
     private var rail: some View {
         VerseRail(
+            surah: model.surah.number,
             ayahCount: model.surah.ayahCount,
             currentAyah: model.railAyah,
             onScrub: { model.beginRailDrag(toAyah: $0) },

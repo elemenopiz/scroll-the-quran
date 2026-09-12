@@ -8,10 +8,16 @@ import SwiftUI
 /// The dashes are drawn in a single `Canvas` rather than as 286 views: Al-Baqarah would
 /// otherwise put 286 shapes into every layout pass of a paging scroll view.
 struct VerseRail: View {
+    /// The open surah's number, for the scrub preview's "2:120".
+    let surah: Int
     let ayahCount: Int
     let currentAyah: Int
     /// Called while the finger is down, once per ayah crossed. Returns true when the ayah
     /// actually changed, which is what drives the haptic tick.
+    ///
+    /// Phase 4j: this moves the rail's own state and nothing else. It must never move the
+    /// pager — dozens of writes a second into `.scrollPosition(id:)` interrupt each other and
+    /// the last one can settle between two pages. The jump happens once, on `onCommit`.
     let onScrub: (Int) -> Bool
     let onCommit: () -> Void
 
@@ -35,6 +41,9 @@ struct VerseRail: View {
                 currentNumber(rail)
                 if rail.showsBottomNumber(forAyah: currentAyah) {
                     lastNumber(rail)
+                }
+                if isDragging {
+                    preview(rail)
                 }
             }
             .frame(width: proxy.size.width, height: proxy.size.height, alignment: .topLeading)
@@ -105,6 +114,27 @@ struct VerseRail: View {
             .allowsHitTesting(false)
     }
 
+    /// The live preview while the finger is down: the reference the reader will land on.
+    ///
+    /// Clamped into the rail so a scrub to ayah 1 or to the last ayah cannot push it up
+    /// under the toolbar or down over the tab bar.
+    private func preview(_ rail: VerseRailGeometry) -> some View {
+        Text("\(surah):\(currentAyah)")
+            .font(.body(ReaderMetrics.railPreviewSize, weight: .semibold))
+            .foregroundStyle(Color.textPrimary)
+            .padding(.horizontal, ReaderMetrics.railPreviewPaddingH)
+            .padding(.vertical, ReaderMetrics.railPreviewPaddingV)
+            .background(Color.chipBackground, in: Capsule(style: .continuous))
+            .frame(height: previewHeight)
+            .offset(
+                x: ReaderMetrics.railPreviewLeading,
+                y: clamp(rail.centre(ofAyah: currentAyah) - previewHeight / 2, in: rail, height: previewHeight)
+            )
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
+            .transition(.opacity)
+    }
+
     /// The surah's length, pinned to the last dash.
     private func lastNumber(_ rail: VerseRailGeometry) -> some View {
         number(ayahCount, colour: .textTertiaryReadable)
@@ -123,10 +153,22 @@ struct VerseRail: View {
     private var numberHeight: CGFloat {
         ReaderMetrics.railNumberSize + Spacing.xs
     }
+
+    private var previewHeight: CGFloat {
+        ReaderMetrics.railPreviewSize + 2 * ReaderMetrics.railPreviewPaddingV + Spacing.xs
+    }
+
+    /// Keeps a label inside the rail's own span. The numbers are deliberately *not* clamped:
+    /// at 286 ayat the "1" rides 5.9 pt above the rail, which `VerseRailGeometryTests`
+    /// proves still clears the toolbar by 9 pt — and clamping it would move the pixels the
+    /// `reader-dark` capture is scored against.
+    private func clamp(_ y: CGFloat, in rail: VerseRailGeometry, height: CGFloat) -> CGFloat {
+        min(max(y, 0), max(0, rail.height - height))
+    }
 }
 
 #Preview("Verse rail") {
-    VerseRail(ayahCount: 21, currentAyah: 1, onScrub: { _ in false }, onCommit: {})
+    VerseRail(surah: 5, ayahCount: 21, currentAyah: 1, onScrub: { _ in false }, onCommit: {})
         .frame(height: 626)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.appBackground)
