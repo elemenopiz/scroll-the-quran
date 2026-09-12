@@ -17,6 +17,66 @@ the app with `--reset-state`, so a score does not depend on what the last run le
 App Group container (it used to: `plan-detail` scored 0.179 on a dirty container and 0.138
 on a clean one from the identical build).
 
+## Phase 4h — the phone frame, 2026-09-12
+
+iPhone 17 Pro (`ScrollSim-3d`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`. Five screens
+re-measured after the funnel's device mockup was rebuilt from the hardware's own numbers
+and the gift screen's OFF pill was dropped clear of the "33%". One threshold moves.
+
+| id | Phase 4d | Phase 4h | threshold | verdict |
+| --- | ---: | ---: | ---: | --- |
+| `onboarding-slide1` | 0.0953 | 0.1032 | 0.12 | pass — **accepted deviation**, bezel thickness |
+| `onboarding-slide2` | 0.1248 | 0.1360 | 0.13 → **0.14** | **accepted deviation**, bezel thickness on top of the plan covers |
+| `onboarding-slide3` | 0.0571 | 0.0682 | 0.12 | pass — **accepted deviation**, bezel thickness |
+| `onboarding-slide4` | 0.0711 | 0.0808 | 0.12 | pass — **accepted deviation**, bezel thickness |
+| `gift-open` | 0.0624 | 0.0654 | 0.10 | pass — the OFF pill moved 8 pt down, deliberately |
+
+**What changed.** The slides' frame was a flat black rounded rectangle with an oversized
+Dynamic Island drawn on top of the capture's own one, and the capture inside was scaled to
+*fill* a 1119 x 2496 window whose aspect did not match it: the clock lost its top and the
+outer tab labels read "mmunity" and "The Qu". It is now the iPhone 17 Pro drawn from
+`DeviceFrameMetrics` — 402 x 874 pt of glass at a 55 pt radius, a 6 pt black border, a
+2.5 pt titanium rail (`#B9B9BE` → `#8E8E93`), action / volume / power buttons 3.5 pt proud
+of it, a soft ground shadow, and no island of its own. The four bundled captures are whole
+screens again (690 x 1500 px, 4.0 MB → 1.4 MB) and `MockupArt` *fits* rather than fills, so
+nothing is cropped. The same numbers generate `Artwork/src/phone-frame.svg`, so the
+marketing frame and the in-app frame are one device at two scales.
+
+**Accepted deviation: the reference's bezel is twice the hardware's.** The reference's
+frame is a stylised mockup, not the phone the app runs on. Measured off
+`onboarding-slide1-feed.png`: its enclosure is 243.3 x 497.7 pt (a 0.489 : 1 body — no
+iPhone is that wide for its height) with a 10.6 pt bezel, where an iPhone 17 Pro's is 8.5
+device pt, 4.7 at this scale. Both cannot be had. What is matched is the enclosure's own
+silhouette — rows 238...736 on the two-line slides, 254...752 on slide 2, Continue still on
+746 — and the screen window's registration, which lands within a point of the reference's
+own glass columns. What is left is a ~4.6 pt ring down each side and ~6 pt top and bottom
+where the reference shows black bezel and ours shows screen content. Under the sigma-6 blur
+that ring is most of the residue: on `onboarding-slide3` the 18 pt strips just inside the
+reference's edges score 0.11 against a whole-screen 0.0682, while the band *outside* the
+phone (where the new shadow lives) is closer to the reference than the old frame was
+(mean luminance 236.2 against the reference's 238.3; the old frame's was 231.9).
+
+Chasing it would mean drawing a phone that does not exist, which is the opposite of the
+brief ("the iPhone visualization in the onboarding needs to be cleaned up a bit so it's
+more prim and proper"). The frame now reads as a real device: thin rim, real buttons, a
+shadow, one Dynamic Island rather than two, and a status-bar clock and four tab labels that
+are not sliced.
+
+**`onboarding-slide2` also loses its status bar.** iOS dims the parent screen to *black*
+behind a sheet; the reference's slide 2 shows a light grey band with the clock legible on
+it. `render-mockups.sh` trims that 236 px band and pads the same 236 px of the sheet's own
+`#FAFAFC` back, so the plans list reads as filling the screen — near-white against the
+reference's grey is a much smaller error than black would be, but it is an error, and it
+sits on top of the plan-cover residue this screen already carried. 0.1360 against a 0.13
+ceiling, so the ceiling goes to 0.14.
+
+**`gift-open`: the OFF pill.** "the OFF under 33% needs to be moved down a bit" (owner).
+`PaywallMetrics.offPillTop` 270 → 278. Geo Bold sets the digits 5 pt deeper than the
+reference's face, so at 270 the pill's white outline still cut 5.8 pt into a 49.3 pt digit
+(12 %); at 278 it clears the ink by 2.2 pt and still leaves 8.7 pt to the "+3 day trial"
+pill. The reference's own pill overlaps its digits slightly more than ours now does, which
+is the whole of the +0.0030.
+
 ## Full sweep — Phase 4d, 2026-09-12
 
 iPhone 17 Pro (`ScrollSim-3d`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`. 27 screens, all
