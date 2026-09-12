@@ -1,6 +1,7 @@
 @testable import FeatureOnboarding
 import Foundation
 import Testing
+import UserState
 
 @MainActor
 @Suite("Onboarding model")
@@ -290,5 +291,135 @@ struct KeychainAccountSinkTests {
         sink.signOut()
         #expect(sink.appleUserID == nil)
         #expect(sink.email == nil)
+    }
+}
+
+/// Audit SEC-2. Onboarding used to write the credential to its own sink and nowhere else, so
+/// nothing ever called `UserStore.signIn` and Settings told a reader who had just signed in
+/// with Apple that they were not signed in.
+@MainActor
+@Suite("Composite account sink")
+struct CompositeAccountSinkTests {
+    /// Stands in for `UserStore`: the same protocol, with the same "a later nil must not wipe
+    /// the address" rule, and nowhere for an identifier to go even if one were offered.
+    final class StateSpy: UserState.AccountSink {
+        var isSignedIn = false
+        var accountEmail: String?
+        private(set) var identity: (any UserState.AccountIdentityStore)?
+        private(set) var signOutCount = 0
+
+        func signIn(email: String?) {
+            isSignedIn = true
+            if let email, !email.isEmpty {
+                accountEmail = email
+            }
+        }
+
+        func signOut() {
+            isSignedIn = false
+            accountEmail = nil
+            signOutCount += 1
+        }
+
+        func attachIdentity(_ identity: any UserState.AccountIdentityStore) {
+            self.identity = identity
+        }
+    }
+
+    private func makeSink() throws -> (CompositeAccountSink, InMemoryKeychain, StateSpy) {
+        let suite = "composite.tests.\(UUID().uuidString)"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        let keychain = InMemoryKeychain()
+        let state = StateSpy()
+        let sink = CompositeAccountSink(
+            identity: KeychainAccountSink(keychain: keychain, defaults: defaults),
+            state: state
+        )
+        return (sink, keychain, state)
+    }
+
+    @Test("The identity goes to the keychain and only a flag and an address to the store")
+    func splitsTheCredential() throws {
+        let (sink, keychain, state) = try makeSink()
+        var name = PersonNameComponents()
+        name.givenName = "Amina"
+        name.familyName = "Rahman"
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: name)
+
+        #expect(keychain.string(forKey: KeychainAccountSink.accountIDKey) == "001234.abc")
+        #expect(keychain.string(forKey: KeychainAccountSink.nameKey) == "Amina Rahman")
+        #expect(state.isSignedIn)
+        #expect(state.accountEmail == "reader@example.com")
+        // The whole of SEC-1: no part of the identifier or the name reaches the store.
+        #expect(state.accountEmail != "001234.abc")
+    }
+
+    @Test("A later sign-in still tells the store an address, from the keychain")
+    func laterSignInStillHasAnAddress() throws {
+        let (sink, _, state) = try makeSink()
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+        state.accountEmail = nil
+        // Apple sends the address on the first sign-in only; the keychain is then the only
+        // thing that still knows it.
+        sink.signedInWithApple(userID: "001234.abc", email: nil, fullName: nil)
+        #expect(state.accountEmail == "reader@example.com")
+    }
+
+    @Test("Skipping Apple and typing an address is not a sign-in")
+    func typedAddressIsNotASignIn() throws {
+        let (sink, keychain, state) = try makeSink()
+        sink.storeEmail("reader@example.com")
+        #expect(keychain.string(forKey: KeychainAccountSink.emailKey) == "reader@example.com")
+        // There is no account to be signed into — no network, no server (`CLAUDE.md` rule 9).
+        #expect(state.isSignedIn == false)
+        #expect(state.accountEmail == nil)
+    }
+
+    @Test("Sign-out clears both sides")
+    func signOutClearsBothSides() throws {
+        let (sink, keychain, state) = try makeSink()
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+        sink.signOut()
+        #expect(keychain.storage.isEmpty)
+        #expect(state.isSignedIn == false)
+        #expect(state.accountEmail == nil)
+    }
+
+    @Test("Building the sink hands the store the keychain record, for Settings' sign-out")
+    func attachesTheIdentityToTheStore() throws {
+        let (sink, keychain, state) = try makeSink()
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+        // Settings can only see `UserStore`, so signing out there has to reach the keychain
+        // through the record attached at construction — not through the composite.
+        let identity = try #require(state.identity)
+        identity.signOut()
+        #expect(keychain.storage.isEmpty)
+    }
+
+    @Test("The fixture sign-in goes through the same path the real credential does")
+    func fixtureSignInIsTheRealPath() throws {
+        let (sink, keychain, state) = try makeSink()
+        sink.applyFixtureSignIn()
+        #expect(keychain.string(forKey: KeychainAccountSink.accountIDKey) == CompositeAccountSink.Fixture.userID)
+        #expect(sink.identity.displayName == "Amina Rahman")
+        #expect(state.isSignedIn)
+        #expect(state.accountEmail == CompositeAccountSink.Fixture.email)
+    }
+
+    @Test("A keychain write survives being read back through a second sink")
+    func keychainRoundTrip() throws {
+        // The round trip the app makes across a relaunch: one sink writes, the next one
+        // constructed over the same keychain reads it back.
+        let suite = "composite.tests.\(UUID().uuidString)"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        let keychain = InMemoryKeychain()
+        KeychainAccountSink(keychain: keychain, defaults: defaults)
+            .signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+
+        let next = KeychainAccountSink(keychain: keychain, defaults: defaults)
+        #expect(next.appleUserID == "001234.abc")
+        #expect(next.email == "reader@example.com")
     }
 }

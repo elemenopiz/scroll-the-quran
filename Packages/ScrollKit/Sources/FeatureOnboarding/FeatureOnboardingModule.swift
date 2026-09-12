@@ -43,12 +43,22 @@ public extension FeatureOnboardingModule {
     ///
     /// Mirrors `PaywallScreens.view(forScreenID:…)`, which is how `RootView` reaches the
     /// paywall, so the composition root treats both phases the same way.
+    ///
+    /// `account` is where a completed Sign in with Apple goes. The shell passes a
+    /// `CompositeAccountSink` so the credential reaches both the Keychain and `UserStore`
+    /// (audit SEC-2); the default keeps previews and `#Preview` builds on the Keychain sink
+    /// alone, and a `--screenshot` route never reaches it at all — `screen(for:)` pins the
+    /// funnel to `EphemeralAccountSink`, which writes nowhere.
     @MainActor
-    static func view(forScreenID id: String?, onFinished: @escaping () -> Void = {}) -> AnyView {
+    static func view(
+        forScreenID id: String?,
+        account: any OnboardingAccountSink = KeychainAccountSink(),
+        onFinished: @escaping () -> Void = {}
+    ) -> AnyView {
         if let id, let screen = screen(for: id, onFinished: onFinished) {
             return screen
         }
-        return AnyView(OnboardingFlow(onFinished: onFinished))
+        return AnyView(OnboardingFlow(account: account, onFinished: onFinished))
     }
 
     /// The sign-in sheet is not a step of its own: it is the hook with the sheet up.

@@ -1,4 +1,5 @@
 import Foundation
+import UserState
 #if canImport(Security)
     import Security
 #endif
@@ -51,6 +52,11 @@ public final class EphemeralOnboardingProgressStore: OnboardingProgressStore {
 
 /// What the funnel learned about the user. The app provides the real sink later; the
 /// funnel itself never talks to a network (`CLAUDE.md` rule 9).
+///
+/// `@MainActor`: the composite below writes through to `UserStore`, which is main-actor
+/// isolated. The funnel has always called these from the main actor — it is a view — so the
+/// annotation records what was already true rather than changing anything.
+@MainActor
 public protocol OnboardingAccountSink: AnyObject {
     /// The stable user identifier Sign in with Apple hands back.
     func signedInWithApple(userID: String, email: String?, fullName: PersonNameComponents?)
@@ -182,7 +188,7 @@ public final class InMemoryKeychain: KeychainStoring {
 ///
 /// Existing installs are migrated on first construction and the plist keys are deleted, so
 /// an app that has already run once does not keep a plaintext copy alongside the new one.
-public final class KeychainAccountSink: OnboardingAccountSink {
+public final class KeychainAccountSink {
     /// The same key names the `UserDefaults` sink used, so the migration is a straight
     /// move and a keychain dump reads the way the old plist did.
     public static let accountIDKey = "accountId"
@@ -269,7 +275,7 @@ public final class KeychainAccountSink: OnboardingAccountSink {
 }
 
 /// Records what it was told and writes nothing: previews, snapshots and tests.
-public final class EphemeralAccountSink: OnboardingAccountSink {
+public final class EphemeralAccountSink {
     public private(set) var appleUserID: String?
     public private(set) var email: String?
 
@@ -295,5 +301,114 @@ public final class EphemeralAccountSink: OnboardingAccountSink {
     public func signOut() {
         appleUserID = nil
         email = nil
+    }
+}
+
+// MARK: - Conformances
+
+// Declared out of line, not on the class itself, deliberately: a conformance written on the
+// declaration would infer `@MainActor` onto the whole class from the protocol, and both of
+// these are built inside nonisolated default arguments (`OnboardingFlow.init`,
+// `OnboardingModel.init`). Out here the classes stay nonisolated and their nonisolated
+// methods satisfy the isolated requirements, which is allowed — the constraint runs the other
+// way.
+extension KeychainAccountSink: OnboardingAccountSink {}
+
+extension EphemeralAccountSink: OnboardingAccountSink {}
+
+// MARK: - Composite
+
+/// `KeychainAccountSink` is also the identity record `UserStore` clears on sign-out, so it
+/// says so. Nothing in `UserState` can write to it — the protocol has one method — which is
+/// the point: the Apple user identifier goes in from here and comes out nowhere.
+extension KeychainAccountSink: UserState.AccountIdentityStore {}
+
+/// Sends one Sign in with Apple to both of the places it has to land (audit SEC-2).
+///
+/// Before this, onboarding wrote the credential to its own sink and nothing else, so nothing
+/// ever called `UserStore.signIn` and Settings said "Not signed in" to a reader who had just
+/// signed in. Routing the whole credential to `UserStore` instead would have undone SEC-1 —
+/// `prefs.json` is plaintext in the App Group container — so the two halves are split by what
+/// they are rather than by which module wrote them:
+///
+/// - the **identity** (Apple user identifier, display name, address) goes to the Keychain;
+/// - the **state** (a boolean, and the address to print in Settings) goes to `UserStore`.
+///
+/// Constructing one also hands the store the Keychain record, so "Sign out" in Settings —
+/// which can only see `UserStore` — clears both sides.
+@MainActor
+public final class CompositeAccountSink: OnboardingAccountSink {
+    /// The Keychain half. Exposed so the shell and the tests can read back what landed.
+    public let identity: KeychainAccountSink
+    private let state: any UserState.AccountSink
+
+    public init(identity: KeychainAccountSink, state: any UserState.AccountSink) {
+        self.identity = identity
+        self.state = state
+        state.attachIdentity(identity)
+    }
+
+    /// The sink the shipping app uses.
+    ///
+    /// The access group is the **App Group** identifier. An App Group can be used as a
+    /// keychain access group since iOS 8 without a `keychain-access-groups` entitlement of its
+    /// own, which is what makes this reachable at all: `App/` is frozen after Phase 1, so no
+    /// new entitlement could be added, and the items would otherwise be locked to the app's
+    /// own default group where the widget could never read them.
+    public static func live(
+        state: any UserState.AccountSink,
+        accessGroup: String = UserStateLocation.appGroupIdentifier
+    ) -> CompositeAccountSink {
+        CompositeAccountSink(
+            identity: KeychainAccountSink(keychain: SystemKeychain(accessGroup: accessGroup)),
+            state: state
+        )
+    }
+
+    // MARK: OnboardingAccountSink
+
+    public func signedInWithApple(userID: String, email: String?, fullName: PersonNameComponents?) {
+        identity.signedInWithApple(userID: userID, email: email, fullName: fullName)
+        // Apple sends the address on the first sign-in only; on every later one the Keychain
+        // is the only thing that still knows it, so Settings is given that rather than `nil`.
+        state.signIn(email: email ?? identity.email)
+    }
+
+    /// The address typed into the sheet by somebody who skipped Apple. It is stored on this
+    /// device and it is *not* a sign-in: Settings keeps saying "Not signed in", because no
+    /// account was created — there is no server to create one on (`CLAUDE.md` rule 9).
+    public func storeEmail(_ email: String?) {
+        identity.storeEmail(email)
+    }
+
+    public func clearEmail() {
+        identity.clearEmail()
+    }
+
+    public func signOut() {
+        identity.signOut()
+        state.signOut()
+    }
+
+    // MARK: Fixture
+
+    /// The credential `--signed-in` stands in for.
+    ///
+    /// Apple's authorisation sheet is a system process XCUITest cannot drive and the simulator
+    /// has no Apple ID signed in, so "what does the app do once Sign in with Apple has
+    /// succeeded" is untestable without a stand-in. This is that stand-in, and it goes through
+    /// exactly the same method the real credential does.
+    public enum Fixture {
+        public static let userID = "000000.4f0e1c2b9a7d.fixture"
+        public static let email = "reader@example.com"
+        public static let givenName = "Amina"
+        public static let familyName = "Rahman"
+    }
+
+    public func applyFixtureSignIn() {
+        var name = PersonNameComponents()
+        name.givenName = Fixture.givenName
+        name.familyName = Fixture.familyName
+        signedInWithApple(userID: Fixture.userID, email: Fixture.email, fullName: name)
     }
 }
