@@ -90,7 +90,7 @@ struct NotesSheet: View {
             Spacer()
             Text("Auto-saved")
                 .font(.body(ReaderMetrics.notesLabelSize))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
                 .accessibilityIdentifier("notesSheet.autosaved")
         }
         .padding(.horizontal, Spacing.pageMargin)

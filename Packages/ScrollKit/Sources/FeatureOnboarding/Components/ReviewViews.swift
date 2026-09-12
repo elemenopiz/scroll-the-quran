@@ -70,7 +70,7 @@ struct ReviewCard: View {
                 if !card.placeholder, !card.author.isEmpty {
                     Text(card.author)
                         .font(.body(scale.type(16), weight: .semibold))
-                        .foregroundStyle(Color.textTertiary)
+                        .foregroundStyle(Color.textTertiaryReadable)
                         .padding(.top, scale.height(Spacing.xs))
                 }
             }

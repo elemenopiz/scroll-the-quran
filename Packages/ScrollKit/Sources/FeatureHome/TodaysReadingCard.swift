@@ -30,7 +30,7 @@ struct TodaysReadingCard: View {
                                     .fixedSize(horizontal: false, vertical: true)
                                 Text(today.dayLabel)
                                     .font(.body(15))
-                                    .foregroundStyle(Color.textTertiary)
+                                    .foregroundStyle(Color.textTertiaryReadable)
                             } else {
                                 Text("Pick a plan to begin")
                                     .font(.body(17, weight: .bold))

@@ -85,7 +85,7 @@ struct SurahPicker: View {
     private func sectionHeader(_ juz: Int) -> some View {
         Text("Juz \(juz)")
             .capsLabelStyle()
-            .foregroundStyle(Color.textTertiary)
+            .foregroundStyle(Color.textTertiaryReadable)
             .padding(.horizontal, Spacing.pageMargin)
             .padding(.vertical, Spacing.sm)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -99,7 +99,7 @@ struct SurahPicker: View {
             HStack(spacing: Spacing.md) {
                 Text("\(surah.number)")
                     .font(.body(ReaderMetrics.pickerNumberSize, weight: .semibold))
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textTertiaryReadable)
                     .frame(width: ReaderMetrics.pickerNumberWidth, alignment: .trailing)
                 VStack(alignment: .leading, spacing: Spacing.xxs) {
                     Text(surah.name)
@@ -107,7 +107,7 @@ struct SurahPicker: View {
                         .foregroundStyle(Color.textPrimary)
                     Text(surah.subtitle)
                         .font(.body(ReaderMetrics.pickerSubtitleSize))
-                        .foregroundStyle(Color.textTertiary)
+                        .foregroundStyle(Color.textTertiaryReadable)
                         .lineLimit(1)
                 }
                 Spacer(minLength: Spacing.sm)

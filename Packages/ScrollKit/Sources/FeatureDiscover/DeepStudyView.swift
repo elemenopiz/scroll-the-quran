@@ -220,7 +220,7 @@ public struct DeepStudyView: View {
     private var footer: some View {
         Text(DeepStudyView.disclaimer)
             .font(.body(12))
-            .foregroundStyle(Color.textTertiary)
+            .foregroundStyle(Color.textTertiaryReadable)
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity)
             .padding(.horizontal, DeepStudyMetrics.inset)

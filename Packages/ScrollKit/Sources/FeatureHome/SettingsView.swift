@@ -94,7 +94,7 @@ public struct SettingsView: View {
                                 // Shown verbatim: these are the licence's own words.
                                 Text(info.copyright)
                                     .font(.body(12))
-                                    .foregroundStyle(Color.textTertiary)
+                                    .foregroundStyle(Color.textTertiaryReadable)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
                             Spacer(minLength: 0)
@@ -242,7 +242,7 @@ public struct SettingsView: View {
         } footer: {
             Text("Nothing you read, save or write leaves this device.")
                 .font(.body(13))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
         }
     }
 

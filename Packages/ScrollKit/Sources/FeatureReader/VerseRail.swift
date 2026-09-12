@@ -98,7 +98,7 @@ struct VerseRail: View {
 
     /// The surah's length, pinned to the last dash.
     private func lastNumber(_ rail: VerseRailGeometry) -> some View {
-        number(ayahCount, colour: .textTertiary)
+        number(ayahCount, colour: .textTertiaryReadable)
             .offset(x: ReaderMetrics.railNumberLeading, y: rail.centre(ofAyah: ayahCount) - numberHeight / 2)
             .allowsHitTesting(false)
     }

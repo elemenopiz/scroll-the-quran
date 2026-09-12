@@ -68,7 +68,7 @@ struct SubheadlineText: View {
     var body: some View {
         Text(text)
             .font(.body(size, weight: .medium))
-            .foregroundStyle(Color.textTertiary)
+            .foregroundStyle(Color.textTertiaryReadable)
             .multilineTextAlignment(.center)
             .fixedSize(horizontal: false, vertical: true)
             .frame(maxWidth: .infinity)

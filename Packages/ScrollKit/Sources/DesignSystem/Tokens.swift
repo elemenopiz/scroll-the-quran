@@ -130,7 +130,28 @@ public extension Color {
     /// textTertiary.light `#666666` (paywall-trial) / textSecondary.dark `#999999` (discover-dark)
     static let textSecondary = Color(light: 0x666666, dark: 0x999999)
     /// textSecondary.light `#8E8E93` (onboarding-reviews) / textTertiary.dark `#7D7D7E` (deepstudy-bottom)
+    ///
+    /// **Decorative only.** It measures 3.26:1 on white and 3.19:1 against `chipBackground`
+    /// on dark — under WCAG 1.4.3 AA's 4.5:1 for normal-size text, though comfortably over
+    /// the 3:1 that 1.4.11 asks of an icon or a chevron. Keep it for the muted Arabic layer
+    /// it was designed for (CLAUDE.md rule 5: decorative, VoiceOver-hidden, never the
+    /// reading text), for glyphs, and for separators. Anything a reader has to *read* uses
+    /// `textTertiaryReadable` (audit A11Y-2).
     static let textTertiary = Color(light: 0x8E8E93, dark: 0x7D7D7E)
+    /// The same role as `textTertiary` — a third step down from `textPrimary` — for text
+    /// that is actually read: licence and copyright lines, "Day 3 of 30", the autosave
+    /// label, footers, subtitles.
+    ///
+    /// The lightest pair that clears 4.5:1 on **every** surface in the palette: 5.23:1 on
+    /// `#FFFFFF` and 4.71:1 on the lightest card, 6.83:1 on `#0F0F11` and 4.68:1 against
+    /// `chipBackground` on dark. There is very little room left below `textSecondary` at
+    /// that ratio — that is the honest shape of the constraint, not a token that failed to
+    /// earn its place: it keeps the three-step hierarchy legible without the call sites
+    /// having to decide contrast for themselves.
+    ///
+    /// No **measured** value changes: this is a new token, and every card, sheet and page
+    /// ground in `Reference/` keeps the hex the probes sampled.
+    static let textTertiaryReadable = Color(light: 0x6C6C70, dark: 0x9A9A9E)
     /// Text drawn on top of `pillFill`.
     static let textOnPill = Color(light: 0xFFFFFF, dark: 0x000000)
 

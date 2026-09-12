@@ -68,7 +68,7 @@ struct TranslationSheet: View {
                         .foregroundStyle(Color.textSecondary)
                     Text(info.copyright)
                         .font(.body(ReaderMetrics.sheetRowCopyrightSize))
-                        .foregroundStyle(Color.textTertiary)
+                        .foregroundStyle(Color.textTertiaryReadable)
                         .multilineTextAlignment(.leading)
                         .fixedSize(horizontal: false, vertical: true)
                 }
@@ -97,13 +97,13 @@ struct TranslationSheet: View {
         VStack(alignment: .leading, spacing: ReaderMetrics.sheetRowSpacing) {
             Text("Arabic")
                 .capsLabelStyle()
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
             Text(arabicEdition.name)
                 .font(.body(ReaderMetrics.sheetRowSubtitleSize))
                 .foregroundStyle(Color.textSecondary)
             Text(arabicEdition.attribution)
                 .font(.body(ReaderMetrics.sheetRowCopyrightSize))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.horizontal, Spacing.pageMargin)

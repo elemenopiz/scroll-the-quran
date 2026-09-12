@@ -32,7 +32,7 @@ public struct ReviewCard: View {
                     .fixedSize(horizontal: false, vertical: true)
                 Text(author)
                     .font(.body(15, weight: .semibold))
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textTertiaryReadable)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(Spacing.xl)

@@ -24,7 +24,7 @@ struct ShareCard: View {
             Spacer(minLength: 0)
             Text(attribution)
                 .font(.body(ReaderMetrics.shareAttributionSize))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }

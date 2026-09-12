@@ -103,7 +103,7 @@ public struct PlanDetailSheet: View {
             if !premium.isPremium {
                 Label("Reading plans are part of Premium", systemImage: "lock.fill")
                     .font(.body(13))
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textTertiaryReadable)
                     .labelStyle(.titleAndIcon)
                     .accessibilityIdentifier("planDetail.premiumNote")
             }

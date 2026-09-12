@@ -206,7 +206,7 @@ private struct PlanCard: View {
             HStack(spacing: 5) {
                 Text(PlanPricing.compareLine(plan))
                     .strikethrough()
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textTertiaryReadable)
                 Text(PlanPricing.periodLine(plan))
                     .foregroundStyle(Color.textPrimary)
             }

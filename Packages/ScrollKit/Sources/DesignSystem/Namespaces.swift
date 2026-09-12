@@ -25,6 +25,7 @@ public enum Tokens {
     public static let textPrimary = Color.textPrimary
     public static let textSecondary = Color.textSecondary
     public static let textTertiary = Color.textTertiary
+    public static let textTertiaryReadable = Color.textTertiaryReadable
     public static let textOnPill = Color.textOnPill
 
     // Accents

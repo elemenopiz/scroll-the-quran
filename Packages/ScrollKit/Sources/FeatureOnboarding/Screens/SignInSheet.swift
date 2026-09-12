@@ -45,7 +45,7 @@ struct SignInSheet: View {
 
             Text(content.body)
                 .font(.body(scale.type(15)))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, scale.height(Gap.titleToBody))
@@ -77,7 +77,7 @@ struct SignInSheet: View {
 
             Text(content.emailFootnote)
                 .font(.body(scale.type(13)))
-                .foregroundStyle(Color.textTertiary)
+                .foregroundStyle(Color.textTertiaryReadable)
                 .multilineTextAlignment(.center)
                 .padding(.top, scale.height(Gap.recoverToFootnote))
 

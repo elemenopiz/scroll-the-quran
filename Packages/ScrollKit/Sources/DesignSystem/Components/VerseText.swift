@@ -104,7 +104,7 @@ public struct VerseText: View {
     /// Joining the ayat with a bare space runs two sentences together
     /// ("…call for help Guide us…"), and appending punctuation the translator did not
     /// write is not ours to do — Itani's ClearQuran is CC BY-**ND**. So the boundary is
-    /// marked instead of edited: a small muted ⟨n⟩ in `Tokens.textTertiary` opens each
+    /// marked instead of edited: a small muted ⟨n⟩ in `Tokens.textTertiaryReadable` opens each
     /// ayah after the first, the same mushaf convention the Arabic line uses. The marker
     /// is decorative — VoiceOver reads the ayat joined, without it.
     ///
@@ -174,7 +174,7 @@ public struct VerseText: View {
     private func marker(for ayah: Int) -> AttributedString {
         var marker = AttributedString("\u{2329}\(ayah)\u{232A}")
         marker.font = .body(size.english * 0.62, weight: .semibold)
-        marker.foregroundColor = .textTertiary
+        marker.foregroundColor = .textTertiaryReadable
         return marker
     }
 

@@ -1,6 +1,9 @@
 @testable import DesignSystem
 import SwiftUI
 import Testing
+#if canImport(AppKit)
+    import AppKit
+#endif
 
 @Test("DesignSystem module is linked and identifies itself")
 func designSystemModuleIdentifiesItself() {
@@ -125,5 +128,101 @@ struct UITextScalingTests {
         // CLAUDE.md rule 5 and audit A11Y-6: letting Dynamic Type grow the decorative layer
         // pushes the English verse off the page. `arabicAccent` uses `fixedSize:` on purpose.
         #expect(Font.arabicAccent(20) == Font.custom(FontFamily.quran, fixedSize: 20))
+    }
+}
+
+/// Audit A11Y-2 (HIGH, WCAG 1.4.3 AA). `Color.textTertiary` measures 3.26:1 on white and
+/// 3.19:1 against `chipBackground` on dark. That is right for the decorative, VoiceOver-
+/// hidden Arabic layer it was designed for and for glyphs (1.4.11 asks 3:1 of those), and
+/// wrong for the ~20 places it was reused for 12–16 pt text a reader has to read.
+@Suite("Text contrast")
+struct TextContrastTests {
+    /// WCAG 2.x relative luminance.
+    private func luminance(_ hex: UInt32) -> Double {
+        func channel(_ raw: UInt32) -> Double {
+            let c = Double(raw) / 255
+            return c <= 0.04045 ? c / 12.92 : pow((c + 0.055) / 1.055, 2.4)
+        }
+        return 0.2126 * channel((hex >> 16) & 0xFF)
+            + 0.7152 * channel((hex >> 8) & 0xFF)
+            + 0.0722 * channel(hex & 0xFF)
+    }
+
+    private func contrast(_ a: UInt32, _ b: UInt32) -> Double {
+        let (hi, lo) = (max(luminance(a), luminance(b)), min(luminance(a), luminance(b)))
+        return (hi + 0.05) / (lo + 0.05)
+    }
+
+    /// Every ground the two tokens are ever drawn on, from `Tokens.swift`.
+    private let lightGrounds: [UInt32] = [0xFFFFFF, 0xFAFAFC, 0xF5F5F5, 0xF3F3F4]
+    private let darkGrounds: [UInt32] = [0x0F0F11, 0x121214, 0x1C1C1E, 0x1E1E20, 0x1E1E23, 0x2A2A2E, 0x303035]
+
+    private let readableLight: UInt32 = 0x6C6C70
+    private let readableDark: UInt32 = 0x9A9A9E
+
+    /// Resolve a dynamic token back to the hex it was built from. A `Color(light:dark:)` is
+    /// a provider, not a value, so it cannot be compared directly.
+    private func resolved(_ color: Color, dark: Bool) -> UInt32? {
+        #if canImport(AppKit)
+            var hex: UInt32?
+            let appearance = NSAppearance(named: dark ? .darkAqua : .aqua)
+            appearance?.performAsCurrentDrawingAppearance {
+                guard let srgb = NSColor(color).usingColorSpace(.sRGB) else { return }
+                let channel = { (value: CGFloat) in UInt32((value * 255).rounded()) }
+                hex = channel(srgb.redComponent) << 16
+                    | channel(srgb.greenComponent) << 8
+                    | channel(srgb.blueComponent)
+            }
+            return hex
+        #else
+            return nil
+        #endif
+    }
+
+    @Test("The tokens resolve to the pairs the contrast numbers were measured from")
+    func tokensResolveToTheMeasuredPairs() throws {
+        #expect(resolved(Color.textTertiaryReadable, dark: false) == readableLight)
+        #expect(resolved(Color.textTertiaryReadable, dark: true) == readableDark)
+        // And the decorative one is untouched — no measured value in `Reference/` moved.
+        #expect(resolved(Color.textTertiary, dark: false) == 0x8E8E93)
+        #expect(resolved(Color.textTertiary, dark: true) == 0x7D7D7E)
+        #expect(resolved(Color.textSecondary, dark: false) == 0x666666)
+        #expect(resolved(Color.textSecondary, dark: true) == 0x999999)
+    }
+
+    @Test("Readable tertiary text clears 4.5:1 on every ground in the palette")
+    func readableTokenPassesAA() {
+        for ground in lightGrounds {
+            #expect(
+                contrast(readableLight, ground) >= 4.5,
+                "light #6C6C70 on #\(String(ground, radix: 16)) is \(contrast(readableLight, ground))"
+            )
+        }
+        for ground in darkGrounds {
+            #expect(
+                contrast(readableDark, ground) >= 4.5,
+                "dark #9A9A9E on #\(String(ground, radix: 16)) is \(contrast(readableDark, ground))"
+            )
+        }
+    }
+
+    @Test("The decorative token is still a third step down, and still fails AA for text")
+    func decorativeTokenIsWhatTheFindingSaid() {
+        // This is the measurement the audit made; it is recorded here so the split is not
+        // "fixed" later by quietly darkening the Arabic layer (CLAUDE.md rule 5).
+        #expect(contrast(0x8E8E93, 0xFFFFFF) < 4.5)
+        #expect(contrast(0x7D7D7E, 0x303035) < 4.5)
+        // 1.4.11: fine for the chevrons, glyphs and separators it is left on.
+        #expect(contrast(0x8E8E93, 0xFFFFFF) >= 3)
+        #expect(contrast(0x7D7D7E, 0x1E1E23) >= 3)
+        // And it is genuinely lighter than the readable token, so the hierarchy survives.
+        #expect(luminance(0x8E8E93) > luminance(readableLight))
+        #expect(luminance(0x9A9A9E) > luminance(0x7D7D7E))
+    }
+
+    @Test("textSecondary already passed, and stays where it is")
+    func secondaryUnchanged() {
+        for ground in lightGrounds { #expect(contrast(0x666666, ground) >= 4.5) }
+        for ground in darkGrounds { #expect(contrast(0x999999, ground) >= 4.5) }
     }
 }

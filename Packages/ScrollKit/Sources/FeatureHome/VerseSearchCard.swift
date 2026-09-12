@@ -64,7 +64,7 @@ struct VerseSearchCard: View {
 
                 Label("Your saved library lives at the bottom of this page", systemImage: "arrow.down")
                     .font(.body(HomeMetrics.searchFootnote))
-                    .foregroundStyle(Color.textTertiary)
+                    .foregroundStyle(Color.textTertiaryReadable)
                     .labelStyle(.titleAndIcon)
                     .multilineTextAlignment(.center)
             }
