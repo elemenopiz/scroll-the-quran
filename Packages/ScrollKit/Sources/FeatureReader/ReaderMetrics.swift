@@ -101,6 +101,14 @@ public enum ReaderMetrics {
     public static let railNumberSize: CGFloat = 10
     /// The invisible strip that takes taps and drags: wide enough for a finger.
     public static let railHitWidth: CGFloat = 44
+    /// The scrub preview (Phase 4j): "2:120" beside the indicator while the finger is down,
+    /// so the reader can see where a release will land. Nothing else moves during a scrub —
+    /// the pager itself does not — so this and the number bubble are the whole feedback.
+    /// Drawn only while dragging, which is why it is not in any reference capture.
+    public static let railPreviewLeading: CGFloat = 34
+    public static let railPreviewSize: CGFloat = 13
+    public static let railPreviewPaddingH = Spacing.sm
+    public static let railPreviewPaddingV = Spacing.xxs
 
     // MARK: - Action stack
 

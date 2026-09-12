@@ -268,3 +268,122 @@ struct ReaderModelTests {
         #expect(!model.english(for: VerseRef(surah: 2, ayah: 255)).isEmpty)
     }
 }
+
+/// Phase 4j. The reader used to be dropped between two pages by a rail scrub: the drag wrote
+/// `currentPageID` on every tick, and a paging scroll view fed dozens of programmatic positions
+/// a second settles wherever it happens to be when the writes stop.
+///
+/// The fix has two halves. The model's half is here: a scrub moves nothing until it is
+/// released, and every programmatic move — the release, the picker, a deep link, the dice, the
+/// surah handoff — goes through `move(to:)`, which publishes a `ReaderJump` for the view to
+/// re-assert. The view's half (the double commit through `ScrollViewProxy`) is covered by
+/// `ReaderTests.testRailScrubAlwaysLandsOnAPageBoundary` on the simulator.
+@Suite("Reader jumps")
+@MainActor
+struct ReaderJumpTests {
+    @Test("a scrub moves nothing until the finger lifts, then jumps exactly once")
+    func scrubCommitsOnceOnRelease() throws {
+        let model = try TestContent.model(surah: 2)
+        let before = model.jumpRequest
+        for ayah in [12, 40, 41, 120] {
+            #expect(model.beginRailDrag(toAyah: ayah))
+            #expect(model.railAyah == ayah)
+            // Not one of those ticks may touch the pager.
+            #expect(model.currentPageID == .opening(surah: 2))
+            #expect(model.jumpRequest == before)
+        }
+        model.endRailDrag()
+        let jump = try #require(model.jumpRequest)
+        #expect(jump.id == ReaderPageID(surah: 2, ayah: 120, part: 0))
+        #expect(model.currentPageID == jump.id)
+        #expect(jump.token == (before?.token ?? 0) + 1)
+    }
+
+    @Test("a swipe is not a jump: the pager's own writes publish nothing to re-assert")
+    func swipingPublishesNoJump() throws {
+        let model = try TestContent.model(surah: 2)
+        let before = model.jumpRequest
+        model.currentPageID = model.pages[3].id
+        #expect(model.jumpRequest == before)
+    }
+
+    @Test("two jumps to the same page are two requests")
+    func repeatedJumpIsANewRequest() throws {
+        let model = try TestContent.model(surah: 2)
+        model.jump(toAyah: 255)
+        let first = try #require(model.jumpRequest)
+        model.jump(toAyah: 255)
+        let second = try #require(model.jumpRequest)
+        #expect(first.id == second.id)
+        #expect(second.token == first.token + 1)
+        #expect(first != second)
+    }
+
+    @Test("every programmatic move publishes a jump to a page that exists")
+    func everyMovePublishesAJump() throws {
+        let model = try TestContent.model(surah: 2)
+
+        func assertJumped(_ label: String) throws {
+            let jump = try #require(model.jumpRequest, "\(label) published no jump")
+            #expect(model.currentPageID == jump.id, "\(label) moved somewhere else")
+            #expect(model.pages.contains { $0.id == jump.id }, "\(label) named a page that is not in the surah")
+        }
+
+        // Opening the surah at all is a jump: the first page has to land on the boundary too.
+        try assertJumped("init")
+
+        model.jump(toAyah: 255)
+        try assertJumped("the rail")
+
+        model.open(surah: 18, ayah: 60)
+        try assertJumped("the surah picker")
+
+        model.open(verse: VerseRef(surah: 94, ayah: 5))
+        try assertJumped("a deep link")
+
+        _ = model.openRandomVerse()
+        try assertJumped("the dice")
+
+        model.selectTranslation("pickthall")
+        try assertJumped("a translation change")
+
+        model.open(surah: 1)
+        model.currentPageID = model.pages.last?.id
+        model.advanceToNextSurahIfNeeded()
+        #expect(model.surah.number == 2)
+        try assertJumped("the surah handoff")
+    }
+
+    @Test("id -> ayah -> id round trips through every page of a surah", arguments: [1, 2, 18, 112])
+    func idRoundTrips(_ number: Int) throws {
+        let model = try TestContent.model(surah: number)
+        for page in model.pages where page.kind == .verse {
+            let ayah = page.id.ayah
+            model.jump(toAyah: ayah)
+            let landed = try #require(model.currentPageID)
+            // Always the *first* slice of the ayah, whatever slice we asked about.
+            #expect(landed == ReaderPageID(surah: number, ayah: ayah, part: 0))
+            #expect(model.currentPage?.railAyah == ayah)
+            #expect(model.currentVerse == VerseRef(surah: number, ayah: ayah))
+        }
+    }
+
+    /// 2:282, the longest ayah in the Quran, is several pages long in every translation the
+    /// app ships. A scrub to it has to land on the first of them.
+    @Test("a scrub to a split ayah lands on its '(1/n)' page")
+    func splitAyahLandsOnItsFirstPage() throws {
+        let model = try TestContent.model(surah: 2)
+        let slices = model.pages.filter { $0.kind == .verse && $0.id.ayah == 282 }
+        #expect(slices.count > 1, "2:282 should be split into continuation pages")
+
+        // From above it and from below it: a scrub arrives from either direction.
+        for from in [1, 286] {
+            model.jump(toAyah: from)
+            #expect(model.beginRailDrag(toAyah: 282))
+            model.endRailDrag()
+            #expect(model.currentPageID == ReaderPageID(surah: 2, ayah: 282, part: 0))
+            #expect(model.currentPage?.caption == "(1/\(slices.count))")
+            #expect(model.currentPage?.arabic != nil, "only the first slice carries the Arabic")
+        }
+    }
+}

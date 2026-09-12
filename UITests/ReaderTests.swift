@@ -145,6 +145,118 @@ final class ReaderTests: XCTestCase {
         )
     }
 
+    /// Phase 4j: the rail must never leave the reader between two pages.
+    ///
+    /// Five scrubs to random targets down Al-Baqarah's 286 ayat. After each release the reader
+    /// has to be *on* a page: exactly one page on screen, its block of type where the pager
+    /// puts it on a page it swiped to (2 pt), the reference line naming one ayah — the first
+    /// slice of it, if the ayah is split — and the verse text below the toolbar, not under it.
+    ///
+    /// The baseline is measured rather than assumed: two swipes page the reader with the
+    /// pager's own gesture, which lands on a boundary by definition, and every page centres
+    /// its verse block identically, so the frame recorded there is where a scrub must land.
+    ///
+    /// The targets come from a seeded generator, and the seed and the five fractions are
+    /// printed, so a failure can be reproduced exactly.
+    func testRailScrubAlwaysLandsOnAPageBoundary() throws {
+        let app = try launchReader()
+        defer { app.terminate() }
+
+        let rail = app.descendants(matching: .any).matching(identifier: "reader.rail").firstMatch
+        XCTAssertTrue(rail.waitForExistence(timeout: 5))
+        let toolbar = app.descendants(matching: .any).matching(identifier: "reader.toolbar").firstMatch
+        XCTAssertTrue(toolbar.waitForExistence(timeout: 5))
+        let pager = app.descendants(matching: .any).matching(identifier: "reader.pager").firstMatch
+        XCTAssertTrue(pager.waitForExistence(timeout: 5))
+
+        // The settled geometry, from the pager's own paging gesture.
+        pager.swipeUp()
+        pager.swipeUp()
+        let baseline = try onlyVisiblePage(in: app, after: "two swipes")
+        let settledCentre = baseline.frame.midY
+        print(String(format: "RAIL SCRUB baseline %@ centre %.1f", baseline.identifier, settledCentre))
+
+        let seed: UInt64 = 0x4A_5241_494C // "JRAIL"
+        var generator = SeededGenerator(seed: seed)
+        let targets = (0 ..< 5).map { _ in Double.random(in: 0.05 ... 0.98, using: &generator) }
+        print("RAIL SCRUB seed \(String(seed, radix: 16)) targets \(targets.map { String(format: "%.3f", $0) })")
+
+        for target in targets {
+            rail.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.02))
+                .press(
+                    forDuration: 0.2,
+                    thenDragTo: rail.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: target))
+                )
+
+            // 1. One page on screen, not two — and it is a page boundary the reader is on.
+            let label = String(format: "a scrub to %.3f of the rail", target)
+            let page = try onlyVisiblePage(in: app, after: label)
+            XCTAssertEqual(
+                Double(page.frame.midY), Double(settledCentre), accuracy: 2,
+                "\(label) parked mid-page: \(page.identifier) sits at \(page.frame.midY), "
+                    + "a page the pager settled on sits at \(settledCentre)"
+            )
+
+            // 2. Where the finger pointed, give or take the 2.19 pt pitch of a 286-ayah rail.
+            let parts = page.identifier.split(separator: ".")
+            let landed = try XCTUnwrap(parts.dropLast().last.flatMap { Int($0) }, "\(label): \(page.identifier)")
+            let expected = max(1, Int((target * Double(ayahCount)).rounded()))
+            XCTAssertLessThanOrEqual(
+                abs(landed - expected), 2,
+                "\(label) landed on 2:\(landed), not 2:\(expected)"
+            )
+            // 3. A split ayah lands on its first slice, the "(1/n)" page.
+            XCTAssertEqual(parts.last.flatMap { Int($0) }, 0, "\(label) landed on a continuation page")
+
+            // 4. The reference line names that one ayah, and nothing else.
+            let reference = page.descendants(matching: .any)
+                .matching(identifier: "reader.reference").firstMatch
+            XCTAssertTrue(reference.waitForExistence(timeout: 5))
+            let expectedPrefix = "Al-Baqarah 2:\(landed)"
+            XCTAssertTrue(
+                reference.label == expectedPrefix || reference.label.hasPrefix(expectedPrefix + " (1/"),
+                "\(label): the page should name one ayah, got '\(reference.label)'"
+            )
+
+            // 5. The toolbar is chrome over the page, not over the words.
+            let verse = page.descendants(matching: .any).matching(identifier: "reader.verse").firstMatch
+            XCTAssertTrue(verse.waitForExistence(timeout: 5))
+            XCTAssertGreaterThan(
+                verse.frame.minY, toolbar.frame.maxY,
+                "\(label): the toolbar (to \(toolbar.frame.maxY)) covers the verse "
+                    + "(from \(verse.frame.minY))"
+            )
+        }
+    }
+
+    /// The one reader page on screen, once the pager has stopped moving.
+    ///
+    /// A pager parked between two pages shows two, which is the failure this test exists for,
+    /// so "exactly one" is an assertion and not a convenience. The wait is for the *identity*
+    /// to stop changing — deliberately not a wait on the assertion itself: a pager that parks
+    /// mid-page and stays there has to fail rather than be waited out.
+    private func onlyVisiblePage(in app: XCUIApplication, after label: String) throws -> XCUIElement {
+        let pages = app.descendants(matching: .any)
+            .matching(NSPredicate(format: "identifier BEGINSWITH 'reader.page.'"))
+        var previous = ""
+        var visible: [XCUIElement] = []
+        for _ in 0 ..< 25 {
+            Thread.sleep(forTimeInterval: 0.2)
+            visible = (0 ..< pages.count)
+                .map { pages.element(boundBy: $0) }
+                .filter(\.isHittable)
+            let identity = visible.map(\.identifier).joined(separator: "+")
+            if !identity.isEmpty, identity == previous { break }
+            previous = identity
+        }
+        XCTAssertEqual(
+            visible.count, 1,
+            "after \(label) the reader shows \(visible.count) pages "
+                + "(\(visible.map { "\($0.identifier) at \($0.frame.minY)" }.joined(separator: ", ")))"
+        )
+        return try XCTUnwrap(visible.first, "after \(label) no reader page was on screen")
+    }
+
     // MARK: - Translation
 
     /// Switching translation changes the English on the page and the pill's abbreviation.
@@ -285,5 +397,24 @@ struct ReaderSpecEnvelope: Decodable {
                 guard let data = try? Data(contentsOf: url) else { return nil }
                 return (try? decoder.decode(ReaderSpecEnvelope.self, from: data))?.spec
             }
+    }
+}
+
+
+/// SplitMix64, so the scrub targets are random but the run is reproducible from its seed.
+/// (The host tests have their own copy; a UI test target shares no code with the package.)
+struct SeededGenerator: RandomNumberGenerator {
+    private var state: UInt64
+
+    init(seed: UInt64) {
+        state = seed
+    }
+
+    mutating func next() -> UInt64 {
+        state &+= 0x9E37_79B9_7F4A_7C15
+        var z = state
+        z = (z ^ (z >> 30)) &* 0xBF58_476D_1CE4_E5B9
+        z = (z ^ (z >> 27)) &* 0x94D0_49BB_1331_11EB
+        return z ^ (z >> 31)
     }
 }
