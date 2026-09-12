@@ -27,3 +27,11 @@ Beyond RMSE, walk every screen in both appearances and fix or file each of these
 
 ## Also fix (from docs/qa/brand-review.md, Phase 4e walk)
 Items 1–8 in that file: Deep Study and Home scroll under the status bar unmasked; onboarding-reviews Continue pill has no scrim; onboarding-signin light hairlines; slide mockups still wireframes; Today's Reading cover blank + panel bleed behind tab items; notes-sheet captures without keyboard; OnboardingMetricsTests order dependency (register fonts in a suite setup). Item 9 (widget target placeholder icon) needs a project.yml edit: report it, do not do it.
+
+## Added ownership and items (2026-09-12, after 4a/4e merged)
+Owns additionally: `Tools/verify.sh`, `Tools/snapshot/capture.sh`, `UITests/**` (except `FunnelTests.swift`).
+- `Tools/verify.sh --snap all` must expand to every id in `Reference/manifest.json` (both appearances when `--both` is given); today `all` is not a keyword.
+- Before the XCUITest stage, `verify.sh` must actually reset state: `simctl uninstall` does not clear the App Group container (`group.com.scrollthequran`), so `ReaderTests` are order-dependent (translation pill width 106.9 vs 72.0 on a dirty container). Erase the device, or clear `Containers/Shared/AppGroup`, and give `testSwitchingTranslationChangesTheText` a `--reset-state` launch.
+- `capture.sh`: default settle 2 s yields blank first captures on this machine; make the default 6 s (or wait for first paint by sampling the capture's standard deviation as `Tools/release/screenshots.sh` does).
+- Remove the dead `XCTSkip` guards in `UITests/{ReaderTests,HomeTests,DiscoverTests,CommunityTests,PaywallTests}.swift` (they claim Phase 3e routing is missing; it is merged and every test executes).
+- `OnboardingMetricsTests`: register fonts in a suite-level setup so the suite passes when run alone.
