@@ -1,0 +1,16 @@
+{
+  "id": "funnel-paywall-trial",
+  "route": "paywall-trial",
+  "appearance": "light",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "funnel": { "phase": "paywall", "taps": [] },
+  "elements": [
+    { "name": "paywall.close",        "query": "identifier", "frame": { "x": 2.0,   "y": 54.0,  "width": 44.1,  "height": 44.0 } },
+    { "name": "paywall.headline",     "query": "identifier", "frame": { "x": 94.0,  "y": 158.0, "width": 205.3, "height": 73.3 } },
+    { "name": "paywall.price",        "query": "identifier", "frame": { "x": 147.2, "y": 619.0, "width": 98.9,  "height": 22.7 } },
+    { "name": "paywall.redeem",       "query": "identifier", "frame": { "x": 15.6,  "y": 680.0, "width": 362.0, "height": 65.0 } },
+    { "name": "paywall.viewAllPlans", "query": "identifier", "frame": { "x": 147.0, "y": 759.0, "width": 99.6,  "height": 19.7 } },
+    { "name": "paywall.legal.3",      "query": "identifier", "frame": { "x": 264.0, "y": 806.0, "width": 110.6, "height": 17.0 } }
+  ]
+}

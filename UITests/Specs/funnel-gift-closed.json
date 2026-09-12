@@ -1,0 +1,12 @@
+{
+  "id": "funnel-gift-closed",
+  "route": "gift-closed",
+  "appearance": "light",
+  "reference": { "width": 393, "height": 852 },
+  "tolerance": 6,
+  "funnel": { "phase": "paywall", "taps": ["paywall.close"] },
+  "elements": [
+    { "name": "gift.headline", "query": "identifier", "frame": { "x": 47.7, "y": 568.0, "width": 297.8, "height": 80.3 } },
+    { "name": "gift.reveal",   "query": "identifier", "frame": { "x": 0,    "y": 0,     "width": 393,   "height": 852 }, "existenceOnly": true }
+  ]
+}
