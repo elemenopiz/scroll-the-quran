@@ -1,6 +1,6 @@
 {
   "requires": "reader-routing",
-  "note": "Phase 3a owns the reader but not the routing that reaches it: AppShell still shows the Phase 1 placeholder in the Quran tab until Phase 3e wires ReaderView.screen(for:). This spec is therefore wrapped in an envelope rather than written at the top level, so LayoutSpecTests' loader (which decodes every JSON in the UI test bundle as a bare LayoutSpec) skips it instead of failing against the placeholder. ReaderTests unwraps it and skips itself, with a message, until the route is live. The frames were recorded with SCROLL_RECORD_SPECS=1 from ReaderView running on ScrollSim-3a and checked against Reference/reader-dark.png. They are XCUITest *accessibility* frames: for a text element that is the union of its glyph boxes and for a control it includes the tap padding, so it is not always the visual box. Elements whose box is content-driven (the page container, the verse block, the reference line) are asserted for existence only; the chrome, which is the layout this screen has to hold, is asserted by frame.",
+  "note": "Frames recorded with SCROLL_RECORD_SPECS=1 from ReaderView on the ScrollSim simulator and checked against Reference/reader-dark.png. They are XCUITest *accessibility* frames: for a text element that is the union of its glyph boxes and for a control it includes the tap padding, so it is not always the visual box. Elements whose box is content-driven (the page container, the verse block, the reference line) are asserted for existence only; the chrome, which is the layout this screen has to hold, is asserted by frame. The spec stays wrapped in a `spec` envelope so LayoutSpecTests' loader, which decodes every bare JSON in the bundle, leaves it to ReaderTests, which unwraps it. reader.hint is 209.2 (214 pt in the app's own space): ToastHint used to size itself to its text and came out at 262.7, and commit 70aaf51 pinned it to the 214 pt measured off the reference.",
   "spec": {
     "id": "reader-dark",
     "route": "reader",
@@ -21,7 +21,7 @@
       { "name": "reader.action.like", "query": "identifier", "frame": { "x": 334.3, "y": 566.4, "width": 43.0, "height": 42.9 } },
       { "name": "reader.action.notes", "query": "identifier", "frame": { "x": 334.3, "y": 628.8, "width": 43.0, "height": 42.9 } },
       { "name": "reader.action.share", "query": "identifier", "frame": { "x": 334.3, "y": 691.2, "width": 43.0, "height": 42.9 } },
-      { "name": "reader.hint", "query": "identifier", "frame": { "x": 48.9, "y": 675.6, "width": 262.7, "height": 59.5 }, "tolerance": 8 },
+      { "name": "reader.hint", "query": "identifier", "frame": { "x": 48.9, "y": 675.6, "width": 209.2, "height": 59.5 }, "tolerance": 8 },
       { "name": "reader.verse", "query": "identifier", "frame": { "x": 32.0, "y": 409.0, "width": 329.0, "height": 78.0 }, "existenceOnly": true },
       { "name": "reader.reference", "query": "identifier", "frame": { "x": 32.0, "y": 518.0, "width": 329.0, "height": 11.0 }, "existenceOnly": true }
     ]

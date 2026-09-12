@@ -1,4 +1,5 @@
 {
+  "note": "gift.offerCard starts at y 162, not the y 143 recorded when this spec was written. Phase 4e moved it on purpose: at 143 the card swallowed the envelope flap's peak, leaving a sliver where Reference/gift-open.png shows a triangle, and 162 is where the reference starts it. See docs/qa/brand-review.md, Fixed item 3.",
   "id": "gift-open",
   "route": "gift-open",
   "appearance": "light",
@@ -6,7 +7,7 @@
   "tolerance": 6,
   "elements": [
     { "name": "gift.close",      "query": "identifier", "frame": { "x": 4.6,   "y": 73.0,  "width": 44.1,  "height": 44.0 } },
-    { "name": "gift.offerCard",  "query": "identifier", "frame": { "x": 71.8,  "y": 143.0, "width": 249.7, "height": 417.0 } },
+    { "name": "gift.offerCard",  "query": "identifier", "frame": { "x": 71.8,  "y": 162.0, "width": 249.7, "height": 417.0 } },
     { "name": "gift.lucky",      "query": "identifier", "frame": { "x": 113.1, "y": 622.0, "width": 167.1, "height": 42.0 } },
     { "name": "gift.price",      "query": "identifier", "frame": { "x": 95.5,  "y": 674.0, "width": 202.2, "height": 40.0 } },
     { "name": "gift.startTrial", "query": "identifier", "frame": { "x": 15.6,  "y": 728.0, "width": 362.0, "height": 60.0 } },

@@ -270,7 +270,9 @@ final class ReaderTests: XCTestCase {
 /// The wrapper around a reader `LayoutSpec`. See `UITests/Specs/reader-dark.json` for why the
 /// specs are not bare `LayoutSpec` documents.
 struct ReaderSpecEnvelope: Decodable {
-    /// What has to exist before the spec can run. Only `"reader-routing"` today.
+    /// The envelope marker. It exists so `LayoutSpecTests`' loader — which decodes every
+    /// bare JSON in the bundle as a `LayoutSpec` — leaves the reader specs to this file,
+    /// which unwraps them. Only `"reader-routing"` today; the routing it names is live.
     let requires: String
     let spec: LayoutSpec
 

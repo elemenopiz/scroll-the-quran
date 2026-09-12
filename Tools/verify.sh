@@ -94,9 +94,12 @@ reset_state() {
   group="$(xcrun simctl get_app_container "$SIM" "$BUNDLE_ID" "$APP_GROUP" 2>/dev/null || true)"
   xcrun simctl uninstall "$SIM" "$BUNDLE_ID" >/dev/null 2>&1 || true
 
-  # With the app gone, `get_app_container` cannot answer any more, so fall back to reading
-  # the group id out of each shared container's own metadata plist.
-  if [ -z "$group" ]; then
+  # With the app gone `get_app_container` cannot answer any more, and the path it gave
+  # before the uninstall can be stale — iOS recreates the group container under a fresh
+  # UUID after an uninstall, so the old one no longer exists. Either way, fall back to
+  # reading the group id out of each shared container's own metadata plist. The condition
+  # is "not a directory", not "empty": a stale path is non-empty and used to skip this.
+  if [ ! -d "${group:-}" ]; then
     local root="$HOME/Library/Developer/CoreSimulator/Devices/$SIM/data/Containers/Shared/AppGroup"
     if [ -d "$root" ]; then
       local meta id
