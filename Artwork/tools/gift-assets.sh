@@ -295,10 +295,7 @@ cutout, was, gain = tone_paper(cut(image, mask), OPEN_PAPER)
 report["open.paper"] = (was.round(1).tolist(), gain.round(3).tolist())
 x0, y0, x1, y1 = bbox(cutout)
 cutout = cutout.crop((x0, y0, x1, y1))
-body_mask = mask[y0:y1, x0:x1]
-body_rgb = np.asarray(image)[y0:y1, x0:x1].astype(np.float32)
-corner = pocket_line(body_mask)
-apex = pocket_apex(body_rgb, body_mask, corner)
+corner = pocket_line(mask[y0:y1, x0:x1])
 
 flap = cutout.crop((0, 0, cutout.width, corner))
 flap = flap.resize((flap.width, round(flap.height * FLAP_STRETCH)), Image.LANCZOS)
