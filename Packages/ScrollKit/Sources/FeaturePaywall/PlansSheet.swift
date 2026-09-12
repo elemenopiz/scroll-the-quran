@@ -13,6 +13,10 @@ struct PlansSheet: View {
     let introEligible: Bool
     var onRedeem: () -> Void
     var onDismiss: () -> Void
+    /// Where the flow wants VoiceOver's cursor when this sheet comes up (audit A11Y-3).
+    /// The sheet has no title of its own, so the first plan card is the landing point —
+    /// it is what the customer is here to choose between.
+    var focus: AccessibilityFocusState<PaywallStage?>.Binding
     /// What the last purchase attempt left to say (audit IAP-1). `nil` on every capture.
     var notice: PaywallNotice?
     var isBusy = false
@@ -101,7 +105,7 @@ struct PlansSheet: View {
 
     private var planCards: some View {
         VStack(spacing: PaywallMetrics.cardSpacing) {
-            ForEach(orderedPlans) { plan in
+            ForEach(Array(orderedPlans.enumerated()), id: \.element.id) { index, plan in
                 Button {
                     selection = plan.id
                 } label: {
@@ -113,6 +117,7 @@ struct PlansSheet: View {
                     )
                 }
                 .buttonStyle(.plain)
+                .accessibilityFocused(focus, equals: index == 0 ? .plans : nil)
             }
         }
         .padding(.horizontal, PaywallMetrics.cardInset)

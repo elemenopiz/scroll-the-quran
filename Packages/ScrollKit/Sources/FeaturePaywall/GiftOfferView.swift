@@ -12,11 +12,15 @@ public struct GiftOfferView: View {
     private let onPurchase: () -> Void
     private let onRestore: () -> Void
     private let links: PaywallLegalLinks
+    /// Where the flow wants VoiceOver's cursor (audit A11Y-3). The gift screen is drawn
+    /// into a `ZStack` rather than presented, so nothing else moves the cursor onto it.
+    private let focus: AccessibilityFocusState<PaywallStage?>.Binding?
     private let notice: PaywallNotice?
     private let isBusy: Bool
     private let onDismissNotice: () -> Void
 
     @State private var isOpen: Bool
+    @AccessibilityFocusState private var standaloneFocus: PaywallStage?
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.openURL) private var openURL
 
@@ -29,6 +33,7 @@ public struct GiftOfferView: View {
         onPurchase: @escaping () -> Void,
         onRestore: @escaping () -> Void = {},
         links: PaywallLegalLinks = .default,
+        focus: AccessibilityFocusState<PaywallStage?>.Binding? = nil,
         notice: PaywallNotice? = nil,
         isBusy: Bool = false,
         onDismissNotice: @escaping () -> Void = {}
@@ -41,6 +46,7 @@ public struct GiftOfferView: View {
         self.onPurchase = onPurchase
         self.onRestore = onRestore
         self.links = links
+        self.focus = focus
         self.notice = notice
         self.isBusy = isBusy
         self.onDismissNotice = onDismissNotice
@@ -59,8 +65,20 @@ public struct GiftOfferView: View {
             }
         }
         .animation(revealAnimation, value: isOpen)
+        // Opening the envelope replaces every element on the screen without any navigation
+        // happening, so VoiceOver is told the same way a pushed screen would tell it.
+        .onChange(of: isOpen) { _, opened in
+            guard opened else { return }
+            AccessibilityNotification.ScreenChanged().post()
+            focus?.wrappedValue = .giftOpen
+        }
         .accessibilityElement(children: .contain)
         .accessibilityIdentifier(isOpen ? "screen.gift-open" : "screen.gift-closed")
+    }
+
+    /// The flow's focus state, or this view's own when it is used standalone (previews).
+    private var focusBinding: AccessibilityFocusState<PaywallStage?>.Binding {
+        focus ?? $standaloneFocus
     }
 
     /// Opening the envelope is a large motion; Reduce Motion gets a cross-fade instead.
@@ -102,6 +120,7 @@ public struct GiftOfferView: View {
             )
             .padding(.top, PaywallMetrics.giftHeadlineTopClosed)
             .accessibilityIdentifier("gift.headline")
+            .accessibilityFocused(focusBinding, equals: .giftClosed)
             .allowsHitTesting(false)
 
             lines(
@@ -151,6 +170,7 @@ public struct GiftOfferView: View {
                 .foregroundStyle(GiftPalette.ink)
                 .padding(.top, PaywallMetrics.luckyTop)
                 .accessibilityIdentifier("gift.lucky")
+                .accessibilityFocused(focusBinding, equals: .giftOpen)
 
             HStack(spacing: Spacing.lg) {
                 Text(standardPriceText)

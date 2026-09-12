@@ -168,6 +168,14 @@ public final class PaywallModel {
 /// it, and the one-time gift offer once the paywall is dismissed.
 public struct PaywallFlow: View {
     @State private var model: PaywallModel
+    /// Where VoiceOver's cursor belongs after a stage change.
+    ///
+    /// Audit A11Y-3: `PlansSheet` and `GiftOfferView` are drawn into this `ZStack` rather
+    /// than presented with `.sheet`/`.fullScreenCover` — deliberate, so the snapshot routes
+    /// render synchronously — and the cost is that SwiftUI posts no screen-changed
+    /// notification. A VoiceOver user's cursor stayed on the screen that had just gone
+    /// away, and might never discover the gift offer existed.
+    @AccessibilityFocusState private var focusedStage: PaywallStage?
     @Environment(\.scenePhase) private var scenePhase
     private let onDismiss: () -> Void
     private let onPurchased: () -> Void
@@ -197,6 +205,13 @@ public struct PaywallFlow: View {
             }
         }
         .task { await model.load() }
+        .onChange(of: model.stage) { _, stage in
+            // Both halves matter: the notification tells VoiceOver the context changed at
+            // all, and the focus state says *where* to land rather than leaving it to
+            // whatever SwiftUI decides is first.
+            AccessibilityNotification.ScreenChanged().post()
+            focusedStage = stage
+        }
         // A subscription can lapse, be refunded or be approved while the app is in the
         // background, and StoreKit does not always redeliver a transaction for that.
         .onChange(of: scenePhase) { _, phase in
@@ -242,6 +257,7 @@ public struct PaywallFlow: View {
                     introEligible: model.introEligible,
                     onRedeem: { buy(model.selectedPlan) },
                     onDismiss: { model.show(.trial) },
+                    focus: $focusedStage,
                     notice: model.notice,
                     isBusy: model.isBusy,
                     onDismissNotice: model.dismissNotice
@@ -267,6 +283,7 @@ public struct PaywallFlow: View {
                 }
             } },
             links: links,
+            focus: $focusedStage,
             notice: model.notice,
             isBusy: model.isBusy,
             onDismissNotice: model.dismissNotice
