@@ -1,8 +1,47 @@
 import DesignSystem
 import SwiftUI
 
-/// The wax seal: a slightly irregular gold disc with **the app's own mark** struck into it.
-/// Drawn, not photographed, so nothing is copied from the reference art.
+/// The generated gift artwork, resolved from the **app's** asset catalog.
+///
+/// `Artwork/tools/gift-assets.sh` cuts these layers out of the renders in
+/// `Artwork/src/gift/`; `Artwork/README.md` says what each one contains. They live in
+/// `App/Assets.xcassets`, so they resolve through `Bundle.main` and a package preview (or
+/// a host-only unit test) sees nothing — every surface below falls back to the vector art
+/// Phase 3 drew rather than leaving a hole.
+enum GiftArt {
+    /// Closed envelope, wax seal with the brand ring already pressed into it, 1200x900.
+    static let closedEnvelope = "EnvelopeClosed"
+    /// Opened envelope: raised flap, lining and front pocket in one 1000x1500 layer.
+    static let openEnvelope = "EnvelopeOpen"
+    /// The blank offer card, 900x1200.
+    static let card = "EnvelopeCard"
+    /// The same wax seal as the closed envelope's, cut off the paper it was pressed on.
+    static let waxSeal = "WaxSealLogo"
+    /// The warm sky behind both gift screens, 1179x2556.
+    static let clouds = "GiftClouds"
+
+    static func layer(_ name: String) -> Image? {
+        BrandMark.image(named: name)
+    }
+
+    /// Every gift layer is decoration: the screen's own copy carries the meaning.
+    @ViewBuilder
+    static func image(_ name: String, width: CGFloat, height: CGFloat, at origin: CGPoint) -> some View {
+        if let artwork = layer(name) {
+            artwork
+                .resizable()
+                .interpolation(.high)
+                .frame(width: width, height: height)
+                .offset(x: origin.x, y: origin.y)
+                .accessibilityHidden(true)
+        }
+    }
+}
+
+/// The wax seal, **drawn**: a slightly irregular gold disc with the app's own mark struck
+/// into it. This is the fallback for a build without the asset catalog — the shipped
+/// screens use `GiftArt.waxSeal`, which is the seal from the same render the closed
+/// envelope's is baked into, so both gift screens carry one seal treatment.
 struct WaxSeal: View {
     var body: some View {
         GeometryReader { proxy in
@@ -74,9 +113,37 @@ private struct WaxBlob: Shape {
 
 // MARK: - Sealed envelope
 
-/// The unopened envelope on `gift-closed`: a slightly tilted paper rectangle with the
-/// classic four folds and a wax seal where they meet.
+/// The unopened envelope on `gift-closed`: the generated render, which already carries the
+/// wax seal with the brand ring pressed into it, so no seal is drawn on top. Its frame is
+/// the artwork's whole 1200x900 canvas (`PaywallMetrics.closedEnvelopeArt()`), which is a
+/// little larger than the paper inside it.
 struct SealedEnvelope: View {
+    private static let canvas = PaywallMetrics.closedEnvelopeCanvas
+    private static let paper = PaywallMetrics.closedEnvelopeArtBody
+
+    var body: some View {
+        GeometryReader { proxy in
+            if let artwork = GiftArt.layer(GiftArt.closedEnvelope) {
+                artwork
+                    .resizable()
+                    .interpolation(.high)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+            } else {
+                DrawnSealedEnvelope()
+                    .frame(
+                        width: proxy.size.width * Self.paper.width / Self.canvas.width,
+                        height: proxy.size.height * Self.paper.height / Self.canvas.height
+                    )
+                    .position(x: proxy.size.width / 2, y: proxy.size.height / 2)
+            }
+        }
+        .accessibilityHidden(true)
+    }
+}
+
+/// The vector sealed envelope Phase 3 drew, kept as the no-catalog fallback: a paper
+/// rectangle with the classic four folds and a wax seal where they meet.
+private struct DrawnSealedEnvelope: View {
     /// Where all four creases meet, as a fraction of the envelope's height — and therefore
     /// where the seal is centred. 0.52 puts it on (196, 371) in reference points, the centre
     /// measured off `gift-closed.png`.
@@ -128,7 +195,6 @@ struct SealedEnvelope: View {
                     }
                     .stroke(GiftPalette.envelopeShade.opacity(0.5), lineWidth: 1)
                 }
-
             }
             // Clip the paper, then cast the shadow: the previous order clipped the shadow
             // away with everything else outside the envelope's own rectangle.
@@ -140,18 +206,18 @@ struct SealedEnvelope: View {
                     .position(x: size.width / 2, y: size.height * Self.foldPoint)
             }
         }
-        .accessibilityHidden(true)
     }
 }
 
 // MARK: - Opened envelope
 
-/// The opened envelope on `gift-open`, drawn at the coordinates measured off the
-/// reference: back panel x 26...366 / y 338...579, flap apex (196, 118), the front
-/// pocket meeting at (196, 505) and the seal centred on (196, 490).
+/// The opened envelope on `gift-open`, stacked the way the render is composed: the
+/// envelope layer, then the offer card **clipped at the front pocket's mouth** so it
+/// stands in the pocket instead of floating over it, then the wax seal over the point
+/// where the two front edges meet.
 ///
-/// It fills the whole reference canvas so every point is an absolute reference
-/// coordinate rather than a fraction of some intermediate box.
+/// It fills the whole reference canvas so every point is an absolute reference coordinate
+/// rather than a fraction of some intermediate box.
 struct OpenedEnvelope<Card: View>: View {
     @ViewBuilder var card: () -> Card
 
@@ -160,11 +226,112 @@ struct OpenedEnvelope<Card: View>: View {
     }
 
     var body: some View {
+        let geometry = Self.geometry
+        ZStack(alignment: .topLeading) {
+            envelope(geometry)
+            cardInPocket(geometry)
+            seal(geometry)
+        }
+        .frame(
+            width: PaywallMetrics.referenceWidth,
+            height: PaywallMetrics.referenceHeight,
+            alignment: .topLeading
+        )
+    }
+
+    @ViewBuilder
+    private func envelope(_ geometry: PaywallMetrics.OpenEnvelope) -> some View {
+        if GiftArt.layer(GiftArt.openEnvelope) != nil {
+            GiftArt.image(
+                GiftArt.openEnvelope,
+                width: geometry.art.width,
+                height: geometry.art.height,
+                at: CGPoint(x: geometry.art.minX, y: geometry.art.minY)
+            )
+        } else {
+            DrawnOpenEnvelope(geometry: geometry)
+        }
+    }
+
+    /// The paper and the offer copy travel together: both are cut off at the pocket's
+    /// mouth, so the card reads as one sheet slid down inside the envelope.
+    private func cardInPocket(_ geometry: PaywallMetrics.OpenEnvelope) -> some View {
+        ZStack(alignment: .topLeading) {
+            if GiftArt.layer(GiftArt.card) != nil {
+                GiftArt.image(
+                    GiftArt.card,
+                    width: geometry.cardArt.width,
+                    height: geometry.cardArt.height,
+                    at: CGPoint(x: geometry.cardArt.minX, y: geometry.cardArt.minY)
+                )
+            } else {
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(GiftPalette.offerCard)
+                    .shadow(color: GiftPalette.envelopeShade.opacity(0.3), radius: 8, y: 4)
+                    .frame(width: geometry.card.width, height: geometry.card.height)
+                    .offset(x: geometry.card.minX, y: geometry.card.minY)
+                    .accessibilityHidden(true)
+            }
+
+            card()
+                .frame(width: geometry.card.width, height: geometry.card.height)
+                .offset(x: geometry.card.minX, y: geometry.card.minY)
+        }
+        .frame(
+            width: PaywallMetrics.referenceWidth,
+            height: PaywallMetrics.referenceHeight,
+            alignment: .topLeading
+        )
+        .clipShape(PocketMouth(geometry: geometry))
+    }
+
+    @ViewBuilder
+    private func seal(_ geometry: PaywallMetrics.OpenEnvelope) -> some View {
+        let diameter = PaywallMetrics.openSealDiameter
+        let origin = CGPoint(
+            x: geometry.sealCenter.x - diameter / 2,
+            y: geometry.sealCenter.y - diameter / 2
+        )
+        if GiftArt.layer(GiftArt.waxSeal) != nil {
+            GiftArt.image(GiftArt.waxSeal, width: diameter, height: diameter, at: origin)
+        } else {
+            WaxSeal()
+                .frame(width: diameter, height: diameter)
+                .offset(x: origin.x, y: origin.y)
+        }
+    }
+}
+
+/// Everything above the front pocket's top edge, in reference-canvas coordinates: a flat
+/// line across the pocket's corners that dips to the point where its two edges meet. Clip
+/// the card to it and the card ends exactly where the paper in front of it begins.
+struct PocketMouth: Shape {
+    let geometry: PaywallMetrics.OpenEnvelope
+
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: geometry.pocketEdgeY(atX: rect.maxX)))
+        path.addLine(to: CGPoint(x: geometry.right, y: geometry.bodyTop))
+        path.addLine(to: geometry.pocketPoint)
+        path.addLine(to: CGPoint(x: geometry.left, y: geometry.bodyTop))
+        path.addLine(to: CGPoint(x: rect.minX, y: geometry.pocketEdgeY(atX: rect.minX)))
+        path.closeSubpath()
+        return path
+    }
+}
+
+/// The vector opened envelope Phase 3 drew, kept as the no-catalog fallback.
+private struct DrawnOpenEnvelope: View {
+    let geometry: PaywallMetrics.OpenEnvelope
+
+    var body: some View {
         ZStack(alignment: .topLeading) {
             AbsolutePath { path in
-                path.move(to: Self.geometry.flapApex)
-                path.addLine(to: CGPoint(x: Self.geometry.left, y: Self.geometry.bodyTop))
-                path.addLine(to: CGPoint(x: Self.geometry.right, y: Self.geometry.bodyTop))
+                path.move(to: geometry.flapApex)
+                path.addLine(to: CGPoint(x: geometry.left, y: geometry.bodyTop))
+                path.addLine(to: CGPoint(x: geometry.right, y: geometry.bodyTop))
                 path.closeSubpath()
             }
             .fill(
@@ -175,16 +342,12 @@ struct OpenedEnvelope<Card: View>: View {
                 )
             )
 
-            card()
-                .frame(width: Self.geometry.card.width, height: Self.geometry.card.height)
-                .offset(x: Self.geometry.card.minX, y: Self.geometry.card.minY)
-
             AbsolutePath { path in
-                path.move(to: CGPoint(x: Self.geometry.left, y: Self.geometry.bodyTop))
-                path.addLine(to: Self.geometry.pocketPoint)
-                path.addLine(to: CGPoint(x: Self.geometry.right, y: Self.geometry.bodyTop))
-                path.addLine(to: CGPoint(x: Self.geometry.right, y: Self.geometry.bottom))
-                path.addLine(to: CGPoint(x: Self.geometry.left, y: Self.geometry.bottom))
+                path.move(to: CGPoint(x: geometry.left, y: geometry.bodyTop))
+                path.addLine(to: geometry.pocketPoint)
+                path.addLine(to: CGPoint(x: geometry.right, y: geometry.bodyTop))
+                path.addLine(to: CGPoint(x: geometry.right, y: geometry.bottom))
+                path.addLine(to: CGPoint(x: geometry.left, y: geometry.bottom))
                 path.closeSubpath()
             }
             .fill(
@@ -195,19 +358,8 @@ struct OpenedEnvelope<Card: View>: View {
                 )
             )
             .shadow(color: GiftPalette.envelopeShade.opacity(0.35), radius: 10, y: 6)
-
-            WaxSeal()
-                .frame(width: PaywallMetrics.openSealDiameter, height: PaywallMetrics.openSealDiameter)
-                .offset(
-                    x: Self.geometry.sealCenter.x - PaywallMetrics.openSealDiameter / 2,
-                    y: Self.geometry.sealCenter.y - PaywallMetrics.openSealDiameter / 2
-                )
         }
-        .frame(
-            width: PaywallMetrics.referenceWidth,
-            height: PaywallMetrics.referenceHeight,
-            alignment: .topLeading
-        )
+        .accessibilityHidden(true)
     }
 }
 

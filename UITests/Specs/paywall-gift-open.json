@@ -6,7 +6,7 @@
   "tolerance": 6,
   "elements": [
     { "name": "gift.close",      "query": "identifier", "frame": { "x": 4.6,   "y": 73.0,  "width": 44.1,  "height": 44.0 } },
-    { "name": "gift.offerCard",  "query": "identifier", "frame": { "x": 71.8,  "y": 143.0, "width": 249.7, "height": 417.0 } },
+    { "name": "gift.offerCard",  "query": "identifier", "frame": { "x": 71.8,  "y": 162.0, "width": 249.0, "height": 355.0 } },
     { "name": "gift.lucky",      "query": "identifier", "frame": { "x": 113.1, "y": 622.0, "width": 167.1, "height": 42.0 } },
     { "name": "gift.price",      "query": "identifier", "frame": { "x": 95.5,  "y": 674.0, "width": 202.2, "height": 40.0 } },
     { "name": "gift.startTrial", "query": "identifier", "frame": { "x": 15.6,  "y": 728.0, "width": 362.0, "height": 60.0 } },

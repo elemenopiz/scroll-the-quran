@@ -72,14 +72,14 @@
       "appearance": "light",
       "route": "gift-closed",
       "threshold": 0.1,
-      "notes": "raster envelope art; ours will differ in detail. Phase 4e accepted deviation: the wax seal carries the app's own mark instead of the reference's crown-of-thorns."
+      "notes": "Phase 4f: the envelope is the generated photoreal render (Artwork/Gift/envelope-closed-1200x900.png, cut by Artwork/tools/gift-assets.sh), on the generated sky. Accepted deviations, 0.0424 against the 0.0292 the vector art scored: (a) the sky is a real cumulus render toned to the reference's own band (mean 227.8/221.6/203.8, sd 7.4/9.0/13.7) but its clouds are where the render put them, not where the reference's are, which is most of the residue; (b) the render is 1.46:1 where the reference's envelope is 1.54:1, and width is matched, so ours is ~8 pt taller; (c) the wax seal carries the app's own arabesque ring instead of the reference's crown of thorns (Phase 4e), baked into the render."
     },
     "gift-open": {
       "file": "gift-open.png",
       "appearance": "light",
       "route": "gift-open",
       "threshold": 0.1,
-      "notes": "Phase 4e: the OFF pill now matches the reference (69x33 at y 270 with a 3.3 pt white outline) and the offer card starts at y 162 so the flap's peak shows. Accepted deviation: the seal carries the app's own mark."
+      "notes": "Phase 4f: sky -> EnvelopeOpen (1000x1500, flap stretched x1.85 above the pocket line) -> EnvelopeCard clipped at the pocket's mouth -> WaxSealLogo, all from Artwork/tools/gift-assets.sh. The offer copy is unchanged from Phase 4e (OFF pill 69x33 at y 270 with a 3.3 pt outline). Accepted deviations, 0.0625 against the vector art's 0.0346: (a) the same cumulus sky as gift-closed; (b) the render's front pocket is shallower than the reference's, so the pocket's top corners land at y 379 where the reference's are at 338 and the envelope's bottom edge at 579 is matched instead; (c) the render models its faces (lit front pocket, shaded flap lining) where the reference's envelope is nearly flat; (d) the seal carries the app's own ring."
     },
     "community-dark": {
       "file": "community-dark.png",
