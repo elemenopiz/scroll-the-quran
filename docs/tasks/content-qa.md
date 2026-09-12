@@ -7,3 +7,4 @@
 - search helper: add an `--exact` (NFC, diacritics kept) mode; document the normaliser traps (U+06D6–U+06ED, U+0670, hamza).
 - validate.mjs: reject any non-Latin/non-Arabic script in prose (a stray Cyrillic word slipped past once); reject `keyTerms[].arabic` not copied verbatim (superscript alef U+0670) from the Uthmani text.
 - Corpus-wide: detect the same `didYouKnow` fact reused across units (near-dup check currently covers `meaning` only).
+- validate.mjs: `theme` must equal the title of `themeId` in out/themes.json verbatim (78:11-15 and 80:26-30 shipped "The Living Earth" for rain-and-the-earth and only the Swift ThemeIndexTests caught it after sync).
