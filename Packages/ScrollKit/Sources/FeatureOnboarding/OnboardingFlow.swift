@@ -21,7 +21,7 @@ public struct OnboardingFlow: View {
         content: OnboardingContent = .bundled,
         stats: OnboardingStats? = nil,
         progress: any OnboardingProgressStore = UserDefaultsOnboardingProgressStore(),
-        account: any OnboardingAccountSink = UserDefaultsAccountSink(),
+        account: any OnboardingAccountSink = KeychainAccountSink(),
         startAt: OnboardingStep? = nil,
         showingSignIn: Bool = false,
         onFinished: @escaping () -> Void = {}

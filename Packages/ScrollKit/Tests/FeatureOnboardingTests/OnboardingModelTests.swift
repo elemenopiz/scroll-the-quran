@@ -158,20 +158,137 @@ struct OnboardingStoreTests {
     @Test("The account sink writes the Apple user id under accountId")
     func accountSinkStoresAppleID() throws {
         let defaults = try makeDefaults()
-        let sink = UserDefaultsAccountSink(defaults: defaults)
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: defaults)
         sink.signedInWithApple(userID: "001234.abc", email: nil, fullName: nil)
-        #expect(defaults.string(forKey: UserDefaultsAccountSink.accountIDKey) == "001234.abc")
+        #expect(keychain.string(forKey: KeychainAccountSink.accountIDKey) == "001234.abc")
+        #expect(sink.appleUserID == "001234.abc")
+        // And not in the clear, which is the whole point of audit SEC-1.
+        #expect(defaults.string(forKey: KeychainAccountSink.accountIDKey) == nil)
     }
 
     @Test("A blank field is a no-op; clearing the email is explicit")
     func accountSinkClearsEmail() throws {
         let defaults = try makeDefaults()
-        let sink = UserDefaultsAccountSink(defaults: defaults)
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: defaults)
         sink.storeEmail("reader@example.com")
-        #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == "reader@example.com")
+        #expect(sink.email == "reader@example.com")
         sink.storeEmail("  ")
-        #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == "reader@example.com")
+        #expect(sink.email == "reader@example.com")
         sink.clearEmail()
-        #expect(defaults.string(forKey: UserDefaultsAccountSink.emailKey) == nil)
+        #expect(sink.email == nil)
+    }
+}
+
+/// Audit SEC-1 and SEC-4. The Apple stable user identifier, the email and the formatted
+/// full name were three plaintext `UserDefaults` strings, sitting in the app's plist and
+/// therefore in unencrypted backups.
+@Suite("Keychain account sink")
+struct KeychainAccountSinkTests {
+    private func makeDefaults() throws -> UserDefaults {
+        let suite = "onboarding.tests.\(UUID().uuidString)"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        return defaults
+    }
+
+    @Test("Everything Apple hands over lands in the keychain, and nothing in the plist")
+    func writesGoToTheKeychain() throws {
+        let defaults = try makeDefaults()
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: defaults)
+
+        var name = PersonNameComponents()
+        name.givenName = "Amina"
+        name.familyName = "Rahman"
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: name)
+
+        #expect(sink.appleUserID == "001234.abc")
+        #expect(sink.email == "reader@example.com")
+        #expect(sink.displayName == "Amina Rahman")
+        for key in [KeychainAccountSink.accountIDKey, KeychainAccountSink.emailKey, KeychainAccountSink.nameKey] {
+            #expect(defaults.string(forKey: key) == nil, "\(key) was written in the clear")
+        }
+    }
+
+    @Test("A second sign-in does not wipe the email and name Apple only sends once")
+    func laterSignInKeepsWhatAppleNoLongerSends() throws {
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: try makeDefaults())
+        var name = PersonNameComponents()
+        name.givenName = "Amina"
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: name)
+        // Apple sends the identifier only from the second sign-in on.
+        sink.signedInWithApple(userID: "001234.abc", email: nil, fullName: nil)
+        #expect(sink.email == "reader@example.com")
+        #expect(sink.displayName == "Amina")
+    }
+
+    @Test("An existing install is migrated once and the plaintext keys are deleted")
+    func migratesFromUserDefaults() throws {
+        let defaults = try makeDefaults()
+        defaults.set("001234.abc", forKey: KeychainAccountSink.accountIDKey)
+        defaults.set("reader@example.com", forKey: KeychainAccountSink.emailKey)
+        defaults.set("Amina Rahman", forKey: KeychainAccountSink.nameKey)
+
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: defaults)
+
+        #expect(sink.appleUserID == "001234.abc")
+        #expect(sink.email == "reader@example.com")
+        #expect(sink.displayName == "Amina Rahman")
+        for key in [KeychainAccountSink.accountIDKey, KeychainAccountSink.emailKey, KeychainAccountSink.nameKey] {
+            #expect(defaults.string(forKey: key) == nil, "\(key) survived the migration in the clear")
+        }
+    }
+
+    @Test("The migration never overwrites what the keychain already holds")
+    func migrationDoesNotClobber() throws {
+        // The keychain survives a delete-and-reinstall and the plist does not, so anything
+        // already in the keychain is the newer of the two.
+        let defaults = try makeDefaults()
+        defaults.set("stale.id", forKey: KeychainAccountSink.accountIDKey)
+        let keychain = InMemoryKeychain([KeychainAccountSink.accountIDKey: "current.id"])
+        let sink = KeychainAccountSink(keychain: keychain, defaults: defaults)
+        #expect(sink.appleUserID == "current.id")
+        #expect(defaults.string(forKey: KeychainAccountSink.accountIDKey) == nil)
+    }
+
+    @Test("An install that never signed in still has its keys swept")
+    func migrationIsIdempotent() throws {
+        let defaults = try makeDefaults()
+        let keychain = InMemoryKeychain()
+        _ = KeychainAccountSink(keychain: keychain, defaults: defaults)
+        #expect(keychain.storage.isEmpty)
+        // A second construction on the next launch finds nothing and writes nothing.
+        _ = KeychainAccountSink(keychain: keychain, defaults: defaults)
+        #expect(keychain.storage.isEmpty)
+    }
+
+    @Test("Sign-out drops the identifier and the name, not just the email")
+    func signOutClearsEverything() throws {
+        // Audit SEC-4: `clearEmail()` on the old sink left `accountId` and `accountName`
+        // behind, which would have leaked straight through a sign-out.
+        let keychain = InMemoryKeychain()
+        let sink = KeychainAccountSink(keychain: keychain, defaults: try makeDefaults())
+        var name = PersonNameComponents()
+        name.givenName = "Amina"
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: name)
+        sink.signOut()
+        #expect(sink.appleUserID == nil)
+        #expect(sink.email == nil)
+        #expect(sink.displayName == nil)
+        #expect(keychain.storage.isEmpty)
+    }
+
+    @Test("The ephemeral sink used by --screenshot still writes nothing at all")
+    func fixtureSinkIsUnchanged() {
+        let sink = EphemeralAccountSink()
+        sink.signedInWithApple(userID: "001234.abc", email: "reader@example.com", fullName: nil)
+        #expect(sink.appleUserID == "001234.abc")
+        sink.signOut()
+        #expect(sink.appleUserID == nil)
+        #expect(sink.email == nil)
     }
 }
