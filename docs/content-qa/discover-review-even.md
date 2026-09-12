@@ -121,3 +121,23 @@ No shard was hand-edited.
 | 24:35 | 5 | Holds the classical line that the parable is of His light, not of Him; `مشكاة` verified as a single occurrence. | kept |
 | 24:55 | 5 | Succession read as a turn that ends, which is what the root gives; condition stated as the text states it. | kept |
 | 26:79-83 | 5 | 227 ayat and the eightfold refrain both check out; the self-attribution of illness is given the classical courtesy-of-speech reading. | kept |
+| 26:84-88 | 5 | The petition at 26:84 and its grant at 19:50 use the same two-word phrase, as claimed; `applyIt` is imperative second person and concrete. | kept |
+| 28:55-56 | 5 | Sectarian-sensitive occasion handled exactly right: the setting is described, the relative is not named. Surah-name observation (28:25) checks out. | kept |
+| 28:77 | 3 | `didYouKnow` said Qarun is named three times in the Quran; he is named four times (28:76, 28:79, 29:39, 40:24 — twice in this surah alone). | rewritten |
+| 28:83 | 5 | The `علو` root opening the surah at 28:4 and closing it here is a real and well-used structural observation. | kept |
+| 30:21 | 4 | Excellent content; the run of four sign-ayat with four different closing faculties (30:21-24) is exactly right. Nit: `exploreFurther[2]` is 30:20-25, containing the unit. | kept |
+| 30:22 | 4 | Human variety given theological status without editorialising; `اختلاف` as both difference and alternation is accurate. Same `exploreFurther` overlap nit. | kept |
+| 30:29-30 | 5 | Gives both readings of "no altering of God's creation"; the `فطر` / Eid al-Fitr root connection is correct. | kept |
+| 30:41-42 | 5 | Consequence framed as instructive rather than as settlement, which is what the ayah's purpose clause says. | kept |
+| 30:49-50 | 4 | "Earth revived after its death" verified at three places in this surah (30:19, 30:24, 30:50). Nit: `exploreFurther[0]` is 30:46-50, containing the unit. | kept |
+| 30:59-60 | 5 | The Byzantine prediction is correctly placed at the surah's opening; patience read as steadiness rather than endurance of pain. | kept |
+| 32:16 | 4 | Fear and hope held in balance without subordinating either, which is the classical description. Nit: `exploreFurther[2]` is 32:15-19, containing the unit. | kept |
+| 32:17-19 | 5 | The divine saying is quoted as a report the commentators cite, not as scripture; hospitality reading of `نُزُل` is precise. | kept |
+| 34:13 | 5 | `الشكور` as a divine name twice in surah 35 (35:30, 35:34) checks out; gratitude located inside the labour, as the grammar has it. | kept |
+| 34:38-39 | 5 | Separates "provision is from God" from "provision measures approval" — the distinction the passage is actually making. | kept |
+| 36:12-13 | 5 | Traces read in both directions (unintended good and damage left running), which is the classical range. | kept |
+| 36:36 | 4 | The deliberately open third clause is well handled; `أزواج` ambiguity explained honestly. Nit: `exploreFurther[0]` is 36:33-40, containing the unit. | kept |
+| 36:40-42 | 4 | The `فلك` orbit/ship consonantal pun is real and is the best fact here. Nit: `exploreFurther[0]` is 36:37-44, containing the unit. | kept |
+| 36:57-61 | 4 | "Children of Adam" verified at exactly five places (7:26, 7:27, 7:31, 7:35, 36:60), four of them in surah 7. Nit: `exploreFurther[0]` is 36:51-58, overlapping the unit. | kept |
+| 36:82-83 | 3 | `didYouKnow` said `ملكوت` is twice what Abraham was shown; of its four occurrences only 6:75 is Abraham, while 7:185 and 23:88 are both questions put to rejectors. | rewritten |
+| 38:26 | 5 | `خليفة` in the singular verified at exactly two places (2:30, 38:26); desire correctly named as the mechanism that moves a judge before it bends a verdict. | kept |
