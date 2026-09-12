@@ -148,6 +148,13 @@ public struct SettingsView: View {
         }
     }
 
+    /// The account row.
+    ///
+    /// It reads `UserStore`, and until Phase 4g nothing ever wrote a sign-in there — onboarding
+    /// kept the credential to itself — so this said "Not signed in" to a reader who had just
+    /// signed in with Apple (audit SEC-2). `CompositeAccountSink` now writes the flag and the
+    /// address here and the identity to the Keychain; "Sign out" below goes through
+    /// `UserStore.signOut()`, which clears both.
     private var accountSection: some View {
         Section {
             HStack(spacing: Spacing.md) {
@@ -158,7 +165,7 @@ public struct SettingsView: View {
                     Text(store.isSignedIn ? "Signed in" : "Not signed in")
                         .font(.body(17, weight: .semibold))
                         .foregroundStyle(Color.textPrimary)
-                    Text(store.accountEmail ?? "Everything is stored on this device.")
+                    Text(accountDetail)
                         .font(.body(14))
                         .foregroundStyle(Color.textSecondary)
                 }
@@ -166,6 +173,20 @@ public struct SettingsView: View {
             }
             .accessibilityElement(children: .combine)
             .accessibilityIdentifier("settings.account")
+
+            if store.isSignedIn {
+                Button {
+                    store.signOut()
+                } label: {
+                    Text("Sign out")
+                        .font(.body(17))
+                        .foregroundStyle(Color.textPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .contentShape(.rect)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("settings.signOut")
+            }
 
             Button {
                 Task {
@@ -191,6 +212,17 @@ public struct SettingsView: View {
         } header: {
             CapsLabel(text: "Account")
         }
+    }
+
+    /// The line under the account's heading: the address Apple gave us, or what the app does
+    /// instead of an account when there is none.
+    private var accountDetail: String {
+        if let email = store.accountEmail, !email.isEmpty {
+            return email
+        }
+        return store.isSignedIn
+            ? "Signed in with Apple on this device."
+            : "Everything is stored on this device."
     }
 
     private var aboutSection: some View {

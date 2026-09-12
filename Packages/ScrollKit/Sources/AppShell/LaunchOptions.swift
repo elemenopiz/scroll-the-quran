@@ -39,6 +39,12 @@ public struct LaunchOptions: Equatable, Sendable {
     /// each, and before Phase 4d it said none of them (audit finding IAP-1), so each one
     /// needs a way to be stood up from a launch argument.
     public let purchaseOutcome: FixturePurchaseOutcome?
+    /// Set by `--signed-in`: stand the app up as though Sign in with Apple had just
+    /// succeeded, by handing the shell's composite account sink a fixture credential at
+    /// launch. Apple's authorisation sheet is a system process XCUITest cannot drive and the
+    /// simulator has no Apple ID, so this is the only way to test what the app does *after* a
+    /// sign-in — which is the whole of audit finding SEC-2.
+    public let fixtureSignIn: Bool
 
     public init(
         screenshot: ScreenRoute? = nil,
@@ -50,7 +56,8 @@ public struct LaunchOptions: Equatable, Sendable {
         forcedEntitlement: Bool? = nil,
         forcedBillingState: BillingState? = nil,
         hasRestorablePurchase: Bool = false,
-        purchaseOutcome: FixturePurchaseOutcome? = nil
+        purchaseOutcome: FixturePurchaseOutcome? = nil,
+        fixtureSignIn: Bool = false
     ) {
         self.screenshot = screenshot
         self.fixedDate = fixedDate
@@ -62,6 +69,7 @@ public struct LaunchOptions: Equatable, Sendable {
         self.forcedBillingState = forcedBillingState
         self.hasRestorablePurchase = hasRestorablePurchase
         self.purchaseOutcome = purchaseOutcome
+        self.fixtureSignIn = fixtureSignIn
     }
 
     public init(arguments: [String], environment: [String: String]) {
@@ -78,6 +86,7 @@ public struct LaunchOptions: Equatable, Sendable {
             funnelPhase = nil
         }
         hasRestorablePurchase = arguments.contains("--restorable")
+        fixtureSignIn = arguments.contains("--signed-in")
         forcedBillingState = LaunchOptions.value(of: "--billing", in: arguments)
             .flatMap(BillingState.init(rawValue:))
         purchaseOutcome = LaunchOptions.value(of: "--purchase-outcome", in: arguments)

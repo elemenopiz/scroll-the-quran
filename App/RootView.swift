@@ -30,10 +30,21 @@ struct RootView: View {
     /// switching to the envelope behind the shell's back, so there is one state machine.
     private let funnelOffers = InMemoryOneTimeOfferStore(seenOneTimeOffer: true)
 
+    /// Where a completed Sign in with Apple goes: the identity to the Keychain, the
+    /// "signed in" flag and the address to `UserStore` (audit SEC-2). Built here rather than
+    /// inside the onboarding branch because constructing it is also what tells `UserStore`
+    /// about the Keychain record — and Settings' "Sign out" has to clear both on a launch
+    /// that skips the funnel entirely, which is every launch after the first.
+    private let account: CompositeAccountSink
+
     init(launch: LaunchOptions = .live) {
         self.launch = launch
         let environment = AppEnvironment.shared(launch: launch)
         _env = State(initialValue: environment)
+        account = CompositeAccountSink.live(state: environment.user)
+        if launch.fixtureSignIn {
+            account.applyFixtureSignIn()
+        }
         _flow = State(
             initialValue: RootFlowModel(
                 launch: launch,
@@ -93,6 +104,7 @@ struct RootView: View {
             // exactly as `PaywallScreens.view(forScreenID:…)` does below.
             FeatureOnboardingModule.view(
                 forScreenID: launch.screenshot?.screen.rawValue,
+                account: account,
                 // The module does not know about `UserStore`; the funnel is only "done" once
                 // the shell records it, or it replays on the next cold launch.
                 onFinished: {
