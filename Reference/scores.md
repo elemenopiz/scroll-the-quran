@@ -47,3 +47,58 @@ white mark at 86 % of the canvas, for both the default and the dark appearance; 
 stays white on flat black. The three candidates the owner was shown are in
 `Artwork/AppIcon/icon-candidates.png` and the shipped one under iOS's corner mask at 60 pt
 is `Artwork/AppIcon/icon-masked-60.png`.
+
+## Gift artwork (Phase 4f)
+
+Both gift screens now draw the generated photoreal envelope instead of the vector art.
+`Artwork/tools/gift-assets.sh` cuts every layer out of the renders in `Artwork/src/gift/`
+and prints the geometry `PaywallMetrics.openEnvelopeArt` carries, so a re-rendered
+envelope is one image plus six numbers.
+
+| screen | before (4e, vector) | after (4f, render) | threshold | note |
+| --- | --- | --- | --- | --- |
+| `gift-closed` | 0.0292 | **0.0424** | 0.10 | **accepted deviation** — see below |
+| `gift-open` | 0.0346 | **0.0625** | 0.10 | **accepted deviation** — see below |
+
+Both went *up*. That is the price of photorealism against a flat reference, and it is
+paid deliberately: the screens are judged on the reference's proportions and reading
+order, which they keep, not on matching an illustration pixel for pixel.
+
+### Accepted deviations
+
+**The sky — most of the residue on both screens.** `GiftClouds` is a real cumulus render.
+It is toned to `gift-closed.png`'s own sky band per channel (mean 227.8 / 221.6 / 203.8,
+sd 7.4 / 9.0 / 13.7 — measured from the reference, applied in `tone_sky`), so it sits at
+the right brightness and the right flatness; but its clouds are where the render put them
+and the reference's are where the reference put them, and no toning fixes that. The
+reference's sky is also mostly empty warm paper with two or three soft banks, where a real
+sky has weather everywhere.
+
+**The paper.** The renders came back a browner kraft than the reference's lit cream, so
+`tone_paper` lifts the paper onto the reference's own samples (231.7 / 213.1 / 179.1
+closed, 242.9 / 219.6 / 181.2 open) and leaves the wax alone — the render's gold already
+matches the reference's seal to within three levels on red and green. What is left is
+modelling: the render lights its faces (bright front pocket, shaded flap lining) where the
+reference's envelope is nearly one flat tone. Flattening that out would throw away the
+only thing the render is here for.
+
+**`gift-open`'s pocket is shallower than the reference's.** The render's front pocket is
+0.60 of the envelope's width deep; the reference's is 0.71. Anchoring the envelope's
+bottom edge to the reference's y 579 therefore puts the pocket's top corners at y 379
+where the reference's are at 338. The card is clipped at that mouth — flat across the
+corners, dipping to the point under the seal (`PocketMouth`, and
+`OpenEnvelope.pocketEdgeY(atX:)`) — which is what keeps all five rows of the offer copy
+readable; `GiftArtworkGeometryTests` asserts that every row clears it at the card's edges.
+
+**The closed envelope is ~8 pt taller than the reference's.** The render is 1.46 : 1 where
+the reference's envelope is 1.54 : 1. Width is what the eye measures on a 235 pt element,
+so width is matched and the extra height is accepted.
+
+**The seal.** Both screens show the *same* seal: the closed envelope's is baked into its
+render, and `WaxSealLogo` is that identical seal traced off the paper it was pressed on
+(`trace_seal`). It carries the app's arabesque ring, not the reference's crown of thorns —
+Phase 4e's decision, unchanged.
+
+**The reveal animation** was checked frame by frame (`.build/snapshots/gift-reveal-mid.png`):
+the open state cross-fades in with every element already in its final place, so there is no
+layout jump between the two states.
