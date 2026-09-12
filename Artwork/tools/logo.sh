@@ -48,8 +48,45 @@ on_ground() {  # on_ground <ground.png> <ink hex> <side> <scale> <out.png>
   magick "$TMP/c.png" "${PNGOPT[@]}" "$5"
 }
 
-ICON_SCALE=0.78   # ring reads as a ring at 60 pt without crowding iOS's corner mask
-CARD_SCALE=0.74   # ReaderMetrics: 70 pt mark inside a 94 pt card
+# One grey icon ground, as an editable SVG radial: centre `$1`, two steps darker at the
+# rim. Five per cent of tone across the whole canvas is enough to stop the ground reading
+# as flat vinyl and shallow enough that a 1024 px render shows no banding.
+ground_svg() {  # ground_svg <centre hex> <side px> <out.png>
+  local c="$1" r g b mid edge
+  r=$((16#${c:1:2})); g=$((16#${c:3:2})); b=$((16#${c:5:2}))
+  mid=$(printf '#%02X%02X%02X' $((r - 5)) $((g - 5)) $((b - 5)))
+  edge=$(printf '#%02X%02X%02X' $((r - 13)) $((g - 13)) $((b - 13)))
+  rsvg-convert -w "$2" -h "$2" -o "$3" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="$2" height="$2" viewBox="0 0 512 512" fill="none">
+<defs><radialGradient id="bg" cx="42%" cy="34%" r="82%">
+<stop offset="0" stop-color="$c"/><stop offset="0.55" stop-color="$mid"/><stop offset="1" stop-color="$edge"/>
+</radialGradient></defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+</svg>
+SVG
+}
+
+# iOS's own icon mask, so a candidate can be judged as the springboard will draw it.
+# The corner radius is 22.37 % of the side — the continuous-curve squircle approximated
+# by a plain round rect, which is close enough to see whether the ring is being cut.
+ios_mask() {  # ios_mask <src.png> <side> <out.png>
+  local r
+  r=$(printf '%.2f' "$(echo "$2 * 0.2237" | bc -l)")
+  rsvg-convert -w "$2" -h "$2" -o "$TMP/mask.png" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="$2" height="$2" viewBox="0 0 $2 $2">
+<rect width="$2" height="$2" rx="$r" ry="$r" fill="#FFFFFF"/></svg>
+SVG
+  magick "$1" -resize "$2x$2" "$TMP/mask.png" -alpha off -compose CopyOpacity -composite \
+    "${PNGOPT[@]}" "$3"
+}
+
+ICON_SCALE=0.86   # the ring reads as a ring at 60 pt; its diagonal finials still clear
+                  # iOS's corner mask by ~190 px on the 1024 (see AppIcon/icon-masked-60.png)
+CARD_SCALE=0.80   # ReaderMetrics: 90 pt mark inside a 112 pt card
+
+# The icon ground the app ships, and the two the owner was offered beside it.
+ICON_GREY="#3C3C41"
+ICON_GREY_CANDIDATES=("#5A5A60" "#3C3C41" "#2A2A2E")
 
 echo "Logo mark (transparent)"
 mkdir -p "$ART/Logo"
@@ -60,7 +97,7 @@ done
 say "Logo/mark-{black,white}-{64,128,192,512}.png"
 
 echo "Reader logo card"
-for s in 96 192 288; do
+for s in 112 224 336; do
   r=$(printf '%.4f' "$(echo "$s * 0.2175" | bc -l)")   # 21.75 % of the side
   rsvg-convert -w "$s" -h "$s" -o "$TMP/gd.png" <<SVG
 <svg xmlns="http://www.w3.org/2000/svg" width="$s" height="$s" viewBox="0 0 $s $s">
@@ -73,22 +110,48 @@ SVG
   on_ground "$TMP/gd.png" "$INK_LIGHT" "$s" "$CARD_SCALE" "$ART/Logo/logo-card-$s.png"
   on_ground "$TMP/gl.png" "$INK_DARK"  "$s" "$CARD_SCALE" "$ART/Logo/logo-card-light-$s.png"
 done
-say "Logo/logo-card{,-light}-{96,192,288}.png"
+say "Logo/logo-card{,-light}-{112,224,336}.png"
 
 echo "App icon"
 mkdir -p "$ART/AppIcon"
-# Same radial grounds the previous icon used, kept as SVG so the stops stay editable.
-rsvg-convert -w 1024 -h 1024 -o "$TMP/bg-light.png" "$SRC/appicon-ground.svg"
-rsvg-convert -w 1024 -h 1024 -o "$TMP/bg-dark.png"  "$SRC/appicon-ground-dark.svg"
+# The app is dark, so both appearances sit on the same grey ground with a white mark;
+# only the tinted layer differs (mono white on flat black, as iOS requires).
+ground_svg "$ICON_GREY" 1024 "$TMP/bg-grey.png"
 magick -size 1024x1024 xc:black "$TMP/bg-mono.png"
 
-on_ground "$TMP/bg-light.png" "$INK_DARK"  1024 "$ICON_SCALE" "$TMP/icon.png"
-on_ground "$TMP/bg-dark.png"  "$INK_LIGHT" 1024 "$ICON_SCALE" "$TMP/icon-dark.png"
-on_ground "$TMP/bg-mono.png"  "$INK_LIGHT" 1024 "$ICON_SCALE" "$TMP/icon-mono.png"
+on_ground "$TMP/bg-grey.png" "$INK_LIGHT" 1024 "$ICON_SCALE" "$TMP/icon.png"
+on_ground "$TMP/bg-mono.png" "$INK_LIGHT" 1024 "$ICON_SCALE" "$TMP/icon-mono.png"
 
 # App-icon assets must be fully opaque: iOS applies its own mask and rejects alpha.
-magick "$TMP/icon.png"      -background white -alpha remove -alpha off "${PNGOPT[@]}" "$ART/AppIcon/appicon-1024.png"
-magick "$TMP/icon-dark.png" -background black -alpha remove -alpha off "${PNGOPT[@]}" "$ART/AppIcon/appicon-dark-1024.png"
+magick "$TMP/icon.png"      -background black -alpha remove -alpha off "${PNGOPT[@]}" "$ART/AppIcon/appicon-1024.png"
+cp "$ART/AppIcon/appicon-1024.png" "$ART/AppIcon/appicon-dark-1024.png"
 magick "$TMP/icon-mono.png" -background black -alpha remove -alpha off "${PNGOPT[@]}" "$ART/AppIcon/appicon-mono-1024.png"
 magick "$ART/AppIcon/appicon-1024.png" -resize 180x180 -alpha off "${PNGOPT[@]}" "$ART/AppIcon/appicon-180.png"
-say "AppIcon/appicon{,-dark,-mono}-1024.png, appicon-180.png"
+ios_mask "$ART/AppIcon/appicon-1024.png" 180 "$ART/AppIcon/icon-masked-60.png"
+say "AppIcon/appicon{,-dark,-mono}-1024.png, appicon-180.png, icon-masked-60.png"
+
+echo "App-icon candidate sheet"
+# Three greys, each flat at 180 px and again under iOS's 60 pt mask, so the ground can be
+# picked on the two things that actually differ: how dark it reads, and how much of the
+# ring the corner mask eats.
+COLS=()
+for grey in "${ICON_GREY_CANDIDATES[@]}"; do
+  ground_svg "$grey" 1024 "$TMP/cand-bg.png"
+  on_ground "$TMP/cand-bg.png" "$INK_LIGHT" 1024 "$ICON_SCALE" "$TMP/cand.png"
+  magick "$TMP/cand.png" -background black -alpha remove -alpha off "$TMP/cand-flat.png"
+  magick "$TMP/cand-flat.png" -resize 180x180 "$TMP/cand-180.png"
+  ios_mask "$TMP/cand-flat.png" 180 "$TMP/cand-masked.png"
+  rsvg-convert -w 220 -h 44 -o "$TMP/cand-label.png" <<SVG
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44">
+<rect width="220" height="44" fill="#1A1A1E"/>
+<text x="110" y="30" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#D9D9D9" text-anchor="middle">$grey</text></svg>
+SVG
+  magick -background '#1A1A1E' -gravity center \
+    \( "$TMP/cand-180.png" -bordercolor '#1A1A1E' -border 20 \) \
+    \( "$TMP/cand-masked.png" -bordercolor '#1A1A1E' -border 20 \) \
+    "$TMP/cand-label.png" -append "$TMP/col-$grey.png"
+  COLS+=("$TMP/col-$grey.png")
+done
+magick "${COLS[@]}" -background '#1A1A1E' +append \
+  -bordercolor '#1A1A1E' -border 24 "${PNGOPT[@]}" "$ART/AppIcon/icon-candidates.png"
+say "AppIcon/icon-candidates.png (left to right: ${ICON_GREY_CANDIDATES[*]}; top flat, bottom masked at 60 pt)"
