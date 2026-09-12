@@ -138,12 +138,12 @@ public struct GiftOfferView: View {
                     .strikethrough(true, color: GiftPalette.inkMuted)
                 Text(offerPriceText)
                     .font(.geoBold(PaywallMetrics.strikePriceSize))
-                    .foregroundStyle(Color.textOnPill)
+                    .foregroundStyle(GiftPalette.pillLabel)
                     .frame(
                         width: PaywallMetrics.offerPillSize.width,
                         height: PaywallMetrics.offerPillSize.height
                     )
-                    .background(Color.pillFill, in: Capsule())
+                    .background(GiftPalette.pillFill, in: Capsule())
             }
             .padding(.top, PaywallMetrics.priceRowTop)
             .accessibilityElement(children: .combine)
@@ -153,6 +153,8 @@ public struct GiftOfferView: View {
                 title: introEligible ? PaywallCopy.startFreeTrial : PaywallCopy.continueTitle,
                 height: PaywallMetrics.giftCTAHeight,
                 fontSize: 19,
+                fill: GiftPalette.pillFill,
+                label: GiftPalette.pillLabel,
                 action: onPurchase
             )
             .padding(.horizontal, Spacing.pageMargin)
@@ -210,7 +212,7 @@ public struct GiftOfferView: View {
                         width: PaywallMetrics.trialPillSize.width,
                         height: PaywallMetrics.trialPillSize.height
                     )
-                    .background(Color.appBackgroundFlat, in: Capsule())
+                    .background(GiftPalette.softPillFill, in: Capsule())
                     .padding(.top, PaywallMetrics.trialPillTop - cardTop)
             }
 

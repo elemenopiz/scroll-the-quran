@@ -237,16 +237,21 @@ struct PillButton: View {
     let title: String
     var height: CGFloat = PaywallMetrics.ctaHeight
     var fontSize: CGFloat = PaywallMetrics.ctaLabelSize
+    /// The paywall follows the appearance; the gift screens are a fixed warm-paper
+    /// composition and pass their own pair, so the call to action does not turn white
+    /// on cream when the system is in dark mode.
+    var fill: Color = .pillFill
+    var label: Color = .textOnPill
     var action: () -> Void
 
     var body: some View {
         Button(action: action) {
             Text(title)
                 .font(.geoBold(fontSize))
-                .foregroundStyle(Color.textOnPill)
+                .foregroundStyle(label)
                 .frame(maxWidth: .infinity)
                 .frame(height: height)
-                .background(Color.pillFill, in: Capsule())
+                .background(fill, in: Capsule())
         }
         .buttonStyle(.plain)
     }

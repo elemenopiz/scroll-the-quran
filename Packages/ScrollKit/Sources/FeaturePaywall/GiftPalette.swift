@@ -32,12 +32,19 @@ enum GiftPalette {
     static let sealLight = Color(rgb: 0xD9A94F)
     static let sealMid = Color(rgb: 0xC18A40)
     static let sealDark = Color(rgb: 0x9A6B2C)
-    /// The "OFF" pill: pure black capsule, `#D9D9D9` letters, `#FFFFFF` outline — sampled
-    /// straight off `gift-open.png`. Fixed rather than token-derived because the gift
-    /// screens are a warm-paper composition that does not invert with the appearance.
-    static let offPillFill = Color(rgb: 0x000000)
+    /// Pills on the gift screens. These are **fixed**, not token-derived: the gift screens
+    /// are a warm-paper composition that reads the same in both appearances, so
+    /// `Color.pillFill` / `Color.appBackgroundFlat` inverting under a dark system setting
+    /// turned the price pill and the call to action white and the "+3 day trial" pill
+    /// black-on-black. Values sampled off `gift-open.png`.
+    static let pillFill = Color(rgb: 0x000000)
+    static let pillLabel = Color(rgb: 0xFFFFFF)
+    /// The "+3 day trial" pill: white capsule with `ink` letters.
+    static let softPillFill = Color(rgb: 0xFFFFFF)
+    /// The "OFF" pill: pure black capsule, `#D9D9D9` letters, `#FFFFFF` outline.
+    static let offPillFill = pillFill
     static let offPillLabel = Color(rgb: 0xD9D9D9)
-    static let offPillOutline = Color(rgb: 0xFFFFFF)
+    static let offPillOutline = softPillFill
     /// Ink on the gift screens: `#2B2B2B`.
     static let ink = Color(rgb: 0x2B2B2B)
     /// Muted copy on the gift screens: `#6B655C`.
