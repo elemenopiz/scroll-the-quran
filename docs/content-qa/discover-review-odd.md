@@ -157,3 +157,39 @@ helpers under `Tools/content-gen/work/authoring/qa-discover-a/`.
 | 61:9-10 | 5 | The refrain ayah verified at three places (9:33, 48:28, 61:9). | kept |
 | 63:9 | 5 | The three treatments of wealth-and-children (18:46, 8:28, 63:9) are all real and correctly characterised. | kept |
 | 65:2-3 | 5 | Legal-content surah handled descriptively with no ruling; the companion's remark given as a report. | kept |
+| 65:7 | 5 | The 94:5-6 contrast (ease *with* hardship vs *after* it) is exact, and the poorer household is not excused from giving. | kept |
+| 67:1-5 | 5 | "Death created" taken as a claim rather than a phrase; the nightly-recitation reports given as reports. | kept |
+| 67:15-16 | 5 | The gift-then-security alternation really does run through the following ayat. | kept |
+| 71:8-12 | 5 | The same offer verified in Hud's mouth at 11:52; repentance and rainfall joined as the text joins them. | kept |
+| 73:6-9 | 5 | The surah does carry both the demand and its relief; the "about a year" gap is reported as the sources report it. | kept |
+| 73:20 | 5 | Every concession grounded in "He knows", which is what the ayah actually does three times over. | kept |
+| 75:36-40 | 5 | `النفس اللوامة` verified as a hapax at 75:2; the two ends of the surah do answer each other. | kept |
+| 79:36-40 | 4 | The shared word for shelter at 79:39 and 79:41 is real, but they are two ayat apart, not four. | rewritten |
+| 87:11-15 | 5 | The surah does close by naming the pages of Abraham and Moses; the disagreement about its scope is recorded. | kept |
+| 87:16-19 | 5 | The pages of Abraham verified at exactly two places (53:36-37, 87:19), with 53:38-39 supplying their content. | kept |
+| 89:26-30 | 5 | "My servants, My garden" is correct, and the mutual satisfaction is the tightest reading of the pair. | kept |
+| 91:6-10 | 4 | `دساها` verified as a hapax and the seven-oath run is right; "the last two" is loose, since the soul and its proportioner are one oath. | kept |
+| 93:1-11 | 5 | The three rescues answered by three instructions is exactly the surah's structure; occasion well attested. | kept |
+| 95:1-5 | 3 | `didYouKnow` said the rhyme runs on one syllable throughout; ayah 4 ends on a different consonant. "the Prophet" also lacked the honorific. | rewritten |
+| 97:1-5 | 5 | The name occurs three times in five lines, as stated; the night correctly left undated. | kept |
+| 99:6-8 | 4 | The symmetry reading is excellent, but the hadith was summarised as answering a question about horses when the ayat answer the one about donkeys, and the honorific was missing. | rewritten |
+| 103:1-3 | 5 | Both reports are attributed as reports; the reciprocal clauses are read exactly right. | kept |
+| 105:1-5 | 5 | The plan confounded before the birds arrive is the surah's own order, and the dating is the Arabs' own. | kept |
+| 107:1-5 | 5 | The woe really does land on those who pray, at the fourth of seven lines. | kept |
+| 109:1-6 | 5 | Occasion consistently reported; tolerance and agreement kept apart without hostility. | kept |
+| 113:1-5 | 5 | The pair of refuge-seekings and the nightly practice are both in the collections; envy correctly timed rather than personal. | kept |
+
+## Recurring failure modes
+
+For the author brief. In rough order of how often they appeared:
+
+1. **Off-by-N structural claims.** "Two ayat later" when it is the next ayah (7:199-202), "three ayat later" that is really three earlier (33:56), "four ayat apart" for two (79:36-40), an answer placed two ayat on when it is three (19:4). Every one of these is checkable in ten seconds and none of them were. **Count the ayat, do not estimate them.**
+2. **Lexical counts stated confidently and wrong.** "More than a dozen" for a pair that occurs nine times (3:104-105), "five times" for a vocative that occurs four (7:26), "two ayat" for a word appearing in one (29:68-69), "five qualities, only one about God" that does not survive the count (5:54), a three-word refrain called five words (27:62), a refrain's total confused with what remains (55:1-13). **If a `didYouKnow` contains a number, count it against the corpus before writing it.**
+3. **"The same … in the same order" when the order differs.** 45:23 against 2:7 is the clearest case. Parallels are the best `didYouKnow` material available and are also where the slips cluster, because the resemblance is checked and the detail is not.
+4. **`keyTerms[].arabic` spliced or prefix-stripped.** `كَتَبَ لَنَا` for a passage reading `كَتَبَ ٱللَّهُ لَنَا` (9:51); `ٱلْمُتَّقِينَ` for `لِلْمُتَّقِينَ` (25:74). Both pass the validator's script check and both break rule 4 of the system prompt. The token workflow (`toks.mjs` → `@S:A/i` → `resolve-arabic.mjs`) prevents this entirely and was clearly not used for these.
+5. **`didYouKnow` that delivers no fact.** 13:23-24 noted that the greeting is the ordinary one and then told the reader a clause was "worth pausing on"; 21:30 restated its own two `keyTerms` notes. A `didYouKnow` that could be deleted without losing information has failed.
+6. **Facts reused across units.** 21:34-35 carried the same "every soul tastes death appears three times" observation that 3:185 already carries, and both are in the Discover set. The near-duplicate check covers `meaning` only, so `didYouKnow` repetition goes unnoticed.
+7. **Honorific missing where the note discusses the Prophet.** 9:51, 25:20, 33:56, 33:69-70, 41:33-35, 49:10, 95:1-5, 99:6-8 all referred to "the Prophet" in prose without the honorific ever appearing. The validator only fires on the name "Muhammad", so the rule as written in the brief is not machine-enforced.
+8. **Hadith summarised loosely.** 99:6-8 compressed the horses-and-donkeys report into "a question about horses"; the ayat answer the donkey question. Reports were otherwise attributed carefully throughout, which is what made this one stand out.
+
+None of the 161 units contained a sectarian framing, a legal ruling, Arabic outside `keyTerms`, an invented occasion of revelation, or a cross-reference that did not exist. Every `crossReferences[].ref` and `exploreFurther` entry in the odd half was checked against the corpus for bounds and read for relevance; all 161 passed.
