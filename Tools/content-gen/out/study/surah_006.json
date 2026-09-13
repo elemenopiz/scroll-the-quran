@@ -1,7 +1,7 @@
 {
   "surah": 6,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-13T10:11:47.226Z",
+  "generatedAt": "2026-09-13T11:04:39.541Z",
   "studies": [
     {
       "key": "6:1-2",
@@ -12,8 +12,8 @@
       "themeId": "creation",
       "title": "Darkness First, Then Light",
       "tier": "standard",
-      "meaning": "The surah opens with praise, and the order of the words carries the argument. Creation of the heavens and earth comes first, then the making of darkness and light, with darkness in the plural and light in the singular. Commentators read the asymmetry as deliberate. Both are made things, so neither is an independent power. The second ayah drops from cosmos to clay: a fixed term set for each person, and another term held with God alone.",
-      "historicalContext": "Meccan, and the classical sources describe this surah as coming down as a single block late in the Meccan years, when the argument with the city's leadership had settled into refusal. No particular occasion is attested for the opening ayat. The audience is clear enough from the wording: people who did not deny a creator, but who placed others beside Him, which is exactly what the first ayah names.",
+      "meaning": "The surah opens with praise, and the order of the words carries the argument. Creation of the heavens and earth comes first, then the making of darkness and light, with darkness in the plural and light in the singular. The early scholars read the imbalance as deliberate. Both are made things, so neither is an independent power. The second ayah drops from cosmos to clay: a fixed term set for each person, and another term held with God alone.",
+      "historicalContext": "Meccan. The classical sources describe this surah as coming down as a single block late in the Meccan years. By then the argument with the city's leadership had settled into refusal. No particular occasion is attested for the opening ayat. The audience is clear from the wording. These were people who did not deny a creator, but who placed others beside Him. That is exactly what the first ayah names.",
       "keyTerms": [
         {
           "arabic": "ٱلظُّلُمَـٰتِ",
@@ -28,7 +28,7 @@
         {
           "arabic": "أَجَلًا",
           "gloss": "a term, an appointed end",
-          "note": "A fixed end point rather than a stretch of time. The ayah names two, and the commentators generally read one as the span of this life and the other as the hour of resurrection."
+          "note": "A fixed end point rather than a stretch of time. The ayah names two, and the early scholars generally read one as the span of this life and the other as the hour of resurrection."
         }
       ],
       "lifeInProphetsTime": "Darkness was not an abstraction. A moonless night in the valley of Mecca closed the roads; caravans steered by starlight and halted when cloud covered the sky. Lamps burned oil that cost money, so most households simply slept when the light went. Clay was the common material of the settled towns: jars, ovens, roof plaster. Both halves of the passage named things people handled with their hands.",
@@ -54,11 +54,14 @@
         "35:1",
         "6:12"
       ],
+      "explainEasier": "All praise belongs to God. He made the sky and the earth. He made the dark and the light. He made people from clay and set a time for each of them. Some people still doubt Him.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.640Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.029Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -70,7 +73,7 @@
       "themeId": "divine-attributes",
       "title": "He Knows What You Earn",
       "tier": "standard",
-      "meaning": "One sentence does two things. It places God in the heavens and the earth without placing Him inside either, and the commentators take care over this: the phrase means He is the one known and worshipped as God in both realms, not that He is contained by them. Then it names three objects of knowledge — what you hide, what you say aloud, and what you acquire. The third is the surprise. Not only speech is known, but gains.",
+      "meaning": "One sentence does two things. It places God in the heavens and the earth without placing Him inside either. The early scholars take care over this: the phrase means He is the one known and worshipped as God in both realms, not that He is contained by them. Then it names three objects of knowledge — what you hide, what you say aloud, and what you acquire. The third is the surprise. Not only speech is known, but gains.",
       "historicalContext": "Meccan, in the opening argument of a surah addressed to people who acknowledged a creator and then conducted their trade and their households as though nobody were watching. The ayah follows the charge that they set up equals to their Lord and precedes the reminder of vanished generations. No occasion is reported. The setting is simply the commercial life of a city that lived by caravan.",
       "keyTerms": [
         {
@@ -91,7 +94,7 @@
       ],
       "lifeInProphetsTime": "Meccan wealth moved through agreements no ledger recorded. A partner took goods north on trust and came back with a share; a weight was adjusted at the market; a debt was quietly forgiven or quietly enforced. Reputation was the only audit, and reputation could be managed. To a merchant hearing this, the claim that earnings themselves are known reached the part of life he controlled most tightly.",
       "didYouKnow": "The verb for earning here carries a moral sense as often as a financial one. The same root gives the Quranic statement that every soul is held in pledge for what it has earned. Arabic lets one word hold income and conduct together, a joining that English needs two separate sentences to make.",
-      "theologicalSignificance": "The ayah describes God's presence through knowledge rather than location, which keeps the description free of body and place. What follows is practical rather than speculative. If the hidden and the open are known equally, sincerity is not an extra virtue laid over good action but the condition of its being worth anything at all. The wrongdoing this surah goes on to describe is never merely public.",
+      "theologicalSignificance": "The ayah describes God's presence through knowledge rather than place. That keeps the description free of body and location. What follows is practical rather than abstract. If the hidden and the open are known alike, sincerity is not an extra virtue laid over good action. It is the condition of the action being worth anything at all. The wrongdoing this surah goes on to describe is never merely public.",
       "crossReferences": [
         {
           "ref": "2:284",
@@ -112,11 +115,14 @@
         "58:7",
         "6:59"
       ],
+      "explainEasier": "God is God in the sky and on the earth. He knows what you hide and what you say out loud. He also knows what you earn. Nothing you do is outside what He knows.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.647Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.029Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -128,8 +134,8 @@
       "themeId": "revelation-and-its-rejection",
       "title": "Turning From Every Sign",
       "tier": "standard",
-      "meaning": "The construction is absolute. Not one sign arrives without their turning away, which rules out the explanation people prefer, that a clearer proof would have settled the matter. Commentators note the shift across the two ayat. Turning aside is described as an ongoing habit; the denial is stated as an act already completed. What is promised in reply is not a further argument but news: the thing they laughed at arriving as fact.",
-      "historicalContext": "Meccan, in the years before the migration to Medina, when the city's leadership had moved from curiosity to open mockery. The classical sources describe this surah as revealed together rather than in pieces, which suits the sustained shape of the argument running through it. No specific occasion is reported for these two ayat, and none is needed: the posture they describe was the daily weather of the mission.",
+      "meaning": "The construction is absolute. Not one sign arrives without their turning away. That rules out the explanation people prefer, that a clearer proof would have settled the matter. The early scholars note the shift across the two ayat. Turning aside is described as an ongoing habit. The denial is stated as an act already completed. What is promised in reply is not a further argument but news: the thing they laughed at arriving as fact.",
+      "historicalContext": "Meccan, in the years before the move to Medina. By then the city's leadership had gone from curiosity to open mockery. The classical sources describe this surah as coming down together rather than in pieces, which suits the sustained shape of its argument. No specific occasion is reported for these two ayat, and none is needed. The posture they describe was the daily weather of the mission.",
       "keyTerms": [
         {
           "arabic": "مُعْرِضِينَ",
@@ -170,11 +176,14 @@
         "21:2-3",
         "10:39"
       ],
+      "explainEasier": "Every sign God sends them, they turn away from. They said the truth was false when it came to them. Soon they will hear the news about the very thing they laughed at.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.648Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -186,8 +195,8 @@
       "themeId": "time-and-life",
       "title": "Rivers Ran Beneath Them",
       "tier": "standard",
-      "meaning": "The argument is comparative and a little insulting. Earlier peoples were established on the earth more firmly than the listeners, given rain that kept coming and rivers running beneath them, and they are gone. Establishment is presented as a loan rather than a verdict of favour. Commentators note that the ruin is attributed to wrongdoing rather than to fate or the wearing of time, and that the earth was repopulated at once. Nothing paused.",
-      "historicalContext": "Meccan, addressed to a city whose trade route was lined with ruins. The vanished kingdoms of southern Arabia and the rock-cut settlements to the north lay along roads Meccan merchants used twice a year. The ayat just before promise that the news they ridicule will reach them; this one observes that it has already reached others, and that the evidence is sitting beside the road.",
+      "meaning": "The argument is comparative and a little insulting. Earlier peoples were established on the earth more firmly than the listeners. They were given rain that kept coming and rivers running beneath them, and they are gone. Being established is presented as a loan rather than as a sign of favour. The early scholars note that the ruin is put down to wrongdoing rather than to fate or the wearing of time. The earth was repopulated at once. Nothing paused.",
+      "historicalContext": "Meccan, addressed to a city whose trade route was lined with ruins. The vanished kingdoms of southern Arabia and the rock-cut settlements to the north lay along roads Meccan merchants used twice a year. The ayat just before promise that the news they laugh at will reach them. This one observes that it has already reached others. The evidence is sitting beside the road.",
       "keyTerms": [
         {
           "arabic": "قَرْنٍ",
@@ -206,8 +215,8 @@
         }
       ],
       "lifeInProphetsTime": "The road north from Mecca passed abandoned stonework: cisterns cut into rock, terraces with nobody farming them, façades carved into cliff faces. Southern Arabia had run irrigation on a scale nothing in the Hijaz could match, and it had failed. Traders knew these places as landmarks and campsites and stopped at them. The question this ayah asks could be answered by looking out of the tent.",
-      "didYouKnow": "The phrase about rivers running beneath is used elsewhere in the Quran for the gardens promised in the hereafter. Here the identical image describes a civilisation that no longer exists. One sentence therefore holds both the reward and its counterfeit: abundance that was entirely real, and entirely temporary.",
-      "theologicalSignificance": "Prosperity is detached from approval. That single move undoes an assumption natural to any trading city, that success is a verdict. It also makes history evidential rather than decorative, since the fate of earlier peoples is offered as something a listener can go and check. Naming wrongdoing as the cause keeps the collapse moral rather than mechanical, which leaves the present generation something it can still do.",
+      "didYouKnow": "The phrase about rivers running beneath is used elsewhere in the Quran for the gardens promised in the hereafter. Here the same image describes a civilisation that no longer exists. So one sentence holds both the reward and its copy. The abundance was entirely real, and entirely temporary.",
+      "theologicalSignificance": "Wealth is cut loose from approval. Any trading city assumes that success is a verdict, and that single move undoes it. History becomes evidence rather than decoration. What became of earlier peoples is offered as something a listener can go and check. Naming wrongdoing as the cause keeps the collapse a moral matter, not a mechanical one. That leaves this generation something it can still do.",
       "crossReferences": [
         {
           "ref": "30:9",
@@ -228,11 +237,14 @@
         "7:96",
         "28:58"
       ],
+      "explainEasier": "God asks them to look at the peoples He destroyed before them. Those peoples were stronger and better settled. They had plenty of rain and rivers. Their own wrongdoing finished them, and others took their place.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.648Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -244,8 +256,8 @@
       "themeId": "the-quran",
       "title": "A Book They Could Touch",
       "tier": "standard",
-      "meaning": "The hypothetical is extreme on purpose. Even a written book, sent down and handled, would be called magic. That answers the demand for a tangible sign by showing where the obstacle actually sits, and commentators read it as a statement about the deniers rather than about the quality of evidence. The word chosen for magic is worth noticing. It concedes that they felt something powerful in the recitation; what they refused was the source, not the effect.",
-      "historicalContext": "Meccan, from the stage when the recitation had been heard widely enough in the city that dismissing it required an explanation people could repeat. Magic was the explanation offered in public, and the commentators describe the leadership casting about for a description that would keep visitors at a distance during the pilgrimage season. No single occasion is attested for this ayah in particular.",
+      "meaning": "The imagined case is extreme on purpose. Even a written book, sent down and handled, would be called magic. That answers the demand for a sign you can touch by showing where the obstacle actually sits. The early scholars read it as a statement about the deniers rather than about the quality of the evidence. The word chosen for magic is worth noticing. It grants that they felt something powerful in the recitation. What they refused was the source, not the effect.",
+      "historicalContext": "Meccan. By then the recitation had been heard widely in the city. Waving it away needed a reason people could repeat. Magic was the reason offered in public. The early scholars describe the leadership hunting for a word that would keep visitors at a distance during the pilgrimage season. No single occasion is reported for this ayah.",
       "keyTerms": [
         {
           "arabic": "قِرْطَاسٍ",
@@ -264,8 +276,8 @@
         }
       ],
       "lifeInProphetsTime": "Very few in Mecca read. Written documents existed, such as treaties, debt records and letters carried by caravan, and they were treated as unusual and faintly official. Recitation was how words actually moved: at the market, at the seasonal fair, around a fire at night. A book you could hold would have been strange enough to notice, which is why the ayah picks it as the outer limit of a sign.",
-      "didYouKnow": "The word used here for the writing sheet is one of a small group of foreign-origin terms the classical philologists discussed at length, traced through Aramaic to Greek. It appears twice in the Quran, once here in the singular and once later in this same surah in the plural, and nowhere else.",
-      "theologicalSignificance": "Revelation is not being withheld pending better proof. The passage says that a sufficient sign is already refusable, which reframes faith as a response to something rather than a conclusion drawn from something. It also protects a reader from one kind of anxiety about evidence. And it takes the charge of magic seriously enough to answer, because an accusation that concedes power is harder to shrug off than plain denial.",
+      "didYouKnow": "The word used here for the writing sheet is one of a small group of foreign-origin terms. The early Arabic scholars discussed it at length and traced it through Aramaic to Greek. It appears twice in the Quran. Once here in the singular, and once later in this same surah in the plural. It occurs nowhere else.",
+      "theologicalSignificance": "Revelation is not being held back until better proof is ready. The passage says a sufficient sign can already be refused. That makes faith a response to something rather than a conclusion drawn from something. It also protects a reader from one kind of worry about evidence. And it takes the charge of magic seriously enough to answer, because an accusation that grants power is harder to shrug off than plain denial.",
       "crossReferences": [
         {
           "ref": "15:14-15",
@@ -286,11 +298,14 @@
         "6:111",
         "10:2"
       ],
+      "explainEasier": "God says that even if He had sent a book on paper that they could hold in their hands, they would still call it magic. The problem was never the proof. It was what they had already decided.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.648Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -302,8 +317,8 @@
       "themeId": "angels",
       "title": "If An Angel Came Down",
       "tier": "standard",
-      "meaning": "The demand and the answer are both short. They want an angel sent with the message; the reply is that an angel's arrival would close the matter, with no further period of waiting. Commentators explain this two ways. A visible angel would remove the room that makes faith faith, and angels appearing in their own form have accompanied judgement rather than invitation. Either way, the delay the objectors resent is described as time they are being given.",
-      "historicalContext": "Meccan, from the years when the argument had hardened into a demand for credentials. Asking for an angelic messenger was a standing objection, recorded across several Meccan surahs, and it rested on an assumption: that a man with a human family and a human trade could not be carrying anything from God. The ayat around this one answer that assumption from several directions in sequence.",
+      "meaning": "The demand and the answer are both short. They want an angel sent with the message. The reply is that an angel's arrival would close the matter, with no further period of waiting. The early scholars explain this two ways. A visible angel would remove the room that makes faith faith. And angels appearing in their own form have come with judgement rather than with invitation. Either way, the delay the objectors resent is described as time they are being given.",
+      "historicalContext": "Meccan, from the years when the argument had hardened into a demand for credentials. Asking for an angel as messenger was a standing objection, recorded across several Meccan surahs. It rested on an assumption. A man with a human family and a human trade could not be carrying anything from God. The ayat around this one answer that assumption from several directions in turn.",
       "keyTerms": [
         {
           "arabic": "مَلَكٌ",
@@ -322,8 +337,8 @@
         }
       ],
       "lifeInProphetsTime": "Mecca understood delegations. A message of weight arrived with an escort whose dress and bearing announced who had sent it, and a tribe weighed the claim partly by the messenger who carried it. A man they had watched grow up, whose cousins and aunts they could name, fitted none of that. The demand for an angel was partly a demand for the visible apparatus of authority they knew how to read.",
-      "didYouKnow": "This surah takes up the angel objection twice in consecutive ayat and answers it two different ways: an angel's arrival would end the matter outright, and an angel sent to live among people would have had to appear as a man in any case. The doubling suggests how often the demand was actually being made.",
-      "theologicalSignificance": "The ayah treats compulsion and faith as incompatible. A being whose arrival forces assent has not produced belief but surrender, and the passage says that this is withheld deliberately. It also reframes an apparent absence, with no angel and nothing decisive, as an interval granted rather than an argument lost. Anyone still waiting for a sign is being told what the waiting is actually for.",
+      "didYouKnow": "This surah takes up the angel objection twice, in ayat that follow one another, and answers it two different ways. An angel's arrival would end the matter outright. And an angel sent to live among people would have had to appear as a man anyway. The doubling suggests how often the demand was actually being made.",
+      "theologicalSignificance": "The ayah treats force and faith as things that cannot go together. A being whose arrival compels agreement has not produced belief but surrender. The passage says that is held back on purpose. It also reframes an apparent absence, with no angel and nothing decisive, as an interval granted rather than an argument lost. Anyone still waiting for a sign is being told what the waiting is for.",
       "crossReferences": [
         {
           "ref": "25:21-22",
@@ -344,11 +359,14 @@
         "17:95",
         "6:50"
       ],
+      "explainEasier": "They ask why God does not send an angel with the message. God answers that if an angel came, the matter would be finished. They would be given no more time. The waiting is a mercy.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.648Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -360,7 +378,7 @@
       "themeId": "prophets",
       "title": "Travel And See The End",
       "tier": "standard",
-      "meaning": "Three moves in three ayat. If the messenger were an angel he would have to appear as a man, so the objection lands back where it started. Ridicule of messengers is then set inside a long series, and the mockers are described as encircled by the very thing they mocked. The last ayah turns the argument outward: go and look. Commentators note that the instruction is to observe an outcome, not to receive a proof.",
+      "meaning": "Three moves in three ayat. If the messenger were an angel he would have to appear as a man, so the objection lands back where it started. Ridicule of messengers is then set inside a long series, and the mockers are described as ringed in by the very thing they mocked. The last ayah turns the argument outward: go and look. The early scholars note that the instruction is to observe an outcome, not to receive a proof.",
       "historicalContext": "Meccan, while the Prophet Muhammad (peace be upon him) was facing sustained public mockery in a city he could not leave. The instruction to travel and observe was aimed at people who did travel, twice a year, along roads that passed the remains of earlier peoples. No particular occasion is reported. The sequence answers objections that recur through the Meccan surahs in much the same words.",
       "keyTerms": [
         {
@@ -380,8 +398,8 @@
         }
       ],
       "lifeInProphetsTime": "The Meccan year was built around two trading journeys, one north in summer and one south in winter. Men who objected to the message had camped beside dead settlements themselves and watched their guides point out whose they had been. The command to travel was not an invitation to a journey they had never made. It asked them to look properly at one they made every single year.",
-      "didYouKnow": "The command to travel the earth and look at how deniers ended appears several times in the Quran, and in every instance the object of the looking is a consequence rather than a monument. The phrasing asks about the end of a people, not about their architecture, even though architecture is what a traveller actually sees.",
-      "theologicalSignificance": "Prophethood is presented as a repeating pattern rather than a singular event, which changes the weight of the present moment. The listeners are not facing an unprecedented claim; they are taking a familiar position in a familiar story. Ridicule is also given a mechanism. It is not punished arbitrarily but closes back on the one who used it, which the Quran states as a description of how such things work.",
+      "didYouKnow": "The command to travel the earth and look at how deniers ended appears several times in the Quran. Every time, what is to be looked at is a consequence rather than a monument. The wording asks about the end of a people, not about their buildings. Buildings are what a traveller actually sees.",
+      "theologicalSignificance": "Prophethood is presented as a repeating pattern rather than a one-off event. That changes the weight of the present moment. The listeners are not facing an unheard-of claim. They are taking a familiar position in a familiar story. Ridicule is also given a mechanism. It is not punished at random. It closes back on the one who used it, and the Quran states that as a description of how such things work.",
       "crossReferences": [
         {
           "ref": "21:41",
@@ -402,11 +420,14 @@
         "30:42",
         "35:44"
       ],
+      "explainEasier": "If God had sent an angel, He would have made him look like a man, and people would be just as unsure. Messengers before were laughed at too. God tells people to travel and see how the deniers ended.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:37:26.649Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T11:04:39.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
