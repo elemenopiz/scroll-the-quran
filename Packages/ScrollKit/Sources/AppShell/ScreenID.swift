@@ -16,6 +16,9 @@ public enum ScreenID: String, CaseIterable, Sendable {
     case giftOpen = "gift-open"
     case community
     case discover
+    /// Phase 4o: the Discover feed with the day's first REFLECTION card as page 0, so the
+    /// capture of a card the seed would otherwise bury at position 4 is stable.
+    case discoverReflection = "discover-reflection"
     case deepStudy = "deepstudy"
     case reader
     case translationSheet = "translation-sheet"
@@ -59,7 +62,7 @@ public struct ScreenRoute: Equatable, Sendable {
     public var tab: AppTab? {
         switch screen {
         case .community: .community
-        case .discover: .discover
+        case .discover, .discoverReflection: .discover
         case .home, .plansSheet, .planDetail, .verseSearch, .widgetGallery: .home
         case .reader, .translationSheet, .notesSheet, .readerVerseMenu: .quran
         default: nil

@@ -11,6 +11,9 @@ Owns: `Tools/content-gen/{author.mjs,validate.mjs,assemble.mjs,sync-study-conten
 4. `schema/`: add `explainEasier` (optional string) and `meta.simplified`. Swift `StudyUnit` gets `public let explainEasier: String?` (decode-if-present), test that a shard with and without the field decodes.
 5. `sync-study-content.mjs --prune` still round-trips; `Tools/verify.sh --skip-sim` PASS. Merge with `--no-ff`; remove the worktree.
 
+## Pass 2 — the voice pass (owner, 2026-09-13)
+Pass one ("p1") reached 1,708 units and was stopped: it lowered the grade but kept an analytical voice. The standard is now `docs/content/voice.md` + `prompts/simplify.md` (rewritten), stamped `meta.simplified: "v2"` (`lib/voice.mjs`). `rewrite-todo` lists every unit not yet at v2, including the p1 ones; the validator adds voice rules (structure-talk, fragment stacks) for v2 units. Part B's commands are unchanged.
+
 ## Part B — rewrite waves (many agents; each in its own worktree `../scroll-the-quran-simplify-<shard>`, branch `content/simplify-<shard>`)
 Filled in by Part A's agent with the exact commands. Wave 1 covers the 326 Discover units (`--only discover`), ~55 units per agent; later waves cover the rest by surah range. Each agent: `rewrite-todo` → for each key `rewrite <key>` → write the rewritten body (JSON) → `rewrite-dir` → `assemble` → `validate.mjs out/study` → `sync-study-content.mjs --prune` → `swift test --filter StudyContentTests` → commit. The orchestrator merges (per-unit 3-way JSON merges are known to work: `Tools/content-gen/merge-shards.py`).
 

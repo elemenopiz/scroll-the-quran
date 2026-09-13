@@ -14,6 +14,7 @@ import { ROOT, OUT, loadQuran, hasArabic, parseKey, refInBounds, words } from ".
 import { loadPassages } from "./lib/units.mjs";
 import { nfc, looseArabic, unitUthmani, exactSpanFor } from "./lib/arabic.mjs";
 import { readability } from "./lib/readability.mjs";
+import { voiceFindings, VOICE_VERSION } from "./lib/voice.mjs";
 
 const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
 const PROSE_FIELDS = [
@@ -183,6 +184,17 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
       }
     }
     if (misses.length) note(key, `${READABILITY_TAG} — ${misses.join("; ")}`);
+
+    // Voice. A unit stamped with the current voice pass must also read as prose
+    // written *to* the reader: no structure-talk in the reader-facing sections,
+    // no stacks of fragments. Earlier passes ("p1") are not held to this — they
+    // are what `rewrite-todo` lists next.
+    if (s.meta?.simplified === VOICE_VERSION) {
+      for (const field of Object.keys(targets.sections)) {
+        if (typeof s[field] !== "string") continue;
+        for (const f of voiceFindings(field, s[field])) err(key, `voice — ${f}`);
+      }
+    }
 
     // explainEasier is optional on the corpus at large and required once a unit
     // has been simplified. Its structural rules (word bounds, script, banned

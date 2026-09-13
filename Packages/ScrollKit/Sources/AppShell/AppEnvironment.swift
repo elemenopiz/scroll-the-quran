@@ -47,6 +47,9 @@ public final class AppEnvironment {
     public let studies: StudyStore
     public let feed: DiscoverFeed
     public let themes: ThemeIndex
+    /// `Content/reflections.json`. Held here as well as inside `feed` so a future surface
+    /// (a share card, a widget) can reach the catalogue without going through the feed.
+    public let reflections: ReflectionStore
     /// `Content/plans.json` — the reading plans the Home tab lists.
     public let plans: ReadingPlanCatalog
     public let user: UserStore
@@ -97,6 +100,7 @@ public final class AppEnvironment {
         studies: StudyStore,
         feed: DiscoverFeed,
         themes: ThemeIndex,
+        reflections: ReflectionStore = .empty,
         plans: ReadingPlanCatalog = ReadingPlanCatalog(),
         user: UserStore,
         entitlements: any Commerce.EntitlementProviding,
@@ -111,6 +115,7 @@ public final class AppEnvironment {
         self.studies = studies
         self.feed = feed
         self.themes = themes
+        self.reflections = reflections
         self.plans = plans
         self.user = user
         self.entitlements = entitlements
@@ -181,12 +186,23 @@ public final class AppEnvironment {
             studies = StudyStore.empty()
         }
 
+        // Loaded before the feed: the feed interleaves them, so it is built with them
+        // rather than handed them afterwards. A missing file degrades to a feed of study
+        // cards only, which is exactly the pre-4o app.
+        let reflections: ReflectionStore
+        if let loaded = try? ReflectionStore(loader: loader) {
+            reflections = loaded
+        } else {
+            failures.append("reflections.json")
+            reflections = .empty
+        }
+
         let feed: DiscoverFeed
-        if let loaded = try? DiscoverFeed(loader: loader, store: studies) {
+        if let loaded = try? DiscoverFeed(loader: loader, reflections: reflections, store: studies) {
             feed = loaded
         } else {
             failures.append("discover.json")
-            feed = DiscoverFeed(items: [])
+            feed = DiscoverFeed(items: [], reflections: reflections)
         }
 
         let themes = (try? ThemeIndex(loader: loader)) ?? .empty
@@ -233,6 +249,7 @@ public final class AppEnvironment {
             studies: studies,
             feed: feed,
             themes: themes,
+            reflections: reflections,
             plans: plans,
             user: user,
             entitlements: entitlements,
