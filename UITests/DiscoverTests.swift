@@ -67,7 +67,12 @@ final class DiscoverTests: XCTestCase {
     /// this proves the views actually lay out that way.
     func testEveryCardHasTheSameGeometry() throws {
         var frames: [(index: Int, frame: CGRect)] = []
-        for index in [0, 150, 247] {
+        // On the fixed date's feed, 0 is the capture card (Al-Ankabut 29:68-69, whose
+        // quote is six lines), 150 is the corpus's longest passage (Luqman 31:13-19, 215
+        // words — the one card whose quote still truncates) and 25 is Al-Baqarah
+        // 2:285-286, which drops both MEANING and DID YOU KNOW. If the Phase 4m body plan
+        // could change a card's height, these three would show it.
+        for index in [0, 150, 25] {
             let app = launch("discover", extra: ["--discover-index", "\(index)"])
             requireRouted(app, "discover.card")
             let card = app.descendants(matching: .any).matching(identifier: "discover.card").firstMatch
@@ -77,12 +82,15 @@ final class DiscoverTests: XCTestCase {
 
         let first = try XCTUnwrap(frames.first)
         for other in frames.dropFirst() {
+            // A point of slack: the card's accessibility frame is the union of its
+            // children's, and those are snapped to the @3x pixel grid, so two cards whose
+            // arithmetic is identical can report heights 2/3 pt apart.
             XCTAssertEqual(
-                Double(other.frame.minY), Double(first.frame.minY), accuracy: 0.5,
+                Double(other.frame.minY), Double(first.frame.minY), accuracy: 1,
                 "card \(other.index) starts at a different y than card \(first.index)"
             )
             XCTAssertEqual(
-                Double(other.frame.height), Double(first.frame.height), accuracy: 0.5,
+                Double(other.frame.height), Double(first.frame.height), accuracy: 1,
                 "card \(other.index) is a different height than card \(first.index)"
             )
         }
@@ -99,10 +107,51 @@ final class DiscoverTests: XCTestCase {
         let quote = app.descendants(matching: .any).matching(identifier: "discover.quote").firstMatch
         XCTAssertTrue(quote.exists)
         // The muted Arabic layer is `accessibilityHidden`, so it cannot be asserted away by
-        // label; its absence shows in the quote's height, which is exactly four English lines.
-        XCTAssertLessThan(
-            quote.frame.height, 110,
-            "the quote block is taller than four lines — the Arabic slot looks like it is back"
+        // label; its absence shows in the quote's height, which is a whole number of English
+        // line boxes and nothing else. Since Phase 4m that number is the passage's own line
+        // count rather than a fixed four, so the test checks the multiple, not a ceiling.
+        let pitch = 16 * 1.371
+        let lines = Double(quote.frame.height) / pitch
+        XCTAssertEqual(
+            lines, lines.rounded(), accuracy: 0.06,
+            "the quote block is \(quote.frame.height) pt, not a whole number of \(pitch) pt lines — "
+                + "the Arabic slot looks like it is back"
+        )
+    }
+
+    /// Phase 4m, the owner's ask: "ideally the entirety of the verse fits on the card. the
+    /// meaning/did you know can be cut off." Card 0 of the fixed-date feed is Al-Ankabut
+    /// 29:68-69, whose passage needs six lines where the Phase 4i slot gave four; card 25
+    /// is Al-Baqarah 2:285-286, long enough that both MEANING and DID YOU KNOW give way.
+    func testTheQuoteTakesTheLinesItNeedsAndTheProseGivesWay() throws {
+        let app = launch("discover", extra: ["--discover-index", "0"])
+        requireRouted(app, "discover.card")
+        let quote = app.descendants(matching: .any).matching(identifier: "discover.quote").firstMatch
+        XCTAssertGreaterThan(
+            quote.frame.height, 4 * 16 * 1.371 + 1,
+            "the quote is still capped at the old four-line slot"
+        )
+        XCTAssertTrue(
+            app.descendants(matching: .any).matching(identifier: "discover.meaning").firstMatch.exists,
+            "MEANING should still be on a card whose quote is six lines"
+        )
+        app.terminate()
+
+        let long = launch("discover", extra: ["--discover-index", "25"])
+        requireRouted(long, "discover.card")
+        // The feed is a lazy pager and the neighbouring cards are realised too, so
+        // "does a DID YOU KNOW box exist" is not the question — "is one inside *this*
+        // card" is.
+        let card = long.descendants(matching: .any).matching(identifier: "discover.card").firstMatch
+        let boxes = long.descendants(matching: .any)
+            .matching(identifier: "discover.didYouKnow").allElementsBoundByIndex
+        XCTAssertFalse(
+            boxes.contains { card.frame.intersects($0.frame) },
+            "DID YOU KNOW should have given way to Al-Baqarah 2:285-286's passage"
+        )
+        XCTAssertTrue(
+            long.buttons["discover.deepStudy"].firstMatch.exists,
+            "\"Deep study ›\" must stay on the card whatever the body plan"
         )
     }
 

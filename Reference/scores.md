@@ -91,6 +91,54 @@ the card wins if a block cannot satisfy both, because a verse with a legible ope
 tail is still readable and one whose first line is under the mark is not. `reader-dark`'s own
 block clears the card unaided, so the clamp is inert there and the score did not move;
 `VersePageGeometryTests` asserts all of it as arithmetic rather than leaving it to a capture.
+## Discover card: the whole verse fits — Phase 4m, 2026-09-13
+
+iPhone 17 Pro (`ScrollSim-3e`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`, `SCROLL_CAPTURE_SETTLE=6`.
+
+Owner: "on the discover tab, ideally the entirety of the verse fits on the card. the
+meaning/did you know can be cut off." Phase 4i's four-line quote slot elided most passages;
+Phase 4m gives the quote the lines it actually needs and re-divides what is left.
+
+| id | Phase 4i | Phase 4m | threshold | delta |
+| --- | ---: | ---: | ---: | ---: |
+| `discover-dark` | 0.0361800 | 0.0380826 | 0.14 | +0.0019 |
+
+### What changed, and why the score moved the way it did
+
+The card's height, the chip, the title, the cross-reference row, "Deep study ›" and the
+action row are **exactly where Phase 4i put them** — `DiscoverCardLayout.cardHeight` is
+unchanged at 607.365 pt and the layout spec re-records only two rows. What moved is the
+split inside the body: `DiscoverCardLayout.bodyBudget` (335.5 pt, Phase 4i's three slots
+totalled) is now divided per card by
+`DiscoverCardLayout.body(for:meaning:didYouKnow:width:)`. On the capture card
+(Al-Ankabut 29:68-69) the quote goes from four elided lines to its full six and MEANING
+drops from four lines to two, which is the whole of the +0.0019: the reference (James 1:2-3,
+a short passage) draws three quote lines and four of meaning, so a longer quote reads as
+residue against it. It is the deviation the owner asked for.
+
+### The plan over the 326 units
+
+| | count |
+| --- | ---: |
+| quote at 16 pt | 310 |
+| quote at 15 pt | 9 |
+| quote at 14 pt | 7 |
+| MEANING 4 lines / 3 / 2 / dropped | 153 / 82 / 87 / 4 |
+| DID YOU KNOW dropped | 89 |
+| quote still truncated | 2 |
+
+MEANING is dropped on `18:1-10`, `2:285-286`, `31:13-19`, `49:11-13`. The two units whose
+quote still ends in a "…" — the brief's escape hatch, and the list the owner asked for so
+they can decide whether to narrow the passage in `Content/discover.json` — are
+**`31:13-19`** (215 words, 18 lines at 14 pt against the 17 the body holds) and
+**`18:1-10`** (178 words). They are asserted by name in `OverflowLedger`, so a content
+change that adds a third fails the gate.
+
+Captured proof (`.build/snapshots/discover-card-*.png`): `5:8` (44 words — five quote
+lines, three of MEANING, the DID YOU KNOW box intact), `2:285-286` (145 words — sixteen
+lines at 15 pt, both prose sections gone, the passage whole) and `31:13-19` (215 words —
+seventeen lines at 14 pt and the one ellipsis). All three put the card's edges exactly
+where card 0 does.
 
 ## Phase 4h — the phone frame, 2026-09-12
 

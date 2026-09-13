@@ -69,13 +69,18 @@ public struct VerseText: View {
         /// number. It was 62 % and wrapped in \u{2329}\u{232A}, which read as a code token
         /// rather than as a verse mark (Phase 4i).
         public var marker: CGFloat {
-            english * 0.55
+            english * VerseText.Size.markerRatio
         }
+
+        /// The marker's share of the English point size, as a constant so a block drawn at
+        /// an overridden size (the Discover quote at 15 or 14 pt, Phase 4m) keeps the ratio.
+        public static let markerRatio: CGFloat = 0.55
+        public static let markerRiseRatio: CGFloat = 0.18
 
         /// How far the marker rides above the baseline: enough to sit with the ascenders
         /// rather than on the line, not so far that it clips the line above.
         public var markerRise: CGFloat {
-            english * 0.18
+            english * VerseText.Size.markerRiseRatio
         }
     }
 
@@ -99,6 +104,7 @@ public struct VerseText: View {
     private let style: Style
     private let alignment: TextAlignment
     private let lineLimit: Int?
+    private let englishSize: CGFloat?
 
     public init(
         arabic: String?,
@@ -106,7 +112,8 @@ public struct VerseText: View {
         size: Size = .reader,
         style: Style = .roman,
         alignment: TextAlignment = .center,
-        lineLimit: Int? = nil
+        lineLimit: Int? = nil,
+        englishSize: CGFloat? = nil
     ) {
         self.init(
             arabic: arabic,
@@ -114,7 +121,8 @@ public struct VerseText: View {
             size: size,
             style: style,
             alignment: alignment,
-            lineLimit: lineLimit
+            lineLimit: lineLimit,
+            englishSize: englishSize
         )
     }
 
@@ -129,6 +137,10 @@ public struct VerseText: View {
     ///
     /// - Parameter quoted: wrap the whole passage in straight quotes (the Discover and
     ///   Deep Study treatment), applied outside the markers.
+    /// - Parameter englishSize: overrides `size.english` for this one block, and with it
+    ///   the ayah markers and the gap under the Arabic line. Only the Discover card passes
+    ///   it: Phase 4m steps its quote 16 → 15 → 14 pt so a long passage fits the card
+    ///   whole rather than eliding. Everywhere else the surface's own size stands.
     public init(
         arabic: String?,
         segments: [VerseSegment],
@@ -136,7 +148,8 @@ public struct VerseText: View {
         style: Style = .roman,
         alignment: TextAlignment = .center,
         quoted: Bool = false,
-        lineLimit: Int? = nil
+        lineLimit: Int? = nil,
+        englishSize: CGFloat? = nil
     ) {
         self.arabic = arabic
         self.segments = segments
@@ -145,10 +158,16 @@ public struct VerseText: View {
         self.style = style
         self.alignment = alignment
         self.lineLimit = lineLimit
+        self.englishSize = englishSize
+    }
+
+    /// The point size this block is actually drawn at.
+    private var pointSize: CGFloat {
+        englishSize ?? size.english
     }
 
     public var body: some View {
-        VStack(spacing: size.english * 0.5) {
+        VStack(spacing: pointSize * 0.5) {
             if let arabic, !arabic.isEmpty {
                 ArabicAccentText(arabic, size: size.renderedArabic, lineLimit: size.arabicLineLimit)
             }
@@ -201,16 +220,16 @@ public struct VerseText: View {
     /// the \u{2329}69\u{232A} code token Phase 4b drew.
     private func marker(for ayah: Int) -> AttributedString {
         var marker = AttributedString("\(ayah)")
-        marker.font = .body(size.marker, weight: .semibold)
+        marker.font = .body(pointSize * Size.markerRatio, weight: .semibold)
         marker.foregroundColor = .textTertiaryReadable
-        marker.baselineOffset = size.markerRise
+        marker.baselineOffset = pointSize * Size.markerRiseRatio
         return marker
     }
 
     private var englishFont: Font {
         switch style {
-        case .roman: .serifBody(size.english)
-        case .italic: .serifItalic(size.english)
+        case .roman: .serifBody(pointSize)
+        case .italic: .serifItalic(pointSize)
         }
     }
 

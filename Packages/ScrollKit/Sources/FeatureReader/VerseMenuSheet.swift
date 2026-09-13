@@ -109,7 +109,8 @@ public enum VerseMenu {
 
     /// "Explain Easier" copy: the simplified line when the unit has been through the
     /// simplify pass (`Tools/content-gen/author.mjs rewrite`), the section it simplifies
-    /// otherwise. No unit carries `explainEasier` yet, so today this is always `meaning`.
+    /// otherwise. 1,316 of the 3,293 units carry one as of 2026-09-13, so both branches are
+    /// live and the fallback is what the rest of the corpus reads until the pass finishes.
     public static func explainEasierText(for study: Study?) -> String {
         guard let study else { return "" }
         return study.explainEasier ?? study.meaning

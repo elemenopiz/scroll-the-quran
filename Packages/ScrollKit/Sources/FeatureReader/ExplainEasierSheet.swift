@@ -4,9 +4,9 @@ import SwiftUI
 /// "Explain Easier": the ayah's unit told plainly, with a way through to the full study.
 ///
 /// The copy is `Study.explainEasier` where the simplify pass has been through the unit and
-/// `Study.meaning` where it has not (`VerseMenu.explainEasierText(for:)`). No shipped unit
-/// carries `explainEasier` yet, so today every row shows `meaning` — the row is still the
-/// short way in, and it gets shorter for free as the content pipeline fills the field.
+/// `Study.meaning` where it has not (`VerseMenu.explainEasierText(for:)`). 1,316 of the 3,293
+/// units carry one as of 2026-09-13 — 2:255, the screenshot route's ayah, among them — and
+/// the rest read their `meaning` until the pass reaches them.
 struct ExplainEasierSheet: View {
     let reference: String
     let text: String
