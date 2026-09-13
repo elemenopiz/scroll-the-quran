@@ -159,6 +159,17 @@ any error. Checks:
 - near-duplicate `meaning`, `didYouKnow` and `applyIt` sections across records
   (5-word shingle Jaccard; ≥ 0.50 errors, ≥ 0.35 warns). Candidate pairs come
   from an inverted shingle index, so the whole corpus validates in seconds.
+- **readability**, from `schema/study.schema.json`'s `x-readability` and measured
+  by `lib/readability.mjs`: a Flesch-Kincaid grade ceiling per prose section
+  (8.5, or 9.5 for `historicalContext` and `didYouKnow`) and a mean sentence
+  length of 20 words or fewer. A miss is an **error** on a unit whose
+  `meta.simplified` is set — one the simplify pass has already been through —
+  and a **warning** on every other unit, so the corpus written before the pass
+  still validates. The warnings are collapsed to one summary line; pass
+  `--verbose` to list them.
+- `explainEasier` where it exists: 25-50 words, grade 6 or below, no Arabic
+  script, the same banned phrasing as the rest. It is **required** on a unit
+  whose `meta.simplified` is set and optional everywhere else.
 
 ### `node search.mjs <arabic term> [--exact] [--in KEY] [--surah N] [--limit N] [--json]`
 
@@ -258,6 +269,48 @@ gap.
 Units total / cached / assembled / Discover remaining, and a per-surah table of
 the surahs that have any content.
 
+## The simplify pass
+
+The brief is `docs/tasks/content-simplify.md`; Part B of it is the exact command
+list a rewrite agent follows. A rewrite is an ordinary authored body with one
+extra marker, so nothing downstream changes:
+
+```bash
+node author.mjs rewrite-todo --only discover --limit 55   # claim a slice
+node author.mjs rewrite 2:255                             # the whole rewrite turn
+#   …write bodies/2_255.json…
+node author.mjs rewrite-dir bodies/                       # validate + cache
+node author.mjs assemble                                  # cache -> out/study
+node validate.mjs out/study                               # the gate
+node sync-study-content.mjs --prune                       # out/ -> Content/
+```
+
+### `node author.mjs rewrite-todo [--only …] [--limit N] [--json]`
+
+Units that **already exist** and have not been simplified, with the grade of
+their worst section and which sections are over their ceiling. (`todo` is the
+opposite list: units with nothing written yet.)
+
+### `node author.mjs rewrite <key>`
+
+`prompts/simplify.md`, then the passage in English, then what each section
+measures today, then the current body as JSON — the whole turn a rewrite agent
+works from. It refuses a key that has no study yet.
+
+### `node author.mjs rewrite-dir <dir> [--author NAME] [--model NAME]`
+
+Like `write-dir`, with three differences: an already-assembled key is the point
+rather than a clash, the readability targets are **errors** rather than
+warnings, and each body is diffed against the version it replaces —
+`theme`, `themeId` and every `keyTerms[].arabic` must be identical, and a moved
+`crossReferences[].ref`, `exploreFurther` or `title` warns. Clean bodies are
+cached with `simplified` set, which `assemble.mjs` turns into `meta.simplified`
+and `meta.author` on the shard. All-or-nothing.
+
+> `meta.simplified` is what makes the readability rule bite. Nothing else marks
+> a unit as done: re-running `rewrite-todo` after `assemble` is how a wave
+> checks itself.
+
 > **`work/units.jsonl` is gitignored.** `author.mjs` rebuilds it from the
 > committed `out/study/passages.json` when it is missing, which is byte-identical
 > to what the segmenter produces. Do **not** "fix" a missing unit list by running
@@ -282,7 +335,13 @@ lib/arabic.mjs              NFC/diacritics-insensitive normalisers, the exact-
                             span resolver, stripBasmala
 lib/units.mjs               unit selection (discover / all / surah:N) + tiers
 lib/prompt.mjs              prompt assembly, output schema, custom_id codec
-lib/author.mjs              authoring mode: todo/prompt/validate/write/status
+lib/author.mjs              authoring mode: todo/prompt/validate/write/status,
+                            and the simplify pass: rewrite-todo/rewrite/
+                            rewrite-dir, fidelity checks, meta.simplified
+lib/readability.mjs         Flesch-Kincaid grade + mean sentence length, one
+                            syllable heuristic shared by the CLI and validate
+prompts/simplify.md         the rewrite prompt: keep every fact, shorten the
+                            sentences, plain words, write explainEasier
 lib/pricing.mjs             model prices and the cost estimator
 out/                        committed pipeline output
 work/                       gitignored: raw downloads, requests, cache, judge
