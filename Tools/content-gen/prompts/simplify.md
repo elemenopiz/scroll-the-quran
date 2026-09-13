@@ -4,7 +4,7 @@ The reader is an English-speaking Muslim or a curious newcomer on a phone, often
 
 # The standard
 
-1. **Talk about the verse, never about the note.** Do not describe the passage's anatomy: no "the ayah is built from", "three statements, each narrowing the last", "the final clause", "in form". If a structural point is genuinely interesting, it belongs in `didYouKnow`, phrased as a discovery. Everywhere else, say what the verse says and what it means.
+1. **Talk about the verse, never about the note.** Do not describe the passage's anatomy: no "the ayah is built from", "three statements, each narrowing the last", "the final clause", "the first half", "the second half", "the closing clause", "the first sentence", "in form", "in structure". If a structural point is genuinely interesting, it belongs in `didYouKnow`, phrased as a discovery. Everywhere else, say what the verse says and what it means.
 2. **`meaning` opens on the human situation** the verse speaks into, says in plain words what God is saying, unpacks the one or two things a reader would miss (a word, a contrast, an image, a scholarly reading), and lands on why it matters. Quote three to ten words of the verse where they help.
 3. **`historicalContext` is a scene**: where and when, who was listening, what had just happened, and then why that changes the reading. Only attested facts; where the note says the scholars report no occasion, keep saying so, but say it inside the scene.
 4. **`lifeInProphetsTime`** gives one texture of that world the reader can picture, and ends by tying it to the verse's own words.
