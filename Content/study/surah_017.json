@@ -1,7 +1,7 @@
 {
   "surah": 17,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T10:26:18.754Z",
+  "generatedAt": "2026-09-13T10:08:48.547Z",
   "studies": [
     {
       "key": "17:1",
@@ -360,7 +360,7 @@
       "themeId": "guidance",
       "title": "That Which Is Most Upright",
       "tier": "discover",
-      "meaning": "The claim is comparative rather than absolute. The Quran guides to that which is most upright, using a superlative built on the word for standing straight, so the promise is not that it points somewhere good but that it points to the straightest of the available ways. The commentators expand this to belief, conduct and the ordering of a community. Good news follows for those who act, and the reward is described only by size.",
+      "meaning": "The claim compares rather than stands alone. The Quran guides to that which is most upright. The word is a superlative built on the verb for standing straight. So the promise is not that it points somewhere good. It is that it points to the straightest of the ways on offer. Early scholars widen this to belief, to conduct, and to how a community is ordered. Good news then follows for those who act. The reward is described only by size.",
       "historicalContext": "Meccan, from the surah that opens with the night journey. This ayah comes after a passage on the Children of Israel and two cycles of their rise and fall, so the claim about guidance is placed immediately after a history of what happens without it. The surah belongs to the late Meccan years, close to the migration. No specific occasion is reported for the ayah.",
       "keyTerms": [
         {
@@ -402,11 +402,14 @@
         "1:1-7",
         "41:44"
       ],
+      "explainEasier": "This Quran points people to the straightest way to live. It also brings good news to those who believe and do good things. They will get a great reward.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:28:54.995Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.031Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -882,8 +885,8 @@
       "themeId": "family-and-parents",
       "title": "The Wing Of Humility",
       "tier": "discover",
-      "meaning": "The command to worship God alone and the command to treat parents well are joined in one decree, which the commentators note is a joining repeated across the Quran. Then the instruction narrows to a single scene: old age, in your house, one parent or both. Three things are forbidden, and the first is the smallest, a sound of irritation. The passage ends by handing the reader a prayer, since the debt named in it cannot be paid.",
-      "historicalContext": "Meccan, in a passage of commands that runs through much of the surah, sometimes compared to a set of foundational instructions because of how it is arranged. The commentators report no specific occasion. In Mecca, accepting the message often set a young person against their own household, so a passage insisting on tenderness towards parents arrived where it was hardest to hear and most needed.",
+      "meaning": "The command to worship God alone and the command to treat parents well are joined in one decree, which early scholars note is a joining repeated across the Quran. Then the instruction narrows to a single scene: old age, in your house, one parent or both. Three things are forbidden, and the first is the smallest, a sound of irritation. The passage ends by handing the reader a prayer, since the debt named in it cannot be paid.",
+      "historicalContext": "Meccan, in a run of commands that carries through much of the surah. Its arrangement has sometimes been compared to a set of founding instructions. Early scholars report no specific occasion. In Mecca, accepting the message often set a young person against their own household. So a passage pressing for tenderness towards parents arrived where it was hardest to hear. It also arrived where it was most needed.",
       "keyTerms": [
         {
           "arabic": "أُفٍّ",
@@ -902,8 +905,8 @@
         }
       ],
       "lifeInProphetsTime": "There were no institutions for the old. A parent who could no longer travel, trade or fight lived in a son's house and depended on it entirely, and the household's other work went on around them. Failing eyesight, deafness and slowness were dealt with by family or not at all. The scene the ayah describes, both parents ageing under your roof, was the ordinary end of a life rather than an unusual burden.",
-      "didYouKnow": "The Arabic word forbidden here is a single syllable that is not really a word at all, a sound rather than a term. Commentators have long observed that the passage works by degrees: forbid the smallest sign of impatience and every larger form is settled without being listed. The clause about old age also uses a construction meaning whether one or both, leaving no gap.",
-      "theologicalSignificance": "Placing parents immediately after the exclusive worship of God gives the relationship a weight nothing else in human life receives. It is not made equal to worship; it is made the first thing after it. The passage also refuses to treat gratitude as sufficient. It ends in a prayer, because what the child owes exceeds what the child can return, and asking God to supply the difference is the only honest response the ayah offers.",
+      "didYouKnow": "The Arabic word forbidden here is a single syllable that is not really a word at all. It is a sound rather than a term. Early scholars have long observed that the passage works by degrees. Forbid the smallest sign of impatience, and every larger form is settled without being listed. The clause about old age also uses a construction meaning whether one or both, which leaves no gap.",
+      "theologicalSignificance": "Putting parents straight after the worship of God alone gives the tie a weight nothing else in human life gets. It is not made equal to worship. It is made the first thing after it. The passage also refuses to treat thanks as enough. It ends in a prayer. What the child owes runs past what the child can give back. Asking God to make up the difference is the only honest answer the ayah offers.",
       "crossReferences": [
         {
           "ref": "31:14-15",
@@ -924,11 +927,14 @@
         "46:15",
         "2:83"
       ],
+      "explainEasier": "God says to worship him alone and to be good to your parents. When they get old, do not snap at them or say a rude word. Speak kindly, be gentle, and ask God to show them mercy.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:28:54.993Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.029Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -1230,8 +1236,8 @@
       "themeId": "knowledge",
       "title": "What You Do Not Know",
       "tier": "discover",
-      "meaning": "A short prohibition with a wide reach. The verb forbids following the track of something, as a hunter follows a trail, so what is ruled out is pursuing a claim you cannot verify. The commentators list what it covers: saying you saw or heard what you did not, giving an opinion without grounds, repeating a rumour, and testifying beyond your knowledge. Then the three faculties are named and each is said to be answerable.",
-      "historicalContext": "Meccan, from a run of commands in the middle of the surah that moves from worship of God alone to parents, relatives, spending, killing, orphans, weights and measures, and then to this. The classical sources report no specific occasion. In a society whose news, law and lineage were carried entirely by report, the reliability of what people said was the load-bearing structure of ordinary life.",
+      "meaning": "A short ban with a wide reach. The verb forbids following the track of something, the way a hunter follows a trail. So what is ruled out is chasing a claim you cannot check. Early scholars list what it covers. Saying you saw or heard what you did not. Giving an opinion with no grounds. Passing on a rumour. Testifying past your knowledge. Then the three faculties are named, and each is said to be answerable.",
+      "historicalContext": "Meccan, from a run of commands in the middle of the surah. The run moves from worship of God alone to parents, relatives and spending. It goes on to killing, orphans, weights and measures, and then to this. Early sources report no specific occasion. In that world, news, law and descent were carried entirely by report. So ordinary life rested on how far people could be trusted on what they said.",
       "keyTerms": [
         {
           "arabic": "تَقْفُ",
@@ -1249,9 +1255,9 @@
           "note": "A passive participle of questioning. The grammar leaves it open whether the faculties are asked about, or asked, and the commentators record both readings without settling between them."
         }
       ],
-      "lifeInProphetsTime": "Nothing in that world was written down twice. A debt, a marriage, a genealogy, a boundary between grazing grounds all rested on what men remembered and were willing to state. Poets could ruin a family with a line, and a rumour about a woman could end a household. Testimony was the only record there was, which is why a prohibition on speaking past your knowledge was closer to civil engineering than to etiquette.",
-      "didYouKnow": "The three faculties are listed in the order hearing, sight, heart, and that order recurs throughout the Quran without variation. Hearing comes first, which is the reverse of how English usually ranks the senses. Commentators connect the sequence to how a child develops and to how revelation arrives, since a message is heard before it is seen or understood.",
-      "theologicalSignificance": "Accountability is extended to the equipment rather than only to the act. That is a strong claim: it means the intake of information is itself a moral matter, and that a person is answerable for what they let in and what they let past. It also implies the faculties are on loan. Something you will be questioned about is not simply yours, which quietly reframes curiosity, attention and belief as things held in trust.",
+      "lifeInProphetsTime": "Nothing in that world was written down twice. A debt, a marriage, a line of descent, a boundary between grazing grounds: all of it rested on what men remembered and were willing to state. Poets could ruin a family with one line. A rumour about a woman could end a household. What people testified to was the only record there was. So a ban on speaking past your knowledge was closer to building work than to manners.",
+      "didYouKnow": "The three faculties are listed in the order hearing, sight, heart. That order recurs right through the Quran without change. Hearing comes first, which is the reverse of how English usually ranks the senses. Early scholars link the order to how a child grows, and to how revelation arrives. A message is heard before it is seen or understood.",
+      "theologicalSignificance": "Answering for what you do is extended to the equipment, not just to the act. That is a strong claim. It means taking things in is itself a moral matter. A person answers for what they let in and what they let past. It also implies the faculties are on loan. Something you will be questioned about is not simply yours. That quietly turns curiosity, attention and belief into things held in trust.",
       "crossReferences": [
         {
           "ref": "49:6",
@@ -1272,11 +1278,14 @@
         "49:12",
         "24:15-16"
       ],
+      "explainEasier": "Do not chase after something you do not really know about. Your ears, your eyes and your mind will all be asked about what you did with them.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.493Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -1288,7 +1297,7 @@
       "themeId": "humility",
       "title": "Neither Piercing Nor Towering",
       "tier": "discover",
-      "meaning": "The prohibition is answered with two physical facts instead of a moral argument. Do not walk in exultation, because you cannot bore through the earth and you cannot reach the height of the mountains. The commentators note that the reply addresses the strut itself, the way a proud man carries his body, rather than the inner state. The second ayah then gathers the whole list of commands and says its evil is hateful to your Lord.",
+      "meaning": "The ban is answered with two physical facts, not with a moral argument. Do not walk in triumph. You cannot bore through the earth, and you cannot reach the height of the mountains. Early scholars note that the reply goes after the strut itself, the way a proud man carries his body, rather than the inner state. The second ayah then gathers the whole list of commands and says its evil is hateful to your Lord.",
       "historicalContext": "Meccan, closing the sequence of commands that began with worship of God alone. Status in Mecca was performed in public: the walk to the sanctuary, the seat at the assembly, the retinue behind a man of standing. The leading opponents of the message were also the leading families, and their bearing in the streets was part of the argument they were making. No specific occasion is reported for these ayat.",
       "keyTerms": [
         {
@@ -1309,7 +1318,7 @@
       ],
       "lifeInProphetsTime": "Mecca was a small town where everyone could see everyone walk. Cloaks that trailed in the dust were a display of wealth, since only a man with servants could afford to ruin cloth. Processions to the sanctuary were staged, and a chief moved through the market at a particular pace. The two comparisons the ayah chooses, the ground and the mountains, were the two fixed things any Meccan could see from anywhere in the valley.",
       "didYouKnow": "The same prohibition appears again later in the Quran, in the advice a father gives his son, where it is paired with an instruction not to turn your cheek away from people. Both times the correction is physical: a walk, a face. The Quran addresses arrogance more often through posture than through belief, which is easier to notice in yourself.",
-      "theologicalSignificance": "Pride is treated as a factual error before it is treated as a sin. The argument offered is about size and capacity, which places the human being accurately in the world rather than condemning him in it. That is a gentler and more durable correction than shame. The second ayah then attaches a divine response to the entire list of commands, so ordinary conduct is not morally neutral territory that God notices only occasionally.",
+      "theologicalSignificance": "Pride is treated as a mistake about the facts before it is treated as a sin. The argument offered is about size and reach. It places the human being accurately in the world instead of condemning him in it. That is a gentler correction than shame, and it lasts longer. The second ayah then attaches God's response to the whole list of commands. So ordinary conduct is not neutral ground that God looks at now and then.",
       "crossReferences": [
         {
           "ref": "31:18-19",
@@ -1330,11 +1339,14 @@
         "25:63",
         "28:76-83"
       ],
+      "explainEasier": "Do not walk around like you are better than everyone. You cannot tear a hole in the ground, and you are not as tall as a mountain. God does not like that kind of behaviour.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.493Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -1521,7 +1533,7 @@
       "title": "A Praise You Cannot Hear",
       "tier": "discover",
       "meaning": "Two ayat that seem unrelated and are not. The first says the seven heavens, the earth and everyone in them declare God's exaltedness, and then widens further: there is nothing at all that does not do so, though you do not grasp how. The second describes a curtain placed between the reciter and those who reject the hereafter. Read together, the universe is speaking and the barrier is on the listener's side.",
-      "historicalContext": "Meccan, in a stretch of the surah answering objections about other gods and about resurrection. The passage that follows describes coverings over the hearts of those who turn away and heaviness in their ears. Classical reports connect this section to opponents who would gather to listen to recitation at night and then mock it, though the details vary. The surah belongs to the years just before the migration.",
+      "historicalContext": "Meccan, in a stretch of the surah that answers questions about other gods and about rising from the dead. The passage after it describes coverings over the hearts of those who turn away. It also describes a weight in their ears. Early reports connect this section to opponents. They would gather at night to hear the Quran recited and then mock it. The details vary. The surah belongs to the years just before the migration.",
       "keyTerms": [
         {
           "arabic": "تُسَبِّحُ",
@@ -1539,9 +1551,9 @@
           "note": "A name for the one who does not act on provocation at once. Placed at the end of an ayah about universal praise, it explains why those who withhold it are not immediately dealt with."
         }
       ],
-      "lifeInProphetsTime": "Sound carried a long way in the valleys around Mecca, and people were used to hearing things they could not place: wind through a gorge, a caravan bell before the caravan, the noise of a well being worked at night. A claim that everything was making a sound nobody could interpret was not strange to that audience. What was strange was being told the fault lay in their hearing.",
-      "didYouKnow": "The barrier in the second ayah is described with two words that both concern covering, one a curtain and the other meaning hidden, so it is a veil that is itself veiled. Commentators note that a barrier nobody can see is worse than one they can, because the person behind it does not know it is there.",
-      "theologicalSignificance": "The first ayah makes worship the default condition of existence rather than a human speciality. Everything that exists already declares what God is by being what it is; the human being is the one creature that can decline. That reframes belief as joining something already in progress rather than starting it. The second ayah then locates unbelief in perception rather than in evidence, which is why the surah answers it with forbearance rather than with proof.",
+      "lifeInProphetsTime": "Sound carried a long way in the valleys around Mecca. People were used to hearing things they could not place. Wind through a gorge. A caravan bell before the caravan itself. The noise of a well being worked at night. A claim that everything was making a sound nobody could read was not strange to them. What was strange was being told the fault lay in their own hearing.",
+      "didYouKnow": "The barrier in the second ayah is described with two words that both concern covering. One is a curtain. The other means hidden. So it is a veil that is itself veiled. Early scholars note that a barrier nobody can see is worse than one they can. The person behind it does not know it is there.",
+      "theologicalSignificance": "The first ayah makes worship the normal state of all that exists, not a human thing. All that exists already declares what God is by being what it is. The human being is the one creature that can decline. So belief is joining something already under way. It is not starting it. The second ayah then places unbelief in how a person sees, not in the evidence. That is why the surah answers it with forbearance rather than with proof.",
       "crossReferences": [
         {
           "ref": "24:41",
@@ -1562,11 +1574,14 @@
         "13:15",
         "59:24"
       ],
+      "explainEasier": "Everything in the sky and on the earth praises God. You just cannot understand how. When the Prophet reads the Quran, God puts a hidden wall between him and the people who refuse to believe.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.493Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -1810,7 +1825,7 @@
       "themeId": "speech-and-the-tongue",
       "title": "Say What Is Best",
       "tier": "discover",
-      "meaning": "The first ayah closes an argument about resurrection: on the day you are called, you will answer with praise, and the whole span of your life will look brief. Then the register changes completely. Servants are told to say the thing that is best, and a reason is given that is not about manners: Satan provokes friction between them. The commentators read the sequence as connecting the shortness of life to the pointlessness of quarrels.",
+      "meaning": "The first ayah closes an argument about rising from the dead. On the day you are called, you will answer with praise, and the whole span of your life will look brief. Then the tone changes completely. Servants are told to say the thing that is best. The reason given is not about manners. Satan jabs at them and starts friction. Early scholars read the order as tying the shortness of life to how little a quarrel is worth.",
       "historicalContext": "Meccan. The passage before it records opponents asking who would restore them once they were bones and dust. This one answers and then turns to the community itself. Classical reports connect the instruction about speech to friction between believers and those who abused them in Mecca, where an answer in kind would have cost more than it gained. The details of the reports differ.",
       "keyTerms": [
         {
@@ -1829,9 +1844,9 @@
           "note": "A verb of remaining somewhere temporarily, used of a traveller stopping at a place. Applied to a whole life it frames the years as a halt on a journey, which is what makes the estimate come out short."
         }
       ],
-      "lifeInProphetsTime": "Words started wars in Arabia. A satirical verse against a clan could not be answered except by blood or by a better verse, and feuds lasting decades were traced back to a single insult at a well or a market. Reconciliation was the work of respected men who travelled between camps. In that setting, telling believers to say the best available thing was a strategy for survival as much as a virtue.",
-      "didYouKnow": "The instruction is not given directly. God tells the recipient to tell My servants, so the command reaches its audience through a messenger and is framed by an expression of belonging. Commentators note that the same phrase, My servants, is used in the Quran at moments of particular tenderness, including the ayah about never despairing of God's mercy.",
-      "theologicalSignificance": "A quarrel between believers is given a cause outside both parties. That is not an excuse, since the instruction still falls on the speaker, but it changes the diagnosis: the friction is being worked at from somewhere, so the first harsh sentence is the point of entry rather than the whole problem. Placing this immediately after a scene of resurrection also sets the scale. The dispute will look, from there, like part of a very short stay.",
+      "lifeInProphetsTime": "Words started wars in Arabia. A mocking verse against a clan could only be answered by blood or by a better verse. Feuds lasting decades were traced back to a single insult at a well or a market. Making peace was the work of respected men who travelled between camps. In that setting, telling believers to say the best thing on offer was a plan for survival as much as a virtue.",
+      "didYouKnow": "The instruction is not given directly. God tells the one addressed to tell My servants. So the command reaches its hearers through a messenger, and it is framed by a word of belonging. Early scholars note that the same phrase, My servants, turns up at moments of great tenderness. One of them is the ayah about never despairing of God's mercy.",
+      "theologicalSignificance": "A quarrel between believers is given a cause outside both sides. That is not an excuse. The instruction still falls on the speaker. But it changes the reading: the friction is being worked at from somewhere. So the first harsh sentence is the way in, not the whole problem. Putting this right after a scene of rising from the dead also sets the scale. From there, the dispute will look like part of a very short stay.",
       "crossReferences": [
         {
           "ref": "41:34",
@@ -1852,11 +1867,14 @@
         "39:53",
         "23:112-114"
       ],
+      "explainEasier": "One day God will call you, and you will answer him with praise. Your whole life will feel like it lasted only a short time. So God tells people to say the kindest thing they can to each other.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.494Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.030Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -2622,8 +2640,8 @@
       "themeId": "adam-and-the-human-story",
       "title": "We Honoured The Children Of Adam",
       "tier": "discover",
-      "meaning": "Four verbs, and the honour comes first. Human beings are dignified, carried on land and sea, provided with good things, and preferred over much of what was created. The commentators offer several grounds for the honouring: speech, reason, upright stature, the hand, the capacity to be addressed by God. Note the limit in the last clause, which says over many of those We created rather than over all, and the classical discussion turns on that word.",
-      "historicalContext": "Meccan. The ayah arrives immediately after a passage about people who call on God at sea and forget Him on land, and just before a scene of the Day when every community is summoned. Placing an unqualified statement of human dignity between ingratitude and judgement is deliberate. The commentators report no specific occasion. The surah dates from the last Meccan years, when the community was small and despised.",
+      "meaning": "Four verbs, and the honour comes first. Human beings are dignified, carried on land and sea, given good things, and preferred over much of what was created. Early scholars offer several grounds for the honouring: speech, reason, an upright frame, the hand, and the fitness to be addressed by God. Note the limit in the last clause. It says over many of those We created, not over all. The old discussion turns on that word.",
+      "historicalContext": "Meccan. The ayah arrives right after a passage about people who call on God at sea and forget Him on land. It comes just before a scene of the Day when every community is summoned. A flat statement of human dignity is placed between forgetting and judgement. That placing is on purpose. Early scholars report no specific occasion. The surah dates from the last Meccan years. The believers then were few and despised.",
       "keyTerms": [
         {
           "arabic": "كَرَّمْنَا",
@@ -2642,8 +2660,8 @@
         }
       ],
       "lifeInProphetsTime": "Land and sea were the two ways out of Arabia and both were dangerous. Caravans crossed months of desert with camels that could be lost to thirst or theft; ships from the Red Sea ports ran with the season and sank often enough that a merchant family expected losses. To be carried on both was not a figure of speech. It named the two arrangements on which every Meccan fortune depended.",
-      "didYouKnow": "The honour is given to the Children of Adam, not to believers, so it covers every human being without condition. Classical commentators drew the point out explicitly, and it has been cited for centuries in discussions of how the dead and the enemy are to be treated. Nothing in the ayah is made to depend on faith or conduct.",
-      "theologicalSignificance": "Human worth is stated as a fact about God's action rather than as a conclusion about human qualities. That places it beyond argument and beyond forfeiture: nothing a person does can make them not a child of Adam. The qualification in the final clause is equally deliberate. Preference over many, rather than over all, leaves the ranking open and keeps the honouring from becoming a claim of supremacy over creation.",
+      "didYouKnow": "The honour is given to the Children of Adam, not to believers. So it covers every human being with no condition attached. Early scholars drew the point out plainly. It has been cited for centuries in discussions of how the dead and the enemy are to be treated. Nothing in the ayah is made to depend on faith or conduct.",
+      "theologicalSignificance": "Human worth is stated as a fact about what God did, not as a conclusion about human qualities. That puts it past argument and past forfeit. Nothing a person does can make them not a child of Adam. The limit in the last clause is just as carefully placed. Preference over many, rather than over all, leaves the ranking open. It also keeps the honouring from turning into a claim to rule creation.",
       "crossReferences": [
         {
           "ref": "2:30-34",
@@ -2664,11 +2682,14 @@
         "2:30-34",
         "5:32"
       ],
+      "explainEasier": "God says he has honoured all the children of Adam. He carries them over land and over sea. He gives them good things to enjoy. He has raised them above many of the things he made.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.494Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.031Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -3028,8 +3049,8 @@
       "themeId": "the-quran",
       "title": "An Entry Of Truth",
       "tier": "discover",
-      "meaning": "A prayer, a declaration, and a description. The prayer asks for an entrance and an exit that are both truthful, which the commentators read as any coming in and going out being sound at both ends, and many connect it to the migration ahead. The declaration announces that truth has arrived and falsehood is already vanishing, using a word for something that drains away. The third ayah says the same Quran works differently on different hearers.",
-      "historicalContext": "Meccan, from the last years there, immediately after instructions about the times of prayer and the night vigil. Many classical commentators connect the prayer about entering and leaving to the migration to Medina, and some report that the declaration about truth was spoken at the clearing of the sanctuary years later. The reports differ on the details, and the prayer is read more widely than any single occasion.",
+      "meaning": "A prayer, a declaration, and a description. The prayer asks for an entrance and an exit that are both truthful. Early scholars read that as any coming in and going out being sound at both ends. Many connect it to the migration ahead. It announces that truth has arrived and falsehood is already draining away. The word used is one for something that empties out. The third ayah says the same Quran works differently on different hearers.",
+      "historicalContext": "Meccan, from the last years there. It comes right after instructions about the times of prayer and the night vigil. Many early scholars connect the prayer about entering and leaving to the move to Medina. Some report that the words about truth were spoken at the clearing of the sanctuary years later. The reports differ on the details. The prayer is read more widely than any single occasion.",
       "keyTerms": [
         {
           "arabic": "مُدْخَلَ صِدْقٍ",
@@ -3047,9 +3068,9 @@
           "note": "A medical word for recovery from illness. Commentators divide over whether the healing is of the heart, of doubt, or of the body, and most allow the range rather than narrowing it."
         }
       ],
-      "lifeInProphetsTime": "A person entering a town in Arabia did so under someone's protection or not at all, and leaving could be as dangerous as arriving. Travellers announced themselves, named their patron, and left with an escort to the edge of safe ground. Praying for a true entrance and a true exit used the vocabulary of that arrangement. It asked for the thing every traveller wanted: to arrive without deceit and to leave without disgrace.",
-      "didYouKnow": "The word for healing is used of the Quran in three places, and in every one it is paired with another quality: mercy here, mercy and admonition elsewhere, guidance in another. It is never left standing alone. The final clause of this passage is also carefully phrased: the Quran is not said to cause loss, only that the wrongdoers increase in it.",
-      "theologicalSignificance": "The three ayat together give a shape to living under opposition. First a prayer for integrity in what you do, then a statement about what is already true regardless of appearances, then an account of why the same message divides its hearers. The last is the theologically striking one. Nothing in the Quran changes between the believer and the wrongdoer; what changes is what it meets, and the outcome is attributed to that.",
+      "lifeInProphetsTime": "A person entering a town in Arabia did so under someone's protection, or not at all. Leaving could be as risky as arriving. Travellers announced themselves and named their patron. They left with an escort to the edge of safe ground. Praying for a true entrance and a true exit used the words of that system. It asked for the thing every traveller wanted. To arrive without lies, and to leave without shame.",
+      "didYouKnow": "The word for healing is used of the Quran in three places. In every one it is paired with another quality. Mercy here, mercy and warning elsewhere, guidance in another. It is never left standing alone. The last clause of this passage is also carefully worded. The Quran is not said to cause loss. It says only that the wrongdoers increase in it.",
+      "theologicalSignificance": "The three ayat together give a shape to living under opposition. First a prayer for honesty in what you do. Then a statement about what is already true, whatever it looks like. Then an account of why the same message divides its hearers. The last one is the striking claim. Nothing in the Quran changes between the believer and the wrongdoer. What changes is what it meets, and the outcome is put down to that.",
       "crossReferences": [
         {
           "ref": "10:57",
@@ -3070,11 +3091,14 @@
         "41:44",
         "13:17"
       ],
+      "explainEasier": "Ask God for an honest way in and an honest way out of everything you do. Truth has come and what is false is already fading. The Quran heals and helps people who believe in it.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.494Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.031Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -4188,8 +4212,8 @@
       "themeId": "supplication",
       "title": "Whichever Name You Call",
       "tier": "discover",
-      "meaning": "Two instructions that look unrelated and share a subject. The first settles an objection: God and the Merciful are not two beings, and whichever name is used, the most beautiful names belong to Him. The second concerns volume in prayer, and asks for a way between loudness and silence. The commentators read both as answers to a single situation, where the words used in prayer were being overheard and made into an argument.",
-      "historicalContext": "Meccan. Classical sources report with reasonable agreement that some in Mecca objected to the name the Merciful, claiming not to know it, and used overheard recitation as material for mockery. Several commentators connect both halves of this ayah to that situation. The surah closes a few ayat later on the praise of a God who has no son, no partner and no ally out of weakness.",
+      "meaning": "Two instructions that look unrelated share one subject. The first settles a complaint. God and the Merciful are not two beings. Whichever name is used, the best names belong to Him. The second is about volume in prayer. It asks for a way between loud and silent. Early scholars read both as answers to one scene. The words used in prayer were being overheard and turned into an argument.",
+      "historicalContext": "Meccan. Early sources broadly agree that some in Mecca objected to the name the Merciful. They claimed not to know it. They used what they overheard as material for mockery. Several early scholars connect both halves of this ayah to that. The surah closes a few ayat later on the praise of a God who has no son, no partner, and no ally taken out of weakness.",
       "keyTerms": [
         {
           "arabic": "ٱلرَّحْمَـٰنَ",
@@ -4207,8 +4231,8 @@
           "note": "A verb for dropping the voice so far that it cannot be made out. Paired with its opposite in the same clause, it defines the instruction by two edges and leaves the middle unmeasured."
         }
       ],
-      "lifeInProphetsTime": "Prayer in Mecca was done wherever a believer could, often in the open near the sanctuary, and there was no privacy. Recitation carried, and passers-by stopped to listen or to jeer. Names mattered enormously in that culture: a person's name announced their lineage, and a god's name announced whose god it was. An argument about which name to use was an argument about whose the God being prayed to was.",
-      "didYouKnow": "The ayah gives an instruction and declines to quantify it. Between loud and inaudible it says only to seek a way, leaving the level to circumstance rather than fixing it. Commentators have long noted this as a pattern in the Quran, where a range is set by its two ends and the judgement inside it is left to the person.",
+      "lifeInProphetsTime": "Prayer in Mecca was done wherever a believer could, often in the open near the sanctuary. There was no privacy. The sound carried, and passers-by stopped to listen or to jeer. Names mattered greatly in that culture. A person's name told you their descent. A god's name told you whose god it was. So an argument about which name to use was an argument about whose God was being prayed to.",
+      "didYouKnow": "The ayah gives an instruction and refuses to put a number on it. Between loud and inaudible it says only to seek a way. It leaves the level to circumstance rather than fixing it. Early scholars have long noted this as a pattern in the Quran. A range is set by its two ends, and the judgement inside it is left to the person.",
       "theologicalSignificance": "The first half makes a point about language and God that goes further than the immediate dispute. Names are not containers; they are approaches, and no single one holds Him, which is why the plural is used and why it is qualified as the most beautiful rather than the complete. The second half then applies the same restraint to worship itself. A prayer pitched to be overheard, and a prayer hidden out of fear, are both being adjusted.",
       "crossReferences": [
         {
@@ -4230,11 +4254,14 @@
         "59:22-24",
         "25:60"
       ],
+      "explainEasier": "You can call God by the name God or by the name the Most Merciful. All the best names belong to him. When you pray, do not shout and do not go silent. Keep your voice in between.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:49:21.485Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T10:08:43.029Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
