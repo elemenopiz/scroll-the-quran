@@ -17,6 +17,109 @@ the app with `--reset-state`, so a score does not depend on what the last run le
 App Group container (it used to: `plan-detail` scored 0.179 on a dirty container and 0.138
 on a clean one from the identical build).
 
+## REFLECTION cards in the Discover feed — Phase 4o, 2026-09-13
+
+iPhone 17 Pro (`ScrollSim-3e`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`, `SCROLL_CAPTURE_SETTLE=6`.
+
+The Discover feed is now two kinds of page: study cards, and a REFLECTION card — a saying,
+who said it — after every four of them. Reflections are free and unmetered.
+
+| id | Phase 4m | Phase 4o | threshold | delta |
+| --- | ---: | ---: | ---: | ---: |
+| `discover-dark` | 0.0380826 | 0.0380941 | 0.14 | +0.0000115 |
+
+The delta is capture noise, not a change: 0.0000115 of RMSE is a few pixels of anti-aliasing
+on an identical card.
+
+### Why `discover-dark` does not move
+
+The interleave starts at position **4**, so page 0 of the day's feed is the same study card
+it has always been (`positionZeroIsAStudyCard` asserts that for all 366 seeds). The capture
+route is unchanged, the card it lands on is unchanged, and nothing on a study card changed.
+`--discover-index N` now addresses the **combined** stream, so the study at index `s` is at
+`s + s / 4`: `UITests/DiscoverTests.swift`'s three fixed-geometry probes move from 0/150/25
+to 0/187/31 and are the same three units they were.
+
+### The interleave, as implemented
+
+`DiscoverFeed.feedItems(seed:)` is the single answer to "what does the reader see today":
+
+* the study list and the reflection list are both replayed from the **same** seed (the day
+  of the year), so the app, a capture and the tests agree without sharing state;
+* a reflection is emitted after every `DiscoverFeed.studyCardsPerReflection` (4) study
+  cards — combined positions 4, 9, 14 …;
+* reflections are drawn from `ReflectionStore.items(seed:)` in order and never repeat
+  inside a day. 167 ship against 326 study units, which needs 81;
+* if a content change ever made the pool run dry the stream simply carries on with study
+  cards rather than showing a saying twice;
+* `DiscoverFeedItem.meteredKey` is `nil` for a reflection, which is the whole of "free and
+  unmetered": `DiscoverView.land(on:)` never hands one to `DiscoverGate`, so it cannot
+  consume one of the three free cards a day and the paywall cannot replace it.
+
+### The card
+
+Same frame as a study card, exactly — `Radius.cardLarge`, `Color.cardBackground`,
+`DiscoverCardLayout.cardHeight` (607.365 pt), same page insets and the same
+`pageTopBias` — so the pager lands on a reflection the way it lands on a verse. Measured off
+the capture at 402x874 pt: the card fill runs y 124.67 … 732.33 pt on **both** routes, to
+the pixel.
+
+Inside it, four blocks centred on the card's centre line as one group: a 73 pt
+`chipBackground` disc with a 44 pt open quote in it, REFLECTION 42 pt below, the saying
+32 pt below that (display serif, centred, inset 40 pt from the card's edge a side), and the
+attribution 28 pt under the last line. On the capture card (Al-Ghazali, six lines) the disc
+lands at centre (201, 253.7) pt; the owner's screenshot of the original measures (201, 311),
+which is the *same rule* on a three-line saying — the group is centred, so the disc's y is a
+function of how long the quote is. The arithmetic puts a three-line group's disc at
+centre y 309.
+
+No action row, no "Deep study ›", no theme chip, no reference title: the original shows none
+of them on a reflection, and there is nothing behind one to save, note, share or mark read.
+No Arabic line either — rule 5's muted layer is *the ayah's* Uthmani text, and a saying is
+not an ayah. `Reflection.arabic` holds a single term for the sheet surfaces and is
+deliberately not drawn on the card.
+
+### Never truncated
+
+`ReflectionCardLayout.quote(for:width:)` steps 26 → 24 → 22 pt to hold the saying inside six
+lines, and at the 22 pt floor lets it take a seventh rather than cut a word. There is no
+`lineLimit` anywhere on the card. Over the 167 that ship, at a 290 pt measure:
+
+| | count |
+| --- | ---: |
+| saying at 26 pt / 24 / 22 | 97 / 24 / 46 |
+| 2 lines / 3 / 4 / 5 / 6 / 7 / 8 | 1 / 5 / 16 / 35 / 89 / 18 / 3 |
+
+The tallest group is 449.7 pt of the 567.4 pt the card holds, so even the eight-line ones
+have 117 pt of slack. `ReflectionCardLayoutTests` asserts every one of them on both the
+402 pt and the 393 pt canvas.
+
+### No reference PNG
+
+There is no `Reference/discover-reflection.png`: the owner measured the original's card off
+a screenshot that was never saved, so **there is nothing to score this screen against**. The
+manifest entry carries `"pending": true` and no threshold, and the screen is deliberately
+kept out of `Tools/snapshot/thresholds.json`'s `screens` map — `--snap all` walks that map
+and `compare.sh` exits non-zero on a missing reference, so listing it there would fail the
+whole sweep for a picture nobody has. `verify.sh --snap all` reports it as a manifest id
+with no thresholds entry, which is the honest state. Its recipe lives in that file's
+`pending` block; the capture is taken by hand:
+
+```bash
+SIMCTL_CHILD_SCROLL_FIXED_DATE=2026-09-14 xcrun simctl launch "$SCROLL_SIM" \
+  com.scrollthequran.app --screenshot discover-reflection --reset-state
+xcrun simctl io "$SCROLL_SIM" screenshot --type=png .build/snapshots/discover-reflection.png
+```
+
+Until the PNG lands the card is guarded by two things instead: the recorded frames in
+`UITests/Specs/discover-reflection.json` (every row, 6 pt tolerance) and
+`ReflectionCardLayoutTests` (the arithmetic, over the whole catalogue). One judgement the
+reference would settle and these cannot: the open-quote glyph's **ink** is about 17 x 15 pt
+at 44 pt in Source Serif 4, which reads smaller inside the 73 pt disc than "a large serif
+open-quote" might suggest. 44 pt is the brief's own measurement off the original and it is
+what ships; `ReflectionMetrics.markGlyphSize` is the one number to raise if the reference
+shows the original's face setting it larger.
+
 ## Discover card: the whole verse fits — Phase 4m, 2026-09-13
 
 iPhone 17 Pro (`ScrollSim-3e`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`, `SCROLL_CAPTURE_SETTLE=6`.

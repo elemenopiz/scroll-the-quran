@@ -68,11 +68,16 @@ final class DiscoverTests: XCTestCase {
     func testEveryCardHasTheSameGeometry() throws {
         var frames: [(index: Int, frame: CGRect)] = []
         // On the fixed date's feed, 0 is the capture card (Al-Ankabut 29:68-69, whose
-        // quote is six lines), 150 is the corpus's longest passage (Luqman 31:13-19, 215
-        // words — the one card whose quote still truncates) and 25 is Al-Baqarah
+        // quote is six lines), study 150 is the corpus's longest passage (Luqman 31:13-19,
+        // 215 words — the one card whose quote still truncates) and study 25 is Al-Baqarah
         // 2:285-286, which drops both MEANING and DID YOU KNOW. If the Phase 4m body plan
         // could change a card's height, these three would show it.
-        for index in [0, 150, 25] {
+        //
+        // `--discover-index` addresses the **combined** stream (Phase 4o), where a
+        // REFLECTION card sits after every four study cards, so study `s` is at
+        // `s + s / 4`: 150 -> 187 and 25 -> 31. Card 0 is unchanged, which is why
+        // `discover-dark` is.
+        for index in [0, 187, 31] {
             let app = launch("discover", extra: ["--discover-index", "\(index)"])
             requireRouted(app, "discover.card")
             let card = app.descendants(matching: .any).matching(identifier: "discover.card").firstMatch
@@ -121,8 +126,9 @@ final class DiscoverTests: XCTestCase {
 
     /// Phase 4m, the owner's ask: "ideally the entirety of the verse fits on the card. the
     /// meaning/did you know can be cut off." Card 0 of the fixed-date feed is Al-Ankabut
-    /// 29:68-69, whose passage needs six lines where the Phase 4i slot gave four; card 25
-    /// is Al-Baqarah 2:285-286, long enough that both MEANING and DID YOU KNOW give way.
+    /// 29:68-69, whose passage needs six lines where the Phase 4i slot gave four; study 25
+    /// — combined index 31 since Phase 4o — is Al-Baqarah 2:285-286, long enough that both
+    /// MEANING and DID YOU KNOW give way.
     func testTheQuoteTakesTheLinesItNeedsAndTheProseGivesWay() throws {
         let app = launch("discover", extra: ["--discover-index", "0"])
         requireRouted(app, "discover.card")
@@ -137,7 +143,7 @@ final class DiscoverTests: XCTestCase {
         )
         app.terminate()
 
-        let long = launch("discover", extra: ["--discover-index", "25"])
+        let long = launch("discover", extra: ["--discover-index", "31"])
         requireRouted(long, "discover.card")
         // The feed is a lazy pager and the neighbouring cards are realised too, so
         // "does a DID YOU KNOW box exist" is not the question — "is one inside *this*
@@ -223,6 +229,97 @@ final class DiscoverTests: XCTestCase {
         XCTAssertTrue(
             app.staticTexts["KEY ARABIC TERMS"].waitForExistence(timeout: 5),
             "the manifest's original-language anchor did not land on KEY ARABIC TERMS"
+        )
+    }
+
+
+    // MARK: - REFLECTION cards (Phase 4o)
+
+    /// The card's parts, and what it deliberately does not have: no action row, no
+    /// "Deep study ›", no theme chip, no reference title.
+    func testReflectionCardShowsItsParts() throws {
+        let app = launch("discover-reflection")
+        requireRouted(app, "discover.reflection")
+
+        for identifier in [
+            "discover.reflection", "discover.reflection.mark",
+            "discover.reflection.label", "discover.reflection.quote",
+            "discover.reflection.attribution",
+        ] {
+            let element = app.descendants(matching: .any).matching(identifier: identifier).firstMatch
+            XCTAssertTrue(element.waitForExistence(timeout: 5), "missing \(identifier)")
+        }
+
+        let card = app.descendants(matching: .any).matching(identifier: "discover.reflection").firstMatch
+        for identifier in [
+            "discover.deepStudy", "discover.actions.save", "discover.actions.comment",
+            "discover.actions.share", "discover.actions.read", "discover.themeChip",
+        ] {
+            // The pager realises the neighbouring study cards too, so "does one exist" is
+            // not the question — "is one inside *this* card" is.
+            let intruders = app.descendants(matching: .any)
+                .matching(identifier: identifier).allElementsBoundByIndex
+            XCTAssertFalse(
+                intruders.contains { card.frame.intersects($0.frame) },
+                "\(identifier) should not be on a reflection card"
+            )
+        }
+
+        XCTAssertTrue(app.staticTexts["REFLECTION"].exists, "the caps label is missing")
+        let attribution = app.descendants(matching: .any)
+            .matching(identifier: "discover.reflection.attribution").firstMatch
+        XCTAssertTrue(
+            attribution.label.hasPrefix("\u{2014} "),
+            "the attribution should open with an em dash and a space, got \(attribution.label)"
+        )
+    }
+
+    /// The card is the study card's frame exactly — that is the whole point of the fixed
+    /// slot, and it is what lets the pager land on a reflection the way it lands on a verse.
+    func testAReflectionCardIsAStudyCardsFrame() throws {
+        let study = launch("discover")
+        requireRouted(study, "discover.card")
+        let studyFrame = study.descendants(matching: .any)
+            .matching(identifier: "discover.card").firstMatch.frame
+        study.terminate()
+
+        let app = launch("discover-reflection")
+        requireRouted(app, "discover.reflection")
+        let reflectionFrame = app.descendants(matching: .any)
+            .matching(identifier: "discover.reflection").firstMatch.frame
+
+        // A point of slack, as in `testEveryCardHasTheSameGeometry`: an accessibility frame
+        // is the union of its children's, snapped to the @3x pixel grid.
+        XCTAssertEqual(Double(reflectionFrame.minY), Double(studyFrame.minY), accuracy: 1)
+        XCTAssertEqual(Double(reflectionFrame.height), Double(studyFrame.height), accuracy: 1)
+        XCTAssertEqual(Double(reflectionFrame.minX), Double(studyFrame.minX), accuracy: 1)
+        XCTAssertEqual(Double(reflectionFrame.width), Double(studyFrame.width), accuracy: 1)
+    }
+
+    /// The interleave, from the finger's side: four study cards, then a reflection. Four
+    /// swipes from card 0 of the day's feed must reach one.
+    func testSwipingFourCardsReachesAReflection() throws {
+        let app = launch("discover")
+        requireRouted(app, "discover.card")
+
+        let reflection = app.descendants(matching: .any)
+            .matching(identifier: "discover.reflection").firstMatch
+        XCTAssertFalse(
+            reflection.exists && reflection.frame.intersects(app.windows.firstMatch.frame.insetBy(dx: 0, dy: 100)),
+            "position 0 must be a study card — discover-dark is scored on it"
+        )
+
+        for _ in 1 ... 4 {
+            app.swipeUp()
+        }
+        XCTAssertTrue(
+            reflection.waitForExistence(timeout: 10),
+            "four swipes from card 0 did not reach a REFLECTION card"
+        )
+        XCTAssertTrue(
+            app.descendants(matching: .any)
+                .matching(identifier: "discover.reflection.quote").firstMatch.exists,
+            "the reflection that was reached has no saying on it"
         )
     }
 }

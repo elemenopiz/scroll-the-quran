@@ -401,3 +401,140 @@ struct ReferenceChip: Identifiable, Hashable {
         passage.key
     }
 }
+
+/// The REFLECTION card's geometry (Phase 4o), measured off the owner's screenshot of the
+/// original at 402x874 pt.
+///
+/// The card is the Discover card's frame exactly — same fill, same `Radius.cardLarge`, same
+/// `DiscoverCardLayout.cardHeight`, same place on the page — with a different inside: a
+/// quote mark in a disc, the REFLECTION label, the saying and who said it, the four of them
+/// centred as one group on the card's own centre line. There is no action row: the original
+/// shows no bookmark, comment, share or check on a reflection, and there is nothing to save,
+/// note or mark read.
+enum ReflectionMetrics {
+    /// The disc behind the quote glyph: 73 pt across, `chipBackground` — one step lighter
+    /// than the card, the same relationship the theme chip has to it.
+    static let markDiameter: CGFloat = 73
+    /// The open-quote glyph inside it, in the display serif.
+    static let markGlyphSize: CGFloat = 44
+
+    /// disc → REFLECTION, label → quote, quote → attribution. Measured as ink-to-ink gaps
+    /// on the screenshot; the label and the attribution carry their own line-box leading
+    /// inside the slots below, which is why these are larger than the card's other rhythm.
+    static let markToLabel: CGFloat = 42
+    static let labelToQuote: CGFloat = 32
+    static let quoteToAttribution: CGFloat = 28
+
+    /// The quote is inset this far from the card's own edge — wider than the study card's
+    /// text, because a centred pull-quote needs the measure short.
+    static let quoteInset: CGFloat = 40
+
+    /// The sizes the saying may be set at, largest first. It steps down before it is
+    /// allowed to wrap past `quoteLines`; 22 pt is the floor, and below it the display
+    /// serif stops reading as a pull quote.
+    static let quoteSizeLadder: [CGFloat] = [26, 24, 22]
+    /// The line count the ladder tries to stay inside. It is a preference, not a cap: a
+    /// reflection is **never** truncated, so a saying that still needs a seventh line at
+    /// 22 pt gets it (there is room for eleven inside the card).
+    static let quoteLines = 6
+
+    /// "— Rumi". SF Pro semibold, one line, shrunk for the long ones the same way the
+    /// study card's title is (`referenceMinimumScale`): the longest attribution we ship,
+    /// "The Prophet Muhammad (peace be upon him)", is about 8 % wider than the card.
+    static let attributionSize: CGFloat = 17
+    static let attributionMinimumScale: CGFloat = 0.75
+}
+
+/// The REFLECTION card's arithmetic, in points, at the default content size.
+///
+/// Same contract as `DiscoverCardLayout`: kept out of the views so a test can total it
+/// without a render pass. `ReflectionCardLayoutTests` runs every reflection that ships
+/// through it and asserts the group still fits the card.
+enum ReflectionCardLayout {
+    /// The SF Pro line box at `ReflectionMetrics.attributionSize`
+    /// (`UIFont.systemFont(ofSize: 17).lineHeight`), the same kind of measured constant as
+    /// `DiscoverCardLayout.capsLabelHeight`.
+    static let attributionHeight: CGFloat = 20.3
+
+    /// The height inside the card, padding removed. The group is centred in it, so the
+    /// card totals `DiscoverCardLayout.cardHeight` exactly like a study card.
+    static var contentHeight: CGFloat {
+        DiscoverCardLayout.cardHeight - 2 * DiscoverMetrics.cardPadding
+    }
+
+    /// The width the saying is laid out in: the screen less the page margin on each side
+    /// and `quoteInset` on each side.
+    static func quoteWidth(screenWidth: CGFloat) -> CGFloat {
+        screenWidth - 2 * DiscoverMetrics.cardInset - 2 * ReflectionMetrics.quoteInset
+    }
+
+    /// The same width, from the study card's content width — which is what the page
+    /// already measured off its own geometry.
+    static func quoteWidth(cardContentWidth: CGFloat) -> CGFloat {
+        cardContentWidth - 2 * (ReflectionMetrics.quoteInset - DiscoverMetrics.cardPadding)
+    }
+
+    /// The width the attribution is laid out in: the card's own content width — it is not
+    /// pulled in to the quote's measure.
+    static func attributionWidth(screenWidth: CGFloat) -> CGFloat {
+        DiscoverCardLayout.contentWidth(screenWidth: screenWidth)
+    }
+
+    /// How one saying is set: a point size off the ladder and the line count it takes there.
+    struct QuotePlan: Equatable, Sendable {
+        var size: CGFloat
+        var lines: Int
+
+        var height: CGFloat {
+            DiscoverCardLayout.slot(lines: lines, size: size)
+        }
+    }
+
+    /// Steps down the ladder until the saying fits `ReflectionMetrics.quoteLines`, and
+    /// settles for the floor's own line count when none of them does. Nothing here can
+    /// return a truncating plan: the count is always the saying's real one.
+    static func quote(for text: String, width: CGFloat) -> QuotePlan {
+        for size in ReflectionMetrics.quoteSizeLadder {
+            let lines = lineCount(text, size: size, width: width)
+            if lines <= ReflectionMetrics.quoteLines {
+                return QuotePlan(size: size, lines: lines)
+            }
+        }
+        let size = ReflectionMetrics.quoteSizeLadder.last ?? 22
+        return QuotePlan(size: size, lines: lineCount(text, size: size, width: width))
+    }
+
+    static func lineCount(_ text: String, size: CGFloat, width: CGFloat) -> Int {
+        DiscoverCardLayout.lineCount(text, fontName: FontFamily.serif, size: size, width: width)
+    }
+
+    /// The four blocks plus the three gaps between them — what the card centres.
+    static func groupHeight(_ plan: QuotePlan) -> CGFloat {
+        ReflectionMetrics.markDiameter
+            + ReflectionMetrics.markToLabel + DiscoverCardLayout.capsLabelHeight
+            + ReflectionMetrics.labelToQuote + plan.height
+            + ReflectionMetrics.quoteToAttribution + attributionHeight
+    }
+
+    /// How far down the open-quote glyph has to move to sit on the disc's centre.
+    ///
+    /// SwiftUI centres a `Text`'s *line box*, and `“` is all ink in the upper half of the
+    /// em — centring the box leaves the glyph visibly high. Measured off the registered
+    /// font rather than nudged by eye: the ink box's middle is put on the disc's middle.
+    static func markGlyphOffset(size: CGFloat = ReflectionMetrics.markGlyphSize) -> CGFloat {
+        _ = DesignSystem.registerFonts()
+        let font = CTFontCreateWithName(FontFamily.serif as CFString, size, nil)
+        var character: UniChar = 0x201C
+        var glyph = CGGlyph()
+        guard CTFontGetGlyphsForCharacters(font, &character, &glyph, 1) else { return 0 }
+        let ink = withUnsafePointer(to: glyph) { pointer in
+            CTFontGetBoundingRectsForGlyphs(font, .default, pointer, nil, 1)
+        }
+        let ascent = CTFontGetAscent(font)
+        let lineHeight = ascent + CTFontGetDescent(font) + CTFontGetLeading(font)
+        // Text space is y-up from the baseline; the view's is y-down from the box's top.
+        // With the box centred, the baseline sits at `ascent - lineHeight / 2` below
+        // centre, and the ink's middle `ink.midY` above that baseline.
+        return lineHeight / 2 - ascent + ink.midY
+    }
+}

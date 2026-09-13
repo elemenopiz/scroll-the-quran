@@ -10,7 +10,7 @@ import SwiftUI
 /// The exact AppShell call is in this module's README note in the task report.
 public enum DiscoverScreens {
     /// The screen ids this module answers to.
-    public static let screenIDs = ["discover", "deepstudy"]
+    public static let screenIDs = ["discover", "discover-reflection", "deepstudy"]
 
     /// Whether `screen(id:anchor:…)` will render something for this id.
     public static func handles(_ id: String) -> Bool {
@@ -92,7 +92,12 @@ public struct DiscoverRouteView: View {
                 themes: themes,
                 today: today,
                 initialKey: key,
-                startIndex: DiscoverLaunchIndex.value ?? 0
+                startIndex: DiscoverLaunchIndex.value ?? 0,
+                // Read off the process rather than taken from `id`: `TabRoot` builds the
+                // Discover tab as plain `"discover"` whatever the route is, and `TabRoot`
+                // belongs to the shell. Same seam `--discover-index` already uses.
+                startsOnReflection: id == DiscoverLaunchStart.reflectionRoute
+                    || DiscoverLaunchStart.startsOnReflection
             )
         }
     }
@@ -132,5 +137,28 @@ enum DiscoverLaunchIndex {
         let next = arguments.index(after: position)
         guard next < arguments.endIndex else { return nil }
         return Int(arguments[next])
+    }
+}
+
+/// `--screenshot discover-reflection`, parsed once out of the process arguments.
+///
+/// The route makes the day's first REFLECTION card page 0 of the pager, which is the only
+/// way to frame it the way every other capture is framed: the interleave puts it at
+/// position 4, and landing there with `scrollPosition(id:)` leaves the pager mid-page.
+///
+/// Read here rather than in `AppShell`'s `LaunchOptions` for the same reason
+/// `DiscoverLaunchIndex` is: `TabRoot` renders the Discover tab as the bare `"discover"`
+/// screen whatever the `--screenshot` route says, and the shell is not this task's to edit.
+enum DiscoverLaunchStart {
+    static let flag = "--screenshot"
+    static let reflectionRoute = "discover-reflection"
+
+    static let startsOnReflection: Bool = parse(ProcessInfo.processInfo.arguments)
+
+    static func parse(_ arguments: [String]) -> Bool {
+        guard let position = arguments.firstIndex(of: flag) else { return false }
+        let next = arguments.index(after: position)
+        guard next < arguments.endIndex else { return false }
+        return arguments[next] == reflectionRoute
     }
 }

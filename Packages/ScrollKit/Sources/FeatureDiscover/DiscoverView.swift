@@ -6,9 +6,12 @@ import UserState
 
 /// The Discover tab: one full-height card per feed item, paged vertically.
 ///
-/// The feed order comes from `DiscoverFeed.items(seed:)` with the day of the year as
+/// The feed order comes from `DiscoverFeed.feedItems(seed:)` with the day of the year as
 /// the seed, so every device sees the same cards in the same order on the same day and
-/// a snapshot run pinned to `SCROLL_FIXED_DATE` always replays it.
+/// a snapshot run pinned to `SCROLL_FIXED_DATE` always replays it. Since Phase 4o that
+/// stream is two kinds of page: study cards, and a REFLECTION card after every four of
+/// them. Reflections are free and unmetered — they never consume one of the day's free
+/// cards and the paywall never replaces one.
 ///
 /// Free readers get `DiscoverGate.freeCardsPerDay` cards a day; landing on the fourth
 /// raises the paywall instead of the card. Deep Study is premium outright, so the
@@ -26,7 +29,12 @@ public struct DiscoverView: View {
     /// How many cards of the day's feed to skip. Only `--discover-index N` sets it: a
     /// capture of the third card has to *start* on the third card, because landing there
     /// with `scrollPosition(id:)` leaves the pager mid-page and the card off its mark.
+    /// It addresses the **combined** stream, so the study at index `s` is at `s + s / 4`.
     private let startIndex: Int
+    /// `--screenshot discover-reflection`: start on the day's first REFLECTION card
+    /// instead. The seed buries it at position 4, and a capture of it has to be framed the
+    /// way every other capture is — on page 0 of the pager.
+    private let startsOnReflection: Bool
 
     @Environment(TranslationStore.self) private var translations: TranslationStore?
     @Environment(StudyStore.self) private var studies: StudyStore?
@@ -37,7 +45,8 @@ public struct DiscoverView: View {
     @Environment(\.openNote) private var openNote
 
     @State private var gate: DiscoverGateStore
-    @State private var currentKey: String?
+    /// The page the pager is on, as a `DiscoverFeedItem.id` ("study:4:59", "reflection:…").
+    @State private var currentID: String?
     @State private var isPaywallPresented = false
     @State private var openStudy: Study?
 
@@ -47,6 +56,7 @@ public struct DiscoverView: View {
         today: Date = Date(),
         initialKey: String? = nil,
         startIndex: Int = 0,
+        startsOnReflection: Bool = false,
         gate: DiscoverGateStore? = nil
     ) {
         self.feed = feed
@@ -54,6 +64,7 @@ public struct DiscoverView: View {
         self.today = today
         self.initialKey = initialKey
         self.startIndex = max(0, startIndex)
+        self.startsOnReflection = startsOnReflection
         _gate = State(initialValue: gate ?? DiscoverGateStore(now: today))
     }
 
@@ -87,20 +98,43 @@ public struct DiscoverView: View {
                     ForEach(items) { item in
                         page(for: item, contentWidth: contentWidth)
                             .containerRelativeFrame(.vertical)
-                            .id(item.key)
+                            .id(item.id)
                     }
                 }
                 .scrollTargetLayout()
             }
             .scrollTargetBehavior(.paging)
-            .scrollPosition(id: $currentKey)
+            .scrollPosition(id: $currentID)
             .scrollIndicators(.hidden)
-            .onAppear { land(on: currentKey ?? initialKey ?? items.first?.key) }
-            .onChange(of: currentKey) { _, key in land(on: key) }
+            .onAppear { land(on: currentID ?? initialID ?? items.first?.id) }
+            .onChange(of: currentID) { _, id in land(on: id) }
         }
     }
 
-    private func page(for item: DiscoverItem, contentWidth: CGFloat) -> some View {
+    @ViewBuilder
+    private func page(for item: DiscoverFeedItem, contentWidth: CGFloat) -> some View {
+        switch item {
+        case let .study(study):
+            studyPage(for: study, contentWidth: contentWidth)
+        case let .reflection(reflection):
+            reflectionPage(for: reflection, contentWidth: contentWidth)
+        }
+    }
+
+    /// A reflection sits in exactly the study card's slot on the page — same insets, same
+    /// `pageTopBias` — so the pager lands on it identically.
+    private func reflectionPage(for reflection: Reflection, contentWidth: CGFloat) -> some View {
+        ReflectionCard(
+            reflection: reflection,
+            quoteWidth: ReflectionCardLayout.quoteWidth(cardContentWidth: contentWidth)
+        )
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(.horizontal, DiscoverMetrics.cardInset)
+        .padding(.vertical, DiscoverMetrics.pagePadding)
+        .padding(.top, DiscoverMetrics.pageTopBias)
+    }
+
+    private func studyPage(for item: DiscoverItem, contentWidth: CGFloat) -> some View {
         let study = studies?.study(forKey: item.key)
         let presentation = PassagePresentation.make(
             forKey: item.key,
@@ -153,9 +187,17 @@ public struct DiscoverView: View {
 
     // MARK: - Data
 
-    private var items: [DiscoverItem] {
-        let all = feed.items(on: today)
-        return startIndex < all.count ? Array(all.dropFirst(startIndex)) : all
+    private var items: [DiscoverFeedItem] {
+        let all = feed.feedItems(on: today)
+        let drop = startsOnReflection
+            ? (all.firstIndex(where: \.isReflection) ?? startIndex)
+            : startIndex
+        return drop < all.count ? Array(all.dropFirst(drop)) : all
+    }
+
+    /// `initialKey` names a study unit; the pager is keyed on `DiscoverFeedItem.id`.
+    private var initialID: String? {
+        initialKey.map { DiscoverFeedItem.study(DiscoverItem(key: $0, themeId: "")).id }
     }
 
     private func themeTitle(forKey key: String) -> String? {
@@ -182,13 +224,15 @@ public struct DiscoverView: View {
         gate.isSubscribed = isSubscribed
     }
 
-    /// Counts the card that just became visible. The fourth free card of the day raises
-    /// the paywall instead of being counted.
-    private func land(on key: String?) {
-        guard let key else { return }
-        if currentKey != key {
-            currentKey = key
+    /// Counts the card that just became visible. The fourth free *study* card of the day
+    /// raises the paywall instead of being counted; a REFLECTION card has no `meteredKey`
+    /// and so passes through free, however many of them the reader has already seen.
+    private func land(on id: String?) {
+        guard let id else { return }
+        if currentID != id {
+            currentID = id
         }
+        guard let key = DiscoverFeedItem.meteredKey(forID: id) else { return }
         if !gate.record(key, on: today) {
             raisePaywall(.discoverLimit)
         }

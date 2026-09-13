@@ -7,6 +7,15 @@
     "maskBottomPT": 34,
     "blurSigma": 6
   },
+  "pending": {
+    "note": "Manifest screens that cannot be scored yet because no reference PNG exists. They are kept OUT of `screens` on purpose: `--snap all` walks that map, and compare.sh exits non-zero on a missing reference, so listing one there would fail the whole sweep for a picture nobody has. Capture one by hand instead — `xcrun simctl launch $SCROLL_SIM com.scrollthequran.app --screenshot <route> --reset-state`, with SIMCTL_CHILD_SCROLL_FIXED_DATE=2026-09-14 — and read it against the geometry in the task brief. Move the entry into `screens` with a threshold the day the PNG lands.",
+    "discover-reflection": {
+      "file": "discover-reflection.png",
+      "appearance": "dark",
+      "route": "discover-reflection",
+      "notes": "Phase 4o, the REFLECTION card. Its layout is guarded meanwhile by UITests/Specs/discover-reflection.json (the recorded frames of every row) and by ReflectionCardLayoutTests (the arithmetic, over all 167 reflections). The one thing a reference would add is the card's *interior* against the original's; its frame is already asserted to be the study card's, which discover-dark scores."
+    }
+  },
   "screens": {
     "onboarding-hook": {
       "file": "onboarding-hook.png",

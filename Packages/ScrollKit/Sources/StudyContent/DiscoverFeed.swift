@@ -92,8 +92,19 @@ public struct DiscoverFile: Codable, Hashable, Sendable {
 public struct DiscoverFeed: Hashable, Sendable {
     /// The resolvable items, in a stable base order: heaviest first, then by key.
     public let items: [DiscoverItem]
+    /// The REFLECTION cards interleaved into the same stream (Phase 4o).
+    ///
+    /// The feed owns them rather than the view because the two lists have to be replayed
+    /// together from one seed: `feedItems(seed:)` is the single answer to "what does the
+    /// reader see today", and the shell, the tests and a capture all ask it the same way.
+    /// Empty by default, which is exactly the pre-4o feed.
+    public let reflections: ReflectionStore
 
-    public init(items: [DiscoverItem], resolves: (String) -> Bool = { _ in true }) {
+    public init(
+        items: [DiscoverItem],
+        reflections: ReflectionStore = .empty,
+        resolves: (String) -> Bool = { _ in true }
+    ) {
         var seen: Set<String> = []
         self.items = items
             .filter { seen.insert($0.key).inserted && resolves($0.key) }
@@ -103,18 +114,29 @@ public struct DiscoverFeed: Hashable, Sendable {
                 (rhs.weight, lhs.surah, lhs.start, lhs.end, lhs.key)
                     < (lhs.weight, rhs.surah, rhs.start, rhs.end, rhs.key)
             }
+        self.reflections = reflections
     }
 
-    public init(loader: StudyContentLoading, path: String = "discover.json", resolves: (String) -> Bool) throws {
+    public init(
+        loader: StudyContentLoading,
+        path: String = "discover.json",
+        reflections: ReflectionStore = .empty,
+        resolves: (String) -> Bool
+    ) throws {
         let file = try JSONDecoder().decode(DiscoverFile.self, from: loader.data(at: path))
-        self.init(items: file.items, resolves: resolves)
+        self.init(items: file.items, reflections: reflections, resolves: resolves)
     }
 
     /// Builds the feed against a store, keeping only keys the store can actually open. That is
     /// a question only the shards can answer (`passages.json` maps every ayah in the Quran,
     /// authored or not), so building the feed does load the shards of the surahs it names.
-    public init(loader: StudyContentLoading, path: String = "discover.json", store: StudyStore) throws {
-        try self.init(loader: loader, path: path, resolves: { store.containsUnit($0) })
+    public init(
+        loader: StudyContentLoading,
+        path: String = "discover.json",
+        reflections: ReflectionStore = .empty,
+        store: StudyStore
+    ) throws {
+        try self.init(loader: loader, path: path, reflections: reflections, resolves: { store.containsUnit($0) })
     }
 
     public var isEmpty: Bool {
@@ -147,6 +169,110 @@ public struct DiscoverFeed: Hashable, Sendable {
     /// depend on the clock.
     public func items(on date: Date, calendar: Calendar = .current) -> [DiscoverItem] {
         items(seed: calendar.ordinality(of: .day, in: .year, for: date) ?? 1)
+    }
+
+    // MARK: - The combined stream
+
+    /// How many study cards sit between two REFLECTION cards.
+    public static let studyCardsPerReflection = 4
+
+    /// **The list the Discover tab actually pages through** (Phase 4o): the day's study
+    /// cards with the day's reflections interleaved.
+    ///
+    /// The rule, in full:
+    /// * both lists are replayed from the *same* seed, so a device, a test and a capture
+    ///   on the same day see the same stream;
+    /// * position 0 is always a study card — the first card of the day is what
+    ///   `discover-dark` is scored against, and it must not move;
+    /// * a reflection lands after every `studyCardsPerReflection` study cards, so the
+    ///   combined positions are 4, 9, 14 …, and the study at index `s` moves to combined
+    ///   index `s + s / 4`;
+    /// * reflections are drawn from `ReflectionStore.items(seed:)` in order and never
+    ///   repeat inside a day. 167 ship against 326 study units, which needs 81, so the
+    ///   pool cannot run dry — and if a content change ever made it, the stream simply
+    ///   carries on with study cards rather than showing one twice.
+    public func feedItems(seed: Int) -> [DiscoverFeedItem] {
+        let studies = items(seed: seed)
+        guard !reflections.isEmpty else {
+            return studies.map(DiscoverFeedItem.study)
+        }
+        var pool = reflections.items(seed: seed)[...]
+        var stream: [DiscoverFeedItem] = []
+        stream.reserveCapacity(studies.count + studies.count / DiscoverFeed.studyCardsPerReflection)
+        var sinceReflection = 0
+        for study in studies {
+            stream.append(.study(study))
+            sinceReflection += 1
+            guard sinceReflection == DiscoverFeed.studyCardsPerReflection,
+                  let next = pool.popFirst()
+            else { continue }
+            stream.append(.reflection(next))
+            sinceReflection = 0
+        }
+        return stream
+    }
+
+    /// Today's combined stream. The clock-free half is `feedItems(seed:)`.
+    public func feedItems(on date: Date, calendar: Calendar = .current) -> [DiscoverFeedItem] {
+        feedItems(seed: calendar.ordinality(of: .day, in: .year, for: date) ?? 1)
+    }
+}
+
+/// One page of the Discover tab: a study card, or a REFLECTION card.
+///
+/// `id` is prefixed by kind rather than being the bare key: the pager keys its pages on it
+/// and a reflection id and a passage key come from different namespaces, so a collision
+/// would be silent. It is also what the free-tier gate counts — see `meteredKey`.
+public enum DiscoverFeedItem: Identifiable, Hashable, Sendable {
+    case study(DiscoverItem)
+    case reflection(Reflection)
+
+    /// The two id namespaces, spelled once so `meteredKey(forID:)` can read an id back.
+    public enum Kind: String, CaseIterable, Sendable {
+        case study
+        case reflection
+
+        var prefix: String {
+            "\(rawValue):"
+        }
+    }
+
+    public var id: String {
+        switch self {
+        case let .study(item): Kind.study.prefix + item.key
+        case let .reflection(reflection): Kind.reflection.prefix + reflection.id
+        }
+    }
+
+    public var study: DiscoverItem? {
+        guard case let .study(item) = self else { return nil }
+        return item
+    }
+
+    public var reflection: Reflection? {
+        guard case let .reflection(reflection) = self else { return nil }
+        return reflection
+    }
+
+    public var isReflection: Bool {
+        reflection != nil
+    }
+
+    /// What `DiscoverGate` counts this page as, or `nil` when the page is free.
+    ///
+    /// Reflections are free and unmetered (owner, Phase 4o): they do not consume one of
+    /// `DiscoverGate.freeCardsPerDay` and the paywall never replaces one. Putting the
+    /// decision here rather than in the view is what lets `DiscoverGateTests` assert it
+    /// against the real gate.
+    public var meteredKey: String? {
+        study?.key
+    }
+
+    /// The same answer from an id alone, so the pager can meter the page it just landed on
+    /// without walking the day's list again on every scroll event.
+    public static func meteredKey(forID id: String) -> String? {
+        guard id.hasPrefix(Kind.study.prefix) else { return nil }
+        return String(id.dropFirst(Kind.study.prefix.count))
     }
 }
 
