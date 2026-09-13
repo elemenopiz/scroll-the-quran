@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ROOT, OUT, WORK, loadQuran, parseKey, unitKey, words } from "./data.mjs";
+import { VOICE_VERSION } from "./voice.mjs";
 import { loadPassages, discoverKeys, selectUnits } from "./units.mjs";
 import { PROMPT_VERSION, buildSystem, buildUserTurn } from "./prompt.mjs";
 import { loadNamedPassages } from "../segment-passages.mjs";
@@ -30,8 +31,12 @@ export const OPTIONAL_MODEL_FIELDS = SCHEMA["x-optionalModelFields"] ?? [];
 const STAMPED_FIELDS = new Set(["key", "surah", "start", "end", "tier", "meta"]);
 /** Grade ceilings and the explainEasier bounds, read straight off the schema. */
 export const READABILITY_TARGETS = SCHEMA["x-readability"];
-/** The promptVersion a rewrite stamps into `meta.simplified`. */
-export const SIMPLIFY_VERSION = PROMPT_VERSION;
+/**
+ * The stamp a rewrite writes into `meta.simplified`. It is the voice-pass version,
+ * not the author promptVersion: bumping it in lib/voice.mjs re-opens every unit to
+ * `rewrite-todo` (the first pass, "p1", only lowered the reading level).
+ */
+export const SIMPLIFY_VERSION = VOICE_VERSION;
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 
@@ -408,7 +413,7 @@ export function currentStudy(key, { model = null } = {}) {
   return study ? { study, source: path.join("out", "study", path.basename(file)) } : null;
 }
 
-/** Keys already through the simplify pass, in the shards or waiting in the cache. */
+/** Keys already through the *current* pass (`meta.simplified === SIMPLIFY_VERSION`), in the shards or the cache. */
 export function simplifiedKeys({ model = null } = {}) {
   const keys = new Set();
   const shards = path.join(OUT, "study");
@@ -416,7 +421,7 @@ export function simplifiedKeys({ model = null } = {}) {
     for (const f of fs.readdirSync(shards)) {
       if (!/^surah_\d{3}\.json$/.test(f)) continue;
       for (const s of readJSON(path.join(shards, f)).studies ?? []) {
-        if (s.meta?.simplified) keys.add(s.key);
+        if (s.meta?.simplified === SIMPLIFY_VERSION) keys.add(s.key);
       }
     }
   }
@@ -425,7 +430,7 @@ export function simplifiedKeys({ model = null } = {}) {
     for (const f of fs.readdirSync(dir)) {
       if (!f.endsWith(".json")) continue;
       const rec = readJSON(path.join(dir, f));
-      if (!rec?.key || !rec.simplified) continue;
+      if (!rec?.key || rec.simplified !== SIMPLIFY_VERSION) continue;
       if (model && rec.model !== model) continue;
       keys.add(rec.key);
     }
