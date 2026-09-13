@@ -48,7 +48,12 @@ public enum ReaderPagination {
                         english: slice,
                         reference: surah.reference(for: ayah),
                         caption: VersePaginator.caption(page: offset + 1, of: slices.count),
-                        tier: tier
+                        tier: tier,
+                        // Phase 4n: the card is on **every** verse page, continuation slices
+                        // included, as the original is — it is the verse menu's tap target,
+                        // not a decoration on the surah's first page. The handoff sentinel
+                        // keeps none: it is on screen for one frame and has no ayah to act on.
+                        showsLogoCard: true
                     )
                 )
             }

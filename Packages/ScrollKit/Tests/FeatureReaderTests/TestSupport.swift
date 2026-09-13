@@ -1,6 +1,7 @@
 @testable import FeatureReader
 import Foundation
 import QuranData
+import StudyContent
 import UserState
 
 /// Repo root, walked up from this file: Tests/FeatureReaderTests -> Tests -> ScrollKit -> Packages -> root.
@@ -22,6 +23,13 @@ enum TestContent {
 
     static func translations(selecting id: String? = nil) throws -> TranslationStore {
         try TranslationStore(locator: locator, selectedID: id)
+    }
+
+    /// The bundled commentary, read out of the repository's own `Content/study`.
+    static func studies() throws -> StudyStore {
+        try StudyStore(
+            loader: DirectoryContentLoader(root: repoRoot.appendingPathComponent("Content", isDirectory: true))
+        )
     }
 
     @MainActor

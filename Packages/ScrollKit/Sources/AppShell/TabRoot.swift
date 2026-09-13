@@ -309,6 +309,19 @@ public extension View {
             .environment(\.openNote, OpenNoteAction { key in
                 router?.openNote(key: key)
             })
+            // Phase 4n. `FeatureReader`'s verse menu needs the same three answers the
+            // Discover card gets — am I premium, raise the paywall, open Deep Study — and
+            // sits on the same side of the dependency arrow, so it declares its own seams
+            // (`FeatureReader/ReaderSeams.swift`) and they are filled in here. "Deeper
+            // Study" lands on `Router.openDeepStudy(key:)`, which is the one Deep Study
+            // screen the Discover card and the `scrollthequran://study/…` link both open.
+            .environment(\.readerPremium, ReaderPremium(isSubscribed: env.entitlements.isPremium))
+            .environment(\.requestReaderPremium, ReaderPremiumRequest { _ in
+                env.gate.request(.deepStudy)
+            })
+            .environment(\.openDeepStudy, OpenDeepStudyAction { key in
+                router?.openDeepStudy(key: key)
+            })
     }
 }
 

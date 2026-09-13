@@ -386,4 +386,67 @@ struct ReaderJumpTests {
             #expect(model.currentPage?.arabic != nil, "only the first slice carries the Arabic")
         }
     }
+    // MARK: - Verse menu
+
+    @Test("presenting the verse menu focuses the ayah the reader is on")
+    func verseMenuFocusesTheCurrentAyah() throws {
+        let model = try TestContent.model(surah: 2, startAyah: 255)
+        model.present(.verseMenu)
+        #expect(model.sheet == .verseMenu)
+        #expect(model.focusedVerse == VerseRef(surah: 2, ayah: 255))
+        model.dismissSheet()
+        #expect(model.sheet == nil)
+    }
+
+    /// The opening card has no ayah of its own, but the chrome acts on ayah 1 there, so the
+    /// menu opens on ayah 1 rather than on nothing.
+    @Test("the menu raised from the opening card acts on ayah 1")
+    func verseMenuOnTheOpeningCard() throws {
+        let model = try TestContent.model(surah: 2)
+        #expect(model.currentPage?.kind == .opening)
+        model.present(.verseMenu)
+        #expect(model.focusedVerse == VerseRef(surah: 2, ayah: 1))
+    }
+
+    @Test("Set as Widget Verse writes the preference and confirms in a toast")
+    func setWidgetVerse() throws {
+        let model = try TestContent.model(surah: 2, startAyah: 255)
+        model.present(.verseMenu)
+        #expect(model.user.widgetVerseRef == nil)
+
+        let set = model.setWidgetVerse()
+        #expect(set == VerseRef(surah: 2, ayah: 255))
+        #expect(model.user.widgetVerseRef == VerseRef(surah: 2, ayah: 255))
+        #expect(model.toast?.title == "Widget verse set")
+        #expect(model.toast?.message == "Al-Baqarah 2:255")
+
+        model.dismissToast()
+        #expect(model.toast == nil)
+    }
+
+    /// Setting the same verse twice is two toasts: the second has to restart the dismissal
+    /// clock rather than be swallowed as "no change".
+    @Test("two widget-verse toasts are two distinct toasts")
+    func toastsAreDistinct() throws {
+        let model = try TestContent.model(surah: 2, startAyah: 255)
+        model.present(.verseMenu)
+        model.setWidgetVerse()
+        let first = try #require(model.toast)
+        model.setWidgetVerse()
+        let second = try #require(model.toast)
+        #expect(first.id != second.id)
+        #expect(first.message == second.message)
+    }
+
+    /// The handoff sentinel has no ayah to act on, so there is nothing to set.
+    @Test("Set as Widget Verse does nothing on a page with no ayah")
+    func setWidgetVerseOnTheHandoffPage() throws {
+        let model = try TestContent.model(surah: 2)
+        let handoff = try #require(model.pages.last { $0.kind == .handoff })
+        model.move(to: handoff.id)
+        model.present(.verseMenu)
+        #expect(model.setWidgetVerse() == nil)
+        #expect(model.user.widgetVerseRef == nil)
+        #expect(model.toast == nil)
+    }
 }

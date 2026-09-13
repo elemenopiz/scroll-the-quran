@@ -69,13 +69,22 @@ else
   [ -n "$ID" ] || { echo "usage: compare.sh <screen-id>   |   compare.sh --raw <a.png> <b.png>" >&2; exit 2; }
   entry="$(jq -r --arg id "$ID" '.screens[$id] // empty' "$THRESHOLDS")"
   [ -n "$entry" ] || { echo "compare.sh: unknown screen id '$ID' (see $THRESHOLDS)" >&2; exit 1; }
-  REF="$ROOT/Reference/$(printf '%s' "$entry" | jq -r '.file')"
+  REF_FILE="$(printf '%s' "$entry" | jq -r '.file // ""')"
+  # A screen the owner has not dropped a reference PNG in for yet (thresholds.json carries
+  # `"file": null`) is captured but not scored: there is nothing to score it against. Say so
+  # and succeed, rather than failing the whole sweep on a missing file.
+  if [ -z "$REF_FILE" ] || [ "$REF_FILE" = null ]; then
+    echo "n/a"
+    echo "compare.sh: $ID has no reference PNG yet (thresholds.json \"file\": null) — captured, not scored" >&2
+    exit 0
+  fi
+  REF="$ROOT/Reference/$REF_FILE"
   SHOT="${SCROLL_SNAPSHOT:-$OUTDIR/$ID.png}"
   CROP="$(printf '%s' "$entry" | jq -r '.crop // ""')"
   REF_CROP="$(printf '%s' "$entry" | jq -r '.refCrop // ""')"
   MASK_TOP="$(jq -r '.defaults.maskTopPT' "$THRESHOLDS")"
   MASK_BOTTOM="$(printf '%s' "$entry" | jq -r --argjson d "$(jq '.defaults.maskBottomPT' "$THRESHOLDS")" '.maskBottomPT // $d')"
-  THRESHOLD="$(printf '%s' "$entry" | jq -r '.threshold')"
+  THRESHOLD="$(printf '%s' "$entry" | jq -r '.threshold // ""')"
   NEGATE="$(printf '%s' "$entry" | jq -r 'if .negate then 1 else 0 end')"
 fi
 

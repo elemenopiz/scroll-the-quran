@@ -1,5 +1,6 @@
 import DesignSystem
 import QuranData
+import StudyContent
 import SwiftUI
 import UserState
 
@@ -7,10 +8,22 @@ import UserState
 ///
 /// `ScrollView` + `LazyVStack(spacing: 0)` + `.containerRelativeFrame(.vertical)` + paging +
 /// `.scrollPosition(id:)`, which is the shape CLAUDE.md specifies. The paging is
-/// `ReaderPagingBehavior` rather than the stock `.paging` — see the note on it. Everything the pager does — marking read after a 1.2 s dwell, remembering the
-/// position, handing over to the next surah — lives in `ReaderModel`; this file is layout.
+/// `ReaderPagingBehavior` rather than the stock `.paging` — see the note on it. Everything
+/// the pager does — marking read after a 1.2 s dwell, remembering the position, handing over
+/// to the next surah — lives in `ReaderModel`; this file is layout.
 public struct ReaderView: View {
     @State private var model: ReaderModel
+
+    /// The commentary the verse menu's four study rows are made of. Read out of the
+    /// environment — `AppShell.appStores` already injects it for the Discover tab — rather
+    /// than held by `ReaderModel`, so the reader keeps no reference to a store it needs on
+    /// exactly one surface and `AppEnvironment` needs no new wiring to build the model.
+    @Environment(StudyStore.self) private var studies: StudyStore?
+    /// The verse menu's four study rows are Deep Study's content, so they are gated exactly
+    /// as Deep Study is. Nothing injected means the free tier — see `ReaderSeams`.
+    @Environment(\.readerPremium) private var premium
+    @Environment(\.requestReaderPremium) private var requestPremium
+    @Environment(\.openDeepStudy) private var openDeepStudy
 
     /// Wraps an existing model, which is what the screenshot routes and the previews use.
     public init(model: ReaderModel) {
@@ -76,9 +89,13 @@ public struct ReaderView: View {
                 ScrollView(.vertical) {
                     LazyVStack(spacing: 0) {
                         ForEach(model.pages) { page in
-                            VersePageView(page: page, pageSize: proxy.size)
-                                .containerRelativeFrame(.vertical)
-                                .id(page.id)
+                            VersePageView(
+                                page: page,
+                                pageSize: proxy.size,
+                                onLogoTap: { model.present(.verseMenu) }
+                            )
+                            .containerRelativeFrame(.vertical)
+                            .id(page.id)
                         }
                     }
                     .scrollTargetLayout()
@@ -190,9 +207,24 @@ public struct ReaderView: View {
         .padding(.bottom, ReaderMetrics.actionBottomInset)
     }
 
+    /// The bottom-left toast slot. A confirmation ("Widget verse set") takes it while it is
+    /// up; otherwise the coaching hint has it. One slot, so the two can never overlap.
     @ViewBuilder
     private var hint: some View {
-        if model.isHintVisible {
+        if let toast = model.toast {
+            ToastHint(systemImage: "checkmark.circle", title: toast.title, message: toast.message)
+                .padding(.leading, ReaderMetrics.toastLeadingInset)
+                .padding(.bottom, ReaderMetrics.toastBottomInset)
+                .transition(.opacity)
+                .accessibilityIdentifier("reader.toast")
+                // Keyed on the toast's id, so setting the same widget verse twice restarts
+                // the clock rather than letting the first one's task dismiss the second.
+                .task(id: toast.id) {
+                    try? await Task.sleep(for: .seconds(ReaderMetrics.toastDuration))
+                    guard !Task.isCancelled else { return }
+                    withAnimation(.easeOut(duration: 0.2)) { model.dismissToast() }
+                }
+        } else if model.isHintVisible {
             ToastHint(
                 systemImage: "arrow.up.left",
                 title: "Tap or slide",
@@ -235,6 +267,47 @@ public struct ReaderView: View {
             )
         case .share:
             shareSheet
+        case .verseMenu:
+            verseMenu
+        }
+    }
+
+    /// The menu the logo card raises. Everything it needs is a value: the ayah, the study
+    /// unit covering it, and five closures. It presents its own destinations by *pushing*
+    /// them, so this is still one sheet.
+    @ViewBuilder
+    private var verseMenu: some View {
+        if let verse = model.focusedVerse {
+            VerseMenuSheet(
+                reference: model.reference(for: verse),
+                arabic: model.arabic(for: verse),
+                english: model.english(for: verse),
+                study: studies?.study(for: verse),
+                attribution: model.translations.selected?.attribution ?? "",
+                isSubscribed: premium.isSubscribed,
+                text: { passage in
+                    model.english(for: VerseRef(surah: passage.surah, ayah: passage.start))
+                },
+                onCancel: model.dismissSheet,
+                onLocked: {
+                    // The paywall is the shell's sheet over the tab bar, and iOS presents one
+                    // sheet at a time: this one has to be gone before it is asked for.
+                    model.dismissSheet()
+                    requestPremium(.verseMenuStudy)
+                },
+                onDeeperStudy: { key in
+                    model.dismissSheet()
+                    openDeepStudy(key)
+                },
+                onSetWidgetVerse: {
+                    model.setWidgetVerse()
+                    model.dismissSheet()
+                },
+                onOpenVerse: { verse in
+                    model.open(verse: verse)
+                    model.dismissSheet()
+                }
+            )
         }
     }
 
@@ -269,13 +342,27 @@ public struct ReaderView: View {
 // MARK: - Screenshot routes
 
 public extension ReaderView {
-    /// The three screens the snapshot harness routes to inside this feature.
+    /// The screens the snapshot harness routes to inside this feature.
     /// `AppShell` maps its own `ScreenRoute` onto these by raw value, which keeps
     /// `FeatureReader` free of a dependency on the shell that imports it.
     enum Screen: String, CaseIterable, Sendable {
         case reader
         case translationSheet = "translation-sheet"
         case notesSheet = "notes-sheet"
+        case verseMenu = "reader-verse-menu"
+
+        /// Which ayah of the fixture surah the route opens on.
+        ///
+        /// `reader` is the reference capture and stays on page 0. The sheet routes want a
+        /// real ayah under the sheet, and the verse menu wants the one with a study unit the
+        /// rest of the app is captured against — Ayat al-Kursi.
+        var startAyah: Int? {
+            switch self {
+            case .reader: nil
+            case .translationSheet, .notesSheet: 1
+            case .verseMenu: 255
+            }
+        }
     }
 
     /// The fixture the reference captures were taken against: Al-Baqarah, page 0.
@@ -303,20 +390,19 @@ public extension ReaderView {
             // remembers having dismissed it.
             hints: EphemeralReaderHintStore(),
             surah: surah,
-            startAyah: startAyah ?? (screen == .reader ? nil : 1)
+            startAyah: startAyah ?? screen?.startAyah
             // Deliberately not restoring the saved position: a screenshot has to be the same
             // picture every time it is taken.
         )
         switch screen {
         case .translationSheet: model.present(.translation)
         case .notesSheet: model.present(.notes)
+        case .verseMenu: model.present(.verseMenu)
         case .reader, nil: break
         }
         return ReaderView(model: model)
     }
 }
-
-
 
 /// Paging that snaps to the reader's **absolute** page grid.
 ///

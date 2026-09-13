@@ -5,15 +5,44 @@ import Testing
 @Suite("Screenshot routes and the surah picker's search")
 @MainActor
 struct ReaderScreenRouteTests {
-    @Test("the three screenshot ids match the manifest's route strings")
+    @Test("the screenshot ids match the manifest's route strings")
     func routeIDsMatchTheManifest() {
         #expect(ReaderView.Screen.reader.rawValue == "reader")
         #expect(ReaderView.Screen.translationSheet.rawValue == "translation-sheet")
         #expect(ReaderView.Screen.notesSheet.rawValue == "notes-sheet")
-        #expect(ReaderView.Screen.allCases.count == 3)
+        #expect(ReaderView.Screen.verseMenu.rawValue == "reader-verse-menu")
+        #expect(ReaderView.Screen.allCases.count == 4)
     }
 
-    @Test("an anchor on the route is ignored", arguments: ["reader", "reader#top", "notes-sheet#anything"])
+    /// `reader` is the reference capture and must stay on page 0; the verse menu wants the
+    /// ayah the rest of the app is captured against.
+    @Test("each screenshot route opens on the ayah its capture needs")
+    func routeStartAyahs() {
+        #expect(ReaderView.Screen.reader.startAyah == nil)
+        #expect(ReaderView.Screen.translationSheet.startAyah == 1)
+        #expect(ReaderView.Screen.notesSheet.startAyah == 1)
+        #expect(ReaderView.Screen.verseMenu.startAyah == 255)
+    }
+
+    @Test("the verse-menu route lands on 2:255 with the menu already up")
+    func verseMenuRoutePresentsTheMenu() throws {
+        let model = try ReaderModel(
+            index: TestContent.index(),
+            translations: TestContent.translations(),
+            user: TestContent.userStore(),
+            hints: EphemeralReaderHintStore(),
+            surah: ReaderView.screenshotSurah,
+            startAyah: ReaderView.Screen.verseMenu.startAyah
+        )
+        model.present(.verseMenu)
+        #expect(model.sheet == .verseMenu)
+        #expect(model.focusedVerse == VerseRef(surah: 2, ayah: 255))
+    }
+
+    @Test(
+        "an anchor on the route is ignored",
+        arguments: ["reader", "reader#top", "notes-sheet#anything", "reader-verse-menu#x"]
+    )
     func anchorsAreStripped(_ route: String) {
         let head = route.split(separator: "#", maxSplits: 1).first.map(String.init) ?? route
         #expect(ReaderView.Screen(rawValue: head) != nil)

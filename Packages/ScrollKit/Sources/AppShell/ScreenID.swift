@@ -23,6 +23,8 @@ public enum ScreenID: String, CaseIterable, Sendable {
     case reader
     case translationSheet = "translation-sheet"
     case notesSheet = "notes-sheet"
+    /// Phase 4n. No reference PNG on disk yet — see `Reference/scores.md`.
+    case readerVerseMenu = "reader-verse-menu"
     case home
     case plansSheet = "plans-sheet"
     case planDetail = "plan-detail"
@@ -62,7 +64,7 @@ public struct ScreenRoute: Equatable, Sendable {
         case .community: .community
         case .discover, .discoverReflection: .discover
         case .home, .plansSheet, .planDetail, .verseSearch, .widgetGallery: .home
-        case .reader, .translationSheet, .notesSheet: .quran
+        case .reader, .translationSheet, .notesSheet, .readerVerseMenu: .quran
         default: nil
         }
     }

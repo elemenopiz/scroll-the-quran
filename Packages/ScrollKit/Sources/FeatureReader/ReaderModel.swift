@@ -10,9 +10,28 @@ public enum ReaderSheet: String, Identifiable, Hashable, Sendable {
     case notes
     case surahPicker
     case share
+    /// The menu the logo card raises (Phase 4n). Its own destinations are *pushed* inside it
+    /// rather than presented, so the reader still only ever has one sheet up.
+    case verseMenu
 
     public var id: String {
         rawValue
+    }
+}
+
+/// A confirmation the reader shows in the coaching toast's slot ("Widget verse set").
+///
+/// Identified by a token rather than by its text, so setting the *same* widget verse twice is
+/// two toasts and the second one restarts the dismissal timer.
+public struct ReaderToast: Identifiable, Equatable, Sendable {
+    public let id: UUID
+    public let title: String
+    public let message: String
+
+    public init(id: UUID = UUID(), title: String, message: String) {
+        self.id = id
+        self.title = title
+        self.message = message
     }
 }
 
@@ -67,6 +86,8 @@ public final class ReaderModel {
     /// The verse the notes and share sheets are about; the current ayah when they opened.
     public private(set) var focusedVerse: VerseRef?
     public private(set) var isHintVisible: Bool
+    /// The confirmation currently on screen, if any. Occupies the coaching toast's slot.
+    public private(set) var toast: ReaderToast?
     /// Set while a rail drag is in flight, so the indicator follows the finger without the
     /// pager's own animation fighting it.
     public private(set) var railDragAyah: Int?
@@ -331,6 +352,26 @@ public final class ReaderModel {
 
     public func dismissSheet() {
         sheet = nil
+    }
+
+    // MARK: Widget verse
+
+    /// "Set as Widget Verse": writes `Prefs.widgetVerseRef` and confirms in the reader's own
+    /// toast, which is the only feedback there is — the widget itself redraws on its own
+    /// timeline, off screen.
+    ///
+    /// Returns the verse it set, so a test can assert on it without reading `UserStore` back.
+    @discardableResult
+    public func setWidgetVerse() -> VerseRef? {
+        guard let verse = focusedVerse ?? currentVerse else { return nil }
+        user.setWidgetVerse(verse)
+        toast = ReaderToast(title: "Widget verse set", message: reference(for: verse))
+        return verse
+    }
+
+    /// Clears the confirmation toast. The view does this on a timer; a test does it directly.
+    public func dismissToast() {
+        toast = nil
     }
 
     /// The note text for the focused verse.
