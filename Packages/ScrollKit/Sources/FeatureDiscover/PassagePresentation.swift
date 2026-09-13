@@ -43,6 +43,26 @@ public struct PassagePresentation: Equatable, Sendable {
         english.isEmpty ? "" : "\"\(english)\""
     }
 
+    /// `quoted`, but with the ayah markers spelled out as plain " n " so the whole line
+    /// can be measured in one face.
+    ///
+    /// `VerseText` draws each boundary as a small muted numeral between two thin spaces;
+    /// in this flat string the numeral is the quote's own size and the spaces are ordinary,
+    /// which is a few points wider per boundary. `DiscoverCardLayout.body` wants that bias:
+    /// over-counting a line costs the card a line of MEANING, under-counting would put a
+    /// "…" on the verse (Phase 4m).
+    public var layoutQuote: String {
+        guard !english.isEmpty else { return "" }
+        var out = ""
+        for (offset, segment) in segments.enumerated() {
+            if offset > 0 {
+                out += " \(segment.ayah) "
+            }
+            out += segment.text
+        }
+        return "\"\(out)\""
+    }
+
     /// Resolves a passage against the stores. Returns a usable value even when a piece
     /// is missing: an unknown surah degrades to the bare key, missing Arabic to `nil`.
     public static func make(

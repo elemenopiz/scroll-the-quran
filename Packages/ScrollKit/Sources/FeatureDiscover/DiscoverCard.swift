@@ -10,6 +10,15 @@ import SwiftUI
 /// a card of exactly the same height and the pager lands on every card the same way. The
 /// slots are `minHeight`, so Dynamic Type still grows them.
 ///
+/// **The body is a budget, not three fixed slots (Phase 4m).** The owner asked for "the
+/// entirety of the verse" on the card and said "the meaning/did you know can be cut off",
+/// so the quote, MEANING and DID YOU KNOW share one `bodyBudget`-tall container:
+/// `DiscoverCardLayout.body(for:meaning:didYouKnow:width:)` gives the quote every line it
+/// needs (stepping 16 → 15 → 14 pt when it must), MEANING what is left down to two lines,
+/// and DID YOU KNOW its box only if there is still room. The chip, the title, the
+/// cross-reference row, "Deep study ›" and the action row do not move, and the card is
+/// still exactly `DiscoverCardLayout.cardHeight` tall.
+///
 /// **What is deliberately absent.** No translation badge and no Arabic line: the badge is
 /// the reader toolbar's pill, and the muted Arabic layer stays on the reader page, the
 /// Deep Study quote box, the share card and the widget (owner, Phase 4i amendment 2 —
@@ -17,6 +26,9 @@ import SwiftUI
 @MainActor
 struct DiscoverCard: View {
     let presentation: PassagePresentation
+    /// The width the card's text is laid out in, from the page's own geometry — the
+    /// body plan is a function of it, so it is measured rather than assumed.
+    let contentWidth: CGFloat
     let themeTitle: String?
     let study: Study?
     /// Pre-resolved so the card never reaches into a store: `("Al-A'raf 7:156", 7:156)`.
@@ -39,9 +51,7 @@ struct DiscoverCard: View {
             VStack(alignment: .leading, spacing: 0) {
                 chip
                 title
-                quote
-                meaning
-                didYouKnow
+                bodySlot
                 crossReferences
                 deepStudyLink
                 actions
@@ -84,22 +94,68 @@ struct DiscoverCard: View {
             .accessibilityIdentifier("discover.reference")
     }
 
-    /// Four lines, tail-elided, centred in the slot when the passage is shorter — the same
-    /// "…" treatment the meaning and the did-you-know box use.
+    /// How this card divides the body between the quote, MEANING and DID YOU KNOW.
+    private var plan: DiscoverCardLayout.BodyPlan {
+        DiscoverCardLayout.body(
+            for: presentation.layoutQuote,
+            meaning: study?.meaning ?? "",
+            didYouKnow: study?.didYouKnow ?? "",
+            width: contentWidth
+        )
+    }
+
+    /// The one container the three body blocks share.
+    ///
+    /// They stack from the top and the slack falls out of the bottom (the brief's point 4:
+    /// centring the whole body would move the MEANING label to a different y on every
+    /// card, which is exactly the jitter Phase 4i removed). `minHeight` with a top
+    /// alignment does that on its own — and it must be `minHeight` alone, with no
+    /// `Spacer` under the blocks: a spacer makes the stack infinitely flexible, the card's
+    /// own VStack then hands it every spare point of the page, and the card grows from
+    /// 607 pt to the full page height, which is precisely the stretch Phase 4i removed.
+    /// `minHeight` rather than a fixed `height` so Dynamic Type still grows it (4d).
+    private var bodySlot: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            quote
+            if plan.meaningLines > 0 {
+                meaning
+            }
+            if plan.showsDidYouKnow {
+                didYouKnow
+            }
+        }
+        .frame(
+            maxWidth: .infinity,
+            minHeight: DiscoverCardLayout.bodyBudget,
+            alignment: .topLeading
+        )
+        .padding(.top, DiscoverMetrics.titleToQuote)
+    }
+
+    /// The whole passage, at the size and line count the plan worked out. `lineLimit` is
+    /// the plan's own count, so it elides only on the handful of units that cannot fit
+    /// even at 14 pt with MEANING and DID YOU KNOW gone.
     private var quote: some View {
-        VerseText(
+        let plan = plan
+        return VerseText(
             arabic: nil,
             segments: presentation.segments,
             size: .discover,
             style: .italic,
             quoted: true,
-            lineLimit: DiscoverMetrics.quoteLines
+            lineLimit: plan.quoteLines,
+            englishSize: plan.quoteSize
         )
-        .frame(maxWidth: .infinity, minHeight: DiscoverCardLayout.quoteSlot)
-        .padding(.top, DiscoverMetrics.titleToQuote)
+        .frame(
+            maxWidth: .infinity,
+            minHeight: DiscoverCardLayout.slot(lines: plan.quoteLines, size: plan.quoteSize)
+        )
         .accessibilityIdentifier("discover.quote")
     }
 
+    /// MEANING, in however many lines the plan left it — four when the quote is short,
+    /// down to two, and omitted entirely on the handful of units whose passage needs the
+    /// whole body. The section is always complete in Deep Study.
     private var meaning: some View {
         VStack(alignment: .leading, spacing: DiscoverMetrics.labelToBody) {
             CapsLabel(text: StudySection.meaning.displayTitle, size: DeepStudyMetrics.labelSize)
@@ -108,11 +164,14 @@ struct DiscoverCard: View {
             Text(study?.meaning ?? "")
                 .font(.serifBody(DiscoverMetrics.bodySize))
                 .foregroundStyle(Color.textPrimary)
-                .lineLimit(DiscoverMetrics.meaningLines)
+                .lineLimit(plan.meaningLines)
                 .multilineTextAlignment(.leading)
                 .frame(
                     maxWidth: .infinity,
-                    minHeight: DiscoverCardLayout.meaningSlot,
+                    minHeight: DiscoverCardLayout.slot(
+                        lines: plan.meaningLines,
+                        size: DiscoverMetrics.bodySize
+                    ),
                     alignment: .topLeading
                 )
         }
@@ -120,6 +179,8 @@ struct DiscoverCard: View {
         .accessibilityIdentifier("discover.meaning")
     }
 
+    /// The DID YOU KNOW box, on the card only while the quote and MEANING leave room for
+    /// its three lines. Dropping it is the first thing a long passage costs.
     private var didYouKnow: some View {
         CardContainer(
             radius: Radius.cardSmall,
