@@ -74,6 +74,7 @@ struct ReflectionCard: View {
                 .fill(Color.chipBackground)
             Text(verbatim: "\u{201C}")
                 .font(.serifDisplay(ReflectionMetrics.markGlyphSize))
+                .fontWeight(.bold)
                 .foregroundStyle(Color.textSecondary)
                 .offset(y: ReflectionCardLayout.markGlyphOffset())
         }

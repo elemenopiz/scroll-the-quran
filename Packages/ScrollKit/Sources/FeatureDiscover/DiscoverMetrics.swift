@@ -415,8 +415,13 @@ enum ReflectionMetrics {
     /// The disc behind the quote glyph: 73 pt across, `chipBackground` — one step lighter
     /// than the card, the same relationship the theme chip has to it.
     static let markDiameter: CGFloat = 73
-    /// The open-quote glyph inside it, in the display serif.
-    static let markGlyphSize: CGFloat = 44
+    /// The open-quote glyph inside it, in the display serif at its bold weight.
+    ///
+    /// The original's mark is heavy and fills about half the disc: its ink runs ≈ 35 × 24 pt
+    /// on the owner's screenshot. Source Serif 4's `“` carries only ≈ 0.38 em of ink width,
+    /// so 96 pt is what puts the ink at the reference's size; 44 pt (the brief's first
+    /// guess) drew it at 17 × 15 pt and read as a stray comma.
+    static let markGlyphSize: CGFloat = 96
 
     /// disc → REFLECTION, label → quote, quote → attribution. Measured as ink-to-ink gaps
     /// on the screenshot; the label and the attribution carry their own line-box leading
