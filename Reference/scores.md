@@ -432,3 +432,31 @@ Every plan cover and charity card pixel changed (18 photographic covers, 3 cards
 | `onboarding-slide2` | 0.1360 | 0.14 | pass (mockup rendered by Phase 4h) |
 
 Note for the release sweep: the slide mockups still show the pre-rename reader pill (CLEAR) and the pre-plans titles; re-run `Tools/snapshot/render-mockups.sh` after the final merge and re-measure the four slides.
+
+### Phase 4l — covers cropped to the subject (2026-09-13)
+
+The 18 renders were authored with their subject **off-centre** (`docs/design/asset-prompts.md`
+put it in the lower-left or lower-right third so a title could sit over a calm top), and the
+app was centre-cropping them: the lantern lost its left half, the mushaf hung off the right
+edge, the dune's crest sat in the corner. `PlanCoverFocal.swift` now carries a per-slug crop
+anchor and `PlanCoverImage` fills, shifts and clips on it, so the overflow is trimmed on the
+side *away* from the subject. Same assets, same sizes — only the window moved. The crops are
+laid out side by side in `docs/design/cover-crops-contact.jpg` (current centre square | focal
+square | focal 1.95:1 hero, per slug).
+
+Measured on `ScrollSim-3d` with `SCROLL_CAPTURE_SETTLE=12`:
+
+| id | RMSE before (4k) | RMSE after | threshold | verdict |
+|---|---|---|---|---|
+| `plans-sheet` | 0.1995 | 0.2035 | 0.22 | pass — unchanged ceiling |
+| `plan-detail` | 0.1584 | 0.1613 | 0.17 | pass — unchanged ceiling |
+| `home-dark` | 0.0638 | 0.0638 | 0.10 | pass — no plan active in the fixture, so no cover shows |
+
+Both cover screens move **up** by ~0.003–0.004, and that is expected rather than a
+regression: the reference is Scroll the Bible's own licensed stock photographs, so the score
+measures how closely our tone blocks happen to land on theirs, not whether our crop is good.
+Moving the window off centre puts the subject's own luminance where the reference has sky or
+wall. The captures were read next to the references — `plans-sheet` now shows the Juz Amma
+lantern whole and centred in its tile where it used to be sliced at the left edge, and
+`plan-detail`'s hero holds the whole mushaf instead of clipping its foot. The thresholds are
+left where Phase 4k set them.
