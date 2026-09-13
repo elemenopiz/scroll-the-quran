@@ -91,7 +91,8 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
     public enum CodingKeys: String, CodingKey, CaseIterable {
         case key, surah, start, end, theme, themeId, title, tier
         case meaning, historicalContext, keyTerms, lifeInProphetsTime, didYouKnow
-        case theologicalSignificance, crossReferences, applyIt, exploreFurther, meta
+        case theologicalSignificance, crossReferences, applyIt, exploreFurther
+        case explainEasier, meta
     }
 
     public let key: String
@@ -111,6 +112,10 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
     public let crossReferences: [CrossRef]
     public let applyIt: String
     public let exploreFurther: [String]
+    /// The passage told to a twelve-year-old: 25-50 plain words, shown in the verse menu under
+    /// "Explain Easier". Optional — only units the simplify pass has been through carry it
+    /// (`Tools/content-gen/author.mjs rewrite`), so every call site must handle nil.
+    public let explainEasier: String?
     public let meta: Meta
 
     public var id: String {
@@ -143,6 +148,7 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         crossReferences: [CrossRef] = [],
         applyIt: String = "",
         exploreFurther: [String] = [],
+        explainEasier: String? = nil,
         meta: Meta = .unknown
     ) {
         let parsed = PassageRef(key: key)
@@ -163,6 +169,7 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         self.crossReferences = crossReferences
         self.applyIt = applyIt
         self.exploreFurther = exploreFurther
+        self.explainEasier = explainEasier
         self.meta = meta
     }
 
@@ -187,6 +194,12 @@ public struct Study: Codable, Hashable, Sendable, Identifiable {
         crossReferences = try container.decodeIfPresent([CrossRef].self, forKey: .crossReferences) ?? []
         applyIt = try container.decodeIfPresent(String.self, forKey: .applyIt) ?? ""
         exploreFurther = try container.decodeIfPresent([String].self, forKey: .exploreFurther) ?? []
+        // Absent on every unit written before the simplify pass, and an empty string is the same
+        // thing as absent: the verse menu hides the row either way.
+        let easier = try container.decodeIfPresent(String.self, forKey: .explainEasier)
+        explainEasier = (easier?.trimmingCharacters(in: .whitespacesAndNewlines)).flatMap {
+            $0.isEmpty ? nil : easier
+        }
         meta = try container.decodeIfPresent(Meta.self, forKey: .meta) ?? .unknown
     }
 }
@@ -213,6 +226,11 @@ public extension Study {
         case .exploreFurther: !exploreFurther.isEmpty
         default: !(prose(for: section) ?? "").trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
         }
+    }
+
+    /// Whether there is an "Explain Easier" line to offer for this unit.
+    var hasExplainEasier: Bool {
+        explainEasier != nil
     }
 
     /// The sections to render, in the fixed display order, skipping empty ones.
