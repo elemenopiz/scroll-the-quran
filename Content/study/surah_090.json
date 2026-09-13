@@ -1,7 +1,7 @@
 {
   "surah": 90,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T09:38:58.146Z",
+  "generatedAt": "2026-09-13T09:53:01.175Z",
   "studies": [
     {
       "key": "90:1-5",
@@ -18,7 +18,7 @@
         {
           "arabic": "كَبَدٍ",
           "gloss": "hardship, strain",
-          "note": "From a root for the liver and for the middle of a thing, and by extension for what is hard and dense. The word carries labour, and the classical readers also hear uprightness in it, a body built to stand."
+          "note": "From a root for the liver and for the middle of a thing, and by extension for what is hard and dense. The word carries labour, and early scholars also hear uprightness in it, a body built to stand."
         },
         {
           "arabic": "حِلٌّۢ",
@@ -31,9 +31,9 @@
           "note": "A negative particle attached to the verb of swearing. Grammarians read it as intensifying rather than negating, a formula for a solemn oath, and the same opening is used at the head of other surahs."
         }
       ],
-      "lifeInProphetsTime": "Mecca was a sanctuary town where blood could not be shed and a hunted man could not be taken. That protection was the town's whole business model, since it made the fairs and the pilgrimage possible. Swearing by that city while its own protections were being bent around one resident put the oath and the situation in the same sentence, and everyone listening knew it.",
-      "didYouKnow": "The third oath names a parent and a child without naming either, and the classical commentators fill the gap in three ways: the first human and all who came after, Abraham and the son who helped him build the sanctuary, or simply every father and every child. The Quran leaves it open, and the range is preserved rather than resolved.",
-      "theologicalSignificance": "Hardship is described as the condition of creation rather than as a punishment or an accident. That single move changes what a difficult life means: it is not evidence of disfavour and does not require an explanation. The oaths that precede it are all local and small, a town, a man, a parent, so the largest claim in the passage is grounded in the most ordinary things the listener could see from where he stood.",
+      "lifeInProphetsTime": "Mecca was a sanctuary town where blood could not be shed and a hunted man could not be seized. That protection was the town's whole business, since it made the fairs and the pilgrimage possible. The surah swears by that city while its own protections were being bent around one resident. The oath and the situation stand in one sentence, and everyone listening knew it.",
+      "didYouKnow": "The third oath names a parent and a child without naming either. Early scholars fill the gap in three ways. Some read it as the first human and all who came after. Some read it as Abraham and the son who helped him build the sanctuary. Some read it as every father and every child. The Quran leaves it open, and the range is kept rather than settled.",
+      "theologicalSignificance": "Hardship is called the condition of being made, not a punishment and not an accident. That one move changes what a hard life means. It is not a sign of disfavour, and it needs no explanation. The oaths before it are all local and small: a town, a man, a parent. So the largest claim in the passage rests on the most ordinary things the listener could see from where he stood.",
       "crossReferences": [
         {
           "ref": "90:11-16",
@@ -48,17 +48,20 @@
           "why": "Records the origin of the sanctuary sworn by here, a prayer for the same city's safety."
         }
       ],
-      "applyIt": "The next time you catch yourself thinking that life should be easier than this, try the sentence in this ayah as a working assumption for a day: it was made hard on purpose. Notice what stops being an emergency. The claim is not a comfort, but people generally find that expecting difficulty costs less energy than resenting it.",
+      "applyIt": "The next time you catch yourself thinking life should be easier than this, try the sentence in this ayah as a working assumption for a day. It was made hard on purpose. Notice what stops being an emergency. The claim is not a comfort. But people generally find that expecting difficulty costs less energy than resenting it.",
       "exploreFurther": [
         "90:6-20",
         "84:6-9",
         "2:126-129"
       ],
+      "explainEasier": "God swears by the city of Mecca, and by a father and his child. Then he says that people were made to live with hard work and strain. He asks if a man really thinks that nobody has power over him.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:34:38.071Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T09:52:57.069Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -153,8 +156,8 @@
         }
       ],
       "lifeInProphetsTime": "A mountain pass outside Mecca was a real thing, not a figure of speech. The routes north climbed between black rock, and a loaded camel took the steep sections slowly while the drivers walked. Everyone knew which passes were hard. Using that word for a moral act told the listener what kind of effort was meant: not sustained walking, but the short stretch where the ground goes up.",
-      "didYouKnow": "Five ayat in a row here end on the same rhyme, and the words chosen to carry it are unusual ones: the ascent, a neck, hunger, kinship, dust. The rhyme does part of the work, since the list arrives as a single sound repeated, and a listener hearing it once would have carried the whole sequence away.",
-      "theologicalSignificance": "The steep ascent is defined by actions rather than by states, and the actions chosen have a common feature: each transfers something a person owns to someone who cannot repay. Freedom, food, attention to a relative nobody else is helping. Belief is mentioned in the surah, but after this list rather than before it, which puts the ordering deliberately: the acts are named first and the faith is placed alongside them.",
+      "didYouKnow": "Five ayat in a row here end on the same rhyme. The words chosen to carry it are unusual ones: the ascent, a neck, hunger, kinship, dust. The rhyme does part of the work. The list arrives as a single sound repeated, and a listener hearing it once would have carried the whole sequence away.",
+      "theologicalSignificance": "The steep climb is defined by actions, not by states. The actions chosen share one feature. Each hands something a person owns to someone who cannot pay it back: freedom, food, care for a relative nobody else is helping. Belief is mentioned in the surah, but after this list rather than before it. The ordering is deliberate. The acts are named first, and the faith is set beside them.",
       "crossReferences": [
         {
           "ref": "90:16-18",
@@ -175,11 +178,14 @@
         "2:177",
         "76:5-12"
       ],
+      "explainEasier": "God says most people never take the hard road up. Then he explains what that road is. It means setting a slave free. It means giving food on a hungry day to an orphan who is one of your own relatives.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:34:38.072Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T09:52:57.069Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
