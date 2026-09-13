@@ -1,7 +1,7 @@
 {
   "surah": 49,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-12T10:43:33.105Z",
+  "generatedAt": "2026-09-13T09:59:03.348Z",
   "studies": [
     {
       "key": "49:1",
@@ -418,8 +418,8 @@
       "themeId": "community-and-brotherhood",
       "title": "Between Your Two Brothers",
       "tier": "discover",
-      "meaning": "The sentence has a restrictive particle at its head, so it reads as a limitation: believers are nothing other than brothers. The relationship is stated as a fact, and the instruction follows from it rather than creating it. Then the wording narrows sharply. Not your brothers in general but your two brothers, the dual form, which puts the reader between two specific people rather than in front of a community. Mercy is named as what reconciliation opens onto.",
-      "historicalContext": "Medinan, in a surah given over to the manners of a community rather than to its beliefs. The ayah before it deals with two groups of believers actually fighting, which the sources tie to a quarrel that broke out between clans in Medina, though the reports differ over which incident is meant. Medina had absorbed two tribes with a long history of war and a stream of arrivals from Mecca.",
+      "meaning": "The sentence has a restrictive particle at its head, so it reads as a limit: believers are nothing other than brothers. The relationship is stated as a fact. The instruction follows from it rather than creating it. Then the wording narrows sharply. Not your brothers in general, but your two brothers, the dual form. That puts the reader between two named people rather than in front of a crowd. Mercy is named as what reconciling opens onto.",
+      "historicalContext": "Medinan. The surah is given over to the manners of a community rather than to its beliefs. The ayah before it deals with two groups of believers actually fighting. The sources tie that to a quarrel between clans in Medina, though the reports differ over which incident is meant. Medina had taken in two tribes with a long history of war, and a stream of arrivals from Mecca.",
       "keyTerms": [
         {
           "arabic": "إِنَّمَا",
@@ -437,9 +437,9 @@
           "note": "The verb means to repair something broken and to make a thing sound. It is used of mending a wall and of settling a dispute, so the work described is practical rather than a change of feeling."
         }
       ],
-      "lifeInProphetsTime": "Two of Medina's tribes had fought each other for generations, the last battle a few years before the emigration, and nearly every household had a debt of blood outstanding. Arab custom settled such things with camels paid over, in front of witnesses, by a third party who stepped in and took the loss himself. Reconciliation was expensive, public and slow, and everyone hearing this ayah knew what it cost.",
-      "didYouKnow": "Surah 49 is only eighteen ayat long and addresses the believers directly five separate times, a rate found nowhere else in the Quran. Almost none of it concerns doctrine. Its subject is the voice, the ear and the tongue: how loudly to speak near the Prophet Muhammad (peace be upon him), what to do with a rumour, and what names to call people.",
-      "theologicalSignificance": "Brotherhood is presented as a state that already exists rather than a goal to work towards, which changes what a quarrel is. Two believers in conflict are not failing to become brothers; they are brothers behaving otherwise. The ayah then attaches mercy to the act of repair, so reconciliation between people is treated as the condition on which mercy from God is hoped for, and the two are placed in one sentence.",
+      "lifeInProphetsTime": "Two of Medina's tribes had fought each other for generations. The last battle came a few years before the emigration. Nearly every household had a debt of blood outstanding. Arab custom settled such things with camels paid over in front of witnesses. A third party stepped in and took the loss himself. Putting things right was costly, public and slow, and everyone hearing this ayah knew what it cost.",
+      "didYouKnow": "Surah 49 is only eighteen ayat long. It addresses the believers directly five separate times, a rate found nowhere else in the Quran. Almost none of it concerns doctrine. Its subject is the voice, the ear and the tongue: how loudly to speak near the Prophet Muhammad (peace be upon him), what to do with a rumour, and what names to call people.",
+      "theologicalSignificance": "Brotherhood is presented as a state that already exists, not a goal to work towards. That changes what a quarrel is. Two believers in conflict are not failing to become brothers. They are brothers behaving otherwise. The ayah then attaches mercy to the act of repair. Setting people right is treated as the condition on which mercy from God is hoped for. The two are placed in one sentence.",
       "crossReferences": [
         {
           "ref": "49:9",
@@ -460,11 +460,14 @@
         "3:103",
         "8:1"
       ],
+      "explainEasier": "Believers are brothers to each other. So when two of them fall out, others should help them make peace. Keep God in mind, and you may be shown mercy.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-12T10:43:12.194Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T09:58:59.306Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
@@ -476,8 +479,8 @@
       "themeId": "speech-and-the-tongue",
       "title": "The Ranking You Cannot See",
       "tier": "discover",
-      "meaning": "Three ayat move from the mouth to the mind and out to the whole species. First, ridicule and nicknames, with a reason given rather than a threat: you do not know the ranking. Then suspicion, prying and speaking about the absent, brought to a stop by an image of eating a dead relative. Finally the address changes from believers to all people, and difference is explained as a device for recognition, with honour reassigned to awareness of God.",
-      "historicalContext": "Medinan, in a surah about how a community speaks to itself. Commentators attach reports to individual clauses here, describing mockery of a poor companion, a woman laughed at for her height, and a man called by a name he had left behind, but the reports vary and the classical writers treat the wording as general. Medina in these years was crowded with new arrivals from different tribes and different countries.",
+      "meaning": "Three ayat move from the mouth to the mind and out to the whole species. First, ridicule and nicknames. A reason is given rather than a threat: you do not know the ranking. Then suspicion, prying and speaking about the absent, brought to a stop by an image of eating a dead relative. Finally the address changes from believers to all people. Difference is explained as a device for recognising each other, and honour is reassigned to awareness of God.",
+      "historicalContext": "Medinan, in a surah about how a community speaks to itself. Early scholars attach reports to single clauses here. They describe mockery of a poor companion, a woman laughed at for her height, and a man called by a name he had left behind. But the reports vary, and the classical writers treat the wording as general. Medina in these years was crowded with new arrivals from different tribes and different countries.",
       "keyTerms": [
         {
           "arabic": "تَلْمِزُوٓا۟",
@@ -495,9 +498,9 @@
           "note": "A reciprocal form, so the knowing runs both ways at once. Difference is given a purpose in the same clause that creates it, and the purpose is acquaintance rather than tolerance or ranking."
         }
       ],
-      "lifeInProphetsTime": "Arab society ran on names. A man carried his father's name, his tribe's name, and often a nickname earned in public that stuck for life, describing a limp, a debt, a moment of cowardice. Poets made careers out of assigning them, and a well-aimed line could damage a family for a generation. Honour was a currency counted in ancestry, and this passage cancels the exchange rate in a single clause.",
-      "didYouKnow": "The first two ayat address the believers; the third turns to the whole human race, one of a small number of places where the Quran does that. The Arabic word it uses for peoples, larger groupings than tribes, appears nowhere else in the Book. The move from a quarrel between neighbours to the origin of every human being takes three sentences.",
-      "theologicalSignificance": "Two claims are set against each other. Human beings rank one another constantly, by tribe, wealth, appearance and name; the passage says the real ranking exists, is known, and is not visible to anyone doing the ranking. That makes contempt not merely unkind but uninformed. The reason attached to the warning against mockery is about knowledge rather than sentiment: the person you are laughing at may be better, and you have no access to the measure.",
+      "lifeInProphetsTime": "Arab society ran on names. A man carried his father's name and his tribe's name. He often carried a nickname earned in public that stuck for life: a limp, a debt, a moment of cowardice. Poets made careers out of handing them out, and a well-aimed line could damage a family for a generation. Honour was a currency counted in ancestry, and this passage cancels the exchange rate in a single clause.",
+      "didYouKnow": "The first two ayat address the believers. The third turns to the whole human race, one of a small number of places where the Quran does that. The Arabic word it uses for peoples, larger groupings than tribes, appears nowhere else in the Book. The move from a quarrel between neighbours to the origin of every human being takes three sentences.",
+      "theologicalSignificance": "Two claims are set against each other. Human beings rank one another constantly, by tribe, wealth, looks and name. The passage says the real ranking exists, is known, and is not visible to anyone doing the ranking. That makes contempt not merely unkind but uninformed. The reason attached to the warning against mockery is about knowledge, not feeling. The person you are laughing at may be better, and you have no access to the measure.",
       "crossReferences": [
         {
           "ref": "104:1",
@@ -518,11 +521,14 @@
         "30:22",
         "24:11-12"
       ],
+      "explainEasier": "God tells believers not to make fun of each other or use hurtful nicknames. Do not spy, and do not talk about people behind their backs. God made people into different nations so they could get to know each other. The best person is the one most careful of God.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T08:30:40.999Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T09:58:59.306Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     },
     {
