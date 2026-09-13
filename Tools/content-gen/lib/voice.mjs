@@ -14,7 +14,7 @@ export const VOICE_FIELDS = ["meaning", "historicalContext", "lifeInProphetsTime
 export const STRUCTURE_TALK = [
   /\b(the|this) (ayah|verse|passage|surah|section|sentence|clause|unit)( itself)? (is|was) (built|structured|composed|arranged|framed|made up|constructed)\b/i,
   /\b(three|four|five|two) (statements|clauses|sentences|assertions|denials|moves|steps)\b,? (each|the)\b/i,
-  /\b(the|its) (final|last|first|second|third|opening|closing|middle) (clause|sentence|half|statement|phrase|line)\b/i,
+  /\b(the|its) (final|last|first|second|third|opening|closing|middle) (clause|sentence|half|statement|phrase)\b/i,
   /\b(in|of) (structure|syntax)\b/i,
   /\b(in|of|by) (its )?(structure|syntax|form)\b/i,
   /\b(the|this) (ayah|verse|passage) (reads|works|functions|operates) (as|like) a\b/i,
