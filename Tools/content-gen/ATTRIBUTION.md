@@ -191,7 +191,60 @@ Amiri also covers all 69 code points used by `arabic-uthmani.json`.
 
 ---
 
-## 5. Where these strings surface in the app
+## 5. Reflections — `Content/reflections.json`
+
+The REFLECTION cards of the Discover feed carry no Quranic text. Each one is a saying of the
+Prophet, of a Companion, of one of the early generations, or of a classical scholar, with the
+work it comes from recorded beside it.
+
+**No published translation is used.** Every English rendering in `reflections.json` is written
+for the app, from the Arabic or Persian, and cut to card length — which is why `translator` is
+the literal string `"own"` on every entry, and why the build script refuses to write a file
+where it is anything else. The underlying texts are all classical and long out of copyright;
+what was avoided is the copyright on *modern renderings* of them, which is real. No entry is
+adapted from a modern translator's wording, and the catalogue admits no living author.
+
+Placement, not paraphrase, is what is vouched for: `confidence: "high"` means the saying can be
+found in the cited work by someone who opens it. Entries that could not be placed that firmly
+are kept at `medium` in `Tools/content-gen/reflections/catalogue.mjs` and are not written to
+`Content/reflections.json` at all. Locators are canonical numbers where the number is certain
+and book or chapter names where it is not; the honesty of the citation matters more than its
+precision.
+
+Works cited by the shipped entries:
+
+| Work | Author / compiler | Status |
+|---|---|---|
+| Sahih al-Bukhari | Muhammad ibn Isma'il al-Bukhari (d. 870) | classical, public domain |
+| Sahih Muslim | Muslim ibn al-Hajjaj (d. 875) | classical, public domain |
+| Riyad al-Salihin | Yahya ibn Sharaf al-Nawawi (d. 1277) | classical, public domain |
+| Al-Arba'in al-Nawawiyya | Yahya ibn Sharaf al-Nawawi (d. 1277) | classical, public domain |
+| Nahj al-Balagha | compiled by al-Sharif al-Radi (d. 1015), from Ali ibn Abi Talib | classical, public domain |
+| Hilyat al-Awliya | Abu Nu'aym al-Isfahani (d. 1038) | classical, public domain |
+| Al-Sira al-Nabawiyya | Ibn Hisham (d. 833), from Ibn Ishaq | classical, public domain |
+| Kitab al-Zuhd | Abdullah ibn al-Mubarak (d. 797) | classical, public domain |
+| Jami al-Ulum wa'l-Hikam | Ibn Rajab al-Hanbali (d. 1393) | classical, public domain |
+| Sirat Umar ibn Abd al-Aziz | Ibn al-Jawzi (d. 1201) | classical, public domain |
+| Ihya Ulum al-Din | Abu Hamid al-Ghazali (d. 1111) | classical, public domain |
+| Ayyuha al-Walad | Abu Hamid al-Ghazali (d. 1111) | classical, public domain |
+| Madarij al-Salikin | Ibn Qayyim al-Jawziyya (d. 1350) | classical, public domain |
+| Al-Fawa'id | Ibn Qayyim al-Jawziyya (d. 1350) | classical, public domain |
+| Al-Hikam | Ibn Ata'illah al-Iskandari (d. 1309) | classical, public domain |
+| Masnavi | Jalal al-Din Rumi (d. 1273) | classical, public domain |
+| Fihi Ma Fihi | Jalal al-Din Rumi (d. 1273) | classical, public domain |
+| Tadhkirat al-Awliya | Farid al-Din Attar (d. 1221) | classical, public domain |
+| Al-Akhlaq wa'l-Siyar | Ibn Hazm al-Andalusi (d. 1064) | classical, public domain |
+
+Three works above (`Kitab al-Zuhd`, `Sirat Umar ibn Abd al-Aziz`, `Al-Akhlaq wa'l-Siyar`) are
+cited only by entries currently held at `medium`, so they carry nothing in the shipped file
+yet. Run `node Tools/content-gen/build-reflections.mjs` for the live per-class counts.
+
+The editorial rules, including what is excluded — folk attribution, sectarian polemic, legal
+rulings, comparisons with other faiths, living authors — are `docs/content/reflections.md`.
+
+---
+
+## 6. Where these strings surface in the app
 
 | Surface | Must show |
 |---|---|
@@ -199,3 +252,4 @@ Amiri also covers all 69 code points used by `arabic-uthmani.json`.
 | Settings / About | "Quran text: Tanzil Project (tanzil.net), CC BY 3.0" with a link to tanzil.net |
 | Settings / About | "Arabic type: KFGQPC Uthmanic Hafs, © King Fahd Glorious Quran Printing Complex" and "Amiri, SIL OFL 1.1" |
 | Share cards / widgets | translation `abbrev` (e.g. `CLEAR`) is sufficient; the full attribution stays in the Translation sheet |
+| Reflection card | the `attribution` line verbatim; the work and locator belong in the card's detail, never a translator credit |

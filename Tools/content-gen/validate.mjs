@@ -3,6 +3,7 @@
 //
 //   node validate.mjs out/study      # assembled shards (the DoD gate)
 //   node validate.mjs work/cache     # raw batch results, before assembly
+//   node validate.mjs reflections    # Content/reflections.json (the Discover quote cards)
 //
 // Exits 0 only when every record passes every rule. Warnings do not fail.
 import fs from "node:fs";
@@ -288,7 +289,83 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
   return { errors, warnings };
 }
 
+/**
+ * The `reflections` sub-command: checks the artefact, not the catalogue.
+ *
+ * `build-reflections.mjs` already refuses to write a file that breaks a rule, so this is the
+ * gate that catches a `Content/reflections.json` edited by hand or left behind by an older
+ * catalogue. It re-reads the shipped file and re-applies the countable rules from
+ * `docs/content/reflections.md`: shape, word count, unique renderings, and themes that
+ * resolve against `Content/themes.json`.
+ */
+async function validateReflections() {
+  const { RULES } = await import("./build-reflections.mjs");
+  const repo = path.dirname(path.dirname(ROOT));
+  const file = path.join(repo, "Content", "reflections.json");
+  if (!fs.existsSync(file)) {
+    console.error(`no such file: ${file} — run node Tools/content-gen/build-reflections.mjs`);
+    process.exit(1);
+  }
+  const themeIds = new Set(
+    JSON.parse(fs.readFileSync(path.join(repo, "Content", "themes.json"), "utf8")).themes.map((t) => t.id),
+  );
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  const errors = [];
+  const err = (id, msg) => errors.push(`${id}: ${msg}`);
+
+  if (data.version !== RULES.version) errors.push(`file: version is ${data.version}, expected ${RULES.version}`);
+  if (data.generatedAt !== RULES.generatedAt) {
+    errors.push(`file: generatedAt is not the fixed string the build writes`);
+  }
+  if (!Array.isArray(data.items)) {
+    console.error("reflections.json has no items array");
+    process.exit(1);
+  }
+  if (data.count !== data.items.length) errors.push(`file: count ${data.count} but ${data.items.length} items`);
+  if (data.items.length < RULES.minShipped) {
+    errors.push(`file: ${data.items.length} items, at least ${RULES.minShipped} are needed`);
+  }
+
+  const ids = new Set();
+  const texts = new Map();
+  const byTheme = new Map([...themeIds].map((id) => [id, 0]));
+  for (const item of data.items) {
+    const id = item.id ?? "<no id>";
+    if (ids.has(id)) err(id, "duplicate id");
+    ids.add(id);
+    if (item.confidence !== "high") err(id, `confidence is "${item.confidence}"; only high ships`);
+    if (!item.attribution?.trim()) err(id, "no attribution");
+    if (!item.source?.work?.trim()) err(id, "no source work");
+    if (!item.source?.locator?.trim()) err(id, "no source locator");
+    if (item.source?.translator !== "own") err(id, "every rendering is the app's own");
+    const n = words(item.text ?? "");
+    if (n < RULES.words[0] || n > RULES.words[1]) {
+      err(id, `text is ${n} words, must be ${RULES.words[0]}-${RULES.words[1]}`);
+    }
+    if (hasArabic(item.text ?? "")) err(id, "text carries Arabic script");
+    if (item.arabic !== undefined && !hasArabic(item.arabic)) err(id, '"arabic" is not Arabic script');
+    const key = String(item.text).toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+    if (texts.has(key)) err(id, `same rendering as ${texts.get(key)}`);
+    else texts.set(key, id);
+    if (!Array.isArray(item.themes) || item.themes.length === 0) err(id, "no themes");
+    for (const theme of item.themes ?? []) {
+      if (!themeIds.has(theme)) err(id, `unknown theme "${theme}"`);
+      else byTheme.set(theme, byTheme.get(theme) + 1);
+    }
+  }
+  for (const [theme, n] of byTheme) {
+    if (n < RULES.minPerTheme) errors.push(`theme "${theme}": ${n} entries, at least ${RULES.minPerTheme}`);
+  }
+
+  console.log(`validated ${data.items.length} reflection(s) in Content/reflections.json`);
+  for (const e of errors) console.log(`ERROR ${e}`);
+  console.log(`\n${errors.length} error(s), 0 warning(s)`);
+  if (errors.length) process.exit(1);
+  console.log("OK");
+}
+
 function main(argv = process.argv.slice(2)) {
+  if (argv[0] === "reflections") return validateReflections();
   const dir = argv.find((a) => !a.startsWith("--")) ?? path.join(OUT, "study");
   if (!fs.existsSync(dir)) {
     console.error(`no such directory: ${dir}`);
