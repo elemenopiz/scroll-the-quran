@@ -3,6 +3,7 @@
 //
 //   node validate.mjs out/study      # assembled shards (the DoD gate)
 //   node validate.mjs work/cache     # raw batch results, before assembly
+//   node validate.mjs out/study --verbose   # + every readability warning, one per unit
 //
 // Exits 0 only when every record passes every rule. Warnings do not fail.
 import fs from "node:fs";
@@ -11,6 +12,7 @@ import Ajv from "ajv";
 import { ROOT, OUT, loadQuran, hasArabic, parseKey, refInBounds, words } from "./lib/data.mjs";
 import { loadPassages } from "./lib/units.mjs";
 import { nfc, looseArabic, unitUthmani, exactSpanFor } from "./lib/arabic.mjs";
+import { readability } from "./lib/readability.mjs";
 
 const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
 const PROSE_FIELDS = [
@@ -31,6 +33,13 @@ const BANNED = [
   [/\bin conclusion\b/i, "filler"],
   [/\bAllah\b/, "use \"God\" in English prose"],
 ];
+
+/**
+ * The stable head of every readability finding. `main` collapses the warning
+ * form: nearly every unit written before the simplify pass is over the target,
+ * and 3,000 identical lines would bury the findings that need reading.
+ */
+const READABILITY_TAG = "readability above target";
 
 /** Sections compared for near-duplication across the whole corpus. */
 const DUP_FIELDS = ["meaning", "didYouKnow", "applyIt"];
@@ -80,7 +89,14 @@ export function loadRecords(dir) {
     const full = path.join(dir, f);
     const raw = JSON.parse(fs.readFileSync(full, "utf8"));
     if (raw.body && raw.key) {
-      records.push({ key: raw.key, study: { ...raw.body, key: raw.key }, source: f, partial: true });
+      // A cache record has no `meta` yet — assemble.mjs stamps it — but the
+      // simplify marker lives on the record itself and decides whether the
+      // readability rule is an error or a warning, so carry it across.
+      const study = { ...raw.body, key: raw.key };
+      if (raw.simplified) {
+        study.meta = { ...(study.meta ?? {}), simplified: raw.simplified, author: raw.author };
+      }
+      records.push({ key: raw.key, study, source: f, partial: true });
     } else if (Array.isArray(raw)) {
       for (const s of raw) records.push({ key: s.key, study: s, source: f });
     } else if (raw.studies) {
@@ -97,6 +113,7 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
   ajv.addFormat("date-time", (v) => !Number.isNaN(Date.parse(v)));
   const full = ajv.compile(SCHEMA);
   const bounds = SCHEMA["x-wordBounds"];
+  const targets = SCHEMA["x-readability"];
   const errors = [];
   const warnings = [];
   const unitKeys = new Set(Object.values(passages));
@@ -146,6 +163,45 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
     }
     if (typeof s.title === "string" && /[.!?]$/.test(s.title.trim())) {
       err(key, "title has trailing punctuation");
+    }
+
+    // Readability. `meta.simplified` marks a unit the rewrite pass has already
+    // been through: for those the grade ceilings are a hard gate. For the rest
+    // the same miss is a warning, so the corpus written before the pass existed
+    // still validates while `author.mjs rewrite-todo` can still find it.
+    const simplified = typeof s.meta?.simplified === "string" && s.meta.simplified.trim() !== "";
+    const note = simplified ? err : warn;
+    const misses = [];
+    for (const [field, ceiling] of Object.entries(targets.sections)) {
+      const text = s[field];
+      if (typeof text !== "string" || !text.trim()) continue;
+      const r = readability(text);
+      if (r.grade > ceiling) misses.push(`${field} grade ${r.grade} > ${ceiling}`);
+      if (r.wordsPerSentence > targets.meanSentenceWords) {
+        misses.push(`${field} ${r.wordsPerSentence} words/sentence > ${targets.meanSentenceWords}`);
+      }
+    }
+    if (misses.length) note(key, `${READABILITY_TAG} — ${misses.join("; ")}`);
+
+    // explainEasier is optional on the corpus at large and required once a unit
+    // has been simplified. Its structural rules (word bounds, script, banned
+    // phrasing) are errors wherever the field exists; only the grade follows the
+    // simplified/unsimplified split.
+    if (s.explainEasier !== undefined || simplified) {
+      const text = s.explainEasier;
+      if (typeof text !== "string" || !text.trim()) {
+        if (simplified) err(key, "explainEasier missing (a simplified unit must carry it)");
+      } else {
+        checkWords(key, "explainEasier", text);
+        if (hasArabic(text)) err(key, "explainEasier contains Arabic script");
+        const foreign = foreignScript(text);
+        if (foreign) err(key, `explainEasier contains non-Latin script: ${foreign}`);
+        for (const [re, why] of BANNED) if (re.test(text)) err(key, `explainEasier: ${why} (${re})`);
+        const g = readability(text).grade;
+        if (g > targets.explainEasierGrade) {
+          note(key, `${READABILITY_TAG} — explainEasier grade ${g} > ${targets.explainEasierGrade}`);
+        }
+      }
     }
 
     // Nested prose (key-term glosses/notes, cross-reference reasons): banned phrasing applies there too.
@@ -310,7 +366,18 @@ function main(argv = process.argv.slice(2)) {
   const { errors, warnings } = validateRecords(records, { quran, themeIds, themeTitles, passages });
 
   console.log(`validated ${records.length} record(s) in ${dir}`);
-  for (const w of warnings) console.log(`WARN  ${w}`);
+  const verbose = argv.includes("--verbose");
+  const readabilityWarnings = warnings.filter((w) => w.includes(READABILITY_TAG));
+  for (const w of warnings) {
+    if (!verbose && w.includes(READABILITY_TAG)) continue;
+    console.log(`WARN  ${w}`);
+  }
+  if (!verbose && readabilityWarnings.length) {
+    console.log(
+      `WARN  ${READABILITY_TAG} in ${readabilityWarnings.length} unsimplified unit(s) — ` +
+        "node author.mjs rewrite-todo (--verbose here lists them)",
+    );
+  }
   for (const e of errors) console.log(`ERROR ${e}`);
   console.log(`\n${errors.length} error(s), ${warnings.length} warning(s)`);
   if (errors.length) process.exit(1);

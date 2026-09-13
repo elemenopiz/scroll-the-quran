@@ -65,6 +65,83 @@ func schemaSampleDecodes() throws {
     #expect(study.explorePassages.count == 2)
 }
 
+/// The same unit after the simplify pass: an `explainEasier` line, and a `meta` carrying the
+/// two keys `assemble.mjs` only stamps on a rewrite.
+private let simplifiedSample = """
+{
+  "key": "112:1-4",
+  "theme": "Sincerity",
+  "themeId": "sincerity",
+  "title": "Four Lines Of Denial",
+  "tier": "discover",
+  "meaning": "Four lines, and each one takes something away.",
+  "historicalContext": "Meccan.",
+  "keyTerms": [],
+  "lifeInProphetsTime": "Arabian gods were family.",
+  "didYouKnow": "It is four short lines.",
+  "theologicalSignificance": "Describing God by denial stops the description turning into a picture.",
+  "crossReferences": [],
+  "applyIt": "Say these four lines once.",
+  "exploreFurther": [],
+  "explainEasier": "God is one. He is not made of anything. No one is like him at all.",
+  "meta": {
+    "model": "claude-opus-5",
+    "promptVersion": "p1",
+    "generatedAt": "2026-09-13T00:00:00Z",
+    "reviewed": false,
+    "simplified": "p1",
+    "author": "opus-session"
+  }
+}
+"""
+
+@Test("A simplified unit decodes its explainEasier line, and an unsimplified one reads as nil")
+func explainEasierDecodesWhenPresent() throws {
+    let simplified = try JSONDecoder().decode(Study.self, from: Data(simplifiedSample.utf8))
+    #expect(simplified.explainEasier == "God is one. He is not made of anything. No one is like him at all.")
+    #expect(simplified.hasExplainEasier)
+    // meta.simplified / meta.author are the generator's bookkeeping; the app ignores them without
+    // failing the shard.
+    #expect(simplified.meta.promptVersion == "p1")
+
+    let plain = try JSONDecoder().decode(Study.self, from: Data(schemaSample.utf8))
+    #expect(plain.explainEasier == nil)
+    #expect(!plain.hasExplainEasier)
+}
+
+@Test("An explainEasier line that is present but empty reads as absent")
+func emptyExplainEasierIsNil() throws {
+    let json = #"{ "key": "94:5-6", "title": "Ease", "explainEasier": "   " }"#
+    let study = try JSONDecoder().decode(Study.self, from: Data(json.utf8))
+    #expect(study.explainEasier == nil)
+    #expect(!study.hasExplainEasier)
+}
+
+@Test("A shard mixing simplified and unsimplified units decodes whole")
+func shardMixesSimplifiedAndNot() throws {
+    let json = """
+    {
+      "surah": 112, "promptVersion": "p1", "generatedAt": "2026-09-13T00:00:00Z",
+      "studies": [\(simplifiedSample), \(schemaSample)]
+    }
+    """
+    let shard = try JSONDecoder().decode(StudyShard.self, from: Data(json.utf8))
+    #expect(shard.units.count == 2)
+    #expect(shard.units.compactMap(\.explainEasier).count == 1)
+    #expect(shard.units.filter(\.hasExplainEasier).map(\.key) == ["112:1-4"])
+}
+
+@Test("explainEasier survives an encode/decode round trip, and stays absent when it is nil")
+func explainEasierRoundTrips() throws {
+    let simplified = try JSONDecoder().decode(Study.self, from: Data(simplifiedSample.utf8))
+    let again = try JSONDecoder().decode(Study.self, from: JSONEncoder().encode(simplified))
+    #expect(again.explainEasier == simplified.explainEasier)
+
+    let plain = try JSONDecoder().decode(Study.self, from: Data(schemaSample.utf8))
+    let encoded = try JSONEncoder().encode(plain)
+    #expect(!String(decoding: encoded, as: UTF8.self).contains("explainEasier"))
+}
+
 @Test("Study survives an encode/decode round trip unchanged")
 func studyRoundTrips() throws {
     let study = try JSONDecoder().decode(Study.self, from: Data(schemaSample.utf8))
