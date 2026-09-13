@@ -239,6 +239,7 @@ func everyScreenIDIsRoutable() {
         "onboarding-slide3", "onboarding-slide4", "onboarding-reviews",
         "paywall-trial", "paywall-plans", "gift-closed", "gift-open",
         "community", "discover", "deepstudy", "reader", "translation-sheet", "notes-sheet",
+        "reader-verse-menu",
         "home", "plans-sheet", "plan-detail", "verse-search",
     ]
     for id in manifest {

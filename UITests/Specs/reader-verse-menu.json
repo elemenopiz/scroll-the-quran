@@ -1,0 +1,24 @@
+{
+  "requires": "reader-routing",
+  "note": "Phase 4n. The verse menu over the reader at 2:255. The owner measured the original off a screenshot (iPhone 402x874 pt); these frames are that screen as we render it, recorded from .build/snapshots/reader-verse-menu.png and converted into the 393x852 pt reference space every other spec uses (x * 0.978, y * 0.975). There is no reference PNG on disk, so this spec and Reference/scores.md are the only registration this screen has. What matched the owner's measurement exactly: the Cancel pill (x 24..114.7, 91x40 pt, 17 pt below the sheet's top edge), the sheet's top edge (251 against 249), the reference band (343..360 against ~346), the divider's 24 pt inset each side, the 22 pt from the divider to the first row, the 54 pt row (55 pt pitch with the hairline between), the icon centred on x 38.7 (39) and the label at x 69.7 (68). What does not: the divider and the rows sit ~34 pt lower than the original's, because our preview is four lines of Ayat al-Kursi where the original's Isaiah 40:31 is two — the block above the divider is content-sized and the brief allows up to four lines, so every fixed relationship is exact and only the content-driven origin differs. Frames are XCUITest *accessibility* frames (a control's includes its tap padding), so everything here is asserted for existence and the row pitch is asserted arithmetically in ReaderTests.testVerseMenuRowPitch instead. The spec stays wrapped in a `spec` envelope so LayoutSpecTests' loader leaves it to ReaderTests, which unwraps it.",
+  "spec": {
+    "id": "reader-verse-menu",
+    "route": "reader-verse-menu",
+    "appearance": "dark",
+    "reference": { "width": 393, "height": 852 },
+    "tolerance": 8,
+    "elements": [
+      { "name": "screen.reader", "query": "identifier", "frame": { "x": 0, "y": 0, "width": 393, "height": 852 }, "existenceOnly": true },
+      { "name": "reader.verseMenu", "query": "identifier", "frame": { "x": 0, "y": 245, "width": 393, "height": 607 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.cancel", "query": "identifier", "frame": { "x": 23.5, "y": 261.5, "width": 89, "height": 39 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.reference", "query": "identifier", "frame": { "x": 23.5, "y": 334, "width": 346, "height": 24 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.verse", "query": "identifier", "frame": { "x": 23.5, "y": 370, "width": 346, "height": 96 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.explain", "query": "identifier", "frame": { "x": 0, "y": 491.6, "width": 393, "height": 53.6 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.original", "query": "identifier", "frame": { "x": 0, "y": 545.2, "width": 393, "height": 53.6 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.deeper", "query": "identifier", "frame": { "x": 0, "y": 598.8, "width": 393, "height": 53.6 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.related", "query": "identifier", "frame": { "x": 0, "y": 652.4, "width": 393, "height": 53.6 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.widget", "query": "identifier", "frame": { "x": 0, "y": 706.1, "width": 393, "height": 53.6 }, "existenceOnly": true },
+      { "name": "reader.verseMenu.snapshot", "query": "identifier", "frame": { "x": 0, "y": 759.7, "width": 393, "height": 60 }, "existenceOnly": true }
+    ]
+  }
+}

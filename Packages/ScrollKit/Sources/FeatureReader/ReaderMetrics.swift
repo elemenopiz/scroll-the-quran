@@ -1,5 +1,6 @@
 import CoreGraphics
 import DesignSystem
+import Foundation
 
 /// Reader geometry measured off `Reference/reader-dark.png` (1179x2556 px for a 393x852 pt
 /// screen, so **pt = px / 3**), the same way `DesignSystem/Components/ComponentMetrics.swift`
@@ -73,6 +74,12 @@ public enum ReaderMetrics {
     public static let versePadding: CGFloat = 32
     /// Verse ink ends 1458 px, the reference line starts 1555 px: 97 px = 32.3 pt.
     public static let verseReferenceSpacing = Spacing.xxxl
+    /// The clear air between the logo card's bottom edge and the top of the verse block, when
+    /// a long ayah has to be pushed down to make room (Phase 4n). Nothing in `reader-dark`
+    /// measures it — there the block clears the card by 200 pt — so it is the page margin.
+    public static let logoCardToVerse = Spacing.xl
+    /// How much of the page's bottom the verse block will not cross when it is pushed down.
+    public static let verseBottomMargin = Spacing.xxl
     /// Verse + reference span y 409..528 pt, centred on 468.6 pt, which is 57.7 % of the way
     /// down the 710 pt page (safe-area top 59 to safe-area bottom 769).
     public static let verseCentreFraction: CGFloat = 0.577
@@ -133,6 +140,9 @@ public enum ReaderMetrics {
     public static let toastLeadingInset: CGFloat = 50
     /// Toast bottom is 2195 px = 731.7 pt, 37 pt above the safe-area bottom.
     public static let toastBottomInset: CGFloat = 37
+    /// How long a confirmation ("Widget verse set") stays up. Long enough to read twice,
+    /// short enough that it is gone before the reader swipes on to the next ayah.
+    public static let toastDuration: TimeInterval = 2.4
 
     // MARK: - Sheets
 

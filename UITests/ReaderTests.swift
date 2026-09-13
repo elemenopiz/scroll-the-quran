@@ -153,8 +153,19 @@ final class ReaderTests: XCTestCase {
     /// slice of it, if the ayah is split — and the verse text below the toolbar, not under it.
     ///
     /// The baseline is measured rather than assumed: two swipes page the reader with the
-    /// pager's own gesture, which lands on a boundary by definition, and every page centres
-    /// its verse block identically, so the frame recorded there is where a scrub must land.
+    /// pager's own gesture, which lands on a boundary by definition, so the frame recorded
+    /// there is where a scrub must land.
+    ///
+    /// **What is compared is the page's top edge, not its centre** (Phase 4n). A reader page
+    /// is an `accessibilityElement(children: .contain)`, so its frame is the union of its
+    /// children, not the page's geometry — and since 4n the union's *height* is content-
+    /// dependent: a long ayah is a taller block and is pushed down to clear the logo card
+    /// (`VersePageView.verseCentreY`), which moved the union's centre by 15.7 pt between two
+    /// perfectly-settled pages and failed this test on a pager that was exactly where it
+    /// should be. The union's **top** is not content-dependent: every page now carries the
+    /// logo card, pinned at `VersePageView.logoCardTop`, and it is the topmost child of all
+    /// of them. So the card is the fixed anchor this assertion needs, and comparing minY
+    /// measures the boundary rather than the verse.
     ///
     /// The targets come from a seeded generator, and the seed and the five fractions are
     /// printed, so a failure can be reproduced exactly.
@@ -173,8 +184,8 @@ final class ReaderTests: XCTestCase {
         pager.swipeUp()
         pager.swipeUp()
         let baseline = try onlyVisiblePage(in: app, after: "two swipes")
-        let settledCentre = baseline.frame.midY
-        print(String(format: "RAIL SCRUB baseline %@ centre %.1f", baseline.identifier, settledCentre))
+        let settledTop = baseline.frame.minY
+        print(String(format: "RAIL SCRUB baseline %@ top %.1f", baseline.identifier, settledTop))
 
         let seed: UInt64 = 0x4A_5241_494C // "JRAIL"
         var generator = SeededGenerator(seed: seed)
@@ -192,9 +203,9 @@ final class ReaderTests: XCTestCase {
             let label = String(format: "a scrub to %.3f of the rail", target)
             let page = try onlyVisiblePage(in: app, after: label)
             XCTAssertEqual(
-                Double(page.frame.midY), Double(settledCentre), accuracy: 2,
-                "\(label) parked mid-page: \(page.identifier) sits at \(page.frame.midY), "
-                    + "a page the pager settled on sits at \(settledCentre)"
+                Double(page.frame.minY), Double(settledTop), accuracy: 2,
+                "\(label) parked mid-page: \(page.identifier) starts at \(page.frame.minY), "
+                    + "a page the pager settled on starts at \(settledTop)"
             )
 
             // 2. Where the finger pointed, give or take the 2.19 pt pitch of a 286-ayah rail.
@@ -320,6 +331,123 @@ final class ReaderTests: XCTestCase {
         let editorAgain = relaunched.descendants(matching: .any).matching(identifier: "notesSheet.editor").firstMatch
         XCTAssertTrue(editorAgain.waitForExistence(timeout: 5))
         XCTAssertEqual(editorAgain.value as? String, note, "the note should have been autosaved")
+    }
+
+    // MARK: - Verse menu (Phase 4n)
+
+    /// Tapping the logo card raises the menu, it carries all six rows, and Cancel puts it
+    /// away. The route opens on 2:255, which has a study unit, so the four study rows are
+    /// there; `--screenshot` runs are premium, so none of them is behind the paywall.
+    func testLogoCardRaisesTheVerseMenu() throws {
+        let app = try launchReader(route: "reader-verse-menu")
+        defer { app.terminate() }
+
+        let menu = app.descendants(matching: .any).matching(identifier: "reader.verseMenu").firstMatch
+        XCTAssertTrue(menu.waitForExistence(timeout: 5), "the route should open with the menu already up")
+
+        for row in Self.verseMenuRows {
+            let element = app.descendants(matching: .any)
+                .matching(identifier: "reader.verseMenu.\(row)").firstMatch
+            XCTAssertTrue(element.waitForExistence(timeout: 5), "the menu is missing its '\(row)' row")
+        }
+
+        let cancel = app.descendants(matching: .any)
+            .matching(identifier: "reader.verseMenu.cancel").firstMatch
+        XCTAssertTrue(cancel.waitForExistence(timeout: 5))
+        cancel.tap()
+        XCTAssertTrue(
+            waitForDisappearance(of: menu),
+            "Cancel should dismiss the verse menu"
+        )
+    }
+
+    /// The card is on **every** page now, not only the surah's first, so the menu is one tap
+    /// away mid-surah — and it names the ayah the reader is actually on.
+    func testTheLogoCardIsOnEveryPageAndOpensTheMenuThere() throws {
+        let app = try launchReader()
+        defer { app.terminate() }
+
+        let pager = app.descendants(matching: .any).matching(identifier: "reader.pager").firstMatch
+        XCTAssertTrue(pager.waitForExistence(timeout: 5))
+        pager.swipeUp()
+        pager.swipeUp()
+        XCTAssertTrue(page(app, ayah: 2).waitForExistence(timeout: 5))
+
+        // Scoped to the page on screen, not `app...firstMatch`: the `LazyVStack` keeps the
+        // neighbouring pages realised and each of them now has a logo card of its own, so the
+        // first match in traversal order is the card on 2:1 — which is what this test caught
+        // the first time it ran, opening the menu on the wrong ayah.
+        let logo = page(app, ayah: 2).descendants(matching: .any)
+            .matching(identifier: "reader.logo").firstMatch
+        XCTAssertTrue(logo.waitForExistence(timeout: 5), "the logo card should be on a mid-surah page too")
+        logo.tap()
+
+        let reference = app.descendants(matching: .any)
+            .matching(identifier: "reader.verseMenu.reference").firstMatch
+        XCTAssertTrue(reference.waitForExistence(timeout: 5))
+        XCTAssertEqual(reference.label, "Al-Baqarah 2:2", "the menu should name the ayah on screen")
+    }
+
+    /// "Snapshot Verse" pushes the share card the reader's own share button also opens —
+    /// pushed inside the same sheet, because iOS presents one sheet at a time.
+    func testSnapshotVerseOpensTheShareView() throws {
+        let app = try launchReader(route: "reader-verse-menu")
+        defer { app.terminate() }
+
+        let snapshot = app.descendants(matching: .any)
+            .matching(identifier: "reader.verseMenu.snapshot").firstMatch
+        XCTAssertTrue(snapshot.waitForExistence(timeout: 5))
+        snapshot.tap()
+
+        let card = app.descendants(matching: .any).matching(identifier: "shareSheet.card").firstMatch
+        XCTAssertTrue(card.waitForExistence(timeout: 5), "Snapshot Verse should open the share card")
+    }
+
+    /// The rows sit on a 54 pt pitch (`VerseMenuMetrics.rowHeight`), which is the number the
+    /// owner measured off the original. Asserted as a *pitch* rather than six absolute y's:
+    /// the block above the rows is content-sized — a longer ayah is a taller preview — so the
+    /// spacing is the invariant and the origin is not.
+    func testVerseMenuRowPitch() throws {
+        let app = try launchReader(route: "reader-verse-menu")
+        defer { app.terminate() }
+
+        let screen = app.windows.firstMatch.frame
+        XCTAssertGreaterThan(screen.height, 0, "could not read the window frame")
+        let scaleY = 852.0 / screen.height
+
+        var tops: [CGFloat] = []
+        for row in Self.verseMenuRows {
+            let element = app.descendants(matching: .any)
+                .matching(identifier: "reader.verseMenu.\(row)").firstMatch
+            XCTAssertTrue(element.waitForExistence(timeout: 5), "no '\(row)' row")
+            tops.append(element.frame.minY * scaleY)
+        }
+
+        XCTAssertEqual(tops, tops.sorted(), "the rows are not in the order the brief lists")
+        // The last row carries a subtitle, so it is taller than 54; the five pitches above
+        // it are the grid.
+        for (offset, pitch) in zip(tops, tops.dropFirst()).map({ $1 - $0 }).dropLast().enumerated() {
+            XCTAssertEqual(
+                Double(pitch), 54, accuracy: 4,
+                "rows \(Self.verseMenuRows[offset]) -> \(Self.verseMenuRows[offset + 1]) "
+                    + "are \(pitch) pt apart, not the measured 54"
+            )
+        }
+    }
+
+    /// The six rows, in the order the original lists them.
+    private static let verseMenuRows = [
+        "explain", "original", "deeper", "related", "widget", "snapshot",
+    ]
+
+    /// XCUITest has no "wait until gone", and `exists` on a dismissing sheet lags a frame.
+    private func waitForDisappearance(of element: XCUIElement, timeout: TimeInterval = 5) -> Bool {
+        let deadline = Date().addingTimeInterval(timeout)
+        while Date() < deadline {
+            if !element.exists { return true }
+            Thread.sleep(forTimeInterval: 0.2)
+        }
+        return !element.exists
     }
 
     // MARK: - Performance

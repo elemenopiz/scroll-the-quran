@@ -17,6 +17,81 @@ the app with `--reset-state`, so a score does not depend on what the last run le
 App Group container (it used to: `plan-detail` scored 0.179 on a dirty container and 0.138
 on a clean one from the identical build).
 
+## Reader verse menu — Phase 4n, 2026-09-13
+
+iPhone 17 Pro (`ScrollSim-3d`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`, `SCROLL_CAPTURE_SETTLE=6`.
+Tapping the reader's logo card now raises a verse menu, and the card is on **every** page
+rather than only the surah's first. One screen re-scored, one screen added, **no threshold
+changed**.
+
+| id | before | Phase 4n | threshold | delta |
+| --- | ---: | ---: | ---: | ---: |
+| `reader-dark` | 0.0386839 | 0.0386839 | 0.05 | ±0.0000 |
+| `reader-verse-menu` | — | n/a | — | new, no reference PNG |
+
+`reader-dark` is byte-for-byte the score it was before the change, measured on main first and
+then in the worktree on the same simulator. That is the point of the number: its reference is
+the surah's page 0, which already carried the card, and Phase 4n only made that card a
+`Button` — `.pressable` scales on touch and draws nothing at rest — so the capture had to be
+identical, and it is.
+
+### `reader-verse-menu` has no reference PNG yet
+
+The owner measured the original from a screenshot on 2026-09-13 and wrote the numbers into the
+brief, but no `reader-verse-menu.png` was dropped into `Reference/`. So the id is registered
+with `"file": null` in both `Reference/manifest.json` and `Tools/snapshot/thresholds.json`, and
+`compare.sh` now prints `n/a` and exits 0 for a screen in that state instead of failing the
+sweep on a missing file. **To bring it into the gate: drop `Reference/reader-verse-menu.png`
+in, set `file` and a `threshold` in both files, and re-run.** Until then the registration is
+`UITests/Specs/reader-verse-menu.json` and the measurements below.
+
+The capture is `.build/snapshots/reader-verse-menu.png`, taken at 402x874 pt. Measured against
+the owner's numbers:
+
+| element | owner's measurement | ours | |
+| --- | ---: | ---: | --- |
+| sheet top edge | 249 | 251.3 | +2.3 |
+| grabber | 256 | ~258 | +2 |
+| Cancel pill, x | 24…115 | 24.0…114.7 | exact |
+| Cancel pill, y (40 pt tall) | 266…306 | 268.3…308.0 (40.0) | +2.3 |
+| reference band | ~346 | 342.7…360.3 | on it |
+| divider inset, each side | 24 | 24.0 (spans 354.0) | exact |
+| divider → first row | 22 | 22.0 | exact |
+| row pitch | 54 | 55.0 | +1.0, the hairline between rows |
+| icon centre x | 39 | 38.7 | −0.3 |
+| label x | 68 | 69.7 | +1.7 |
+| separator span | label x → 24 from the right | 310.0 (= 402 − 68 − 24) | exact |
+| header divider y | 448 | 482.3 | **+34.3 — see below** |
+| first row top y | 470 | 504.3 | **+34.3 — see below** |
+
+**The one deviation: the rows sit 34 pt lower, and they should.** Everything above the divider
+is content-sized. The original's screenshot is Isaiah 40:31, whose preview is two lines; ours
+is Ayat al-Kursi, which fills the brief's own four-line allowance (one muted Arabic line plus
+three of English). Every fixed relationship in the block — the Cancel pill's offset, the
+divider's inset, the 22 pt to the rows, the 54 pt row — lands exactly, and the origin follows
+the verse. A shorter ayah puts the divider back on 448.
+
+**`presentationDetents(.fraction:)` is not a fraction of the screen.** The brief's "covers the
+bottom 71.5 % of the screen" cannot be handed to the modifier as `0.715`: the fraction is of
+the *sheet's* maximum height, and iOS keeps an inset above even a `.large` sheet. Measured:
+`.fraction(0.715)` put the top edge at 291.0 pt, 42 pt below the measurement, so the sheet's
+container is 815.4 pt of an 874 pt screen (93.3 %). `VerseMenuMetrics.detentFraction` is
+therefore `screenCoverage / sheetContainerRatio` = 0.766, which lands on 251.3, and
+`VerseMenuTests.detentMatchesTheMeasurement` asserts the conversion so it cannot quietly rot.
+
+### The logo card on every page: one layout fix, and it is not cosmetic
+
+Putting the card on every page turned `ReaderMetrics.verseCentreFraction` from a rule into a
+preference. On page 0 the block is three lines and 57.7 % clears the card by 200 pt. A long
+ayah at the reader's 23 pt is a ~510 pt block, and centring *that* on 57.7 % ran its first
+Arabic line straight through the mark — seen on the simulator on 2:255 before it was fixed.
+`VersePageView` now measures the block and clamps its centre: never higher than clear of the
+card, never lower than clear of the bottom margin, and 57.7 % whenever both allow. Clearing
+the card wins if a block cannot satisfy both, because a verse with a legible opening and a long
+tail is still readable and one whose first line is under the mark is not. `reader-dark`'s own
+block clears the card unaided, so the clamp is inert there and the score did not move;
+`VersePageGeometryTests` asserts all of it as arithmetic rather than leaving it to a capture.
+
 ## Phase 4h — the phone frame, 2026-09-12
 
 iPhone 17 Pro (`ScrollSim-3d`, iOS 26), `SCROLL_FIXED_DATE=2026-09-14`. Five screens

@@ -20,6 +20,7 @@
     { "id": "deepstudy-crossrefs",      "file": "deepstudy-crossrefs.png",      "appearance": "dark",  "route": "deepstudy#cross-references",  "threshold": 0.14 },
     { "id": "deepstudy-bottom",         "file": "deepstudy-bottom.png",         "appearance": "dark",  "route": "deepstudy#apply-it","threshold": 0.14 },
     { "id": "reader-dark",              "file": "reader-dark.png",              "appearance": "dark",  "route": "reader",            "threshold": 0.10, "notes": "surah start: logo card above verse 1, hint toast visible" },
+    { "id": "reader-verse-menu",        "file": null,                           "appearance": "dark",  "route": "reader-verse-menu", "threshold": null, "notes": "Phase 4n. Tapping the reader's logo card raises the verse menu. The owner measured it from a screenshot but has not dropped the PNG in, so there is no reference and no threshold: compare.sh captures it and prints n/a. See Reference/scores.md." },
     { "id": "translation-sheet",        "file": "translation-sheet.png",        "appearance": "dark",  "route": "translation-sheet", "threshold": 0.10 },
     { "id": "notes-sheet",              "file": "notes-sheet.png",              "appearance": "dark",  "route": "notes-sheet",       "threshold": 0.12, "notes": "keyboard visible; mask bottom 45% when comparing" },
     { "id": "home-dark",                "file": "home-dark.png",                "appearance": "dark",  "route": "home#scrolled",     "threshold": 0.10, "notes": "scrolled past hero card" },

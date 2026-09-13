@@ -21,7 +21,7 @@ final class RoutingTests: XCTestCase {
         "paywall-trial", "paywall-plans", "gift-closed", "gift-open",
         "community", "discover",
         "deepstudy", "deepstudy#original-language", "deepstudy#cross-references", "deepstudy#apply-it",
-        "reader", "translation-sheet", "notes-sheet",
+        "reader", "translation-sheet", "notes-sheet", "reader-verse-menu",
         "home", "home#scrolled",
         "plans-sheet", "plan-detail", "verse-search",
         "gallery", "tabbar", "widget-gallery",

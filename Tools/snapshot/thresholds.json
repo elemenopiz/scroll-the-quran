@@ -136,6 +136,12 @@
       "negate": true,
       "notes": "no light reference of the reader exists; the light appearance is the same layout with the tokens mirrored, so the capture is negated before comparing. Phase 4e accepted deviation: the 112 pt logo card, as reader-dark."
     },
+    "reader-verse-menu": {
+      "file": null,
+      "appearance": "dark",
+      "route": "reader-verse-menu",
+      "notes": "Phase 4n. The verse menu over the reader at 2:255. The owner has no PNG of this screen on disk yet, so `file` is null: compare.sh captures it and prints `n/a` instead of scoring it. Drop `reader-verse-menu.png` into Reference/ and give it a threshold to bring it into the gate."
+    },
     "translation-sheet": {
       "file": "translation-sheet.png",
       "appearance": "dark",

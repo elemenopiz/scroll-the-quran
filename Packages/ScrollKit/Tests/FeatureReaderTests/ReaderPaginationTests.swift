@@ -26,6 +26,25 @@ struct ReaderPaginationTests {
         #expect(pages.last?.kind == .handoff)
     }
 
+    /// Phase 4n: the logo card is the verse menu's tap target, so it is on every page the
+    /// reader can act from — the opening card and every slice of every ayah — and on none of
+    /// the handoff sentinel, which is on screen for one frame and has no ayah.
+    @Test("every verse page carries the logo card, and the handoff sentinel does not")
+    func logoCardOnEveryPage() {
+        let pages = ReaderPagination.pages(
+            for: Self.surah(2, ayahCount: 3),
+            // 12 words at a 5-word limit, so ayah 1 splits into three continuation pages.
+            source: .fixture { verse in
+                verse.ayah == 1 ? String(repeating: "word ", count: 12) : "Ayah \(verse.ayah)."
+            },
+            maxWords: 5
+        )
+        let split = pages.filter { $0.kind == .verse && $0.id.ayah == 1 }
+        #expect(split.count > 1, "the fixture must split ayah 1 for this test to mean anything")
+        #expect(pages.filter { $0.kind != .handoff }.allSatisfy { $0.showsLogoCard })
+        #expect(pages.filter { $0.kind == .handoff }.allSatisfy { !$0.showsLogoCard })
+    }
+
     @Test("the last surah has no handoff page")
     func lastSurahHasNoHandoff() {
         let pages = ReaderPagination.pages(
