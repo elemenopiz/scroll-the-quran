@@ -1,0 +1,78 @@
+{
+  "note": "Phase 4o. Frames RECORDED off the running app on a 402x874 pt simulator (ScrollSim-3e, iOS 26) and normalised to the 393x852 pt reference space — not measured off a PNG; there is no Reference/discover-reflection.png yet. The card is the day's first REFLECTION card, put on page 0 by the --screenshot discover-reflection route so the pager frames it the way it frames every other capture. On SCROLL_FIXED_DATE=2026-09-14 that card is Al-Ghazali's 'The heart is a mirror…', whose saying sets in six lines at 26 pt; the disc, the label and the attribution move with the quote's line count because the four blocks are centred on the card's centre as one group, so those rows are this card's, not every reflection's. What is identical on all 167 — and what this spec is really guarding — is the card's own frame: it is exactly the study card's (DiscoverCardLayout.cardHeight, same x, same y), which is what lets the pager land on a reflection the way it lands on a study card.",
+  "id": "discover-reflection",
+  "route": "discover-reflection",
+  "appearance": "dark",
+  "reference": {
+    "width": 393,
+    "height": 852
+  },
+  "tolerance": 6,
+  "elements": [
+    {
+      "name": "discover.reflection",
+      "query": "identifier",
+      "frame": {
+        "x": 15.6,
+        "y": 121.5,
+        "width": 361.7,
+        "height": 592.4
+      },
+      "note": "The study card's frame exactly: 592.4 pt on the 393x852 canvas is DiscoverCardLayout.cardHeight (607.365 pt on the 402x874 one), top 121.5, bottom 713.9. Compare discover-dark's discover.card at 120.6/594.3 — the same card fill, measured a phase apart and inside the 6 pt tolerance."
+    },
+    {
+      "name": "discover.reflection.mark",
+      "query": "identifier",
+      "frame": {
+        "x": 161.0,
+        "y": 211.9,
+        "width": 71.4,
+        "height": 75.9
+      },
+      "note": "The 73 pt disc, centred on the card's centre line (x 196.5 in reference points). It reports 75.9 pt tall rather than 73: the accessibility frame is the union of the disc and the open-quote glyph's line box, and a 44 pt line box nudged down onto the disc's centre overhangs the bottom edge by ~5 pt. Only the box overhangs — the glyph's ink sits well inside the fill, and the disc's own layout size is 73x73, so nothing below it moves."
+    },
+    {
+      "name": "discover.reflection.label",
+      "query": "identifier",
+      "frame": {
+        "x": 155.4,
+        "y": 323.9,
+        "width": 82.1,
+        "height": 13.0
+      },
+      "note": "REFLECTION, 42 pt under the disc's bottom edge."
+    },
+    {
+      "name": "discover.reflection.quote",
+      "query": "identifier",
+      "frame": {
+        "x": 54.7,
+        "y": 368.0,
+        "width": 283.5,
+        "height": 208.6
+      },
+      "note": "Inset 40 pt from the card's edge on each side (283.5 pt of a 393 pt canvas). Six lines at 26 pt: 208.6 = 6 x 34.8 in the reference space, which is 6 x 35.65 (26 x the serif's 1.371 line ratio) on the capture canvas. There is no lineLimit on this text: a reflection is never elided — ReflectionCardLayout steps 26 -> 24 -> 22 pt to hold six lines and lets the floor take a seventh rather than cut a word."
+    },
+    {
+      "name": "discover.reflection.attribution",
+      "query": "identifier",
+      "frame": {
+        "x": 147.0,
+        "y": 603.8,
+        "width": 99.1,
+        "height": 19.8
+      },
+      "note": "'— Al-Ghazali', 28 pt under the last line of the saying. One line, shrinking like the study card's title does for the long ones ('The Prophet Muhammad (peace be upon him)' is about 8 % wider than the card)."
+    },
+    {
+      "name": "Discover",
+      "query": "tabBarButton",
+      "frame": {
+        "x": 100.7,
+        "y": 772.1,
+        "width": 93.9,
+        "height": 46.8
+      }
+    }
+  ]
+}
