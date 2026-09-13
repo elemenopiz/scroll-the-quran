@@ -23,7 +23,7 @@ The reader is an English-speaking Muslim or a curious newcomer on a phone, often
 
 # Words
 
-Plain wins wherever the plain word is true. Swap: commentators → early scholars; intercession → speaking up for someone before God; accountability → answering for what you do; hypothetical → imagined; intermediaries → go-betweens; lexicographers → early Arabic dictionary writers; establishes / affirms → shows, says; encompasses → covers; manifestation → sign; subsequent → later; prior to → before; in order to → to. Keep a technical word only when the note is teaching it and explains it on the spot ("the Day of Resurrection, the day everyone is raised").
+Plain wins wherever the plain word is true. Swap: commentators → early scholars; intercession → speaking up for someone before God; accountability → answering for what you do; hypothetical → imagined; intermediaries → go-betweens; lexicographers → early Arabic dictionary writers; establishes / affirms → shows, says; encompasses → covers; manifestation → sign; subsequent → later; prior to → before; in order to → to. Keep "surah" and "verse" as the corpus does (never "chapter" for a surah). Keep a technical word only when the note is teaching it and explains it on the spot ("the Day of Resurrection, the day everyone is raised").
 
 # The targets
 
