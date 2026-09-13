@@ -14,6 +14,13 @@
 //   node author.mjs assemble
 //   node author.mjs status
 //
+// The simplify pass (docs/tasks/content-simplify.md) rewrites units that already
+// exist so they read at grade 8.5 or below and gain an `explainEasier` line:
+//
+//   node author.mjs rewrite-todo --only discover --limit 55
+//   node author.mjs rewrite 2:255
+//   node author.mjs rewrite-dir bodies/
+//
 // An author never edits out/study/*.json by hand: write -> assemble -> validate.
 import fs from "node:fs";
 import path from "node:path";
@@ -21,8 +28,9 @@ import { OUT, loadQuran } from "./lib/data.mjs";
 import { discoverKeys } from "./lib/units.mjs";
 import { PROMPT_VERSION } from "./lib/prompt.mjs";
 import {
-  AUTHOR_MODEL, DEFAULT_AUTHOR, ensureUnits, todoUnits, promptFor, validateBodies,
-  normaliseBody, writeRecord, statusReport, assembledKeys,
+  AUTHOR_MODEL, DEFAULT_AUTHOR, SIMPLIFY_VERSION, ensureUnits, todoUnits, promptFor,
+  validateBodies, normaliseBody, writeRecord, statusReport, assembledKeys,
+  rewriteTodoUnits, rewritePromptFor, checkRewriteFidelity, simplifiedKeys,
 } from "./lib/author.mjs";
 import { main as assembleMain } from "./assemble.mjs";
 
@@ -49,6 +57,19 @@ const USAGE = `usage: node author.mjs <command> [options]
 
   status [--model NAME]
         Units total / cached / assembled / Discover remaining, per surah.
+
+  rewrite-todo [--only discover|all|surah:N|keys:a,b] [--limit N] [--json]
+        Units that exist today and have not been through the simplify pass,
+        with the grade of their worst section and which sections are over.
+
+  rewrite <key>
+        prompts/simplify.md, the passage, what the unit measures today and the
+        current body — the whole turn a rewrite agent works from.
+
+  rewrite-dir <dir> [--author NAME] [--model NAME]
+        Validate a directory of rewritten <key>.json bodies against the full
+        rule set plus the readability targets, check nothing that must stay
+        verbatim moved, and cache them with meta.simplified set. All-or-nothing.
 `;
 
 /** Flags that take a value; everything else beginning with "--" is a switch. */
@@ -233,6 +254,85 @@ function cmdStatus(argv) {
   }
 }
 
+// --- the simplify pass -------------------------------------------------------
+
+function cmdRewriteTodo(argv) {
+  const only = arg(argv, "--only", "discover");
+  const limitRaw = arg(argv, "--limit");
+  const units = rewriteTodoUnits({
+    only,
+    limit: limitRaw ? Number(limitRaw) : null,
+    model: arg(argv, "--model", null),
+  });
+  if (argv.includes("--json")) {
+    console.log(JSON.stringify(units, null, 2));
+    return;
+  }
+  for (const u of units) {
+    console.log(
+      `${u.key.padEnd(12)} worst grade ${String(u.worstGrade).padStart(5)}  ` +
+        `${u.tier.padEnd(8)} ${u.over.length} over: ${u.over.join(", ") || "-"}`,
+    );
+  }
+  console.log(`\n${units.length} unit(s) to rewrite (--only ${only}).`);
+  console.log(`${simplifiedKeys().size} unit(s) already simplified.`);
+}
+
+function cmdRewrite(argv) {
+  const key = positionals(argv)[0];
+  if (!key) fail("usage: node author.mjs rewrite <key>");
+  console.log(rewritePromptFor(key, { model: arg(argv, "--model", null) }).text);
+}
+
+function cmdRewriteDir(argv) {
+  const dir = positionals(argv)[0];
+  if (!dir) fail("usage: node author.mjs rewrite-dir <dir> [--author NAME]");
+  if (!fs.existsSync(dir)) fail(`no such directory: ${dir}`);
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort();
+  if (!files.length) fail(`${dir}: no .json bodies found`);
+
+  const entries = [];
+  for (const f of files) {
+    try {
+      entries.push({
+        key: keyFromFilename(f),
+        body: JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")),
+      });
+    } catch (e) {
+      fail(`${f}: not valid JSON (${e.message})`);
+    }
+  }
+  console.log(`${entries.length} rewritten body/bodies from ${dir}`);
+
+  const model = arg(argv, "--model", AUTHOR_MODEL);
+  const author = arg(argv, "--author", DEFAULT_AUTHOR);
+
+  // Two passes, both reported before anything is written: what must not have
+  // moved since the previous version, then the full rule set with the
+  // readability targets as errors (that is what `simplified` buys).
+  const results = validateBodies(entries, { model, simplified: SIMPLIFY_VERSION, author });
+  let bad = 0;
+  for (const { key, body } of entries) {
+    const res = results.get(key) ?? { errors: [], warnings: [] };
+    const fidelity = checkRewriteFidelity(key, body, { model });
+    const errors = [...fidelity.errors, ...res.errors];
+    const warnings = [...fidelity.warnings, ...res.warnings];
+    if (errors.length || warnings.length) report({ errors, warnings });
+    if (errors.length) bad++;
+  }
+  if (bad) {
+    console.error(`\n${bad} of ${entries.length} rewrite(s) rejected. Nothing written.`);
+    process.exit(1);
+  }
+
+  for (const { key, body } of entries) {
+    const { body: clean } = normaliseBody(body, key);
+    const { file } = writeRecord(key, clean, { author, model, simplified: SIMPLIFY_VERSION });
+    console.log(`wrote ${path.relative(process.cwd(), file)}`);
+  }
+  console.log(`\n${entries.length} rewrite(s) cached. Next: node author.mjs assemble`);
+}
+
 const COMMANDS = {
   todo: cmdTodo,
   prompt: cmdPrompt,
@@ -240,6 +340,9 @@ const COMMANDS = {
   "write-dir": cmdWriteDir,
   assemble: cmdAssemble,
   status: cmdStatus,
+  "rewrite-todo": cmdRewriteTodo,
+  rewrite: cmdRewrite,
+  "rewrite-dir": cmdRewriteDir,
 };
 
 function main(argv = process.argv.slice(2)) {

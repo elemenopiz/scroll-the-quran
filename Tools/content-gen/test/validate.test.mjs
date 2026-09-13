@@ -9,6 +9,10 @@ import { loadPassages } from "../lib/units.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const base = JSON.parse(fs.readFileSync(path.join(here, "fixtures", "valid-112.json"), "utf8"));
+/** The same unit after the simplify pass: plain prose, an explainEasier line, meta.simplified. */
+const simplifiedBase = JSON.parse(
+  fs.readFileSync(path.join(here, "fixtures", "simplified-112.json"), "utf8"),
+);
 const THEMES = JSON.parse(fs.readFileSync(path.join(here, "..", "out", "themes.json"), "utf8")).themes;
 const ctx = {
   quran: loadQuran(),
@@ -19,6 +23,10 @@ const ctx = {
 
 const run = (mutate = (s) => s) => {
   const study = mutate(structuredClone(base));
+  return validateRecords([{ key: study.key, study, source: "fixture" }], ctx);
+};
+const runSimplified = (mutate = (s) => s) => {
+  const study = mutate(structuredClone(simplifiedBase));
   return validateRecords([{ key: study.key, study, source: "fixture" }], ctx);
 };
 const errorsMatching = (res, re) => res.errors.filter((e) => re.test(e));
@@ -300,4 +308,133 @@ test("flags an applyIt exercise reused in another unit", () => {
       "readings are recorded without preference in the standard manuals of the tradition.";
   });
   assert.ok(errorsMatching(res, /applyIt is a near-duplicate of 113:1-5/).length === 1);
+});
+
+
+// --- readability -------------------------------------------------------------
+
+const DENSE =
+  "The apodictic methodology of apophatic predication instantiated herein systematically " +
+  "forecloses anthropomorphic conceptualisation, insofar as every affirmative attribution " +
+  "would necessarily derive from contingent creaturely particularity, and the consequent " +
+  "definitional residuum remains nonetheless recitable by an unlettered child of the era.";
+
+test("a simplified unit passes the readability targets", () => {
+  const res = runSimplified();
+  assert.deepEqual(res.errors, []);
+  assert.deepEqual(errorsMatching(res, /readability/), []);
+});
+
+test("readability misses are errors once meta.simplified is set", () => {
+  const res = runSimplified((s) => {
+    s.meaning = DENSE;
+    return s;
+  });
+  const hits = errorsMatching(res, /readability above target/);
+  assert.equal(hits.length, 1, res.errors.join("\n"));
+  assert.match(hits[0], /meaning grade \d+(\.\d+)? > 8\.5/);
+  assert.match(hits[0], /meaning \d+(\.\d+)? words\/sentence > 20/);
+});
+
+test("the same miss is only a warning on a unit the simplify pass has not seen", () => {
+  const res = run((s) => {
+    s.meaning = DENSE;
+    return s;
+  });
+  assert.deepEqual(errorsMatching(res, /readability/), []);
+  assert.equal(res.warnings.filter((w) => /readability above target/.test(w)).length, 1);
+});
+
+test("each section is held to its own ceiling", () => {
+  // didYouKnow and historicalContext are allowed 9.5; the rest 8.5.
+  // Grade 9.1: over lifeInProphetsTime's 8.5 ceiling, under historicalContext's 9.5.
+  const between =
+    "The surah came down in Mecca, and the sources report a question about the lineage of " +
+    "God. Arabian gods carried a family line and a home region, so the question was a normal " +
+    "one to ask. The answer refuses the whole category rather than naming a better ancestor.";
+  const res = runSimplified((s) => {
+    s.historicalContext = between;
+    s.lifeInProphetsTime = between;
+    return s;
+  });
+  const hits = errorsMatching(res, /readability above target/);
+  assert.equal(hits.length, 1, hits.join("\n"));
+  assert.match(hits[0], /lifeInProphetsTime grade/);
+  assert.ok(!/historicalContext grade/.test(hits[0]), hits[0]);
+});
+
+test("a long average sentence fails even when the words are short", () => {
+  const rambling =
+    "He is one and he is the one everyone turns to and he needs nothing at all from anyone, " +
+    "and he did not father a child and no one fathered him, and there is no one at all like " +
+    "him in any way that a person could ever think of or point to or name or hold in mind.";
+  const res = runSimplified((s) => {
+    s.applyIt = rambling;
+    return s;
+  });
+  const hits = errorsMatching(res, /readability above target/);
+  assert.equal(hits.length, 1, hits.join("\n"));
+  assert.match(hits[0], /applyIt \d+(\.\d+)? words\/sentence > 20/);
+});
+
+// --- explainEasier -----------------------------------------------------------
+
+test("explainEasier is required once a unit is simplified", () => {
+  const res = runSimplified((s) => {
+    delete s.explainEasier;
+    return s;
+  });
+  assert.equal(errorsMatching(res, /explainEasier missing/).length, 1);
+});
+
+test("explainEasier is optional on a unit the simplify pass has not seen", () => {
+  const res = run();
+  assert.ok(!("explainEasier" in base));
+  assert.deepEqual(errorsMatching(res, /explainEasier/), []);
+});
+
+test("explainEasier is held to 25-50 words", () => {
+  const short = runSimplified((s) => {
+    s.explainEasier = "God is one and nothing is like him.";
+    return s;
+  });
+  assert.equal(errorsMatching(short, /explainEasier is 8 words, must be 25-50/).length, 1);
+
+  const long = runSimplified((s) => {
+    s.explainEasier = `${s.explainEasier} ${"and he is still one ".repeat(6)}`;
+    return s;
+  });
+  assert.equal(errorsMatching(long, /explainEasier is \d+ words, must be 25-50/).length, 1);
+});
+
+test("explainEasier must read at grade 6 or below", () => {
+  const res = runSimplified((s) => {
+    s.explainEasier =
+      "This passage establishes the doctrine of divine omniscience and absolute sovereignty, " +
+      "articulating a theological proposition regarding the incomparability of the creator.";
+    return s;
+  });
+  assert.equal(errorsMatching(res, /explainEasier grade \d+(\.\d+)? > 6/).length, 1);
+});
+
+test("explainEasier may not carry Arabic script or a ruling", () => {
+  const arabic = runSimplified((s) => {
+    s.explainEasier = s.explainEasier.replace("God is one", "God is أَحَدٌ one");
+    return s;
+  });
+  assert.equal(errorsMatching(arabic, /explainEasier contains Arabic script/).length, 1);
+
+  const ruling = runSimplified((s) => {
+    s.explainEasier = `You must say this line tonight. ${s.explainEasier}`;
+    return s;
+  });
+  assert.ok(errorsMatching(ruling, /explainEasier: prescriptive ruling/).length === 1);
+});
+
+test("a structural problem in explainEasier is an error even before the simplify pass", () => {
+  const res = run((s) => {
+    s.explainEasier = "Too short.";
+    return s;
+  });
+  assert.equal(errorsMatching(res, /explainEasier is 2 words, must be 25-50/).length, 1);
 });

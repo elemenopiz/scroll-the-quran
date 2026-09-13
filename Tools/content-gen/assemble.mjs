@@ -17,9 +17,12 @@ import { PROMPT_VERSION } from "./lib/prompt.mjs";
 import { cacheDir } from "./build-requests.mjs";
 
 const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
+// x-sectionOrder is the nine Deep Study sections in display order; explainEasier
+// is not one of them (the reader's verse menu shows it), so it gets its own slot
+// after them rather than a tenth entry there.
 const FIELD_ORDER = [
   "key", "surah", "start", "end", "theme", "themeId", "title", "tier",
-  ...SCHEMA["x-sectionOrder"], "meta",
+  ...SCHEMA["x-sectionOrder"], ...SCHEMA["x-optionalModelFields"], "meta",
 ];
 
 export function loadCache({ model = null, promptVersion = PROMPT_VERSION } = {}) {
@@ -46,6 +49,11 @@ export function assembleStudy(cached, unit) {
       promptVersion: cached.promptVersion,
       generatedAt: cached.receivedAt ?? new Date().toISOString(),
       reviewed: false,
+      // Only a rewrite stamps these, so every unit written before the simplify
+      // pass re-assembles byte for byte.
+      ...(cached.simplified
+        ? { simplified: cached.simplified, author: cached.author ?? "" }
+        : {}),
     },
   };
   const ordered = {};

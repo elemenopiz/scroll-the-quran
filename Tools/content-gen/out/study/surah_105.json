@@ -1,7 +1,7 @@
 {
   "surah": 105,
   "promptVersion": "p1",
-  "generatedAt": "2026-09-09T09:49:56.243Z",
+  "generatedAt": "2026-09-13T09:53:01.178Z",
   "studies": [
     {
       "key": "105:1-5",
@@ -13,7 +13,7 @@
       "title": "The Year Of The Elephant",
       "tier": "discover",
       "meaning": "The surah is a question rather than a narrative: have you not seen what your Lord did. The event is assumed known, so almost nothing is described. An army came, its plan was put into confusion, birds were sent, and the result is given in one image drawn from farming. The scale of the reversal is the point: the largest animal anyone in Arabia had seen was undone by the smallest creatures in the sky.",
-      "historicalContext": "Meccan, and the event it refers to is dated by the Arabs themselves: an army came from the south with an elephant to destroy the sanctuary at Mecca and did not succeed. The year was named after the animal, and the sources place the birth of the Prophet Muhammad (peace be upon him) in or near it. The first audience included people whose fathers had watched it happen.",
+      "historicalContext": "Meccan. The Arabs dated the event themselves. An army came from the south with an elephant to destroy the sanctuary at Mecca and did not succeed. The year was named after the animal. The sources place the birth of the Prophet Muhammad (peace be upon him) in or near it. The first audience included people whose fathers had watched it happen.",
       "keyTerms": [
         {
           "arabic": "كَيْدَهُمْ",
@@ -23,17 +23,17 @@
         {
           "arabic": "أَبَابِيلَ",
           "gloss": "in flocks, in successive groups",
-          "note": "A rare word with no agreed singular, describing birds arriving in waves rather than all at once. The commentators discuss it at length precisely because it appears nowhere else."
+          "note": "A rare word with no agreed singular, describing birds arriving in waves rather than all at once. Early scholars discuss it at length precisely because it appears nowhere else."
         },
         {
           "arabic": "كَعَصْفٍ مَّأْكُولٍۭ",
           "gloss": "like eaten straw",
-          "note": "The image is stalks after the grain has been stripped and the leaves chewed off by animals: not burned, not broken, just used up. It ends the surah on an agricultural detail rather than a battlefield."
+          "note": "The image is stalks after the grain has been stripped and the leaves chewed off by animals: not burned, not broken, just used up. It ends the surah on a farming detail rather than a battlefield."
         }
       ],
-      "lifeInProphetsTime": "No one in Mecca had seen an elephant before that year, and after it the animal gave its name to a whole generation; people said they were born in the year of the elephant. Mecca's authority rested on the sanctuary being inviolable, and an army arriving to demolish it threatened the town's entire position, not only its shrine.",
-      "didYouKnow": "This is one of the very few passages in the Quran that refer to an event in recent Arabian history rather than to the older prophetic accounts. The surah after it follows directly from this one in several readings, since the safety of the Meccan caravans depended on the sanctuary that was defended here.",
-      "theologicalSignificance": "The passage argues from a case rather than from a principle, and it chooses one the audience could verify from their own families. That makes it evidence rather than doctrine. The detail about the plan being confused before the birds arrive also puts the decisive moment earlier than the visible one, which is the surah's real claim: what defeated the army was not the stones but the decision, and the stones only carried it out.",
+      "lifeInProphetsTime": "No one in Mecca had seen an elephant before that year. Afterwards the animal gave its name to a whole generation, and people said they were born in the year of the elephant. Mecca's standing rested on the sanctuary being untouchable. An army arriving to pull it down threatened the town's whole position, not only its shrine.",
+      "didYouKnow": "Most of the Quran's accounts look back to the older prophets. This passage is one of the very few that point to an event in recent Arabian history. In several readings the surah after it follows straight on from this one. The safety of the Meccan caravans rested on the sanctuary defended here.",
+      "theologicalSignificance": "The passage argues from a case rather than from a rule, and it picks one the audience could check with their own families. That makes it evidence rather than doctrine. The detail about the plan being confused before the birds arrive also puts the decisive moment earlier than the visible one. That is the surah's real claim. What defeated the army was not the stones but the decision, and the stones only carried it out.",
       "crossReferences": [
         {
           "ref": "106:1-4",
@@ -54,11 +54,14 @@
         "8:30",
         "22:25-29"
       ],
+      "explainEasier": "God asks if people remember what he did to the army with the elephant. He ruined their plan. He sent flocks of birds that dropped hard clay stones on them. They were left like straw that has been chewed up.",
       "meta": {
         "model": "claude-opus-5",
         "promptVersion": "p1",
-        "generatedAt": "2026-09-09T09:49:38.356Z",
-        "reviewed": false
+        "generatedAt": "2026-09-13T09:52:57.063Z",
+        "reviewed": false,
+        "simplified": "p1",
+        "author": "opus-session"
       }
     }
   ]

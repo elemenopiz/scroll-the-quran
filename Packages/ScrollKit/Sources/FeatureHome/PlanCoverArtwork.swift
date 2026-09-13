@@ -72,36 +72,63 @@ enum PlanCoverArtwork {
 ///
 /// The catalog is compiled into the app, so `Bundle.main` is the only bundle that has it:
 /// SwiftUI previews and package tests render the fallback wash instead of the photograph.
+///
+/// **The crop is anchored on the subject, not the frame's centre.** All three places a cover
+/// is drawn — the 173.5 pt plans-grid tile, Home's 125/133 pt squares and the 1.95:1
+/// plan-detail hero — crop rather than letterbox, and the renders put their subject
+/// off-centre by design (see `PlanCoverFocal.swift`). So the photograph is sized to fill,
+/// slid onto its slug's anchor and clipped: the overflow is trimmed on the side *away* from
+/// the subject. The scrim and the fallback stay full-frame — they are ramps, not pictures,
+/// and have nothing to keep whole.
 struct PlanCoverImage: View {
     let plan: ReadingPlan?
     var scrimmed = false
 
     var body: some View {
-        ZStack {
-            fallback
-            if let name = plan.flatMap(PlanCoverArtwork.assetName(for:)) {
-                Image(name, bundle: .main)
-                    .resizable()
-                    .scaledToFill()
-            } else if plan == nil {
-                // No plan running: Home's "Pick a plan to begin" card had a featureless
-                // grey square where the cover goes, which reads as artwork that failed to
-                // load rather than as an empty state. The same closed book Deep Study's
-                // empty state uses, so the two agree.
-                GeometryReader { proxy in
+        GeometryReader { proxy in
+            ZStack {
+                fallback
+                if let name = plan.flatMap(PlanCoverArtwork.assetName(for:)) {
+                    focalImage(named: name, in: proxy.size)
+                } else if plan == nil {
+                    // No plan running: Home's "Pick a plan to begin" card had a featureless
+                    // grey square where the cover goes, which reads as artwork that failed to
+                    // load rather than as an empty state. The same closed book Deep Study's
+                    // empty state uses, so the two agree.
                     Image(systemName: "book.closed")
                         .font(.system(size: min(proxy.size.width, proxy.size.height) * 0.38, weight: .regular))
                         .foregroundStyle(Color.textTertiary)
-                        .frame(width: proxy.size.width, height: proxy.size.height)
+                }
+                if scrimmed {
+                    Image(PlanCoverArtwork.scrimName, bundle: .main)
+                        .resizable()
+                        .scaledToFill()
                 }
             }
-            if scrimmed {
-                Image(PlanCoverArtwork.scrimName, bundle: .main)
-                    .resizable()
-                    .scaledToFill()
-            }
+            .frame(width: proxy.size.width, height: proxy.size.height)
+            .clipped()
         }
         .accessibilityHidden(true)
+    }
+
+    /// The photograph scaled to fill `size`, then slid onto its focal anchor.
+    ///
+    /// The filled size is computed rather than left to `.scaledToFill()`, because the offset
+    /// is derived from it and `scaledToFill` never reports it. `.offset` is a render-time
+    /// shift — the layout box stays `size` — so the enclosing `.clipped()` still trims to the
+    /// tile, and the shift is measured from the centred position because `.frame` centres a
+    /// sized child before the offset is applied.
+    private func focalImage(named name: String, in size: CGSize) -> some View {
+        let filled = PlanCoverArtwork.filledSize(container: size)
+        let shift = PlanCoverArtwork.centerOffset(
+            container: size,
+            scaled: filled,
+            focal: PlanCoverArtwork.focal(for: plan)
+        )
+        return Image(name, bundle: .main)
+            .resizable()
+            .frame(width: filled.width, height: filled.height)
+            .offset(x: shift.width, y: shift.height)
     }
 
     /// A deterministic two-stop wash keyed off the plan id, so a missing catalog still gives

@@ -108,6 +108,10 @@
       "type": "string",
       "description": "One concrete thing the reader can do today, in the second person. 30-80 words."
     },
+    "explainEasier": {
+      "type": "string",
+      "description": "The passage as you would tell it to a twelve-year-old: what it is saying, in the plainest words that stay true. 25-50 words, grade 6 or below, no Arabic script. Optional - written by the simplify pass (`author.mjs rewrite`) and shown in the reader's verse menu under 'Explain Easier'."
+    },
     "exploreFurther": {
       "type": "array",
       "minItems": 2,
@@ -126,7 +130,15 @@
         "model": { "type": "string" },
         "promptVersion": { "type": "string" },
         "generatedAt": { "type": "string", "format": "date-time" },
-        "reviewed": { "type": "boolean" }
+        "reviewed": { "type": "boolean" },
+        "simplified": {
+          "type": "string",
+          "description": "The promptVersion of the simplify pass this unit has been through, e.g. \"p1\". Present only on rewritten units; it is what makes validate.mjs enforce x-readability as errors rather than warnings."
+        },
+        "author": {
+          "type": "string",
+          "description": "Who wrote the rewrite, e.g. \"opus-session\". Stamped alongside `simplified`."
+        }
       }
     }
   },
@@ -140,13 +152,28 @@
     "applyIt": [30, 80],
     "keyTerms[].gloss": [1, 6],
     "keyTerms[].note": [15, 45],
-    "crossReferences[].why": [8, 30]
+    "crossReferences[].why": [8, 30],
+    "explainEasier": [25, 50]
+  },
+  "x-readability": {
+    "$comment": "Flesch-Kincaid grade ceilings, measured by lib/readability.mjs. validate.mjs reports a miss as an error on units whose meta.simplified is set and as a warning on the rest, so the corpus that predates the simplify pass still validates.",
+    "sections": {
+      "meaning": 8.5,
+      "historicalContext": 9.5,
+      "lifeInProphetsTime": 8.5,
+      "didYouKnow": 9.5,
+      "theologicalSignificance": 8.5,
+      "applyIt": 8.5
+    },
+    "meanSentenceWords": 20,
+    "explainEasierGrade": 6
   },
   "x-modelFields": [
     "theme", "themeId", "title", "meaning", "historicalContext", "keyTerms",
     "lifeInProphetsTime", "didYouKnow", "theologicalSignificance",
     "crossReferences", "applyIt", "exploreFurther"
   ],
+  "x-optionalModelFields": ["explainEasier"],
   "x-sectionOrder": [
     "meaning", "historicalContext", "keyTerms", "lifeInProphetsTime",
     "didYouKnow", "theologicalSignificance", "crossReferences", "applyIt",

@@ -242,6 +242,19 @@ because even the smallest tile would upscale it.
 nothing maps to it (`Tools/content-gen/plans/catalogue.mjs` holds the mapping,
 `ArtworkAsset.planCoverBySlug` and `PlanCoverArtwork.slugByPlanID` mirror it).
 
+**The app crops these on the subject, not on the centre.** Every render puts its subject
+off-centre — the prompts in `docs/design/asset-prompts.md` asked for the lower-left or
+lower-right third, so a title could sit over a calm top — and all four places a cover is
+drawn crop rather than letterbox. A centre crop therefore sliced exactly the thing the cover
+is *of*. Phase 4l moved the window instead of the artwork: a per-slug anchor in
+`Packages/ScrollKit/Sources/FeatureHome/PlanCoverFocal.swift` (`PlanCoverArtwork.focal`)
+says where the subject is, and `PlanCoverImage` fills, offsets and clips on it, so the
+overflow is trimmed on the side *away* from the subject. **Nothing here changed** — the
+JPEGs are still the full 3:2 frame, cut by `covers-from-src.sh` with no gravity of its own,
+which is what lets the anchor live in one table in code rather than in 18 pre-cropped files.
+`docs/design/cover-crops-contact.jpg` shows all 18 as centre square | focal square | focal
+1.95:1 hero. Re-crop a render and the anchor has to be re-read with it.
+
 Composite `plan-cover-scrim` over any cover (`.overlay`, normal blend) so white
 titles read; covers themselves are left clean so they can also be used
 full-bleed or with a custom gradient.

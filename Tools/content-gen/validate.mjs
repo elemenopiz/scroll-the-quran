@@ -3,6 +3,8 @@
 //
 //   node validate.mjs out/study      # assembled shards (the DoD gate)
 //   node validate.mjs work/cache     # raw batch results, before assembly
+//   node validate.mjs out/study --verbose   # + every readability warning, one per unit
+//   node validate.mjs reflections    # Content/reflections.json (the Discover quote cards)
 //
 // Exits 0 only when every record passes every rule. Warnings do not fail.
 import fs from "node:fs";
@@ -11,6 +13,7 @@ import Ajv from "ajv";
 import { ROOT, OUT, loadQuran, hasArabic, parseKey, refInBounds, words } from "./lib/data.mjs";
 import { loadPassages } from "./lib/units.mjs";
 import { nfc, looseArabic, unitUthmani, exactSpanFor } from "./lib/arabic.mjs";
+import { readability } from "./lib/readability.mjs";
 
 const SCHEMA = JSON.parse(fs.readFileSync(path.join(ROOT, "schema", "study.schema.json"), "utf8"));
 const PROSE_FIELDS = [
@@ -31,6 +34,13 @@ const BANNED = [
   [/\bin conclusion\b/i, "filler"],
   [/\bAllah\b/, "use \"God\" in English prose"],
 ];
+
+/**
+ * The stable head of every readability finding. `main` collapses the warning
+ * form: nearly every unit written before the simplify pass is over the target,
+ * and 3,000 identical lines would bury the findings that need reading.
+ */
+const READABILITY_TAG = "readability above target";
 
 /** Sections compared for near-duplication across the whole corpus. */
 const DUP_FIELDS = ["meaning", "didYouKnow", "applyIt"];
@@ -80,7 +90,14 @@ export function loadRecords(dir) {
     const full = path.join(dir, f);
     const raw = JSON.parse(fs.readFileSync(full, "utf8"));
     if (raw.body && raw.key) {
-      records.push({ key: raw.key, study: { ...raw.body, key: raw.key }, source: f, partial: true });
+      // A cache record has no `meta` yet — assemble.mjs stamps it — but the
+      // simplify marker lives on the record itself and decides whether the
+      // readability rule is an error or a warning, so carry it across.
+      const study = { ...raw.body, key: raw.key };
+      if (raw.simplified) {
+        study.meta = { ...(study.meta ?? {}), simplified: raw.simplified, author: raw.author };
+      }
+      records.push({ key: raw.key, study, source: f, partial: true });
     } else if (Array.isArray(raw)) {
       for (const s of raw) records.push({ key: s.key, study: s, source: f });
     } else if (raw.studies) {
@@ -97,6 +114,7 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
   ajv.addFormat("date-time", (v) => !Number.isNaN(Date.parse(v)));
   const full = ajv.compile(SCHEMA);
   const bounds = SCHEMA["x-wordBounds"];
+  const targets = SCHEMA["x-readability"];
   const errors = [];
   const warnings = [];
   const unitKeys = new Set(Object.values(passages));
@@ -146,6 +164,45 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
     }
     if (typeof s.title === "string" && /[.!?]$/.test(s.title.trim())) {
       err(key, "title has trailing punctuation");
+    }
+
+    // Readability. `meta.simplified` marks a unit the rewrite pass has already
+    // been through: for those the grade ceilings are a hard gate. For the rest
+    // the same miss is a warning, so the corpus written before the pass existed
+    // still validates while `author.mjs rewrite-todo` can still find it.
+    const simplified = typeof s.meta?.simplified === "string" && s.meta.simplified.trim() !== "";
+    const note = simplified ? err : warn;
+    const misses = [];
+    for (const [field, ceiling] of Object.entries(targets.sections)) {
+      const text = s[field];
+      if (typeof text !== "string" || !text.trim()) continue;
+      const r = readability(text);
+      if (r.grade > ceiling) misses.push(`${field} grade ${r.grade} > ${ceiling}`);
+      if (r.wordsPerSentence > targets.meanSentenceWords) {
+        misses.push(`${field} ${r.wordsPerSentence} words/sentence > ${targets.meanSentenceWords}`);
+      }
+    }
+    if (misses.length) note(key, `${READABILITY_TAG} — ${misses.join("; ")}`);
+
+    // explainEasier is optional on the corpus at large and required once a unit
+    // has been simplified. Its structural rules (word bounds, script, banned
+    // phrasing) are errors wherever the field exists; only the grade follows the
+    // simplified/unsimplified split.
+    if (s.explainEasier !== undefined || simplified) {
+      const text = s.explainEasier;
+      if (typeof text !== "string" || !text.trim()) {
+        if (simplified) err(key, "explainEasier missing (a simplified unit must carry it)");
+      } else {
+        checkWords(key, "explainEasier", text);
+        if (hasArabic(text)) err(key, "explainEasier contains Arabic script");
+        const foreign = foreignScript(text);
+        if (foreign) err(key, `explainEasier contains non-Latin script: ${foreign}`);
+        for (const [re, why] of BANNED) if (re.test(text)) err(key, `explainEasier: ${why} (${re})`);
+        const g = readability(text).grade;
+        if (g > targets.explainEasierGrade) {
+          note(key, `${READABILITY_TAG} — explainEasier grade ${g} > ${targets.explainEasierGrade}`);
+        }
+      }
     }
 
     // Nested prose (key-term glosses/notes, cross-reference reasons): banned phrasing applies there too.
@@ -288,7 +345,83 @@ export function validateRecords(records, { quran, themeIds, themeTitles = null, 
   return { errors, warnings };
 }
 
+/**
+ * The `reflections` sub-command: checks the artefact, not the catalogue.
+ *
+ * `build-reflections.mjs` already refuses to write a file that breaks a rule, so this is the
+ * gate that catches a `Content/reflections.json` edited by hand or left behind by an older
+ * catalogue. It re-reads the shipped file and re-applies the countable rules from
+ * `docs/content/reflections.md`: shape, word count, unique renderings, and themes that
+ * resolve against `Content/themes.json`.
+ */
+async function validateReflections() {
+  const { RULES } = await import("./build-reflections.mjs");
+  const repo = path.dirname(path.dirname(ROOT));
+  const file = path.join(repo, "Content", "reflections.json");
+  if (!fs.existsSync(file)) {
+    console.error(`no such file: ${file} — run node Tools/content-gen/build-reflections.mjs`);
+    process.exit(1);
+  }
+  const themeIds = new Set(
+    JSON.parse(fs.readFileSync(path.join(repo, "Content", "themes.json"), "utf8")).themes.map((t) => t.id),
+  );
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  const errors = [];
+  const err = (id, msg) => errors.push(`${id}: ${msg}`);
+
+  if (data.version !== RULES.version) errors.push(`file: version is ${data.version}, expected ${RULES.version}`);
+  if (data.generatedAt !== RULES.generatedAt) {
+    errors.push(`file: generatedAt is not the fixed string the build writes`);
+  }
+  if (!Array.isArray(data.items)) {
+    console.error("reflections.json has no items array");
+    process.exit(1);
+  }
+  if (data.count !== data.items.length) errors.push(`file: count ${data.count} but ${data.items.length} items`);
+  if (data.items.length < RULES.minShipped) {
+    errors.push(`file: ${data.items.length} items, at least ${RULES.minShipped} are needed`);
+  }
+
+  const ids = new Set();
+  const texts = new Map();
+  const byTheme = new Map([...themeIds].map((id) => [id, 0]));
+  for (const item of data.items) {
+    const id = item.id ?? "<no id>";
+    if (ids.has(id)) err(id, "duplicate id");
+    ids.add(id);
+    if (item.confidence !== "high") err(id, `confidence is "${item.confidence}"; only high ships`);
+    if (!item.attribution?.trim()) err(id, "no attribution");
+    if (!item.source?.work?.trim()) err(id, "no source work");
+    if (!item.source?.locator?.trim()) err(id, "no source locator");
+    if (item.source?.translator !== "own") err(id, "every rendering is the app's own");
+    const n = words(item.text ?? "");
+    if (n < RULES.words[0] || n > RULES.words[1]) {
+      err(id, `text is ${n} words, must be ${RULES.words[0]}-${RULES.words[1]}`);
+    }
+    if (hasArabic(item.text ?? "")) err(id, "text carries Arabic script");
+    if (item.arabic !== undefined && !hasArabic(item.arabic)) err(id, '"arabic" is not Arabic script');
+    const key = String(item.text).toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+    if (texts.has(key)) err(id, `same rendering as ${texts.get(key)}`);
+    else texts.set(key, id);
+    if (!Array.isArray(item.themes) || item.themes.length === 0) err(id, "no themes");
+    for (const theme of item.themes ?? []) {
+      if (!themeIds.has(theme)) err(id, `unknown theme "${theme}"`);
+      else byTheme.set(theme, byTheme.get(theme) + 1);
+    }
+  }
+  for (const [theme, n] of byTheme) {
+    if (n < RULES.minPerTheme) errors.push(`theme "${theme}": ${n} entries, at least ${RULES.minPerTheme}`);
+  }
+
+  console.log(`validated ${data.items.length} reflection(s) in Content/reflections.json`);
+  for (const e of errors) console.log(`ERROR ${e}`);
+  console.log(`\n${errors.length} error(s), 0 warning(s)`);
+  if (errors.length) process.exit(1);
+  console.log("OK");
+}
+
 function main(argv = process.argv.slice(2)) {
+  if (argv[0] === "reflections") return validateReflections();
   const dir = argv.find((a) => !a.startsWith("--")) ?? path.join(OUT, "study");
   if (!fs.existsSync(dir)) {
     console.error(`no such directory: ${dir}`);
@@ -310,7 +443,18 @@ function main(argv = process.argv.slice(2)) {
   const { errors, warnings } = validateRecords(records, { quran, themeIds, themeTitles, passages });
 
   console.log(`validated ${records.length} record(s) in ${dir}`);
-  for (const w of warnings) console.log(`WARN  ${w}`);
+  const verbose = argv.includes("--verbose");
+  const readabilityWarnings = warnings.filter((w) => w.includes(READABILITY_TAG));
+  for (const w of warnings) {
+    if (!verbose && w.includes(READABILITY_TAG)) continue;
+    console.log(`WARN  ${w}`);
+  }
+  if (!verbose && readabilityWarnings.length) {
+    console.log(
+      `WARN  ${READABILITY_TAG} in ${readabilityWarnings.length} unsimplified unit(s) — ` +
+        "node author.mjs rewrite-todo (--verbose here lists them)",
+    );
+  }
   for (const e of errors) console.log(`ERROR ${e}`);
   console.log(`\n${errors.length} error(s), ${warnings.length} warning(s)`);
   if (errors.length) process.exit(1);
