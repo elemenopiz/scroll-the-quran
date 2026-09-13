@@ -58,8 +58,10 @@ public struct DiscoverView: View {
     }
 
     public var body: some View {
-        GeometryReader { _ in
-            content
+        GeometryReader { proxy in
+            // The body plan is a function of the width the quote is laid out in, so the
+            // page measures it instead of assuming the 402 pt canvas (Phase 4m).
+            content(contentWidth: DiscoverCardLayout.contentWidth(screenWidth: proxy.size.width))
         }
         .background(Color.appBackgroundFlat)
         .sheet(isPresented: $isPaywallPresented) {
@@ -76,14 +78,14 @@ public struct DiscoverView: View {
     }
 
     @ViewBuilder
-    private var content: some View {
+    private func content(contentWidth: CGFloat) -> some View {
         if items.isEmpty {
             StudyComingSoonCard()
         } else {
             ScrollView(.vertical) {
                 LazyVStack(spacing: 0) {
                     ForEach(items) { item in
-                        page(for: item)
+                        page(for: item, contentWidth: contentWidth)
                             .containerRelativeFrame(.vertical)
                             .id(item.key)
                     }
@@ -98,7 +100,7 @@ public struct DiscoverView: View {
         }
     }
 
-    private func page(for item: DiscoverItem) -> some View {
+    private func page(for item: DiscoverItem, contentWidth: CGFloat) -> some View {
         let study = studies?.study(forKey: item.key)
         let presentation = PassagePresentation.make(
             forKey: item.key,
@@ -113,6 +115,7 @@ public struct DiscoverView: View {
             if let study {
                 DiscoverCard(
                     presentation: presentation,
+                    contentWidth: contentWidth,
                     themeTitle: themeTitle(forKey: item.key) ?? study.theme,
                     study: study,
                     crossRefs: chips(for: study),

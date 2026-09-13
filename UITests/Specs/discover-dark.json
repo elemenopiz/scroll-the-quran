@@ -1,5 +1,5 @@
 {
-  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it. Re-recorded for Phase 4i: the card is a fixed-height fixed-slot layout with no translation badge and no Arabic line, so every one of the 326 units records these same frames.",
+  "note": "Frames RECORDED off the running app on a 402x874 pt simulator and normalised to the 393x852 pt reference space, not measured off Reference/*.png. The two are different measurements: an accessibility frame is the union of an element's children and a multi-line label's frame includes its whole line box, so a container reads taller here than the artwork does in a capture. Pixel fidelity against the reference is what Tools/snapshot/compare.sh scores; this spec is the layout regression guard underneath it. Re-recorded for Phase 4i: the card is a fixed-height fixed-slot layout with no translation badge and no Arabic line. Phase 4m re-divides the body between the quote, MEANING and DID YOU KNOW per card, so the quote's height and the MEANING/DID YOU KNOW rows are card 0's (An-Nisa 4:59) rather than every unit's; the card itself, the chip, the title, 'Deep study' and the action row are still identical on all 326.",
   "id": "discover",
   "route": "discover",
   "appearance": "dark",
@@ -48,19 +48,20 @@
         "x": 35.2,
         "y": 231.6,
         "width": 322.6,
-        "height": 85.8
+        "height": 128.4
       },
-      "note": "Four lines exactly (85.8 = 4 x 21.9), whatever the passage's length: short ones are centred in the slot, long ones elide with a tail '…'. The muted Arabic line above it is gone (owner, Phase 4i amendment 2)."
+      "note": "Phase 4m: the quote is as many lines as the passage needs, not a fixed four. Card 0 of the fixed-date feed is An-Nisa 4:59, which is six lines at 16 pt: 128.4 = 6 x 21.4 in the 393 pt space. Its y is unchanged — the quote is still the first block under the title — and the height it takes back comes out of MEANING, which drops to two lines here. The muted Arabic line above it is gone (owner, Phase 4i amendment 2)."
     },
     {
       "name": "discover.meaning",
       "query": "identifier",
       "frame": {
         "x": 35.2,
-        "y": 329.1,
+        "y": 372.7,
         "width": 61.6,
         "height": 13.0
-      }
+      },
+      "note": "The MEANING label, pushed down 43.6 pt by card 0's six-line quote (Phase 4m). The label's y is the one row on this card that moves with the passage; everything from the cross-reference chips down does not."
     },
     {
       "name": "discover.didYouKnow",

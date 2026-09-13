@@ -1,3 +1,4 @@
+import CoreText
 import DesignSystem
 import Foundation
 import QuranData
@@ -48,9 +49,25 @@ enum DiscoverMetrics {
 
     // MARK: Slots
 
+    /// The quote's slot is no longer a fixed four lines: the owner asked on 2026-09-13 for
+    /// "the entirety of the verse" to fit and for "the meaning/did you know [to] be cut
+    /// off" instead, so the quote takes the lines it actually needs and
+    /// `DiscoverCardLayout.body(for:meaning:didYouKnow:width:)` divides what is left.
+    /// This is what the four-line slot *used* to be, and it is still the arithmetic the
+    /// body budget is built from, so the card height is unchanged (Phase 4m).
     static let quoteLines = 4
     static let meaningLines = 4
     static let didYouKnowLines = 3
+
+    /// The point sizes the quote may be laid out at, largest first. 16 pt is
+    /// `VerseText.Size.discover`; 14 pt is the floor — below it the italic serif stops
+    /// reading as the card's voice, and it is the same spirit as rule 5's 13 pt Arabic
+    /// floor.
+    static let quoteSizeLadder: [CGFloat] = [VerseText.Size.discover.english, 15, 14]
+
+    /// MEANING is never shown in less than this. Under it the section is noise, so the
+    /// card drops it outright instead (Phase 4m).
+    static let minimumMeaningLines = 2
 
     // MARK: Vertical rhythm
 
@@ -143,15 +160,37 @@ enum DiscoverCardLayout {
             + didYouKnowSlot
     }
 
+    /// The block MEANING occupies with `lines` of body under its label, gap included.
+    static func meaningBlock(lines: Int) -> CGFloat {
+        DiscoverMetrics.quoteToMeaning
+            + capsLabelHeight
+            + DiscoverMetrics.labelToBody
+            + slot(lines: lines, size: DiscoverMetrics.bodySize)
+    }
+
+    /// The block DID YOU KNOW occupies, gap included.
+    static var didYouKnowBlock: CGFloat {
+        DiscoverMetrics.bodyToDidYouKnow + didYouKnowBox
+    }
+
+    /// **The body budget.** Quote + MEANING + DID YOU KNOW share exactly this much height
+    /// on every card, whatever the passage's length — which is why the card is a constant
+    /// and the pager lands identically (Phase 4i), and why Phase 4m could re-divide the
+    /// three blocks without moving the chip, the title, "Deep study ›" or the action row.
+    ///
+    /// Its value is Phase 4i's own slots totalled: a four-line quote, a four-line MEANING
+    /// and the three-line DID YOU KNOW box. Nothing about the number changed, only who
+    /// gets which part of it.
+    static var bodyBudget: CGFloat {
+        quoteSlot + meaningBlock(lines: DiscoverMetrics.meaningLines) + didYouKnowBlock
+    }
+
     /// Every card is this tall. The one number this whole task is about.
     static var cardHeight: CGFloat {
         2 * DiscoverMetrics.cardPadding
             + Metrics.chipHeight
             + DiscoverMetrics.chipToTitle + titleSlot
-            + DiscoverMetrics.titleToQuote + quoteSlot
-            + DiscoverMetrics.quoteToMeaning + capsLabelHeight
-            + DiscoverMetrics.labelToBody + meaningSlot
-            + DiscoverMetrics.bodyToDidYouKnow + didYouKnowBox
+            + DiscoverMetrics.titleToQuote + bodyBudget
             + DiscoverMetrics.didYouKnowToChips + Metrics.crossRefChipHeight
             + DiscoverMetrics.chipsToDeepStudy + Metrics.hitTarget
             + DiscoverMetrics.deepStudyToActions + Metrics.hitTarget
@@ -161,6 +200,195 @@ enum DiscoverCardLayout {
     /// side and the card's own padding on each side.
     static func contentWidth(screenWidth: CGFloat) -> CGFloat {
         screenWidth - 2 * DiscoverMetrics.cardInset - 2 * DiscoverMetrics.cardPadding
+    }
+
+    // MARK: - The body plan
+
+    /// How one card divides `bodyBudget` between the quote, MEANING and DID YOU KNOW.
+    ///
+    /// The quote comes first and whole (owner, 2026-09-13: "ideally the entirety of the
+    /// verse fits on the card. the meaning/did you know can be cut off"); the other two
+    /// take what is left, MEANING never under `minimumMeaningLines` and DID YOU KNOW only
+    /// if its box still fits. Whatever the plan, the three blocks are stacked from the top
+    /// of a `bodyBudget`-tall container, so the card totals `cardHeight` either way.
+    struct BodyPlan: Equatable, Sendable {
+        /// The point size the quote is laid out at: 16, 15 or 14 (`quoteSizeLadder`).
+        var quoteSize: CGFloat
+        /// How many lines the quote gets — its *actual* line count, not a cap, except on
+        /// the overflow cards where `quoteIsTruncated` is true.
+        var quoteLines: Int
+        /// The MEANING slot, 0 when the section is dropped from the card.
+        var meaningLines: Int
+        /// Whether the DID YOU KNOW box is on the card. It always is in Deep Study.
+        var showsDidYouKnow: Bool
+        /// True only when even a 14 pt quote alone will not fit the body — the single case
+        /// the brief allows a "…" on a Discover quote.
+        var quoteIsTruncated: Bool
+
+        /// The height the three blocks draw, which is never more than `bodyBudget`.
+        var bodyHeight: CGFloat {
+            var height = slot(lines: quoteLines, size: quoteSize)
+            if meaningLines > 0 {
+                height += meaningBlock(lines: meaningLines)
+            }
+            if showsDidYouKnow {
+                height += didYouKnowBlock
+            }
+            return height
+        }
+    }
+
+    /// Divides `bodyBudget` for one unit.
+    ///
+    /// The ladder, in the order the brief sets it out:
+    /// 1. at 16 pt, quote whole, MEANING 4 lines, DID YOU KNOW shown;
+    /// 2. shorten MEANING toward `minimumMeaningLines`;
+    /// 3. drop DID YOU KNOW (the section still lives in Deep Study) and try MEANING again;
+    /// 4. step the quote to 15 pt, then 14 pt, repeating 1–3 at each size;
+    /// 5. drop MEANING and let the quote take the whole body, at the largest size it fits at;
+    /// 6. and only then truncate the quote with a tail "…".
+    ///
+    /// - Parameter passageText: the quote exactly as it will be drawn, measured flat — see
+    ///   `PassagePresentation.layoutQuote`.
+    static func body(
+        for passageText: String,
+        meaning: String,
+        didYouKnow: String,
+        width: CGFloat
+    ) -> BodyPlan {
+        let budget = bodyBudget
+        let wantsMeaning = !meaning.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        let wantsDidYouKnow = !didYouKnow.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+
+        for size in DiscoverMetrics.quoteSizeLadder {
+            let lines = quoteLineCount(passageText, size: size, width: width)
+            let quote = slot(lines: lines, size: size)
+
+            for showsDidYouKnow in (wantsDidYouKnow ? [true, false] : [false]) {
+                let extra = showsDidYouKnow ? didYouKnowBlock : 0
+                guard wantsMeaning else {
+                    if quote + extra <= budget {
+                        return BodyPlan(
+                            quoteSize: size,
+                            quoteLines: lines,
+                            meaningLines: 0,
+                            showsDidYouKnow: showsDidYouKnow,
+                            quoteIsTruncated: false
+                        )
+                    }
+                    continue
+                }
+                let slots = stride(
+                    from: DiscoverMetrics.meaningLines,
+                    through: DiscoverMetrics.minimumMeaningLines,
+                    by: -1
+                )
+                for meaningLines in slots where quote + meaningBlock(lines: meaningLines) + extra <= budget {
+                    return BodyPlan(
+                        quoteSize: size,
+                        quoteLines: lines,
+                        meaningLines: meaningLines,
+                        showsDidYouKnow: showsDidYouKnow,
+                        quoteIsTruncated: false
+                    )
+                }
+            }
+        }
+
+        // Nothing on the ladder held a two-line MEANING: MEANING goes too and the quote
+        // takes the whole body — at the largest size it fits at, so a card that has given
+        // up both prose sections at least reads at the size it was designed for.
+        for size in DiscoverMetrics.quoteSizeLadder {
+            let lines = quoteLineCount(passageText, size: size, width: width)
+            if slot(lines: lines, size: size) <= budget {
+                return BodyPlan(
+                    quoteSize: size,
+                    quoteLines: lines,
+                    meaningLines: 0,
+                    showsDidYouKnow: false,
+                    quoteIsTruncated: false
+                )
+            }
+        }
+
+        // The passage does not fit the card at any size on the ladder. This is the only
+        // place a Discover quote is allowed a tail "…"; `OverflowLedger` in the tests names
+        // the units it happens to, so a content change that adds one fails the gate.
+        let size = DiscoverMetrics.quoteSizeLadder.last ?? VerseText.Size.discover.english
+        let lines = quoteLineCount(passageText, size: size, width: width)
+        let fits = Int(budget / lineHeight(size))
+        return BodyPlan(
+            quoteSize: size,
+            quoteLines: min(lines, fits),
+            meaningLines: 0,
+            showsDidYouKnow: false,
+            quoteIsTruncated: lines > fits
+        )
+    }
+
+    // MARK: - Measurement
+
+    /// How many lines `text` takes in the card's italic serif at `size` across `width`.
+    ///
+    /// The card draws the passage as an `AttributedString` whose ayah boundaries carry a
+    /// small muted numeral between two thin spaces (`VerseText`); measuring the flat
+    /// `layoutQuote` — the same words with " n " at each boundary, all in the quote's own
+    /// face — is a few points *wider* per boundary than what is drawn, so the count is
+    /// never short. Erring long costs a line of MEANING; erring short would put a "…" on
+    /// the verse, which is the one thing this task exists to remove.
+    static func quoteLineCount(_ text: String, size: CGFloat, width: CGFloat) -> Int {
+        lineCount(text, fontName: FontFamily.serifItalic, size: size, width: width)
+    }
+
+    static func lineCount(_ text: String, fontName: String, size: CGFloat, width: CGFloat) -> Int {
+        guard !text.isEmpty, width > 0 else { return 0 }
+        let key = MeasurementCache.Key(text: text, fontName: fontName, size: size, width: width)
+        if let cached = measurements.value(for: key) { return cached }
+
+        _ = DesignSystem.registerFonts()
+        let font = CTFontCreateWithName(fontName as CFString, size, nil)
+        let attributed = NSAttributedString(string: text, attributes: [.font: font])
+        let setter = CTFramesetterCreateWithAttributedString(attributed)
+        let path = CGPath(rect: CGRect(x: 0, y: 0, width: width, height: 100_000), transform: nil)
+        let frame = CTFramesetterCreateFrame(setter, CFRange(location: 0, length: 0), path, nil)
+        let lines = CFArrayGetCount(CTFrameGetLines(frame))
+        measurements.store(lines, for: key)
+        return lines
+    }
+
+    /// Laying a 200-word passage out three times is cheap, but the card's `body` is
+    /// re-evaluated on every save/read toggle and on every frame of a page turn, so the
+    /// answers are kept.
+    private static let measurements = MeasurementCache()
+}
+
+/// A tiny thread-safe memo for `DiscoverCardLayout.lineCount`.
+final class MeasurementCache: @unchecked Sendable {
+    struct Key: Hashable {
+        let text: String
+        let fontName: String
+        let size: CGFloat
+        let width: CGFloat
+    }
+
+    private let lock = NSLock()
+    private var storage: [Key: Int] = [:]
+
+    func value(for key: Key) -> Int? {
+        lock.lock()
+        defer { lock.unlock() }
+        return storage[key]
+    }
+
+    func store(_ value: Int, for key: Key) {
+        lock.lock()
+        defer { lock.unlock() }
+        // The feed is 326 units x 3 sizes x 2 widths; the cap is a guard against a
+        // Dynamic Type sweep, not a working limit.
+        if storage.count > 4000 {
+            storage.removeAll(keepingCapacity: true)
+        }
+        storage[key] = value
     }
 }
 
