@@ -1,4 +1,4 @@
-# App Store metadata — Scroll the Quran
+# App Store metadata — Quran Scroller
 
 Everything App Store Connect asks for, in the order it asks for it, ready to paste.
 Character limits are noted per field and every string below is inside its limit (counts
@@ -23,7 +23,7 @@ Version: **1.0.0** (build **1**) — `Config/Release.xcconfig`, `MARKETING_VERSI
 ### Name (30 char limit) — 16 used
 
 ```
-Scroll the Quran
+Quran Scroller
 ```
 
 ### Subtitle (30 char limit) — 19 used
@@ -84,7 +84,7 @@ the content questions above. **4+** is the correct rating.
 ### Copyright
 
 ```
-2026 Scroll the Quran
+2026 Quran Scroller
 ```
 
 ---
@@ -100,7 +100,7 @@ Start where you are. One ayah fills the screen, the Arabic above the English, an
 ### Description (4000 char limit)
 
 ```
-Scroll the Quran turns the Book into something you actually open every day.
+Quran Scroller turns the Book into something you actually open every day.
 
 One verse at a time. Each ayah gets the whole screen — the Uthmani Arabic above, a clear
 English translation below, nothing else competing for your attention. Swipe up for the
@@ -150,7 +150,7 @@ themselves are not AI-generated: the Arabic is the Tanzil Project's Uthmani text
 Ruwwad Translation Center and Marmaduke Pickthall, reproduced as their licences require.
 
 PREMIUM
-Scroll the Quran is free to read. Premium unlocks Deep Study on every passage, all
+Quran Scroller is free to read. Premium unlocks Deep Study on every passage, all
 reading plans and every translation.
 - Yearly $29.99 with a 7-day free trial
 - Monthly $4.99
@@ -246,7 +246,7 @@ PRIVACY POLICY — SCROLL THE QURAN
 Last updated: 2026-09-12
 
 THE SHORT VERSION
-Scroll the Quran does not collect your data. The app has no servers, no analytics and no
+Quran Scroller does not collect your data. The app has no servers, no analytics and no
 advertising, and it makes no network requests of its own. Everything you do in the app
 stays on your device.
 
@@ -428,7 +428,7 @@ which writes them under `.build/snapshots/`.
 ### Notes to App Review
 
 ```
-Scroll the Quran is a Quran reading app. It is fully offline: every verse, translation,
+Quran Scroller is a Quran reading app. It is fully offline: every verse, translation,
 study note, reading plan and image is bundled in the app binary. The app makes no
 network requests of its own, so there is nothing to configure and no test server.
 
@@ -547,11 +547,11 @@ build uploaded.
 ### Step 2 — Create the app record
 
 1. App Store Connect → **Apps → + → New App**.
-2. Platform **iOS**; Name **Scroll the Quran**; Primary Language **English (U.S.)**;
+2. Platform **iOS**; Name **Quran Scroller**; Primary Language **English (U.S.)**;
    Bundle ID **`com.scrollthequran.app`** (pick the App ID from step 1 — if it is not in
    the list, the App ID was not created or is a wildcard); SKU **`SCROLLQURAN001`**;
    Full Access.
-3. The name is reserved the moment you create the record. If "Scroll the Quran" is taken,
+3. The name is reserved the moment you create the record. If "Quran Scroller" is taken,
    stop and settle the name before doing anything else — every string in this document
    assumes it.
 
@@ -560,7 +560,7 @@ build uploaded.
 1. App record → **Monetization → Subscriptions → Create** a subscription group.
    - Reference Name: `Premium`
    - Add a localization (English U.S.) with Display Name `Premium` and an App Name
-     override of `Scroll the Quran` if prompted.
+     override of `Quran Scroller` if prompted.
 2. Inside the group, **Create** each of the three subscriptions from section 4, in this
    order (the first one you create defines the group's level 1):
    1. `com.scrollthequran.yearly` — level 1
