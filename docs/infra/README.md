@@ -77,7 +77,7 @@ it**: `StoreKitEntitlementStore` already works, is tested, and reads the renewal
 grace-period handling needs. RevenueCat earns its place when you want revenue analytics you
 can actually read, or a non-iOS surface later.
 
-If you do adopt it: dashboard → project → app with bundle id `com.scrollthequran.app` →
+If you do adopt it: dashboard → project → app with bundle id `com.quranscroller.app` →
 shared secret + In-App Purchase key → three products → the `premium` entitlement → the
 `default` offering → copy the public `appl_…` key. Then the orchestrator adds the SPM
 dependency and writes the live client; the adapter and its 33 tests are already here. The

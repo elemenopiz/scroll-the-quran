@@ -41,7 +41,7 @@ Every step here needs the owner's login. RevenueCat dashboard → app.revenuecat
 1. **Project** → *Create new project* → `Scroll the Quran`.
 2. **Apps** → *+ New* → **App Store**:
    - App name: `Scroll the Quran`
-   - **Bundle ID: `com.scrollthequran.app`** — must match `project.yml`'s
+   - **Bundle ID: `com.quranscroller.app`** — must match `project.yml`'s
      `PRODUCT_BUNDLE_IDENTIFIER` exactly.
    - **App Store Connect App-Specific Shared Secret** — App Store Connect → your app →
      App Information → *Manage* next to App-Specific Shared Secret. Required for receipt

@@ -18,9 +18,9 @@ import XCTest
 /// configuration to an app that the command-line install did not mark as installed for
 /// development:
 ///
-///     storekitd: Validating OctaneSaveConfigurationRequest for com.scrollthequran.app
-///                by com.scrollthequran.app.uitests.xctrunner
-///     storekitd: com.scrollthequran.app.uitests.xctrunner is not installed for development
+///     storekitd: Validating OctaneSaveConfigurationRequest for com.quranscroller.app
+///                by com.quranscroller.app.uitests.xctrunner
+///     storekitd: com.quranscroller.app.uitests.xctrunner is not installed for development
 ///     [SKTestSession] Error saving configuration file: SKInternalErrorDomain Code=3
 ///
 /// It is refused identically whether the configuration arrives through `SKTestSession` or

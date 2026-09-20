@@ -34,7 +34,7 @@ else
   DESTINATION="platform=iOS Simulator,id=$SIM"
 fi
 DERIVED=".build/DerivedData"
-BUNDLE_ID="com.scrollthequran.app"
+BUNDLE_ID="com.quranscroller.app"
 
 RUN_UI=0
 SKIP_SIM=0
@@ -76,7 +76,7 @@ fail() { printf '\033[31mFAIL\033[0m %s\n' "$1"; FAILED=1; }
 
 beautify() { if command -v xcbeautify >/dev/null; then xcbeautify; else cat; fi; }
 
-APP_GROUP="group.com.scrollthequran"
+APP_GROUP="group.com.quranscroller"
 
 # Put the simulator back to a first-run state for the app: no installed app, and an empty
 # App Group container. See the call site for why the second half is not optional.

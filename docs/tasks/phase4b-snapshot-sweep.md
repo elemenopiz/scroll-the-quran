@@ -31,7 +31,7 @@ Items 1–8 in that file: Deep Study and Home scroll under the status bar unmask
 ## Added ownership and items (2026-09-12, after 4a/4e merged)
 Owns additionally: `Tools/verify.sh`, `Tools/snapshot/capture.sh`, `UITests/**` (except `FunnelTests.swift`).
 - `Tools/verify.sh --snap all` must expand to every id in `Reference/manifest.json` (both appearances when `--both` is given); today `all` is not a keyword.
-- Before the XCUITest stage, `verify.sh` must actually reset state: `simctl uninstall` does not clear the App Group container (`group.com.scrollthequran`), so `ReaderTests` are order-dependent (translation pill width 106.9 vs 72.0 on a dirty container). Erase the device, or clear `Containers/Shared/AppGroup`, and give `testSwitchingTranslationChangesTheText` a `--reset-state` launch.
+- Before the XCUITest stage, `verify.sh` must actually reset state: `simctl uninstall` does not clear the App Group container (`group.com.quranscroller`), so `ReaderTests` are order-dependent (translation pill width 106.9 vs 72.0 on a dirty container). Erase the device, or clear `Containers/Shared/AppGroup`, and give `testSwitchingTranslationChangesTheText` a `--reset-state` launch.
 - `capture.sh`: default settle 2 s yields blank first captures on this machine; make the default 6 s (or wait for first paint by sampling the capture's standard deviation as `Tools/release/screenshots.sh` does).
 - Remove the dead `XCTSkip` guards in `UITests/{ReaderTests,HomeTests,DiscoverTests,CommunityTests,PaywallTests}.swift` (they claim Phase 3e routing is missing; it is merged and every test executes).
 - `OnboardingMetricsTests`: register fonts in a suite-level setup so the suite passes when run alone.

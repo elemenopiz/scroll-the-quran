@@ -118,13 +118,13 @@ credential's identity token goes to `signInWithIdToken`, which is why `skip_nonc
 must stay `false`.
 
 1. **Apple Developer** → Certificates, Identifiers & Profiles:
-   - The App ID `com.scrollthequran.app` needs the **Sign in with Apple** capability.
+   - The App ID `com.quranscroller.app` needs the **Sign in with Apple** capability.
    - Keys → **+** → Sign in with Apple → download the `.p8` **once**. Note the Key ID and
      your Team ID.
    - A **Services ID** is only needed if a web sign-in is ever added. The native iOS flow
      authenticates against the bundle id.
 2. **Supabase Dashboard** → Authentication → Sign In / Providers → **Apple**: enable it,
-   and put `com.scrollthequran.app` in **Client IDs** (it is a comma-separated list; add
+   and put `com.quranscroller.app` in **Client IDs** (it is a comma-separated list; add
    the Services ID too if you made one). Fill the Secret Key fields from the `.p8`, Key ID
    and Team ID. `config.toml`'s `[auth.external.apple]` block mirrors this for local dev
    only — the hosted project reads the dashboard, not the file.

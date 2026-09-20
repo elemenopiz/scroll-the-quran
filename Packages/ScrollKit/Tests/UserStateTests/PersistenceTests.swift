@@ -76,9 +76,9 @@ struct PersistenceTests {
         let fileManager = FakeAppGroupFileManager(container: directory.url)
         let resolved = UserStateLocation.defaultDirectory(fileManager: fileManager)
         #expect(resolved == directory.url
-            .appendingPathComponent("group.com.scrollthequran", isDirectory: true)
+            .appendingPathComponent("group.com.quranscroller", isDirectory: true)
             .appendingPathComponent("UserState", isDirectory: true))
-        #expect(UserStateLocation.appGroupIdentifier == "group.com.scrollthequran")
+        #expect(UserStateLocation.appGroupIdentifier == "group.com.quranscroller")
     }
 
     @Test("Without the App Group, the default directory falls back to Application Support")

@@ -46,7 +46,7 @@ targets:
       - target: ScrollTheQuranWidget
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.quranscroller.app
         PRODUCT_NAME: ScrollTheQuran
         INFOPLIST_FILE: App/Info.plist
         CODE_SIGN_ENTITLEMENTS: App/ScrollTheQuran.entitlements
@@ -87,7 +87,7 @@ targets:
         product: UserState
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app.widget
+        PRODUCT_BUNDLE_IDENTIFIER: com.quranscroller.app.widget
         PRODUCT_NAME: ScrollTheQuranWidget
         INFOPLIST_FILE: Widget/Info.plist
         CODE_SIGN_ENTITLEMENTS: Widget/ScrollTheQuranWidget.entitlements
@@ -105,7 +105,7 @@ targets:
       - target: ScrollTheQuran
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.scrollthequran.app.uitests
+        PRODUCT_BUNDLE_IDENTIFIER: com.quranscroller.app.uitests
         TEST_TARGET_NAME: ScrollTheQuran
         GENERATE_INFOPLIST_FILE: YES
         TARGETED_DEVICE_FAMILY: "1"

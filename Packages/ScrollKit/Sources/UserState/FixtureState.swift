@@ -13,7 +13,7 @@ import QuranData
 /// already the one place that decides what the running app's state is, so seeding needs
 /// no hook in `AppShell` and no change to `LaunchOptions`.
 ///
-///     xcrun simctl launch <udid> com.scrollthequran.app \
+///     xcrun simctl launch <udid> com.quranscroller.app \
 ///       --screenshot home#scrolled --fixture-state premium-active-plan
 ///
 /// Seeding never touches the App Group container: a fixture store is backed by memory, so

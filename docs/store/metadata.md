@@ -9,9 +9,9 @@ Version: **1.0.0** (build **1**) — `Config/Release.xcconfig`, `MARKETING_VERSI
 
 | Identifier | Value |
 |---|---|
-| App bundle id | `com.scrollthequran.app` |
-| Widget bundle id | `com.scrollthequran.app.widget` |
-| App Group | `group.com.scrollthequran` |
+| App bundle id | `com.quranscroller.app` |
+| Widget bundle id | `com.quranscroller.app.widget` |
+| App Group | `group.com.quranscroller` |
 | URL scheme | `scrollthequran://` (e.g. `scrollthequran://verse/2/255`) |
 | SKU | `SCROLLQURAN001` |
 | Primary language | English (U.S.) |
@@ -228,7 +228,7 @@ with `App/PrivacyInfo.xcprivacy`, which declares `NSPrivacyTracking = false`, an
   result is stored on device only. Nothing is transmitted to a server we control,
   because there is no server we control.
 - Streak, reading progress, library, notes, plan progress and preferences live as JSON
-  in the App Group container `group.com.scrollthequran`, shared between the app and its
+  in the App Group container `group.com.quranscroller`, shared between the app and its
   widget, and nowhere else. They ride along in the user's own iCloud/iTunes device
   backup, which is not "collection" by the app.
 
@@ -253,7 +253,7 @@ stays on your device.
 WHAT THE APP STORES, AND WHERE
 The app saves the following on your device, inside a shared container that the app and
 its Home Screen widget can both read (an "App Group", identified as
-group.com.scrollthequran):
+group.com.quranscroller):
   - your reading progress and which verses you have read
   - your daily streak and reading history
   - verses you have saved to your library
@@ -536,11 +536,11 @@ build uploaded.
 ### Step 1 — Identifiers (developer.apple.com, not App Store Connect)
 
 1. **Certificates, Identifiers & Profiles → Identifiers → App IDs → +**.
-2. Create `com.scrollthequran.app` (explicit, not wildcard). Enable capabilities:
+2. Create `com.quranscroller.app` (explicit, not wildcard). Enable capabilities:
    **App Groups**, **Sign in with Apple**, **In-App Purchase** (on by default).
-3. Create `com.scrollthequran.app.widget` (explicit). Enable **App Groups**.
-4. **Identifiers → App Groups → +**: create `group.com.scrollthequran`.
-5. Go back into both App IDs, edit **App Groups**, and tick `group.com.scrollthequran`
+3. Create `com.quranscroller.app.widget` (explicit). Enable **App Groups**.
+4. **Identifiers → App Groups → +**: create `group.com.quranscroller`.
+5. Go back into both App IDs, edit **App Groups**, and tick `group.com.quranscroller`
    on each. The app and the widget share their JSON state through this container; if the
    widget is missing it, the widget ships blank.
 
@@ -548,7 +548,7 @@ build uploaded.
 
 1. App Store Connect → **Apps → + → New App**.
 2. Platform **iOS**; Name **Quran Scroller**; Primary Language **English (U.S.)**;
-   Bundle ID **`com.scrollthequran.app`** (pick the App ID from step 1 — if it is not in
+   Bundle ID **`com.quranscroller.app`** (pick the App ID from step 1 — if it is not in
    the list, the App ID was not created or is a wildcard); SKU **`SCROLLQURAN001`**;
    Full Access.
 3. The name is reserved the moment you create the record. If "Quran Scroller" is taken,

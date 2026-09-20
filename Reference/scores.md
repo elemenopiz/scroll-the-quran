@@ -181,7 +181,7 @@ with no thresholds entry, which is the honest state. Its recipe lives in that fi
 
 ```bash
 SIMCTL_CHILD_SCROLL_FIXED_DATE=2026-09-14 xcrun simctl launch "$SCROLL_SIM" \
-  com.scrollthequran.app --screenshot discover-reflection --reset-state
+  com.quranscroller.app --screenshot discover-reflection --reset-state
 xcrun simctl io "$SCROLL_SIM" screenshot --type=png .build/snapshots/discover-reflection.png
 ```
 

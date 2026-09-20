@@ -9,7 +9,7 @@
 	  study note and reading plan is bundled. Nothing is transmitted off device, so
 	  nothing is "collected" in Apple's sense and NSPrivacyCollectedDataTypes is empty.
 	  Sign in with Apple is optional and its result never leaves the device; the App
-	  Group container (group.com.scrollthequran) holds the streak, progress, library,
+	  Group container (group.com.quranscroller) holds the streak, progress, library,
 	  notes, plan and prefs JSON the app and the widget share.
 
 	  Required-reason APIs are declared for what the code actually calls. Verified by

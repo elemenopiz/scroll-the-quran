@@ -36,7 +36,7 @@ public extension UserStateFileStore {
 /// Resolves the directory the app and the widget share.
 public enum UserStateLocation {
     /// The App Group both the app and the widget extension are entitled to.
-    public static let appGroupIdentifier = "group.com.scrollthequran"
+    public static let appGroupIdentifier = "group.com.quranscroller"
 
     /// The App Group container's `UserState` folder, falling back to Application Support when
     /// the group is unavailable — which is the case in host unit tests and command-line tools.

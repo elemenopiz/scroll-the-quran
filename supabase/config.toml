@@ -329,7 +329,7 @@ max_frequency = "5s"
 # local-dev mirror.
 [auth.external.apple]
 enabled = false
-client_id = "com.scrollthequran.app"
+client_id = "com.quranscroller.app"
 # DO NOT commit your OAuth provider secret to git. Use environment variable substitution instead:
 secret = "env(SUPABASE_AUTH_EXTERNAL_APPLE_SECRET)"
 # Overrides the default auth callback URL derived from auth.external_url.

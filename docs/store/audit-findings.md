@@ -278,7 +278,7 @@ backups) than this app needs.
 > **Access group closed in Phase 4g** — `7e8e467`. No entitlement was needed: an **App Group**
 > identifier can be used as a keychain access group without a `keychain-access-groups`
 > entitlement of its own, so `CompositeAccountSink.live` passes
-> `UserStateLocation.appGroupIdentifier` (`group.com.scrollthequran`) — the group both targets
+> `UserStateLocation.appGroupIdentifier` (`group.com.quranscroller`) — the group both targets
 > already declare — to `SystemKeychain`. Verified on the simulator: a fixture sign-in, then
 > `prefs.json` deleted from the group container, then a relaunch **without** `--signed-in`
 > wrote the account back out of the Keychain. The widget does not display a reader name today,
