@@ -159,8 +159,8 @@ renews automatically unless you turn off auto-renew at least 24 hours before the
 the current period; manage or cancel it in Settings > Apple Account > Subscriptions. Any
 unused portion of a free trial is forfeited when you buy a subscription.
 
-Terms: https://scrollthequran.app/terms
-Privacy: https://scrollthequran.app/privacy
+Terms: https://quranscroller.com/terms
+Privacy: https://quranscroller.com/privacy
 ```
 
 > The Premium paragraph is required by App Review guideline 3.1.2 — price, period,
@@ -179,7 +179,7 @@ six characters on it would be waste.
 ### Support URL (required)
 
 ```
-https://scrollthequran.app/support
+https://quranscroller.com/support
 ```
 
 > **Placeholder — must resolve before submission.** App Review opens this URL. A page
@@ -189,13 +189,13 @@ https://scrollthequran.app/support
 ### Marketing URL (optional)
 
 ```
-https://scrollthequran.app
+https://quranscroller.com
 ```
 
 ### Privacy Policy URL (required)
 
 ```
-https://scrollthequran.app/privacy
+https://quranscroller.com/privacy
 ```
 
 Must serve the text in section 3 and must be reachable without an account.
@@ -238,7 +238,7 @@ server, this answer changes and the privacy manifest changes with it.
 
 ### 3.2 Privacy policy — full text
 
-Paste this at `https://scrollthequran.app/privacy`. It is deliberately short because
+Paste this at `https://quranscroller.com/privacy`. It is deliberately short because
 there is very little to say.
 
 ```
@@ -312,10 +312,10 @@ If this policy changes, the "last updated" date above changes with it. If the ap
 starts collecting data, it will say so here and in the app before it does.
 
 CONTACT
-support@scrollthequran.app
+support@quranscroller.com
 ```
 
-> Replace `support@scrollthequran.app` with the address you will actually monitor, and
+> Replace `support@quranscroller.com` with the address you will actually monitor, and
 > keep the "last updated" date honest.
 
 ### 3.3 Privacy manifest

@@ -30,7 +30,7 @@ public extension OnboardingContent {
             emailPlaceholder: "you@example.com",
             emailFootnote: "Stored on this device only. We do not email you.",
             recoverCTA: "Can't sign in? Recover Access",
-            recoverMailto: "support@scrollthequran.app",
+            recoverMailto: "support@quranscroller.com",
             recoverSubject: "Recover my Scroll the Quran access",
             skipCTA: "Not now"
         ),

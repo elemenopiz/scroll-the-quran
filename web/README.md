@@ -46,7 +46,7 @@ spelling onto the clean URL so only one address is ever indexed or linked.
 images, styles and fonts and nothing else (the site has no JavaScript, so there is no
 `script-src` to allow), plus HSTS, `X-Frame-Options: DENY`, `X-Content-Type-Options`,
 `Referrer-Policy`, `Permissions-Policy` and `Cross-Origin-Opener-Policy`. Verify them
-after the first deploy with `curl -sI https://scrollthequran.app/privacy`.
+after the first deploy with `curl -sI https://quranscroller.com/privacy`.
 
 `python3 -m http.server` has no clean-URL support; local testing there uses the `.html`
 paths. `npx wrangler pages dev web` reproduces the real Cloudflare behaviour.
@@ -107,8 +107,8 @@ directory `.`** — then every push to `main` redeploys.
 ### Custom domain and DNS
 
 1. Cloudflare dashboard → the Pages project → **Custom domains** → **Set up a domain** →
-   `scrollthequran.app`. Repeat for `www.scrollthequran.app`.
-2. If `scrollthequran.app` already uses Cloudflare nameservers, Cloudflare writes the DNS
+   `quranscroller.com`. Repeat for `www.quranscroller.com`.
+2. If `quranscroller.com` already uses Cloudflare nameservers, Cloudflare writes the DNS
    records itself — accept the prompt and you are done.
 3. If it does not, add the domain as a Cloudflare **zone** first (Add a site → Free plan),
    then change the nameservers at the registrar to the two Cloudflare gives you. Zone
@@ -118,7 +118,7 @@ directory `.`** — then every push to `main` redeploys.
    either a `CNAME` at the root (if the registrar supports CNAME flattening / ALIAS) or the
    `A` records Cloudflare lists. Cloudflare issues the TLS certificate once the record
    resolves.
-5. Confirm with `curl -sI https://scrollthequran.app/privacy | head -1` before you paste the
+5. Confirm with `curl -sI https://quranscroller.com/privacy | head -1` before you paste the
    URL into App Store Connect. App Review opens `/support` and `/privacy`; a 404 there is a
    metadata rejection.
 
@@ -128,7 +128,7 @@ directory `.`** — then every push to `main` redeploys.
   `aria-disabled`). Swap it for Apple's official badge and link to the App Store product
   page once the app has one. Apple's badge artwork has its own usage rules — download it
   from the Apple Marketing Resources page rather than redrawing it.
-- `support@scrollthequran.app` appears on three pages. Point it at a mailbox someone
+- `support@quranscroller.com` appears on three pages. Point it at a mailbox someone
   actually reads before review, or change it everywhere
-  (`grep -rl support@scrollthequran.app web/`).
+  (`grep -rl support@quranscroller.com web/`).
 - Keep the "Last updated" dates on `/privacy` and `/terms` honest.

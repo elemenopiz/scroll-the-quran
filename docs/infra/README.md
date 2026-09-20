@@ -36,19 +36,19 @@ npx wrangler pages deploy web --project-name scroll-the-quran
 ```
 
 Then, in the Cloudflare dashboard: the Pages project → **Custom domains** →
-`scrollthequran.app` and `www.scrollthequran.app`. If the domain's nameservers are already
+`quranscroller.com` and `www.quranscroller.com`. If the domain's nameservers are already
 on Cloudflare the DNS is written for you; if not, add the zone first or copy the records
 Cloudflare prints to your registrar. `web/README.md` has the fork spelled out.
 
 Done when all four of these return `200`:
 
 ```bash
-for p in / /privacy /support /terms; do curl -so /dev/null -w "%{http_code} $p\n" "https://scrollthequran.app$p"; done
+for p in / /privacy /support /terms; do curl -so /dev/null -w "%{http_code} $p\n" "https://quranscroller.com$p"; done
 ```
 
 Before you paste the URLs into App Store Connect, fix the two placeholders `web/README.md`
 lists: the **App Store badge** in the hero (currently a disabled `<span>`) and
-**`support@scrollthequran.app`**, which must be a mailbox someone reads during review.
+**`support@quranscroller.com`**, which must be a mailbox someone reads during review.
 
 ### 2. Supabase — only if you want sync
 

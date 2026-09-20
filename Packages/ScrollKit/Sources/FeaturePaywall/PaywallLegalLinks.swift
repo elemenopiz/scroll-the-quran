@@ -13,7 +13,7 @@ public struct PaywallLegalLinks: Sendable, Equatable {
     }
 
     public static let `default` = PaywallLegalLinks(
-        terms: URL(string: "https://scrollthequran.app/terms")!,
-        privacy: URL(string: "https://scrollthequran.app/privacy")!
+        terms: URL(string: "https://quranscroller.com/terms")!,
+        privacy: URL(string: "https://quranscroller.com/privacy")!
     )
 }

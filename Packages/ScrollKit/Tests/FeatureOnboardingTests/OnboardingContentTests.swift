@@ -74,7 +74,7 @@ struct OnboardingContentTests {
     func recoverIsMailto() throws {
         let url = try #require(Self.repoContent().signIn.recoverURL)
         #expect(url.scheme == "mailto")
-        #expect(url.absoluteString.contains("support@scrollthequran.app"))
+        #expect(url.absoluteString.contains("support@quranscroller.com"))
         #expect(url.absoluteString.contains("subject="))
     }
 
